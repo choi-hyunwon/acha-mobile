@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>현금흐름</h2>
+    </div>
+    <div class="contents">
+        <div class="box-ex-current">
+            <div class="current-cash-wrap">
+                <div class="title"><span class="font-bold primary-color">내 수입을 입력</span>하고<br/>현금 흐름을 예상해보세요 🙂</div>
+                <div class="title-sm">기간</div>
+                <div class="box-ex-account">
+                    <div class="card-detail-badge _exDate">
+                        <ul>
+                            <li class="active"><a href="#" id="cal">30일</a></li>
+                            <li><a href="#">60일</a></li>
+                            <li><a href="#">90일</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-detail-calendar">
+                        <div class="input-calendar">
+                            <label for="start"></label>
+                            <input type="date" id="start" value="2021-06-03" min="2021-05-01" max="2021-07-30">
+                        </div>
+                        <div class="icon">~</div>
+                        <div class="input-calendar">
+                            <label for="end"></label>
+                            <input type="date" id="end" value="2021-06-03" min="2021-05-01" max="2021-07-30">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-income-wrap">
+                <div class="title-sm">내 수입</div>
+                <div class="val-area">
+                    <div class="val">0</div>
+                    <a class="btn-add" href="#"><i class="ico-btn-add-nor"></i><span>수입 추가</span></a>
+                </div>
+                <div class="no-data">
+                    <div class="txt-lg">정보 부족 🙁</div>
+                    <div class="txt">잔고 여유/부족 예측을 위해 수입 정보가 필요해요</div>
+                </div>
+                <div class="img-box">
+                    <span class="txt">(예시)</span>
+                    <span class="img"><img src="../../img/common/img-ex-cashflow-graph@2x.png" alt=""></span>
+                </div>
+            </div>
+            <div class="my-card-btn-fixed">
+                <a href="#" class="btn btn-block">현금흐름 조회하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('._exDate li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+    /* 날짜 객체 받아서 문자열로 리턴하는 함수 */
+    function getDateStr(myDate){
+        return (myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + myDate.getDate())
+    }
+
+    /* 오늘 날짜를 문자열로 반환 */
+    function today() {
+        var d = new Date()
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 1개웗 후 날짜 반환 */
+    function nextMonth() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 1)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 2개웗 후 날짜 반환 */
+    function next2Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 2)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 3개웗 후 날짜 반환 */
+    function next3Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 3)
+        return getDateStr(d)
+    }
+</script>
+</body>
+</html>

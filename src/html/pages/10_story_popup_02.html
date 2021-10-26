@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+    </div>
+    <div class="contents">
+        <div class="timeline-detail-wrap">
+            <div class="timeline-detail-info">
+                <div class="detail-info-header">
+                    <div class="category"><img src="../../img/common/ico-list-shopping-big@2x.png" alt=""></div>
+                    <a class="text-link _btnSlideOpen" href="#">변경</a>
+                    <div class="title">이마트구로점</div>
+                    <div class="value">87,500</div>
+                    <div class="date">2021. 02. 15 18: 28: 38</div>
+                </div>
+                <div class="detail-info-body">
+                    <div class="inner">
+                        <div class="b-info">
+                            <span class="b-icon"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                            <span class="b-name">신한 카카오뱅크</span>
+                        </div>
+                        <div class="b-account">본인 VISA 4518-42**-****-9232</div>
+                        <div class="b-info-list">
+                            <ul>
+                                <li><span class="tit">거래결과</span><span class="info">승인(일시불)</span></li>
+                                <li><span class="tit">승인번호</span><span class="info">45058572</span></li>
+                                <li><span class="tit">주소</span><span class="info">서울시 중구 후암로 110, 10층 (남대문로5가 서울시티타워)</span></li>
+                                <li><span class="tit">전화번호</span><span class="info">02-3451-5235</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ex-story-wrap">
+                <div class="title-story">지출 스토리</div>
+                <div class="textarea">
+                    <label for="context">문의 내용</label>
+                    <span class="txt-limit"><em class="_val">0</em> / 500</span>
+                    <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" id="context" maxlength="500" placeholder="내용을 입력해주세요"></textarea>
+                </div>
+                <div class="tag has-tag-list"> <!-- tag-list가 있으면 has-tag-list 추가 -->
+                    <label for="tag">태그 추가</label>
+                    <input class="custom" onkeyup="tagSearch('tag',this.value)" type="search" id="tag" value="아들생일">
+                    <div class="tag-list">
+                        <!--
+                            1번 - #b482f4
+                            2번 - #b542f3
+                            3번 - #7070f0
+                            4번 - #773ff5
+
+                            랜덤으로 나오되, 같은 색상이 연속 2번 반복되지 않게 적용 요청
+
+                            예를 들어,
+                            1번, 1번, 3번, 3번, 4번, 4번 (x = 같은 색상 2번 반복)
+                            4번, 2번, 1번, 3번, 1번, 2번 (o)
+                        -->
+                        <ul class="clearfix">
+                            <li class="color-4"><span>선물</span><a class="btn-tag-delete" href="#"></a></li>
+                            <li class="color-2"><span>아들생일</span><a class="btn-tag-delete" href="#"></a></li>
+                            <li class="color-1"><span>선물</span><a class="btn-tag-delete" href="#"></a></li>
+                            <li class="color-3"><span>선물</span><a class="btn-tag-delete" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <label>사진 업로드</label>
+                    <ul class="clearfix">
+                        <li class="add"><a class="_btnSlideOpen" href="#"><i class="btn-gallery-add"></i></a></li>
+                        <!-- todo! 디자인 재요청 -->
+                        <li><img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt=""></li>
+                        <li><img src="../../img/@temp/tbroad.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="mood">
+                    <label>내 지출 기분은?</label>
+                    <ul class="clearfix">
+                        <li class="add"><a href="#"><i class="btn-gallery-add"></i></a></li>
+                        <li><img src="../../img/@temp/ci_seoul@2x.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <a class="btn btn-lg btn-block btn-big btn-save" href="#">스토리 저장하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide upload-photo _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title">업로드할 사진 추가하기</div>
+            <div class="icon-list">
+                <div class="row">
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-camera-big.svg" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-list-album-big.svg" alt="아이콘"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        // 슬라이드 이벤트
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+
+        // 클릭 이벤트
+        $('._categoryList a').on('click', function (){
+            $('._categoryList').find('a').parent().removeClass('active')
+            $(this).parent().addClass('active')
+        })
+    })
+</script>
+<script>
+    function countChar(val , target) {
+        var len = val.value.length;
+        var targetItem = $(`.${target}`);
+
+        targetItem.text(len);
+
+        if(len === 0) {
+            targetItem.css('color','#afaeb8')
+        }
+        else {
+            targetItem.css('color','#37354e')
+        }
+    }
+
+    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+    var index = 6; // (li 갯수) - 1
+    var sum = 0;
+    for (var j=0; j <= index; j++) {
+        sum = sum + $("._faqMenu li:eq("+ j +")").outerWidth(true);
+    }
+    $('._faqMenu ul').css('width', sum + 1);
+
+    // 태그 검색
+    function tagSearch(a,b){
+        var tagList = ['강아지','망고','강아지간식','강뷰','강민경','한강','가나다','테스트'];
+
+        $(`#${a}`).autocomplete({
+            source : tagList,
+            // source : function( request, response ) {
+            //     $.ajax({
+            //         type: 'get',
+            //         url: "/json",
+            //         dataType: "json",
+            //         //data: {"param":"param"},
+            //         success: function(data) {
+            //             response(
+            //                 $.map(data, function(item) {
+            //                     return {
+            //                         label: item+"label",
+            //                         value: item,
+            //                         test : item+"test"
+            //                     }
+            //                 })
+            //             );
+            //         }
+            //     });
+            // },
+            select : function(event, ui) {
+                console.log(ui.item);
+            },
+            focus : function(event, ui) {
+                return false;
+            },
+            minLength: 1,
+            autoFocus: true,
+            // classes: {
+            //     "ui-autocomplete": "highlight"
+            // },
+            delay: 500,
+            // disabled: true, //자동완성 기능 끄기
+            position: { my : "right top", at: "right bottom" },
+            close : function(event){
+                console.log(event);
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg id="ico_list_familyevent_big" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #6839d3;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #37454e;
+      }
+    </style>
+  </defs>
+  <g id="그룹_4033" data-name="그룹 4033">
+    <rect id="사각형_3160" data-name="사각형 3160" class="cls-1" width="30" height="30" transform="translate(0 0)"/>
+  </g>
+  <g id="그룹_4034" data-name="그룹 4034">
+    <line id="선_17" data-name="선 17" class="cls-2" x1="10.289" y2="7.43" transform="translate(1.467 15.504)"/>
+    <line id="선_18" data-name="선 18" class="cls-2" x1="10.234" y1="6.501" transform="translate(18.299 15.499)"/>
+    <rect id="사각형_3161" data-name="사각형 3161" class="cls-3" width="19.261" height="27.067" rx="3.167" transform="translate(28.533 5.37) rotate(90)"/>
+    <path id="패스_3656" data-name="패스 3656" class="cls-3" d="M1.467,8.923,14.435,17.01a1.493,1.493,0,0,0,1.13,0L28.533,8.923"/>
+  </g>
+</svg>

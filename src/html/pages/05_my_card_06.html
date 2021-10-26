@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <!--  S header  -->
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>자동결제내역</h2>
+    </div>
+    <!--  E header  -->
+
+    <div class="contents">
+        <div class="my-card-detail">
+            <div class="card-detail-list-wrap">
+                <div class="empty">
+                    <div class="img"><img src="../../img/common/ico-error@2x.png" alt="ico-error"></div>
+                    <div class="txt">자동결제 항목이 없어요.</div>
+                </div>
+<!--                <ul class="spending-list spending-list-sm">-->
+<!--                    <li>-->
+<!--                        <span class="day">21</span>-->
+<!--                        <span class="title">-->
+<!--                            <em>KT 인터넷전화</em>-->
+<!--                        </span>-->
+<!--                        <span class="val">127,000</span>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <span class="day">15</span>-->
+<!--                        <span class="title">-->
+<!--                            <em>SKT 브로드밴드</em>-->
+<!--                        </span>-->
+<!--                        <span class="val">45,000</span>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <span class="day"></span>-->
+<!--                        <span class="title">-->
+<!--                            <em>SKT 010**29**09</em>-->
+<!--                        </span>-->
+<!--                        <span class="val">127,000</span>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <span class="day">05</span>-->
+<!--                        <span class="title">-->
+<!--                            <em>KT 인터넷전화</em>-->
+<!--                        </span>-->
+<!--                        <span class="val">127,000</span>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <span class="day">01</span>-->
+<!--                        <span class="title">-->
+<!--                            <em>SKT 브로드밴드</em>-->
+<!--                        </span>-->
+<!--                        <span class="val">45,000</span>-->
+<!--                    </li>-->
+<!--                </ul>-->
+                <div class="caution-area">
+                    <div class="list caution">
+                        거래내역을 분석한 데이터로, 실제 내역과 차이가 생길 수 있습니다
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // https://swiperjs.com/swiper-api
+    $(document).ready(function () {
+        var swiper = new Swiper("._swiper1", {
+            pagination: {
+                el: "._swiperPagination1",
+                clickable: true
+            }
+        });
+        var swiper2 = new Swiper("._swiper2", {
+            pagination: {
+                el: "._swiperPagination2",
+                clickable: true
+            }
+        });
+        var swiper3 = new Swiper("._swiper3", {
+            pagination: {
+                el: "._swiperPagination3",
+                clickable: true
+            }
+        });
+    })
+
+    /* 날짜 객체 받아서 문자열로 리턴하는 함수 */
+    function getDateStr(myDate) {
+        return (myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + myDate.getDate())
+    }
+
+    /* 오늘 날짜를 문자열로 반환 */
+    function today() {
+        var d = new Date()
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 1개월전 날짜 반환 */
+    function lastMonth() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear - 1)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 2개웗 후 날짜 반환 */
+    function next2Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 2)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 3개웗 후 날짜 반환 */
+    function next3Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 3)
+        return getDateStr(d)
+    }
+</script>
+</html>

@@ -1,0 +1,19 @@
+<svg id="ico_list_arrow_small" xmlns="http://www.w3.org/2000/svg" width="6" height="16" viewBox="0 0 6 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #37354e;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_2298" data-name="사각형 2298" class="cls-1" width="6" height="16"/>
+  <g id="_" data-name="&gt;" transform="translate(1.05 3.757)">
+    <rect id="사각형_2120" data-name="사각형 2120" class="cls-2" width="1" height="6" rx="0.5" transform="translate(0.707 8.485) rotate(-135)"/>
+    <rect id="사각형_2121" data-name="사각형 2121" class="cls-2" width="1" height="6" rx="0.5" transform="translate(0 0.707) rotate(-45)"/>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+    </div>
+    <div class="contents">
+        <div class="my-data-connected">
+            <div class="img"><img src="../../img/@temp/woori.png" alt=""></div>
+            <div class="tit-lg">신한카드 연결을 성공했어요</div>
+            <div class="tit-lg">신한카드에 만료된 상품이 있어요 </div> <!-- 케이스 추가 -- 2021.07.27 -->
+            <div class="tit-md">이어서 사이트 연결을<br/>추가 진행 하시겠어요? </div>
+            <div class="desc">만료된 상품은 마이페이지에서만<br/>확인 가능합니다</div> <!-- 케이스 추가 -- 2021.07.27 -->
+        </div>
+        <div class="btn_box bg">
+            <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half">아니요, 홈으로 갈래요</a>
+            <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">계속 진행하기</a>
+        </div>
+    </div>
+</div>
+<div class="modal-slide connection-edit _modalSlide up" style="display: block;">
+    <div class="modal-slide-content">
+        <div class="inner">
+            <div class="title">변경할 이메일 주소를 입력해주세요</div>
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="input-wrap">
+                <div class="custom-light">
+                    <input title="text" type="text" value="Seo9305@naver.com">
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <a class="btn btn-lg btn-block btn-big btn-save" href="#">변경 완료하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop" style="display:block;"></div>
+</body>
+<script>
+    $(document).click(function(e){
+        if( $(e.target).closest('._btnMore').length > 0 ) {
+            $('.menu').show();
+            return false;
+        }
+        $('.menu').hide();
+    });
+
+    $(document).ready(function () {
+        // 슬라이드 이벤트
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</html>

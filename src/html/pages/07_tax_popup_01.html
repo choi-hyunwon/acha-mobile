@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>기부금 세액공제</h2>
+        <a class="btn-tooltip-lg" href="#"><img src="../../img/common/ico_tooltip_big@2x.png" alt="tooltip-large"></a>
+    </div>
+    <div class="contents">
+        <div class="box_tax_sub pt-0 ver2">
+            <div class="box_tax_item border-bottom">
+                <div class="title-sm">총 기부금</div>
+                <div class="value">180,000</div>
+            </div>
+            <div class="box_tax_list px-0">
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">정치자금기부금</div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" value="60,000"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">법정기부금</div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" value="60,000"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">우리사주조합기부금</div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">지정기부금<em>(종교단체 외)</em></div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg mb-20">
+                    <div class="title-xl">지정기부금<em>(종교단체)</em></div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+            </div>
+        </div>
+        <div class="box_deduction ver2 pt-0 mb-5">
+            <div class="tip-area mb-20">
+                <span class="badge">tip</span>
+                <p>지정기부금은 <em class="primary">근로소득금액의 30%</em> 초과할 수 없습니다.</p>
+            </div>
+            <div class="btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-start" href="#">계산하기</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="box_tax_sub pt-0 pb-5 ver2">
+            <div class="box_tax_item mb-2">
+                <div class="title-sm">공제금액 예상</div>
+                <div class="value primary">30,000</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-sm modal-tax" id="taxPopup1" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <a href="#" class="btn-close" data-dismiss="modal"></a>
+            <div class="modal-body">
+                <div class="inner">
+                    <p>
+                        <span>나의 총 급여</span>를 입력해주셔야<br/>
+                        상세 정보를 볼 수 있어요 😉
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#taxPopup1').modal('show');   // modal show
+</script>
+</body>
+</html>

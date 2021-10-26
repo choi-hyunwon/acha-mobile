@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+<!--    <div class="header">-->
+<!--        <a href="#" class="sprite btn_back"></a>-->
+<!--    </div>-->
+    <div class="contents">
+        <div class="connection-invite-code-wrap">
+            <div class="title">상대방의 요청 수락을<br/>기다리고 있어요</div>
+            <div class="dropdown-wrap _btnMore">
+                <a href="#" class="btn-more"><span class="sr-only">더보기</span></a>
+                <div class="menu">
+                    <a class="item _btnSlideOpen" href="#">초대 취소</a>
+                    <a class="item info" href="#">도움말</a>
+                </div>
+            </div>
+            <div class="title-sm">야호! 야호 😀</div>
+            <div class="c-info">
+                <span class="font-bold">임근수(010-2222-3333)</span> 님께<br/>
+                커넥션 초대 요청을 보냈어요!
+            </div>
+            <div class="box-time">
+                <div class="txt">커넥션 초대 유효시간</div>
+                <div class="time">
+                    <span>남은 시간</span>
+                    <span class="primary-color font-bold"><em>23</em>시 <em>36</em>분 <em>26</em>초</span>
+                </div>
+            </div>
+            <div class="list caution">
+                초대 요청은 유효시간이 있습니다. 남은 시간 내 요청을 수락할 수 있도록 ‘공유하기’로 상대방에게 알려주세요.
+            </div>
+            <div class="bottom-fixed btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-save" href="#">다시 공유하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide time-out _modalSlide up" style="display: block;">
+    <div class="modal-slide-content">
+        <div class="inner">
+            <div class="title">커넥션의 초대 유효 시간<br/>
+                (24시간)이 초과되었습니다 🙂</div>
+            <div class="desc">
+                확인하시면, 초대 코드 및<br/>
+                모든 입력 정보가 초기화 됩니다
+            </div>
+            <div class="btn-wrap">
+                <a class="btn btn-lg btn-block btn-big btn-save _btnSlideClose" href="#">확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+</body>
+<script>
+    $(document).click(function(e){
+        if( $(e.target).closest('._btnMore').length > 0 ) {
+            $('.menu').show();
+            return false;
+        }
+        $('.menu').hide();
+    });
+
+    $(document).ready(function () {
+        // 슬라이드 이벤트
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</html>

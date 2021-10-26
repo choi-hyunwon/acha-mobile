@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li class="active"><a href="#">지출상세</a></li>
+            <li><a href="#">내카드</a></li>
+            <li><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <!-- s 추가 -- 2021.06.14 -->
+    <div class="ex-menu-top _exMenu">
+        <ul>
+            <li><a href="#">월별</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li class="active"><a href="#">지출계좌</a></li>
+            <li><a href="#">카드 고정비</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="box-ex-account">
+            <div class="tip-box">
+                <div class="list caution">지출계좌는 고정 지출을 지불하기 위해 등록된 계좌입니다</div>
+            </div>
+            <!-- s 추가 -- 2021.08.09 -->
+            <div class="empty-data">
+                <div class="img"><img src="../../img/common/ico-error-main.svg" alt=""></div>
+                <p class="txt">표시 할 계좌가 없습니다 🙁</p>
+                <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_add"></i>내 계좌 추가하기</a>
+            </div>
+            <!-- e 추가 -- 2021.08.09 -->
+            <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="ex-account" id="headingOne">
+                        <ul>
+                            <li class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></li>
+                            <li class="title">KB종합통장-보통예금</li>
+                            <li class="ac-info">
+                                <span class="name">국민은행</span>
+                                <span class="number">111-111111-111</span>
+                            </li>
+                            <li class="ac-item clearfix">
+                                <span class="left">계좌잔고</span>
+                                <span class="right">6,255,000</span>
+                            </li>
+                        </ul>
+                        <div id="collapseOne" class="ex-detail-opened collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card card-body">
+                                <div class="card-detail-calendar">
+                                    <div class="input-calendar">
+                                        <label for="start"></label>
+                                        <input type="date" id="start" value="2021-06-03" min="2021-05-01" max="2021-07-30">
+                                    </div>
+                                    <div class="icon">~</div>
+                                    <div class="input-calendar">
+                                        <label for="end"></label>
+                                        <input type="date" id="end" value="2021-06-03" min="2021-05-01" max="2021-07-30">
+                                    </div>
+                                </div>
+                                <div class="total-sum">
+                                    <span class="tit">총 금액</span>
+                                    <span class="sum">2,500,000</span>
+                                </div>
+                                <!-- s 추가 -- 2021.08.09 -->
+                                <div class="empty-data">
+                                    <div class="img"><img src="../../img/common/ico-error-main.svg" alt=""></div>
+                                    <p class="txt">
+                                        표시 할 지출이 없습니다<br/>
+                                        혹시 추가로 등록 할 지출이 있나요? 🙂
+                                    </p>
+                                    <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_add"></i>내 지출 추가하기</a>
+                                </div>
+                                <!-- e 추가 -- 2021.08.09 -->
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-open _btnOpen" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">접기<i class="sprite arrow_folding_off"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('._exMenu li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+    /* 날짜 객체 받아서 문자열로 리턴하는 함수 */
+    function getDateStr(myDate){
+        return (myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + myDate.getDate())
+    }
+
+    /* 오늘 날짜를 문자열로 반환 */
+    function today() {
+        var d = new Date()
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 1개웗 후 날짜 반환 */
+    function nextMonth() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 1)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 2개웗 후 날짜 반환 */
+    function next2Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 2)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 3개웗 후 날짜 반환 */
+    function next3Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 3)
+        return getDateStr(d)
+    }
+</script>
+</body>
+</html>

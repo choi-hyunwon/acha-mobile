@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<!-- 보험료 세액공제 -->
+<div class="wrap">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>보험료 세액공제</h2>
+        <a class="btn-tooltip-lg" href="#"><img src="../../img/common/ico_tooltip_big@2x.png" alt="tooltip-large"></a>
+    </div>
+    <div class="contents">
+        <div class="box_tax_sub pt-0 ver2">
+            <div class="box_tax_item">
+                <div class="title-sm">납입금액</div>
+                <div class="value">300,000</div>
+            </div>
+            <div class="box_tax_item mb">
+                <div class="title-sm">공제금액 예상</div>
+                <div class="value primary">360,000</div>
+            </div>
+            <div class="chart chart_graph">
+                <div class="sort">
+                    <div class="bar">
+                        <div class="bg"></div>
+                        <div class="amount" style="width: 40%">
+                            <div class="tooltip_box"><!-- left / right -->
+                                <div class="tooltip_text">
+                                    <span class="value">360,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-sm">공제금액 한도 12만원</div>
+            </div>
+        </div>
+        <div class="box_deduction ver2 pt-0">
+            <div class="statement">
+                <div class="item clearfix">
+                    <table class="table">
+                        <colgroup>
+                            <col style="width:30%">
+                            <col style="width:30%">
+                            <col style="width:10%">
+                            <col style="width:30%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>공제대상금액</th>
+                            <th>비율</th>
+                            <th>공제금액예상</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-center">보장성보험(일반)</td>
+                            <td class="text-right won">300,000</td>
+                            <td class="text-center">15%</td>
+                            <td class="text-right won">36,000</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">장애인전용</td>
+                            <td class="text-right won">0</td>
+                            <td class="text-center">15%</td>
+                            <td class="text-right won">0</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td class="text-center">합계</td>
+                            <td class="text-right won">300,000</td>
+                            <td class="text-center">-</td>
+                            <td class="text-right primary won">360,000</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="tip-area mb">
+                <span class="badge">tip</span>
+                <p>보험료 소득공제 한도가 <em>N원</em> 남았습니다.<br/>연말까지 <em>M원</em> 공제혜택이 예상됩니다</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="box_tax_sub box_tax_sub_lg ver2">
+            <div class="sec-deduct mb-0">
+                <div class="area-title">
+                    <span class="title">연결현황</span>
+                </div>
+                <ul class="list-connect">
+                    <li class="list-item clearfix">
+                        <span class="img"><img src="../../img/@temp/ci_meritz@2x.png" alt=""></span>
+                        <span class="name">메리츠화재 보험</span>
+                        <span class="value">300,000</span>
+                    </li>
+                    <li class="list-item clearfix">
+                        <span class="img"><img src="../../img/@temp/ci_samsung@2x.png" alt=""></span>
+                        <span class="name">삼성생명 1004보험(장애인전용)</span>
+                        <span class="value">300,000</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="list caution pb-0 mb-4">
+                <p>실제 공제예상금액은 사용자 상황에 따라 달라질 수 있습니다.</p>
+            </div>
+            <div class="btn_area">
+                <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_add"></i>보험 추가하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

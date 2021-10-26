@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li class="active"><a href="#">지출상세</a></li>
+            <li><a href="#">내카드</a></li>
+            <li><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <!-- s 추가 -- 2021.06.14 -->
+    <div class="ex-menu-top _exMenu">
+        <ul class="clearfix">
+            <li class="active"><a href="#">월별</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">지출계좌</a></li>
+            <li><a href="#">카드 고정비</a></li>
+        </ul>
+    </div>
+    <!-- e 추가 -- 2021.06.14 -->
+    <div class="contents">
+        <div class="box_category_list">
+            <!-- s 추가 -- 2021.06.14 -->
+            <div class="filter-area">
+                <a href="#" class="btn-select _btnSlideOpen">5월</a>
+                <!-- s 추가 -- 2021.08.17 -->
+                <div class="update-box">
+                    <div class="txt">최신 데이터로 가져오고 있어요 🙂</div>
+                    <div class="img">
+                        <!-- <img src="../../img/@temp/woori.png" alt="">  // gif -->
+                        <span>최신 정보를 가져오는 중</span>
+                    </div>
+                </div>
+                <!-- e 추가 -- 2021.08.17 -->
+            </div>
+            <!-- e 추가 -- 2021.06.14 -->
+            <div>
+                <div class="category-list-item border-bottom-0"> <!-- border-bottom-0 클래스 추가 -- 2021.06.14 -->
+                    <div>
+                        <div class="category-info total"> <!-- total 클래스 추가 -- 2021.06.14 -->
+                            <span class="title">지출 합계</span>
+                            <span class="sum">0</span>
+                        </div>
+                        <div class="ex-item">
+                            <a href="#">
+                                <span class="day">8일</span>
+                                <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">KB국민카드 (국내000)</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+                                <p class="btn-move">
+                                    <span class="value">11,000,000</span>
+                                    <i class="sprite ico-caution"></i> <!-- 오류케이스 추가 -- 2021.08.17 -->
+                                </p>
+                            </a>
+                        </div>
+                        <div class="ex-item">
+                            <a href="#">
+                                <span class="day"></span>
+                                <span class="img"><img src="../../img/@temp/hana.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">하나카드 데일리 플러스</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">결제수단 미확인</i>
+                                    </li>
+                                </ul>
+                                <p class="btn-move">
+                                    <span class="value">1,280,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="ex-item">
+                            <a href="#">
+                                <span class="day">10일</span>
+                                <span class="img"><img src="../../img/@temp/499.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">우체국 행복한 카드 우체국 행복한 카드 우체국 행복</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">국민은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+                                <p class="btn-move">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                    <span class="desc-sm">청구서 미발행</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide calendar-change _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title">월 선택</div>
+            <div class="month-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="txt">2021년 6월</span>
+                            <span class="badge next">다음달</span>
+                            <span class="txt-sm">(예정)</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="txt">2021년 5월</span>
+                            <span class="badge">이번달</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="txt">2021년 4월</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="txt">2021년 3월</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+        });
+
+        // btnSlideOpen.trigger('click');
+
+        // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+        var index = 3; // (li 갯수) - 1
+        var sum = 0;
+        for (var j=0; j <= index; j++) {
+            sum = sum + $("._exMenu li:eq("+ j +")").outerWidth(true);
+        }
+        $('._exMenu ul').css('width', sum + 1);
+
+        $('#dropdownMenuButton').dropdown();
+        $('#dropdownMenuButton2').dropdown();
+
+        $(".dropdown-item").on("click", function(e){
+            var $dropdown = $(this).parent().siblings();
+            var value = $(this).attr("data-value");
+            $dropdown.text(value);
+
+            // if($('.dropdown').hasClass('disabled')) {
+            //     $(".dropdown-item").on("click", function(e){
+            //         e.preventDefault()
+            //     });
+            // }
+        });
+
+        if($('.dropdown').hasClass('disabled')) {
+            $(".dropdown-item").on("click", function(e){
+                e.preventDefault()
+            });
+        }
+    })
+</script>
+</body>
+</html>

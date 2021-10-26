@@ -1,0 +1,653 @@
+/*
+    작성자 : 이주연
+    제목 : 캘린더
+    날짜 : 2021.10.15
+*/
+.box_ex_calendar_header {
+  position: relative;
+  width: 100%;
+
+  & .top-area {
+    position: relative;
+    width: 100%;
+    height: 66px;
+
+    & .btn-back {
+      position: absolute;
+      display: flex;
+      width: 26px;
+      height: 26px;
+      justify-content: center;
+      align-items: center;
+      left: 16px;
+      top: 20px;
+    }
+
+    & .btn-select-month {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+      & span {
+        display: inline-block;
+        font-family: var(--font2);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.28;
+        letter-spacing: normal;
+        color: #fff;
+        margin-right: 9px;
+      }
+    }
+  }
+
+  & .text-area {
+    width: 100%;
+    padding: 0 20px 15px 20px;
+
+    & p {
+      padding: 10px 15px;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+      text-align: left;
+      background-color: rgba(255, 255, 255, .06);
+      border-radius: 6px;
+      color: #beacdf;
+
+      & span {
+        color: #fff;
+      }
+    }
+  }
+
+  &.bg-purple {
+    background-color: #653bb4;
+  }
+
+  &.bg-dark-blue {
+    background-color: #40466a;
+
+    & .text-area {
+      & p {
+        color: #a6aac7;
+      }
+    }
+  }
+
+  &.bg-blue {
+    background-color: #3e5baf;
+
+    & .text-area {
+      & p {
+        color: #a9b5d8;
+      }
+    }
+  }
+}
+
+.box_ex_calendar {
+  padding: 0 20px !important;
+
+  & .fc-day-number {
+    &.active {
+      width: 24px;
+      height: 24px;
+      margin: 0 auto;
+      line-height: 24px;
+      text-align: center;
+      background: rgba(104, 57, 211, .06);
+      border-radius: 50%;
+      color: var(--color-point) !important;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -35%);
+    }
+  }
+
+  & .fc-day-selected {
+    & .fc-day-number {
+      width: 24px;
+      height: 24px;
+      margin: 0 auto;
+      line-height: 24px;
+      text-align: center;
+      background: rgba(104, 57, 211, .06);
+      border-radius: 50%;
+      color: var(--color-point);
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -35%);
+    }
+  }
+
+  & .fc-day-disabled {
+    & .fc-day-number {
+      opacity: 0.3;
+    }
+  }
+
+  & .first-data {
+    & .fc-content {
+      & .fc-title {
+        color: var(--color-point) !important;
+      }
+    }
+  }
+
+  & .sort-area {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    & ul {
+      & li {
+        float: left;
+        margin-right: 6px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        & a {
+          display: inline-block;
+          height: 28px;
+          line-height: 27px;
+          border-radius: 999px;
+          background-color: #f5f6f8;
+          padding: 0 12px;
+          font-size: 12px;
+          letter-spacing: -0.6px;
+          text-align: center;
+          color: var(--text-03);
+        }
+
+        &.active {
+          & a {
+            background-color: var(--color-point);
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    & .btn-reset {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline-flex;
+      height: 28px;
+      align-items: center;
+      padding: 0 10px;
+      background-image: url(../../img/common/btn-dash-bg-01.svg);
+      width: 86px;
+      background-size: cover;
+
+      & em {
+        font-size: 11px;
+        line-height: 26px;
+        letter-spacing: -0.55px;
+        text-align: right;
+        color: var(--text-02);
+        margin-right: 4px;
+      }
+
+      & .ico-select-reset {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-image: url(../../img/common/ico-select-reset.svg);
+        background-size: cover;
+      }
+    }
+  }
+
+  & .no-data {
+    & .fc-day-number {
+      opacity: .3 !important;
+    }
+  }
+
+  & .update-box {
+    padding-top: 200px;
+    text-align: center;
+
+    & .txt {
+      font-size: 14px;
+      line-height: 23px;
+      letter-spacing: -0.35px;
+      color: var(--text-02);
+      margin-bottom: 12px;
+    }
+
+    & .img {
+      & img {
+        display: inline-block;
+      }
+
+      & span {
+        display: inline-block;
+        font-family: var(--font2);
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: -0.28px;
+        color: var(--blurple);
+      }
+    }
+  }
+}
+
+.box_ex_calendar_list {
+  padding: 30px 20px 0;
+  border-top: 1px solid #f5f6f8;
+
+  & > .ex-total {
+    width: 100%;
+    height: 64px;
+    border-radius: 6px;
+    background-color: #f7f8fc;
+    padding: 0 20px;
+    align-items: center;
+    overflow: hidden;
+
+    & > .txt {
+      float: left;
+
+      & span {
+        &:first-child {
+          font-family: var(--font2);
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 64px;
+          letter-spacing: -0.38px;
+          text-align: left;
+          color: var(--text-01);
+          margin-right: 3px;
+        }
+
+        &:nth-child(2) {
+          font-size: 12px;
+          line-height: 64px;
+          letter-spacing: -0.3px;
+          color: var(--text-02);
+        }
+      }
+    }
+
+    & > .val {
+      float: right;
+
+      & span {
+        &:first-child {
+          font-family: var(--font2);
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 64px;
+          letter-spacing: 0.18px;
+          text-align: right;
+          color: var(--text-01);
+        }
+
+        &:nth-child(2) {
+          font-family: var(--font3);
+          font-size: 11px;
+          font-weight: bold;
+          color: var(--text-01);
+          line-height: 64px;
+        }
+      }
+    }
+  }
+
+  & > .ex-day {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f5f6f8;
+    padding-top: 30px;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    & > .ex-total {
+      overflow: hidden;
+      margin-bottom: 30px;
+
+      & .date {
+        float: left;
+
+        & .day {
+          font-family: var(--font3);
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 21px;
+          letter-spacing: -0.5px;
+
+          & em {
+            font-family: var(--font3);
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 21px;
+            letter-spacing: -0.4px;
+            margin-left: 2px;
+          }
+        }
+
+        & .day2 {
+          font-size: 13px;
+          line-height: 21px;
+          letter-spacing: -0.33px;
+          color: var(--text-02);
+          margin-left: 3px;
+          margin-right: 5px;
+        }
+
+        & .state {
+          display: inline-block;
+          height: 21px;
+          padding: 0 7px;
+          border-radius: 50px;
+          font-size: 11px;
+          line-height: 19px;
+          letter-spacing: -0.28px;
+          text-align: center;
+
+          &.today {
+            color: var(--color-point);
+            border: solid 1px var(--color-point);
+          }
+
+          &.expected {
+            color: var(--text-02);
+            border: solid 1px var(--text-03);
+          }
+        }
+      }
+
+      & .total {
+        float: right;
+
+        & .val {
+          font-family: var(--font2);
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 23px;
+          color: var(--text-01);
+
+          & em {
+            font-family: var(--font2);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: normal;
+            color: var(--text-01);
+          }
+        }
+      }
+
+    }
+
+    & .ex-list {
+      & .item {
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        & .info-tit {
+          float: left;
+          width: calc(100% - 120px);
+
+          & img {
+            float: left;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            margin-right: 6px;
+            vertical-align: middle;
+          }
+
+          & .tit {
+            display: block;
+            font-size: 13px;
+            line-height: 22px;
+            letter-spacing: -0.33px;
+            color: var(--text-01);
+            vertical-align: middle;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+
+        & .info-val {
+          float: right;
+
+          & a {
+            position: relative;
+            display: block;
+            line-height: 22px;
+            vertical-align: middle;
+            padding-right: 10px;
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 6px;
+              height: 16px;
+              background-image: url(../../img/common/ico_arrow_small_nor@2x.png);
+              background-size: cover;
+              top: 2px;
+              right: 0;
+            }
+
+            & .val {
+              font-family: var(--font1);
+              font-size: 14px;
+              letter-spacing: -0.14px;
+              text-align: right;
+              color: var(--text-01);
+
+              & em {
+                font-size: 13px;
+                line-height: 19px;
+                color: var(--text-01);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > .no-data {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    & .img {
+      width: 30px;
+      height: 30px;
+      margin: 0 auto 12px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    & .txt {
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+      text-align: center;
+      color: var(--text-02);
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.modal-common {
+  & .modal-dialog {
+    &.modal-calendar {
+      & .modal-content {
+        padding: 30px 0 0;
+
+        & .box_ex_calendar {
+          padding: 0 30px !important;
+
+          & .fc-header-toolbar {
+            position: relative;
+            display: block;
+            margin-bottom: 19px;
+
+            & .fc-button-primary {
+              background-color: transparent;
+              border: 0;
+
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+
+            & .fc-left {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+
+              & .fc-prev-button {
+                &:disabled {
+                  display: none;
+                }
+
+                & .fc-icon-chevron-left {
+                  display: inline-block;
+                  width: 18px;
+                  height: 18px;
+                  background-image: url(../../img/common/btn-calendar-page-pre@2x.png);
+                  background-size: cover;
+
+                  &::before {
+                    content: none;
+                  }
+                }
+              }
+            }
+
+            & .fc-center {
+              text-align: center;
+
+              & h2 {
+                font-family: var(--font1);
+                font-size: 15px;
+                line-height: 21px;
+                letter-spacing: -0.15px;
+                text-align: center;
+                color: var(--text-01);
+                padding-top: 2px;
+              }
+            }
+
+            & .fc-right {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+
+              & .fc-next-button {
+                &:disabled {
+                  display: none;
+                }
+
+                & .fc-icon-chevron-right {
+                  display: inline-block;
+                  width: 18px;
+                  height: 18px;
+                  background-image: url(../../img/common/btn-calendar-page-next@2x.png);
+                  background-size: cover;
+
+                  &::before {
+                    content: none;
+                  }
+                }
+              }
+            }
+          }
+
+          & .fc-view-container {
+            & .fc-view {
+              & table {
+                & .fc-body {
+                  & .fc-widget-content {
+                    & .fc-day-grid-container {
+                      overflow: visible !important;
+
+                      & .fc-day-grid {
+                        & .fc-row {
+                          min-height: 44px;
+
+                          & .fc-day-top {
+                            padding-top: 5px;
+                          }
+
+                          & .fc-disabled-day {
+                            background-color: transparent;
+                          }
+
+                          & .fc-day-number {
+                            width: 24px;
+                            height: 24px;
+                            margin: 0 auto;
+                            line-height: 24px;
+                            text-align: center;
+                            border-radius: 50%;
+                            font-family: var(--font1);
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%, -9px);
+
+                            &.active {
+                              text-align: center;
+                              background: rgba(104, 57, 211, .06);
+                              border-radius: 50%;
+                              color: var(--text-point-color);
+                            }
+                          }
+
+                          & .fc-today {
+                            & .fc-day-number {
+                              background-color: transparent;
+                              font-family: var(--font1);
+                              font-size: 13px;
+                              letter-spacing: -0.13px;
+                              color: var(--text-01);
+                              top: auto;
+
+                              &.active {
+                                text-align: center;
+                                background: rgba(104, 57, 211, .06);
+                                border-radius: 50%;
+
+                                color: var(--text-point-color);
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

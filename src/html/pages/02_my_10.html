@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>개인신용정보 삭제</h2>
+        <a href="#" class="btn-delete">선택</a>
+    </div>
+    <div class="contents">
+        <div class="my-page-info-delete">
+            <div class="tip-box">
+                상단의 ‘선택’ 버튼을 눌러서<br/>
+                삭제하고 싶은 사이트를 선택하세요
+            </div>
+            <div class="select-all">
+                <label>
+                    <input type="checkbox" class="filled-in _checkAll" onclick="checkAll()">
+                    <span>모두 선택</span>
+                </label>
+            </div>
+            <div class="info-list-box">
+                <div class="info-list">
+                    <div class="info-list-header">카드</div>
+                    <ul>
+                        <li class="item">
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="">
+                                <span></span>
+                            </label>
+                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt="KB 혜담 카드"></span>
+                            <span class="name">KB 혜담 카드</span>
+                            <a href="#" class="btn-more"><i class="ico-list-arrow-small"></i></a>
+                        </li>
+                        <li class="item">
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="">
+                                <span></span>
+                            </label>
+                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt="KB 혜담 카드"></span>
+                            <span class="name">KB 혜담 카드</span>
+                            <a href="#" class="btn-more"><i class="ico-list-arrow-small"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-list">
+                    <div class="info-list-header">은행</div>
+                    <ul>
+                        <li class="item">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt="KB 혜담 카드"></span>
+                            <span class="name">KB 혜담 카드</span>
+                            <a href="#" class="btn-more"><i class="ico-list-arrow-small"></i></a>
+                        </li>
+                        <li class="item">
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="">
+                                <span></span>
+                            </label>
+                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt="KB 혜담 카드"></span>
+                            <span class="name">KB 혜담 카드</span>
+                            <a href="#" class="btn-more"><i class="ico-list-arrow-small"></i></a>
+                        </li>
+                        <li class="item">
+                            <label>
+                                <input type="checkbox" class="filled-in" >
+                                <span></span>
+                            </label>
+                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt="KB 혜담 카드"></span>
+                            <span class="name">KB 혜담 카드</span>
+                            <a href="#" class="btn-more"><i class="ico-list-arrow-small"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-list">
+                    <div class="info-list-header">통신사</div>
+                    <ul>
+                        <li class="item">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt="KB 혜담 카드"></span>
+                            <span class="name">KB 혜담 카드</span>
+                            <a href="#" class="btn-more"><i class="ico-list-arrow-small"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function checkAll() {
+        if ($("._checkAll").is(':checked')) {
+            $("input[type=checkbox]").prop("checked", true);
+        } else {
+            $("input[type=checkbox]").prop("checked", false);
+        }
+    }
+</script>
+</body>
+</html>

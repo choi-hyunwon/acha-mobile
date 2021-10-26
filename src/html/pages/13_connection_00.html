@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="contents">
+        <div class="connection-invite-main-wrap">
+            <div class="content-1">
+                <div class="btn-top-wrap"><a href="#" class="btn-tooltip"></a></div>
+                <div class="txt-lg">
+                    우리,<br/>
+                    <span>커넥션</span>으로 함께해요
+                </div>
+                <div class="txt">
+                    <span>부부,연인, 친구</span>끼리 단 둘이서<br/>
+                    공동으로 지출을 관리 할 수 있어요
+                </div>
+                <div class="img"><img src="../../img/common/img-connection-01@2x.png" alt=""></div>
+                <div class="btn-bottom-wrap"><a href="#" class="btn-block btn">커넥션 시작하기</a></div>
+            </div>
+            <div class="content-2">
+                <div class="txt-lg">
+                    부부, 연인<br/>
+                    공동으로 지출관리하기
+                </div>
+                <div class="txt">
+                    공동 지출관리가 필요한 지출과 계좌를<br/>
+                    한 눈에 볼 수 있어요
+                </div>
+                <div class="img"><img src="../../img/common/img-connection-02@2x.png" alt=""></div>
+            </div>
+            <div class="content-3">
+                <div class="txt-lg">
+                    커넥션<br/>
+                    이럴 때 써보세요
+                </div>
+                <div class="txt-md"># 가계 지출을 관리해야 할 경우</div>
+                <div class="txt">
+                    부부가 보유하고 있는 카드나 계좌로<br/>
+                    매월 매월 얼마나 고정지출이 나가고 있는지,<br/>
+                    잔고는 얼마인지 살펴보세요.
+                </div>
+                <div class="img"><img src="../../img/common/img-connection-03@2x.png" alt=""></div>
+            </div>
+            <div class="content-4">
+                <div class="txt-md"># 같이 지출하는 것이 많은 커플</div>
+                <div class="txt">
+                    데이트 비용, 여행경비, 결혼준비 등 같이<br/>
+                    부담해야하는 내역이 많은 경우에 한눈에<br/>
+                    편리하게 볼 수 있어요.
+                </div>
+                <div class="img"><img src="../../img/common/img-connection-04@2x.png" alt=""></div>
+            </div>
+            <div class="content-5">
+                <div class="companyInfo accordion" id="companyInfo">
+                    <div class="card card-sm single">
+                        <div class="card-header active" id="headOne" data-toggle="collapse" data-target="#bodyOne" aria-expanded="true" aria-controls="bodyOne">
+                            <div class="title">커넥션 유의사항<a class="btn-arrow" href="#"><i class="icon_arrow"></i></a></div>
+                        </div>
+                        <div id="bodyOne" class="collapse show" aria-labelledby="headOne" data-parent="#companyInfo">
+                            <div class="card-body">
+                                <div class="inner">
+                                    <span class="text">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-sm single">
+                        <div class="card-header" id="headTwo" data-toggle="collapse" data-target="#bodyTwo" aria-expanded="false" aria-controls="bodyTwo">
+                            <div class="title">서비스 이용약관<a class="btn-arrow" href="#"><i class="icon_arrow"></i></a></div>
+                        </div>
+                        <div id="bodyTwo" class="collapse" aria-labelledby="headTwo" data-parent="#companyInfo">
+                            <div class="card-body">
+                                <div class="inner">
+                                    <span class="text">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="txt-sm">준법감시인 심의필 20-330 (2020.11.17~2021.11.16)</div>
+                <div class="btn-bottom-wrap"><a href="#" class="btn-block btn">커넥션 시작하기</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).scroll(function () {
+        $('.btn-bottom-wrap').addClass('scrolling')
+
+        if($(document).scrollTop() === 0) {
+            $('.btn-bottom-wrap').removeClass('scrolling')
+        }
+        // if($(document).scrollTop($(document).height())) {
+        //     $('.btn-bottom-wrap').removeClass('scrolling')
+        // }
+    })
+</script>
+</body>
+</html>

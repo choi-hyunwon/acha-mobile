@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <h2></h2>
+    </div>
+    <div class="contents"></div>
+</div>
+<div class="modal fade modal-common modal-md" id="calendarModal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-calendar">
+        <div class="modal-content">
+            <div class="box_ex_calendar ">
+                <div id='calendar'></div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer" data-dismiss="modal">취소</a>
+                <a href="#" class="btn-footer bg-grey" onclick="showDate()">확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#calendarModal').modal('show');
+    // $('#modal').modal('hide');
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: ['interaction', 'dayGrid'],
+            fixedWeekCount: false,
+            header: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            validRange: {
+                start: '2021-08-01',
+                end: '2021-11-01'
+            },
+            titleFormat : function(date) {
+                console.log('현재 보여지는 월 ↓')
+                console.log(date.date.year + "-" + (date.date.month + 1)) // 좌우 버튼 눌렀을 때 (년-월) console 노출
+                return date.date.year +"년 "+(date.date.month +1)+"월";
+            },
+            height: 'auto',
+            editable: false,
+            eventLimit: false,
+            navLinks: true,
+            timeZone: 'Asia/Seoul',
+            columnHeaderText: function (date) {
+                return weekList[date.getDay()];
+            },
+            navLinkDayClick: function (date, jsEvent) {
+                console.log('클릭 시 보여지는 날짜 ↓')
+                console.log(date.toISOString().slice(0,10));
+                console.log('클릭되는 요소 타켓 ↓')
+                console.log(jsEvent.target);
+                document.querySelectorAll('.fc-day-number').forEach( a => {
+                    a.classList.remove('active')
+                });
+                jsEvent.target.classList.add('active');
+            },
+        });
+
+        calendar.render();
+    });
+
+    function showDate() {
+        console.log('확인 클릭 시 선택된 날짜 ↓')
+        console.log($('.fc-day-number.active').data('goto').date)
+    }
+</script>
+</body>
+</html>

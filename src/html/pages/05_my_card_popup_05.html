@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap bg_purple">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li><a href="#">지출상세</a></li>
+            <li class="active"><a href="#">내카드</a></li>
+            <li><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="my-card-main">
+            <a href="#" class="btn-more"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="더보기 버튼"></a>
+            <div class="badge-wrap">
+                <a href="#" class="badge">#지난달</a>
+                <a href="#" class="badge active">#이번달</a>
+            </div>
+            <div class="main-info"><span>4월</span> 사용금액은<br/><span class="val">1,679,058</span><span>원</span>입니다 😀</div>
+            <div class="main-desc">
+                <span>4월1일~4월18일 기준으로 산정된 내역</span>
+                <a class="btn-tooltip" data-toggle="modal" data-target="#myCardPopup1" href="#"><img src="../../img/common/ico_tooltip@2x.png" alt="tooltip"></a>
+            </div>
+            <div class="main-card-wrap">
+                <!--                <div class="main-card-empty">-->
+                <!--                    <a href="#">-->
+                <!--                        <span><i class="sprite ico_card_plus"></i>카드 정보 불러오기</span>-->
+                <!--                    </a>-->
+                <!--                </div>-->
+                <div class="main-card-list">
+                    <ul class="card-list">
+                        <li class="item last"> <!-- 지난달의 경우 last 클래스 추가 -->
+                            <ul>
+                                <li class="info clearfix">
+                                    <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt=""></span>
+                                    <span class="title">KB 혜담 카드</span>
+                                    <span class="sum">10,556,000</span>
+                                </li>
+                                <li class="required-performance">
+                                    <span class="comp">지난달 보다 474,000원 적게 사용</span>
+                                </li>
+                                <li class="bar-graph">
+                                    <span class="bar" style="width: 50%"></span>
+                                    <!--                                    <span class="sec sec-1"> &lt;!&ndash; 실적 구간 1개 있을 경우 &ndash;&gt;-->
+                                    <!--                                            <span><em>100만원</em></span>-->
+                                    <!--                                        </span>-->
+                                    <span class="val">3월 사용금액 1,030,000원</span>
+                                </li>
+                                <li class="btn-wrap"><a href="#" class="btn-direct" data-toggle="modal" data-target="#myCardPopup4">실적등록</a></li>
+                            </ul>
+                        </li>
+                        <li class="item last">
+                            <ul>
+                                <li class="info clearfix">
+                                    <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt=""></span>
+                                    <span class="title">KB 혜담 카드</span>
+                                    <span class="sum">10,556,000</span>
+                                </li>
+                                <li class="required-performance">
+                                    <span class="comp">지난달 보다 474,000원 적게 사용</span>
+                                </li>
+                                <li class="bar-graph">
+                                    <span class="bar" style="width: 50%"></span>
+                                    <!--                                    <span class="sec sec-1"> &lt;!&ndash; 실적 구간 1개 있을 경우 &ndash;&gt;-->
+                                    <!--                                            <span><em>100만원</em></span>-->
+                                    <!--                                        </span>-->
+                                    <span class="val">3월 사용금액 1,030,000원</span>
+                                </li>
+                                <li class="btn-wrap"><a href="#" class="btn-direct">실적등록</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <ul>
+                                <li class="info clearfix">
+                                    <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt=""></span>
+                                    <span class="title">KB 혜담 카드</span>
+                                    <span class="sum">10,556,000</span>
+                                </li>
+                                <li class="required-performance">
+                                    <span class="comp">지난달 보다 474,000원 적게 사용</span>
+                                </li>
+                                <li class="bar-graph">
+                                    <span class="bar" style="width: 50%"></span>
+                                    <span class="sec sec-1"> <!-- 실적 구간 1개 있을 경우 -->
+                                            <span><em>100만원</em></span>
+                                        </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <ul>
+                                <li class="info clearfix">
+                                    <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt=""></span>
+                                    <span class="title">KB 혜담 카드</span>
+                                    <span class="sum">10,556,000</span>
+                                </li>
+                                <li class="required-performance">
+                                    <span class="txt">실적 </span>
+                                    <span class="val">150,538</span>
+                                    <span class="txt">원</span>
+                                </li>
+                                <li class="bar-graph">
+                                    <span class="bar" style="width: 50%"></span>
+                                    <span class="sec sec-2"> <!-- 실적 구간 2개 있을 경우 -->
+                                            <span class="on"><em>50만원</em></span>
+                                            <span><em>100만원</em></span>
+                                        </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <ul>
+                                <li class="info clearfix">
+                                    <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt=""></span>
+                                    <span class="title">KB 혜담 카드</span>
+                                    <span class="sum">10,556,000</span>
+                                </li>
+                                <li class="required-performance">
+                                    <span class="txt">실적 </span>
+                                    <span class="val">150,538</span>
+                                    <span class="txt">원</span>
+                                </li>
+                                <li class="bar-graph">
+                                    <span class="bar" style="width: 50%"></span>
+                                    <span class="sec sec-3"> <!-- 실적 구간 3개 있을 경우 -->
+                                            <span class="on"><em>30만원</em></span>
+                                            <span><em>50만원</em></span>
+                                            <span><em>100만원</em></span>
+                                        </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item on"> <!-- 실적 충족 시 -->
+                            <ul>
+                                <li class="info clearfix">
+                                    <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt=""></span>
+                                    <span class="title">KB 혜담 카드</span>
+                                    <span class="sum">10,556,000</span>
+                                </li>
+                                <li class="required-performance">
+                                    <span class="txt">실적 달성 🎉</span>
+                                </li>
+                                <li class="bar-graph">
+                                    <span class="bar" style="width: 100%"></span>
+                                    <span class="sec sec-4"> <!-- 실적 구간 4개 있을 경우 -->
+                                            <span class="on"><em>25만원</em></span>
+                                            <span class="on"><em>50만원</em></span>
+                                            <span class="on"><em>75만원</em></span>
+                                            <span class="on"><em>100만원</em></span>
+                                        </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <ul>
+                                <li class="info clearfix">
+                                    <span class="img"><img src="../../img/common/mycard_home_img@2x.png" alt=""></span>
+                                    <span class="title">KB 혜담 카드</span>
+                                    <span class="sum">10,556,000</span>
+                                </li>
+                                <li class="required-performance">
+                                    <span class="txt">실적 </span>
+                                    <span class="val">0</span>
+                                    <span class="txt">원</span>
+                                </li>
+                                <li class="bar-graph">
+                                    <span class="bar" style="width: 0"></span>
+                                    <span class="sec sec-1"> <!-- 실적 구간 1개 있을 경우 -->
+                                            <span><em>100만원</em></span>
+                                        </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card-edit">
+                            <a class="btn-edit" href="#"><i class="sprite ico_btn_card_edit"></i>카드 편집</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-list-caution">
+                    <p>
+                        사용기간 및 실적 적용기간은 매월 1일부터 말일을 기준으로 산정합니다.<br/>
+                        (일부 상품은 실적 적용기간이 다를 수 있습니다.)<br/><br/>
+
+                        실적 계산 시 실적 금액은 카드 사용금액에서 실적에 포함되지 않는 금액을 제외합니다.<br/><br/>
+
+                        실적 포함/제외 항목, 적용기간은 카드 상품에 따라 다를 수 있습니다. 정확한 정보는 카드사 홈페이지에서 확인해주세요.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-sm modal-my-card" id="myCardPopup4" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header mb-0">
+                <div class="title">연회비</div>
+                <a href="#" class="btn-close" data-dismiss="modal"></a>
+            </div>
+            <div class="modal-body">
+                <table class="table centered">
+                    <colgroup>
+                        <col style="width:40%">
+                        <col style="width:60%">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <td>국내전용</td>
+                        <td class="text-right">10,000원</td>
+                    </tr>
+                    <tr>
+                        <td>VISA</td>
+                        <td class="text-right">10,000원</td>
+                    </tr>
+                    <tr>
+                        <td>MASTER</td>
+                        <td class="text-right">10,000원</td>
+                    </tr>
+                    <tr>
+                        <td>UPI</td>
+                        <td class="text-right">10,000원</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#myCardPopup4').modal('show');   // modal show
+</script>
+</body>
+<script>
+    $('._myCardTab li a').on('click',function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+</html>

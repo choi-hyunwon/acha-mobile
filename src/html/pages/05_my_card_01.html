@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap bg_purple">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li><a href="#">지출상세</a></li>
+            <li class="active"><a href="#">내카드</a></li>
+            <li><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="my-card-main">
+            <a href="#" class="btn-more"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="더보기 버튼"></a>
+            <div class="main-text">문서희 님, 5월 카드 사용금액과 <br/>실적 현황을 확인하세요!😀</div>
+            <div class="main-card-wrap">
+                <div class="main-card-empty">
+                    <a href="#">
+                        <span><i class="sprite ico_card_plus"></i>카드 정보 불러오기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-card-desc-box">
+        <p>보유한 카드가 있으신가요?</p>
+        <p>불러오기를 통해 정보를 불러오세요!</p>
+        <p>실적충족 정보와 카드 혜택정보를 확인할 수 있어요.</p>
+        <div class="img"><img src="../../img/common/ico_card_none@2x.png" alt=""></div>
+    </div>
+</div>
+</body>
+<script>
+    $('._myCardTab li a').on('click',function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+</html>

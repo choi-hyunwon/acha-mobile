@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<!-- 연말정산 메인 -->
+<div class="wrap">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li><a href="#">지출상세</a></li>
+            <li><a href="#">내카드</a></li>
+            <li class="active"><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <!-- case 1 -->
+        <div class="box_tax_home">
+            <div class="title_area">
+                <div class="tit">나의 총 급여<span>(근로소득자 대상)</span></div>
+                <div><a href="#" class="badge-lg">소득을 입력해 주세요<i class="sprite arrow_list_add_white"></i></a></div>
+<!--                <div><a href="#" class="val">2500<em>만원<i class="sprite arrow_main_top_b_nor"></i></em></a></div>-->
+<!--                <div><a href="#" class="badge badge-grey">금액숨기기</a></div>-->
+            </div>
+            <div class="img_area">
+                <img src="../../img/common/img_tax_main_01@2x.png" alt="">
+            </div>
+        </div>
+        <!-- case 2 -->
+<!--        <div class="box_tax_home">-->
+<!--            <div class="title_area">-->
+<!--                <div class="tit">나의 총 급여<span>(근로소득자 대상)</span></div>-->
+<!--                <div><a href="#" class="val">2500<em>만원<i class="sprite arrow_main_top_b_nor"></i></em></a></div>-->
+<!--                <div><a href="#" class="badge">금액숨기기</a></div>-->
+<!--            </div>-->
+<!--            <div class="img_area">-->
+<!--                <img src="../../img/common/img_tax_main_02@2x.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- case 3 -->
+<!--        <div class="box_tax_home hide">-->
+<!--            <div class="title_area">-->
+<!--                <div class="tit">나의 총 급여<span>(근로소득자 대상)</span></div>-->
+<!--                <div><a href="#" class="val">0000<em>만원<i class="sprite arrow_main_top_b_nor"></i></em></a></div>-->
+<!--                <div><a href="#" class="badge">금액보기</a></div>-->
+<!--            </div>-->
+<!--            <div class="img_area">-->
+<!--                <img src="../../img/common/img_tax_main_02@2x.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="divider"></div>
+        <div class="box_tax_category">
+            <div class="date"><em class="roboto">2020.01.01 ~ 09.14</em> 지출 누적금액</div>
+            <ul>
+                <li class="line">
+                    <div class="tit-lg">
+                        <span>카드/현금</span>
+                        <span><a href="#" class="d-inline-block"><em>0</em><i class="sprite ico_arrow_small_nor"></i></a></span>
+                    </div>
+                    <div class="tit">
+                        <span>신용카드</span>
+                        <a href="#" class="btn-open">불러오기<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                    <div class="tit">
+                        <span>직불카드 등</span>
+                        <a href="#" class="btn-open">불러오기<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                    <div class="tit">
+                        <span>현금영수증</span>
+                        <a href="#" class="btn-open">불러오기<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit-lg">
+                        <span>개인연금저축</span>
+                        <a href="#" class="btn-open">불러오기<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit-lg">
+                        <span>연금계좌</span>
+                        <a href="#" class="btn-open">불러오기<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit-lg">
+                        <span>주택자금<em>(주택마련저축)</em></span>
+                        <a href="#" class="btn-open">불러오기<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit-lg">
+                        <span>보험료</span>
+                        <a href="#" class="btn-open">불러오기<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit-lg">
+                        <span>교육비</span>
+                        <a href="#" class="btn-open">직접입력<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit-lg">
+                        <span>의료비</span>
+                        <a href="#" class="btn-open">직접입력<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit-lg">
+                        <span>기부금</span>
+                        <a href="#" class="btn-open">직접입력<i class="sprite ico_arrow_pur_nor"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="box_tax_btn">
+            <a class="btn btn-lg btn-block btn-md btn-big-light" href="#"><i class="sprite ico_btn_edit_nor"></i>편집</a>
+        </div>
+    </div>
+</div>
+<script>
+    $('._myCardTab li a').on('click',function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+</body>
+</html>
+
+

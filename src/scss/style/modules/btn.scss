@@ -1,0 +1,490 @@
+a:hover {
+  text-decoration: none;
+  color: #37354e;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  min-width: 95px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 13px;
+  font-family: var(--font1);
+  letter-spacing: -0.33px;
+  padding: 0 10px;
+  background: #FFFFFF;
+  border: 1px solid #e3e4e8;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--text-02);
+
+  &:active, &:focus, &:hover {
+    outline: none;
+  }
+
+  & i.icon-btn-plus {
+    margin-right: 3px;
+  }
+
+  &.btn-sm {
+    height: 26px;
+    line-height: 24px;
+    border-radius: 2px;
+    padding: 0 10px;
+    min-width: 59px;
+    font-size: 11px;
+    letter-spacing: -.55px;
+    font-family: var(--font1);
+
+    &:focus, &:hover {
+      color: var(--text-02);
+    }
+  }
+
+  &.btn_primary {
+    min-width: 127px;
+    padding: 0 20px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 33px;
+    font-family: var(--font1);
+    letter-spacing: -0.65px;
+    color: #FFFFFF;
+    border: none;
+    background: var(--color-point);
+
+    & img {
+      width: 11px;
+      vertical-align: unset;
+      margin-left: 3px;
+    }
+
+    &.btn_primary_lg {
+      height: 41px;
+      min-width: 133px;
+      line-height: 41px;
+
+      & i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &.btn-gray {
+    border-color: #aaaaaa;
+    color: #888888;
+
+    &:focus, &:hover {
+      color: #888888;
+    }
+  }
+
+  &.btn-full {
+    width: 100%;
+    height: 55px;
+    font-size: 15px;
+    letter-spacing: -0.75px;
+    border-radius: unset;
+    padding: 0;
+    z-index: 100;
+
+    &.nor {
+      background: -webkit-linear-gradient(left, transparent, black 50%, transparent);
+      background: -moz-linear-gradient(to right, #547eff, #6c36ff 51%);
+      background: -ms-linear-gradient(to right, #547eff, #6c36ff 51%);
+      background: -o-linear-gradient(to right, #547eff, #6c36ff 51%);
+      background: linear-gradient(to right, #547eff, #6c36ff 51%);
+    }
+
+    &.pre {
+      background: rgb(76, 14, 243);
+    }
+
+    &.dim {
+      background: rgb(214, 199, 255);
+    }
+  }
+
+  &.btn-add {
+    display: block;
+    width: 100%;
+    height: 41px;
+    border-radius: 6px;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    line-height: 39px;
+    font-size: 11px;
+    letter-spacing: -0.55px;
+    text-align: center;
+    color: var(--text-02);
+    margin-top: 7px;
+
+    & i {
+      vertical-align: middle;
+      margin-right: 5px;
+      transform: translateY(-1px);
+    }
+  }
+
+  &.dim {
+    background-color: #b39be9 !important;
+  }
+}
+
+.badge-tip {
+  display: inline-block;
+  height: 14px;
+  border-radius: 2px;
+  background: var(--color-point);
+  font-family: var(--font2);
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  line-height: 14px;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 3px;
+  padding: 0 5px;
+}
+
+/**
+    세금관리 - 연동추가하기 버튼
+ */
+.btn-lg {
+  height: 46px;
+  border-color: var(--color-point);
+  border-radius: 6px;
+  font-family: var(--font2);
+  color: var(--color-point);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: -0.6px;
+
+  &:focus, &:hover {
+    color: var(--color-point);
+  }
+}
+
+.btn_back {
+  position: absolute;
+  display: block;
+  background: url("../../img/common/ico_top_back_b_nor@2x.png") no-repeat;
+  background-position-y: center;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  top: 20px;
+  left: 16px;
+}
+
+/*
+    2020-02-14
+    수정사항
+    switch 수정
+ */
+.toggle {
+  width: 100%;
+  height: 30px;
+
+  & .custom-control {
+    left: 0;
+
+    & .custom-control-label::before {
+      background: #d5d5d5;
+    }
+
+    & .custom-control-input:checked ~ .custom-control-label::after {
+      background-color: #FFFFFF;
+    }
+
+    & .custom-control-input:checked ~ .custom-control-label::before {
+      background: var(--color-point);
+    }
+  }
+}
+
+.custom-switch {
+  position: absolute;
+  top: 23px;
+  right: 25px;
+
+  & .custom-control-label {
+    padding-left: 25px;
+  }
+
+  & .custom-control-label::before {
+    width: 42px;
+    height: 22px;
+    pointer-events: all;
+    border-radius: 21px;
+    border: unset;
+    background: #d5d5d5;
+  }
+
+  & .custom-control-label::after {
+    /*top: calc(0.33rem + 2px);*/
+    /*top: 5px;*/
+    /*left: -21px;*/
+    width: 18px;
+    height: 18px;
+    border-radius: 14px;
+    background-color: #ffffff;
+  }
+
+  & .custom-control-input:checked ~ .custom-control-label::before {
+    background: var(--color-point);
+  }
+
+  & .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(1.95rem);
+    background-color: #FFFFFF;
+  }
+
+  & .custom-control-input:disabled ~ .custom-control-label {
+    color: #212529;
+  }
+
+  & .custom-control-input:disabled ~ .custom-control-label::before {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+  }
+
+  & .custom-control-input:disabled:checked ~ .custom-control-label {
+    color: #212529;
+  }
+
+  & .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: #c3aeff !important;
+    border: 1px solid #c3aeff;
+  }
+}
+
+/*
+2020.06.05 추가
+*/
+.btn-pay {
+  width: 57px;
+  border-radius: 2px;
+  float: right;
+  min-width: 57px;
+  font-size: 10px;
+  font-family: var(--font1);
+  padding: 0 10px;
+  height: 26px;
+  line-height: 24px;
+  color: #737183;
+  margin-bottom: -11px;
+
+  & i {
+    transform: translate(2px, 1px);
+  }
+}
+
+.btn-md {
+  height: 41px;
+  line-height: 40px;
+  font-size: 11px;
+  letter-spacing: -.28px;
+  border: 1px solid #e3e4e8;
+  color: #737183;
+  font-weight: normal;
+
+  & i {
+    margin-right: 5px;
+  }
+}
+
+.btn-big {
+  font-size: 12px;
+  height: 46px;
+  line-height: 45px;
+  border-color: #6839d3;
+  color: #6839d3;
+  font-family: var(--font2);
+  letter-spacing: -.6px;
+
+  &:hover, &:focus {
+    color: #6839d3;
+  }
+
+  & i {
+    margin-right: 5px;
+  }
+
+  &.btn-start {
+    border-radius: 6px;
+    height: 50px;
+    border: 0;
+    line-height: 50px;
+    background-color: var(--color-point);
+    font-family: var(--font2);
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    color: #ffffff;
+  }
+
+  &.btn-save {
+    border-radius: 6px;
+    height: 50px;
+    border: 0;
+    line-height: 50px;
+    background-color: var(--color-point);
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: -.75px;
+    font-family: var(--font2);
+
+    &.dim {
+      background-color: #b39be9;
+    }
+  }
+
+  &.btn-big-light {
+    border: 1px solid #e3e4e8;
+    color: #737183;
+    font-weight: normal;
+
+    &:focus, &:hover {
+      color: #737183;
+    }
+  }
+}
+
+.btn_box {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 0 20px;
+  background: #fff;
+}
+
+.btn_wrap {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  bottom: 0;
+  background: #fff;
+  height: 80px;
+}
+
+.btn_bottom {
+  width: 100%;
+  padding: 0 20px 40px;
+  margin-top: -12px;
+}
+
+.btn_area {
+  &.bottom-fixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    padding: 0 20px;
+    bottom: 0;
+    background: #fff;
+    height: 80px;
+  }
+
+  &.pd {
+    padding: 0 20px;
+  }
+
+  &.mb {
+    margin-bottom: 40px;
+  }
+
+  &.margin {
+    margin: 30px 0 0;
+    padding-bottom: 30px;
+  }
+}
+
+.btn-half {
+  width: 49%;
+}
+
+.btn-gray-bg {
+  border: 0;
+  background-color: #9b9aa6;
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  letter-spacing: -.75px;
+
+  &:focus, &:hover {
+    color: #ffffff;
+  }
+}
+
+.btn-purple-bg {
+  border: 0;
+  background-color: var(--color-point);
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  letter-spacing: -.75px;
+
+  &:focus, &:hover {
+    color: #ffffff;
+  }
+
+  &.btn-outline-purple {
+    height: 46px;
+    line-height: 44px;
+    border: 1px solid var(--text-point-color);
+    background-color: transparent;
+    color: var(--text-point-color);
+    font-size: 12px;
+
+    & i {
+      margin-right: 5px;
+      transform: translateY(1px);
+    }
+  }
+}
+
+.box_ex_bottom {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px !important;
+
+  & .btn-more {
+    display: inline-block;
+    width: calc(100% - 45px);
+    height: 41px;
+    line-height: 40px;
+    font-size: 11px;
+    border: solid 1px #e5e5e5;
+    text-align: center;
+    color: var(--text-02);
+    letter-spacing: -.55px;
+    border-radius: 6px;
+
+    & i {
+      margin-right: 5px;
+      transform: translate(0, 1px);
+    }
+  }
+
+  & .btn-top {
+    float: right;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    border: solid 1px #e5e5e5;
+    text-align: center;
+    border-radius: 6px;
+    line-height: 46px;
+
+  }
+}

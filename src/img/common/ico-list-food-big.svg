@@ -1,0 +1,38 @@
+<svg id="ico_list_food_big" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #37454e;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-4 {
+        stroke: #6839d3;
+      }
+    </style>
+  </defs>
+  <g id="그룹_4045" data-name="그룹 4045">
+    <g id="그룹_4044" data-name="그룹 4044">
+      <rect id="사각형_3167" data-name="사각형 3167" class="cls-1" width="30" height="30" transform="translate(0 0)"/>
+    </g>
+  </g>
+  <g id="그룹_4046" data-name="그룹 4046">
+    <rect id="사각형_3168" data-name="사각형 3168" class="cls-2" width="8.652" height="9.899" rx="4.326" transform="translate(5.041 1.467)"/>
+    <line id="선_23" data-name="선 23" class="cls-2" y2="2.77" transform="translate(9.367 11.366)"/>
+    <path id="패스_3664" data-name="패스 3664" class="cls-3" d="M24.959,1.758V7.167a4.2,4.2,0,0,1-4.2,4.2h-.255a4.2,4.2,0,0,1-4.2-4.2V1.758"/>
+    <line id="선_24" data-name="선 24" class="cls-3" y2="12.378" transform="translate(20.633 1.745)"/>
+    <path id="사각형_3169" data-name="사각형 3169" class="cls-4" d="M2.476,0h0A2.476,2.476,0,0,1,4.953,2.476v9.616A2.306,2.306,0,0,1,2.647,14.4H2.306A2.306,2.306,0,0,1,0,12.092V2.476A2.476,2.476,0,0,1,2.476,0Z" transform="translate(6.89 14.136)"/>
+    <path id="사각형_3170" data-name="사각형 3170" class="cls-4" d="M2.476,0h0A2.476,2.476,0,0,1,4.953,2.476v9.616A2.306,2.306,0,0,1,2.647,14.4H2.306A2.306,2.306,0,0,1,0,12.092V2.476A2.476,2.476,0,0,1,2.476,0Z" transform="translate(18.157 14.136)"/>
+  </g>
+</svg>

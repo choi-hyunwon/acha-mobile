@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+    </div>
+    <div class="contents">
+        <div class="my-data-required">
+            <div class="title-area">
+                <div class="title">불러오실 사이트의<br/>
+                    <span>전송요구내역을 확인</span>해주세요
+                </div>
+            </div>
+            <div class="card-list">
+                <div class="card-item">
+                    <div class="card-header">
+                        <img src="../../img/@temp/499.png" alt="">
+                        <span>KB국민은행</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="tit">전송주기</div>
+                        <div class="desc">
+                            사용자가 요청할때만 데이터를 불러옵니다.<br/>
+                            서비스를 위해 사업자가 정기적으로 정보를 수신하기로
+                            원하시면 정기전송을 선택해주세요
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>요구</span>
+                            </label>
+                            <label> <!-- 추가 -- 2021.07.27 -->
+                                <input type="checkbox" class="filled-in">
+                                <span>미요구</span>
+                            </label>
+                        </div>
+                        <div class="cont">
+                            <ul class="list-body">
+                                <li class="item">
+                                    <!-- 변경 -- 2021.07.27 -->
+                                    <span class="tit">개인신용정보<br/>
+                            제공받는 자</span>
+                                    <span class="val">㈜유비벨록스</span>
+                                </li>
+                                <li class="item">
+                                    <span class="tit">전송 목적</span>
+                                    <span class="val">통합조회, 금융상품추천 등</span>
+                                </li>
+                                <li class="item">
+                                    <span class="tit">전송 종료시점</span>
+                                    <span class="val">2022. 06. 08 <a href="#">변경</a></span>
+                                </li>
+                                <li class="item">
+                                    <span class="tit">개인신용정보 보유기간</span>
+                                    <span class="val">5년 <a href="#">변경</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-header">
+                        <img src="../../img/@temp/499.png" alt="">
+                        <span>하나카드</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="tit">전송주기</div>
+                        <div class="desc">
+                            사용자가 요청할때만 데이터를 불러옵니다.<br/>
+                            서비스를 위해 사업자가 정기적으로 정보를 수신하기로
+                            원하시면 정기전송을 선택해주세요
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>요구</span>
+                            </label>
+                            <label> <!-- 추가 -- 2021.07.27 -->
+                                <input type="checkbox" class="filled-in">
+                                <span>미요구</span>
+                            </label>
+                        </div>
+                        <div class="cont">
+                            <ul class="list-body">
+                                <li class="item">
+                                    <span class="tit">전송 목적</span>
+                                    <span class="val">아차 데이터 수집</span>
+                                </li>
+                                <li class="item">
+                                    <span class="tit">전송 종료시점</span>
+                                    <span class="val">2022. 06. 08 <a href="#">변경</a></span>
+                                </li>
+                                <li class="item">
+                                    <span class="tit">개인신용정보 보유기간</span>
+                                    <span class="val">5년 <a href="#">변경</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-data-btn-fixed">
+            <a href="#" class="btn btn-block">전송요구하기</a>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-my-card" id="myDatePopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="title">전송 종료시점 변경</div>
+<!--                <div class="title">전송 종료시점 변경</div>-->
+                <a href="#" class="btn-close" data-dismiss="modal"></a>
+            </div>
+            <div class="modal-body p-0">
+                <div class="box-ex-account">
+                    <div class="card-detail-calendar">
+                        <div class="input-calendar fix-data">
+                            <label for="start"></label>
+                            <input type="date" id="start" value="2021-06-03" readonly>
+                        </div>
+                        <div class="icon">~</div>
+                        <div class="input-calendar">
+                            <label for="end"></label>
+                            <input class="default" type="date" id="end" value="2021-06-03" min="2021-05-01" max="2021-07-30">
+                        </div>
+                    </div>
+                    <div class="desc">2022. 06. 08 까지 고객님의 데이터를 전송합니다. </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer single">변경완료하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#myDatePopup').modal('show');   // modal show
+</script>
+</body>
+</html>

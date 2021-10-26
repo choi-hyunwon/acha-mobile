@@ -1,0 +1,43 @@
+<svg id="ico_list_cat_big" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke: #37454e;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #6839d3;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="그룹_4568" data-name="그룹 4568">
+    <path id="패스_3854" data-name="패스 3854" class="cls-1" d="M25.756,12.464a16.853,16.853,0,0,1-.865-3.647L24.252,2.95a.834.834,0,0,0-1.323-.583L17.768,6.831a12.2,12.2,0,0,0-5.787,0L7.071,2.367a.834.834,0,0,0-1.323.583L5.109,8.817a16.853,16.853,0,0,1-.865,3.647,16.889,16.889,0,0,0-1.057,5.388c0,6.1,5.289,9.944,11.813,9.944s11.813-3.844,11.813-9.944A16.889,16.889,0,0,0,25.756,12.464Z"/>
+    <circle id="타원_1722" data-name="타원 1722" class="cls-2" cx="1.062" cy="1.062" r="1.062" transform="translate(9.377 13.378)"/>
+    <circle id="타원_1723" data-name="타원 1723" class="cls-2" cx="1.062" cy="1.062" r="1.062" transform="translate(18.499 13.378)"/>
+    <path id="패스_3855" data-name="패스 3855" class="cls-2" d="M15.288,17.633a1.063,1.063,0,0,1-1.062-1.062c0-.587.476-.646,1.062-.646s1.062.059,1.062.646A1.062,1.062,0,0,1,15.288,17.633Z"/>
+    <g id="그룹_4567" data-name="그룹 4567">
+      <line id="선_54" data-name="선 54" class="cls-3" x2="2.022" transform="translate(4.926 17.183)"/>
+      <line id="선_55" data-name="선 55" class="cls-3" x2="2.006" transform="translate(4.926 18.901)"/>
+      <line id="선_56" data-name="선 56" class="cls-3" x2="2.017" transform="translate(23.057 17.183)"/>
+      <line id="선_57" data-name="선 57" class="cls-3" x2="2.009" transform="translate(23.065 18.901)"/>
+    </g>
+    <path id="패스_3856" data-name="패스 3856" class="cls-4" d="M18.152,19.575a1.9,1.9,0,0,1-2.843-.126h-.041a1.9,1.9,0,0,1-2.843.126"/>
+  </g>
+  <rect id="사각형_3439" data-name="사각형 3439" class="cls-5" width="30" height="30"/>
+</svg>

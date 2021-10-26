@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <a href="#" class="btn btn-primary _btnSlideOpen">카테고리 생성 팝업</a>
+</div>
+<div class="modal-slide _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="img"><img src="../../img/@temp/sample-icon-big.svg" alt=""></div>
+            <div class="custom-light">
+                <input title="value" type="text" placeholder="카테고리명을 입력해주세요.">
+            </div>
+            <div class="desc">최대 12자 입력</div>
+            <div class="btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-start" href="#">저장하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 2000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>상세정보</h2>
+    </div>
+    <div class="contents">
+        <div class="box-ex-detail-top">
+            <div class="account-info">
+                <div class="info1">
+                    <span class="img"><img src="../../img/@temp/ci_samsung@2x.png" alt=""></span>
+                    <span class="name">네이버 페이</span>
+                    <a href="#" class="btn-refresh"><span>10시간 전</span><i class="ico-refresh-mini"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="box-select-accordion">
+            <div class="accordion" id="accordionSelect">
+                <div class="select-header" id="headingSelect">
+                    <button class="_selectBtn" type="button" data-toggle="collapse" data-target="#collapseSelect" aria-expanded="true" aria-controls="collapseSelect">결제수단</button>
+                </div>
+                <div id="collapseSelect" class="collapse show" aria-labelledby="headingSelect" data-parent="#accordionSelect">
+                    <div class="select-body _select">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                    <span class="name">신한카드  1234</span>
+                                    <span class="state">주결제</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                    <span class="name">신한카드  4567</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                    <span class="name">신한카드  890</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('._select li a').on('click',function (){
+                var name = $(this).find('.name').text()
+                $(this).parent().addClass('active').siblings().removeClass('active');
+                $('._selectBtn').text(name);
+                closeAccordion();
+            })
+
+            function closeAccordion() {
+                $('.collapse').collapse('hide')
+            }
+        </script>
+        <div class="box-ex-detail-info">
+            <ul>
+                <li class="item">
+                    <div class="txt">
+                        <span class="tit">가입일</span>
+                        <span class="val">2021-02-13</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="txt">
+                        <span class="tit">계정 ID</span>
+                        <span class="val">김*진</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="box-ex-usage-history box-ex-usage-history-lg">
+            <div class="title-area">
+                <span class="title">결제내역</span>
+                <span class="val">1,380,300</span>
+            </div>
+            <div class="title-area">
+                <div class="date">3월1일~3월31일</div>
+            </div>
+            <!--            <div class="box-filter">-->
+            <!--                <a href="#" class="btn btn-filter">필터</a>-->
+            <!--                <div class="tag">-->
+            <!--                    <span>#일시불</span>-->
+            <!--                    <span>#할부</span>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <div class="usage-history">
+                <div class="date">9월 18일</div>
+                <ul>
+                    <li class="item">
+                        <div class="info1">
+                            <span class="tit">역전우동</span>
+                            <span class="val">8,000</span>
+                        </div>
+                        <div class="info2">
+                            <span class="name">18:00</span>
+                            <span class="bank">· 우리카드 8778 <em class="color-default">(카드/일시불)</em></span>
+                            <span class="desc">온라인</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info1">
+                            <span class="tit">GS25 신중동역점</span>
+                            <span class="val">8,000</span>
+                        </div>
+                        <div class="info2">
+                            <span class="name">18:00</span>
+                            <span class="bank">· 우리카드 8778 <em class="color-default">(카드/일시불)</em></span>
+                            <span class="desc">온라인</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="date">9월 17일</div>
+                <ul>
+                    <li class="item">
+                        <div class="info1">
+                            <span class="tit">한솥도시락 구로디지탈</span>
+                            <span class="val">8,000</span>
+                        </div>
+                        <div class="info2">
+                            <span class="name">18:00</span>
+                            <span class="bank">· 신한카드 8778 <em class="color-default">(카드/3개월)</em></span>
+                            <span class="desc">온라인</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info1">
+                            <span class="tit">한솥도시락 구로디지탈</span>
+                            <span class="val">8,000</span>
+                        </div>
+                        <div class="info2">
+                            <span class="name">18:00</span>
+                            <span class="bank">· 국민은행 **** <em class="color-default">(계좌이체/할부)</em></span>
+                            <span class="desc">온라인</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="loading-wrap" style="background-color: red">-->
+<!--    &lt;!&ndash;    <img src="../../img/common/" alt="">  // 로딩 gif 파일&ndash;&gt;-->
+<!--</div>-->
+</body>
+</html>

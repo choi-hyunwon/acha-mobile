@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li class="active"><a href="#">지출상세</a></li>
+            <li><a href="#">내카드</a></li>
+            <li><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <!-- s 추가 -- 2021.06.14 -->
+    <div class="ex-menu-top _exMenu">
+        <ul class="clearfix">
+            <li class="active"><a href="#">월별</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">지출계좌</a></li>
+            <li><a href="#">카드 고정비</a></li>
+        </ul>
+    </div>
+    <!-- e 추가 -- 2021.06.14 -->
+    <div class="contents">
+        <div class="box_category_list">
+            <div>
+                <!-- s 추가 -- 2021.06.14 -->
+                <div class="filter-area">
+                    <a href="#" class="btn-select _btnPopup">5월</a>
+                    <div class="title">
+                        카테고리별 월 지출 내역을<br/>
+                        확인하세요 💰
+                    </div>
+<!--                    <div class="btn-wrap">-->
+<!--                        <a href="#" class="btn btn-filter">필터</a>-->
+<!--                    </div>-->
+                </div>
+                <!-- e 추가 -- 2021.06.14 -->
+                <div class="category-list-item">
+                    <ul>
+                        <li class="category-info">
+                            <span class="title">카드</span>
+                            <span class="sum">12,400,000</span>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">8일</span>
+                                <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">KB국민카드 (국내000)</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+                                <p class="btn-move">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                    <span class="desc-sm">청구서 미발행</span> <!-- 추가 -- 2021.06.14 -->
+                                </p>
+                            </a>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day"></span>
+                                <span class="img"><img src="../../img/@temp/hana.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">하나카드 데일리 플러스</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">결제수단 미확인</i>
+                                    </li>
+                                </ul>
+                                <p class="btn-move">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">10일</span>
+                                <span class="img"><img src="../../img/@temp/499.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">우체국 행복한 카드 우체국 행복한 카드 우체국 행복</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">국민은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-list-item">
+                    <ul>
+                        <li class="category-info">
+                            <span class="title">보험</span>
+                            <span class="sum">250,000</span>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">10일</span>
+                                <span class="img"><img src="../../img/@temp/ci_meritz@2x.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">메리츠 건강보험</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">11일</span>
+                                <span class="img"><img src="../../img/@temp/ci_samsung@2x.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">삼성생명 연금저축 손해보험</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">국민은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+                                <p class="btn-move">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-list-item">
+                    <ul>
+                        <li class="category-info">
+                            <span class="title">금융상품</span>
+                            <span class="sum">12,400,000</span>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">8일</span>
+                                <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">KB국민카드 (국내000)</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move" href="#">
+                                    <span class="value">186,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day"></span>
+                                <span class="img"><img src="../../img/@temp/ci_scbank@2x.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">SC차이트차이나 드림 펀드</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move" href="#">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-list-item">
+                    <ul>
+                        <li class="category-info">
+                            <span class="title">대출</span>
+                            <span class="sum">10,203,950</span>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">8일</span>
+                                <span class="img"><img src="../../img/@temp/woori.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">우리은행 직장인 대출</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move" href="#">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">8일</span>
+                                <span class="img"><img src="../../img/@temp/ci_scbank@2x.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">SC제일은행 중금리 대출</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move" href="#">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-list-item">
+                    <ul>
+                        <li class="category-info">
+                            <span class="title">통신/공과금</span>
+                            <span class="sum">10,203,950</span>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">8일</span>
+                                <span class="img"><img src="../../img/@temp/kt.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">KT 인터넷전화</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move" href="#">
+                                    <span class="value">186,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">8일</span>
+                                <span class="img"><img src="../../img/@temp/595.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">전기요금</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move" href="#">
+                                    <span class="value">186,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">8일</span>
+                                <span class="img"><img src="../../img/@temp/tbroad.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">SKT 010**34**78</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">우리은행</i>
+                                        <i class="ac-num">1002-841-*****5</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move" href="#">
+                                    <span class="value">186,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-list-item">
+                    <ul>
+                        <li class="category-info">
+                            <span class="title">생활비</span>
+                            <span class="sum">12,400,000</span>
+                        </li>
+                        <li class="ex-item">
+                            <a href="#">
+                                <span class="day">10일</span>
+                                <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""/></span>
+                                <ul class="b-info">
+                                    <li class="title">하나카드 데일리 플러스</li>
+                                    <li class="ac-info">
+                                        <i class="b-name">결제수단 미확인</i>
+                                    </li>
+                                </ul>
+
+                                <p class="btn-move" href="#">
+                                    <span class="value">45,000</span>
+                                    <i class="sprite ico_arrow_small_nor"></i>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-list-item">
+                    <ul>
+                        <li class="category-info">
+                            <span class="title">기타</span>
+<!--                            <span class="sum">0</span>-->
+                        </li>
+                        <li class="ex-item empty">
+                            <div class="img"><img src="../../img/common/ico-error-main.svg" alt=""></div>
+                            <p class="txt">표시 할 지출이 없습니다 🙁</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-layer" id="selectMonthPopup"> <!-- active 클래스 추가 시, popup 활성화 -->
+        <div class="popup-dim">
+            <div class="popup-normal select_month">
+                <div class="popup-header">
+                    <h2>월 선택</h2>
+                    <a class="btn-close _btnClose" href="#"><i class="sprite btn_popup_close"></i></a>
+                </div>
+                <div class="popup-body">
+                    <ul>
+                        <li><a href="#">4월</a></li>
+                        <li class="active"><a href="#">5월</a></li>
+                        <li><a href="#">6월</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+    var index = 3; // (li 갯수) - 1
+    var sum = 0;
+    for (var j=0; j <= index; j++) {
+        sum = sum + $("._exMenu li:eq("+ j +")").outerWidth(true);
+    }
+    $('._exMenu ul').css('width', sum + 1);
+</script>
+</html>

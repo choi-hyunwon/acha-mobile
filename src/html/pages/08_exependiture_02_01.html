@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li class="active"><a href="#">지출상세</a></li>
+            <li><a href="#">내카드</a></li>
+            <li><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <!-- s 추가 -- 2021.06.14 -->
+    <div class="ex-menu-top _exMenu">
+        <ul class="clearfix">
+            <li><a href="#">월별</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">지출계좌</a></li>
+            <li class="active"><a href="#">카드 고정비</a></li>
+        </ul>
+    </div>
+    <!-- e 추가 -- 2021.06.14 -->
+    <div class="contents">
+        <div class="fixed-card-wrap">
+            <div class="select-wrap">
+                <div class="select-box disabled">
+                    <span class="bank-img"><img src="../../img/@temp/ci_uribank@2x.png" alt=""></span>
+                    <select title="account" disabled>
+                        <option value="1" selected="">카드 전체</option>
+                        <option value="2">카카오뱅크</option>
+                        <option value="3">우리은행</option>
+                    </select>
+                </div>
+            </div>
+            <div class="empty">
+                <div class="img"><img src="../../img/common/ico-error-main.svg" alt="에러"></div>
+                <div class="txt">표시 할 데이터가 없습니다 🙁</div>
+            </div>
+        </div>
+    </div>
+    <!--
+        ** 화살표 이미지 방향에 따른 클래스 명
+        <i class="right"></i>
+        <i class="left"></i>
+        <i class="top"></i>
+        <i class="bottom"></i>
+
+        ** 스크롤 함수
+        scrollGoTop() // 최상단으로 이동
+        scrollGoBottom() // 최하단으로 이동
+        scrollGoLeft()
+        scrollGoRight()
+    -->
+<!--    <a href="#" class="btn-scroll right" onclick="scrollGoRight()"><i class="right"></i></a>-->
+<!--    <a href="#" class="btn-scroll bottom" onclick="scrollGoBottom()"><i class="bottom"></i></a>-->
+</div>
+</body>
+<script>
+    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+    var index = 3; // (li 갯수) - 1
+    var sum = 0;
+    for (var j=0; j <= index; j++) {
+        sum = sum + $("._exMenu li:eq("+ j +")").outerWidth(true);
+    }
+    $('._exMenu ul').css('width', sum + 1);
+
+    // 테이블 - 컨텐츠 따른 스크롤 넓이
+    var itemLength = $('.table-body .table-row.month .table-col').length;
+    var contentWidth = itemLength * 70;
+    $('.table-body .inner').css('width', contentWidth);
+
+    // scroll - top
+    function scrollGoTop() {
+        $('html, body').animate( { scrollTop: '0' }, 600);
+    }
+
+    // scroll - bottom
+    function scrollGoBottom() {
+        $("html, body").animate({ scrollTop: $(document).height() }, 600);
+    }
+
+    // scroll - left
+    function scrollGoLeft() {
+        $('.table-body').animate( { scrollLeft: '0' }, 600);
+    }
+
+    // scroll - Right
+    function scrollGoRight() {
+        var leftPos = $('.table-body').scrollLeft();
+        $('.table-body').animate( { scrollLeft: leftPos + 210 }, 600);
+    }
+</script>
+</html>

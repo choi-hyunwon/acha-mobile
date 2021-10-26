@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <!--  S contents  -->
+    <div class="contents">
+        <div class="box_ex_calendar">
+            <div class="sort-area">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">전체</a></li>
+                    <li><a href="#">카드결제</a></li>
+                    <li><a href="#">계좌이체</a></li>
+                </ul>
+                <a href="#" class="btn-reset"><em>선택 지우기</em><i class="ico-select-reset"></i></a>
+            </div>
+            <!-- 데이터가 없는 경우 no-data 클래스 추가-->
+            <div id='calendar' class="no-data"></div>
+        </div>
+        <div class="box_ex_calendar_list">
+            <div class="ex-total">
+                <div class="txt">
+                    <span>💰 총 지출</span>
+                    <span>(예정/완료)</span>
+                </div>
+                <div class="val">
+                    <span>0</span>
+                    <span>원</span>
+                </div>
+            </div>
+            <div class="no-data">
+                <div class="img"><img src="../../img/common/ico-error-main.svg" alt=""></div>
+                <p class="txt">표시 할 지출이 없어요 🙁</p>
+                <div class="btn_area">
+                    <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_add"></i>내 지출 추가하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  E contents  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid'],
+                showNonCurrentDates: true,
+                fixedWeekCount: false,
+                header: false,
+                height: 'auto',
+                defaultDate: '2021-05-25',  // 날짜 입력시, 달력 show
+                editable: false,
+                eventLimit: false,
+                navLinks: true,
+                timeZone: 'Asia/Seoul',
+                columnHeaderText: function (date) {
+                    return weekList[date.getDay()];
+                },
+                navLinkDayClick: function (date, jsEvent) {
+                    console.log(date.toISOString().slice(0,10));
+                    console.log(jsEvent.target)
+                },
+                // events: [
+                //     {
+                //         className: '',
+                //         title: '100,000',
+                //         start: '2021-05-12'
+                //     },
+                //     {
+                //         className: '',
+                //         title: '480,000',
+                //         start: '2021-05-13'
+                //     },
+                //     {
+                //         className: '',
+                //         title: '1,020,000',
+                //         start: '2021-05-14'
+                //     },
+                //     // 표시 할 데이터가 있고, 선택된 일자가 있는 금액의 첫번째에 first-data 클래스 추가 **
+                //     {
+                //         className: 'first-data',
+                //         title: '100,000',
+                //         start: '2021-05-03'
+                //     },
+                //     {
+                //         className: '',
+                //         title: '50,000',
+                //         start: '2021-05-03'
+                //     },
+                //     {
+                //         className: 'first-data',
+                //         title: '50,000',
+                //         start: '2021-05-10'
+                //     },
+                //     {
+                //         className: 'first-data',
+                //         title: '100,000',
+                //         start: '2021-05-17'
+                //     },
+                //     {
+                //         className: 'first-data',
+                //         title: '100,000',
+                //         start: '2021-05-25'
+                //     },
+                //     {
+                //         className: 'first-data',
+                //         title: '100,000',
+                //         start: '2021-05-28'
+                //     },
+                // ],
+            });
+
+            calendar.render();
+        });
+    </script>
+    <script>
+        $('.sort-area li a').on('click',function (){
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="28" viewBox="0 0 86 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #e3e4e8;
+        stroke-dasharray: 2 1;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="btn_dash_bg01" class="cls-1">
+    <rect class="cls-2" width="86" height="28" rx="2"/>
+    <rect class="cls-3" x="0.5" y="0.5" width="85" height="27" rx="1.5"/>
+  </g>
+</svg>

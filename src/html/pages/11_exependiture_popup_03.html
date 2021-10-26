@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>거래내역</h2>
+    </div>
+    <div class="contents">
+        <div class="box-ex-detail-top">
+           <div class="account-info">
+               <div class="info1">
+                   <span class="img"><img src="../../img/@temp/ci_samsung@2x.png" alt=""></span>
+                   <span class="name">씨티 예금담보대출</span>
+                   <a href="#" class="btn-refresh"><span>10시간 전</span><i class="ico-refresh-mini"></i></a>
+               </div>
+               <div class="info2">
+                   <span class="ac-num">33-9685-4575-5444</span>
+               </div>
+           </div>
+        </div>
+        <div class="box-ex-detail-list">
+            <div class="year">2021년</div>
+            <div class="item">
+                <div class="date-info">
+                    <span class="date">04/21</span>
+                    <a href="#" class="btn btn-sm">상세보기</a>
+                </div>
+                <div class="ex-info">
+                    <div class="lg">
+                        <span class="name">상환</span>
+                        <span class="val">100,000</span>
+                    </div>
+                    <div class="">
+                        <span class="name">원금</span>
+                        <span class="val">800,000</span>
+                    </div>
+                    <div class="">
+                        <span class="name">이자</span>
+                        <span class="val">200,000</span>
+                    </div>
+                    <div class="">
+                        <span class="name">환출이자</span>
+                        <span class="val">0</span>
+                    </div>
+                    <div class="md">
+                        <span class="name">대출잔액</span>
+                        <span class="val">5,000,000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date-info">
+                    <span class="date">03/21</span>
+                    <a href="#" class="btn btn-sm">상세보기</a>
+                </div>
+                <div class="ex-info">
+                    <div class="lg">
+                        <span class="name">상환</span>
+                        <span class="val">100,000</span>
+                    </div>
+                    <div class="">
+                        <span class="name">원금</span>
+                        <span class="val">800,000</span>
+                    </div>
+                    <div class="">
+                        <span class="name">이자</span>
+                        <span class="val">200,000</span>
+                    </div>
+                    <div class="">
+                        <span class="name">환출이자</span>
+                        <span class="val">0</span>
+                    </div>
+                    <div class="md">
+                        <span class="name">대출잔액</span>
+                        <span class="val">5,000,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="loading-wrap" style="background-color: red">-->
+<!--    &lt;!&ndash;    <img src="../../img/common/" alt="">  // 로딩 gif 파일&ndash;&gt;-->
+<!--</div>-->
+<div class="modal fade transaction-history-popup" id="transactionHistory3" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header mb-0">
+                <div class="title">거래내역 상세</div>
+                <a href="#" class="btn-close" data-dismiss="modal"></a>
+            </div>
+            <div class="modal-body">
+                <table class="table mb-0">
+                    <colgroup>
+                        <col style="width: 43%;">
+                        <col style="width: 57%;">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <td>거래일자</td>
+                        <td>202-02-03</td>
+                    </tr>
+                    <tr>
+                        <td>종목명</td>
+                        <td>메리츠코리아증권1호<br/>
+                            [주식] C-Pe</td>
+                    </tr>
+                    <tr>
+                        <td>거래종류</td>
+                        <td>매수</td>
+                    </tr>
+                    <tr>
+                        <td>거래수량</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>단가</td>
+                        <td>100,000원</td>
+                    </tr>
+                    <tr>
+                        <td>거래금액</td>
+                        <td>100,000원</td>
+                    </tr>
+                    <tr>
+                        <td>정산금액</td>
+                        <td>정산금액</td>
+                    </tr>
+                    <tr>
+                        <td>예수금</td>
+                        <td>25,000,000원</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#transactionHistory3').modal('show');   // modal show
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">진행중 이벤트</h2>
+    </div>
+    <div class="contents">
+        <div class="event-content">
+            <div class="tit">아차! 새우버거 1+1</div>
+            <div class="date-wrap">
+                <div class="date">2020.02.04 ~ 2020.04.22</div>
+                <a class="btn-share" href="#"><i class="ico-share"></i><span>공유하기</span></a>
+            </div>
+            <div class="cont" style="background-color: red; opacity: .3; height: 1000px">
+<!--                <img src="../../img/@temp/event-img-sample-01@2x.png" alt="">-->
+            </div>
+        </div>
+        <div class="event-btn-area _scrollEvent">
+            <a class="btn-event" href="#">참여하기</a>
+        </div>
+<!--        <div class="event-btn-area _scrollEvent">-->
+<!--            <a class="btn-event btn-half" href="#">참여하기</a>-->
+<!--            <a class="btn-event btn-half btn-event-border" href="#">TEST</a>-->
+<!--        </div>-->
+    </div>
+</div>
+<script>
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        var target = $('._scrollEvent');
+
+        if(scroll === 0) {
+            target.removeClass('scrolling')
+        }
+        else {
+            target.addClass('scrolling')
+        }
+    });
+</script>
+</body>
+</html>
+
+

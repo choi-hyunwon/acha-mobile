@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+        <ul class="clearfix">
+            <li class="active"><a href="#">지출상세</a></li>
+            <li><a href="#">내카드</a></li>
+            <li><a href="#">연말정산</a></li>
+        </ul>
+    </div>
+    <!-- s 추가 -- 2021.06.14 -->
+    <div class="ex-menu-top _exMenu">
+        <ul class="clearfix">
+            <li class="active"><a href="#">월별</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">지출계좌</a></li>
+            <li><a href="#">카드 고정비</a></li>
+        </ul>
+    </div>
+    <!-- e 추가 -- 2021.06.14 -->
+    <div class="contents">
+        <div class="box_category_list">
+            <!-- s 추가 -- 2021.06.14 -->
+            <div class="filter-area">
+                <a href="#" class="btn-select _btnPopup">5월</a>
+                <div class="title">
+                    상세 조건을 설정하여 지출을<br/>
+                    확인 할 수 있어요 🙂
+                </div>
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-filter">필터</a>
+                    <span class="btn btn-ex completed">지출완료</span>
+                    <span class="btn btn-ex">지출예정</span>
+                    <span class="btn btn-category"><em>지출예정</em><a href="#"><i class="ico-filter-delete"></i></a></span>
+                    <span class="btn btn-category"><em>계좌이체</em><a href="#"><i class="ico-filter-delete"></i></a></span>
+                </div>
+            </div>
+            <!-- e 추가 -- 2021.06.14 -->
+            <div>
+                <div class="category-list-item border-bottom-0"> <!-- border-bottom-0 클래스 추가 -- 2021.06.14 -->
+                    <div>
+                        <div class="category-info total"> <!-- total 클래스 추가 -- 2021.06.14 -->
+                            <span class="title">지출 합계</span>
+                            <span class="sum">0</span>
+                        </div>
+                        <div class="empty">
+                            <div class="img"><img src="../../img/common/ico-error-main.svg" alt="지출없음"></div>
+                            <p class="txt">표시 할 지출이 없어요 🙁</p>
+                            <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_add"></i>내 지출 추가하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-layer" id="selectMonthPopup"> <!-- active 클래스 추가 시, popup 활성화 -->
+        <div class="popup-dim">
+            <div class="popup-normal select_month">
+                <div class="popup-header">
+                    <h2>월 선택</h2>
+                    <a class="btn-close _btnClose" href="#"><i class="sprite btn_popup_close"></i></a>
+                </div>
+                <div class="popup-body">
+                    <ul>
+                        <li><a href="#">4월</a></li>
+                        <li class="active"><a href="#">5월</a></li>
+                        <li><a href="#">6월</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+    var index = 3; // (li 갯수) - 1
+    var sum = 0;
+    for (var j=0; j <= index; j++) {
+        sum = sum + $("._exMenu li:eq("+ j +")").outerWidth(true);
+    }
+    $('._exMenu ul').css('width', sum + 1);
+</script>
+</html>

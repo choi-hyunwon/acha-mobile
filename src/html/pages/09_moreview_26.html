@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">회원탈퇴</h2>
+    </div>
+    <div class="contents">
+        <div class="withdrawal">
+            <div class="withdrawal-txt-lg"><span>탈퇴 전 반드시 확인</span>해주세요.</div>
+            <div class="box_withdrawal">
+                <div class="item">
+                    <div class="title_list">
+                        <div class="title">삭제되는 정보</div>
+                    </div>
+                    <div class="list">고객님의 개인정보 및 연동정보는 모두 탈퇴 즉시 파기 됩니다.</div>
+                    <!-- s 추가 -- 2021.09.01 -->
+                    <div class="list">마이데이터 전송요구는 자동으로 철회됩니다.</div>
+                    <!-- e 추가 -- 2021.09.01 -->
+                </div>
+                <div class="item">
+                    <div class="title_list">
+                        <div class="title">재가입</div>
+                    </div>
+                    <!-- s 변경 -- 2021.09.01 -->
+                    <div class="list">재가입 시 고객님이 이용 중이신 사이트의 연동을 모두<br/>
+                        처음처럼 진행 해야합니다.</div>
+                    <!-- e 변경 -- 2021.09.01 -->
+                </div>
+            </div>
+            <div class="withdrawal-txt-lg"><span>탈퇴하려는 이유</span>가 무엇인가요?</div>
+            <div class="withdrawal-txt">
+                아차와 작별하는 이유를 알려주시겠어요?<br/>
+                소중한 의견을 반영해 더 좋은 서비스로<br/>
+                찾아뵙겠습니다 🙂
+            </div>
+            <div class="withdrawal-form">
+                <div class="category">
+                    <label for="category">탈퇴사유 <span class="primary-color">(필수)</span></label>
+                    <select id="category" name="select">
+                        <option value="선택하세요" disabled="" selected="">선택해주세요.</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="textarea">
+                    <label for="context">문의 내용</label>
+                    <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" id="context"
+                              maxlength="200" placeholder="탈퇴사유를 입력해 주세요. "></textarea>
+                    <span class="txt-limit"><em class="_val">0</em> / 200</span>
+                </div>
+            </div>
+            <div class="btn-box"> <!--  구조 수정 -- 2021.06.25  -->
+                <a href="#" class="btn btn-block btn-lg btn-gray btn-half float-left">탈퇴하기</a>
+                <a href="#" class="btn btn-block btn-lg btn-half float-right">더 사용해보기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    function countChar(val, target) {
+        var len = val.value.length;
+        var targetItem = $(`.${target}`);
+
+        targetItem.text(len);
+
+        if (len === 0) {
+            targetItem.css('color', '#afaeb8')
+        } else {
+            targetItem.css('color', '#37354e')
+        }
+    }
+
+    var selectTarget = $('#category');
+
+    selectTarget.on({
+        'focus': function () {
+            $(this).addClass('focus');
+        },
+        'blur': function () {
+            $(this).addClass('focus');
+        }
+    });
+</script>
+</body>
+</html>
+
+

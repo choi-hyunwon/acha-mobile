@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap bg_purple">
+    <div class="contents">
+        <div class="header-tab _headerTab">
+            <ul class="clearfix">
+                <li class="active"><a href="#">타임라인</a></li>
+                <li><a href="#">스토리</a></li>
+            </ul>
+        </div>
+        <div class="timeline-wrap">
+            <div class="no-data">
+                <span class="font-bold">문서희</span>님<br/>
+                지금 카드와 계좌를 연결하면,<br/>
+                <span class="font-bold">실시간 거래내역 확인</span>과<br/>
+                <span class="font-bold primary-color">나만의 지출 스토리</span>를<br/>
+                만들 수 있어요! 😀
+            </div>
+            <!-- s todo! * 일러스트 수정 예정(디자인) -->
+            <div class="no-data-img">
+                <img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt="타임라인">
+            </div>
+            <!-- e -->
+        </div>
+        <div class="bottom-fixed btn_area bg_purple">
+            <a class="btn btn-lg btn-block btn-big btn-save" href="#">내 거래내역 불러오기</a>
+        </div>
+    </div>
+</div>
+<script>
+    // 타임라인 / 스토리 탭
+    $('._headerTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+</body>
+</html>
+
+

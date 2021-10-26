@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <!--  S header  -->
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>결제예정정보</h2>
+    </div>
+    <!--  E header  -->
+
+    <div class="contents">
+        <div class="my-card-detail">
+            <div class="card-detail-info">
+                <div class="title"><span>5월 26일</span> 결제하실 금액은<br/><span>635,431</span>원입니다 💸</div>
+                <div class="info-list">
+                    <ul>
+                        <li>
+                            <span>일시불 0건</span>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <span>할부 7건</span>
+                            <span>635,431</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-detail-list-wrap">
+                <div class="date-info mb-20">
+                    <span class="title">할부내역</span>
+                </div>
+                <ul class="spending-list">
+                    <li>
+                        <span class="day">8일</span>
+                        <span class="title">
+                            <em>KT 인터넷전화</em>
+                            <em class="desc">
+                                할부
+                                <i class="num">2/6</i><i class="div">|</i>
+                                잔여
+                                <i class="num">1,500,000</i>
+                                원
+                            </em>
+                        </span>
+                        <span class="val">127,000</span>
+
+                    </li>
+                    <li>
+                        <span class="day"></span>
+                        <span class="title">
+                            <em>SKT 브로드밴드</em>
+                            <em class="desc">
+                                할부
+                                <i class="num">2/6</i><i class="div">|</i>
+                                잔여
+                                <i class="num">1,500,000</i>
+                                원
+                            </em>
+                        </span>
+                        <span class="val">45,000</span>
+                    </li>
+                    <li>
+                        <span class="day">10일</span>
+                        <span class="title">
+                            <em>SKT 010**29**09</em>
+                            <em class="desc">
+                                할부
+                                <i class="num">2/6</i><i class="div">|</i>
+                                잔여
+                                <i class="num">1,500,000</i>
+                                원
+                            </em>
+                        </span>
+                        <span class="val">127,000</span>
+                    </li>
+                    <li>
+                        <span class="day">11일</span>
+                        <span class="title">
+                            <em>KT 인터넷전화</em>
+                            <em class="desc">
+                                할부
+                                <i class="num">2/6</i><i class="div">|</i>
+                                잔여
+                                <i class="num">1,500,000</i>
+                                원
+                            </em>
+                        </span>
+                        <span class="val">127,000</span>
+                    </li>
+                    <li>
+                        <span class="day"></span>
+                        <span class="title">
+                            <em>SKT 브로드밴드</em>
+                            <em class="desc">
+                                할부
+                                <i class="num">2/6</i><i class="div">|</i>
+                                잔여
+                                <i class="num">1,500,000</i>
+                                원
+                            </em>
+                        </span>
+                        <span class="val">45,000</span>
+                    </li>
+                    <li>
+                        <span class="day">13일</span>
+                        <span class="title">
+                            <em>SKT 010**29**09</em>
+                            <em class="desc">
+                                할부
+                                <i class="num">2/6</i><i class="div">|</i>
+                                잔여
+                                <i class="num">1,500,000</i>
+                                원
+                            </em>
+                        </span>
+                        <span class="val">127,000</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // https://swiperjs.com/swiper-api
+    $(document).ready(function () {
+        var swiper = new Swiper("._swiper1", {
+            pagination: {
+                el: "._swiperPagination1",
+                clickable: true
+            }
+        });
+        var swiper2 = new Swiper("._swiper2", {
+            pagination: {
+                el: "._swiperPagination2",
+                clickable: true
+            }
+        });
+        var swiper3 = new Swiper("._swiper3", {
+            pagination: {
+                el: "._swiperPagination3",
+                clickable: true
+            }
+        });
+    })
+
+    /* 날짜 객체 받아서 문자열로 리턴하는 함수 */
+    function getDateStr(myDate) {
+        return (myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + myDate.getDate())
+    }
+
+    /* 오늘 날짜를 문자열로 반환 */
+    function today() {
+        var d = new Date()
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 1개월전 날짜 반환 */
+    function lastMonth() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear - 1)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 2개웗 후 날짜 반환 */
+    function next2Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 2)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 3개웗 후 날짜 반환 */
+    function next3Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 3)
+        return getDateStr(d)
+    }
+</script>
+</html>

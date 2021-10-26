@@ -1,0 +1,38 @@
+<svg id="ico_list_etc_big" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #37354e;
+      }
+
+      .cls-3 {
+        stroke: #774cd7;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="그룹_4067" data-name="그룹 4067">
+    <rect id="사각형_3177" data-name="사각형 3177" class="cls-1" width="30" height="30" transform="translate(0 0)"/>
+  </g>
+  <g id="그룹_4463" data-name="그룹 4463">
+    <g id="타원_1652" data-name="타원 1652" class="cls-2" transform="translate(6 13)">
+      <circle class="cls-4" cx="2" cy="2" r="2"/>
+      <circle class="cls-1" cx="2" cy="2" r="1.5"/>
+    </g>
+    <g id="타원_1653" data-name="타원 1653" class="cls-2" transform="translate(13 13)">
+      <circle class="cls-4" cx="2" cy="2" r="2"/>
+      <circle class="cls-1" cx="2" cy="2" r="1.5"/>
+    </g>
+    <g id="타원_1654" data-name="타원 1654" class="cls-3" transform="translate(20 13)">
+      <circle class="cls-4" cx="2" cy="2" r="2"/>
+      <circle class="cls-1" cx="2" cy="2" r="1.5"/>
+    </g>
+  </g>
+</svg>

@@ -4,6 +4,18 @@ data.signInRenewal = {
     'list': [
         {
             'stateClass': 'complete',
+            'url': '11_app_info_AOS',
+            'category': 'common',
+            'page': '오픈소스 라이센스 AOS'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_app_info_IOS',
+            'category': 'common',
+            'page': '오픈소스 라이센스 IOS'
+        },
+        {
+            'stateClass': 'complete',
             'url': '06_sign_in_06',
             'category': 'common',
             'page': '서비스 이용약관'

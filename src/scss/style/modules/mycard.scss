@@ -50,6 +50,21 @@
       }
     }
   }
+
+  &.my-card-tab-lg {
+    & ul {
+      & li {
+        & a {
+          font-size: 17px;
+        }
+        &.active {
+          & a {
+            font-family: var(--font3);
+          }
+        }
+      }
+    }
+  }
 }
 
 .my-card-main {

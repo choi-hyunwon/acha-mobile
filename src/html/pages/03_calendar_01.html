@@ -3,17 +3,26 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
+    <div class="my-card-tab my-card-tab-lg _tab">
+        <ul class="clearfix">
+            <li class="active"><a href="#">캘린더</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">월별</a></li>
+        </ul>
+    </div>
+    <script>
+        $('._tab li a').on('click', function (){
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
     <div class="contents">
-        <div class="box_ex_calendar_header bg-purple"> <!-- bg-dark-blue / bg-blue -->
+        <div class="box_ex_calendar_header">
             <div class="top-area">
-                <a href="#" class="btn-back"><i class="sprite ico_top_back_nor"></i></a>
-                <a href="#" class="btn-select-month _btnSlideOpen"><span>5월</span><i class="sprite top_month_arrow"></i></a>
+                <a href="#" class="btn-select-month _btnSlideOpen"><span>5월</span><i class="ico-arrow"></i></a>
             </div>
             <div class="text-area">
-                <p>
-                    <span>지출 예정/완료 내역</span>을 캘린더로 확인하세요<br/>
-                    <span>일 선택 및 다중 선택</span>이 가능합니다 🙂
-                </p>
+                <p>지출 예정/완료 내역을 캘린더로 확인하세요<br/>
+                    일 선택 및 다중 선택이 가능합니다 🙂</p>
             </div>
         </div>
         <div class="box_ex_calendar">
@@ -23,7 +32,7 @@
                     <li><a href="#">카드결제</a></li>
                     <li><a href="#">계좌이체</a></li>
                 </ul>
-                <a href="#" class="btn-reset"><em>선택 지우기</em><i class="ico-select-reset"></i></a>
+                <a href="#" class="btn-reset">선택 해제</a>
             </div>
             <div id='calendar'></div>
         </div>

@@ -3,22 +3,22 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
-    <div class="my-card-tab _myCardTab">  <!-- todo! 안드로이드/IOS 개발 영역 확인 -->
+    <div class="my-card-tab my-card-tab-lg _tab">
         <ul class="clearfix">
-            <li class="active"><a href="#">지출상세</a></li>
-            <li><a href="#">내카드</a></li>
-            <li><a href="#">연말정산</a></li>
+            <li><a href="#">캘린더</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li class="active"><a href="#">월별</a></li>
         </ul>
     </div>
     <!-- s 추가 -- 2021.06.14 -->
-    <div class="ex-menu-top _exMenu">
-        <ul class="clearfix">
-            <li class="active"><a href="#">월별</a></li>
-            <li><a href="#">카테고리</a></li>
-            <li><a href="#">지출계좌</a></li>
-            <li><a href="#">카드 고정비</a></li>
-        </ul>
-    </div>
+    <!--    <div class="ex-menu-top _exMenu">-->
+    <!--        <ul class="clearfix">-->
+    <!--            <li class="active"><a href="#">월별</a></li>-->
+    <!--            <li><a href="#">카테고리</a></li>-->
+    <!--            <li><a href="#">지출계좌</a></li>-->
+    <!--            <li><a href="#">카드 고정비</a></li>-->
+    <!--        </ul>-->
+    <!--    </div>-->
     <!-- e 추가 -- 2021.06.14 -->
     <div class="contents">
         <div class="box_category_list">
@@ -77,7 +77,7 @@
                                     </li>
                                 </ul>
                                 <p class="btn-move">
-                                    <span class="value">11,000,000</span>
+                                    <span class="value">11,000,000원</span>
                                     <i class="sprite ico_arrow_small_nor"></i>
                                 </p>
                             </a>
@@ -93,7 +93,7 @@
                                     </li>
                                 </ul>
                                 <p class="btn-move">
-                                    <span class="value">1,280,000</span>
+                                    <span class="value">1,280,000원</span>
                                     <i class="sprite ico_arrow_small_nor"></i>
                                 </p>
                             </a>
@@ -110,9 +110,9 @@
                                     </li>
                                 </ul>
                                 <p class="btn-move">
-                                    <span class="value">45,000</span>
+                                    <span class="value text">청구서 미발행</span>
                                     <i class="sprite ico_arrow_small_nor"></i>
-                                    <span class="desc-sm">청구서 미발행</span>
+<!--                                    <span class="desc-sm">청구서 미발행</span>-->
                                 </p>
                             </a>
                         </div>
@@ -160,6 +160,10 @@
 <div class="modal-slide-backdrop"></div>
 <script>
     $(document).ready(function () {
+        $('._tab li a').on('click', function (){
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+
         var btnSlideOpen = $('._btnSlideOpen');
         var btnSlideClose = $('._btnSlideClose');
 

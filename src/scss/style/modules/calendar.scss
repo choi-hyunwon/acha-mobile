@@ -6,60 +6,58 @@
 .box_ex_calendar_header {
   position: relative;
   width: 100%;
+  margin-top: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f5f6f8;
 
   & .top-area {
     position: relative;
-    width: 100%;
-    height: 66px;
+    margin-bottom: 6px;
 
-    & .btn-back {
-      position: absolute;
-      display: flex;
-      width: 26px;
-      height: 26px;
-      justify-content: center;
-      align-items: center;
-      left: 16px;
-      top: 20px;
-    }
+    //& .btn-back {
+    //  position: absolute;
+    //  display: flex;
+    //  width: 26px;
+    //  height: 26px;
+    //  justify-content: center;
+    //  align-items: center;
+    //  left: 16px;
+    //  top: 20px;
+    //}
 
     & .btn-select-month {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
+      padding-left: 20px;
 
       & span {
         display: inline-block;
-        font-family: var(--font2);
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1.28;
+        vertical-align: middle;
+        font-family: var(--font3);
+        font-size: 28px;
+        line-height: 38px;
         letter-spacing: normal;
-        color: #fff;
-        margin-right: 9px;
+        color: var(--text-01);
+        margin-right: 8px;
+      }
+
+      .ico-arrow {
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        background-image: url(../../img/common/arrow@2x.png);
+        background-size: cover;
       }
     }
   }
 
   & .text-area {
-    width: 100%;
-    padding: 0 20px 15px 20px;
+    padding: 0 20px;
 
     & p {
-      padding: 10px 15px;
-      font-size: 12px;
-      line-height: 20px;
-      letter-spacing: -0.3px;
-      text-align: left;
-      background-color: rgba(255, 255, 255, .06);
-      border-radius: 6px;
-      color: #beacdf;
-
-      & span {
-        color: #fff;
-      }
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -0.38px;
+      color: #666;
     }
   }
 
@@ -157,13 +155,13 @@
 
         & a {
           display: inline-block;
-          height: 28px;
-          line-height: 27px;
+          height: 34px;
+          line-height: 34px;
           border-radius: 999px;
           background-color: #f5f6f8;
-          padding: 0 12px;
-          font-size: 12px;
-          letter-spacing: -0.6px;
+          padding: 0 15px;
+          font-size: 14px;
+          letter-spacing: -0.7px;
           text-align: center;
           color: var(--text-03);
         }
@@ -182,21 +180,18 @@
       right: 0;
       top: 0;
       display: inline-flex;
-      height: 28px;
+      height: 34px;
       align-items: center;
       padding: 0 10px;
       background-image: url(../../img/common/btn-dash-bg-01.svg);
-      width: 86px;
+      width: 75px;
       background-size: cover;
-
-      & em {
-        font-size: 11px;
-        line-height: 26px;
-        letter-spacing: -0.55px;
-        text-align: right;
-        color: var(--text-02);
-        margin-right: 4px;
-      }
+      font-size: 12px;
+      line-height: 26px;
+      letter-spacing: -0.6px;
+      text-align: center;
+      justify-content: center;
+      color: var(--text-02);
 
       & .ico-select-reset {
         display: inline-block;

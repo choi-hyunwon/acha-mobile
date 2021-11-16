@@ -50,13 +50,13 @@
 }
 
 .box-ex-account {
-  & .tip-box {
+  .tip-box {
     width: 100%;
     height: 50px;
     padding: 0 20px;
     border-bottom: 1px solid #f2f4f7;
 
-    & .list {
+    .list {
       font-size: 11px;
       font-family: var(--font1);
       line-height: 50px;
@@ -72,11 +72,11 @@
     }
   }
 
-  & .update-box {
+  .update-box {
     padding: 16px 20px;
     border-bottom: 1px solid #f2f4f7;
 
-    & .txt {
+    .txt {
       font-size: 14px;
       line-height: 23px;
       letter-spacing: -0.35px;
@@ -84,7 +84,7 @@
       margin-bottom: 12px;
     }
 
-    & .img {
+    .img {
       & img {
         display: inline-block;
       }
@@ -101,12 +101,12 @@
     }
   }
 
-  & .card-detail-calendar {
+  .card-detail-calendar {
     overflow: hidden;
     margin-bottom: 15px;
     padding-top: 4px;
 
-    & .input-calendar {
+    .input-calendar {
       float: left;
       position: relative;
       width: calc(50% - 37px / 2);
@@ -194,7 +194,7 @@
       }
     }
 
-    & .icon {
+    .icon {
       float: left;
       width: 37px;
 
@@ -206,7 +206,7 @@
     }
   }
 
-  & .card-detail-badge {
+  .card-detail-badge {
     margin-bottom: 25px;
 
     & ul {
@@ -246,15 +246,15 @@
     }
   }
 
-  & .ex-account {
+  .ex-account {
     & > ul {
       padding: 26px 20px 24px;
     }
   }
 
-  & .accordion {
-    & .card {
-      & .card-body {
+  .accordion {
+    .card {
+      .card-body {
         padding: 18px 20px 12px;
 
         & > .total-sum {
@@ -262,7 +262,7 @@
           justify-content: space-between;
           margin-bottom: 25px;
 
-          & .tit {
+          .tit {
             font-family: var(--font3);
             font-size: 15px;
             font-weight: bold;
@@ -272,7 +272,7 @@
             color: var(--text-01);
           }
 
-          & .sum {
+          .sum {
             font-family: var(--font3);
             font-size: 17px;
             font-weight: bold;
@@ -290,31 +290,31 @@
           }
         }
 
-        & .ex-pre {
-          & .ex-info {
+        .ex-pre {
+          .ex-info {
             margin-bottom: 13px;
 
             &:last-child {
               margin-bottom: 0;
             }
 
-            & .date-wrap {
+            .date-wrap {
               width: 42px;
 
-              & .date {
+              .date {
                 min-width: 42px;
                 padding: 0;
                 height: 18px;
               }
             }
 
-            & .title {
+            .title {
               width: calc(100% - 56px - 80px);
               line-height: 18px;
               padding-left: 56px;
             }
 
-            & .value-wrap {
+            .value-wrap {
               position: absolute;
               right: 0;
               top: 0;
@@ -322,7 +322,7 @@
               flex-direction: column;
               width: fit-content;
 
-              & .value {
+              .value {
                 line-height: 18px;
                 padding-right: 0;
                 font-weight: 500;
@@ -338,7 +338,7 @@
                 }
               }
 
-              & .value2 {
+              .value2 {
                 font-family: var(--font1);
                 font-size: 13px;
                 line-height: 18px;
@@ -356,7 +356,7 @@
       }
     }
 
-    & .update-box {
+    .update-box {
       font-size: 14px;
       line-height: 23px;
       letter-spacing: -0.35px;
@@ -373,15 +373,15 @@
   padding-left: 20px;
   padding-bottom: 30px;
 
-  & .select-wrap {
+  .select-wrap {
     margin-top: 26px;
     margin-bottom: 24px;
 
-    & .select-box {
+    .select-box {
       position: relative;
       width: 165px;
 
-      & .bank-img {
+      .bank-img {
         position: absolute;
         width: 20px;
         height: 20px;
@@ -405,7 +405,7 @@
       }
 
       &.disabled {
-        & .bank-img {
+        .bank-img {
           display: none;
         }
 
@@ -430,22 +430,22 @@
     margin-bottom: 30px;
   }
 
-  & .table-wrap {
+  .table-wrap {
     position: relative;
 
-    & .table-fixed {
-      & .table-col {
+    .table-fixed {
+      .table-col {
         padding: 5px 10px;
       }
 
-      & .table-header {
+      .table-header {
         position: absolute;
         top: 0;
         left: 0;
         width: 115px;
         border-right: 1px solid var(--text-03);
 
-        & .table-col {
+        .table-col {
           font-size: 11px;
           line-height: 16px;
           letter-spacing: -0.28px;
@@ -480,25 +480,25 @@
         }
       }
 
-      & .table-body {
+      .table-body {
         margin-left: 115px;
         overflow-x: auto;
 
-        & .inner {
+        .inner {
           overflow-x: auto;
         }
 
-        & .table-row {
+        .table-row {
           overflow: hidden;
 
-          & .table-col {
+          .table-col {
             float: left;
             width: 70px;
             border-right: 1px solid #e3e4e8;
           }
 
           &.month {
-            & .table-col {
+            .table-col {
               font-family: var(--font2);
               font-weight: 500;
               background-color: #f5f6f8;
@@ -509,7 +509,7 @@
           }
 
           &.sum {
-            & .table-col {
+            .table-col {
               background-color: #f7f8fc;
               border-bottom: 1px solid #e3e4e8;
               border-top: 1px solid #e3e4e8;
@@ -519,7 +519,7 @@
           }
 
           &.item {
-            & .table-col {
+            .table-col {
               background-color: #fff;
               border-bottom: 1px solid #f5f6f8;
               color: var(--text-02);
@@ -531,11 +531,11 @@
     }
   }
 
-  & .empty {
+  .empty {
     padding-top: 96px;
     padding-right: 20px;
 
-    & .img {
+    .img {
       width: 30px;
       height: 30px;
       margin: 0 auto 13px;
@@ -546,7 +546,7 @@
       }
     }
 
-    & .txt {
+    .txt {
       font-size: 12px;
       line-height: 19px;
       letter-spacing: -0.3px;
@@ -556,10 +556,10 @@
     }
   }
 
-  & .update-box {
+  .update-box {
     margin-bottom: 30px;
 
-    & .txt {
+    .txt {
       font-size: 14px;
       line-height: 23px;
       letter-spacing: -0.35px;
@@ -568,7 +568,7 @@
       margin-bottom: 12px;
     }
 
-    & .img {
+    .img {
       & img {
         display: inline-block;
       }
@@ -629,75 +629,66 @@
 }
 
 .box_category_list {
-  & .filter-area {
-    padding: 30px 24px;
+  .filter-area {
+    padding: 30px 20px;
     border-bottom: 1px solid #f2f4f7;
 
-    & .btn-select {
+    .btn-select {
       position: relative;
-      display: block;
+      display: inline-block;
       width: fit-content;
-      height: 27px;
       padding-bottom: 2px;
-      font-family: var(--font2);
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 27px;
+      font-family: var(--font3);
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: normal;
       color: var(--text-01);
-      margin-bottom: 10px;
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        background-color: var(--text-01);
-        left: 0;
-        bottom: 0;
-      }
+      margin-bottom: 6px;
 
       &::after {
         content: '';
         position: absolute;
-        width: 11px;
-        height: 11px;
-        background-image: url(../../img/common/ico-mycard-arrow-nor@2x.png);
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        background-image: url(../../img/common/arrow@2x.png);
         background-size: cover;
-        right: -12px;
+        right: -22px;
         top: 50%;
         transform: translateY(-50%);
       }
     }
 
     & > .title {
-      font-size: 16px;
-      line-height: 25px;
+      font-size: 15px;
+      line-height: 1.47;
       letter-spacing: -0.4px;
-      margin-bottom: 10px;
+      color: #666;
     }
 
-    & .dropdown-wrap {
+    .dropdown-wrap {
       padding: 0;
-      margin: 0;
+      margin: 12px 0 0;
 
-      & .dropdown {
+      .dropdown {
         display: inline-block;
         width: 115px;
 
         &.disabled {
-          & .dropdown-toggle {
+          .dropdown-toggle {
             border: solid 1px #e2e3e6;
             color: var(--text-03);
             background-color: #f5f6f8;
             cursor: default;
           }
 
-          & .dropdown-menu {
+          .dropdown-menu {
             display: none;
           }
         }
 
-        & .dropdown-toggle {
+        .dropdown-toggle {
           color: var(--text-01);
 
           &::after {
@@ -718,15 +709,15 @@
     & > .btn-wrap {
       overflow: hidden;
 
-      & .btn {
+      .btn {
         float: left;
       }
 
-      & .btn + .btn {
+      .btn + .btn {
         margin-left: 10px;
       }
 
-      & .btn-filter {
+      .btn-filter {
         padding: 0 26px 0 10px;
         height: 28px;
         line-height: 26px;
@@ -750,7 +741,7 @@
         }
       }
 
-      & .btn-ex {
+      .btn-ex {
         min-width: auto;
         position: relative;
         height: 27px;
@@ -785,7 +776,7 @@
         }
       }
 
-      & .btn-category {
+      .btn-category {
         min-width: auto;
         position: relative;
         height: 27px;
@@ -809,7 +800,7 @@
           display: inline-block;
           vertical-align: middle;
 
-          & .ico-filter-delete {
+          .ico-filter-delete {
             display: inline-block;
             width: 12px;
             height: 12px;
@@ -822,8 +813,8 @@
       }
     }
 
-    & .update-box {
-      & .txt {
+    .update-box {
+      .txt {
         font-size: 14px;
         line-height: 23px;
         letter-spacing: -0.35px;
@@ -831,7 +822,7 @@
         margin-bottom: 12px;
       }
 
-      & .img {
+      .img {
         & img {
           display: inline-block;
         }
@@ -849,20 +840,20 @@
     }
   }
 
-  & .category-list-item {
-    & .category-info {
+  .category-list-item {
+    .category-info {
       &.total {
         margin-bottom: 30px;
         padding: 30px 20px 0;
 
-        & .title {
+        .title {
           display: inline-block;
           font-family: var(--font3);
           font-weight: bold;
           vertical-align: middle;
         }
 
-        & .sum {
+        .sum {
           display: inline-block;
           vertical-align: middle;
           font-weight: bold;
@@ -881,10 +872,10 @@
       }
     }
 
-    & .ex-item {
+    .ex-item {
       & a {
-        & .btn-move {
-          & .desc-sm {
+        .btn-move {
+          .desc-sm {
             position: absolute;
             bottom: -3px;
             right: 10px;
@@ -903,7 +894,7 @@
       & > .empty {
         padding: 20px 20px 32px;
 
-        & .img {
+        .img {
           display: block;
           width: 30px;
           height: 30px;
@@ -915,7 +906,7 @@
           }
         }
 
-        & .txt {
+        .txt {
           font-size: 12px;
           line-height: 20px;
           letter-spacing: -0.3px;
@@ -931,10 +922,10 @@
 .filter-setting {
   padding: 20px;
 
-  & .item {
+  .item {
     margin-bottom: 36px;
 
-    & .label {
+    .label {
       font-family: var(--font2);
       font-size: 12px;
       font-weight: 500;
@@ -945,7 +936,7 @@
       margin-bottom: 20px;
     }
 
-    & .btn-wrap {
+    .btn-wrap {
       overflow: hidden;
 
       & a {
@@ -972,7 +963,7 @@
           border: 1px solid var(--blurple);
           color: var(--blurple);
 
-          & .icon {
+          .icon {
             display: inline-block;
             width: 16px;
             height: 16px;
@@ -1010,7 +1001,7 @@
   height: 108px;
   border-bottom: 1px solid #f5f6f8;
 
-  & .sum_desc {
+  .sum_desc {
     position: absolute;
     font-size: 12px;
     line-height: 18px;
@@ -1020,7 +1011,7 @@
     left: 20px;
   }
 
-  & .sum_change {
+  .sum_change {
     position: absolute;
     font-family: var(--font3);
     font-size: 28px;
@@ -1052,12 +1043,12 @@
     }
   }
 
-  & .btn-wrap {
+  .btn-wrap {
     position: absolute;
     right: 20px;
     bottom: 29px;
 
-    & .btn {
+    .btn {
       width: 80px;
       height: 32px;
       line-height: 30px;
@@ -1079,13 +1070,13 @@
   padding: 37px 20px 4px;
   border-bottom: 10px solid #f5f6f8;
 
-  & .title-area {
+  .title-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 
-    & .title {
+    .title {
       font-family: var(--font3);
       font-size: 15px;
       font-weight: bold;
@@ -1094,7 +1085,7 @@
       text-align: left;
     }
 
-    & .date {
+    .date {
       font-size: 12px;
       line-height: 18px;
       letter-spacing: -0.3px;
@@ -1113,7 +1104,7 @@
       }
     }
 
-    & .total {
+    .total {
       font-family: var(--font3);
       font-size: 17px;
       font-weight: bold;
@@ -1128,11 +1119,11 @@
     }
   }
 
-  & .no-data {
+  .no-data {
     padding-top: 15px;
     padding-bottom: 29px;
 
-    & .txt {
+    .txt {
       font-size: 12px;
       line-height: 20px;
       letter-spacing: -0.3px;
@@ -1140,7 +1131,7 @@
       color: var(--text-02);
     }
 
-    & .img {
+    .img {
       width: 30px;
       height: 30px;
       margin: 0 auto 12px;
@@ -1156,7 +1147,7 @@
 .box-ex-detail-top {
   padding: 11px 20px 0;
 
-  & .title-wrap {
+  .title-wrap {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -0.45px;
@@ -1165,12 +1156,12 @@
     padding-bottom: 23px;
   }
 
-  & .account-info {
+  .account-info {
     border: 1px solid var(--text-01);
     border-radius: 4px;
     padding: 0 20px;
 
-    & .info1 {
+    .info1 {
       position: relative;
       padding-top: 17px;
       padding-bottom: 14px;
@@ -1179,7 +1170,7 @@
         border-top: 1px solid #e3e4e8;
       }
 
-      & .img {
+      .img {
         display: inline-block;
         vertical-align: middle;
         width: 26px;
@@ -1192,7 +1183,7 @@
         }
       }
 
-      & .name {
+      .name {
         display: inline-block;
         width: calc(100% - 100px);
         overflow: hidden;
@@ -1208,7 +1199,7 @@
         color: var(--text-01);
       }
 
-      & .btn-more {
+      .btn-more {
         position: absolute;
         width: 18px;
         height: 18px;
@@ -1220,7 +1211,7 @@
         border-radius: 50%;
         text-align: center;
 
-        & .arrow-list-add {
+        .arrow-list-add {
           display: inline-block;
           width: 6px;
           height: 16px;
@@ -1231,7 +1222,7 @@
       }
     }
 
-    & .btn-refresh {
+    .btn-refresh {
       position: absolute;
       display: block;
       right: 0;
@@ -1251,7 +1242,7 @@
         vertical-align: middle;
       }
 
-      & .ico-refresh-mini {
+      .ico-refresh-mini {
         display: inline-block;
         width: 16px;
         height: 16px;
@@ -1261,7 +1252,7 @@
         margin-left: 2px;
       }
 
-      & .ico-caution-red {
+      .ico-caution-red {
         display: inline-block;
         width: 12px;
         height: 12px;
@@ -1272,12 +1263,12 @@
       }
     }
 
-    & .info2 {
+    .info2 {
       position: relative;
       padding: 14px 0;
       overflow: hidden;
 
-      & .ac-name {
+      .ac-name {
         display: block;
         font-family: var(--font2);
         font-size: 16px;
@@ -1287,7 +1278,7 @@
         color: var(--text-01);
       }
 
-      & .ac-num {
+      .ac-num {
         display: inline-block;
         font-size: 13px;
         line-height: 18px;
@@ -1296,7 +1287,7 @@
         margin-top: 2px;
       }
 
-      & .ac-val {
+      .ac-val {
         position: absolute;
         right: 0;
         top: 35px;
@@ -1321,11 +1312,11 @@
         }
       }
 
-      & .ac-total {
+      .ac-total {
         float: right;
         text-align: right;
 
-        & .val {
+        .val {
           display: block;
           font-family: var(--font3);
           font-size: 18px;
@@ -1348,7 +1339,7 @@
           }
         }
 
-        & .desc {
+        .desc {
           display: block;
           font-size: 11px;
           line-height: 17px;
@@ -1356,14 +1347,14 @@
           text-align: right;
           color: var(--text-02);
 
-          & .num {
+          .num {
             font-family: var(--font1);
           }
         }
       }
     }
 
-    & .info3 {
+    .info3 {
       padding: 18px 0;
       border-top: 1px solid #e3e4e8;
 
@@ -1395,7 +1386,7 @@
             background-color: #f5f6f8;
           }
 
-          & .tit {
+          .tit {
             font-size: 11px;
             line-height: 17px;
             letter-spacing: -0.28px;
@@ -1403,7 +1394,7 @@
             margin-bottom: 3px;
           }
 
-          & .val {
+          .val {
             font-family: var(--font1);
             font-size: 20px;
             font-weight: bold;
@@ -1430,31 +1421,31 @@
         bottom: 0;
       }
 
-      & .info2 {
+      .info2 {
         height: auto;
         padding: 0 0 30px;
 
-        & .ac-name {
+        .ac-name {
           padding-top: 10px;
         }
 
-        & .btn-refresh {
+        .btn-refresh {
           top: 12px;
           transform: none;
         }
       }
 
-      & .update-box {
+      .update-box {
         padding-top: 0;
         padding-bottom: 30px;
       }
     }
   }
 
-  & .update-box {
+  .update-box {
     padding-top: 30px;
 
-    & .txt {
+    .txt {
       font-size: 14px;
       line-height: 23px;
       letter-spacing: -0.35px;
@@ -1463,7 +1454,7 @@
       margin-bottom: 12px;
     }
 
-    & .img {
+    .img {
       & img {
         display: inline-block;
       }
@@ -1499,7 +1490,7 @@
   & > .func {
     margin-bottom: 24px;
 
-    & .ico-bank-home-view {
+    .ico-bank-home-view {
       display: inline-block;
       vertical-align: middle;
       margin-right: 2px;
@@ -1509,7 +1500,7 @@
       background-size: cover;
     }
 
-    & .ico-bank-home-hide {
+    .ico-bank-home-hide {
       display: inline-block;
       vertical-align: middle;
       margin-right: 2px;
@@ -1538,12 +1529,12 @@
     margin-bottom: 14px;
   }
 
-  & .ac-list {
-    & .ac-item {
+  .ac-list {
+    .ac-item {
       position: relative;
       margin-bottom: 33px;
 
-      & .img {
+      .img {
         float: left;
         display: inline-block;
         width: 22px;
@@ -1557,7 +1548,7 @@
         }
       }
 
-      & .name {
+      .name {
         float: left;
         width: calc(100% - 128px);
         font-family: var(--font2);
@@ -1570,7 +1561,7 @@
         text-overflow: ellipsis;
       }
 
-      & .value {
+      .value {
         float: right;
         font-size: 14px;
         font-family: var(--font2);
@@ -1598,7 +1589,7 @@
         }
       }
 
-      & .ac-num {
+      .ac-num {
         position: absolute;
         font-family: var(--font1);
         font-size: 11px;
@@ -1609,7 +1600,7 @@
         top: 25px;
       }
 
-      & .box-switch {
+      .box-switch {
         float: right;
         display: inline-block;
         transform: translate(1px, 0);
@@ -1623,8 +1614,8 @@
     padding-top: 0;
     margin-bottom: 18px;
 
-    & .ac-list {
-      & .ac-item {
+    .ac-list {
+      .ac-item {
         margin-bottom: 27px;
       }
     }
@@ -1635,25 +1626,25 @@
     padding-top: 0;
     padding-bottom: 86px;
 
-    & .ac-list {
-      & .ac-item {
+    .ac-list {
+      .ac-item {
         position: relative;
         height: 78px;
         margin-bottom: 0;
         border-bottom: 1px solid #f5f6f8;
         padding-bottom: 38px;
 
-        & .img {
+        .img {
           margin-right: 6px;
           margin-top: 28px;
           margin-left: 3px;
         }
 
-        & .name {
+        .name {
           padding-top: 20px;
         }
 
-        & .value {
+        .value {
           position: absolute;
           right: 42px;
           top: 50%;
@@ -1661,14 +1652,14 @@
           transform: translateY(-50%);
         }
 
-        & .label {
+        .label {
           position: absolute;
           top: 50%;
           right: 0;
           transform: translateY(-50%);
         }
 
-        & .ac-num {
+        .ac-num {
           top: 43px;
           left: 32px;
         }
@@ -1686,7 +1677,7 @@
   overflow: hidden;
   margin-bottom: 5px;
 
-  & .date {
+  .date {
     font-family: var(--font2);
     font-size: 12px;
     line-height: 18px;
@@ -1696,16 +1687,16 @@
     margin-bottom: 23px;
   }
 
-  & .ex-list {
-    & .ex-item {
+  .ex-list {
+    .ex-item {
       position: relative;
       margin-bottom: 21px;
 
-      & .info {
+      .info {
         display: block;
         overflow: hidden;
 
-        & .title {
+        .title {
           float: left;
           width: calc(100% - 128px);
           font-family: var(--font2);
@@ -1718,7 +1709,7 @@
           text-overflow: ellipsis;
         }
 
-        & .state {
+        .state {
           float: right;
           font-family: var(--font2);
           font-size: 12px;
@@ -1727,7 +1718,7 @@
           vertical-align: middle;
         }
 
-        & .time {
+        .time {
           position: absolute;
           font-family: var(--font1);
           font-size: 11px;
@@ -1739,7 +1730,7 @@
         }
       }
 
-      & .value {
+      .value {
         display: block;
         text-align: right;
         font-size: 14px;
@@ -1778,7 +1769,7 @@
         }
       }
 
-      & .balance {
+      .balance {
         display: block;
         font-family: var(--font1);
         font-size: 12px;
@@ -1797,7 +1788,7 @@
         }
       }
 
-      & .box-switch {
+      .box-switch {
         float: right;
         display: inline-block;
         transform: translate(1px, 0);
@@ -1810,8 +1801,8 @@
     padding-top: 0;
     margin-bottom: 18px;
 
-    & .ac-list {
-      & .ac-item {
+    .ac-list {
+      .ac-item {
         margin-bottom: 27px;
       }
     }
@@ -1822,7 +1813,7 @@
 .box_ex_bottom {
   padding: 0 24px;
 
-  & .updating {
+  .updating {
     display: inline-block;
     width: calc(100% - 45px);
     height: 41px;
@@ -1846,10 +1837,10 @@
 .box_ex_edit_list {
   padding: 20px;
 
-  & .ex_edit_item {
+  .ex_edit_item {
     margin-bottom: 25px;
 
-    & .label {
+    .label {
       vertical-align: middle;
       margin-right: 5px;
 
@@ -1863,7 +1854,7 @@
       }
     }
 
-    & .date {
+    .date {
       width: 41px; /* 고정형 */
       display: inline-block;
       font-size: 11px;
@@ -1874,7 +1865,7 @@
       margin-right: 9px;
     }
 
-    & .title {
+    .title {
       width: calc(100% - 185px); /* 반응형 */
       display: inline-block;
       font-size: 13px;
@@ -1888,7 +1879,7 @@
       text-overflow: ellipsis;
     }
 
-    & .value {
+    .value {
       display: inline-block;
       float: right;
       font-size: 14px;
@@ -1921,11 +1912,11 @@
 .box_my_income_list {
   padding: 30px 20px 0;
 
-  & .income-item {
+  .income-item {
     position: relative;
     margin-bottom: 25px;
 
-    & .date {
+    .date {
       width: 45px;
       display: inline-block;
       font-family: var(--font2);
@@ -1936,7 +1927,7 @@
       margin-right: 10px;
     }
 
-    & .title {
+    .title {
       width: calc(100% - 165px);
       font-family: var(--font2);
       font-size: 13px;
@@ -1949,7 +1940,7 @@
       text-overflow: ellipsis;
     }
 
-    & .value {
+    .value {
       float: right;
       display: inline-block;
       font-size: 14px;
@@ -1968,11 +1959,11 @@
       }
     }
 
-    & .ac-info {
+    .ac-info {
       margin-top: 9px;
       padding-left: 55px;
 
-      & .b-name {
+      .b-name {
         display: inline-block;
         font-size: 11px;
         line-height: 17px;
@@ -1982,7 +1973,7 @@
         margin-right: 2px;
       }
 
-      & .b-num {
+      .b-num {
         display: inline-block;
         font-family: var(--font1);
         font-size: 11px;
@@ -1991,7 +1982,7 @@
       }
     }
 
-    & .btn-delete {
+    .btn-delete {
       position: absolute;
       top: 25px;
       right: 0;
@@ -2008,12 +1999,12 @@
 .box_my_income_add {
   padding: 20px 20px 40px;
 
-  & .label {
+  .label {
     margin-top: 10px;
     display: block;
   }
 
-  & .btn_box {
+  .btn_box {
     overflow: hidden;
     position: static;
     left: auto;
@@ -2022,7 +2013,7 @@
     padding: 0;
   }
 
-  & .input-title {
+  .input-title {
     font-family: var(--font2);
     font-size: 11px;
     font-weight: 500;
@@ -2032,17 +2023,17 @@
     color: var(--color-point);
   }
 
-  & .input-byte {
+  .input-byte {
     display: block;
     margin-top: 8px;
 
-    & .byte {
+    .byte {
       font-size: 11px;
       line-height: 17px;
       letter-spacing: -0.28px;
     }
 
-    & .total {
+    .total {
       font-size: 11px;
       line-height: 17px;
       letter-spacing: -0.28px;
@@ -2050,12 +2041,12 @@
     }
   }
 
-  & .custom-light {
+  .custom-light {
     &.with-icon {
       position: relative;
       overflow: hidden;
 
-      & .icon {
+      .icon {
         float: left;
         width: 30px;
         height: 30px;
@@ -2097,7 +2088,7 @@
         color: var(--text-01);
       }
 
-      & .btn-modify {
+      .btn-modify {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -2125,7 +2116,7 @@
     }
   }
 
-  & .custom-switch {
+  .custom-switch {
     float: left;
     position: static;
     top: auto;
@@ -2138,7 +2129,7 @@
     }
   }
 
-  & .custom-switch-label {
+  .custom-switch-label {
     float: left;
     font-size: 13px;
     line-height: 27px;
@@ -2164,11 +2155,11 @@
     }
   }
 
-  & .select-box {
+  .select-box {
     position: relative;
     width: 100%;
 
-    & .bank-img {
+    .bank-img {
       position: absolute;
       width: 20px;
       height: 20px;
@@ -2191,15 +2182,15 @@
 .box_ex_detail {
   padding: 0 20px;
 
-  & .box-ex-header {
-    & .ex-top {
+  .box-ex-header {
+    .ex-top {
       padding: 8px 0;
       margin-bottom: 8px;
 
-      & .left {
+      .left {
         float: left;
 
-        & .img {
+        .img {
           display: inline-block;
           width: 26px;
           height: 26px;
@@ -2212,7 +2203,7 @@
           }
         }
 
-        & .b-name {
+        .b-name {
           display: inline-block;
           font-family: var(--font2);
           font-size: 14px;
@@ -2223,10 +2214,10 @@
         }
       }
 
-      & .right {
+      .right {
         float: right;
 
-        & .txt {
+        .txt {
           display: inline-block;
           font-size: 12px;
           line-height: 26px;
@@ -2236,7 +2227,7 @@
           transform: translate(-2px, 2px);
         }
 
-        & .btn-alarm {
+        .btn-alarm {
           display: inline-block;
           width: 22px;
           height: 22px;
@@ -2252,17 +2243,17 @@
       }
     }
 
-    & .ex-bottom {
+    .ex-bottom {
       position: relative;
       width: 100%;
       height: 56px;
       padding: 0 16px;
       background-color: #f7f8fc;
 
-      & .left {
+      .left {
         float: left;
 
-        & .date {
+        .date {
           display: inline-block;
           font-family: var(--font1);
           font-size: 11px;
@@ -2272,7 +2263,7 @@
 
         }
 
-        & .txt {
+        .txt {
           display: inline-block;
           font-family: var(--font1);
           font-size: 11px;
@@ -2283,10 +2274,10 @@
         }
       }
 
-      & .right {
+      .right {
         float: right;
 
-        & .img {
+        .img {
           display: inline-block;
           width: 13px;
           height: 13px;
@@ -2299,7 +2290,7 @@
           }
         }
 
-        & .txt {
+        .txt {
           display: inline-block;
           font-family: var(--font2);
           font-size: 11px;
@@ -2311,7 +2302,7 @@
 
         }
 
-        & .txt2 {
+        .txt2 {
           position: absolute;
           display: inline-block;
           font-size: 11px;
@@ -2324,11 +2315,11 @@
           top: 0;
         }
 
-        & .toggle {
+        .toggle {
           width: auto;
           height: auto;
 
-          & .custom-switch {
+          .custom-switch {
             left: auto;
             right: 11px;
             top: 14px;
@@ -2336,19 +2327,19 @@
         }
 
         &.error {
-          & .img {
+          .img {
             width: 13px;
             height: 13px;
             vertical-align: initial;
             transform: translate(0, -1px);
           }
 
-          & .txt {
+          .txt {
             color: #ef4b61;
           }
         }
 
-        & .btn {
+        .btn {
           margin-top: 12px;
           color: black;
           height: 32px;
@@ -2363,13 +2354,13 @@
       }
     }
 
-    & .card-info {
+    .card-info {
       position: relative;
       overflow: hidden;
       margin-top: -8px;
       margin-bottom: 16px;
 
-      & .name {
+      .name {
         display: block;
         font-size: 11px;
         line-height: 17px;
@@ -2378,7 +2369,7 @@
         padding-left: 2px;
       }
 
-      & .info {
+      .info {
         padding-left: 2px;
 
         & li {
@@ -2411,7 +2402,7 @@
         }
       }
 
-      & .sum {
+      .sum {
         position: absolute;
         right: 2px;
         top: 14px;
@@ -2431,17 +2422,17 @@
       }
     }
 
-    & .ex-bill {
+    .ex-bill {
       width: 100%;
       position: relative;
       overflow: hidden;
       margin-top: 25px;
       margin-bottom: 30px;
 
-      & .info {
+      .info {
         margin-bottom: 5px;
 
-        & .title {
+        .title {
           display: inline-block;
           font-family: var(--font1);
           font-size: 14px;
@@ -2450,7 +2441,7 @@
           letter-spacing: -0.35px;
         }
 
-        & .sum {
+        .sum {
           float: right;
           display: inline-block;
           font-family: var(--font1);
@@ -2470,7 +2461,7 @@
           }
         }
 
-        & .txt {
+        .txt {
           float: right;
           display: inline-block;
           font-size: 14px;
@@ -2482,7 +2473,7 @@
         }
       }
 
-      & .desc {
+      .desc {
         display: block;
         font-size: 11px;
         line-height: 17px;
@@ -2492,7 +2483,7 @@
 
       }
 
-      & .select_box {
+      .select_box {
         display: inline-block;
         padding: 0;
         margin-bottom: 0;
@@ -2522,12 +2513,12 @@
       }
     }
 
-    & .ex-direct {
+    .ex-direct {
       position: relative;
       overflow: hidden;
       width: 100%;
 
-      & .img {
+      .img {
         float: left;
         display: flex;
         width: 50px;
@@ -2543,11 +2534,11 @@
         }
       }
 
-      & .info {
+      .info {
         float: left;
         width: calc(100% - 50px - 10px - 56px);
 
-        & .tit {
+        .tit {
           display: block;
           font-family: var(--font2);
           font-size: 14px;
@@ -2561,7 +2552,7 @@
           margin-bottom: 2px;
         }
 
-        & .val {
+        .val {
           font-family: var(--font3);
           font-size: 18px;
           font-weight: bold;
@@ -2577,7 +2568,7 @@
         }
       }
 
-      & .btn-alert {
+      .btn-alert {
         position: absolute;
         top: 0;
         right: 0;
@@ -2616,12 +2607,12 @@
 .box_ex_detail_list {
   padding: 20px;
 
-  & .ex-detail-item {
+  .ex-detail-item {
     position: relative;
     border-bottom: 1px solid #f5f6f8;
     padding: 20px 0;
 
-    & .title {
+    .title {
       padding-left: 4px;
       font-size: 13px;
       line-height: 19px;
@@ -2630,7 +2621,7 @@
       color: var(--text-02);
     }
 
-    & .value {
+    .value {
       float: right;
       width: calc(100% - 75px);
       font-family: var(--font2);
@@ -2664,7 +2655,7 @@
     &.ex-detail-item-lg {
       padding: 20px 0 53px;
 
-      & .btn {
+      .btn {
         position: absolute;
         right: 4px;
         bottom: 20px;
@@ -2674,7 +2665,7 @@
     &.ex-detail-item-md {
       padding: 20px 0 40px;
 
-      & .value2 {
+      .value2 {
         font-family: var(--font2);
         display: inline-block;
         position: absolute;
@@ -2696,7 +2687,7 @@
     & > li {
       margin-bottom: 33px;
 
-      & .date {
+      .date {
         display: inline-block;
         font-family: var(--font2);
         font-size: 12px;
@@ -2709,7 +2700,7 @@
       & li {
         margin-bottom: 22px;
 
-        & .title {
+        .title {
           display: inline-block;
           width: calc(100% - 100px);
           font-family: var(--font2);
@@ -2721,7 +2712,7 @@
           white-space: nowrap;
         }
 
-        & .value {
+        .value {
           display: inline-block;
           float: right;
           font-size: 14px;
@@ -2743,7 +2734,7 @@
 .box_apartment_i {
   padding: 22px 20px 0;
 
-  & .sec-aparti {
+  .sec-aparti {
     margin-bottom: 34px;
 
     & > .title {
@@ -2756,7 +2747,7 @@
       margin-bottom: 17px;
     }
 
-    & .label-box {
+    .label-box {
       padding-left: 2px;
 
       & label:first-child {
@@ -2764,7 +2755,7 @@
       }
     }
 
-    & .ex-list {
+    .ex-list {
       margin-top: -3px;
 
       & li {
@@ -2773,7 +2764,7 @@
         border-bottom: 1px solid #f5f6f8;
         padding: 20px 0 22px 32px;
 
-        & .img {
+        .img {
           position: absolute;
           display: inline-block;
           width: 22px;
@@ -2787,7 +2778,7 @@
           }
         }
 
-        & .ac-name {
+        .ac-name {
           width: calc(100% - 40px);
           display: block;
           font-family: var(--font2);
@@ -2800,7 +2791,7 @@
           text-overflow: ellipsis;
         }
 
-        & .ac-num {
+        .ac-num {
           display: block;
           font-family: var(--font1);
           font-size: 11px;
@@ -2825,12 +2816,12 @@
     }
 
     &.empty {
-      & .ex-list {
+      .ex-list {
         border-top: 1px solid var(--text-01);
         border-bottom: 1px solid #e3e4e8;
         padding: 48px 0 51px;
 
-        & .img {
+        .img {
           display: block;
           width: 30px;
           height: 30px;
@@ -2853,7 +2844,7 @@
     }
   }
 
-  & .box_event {
+  .box_event {
     position: relative;
     width: 100%;
     height: 117px;
@@ -2863,7 +2854,7 @@
     margin-bottom: 53px;
     margin-top: -12px;
 
-    & .txt {
+    .txt {
       display: block;
       font-family: var(--font2);
       font-size: 13px;
@@ -2899,7 +2890,7 @@
       vertical-align: middle;
     }
 
-    & .img {
+    .img {
       position: absolute;
       display: inline-block;
       width: 70px;
@@ -2914,7 +2905,7 @@
     }
   }
 
-  & .btn_area {
+  .btn_area {
     overflow: hidden;
     padding-bottom: 30px;
   }
@@ -2923,27 +2914,27 @@
 .box_ex_connect_item {
   padding: 10px 20px 0;
 
-  & .title {
+  .title {
     font-size: 18px;
     font-weight: normal;
     line-height: 27px;
     letter-spacing: -0.45px;
     margin-bottom: 30px;
 
-    & .primary {
+    .primary {
       font-family: var(--font3);
       font-weight: bold;
       left: -.45px;
     }
   }
 
-  & .box_connect_list {
+  .box_connect_list {
 
-    & .group-list {
+    .group-list {
       overflow: hidden;
       margin-bottom: 30px;
 
-      & .group-item {
+      .group-item {
         position: relative;
         float: left;
         width: calc(33% - 4px);
@@ -2957,7 +2948,7 @@
           display: block;
           padding: 20px 0 22px;
 
-          & .img {
+          .img {
             display: block;
             width: 30px;
             height: 30px;
@@ -2969,7 +2960,7 @@
             }
           }
 
-          & .item-title {
+          .item-title {
             display: block;
             font-family: var(--font2);
             font-size: 12px;
@@ -2979,7 +2970,7 @@
             color: var(--text-01);
           }
 
-          & .item-desc {
+          .item-desc {
             display: block;
             font-size: 10px;
             line-height: 16px;
@@ -3000,7 +2991,7 @@
     }
   }
 
-  & .btn_area {
+  .btn_area {
     overflow: hidden;
     padding-bottom: 30px;
   }
@@ -3019,7 +3010,7 @@
     box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
     margin-bottom: 12px;
 
-    & .img {
+    .img {
       position: absolute;
       width: 22px;
       height: 22px;
@@ -3033,7 +3024,7 @@
       }
     }
 
-    & .txt {
+    .txt {
       display: block;
       font-family: var(--font2);
       font-size: 13px;
@@ -3042,13 +3033,13 @@
       text-align: left;
       margin-bottom: 2px;
 
-      & .primary {
+      .primary {
         font-weight: bold;
         font-family: var(--font3);
       }
     }
 
-    & .time {
+    .time {
       display: block;
       font-size: 11px;
       line-height: 17px;
@@ -3061,10 +3052,10 @@
 .box_category_ex_detail {
   padding: 30px 20px 0;
 
-  & .ex-header {
+  .ex-header {
     margin-bottom: 16px;
 
-    & .term {
+    .term {
       display: block;
       font-size: 12px;
       line-height: 18px;
@@ -3073,7 +3064,7 @@
       margin-bottom: 8px;
     }
 
-    & .value {
+    .value {
       display: block;
       font-family: var(--font1);
       font-size: 26px;
@@ -3093,7 +3084,7 @@
       }
     }
 
-    & .text {
+    .text {
       font-size: 18px;
       font-weight: bold;
       line-height: 28px;
@@ -3102,7 +3093,7 @@
       margin-bottom: 10px;
     }
 
-    & .desc {
+    .desc {
       font-size: 12px;
       line-height: 19px;
       letter-spacing: -0.3px;
@@ -3111,13 +3102,13 @@
     }
   }
 
-  & .ex-list {
-    & .ex-item {
+  .ex-list {
+    .ex-item {
       position: relative;
       border-bottom: 1px solid #f5f6f8;
       padding: 20px 0;
 
-      & .day {
+      .day {
         float: left;
         width: 32px;
         height: 17px;
@@ -3131,7 +3122,7 @@
         padding-right: 9px;
       }
 
-      & .img {
+      .img {
         position: absolute;
         display: inline-block;
         width: 22px;
@@ -3145,12 +3136,12 @@
         }
       }
 
-      & .b-info {
+      .b-info {
         width: calc(100% - 130px);
         display: inline-block;
         padding-left: 28px;
 
-        & .title {
+        .title {
           display: block;
           font-family: var(--font2);
           font-size: 13px;
@@ -3175,7 +3166,7 @@
           }
         }
 
-        & .desc {
+        .desc {
           display: block;
           font-family: var(--font1);
           font-size: 12px;
@@ -3186,7 +3177,7 @@
 
         }
 
-        & .ac-info {
+        .ac-info {
           display: block;
           font-size: 11px;
           line-height: 17px;
@@ -3194,24 +3185,24 @@
           color: var(--text-03);
           white-space: nowrap;
 
-          & .b-name {
+          .b-name {
             display: inline-block;
             font-family: var(--font1);
           }
 
-          & .ac-num {
+          .ac-num {
             display: inline-block;
             font-family: var(--font1);
           }
         }
 
-        & .badge {
+        .badge {
           margin-top: 9px;
           padding: 0;
         }
       }
 
-      & .btn-move {
+      .btn-move {
         position: relative;
         float: right;
         display: inline-block;
@@ -3219,7 +3210,7 @@
         transform: translate(-1px, -2px);
         padding-bottom: 15px;
 
-        & .value {
+        .value {
           font-family: var(--font2);
           font-size: 14px;
           line-height: 16px;
@@ -3232,7 +3223,7 @@
           }
         }
 
-        & .txt {
+        .txt {
           position: absolute;
           right: 9px;
           top: 22px;
@@ -3269,20 +3260,20 @@
     &.completed {
       margin-bottom: 50px;
 
-      & .ex-item {
+      .ex-item {
         position: relative;
         padding: 20px 0 0;
         border: 0;
 
-        & .day {
+        .day {
           transform: translate(0, 0);
         }
 
-        & .b-info {
+        .b-info {
           padding-left: 15px;
         }
 
-        & .btn-move {
+        .btn-move {
           transform: translate(-2px, 1px);
         }
 
@@ -3321,7 +3312,7 @@
     padding-top: 40px;
     background-color: #f7f8fc;
 
-    & .ex-item {
+    .ex-item {
       border-bottom: 1px solid #eeeff4;
 
       &.same {
@@ -3331,11 +3322,11 @@
       }
     }
 
-    & .empty {
+    .empty {
       height: 160px;
       padding-top: 30px;
 
-      & .img {
+      .img {
         display: block;
         width: 30px;
         height: 30px;
@@ -3347,7 +3338,7 @@
         }
       }
 
-      & .desc {
+      .desc {
         display: block;
         font-size: 12px;
         line-height: 18px;
@@ -3358,11 +3349,11 @@
     }
   }
 
-  & .empty {
+  .empty {
     height: 160px;
     padding-top: 30px;
 
-    & .img {
+    .img {
       display: block;
       width: 30px;
       height: 30px;
@@ -3374,7 +3365,7 @@
       }
     }
 
-    & .desc {
+    .desc {
       display: block;
       font-size: 12px;
       line-height: 18px;
@@ -3388,19 +3379,19 @@
 .box_category_list {
   padding: 0;
 
-  & .category-list-item {
+  .category-list-item {
     border-bottom: 10px solid #f5f6f8;
 
     &:last-child {
       border-bottom: 0;
     }
 
-    & .category-info {
+    .category-info {
       position: relative;
       margin-bottom: 22px;
       padding: 30px 20px 0;
 
-      & .title {
+      .title {
         display: inline-block;
         font-family: var(--font3);
         font-size: 15px;
@@ -3411,30 +3402,31 @@
         color: var(--text-01);
       }
 
-      & .sum {
+      .sum {
         position: absolute;
         right: 20px;
         bottom: 3px;
         display: inline-block;
-        font-family: var(--font1);
-        font-size: 14px;
-        line-height: 16px;
+        font-family: var(--font2);
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 23px;
         text-align: right;
-        color: var(--text-02);
+        color: var(--text-01);
 
         &::after {
-          content: '원';
+          content: '';
           font-family: var(--font1);
           font-size: 13px;
           line-height: 16px;
           letter-spacing: 0.65px;
           text-align: right;
-          color: var(--text-02);
+          color: var(--text-01);
         }
       }
     }
 
-    & .ex-item {
+    .ex-item {
       position: relative;
       padding: 0 20px;
       margin-bottom: 20px;
@@ -3444,7 +3436,7 @@
         display: block;
         padding-top: 1px;
 
-        & .day {
+        .day {
           float: left;
           width: 32px;
           height: 17px;
@@ -3458,7 +3450,7 @@
           padding-right: 9px;
         }
 
-        & .img {
+        .img {
           position: absolute;
           display: inline-block;
           width: 22px;
@@ -3472,12 +3464,12 @@
           }
         }
 
-        & .b-info {
+        .b-info {
           width: calc(100% - 130px);
           display: inline-block;
           padding-left: 25px;
 
-          & .title {
+          .title {
             display: block;
             font-family: var(--font2);
             font-size: 13px;
@@ -3502,7 +3494,7 @@
             }
           }
 
-          & .desc {
+          .desc {
             display: block;
             font-family: var(--font1);
             font-size: 12px;
@@ -3513,7 +3505,7 @@
 
           }
 
-          & .ac-info {
+          .ac-info {
             display: block;
             font-size: 11px;
             line-height: 17px;
@@ -3521,24 +3513,24 @@
             color: var(--text-03);
             white-space: nowrap;
 
-            & .b-name {
+            .b-name {
               display: inline-block;
               font-family: var(--font1);
             }
 
-            & .ac-num {
+            .ac-num {
               display: inline-block;
               font-family: var(--font1);
             }
           }
 
-          & .badge {
+          .badge {
             margin-top: 9px;
             padding: 0;
           }
         }
 
-        & .btn-move {
+        .btn-move {
           position: relative;
           float: right;
           display: inline-block;
@@ -3546,21 +3538,30 @@
           transform: translate(-1px, 0px);
           padding-bottom: 15px;
 
-          & .value {
+          .value {
+            display: inline-block;
             font-family: var(--font2);
             font-size: 14px;
-            line-height: 16px;
+            font-weight: 500;
+            line-height: 19px;
             letter-spacing: -0.14px;
             text-align: right;
 
+            &.text {
+              font-family: var(--font1);
+              font-size: 13px;
+              font-weight: normal;
+              color: var(--text-02);
+            }
+
             &::after {
-              content: '원';
+              content: '';
               font-size: 13px;
               font-family: var(--font2);
             }
           }
 
-          & .desc {
+          .desc {
             font-family: var(--font2);
             font-size: 13px;
             line-height: 16px;
@@ -3569,7 +3570,7 @@
             color: var(--text-02);
           }
 
-          & .txt {
+          .txt {
             position: absolute;
             right: 9px;
             top: 22px;
@@ -3585,7 +3586,7 @@
             transform: translate(1px, 3px);
           }
 
-          & .ico-caution {
+          .ico-caution {
             width: 12px;
             height: 12px;
             background-image: url(../../img/common/ico-caution@2x.png);
@@ -3621,7 +3622,7 @@
           }
         }
 
-        & .txt {
+        .txt {
           display: block;
           font-size: 12px;
           line-height: 18px;
@@ -3636,7 +3637,7 @@
 .tab_area {
   margin-bottom: 24px;
 
-  & .btn-left, & .btn-right {
+  .btn-left, .btn-right {
     position: relative;
     display: inline-block;
     width: 62px;
@@ -3657,44 +3658,44 @@
     }
   }
 
-  & .btn-left {
+  .btn-left {
     margin-right: -3px;
     border-radius: 5px 0 0 5px;
   }
 
-  & .btn-right {
+  .btn-right {
     border-radius: 0 5px 5px 0;
 
   }
 }
 
 .box-ex-account {
-  & .accordion {
+  .accordion {
     border: 0;
 
-    & .card {
+    .card {
       border: 0;
       padding-bottom: 10px;
 
-      & .card-body {
+      .card-body {
         margin-bottom: 0;
       }
     }
 
-    & .empty-data {
+    .empty-data {
       padding: 40px 0 0;
 
-      & .txt {
+      .txt {
         margin-bottom: 16px;
       }
     }
   }
 
-  & .ex-account {
+  .ex-account {
     & > ul {
       padding: 36px 20px 24px;
 
-      & .img {
+      .img {
         display: block;
         width: 22px;
         height: 22px;
@@ -3706,7 +3707,7 @@
         }
       }
 
-      & .title {
+      .title {
         font-family: var(--font2);
         font-size: 14px;
         line-height: 20px;
@@ -3716,11 +3717,11 @@
         margin-bottom: 3px;
       }
 
-      & .ac-info {
+      .ac-info {
         display: block;
         margin-bottom: 12px;
 
-        & .name {
+        .name {
           display: inline-block;
           font-size: 11px;
           line-height: 17px;
@@ -3729,7 +3730,7 @@
           color: var(--text-03);
         }
 
-        & .number {
+        .number {
           display: inline-block;
           font-family: var(--font1);
           font-size: 11px;
@@ -3740,11 +3741,11 @@
         }
       }
 
-      & .ac-item {
+      .ac-item {
         display: block;
         margin-bottom: 5px;
 
-        & .left {
+        .left {
           font-size: 12px;
           line-height: 18px;
           letter-spacing: -0.3px;
@@ -3752,7 +3753,7 @@
           color: var(--text-02);
         }
 
-        & .right {
+        .right {
           float: right;
           font-family: var(--font2);
           font-size: 13px;
@@ -3773,7 +3774,7 @@
         }
       }
 
-      & .ex-num {
+      .ex-num {
         display: block;
         float: right;
         font-family: var(--font1);
@@ -3793,7 +3794,7 @@
 
   }
 
-  & .card-body {
+  .card-body {
     position: relative;
     background-color: transparent;
     border: none;
@@ -3801,19 +3802,19 @@
     border-top: 0;
     padding: 24px 0 18px;
 
-    & .ex-pre {
+    .ex-pre {
       padding-bottom: 4px;
 
-      & .badge-pill {
+      .badge-pill {
         margin-bottom: 13px;
       }
 
-      & .ex-info {
+      .ex-info {
         position: relative;
         display: block;
         margin-bottom: 12px;
 
-        & .date-wrap {
+        .date-wrap {
           position: absolute;
           display: inline-block;
           width: 40px;
@@ -3821,7 +3822,7 @@
           left: 0;
           top: 0;
 
-          & .date {
+          .date {
             display: inline-block;
             float: left;
             min-width: 29px;
@@ -3837,7 +3838,7 @@
           }
         }
 
-        & .title {
+        .title {
           display: inline-block;
           float: left;
           width: calc(100% - 145px);
@@ -3851,7 +3852,7 @@
           padding-left: 40px;
         }
 
-        & .value {
+        .value {
           display: inline-block;
           float: right;
           font-family: var(--font2);
@@ -3867,7 +3868,7 @@
           }
         }
 
-        & .text {
+        .text {
           display: inline-block;
           float: right;
           font-family: var(--font2);
@@ -3878,11 +3879,11 @@
           padding-right: 2px;
         }
 
-        & .right {
+        .right {
           float: right;
           margin-top: -10px;
 
-          & .month {
+          .month {
             font-family: var(--font4);
             font-size: 11px;
             line-height: 17px;
@@ -3891,7 +3892,7 @@
             color: var(--text-03);
           }
 
-          & .number {
+          .number {
             font-family: var(--font4);
             font-size: 11px;
             line-height: 17px;
@@ -3907,28 +3908,28 @@
         }
 
         &.active {
-          & .date-wrap {
-            & .date {
+          .date-wrap {
+            .date {
               color: #3e5baf;
               border-radius: 11px;
               background: rgba(62, 91, 175, .06);
             }
           }
 
-          & .title {
+          .title {
             color: var(--text-01);
           }
         }
       }
     }
 
-    & .ex-sum {
+    .ex-sum {
       padding: 14px 0 20px;
 
-      & .ex-item {
+      .ex-item {
         margin-bottom: 2px;
 
-        & .title {
+        .title {
           display: inline-block;
           font-family: var(--font2);
           font-size: 12px;
@@ -3939,7 +3940,7 @@
           padding-left: 2px;
         }
 
-        & .sum {
+        .sum {
           float: right;
           display: inline-block;
           font-family: var(--font4);
@@ -3956,7 +3957,7 @@
           }
         }
 
-        & .right {
+        .right {
           float: right;
           display: inline-block;
           font-family: var(--font4);
@@ -3979,15 +3980,15 @@
       }
     }
 
-    & .ex-total {
+    .ex-total {
       width: 100%;
       height: 59px;
       background-color: #f7f8fc;
 
-      & .inner {
+      .inner {
         padding: 2px 15px 0;
 
-        & .text {
+        .text {
           display: inline-block;
           font-family: var(--font2);
           font-size: 12px;
@@ -3996,7 +3997,7 @@
           color: var(--text-01);
         }
 
-        & .value {
+        .value {
           float: right;
           display: inline-block;
 
@@ -4016,7 +4017,7 @@
     }
   }
 
-  & .btn-open {
+  .btn-open {
     position: relative;
     display: block;
     width: 100%;
@@ -4054,19 +4055,19 @@
     }
   }
 
-  & .ex-detail-opened {
+  .ex-detail-opened {
     position: relative;
     border-top: 1px solid #f2f4f7;
 
-    & .inner {
+    .inner {
       padding: 0 22px 24px;
     }
   }
 
-  & .empty {
+  .empty {
     padding: 134px 0 0;
 
-    & .img {
+    .img {
       display: block;
       width: 56px;
       height: 56px;
@@ -4078,7 +4079,7 @@
       }
     }
 
-    & .txt {
+    .txt {
       font-size: 13px;
       line-height: 20px;
       letter-spacing: -0.33px;
@@ -4087,10 +4088,10 @@
     }
   }
 
-  & .empty-data {
+  .empty-data {
     padding: 120px 20px 0;
 
-    & .img {
+    .img {
       display: block;
       width: 30px;
       height: 30px;
@@ -4102,7 +4103,7 @@
       }
     }
 
-    & .txt {
+    .txt {
       font-size: 13px;
       line-height: 20px;
       letter-spacing: -0.33px;
@@ -4116,17 +4117,17 @@
 .box_ex_calendar {
   padding: 0 12px 17px;
 
-  & .fc {
+  .fc {
     & td {
       height: auto;
       line-height: 18px;
     }
   }
 
-  & .fc-head {
+  .fc-head {
     border: 0;
 
-    & .fc-day-header {
+    .fc-day-header {
       font-family: var(--font2);
       font-size: 12px;
       letter-spacing: -0.6px;
@@ -4136,7 +4137,7 @@
     }
   }
 
-  & .fc-sun {
+  .fc-sun {
     color: #ef4b61 !important;
 
     &.fc-other-month.fc-past {
@@ -4144,7 +4145,7 @@
     }
   }
 
-  & .fc-sat {
+  .fc-sat {
     color: #3992d3 !important;
 
     &.fc-other-month.fc-past {
@@ -4152,7 +4153,7 @@
     }
   }
 
-  & .fc-day-number {
+  .fc-day-number {
     display: block;
     float: unset !important;
     font-size: 13px;
@@ -4163,10 +4164,10 @@
     margin: 0;
   }
 
-  & .fc-today {
+  .fc-today {
     background-color: transparent !important;
 
-    & .fc-day-number {
+    .fc-day-number {
       width: 24px;
       height: 24px;
       margin: 0 auto;
@@ -4183,13 +4184,13 @@
     }
   }
 
-  & .fc-body {
+  .fc-body {
     border: 0;
 
-    & .fc-widget-content {
-      & .fc-day-grid-container {
-        & .fc-day-grid {
-          & .fc-row {
+    .fc-widget-content {
+      .fc-day-grid-container {
+        .fc-day-grid {
+          .fc-row {
             min-height: 50px;
 
           }
@@ -4198,12 +4199,12 @@
     }
   }
 
-  & .fc-event-container {
+  .fc-event-container {
     position: relative;
     width: 100%;
     height: 100%;
 
-    & .fc-day-grid-event {
+    .fc-day-grid-event {
       position: absolute;
       display: block;
       width: 100%;
@@ -4214,11 +4215,11 @@
       border-color: transparent;
       z-index: -1;
 
-      & .fc-content {
+      .fc-content {
         display: block;
         padding-top: 17px;
 
-        & .fc-title {
+        .fc-title {
           display: block;
           text-align: center;
           font-family: var(--font1);
@@ -4277,7 +4278,7 @@
       }
 
       &.cal-double {
-        & .fc-content {
+        .fc-content {
           padding-top: 4px;
         }
 
@@ -4305,7 +4306,7 @@
   width: 100%;
   border-top: 1px solid #f5f6f8;
 
-  & .inner {
+  .inner {
     padding: 30px 20px 28px 20px;
 
     & > .title {
@@ -4317,13 +4318,13 @@
       color: var(--text-04);
     }
 
-    & .box-ex-account-info {
+    .box-ex-account-info {
       & > li {
         position: relative;
         padding: 14px 0 20px;
         margin-bottom: 3px;
 
-        & .img {
+        .img {
           display: inline-block;
           width: 22px;
           height: 22px;
@@ -4336,7 +4337,7 @@
           }
         }
 
-        & .bullet {
+        .bullet {
           display: inline-block;
           width: 5px;
           height: 5px;
@@ -4351,7 +4352,7 @@
           }
         }
 
-        & .ex-title {
+        .ex-title {
           width: calc(100% - 140px);
           display: inline-block;
           font-family: var(--font2);
@@ -4364,7 +4365,7 @@
           text-overflow: ellipsis;
         }
 
-        & .txt {
+        .txt {
           position: absolute;
           display: inline-block;
           font-family: var(--font2);
@@ -4385,7 +4386,7 @@
           top: 0;
           left: 0;
 
-          & .value {
+          .value {
             position: absolute;
             display: inline-block;
 
@@ -4404,7 +4405,7 @@
             }
           }
 
-          & .desc {
+          .desc {
             position: absolute;
             display: inline-block;
             right: 12px;
@@ -4423,12 +4424,12 @@
           }
         }
 
-        & .b-info {
+        .b-info {
           position: absolute;
           left: 28px;
           bottom: 4px;
 
-          & .b-name {
+          .b-name {
             display: inline-block;
             font-size: 11px;
             line-height: 17px;
@@ -4437,7 +4438,7 @@
             margin-right: 2px;
           }
 
-          & .b-num {
+          .b-num {
             display: inline-block;
             font-family: var(--font4);
             font-size: 11px;
@@ -4454,15 +4455,15 @@
     }
   }
 
-  & .empty {
+  .empty {
     width: 100%;
     height: 186px;
     background-color: #ffffff;
 
-    & .inner {
+    .inner {
       padding: 38px 0 0 0;
 
-      & .img {
+      .img {
         display: block;
         width: 30px;
         height: 30px;
@@ -4474,7 +4475,7 @@
         }
       }
 
-      & .txt {
+      .txt {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -4488,24 +4489,24 @@
     background-color: #f7f8fc;
     border-top: 0;
 
-    & .inner {
+    .inner {
       padding: 32px 20px 28px 20px;
 
-      & .box-ex-account-info {
+      .box-ex-account-info {
         & > li {
           margin-bottom: 7px;
 
-          & .bullet {
+          .bullet {
             position: absolute;
             left: 4px;
             top: 22px;
           }
 
-          & .ex-title {
+          .ex-title {
             padding-left: 16px;
           }
 
-          & .b-info {
+          .b-info {
             left: 16px;
             bottom: 0;
           }
@@ -4527,7 +4528,7 @@
     padding: 10px 20px 0;
   }
 
-  & .tab_area {
+  .tab_area {
     margin-top: 20px;
     padding-left: 21px;
   }
@@ -4535,7 +4536,7 @@
   & > .no-data {
     padding: 10px 20px 96px;
 
-    & .txt-lg {
+    .txt-lg {
       font-family: var(--font2);
       font-size: 21px;
       font-weight: 500;
@@ -4546,7 +4547,7 @@
       margin-bottom: 10px;
     }
 
-    & .desc {
+    .desc {
       font-size: 15px;
       line-height: 23px;
       letter-spacing: -0.38px;
@@ -4555,13 +4556,13 @@
       margin-bottom: 30px;
     }
 
-    & .img-box {
+    .img-box {
       width: 100%;
       padding: 25px 0 25px 15px;
       background-color: #f7f8fc;
       margin-bottom: 30px;
 
-      & .txt {
+      .txt {
         font-size: 15px;
         line-height: 23px;
         letter-spacing: -0.38px;
@@ -4569,7 +4570,7 @@
         color: var(--text-01);
       }
 
-      & .img {
+      .img {
         display: block;
 
         & img {
@@ -4579,7 +4580,7 @@
       }
     }
 
-    & .txt-md {
+    .txt-md {
       font-size: 17px;
       line-height: 25px;
       letter-spacing: -0.43px;
@@ -4590,7 +4591,7 @@
 
   /* 현금흐름 */
 
-  & .current-cash-wrap {
+  .current-cash-wrap {
     padding: 10px 0 0;
     border-bottom: 1px solid #f5f6f8;
 
@@ -4615,14 +4616,14 @@
       padding: 0 20px;
     }
 
-    & .box-ex-account {
+    .box-ex-account {
       padding: 0 20px;
 
-      & .card-detail-badge {
+      .card-detail-badge {
         margin-bottom: 15px;
       }
 
-      & .card-detail-calendar {
+      .card-detail-calendar {
         padding-top: 0;
         padding-bottom: 30px;
         margin-bottom: 0;
@@ -4630,7 +4631,7 @@
     }
   }
 
-  & .my-income-wrap {
+  .my-income-wrap {
     padding: 30px 20px 96px;
 
     & > .title-sm {
@@ -4644,11 +4645,11 @@
       padding-top: 0;
     }
 
-    & .val-area {
+    .val-area {
       overflow: hidden;
       margin-bottom: 20px;
 
-      & .val {
+      .val {
         float: left;
         font-family: var(--font4);
         font-size: 22px;
@@ -4666,7 +4667,7 @@
         }
       }
 
-      & .btn-add {
+      .btn-add {
         float: right;
         width: auto;
         display: inline-block;
@@ -4676,7 +4677,7 @@
         border: solid 1px #e3e4e8;
         background-color: var(--white);
 
-        & .ico-btn-add-nor {
+        .ico-btn-add-nor {
           display: inline-block;
           width: 10px;
           height: 10px;
@@ -4697,14 +4698,14 @@
       }
     }
 
-    & .no-data {
+    .no-data {
       padding: 19px 0;
       border-radius: 4px;
       border: solid 1px #f5f6f8;
       text-align: center;
       margin-bottom: 30px;
 
-      & .txt-lg {
+      .txt-lg {
         font-family: var(--font2);
         font-size: 15px;
         font-weight: 500;
@@ -4713,7 +4714,7 @@
         margin-bottom: 3px;
       }
 
-      & .txt {
+      .txt {
         font-size: 13px;
         line-height: 19px;
         letter-spacing: -0.32px;
@@ -4721,12 +4722,12 @@
       }
     }
 
-    & .img-box {
+    .img-box {
       width: 100%;
       padding: 10px 0 25px 10px;
       background-color: #f7f8fc;
 
-      & .txt {
+      .txt {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -4735,7 +4736,7 @@
         margin-bottom: 10px;
       }
 
-      & .img {
+      .img {
         display: block;
         padding-left: 5px;
 
@@ -4746,8 +4747,8 @@
       }
     }
 
-    & .income-list {
-      & .item {
+    .income-list {
+      .item {
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -4757,7 +4758,7 @@
           margin-bottom: 0;
         }
 
-        & .txt-wrap {
+        .txt-wrap {
           float: left;
           display: flex;
           align-items: center;
@@ -4790,7 +4791,7 @@
           }
         }
 
-        & .btn-delete {
+        .btn-delete {
           float: left;
           width: 26px;
           height: 26px;
@@ -4801,7 +4802,7 @@
           background-color: var(--white);
           text-align: center;
 
-          & .btn-side-input-delete {
+          .btn-side-input-delete {
             display: inline-block;
             width: 16px;
             height: 16px;
@@ -4817,17 +4818,17 @@
 .ex-current {
   padding: 30px 20px 1px;
 
-  & .box-ex-account {
-    & .card-detail-calendar {
+  .box-ex-account {
+    .card-detail-calendar {
       padding-top: 0;
     }
   }
 
-  & .area-title {
+  .area-title {
     position: relative;
     overflow: hidden;
 
-    & .title {
+    .title {
       display: inline-block;
       font-size: 15px;
       font-weight: bold;
@@ -4837,7 +4838,7 @@
       margin-bottom: 20px;
     }
 
-    & .date {
+    .date {
       position: absolute;
       right: 0;
       top: 2px;
@@ -4851,16 +4852,16 @@
     }
   }
 
-  & .ex01-list {
+  .ex01-list {
     padding: 0 4px;
     margin-bottom: 10px;
 
-    & .ex01-item {
+    .ex01-item {
       position: relative;
       display: block;
       margin-bottom: 9px;
 
-      & .title {
+      .title {
         display: inline-block;
         font-size: 13px;
         line-height: 19px;
@@ -4868,7 +4869,7 @@
         color: var(--text-03);
       }
 
-      & .date {
+      .date {
         display: inline-block;
         position: absolute;
         right: 0;
@@ -4880,7 +4881,7 @@
         color: var(--text-02);
       }
 
-      & .value {
+      .value {
         position: absolute;
         right: 0;
         top: 0;
@@ -4897,7 +4898,7 @@
         }
       }
 
-      & .btn {
+      .btn {
         position: absolute;
         right: 0;
         top: -4px;
@@ -4909,15 +4910,15 @@
     }
   }
 
-  & .ex02-list {
+  .ex02-list {
     position: relative;
     background-color: #f7f8fc;
     margin-bottom: 21px;
 
-    & .inner {
+    .inner {
       padding: 18px 16px 40px;
 
-      & .title {
+      .title {
         display: inline-block;
         font-family: var(--font2);
         font-size: 13px;
@@ -4926,7 +4927,7 @@
         color: var(--text-01);
       }
 
-      & .value {
+      .value {
         position: absolute;
         display: inline-block;
         font-size: 14px;
@@ -4943,7 +4944,7 @@
         }
       }
 
-      & .date {
+      .date {
         position: absolute;
         right: 16px;
         top: 39px;
@@ -4957,27 +4958,27 @@
     }
 
     &.blue {
-      & .inner {
-        & .value {
+      .inner {
+        .value {
           color: #4393ff;
         }
 
-        & .date {
+        .date {
           color: #4393ff;
         }
       }
     }
   }
 
-  & .ex03-list {
+  .ex03-list {
     margin-bottom: 46px;
 
-    & .ex03-item {
+    .ex03-item {
       display: block;
       margin-bottom: 38px;
       position: relative;
 
-      & .date {
+      .date {
         display: inline-block;
         font-size: 11px;
         line-height: 19px;
@@ -4991,7 +4992,7 @@
         white-space: nowrap;
       }
 
-      & .title {
+      .title {
         width: calc(100% - 170px);
         display: inline-block;
         font-family: var(--font2);
@@ -5004,7 +5005,7 @@
         text-overflow: ellipsis;
       }
 
-      & .value {
+      .value {
         float: right;
         padding-right: 4px;
         display: inline-block;
@@ -5026,7 +5027,7 @@
         }
       }
 
-      & .balance {
+      .balance {
         display: inline-block;
         position: absolute;
         font-family: var(--font1);
@@ -5049,23 +5050,23 @@
     }
   }
 
-  & .btn-detail-wrap {
+  .btn-detail-wrap {
     text-align: right;
     margin-bottom: 30px;
 
     &.active {
-      & .detail {
-        & .ico-detail-arrow-open {
+      .detail {
+        .ico-detail-arrow-open {
           background-image: url(../../img/common/ico-detail-arrow-close@2x.png);
         }
       }
 
-      & .income-list {
+      .income-list {
         display: block;
       }
     }
 
-    & .detail {
+    .detail {
       display: inline-block;
       height: 28px;
       padding: 0 10px;
@@ -5082,7 +5083,7 @@
         color: var(--text-02);
       }
 
-      & .ico-detail-arrow-open {
+      .ico-detail-arrow-open {
         display: inline-block;
         vertical-align: middle;
         width: 12px;
@@ -5093,7 +5094,7 @@
       }
     }
 
-    & .income-list {
+    .income-list {
       display: none;
       width: 100%;
       border: solid 1px #e3e4e8;
@@ -5102,14 +5103,14 @@
       text-align: left;
       margin-top: -1px;
 
-      & .item {
+      .item {
         margin-bottom: 6px;
 
         &:last-child {
           margin-bottom: 0;
         }
 
-        & .txt-wrap {
+        .txt-wrap {
           display: flex;
           align-items: center;
 
@@ -5140,7 +5141,7 @@
     }
   }
 
-  & .btn_area {
+  .btn_area {
     margin-bottom: 30px;
 
     & a {
@@ -5154,11 +5155,11 @@
 .account-detail-wrap {
   padding: 20px 20px 52px;
 
-  & .account-info {
+  .account-info {
     padding-bottom: 30px;
     border-bottom: 1px solid #f5f6f8;
 
-    & .name {
+    .name {
       font-family: var(--font2);
       font-size: 16px;
       font-weight: 500;
@@ -5169,7 +5170,7 @@
       margin-bottom: 2px;
     }
 
-    & .num {
+    .num {
       font-family: var(--font4);
       font-size: 13px;
       line-height: 18px;
@@ -5179,7 +5180,7 @@
     }
   }
 
-  & .info-wrap {
+  .info-wrap {
     padding-bottom: 6px;
     margin-top: 36px;
 
@@ -5203,7 +5204,7 @@
     & > .info-list {
       border-bottom: 1px solid #e3e4e8;
 
-      & .item {
+      .item {
         padding: 0 5px 22px;
         overflow: hidden;
 
@@ -5211,7 +5212,7 @@
           padding-top: 22px;
         }
 
-        & .tit {
+        .tit {
           float: left;
           font-family: var(--font2);
           font-size: 14px;
@@ -5222,7 +5223,7 @@
           color: var(--text-01);
         }
 
-        & .val {
+        .val {
           float: right;
           font-size: 14px;
           line-height: 20px;
@@ -5248,7 +5249,7 @@
         margin-top: 22px;
         border: solid 1px #e3e4e8;
 
-        & .item {
+        .item {
           padding: 0 0 22px;
 
           &:first-child {
@@ -5275,7 +5276,7 @@
     }
   }
 
-  & .table {
+  .table {
     &:first-child {
       margin-top: 37px;
     }
@@ -5327,12 +5328,12 @@
     margin-bottom: 30px;
   }
 
-  & .custom-light {
-    & .title {
+  .custom-light {
+    .title {
       font-size: 14px;
     }
 
-    & .input-title {
+    .input-title {
       font-family: var(--font2);
       font-size: 11px;
       font-weight: 500;
@@ -5364,11 +5365,11 @@
   border-bottom: 10px solid #f5f6f8;
   padding: 10px 20px 16px;
 
-  & .delete-area {
+  .delete-area {
     padding-top: 20px;
     margin-bottom: 10px;
 
-    & .txt-lg {
+    .txt-lg {
       font-family: var(--font2);
       font-size: 14px;
       font-weight: 500;
@@ -5379,7 +5380,7 @@
       margin-bottom: 10px;
     }
 
-    & .txt {
+    .txt {
       font-size: 14px;
       line-height: 21px;
       letter-spacing: -0.35px;
@@ -5388,11 +5389,11 @@
       margin-bottom: 20px;
     }
 
-    & .btn-wrap {
+    .btn-wrap {
       text-align: center;
       margin-bottom: 20px;
 
-      & .btn-delete {
+      .btn-delete {
         display: inline-block;
         padding: 0 10px;
         height: 26px;
@@ -5400,7 +5401,7 @@
         border: solid 1px #e3e4e8;
         background-color: #fff;
 
-        & .ico-delete-btn {
+        .ico-delete-btn {
           display: inline-block;
           vertical-align: middle;
           width: 10px;
@@ -5410,7 +5411,7 @@
           transform: translateY(-1px);
         }
 
-        & .ico-refresh-btn {
+        .ico-refresh-btn {
           display: inline-block;
           vertical-align: middle;
           width: 10px;
@@ -5432,7 +5433,7 @@
       }
     }
 
-    & .border-box {
+    .border-box {
       padding: 15px 0;
       border-radius: 4px;
       border: solid 1px #f5f5f5;
@@ -5474,7 +5475,7 @@
     }
   }
 
-  & .item {
+  .item {
     padding: 20px 5px;
     border-bottom: 1px solid #f5f6f8;
 
@@ -5482,12 +5483,12 @@
       border-bottom: 0;
     }
 
-    & .txt {
+    .txt {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      & .tit {
+      .tit {
         font-family: var(--font2);
         font-size: 14px;
         font-weight: 500;
@@ -5496,7 +5497,7 @@
         color: var(--text-01);
       }
 
-      & .val {
+      .val {
         font-size: 14px;
         line-height: 20px;
         letter-spacing: -0.14px;
@@ -5511,33 +5512,33 @@
         }
       }
 
-      & .btn-sm {
+      .btn-sm {
         float: right;
         min-width: auto;
         padding: 0 10px;
       }
     }
 
-    & .btn-wrap {
+    .btn-wrap {
       display: block;
       text-align: right;
       margin-top: 8px;
 
-      & .btn-sm {
+      .btn-sm {
         min-width: auto;
         padding: 0 10px;
       }
     }
   }
 
-  & .account-detail-wrap {
-    & .info-wrap {
+  .account-detail-wrap {
+    .info-wrap {
       margin-top: 0;
 
-      & .info-list {
+      .info-list {
         margin-top: 8px;
 
-        & .item {
+        .item {
           border-bottom: 0;
         }
       }
@@ -5556,11 +5557,11 @@
     padding-top: 20px;
   }
 
-  & .payment-list {
-    & .item {
+  .payment-list {
+    .item {
       padding-bottom: 20px;
 
-      & .img {
+      .img {
         display: inline-block;
         vertical-align: middle;
         width: 22px;
@@ -5572,7 +5573,7 @@
         }
       }
 
-      & .name {
+      .name {
         display: inline-block;
         vertical-align: middle;
         font-family: var(--font2);
@@ -5591,7 +5592,7 @@
 .ex-list-wrap {
   padding: 31px 20px 1px;
 
-  & .year {
+  .year {
     font-family: var(--font2);
     font-size: 12px;
     font-weight: 500;
@@ -5603,11 +5604,11 @@
     margin-bottom: 25px;
   }
 
-  & .item {
+  .item {
     overflow: hidden;
     margin-bottom: 22px;
 
-    & .date {
+    .date {
       display: inline-block;
       font-size: 11px;
       line-height: 19px;
@@ -5620,7 +5621,7 @@
       white-space: nowrap;
     }
 
-    & .title {
+    .title {
       width: calc(100% - 41px - 120px);
       display: inline-block;
       vertical-align: middle;
@@ -5634,7 +5635,7 @@
       text-overflow: ellipsis;
     }
 
-    & .value {
+    .value {
       float: right;
       padding-right: 4px;
       display: inline-block;
@@ -5659,7 +5660,7 @@
   padding: 0 20px;
   margin-top: 30px;
 
-  & .select-box {
+  .select-box {
     & select {
       height: 52px;
       line-height: 50px;
@@ -5681,14 +5682,14 @@
   padding-bottom: 20px;
   margin-top: 30px;
 
-  & .select-wrap {
+  .select-wrap {
     margin-bottom: 10px;
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    & .select-box {
+    .select-box {
       position: relative;
       width: 245px;
 
@@ -5712,8 +5713,8 @@
   &.box-ex-usage-history-lg {
     padding: 37px 20px 30px;
 
-    & .title-area {
-      & .val {
+    .title-area {
+      .val {
         font-family: var(--font3);
         font-size: 17px;
         font-weight: bold;
@@ -5728,7 +5729,7 @@
         }
       }
 
-      & .point {
+      .point {
         font-family: var(--font3);
         font-size: 17px;
         font-weight: bold;
@@ -5740,7 +5741,7 @@
     }
   }
 
-  & .title-area {
+  .title-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -5754,7 +5755,7 @@
       text-align: left;
     }
 
-    & .val {
+    .val {
       font-family: var(--font3);
       font-size: 15px;
       font-weight: bold;
@@ -5763,7 +5764,7 @@
       text-align: right;
     }
 
-    & .date {
+    .date {
       font-size: 12px;
       line-height: 18px;
       letter-spacing: -0.3px;
@@ -5787,14 +5788,14 @@
     }
   }
 
-  & .box-filter {
+  .box-filter {
     padding: 18px 20px;
     border-radius: 4px;
     background-color: #f7f8fc;
     margin-bottom: 30px;
     overflow: hidden;
 
-    & .btn-filter {
+    .btn-filter {
       float: left;
       padding: 0 26px 0 10px;
       height: 28px;
@@ -5818,7 +5819,7 @@
       }
     }
 
-    & .tag {
+    .tag {
       float: left;
       margin-left: 14px;
 
@@ -5838,7 +5839,7 @@
     }
   }
 
-  & .usage-history {
+  .usage-history {
     & > .date {
       font-family: var(--font2);
       font-size: 12px;
@@ -5850,7 +5851,7 @@
       margin: 30px 0 24px;
     }
 
-    & .item {
+    .item {
       margin-bottom: 22px;
 
       &:last-child {
@@ -5858,7 +5859,7 @@
         padding-bottom: 6px;
       }
 
-      & .tit {
+      .tit {
         float: left;
         width: calc(100% - 100px);
         overflow: hidden;
@@ -5873,7 +5874,7 @@
         color: var(--text-01);
       }
 
-      & .val {
+      .val {
         float: right;
         font-family: var(--font2);
         font-size: 14px;
@@ -5884,7 +5885,7 @@
         color: var(--text-01);
       }
 
-      & .point {
+      .point {
         float: right;
         font-family: var(--font2);
         font-size: 14px;
@@ -5895,7 +5896,7 @@
         color: var(--text-01);
       }
 
-      & .date {
+      .date {
         display: inline-block;
         vertical-align: middle;
         font-family: var(--font1);
@@ -5906,7 +5907,7 @@
         transform: translateY(1px);
       }
 
-      & .name {
+      .name {
         display: inline-block;
         vertical-align: middle;
         font-size: 11px;
@@ -5916,7 +5917,7 @@
         color: var(--text-02);
       }
 
-      & .txt {
+      .txt {
         display: inline-block;
         vertical-align: middle;
         font-family: var(--font1);
@@ -5927,7 +5928,7 @@
         margin-left: 3px;
       }
 
-      & .bank {
+      .bank {
         display: inline-block;
         vertical-align: middle;
         font-family: var(--font1);
@@ -5937,12 +5938,12 @@
         color: var(--text-02);
         margin-left: 3px;
 
-        & .color-default {
+        .color-default {
           color: var(--text-01);
         }
       }
 
-      & .desc {
+      .desc {
         float: right;
         font-size: 11px;
         line-height: 17px;
@@ -5951,22 +5952,22 @@
         color: var(--text-03);
       }
 
-      & .info1 {
+      .info1 {
         overflow: hidden;
         margin-bottom: 2px;
       }
 
-      & .info2 {
+      .info2 {
         overflow: hidden;
       }
     }
   }
 
-  & .no-data {
+  .no-data {
     padding-top: 14px;
     padding-bottom: 20px;
 
-    & .img {
+    .img {
       width: 30px;
       height: 30px;
       margin: 0 auto 13px;
@@ -5977,7 +5978,7 @@
       }
     }
 
-    & .txt {
+    .txt {
       font-size: 12px;
       line-height: 18px;
       letter-spacing: -0.3px;
@@ -5992,7 +5993,7 @@
   padding: 0 20px 60px;
   margin-top: 36px;
 
-  & .item {
+  .item {
     padding: 20px 0 22px;
     border-bottom: 1px solid #f5f6f8;
 
@@ -6001,7 +6002,7 @@
     }
   }
 
-  & .year {
+  .year {
     font-family: var(--font3);
     font-size: 14px;
     font-weight: bold;
@@ -6014,7 +6015,7 @@
     margin-top: 36px;
   }
 
-  & .date-info {
+  .date-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6024,7 +6025,7 @@
       margin-bottom: 11px;
     }
 
-    & .date {
+    .date {
       font-family: var(--font2);
       font-size: 14px;
       font-weight: 500;
@@ -6032,12 +6033,12 @@
       color: var(--text-01);
     }
 
-    & .btn {
+    .btn {
       min-width: auto;
       padding: 0 10px;
     }
 
-    & .type {
+    .type {
       font-size: 12px;
       line-height: 18px;
       letter-spacing: -0.3px;
@@ -6046,7 +6047,7 @@
     }
   }
 
-  & .ex-info {
+  .ex-info {
     & > div {
       display: flex;
       align-items: center;
@@ -6060,7 +6061,7 @@
       &.lg {
         margin-bottom: 12px;
 
-        & .name {
+        .name {
           font-family: var(--font2);
           font-size: 14px;
           font-weight: 500;
@@ -6069,7 +6070,7 @@
           color: var(--text-01);
         }
 
-        & .val {
+        .val {
           font-family: var(--font2);
           font-size: 16px;
           font-weight: 500;
@@ -6080,7 +6081,7 @@
       }
 
       &.md {
-        & .name {
+        .name {
           font-family: var(--font2);
           font-size: 14px;
           font-weight: 500;
@@ -6089,13 +6090,13 @@
           color: var(--text-01);
         }
 
-        & .round {
+        .round {
           font-size: 13px;
           line-height: 19px;
           color: var(--text-01);
         }
 
-        & .val {
+        .val {
           font-family: var(--font2);
           font-size: 14px;
           font-weight: 500;
@@ -6108,7 +6109,7 @@
       &.md-gray {
         margin-bottom: 16px;
 
-        & .name {
+        .name {
           font-family: var(--font1);
           font-size: 14px;
           font-weight: normal;
@@ -6117,13 +6118,13 @@
           color: var(--text-02);
         }
 
-        & .round {
+        .round {
           font-size: 13px;
           line-height: 19px;
           color: var(--text-01);
         }
 
-        & .val {
+        .val {
           font-family: var(--font2);
           font-size: 14px;
           font-weight: 500;
@@ -6133,14 +6134,14 @@
         }
       }
 
-      & .name {
+      .name {
         font-size: 13px;
         line-height: 19px;
         letter-spacing: -0.33px;
         color: var(--text-03);
       }
 
-      & .val {
+      .val {
         font-size: 13px;
         line-height: 19px;
         letter-spacing: -0.33px;
@@ -6191,7 +6192,7 @@
     background-color: var(--blurple);
     */
 
-  & .ic-update-check {
+  .ic-update-check {
     display: inline-block;
     vertical-align: middle;
     width: 20px;
@@ -6222,23 +6223,23 @@
 }
 
 .transaction-history-popup {
-  & .modal-dialog {
+  .modal-dialog {
     width: 315px;
     max-width: 315px !important;
     padding: 30px 0;
 
-    & .modal-content {
+    .modal-content {
       width: 315px;
       border-radius: 0;
       text-align: left;
       padding: 20px 0 0;
 
-      & .modal-header {
+      .modal-header {
         padding: 0;
         margin-bottom: 20px;
         border-bottom: 0;
 
-        & .btn-close {
+        .btn-close {
           position: absolute;
           display: inline-block;
           top: 20px;
@@ -6249,7 +6250,7 @@
           background-size: cover;
         }
 
-        & .title {
+        .title {
           width: 100%;
           display: block;
           font-family: var(--font3);
@@ -6262,11 +6263,11 @@
         }
       }
 
-      & .modal-body {
+      .modal-body {
         flex: none;
         padding: 20px 20px 30px;
 
-        & .date-info {
+        .date-info {
           font-size: 12px;
           line-height: 16px;
           letter-spacing: -0.6px;
@@ -6274,7 +6275,7 @@
           margin-bottom: 10px;
         }
 
-        & .text {
+        .text {
           font-family: var(--font2);
           font-size: 12px;
           font-weight: 500;
@@ -6285,7 +6286,7 @@
           margin-bottom: 10px;
         }
 
-        & .table {
+        .table {
           border-top: 1px solid #e3e4e8;
           margin-bottom: 35px;
 
@@ -6355,12 +6356,12 @@
   padding: 0 20px;
   margin-top: 30px;
 
-  & .accordion {
+  .accordion {
     border: 1px solid var(--text-01);
     border-radius: 4px;
     padding: 0 20px;
 
-    & .select-header {
+    .select-header {
       & button {
         position: relative;
         width: 100%;
@@ -6400,7 +6401,7 @@
       }
     }
 
-    & .select-body {
+    .select-body {
       border-top: 1px solid #e3e4e8;
 
       & ul {
@@ -6417,7 +6418,7 @@
             align-items: center;
           }
 
-          & .img {
+          .img {
             width: 24px;
             height: 24px;
             margin-right: 7px;
@@ -6428,7 +6429,7 @@
             }
           }
 
-          & .name {
+          .name {
             width: calc(100% - 66px);
             overflow: hidden;
             white-space: nowrap;
@@ -6441,7 +6442,7 @@
             color: var(--text-01);
           }
 
-          & .state {
+          .state {
             position: absolute;
             font-size: 14px;
             line-height: 20px;

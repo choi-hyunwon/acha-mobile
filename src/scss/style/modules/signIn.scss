@@ -4,7 +4,7 @@
     날짜 : 2021.06.04
 */
 .sign-in-wrap {
-  & > .title {
+  > .title {
     font-family: var(--font3);
     font-size: 18px;
     font-weight: bold;
@@ -20,14 +20,14 @@
     }
   }
 
-  & > .step-wrap {
+  > .step-wrap {
     margin-bottom: 25px;
 
-    & ul {
+    ul {
       display: flex;
       justify-content: center;
 
-      & li {
+      li {
         position: relative;
         width: 30px;
         height: 30px;
@@ -72,20 +72,20 @@
     }
   }
 
-  & > .desc {
+  > .desc {
     font-size: 15px;
     line-height: 25px;
     letter-spacing: -0.38px;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
-  & > .img {
+  > .img {
     width: 140px;
     height: 110px;
     margin: 0 auto;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
@@ -96,61 +96,61 @@
     }
   }
 
-  & .card-wrap {
+  .card-wrap {
     padding: 0 20px;
     margin-bottom: 28px;
 
     &.must {
-      & .card-title {
+      .card-title {
         color: var(--blurple);
         border-bottom: 2px solid var(--blurple);
       }
 
-      & .card-box {
-        & > label {
+      .card-box {
+        > label {
           height: 78%;
         }
       }
     }
 
     &.single {
-      & .card-box {
+      .card-box {
         border: 1px solid #f5f6f8;
         border-radius: 6px;
 
-        & .item {
+        .item {
           padding-left: 20px;
         }
       }
     }
 
     &.all {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
 
-      & .card-box {
+      .card-box {
         border: 1px solid var(--text-01);
         border-radius: 6px;
 
-        & .item {
-          & label {
-            width: 100%;
+        .item {
+          label {
+            width: 87%;
             height: 100%;
 
-            & span {
+            span {
               font-family: var(--font3);
               font-weight: bold;
               font-size: 14px;
             }
           }
 
-          & .desc {
+          .desc {
             color: var(--text-01);
           }
         }
       }
     }
 
-    & .card-title {
+    .card-title {
       font-family: var(--font2);
       font-size: 14px;
       font-weight: 500;
@@ -162,32 +162,32 @@
       border-bottom: 2px solid var(--text-03);
     }
 
-    & .card-box {
+    .card-box {
       border-right: 1px solid #f5f6f8;
       border-left: 1px solid #f5f6f8;
       border-bottom: 1px solid #f5f6f8;
       padding-bottom: 20px;
 
-      & .item {
+      .item {
         position: relative;
         padding-left: 48px;
         padding-top: 22px;
         padding-right: 24px;
 
-        & > label {
+        > label {
           position: absolute;
           left: 22px;
           top: 18px;
           width: 70%;
         }
 
-        & > .title-wrap {
+        > .title-wrap {
           display: flex;
           height: 19px;
           align-items: center;
           margin-bottom: 4px;
 
-          & .tit {
+          .tit {
             font-family: var(--font2);
             font-size: 14px;
             font-weight: 500;
@@ -198,10 +198,10 @@
             margin-right: 7px;
           }
 
-          & .ico {
+          .ico {
             display: flex;
 
-            & i {
+            i {
               display: inline-block;
               width: 14px;
               height: 14px;
@@ -227,54 +227,54 @@
           }
         }
 
-        & > .checkbox-select {
+        > .checkbox-select {
           height: fit-content;
           margin-bottom: 7px;
 
-          & label {
+          label {
             height: 18px;
 
-            &:first-child {
-              margin-right: 25px;
+            + label {
+              margin-left: 17px;
             }
           }
 
-          & .filled-in {
+          .filled-in {
             height: 18px;
           }
 
-          & [type="checkbox"] + span:not(.lever) {
+          [type="checkbox"] + span:not(.lever) {
             padding-left: 23px;
             line-height: 18px;
             height: 18px;
           }
 
-          & [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
+          [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
             left: 1px;
             top: 0;
           }
 
-          & [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+          [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
             height: 18px;
             width: 18px;
             border-radius: 2px;
             top: 0;
           }
 
-          & [type="checkbox"].filled-in:checked + span:not(.lever):after {
+          [type="checkbox"].filled-in:checked + span:not(.lever):after {
             height: 18px;
             width: 18px;
             border-radius: 2px;
             top: 0;
           }
 
-          & [type="checkbox"].filled-in:checked + span:not(.lever):before {
+          [type="checkbox"].filled-in:checked + span:not(.lever):before {
             left: 1px;
             top: 0;
           }
         }
 
-        & > .desc {
+        > .desc {
           position: relative;
           font-size: 12px;
           line-height: 18px;
@@ -308,7 +308,7 @@
           }
         }
 
-        & .btn-more-wrap {
+        .btn-more-wrap {
           position: absolute;
           width: 46px;
           height: 50px;
@@ -317,7 +317,7 @@
           top: 7px;
         }
 
-        & .btn-more {
+        .btn-more {
           display: block;
           width: 100%;
           height: 100%;
@@ -330,11 +330,11 @@
     }
   }
 
-  & .tip-wrap {
+  .tip-wrap {
     padding: 0 28px;
     margin-bottom: 30px;
 
-    & .list-title {
+    .list-title {
       position: relative;
       padding-left: 19px;
       font-size: 13px;
@@ -355,8 +355,8 @@
       }
     }
 
-    & ul {
-      & li {
+    ul {
+      li {
         position: relative;
         padding-left: 19px;
         font-size: 12px;
@@ -400,12 +400,12 @@
     }
   }
 
-  & .email-form {
+  .email-form {
     padding: 0 20px;
 
     &.completed {
-      & .custom-light {
-        & input {
+      .custom-light {
+        input {
           border-bottom: 1px solid #653bb4;
 
           &::-webkit-search-cancel-button {
@@ -426,7 +426,7 @@
       }
     }
 
-    & > .desc {
+    > .desc {
       font-family: var(--font2);
       font-size: 12px;
       font-weight: 500;
@@ -437,10 +437,10 @@
       margin-bottom: 10px;
     }
 
-    & .custom-light {
+    .custom-light {
       position: relative;
 
-      & input {
+      input {
         &::-webkit-search-cancel-button {
           position: absolute;
           right: 5px;
@@ -457,7 +457,7 @@
     }
   }
 
-  & .sign-in-btn-absolute {
+  .sign-in-btn-absolute {
     width: 100%;
     position: fixed;
     bottom: 30px;
@@ -466,20 +466,20 @@
     padding: 0 20px;
   }
 
-  & .sign-in-btn-relative {
+  .sign-in-btn-relative {
     padding: 0 20px 30px;
     margin-top: 228px;
   }
 
-  & .sign-in-btn {
+  .sign-in-btn {
     padding: 0 20px 30px;
   }
 
-  & .info-wrap {
+  .info-wrap {
     padding: 10px 20px 0;
 
-    & .caution-box {
-      & .tit {
+    .caution-box {
+      .tit {
         position: relative;
         font-family: var(--font2);
         font-size: 13px;
@@ -501,7 +501,7 @@
         }
       }
 
-      & .desc {
+      .desc {
         font-size: 12px;
         line-height: 19px;
         letter-spacing: -0.3px;
@@ -511,10 +511,10 @@
       }
     }
 
-    & .info-box {
+    .info-box {
       margin-bottom: 20px;
 
-      & .badge {
+      .badge {
         display: inline-block;
         padding: 0 9px;
         border-radius: 333px;
@@ -529,7 +529,7 @@
         margin-bottom: 12px;
       }
 
-      & .desc {
+      .desc {
         font-size: 15px;
         line-height: 25px;
         letter-spacing: -0.38px;
@@ -538,11 +538,11 @@
         margin-bottom: 20px;
       }
 
-      & .tip-box {
+      .tip-box {
         padding: 20px 16px;
         background-color: #f7f8fc;
 
-        & li {
+        li {
           position: relative;
           font-size: 14px;
           line-height: 20px;
@@ -569,7 +569,7 @@
       }
     }
 
-    & > .desc {
+    > .desc {
       text-align: center;
       font-size: 14px;
       line-height: 18px;
@@ -578,11 +578,11 @@
       margin-bottom: 10px;
     }
 
-    & > .link {
+    > .link {
       text-align: center;
       margin-bottom: 24px;
 
-      & a {
+      a {
         display: inline-block;
         font-size: 14px;
         line-height: 19px;
@@ -617,7 +617,7 @@
   overflow-y: auto;
   border-radius: 4px;
 
-  & .ui-menu-item {
+  .ui-menu-item {
     margin: 0;
     cursor: pointer;
     padding: 0 16px;
@@ -626,19 +626,19 @@
     text-overflow: ellipsis;
 
     &:last-child {
-      & .ui-menu-item-wrapper {
+      .ui-menu-item-wrapper {
         border-bottom: 0;
       }
     }
 
     &:active {
-      & .ui-menu-item-wrapper {
+      .ui-menu-item-wrapper {
         color: var(--blurple);
       }
     }
   }
 
-  & .ui-menu-item-wrapper {
+  .ui-menu-item-wrapper {
     position: relative;
     height: 43px;
     line-height: 42px;
@@ -653,7 +653,7 @@
 }
 
 .ui-helper-hidden-accessible {
-  & > div:last-child {
+  > div:last-child {
     display: none;
   }
 }

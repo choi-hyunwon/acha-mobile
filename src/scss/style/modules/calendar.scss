@@ -10,11 +10,11 @@
   padding-bottom: 30px;
   border-bottom: 1px solid #f5f6f8;
 
-  & .top-area {
+  .top-area {
     position: relative;
     margin-bottom: 6px;
 
-    //& .btn-back {
+    //.btn-back {
     //  position: absolute;
     //  display: flex;
     //  width: 26px;
@@ -25,10 +25,10 @@
     //  top: 20px;
     //}
 
-    & .btn-select-month {
+    .btn-select-month {
       padding-left: 20px;
 
-      & span {
+      span {
         display: inline-block;
         vertical-align: middle;
         font-family: var(--font3);
@@ -50,10 +50,10 @@
     }
   }
 
-  & .text-area {
+  .text-area {
     padding: 0 20px;
 
-    & p {
+    p {
       font-size: 15px;
       line-height: 22px;
       letter-spacing: -0.38px;
@@ -68,8 +68,8 @@
   &.bg-dark-blue {
     background-color: #40466a;
 
-    & .text-area {
-      & p {
+    .text-area {
+      p {
         color: #a6aac7;
       }
     }
@@ -78,8 +78,8 @@
   &.bg-blue {
     background-color: #3e5baf;
 
-    & .text-area {
-      & p {
+    .text-area {
+      p {
         color: #a9b5d8;
       }
     }
@@ -89,7 +89,7 @@
 .box_ex_calendar {
   padding: 0 20px !important;
 
-  & .fc-day-number {
+  .fc-day-number {
     &.active {
       width: 24px;
       height: 24px;
@@ -106,8 +106,8 @@
     }
   }
 
-  & .fc-day-selected {
-    & .fc-day-number {
+  .fc-day-selected {
+    .fc-day-number {
       width: 24px;
       height: 24px;
       margin: 0 auto;
@@ -123,29 +123,29 @@
     }
   }
 
-  & .fc-day-disabled {
-    & .fc-day-number {
+  .fc-day-disabled {
+    .fc-day-number {
       opacity: 0.3;
     }
   }
 
-  & .first-data {
-    & .fc-content {
-      & .fc-title {
+  .first-data {
+    .fc-content {
+      .fc-title {
         color: var(--color-point) !important;
       }
     }
   }
 
-  & .sort-area {
+  .sort-area {
     position: relative;
     width: 100%;
     height: fit-content;
     margin-top: 30px;
     margin-bottom: 20px;
 
-    & ul {
-      & li {
+    ul {
+      li {
         float: left;
         margin-right: 6px;
 
@@ -153,7 +153,7 @@
           margin-right: 0;
         }
 
-        & a {
+        a {
           display: inline-block;
           height: 34px;
           line-height: 34px;
@@ -167,7 +167,7 @@
         }
 
         &.active {
-          & a {
+          a {
             background-color: var(--color-point);
             color: #fff;
           }
@@ -175,45 +175,28 @@
       }
     }
 
-    & .btn-reset {
+    .btn-reset {
       position: absolute;
       right: 0;
       top: 0;
-      display: inline-flex;
+      background-image: url(../../img/common/ico_data_refresh@2x.png);
+      width: 34px;
       height: 34px;
-      align-items: center;
-      padding: 0 10px;
-      background-image: url(../../img/common/btn-dash-bg-01.svg);
-      width: 75px;
       background-size: cover;
-      font-size: 12px;
-      line-height: 26px;
-      letter-spacing: -0.6px;
-      text-align: center;
-      justify-content: center;
-      color: var(--text-02);
-
-      & .ico-select-reset {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background-image: url(../../img/common/ico-select-reset.svg);
-        background-size: cover;
-      }
     }
   }
 
-  & .no-data {
-    & .fc-day-number {
+  .no-data {
+    .fc-day-number {
       opacity: .3 !important;
     }
   }
 
-  & .update-box {
+  .update-box {
     padding-top: 200px;
     text-align: center;
 
-    & .txt {
+    .txt {
       font-size: 14px;
       line-height: 23px;
       letter-spacing: -0.35px;
@@ -221,12 +204,12 @@
       margin-bottom: 12px;
     }
 
-    & .img {
-      & img {
+    .img {
+      img {
         display: inline-block;
       }
 
-      & span {
+      span {
         display: inline-block;
         font-family: var(--font2);
         font-size: 11px;
@@ -243,7 +226,7 @@
   padding: 30px 20px 0;
   border-top: 1px solid #f5f6f8;
 
-  & > .ex-total {
+  > .ex-total {
     width: 100%;
     height: 64px;
     border-radius: 6px;
@@ -252,10 +235,10 @@
     align-items: center;
     overflow: hidden;
 
-    & > .txt {
+    > .txt {
       float: left;
 
-      & span {
+      span {
         &:first-child {
           font-family: var(--font2);
           font-size: 15px;
@@ -276,10 +259,10 @@
       }
     }
 
-    & > .val {
+    > .val {
       float: right;
 
-      & span {
+      span {
         &:first-child {
           font-family: var(--font2);
           font-size: 18px;
@@ -301,7 +284,7 @@
     }
   }
 
-  & > .ex-day {
+  > .ex-day {
     padding-bottom: 10px;
     border-bottom: 1px solid #f5f6f8;
     padding-top: 30px;
@@ -310,21 +293,21 @@
       border-bottom: 0;
     }
 
-    & > .ex-total {
+    > .ex-total {
       overflow: hidden;
       margin-bottom: 30px;
 
-      & .date {
+      .date {
         float: left;
 
-        & .day {
+        .day {
           font-family: var(--font3);
           font-size: 20px;
           font-weight: bold;
           line-height: 21px;
           letter-spacing: -0.5px;
 
-          & em {
+          em {
             font-family: var(--font3);
             font-size: 16px;
             font-weight: bold;
@@ -334,7 +317,7 @@
           }
         }
 
-        & .day2 {
+        .day2 {
           font-size: 13px;
           line-height: 21px;
           letter-spacing: -0.33px;
@@ -343,7 +326,7 @@
           margin-right: 5px;
         }
 
-        & .state {
+        .state {
           display: inline-block;
           height: 21px;
           padding: 0 7px;
@@ -365,17 +348,17 @@
         }
       }
 
-      & .total {
+      .total {
         float: right;
 
-        & .val {
+        .val {
           font-family: var(--font2);
           font-size: 17px;
           font-weight: 500;
           line-height: 23px;
           color: var(--text-01);
 
-          & em {
+          em {
             font-family: var(--font2);
             font-size: 13px;
             font-weight: 500;
@@ -388,16 +371,16 @@
 
     }
 
-    & .ex-list {
-      & .item {
+    .ex-list {
+      .item {
         overflow: hidden;
         margin-bottom: 20px;
 
-        & .info-tit {
+        .info-tit {
           float: left;
           width: calc(100% - 120px);
 
-          & img {
+          img {
             float: left;
             display: inline-block;
             width: 22px;
@@ -406,7 +389,7 @@
             vertical-align: middle;
           }
 
-          & .tit {
+          .tit {
             display: block;
             font-size: 13px;
             line-height: 22px;
@@ -419,10 +402,10 @@
           }
         }
 
-        & .info-val {
+        .info-val {
           float: right;
 
-          & a {
+          a {
             position: relative;
             display: block;
             line-height: 22px;
@@ -440,14 +423,14 @@
               right: 0;
             }
 
-            & .val {
+            .val {
               font-family: var(--font1);
               font-size: 14px;
               letter-spacing: -0.14px;
               text-align: right;
               color: var(--text-01);
 
-              & em {
+              em {
                 font-size: 13px;
                 line-height: 19px;
                 color: var(--text-01);
@@ -459,23 +442,23 @@
     }
   }
 
-  & > .no-data {
+  > .no-data {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
 
-    & .img {
+    .img {
       width: 30px;
       height: 30px;
       margin: 0 auto 12px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
-    & .txt {
+    .txt {
       font-size: 12px;
       line-height: 20px;
       letter-spacing: -0.3px;
@@ -487,20 +470,20 @@
 }
 
 .modal-common {
-  & .modal-dialog {
+  .modal-dialog {
     &.modal-calendar {
-      & .modal-content {
+      .modal-content {
         padding: 30px 0 0;
 
-        & .box_ex_calendar {
+        .box_ex_calendar {
           padding: 0 30px !important;
 
-          & .fc-header-toolbar {
+          .fc-header-toolbar {
             position: relative;
             display: block;
             margin-bottom: 19px;
 
-            & .fc-button-primary {
+            .fc-button-primary {
               background-color: transparent;
               border: 0;
 
@@ -510,18 +493,18 @@
               }
             }
 
-            & .fc-left {
+            .fc-left {
               position: absolute;
               left: 0;
               top: 50%;
               transform: translateY(-50%);
 
-              & .fc-prev-button {
+              .fc-prev-button {
                 &:disabled {
                   display: none;
                 }
 
-                & .fc-icon-chevron-left {
+                .fc-icon-chevron-left {
                   display: inline-block;
                   width: 18px;
                   height: 18px;
@@ -535,10 +518,10 @@
               }
             }
 
-            & .fc-center {
+            .fc-center {
               text-align: center;
 
-              & h2 {
+              h2 {
                 font-family: var(--font1);
                 font-size: 15px;
                 line-height: 21px;
@@ -549,18 +532,18 @@
               }
             }
 
-            & .fc-right {
+            .fc-right {
               position: absolute;
               right: 0;
               top: 50%;
               transform: translateY(-50%);
 
-              & .fc-next-button {
+              .fc-next-button {
                 &:disabled {
                   display: none;
                 }
 
-                & .fc-icon-chevron-right {
+                .fc-icon-chevron-right {
                   display: inline-block;
                   width: 18px;
                   height: 18px;
@@ -575,27 +558,27 @@
             }
           }
 
-          & .fc-view-container {
-            & .fc-view {
-              & table {
-                & .fc-body {
-                  & .fc-widget-content {
-                    & .fc-day-grid-container {
+          .fc-view-container {
+            .fc-view {
+              table {
+                .fc-body {
+                  .fc-widget-content {
+                    .fc-day-grid-container {
                       overflow: visible !important;
 
-                      & .fc-day-grid {
-                        & .fc-row {
+                      .fc-day-grid {
+                        .fc-row {
                           min-height: 44px;
 
-                          & .fc-day-top {
+                          .fc-day-top {
                             padding-top: 5px;
                           }
 
-                          & .fc-disabled-day {
+                          .fc-disabled-day {
                             background-color: transparent;
                           }
 
-                          & .fc-day-number {
+                          .fc-day-number {
                             width: 24px;
                             height: 24px;
                             margin: 0 auto;
@@ -615,8 +598,8 @@
                             }
                           }
 
-                          & .fc-today {
-                            & .fc-day-number {
+                          .fc-today {
+                            .fc-day-number {
                               background-color: transparent;
                               font-family: var(--font1);
                               font-size: 13px;
@@ -644,5 +627,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 385px) {
+  .sign-in-wrap .card-wrap .card-box .item > .checkbox-select label:last-child {
+    transform: translateX(-17px);
+    margin-top: 8px;
   }
 }

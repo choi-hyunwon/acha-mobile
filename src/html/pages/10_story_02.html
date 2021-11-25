@@ -3,29 +3,20 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
+    <div class="my-card-tab _myCardTab">
+        <ul class="clearfix">
+            <li class="active"><a href="#">내카드</a></li>
+            <li><a href="#">타임라인</a></li>
+            <li><a href="#">카드고정결제</a></li>
+        </ul>
+    </div>
     <div class="contents">
-        <div class="header-tab _headerTab">
-            <ul class="clearfix">
-                <li class="active"><a href="#">타임라인</a></li>
-                <li><a href="#">스토리</a></li>
-            </ul>
-        </div>
         <div class="timeline-wrap">
-            <div class="timeline-menu-top _timelineMenu">
-                <ul class="clearfix">
-                    <li class="active"><a href="#">전체</a></li>
-                    <li><a href="#">카드결제</a></li>
-                    <li><a href="#">계좌이체</a></li>
-                </ul>
+            <div class="timeline-txt-box">
+                <p>거래내역을 눌러서 중요했던 순간을 입력하고<br/><span class="font-bold primary-color">스토리를 생성</span>해보세요 😃 </p>
             </div>
-            <!-- s 추가 -- 2021.08.17 -->
-            <div class="update-box">
-<!--                <img src="../../img/common/ico_card_tit_re.gif" alt="로딩">-->
-                <span>최신 정보를 가져오는 중</span>
-            </div>
-            <!-- e 추가 -- 2021.08.17 -->
             <div class="t-pay-list">
-                <div class="month">3</div>
+                <div class="month"><a href="" class="btn-select-month">5월</a></div>
                 <div class="t-pay-item">
                     <div class="day-info">
                         <div class="date">15</div>
@@ -37,15 +28,14 @@
                                 <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
                                 <div class="name">카카오뱅크신한카드</div>
                                 <div class="time">19:20</div>
+                                <a href="#" class="btn-edit"><span class="sr-only">edit</span></a>
                             </div>
                             <div class="pay-info">
                                 <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
                                     <span class="tit">스타벅스구로점</span>
                                     <span class="val">12,600</span>
                                 </a>
-                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>
+                                <!--                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
                             </div>
                         </div>
                         <div class="item">
@@ -56,23 +46,6 @@
                             </div>
                             <div class="pay-info">
                                 <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
-                                    <span class="tit">스타벅스구로점</span>
-                                    <span class="val">12,600</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="bank-info">
-                                <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                <div class="name">카카오뱅크신한카드</div>
-                                <div class="time">19:20</div>
-                            </div>
-                            <div class="pay-info">
-                                <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
                                     <span class="tit">스타벅스구로점</span>
                                     <span class="val">12,600</span>
                                 </a>
@@ -86,8 +59,19 @@
                             </div>
                             <div class="pay-info">
                                 <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                    <span class="tit">스타벅스구로점</span>
+                                    <span class="val">12,600</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bank-info">
+                                <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                <div class="name">카카오뱅크신한카드</div>
+                                <div class="time">19:20</div>
+                            </div>
+                            <div class="pay-info">
+                                <a href="#">
                                     <span class="tit">스타벅스구로점</span>
                                     <span class="val">12,600</span>
                                 </a>
@@ -109,8 +93,6 @@
                             </div>
                             <div class="pay-info">
                                 <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
                                     <span class="tit">스타벅스구로점</span>
                                     <span class="val">12,600</span>
                                 </a>
@@ -124,8 +106,6 @@
                             </div>
                             <div class="pay-info">
                                 <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
                                     <span class="tit">스타벅스구로점</span>
                                     <span class="val">12,600</span>
                                 </a>
@@ -147,12 +127,10 @@
                             </div>
                             <div class="pay-info">
                                 <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
                                     <span class="tit">스타벅스구로점</span>
                                     <span class="val">12,600</span>
                                 </a>
-                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>
+                                <!--                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
                             </div>
                         </div>
                     </div>
@@ -171,60 +149,72 @@
                                 <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
                                 <div class="name">카카오뱅크신한카드</div>
                                 <div class="time">19:20</div>
+                                <div class="btn-more"><span class="sr-only">더보기</span></div>
                             </div>
-                            <div class="pay-info">
-                                <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
-                                    <span class="tit">스타벅스구로점</span>
-                                    <span class="val">12,600</span>
-                                </a>
-                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>
+                            <div class="pay-info rounded-top">
+                                <span class="img"><img src="../../img/common/ico-emoji-smile@2x.png" alt=""></span>
+                                <span class="tit">스타벅스구로점</span>
+                                <span class="val">12,600</span>
+                                <!--                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
+                            </div>
+                            <div class="story-slider">
+                                <div class="swiper-container swiper-story _slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="../../img/@temp/tbroad.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="../../img/@temp/sample-icon-big.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-story-pagination"></div>
+                            </div>
+                            <div class="story-slider-desc">
+                                수영님이랑 점심시간에 메이비에서 브런치를 먹었는데, 완전 여유롭고 맛있었다~ 냠냠 🍰
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="t-pay-item">
+                    <div class="day-info">
+                        <div class="date">10</div>
+                        <div class="day">월</div>
+                    </div>
+                    <div class="item-wrap">
                         <div class="item">
                             <div class="bank-info">
                                 <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
                                 <div class="name">카카오뱅크신한카드</div>
                                 <div class="time">19:20</div>
+                                <div class="btn-more"><span class="sr-only">더보기</span></div>
                             </div>
-                            <div class="pay-info">
-                                <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
-                                    <span class="tit">스타벅스구로점</span>
-                                    <span class="val">12,600</span>
-                                </a>
+                            <div class="pay-info rounded-top">
+                                <span class="tit">스타벅스구로점</span>
+                                <span class="val">12,600</span>
+                                <!--                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
+                            </div>
+                            <div class="story-slider-desc">
+                                수영님이랑 점심시간에 메이비에서 브런치를 먹었는데, 완전 여유롭고 맛있었다~ 냠냠 🍰
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="t-pay-item">
+                    <div class="day-info">
+                        <div class="date">10</div>
+                        <div class="day">월</div>
+                    </div>
+                    <div class="item-wrap">
                         <div class="item">
                             <div class="bank-info">
                                 <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                <div class="name">카카오뱅크신한카드</div>
+                                <div class="name">우리직장인우대통장</div>
                                 <div class="time">19:20</div>
+                                <div class="btn-more"><span class="sr-only">더보기</span></div>
                             </div>
                             <div class="pay-info">
-                                <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
-                                    <span class="tit">스타벅스구로점</span>
-                                    <span class="val">12,600</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="bank-info">
-                                <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                <div class="name">카카오뱅크신한카드</div>
-                                <div class="time">19:20</div>
-                            </div>
-                            <div class="pay-info">
-                                <a href="#">
-                                    <!-- todo! 아이콘 디자인 없음 -->
-                                    <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
-                                    <span class="tit">스타벅스구로점</span>
-                                    <span class="val">12,600</span>
-                                </a>
+                                <span class="img"><img src="../../img/common/ico-emoji-smile@2x.png" alt=""></span>
+                                <span class="tit">적금</span>
+                                <span class="val">12,600</span>
+                                <!--                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
                             </div>
                         </div>
                     </div>
@@ -235,12 +225,12 @@
 </div>
 <script>
     // 타임라인 / 스토리 탭
-    $('._headerTab li a').on('click', function (){
+    $('._headerTab li a').on('click', function () {
         $(this).parent().addClass('active').siblings().removeClass('active')
     })
 
     // 결제 탭
-    $('._timelineMenu li a').on('click', function (){
+    $('._timelineMenu li a').on('click', function () {
         $(this).parent().addClass('active').siblings().removeClass('active')
     })
 
@@ -248,17 +238,24 @@
     var index = 2; // (li 갯수) - 1
     var sum = 0;
 
-    for (var j=0; j <= index; j++) {
-        sum = sum + $("._timelineMenu li:eq("+ j +")").outerWidth(true);
-     }
+    for (var j = 0; j <= index; j++) {
+        sum = sum + $("._timelineMenu li:eq(" + j + ")").outerWidth(true);
+    }
 
     $('._timelineMenu ul').css('width', sum + 1);
 
     // 기타 클릭 시, 스크롤 이동
     function scrollGoRight() {
         var leftPos = $('._timelineMenu').scrollLeft();
-        $('._timelineMenu').animate( { scrollLeft: leftPos + 210 }, 300);
+        $('._timelineMenu').animate({scrollLeft: leftPos + 210}, 300);
     }
+
+    // swiper
+    var swiper = new Swiper("._slider", {
+        pagination: {
+            el: ".swiper-pagination",
+        }
+    });
 </script>
 </body>
 </html>

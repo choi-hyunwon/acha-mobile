@@ -7,21 +7,21 @@
 }
 
 .popup_wrap {
-  & .contents {
+  .contents {
     padding: 10px 20px;
 
     &.contents_sm {
       padding: 13px 20px;
     }
 
-    & .title_area {
+    .title_area {
       margin-bottom: 50px;
     }
 
-    & .box {
+    .box {
       margin-bottom: 35px;
 
-      & .input_area {
+      .input_area {
         margin-bottom: 21px;
       }
     }
@@ -31,19 +31,19 @@
 .box_error {
   padding-top: 160px;
 
-  & .error_img {
+  .error_img {
     width: 56px;
     height: 56px;
     text-align: center;
     margin: 0 auto 20px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  & .error_msg {
+  .error_msg {
     font-size: 15px;
     color: #666666;
     letter-spacing: -0.65px;
@@ -52,7 +52,7 @@
     text-align: center;
   }
 
-  & .error_desc {
+  .error_desc {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.33px;
@@ -65,19 +65,19 @@
 .box_loading {
   padding-top: 131px;
 
-  & .loading_img {
+  .loading_img {
     width: 200px;
     height: 90px;
     text-align: center;
     margin: 0 auto 20px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  & .loading_msg {
+  .loading_msg {
     font-size: 15px;
     color: var(--color-text-default);
     letter-spacing: -0.38px;
@@ -86,7 +86,7 @@
     text-align: center;
   }
 
-  & .loading_desc {
+  .loading_desc {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.33px;
@@ -99,19 +99,19 @@
 .box_empty {
   padding-top: 160px;
 
-  & .empty_img {
+  .empty_img {
     width: 56px;
     height: 56px;
     text-align: center;
     margin: 0 auto 20px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  & .empty_msg {
+  .empty_msg {
     font-size: 15px;
     color: var(--color-text-default);
     letter-spacing: -0.38px;
@@ -120,7 +120,7 @@
     text-align: center;
   }
 
-  & .empty_desc {
+  .empty_desc {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.33px;
@@ -137,19 +137,19 @@
 .box_updating {
   padding-top: 200px;
 
-  & .updating_img {
+  .updating_img {
     width: 26px;
     height: 26px;
     text-align: center;
     margin: 0 auto 20px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  & .updating_msg {
+  .updating_msg {
     display: block;
     font-size: 12px;
     line-height: 1.58;
@@ -168,11 +168,11 @@
   transform: translate(-50%, -50%);
   background-color: #ffffff;
 
-  & .popup-header {
+  .popup-header {
     position: relative;
     height: 60px;
 
-    & h2 {
+    h2 {
       font-size: 15px;
       letter-spacing: -.75px;
       line-height: 60px;
@@ -183,7 +183,7 @@
       margin-bottom: 0;
     }
 
-    & .btn-close {
+    .btn-close {
       position: absolute;
       display: inline-block;
       top: 20px;
@@ -191,10 +191,10 @@
     }
   }
 
-  & .popup-body {
+  .popup-body {
     padding: 0 18px 72px 20px;
 
-    & .title {
+    .title {
       font-family: var(--font1);
       font-size: 15px;
       letter-spacing: -.75px;
@@ -205,7 +205,7 @@
       font-weight: bold;
     }
 
-    & > .desc {
+    > .desc {
       font-size: 13px;
       line-height: 20px;
       letter-spacing: -0.65px;
@@ -213,7 +213,7 @@
       text-align: center;
     }
 
-    & .desc-sm {
+    .desc-sm {
       font-family: var(--font1);
       font-size: 12px;
       line-height: 14px;
@@ -224,16 +224,16 @@
     }
   }
 
-  & .popup-footer {
+  .popup-footer {
     position: absolute;
     width: 100%;
     height: 42px;
     bottom: -1px;
     left: 0;
 
-    & .confirm-area {
+    .confirm-area {
 
-      & .btn-full {
+      .btn-full {
         width: 100% !important;
         background-color: #6839d3;
 
@@ -246,7 +246,7 @@
         }
       }
 
-      & a {
+      a {
         display: inline-block;
         float: left;
         width: 50%;
@@ -294,11 +294,11 @@
   &.popup-sm {
     width: 270px;
 
-    & .popup {
+    .popup {
       width: 270px;
     }
 
-    & .desc {
+    .desc {
       padding-top: 29px;
     }
   }
@@ -327,11 +327,11 @@
   transform: translate(-50%, -50%);
   background-color: #ffffff;
 
-  & .popup-header {
+  .popup-header {
     position: relative;
     height: 60px;
 
-    & h2 {
+    h2 {
       font-size: 15px;
       letter-spacing: -.75px;
       line-height: 60px;
@@ -341,7 +341,7 @@
       color: #37354e;
     }
 
-    & .btn-close {
+    .btn-close {
       position: absolute;
       display: inline-block;
       top: 20px;
@@ -349,10 +349,10 @@
     }
   }
 
-  & .popup-body {
+  .popup-body {
     padding: 24px 18px 0 20px;
 
-    & .title {
+    .title {
       font-family: var(--font1);
       font-size: 15px;
       letter-spacing: -.75px;
@@ -363,8 +363,8 @@
       font-weight: bold;
     }
 
-    & .rq-box {
-      & label {
+    .rq-box {
+      label {
         display: inline-block;
         font-family: var(--font2);
         line-height: 40px;
@@ -373,7 +373,7 @@
         margin-right: 28px;
       }
 
-      & input {
+      input {
         display: inline-block;
         width: 140px;
         height: 40px;
@@ -392,7 +392,7 @@
         }
       }
 
-      & .won {
+      .won {
         display: inline-block;
         font-family: var(--font2);
         line-height: 40px;
@@ -400,16 +400,16 @@
         margin-right: 8px;
       }
 
-      & a {
+      a {
         display: inline-block;
 
-        & i {
+        i {
           transform: translate(0, 8px);
         }
       }
     }
 
-    & > .desc {
+    > .desc {
       font-size: 13px;
       line-height: 18px;
       letter-spacing: -0.33px;
@@ -417,21 +417,21 @@
     }
   }
 
-  & .popup-footer {
+  .popup-footer {
     position: absolute;
     width: 100%;
     height: 42px;
     bottom: 0;
     left: 0;
 
-    & .confirm-area {
+    .confirm-area {
 
-      & .btn-full {
+      .btn-full {
         width: 100% !important;
         background-color: #6839d3;
       }
 
-      & a {
+      a {
         display: inline-block;
         float: left;
         width: 50%;
@@ -456,17 +456,17 @@
   &.required-performance {
     height: 204px;
 
-    & .popup-body {
+    .popup-body {
       padding: 8px 18px 0 20px;
 
-      & .rq-box {
-        & label {
+      .rq-box {
+        label {
           margin-right: 11px;
           cursor: default;
           font-weight: 500;
         }
 
-        & input {
+        input {
           position: absolute;
           top: 70px;
           right: 20px;
@@ -478,20 +478,20 @@
           padding: 0 20px;
         }
 
-        & .won {
+        .won {
           position: absolute;
           right: 15px;
         }
       }
 
-      & .desc {
+      .desc {
         font-size: 11px;
         line-height: 32px;
         letter-spacing: -.28px;
         text-align: right;
         color: #9b9aa6;
 
-        & span {
+        span {
           font-family: var(--font1);
           letter-spacing: -.11px;
         }
@@ -502,17 +502,17 @@
   &.caution {
     padding-bottom: 67px;
 
-    & .popup-body {
+    .popup-body {
       padding: 8px 18px 0 20px;
 
-      & > ul {
+      > ul {
         border-bottom: 1px solid #e3e4e8;
 
-        & .list {
+        .list {
           padding-left: 0;
           margin-bottom: 18px;
 
-          & .title {
+          .title {
             display: block;
             font-size: 13px;
             font-weight: bold;
@@ -523,7 +523,7 @@
             text-align: left;
           }
 
-          & .title-sm {
+          .title-sm {
             display: block;
             font-family: var(--font1);
             color: var(--text-01);
@@ -534,7 +534,7 @@
             padding-top: 0;
           }
 
-          & .desc {
+          .desc {
             display: block;
             font-size: 12px;
             color: var(--text-03);
@@ -551,21 +551,21 @@
 
     }
 
-    & .popup-footer {
+    .popup-footer {
       width: 100%;
       height: 67px;
       padding: 13px 20px 0 36px;
 
-      & .caution-area {
+      .caution-area {
         position: relative;
 
-        & p {
+        p {
           font-size: 11px;
           letter-spacing: -.55px;
           line-height: 18px;
           color: var(--text-03);
 
-          & i {
+          i {
             position: absolute;
             left: -15px;
             top: 3px;
@@ -578,15 +578,15 @@
   &.annual_fee {
     padding-bottom: 30px;
 
-    & .popup-body {
+    .popup-body {
       padding: 0 18px 0 20px;
 
-      & .table {
+      .table {
         position: relative;
 
-        & thead {
-          & tr {
-            & th {
+        thead {
+          tr {
+            th {
               font-family: var(--font1);
               border-top: 0;
               border-right: 1px solid #f5f6f8;
@@ -603,9 +603,9 @@
           }
         }
 
-        & tbody {
-          & tr {
-            & td {
+        tbody {
+          tr {
+            td {
               font-family: var(--font1);
               height: 42px;
               line-height: 42px;
@@ -652,14 +652,14 @@
   &.automatic-payment-details {
     width: 270px;
 
-    & .popup-body {
+    .popup-body {
       padding: 8px 18px 10px 20px;
 
-      & li {
+      li {
         position: relative;
         margin-bottom: 7px;
 
-        & span {
+        span {
           float: left;
 
           &.title {
@@ -702,22 +702,22 @@
         }
       }
 
-      & .empty {
+      .empty {
         margin-top: 36px;
         margin-bottom: 82px;
 
-        & .img {
+        .img {
           width: 42px;
           height: 42px;
           margin: 0 auto 12px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
         }
 
-        & p {
+        p {
           font-size: 12px;
           line-height: 18px;
           letter-spacing: -0.6px;
@@ -726,7 +726,7 @@
         }
       }
 
-      & .tip {
+      .tip {
         position: relative;
         font-size: 11px;
         line-height: 1.64;
@@ -736,7 +736,7 @@
         vertical-align: middle;
         padding-left: 16px;
 
-        & i {
+        i {
           position: absolute;
           margin-right: 4px;
           top: 3px;
@@ -747,21 +747,21 @@
   }
 
   &.input-income-information {
-    & .popup-body {
+    .popup-body {
       padding: 0 18px 71px 20px;
 
-      & .label-box {
+      .label-box {
         margin-bottom: 16px;
 
-        & label {
+        label {
           &:first-child {
             margin-right: 24px;
           }
         }
       }
 
-      & .income_input_box {
-        & label {
+      .income_input_box {
+        label {
           display: inline-block;
           font-family: var(--font2);
           font-size: 13px;
@@ -770,7 +770,7 @@
           letter-spacing: -0.65px;
         }
 
-        & input {
+        input {
           display: inline-block;
           width: 140px;
           position: absolute;
@@ -778,7 +778,7 @@
           text-align: right;
         }
 
-        & .won {
+        .won {
           position: absolute;
           right: 20px;
           bottom: 80px;
@@ -795,8 +795,8 @@
   &.ex-tooltip {
     padding-bottom: 30px;
 
-    & .popup-body {
-      & .list {
+    .popup-body {
+      .list {
         font-size: 13px;
         line-height: 20px;
 
@@ -811,17 +811,17 @@
     width: 240px;
     height: 222px;
 
-    & .popup-body {
+    .popup-body {
       padding: 0 20px;
       margin-top: -10px;
 
-      & ul {
-        & li {
+      ul {
+        li {
           width: 100%;
           height: 52px;
           border-bottom: 1px solid #f5f6f8;
 
-          & a {
+          a {
             display: block;
             font-size: 14px;
             line-height: 52px;
@@ -830,7 +830,7 @@
           }
 
           &.active {
-            & a {
+            a {
               position: relative;
               font-weight: bold;
               color: var(--text-point-color);
@@ -872,13 +872,13 @@
   transform: translate(-50%, -90%);
   z-index: 111111;
 
-  & p {
+  p {
     color: #ffffff;
     font-size: 11px;
     line-height: 53px;
     letter-spacing: -.28px;
 
-    & img {
+    img {
       display: inline-block;
       width: 13px;
       height: 13px;
@@ -894,7 +894,7 @@
     top: 94%;
     padding: 15px 0;
 
-    & p {
+    p {
       font-size: 11px;
       line-height: 16px;
       font-weight: normal;
@@ -912,7 +912,7 @@
     top: 88%;
     padding: 16px 30px;
 
-    & p {
+    p {
       font-size: 12px;
       line-height: 17px;
       letter-spacing: -0.3px;
@@ -930,7 +930,7 @@
     top: 92%;
     padding: 16px 30px;
 
-    & p {
+    p {
       font-size: 12px;
       line-height: 17px;
       letter-spacing: -0.3px;
@@ -947,7 +947,7 @@
     top: 94%;
     padding: 14px 0 15px;
 
-    & p {
+    p {
       font-size: 11px;
       line-height: 16px;
       font-weight: normal;
@@ -969,12 +969,12 @@
 }
 
 .modal {
-  & .modal-dialog {
+  .modal-dialog {
     width: 295px;
     max-width: 295px !important;
     margin: 0 auto;
 
-    & .modal-content {
+    .modal-content {
       position: relative;
       width: 295px;
       text-align: center;
@@ -983,7 +983,7 @@
       border-radius: 6px;
       box-shadow: none;
 
-      & .btn-close {
+      .btn-close {
         position: absolute;
         display: block;
         width: 22px;
@@ -994,7 +994,7 @@
         top: 20px;
       }
 
-      & .tit {
+      .tit {
         font-family: var(--font3);
         font-size: 15px;
         font-weight: bold;
@@ -1003,22 +1003,22 @@
         margin-bottom: 12px;
       }
 
-      & .txt {
+      .txt {
         font-size: 13px;
         line-height: 20px;
         letter-spacing: -0.33px;
       }
     }
 
-    & .modal-footer {
+    .modal-footer {
       padding: 0;
       margin: 0;
 
-      & > :not(:last-child) {
+      > :not(:last-child) {
         margin-right: 0;
       }
 
-      & .btn-footer {
+      .btn-footer {
         display: inline-block;
         float: left;
         width: 50%;
@@ -1044,14 +1044,14 @@
   }
 
   &.modal-sm {
-    & .modal-dialog {
+    .modal-dialog {
       width: 270px;
       max-width: 270px !important;
 
-      & .modal-content {
+      .modal-content {
         width: 270px;
 
-        & .modal-header {
+        .modal-header {
           border-bottom: 0;
         }
       }
@@ -1059,14 +1059,14 @@
   }
 
   &.modal-md {
-    & .modal-dialog {
+    .modal-dialog {
       width: 315px;
       max-width: 315px !important;
 
-      & .modal-content {
+      .modal-content {
         width: 315px;
 
-        & .modal-header {
+        .modal-header {
           border-bottom: 0;
         }
       }
@@ -1074,18 +1074,18 @@
   }
 
   &.modal-common {
-    & .modal-dialog {
-      & .modal-content {
+    .modal-dialog {
+      .modal-content {
         border-radius: 0;
         text-align: left;
         padding: 20px 0 0;
 
-        & .modal-header {
+        .modal-header {
           padding: 0;
           margin-bottom: 18px;
           justify-content: center;
 
-          & .title {
+          .title {
             font-family: var(--font3);
             font-size: 15px;
             font-weight: 800;
@@ -1098,10 +1098,10 @@
           }
         }
 
-        & .modal-body {
+        .modal-body {
           padding: 0 30px 30px;
 
-          & .txt {
+          .txt {
             font-size: 13px;
             line-height: 20px;
             letter-spacing: -0.65px;
@@ -1109,7 +1109,7 @@
             color: var(--text-01);
           }
 
-          & .txt-sm {
+          .txt-sm {
             font-size: 12px;
             line-height: 18px;
             letter-spacing: -0.6px;
@@ -1301,7 +1301,7 @@
   overflow: hidden;
   outline: 0;
 
-  & .modal-slide-content {
+  .modal-slide-content {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1310,7 +1310,7 @@
     border-radius: 20px 20px 0 0;
     background-color: #fff;
 
-    & .btn-close {
+    .btn-close {
       position: absolute;
       display: block;
       width: 22px;
@@ -1321,11 +1321,11 @@
       top: 20px;
     }
 
-    & .inner {
+    .inner {
       padding: 60px 30px 0;
       text-align: center;
 
-      & > .img {
+      > .img {
         display: block;
         width: 100px;
         height: 100px;
@@ -1336,11 +1336,11 @@
         padding-top: 20px;
       }
 
-      & .custom-light {
+      .custom-light {
         margin-bottom: 8px;
       }
 
-      & .desc {
+      .desc {
         width: 100%;
         font-size: 11px;
         line-height: 17px;
@@ -1357,7 +1357,7 @@
     &.up {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         height: 573px;
         animation: modal-sticky-bottom-animation2 .5s;
       }
@@ -1366,34 +1366,34 @@
     &.down {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         animation: modal-sticky-bottom-animation-out2 .5s;
         height: 0;
       }
     }
 
-    & .inner {
+    .inner {
       padding: 30px 28px;
       overflow: hidden;
 
-      & > .title {
+      > .title {
         font-size: 18px;
         line-height: 28px;
         letter-spacing: -0.45px;
         color: var(--text-01);
         text-align: left;
 
-        & .name {
+        .name {
           font-weight: bold;
           font-family: var(--font3);
           color: var(--color-point);
         }
       }
 
-      & .profile {
+      .profile {
         padding-top: 30px;
 
-        & .img {
+        .img {
           position: relative;
           width: 100px;
           height: 100px;
@@ -1417,18 +1417,18 @@
               background-size: cover;
             }
 
-            & img {
+            img {
               display: none;
             }
           }
 
-          & img {
+          img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
           }
 
-          & .btn-delete {
+          .btn-delete {
             position: absolute;
             display: block;
             width: 26px;
@@ -1441,7 +1441,7 @@
             top: -3px;
             right: -3px;
 
-            & .ico-profile-delete {
+            .ico-profile-delete {
               display: inline-block;
               width: 14px;
               height: 14px;
@@ -1450,7 +1450,7 @@
             }
           }
 
-          & .btn-edit {
+          .btn-edit {
             position: absolute;
             display: block;
             width: 26px;
@@ -1462,7 +1462,7 @@
             right: -3px;
             bottom: 6px;
 
-            & .ico-expense-modify-w {
+            .ico-expense-modify-w {
               display: inline-block;
               width: 14px;
               height: 14px;
@@ -1473,34 +1473,34 @@
         }
       }
 
-      & .icon-list {
+      .icon-list {
         padding-bottom: 10px;
 
-        & .row {
+        .row {
           margin-bottom: 10px;
 
-          & .col {
-            & .item {
+          .col {
+            .item {
               width: 70px;
               height: 70px;
               border: 1px solid #f5f6f8;
               margin: 0 auto;
               border-radius: 50%;
 
-              & a {
+              a {
                 display: block;
 
                 &.sm {
                   padding-top: 20px;
 
-                  & img {
+                  img {
                     width: 30px;
                     height: 30px;
                     margin: 0 auto;
                   }
                 }
 
-                & img {
+                img {
                   width: 100%;
                   height: 100%;
                 }
@@ -1510,10 +1510,10 @@
         }
       }
 
-      & .box_ex_connect_item {
+      .box_ex_connect_item {
         padding: 30px 0 0;
 
-        & .box_connect_list {
+        .box_connect_list {
           max-height: 453px;
           overflow-y: auto;
         }
@@ -1525,7 +1525,7 @@
     &.up {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         height: 464px;
         animation: modal-sticky-bottom-animation7 .5s;
       }
@@ -1534,34 +1534,34 @@
     &.down {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         animation: modal-sticky-bottom-animation-out7 .5s;
         height: 0;
       }
     }
 
-    & .inner {
+    .inner {
       padding: 30px 28px;
       overflow: hidden;
 
-      & > .title {
+      > .title {
         font-size: 18px;
         line-height: 28px;
         letter-spacing: -0.45px;
         color: var(--text-01);
         text-align: left;
 
-        & .name {
+        .name {
           font-weight: bold;
           font-family: var(--font3);
           color: var(--color-point);
         }
       }
 
-      & .profile {
+      .profile {
         padding-top: 30px;
 
-        & .img {
+        .img {
           position: relative;
           width: 100px;
           height: 100px;
@@ -1587,17 +1587,17 @@
               background-size: cover;
             }
 
-            & img {
+            img {
               display: none;
             }
           }
 
-          & img {
+          img {
             width: 48px;
             height: 48px;
           }
 
-          & .btn-delete {
+          .btn-delete {
             position: absolute;
             display: block;
             width: 26px;
@@ -1610,7 +1610,7 @@
             top: -3px;
             right: -3px;
 
-            & .ico-profile-delete {
+            .ico-profile-delete {
               display: inline-block;
               width: 14px;
               height: 14px;
@@ -1619,7 +1619,7 @@
             }
           }
 
-          & .btn-edit {
+          .btn-edit {
             position: absolute;
             display: block;
             width: 26px;
@@ -1631,7 +1631,7 @@
             right: -3px;
             bottom: 6px;
 
-            & .ico-expense-modify-w {
+            .ico-expense-modify-w {
               display: inline-block;
               width: 14px;
               height: 14px;
@@ -1642,14 +1642,14 @@
         }
       }
 
-      & .icon-list {
+      .icon-list {
         padding-bottom: 10px;
 
-        & .row {
+        .row {
           margin-bottom: 10px;
 
-          & .col {
-            & .item {
+          .col {
+            .item {
               width: 71px;
               height: 71px;
               border: 1px solid #f5f6f8;
@@ -1657,10 +1657,10 @@
               border-radius: 50%;
               padding: 13px;
 
-              & a {
+              a {
                 display: block;
 
-                & img {
+                img {
                   width: 100%;
                   height: 100%;
                 }
@@ -1670,10 +1670,10 @@
         }
       }
 
-      & .box_ex_connect_item {
+      .box_ex_connect_item {
         padding: 30px 0 0;
 
-        & .box_connect_list {
+        .box_connect_list {
           max-height: 453px;
           overflow-y: auto;
         }
@@ -1685,7 +1685,7 @@
     &.up {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         height: 305px;
         animation: modal-sticky-bottom-animation3 .5s;
       }
@@ -1694,16 +1694,16 @@
     &.down {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         animation: modal-sticky-bottom-animation-out3 .3s;
         height: 0;
       }
     }
 
-    & .inner {
+    .inner {
       padding: 20px;
 
-      & > .title {
+      > .title {
         font-family: var(--font3);
         font-size: 15px;
         font-weight: bold;
@@ -1714,9 +1714,9 @@
         margin-bottom: 10px;
       }
 
-      & .month-list {
-        & ul {
-          & li {
+      .month-list {
+        ul {
+          li {
             position: relative;
             width: 100%;
             height: 57px;
@@ -1726,14 +1726,14 @@
               border-bottom: 0;
             }
 
-            & a {
+            a {
               display: flex;
               width: 100%;
               height: 100%;
               align-items: center;
               text-align: left;
 
-              & .txt {
+              .txt {
                 font-size: 14px;
                 line-height: 21px;
                 letter-spacing: -0.35px;
@@ -1741,7 +1741,7 @@
                 margin-right: 10px;
               }
 
-              & .badge {
+              .badge {
                 display: inline-block;
                 padding: 0 7px;
                 line-height: 19px;
@@ -1754,7 +1754,7 @@
                 margin-right: 4px;
               }
 
-              & .txt-sm {
+              .txt-sm {
                 font-size: 11px;
                 line-height: 17px;
                 letter-spacing: -0.28px;
@@ -1763,14 +1763,14 @@
             }
 
             &.active {
-              & a {
-                & .txt {
+              a {
+                .txt {
                   font-family: var(--font2);
                   font-weight: 500;
                   color: var(--color-point);
                 }
 
-                & .badge {
+                .badge {
                   color: var(--color-point);
                   border: solid 1px var(--color-point);
                 }
@@ -1799,7 +1799,7 @@
     &.up {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         height: 183px;
         animation: modal-sticky-bottom-animation4 .5s;
       }
@@ -1808,18 +1808,18 @@
     &.down {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         animation: modal-sticky-bottom-animation-out4 .3s;
         height: 0;
       }
     }
 
-    & .inner {
+    .inner {
       height: 100%;
       padding: 20px 30px;
       overflow: hidden;
 
-      & > .title {
+      > .title {
         font-family: var(--font3);
         font-size: 15px;
         font-weight: bold;
@@ -1830,25 +1830,25 @@
         margin-bottom: 10px;
       }
 
-      & .icon-list {
+      .icon-list {
         padding-top: 20px;
 
-        & .row {
+        .row {
           margin-bottom: 10px;
 
-          & .col {
-            & .item {
+          .col {
+            .item {
               width: 70px;
               height: 70px;
               border: 1px solid #f5f6f8;
               margin: 0 auto;
               border-radius: 50%;
 
-              & a {
+              a {
                 display: block;
                 padding-top: 20px;
 
-                & img {
+                img {
                   width: 30px;
                   height: 30px;
                   margin: 0 auto;
@@ -1865,7 +1865,7 @@
     &.up {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         height: 263px;
         animation: modal-sticky-bottom-animation5 .5s;
       }
@@ -1874,18 +1874,18 @@
     &.down {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         animation: modal-sticky-bottom-animation-out5 .3s;
         height: 0;
       }
     }
 
-    & .inner {
+    .inner {
       height: 100%;
       padding: 30px;
       overflow: hidden;
 
-      & > .title {
+      > .title {
         font-family: var(--font3);
         font-size: 20px;
         font-weight: bold;
@@ -1896,7 +1896,7 @@
         margin-bottom: 19px;
       }
 
-      & > .desc {
+      > .desc {
         font-size: 15px;
         line-height: 23px;
         letter-spacing: -0.38px;
@@ -1911,7 +1911,7 @@
     &.up {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         height: 244px;
         animation: modal-sticky-bottom-animation6 .5s;
       }
@@ -1920,18 +1920,18 @@
     &.down {
       transition: .5s;
 
-      & .modal-slide-content {
+      .modal-slide-content {
         animation: modal-sticky-bottom-animation-out6 .3s;
         height: 0;
       }
     }
 
-    & .inner {
+    .inner {
       height: 100%;
       padding: 20px 30px;
       overflow: hidden;
 
-      & > .title {
+      > .title {
         font-family: var(--font3);
         font-size: 15px;
         font-weight: bold;
@@ -1942,7 +1942,7 @@
         margin-bottom: 30px;
       }
 
-      & .input-wrap {
+      .input-wrap {
         margin-bottom: 50px;
       }
     }
@@ -1951,7 +1951,7 @@
   &.up {
     transition: .5s;
 
-    & .modal-slide-content {
+    .modal-slide-content {
       height: 402px;
       animation: modal-sticky-bottom-animation .5s;
     }
@@ -1960,7 +1960,7 @@
   &.down {
     transition: .5s;
 
-    & .modal-slide-content {
+    .modal-slide-content {
       animation: modal-sticky-bottom-animation-out .5s;
       height: 0;
     }
@@ -1985,7 +1985,7 @@
   left: 50%;
   transform: translateX(-50%);
 
-  & p {
+  p {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: -0.3px;
@@ -1999,7 +1999,11 @@
 }
 
 .modal-loading {
-  & .img {
+  .img {
+    margin: 0 auto;
+  }
+
+  .loading-spinner {
     margin: 0 auto;
   }
 }

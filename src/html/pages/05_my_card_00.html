@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap bg_purple">
+    <div class="my-card-main-wrap">
+        <div class="content">
+            <span class="font-bold">문서희</span>님<br/>
+            지금 카드를 연결하면,<br/>
+            <span class="font-bold">실시간 거래내역 확인</span>과<br/>
+            <span class="font-bold primary-color">나만의 지출 스토리</span>를<br/>
+            만들 수 있어요! 😀
+        </div>
+        <div class="img"><img src="../../img/common/img-story-info@2x.png" alt=""></div>
+        <div class="btn-area fixed-bottom">
+            <a class="btn btn-lg btn-block btn-big btn-save" href="#">내 거래내역 불러오기</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $('._myCardTab li a').on('click',function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+</html>

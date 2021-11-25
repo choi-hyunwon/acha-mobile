@@ -10,10 +10,10 @@
   background-color: rgba(255, 255, 255, 0);
   overflow: hidden;
 
-  & ul {
+  ul {
     padding: 0 20px;
 
-    & li {
+    li {
       float: left;
       margin-right: 24px;
 
@@ -21,20 +21,17 @@
         margin-right: 0;
       }
 
-      & a {
+      a {
         display: inline-block;
-        font-size: 15px;
-        letter-spacing: -0.38px;
+        font-size: 17px;
+        letter-spacing: -0.42px;
         color: var(--text-03);
       }
 
       &.active {
-        & a {
+        a {
           position: relative;
-          font-family: var(--font2);
-          font-size: 15px;
-          font-weight: 500;
-          letter-spacing: -0.38px;
+          font-family: var(--font3);
           color: var(--blurple);
 
           &::after {
@@ -52,13 +49,14 @@
   }
 
   &.my-card-tab-lg {
-    & ul {
-      & li {
-        & a {
+    ul {
+      li {
+        a {
           font-size: 17px;
         }
+
         &.active {
-          & a {
+          a {
             font-family: var(--font3);
           }
         }
@@ -71,12 +69,17 @@
   position: relative;
   width: 100%;
 
-  & .swiper-container {
+  &.border-bottom {
+    border-bottom: 1px solid #f5f6f8 !important;
+    padding-bottom: 20px;
+  }
+
+  .swiper-container {
     width: 100%;
     height: 100%;
   }
 
-  & .swiper-slider {
+  .swiper-slider {
     width: 100%;
     height: auto;
     display: block;
@@ -85,7 +88,7 @@
     flex-shrink: 0;
   }
 
-  & .btn-more {
+  .btn-more {
     position: absolute;
     display: block;
     width: 26px;
@@ -94,16 +97,16 @@
     top: 20px;
     right: 24px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  & .badge-wrap {
+  .badge-wrap {
     padding: 25px 24px 0;
 
-    & .badge {
+    .badge {
       display: inline-block;
       padding: 0 7px;
       height: 21px;
@@ -127,7 +130,7 @@
     }
   }
 
-  & .main-text {
+  .main-text {
     font-size: 18px;
     line-height: 29px;
     letter-spacing: -0.45px;
@@ -137,7 +140,7 @@
     padding-top: 35px;
     margin-bottom: 30px;
 
-    & span {
+    span {
       font-family: var(--font2);
 
       &.val {
@@ -147,63 +150,121 @@
     }
   }
 
-  & .main-info {
-    font-size: 18px;
-    line-height: 29px;
-    letter-spacing: -0.45px;
-    text-align: left;
-    color: var(--text-01);
-    padding-left: 24px;
-    padding-top: 10px;
-    margin-bottom: 11px;
+  .btn-wrap {
+    margin-top: 24px;
+    padding: 0 20px;
+    margin-bottom: 10px;
 
-    & span {
-      font-family: var(--font2);
+    .btn-select {
+      position: relative;
+      display: inline-block;
+      width: fit-content;
+      font-family: var(--font3);
+      font-size: 24px;
+      line-height: 36px;
+      color: var(--text-01);
 
-      &.val {
-        font-family: var(--font2);
-        font-size: 19px;
+      &::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        background-image: url(../../img/common/arrow@2x.png);
+        background-size: cover;
+        right: -22px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
 
-  & .main-desc {
-    margin-bottom: 25px;
+  .main-info {
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.45px;
+    text-align: left;
+    color: var(--text-01);
+    margin-bottom: 9px;
+    padding: 0 20px;
+
+    span {
+      font-family: var(--font3);
+      color: var(--blurple);
+
+      &.val {
+        font-family: var(--font3);
+        font-size: 24px;
+      }
+
+      &.sm {
+        font-size: 16px;
+        margin-left: 2px;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: -0.38px;
+    text-align: left;
+    color: #666;
+    padding: 0 20px;
+    margin-bottom: 9px;
+  }
+
+  .main-desc {
+    margin-bottom: 30px;
     padding: 0 24px;
 
-    & span {
+    span {
+      position: relative;
       display: inline-block;
-      font-size: 12px;
-      color: #9b9aa6;
-      letter-spacing: -.3px;
-      line-height: 16px;
+      font-size: 13px;
+      color: var(--text-03);
+      letter-spacing: -.32px;
+      line-height: 19px;
       vertical-align: middle;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        background-image: url(../../img/common/ico-tooltip@2x.png);
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        background-size: cover;
+        margin-left: 4px;
+        transform: translateY(-1px);
+      }
     }
 
-    & .btn-tooltip {
+    .btn-tooltip {
       display: inline-block;
       vertical-align: middle;
       margin-left: 2px;
       width: 16px;
       height: 16px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
   }
 
-  & .main-update {
+  .main-update {
     margin-bottom: 25px;
     padding: 0 24px;
 
-    & img {
+    img {
       display: inline-block;
       vertical-align: middle;
     }
 
-    & span {
+    span {
       display: inline-block;
       vertical-align: middle;
       font-family: var(--font2);
@@ -215,32 +276,32 @@
     }
   }
 
-  & .main-card-wrap {
+  .main-card-wrap {
     padding: 0 16px;
   }
 
-  & .main-card-empty {
+  .main-card-empty {
     width: 100%;
     height: calc(185 * 0.53935vw);
     border: 1px dotted #bbbfcb;
     border-radius: 6px;
     margin-bottom: 80px;
 
-    & a {
+    a {
       display: flex;
       width: 100%;
       height: 100%;
       align-items: center;
       justify-content: center;
 
-      & span {
+      span {
         display: inline-block;
         font-size: 12px;
         line-height: 181px;
         letter-spacing: -.6px;
         color: #9b9aa6;
 
-        & i {
+        i {
           margin-right: 8px;
           transform: translate(3px, 2px);
         }
@@ -250,14 +311,14 @@
 }
 
 .main-card-list {
-  & .card-list {
+  .card-list {
     padding-left: 0;
 
     &::before {
       content: none;
     }
 
-    & .card {
+    .card {
       width: 100%;
       height: 80px;
       border: 0;
@@ -265,7 +326,7 @@
       padding: 0;
       margin-bottom: 12px;
 
-      & a {
+      a {
         display: block;
         width: 100%;
         height: 100%;
@@ -273,19 +334,19 @@
         box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
         border-radius: 6px;
 
-        & .img {
+        .img {
           display: inline-block;
           width: 22px;
           height: 22px;
           transform: translate(0, 0);
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
         }
 
-        & .title {
+        .title {
           display: inline-block;
           width: calc(100% - 30px);
           font-size: 13px;
@@ -300,7 +361,7 @@
           vertical-align: middle;
         }
 
-        & .open {
+        .open {
           position: absolute;
           right: 32px;
           top: 30px;
@@ -310,7 +371,7 @@
           line-height: 18px;
           letter-spacing: -.6px;
 
-          & i {
+          i {
             position: absolute;
             right: -11px;
             top: 2px;
@@ -328,26 +389,25 @@
       }
     }
 
-    & .item {
+    .item {
       position: relative;
       cursor: pointer;
       display: block;
       border-radius: 6px;
-      box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
       margin-bottom: 12px;
-      background-color: #ffffff;
+      background-color: #f7f8fc;
       padding: 20px;
 
       &.last {
-        & li {
+        li {
           &.bar-graph {
             margin-bottom: 35px;
 
-            & .bar {
+            .bar {
               background-color: #3e5baf;
             }
 
-            & .val {
+            .val {
               top: 18px;
             }
           }
@@ -355,20 +415,20 @@
       }
 
       &.on {
-        & li {
+        li {
           &.required-performance {
-            & .txt {
+            .txt {
               color: #3eadff;
             }
           }
 
           &.bar-graph {
-            & .bar {
+            .bar {
               background-color: #3eadff;
             }
 
-            & .sec {
-              & span {
+            .sec {
+              span {
                 &.on {
                   &::after {
                     border-color: #3eadff;
@@ -380,24 +440,24 @@
         }
       }
 
-      & li {
+      li {
         display: block;
 
         &.info {
-          & .img {
+          .img {
             display: inline-block;
             width: 32px;
             height: 32px;
             margin-right: 3px;
             vertical-align: middle;
 
-            & img {
+            img {
               width: 100%;
               height: 100%;
             }
           }
 
-          & .title {
+          .title {
             display: inline-block;
             padding-top: 2px;
             font-size: 15px;
@@ -412,7 +472,7 @@
             width: calc(100% - 130px);
           }
 
-          & .sum {
+          .sum {
             float: right;
             position: relative;
             font-family: var(--font2);
@@ -437,7 +497,7 @@
           justify-content: flex-end;
           margin-bottom: 15px;
 
-          & .comp {
+          .comp {
             display: inline-block;
             vertical-align: middle;
             line-height: 17px;
@@ -447,7 +507,7 @@
             color: #3e5baf;
           }
 
-          & .txt {
+          .txt {
             display: inline-block;
             vertical-align: middle;
             line-height: 17px;
@@ -457,7 +517,7 @@
             color: var(--blurple);
           }
 
-          & .val {
+          .val {
             display: inline-block;
             line-height: 17px;
             font-family: var(--font1);
@@ -477,7 +537,7 @@
           background-color: #f5f6f8;
           margin-bottom: 21px;
 
-          & .bar {
+          .bar {
             display: block;
             position: absolute;
             height: 4px;
@@ -492,7 +552,7 @@
             }
           }
 
-          & .txt {
+          .txt {
             display: block;
             font-family: var(--font1);
             font-size: 11px;
@@ -504,7 +564,7 @@
 
           }
 
-          & .val {
+          .val {
             font-family: var(--font1);
             font-size: 11px;
             line-height: 17px;
@@ -528,13 +588,13 @@
             }
           }
 
-          & .sec {
+          .sec {
             position: absolute;
             width: 100%;
             top: -2px;
             left: 0;
 
-            & span {
+            span {
               position: relative;
               display: block;
               float: left;
@@ -548,13 +608,13 @@
               }
 
               &:last-child {
-                & em {
+                em {
                   text-decoration: underline;
                   right: 0;
                 }
               }
 
-              & em {
+              em {
                 position: absolute;
                 bottom: -20px;
                 right: -11px;
@@ -579,7 +639,7 @@
             }
 
             &.sec-1 {
-              & span {
+              span {
                 width: 100%;
 
                 &::after {
@@ -589,19 +649,19 @@
             }
 
             &.sec-2 {
-              & span {
+              span {
                 width: 50%;
               }
             }
 
             &.sec-3 {
-              & span {
+              span {
                 width: 33.333333333%;
               }
             }
 
             &.sec-4 {
-              & span {
+              span {
                 width: 25%;
               }
             }
@@ -615,7 +675,7 @@
           background-color: #f7f8fc;
           border-radius: 6px;
 
-          & .val {
+          .val {
             position: relative;
             font-family: var(--font1);
             font-size: 11px;
@@ -632,7 +692,7 @@
             }
           }
 
-          & .txt {
+          .txt {
             font-family: var(--font1);
             font-size: 11px;
             letter-spacing: -.28px;
@@ -645,7 +705,7 @@
             line-height: 53px;
             padding: 8px 0 10px;
 
-            & .txt {
+            .txt {
               display: block;
               line-height: 17px;
 
@@ -657,7 +717,7 @@
         }
 
         &.btn-wrap {
-          & .btn-direct {
+          .btn-direct {
             display: block;
             width: 59px;
             height: 26px;
@@ -678,31 +738,37 @@
       }
     }
 
-    & .card-edit {
-      margin-bottom: 12px;
+    .card-edit {
       margin-top: 20px;
       background-color: #ffffff;
       border-radius: 6px;
-      background-color: rgba(255, 255, 255, .8);
+      padding-bottom: 46px;
 
-      & .btn-edit {
+      .btn-edit {
         display: block;
         width: 100%;
-        height: 46px;
-        line-height: 46px;
-        color: #9b9aa6;
-        letter-spacing: -.6px;
+        height: 50px;
+        line-height: 48px;
+        color: var(--text-03);
+        letter-spacing: -.7px;
         padding: 0;
+        border: solid 1px #e3e4e8;
         text-align: center;
+        border-radius: 6px;
+        font-size: 14px;
 
-        & i {
+        i {
           vertical-align: inherit;
           margin-right: 5px;
+          background-image: url(../../img/common/ico-btn-card-edit@2x.png);
+          width: 11px;
+          height: 11px;
+          background-size: cover;
         }
       }
     }
 
-    & > .list {
+    > .list {
       font-size: 11px;
       letter-spacing: -0.28px;
       text-align: left;
@@ -744,7 +810,7 @@
   background: rgba(255, 255, 255, .9);
   bottom: 0;
 
-  & p {
+  p {
     font-family: var(--font2);
     color: #37354e;
     line-height: 19px;
@@ -752,22 +818,22 @@
     font-size: 13px;
   }
 
-  & p:first-child {
+  p:first-child {
     color: #6839d3;
   }
 
-  & p:nth-child(2) {
+  p:nth-child(2) {
     margin-bottom: 8px;
   }
 
-  & p:nth-child(3) {
+  p:nth-child(3) {
     font-family: var(--font1);
     font-size: 12px;
     letter-spacing: -.3px;
     color: #afaeb8;
   }
 
-  & .img {
+  .img {
     display: inline-block;
     width: 46px;
     height: 46px;
@@ -775,7 +841,7 @@
     right: 28px;
     top: 37px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
@@ -783,22 +849,22 @@
 }
 
 .modal-my-card {
-  & .modal-dialog {
+  .modal-dialog {
     width: 315px;
     max-width: 315px !important;
 
-    & .modal-content {
+    .modal-content {
       width: 315px;
       border-radius: 0;
       text-align: left;
       padding: 20px 0 0;
 
-      & .modal-header {
+      .modal-header {
         padding: 0;
         margin-bottom: 20px;
         border-bottom: 0;
 
-        & .btn-close {
+        .btn-close {
           position: absolute;
           display: inline-block;
           top: 20px;
@@ -809,7 +875,7 @@
           background-size: cover;
         }
 
-        & .title {
+        .title {
           width: 100%;
           display: block;
           font-family: var(--font3);
@@ -822,28 +888,28 @@
         }
       }
 
-      & .modal-body {
+      .modal-body {
         flex: none;
         padding: 20px;
 
-        & .box-ex-account {
+        .box-ex-account {
           padding: 0 20px 20px;
 
-          & .card-detail-calendar {
+          .card-detail-calendar {
             margin-bottom: 10px;
 
-            & .input-calendar {
-              & label {
+            .input-calendar {
+              label {
                 right: 11px;
               }
 
-              & input[type="date"]::-webkit-calendar-picker-indicator {
+              input[type="date"]::-webkit-calendar-picker-indicator {
                 right: 8px;
               }
             }
           }
 
-          & .desc {
+          .desc {
             font-size: 12px;
             line-height: 18px;
             letter-spacing: -0.3px;
@@ -852,12 +918,12 @@
           }
         }
 
-        & .txt-content {
-          & .inner {
+        .txt-content {
+          .inner {
             padding-bottom: 20px;
           }
 
-          & .tit {
+          .tit {
             font-family: var(--font3);
             font-size: 13px;
             font-weight: bold;
@@ -868,7 +934,7 @@
             margin-bottom: 6px;
           }
 
-          & .desc {
+          .desc {
             font-size: 13px;
             line-height: 20px;
             letter-spacing: -0.32px;
@@ -876,7 +942,7 @@
             color: var(--text-01);
           }
 
-          & .desc-sm {
+          .desc-sm {
             font-size: 13px;
             line-height: 20px;
             letter-spacing: -0.32px;
@@ -885,18 +951,18 @@
             margin-bottom: 18px;
           }
 
-          & .caution-area {
+          .caution-area {
             position: relative;
             padding: 13px 0 0 15px;
             border-top: 1px solid #e3e4e8;
 
-            & i {
+            i {
               position: absolute;
               left: 0;
               top: 16px;
             }
 
-            & p {
+            p {
               font-size: 11px;
               letter-spacing: -.55px;
               line-height: 18px;
@@ -905,12 +971,12 @@
           }
         }
 
-        & .modal-input {
+        .modal-input {
           position: relative;
           width: 100%;
           height: 40px;
 
-          & label {
+          label {
             width: calc(100% - 185px);
             cursor: default;
             font-weight: 500;
@@ -921,7 +987,7 @@
             letter-spacing: -.9px;
           }
 
-          & .btn-delete {
+          .btn-delete {
             position: absolute;
             left: 95px;
             top: 10px;
@@ -935,13 +1001,13 @@
             justify-content: center;
             z-index: 1;
 
-            & img {
+            img {
               width: 10px;
               height: auto;
             }
           }
 
-          & input {
+          input {
             position: absolute;
             right: 0;
             top: 0;
@@ -964,7 +1030,7 @@
             }
           }
 
-          & .won {
+          .won {
             display: inline-block;
             position: absolute;
             right: 5px;
@@ -973,16 +1039,16 @@
             font-size: 13px;
           }
 
-          & a {
+          a {
             display: inline-block;
 
-            & i {
+            i {
               transform: translate(0, 8px);
             }
           }
         }
 
-        & .modal-input-desc {
+        .modal-input-desc {
           font-size: 11px;
           line-height: 32px;
           letter-spacing: -.28px;
@@ -991,7 +1057,7 @@
           padding-bottom: 14px;
         }
 
-        & .btn-add {
+        .btn-add {
           position: absolute;
           bottom: 30px;
           left: 20px;
@@ -1005,13 +1071,13 @@
           display: flex;
           align-items: center;
 
-          & i {
+          i {
             display: inline-block;
             vertical-align: middle;
             transform: translateY(0);
           }
 
-          & span {
+          span {
             display: inline-block;
             vertical-align: middle;
             font-family: var(--font1);
@@ -1023,7 +1089,7 @@
           }
         }
 
-        & .table {
+        .table {
           position: relative;
           margin-bottom: 10px;
 
@@ -1047,15 +1113,15 @@
             border-top: 1px solid #e3e4e8;
           }
 
-          & tbody {
-            & tr {
+          tbody {
+            tr {
               &:first-child {
-                & td {
+                td {
                   border-top: 0;
                 }
               }
 
-              & td {
+              td {
                 border-color: #f5f6f8;
                 height: 40px;
                 font-size: 12px;
@@ -1070,12 +1136,12 @@
           }
         }
 
-        & .animation-img {
+        .animation-img {
           width: 130px;
           height: 130px;
           margin: 0 auto;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -1086,52 +1152,63 @@
 }
 
 .my-card-detail {
-  & .card-detail-wrap {
-    padding: 12px 20px 40px;
+  .card-detail-wrap {
+    padding: 12px 20px 31px;
     background-color: #fff;
 
-    & .card-info {
-      & .img {
-        position: relative;
-        width: 64px;
-        height: 40px;
-        margin: 1px auto 23px;
+    .card-info {
+      .my-card {
+        margin-bottom: 24px;
 
-        & .btn-search {
-          position: absolute;
-          top: -13px;
-          right: -13px;
-          width: 26px;
-          height: 26px;
-          border-radius: 50%;
-          text-align: center;
-          background-color: var(--blurple);
-          padding-top: 6px;
+        .img {
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+          margin-right: 7px;
 
-          & .ico-card-find-w {
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            background-image: url(../../img/common/ico-card-find-w@2x.png);
-            background-size: cover;
+          //.btn-search {
+          //  position: absolute;
+          //  top: -13px;
+          //  right: -13px;
+          //  width: 26px;
+          //  height: 26px;
+          //  border-radius: 50%;
+          //  text-align: center;
+          //  background-color: var(--blurple);
+          //  padding-top: 6px;
+          //
+          //  .ico-card-find-w {
+          //    display: inline-block;
+          //    width: 14px;
+          //    height: 14px;
+          //    background-image: url(../../img/common/ico-card-find-w@2x.png);
+          //    background-size: cover;
+          //  }
+          //}
+
+          img {
+            width: 100%;
+            height: 100%;
           }
         }
 
-        & img {
-          width: 100%;
-          height: 100%;
+        .card-name {
+          display: inline-block;
+          vertical-align: middle;
+          width: calc(100% - 30px - 10px);
+          font-family: var(--font3);
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 30px;
+          letter-spacing: -0.5px;
+          text-align: left;
+          color: var(--text-01);
         }
       }
 
-      & .card-name {
-        text-align: center;
-        font-family: var(--font2);
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 20px;
-      }
-
-      & .ico-tooltip {
+      .ico-tooltip {
         display: inline-block;
         width: 16px;
         height: 16px;
@@ -1140,24 +1217,24 @@
         transform: translateY(3px);
       }
 
-      & .crad-info-list {
-        & li {
+      .crad-info-list {
+        li {
           line-height: 20px;
-          margin-bottom: 5px;
+          margin-bottom: 17px;
 
-          & span {
+          span {
             &:first-child {
               float: left;
               display: inline-block;
-              font-size: 13px;
-              color: #9b9aa6;
-              letter-spacing: -.65px;
+              font-size: 14px;
+              color: var(--text-03);
+              letter-spacing: -.7px;
             }
 
             &:nth-child(2) {
               float: right;
               display: inline-block;
-              font-size: 13px;
+              font-size: 15px;
               font-family: var(--font1);
               color: var(--text-02);
 
@@ -1189,26 +1266,25 @@
           }
 
           &:last-child {
-            margin-bottom: 17px;
+            margin-bottom: 0;
           }
         }
       }
     }
   }
 
-  & .card-total-ex-wrap {
-    padding: 36px 16px;
-    background-color: #f7f8fc;
+  .card-total-ex-wrap {
+    padding: 0 16px;
 
-    & .card-item {
-      margin-bottom: 12px;
+    .card-item {
+      margin-bottom: 0;
     }
 
-    & .badge-wrap {
+    .badge-wrap {
       display: flex;
       margin-bottom: 10px;
 
-      & .badge {
+      .badge {
         display: inline-block;
         padding: 0 7px;
         height: 21px;
@@ -1232,10 +1308,10 @@
       }
     }
 
-    & .card-info {
+    .card-info {
       overflow: hidden;
 
-      & .txt {
+      .txt {
         float: left;
         display: inline-block;
         font-family: var(--font2);
@@ -1244,7 +1320,7 @@
         letter-spacing: -.38px;
       }
 
-      & .val {
+      .val {
         float: right;
         display: inline-block;
         font-size: 16px;
@@ -1263,14 +1339,14 @@
       }
     }
 
-    & .graph-area {
-      & .required-performance {
+    .graph-area {
+      .required-performance {
         position: relative;
         display: flex;
         justify-content: flex-end;
         margin-bottom: 15px;
 
-        & .comp {
+        .comp {
           display: inline-block;
           vertical-align: middle;
           line-height: 17px;
@@ -1280,7 +1356,7 @@
           color: #3e5baf;
         }
 
-        & .txt {
+        .txt {
           display: inline-block;
           vertical-align: middle;
           line-height: 17px;
@@ -1290,7 +1366,7 @@
           color: var(--blurple);
         }
 
-        & .val {
+        .val {
           display: inline-block;
           line-height: 17px;
           font-family: var(--font1);
@@ -1302,23 +1378,23 @@
       }
 
       &.on {
-        & .required-performance {
-          & .txt {
+        .required-performance {
+          .txt {
             color: #3eadff;
           }
         }
 
-        & .bar-graph {
-          & .txt {
+        .bar-graph {
+          .txt {
             color: #3eadff;
           }
 
-          & .bar {
+          .bar {
             background-color: #3eadff;
           }
 
-          & .sec {
-            & span {
+          .sec {
+            span {
               &::after {
                 border-color: #3eadff !important;
               }
@@ -1327,7 +1403,7 @@
         }
       }
 
-      & .bar-graph {
+      .bar-graph {
         display: block;
         position: relative;
         width: 100%;
@@ -1337,7 +1413,7 @@
         margin-bottom: 21px;
 
 
-        & .bar {
+        .bar {
           display: block;
           position: absolute;
           height: 4px;
@@ -1352,7 +1428,7 @@
           }
         }
 
-        & .txt {
+        .txt {
           display: block;
           font-family: var(--font1);
           font-size: 11px;
@@ -1364,7 +1440,7 @@
 
         }
 
-        & .val {
+        .val {
           font-family: var(--font1);
           font-size: 11px;
           line-height: 17px;
@@ -1388,13 +1464,13 @@
           }
         }
 
-        & .sec {
+        .sec {
           position: absolute;
           width: 100%;
           top: -2px;
           left: 0;
 
-          & span {
+          span {
             position: relative;
             display: block;
             float: left;
@@ -1408,13 +1484,13 @@
             }
 
             &:last-child {
-              & em {
+              em {
                 text-decoration: underline;
                 right: 0;
               }
             }
 
-            & em {
+            em {
               position: absolute;
               bottom: -20px;
               right: -11px;
@@ -1439,7 +1515,7 @@
           }
 
           &.sec-1 {
-            & span {
+            span {
               width: 100%;
 
               &::after {
@@ -1449,33 +1525,33 @@
           }
 
           &.sec-2 {
-            & span {
+            span {
               width: 50%;
             }
           }
 
           &.sec-3 {
-            & span {
+            span {
               width: 33.333333333%;
             }
           }
 
           &.sec-4 {
-            & span {
+            span {
               width: 25%;
             }
           }
         }
       }
 
-      & .performance {
+      .performance {
         width: 100%;
         height: 36px;
         text-align: center;
         background-color: #f7f8fc;
         border-radius: 6px;
 
-        & .val {
+        .val {
           position: relative;
           font-family: var(--font1);
           font-size: 11px;
@@ -1492,7 +1568,7 @@
           }
         }
 
-        & .txt {
+        .txt {
           font-family: var(--font1);
           font-size: 11px;
           letter-spacing: -.28px;
@@ -1505,7 +1581,7 @@
           line-height: 53px;
           padding: 8px 0 10px;
 
-          & .txt {
+          .txt {
             display: block;
             line-height: 17px;
 
@@ -1517,7 +1593,7 @@
       }
     }
 
-    & .info-title {
+    .info-title {
       font-family: var(--font2);
       font-size: 15px;
       font-weight: 500;
@@ -1525,17 +1601,17 @@
       letter-spacing: -0.38px;
       color: var(--text-01);
 
-      & a {
+      a {
         display: inline-block;
         color: var(--text-01);
       }
 
-      & img {
+      img {
         transform: translate(4px, -2px);
       }
     }
 
-    & .info-title-sm {
+    .info-title-sm {
       font-size: 12px;
       line-height: 18px;
       letter-spacing: -0.3px;
@@ -1544,8 +1620,8 @@
       margin-bottom: 6px;
     }
 
-    & .info-ex {
-      & li {
+    .info-ex {
+      li {
         padding-bottom: 14px;
         padding-top: 14px;
         border-bottom: 1px solid #f5f6f8;
@@ -1555,7 +1631,7 @@
           border-bottom: 0;
         }
 
-        & span {
+        span {
           line-height: 19px;
 
           &:first-child {
@@ -1586,17 +1662,16 @@
       }
     }
 
-    & .swiper-container {
+    .swiper-container {
       width: 100%;
       border-radius: 6px;
-      box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
-      background-color: var(--white);
+      background-color: #f7f8fc;
 
-      & .swiper-wrapper {
-        & .swiper-slide {
-          padding: 20px 20px 19px;
+      .swiper-wrapper {
+        .swiper-slide {
+          padding: 27px 20px 25px;
 
-          & .card-info {
+          .card-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1604,10 +1679,10 @@
         }
       }
 
-      & .swiper-pagination {
+      .swiper-pagination {
         bottom: 18px;
 
-        & .swiper-pagination-bullet {
+        .swiper-pagination-bullet {
           background-color: #e2e3e6;
           opacity: 1;
 
@@ -1621,16 +1696,16 @@
       }
     }
 
-    & .btn-area {
+    .btn-area {
       margin-top: 18px;
     }
 
-    & .category-list {
+    .category-list {
       margin-top: 18px;
       display: flex;
       justify-content: center;
 
-      & li {
+      li {
         width: 45px;
         height: 45px;
         border-radius: 50%;
@@ -1640,24 +1715,24 @@
           margin-right: 0;
         }
 
-        & img {
+        img {
           width: 100%;
           height: auto;
         }
       }
     }
 
-    & .discount-list {
+    .discount-list {
       margin-top: 16px;
 
-      & li {
+      li {
         display: flex;
         width: 100%;
         height: 34px;
         align-items: center;
         margin-bottom: 6px;
 
-        & .txt {
+        .txt {
           font-family: var(--font2);
           font-size: 13px;
           font-weight: 500;
@@ -1665,12 +1740,12 @@
           letter-spacing: -0.33px;
         }
 
-        & .img {
+        .img {
           width: 34px;
           height: 34px;
           margin-right: 6px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -1679,11 +1754,11 @@
     }
   }
 
-  & .card-detail-info {
+  .card-detail-info {
     padding: 20px 24px 30px;
     border-bottom: 1px solid #f5f6f8;
 
-    & > .title {
+    > .title {
       font-size: 18px;
       line-height: 27px;
       letter-spacing: -0.45px;
@@ -1691,20 +1766,20 @@
       color: var(--text-01);
       margin-bottom: 20px;
 
-      & span:first-child {
+      span:first-child {
         font-family: var(--font2);
       }
 
-      & span:last-child {
+      span:last-child {
       }
     }
 
-    & > .info-list {
-      & li {
+    > .info-list {
+      li {
         overflow: hidden;
         margin-bottom: 7px;
 
-        & span {
+        span {
           display: inline-block;
           font-size: 13px;
           line-height: 19px;
@@ -1734,31 +1809,31 @@
     }
   }
 
-  & .card-detail-list-wrap {
-    padding-top: 36px;
+  .card-detail-list-wrap {
+    padding-top: 30px;
 
-    & .card-detail-title {
+    .card-detail-title {
       padding: 0 20px;
 
-      & > .title {
+      > .title {
         font-family: var(--font2);
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 500;
-        line-height: 20px;
-        letter-spacing: -0.7px;
+        line-height: 22px;
+        letter-spacing: -0.75px;
         color: var(--text-01);
-        padding-bottom: 14px;
+        padding-bottom: 13px;
         border-bottom: 1px solid var(--text-01);
-        margin-bottom: 20px;
+        margin-bottom: 32px;
       }
     }
 
-    & .card-detail-calendar {
+    .card-detail-calendar {
       overflow: hidden;
       padding: 0 20px;
       margin-bottom: 20px;
 
-      & .input-calendar {
+      .input-calendar {
         float: left;
         position: relative;
         width: calc(50% - 37px / 2);
@@ -1769,7 +1844,7 @@
         color: var(--text-03);
         overflow: hidden;
 
-        & label {
+        label {
           display: block;
           position: absolute;
           width: 18px;
@@ -1780,12 +1855,12 @@
           top: 11px;
         }
 
-        & input[type="date"]::-webkit-inner-spin-button,
-        & input[type="date"]::-webkit-clear-button {
+        input[type="date"]::-webkit-inner-spin-button,
+        input[type="date"]::-webkit-clear-button {
           display: none;
         }
 
-        & input[type="date"]::-webkit-calendar-picker-indicator {
+        input[type="date"]::-webkit-calendar-picker-indicator {
           position: absolute;
           width: 18px;
           height: 18px;
@@ -1795,7 +1870,7 @@
           top: 9px;
         }
 
-        & input {
+        input {
           width: 100%;
           height: 100%;
           padding: 10px 12px 11px;
@@ -1814,7 +1889,7 @@
         }
       }
 
-      & .icon {
+      .icon {
         float: left;
         width: 37px;
         font-size: 14px;
@@ -1825,14 +1900,14 @@
       }
     }
 
-    & .card-detail-badge {
+    .card-detail-badge {
       padding: 0 20px;
       margin-bottom: 25px;
 
-      & ul {
+      ul {
         overflow: hidden;
 
-        & li {
+        li {
           float: left;
           margin-right: 6px;
 
@@ -1840,7 +1915,7 @@
             margin-right: 0;
           }
 
-          & a {
+          a {
             display: inline-block;
             padding: 0 12px;
             height: 28px;
@@ -1854,7 +1929,7 @@
           }
 
           &.active {
-            & a {
+            a {
               background-color: var(--blurple);
               color: #fff;
             }
@@ -1863,12 +1938,12 @@
       }
     }
 
-    & .date-info {
+    .date-info {
       position: relative;
       margin-bottom: 50px;
       padding: 0 20px;
 
-      & .title {
+      .title {
         display: inline-block;
         font-size: 15px;
         font-weight: bold;
@@ -1878,11 +1953,11 @@
         font-family: var(--font3);
       }
 
-      & .total {
+      .total {
         float: right;
         line-height: 20px;
         font-family: var(--font3);
-        font-size: 17px;
+        font-size: 18px;
         font-weight: bold;
         letter-spacing: normal;
         text-align: right;
@@ -1896,14 +1971,14 @@
         }
       }
 
-      & .update {
+      .update {
         float: right;
 
-        & img {
+        img {
           display: inline-block;
         }
 
-        & em {
+        em {
           display: inline-block;
           font-family: var(--font2);
           font-size: 11px;
@@ -1915,7 +1990,7 @@
         }
       }
 
-      & .date {
+      .date {
         position: absolute;
         display: block;
         top: 25px;
@@ -1925,16 +2000,17 @@
         letter-spacing: -0.3px;
         color: var(--text-03);
 
-        & i {
+        i {
           margin-right: 3px;
           transform: translate(0, 2px);
         }
       }
     }
 
-    & .month {
+    .month {
       font-size: 14px;
       font-weight: bold;
+      font-family: var(--font3);
       line-height: 19px;
       letter-spacing: -0.35px;
       text-align: left;
@@ -1943,27 +2019,27 @@
       margin-bottom: 24px;
     }
 
-    & .spending-list {
+    .spending-list {
       display: flex;
       flex-direction: column-reverse;
 
-      & li {
+      li {
         width: 100%;
         height: 60px;
 
-        & .day {
+        .day {
           display: inline-block;
           float: left;
           width: 14%;
-          text-align: center;
           font-size: 11px;
           font-family: var(--font2);
           color: #9b9aa6;
-          padding: 1px 0 0 2px;
+          padding: 1px 0 0 20px;
           line-height: 16px;
+          text-align: left;
         }
 
-        & .title {
+        .title {
           position: relative;
           display: inline-block;
           float: left;
@@ -1977,16 +2053,16 @@
           white-space: nowrap;
           padding: 0 0 0 3px;
 
-          & em:first-child {
+          em:first-child {
             line-height: 19px;
           }
 
-          & .div {
+          .div {
             margin: 0 7px;
             color: #e3e4e8;
           }
 
-          & .num {
+          .num {
             font-family: var(--font1);
             font-size: 11px;
             line-height: 17px;
@@ -1994,17 +2070,17 @@
             color: var(--text-03);
           }
 
-          & .time {
+          .time {
             position: absolute;
             font-size: 11px;
             line-height: 13px;
-            color: #9b9aa6;
+            color: var(--text-03);
             font-family: var(--font1);
             top: 21px;
             left: 4px;
             letter-spacing: 0;
 
-            & .category {
+            .category {
               font-family: var(--font1);
               font-size: 11px;
               letter-spacing: -.55px;
@@ -2012,7 +2088,7 @@
             }
           }
 
-          & .desc {
+          .desc {
             font-size: 11px;
             line-height: 17px;
             letter-spacing: -0.55px;
@@ -2024,7 +2100,7 @@
           }
         }
 
-        & .val {
+        .val {
           display: inline-block;
           float: left;
           width: 28%;
@@ -2046,7 +2122,7 @@
       &.spending-list-sm {
         margin-top: -6px;
 
-        & li {
+        li {
           overflow: hidden;
           height: 19px;
           margin-bottom: 20px;
@@ -2054,13 +2130,15 @@
       }
     }
 
-    & > .caution-area {
+    > .caution-area {
       padding: 10px 20px 0;
 
-      & .list {
+      .list {
         padding-top: 12px;
         border-top: 1px solid #e3e4e8;
         color: var(--text-04);
+        font-family: var(--font1);
+        font-size: 12px;
 
         &::before {
           top: 15px;
@@ -2068,23 +2146,23 @@
       }
     }
 
-    & > .empty {
-      & .img {
+    > .empty {
+      .img {
         display: block;
         width: 42px;
         height: 42px;
         margin: 70px auto 12px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
       }
 
-      & .txt {
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: -0.6px;
+      .txt {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: -0.65px;
         text-align: center;
         color: var(--text-02);
         margin-bottom: 70px;
@@ -2096,7 +2174,7 @@
 .card-benefits-wrap {
   padding: 10px 20px 0;
 
-  & > .info-title {
+  > .info-title {
     font-family: var(--font1);
     font-size: 18px;
     font-weight: 500;
@@ -2104,7 +2182,7 @@
     letter-spacing: -0.45px;
     color: var(--text-01);
 
-    & span {
+    span {
 
 
       &:first-child {
@@ -2112,45 +2190,45 @@
       }
     }
 
-    & a {
+    a {
       display: inline-block;
       color: var(--text-01);
     }
   }
 
-  & > .graph-area {
+  > .graph-area {
     position: relative;
 
     &.last {
-      & .required-performance {
+      .required-performance {
         justify-content: start;
         margin-top: 16px;
 
-        & .comp {
+        .comp {
           font-family: var(--font2);
         }
       }
 
-      & .bar-graph {
+      .bar-graph {
         margin-bottom: 55px;
 
-        & .bar {
+        .bar {
           background-color: #3e5baf
         }
 
-        & .val {
+        .val {
           top: 18px;
         }
       }
     }
 
-    & .required-performance {
+    .required-performance {
       position: relative;
       display: flex;
       justify-content: flex-end;
       margin-bottom: 15px;
 
-      & .comp {
+      .comp {
         display: inline-block;
         vertical-align: middle;
         line-height: 17px;
@@ -2160,7 +2238,7 @@
         color: #3e5baf;
       }
 
-      & .txt {
+      .txt {
         display: inline-block;
         vertical-align: middle;
         line-height: 17px;
@@ -2170,7 +2248,7 @@
         color: var(--blurple);
       }
 
-      & .val {
+      .val {
         display: inline-block;
         line-height: 17px;
         font-family: var(--font1);
@@ -2181,8 +2259,8 @@
       }
     }
 
-    & .btn-wrap {
-      & .btn-direct {
+    .btn-wrap {
+      .btn-direct {
         display: block;
         width: 59px;
         height: 26px;
@@ -2202,23 +2280,23 @@
     }
 
     &.on {
-      & .required-performance {
-        & .txt {
+      .required-performance {
+        .txt {
           color: #3eadff;
         }
       }
 
-      & .bar-graph {
-        & .txt {
+      .bar-graph {
+        .txt {
           color: #3eadff;
         }
 
-        & .bar {
+        .bar {
           background-color: #3eadff;
         }
 
-        & .sec {
-          & span {
+        .sec {
+          span {
             &::after {
               border-color: #3eadff !important;
             }
@@ -2227,7 +2305,7 @@
       }
     }
 
-    & .bar-graph {
+    .bar-graph {
       display: block;
       position: relative;
       width: 100%;
@@ -2236,7 +2314,7 @@
       background-color: #f5f6f8;
       margin-bottom: 41px;
 
-      & .bar {
+      .bar {
         display: block;
         position: absolute;
         height: 4px;
@@ -2251,7 +2329,7 @@
         }
       }
 
-      & .txt {
+      .txt {
         display: block;
         font-family: var(--font1);
         font-size: 11px;
@@ -2263,7 +2341,7 @@
 
       }
 
-      & .val {
+      .val {
         font-family: var(--font1);
         font-size: 11px;
         line-height: 17px;
@@ -2287,13 +2365,13 @@
         }
       }
 
-      & .sec {
+      .sec {
         position: absolute;
         width: 100%;
         top: -2px;
         left: 0;
 
-        & span {
+        span {
           position: relative;
           display: block;
           float: left;
@@ -2307,12 +2385,12 @@
           }
 
           &:last-child {
-            & em {
+            em {
               right: 0;
             }
           }
 
-          & em {
+          em {
             position: absolute;
             bottom: -15px;
             right: -11px;
@@ -2337,7 +2415,7 @@
         }
 
         &.sec-1 {
-          & span {
+          span {
             width: 100%;
 
             &::after {
@@ -2347,33 +2425,33 @@
         }
 
         &.sec-2 {
-          & span {
+          span {
             width: 50%;
           }
         }
 
         &.sec-3 {
-          & span {
+          span {
             width: 33.333333333%;
           }
         }
 
         &.sec-4 {
-          & span {
+          span {
             width: 25%;
           }
         }
       }
     }
 
-    & .performance {
+    .performance {
       width: 100%;
       height: 36px;
       text-align: center;
       background-color: #f7f8fc;
       border-radius: 6px;
 
-      & .val {
+      .val {
         position: relative;
         font-family: var(--font1);
         font-size: 11px;
@@ -2390,7 +2468,7 @@
         }
       }
 
-      & .txt {
+      .txt {
         font-family: var(--font1);
         font-size: 11px;
         letter-spacing: -.28px;
@@ -2403,7 +2481,7 @@
         line-height: 53px;
         padding: 8px 0 10px;
 
-        & .txt {
+        .txt {
           display: block;
           line-height: 17px;
 
@@ -2415,10 +2493,10 @@
     }
   }
 
-  & > .card_benefits {
+  > .card_benefits {
     padding: 33px 0 40px;
 
-    & > .list.caution {
+    > .list.caution {
       padding-left: 16px;
       color: var(--text-03);
       font-weight: normal;
@@ -2430,17 +2508,17 @@
       }
     }
 
-    & .badge-area {
+    .badge-area {
       position: relative;
       margin-bottom: 17px;
 
-      & .badge-pill {
+      .badge-pill {
         &.grey {
           background-color: var(--text-03);
         }
       }
 
-      & .btn-arrow {
+      .btn-arrow {
         position: absolute;
         padding: 0 18px 0 10px;
         height: 26px;
@@ -2464,24 +2542,24 @@
       }
     }
 
-    & .list-area {
+    .list-area {
       margin-bottom: 24px;
 
       &:last-child {
         margin-bottom: 0;
 
-        & .direct-register-area {
+        .direct-register-area {
           padding: 6px 0 0;
           margin-bottom: 0;
           border-bottom: 0;
         }
 
-        & .btn-txt {
+        .btn-txt {
           padding-bottom: 0;
         }
       }
 
-      & .list-area-tip {
+      .list-area-tip {
         position: relative;
         font-family: var(--font2);
         font-size: 15px;
@@ -2491,7 +2569,7 @@
         text-align: left;
         margin-bottom: 24px;
 
-        & span {
+        span {
           display: inline-block;
           position: relative;
 
@@ -2509,7 +2587,7 @@
         }
       }
 
-      & .list {
+      .list {
         position: relative;
         font-family: var(--font2);
         font-size: 13px;
@@ -2557,17 +2635,17 @@
           left: 0;
         }
 
-        & .primary-color {
+        .primary-color {
           font-weight: bold;
         }
       }
 
-      & .btn-txt {
+      .btn-txt {
         margin-top: 14px;
         border-bottom: 1px solid #f5f6f8;
         padding-bottom: 30px;
 
-        & a {
+        a {
           position: relative;
           display: inline-block;
           vertical-align: middle;
@@ -2580,7 +2658,7 @@
           text-decoration: underline;
         }
 
-        & .arrow-list-add {
+        .arrow-list-add {
           display: inline-block;
           vertical-align: middle;
           width: 6px;
@@ -2592,14 +2670,14 @@
       }
     }
 
-    & .btn-area {
+    .btn-area {
       padding: 0 3px;
       margin-top: 12px;
       margin-bottom: 0;
       background-color: transparent;
     }
 
-    & .empty {
+    .empty {
       font-size: 13px;
       line-height: 30px;
       letter-spacing: -0.65px;
@@ -2609,12 +2687,12 @@
     }
   }
 
-  & > .banner-area {
+  > .banner-area {
     border-top: 1px solid #f2f4f7;
     padding-top: 30px;
     margin-bottom: 20px;
 
-    & .banner {
+    .banner {
       width: 100%;
       height: 94px;
       padding: 24px 24px 24px 24px;
@@ -2623,7 +2701,7 @@
       display: flex;
       justify-content: space-between;
 
-      & p {
+      p {
         font-family: var(--font2);
         font-size: 14px;
         font-weight: 500;
@@ -2633,11 +2711,11 @@
         color: var(--text-01);
       }
 
-      & .img {
+      .img {
         width: 46px;
         height: 46px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -2645,7 +2723,7 @@
     }
   }
 
-  & .direct-register-area {
+  .direct-register-area {
     padding: 6px 0 27px;
     border-bottom: 1px solid #f2f4f7;
     margin-bottom: 32px;
@@ -2656,13 +2734,13 @@
       border-bottom: 0;
     }
 
-    & .title-area {
+    .title-area {
       position: relative;
       width: 100%;
       height: 26px;
       margin-bottom: 10px;
 
-      & .title {
+      .title {
         display: block;
         font-family: var(--font2);
         font-size: 13px;
@@ -2673,14 +2751,14 @@
         text-overflow: ellipsis;
       }
 
-      & .btn-wrap-sm {
+      .btn-wrap-sm {
         position: absolute;
         overflow: hidden;
         right: 0;
         top: 0;
         height: 26px;
 
-        & .btn {
+        .btn {
           float: left;
           min-width: 44px;
           width: 44px;
@@ -2699,15 +2777,15 @@
       }
     }
 
-    & textarea.custom {
+    textarea.custom {
       margin-bottom: 0;
     }
 
     &.direct {
       padding: 17px 20px 0;
 
-      & .title_area {
-        & .refresh {
+      .title_area {
+        .refresh {
           display: inline-block;
           position: absolute;
           right: 0;
@@ -2715,17 +2793,17 @@
         }
       }
 
-      & textarea {
+      textarea {
         margin-bottom: 0;
       }
     }
   }
 
-  & .empty {
+  .empty {
     padding-top: 10px;
     padding-bottom: 0;
 
-    & p {
+    p {
       font-size: 14px;
       line-height: 22px;
       letter-spacing: -0.35px;
@@ -2735,7 +2813,7 @@
   }
 
   &.direct {
-    & .badge_area {
+    .badge_area {
       padding: 13px 0 0 0;
     }
   }
@@ -2744,12 +2822,12 @@
 .card-benefits-btn-wrap {
   padding-bottom: 40px;
 
-  & .btn-full {
+  .btn-full {
     margin-bottom: 12px;
     width: 100%;
     height: 56px;
 
-    & a {
+    a {
       display: flex;
       justify-content: space-between;
       width: 100%;
@@ -2765,7 +2843,7 @@
     }
   }
 
-  & .list {
+  .list {
     padding: 0 36px;
     color: var(--text-04);
 
@@ -2778,7 +2856,7 @@
 .find-my-card-wrap {
   padding: 10px 20px 94px;
 
-  & .title-area {
+  .title-area {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -0.45px;
@@ -2787,14 +2865,14 @@
     margin-bottom: 30px;
   }
 
-  & .badge-area {
+  .badge-area {
     position: relative;
     overflow: hidden;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
 
-    & .btn-filter {
+    .btn-filter {
       position: absolute;
       padding: 0 26px 0 10px;
       font-size: 11px;
@@ -2818,11 +2896,11 @@
       }
     }
 
-    & ul {
+    ul {
       &._secondDepth {
         display: none;
 
-        & .badge-pill {
+        .badge-pill {
           &.active {
             border-color: var(--blurple);
             background-color: #fff;
@@ -2836,7 +2914,7 @@
       }
     }
 
-    & li {
+    li {
       float: left;
       margin-right: 6px;
       margin-bottom: 10px;
@@ -2846,7 +2924,7 @@
       }
     }
 
-    & .badge-pill {
+    .badge-pill {
       min-width: auto;
       height: 28px;
       line-height: 26px;
@@ -2896,7 +2974,7 @@
     }
   }
 
-  & .input-search {
+  .input-search {
     position: relative;
     width: 100%;
     height: 40px;
@@ -2906,7 +2984,7 @@
     overflow: hidden;
     margin-bottom: 20px;
 
-    & label {
+    label {
       position: absolute;
       right: 12px;
       top: 10px;
@@ -2916,7 +2994,7 @@
       background-size: cover;
     }
 
-    & input {
+    input {
       width: 100%;
       height: 100%;
       padding: 10px 32px 11px 12px;
@@ -2932,9 +3010,9 @@
     }
   }
 
-  & .card-list {
-    & ul {
-      & li {
+  .card-list {
+    ul {
+      li {
         position: relative;
         width: 100%;
         height: 80px;
@@ -2949,24 +3027,24 @@
           margin-bottom: 0;
         }
 
-        & label {
+        label {
           transform: translate(0, 10px);
           margin-right: 6px;
         }
 
-        & .img {
+        .img {
           display: inline-block;
           margin-right: 3px;
           width: 28px;
           height: 28px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
         }
 
-        & .name {
+        .name {
           display: inline-block;
           width: calc(100% - 75px);
           vertical-align: middle;
@@ -2980,7 +3058,7 @@
           white-space: nowrap;
         }
 
-        & .badge-sm {
+        .badge-sm {
           position: absolute;
           padding: 0 6px;
           height: 19px;
@@ -3008,7 +3086,7 @@
   left: 0;
   z-index: 5;
 
-  & .btn {
+  .btn {
     width: 100%;
     height: 56px;
     background-color: var(--color-point);
@@ -3024,6 +3102,35 @@
 
 .my-card-edit-wrap {
   padding: 0 20px;
+}
+
+.my-card-main-wrap {
+  padding: 60px 20px 90px;
+
+  .content {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: var(--text-01);
+    margin-bottom: 100px;
+    padding: 0 20px;
+  }
+
+  .img {
+    width: 280px;
+    height: auto;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .btn-area {
+    padding: 0 20px 22px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -3044,4 +3151,55 @@
 
 .font-weight-bold {
   font-family: var(--font3);
+}
+
+.mycard_edit {
+  padding-top: 20px;
+  padding-bottom: 90px;
+
+  .mycard {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-radius: 6px;
+    padding: 17px 40px 17px 18px;
+    margin-bottom: 12px;
+    background-color: #f7f8fc;
+
+    label {
+      transform: translate(0, 10px);
+      margin-right: 6px;
+    }
+
+    .name {
+      display: inline-block;
+      width: calc(100% - 80px);
+      vertical-align: middle;
+      font-family: var(--font2);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: -.38px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .img {
+      display: inline-block;
+      margin-right: 7px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .btn-mycard-edit {
+      position: absolute;
+      display: inline-block;
+      right: 22px;
+      top: 32px;
+    }
+  }
 }

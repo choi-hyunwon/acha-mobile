@@ -86,9 +86,15 @@
     var source = $('#list-template').html(); //jQuery
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
+        .append(template(data.common))
+        .append(template(data.moreview2))
+        .append(template(data.myAccount))
+        .append(template(data.signIn2))
+        .append(template(data.fixExpenditure))
+        .append(template(data.cardExpenditure))
+
         .append(template(data.signInRenewal))
         .append(template(data.myInfo))
-        .append(template(data.common))
         .append(template(data.dataPolicy))
         .append(template(data.dormant))
         .append(template(data.connection))

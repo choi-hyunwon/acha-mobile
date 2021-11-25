@@ -299,12 +299,13 @@ a:hover {
 }
 
 .btn-big {
-  font-size: 12px;
-  height: 46px;
-  line-height: 45px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 48px;
   border-color: #6839d3;
   color: #6839d3;
   font-family: var(--font2);
+  font-weight: 500;
   letter-spacing: -.6px;
 
   &:hover, &:focus {

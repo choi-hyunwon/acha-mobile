@@ -6,21 +6,22 @@
 .more-view-wrap {
   padding: 0 24px;
 
-  & .sub-title-sm {
+  .sub-title-sm {
     line-height: 20px;
     padding-bottom: 14px;
     margin-bottom: 0;
+    font-family: var(--font3);
   }
 
-  & .box {
+  .box {
     margin-bottom: 36px;
 
-    & .list_group {
-      & .list_group_item {
+    .list_group {
+      .list_group_item {
         &.multiple {
-          & .item_title {
-            & .title {
-              & span {
+          .item_title {
+            .title {
+              span {
                 display: inline-block;
                 margin-left: 10px;
               }
@@ -28,7 +29,7 @@
           }
         }
 
-        & > .desc {
+        > .desc {
           font-family: var(--font1);
           color: var(--text-03);
           padding-right: 65px;
@@ -36,11 +37,11 @@
       }
     }
 
-    & .secession_wrap {
+    .secession_wrap {
       margin-top: 20px;
       padding-bottom: 40px;
 
-      & .txt {
+      .txt {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -48,7 +49,7 @@
         color: var(--text-04);
       }
 
-      & .btn-secession {
+      .btn-secession {
         float: right;
         font-size: 12px;
         line-height: 1.75;
@@ -68,12 +69,12 @@
     padding: 10px 20px 120px;
   }
 
-  & > ul {
+  > ul {
     width: 100%;
     border-top: 1px solid #37354e;
     border-bottom: 1px solid #d5d5d5;
 
-    & .item {
+    .item {
       position: relative;
       margin-bottom: 0;
       padding: 20px 0;
@@ -83,13 +84,13 @@
         border-bottom: 0;
       }
 
-      & a {
+      a {
         display: block;
         width: 100%;
         height: 100%;
         color: var(--text-01);
 
-        & .ic-new {
+        .ic-new {
           display: inline-block;
           width: 14px;
           height: 14px;
@@ -99,7 +100,7 @@
           margin-left: 5px;
         }
 
-        & .tit {
+        .tit {
           display: block;
           font-size: 13px;
           font-family: var(--font2);
@@ -111,7 +112,7 @@
           padding-left: 5px;
         }
 
-        & .date {
+        .date {
           display: block;
           font-family: var(--font1);
           font-size: 11px;
@@ -120,7 +121,7 @@
           padding-right: 23px;
         }
 
-        & .ico_list_arrow_small {
+        .ico_list_arrow_small {
           position: absolute;
           right: 4px;
           top: 50%;
@@ -130,7 +131,7 @@
     }
   }
 
-  & > .title {
+  > .title {
     font-family: var(--font2);
     font-size: 18px;
     font-weight: 500;
@@ -141,7 +142,7 @@
     margin-bottom: 10px;
   }
 
-  & > .date {
+  > .date {
     font-family: var(--font1);
     font-size: 12px;
     line-height: 16px;
@@ -150,7 +151,7 @@
     margin-bottom: 20px;
   }
 
-  & > .text {
+  > .text {
     position: relative;
     width: 100%;
     min-height: 300px;
@@ -173,8 +174,8 @@
   margin-bottom: 30px;
   z-index: 3;
 
-  & ul {
-    & li {
+  ul {
+    li {
       position: relative;
       float: left;
       width: calc(33.333333% - 10px);
@@ -196,14 +197,14 @@
           background-color: var(--blurple);
         }
 
-        & a {
+        a {
           font-family: var(--font2);
           font-weight: 500;
           color: var(--blurple);
         }
       }
 
-      & a {
+      a {
         display: flex;
         width: 100%;
         justify-content: center;
@@ -219,8 +220,8 @@
 .more-view-tab {
   margin-bottom: 30px;
 
-  & ul {
-    & li {
+  ul {
+    li {
       position: relative;
       float: left;
       width: 25%;
@@ -228,7 +229,7 @@
       display: block;
 
       &.update {
-        & .ico {
+        .ico {
           position: relative;
 
           &::after {
@@ -256,7 +257,7 @@
         transform: translateY(-50%);
       }
 
-      & a {
+      a {
         width: 100%;
         height: 100%;
         display: flex;
@@ -264,7 +265,7 @@
         justify-content: center;
         flex-direction: column;
 
-        & .ico {
+        .ico {
           display: block;
           width: 22px;
           height: 22px;
@@ -272,7 +273,7 @@
           margin-bottom: 10px;
         }
 
-        & span {
+        span {
           font-family: var(--font2);
           font-size: 12px;
           font-weight: 500;
@@ -282,20 +283,113 @@
           color: var(--text-01);
         }
 
-        & .ico-list-notice {
+        .ico-list-notice {
           background-image: url(../../img/common/ico-list-notice@2x.png);
         }
 
-        & .ico-list-event {
+        .ico-list-event {
           background-image: url(../../img/common/ico-list-event@2x.png);
         }
 
-        & .ico-list-faq {
+        .ico-list-faq {
           background-image: url(../../img/common/ico-list-faq@2x.png);
         }
 
-        & .ico-list-inquire {
+        .ico-list-inquire {
           background-image: url(../../img/common/ico-list-inquire@2x.png);
+        }
+      }
+    }
+  }
+}
+
+.more-view-my-page {
+  display: flex;
+  background-color: #f7f8fc;
+  padding: 30px 24px 30px;
+  align-items: center;
+
+  .img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 14px;
+
+    img {
+       width: 100%;
+       height: 100%;
+    }
+  }
+
+  .my-page {
+    .name {
+      display: inline-block;
+      margin-bottom: 8px;
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: var(--font3);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 27px;
+        letter-spacing: -0.45px;
+        text-align: left;
+        color: var(--text-01);
+        margin-right: 10px;
+      }
+
+      .ico-list-arrow-large {
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 24px;
+        background-image: url(../../img/common/ico-list-arrow-large@2x.png);
+        background-size: cover;
+      }
+    }
+
+    .info {
+      display: flex;
+
+      .item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+
+        + .item {
+          &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 17px;
+            background-color: #e3e4e8;
+            left: -11px;
+            top: 1px;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        span {
+          &:first-child {
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            color: var(--text-01);
+            margin-right: 12px;
+          }
+
+          &:nth-child(2) {
+            font-family: var(--font2);
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--blurple);
+          }
         }
       }
     }
@@ -305,15 +399,15 @@
 .event-list {
   padding: 0 20px 4px;
 
-  & .event {
+  .event {
     margin-bottom: 36px;
     background-color: transparent;
 
-    & span {
+    span {
       display: block;
     }
 
-    & .title {
+    .title {
       font-family: var(--font2);
       font-size: 14px;
       font-weight: 500;
@@ -324,7 +418,7 @@
       padding-left: 4px;
     }
 
-    & .date {
+    .date {
       font-family: var(--font1);
       font-size: 12px;
       line-height: 16px;
@@ -333,19 +427,19 @@
       padding-left: 4px;
     }
 
-    & .img {
+    .img {
       width: 100%;
       height: auto;
       border-radius: 6px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
     &.ended {
-      & .img {
+      .img {
         position: relative;
 
         &::after {
@@ -370,22 +464,22 @@
     }
   }
 
-  & > .empty {
+  > .empty {
     padding-top: 130px;
 
-    & .img {
+    .img {
       display: block;
       width: 56px;
       height: 56px;
       margin: 0 auto 20px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
-    & .txt {
+    .txt {
       font-family: var(--font2);
       font-size: 15px;
       font-weight: 500;
@@ -399,10 +493,10 @@
   &.detail {
     padding-bottom: 0;
 
-    & .event {
+    .event {
       margin-bottom: 30px;
 
-      & .title {
+      .title {
         font-family: var(--font2);
         font-size: 18px;
         font-weight: 500;
@@ -412,17 +506,17 @@
         margin-bottom: 12px;
       }
 
-      & .date {
+      .date {
         padding-left: 0;
         margin-bottom: 20px;
       }
 
-      & .img {
+      .img {
         width: 100%;
         height: 388px;
         border-radius: 0;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -434,12 +528,12 @@
 .event-item-wrap {
   padding: 0 20px 40px;
 
-  & > ul {
+  > ul {
     width: 100%;
     border-top: 1px solid #37354e;
     border-bottom: 1px solid #d5d5d5;
 
-    & .item {
+    .item {
       position: relative;
       margin-bottom: 0;
       padding: 20px 0;
@@ -449,13 +543,13 @@
         border-bottom: 0;
       }
 
-      & a {
+      a {
         display: block;
         width: 100%;
         height: 100%;
         color: var(--text-01);
 
-        & .ic-new {
+        .ic-new {
           display: inline-block;
           width: 14px;
           height: 14px;
@@ -465,7 +559,7 @@
           margin-left: 5px;
         }
 
-        & .tit {
+        .tit {
           display: block;
           font-size: 13px;
           font-family: var(--font2);
@@ -477,7 +571,7 @@
           padding-left: 5px;
         }
 
-        & .date {
+        .date {
           display: block;
           font-family: var(--font1);
           font-size: 11px;
@@ -485,7 +579,7 @@
           padding-left: 5px;
           padding-right: 23px;
 
-          & .date-tit {
+          .date-tit {
             position: relative;
             display: inline-block;
             width: 85px;
@@ -508,7 +602,7 @@
           }
         }
 
-        & .ico_list_arrow_small {
+        .ico_list_arrow_small {
           position: absolute;
           right: 4px;
           top: 50%;
@@ -522,10 +616,10 @@
 .event-content-wrap {
   padding: 66px 0 0;
 
-  & .event-item-detail-wrap {
+  .event-item-detail-wrap {
     padding: 10px 20px 0;
 
-    & .tit {
+    .tit {
       display: block;
       font-size: 18px;
       font-family: var(--font2);
@@ -535,13 +629,13 @@
       margin-bottom: 10px;
     }
 
-    & .date {
+    .date {
       display: block;
       font-family: var(--font1);
       font-size: 11px;
       color: var(--text-03);
 
-      & .date-tit {
+      .date-tit {
         position: relative;
         display: inline-block;
         width: 85px;
@@ -570,7 +664,7 @@
     }
   }
 
-  & > .cont {
+  > .cont {
     padding: 20px;
     font-size: 13px;
     line-height: 20px;
@@ -583,7 +677,7 @@
 .event-content {
   padding: 10px 20px 110px;
 
-  & > .tit {
+  > .tit {
     font-family: var(--font2);
     font-size: 18px;
     font-weight: 500;
@@ -594,7 +688,7 @@
     margin-bottom: 5px;
   }
 
-  & .date-wrap {
+  .date-wrap {
     display: flex;
     width: 100%;
     height: 25px;
@@ -602,7 +696,7 @@
     justify-content: space-between;
     margin-bottom: 16px;
 
-    & .date {
+    .date {
       font-family: var(--font1);
       font-size: 12px;
       line-height: 25px;
@@ -610,7 +704,7 @@
       color: var(--text-03);
     }
 
-    & .btn-share {
+    .btn-share {
       display: inline-block;
       height: 25px;
       padding: 0 8px;
@@ -618,7 +712,7 @@
       border: solid 1px #e3e4e8;
       background-color: var(--white);
 
-      & .ico-share {
+      .ico-share {
         display: inline-block;
         width: 12px;
         height: 12px;
@@ -628,7 +722,7 @@
         margin-right: 4px;
       }
 
-      & span {
+      span {
         display: inline-block;
         vertical-align: middle;
         font-size: 11px;
@@ -639,12 +733,12 @@
     }
   }
 
-  & .cont {
+  .cont {
     width: 100%;
     height: 100%;
     min-height: 388px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
@@ -658,7 +752,7 @@
   padding: 0 20px 30px;
   background-color: #fff;
 
-  & .btn-event {
+  .btn-event {
     position: relative;
     display: block;
     border-radius: 6px;
@@ -684,7 +778,7 @@
       width: calc(50% - 5px);
     }
 
-    & + .btn-event {
+    + .btn-event {
       margin-left: 9px;
     }
   }
@@ -703,17 +797,17 @@
 }
 
 .faq-wrap {
-  & .input-search-wrap {
+  .input-search-wrap {
     padding: 10px 20px 0;
 
-    & .input-search {
+    .input-search {
       position: relative;
       width: 100%;
       height: 40px;
       overflow: hidden;
       margin-bottom: 25px;
 
-      & label {
+      label {
         position: absolute;
         right: 12px;
         top: 50%;
@@ -724,7 +818,7 @@
         background-size: cover;
       }
 
-      & input {
+      input {
         width: 100%;
         height: 100%;
         border-radius: 4px;
@@ -759,17 +853,17 @@
     }
   }
 
-  & .faq-menu-top {
+  .faq-menu-top {
     width: 100%;
     height: 48px;
     padding: 0 20px;
     overflow-x: auto;
     overflow-y: hidden;
 
-    & ul {
+    ul {
       overflow-x: auto;
 
-      & li {
+      li {
         float: left;
         padding: 0 12px;
         height: 28px;
@@ -782,7 +876,7 @@
         &.active {
           background-color: var(--purple);
 
-          & a {
+          a {
             font-family: var(--font2);
             color: #fff;
           }
@@ -792,7 +886,7 @@
           margin-right: 20px;
         }
 
-        & a {
+        a {
           display: block;
           font-size: 12px;
           letter-spacing: -0.6px;
@@ -804,7 +898,7 @@
     }
   }
 
-  & > .result {
+  > .result {
     font-size: 13px;
     line-height: 19px;
     letter-spacing: -0.33px;
@@ -813,19 +907,19 @@
     padding: 0 20px;
     margin-bottom: 12px;
 
-    & span {
+    span {
       font-family: var(--font2);
     }
   }
 
-  & .faq-list {
+  .faq-list {
     padding: 0 20px 40px;
 
-    & ul {
+    ul {
       border-top: 1px solid #37354e;
       border-bottom: 1px solid #d5d5d5;
 
-      & li {
+      li {
         position: relative;
         width: 100%;
         padding: 20px 0;
@@ -862,11 +956,11 @@
           transform: translateY(-50%);
         }
 
-        & a {
+        a {
           display: block;
           color: var(--text-01);
 
-          & .tit {
+          .tit {
             font-size: 13px;
             display: inline-block;
             font-family: var(--font2);
@@ -876,7 +970,7 @@
             padding-left: 21px;
             padding-right: 27px;
 
-            & span {
+            span {
               font-family: var(--font2);
               font-weight: 500;
               color: var(--blurple);
@@ -886,24 +980,24 @@
       }
     }
 
-    & > .empty {
+    > .empty {
       border-top: 1px solid #37354e;
       border-bottom: 1px solid #d5d5d5;
       padding: 40px 0;
 
-      & .img {
+      .img {
         display: block;
         width: 30px;
         height: 30px;
         margin: 0 auto 12px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
       }
 
-      & p {
+      p {
         font-size: 12px;
         line-height: 20px;
         letter-spacing: -0.3px;
@@ -912,7 +1006,7 @@
       }
     }
 
-    & > .desc {
+    > .desc {
       font-size: 13px;
       line-height: 19px;
       letter-spacing: -0.33px;
@@ -920,7 +1014,7 @@
       color: var(--text-03);
       margin-top: 20px;
 
-      & a {
+      a {
         position: relative;
         color: var(--blurple);
         font-family: var(--font2);
@@ -942,10 +1036,10 @@
     }
   }
 
-  & .faq-detail {
+  .faq-detail {
     padding: 20px 20px 40px;
 
-    & .tit {
+    .tit {
       position: relative;
       font-family: var(--font2);
       font-size: 13px;
@@ -971,7 +1065,7 @@
       }
     }
 
-    & .answer {
+    .answer {
       position: relative;
       padding: 20px 16px 20px 32px;
       background-color: #f7f8fc;
@@ -1004,13 +1098,13 @@
 .faq_list_detail {
   padding: 10px 20px 100px;
 
-  & .faq_info {
+  .faq_info {
     position: relative;
     width: 100%;
     padding-bottom: 20px;
     border-bottom: 1px solid #f5f6f8;
 
-    & .title {
+    .title {
       font-family: var(--font2);
       font-size: 18px;
       line-height: 27px;
@@ -1018,7 +1112,7 @@
       margin-bottom: 11px;
     }
 
-    & .title-sm {
+    .title-sm {
       font-family: var(--font1);
       font-size: 12px;
       line-height: 18px;
@@ -1026,7 +1120,7 @@
       padding-top: 0;
       margin-bottom: 0;
 
-      & .category {
+      .category {
         display: inline-block;
         vertical-align: middle;
         font-size: 12px;
@@ -1035,7 +1129,7 @@
         color: var(--text-03);
       }
 
-      & .date {
+      .date {
         position: relative;
         display: inline-block;
         vertical-align: text-top;
@@ -1057,17 +1151,17 @@
       }
     }
 
-    & .badge-pill {
+    .badge-pill {
       position: absolute;
       right: 0;
       bottom: 20px;
     }
   }
 
-  & .faq_content {
+  .faq_content {
     padding: 20px 0;
 
-    & p {
+    p {
       font-size: 13px;
       line-height: 20px;
       letter-spacing: -0.33px;
@@ -1075,24 +1169,24 @@
     }
   }
 
-  & .faq_answer {
+  .faq_answer {
     margin-bottom: 40px;
 
-    & .content {
+    .content {
       position: relative;
       width: 100%;
       padding: 50px 20px 22px;
       background-color: #f7f8fc;
       margin-top: -25px;
 
-      & p {
+      p {
         font-size: 12px;
         line-height: 19px;
         letter-spacing: -0.3px;
         color: #737183;
       }
 
-      & .date {
+      .date {
         font-family: var(--font1);
         font-size: 11px;
         line-height: 26px;
@@ -1118,8 +1212,8 @@
     }
   }
 
-  & .faq_question {
-    & label {
+  .faq_question {
+    label {
       position: relative;
       display: inline-block;
       font-family: var(--font2);
@@ -1145,14 +1239,14 @@
       }
     }
 
-    & .category, & .title {
+    .category, .title {
       margin-bottom: 36px;
     }
 
-    & .title, & .textarea {
+    .title, .textarea {
       position: relative;
 
-      & .txt-limit {
+      .txt-limit {
         position: absolute;
         top: 0;
         right: 0;
@@ -1164,14 +1258,14 @@
       }
     }
 
-    & select {
+    select {
       &:focus, &.focus {
         font-family: var(--font2);
         color: var(--text-01);
       }
     }
 
-    & input.custom {
+    input.custom {
       font-family: var(--font2);
       letter-spacing: -.32px;
 
@@ -1180,7 +1274,7 @@
       }
     }
 
-    & textarea.custom {
+    textarea.custom {
       height: 180px;
       padding: 9px 12px;
       margin-bottom: 6px;
@@ -1192,11 +1286,11 @@
       }
     }
 
-    & .push_alert {
+    .push_alert {
       margin-bottom: 40px;
 
-      & label {
-        & span {
+      label {
+        span {
           font-family: var(--font2);
           font-size: 13px;
           line-height: 26px;
@@ -1211,7 +1305,7 @@
 .faq-must-check {
   padding: 0 20px 40px;
 
-  & .txt-lg {
+  .txt-lg {
     font-family: var(--font3);
     font-size: 14px;
     font-weight: bold;
@@ -1235,7 +1329,7 @@
     }
   }
 
-  & .txt {
+  .txt {
     font-size: 12px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -1245,7 +1339,7 @@
     padding: 0 4px;
   }
 
-  & .list {
+  .list {
     font-family: var(--font1);
     font-size: 12px;
     line-height: 18px;
@@ -1266,7 +1360,7 @@
 .faq-category {
   margin-bottom: 20px;
 
-  & .faq-item {
+  .faq-item {
     position: relative;
     width: 33%;
     float: left;
@@ -1274,7 +1368,7 @@
     border-right: 1px solid #e2e3e6;
     border-bottom: 1px solid #e2e3e6;
 
-    & a {
+    a {
       display: block;
       color: var(--text-01);
       height: 44px;
@@ -1287,7 +1381,7 @@
     &.active {
       border-color: var(--color-point);
 
-      & a {
+      a {
         color: var(--color-point);
 
         &:after {
@@ -1316,16 +1410,16 @@
 }
 
 .faq-reply-wrap {
-  & .reply {
+  .reply {
     padding: 20px;
     background-color: #f7f8fc;
 
-    & .reply-info {
+    .reply-info {
       display: flex;
       justify-content: space-between;
       margin-bottom: 12px;
 
-      & .name {
+      .name {
         font-family: var(--font2);
         font-size: 12px;
         font-weight: 500;
@@ -1334,14 +1428,14 @@
         color: var(--text-01);
       }
 
-      & .date {
+      .date {
         font-size: 11px;
         line-height: 18px;
         color: var(--text-03);
       }
     }
 
-    & .reply-cont {
+    .reply-cont {
       font-size: 12px;
       line-height: 18px;
       letter-spacing: -0.3px;
@@ -1350,10 +1444,10 @@
       margin-bottom: 10px;
     }
 
-    & .btn-wrap {
+    .btn-wrap {
       overflow: hidden;
 
-      & .btn-reply {
+      .btn-reply {
         float: right;
         display: inline-block;
         height: 28px;
@@ -1361,7 +1455,7 @@
         border: solid 1px #e3e4e8;
         background-color: var(--white);
 
-        & .ico-qna-reply {
+        .ico-qna-reply {
           display: inline-block;
           width: 12px;
           height: 12px;
@@ -1371,7 +1465,7 @@
           transform: translateY(2px);
         }
 
-        & span {
+        span {
           font-size: 11px;
           line-height: 26px;
           letter-spacing: -0.55px;
@@ -1381,15 +1475,15 @@
     }
   }
 
-  & .re-reply {
+  .re-reply {
     padding: 20px;
 
-    & .reply-info {
+    .reply-info {
       display: flex;
       justify-content: space-between;
       margin-bottom: 12px;
 
-      & .name {
+      .name {
         font-family: var(--font2);
         font-size: 12px;
         font-weight: 500;
@@ -1409,23 +1503,23 @@
         }
       }
 
-      & .length {
+      .length {
         font-size: 11px;
         line-height: 18px;
         color: var(--text-03);
       }
 
-      & .date {
+      .date {
         font-size: 11px;
         line-height: 18px;
         color: var(--text-03);
       }
     }
 
-    & .reply-cont {
+    .reply-cont {
       margin-bottom: 5px;
 
-      & textarea.custom {
+      textarea.custom {
         height: 100px;
         padding: 10px 12px;
         font-family: var(--font2);
@@ -1433,7 +1527,7 @@
         margin-bottom: 0;
       }
 
-      & p {
+      p {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -1443,12 +1537,12 @@
       }
     }
 
-    & .btn-wrap {
+    .btn-wrap {
       display: flex;
       justify-content: flex-end;
       padding-bottom: 20px;
 
-      & .btn {
+      .btn {
         min-width: auto;
         padding: 0 15px;
         height: 28px;
@@ -1465,7 +1559,7 @@
         color: var(--white);
         border: 0;
 
-        & + .btn {
+        + .btn {
           margin-left: 8px;
         }
 
@@ -1487,7 +1581,7 @@
 .list-pd {
   padding: 10px 20px 50px;
 
-  & .list-group-header {
+  .list-group-header {
     font-family: var(--font2);
     font-size: 14px;
     font-weight: 500;
@@ -1512,7 +1606,7 @@
   border-left: none;
   border-right: none;
 
-  & .list_group_item {
+  .list_group_item {
     position: relative;
     border-bottom: 1px solid #f0f0f0;
     padding: 19px 0 19px 5px;
@@ -1521,23 +1615,23 @@
       border-bottom: 1px solid #e3e4e8;
     }
 
-    & .item_title {
+    .item_title {
       padding-right: 50px;
 
-      & i {
+      i {
         transform: translate(0, 2px);
       }
 
-      & .title {
+      .title {
         display: block;
         font-family: var(--font2);
-        font-size: 13px;
-        line-height: 19px;
-        letter-spacing: -0.33px;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.35px;
         vertical-align: top;
       }
 
-      & .ic-new {
+      .ic-new {
         display: inline-block;
         width: 14px;
         height: 14px;
@@ -1548,7 +1642,7 @@
       }
     }
 
-    & > .desc {
+    > .desc {
       font-family: var(--font2);
       font-size: 11px;
       line-height: 17px;
@@ -1563,7 +1657,7 @@
       }
     }
 
-    & .btn {
+    .btn {
       position: absolute;
       right: 3px;
       top: 24px;
@@ -1571,11 +1665,11 @@
       color: #737183;
     }
 
-    & > .custom-switch {
+    > .custom-switch {
       top: 17px;
     }
 
-    & .btn_more {
+    .btn_more {
       position: absolute;
       top: 0;
       right: 0;
@@ -1583,7 +1677,7 @@
       width: 100%;
       height: 100%;
 
-      & i {
+      i {
         position: absolute;
         right: 4px;
         top: 50%;
@@ -1591,14 +1685,14 @@
       }
     }
 
-    & .day-alert {
+    .day-alert {
       position: relative;
       width: 100%;
       padding: 16px 18px 20px;
       background-color: #f7f8fc;
       margin-top: 20px;
 
-      & .desc {
+      .desc {
         font-size: 11px;
         line-height: 17px;
         letter-spacing: -0.28px;
@@ -1606,11 +1700,11 @@
         margin-bottom: 14px;
       }
 
-      & > .item {
+      > .item {
         position: relative;
         margin-bottom: 16px;
 
-        & .custom-switch {
+        .custom-switch {
           top: -3px !important;
         }
 
@@ -1623,7 +1717,7 @@
     &.multiple {
       padding: 17px 0 17px 5px;
 
-      & .custom-switch {
+      .custom-switch {
         top: 23px;
       }
     }
@@ -1637,8 +1731,8 @@
     }
 
     &.list_group_item_lg {
-      & .item_title {
-        & .date {
+      .item_title {
+        .date {
           display: block;
           font-size: 11px;
           line-height: 17px;
@@ -1647,12 +1741,12 @@
         }
       }
 
-      & .box-switch {
+      .box-switch {
         margin-top: 12px;
         width: 120px;
         transform: none;
 
-        & a {
+        a {
           width: 60px;
         }
       }
@@ -1662,10 +1756,10 @@
   &.multi {
     padding-bottom: 50px;
 
-    & .list_group_item {
+    .list_group_item {
       padding: 19px 0 16px 5px;
 
-      & .title {
+      .title {
         display: inline-block;
         width: calc(100% - 5px);
         overflow: hidden;
@@ -1673,7 +1767,7 @@
         text-overflow: ellipsis;
       }
 
-      & .date {
+      .date {
         display: block;
         font-family: var(--font1);
         font-size: 11px;
@@ -1682,7 +1776,7 @@
         color: #9b9aa6;
       }
 
-      & .badge-pill {
+      .badge-pill {
         position: absolute;
         right: 18px;
         top: 27px;
@@ -1695,17 +1789,17 @@
       margin-bottom: 36px;
     }
 
-    & .list_group_item {
+    .list_group_item {
       padding: 21px 0 19px 5px;
 
-      & .custom-switch {
+      .custom-switch {
         right: 0;
       }
 
       &.list_group_item_lg {
         padding: 21px 0 19px 5px;
 
-        & .date {
+        .date {
           display: block;
           font-size: 11px;
           line-height: 17px;
@@ -1714,12 +1808,12 @@
 
         }
 
-        & .custom-switch {
+        .custom-switch {
           top: 27px;
         }
       }
 
-      & .txt {
+      .txt {
         font-size: 11px;
         line-height: 16px;
         letter-spacing: -0.28px;
@@ -1734,13 +1828,13 @@
     padding: 20px 0 20px 5px;
     border-bottom: 1px solid #37354e;
 
-    & > .title-wrap {
+    > .title-wrap {
       display: flex;
       height: 19px;
       align-items: center;
       margin-bottom: 6px;
 
-      & .tit {
+      .tit {
         font-family: var(--font2);
         font-size: 13px;
         font-weight: 500;
@@ -1752,13 +1846,13 @@
       }
     }
 
-    & > .checkbox-select {
+    > .checkbox-select {
       height: fit-content;
       margin-bottom: 7px;
       padding-left: 23px;
       width: 210px;
 
-      & label {
+      label {
         width: 78px;
         height: 18px;
 
@@ -1771,42 +1865,42 @@
         }
       }
 
-      & .filled-in {
+      .filled-in {
         height: 18px;
       }
 
-      & [type="checkbox"] + span:not(.lever) {
+      [type="checkbox"] + span:not(.lever) {
         padding-left: 23px;
         line-height: 18px;
         height: 18px;
       }
 
-      & [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
+      [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
         left: 1px;
         top: 0;
       }
 
-      & [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+      [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
         height: 18px;
         width: 18px;
         border-radius: 2px;
         top: 0;
       }
 
-      & [type="checkbox"].filled-in:checked + span:not(.lever):after {
+      [type="checkbox"].filled-in:checked + span:not(.lever):after {
         height: 18px;
         width: 18px;
         border-radius: 2px;
         top: 0;
       }
 
-      & [type="checkbox"].filled-in:checked + span:not(.lever):before {
+      [type="checkbox"].filled-in:checked + span:not(.lever):before {
         left: 1px;
         top: 0;
       }
     }
 
-    & > .desc {
+    > .desc {
       font-size: 11px;
       line-height: 17px;
       letter-spacing: -0.28px;
@@ -1814,7 +1908,7 @@
       padding-left: 23px;
     }
 
-    & .btn-more-wrap {
+    .btn-more-wrap {
       position: absolute;
       width: 46px;
       height: 100%;
@@ -1822,7 +1916,7 @@
       right: 0;
       top: 0;
 
-      & .btn-more {
+      .btn-more {
         display: block;
         width: 100%;
         height: 100%;
@@ -1838,11 +1932,11 @@
 .company-info {
   padding: 10px 20px 50px;
 
-  & ul {
+  ul {
     border-top: 1px solid var(--text-01);
     border-bottom: 1px solid #e3e4e8;
 
-    & li {
+    li {
       padding: 20px 4px;
       border-bottom: 1px solid #f5f6f8;
 
@@ -1850,7 +1944,7 @@
         border-bottom: 0;
       }
 
-      & .tit {
+      .tit {
         display: block;
         font-family: var(--font2);
         font-size: 11px;
@@ -1862,7 +1956,7 @@
         margin-bottom: 4px;
       }
 
-      & .desc {
+      .desc {
         display: block;
         font-family: var(--font2);
         font-size: 13px;
@@ -1883,23 +1977,23 @@
 .withdrawal {
   padding: 10px 20px 30px;
 
-  & .box_withdrawal {
+  .box_withdrawal {
     padding: 16px;
     background-color: #f7f8fc;
     margin-bottom: 36px;
 
-    & .item {
+    .item {
       margin-bottom: 28px;
 
       &:last-child {
         margin-bottom: 0;
       }
 
-      & .title_list {
+      .title_list {
         padding-top: 1px;
         margin-bottom: 10px;
 
-        & .title {
+        .title {
           padding-top: 0;
           float: none;
           font-family: var(--font3);
@@ -1912,7 +2006,7 @@
         }
       }
 
-      & .list {
+      .list {
         font-family: var(--font1);
         font-weight: normal;
         font-size: 12px;
@@ -1928,7 +2022,7 @@
     }
   }
 
-  & .withdrawal-txt-lg {
+  .withdrawal-txt-lg {
     font-weight: normal;
     color: var(--text-01);
     font-size: 18px;
@@ -1936,14 +2030,14 @@
     letter-spacing: -0.45px;
     margin-bottom: 15px;
 
-    & span {
+    span {
       font-family: var(--font3);
       font-weight: bold;
       color: var(--blurple);
     }
   }
 
-  & .withdrawal-txt {
+  .withdrawal-txt {
     font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.35px;
@@ -1952,8 +2046,8 @@
     margin-bottom: 30px;
   }
 
-  & .withdrawal-form {
-    & label {
+  .withdrawal-form {
+    label {
       position: relative;
       display: inline-block;
       font-family: var(--font2);
@@ -1979,10 +2073,10 @@
       }
     }
 
-    & .category {
+    .category {
       margin-bottom: 36px;
 
-      & select {
+      select {
         height: 40px;
         line-height: 17px;
 
@@ -1993,10 +2087,10 @@
       }
     }
 
-    & .textarea {
+    .textarea {
       position: relative;
 
-      & textarea.custom {
+      textarea.custom {
         height: 100px;
         padding: 9px 12px;
         margin-bottom: 6px;
@@ -2008,7 +2102,7 @@
         }
       }
 
-      & .txt-limit {
+      .txt-limit {
         display: block;
         font-size: 11px;
         line-height: 17px;
@@ -2018,7 +2112,7 @@
     }
   }
 
-  & .btn-box {
+  .btn-box {
     margin-top: 40px;
     overflow: hidden;
   }
@@ -2028,19 +2122,19 @@
   padding-top: 140px;
   text-align: center;
 
-  & .img {
+  .img {
     display: block;
     width: 166px;
     height: 130px;
     margin: 0 auto;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  & .tit-lg {
+  .tit-lg {
     font-family: var(--font3);
     font-size: 18px;
     font-weight: bold;
@@ -2050,7 +2144,7 @@
     margin-bottom: 25px;
   }
 
-  & .tit {
+  .tit {
     font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.38px;
@@ -2058,7 +2152,7 @@
     margin-bottom: 36px;
   }
 
-  & .tit-sm {
+  .tit-sm {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.38px;
@@ -2067,12 +2161,12 @@
 }
 
 .terms {
-  & .sub-title-sm {
+  .sub-title-sm {
     margin-bottom: 3px !important;
   }
 
-  & .list_group {
-    & .list_group_item {
+  .list_group {
+    .list_group_item {
       padding: 18px 0 18px 5px !important;
 
       &.group-lg {
@@ -2085,38 +2179,38 @@
 .terms_of_use_detail {
   margin-bottom: 30px;
 
-  & .box {
+  .box {
     padding: 13px 20px 0;
 
     &.expand {
       padding: 13px 25px;
     }
 
-    & .title_area {
+    .title_area {
       border-bottom: 1px solid #888888;
       padding-bottom: 10px;
       margin-bottom: 15px;
 
-      & .title {
+      .title {
         font-size: 18px;
         letter-spacing: -0.9px;
       }
     }
 
-    & .title_list {
+    .title_list {
       margin-bottom: 23px;
       padding-top: 0;
 
-      & .title {
+      .title {
         float: none;
         padding-top: 0;
       }
     }
 
-    & .content_list {
+    .content_list {
       margin-bottom: 23px;
 
-      & .sub_title {
+      .sub_title {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -2124,7 +2218,7 @@
         color: #37354e;
       }
 
-      & p {
+      p {
         font-size: 12px;
         line-height: 18px;
         color: #737183;
@@ -2138,5 +2232,23 @@
 @media (max-width: 360px) {
   .event-tab ul li a {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 394px) {
+  .more-view-my-page .my-page .info {
+    flex-direction: column;
+  }
+
+  .more-view-my-page .my-page .info .item {
+    margin-right: 0;
+  }
+
+  .more-view-my-page .my-page .info .item + .item {
+    margin-top: 8px;
+  }
+
+  .more-view-my-page .my-page .info .item + .item::before {
+    content: none;
   }
 }

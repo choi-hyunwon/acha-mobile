@@ -92,6 +92,12 @@ data.common = {
     'list': [
         {
             'stateClass': 'complete',
+            'url': '00_common_slide_page',
+            'category': 'common ',
+            'page': '페이지 슬라이딩'
+        },
+        {
+            'stateClass': 'complete',
             'url': '00_common_popup',
             'category': 'common',
             'page': '팝업'
@@ -315,12 +321,6 @@ data.connection = {
             'url': '13_connection_popup_04',
             'category': '커넥션',
             'page': '커넥션 끊기 팝업'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '13_connection_popup_14',
-            'category': '커넥션',
-            'page': '공유항목 편집'
         },
     ]
 };
@@ -664,7 +664,7 @@ data.expenditure2 = {
     ]
 };
 data.story = {
-    'title': 'story',
+    'title': '타임라인&스토리',
     'list': [
         {
             'stateClass': 'complete',
@@ -726,18 +726,18 @@ data.story = {
             'category': '스토리',
             'page': '태그 전체보기'
         },
-        {
-            'stateClass': 'complete',
-            'url': '10_story_08',
-            'category': '스토리',
-            'page': '태그검색 상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '10_story_popup_04',
-            'category': '스토리',
-            'page': '내 지출 기분 선택 팝업'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '10_story_08',
+        //     'category': '스토리',
+        //     'page': '태그검색 상세'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '10_story_popup_04',
+        //     'category': '스토리',
+        //     'page': '내 지출 기분 선택 팝업'
+        // },
     ]
 };
 data.moreview = {
@@ -1309,12 +1309,6 @@ data.signIn = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '06_sign_in_00',
-            'category': '회원가입',
-            'page': '마이데이터 서비스 이용 안내'
-        },
-        {
-            'stateClass': 'complete',
             'url': '06_sign_in_01',
             'category': '회원가입',
             'page': '본인확인 안내'
@@ -1528,9 +1522,6 @@ data.expenditure = {
         },
     ]
 };
-
-
-
 
 data.tax2 = {
     'title': '연말정산 TIP_21.01 개편',
@@ -1828,6 +1819,176 @@ data.edit4 = {
             'url': 'sign_in_06_content',
             'category': '약관',
             'page': '약관'
+        },
+    ]
+};
+
+data.cardExpenditure = {
+    'title': '카드지출',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_00',
+            'category': '카드지출',
+            'page': '01. 메인화면_1.1 연결한 데이터가 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_02',
+            'category': '카드지출',
+            'page': '02. 내카드_1.1 목록(메인 영역별 항목)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_13',
+            'category': '카드지출',
+            'page': '02. 내카드_1.2 편집'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03',
+            'category': '카드지출',
+            'page': '03. 카드 상세정보_1.1 구성'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_05',
+            'category': '카드지출',
+            'page': '03. 카드 상세정보_1.2 자동결제 내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_06',
+            'category': '카드지출',
+            'page': '03. 카드 상세정보_1.2 자동결제 내역(자동결제내역_데이터 없는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02',
+            'category': '카드지출',
+            'page': '04. 타임라인_1.1 거래내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_04',
+            'category': '카드지출',
+            'page': '05. 상세화면_1.1 항목'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_09',
+            'category': '카드지출',
+            'page': '07. 카드 고정지출_1.1 구성'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_popup_02',
+            'category': '카드지출',
+            'page': '05. 상세화면_1.2 스토리 입력(스토리 사진 업로드)'
+        },
+    ]
+};
+data.fixExpenditure = {
+    'title': '카드지출',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_01',
+            'category': '카드지출',
+            'page': '04. 고정지출_1.1 캘린더'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_06',
+            'category': '카드지출',
+            'page': '04. 고정지출_1.2 카테고리'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_03_01',
+            'category': '카드지출',
+            'page': '04. 고정지출_1.3 월별'
+        },
+    ]
+};
+data.signIn2 = {
+    'title': '회원가입',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_02',
+            'category': '회원가입',
+            'page': '약관동의'
+        },
+    ]
+};
+data.myAccount = {
+    'title': '내돈관리(계좌잔고,현금흐름)',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_01',
+            'category': '내돈관리',
+            'page': '03. 내돈관리_1.1 계좌잔고_1. 목록(계좌 잔고 목록)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_02',
+            'category': '내돈관리',
+            'page': '03. 내돈관리_1.1 계좌잔고_1. 목록(표시 할 데이터 없음)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_03',
+            'category': '내돈관리',
+            'page': '03. 내돈관리_1.1 계좌잔고_2. 편집(계좌 편집)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_05',
+            'category': '내돈관리',
+            'page': '03. 내돈관리_1.2 현금흐름_2. 등록된 지출&계좌가 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_06',
+            'category': '내돈관리',
+            'page': '03. 내돈관리_1.2 현금흐름_3. 현금흐름 조회하기(기존 설정 값이 없는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_07',
+            'category': '내돈관리',
+            'page': '03. 내돈관리_1.2 현금흐름_2. 등록된 지출&계좌가 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_08',
+            'category': '내돈관리',
+            'page': '03. 내돈관리_1.2 현금흐름_3. 현금흐름 조회하기(기존 설정 값이 없는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_09',
+            'category': '내돈관리',
+            'page': '03. 내돈관리_1.2 현금흐름_5. 내수입_등록된 값이 있을 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_10',
+            'category': '내돈관리',
+            'page': '02. 현금흐름_1.2 현금흐름_4. 내수입_추가'
+        },
+    ]
+};
+data.moreview2 = {
+    'title': '더보기',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_01',
+            'category': '더보기',
+            'page': '02-1. 더보기_더보기 메인_더보기 메인 (앱 버전 정보 업데이트 존재)'
         },
     ]
 };

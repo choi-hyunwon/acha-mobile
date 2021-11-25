@@ -11,10 +11,10 @@
   overflow-x: auto;
   overflow-y: hidden;
 
-  & ul {
+  ul {
     overflow-x: auto;
 
-    & li {
+    li {
       float: left;
       padding: 0 12px;
       height: 28px;
@@ -27,7 +27,7 @@
       &.active {
         background-color: var(--purple);
 
-        & a {
+        a {
           font-family: var(--font2);
           color: #fff;
         }
@@ -37,7 +37,7 @@
         margin-right: 0;
       }
 
-      & a {
+      a {
         display: block;
         font-size: 12px;
         letter-spacing: -0.6px;
@@ -85,11 +85,11 @@
     }
 
     .img {
-      & img {
+      img {
         display: inline-block;
       }
 
-      & span {
+      span {
         display: inline-block;
         font-family: var(--font2);
         font-size: 11px;
@@ -120,21 +120,21 @@
       &.fix-data {
         border: 0;
 
-        & input, & input[readonly] {
+        input, input[readonly] {
           color: var(--text-01);
           padding: 10px 11px 10px 30px;
         }
 
-        & label {
+        label {
           display: none;
         }
 
-        & input[type="date"]::-webkit-calendar-picker-indicator {
+        input[type="date"]::-webkit-calendar-picker-indicator {
           display: none;
         }
       }
 
-      & label {
+      label {
         display: block;
         position: absolute;
         width: 18px;
@@ -145,12 +145,12 @@
         top: 10px;
       }
 
-      & input[type="date"]::-webkit-inner-spin-button,
-      & input[type="date"]::-webkit-clear-button {
+      input[type="date"]::-webkit-inner-spin-button,
+      input[type="date"]::-webkit-clear-button {
         display: none;
       }
 
-      & input[type="date"]::-webkit-calendar-picker-indicator {
+      input[type="date"]::-webkit-calendar-picker-indicator {
         display: block;
         position: absolute;
         width: 18px;
@@ -161,7 +161,7 @@
         top: 8px;
       }
 
-      & input {
+      input {
         width: 100%;
         height: 100%;
         border: 0;
@@ -209,10 +209,10 @@
   .card-detail-badge {
     margin-bottom: 25px;
 
-    & ul {
+    ul {
       overflow: hidden;
 
-      & li {
+      li {
         float: left;
         margin-right: 6px;
 
@@ -220,22 +220,22 @@
           margin-right: 0;
         }
 
-        & a {
+        a {
           display: inline-block;
           padding: 0 12px;
-          height: 28px;
-          line-height: 26px;
+          height: 34px;
+          line-height: 32px;
           border-radius: 999px;
           background-color: #f5f6f8;
-          font-size: 12px;
-          letter-spacing: -0.6px;
+          font-size: 14px;
+          letter-spacing: -0.7px;
           text-align: center;
           color: var(--text-03);
           border: 1px solid #f5f6f8;
         }
 
         &.active {
-          & a {
+          a {
             border: 1px solid var(--blurple);
             background-color: #fff;
             font-family: var(--font2);
@@ -247,7 +247,7 @@
   }
 
   .ex-account {
-    & > ul {
+    > ul {
       padding: 26px 20px 24px;
     }
   }
@@ -257,7 +257,7 @@
       .card-body {
         padding: 18px 20px 12px;
 
-        & > .total-sum {
+        > .total-sum {
           display: flex;
           justify-content: space-between;
           margin-bottom: 25px;
@@ -388,13 +388,13 @@
         left: 5px;
         top: 10px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
       }
 
-      & select {
+      select {
         padding-left: 29px;
         border: 0;
         border-bottom: 1px solid var(--text-01);
@@ -409,7 +409,7 @@
           display: none;
         }
 
-        & select {
+        select {
           padding-left: 5px;
           background: #ffffff url(../../img/common/ico-input-arrow-open-dim@2x.png) no-repeat;
           background-position: right 5px center;
@@ -421,7 +421,7 @@
     }
   }
 
-  & > .title {
+  > .title {
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.43px;
@@ -540,7 +540,7 @@
       height: 30px;
       margin: 0 auto 13px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -569,11 +569,11 @@
     }
 
     .img {
-      & img {
+      img {
         display: inline-block;
       }
 
-      & span {
+      span {
         display: inline-block;
         font-family: var(--font2);
         font-size: 11px;
@@ -604,7 +604,7 @@
     transform: translateX(-50%);
   }
 
-  & i {
+  i {
     display: block;
     width: 30px;
     height: 30px;
@@ -660,7 +660,7 @@
       }
     }
 
-    & > .title {
+    > .title {
       font-size: 15px;
       line-height: 1.47;
       letter-spacing: -0.4px;
@@ -700,13 +700,13 @@
           }
         }
 
-        & + .dropdown {
+        + .dropdown {
           margin-left: 8px;
         }
       }
     }
 
-    & > .btn-wrap {
+    > .btn-wrap {
       overflow: hidden;
 
       .btn {
@@ -792,11 +792,11 @@
         border: 1px solid var(--blurple);
         cursor: default;
 
-        & em {
+        em {
           display: inline-block;
         }
 
-        & a {
+        a {
           display: inline-block;
           vertical-align: middle;
 
@@ -823,11 +823,11 @@
       }
 
       .img {
-        & img {
+        img {
           display: inline-block;
         }
 
-        & span {
+        span {
           display: inline-block;
           font-family: var(--font2);
           font-size: 11px;
@@ -873,7 +873,7 @@
     }
 
     .ex-item {
-      & a {
+      a {
         .btn-move {
           .desc-sm {
             position: absolute;
@@ -890,8 +890,8 @@
       }
     }
 
-    & > div {
-      & > .empty {
+    > div {
+      > .empty {
         padding: 20px 20px 32px;
 
         .img {
@@ -900,7 +900,7 @@
           height: 30px;
           margin: 0 auto 12px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -913,6 +913,23 @@
           text-align: center;
           color: var(--text-02);
           margin-bottom: 55px;
+        }
+      }
+    }
+  }
+
+  &.fix-payment {
+    padding: 30px 0;
+
+    .category-list-item {
+      .ex-item {
+        a {
+          .b-info {
+            .title {
+              margin-bottom: 0;
+              transform: translateY(3px);
+            }
+          }
         }
       }
     }
@@ -939,7 +956,7 @@
     .btn-wrap {
       overflow: hidden;
 
-      & a {
+      a {
         float: left;
         display: flex;
         align-items: center;
@@ -953,7 +970,7 @@
         font-size: 13px;
         color: var(--text-03);
 
-        & + a {
+        + a {
           margin-left: 10px;
         }
 
@@ -981,7 +998,7 @@
           font-family: var(--font1);
           font-weight: normal;
 
-          & i {
+          i {
             display: none !important;
           }
         }
@@ -998,16 +1015,41 @@
 .box-ex-top {
   position: relative;
   width: 100%;
-  height: 108px;
+  height: 113px;
   border-bottom: 1px solid #f5f6f8;
+
+  .btn-edit {
+    position: absolute;
+    display: block;
+    height: 28px;
+    text-align: center;
+    right: 20px;
+    bottom: 45px;
+
+    .ico-view-edit {
+      display: inline-block;
+      vertical-align: middle;
+      width: 14px;
+      height: 14px;
+      background-image: url(../../img/common/ico-view-edit@2x.png);
+      background-size: cover;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 12px;
+      margin-left: 4px;
+    }
+  }
 
   .sum_desc {
     position: absolute;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: -0.3px;
-    color: #9b9aa6;
-    top: 20px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.38px;
+    color: var(--text-01);
+    top: 24px;
     left: 20px;
   }
 
@@ -1016,10 +1058,10 @@
     font-family: var(--font3);
     font-size: 28px;
     font-weight: bold;
-    line-height: 33px;
+    line-height: 37px;
     letter-spacing: -.3px;
-    color: var(--text-01);
-    top: 45px;
+    color: var(--blurple);
+    top: 47px;
     left: 20px;
 
     &::after {
@@ -1059,7 +1101,7 @@
         color: var(--text-02);
       }
 
-      & i {
+      i {
         margin-right: 4px;
       }
     }
@@ -1067,8 +1109,12 @@
 }
 
 .box-ex-list {
-  padding: 37px 20px 4px;
+  padding: 31px 20px 4px;
   border-bottom: 10px solid #f5f6f8;
+
+  &.more-padding-bottom {
+    padding-bottom: 56px;
+  }
 
   .title-area {
     display: flex;
@@ -1114,7 +1160,7 @@
       color: var(--text-01);
     }
 
-    & + .title-area {
+    + .title-area {
       justify-content: flex-end;
     }
   }
@@ -1136,7 +1182,7 @@
       height: 30px;
       margin: 0 auto 12px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -1152,8 +1198,7 @@
     line-height: 28px;
     letter-spacing: -0.45px;
     text-align: left;
-    border-bottom: 1px solid var(--text-01);
-    padding-bottom: 23px;
+    padding-bottom: 30px;
   }
 
   .account-info {
@@ -1166,7 +1211,7 @@
       padding-top: 17px;
       padding-bottom: 14px;
 
-      & + .info2 {
+      + .info2 {
         border-top: 1px solid #e3e4e8;
       }
 
@@ -1177,7 +1222,7 @@
         height: 26px;
         margin: 0 6px 0 0;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -1230,7 +1275,7 @@
       transform: translateY(-50%);
       line-height: 18px;
 
-      & span {
+      span {
         display: inline-block;
         font-family: var(--font2);
         font-size: 12px;
@@ -1358,10 +1403,10 @@
       padding: 18px 0;
       border-top: 1px solid #e3e4e8;
 
-      & ul {
+      ul {
         display: flex;
 
-        & li {
+        li {
           position: relative;
           display: flex;
           align-items: center;
@@ -1455,11 +1500,11 @@
     }
 
     .img {
-      & img {
+      img {
         display: inline-block;
       }
 
-      & span {
+      span {
         display: inline-block;
         font-family: var(--font2);
         font-size: 11px;
@@ -1469,6 +1514,10 @@
         color: var(--blurple);
       }
     }
+  }
+
+  &.border-bottom-bright {
+    border-bottom: 1px solid #f5f6f8;
   }
 
   &.border-bottom {
@@ -1483,11 +1532,45 @@
 }
 
 .ac-bank {
-  padding-top: 10px;
   overflow: hidden;
-  margin-bottom: 9px;
 
-  & > .func {
+  .category-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    .title {
+      font-family: var(--font3);
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 22px;
+      letter-spacing: -0.38px;
+      text-align: left;
+      color: var(--text-01);
+    }
+
+    .sum {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 23px;
+      font-family: var(--font2);
+      letter-spacing: normal;
+      text-align: right;
+      color: var(--text-01);
+
+      em {
+        font-family: var(--font2);
+        font-size: 13px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+      }
+    }
+  }
+
+  > .func {
     margin-bottom: 24px;
 
     .ico-bank-home-view {
@@ -1510,7 +1593,7 @@
       background-size: cover;
     }
 
-    & span {
+    span {
       display: inline-block;
       font-size: 14px;
       line-height: 20px;
@@ -1519,7 +1602,7 @@
     }
   }
 
-  & > .name {
+  > .name {
     font-family: var(--font2);
     font-size: 12px;
     line-height: 18px;
@@ -1542,7 +1625,7 @@
         vertical-align: middle;
         margin-right: 6px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -1600,14 +1683,16 @@
         top: 25px;
       }
 
+      .label {
+        float: right;
+      }
+
       .box-switch {
         float: right;
         display: inline-block;
         transform: translate(1px, 0);
       }
-
     }
-
   }
 
   &.ac-bank-lg {
@@ -1823,7 +1908,7 @@
     color: var(--text-03);
     text-align: center;
 
-    & img {
+    img {
       display: inline-block;
       vertical-align: middle;
       margin-right: 4px;
@@ -1844,11 +1929,11 @@
       vertical-align: middle;
       margin-right: 5px;
 
-      & input {
+      input {
         height: 22px;
       }
 
-      & span {
+      span {
         height: 22px;
         line-height: 22px;
       }
@@ -1988,7 +2073,7 @@
       right: 0;
       min-width: 50px;
 
-      & i {
+      i {
         margin-right: 2px;
         transform: translate(1px, 1px);
       }
@@ -2053,13 +2138,13 @@
         margin-right: 15px;
         margin-top: 5px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
       }
 
-      & input {
+      input {
         float: left;
         width: calc(100% - 15px - 30px);
         margin-right: 0;
@@ -2102,7 +2187,7 @@
         transform: translateY(-50%);
         padding: 0;
 
-        & i {
+        i {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
@@ -2123,7 +2208,7 @@
     right: auto;
     height: 22px;
 
-    & input {
+    input {
       width: 42px;
       height: 22px;
     }
@@ -2166,13 +2251,13 @@
       left: 5px;
       top: 10px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
-    & select {
+    select {
       padding-left: 29px;
       font-family: var(--font2);
     }
@@ -2197,7 +2282,7 @@
           vertical-align: middle;
           margin-right: 6px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -2284,7 +2369,7 @@
           vertical-align: middle;
           transform: translate(0, -4px);
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -2346,7 +2431,7 @@
           line-height: 30px;
           min-width: 80px;
 
-          & i {
+          i {
             margin-right: 4px;
             transform: translate(0px, 1px);
           }
@@ -2372,7 +2457,7 @@
       .info {
         padding-left: 2px;
 
-        & li {
+        li {
           position: relative;
           display: inline-block;
           float: left;
@@ -2488,7 +2573,7 @@
         padding: 0;
         margin-bottom: 0;
 
-        & label {
+        label {
           display: inline-block;
           font-family: var(--font1);
           font-size: 14px;
@@ -2506,7 +2591,7 @@
           }
         }
 
-        & select {
+        select {
           left: 0;
           width: 70px;
         }
@@ -2527,7 +2612,7 @@
         border-radius: 50%;
         margin-right: 10px;
 
-        & img {
+        img {
           width: 30px;
           height: 30px;
           margin: 8px auto 0;
@@ -2581,7 +2666,7 @@
         display: flex;
         align-content: center;
 
-        & em {
+        em {
           display: inline-block;
           vertical-align: middle;
           height: 24px;
@@ -2683,8 +2768,8 @@
 .ex-detail-list {
   padding: 30px 20px;
 
-  & > ul {
-    & > li {
+  > ul {
+    > li {
       margin-bottom: 33px;
 
       .date {
@@ -2697,7 +2782,7 @@
         margin-bottom: 24px;
       }
 
-      & li {
+      li {
         margin-bottom: 22px;
 
         .title {
@@ -2737,7 +2822,7 @@
   .sec-aparti {
     margin-bottom: 34px;
 
-    & > .title {
+    > .title {
       display: block;
       font-family: var(--font2);
       font-size: 12px;
@@ -2750,7 +2835,7 @@
     .label-box {
       padding-left: 2px;
 
-      & label:first-child {
+      label:first-child {
         margin-right: 23px;
       }
     }
@@ -2758,7 +2843,7 @@
     .ex-list {
       margin-top: -3px;
 
-      & li {
+      li {
         position: relative;
         width: 100%;
         border-bottom: 1px solid #f5f6f8;
@@ -2772,7 +2857,7 @@
           left: 4px;
           top: 27px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -2799,7 +2884,7 @@
           color: var(--text-03);
         }
 
-        & label {
+        label {
           position: absolute;
           right: -3px;
           top: 25px;
@@ -2827,13 +2912,13 @@
           height: 30px;
           margin: 0 auto 12px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
         }
 
-        & p {
+        p {
           font-size: 12px;
           line-height: 18px;
           letter-spacing: -0.3px;
@@ -2864,7 +2949,7 @@
       margin-bottom: 8px;
     }
 
-    & a {
+    a {
       position: relative;
       display: inline-block;
       font-family: var(--font2);
@@ -2886,7 +2971,7 @@
       }
     }
 
-    & i {
+    i {
       vertical-align: middle;
     }
 
@@ -2898,7 +2983,7 @@
       right: 30px;
       top: 36px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -2944,7 +3029,7 @@
         margin-right: 7px;
         margin-bottom: 7px;
 
-        & a {
+        a {
           display: block;
           padding: 20px 0 22px;
 
@@ -2954,7 +3039,7 @@
             height: 30px;
             margin: 0 auto 8px;
 
-            & img {
+            img {
               width: 100%;
               height: 100%;
             }
@@ -3001,7 +3086,7 @@
   overflow: hidden;
   padding: 10px 20px 30px;
 
-  & li {
+  li {
     position: relative;
     width: 100%;
     border-radius: 6px;
@@ -3018,7 +3103,7 @@
       left: 20px;
       top: 21px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -3130,7 +3215,7 @@
         top: 20px;
         left: 28px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -3235,7 +3320,7 @@
           white-space: nowrap;
         }
 
-        & i {
+        i {
           transform: translate(1px, 3px);
         }
       }
@@ -3332,7 +3417,7 @@
         height: 30px;
         margin: 0 auto 12px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -3359,7 +3444,7 @@
       height: 30px;
       margin: 0 auto 12px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -3431,7 +3516,7 @@
       padding: 0 20px;
       margin-bottom: 20px;
 
-      & a {
+      a {
         position: relative;
         display: block;
         padding-top: 1px;
@@ -3458,7 +3543,7 @@
           left: 29px;
           top: 2px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -3582,7 +3667,7 @@
             white-space: nowrap;
           }
 
-          & i {
+          i {
             transform: translate(1px, 3px);
           }
 
@@ -3611,12 +3696,12 @@
         padding-top: 18px;
         padding-bottom: 38px;
 
-        & > .img {
+        > .img {
           width: 30px;
           height: 30px;
           margin: 0 auto 12px;
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -3692,7 +3777,7 @@
   }
 
   .ex-account {
-    & > ul {
+    > ul {
       padding: 36px 20px 24px;
 
       .img {
@@ -3701,7 +3786,7 @@
         height: 22px;
         margin-bottom: 6px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -4045,7 +4130,7 @@
       border-bottom: 10px solid #f5f6f8;
     }
 
-    & i {
+    i {
       vertical-align: middle;
       margin-left: 3px;
     }
@@ -4073,7 +4158,7 @@
       height: 56px;
       margin: 0 auto 14px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -4097,7 +4182,7 @@
       height: 30px;
       margin: 0 auto 12px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -4118,7 +4203,7 @@
   padding: 0 12px 17px;
 
   .fc {
-    & td {
+    td {
       height: auto;
       line-height: 18px;
     }
@@ -4309,7 +4394,7 @@
   .inner {
     padding: 30px 20px 28px 20px;
 
-    & > .title {
+    > .title {
       font-family: var(--font2);
       font-size: 12px;
       line-height: 18px;
@@ -4319,7 +4404,7 @@
     }
 
     .box-ex-account-info {
-      & > li {
+      > li {
         position: relative;
         padding: 14px 0 20px;
         margin-bottom: 3px;
@@ -4331,7 +4416,7 @@
           margin-right: 3px;
           transform: translateY(-5px);
 
-          & img {
+          img {
             width: 100%;
             height: 100%;
           }
@@ -4378,7 +4463,7 @@
           top: 14px;
         }
 
-        & > a {
+        > a {
           position: absolute;
           display: block;
           width: 100%;
@@ -4417,7 +4502,7 @@
             color: var(--text-03);
           }
 
-          & i {
+          i {
             position: absolute;
             right: 0;
             top: 16px;
@@ -4469,7 +4554,7 @@
         height: 30px;
         margin: 0 auto 12px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -4493,7 +4578,7 @@
       padding: 32px 20px 28px 20px;
 
       .box-ex-account-info {
-        & > li {
+        > li {
           margin-bottom: 7px;
 
           .bullet {
@@ -4517,7 +4602,7 @@
 }
 
 .box-ex-current {
-  & > .title-sm {
+  > .title-sm {
     font-size: 15px;
     font-family: var(--font3);
     line-height: 22px;
@@ -4533,8 +4618,8 @@
     padding-left: 21px;
   }
 
-  & > .no-data {
-    padding: 10px 20px 96px;
+  > .no-data {
+    padding: 26px 20px 50px;
 
     .txt-lg {
       font-family: var(--font2);
@@ -4573,7 +4658,7 @@
       .img {
         display: block;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -4590,12 +4675,10 @@
   }
 
   /* 현금흐름 */
-
   .current-cash-wrap {
-    padding: 10px 0 0;
-    border-bottom: 1px solid #f5f6f8;
+    padding: 24px 0 0;
 
-    & > .title {
+    > .title {
       font-size: 18px;
       line-height: 28px;
       letter-spacing: -0.45px;
@@ -4605,7 +4688,7 @@
       padding: 0 20px;
     }
 
-    & > .title-sm {
+    > .title-sm {
       font-size: 15px;
       font-family: var(--font3);
       line-height: 22px;
@@ -4627,14 +4710,15 @@
         padding-top: 0;
         padding-bottom: 30px;
         margin-bottom: 0;
+        border-bottom: 1px solid #f5f6f8;
       }
     }
   }
 
   .my-income-wrap {
-    padding: 30px 20px 96px;
+    padding: 30px 20px 49px;
 
-    & > .title-sm {
+    > .title-sm {
       font-size: 15px;
       font-family: var(--font3);
       line-height: 22px;
@@ -4687,7 +4771,7 @@
           margin-right: 5px;
         }
 
-        & span {
+        span {
           display: inline-block;
           vertical-align: middle;
           font-size: 11px;
@@ -4740,7 +4824,7 @@
         display: block;
         padding-left: 5px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -4763,15 +4847,14 @@
           display: flex;
           align-items: center;
           width: calc(100% - 26px - 9px);
-          height: 40px;
-          border-radius: 4px;
-          border: solid 1px #e2e3e6;
-          background-color: var(--white);
+          height: 50px;
+          border-radius: 5px;
           padding-left: 12px;
+          background-color: #f7f8fc;
 
-          & span {
+          span {
             font-family: var(--font2);
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 500;
             letter-spacing: -0.33px;
             color: var(--text-01);
@@ -4783,8 +4866,8 @@
             }
           }
 
-          & em {
-            font-size: 13px;
+          em {
+            font-size: 14px;
             display: inline-block;
             color: var(--text-04);
             margin: -2px 5px 0;
@@ -5074,7 +5157,7 @@
       border: solid 1px #e3e4e8;
       background-color: var(--white);
 
-      & span {
+      span {
         display: inline-block;
         vertical-align: middle;
         font-size: 11px;
@@ -5114,7 +5197,7 @@
           display: flex;
           align-items: center;
 
-          & span {
+          span {
             font-family: var(--font2);
             font-size: 12px;
             font-weight: 500;
@@ -5129,7 +5212,7 @@
             }
           }
 
-          & em {
+          em {
             font-size: 12px;
             line-height: 18px;
             display: inline-block;
@@ -5144,8 +5227,8 @@
   .btn_area {
     margin-bottom: 30px;
 
-    & a {
-      & i {
+    a {
+      i {
         transform: translate(0, 2px);
       }
     }
@@ -5189,7 +5272,7 @@
       padding-bottom: 0;
     }
 
-    & > .title {
+    > .title {
       font-family: var(--font2);
       font-size: 14px;
       font-weight: 500;
@@ -5201,7 +5284,7 @@
       border-bottom: 1px solid var(--text-01);
     }
 
-    & > .info-list {
+    > .info-list {
       border-bottom: 1px solid #e3e4e8;
 
       .item {
@@ -5240,7 +5323,7 @@
         }
       }
 
-      & + .title {
+      + .title {
         margin-top: 36px;
       }
 
@@ -5263,7 +5346,7 @@
       }
     }
 
-    & > .list.caution {
+    > .list.caution {
       padding-left: 16px;
       margin-top: 12px;
       color: var(--text-03);
@@ -5285,8 +5368,8 @@
       margin-bottom: 23px;
     }
 
-    & thead {
-      & th {
+    thead {
+      th {
         height: 29px;
         line-height: 28px;
         font-size: 11px;
@@ -5295,11 +5378,11 @@
       }
     }
 
-    & tbody {
+    tbody {
       border-color: #e3e4e8;
     }
 
-    & td {
+    td {
       font-family: var(--font1);
       font-size: 11px;
       padding: 0 10px;
@@ -5309,20 +5392,20 @@
 }
 
 .add-income-wrap {
-  padding: 10px 20px 96px;
+  padding: 8px 20px 96px;
 
-  & > .title {
+  > .title {
     font-family: var(--font3);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 27px;
-    letter-spacing: -0.45px;
-    margin-bottom: 6px;
+    line-height: 29px;
+    letter-spacing: -0.6px;
+    margin-bottom: 8px;
   }
 
-  & > .desc {
-    font-size: 13px;
-    line-height: 19px;
+  > .desc {
+    font-size: 15px;
+    line-height: 20px;
     letter-spacing: -0.33px;
     color: var(--text-02);
     margin-bottom: 30px;
@@ -5335,25 +5418,28 @@
 
     .input-title {
       font-family: var(--font2);
-      font-size: 11px;
+      font-size: 14px;
       font-weight: 500;
-      line-height: 17px;
-      letter-spacing: -0.28px;
+      line-height: 20px;
+      letter-spacing: -0.35px;
       text-align: left;
       color: var(--blurple);
+      margin-bottom: 4px;
     }
   }
 
-  & select {
+  select {
     color: var(--text-04);
+    font-size: 15px;
+    font-family: var(--font1);
 
     &.focus {
       color: var(--text-01);
     }
   }
 
-  & input {
-    font-size: 13px;
+  input {
+    font-size: 15px;
 
     &::placeholder {
       color: var(--text-04);
@@ -5420,7 +5506,7 @@
           background-size: cover;
         }
 
-        & span {
+        span {
           display: inline-block;
           vertical-align: middle;
           font-size: 11px;
@@ -5445,7 +5531,7 @@
     }
   }
 
-  & > .month {
+  > .month {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: -0.3px;
@@ -5453,7 +5539,7 @@
     margin-bottom: 4px;
   }
 
-  & > .total {
+  > .total {
     font-family: var(--font4);
     font-size: 28px;
     font-weight: bold;
@@ -5545,7 +5631,7 @@
     }
   }
 
-  & > .title {
+  > .title {
     font-family: var(--font3);
     font-size: 15px;
     font-weight: bold;
@@ -5567,7 +5653,7 @@
         width: 22px;
         height: 22px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
@@ -5661,7 +5747,7 @@
   margin-top: 30px;
 
   .select-box {
-    & select {
+    select {
       height: 52px;
       line-height: 50px;
       font-size: 14px;
@@ -5693,7 +5779,7 @@
       position: relative;
       width: 245px;
 
-      & select {
+      select {
         padding-left: 5px;
         padding-right: 25px;
         border: 0;
@@ -5746,7 +5832,7 @@
     justify-content: space-between;
     align-items: center;
 
-    & > .title {
+    > .title {
       font-family: var(--font3);
       font-size: 15px;
       font-weight: bold;
@@ -5783,7 +5869,7 @@
       }
     }
 
-    & + .title-area {
+    + .title-area {
       justify-content: flex-end;
     }
   }
@@ -5823,7 +5909,7 @@
       float: left;
       margin-left: 14px;
 
-      & span {
+      span {
         display: inline-block;
         font-size: 13px;
         line-height: 28px;
@@ -5840,7 +5926,7 @@
   }
 
   .usage-history {
-    & > .date {
+    > .date {
       font-family: var(--font2);
       font-size: 12px;
       font-weight: 500;
@@ -5972,7 +6058,7 @@
       height: 30px;
       margin: 0 auto 13px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -6048,7 +6134,7 @@
   }
 
   .ex-info {
-    & > div {
+    > div {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -6165,7 +6251,7 @@
   transform: translateX(-50%);
   z-index: 11;
 
-  & img {
+  img {
     width: 100%;
     height: 100%;
   }
@@ -6201,7 +6287,7 @@
     background-size: cover;
   }
 
-  & span {
+  span {
     display: inline-block;
     vertical-align: middle;
     font-size: 11px;
@@ -6290,22 +6376,22 @@
           border-top: 1px solid #e3e4e8;
           margin-bottom: 35px;
 
-          & tbody {
+          tbody {
             border-bottom: 1px solid #e3e4e8;
           }
 
-          & + .table {
+          + .table {
             margin-top: -15px;
           }
 
-          & tr {
+          tr {
             &:first-child {
-              & td {
+              td {
                 border-top: 0;
               }
             }
 
-            & td {
+            td {
               border-color: #f5f6f8;
               height: 34px;
               line-height: initial;
@@ -6362,7 +6448,7 @@
     padding: 0 20px;
 
     .select-header {
-      & button {
+      button {
         position: relative;
         width: 100%;
         display: block;
@@ -6404,14 +6490,14 @@
     .select-body {
       border-top: 1px solid #e3e4e8;
 
-      & ul {
-        & li {
+      ul {
+        li {
           position: relative;
           height: 58px;
           padding: 0 5px;
           border-bottom: 1px solid #f5f6f8;
 
-          & a {
+          a {
             display: flex;
             width: 100%;
             height: 100%;
@@ -6423,7 +6509,7 @@
             height: 24px;
             margin-right: 7px;
 
-            & img {
+            img {
               width: 100%;
               height: 100%;
             }

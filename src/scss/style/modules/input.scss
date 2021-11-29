@@ -368,7 +368,7 @@ input, textarea {
     }
   }
 
-  & .error {
+  .error {
     border: 1px solid #791015;
   }
 
@@ -377,19 +377,19 @@ input, textarea {
 .input-field {
   position: relative;
 
-  & .input_area {
+  .input_area {
     position: relative;
     display: inline-block;
     width: 100%;
     padding-right: 45px;
     font-family: var(--font1);
 
-    & input:read-only {
+    input:read-only {
       color: #000000;
       background: #ffffff;
     }
 
-    & .won {
+    .won {
       position: absolute;
       font-size: 14px;
       line-height: 21px;
@@ -399,7 +399,7 @@ input, textarea {
     }
   }
 
-  & .btn-eye-on {
+  .btn-eye-on {
     display: inline-block;
     position: absolute;
     right: 0;
@@ -414,11 +414,11 @@ input, textarea {
   width: 100%;
   margin-bottom: 4px;
 
-  & input[type="radio"] {
+  input[type="radio"] {
     width: auto;
   }
 
-  & input {
+  input {
     position: relative;
     width: 100%;
     height: 45px;
@@ -448,12 +448,12 @@ input, textarea {
   }
 
   &.readonly {
-    & .won {
+    .won {
       color: var(--color-point);
     }
   }
 
-  & .won {
+  .won {
     position: absolute;
     font-size: 14px;
     font-family: var(--font1);
@@ -462,11 +462,11 @@ input, textarea {
     bottom: 11px;
   }
 
-  & .input-box {
+  .input-box {
     display: block;
     line-height: 35px;
 
-    & .label {
+    .label {
       line-height: 22px;
       font-size: 13px;
       font-family: var(--font1);
@@ -494,7 +494,7 @@ select {
   line-height: 18px;
   padding: 0 26px 0 12px;
   border: 1px solid #e5e5e5;
-  font-size: 13px;
+  font-size: 15px;
   font-family: var(--font1);
   display: inline-block;
   border-radius: 4px;
@@ -502,7 +502,7 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #ffffff url(../../img/sprite/common/ico_close.png) no-repeat top 15px right 9px;
+  background: #ffffff url(../../img/sprite/common/ico_close.png) no-repeat top 15px right 0;
   color: #9b9aa6;
 
   &:focus, &:active {
@@ -512,10 +512,10 @@ select {
   }
 
   &::placeholder {
-    color: #9b9aa6;
+    color: #d8d8d8;
   }
 
-  & option {
+  option {
     color: #37354e;
   }
 
@@ -523,7 +523,7 @@ select {
     border: 1px solid rgba(194, 194, 194, .5);
     color: #9b9aa6;
 
-    & option {
+    option {
       color: #9b9aa6;
 
       &:disabled {
@@ -550,19 +550,19 @@ input + .error {
 }
 
 .error {
-  & input:not([type]),
-  & input[type=text]:not(.browser-default),
-  & input[type=password]:not(.browser-default),
-  & input[type=email]:not(.browser-default),
-  & input[type=url]:not(.browser-default),
-  & input[type=time]:not(.browser-default),
-  & input[type=date]:not(.browser-default),
-  & input[type=datetime]:not(.browser-default),
-  & input[type=datetime-local]:not(.browser-default),
-  & input[type=tel]:not(.browser-default),
-  & input[type=number]:not(.browser-default),
-  & input[type=search]:not(.browser-default),
-  & textarea.materialize-textarea {
+  input:not([type]),
+  input[type=text]:not(.browser-default),
+  input[type=password]:not(.browser-default),
+  input[type=email]:not(.browser-default),
+  input[type=url]:not(.browser-default),
+  input[type=time]:not(.browser-default),
+  input[type=date]:not(.browser-default),
+  input[type=datetime]:not(.browser-default),
+  input[type=datetime-local]:not(.browser-default),
+  input[type=tel]:not(.browser-default),
+  input[type=number]:not(.browser-default),
+  input[type=search]:not(.browser-default),
+  textarea.materialize-textarea {
     color: var(--color-text-default);
     border: 1px solid #791015;
   }
@@ -601,7 +601,7 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
   position: relative;
   display: inline-block;
 
-  & input {
+  input {
     height: 30px;
     border: 1px solid #C2C2C2;
     line-height: 21px;
@@ -620,12 +620,12 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
       background: #FFFFFF;
       border: 1px solid rgba(194, 194, 194, .5);
 
-      & ~ a {
+      ~ a {
         background: #FFFFFF;
         cursor: auto;
       }
 
-      & ~ a i {
+      ~ a i {
         background: #FFFFFF;
         color: rgba(51, 51, 51, .5);
 
@@ -636,7 +636,7 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
     }
   }
 
-  & a {
+  a {
     position: absolute;
     width: 26px;
     height: 26px;
@@ -647,7 +647,7 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
     top: 2px;
     right: 2px;
 
-    & i {
+    i {
       position: absolute;
       color: #333333;
       top: 50%;
@@ -685,11 +685,11 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
   display: inline-block;
   width: 100%;
 
-  & .file-path-wrapper {
+  .file-path-wrapper {
     padding-left: 0;
   }
 
-  & input {
+  input {
     display: inline-block;
     height: 30px;
     line-height: 40px;
@@ -712,7 +712,7 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
     }
   }
 
-  & .btn {
+  .btn {
     position: absolute;
     width: 66px;
     height: 26px;
@@ -725,7 +725,7 @@ input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:n
     left: 2px;
     text-align: center;
 
-    & i {
+    i {
       position: absolute;
       width: 16px;
       height: 16px;
@@ -779,7 +779,7 @@ input.custom {
   position: relative;
   margin-bottom: 36px;
 
-  & .title {
+  .title {
     display: block;
     font-family: var(--font2);
     font-size: 12px;
@@ -790,13 +790,13 @@ input.custom {
     font-weight: 500;
   }
 
-  & input {
+  input {
     width: 100%;
     display: inline-block;
     height: 42px;
     border-bottom: solid 1px #e2e3e6;
     color: #37354e;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 42px;
     font-family: var(--font2);
     font-weight: 500;
@@ -811,6 +811,7 @@ input.custom {
 
     &::placeholder {
       font-family: var(--font1);
+      color: #d8d8d8;
       font-weight: 400;
     }
 
@@ -825,7 +826,7 @@ input.custom {
     }
   }
 
-  & .won {
+  .won {
     position: absolute;
     right: -2px;
     bottom: 2px;
@@ -839,7 +840,7 @@ input.custom {
     margin-bottom: 0;
   }
 
-  & select {
+  select {
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -849,7 +850,7 @@ input.custom {
     font-family: var(--font2);
   }
 
-  & .filled-in {
+  .filled-in {
     width: auto;
   }
 }

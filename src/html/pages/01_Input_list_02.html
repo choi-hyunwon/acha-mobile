@@ -16,12 +16,12 @@
                     <div class="custom-light with-icon">
                         <div class="icon"><img src="../../img/common/ico-list-letter-big.svg" alt=""></div>
                         <input title="value" type="text" value="87,500" />
-                        <a href="#" class="btn-modify"><i class="ico-expense-modify"></i></a>
+<!--                        <a href="#" class="btn-modify"><i class="ico-expense-modify"></i></a>-->
                     </div>
                     <div class="custom-light">
                         <div class="input-title">지출명</div>
-                        <input title="incomeTitle" type="text" placeholder="지출명을 입력하세요"/>
-                        <div class="input-byte"><span class="byte">4</span><span class="total"> / 12</span></div>
+                        <input title="incomeTitle" type="text" placeholder="지출명을 입력하세요" maxlength="12" onkeyup="countChar(this,'_val')"/>
+                        <div class="input-byte"><span class="byte _val">0</span><span class="total"> / 12</span></div>
                     </div>
                     <div class="custom-light">
                         <div class="input-title">카테고리</div>
@@ -41,7 +41,7 @@
                         <!-- image + select  -->
                         <div class="select-box">
                             <span class="bank-img"><img src="../../img/@temp/ci_uribank@2x.png" alt=""></span>
-                            <select title="payment" class="mb-3">
+                            <select title="payment">
                                 <option value="1" selected="">우리은행 1002-841-734-745</option>
                                 <option value="2">카카오뱅크 1002-841-734-745</option>
                                 <option value="3">우리은행 1002-841-734-745</option>
@@ -65,7 +65,7 @@
                         </select>
                     </div>
                     <div class="custom-light">
-                        <div class="input-title mb-3">지출일</div>
+                        <div class="input-title mb-3">지출일 알림</div>
                         <div class="clearfix">
                             <span class="custom-switch-label active _off">OFF</span>
                             <div class="custom-control custom-switch">
@@ -95,6 +95,20 @@
             $('._off').removeClass('active')
         }
     })
+
+    function countChar(val , target) {
+        var len = val.value.length;
+        var targetItem = $(`.${target}`);
+
+        targetItem.text(len);
+
+        if(len === 0) {
+            targetItem.css('color','#afaeb8')
+        }
+        else {
+            targetItem.css('color','#37354e')
+        }
+    }
 </script>
 </html>
 

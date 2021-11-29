@@ -100,7 +100,7 @@ function watchScss() {
 }
 
 function watchHtml() {
-    gulp.watch(['src/html/**/*.html', 'src/**.html'], gulp.series(htmlPage));
+    gulp.watch(['src/html/**/*.html', 'src/*.html'], gulp.series(htmlPage));
 }
 
 function watchInclude() {

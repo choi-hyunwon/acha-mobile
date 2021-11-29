@@ -86,6 +86,8 @@
     var source = $('#list-template').html(); //jQuery
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
+        .append(template(data.input))
+        .append(template(data.my))
         .append(template(data.common))
         .append(template(data.moreview2))
         .append(template(data.myAccount))
@@ -108,8 +110,6 @@
         .append(template(data.mycard))
         .append(template(data.mydata))
         .append(template(data.calendar))
-        .append(template(data.my))
-        .append(template(data.input))
     // .append(template(data.tax2))
     // .append(template(data.tax))
     // .append(template(data.event))

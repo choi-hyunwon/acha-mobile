@@ -1146,13 +1146,13 @@
     height: 0;
   }
   to {
-    height: 402px;
+    height: 367px;
   }
 }
 
 @keyframes modal-sticky-bottom-animation-out {
   from {
-    height: 402px;
+    height: 367px;
   }
   to {
     height: 0;
@@ -1306,7 +1306,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 402px;
+    height: 367px;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
 
@@ -1326,6 +1326,7 @@
       text-align: center;
 
       > .img {
+        position: relative;
         display: block;
         width: 100px;
         height: 100px;
@@ -1334,10 +1335,31 @@
         text-align: center;
         margin: 0 auto 35px;
         padding-top: 20px;
+
+        .btn-edit {
+          position: absolute;
+          display: block;
+          width: 26px;
+          height: 26px;
+          background-color: var(--color-point);
+          text-align: center;
+          border-radius: 50%;
+          line-height: 30px;
+          right: 0;
+          bottom: 0;
+
+          .ico-expense-modify-w {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url(../../img/common/ico-expense-modify-w.svg);
+            background-size: cover;
+          }
+        }
       }
 
       .custom-light {
-        margin-bottom: 8px;
+        margin-bottom: 50px;
       }
 
       .desc {
@@ -1952,7 +1974,7 @@
     transition: .5s;
 
     .modal-slide-content {
-      height: 402px;
+      height: 367px;
       animation: modal-sticky-bottom-animation .5s;
     }
   }

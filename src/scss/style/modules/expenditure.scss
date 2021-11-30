@@ -2119,6 +2119,7 @@
       font-size: 13px;
       line-height: 17px;
       letter-spacing: -0.28px;
+      color: var(--text-04);
     }
 
     .total {
@@ -2151,7 +2152,11 @@
         float: left;
         width: calc(100% - 15px - 30px);
         margin-right: 0;
-        font-size: 15px;
+        font-size: 18px;
+
+        &::placeholder {
+          font-size: 15px;
+        }
       }
 
       &::after {
@@ -2650,7 +2655,7 @@
 
       .btn-alert {
         position: absolute;
-        top: 0;
+        top: 12px;
         right: 0;
         padding: 0 8px;
         height: 26px;
@@ -2674,7 +2679,7 @@
 
           &:nth-child(2) {
             color: var(--color-point);
-            font-family: var(--font2);
+            font-family: var(--font3);
             font-weight: bold;
             margin-left: 3px;
           }
@@ -2690,12 +2695,13 @@
   .ex-detail-item {
     position: relative;
     border-bottom: 1px solid #f5f6f8;
-    padding: 20px 0;
+    padding: 18px 0;
+    overflow: hidden;
 
     .title {
       padding-left: 4px;
       font-size: 13px;
-      line-height: 19px;
+      line-height: 25px;
       letter-spacing: -0.33px;
       text-align: left;
       color: var(--text-02);
@@ -2705,8 +2711,8 @@
       float: right;
       width: calc(100% - 75px);
       font-family: var(--font2);
-      font-size: 13px;
-      line-height: 19px;
+      font-size: 15px;
+      line-height: 25px;
       letter-spacing: -0.33px;
       text-align: right;
       color: var(--text-01);
@@ -2743,7 +2749,7 @@
     }
 
     &.ex-detail-item-md {
-      padding: 20px 0 40px;
+      padding: 20px 0 45px;
 
       .value2 {
         font-family: var(--font2);
@@ -2751,8 +2757,8 @@
         position: absolute;
         right: 4px;
         bottom: 19px;
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 25px;
         letter-spacing: -0.13px;
         color: var(--text-01);
       }

@@ -6,10 +6,10 @@
 .my-page-info {
   padding: 0 20px;
 
-  & .profile {
+  .profile {
     padding-top: 20px;
 
-    & .img {
+    .img {
       position: relative;
       width: 80px;
       height: 80px;
@@ -31,18 +31,18 @@
           background-size: cover;
         }
 
-        & img {
+        img {
           display: none;
         }
       }
 
-      & img {
+      img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
       }
 
-      & .btn-edit {
+      .btn-edit {
         position: absolute;
         display: block;
         width: 26px;
@@ -54,7 +54,7 @@
         right: -6px;
         bottom: -6px;
 
-        & .ico-expense-modify-w {
+        .ico-expense-modify-w {
           display: inline-block;
           width: 14px;
           height: 14px;
@@ -64,11 +64,11 @@
       }
     }
 
-    & .info-list {
+    .info-list {
       padding-bottom: 25px;
 
-      & ul {
-        & .item {
+      ul {
+        .item {
           overflow: hidden;
           padding-bottom: 15px;
           padding-top: 15px;
@@ -78,7 +78,7 @@
             border-bottom: 0;
           }
 
-          & .tit {
+          .tit {
             float: left;
             width: 100px;
             font-size: 13px;
@@ -87,14 +87,14 @@
             color: var(--text-02);
           }
 
-          & .val {
+          .val {
             float: right;
             text-align: right;
             width: calc(100% - 100px);
             font-family: var(--font2);
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 500;
-            line-height: 19px;
+            line-height: 20px;
             letter-spacing: -0.33px;
             color: var(--text-01);
           }
@@ -107,7 +107,7 @@
 .my-page-category {
   padding: 36px 20px 40px;
 
-  & .txt-box {
+  .txt-box {
     display: flex;
     width: 100%;
     padding: 18px 0;
@@ -123,7 +123,7 @@
     margin-top: 30px;
   }
 
-  & > .title-area {
+  > .title-area {
     font-family: var(--font2);
     font-size: 14px;
     font-weight: 500;
@@ -133,19 +133,19 @@
     padding-bottom: 14px;
     border-bottom: 1px solid var(--text-01);
 
-    & .btn-delete {
+    .btn-delete {
       float: right;
       padding: 0 10px;
       height: 26px;
       border-radius: 2px;
       border: solid 1px #e3e4e8;
       background-color: #fff;
-      font-size: 11px;
+      font-size: 12px;
       line-height: 24px;
       letter-spacing: -0.55px;
       color: var(--text-02);
 
-      & .ico-delete-btn {
+      .ico-delete-btn {
         display: inline-block;
         background-image: url(../../img/common/ico-delete-btn@2x.png);
         width: 10px;
@@ -157,22 +157,22 @@
     }
   }
 
-  & .empty {
+  .empty {
     margin-top: 40px;
 
-    & .img {
+    .img {
       display: block;
       width: 30px;
       height: 30px;
       margin: 0 auto 12px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
-    & .txt-lg {
+    .txt-lg {
       font-family: var(--font2);
       font-size: 13px;
       font-weight: 500;
@@ -183,7 +183,7 @@
       margin-bottom: 7px;
     }
 
-    & .txt {
+    .txt {
       font-size: 12px;
       line-height: 18px;
       letter-spacing: -0.3px;
@@ -193,10 +193,10 @@
     }
   }
 
-  & .link {
+  .link {
     text-align: center;
 
-    & a {
+    a {
       display: inline-block;
       font-family: var(--font2);
       font-size: 13px;
@@ -210,7 +210,7 @@
 
     }
 
-    & .arrow-left {
+    .arrow-left {
       display: inline-block;
       vertical-align: middle;
       width: 6px;
@@ -220,13 +220,13 @@
     }
   }
 
-  & .ex-list {
+  .ex-list {
     width: 100%;
     border-bottom: 1px solid #e3e4e8;
     margin-bottom: 20px;
 
-    & ul {
-      & .item {
+    ul {
+      .item {
         padding: 20px 0;
         border-bottom: 1px solid #f5f6f8;
 
@@ -234,14 +234,14 @@
           border-bottom: 0;
         }
 
-        & a {
+        a {
           position: relative;
           display: block;
           width: 100%;
           height: 100%;
           overflow: hidden;
 
-          & .img {
+          .img {
             float: left;
             width: 36px;
             height: 36px;
@@ -251,20 +251,20 @@
             padding-top: 5px;
             margin-right: 10px;
 
-            & img {
+            img {
               display: inline-block;
               width: 22px;
               height: 22px;
             }
           }
 
-          & .info {
+          .info {
             float: left;
             width: calc(100% - 10px - 36px - 54px);
             display: flex;
             flex-direction: column;
 
-            & .tit {
+            .tit {
               font-family: var(--font2);
               font-size: 13px;
               font-weight: 500;
@@ -277,7 +277,7 @@
               margin-bottom: 3px;
             }
 
-            & .date {
+            .date {
               font-family: var(--font1);
               font-size: 11px;
               line-height: 15px;
@@ -285,33 +285,33 @@
             }
           }
 
-          & .badge {
+          .badge {
             float: right;
             width: 54px;
             height: 21px;
             padding: 0;
-            font-size: 11px;
+            font-size: 13px;
             line-height: 19px;
             letter-spacing: -0.28px;
             text-align: center;
             color: var(--color-point);
-            border-radius: 50px;
-            border: solid 1px var(--color-point);
+            //border-radius: 50px;
+            //border: solid 1px var(--color-point);
             transform: translateY(8px);
 
             &.month {
               color: var(--color-point);
-              border: solid 1px var(--color-point);
+              //border: solid 1px var(--color-point);
             }
 
             &.year {
-              color: var(--text-01);
-              border: solid 1px var(--text-01);
+              color: var(--color-point);
+              //border: solid 1px var(--text-01);
             }
 
             &.once {
               color: var(--text-02);
-              border: solid 1px var(--text-02);
+              //border: solid 1px var(--text-02);
             }
           }
         }
@@ -319,44 +319,44 @@
     }
   }
 
-  & .connected-list {
+  .connected-list {
     padding-top: 30px;
 
-    & > .category {
-      & > .title-area {
+    > .category {
+      > .title-area {
         overflow: hidden;
         margin-bottom: 16px;
 
-        & > span {
+        > span {
           float: left;
           font-family: var(--font2);
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 500;
           line-height: 26px;
           letter-spacing: -0.33px;
           color: var(--text-01);
         }
 
-        & > .btn-add {
+        > .btn-add {
           float: right;
           padding: 0 10px;
           height: 26px;
           border-radius: 2px;
           border: solid 1px #e3e4e8;
           background-color: #fff;
-          font-size: 11px;
+          font-size: 12px;
           line-height: 24px;
           letter-spacing: -0.55px;
           color: var(--text-02);
 
-          & > i {
+          > i {
             margin-right: 4px;
             transform: translateY(1px);
           }
         }
       }
 
-      & > .list-item {
+      > .list-item {
         width: 100%;
         border-radius: 6px;
         box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
@@ -368,7 +368,7 @@
           margin-bottom: 36px;
         }
 
-        & .info-header {
+        .info-header {
           position: relative;
           width: 100%;
           display: flex;
@@ -377,7 +377,7 @@
           border-bottom: 1px solid #f5f6f8;
           padding-left: 14px;
 
-          & .icon-expired {
+          .icon-expired {
             display: inline-block;
             vertical-align: middle;
             width: 14px;
@@ -388,7 +388,7 @@
             margin-left: 4px;
           }
 
-          & .icon-new {
+          .icon-new {
             display: inline-block;
             vertical-align: middle;
             width: 14px;
@@ -410,8 +410,8 @@
             transform: translateY(-50%);
           }
 
-          & a {
-            & img {
+          a {
+            img {
               display: inline-block;
               vertical-align: middle;
               width: 22px;
@@ -419,7 +419,7 @@
               margin-right: 6px;
             }
 
-            & span {
+            span {
               display: inline-block;
               vertical-align: middle;
               font-family: var(--font2);
@@ -432,10 +432,10 @@
           }
         }
 
-        & .info-list {
+        .info-list {
           padding: 0 20px;
 
-          & .item {
+          .item {
             display: flex;
             width: 100%;
             height: 59px;
@@ -444,11 +444,11 @@
             align-items: center;
 
             &.disabled {
-              & span {
+              span {
                 opacity: .6;
               }
 
-              & em {
+              em {
                 font-size: 11px;
                 color: #ef4b61;
                 margin-left: 4px;
@@ -459,7 +459,7 @@
               border-bottom: 0;
             }
 
-            & span {
+            span {
               width: calc(100% - 50px);
               float: left;
               display: inline-block;
@@ -472,7 +472,7 @@
               text-overflow: ellipsis;
             }
 
-            & .ex-info-edit {
+            .ex-info-edit {
               float: right;
               width: 50px;
               text-align: right;
@@ -484,7 +484,7 @@
               text-decoration: underline;
             }
 
-            & .ex-info {
+            .ex-info {
               float: right;
               width: 50px;
               text-align: right;
@@ -499,7 +499,7 @@
       }
 
       &:last-child {
-        & .list-item {
+        .list-item {
           &:last-child {
             margin-bottom: 0;
           }
@@ -508,25 +508,25 @@
     }
   }
 
-  & .my-data-history-banner {
+  .my-data-history-banner {
     position: relative;
     padding-bottom: 10px;
 
-    & .txt {
+    .txt {
       font-size: 16px;
       line-height: 25px;
       letter-spacing: -0.4px;
       color: var(--text-01);
       margin-bottom: 14px;
 
-      & > span {
+      > span {
         font-family: var(--font3);
         font-weight: bold;
       }
     }
 
-    & .txt-sm {
-      & a {
+    .txt-sm {
+      a {
         display: inline-block;
         font-family: var(--font2);
         font-size: 13px;
@@ -539,7 +539,7 @@
         margin-right: 4px;
       }
 
-      & .arrow-left {
+      .arrow-left {
         display: inline-block;
         vertical-align: middle;
         width: 6px;
@@ -549,14 +549,14 @@
       }
     }
 
-    & .img {
+    .img {
       position: absolute;
       width: 85px;
       height: 85px;
       top: 0;
       right: 0;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -568,7 +568,7 @@
   padding: 10px 20px 0;
   margin-bottom: 20px;
 
-  & .info-header {
+  .info-header {
     position: relative;
     width: 100%;
     height: 90px;
@@ -577,18 +577,18 @@
     align-items: center;
     padding: 0 20px;
 
-    & .img {
+    .img {
       width: 24px;
       height: 24px;
       margin-right: 7px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
-    & .tit {
+    .tit {
       max-width: calc(100% - 24px - 7px - 50px - 115px);
       font-family: var(--font2);
       font-size: 14px;
@@ -608,7 +608,7 @@
       }
     }
 
-    & .way {
+    .way {
       font-size: 12px;
       line-height: 18px;
       letter-spacing: -0.3px;
@@ -616,7 +616,7 @@
 
     }
 
-    & .badge {
+    .badge {
       display: inline-block;
       height: 19px;
       border-radius: 999px;
@@ -638,7 +638,7 @@
       }
     }
 
-    & .btn-auth {
+    .btn-auth {
       position: absolute;
       right: 20px;
       top: 29px;
@@ -650,7 +650,7 @@
       display: flex;
       align-items: center;
 
-      & em {
+      em {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.6px;
@@ -658,7 +658,7 @@
         color: var(--text-02);
       }
 
-      & .icon {
+      .icon {
         display: inline-block;
         background-image: url(../../img/common/ico-unlink.svg);
         background-size: cover;
@@ -670,7 +670,7 @@
     }
   }
 
-  & .tip {
+  .tip {
     width: 100%;
     border: solid 1px #e3e4e8;
     display: flex;
@@ -679,7 +679,7 @@
     align-items: flex-start;
     padding: 20px;
 
-    & .tit {
+    .tit {
       font-family: var(--font3);
       font-size: 14px;
       font-weight: bold;
@@ -690,7 +690,7 @@
       margin-bottom: 7px;
     }
 
-    & .desc {
+    .desc {
       font-size: 13px;
       line-height: 21px;
       letter-spacing: -0.33px;
@@ -702,12 +702,12 @@
 .my-page-required-list {
   padding: 0 20px;
 
-  & > .list-header {
+  > .list-header {
     overflow: hidden;
     padding-bottom: 11px;
     border-bottom: 1px solid var(--text-01);
 
-    & > .tit {
+    > .tit {
       float: left;
       font-family: var(--font2);
       font-size: 14px;
@@ -715,7 +715,7 @@
       line-height: 26px;
       letter-spacing: -0.35px;
 
-      & > label {
+      > label {
         margin-bottom: 9px;
         margin-right: 40px;
 
@@ -725,10 +725,10 @@
       }
     }
 
-    & .btn-wrap {
+    .btn-wrap {
       float: right;
 
-      & .btn {
+      .btn {
         min-width: 40px;
         height: 26px;
         padding: 0 10px;
@@ -745,20 +745,20 @@
           margin-right: 0;
         }
 
-        & + .btn {
+        + .btn {
           margin-left: 5px;
         }
       }
     }
   }
 
-  & .list-body {
+  .list-body {
     width: 100%;
     border-bottom: 1px solid #e3e4e8;
     margin-bottom: 40px;
     padding: 0 5px;
 
-    & .item {
+    .item {
       display: flex;
       width: 100%;
       padding: 20px 0;
@@ -769,7 +769,7 @@
         border-bottom: 0;
       }
 
-      & .tit {
+      .tit {
         width: 130px;
         float: left;
         font-size: 13px;
@@ -778,7 +778,7 @@
         color: var(--text-02);
       }
 
-      & .val {
+      .val {
         width: calc(100% - 130px);
         float: right;
         font-size: 13px;
@@ -796,12 +796,12 @@
 
         }
 
-        & > .btn-wrap {
+        > .btn-wrap {
           display: block;
           text-align: right;
           margin-top: 10px;
 
-          & a.btn-sm {
+          a.btn-sm {
             display: inline-block;
             width: 59px;
             min-width: auto;
@@ -816,7 +816,7 @@
           }
         }
 
-        & > a {
+        > a {
           font-size: 13px;
           line-height: 19px;
           letter-spacing: -0.33px;
@@ -836,12 +836,12 @@
     padding: 36px 20px 40px;
   }
 
-  & > .list-header {
+  > .list-header {
     overflow: hidden;
     padding-bottom: 11px;
     border-bottom: 1px solid var(--text-01);
 
-    & > .tit {
+    > .tit {
       float: left;
       font-family: var(--font2);
       font-size: 14px;
@@ -850,10 +850,10 @@
       letter-spacing: -0.35px;
     }
 
-    & .btn-wrap {
+    .btn-wrap {
       float: right;
 
-      & .btn {
+      .btn {
         min-width: 40px;
         height: 26px;
         padding: 0 10px;
@@ -866,19 +866,19 @@
         text-align: center;
         color: var(--text-02);
 
-        & + .btn {
+        + .btn {
           margin-right: 7px;
         }
       }
     }
   }
 
-  & .list-body {
+  .list-body {
     width: 100%;
     border-bottom: 1px solid #e3e4e8;
     padding: 0 5px;
 
-    & .item {
+    .item {
       display: flex;
       width: 100%;
       height: 59px;
@@ -889,18 +889,18 @@
         border-bottom: 0;
       }
 
-      & .img {
+      .img {
         width: 22px;
         height: 22px;
         float: left;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
       }
 
-      & .val {
+      .val {
         width: calc(100% - 28px);
         float: left;
         font-size: 13px;
@@ -912,7 +912,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
 
-        & .icon-expired {
+        .icon-expired {
           display: inline-block;
           vertical-align: middle;
           width: 14px;
@@ -923,7 +923,7 @@
           margin-left: 4px;
         }
 
-        & .icon-new {
+        .icon-new {
           display: inline-block;
           vertical-align: middle;
           width: 14px;
@@ -941,12 +941,12 @@
 .my-page-sending-required-list {
   padding: 0 20px;
 
-  & .list-body {
+  .list-body {
     width: 100%;
     margin-bottom: 21px;
     padding: 0 5px;
 
-    & .item {
+    .item {
       display: block;
       width: 100%;
       padding: 20px 5px;
@@ -956,7 +956,7 @@
         border-bottom: 0;
       }
 
-      & .tit {
+      .tit {
         display: block;
         font-size: 12px;
         line-height: 18px;
@@ -965,11 +965,11 @@
         margin-bottom: 4px;
       }
 
-      & .check-box {
+      .check-box {
         display: block;
         margin-top: 14px;
 
-        & label {
+        label {
           margin-right: 40px;
 
           &:last-child {
@@ -978,7 +978,7 @@
         }
       }
 
-      & .val {
+      .val {
         display: block;
         font-size: 13px;
         font-weight: 500;
@@ -991,12 +991,12 @@
 
         }
 
-        & > .btn-wrap {
+        > .btn-wrap {
           display: block;
           text-align: right;
           margin-top: 10px;
 
-          & a.btn-sm {
+          a.btn-sm {
             display: inline-block;
             width: 59px;
             min-width: auto;
@@ -1011,7 +1011,7 @@
           }
         }
 
-        & > a {
+        > a {
           font-size: 13px;
           line-height: 19px;
           letter-spacing: -0.33px;
@@ -1026,7 +1026,7 @@
 
 
 .my-page-btn-wrap {
-  & .btn {
+  .btn {
     width: 100%;
     min-width: auto;
     height: 56px;
@@ -1043,7 +1043,7 @@
   }
 
   &.fixed {
-    & .btn {
+    .btn {
       position: fixed;
       bottom: 0;
       left: 0;
@@ -1054,7 +1054,7 @@
 .my-page-tutorial {
   padding: 10px 20px;
 
-  & > .title {
+  > .title {
     font-family: var(--font3);
     font-size: 17px;
     font-weight: bold;
@@ -1064,18 +1064,18 @@
     margin-bottom: 20px;
   }
 
-  & > .desc {
+  > .desc {
     font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.35px;
     color: #5c5a6f;
   }
 
-  & .check-box {
+  .check-box {
     display: block;
     margin-top: 30px;
 
-    & label {
+    label {
       margin-right: 40px;
 
       &:last-child {
@@ -1090,12 +1090,12 @@
   padding: 0 20px;
   margin-bottom: 40px;
 
-  & > .ex-list {
+  > .ex-list {
     padding: 20px 5px;
     border-top: 1px solid var(--text-01);
     border-bottom: 1px solid #e3e4e8;
 
-    & .item {
+    .item {
       overflow: hidden;
       margin-bottom: 22px;
 
@@ -1103,7 +1103,7 @@
         margin-bottom: 0;
       }
 
-      & .tit {
+      .tit {
         float: left;
         font-size: 13px;
         line-height: 19px;
@@ -1111,7 +1111,7 @@
         color: var(--text-02);
       }
 
-      & .val {
+      .val {
         float: right;
         font-size: 13px;
         font-family: var(--font2);
@@ -1127,12 +1127,12 @@
 .my-page-input-info {
   padding: 40px 20px 30px;
 
-  & > .list-header {
+  > .list-header {
     overflow: hidden;
     padding-bottom: 11px;
     border-bottom: 1px solid var(--text-01);
 
-    & > .tit {
+    > .tit {
       float: left;
       font-family: var(--font2);
       font-size: 14px;
@@ -1141,10 +1141,10 @@
       letter-spacing: -0.35px;
     }
 
-    & .btn-wrap {
+    .btn-wrap {
       float: right;
 
-      & .btn {
+      .btn {
         min-width: 40px;
         height: 26px;
         padding: 0 10px;
@@ -1157,13 +1157,13 @@
         text-align: center;
         color: var(--text-02);
 
-        & + .btn {
+        + .btn {
           margin-right: 7px;
         }
       }
     }
 
-    & .txt-bold {
+    .txt-bold {
       font-family: var(--font3);
       font-size: 17px;
       font-weight: bold;
@@ -1172,7 +1172,7 @@
       margin-bottom: 12px;
     }
 
-    & .txt-desc {
+    .txt-desc {
       font-family: var(--font1);
       font-size: 14px;
       line-height: 20px;
@@ -1181,13 +1181,13 @@
     }
   }
 
-  & .input-area {
+  .input-area {
     padding-top: 20px;
 
-    & .custom-light {
+    .custom-light {
       margin-bottom: 36px;
 
-      & .input-title {
+      .input-title {
         font-family: var(--font2);
         font-size: 11px;
         font-weight: 500;
@@ -1208,7 +1208,7 @@
     }
   }
 
-  & .btn-area {
+  .btn-area {
     padding-top: 4px;
   }
 }
@@ -1216,7 +1216,7 @@
 .my-common-wrap {
   padding: 10px 20px 90px;
 
-  & > .title {
+  > .title {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -0.45px;
@@ -1226,7 +1226,7 @@
     margin-bottom: 20px;
   }
 
-  & .date-wrap {
+  .date-wrap {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.4px;
@@ -1234,12 +1234,12 @@
     color: var(--text-01);
     margin-bottom: 10px;
 
-    & .num {
+    .num {
       font-family: var(--font3);
       font-weight: bold;
     }
 
-    & a {
+    a {
       font-size: 13px;
       line-height: 24px;
       letter-spacing: -0.33px;
@@ -1248,7 +1248,7 @@
     }
   }
 
-  & > .desc {
+  > .desc {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.35px;
@@ -1256,21 +1256,21 @@
     color: var(--text-02);
   }
 
-  & .completed-wrap {
+  .completed-wrap {
     padding: 187px 0 0;
 
-    & .img {
+    .img {
       width: 200px;
       height: 90px;
       margin: 0 auto 24px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
-    & .txt {
+    .txt {
       font-family: var(--font2);
       font-size: 15px;
       font-weight: 500;
@@ -1284,7 +1284,7 @@
 .my-page-info-delete {
   padding: 10px 20px 40px;
 
-  & .tip-box {
+  .tip-box {
     padding: 18px 0;
     border-radius: 6px;
     border: solid 1px #e3e4e8;
@@ -1296,27 +1296,27 @@
     margin-bottom: 30px;
   }
 
-  & .select-all {
+  .select-all {
     margin-bottom: 20px;
   }
 
-  & .info-list {
+  .info-list {
     margin-bottom: 36px;
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    & .info-list-header {
+    .info-list-header {
       font-family: var(--font2);
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 500;
-      line-height: 19px;
-      letter-spacing: -0.33px;
+      line-height: 20px;
+      letter-spacing: -0.35px;
       margin-bottom: 20px;
     }
 
-    & .item {
+    .item {
       position: relative;
       display: flex;
       width: 100%;
@@ -1333,7 +1333,7 @@
         margin: 0;
       }
 
-      & .btn-more {
+      .btn-more {
         position: absolute;
         display: flex;
         align-items: center;
@@ -1345,7 +1345,7 @@
         transform: translateY(-50%);
         padding-right: 14px;
 
-        & .ico-list-arrow-small {
+        .ico-list-arrow-small {
           display: block;
           width: 6px;
           height: 16px;
@@ -1357,28 +1357,28 @@
       }
 
 
-      & label {
+      label {
         transform: translateY(3px);
       }
 
-      & .img {
+      .img {
         width: 22px;
         height: 22px;
         margin-right: 6px;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
         }
       }
 
-      & .name {
+      .name {
         width: calc(100% - 28px - 22px - 6px - 50px);
         font-family: var(--font2);
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 500;
-        line-height: 19px;
-        letter-spacing: -0.33px;
+        line-height: 20px;
+        letter-spacing: -0.35px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;

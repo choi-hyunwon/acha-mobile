@@ -3,125 +3,39 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
-    <div class="header">
+    <div class="header _sticky">
         <a href="#" class="sprite btn_back"></a>
         <h2 class="title">알림설정</h2>
     </div>
     <div class="contents">
         <div class="list-pd">
-            <!-- s 추가 및 변경 -- 2021.07.27 -->
-            <div class="list-group-header">서비스 기본 알림</div>
             <div class="list_group app_lock">
                 <div class="list_group_item list_group_item_lg">
                     <div class="item_title">
                         <span class="title">서비스 기본 알림</span>
-                        <span class="date">
-                            공지사항, 서비스 소식, 지출일 알림, 결제 정보 등의<br/>
-                            <em class="primary-color">아차의 주요 정보 및 소식</em>을 전달드립니다.  <br/>
-                            (알림은 앱 푸쉬로만 발송됩니다.)
-                        </span>
+                        <span class="date">공지사항, 서비스 소식, 지출일 알림, 결제 정보 등의 아차의 주요 정보 및 소식을 전달드립니다.</span>
                     </div>
                     <div class="custom-control custom-switch">
                         <input type="checkbox" class="custom-control-input" id="switch1" checked="checked">
                         <label class="custom-control-label" for="switch1"></label>
                     </div>
                 </div>
+            </div>
+            <div class="list_group app_lock">
                 <div class="list_group_item list_group_item_lg">
                     <div class="item_title">
                         <span class="title">마케팅 알림</span>
-                        <span class="date">
-                            놓치지 마세요!<br/>
-                            아차의 <em class="primary-color">다양한 혜택, 이벤트 관련 정보</em>를 알려드립니다.<br/>
-                            (알림은 앱 푸쉬로만 발송됩니다.)
-                        </span>
+                        <span class="date">놓치지 마세요. 아차의 다양한 혜택 <br/>이벤트 관련 정보를 알려드립니다.</span>
+                        <span class="date">마케팅 알림은 마케팅 활용 및 수신 동의된<br/> 수단으로 발송됩니다.</span>
                     </div>
                     <div class="custom-control custom-switch">
                         <input type="checkbox" class="custom-control-input" id="switch2" checked="checked">
                         <label class="custom-control-label" for="switch2"></label>
                     </div>
                 </div>
-                <div class="list_group_item list_group_item_lg">
-                    <div class="item_title">
-                        <span class="title">마케팅 활용 및 수신 동의 </span>
-                        <span class="date">동의일시 : 2021-02-29 18:00</span>
-                    </div>
-                    <a href="#" class="btn_more"><i class="sprite ico_list_arrow_small"></i></a>
-                </div>
             </div>
-            <div class="list-group-header">마케팅 알림</div>
-            <div class="list_group app_lock">
-                <div class="list_group_item">
-                    <div class="item_title">
-                        <span class="txt">
-                            놓치지 마세요. 아차의 <em class="primary-color">다양한 혜택<br/>이벤트 관련 정보</em>를 알려드립니다.
-                        </span>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="switch4" checked="checked">
-                        <label class="custom-control-label" for="switch4"></label>
-                    </div>
-                </div>
-                <div class="list_group_item">
-                    <div class="item_title">
-                        <span class="title">PUSH</span>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="switch5" checked="checked">
-                        <label class="custom-control-label" for="switch5"></label>
-                    </div>
-                </div>
-                <div class="list_group_item">
-                    <div class="item_title">
-                        <span class="title">SMS</span>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="switch6">
-                        <label class="custom-control-label" for="switch6"></label>
-                    </div>
-                </div>
-                <div class="list_group_item">
-                    <div class="item_title">
-                        <span class="title">E-Mail</span>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="switch7">
-                        <label class="custom-control-label" for="switch7"></label>
-                    </div>
-                </div>
-                <div class="list_group_item">
-                    <div class="item_title">
-                        <span class="title">알림톡</span>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="switch8">
-                        <label class="custom-control-label" for="switch8"></label>
-                    </div>
-                </div>
-                <div class="list_group_item list_group_item_lg">
-                    <div class="item_title">
-                        <span class="title">마케팅 활용 및 수신 동의</span>
-                        <span class="date">동의일시 : 2021-02-29 18:00</span>
-                    </div>
-                    <a href="#" class="btn_more"><i class="sprite ico_list_arrow_small"></i></a>
-                </div>
-            </div>
-            <!-- e 추가 및 변경 -- 2021.07.27 -->
         </div>
     </div>
-    <!--
-        * 업데이트 함수 설명 *
-        1. toastPopupShow() : 토스트 팝업 show 함수
-        2. toastPopupHide() : 토스트 팝업 hide 함수
-    -->
-    <!-- S 알림설정 토스트 팝업  -->
-    <div class="toast-popup alert-setting _toastPopup">
-        <p>마케팅 활용 및 수신 여부가<br/>
-            2021년 4월 16일 기준 ‘동의‘ 처리되었습니다.</p>
-    </div>
-    <!-- E 알림설정 토스트 팝업  -->
-    <script>
-        toastPopupShow()
-    </script>
 </div>
 </body>
 </html>

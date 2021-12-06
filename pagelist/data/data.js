@@ -749,18 +749,18 @@ data.moreview = {
             'category': '더보기',
             'page': '메인'
         },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_02',
-            'category': '더보기',
-            'page': '알림 목록없음'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_03',
-            'category': '더보기',
-            'page': '알림 더보기/알림 불러오는중'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '09_moreview_02',
+        //     'category': '더보기',
+        //     'page': '알림 목록없음'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '09_moreview_03',
+        //     'category': '더보기',
+        //     'page': '알림 더보기/알림 불러오는중'
+        // },
         {
             'stateClass': 'complete',
             'url': '09_moreview_04',
@@ -784,7 +784,8 @@ data.moreview = {
             'url': '09_moreview_07',
             'category': '더보기',
             'page': '이벤트 없음'
-        },  {
+        },
+        {
             'stateClass': 'complete',
             'url': '09_moreview_08',
             'category': '더보기',
@@ -872,7 +873,7 @@ data.moreview = {
             'stateClass': 'complete',
             'url': '09_moreview_22',
             'category': '더보기',
-            'page': '알림설정 + 토스트 팝업'
+            'page': '알림설정'
         },
         {
             'stateClass': 'complete',
@@ -888,7 +889,7 @@ data.moreview = {
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_25',
+            'url': '11_app_info_AOS',
             'category': '더보기',
             'page': '오픈소스 라이센스'
         },

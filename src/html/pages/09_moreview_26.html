@@ -3,7 +3,7 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
-    <div class="header">
+    <div class="header _sticky">
         <a href="#" class="sprite btn_back"></a>
         <h2 class="title">회원탈퇴</h2>
     </div>
@@ -15,9 +15,9 @@
                     <div class="title_list">
                         <div class="title">삭제되는 정보</div>
                     </div>
-                    <div class="list">고객님의 개인정보 및 연동정보는 모두 탈퇴 즉시 파기 됩니다.</div>
+                    <div class="list">고객님의 개인신용정보는 모두 탈퇴 즉시 파기 됩니다.</div>
                     <!-- s 추가 -- 2021.09.01 -->
-                    <div class="list">마이데이터 전송요구는 자동으로 철회됩니다.</div>
+                    <div class="list">마이데이터 전송요구는 자동으로 철회됩니다. </div>
                     <!-- e 추가 -- 2021.09.01 -->
                 </div>
                 <div class="item">
@@ -25,7 +25,7 @@
                         <div class="title">재가입</div>
                     </div>
                     <!-- s 변경 -- 2021.09.01 -->
-                    <div class="list">재가입 시 고객님이 이용 중이신 사이트의 연동을 모두<br/>
+                    <div class="list">재가입 시 고객님이 이용 중이신 사이트의 연동을 모두
                         처음처럼 진행 해야합니다.</div>
                     <!-- e 변경 -- 2021.09.01 -->
                 </div>
@@ -40,17 +40,17 @@
                 <div class="category">
                     <label for="category">탈퇴사유 <span class="primary-color">(필수)</span></label>
                     <select id="category" name="select">
-                        <option value="선택하세요" disabled="" selected="">선택해주세요.</option>
+                        <option value="선택하세요" disabled="" selected="">선택해 주세요. .</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
                 </div>
                 <div class="textarea">
-                    <label for="context">문의 내용</label>
-                    <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" id="context"
-                              maxlength="200" placeholder="탈퇴사유를 입력해 주세요. "></textarea>
+<!--                    <label for="context">문의 내용</label>-->
                     <span class="txt-limit"><em class="_val">0</em> / 200</span>
+                    <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" title="textarea"
+                              maxlength="200" placeholder="탈퇴사유를 입력해 주세요. "></textarea>
                 </div>
             </div>
             <div class="btn-box"> <!--  구조 수정 -- 2021.06.25  -->

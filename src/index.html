@@ -86,10 +86,10 @@
     var source = $('#list-template').html(); //jQuery
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
+        .append(template(data.moreview))
         .append(template(data.input))
         .append(template(data.my))
         .append(template(data.common))
-        .append(template(data.moreview2))
         .append(template(data.myAccount))
         .append(template(data.signIn2))
         .append(template(data.fixExpenditure))
@@ -103,7 +103,6 @@
         .append(template(data.expenditure1))
         .append(template(data.expenditure2))
         .append(template(data.story))
-        .append(template(data.moreview))
         .append(template(data.expenditure))
         .append(template(data.taxRenewal))
         .append(template(data.signIn))

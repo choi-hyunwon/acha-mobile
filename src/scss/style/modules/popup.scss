@@ -45,7 +45,7 @@
 
   .error_msg {
     font-size: 15px;
-    color: #666666;
+    color: var(--text-01);
     letter-spacing: -0.65px;
     font-family: var(--font2);
     line-height: 24px;
@@ -888,17 +888,17 @@
   }
 
   &.alert-setting {
-    width: 315px;
+    width: calc(100% - 60px);
     height: auto;
-    background-color: var(--text-01);
+    background-color: rgba(55, 53, 78,.9);
     top: 94%;
     padding: 15px 0;
 
     p {
-      font-size: 11px;
-      line-height: 16px;
+      font-size: 12px;
+      line-height: 18px;
       font-weight: normal;
-      letter-spacing: -0.28px;
+      letter-spacing: -0.3px;
       text-align: center;
       color: #ffffff;
     }

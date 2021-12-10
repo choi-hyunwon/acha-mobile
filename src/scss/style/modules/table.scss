@@ -140,3 +140,37 @@ table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr 
     }
   }
 }
+
+.vertical-table {
+  border-top: 1px solid #e3e4e8;
+  margin-bottom: 15px;
+
+  tr {
+    border-bottom: 1px solid #e3e4e8;
+
+    th,td {
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: -.55px;
+      color: var(--text-02);
+    }
+
+    th {
+      font-weight: 500;
+      background-color: #f5f6f8;
+      border-right: 1px solid #e3e4e8;
+      text-align: center;
+    }
+
+    td {
+      padding: 8px 10px;
+      font-weight: normal;
+      border-right: 1px solid #f5f6f8;
+      vertical-align: top;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}

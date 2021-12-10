@@ -109,10 +109,10 @@ textarea.custom {
 }
 
 .mycard {
-  & .contents {
+  .contents {
     padding: 7px 16px 1px;
 
-    & .card_box {
+    .card_box {
       &.empty {
         width: 100%;
         height: 185px;
@@ -120,11 +120,11 @@ textarea.custom {
         border-radius: 6px;
         margin-bottom: 80px;
 
-        & a {
+        a {
           display: block;
           text-align: center;
 
-          & span {
+          span {
             display: inline-block;
             font-size: 12px;
             font-family: var(--font1);
@@ -132,7 +132,7 @@ textarea.custom {
             letter-spacing: -.6px;
             color: #9b9aa6;
 
-            & i {
+            i {
               margin-right: 8px;
               transform: translate(3px, 2px);
             }
@@ -148,7 +148,7 @@ textarea.custom {
           content: none;
         }
 
-        & .card {
+        .card {
           width: 100%;
           height: 80px;
           border: 0;
@@ -156,7 +156,7 @@ textarea.custom {
           padding: 0;
           margin-bottom: 12px;
 
-          & a {
+          a {
             display: block;
             width: 100%;
             height: 100%;
@@ -164,19 +164,19 @@ textarea.custom {
             box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
             border-radius: 6px;
 
-            & .img {
+            .img {
               display: inline-block;
               width: 22px;
               height: 22px;
               transform: translate(0, 0);
 
-              & img {
+              img {
                 width: 100%;
                 height: 100%;
               }
             }
 
-            & .title {
+            .title {
               display: inline-block;
               width: calc(100% - 30px);
               font-size: 13px;
@@ -191,7 +191,7 @@ textarea.custom {
               vertical-align: middle;
             }
 
-            & .open {
+            .open {
               position: absolute;
               right: 32px;
               top: 30px;
@@ -201,7 +201,7 @@ textarea.custom {
               line-height: 18px;
               letter-spacing: -.6px;
 
-              & i {
+              i {
                 position: absolute;
                 right: -11px;
                 top: 2px;
@@ -219,7 +219,7 @@ textarea.custom {
           }
         }
 
-        & .card-connected {
+        .card-connected {
           position: relative;
           display: block;
           border-radius: 6px;
@@ -227,7 +227,7 @@ textarea.custom {
           margin-bottom: 12px;
           background-color: #ffffff;
 
-          & a {
+          a {
             display: block;
             padding: 22px 20px 20px;
 
@@ -236,26 +236,26 @@ textarea.custom {
               text-decoration: none;
             }
 
-            & li {
+            li {
               display: block;
 
               &.card-info {
                 margin-bottom: 33px;
 
-                & .img {
+                .img {
                   display: inline-block;
                   width: 32px;
                   height: 32px;
                   margin-right: 3px;
                   vertical-align: middle;
 
-                  & img {
+                  img {
                     width: 100%;
                     height: 100%;
                   }
                 }
 
-                & .title {
+                .title {
                   display: inline-block;
                   padding-top: 2px;
                   font-size: 13px;
@@ -270,7 +270,7 @@ textarea.custom {
                   width: calc(100% - 130px);
                 }
 
-                & .sum {
+                .sum {
                   float: right;
                   position: relative;
                   font-size: 14px;
@@ -294,7 +294,7 @@ textarea.custom {
                 display: block;
                 top: -34px;
 
-                & .txt {
+                .txt {
                   font-family: var(--font1);
                   font-size: 11px;
                   letter-spacing: -.28px;
@@ -304,7 +304,7 @@ textarea.custom {
                   top: 0;
                 }
 
-                & .val {
+                .val {
                   font-family: var(--font1);
                   font-size: 11px;
                   line-height: 26px;
@@ -336,7 +336,7 @@ textarea.custom {
                 }
 
                 &.h-underline {
-                  & .val {
+                  .val {
                     text-decoration: none;
 
                     &::after {
@@ -355,7 +355,7 @@ textarea.custom {
                 background-color: #f5f6f8;
                 margin-bottom: 39px;
 
-                & .bar {
+                .bar {
                   display: block;
                   position: absolute;
                   height: 4px;
@@ -370,7 +370,7 @@ textarea.custom {
                   }
                 }
 
-                & .txt {
+                .txt {
                   display: block;
                   font-family: var(--font1);
                   font-size: 11px;
@@ -382,7 +382,7 @@ textarea.custom {
 
                 }
 
-                & .val {
+                .val {
                   font-family: var(--font1);
                   font-size: 11px;
                   line-height: 26px;
@@ -430,7 +430,7 @@ textarea.custom {
                 background-color: #f7f8fc;
                 border-radius: 6px;
 
-                & .val {
+                .val {
                   position: relative;
                   font-family: var(--font1);
                   font-size: 11px;
@@ -447,7 +447,7 @@ textarea.custom {
                   }
                 }
 
-                & .txt {
+                .txt {
                   font-family: var(--font1);
                   font-size: 11px;
                   letter-spacing: -.28px;
@@ -460,7 +460,7 @@ textarea.custom {
                   line-height: 53px;
                   padding: 8px 0 10px;
 
-                  & .txt {
+                  .txt {
                     display: block;
                     line-height: 17px;
 
@@ -474,12 +474,12 @@ textarea.custom {
           }
 
           &.empty {
-            & .card-info {
+            .card-info {
               margin-bottom: 0;
             }
 
-            & .no-data {
-              & .txt {
+            .no-data {
+              .txt {
                 font-family: var(--font1);
                 font-size: 11px;
                 line-height: 26px;
@@ -489,7 +489,7 @@ textarea.custom {
               }
             }
 
-            & .btn-direct {
+            .btn-direct {
               display: block;
               width: 59px;
               height: 26px;
@@ -508,14 +508,14 @@ textarea.custom {
           }
         }
 
-        & .card-edit {
+        .card-edit {
           margin-bottom: 12px;
           margin-top: 20px;
           background-color: #ffffff;
           border-radius: 6px;
           background-color: rgba(255, 255, 255, .8);
 
-          & .btn-edit {
+          .btn-edit {
             display: block;
             width: 100%;
             height: 46px;
@@ -525,14 +525,14 @@ textarea.custom {
             padding: 0;
             text-align: center;
 
-            & i {
+            i {
               vertical-align: inherit;
               margin-right: 5px;
             }
           }
         }
 
-        & > .list {
+        > .list {
           font-size: 11px;
           letter-spacing: -0.28px;
           text-align: left;
@@ -545,7 +545,7 @@ textarea.custom {
       padding: 7px 20px 1px;
     }
 
-    & .btn_area {
+    .btn_area {
       left: 0;
       bottom: 0;
       z-index: 100;
@@ -555,7 +555,7 @@ textarea.custom {
     }
   }
 
-  & .desc_box {
+  .desc_box {
     position: absolute;
     width: 100%;
     height: 130px;
@@ -563,7 +563,7 @@ textarea.custom {
     background: rgba(255, 255, 255, .9);
     bottom: 0;
 
-    & p {
+    p {
       font-family: var(--font2);
       color: #37354e;
       line-height: 19px;
@@ -571,22 +571,22 @@ textarea.custom {
       font-size: 13px;
     }
 
-    & p:first-child {
+    p:first-child {
       color: #6839d3;
     }
 
-    & p:nth-child(2) {
+    p:nth-child(2) {
       margin-bottom: 8px;
     }
 
-    & p:nth-child(3) {
+    p:nth-child(3) {
       font-family: var(--font1);
       font-size: 12px;
       letter-spacing: -.3px;
       color: #afaeb8;
     }
 
-    & .img {
+    .img {
       display: inline-block;
       width: 46px;
       height: 46px;
@@ -594,7 +594,7 @@ textarea.custom {
       right: 28px;
       top: 37px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
@@ -607,7 +607,7 @@ textarea.custom {
   margin-bottom: 29px;
   padding: 0 8px;
 
-  & label {
+  label {
     width: auto;
     height: auto;
     position: relative;
@@ -635,7 +635,7 @@ textarea.custom {
     }
   }
 
-  & select {
+  select {
     position: absolute;
     width: 40px;
     height: 28px;
@@ -652,37 +652,37 @@ textarea.custom {
     padding: 0;
   }
 
-  & .txt, & .txt2 {
+  .txt, .txt2 {
     font-family: var(--font1);
     font-size: 18px;
     letter-spacing: -.45px;
     line-height: 28px;
 
-    & .sum {
+    .sum {
 
       color: #37354e;
       letter-spacing: -.19px;
       font-size: 19px;
     }
 
-    & .won {
+    .won {
       font-family: var(--font2);
       padding-left: 2px;
     }
   }
 
-  & .txt {
+  .txt {
     padding-left: 16px;
     margin-bottom: 2px;
     display: inline-block;
     color: #37354e;
   }
 
-  & .txt2 {
+  .txt2 {
     margin-bottom: 10px;
   }
 
-  & .txt3 {
+  .txt3 {
     display: inline-block;
     font-size: 12px;
     font-family: var(--font1);
@@ -692,19 +692,19 @@ textarea.custom {
     vertical-align: middle;
   }
 
-  & .btn-tooltip {
+  .btn-tooltip {
     display: inline-block;
     margin-left: 2px;
     width: 16px;
     height: 16px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  & .list.caution {
+  .list.caution {
     padding-left: 0;
     margin-top: 4px;
     color: #ef4b61;
@@ -718,19 +718,19 @@ textarea.custom {
 .card_detail_wrap {
   padding-top: 12px;
 
-  & .card_info {
-    & .img {
+  .card_info {
+    .img {
       width: 64px;
       height: 40px;
       margin: 1px auto 6px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
-    & .card_name {
+    .card_name {
       text-align: center;
       font-family: var(--font2);
       font-size: 13px;
@@ -738,12 +738,12 @@ textarea.custom {
       margin-bottom: 20px;
     }
 
-    & .division-01 {
-      & li {
+    .division-01 {
+      li {
         line-height: 20px;
         margin-bottom: 3px;
 
-        & span {
+        span {
           &:first-child {
             float: left;
             display: inline-block;
@@ -793,14 +793,14 @@ textarea.custom {
       }
     }
 
-    & .division-02 {
+    .division-02 {
       padding: 17px 0 11px;
 
-      & li {
+      li {
         line-height: 20px;
         margin-bottom: 5px;
 
-        & span {
+        span {
           &:first-child {
             float: left;
             display: inline-block;
@@ -835,7 +835,7 @@ textarea.custom {
               }
             }
 
-            & .num {
+            .num {
               font-family: var(--font1);
             }
           }
@@ -850,20 +850,20 @@ textarea.custom {
 }
 
 .card_view {
-  & li {
+  li {
     position: relative;
     width: 100%;
     height: 58px;
     line-height: 58px;
     border-top: 1px solid #f5f6f8;
 
-    & a {
+    a {
       width: 100%;
       height: 100%;
       display: block;
       color: #37354e;
 
-      & .title {
+      .title {
         display: block;
         font-family: var(--font2);
         font-size: 13px;
@@ -875,7 +875,7 @@ textarea.custom {
         text-overflow: ellipsis;
       }
 
-      & i {
+      i {
         position: absolute;
         right: 19px;
         top: 21px;
@@ -891,15 +891,15 @@ textarea.custom {
 .card_detail_list_wrap {
   margin-top: 80px;
 
-  & .inner {
+  .inner {
     padding: 29px 0;
 
-    & .date_info {
+    .date_info {
       position: relative;
       margin-bottom: 50px;
       padding: 0 20px;
 
-      & .title {
+      .title {
         display: inline-block;
         font-size: 15px;
         font-weight: bold;
@@ -908,7 +908,7 @@ textarea.custom {
         color: var(--text-01);
       }
 
-      & .total {
+      .total {
         float: right;
         line-height: 20px;
         font-family: var(--font1);
@@ -926,7 +926,7 @@ textarea.custom {
         }
       }
 
-      & .date {
+      .date {
         position: absolute;
         display: block;
         top: 25px;
@@ -936,19 +936,19 @@ textarea.custom {
         letter-spacing: -0.3px;
         color: var(--text-03);
 
-        & i {
+        i {
           margin-right: 3px;
           transform: translate(0, 2px);
         }
       }
     }
 
-    & .spending_list {
-      & li {
+    .spending_list {
+      li {
         width: 100%;
         height: 60px;
 
-        & .day {
+        .day {
           display: inline-block;
           float: left;
           width: 14%;
@@ -960,7 +960,7 @@ textarea.custom {
           line-height: 16px;
         }
 
-        & .title {
+        .title {
           position: relative;
           display: inline-block;
           float: left;
@@ -974,7 +974,7 @@ textarea.custom {
           white-space: nowrap;
           padding: 0 0 0 3px;
 
-          & .time {
+          .time {
             position: absolute;
             font-size: 11px;
             line-height: 13px;
@@ -984,7 +984,7 @@ textarea.custom {
             left: 4px;
             letter-spacing: 0;
 
-            & .category {
+            .category {
               font-family: var(--font1);
               font-size: 11px;
               letter-spacing: -.55px;
@@ -993,7 +993,7 @@ textarea.custom {
           }
         }
 
-        & .val {
+        .val {
           display: inline-block;
           float: left;
           width: 28%;
@@ -1015,24 +1015,24 @@ textarea.custom {
 }
 
 .card_benefits_wrap {
-  & .card_info {
+  .card_info {
     width: 100%;
     border-bottom: 1px solid #f2f4f7;
     padding: 12px 0 21px;
 
-    & > .img {
+    > .img {
       display: inline-block;
       width: 32px;
       height: 32px;
       margin-right: 2px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
       }
     }
 
-    & > .title {
+    > .title {
       width: calc(100% - 40px);
       display: inline-block;
       font-family: var(--font2);
@@ -1042,15 +1042,15 @@ textarea.custom {
       vertical-align: middle;
     }
 
-    & > .b-list {
+    > .b-list {
       display: block;
       margin-top: 20px;
 
-      & .item {
+      .item {
         display: block;
         margin-bottom: 8px;
 
-        & .tit {
+        .tit {
           display: inline-block;
           width: 60%;
           text-align: left;
@@ -1061,7 +1061,7 @@ textarea.custom {
           color: var(--text-03);
         }
 
-        & .val {
+        .val {
           display: inline-block;
           width: 40%;
           text-align: right;
@@ -1080,17 +1080,17 @@ textarea.custom {
     }
   }
 
-  & .card_benefits {
-    & .badge_area {
+  .card_benefits {
+    .badge_area {
       padding: 30px 0 0 0;
       margin-bottom: 14px;
     }
 
-    & .list_area {
+    .list_area {
       padding: 0 3px;
       margin-bottom: 38px;
 
-      & .list {
+      .list {
         position: relative;
         font-family: var(--font2);
         font-size: 13px;
@@ -1108,19 +1108,19 @@ textarea.custom {
           left: 0;
         }
 
-        & .primary-color {
+        .primary-color {
           font-weight: bold;
         }
       }
     }
 
-    & .btn_area {
+    .btn_area {
       padding: 0 3px;
       margin-bottom: 0;
       background-color: transparent;
     }
 
-    & .empty {
+    .empty {
       font-size: 13px;
       line-height: 30px;
       letter-spacing: -0.65px;
@@ -1131,7 +1131,7 @@ textarea.custom {
   }
 
   &.direct {
-    & .badge_area {
+    .badge_area {
       padding: 13px 0 0 0;
     }
   }
@@ -1141,13 +1141,13 @@ textarea.custom {
   padding: 17px 0;
   border-top: 1px solid #f2f4f7;
 
-  & .title_area {
+  .title_area {
     position: relative;
     width: 100%;
     height: 50px;
     margin-bottom: 0;
 
-    & .title {
+    .title {
       display: block;
       font-family: var(--font2);
       font-size: 13px;
@@ -1158,7 +1158,7 @@ textarea.custom {
       text-overflow: ellipsis;
     }
 
-    & .btn {
+    .btn {
       position: absolute;
       right: 0;
       top: 15px;
@@ -1170,8 +1170,8 @@ textarea.custom {
   &.direct {
     padding: 17px 20px 0;
 
-    & .title_area {
-      & .refresh {
+    .title_area {
+      .refresh {
         display: inline-block;
         position: absolute;
         right: 0;
@@ -1179,27 +1179,27 @@ textarea.custom {
       }
     }
 
-    & textarea {
+    textarea {
       margin-bottom: 0;
     }
   }
 }
 
 .more_benefit_wrap {
-  & .more_benefit {
+  .more_benefit {
     position: relative;
     width: 100%;
     height: 58px;
     line-height: 58px;
     border-top: 1px solid #f5f6f8;
 
-    & a {
+    a {
       width: 100%;
       height: 100%;
       display: block;
       color: #37354e;
 
-      & .title {
+      .title {
         display: block;
         font-family: var(--font2);
         font-size: 13px;
@@ -1212,7 +1212,7 @@ textarea.custom {
         border-bottom: 1px solid #f5f6f8;
       }
 
-      & i {
+      i {
         position: absolute;
         right: 19px;
         top: 21px;
@@ -1220,7 +1220,7 @@ textarea.custom {
     }
   }
 
-  & .list {
+  .list {
     &.caution {
       padding: 30px 56px 0 36px;
       font-family: var(--font1);
@@ -1243,7 +1243,7 @@ textarea.custom {
     }
   }
 
-  & .btn_area {
+  .btn_area {
     padding: 0 20px;
     margin-bottom: 30px;
   }
@@ -1256,14 +1256,14 @@ textarea.custom {
 .box_guide {
   padding: 0 20px;
 
-  & .title_area {
+  .title_area {
     margin-bottom: 19px;
 
-    & .title {
+    .title {
       margin-bottom: 7px;
     }
 
-    & .desc {
+    .desc {
       font-size: 13px;
       line-height: 20px;
       letter-spacing: -0.33px;
@@ -1271,21 +1271,21 @@ textarea.custom {
       font-family: var(--font1);
       color: var(--text-02);
 
-      & .text-color {
+      .text-color {
         color: var(--text-01) !important;
         font-family: var(--font2);
       }
     }
   }
 
-  & .info-guide {
+  .info-guide {
     width: 100%;
 
-    & .title_area {
+    .title_area {
       border-bottom: 1px solid #37354e;
       margin-bottom: 24px;
 
-      & .title-sm {
+      .title-sm {
         font-size: 14px;
         font-weight: bold;
         line-height: 1.43;
@@ -1295,18 +1295,18 @@ textarea.custom {
         vertical-align: middle;
         margin-bottom: 13px;
 
-        & i {
+        i {
           margin-right: 5px;
           transform: translateY(3px);
         }
       }
     }
 
-    & .desc_area {
+    .desc_area {
       margin-bottom: 20px;
       padding: 0 3px;
 
-      & .desc-title {
+      .desc-title {
         font-family: var(--font2);
         font-size: 14px;
         font-weight: 500;
@@ -1316,7 +1316,7 @@ textarea.custom {
         margin-bottom: 6px;
       }
 
-      & .desc-title-sm {
+      .desc-title-sm {
         font-size: 13px;
         font-family: var(--font2);
         font-weight: 500;
@@ -1326,7 +1326,7 @@ textarea.custom {
         margin-bottom: 6px;
       }
 
-      & .desc-primary {
+      .desc-primary {
         font-family: var(--font2);
         font-size: 13px;
         font-weight: 500;
@@ -1336,7 +1336,7 @@ textarea.custom {
         margin-bottom: 6px;
       }
 
-      & .desc-tip {
+      .desc-tip {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -1345,35 +1345,35 @@ textarea.custom {
         margin-bottom: 6px;
       }
 
-      & .desc {
+      .desc {
         font-size: 13px;
         line-height: 20px;
         letter-spacing: -0.33px;
         color: var(--text-02);
 
-        & .primary {
+        .primary {
           font-family: var(--font2);
         }
       }
     }
 
-    & .statement {
+    .statement {
       border-bottom: 1px solid #e3e4e8;
       padding-bottom: 23px;
       margin-bottom: 12px;
 
-      & .vertical-table {
+      .vertical-table {
         margin-bottom: 30px;
       }
 
-      & > .item {
+      > .item {
         padding: 0;
         margin-bottom: 30px;
 
-        & .table {
-          & thead {
-            & tr {
-              & th {
+        .table {
+          thead {
+            tr {
+              th {
                 height: 28px;
                 line-height: 26px;
                 font-size: 11px;
@@ -1382,14 +1382,14 @@ textarea.custom {
                 &.crossed {
                   background-image: linear-gradient(to bottom left, transparent calc(50% - 1px), #e3e4e8, transparent calc(50% + 1px));
 
-                  & .right {
+                  .right {
                     position: absolute;
                     width: auto;
                     top: -5px;
                     right: 24px;
                   }
 
-                  & .left {
+                  .left {
                     width: auto;
                     position: absolute;
                     left: -7px;
@@ -1399,11 +1399,11 @@ textarea.custom {
               }
 
               &.line-2 {
-                & th {
+                th {
                   position: relative;
                   height: 49px;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1416,9 +1416,9 @@ textarea.custom {
             }
           }
 
-          & tbody {
-            & tr {
-              & td {
+          tbody {
+            tr {
+              td {
                 height: 34px;
                 font-family: var(--font1);
                 color: var(--text-02);
@@ -1426,7 +1426,7 @@ textarea.custom {
                 &.h-140 {
                   position: relative;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1438,11 +1438,11 @@ textarea.custom {
               }
 
               &.line-2 {
-                & td {
+                td {
                   position: relative;
                   height: 49px;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1454,11 +1454,11 @@ textarea.custom {
               }
 
               &.line-3 {
-                & td {
+                td {
                   position: relative;
                   height: 66px;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1468,7 +1468,7 @@ textarea.custom {
                   }
 
                   &:nth-child(2) {
-                    & span {
+                    span {
                       top: 17px;
                       left: 10px;
                       transform: none;
@@ -1477,13 +1477,13 @@ textarea.custom {
                   }
 
                   &:nth-child(3) {
-                    & span {
+                    span {
                       top: -9%;
                     }
                   }
 
                   &.line-3 {
-                    & span {
+                    span {
                       top: 9px;
                       text-align: center;
                       left: -1%;
@@ -1493,11 +1493,11 @@ textarea.custom {
               }
 
               &.line-6 {
-                & td {
+                td {
                   position: relative;
                   height: 114px;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1507,7 +1507,7 @@ textarea.custom {
                   }
 
                   &:nth-child(2) {
-                    & span {
+                    span {
                       top: 10px;
                       text-align: left;
                       transform: none;
@@ -1516,7 +1516,7 @@ textarea.custom {
                   }
 
                   &:nth-child(3) {
-                    & span {
+                    span {
                       top: 18%;
                     }
                   }
@@ -1524,10 +1524,10 @@ textarea.custom {
               }
 
               &.h-150 {
-                & td {
+                td {
                   position: relative;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1539,7 +1539,7 @@ textarea.custom {
                   &:nth-child(2) {
                     height: 98px;
 
-                    & span {
+                    span {
                       top: 10px;
                       left: 10px;
                       transform: none;
@@ -1548,7 +1548,7 @@ textarea.custom {
                   }
 
                   &:nth-child(3) {
-                    & span {
+                    span {
                       top: 12%;
                     }
                   }
@@ -1556,11 +1556,11 @@ textarea.custom {
               }
 
               &.h-130 {
-                & td {
+                td {
                   position: relative;
                   height: 130px;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1572,7 +1572,7 @@ textarea.custom {
                   &:nth-child(2) {
                     height: 98px;
 
-                    & span {
+                    span {
                       top: 10px;
                       left: 10px;
                       transform: none;
@@ -1583,10 +1583,10 @@ textarea.custom {
               }
 
               &.h-100 {
-                & td {
+                td {
                   position: relative;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1598,7 +1598,7 @@ textarea.custom {
                   &:nth-child(2) {
                     height: 98px;
 
-                    & span {
+                    span {
                       top: 10px;
                       left: 10px;
                       transform: none;
@@ -1609,11 +1609,11 @@ textarea.custom {
               }
 
               &.h-50 {
-                & td {
+                td {
                   position: relative;
                   height: 50px;
 
-                  & span {
+                  span {
                     position: absolute;
                     line-height: 16px;
                     width: 100%;
@@ -1623,7 +1623,7 @@ textarea.custom {
                   }
 
                   &:nth-child(3) {
-                    & span {
+                    span {
                       top: -28%;
                     }
                   }
@@ -1633,10 +1633,10 @@ textarea.custom {
           }
         }
 
-        & .table-tip {
+        .table-tip {
           margin-top: 12px;
 
-          & span {
+          span {
             display: block;
             font-size: 12px;
             line-height: 18px;
@@ -1652,10 +1652,10 @@ textarea.custom {
         }
       }
 
-      & .d-list {
+      .d-list {
         padding-left: 3px;
 
-        & .desc-title {
+        .desc-title {
           font-family: var(--font2);
           font-size: 14px;
           font-weight: 500;
@@ -1665,8 +1665,8 @@ textarea.custom {
           margin-bottom: 6px;
         }
 
-        & ul {
-          & li {
+        ul {
+          li {
             font-size: 13px;
             line-height: 19px;
             letter-spacing: -0.33px;
@@ -1674,7 +1674,7 @@ textarea.custom {
             margin-bottom: 6px;
 
 
-            & .primary {
+            .primary {
               font-family: var(--font2);
             }
 
@@ -1686,41 +1686,41 @@ textarea.custom {
       }
     }
 
-    & .companyInfo {
-      & > .card {
+    .companyInfo {
+      > .card {
         padding: 22px 0;
 
-        & .card-header {
+        .card-header {
           border-top: 0 !important;
 
-          & .title {
+          .title {
             font-size: 14px;
             font-weight: bold;
             line-height: 20px;
             letter-spacing: -0.35px;
             color: var(--text-01);
 
-            & .sprite {
+            .sprite {
               transform: translateY(3px);
               margin-right: 5px;
             }
           }
 
-          & .btn-arrow {
+          .btn-arrow {
             top: 10px;
             right: 5px;
             left: auto;
           }
         }
 
-        & .card-body {
+        .card-body {
           margin-bottom: 0;
 
-          & .inner {
+          .inner {
             background-color: #f7f8fc;
             padding: 18px 18px 20px;
 
-            & .text {
+            .text {
               display: block;
               font-size: 13px;
               line-height: 20px;
@@ -1729,12 +1729,12 @@ textarea.custom {
               color: var(--text-01);
             }
 
-            & .multiple {
-              & > li {
+            .multiple {
+              > li {
                 margin-bottom: 10px;
 
-                & > ul {
-                  & > li {
+                > ul {
+                  > li {
                     font-size: 13px;
                     line-height: 20px;
                     letter-spacing: -0.33px;
@@ -1748,7 +1748,7 @@ textarea.custom {
               }
             }
 
-            & .question {
+            .question {
               position: relative;
               display: block;
               padding-left: 16px;
@@ -1773,7 +1773,7 @@ textarea.custom {
               }
             }
 
-            & .answer {
+            .answer {
               position: relative;
               display: block;
               padding-left: 16px;
@@ -1798,12 +1798,12 @@ textarea.custom {
             }
 
             &.multiple {
-              & > ul {
-                & > li {
+              > ul {
+                > li {
                   margin-bottom: 18px;
 
-                  & .question {
-                    & .icon-q {
+                  .question {
+                    .icon-q {
                       position: absolute;
                       left: -5px;
                       top: 2px;
@@ -1821,8 +1821,8 @@ textarea.custom {
                     }
                   }
 
-                  & .answer {
-                    & .icon-a {
+                  .answer {
+                    .icon-a {
                       position: absolute;
                       left: -5px;
                       top: 2px;
@@ -1859,9 +1859,9 @@ textarea.custom {
 }
 
 .v-table {
-  & thead {
-    & tr {
-      & th {
+  thead {
+    tr {
+      th {
         font-family: var(--font1);
         font-weight: normal;
         font-size: 11px;
@@ -1885,11 +1885,11 @@ textarea.custom {
       }
 
       &.line-2 {
-        & th {
+        th {
           position: relative;
           height: 49px;
 
-          & span {
+          span {
             padding: 0 0 0 10px;
             position: absolute;
             line-height: 16px;
@@ -1903,9 +1903,9 @@ textarea.custom {
     }
   }
 
-  & tbody {
-    & tr {
-      & td {
+  tbody {
+    tr {
+      td {
         font-family: var(--font1);
         font-weight: normal;
         font-size: 11px;
@@ -1929,11 +1929,11 @@ textarea.custom {
       }
 
       &.line-2 {
-        & td {
+        td {
           position: relative;
           height: 49px;
 
-          & span {
+          span {
             padding-left: 10px;
             position: absolute;
             line-height: 16px;
@@ -1946,11 +1946,11 @@ textarea.custom {
       }
 
       &.line-lg {
-        & td {
+        td {
           position: relative;
           height: 114px;
 
-          & span {
+          span {
             padding-left: 10px;
             position: absolute;
             line-height: 16px;

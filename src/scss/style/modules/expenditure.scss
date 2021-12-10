@@ -168,7 +168,7 @@
         padding: 10px 12px 11px;
         font-family: var(--font2);
         font-weight: 500;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 42px;
         text-align: left;
         color: var(--text-01);
@@ -4775,7 +4775,7 @@
         span {
           display: inline-block;
           vertical-align: middle;
-          font-size: 11px;
+          font-size: 12px;
           line-height: 26px;
           letter-spacing: -0.55px;
           color: var(--text-02);
@@ -4897,6 +4897,30 @@
       }
     }
   }
+
+  > .empty {
+    text-align: center;
+    padding-top: 197px;
+
+    .img {
+      width: 200px;
+      height: 90px;
+      margin: 0 auto 24px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .txt {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 23px;
+      letter-spacing: -0.38px;
+      color: var(--text-01);
+    }
+  }
 }
 
 .ex-current {
@@ -4943,11 +4967,11 @@
     .ex01-item {
       position: relative;
       display: block;
-      margin-bottom: 9px;
+      margin-bottom: 15px;
 
       .title {
         display: inline-block;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 19px;
         letter-spacing: -0.33px;
         color: var(--text-03);
@@ -4958,7 +4982,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 19px;
         letter-spacing: -0.33px;
         text-align: right;
@@ -4971,7 +4995,7 @@
         top: 0;
         display: block;
         font-family: var(--font2);
-        font-size: 13px;
+        font-size: 15px;
         line-height: 19px;
         text-align: right;
         color: var(--text-01);
@@ -5188,7 +5212,7 @@
       margin-top: -1px;
 
       .item {
-        margin-bottom: 6px;
+        margin-bottom: 10px;
 
         &:last-child {
           margin-bottom: 0;
@@ -5200,7 +5224,7 @@
 
           span {
             font-family: var(--font2);
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 18px;
             letter-spacing: -0.33px;
@@ -5214,7 +5238,7 @@
           }
 
           em {
-            font-size: 12px;
+            font-size: 14px;
             line-height: 18px;
             display: inline-block;
             color: var(--text-04);

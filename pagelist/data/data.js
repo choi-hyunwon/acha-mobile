@@ -1124,12 +1124,12 @@ data.mydata = {
             'category': 'mydata',
             'page': '04-1. 추가하기_02. 통합인증_2.7 약관동의2 (01_통합인증 약관동의2)'
         },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_07',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (01_통합인증 완료(일반))'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '04_my_data_07',
+        //     'category': 'mydata',
+        //     'page': '04-1. 추가하기_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (01_통합인증 완료(일반))'
+        // },
         {
             'stateClass': 'complete',
             'url': '04_my_data_16',

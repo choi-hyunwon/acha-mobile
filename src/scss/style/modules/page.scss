@@ -671,7 +671,7 @@
   & .dropdown {
     & .dropdown-toggle {
       position: relative;
-      width: 115px;
+      width: 120px;
       height: 36px;
       line-height: 34px;
       border-radius: 4px;
@@ -679,7 +679,7 @@
       background-color: #fff;
       padding: 0 12px;
       text-align: left;
-      font-size: 13px;
+      font-size: 14px;
       letter-spacing: -.33px;
 
       &.disabled {
@@ -717,14 +717,14 @@
       max-height: 421px;
       overflow-y: auto;
       min-width: auto;
-      width: 115px;
+      width: 120px;
       border-radius: 4px;
       box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
       border: solid 1px #e2e3e6;
       background-color: var(--white);
 
       & .dropdown-item {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 36px;
       }
     }

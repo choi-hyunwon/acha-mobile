@@ -1,4 +1,27 @@
 var data = {}
+data.calendar = {
+    'title': '캘린더',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_01',
+            'category': 'calendar',
+            'page': '캘린더'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_02',
+            'category': 'calendar',
+            'page': '캘린더 (표시할 데이터가 없는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_popup_01',
+            'category': 'calendar',
+            'page': '캘린더'
+        },
+    ]
+};
 data.signInRenewal = {
     'title': '이용약관',
     'list': [
@@ -1034,29 +1057,6 @@ data.my = {
             'url': '02_my_10',
             'category': 'My',
             'page': '개인신용정보 삭제'
-        },
-    ]
-};
-data.calendar = {
-    'title': '캘린더',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '03_calendar_01',
-            'category': 'calendar',
-            'page': '캘린더'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '03_calendar_02',
-            'category': 'calendar',
-            'page': '캘린더 (표시할 데이터가 없는 경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '03_calendar_popup_01',
-            'category': 'calendar',
-            'page': '캘린더'
         },
     ]
 };

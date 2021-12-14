@@ -3,16 +3,17 @@
 @@include('../include/head.html')
 <body>
 <div class="wrap">
-    <div class="my-card-tab _myCardTab">
-        <ul class="clearfix">
-            <li class="active"><a href="#">내카드</a></li>
-            <li><a href="#">타임라인</a></li>
-            <li><a href="#">카드고정결제</a></li>
-        </ul>
-    </div>
+<!--    <div class="my-card-tab _myCardTab">-->
+<!--        <ul class="clearfix">-->
+<!--            <li class="active"><a href="#">내카드</a></li>-->
+<!--            <li><a href="#">타임라인</a></li>-->
+<!--            <li><a href="#">카드고정결제</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
     <div class="contents">
         <div class="my-card-main">
-            <div class="swiper-container _swiperMain">
+<!--            <div class="swiper-container _swiperMain">-->
+            <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div>
@@ -205,26 +206,26 @@
 <div class="loading-gif"><img src="../../img/common/update.gif" alt=""></div>
 <!-- e 로딩 애니메이션 -->
 </body>
-<script>
-    // https://swiperjs.com/swiper-api
+<!--<script>-->
+<!--    // https://swiperjs.com/swiper-api-->
 
-    $(document).ready(function () {
-        new Swiper("._swiperMain", {
-            autoHeight: true,
-            calculateHeight: true,
+<!--    $(document).ready(function () {-->
+<!--        new Swiper("._swiperMain", {-->
+<!--            autoHeight: true,-->
+<!--            calculateHeight: true,-->
 
-            // slide event
-            on: {
-                activeIndexChange: function () {
-                    console.log(this.realIndex);
-                }
-            }
-        });
-    })
-</script>
-<script>
-    $('._myCardTab li a').on('click', function () {
-        $(this).parent().addClass('active').siblings().removeClass('active')
-    })
-</script>
+<!--            // slide event-->
+<!--            on: {-->
+<!--                activeIndexChange: function () {-->
+<!--                    console.log(this.realIndex);-->
+<!--                }-->
+<!--            }-->
+<!--        });-->
+<!--    })-->
+<!--</script>-->
+<!--<script>-->
+<!--    $('._myCardTab li a').on('click', function () {-->
+<!--        $(this).parent().addClass('active').siblings().removeClass('active')-->
+<!--    })-->
+<!--</script>-->
 </html>

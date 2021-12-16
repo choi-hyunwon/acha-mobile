@@ -1127,6 +1127,18 @@
       line-height: 22px;
       letter-spacing: -0.38px;
       text-align: left;
+      color: var(--text-02);
+    }
+
+    .category {
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      text-align: right;
+      color: var(--text-03);
     }
 
     .date {
@@ -1164,12 +1176,12 @@
   }
 
   .no-data {
-    padding-top: 15px;
-    padding-bottom: 29px;
+    padding-top: 29px;
+    padding-bottom: 82px;
 
     .txt {
-      font-size: 12px;
-      line-height: 20px;
+      font-size: 13px;
+      line-height: 19px;
       letter-spacing: -0.3px;
       text-align: center;
       color: var(--text-02);
@@ -1189,7 +1201,7 @@
 }
 
 .box-ex-detail-top {
-  padding: 11px 20px 0;
+  padding: 24px 20px 0;
 
   .title-wrap {
     font-size: 18px;
@@ -1234,7 +1246,7 @@
         text-overflow: ellipsis;
         vertical-align: middle;
         font-family: var(--font2);
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 500;
         line-height: 26px;
         letter-spacing: -0.35px;
@@ -1267,18 +1279,19 @@
 
     .btn-refresh {
       position: absolute;
-      display: block;
+      display: flex;
+      align-items: center;
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      line-height: 18px;
+      line-height: 19px;
 
       span {
         display: inline-block;
         font-family: var(--font2);
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 500;
-        line-height: 18px;
+        line-height: 19px;
         letter-spacing: -0.6px;
         color: var(--text-02);
         border-radius: 50%;
@@ -1308,8 +1321,12 @@
 
     .info2 {
       position: relative;
-      padding: 14px 0;
+      padding: 14px 0 19px;
       overflow: hidden;
+
+      + .info2 {
+        padding-top: 0;
+      }
 
       .ac-name {
         display: block;
@@ -1323,8 +1340,8 @@
 
       .ac-num {
         display: inline-block;
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 19px;
         letter-spacing: -0.33px;
         color: var(--text-03);
         margin-top: 2px;
@@ -1343,8 +1360,8 @@
         color: var(--text-01);
         vertical-align: middle;
 
-        &::after {
-          content: '원';
+        em {
+          //content: '원';
           font-family: var(--font3);
           font-weight: bold;
           font-size: 12px;
@@ -1362,31 +1379,38 @@
         .val {
           display: block;
           font-family: var(--font3);
-          font-size: 18px;
+          font-size: 19px;
           font-weight: bold;
-          line-height: 24px;
+          line-height: 25px;
           letter-spacing: -0.18px;
           text-align: right;
-          margin-bottom: 1px;
+          margin-bottom: 3px;
 
-          &::after {
+          em {
             content: '원';
             display: inline-block;
             font-family: var(--font3);
-            font-size: 12px;
+            font-size: 13px;
             font-weight: bold;
-            line-height: 24px;
+            line-height: 19px;
             letter-spacing: -0.3px;
             margin-left: 1px;
             transform: translateY(-2px);
+
+            &.abroad  {
+              font-size: 19px;
+              font-weight: bold;
+              line-height: 25px;
+              transform: none;
+            }
           }
         }
 
         .desc {
           display: block;
-          font-size: 11px;
-          line-height: 17px;
-          letter-spacing: -0.28px;
+          font-size: 13px;
+          line-height: 19px;
+          letter-spacing: -0.32px;
           text-align: right;
           color: var(--text-02);
 
@@ -1614,6 +1638,7 @@
     .ac-item {
       position: relative;
       margin-bottom: 33px;
+      overflow: hidden;
 
       .img {
         float: left;
@@ -1631,7 +1656,7 @@
 
       .name {
         float: left;
-        width: calc(100% - 128px);
+        width: calc(100% - 135px);
         font-family: var(--font2);
         font-size: 13px;
         line-height: 22px;
@@ -1756,18 +1781,30 @@
 }
 
 .group-date {
-  padding-top: 10px;
   overflow: hidden;
-  margin-bottom: 5px;
+  border-bottom: 1px solid #f5f6f8;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 72px;
+  }
+
+  .date-area {
+    display: flex;
+    justify-content: space-between;
+    line-height: 18px;
+  }
 
   .date {
-    font-family: var(--font2);
-    font-size: 12px;
+    font-family: var(--font1);
+    font-size: 13px;
     line-height: 18px;
-    letter-spacing: -0.3px;
-    color: #afaeb8;
+    color: var(--text-03);
     vertical-align: middle;
-    margin-bottom: 23px;
+    margin-bottom: 3px;
   }
 
   .ex-list {
@@ -1775,21 +1812,66 @@
       position: relative;
       margin-bottom: 21px;
 
+      &:last-child {
+        margin-bottom: 0;
+      }
+
       .info {
         display: block;
         overflow: hidden;
 
         .title {
           float: left;
-          width: calc(100% - 128px);
+          width: calc(100% - 145px);
           font-family: var(--font2);
-          font-size: 13px;
+          font-size: 15px;
           line-height: 22px;
           letter-spacing: -0.33px;
-          color: #37354e;
+          color: var(--text-01);
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
+        }
+
+        .value {
+          font-size: 15px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 20px;
+          letter-spacing: -0.15px;
+          text-align: right;
+          //color: var(--blurple);
+
+          &::after {
+            content: none;
+          }
+
+          em {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: normal;
+            text-align: left;
+            margin-left: 4px;
+          }
+
+          &.in {
+            color: var(--blurple);
+
+            em {
+              color: var(--blurple);
+            }
+          }
+
+          &.out {
+            color: var(--text-02);
+
+            em {
+              color: var(--text-02);
+            }
+          }
         }
 
         .state {
@@ -1823,12 +1905,12 @@
         letter-spacing: -0.14px;
         vertical-align: middle;
 
-        &::after {
-          content: '원';
-          font-family: var(--font2);
-          font-size: 13px;
-          line-height: 22px;
-          letter-spacing: 0;
+        &.color-text {
+          color: var(--text-01) !important;
+
+          em {
+            color: var(--text-01) !important;
+          }
         }
 
         &.text {
@@ -1852,20 +1934,38 @@
         }
       }
 
+      .balance-box {
+        position: relative;
+        margin-top: 4px;
+
+        .txt {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 13px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 19px;
+          letter-spacing: normal;
+          text-align: left;
+          color: var(--text-03);
+        }
+      }
+
       .balance {
         display: block;
         font-family: var(--font1);
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 13px;
+        line-height: 18px;
         letter-spacing: 0;
         color: #9b9aa6;
         text-align: right;;
 
-        &::after {
-          content: '원';
+        em {
           font-family: var(--font1);
-          font-size: 11px;
-          line-height: 14px;
+          font-size: 12px;
+          line-height: 18px;
           color: #9b9aa6;
           letter-spacing: -.28px;
         }
@@ -1876,7 +1976,6 @@
         display: inline-block;
         transform: translate(1px, 0);
       }
-
     }
   }
 
@@ -1890,7 +1989,6 @@
       }
     }
   }
-
 }
 
 .box_ex_bottom {
@@ -5289,8 +5387,15 @@
   }
 
   .info-wrap {
-    padding-bottom: 6px;
     margin-top: 36px;
+
+    > .table {
+      margin-top: 23px;
+    }
+
+    + .info-wrap {
+      margin-top: 23px;
+    }
 
     &:last-child {
       padding-top: 0;
@@ -5298,10 +5403,10 @@
     }
 
     > .title {
-      font-family: var(--font2);
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
+      font-family: var(--font3);
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 22px;
       letter-spacing: -0.35px;
       text-align: left;
       color: var(--text-01);
@@ -5310,10 +5415,8 @@
     }
 
     > .info-list {
-      border-bottom: 1px solid #e3e4e8;
-
       .item {
-        padding: 0 5px 22px;
+        padding: 0 0 22px;
         overflow: hidden;
 
         &:first-child {
@@ -5331,6 +5434,16 @@
           color: var(--text-01);
         }
 
+        .val-item {
+          float: right;
+          display: flex;
+          flex-direction: column;
+
+          .val-sm {
+            margin-top: 2px;
+          }
+        }
+
         .val {
           float: right;
           font-size: 14px;
@@ -5339,11 +5452,11 @@
           text-align: right;
           color: var(--text-02);
 
-          &.won {
-            &::after {
-              content: '원';
-              font-family: var(--font1);
-            }
+          &.val-sm {
+            float: none;
+            display: block;
+            font-size: 12px;
+            line-height: 18px;
           }
         }
       }
@@ -5356,6 +5469,7 @@
         padding: 24px;
         margin-top: 22px;
         border: solid 1px #e3e4e8;
+        margin-bottom: 36px;
 
         .item {
           padding: 0 0 22px;
@@ -5396,8 +5510,8 @@
     thead {
       th {
         height: 29px;
-        line-height: 28px;
-        font-size: 11px;
+        line-height: 18px;
+        font-size: 12px;
         letter-spacing: -0.55px;
         color: var(--text-02);
       }
@@ -5409,7 +5523,7 @@
 
     td {
       font-family: var(--font1);
-      font-size: 11px;
+      font-size: 12px;
       padding: 0 10px;
       letter-spacing: -0.28px;
     }
@@ -5557,24 +5671,27 @@
   }
 
   > .month {
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: -0.3px;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.32px;
     color: var(--text-03);
     margin-bottom: 4px;
+    margin-top: 26px;
   }
 
   > .total {
+    vertical-align: middle;
     font-family: var(--font4);
     font-size: 28px;
     font-weight: bold;
     line-height: 37px;
     letter-spacing: -0.28px;
     color: var(--text-01);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
-    &::after {
-      content: '원';
+    em {
+      //content: '원';
+      display: inline-block;
       font-family: var(--font3);
       font-size: 16px;
       font-weight: bold;
@@ -5583,6 +5700,26 @@
       text-align: center;
       color: var(--text-01);
       margin-left: 2px;
+      transform: translateY(-2px);
+    }
+  }
+
+  .list {
+    &.caution {
+      padding: 12px 4px 20px 20px;
+      font-size: 11px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 18px;
+      font-family: var(--font1);
+      letter-spacing: -0.28px;
+      text-align: left;
+      color: var(--text-03);
+
+      &:before {
+        top: 15px;
+      }
     }
   }
 
@@ -6105,11 +6242,14 @@
   margin-top: 36px;
 
   .item {
-    padding: 20px 0 22px;
+    padding: 36px 0 40px;
+    margin-bottom: 4px;
     border-bottom: 1px solid #f5f6f8;
 
     &:last-child {
       margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -6128,20 +6268,31 @@
 
   .date-info {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
-
-    &.sm-mb {
-      margin-bottom: 11px;
-    }
+    flex-direction: column;
+    margin-bottom: 3px;
 
     .date {
-      font-family: var(--font2);
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 19px;
-      color: var(--text-01);
+      font-size: 15px;
+      font-family: var(--font3);
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 22px;
+      letter-spacing: -0.38px;
+      text-align: left;
+      color: var(--text-02);
+      margin-bottom: 22px;
+    }
+
+    .time {
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 18px;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--text-03);
     }
 
     .btn {
@@ -6159,31 +6310,39 @@
   }
 
   .ex-info {
+    &:last-child {
+      //> div {
+      //  margin-bottom: 0 !important;
+      //}
+    }
+    + .date-info {
+      margin-top: 20px;
+    }
     > div {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 10px;
+      margin-bottom: 4px;
 
       &:last-child {
         margin-bottom: 0;
       }
 
       &.lg {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
 
         .name {
           font-family: var(--font2);
-          font-size: 14px;
+          font-size: 15px;
           font-weight: 500;
-          line-height: 20px;
+          line-height: 22px;
           letter-spacing: normal;
           color: var(--text-01);
         }
 
         .val {
           font-family: var(--font2);
-          font-size: 16px;
+          font-size: 15px;
           font-weight: 500;
           line-height: 21px;
           letter-spacing: -0.16px;
@@ -6194,8 +6353,7 @@
       &.md {
         .name {
           font-family: var(--font2);
-          font-size: 14px;
-          font-weight: 500;
+          font-size: 12px;
           line-height: 20px;
           letter-spacing: normal;
           color: var(--text-01);
@@ -6208,8 +6366,8 @@
         }
 
         .val {
-          font-family: var(--font2);
-          font-size: 14px;
+          font-family: var(--font1);
+          font-size: 13px;
           font-weight: 500;
           line-height: 19px;
           letter-spacing: -0.14px;
@@ -6246,8 +6404,8 @@
       }
 
       .name {
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 12px;
+        line-height: 18px;
         letter-spacing: -0.33px;
         color: var(--text-03);
       }
@@ -6257,11 +6415,7 @@
         line-height: 19px;
         letter-spacing: -0.33px;
         text-align: right;
-        color: var(--text-02);
-
-        &::after {
-          content: '원';
-        }
+        color: var(--text-03);
       }
     }
   }

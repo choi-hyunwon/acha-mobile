@@ -478,211 +478,313 @@ data.expenditure2 = {
             'stateClass': 'complete',
             'url': '11_exependiture_26',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.1 수신상품(요구불식 계좌)'
+            'page': '1.1 수신_요구불식_일반_Type A : 계좌, My-일반(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_27',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.1 수신상품(요구불식 계좌)'
+            'page': '1.1 수신_요구불식_일반_Type A : 계좌, My-일반(02 계좌상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_26',
+            'category': '홈계좌',
+            'page': '1.2 수신_요구불식_마이너스 약정_Type A : 계좌, My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_27-1',
+            'category': '홈계좌',
+            'page': '1.2 수신_요구불식_마이너스 약정_Type A : 계좌, My-일반(02 계좌상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_26-1',
+            'category': '홈계좌',
+            'page': '1.3 수신_요구불식_외화 계좌_Type A : 계좌, My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_28-1',
+            'category': '홈계좌',
+            'page': '1.3 수신_요구불식_외화 계좌_Type A : 계좌, My-일반(02 계좌상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_28-2',
+            'category': '홈계좌',
+            'page': '1.4 수신_요구불식_다통화 계좌_Type A : 계좌, My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_28-3',
+            'category': '홈계좌',
+            'page': '1.4 수신_요구불식_다통화 계좌_Type A : 계좌, My-일반(02 계좌상세)'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_28',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.5 투자상품(거치식 계좌)'
+            'page': '2.1 수신_거치식 계좌_일반_Type A : 계좌, My-일반(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_29',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.5 투자상품(거치식 계좌)_상세_거래내역'
+            'page': '2.1 수신_거치식 계좌_일반_Type A : 계좌, My-일반(02 계좌상세)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_30',
+            'url': '11_exependiture_29-1',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.8. 대출상품 (일반상환)'
+            'page': '3.1 수신_정액 적립식 계좌_일반_Type A : 계좌, My-일반(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_31',
+            'url': '11_exependiture_29-2',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.12. 대출 상세 (거래내역)_고정지출, My 상세'
+            'page': '3.1 수신_정액 적립식 계좌_일반_Type A : 계좌, My-일반(02 계좌상세)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_popup_01',
+            'url': '11_exependiture_29-3',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.12. 대출 상세 (거래내역)_고정지출, My 상세_팝업'
+            'page': '3.1 수신_정액 적립식 계좌_일반 Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_32',
+            'url': '11_exependiture_29-4',
             'category': '홈계좌',
-            'page': '03. 보험_3.1 보험(일반)_My 상세'
+            'page': '3.1 수신_정액 적립식 계좌_일반 Type B : 홈-고정지출, My-고정지출(02 거래내역)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_33',
+            'url': '11_exependiture_29-5',
             'category': '홈계좌',
-            'page': '03. 보험_3.1 보험(일반)_상세_거래내역'
+            'page': '4-1. 수신_자유 적립식 계좌_일반_Type A : 계좌, My-일반(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_52',
+            'url': '11_exependiture_29-6',
             'category': '홈계좌',
-            'page': '03. 보험_3.2 보험(자동차)_My 상세'
+            'page': '4-1. 수신_자유 적립식 계좌_일반_Type A : 계좌, My-일반(02 계좌상세)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_53',
+            'url': '11_exependiture_29-7',
             'category': '홈계좌',
-            'page': '03. 보험_3.2 보험(자동차)_상세_거래내역'
+            'page': '5-1. 투자_거치식, 임의식, 적립식 계좌_일반_Type A : 계좌, My-일반(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_34',
+            'url': '11_exependiture_29-8',
             'category': '홈계좌',
-            'page': '03. 보험_3.3. 보험대출_고정지출, My 상세_상세_거래내역'
+            'page': '5-1. 투자_거치식, 임의식, 적립식 계좌_일반_Type A : 계좌, My-일반(02 계좌상세)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_35',
+            'url': '11_exependiture_29-9',
             'category': '홈계좌',
-            'page': '03. 보험_3.3. 보험대출_고정지출, My 상세_상세_거래내역'
+            'page': '6-1. 대출_한도거래_Type A : 계좌, My-일반(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_popup_02',
+            'url': '11_exependiture_29-10',
             'category': '홈계좌',
-            'page': '03. 보험_3.3. 보험대출_고정지출, My 상세_거래내역'
+            'page': '6-1. 대출_한도거래_Type A : 계좌, My-일반(02 계좌상세)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_18',
+            'url': '11_exependiture_29-11',
             'category': '홈계좌',
-            'page': '04. 카드_고정지출, My 상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_54',
-            'category': '홈계좌',
-            'page': '04. 카드_상세_카드대출(단기)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_55',
-            'category': '홈계좌',
-            'page': '04. 카드_상세_리볼빙'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_36',
-            'category': '홈계좌',
-            'page': '05. 금융투자_5.2 연금 상품_홈-계좌, My 상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_37',
-            'category': '홈계좌',
-            'page': '05. 금융투자_5.2 연금 상품_상세_거래내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_popup_03',
-            'category': '홈계좌',
-            'page': '05. 금융투자_5.2 연금 상품_상세_거래내역_팝업'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_38',
-            'category': '홈계좌',
-            'page': '06. 선불전자지급수단 정보_내카드, My 상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_39',
-            'category': '홈계좌',
-            'page': '07. 전자결제정보_내카드, My 상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_40',
-            'category': '홈계좌',
-            'page': '08. 개인형IRP_홈-계좌, My상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_41',
-            'category': '홈계좌',
-            'page': '08. 개인형IRP_상세_거래내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_42',
-            'category': '홈계좌',
-            'page': '09. 통신업_고정지출, My 상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_43',
-            'category': '홈계좌',
-            'page': '09. 통신업_상세_납부내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_44',
-            'category': '홈계좌',
-            'page': '10. 보증보험_My상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_45',
-            'category': '홈계좌',
-            'page': '10. 보증보험_상세_거래 내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_46',
-            'category': '홈계좌',
-            'page': '02. 여수신정보_대출_할부금융_My 상세'
+            'page': '6-2. 대출_일반상환(원금균등분할상환, 원리금균등분할상환, 만기일시상환)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_47',
             'category': '홈계좌',
-            'page': '02. 여수신정보_대출_할부금융 거래내역_고정지출, My 상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_popup_01',
-            'category': '홈계좌',
-            'page': '02. 여수신정보_대출_할부금융 거래내역_고정지출, My 상세_팝업'
+            'page': '6-2. 대출_일반상환(원금균등분할상환, 원리금균등분할상환, 만기일시상환)_Type B : 홈-고정지출, My-고정지출(02 거래내역)'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_48',
             'category': '홈계좌',
-            'page': '02. 여수신정보_대출_운용리스_My 상세'
+            'page': '6-3. 대출_거치식(원금균등, 원리금균등), 만기지정(원금균등,원리금균등), 거치식 만기지정(원금균등, 원리금균등), 혼합상환_Type A : 계좌, My-일반(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_49',
             'category': '홈계좌',
-            'page': '02. 여수신정보_대출_운용리스 거래내역_My 상세'
+            'page': '6-3. 대출_거치식(원금균등, 원리금균등), 만기지정(원금균등,원리금균등), 거치식 만기지정(원금균등, 원리금균등), 혼합상환_Type A : 계좌, My-일반(02 거래내역)'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_50',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.4 수신상품(정액적립식 계좌)'
+            'page': '7-1. 할부금융_운용리스 외 대출상품_Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_51',
             'category': '홈계좌',
-            'page': '02. 여수신정보_2.4 수신상품(정액적립식 계좌)_계좌 상세'
+            'page': '7-1. 할부금융_운용리스 외 대출상품_Type B : 홈-고정지출, My-고정지출(02 거래내역)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-1',
+            'category': '홈계좌',
+            'page': '7-2. 할부금융_운용리스_Type A : My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-2',
+            'category': '홈계좌',
+            'page': '7-2. 할부금융_운용리스_Type A : My-일반(02 거래내역)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-3',
+            'category': '홈계좌',
+            'page': '8-1. 보험_일반(2개월납, 3개월납, 6개월납, 일시납)_Type A : My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-4',
+            'category': '홈계좌',
+            'page': '8-1. 보험_일반(2개월납, 3개월납, 6개월납, 일시납)_Type A : My-일반(02 거래내역)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-5',
+            'category': '홈계좌',
+            'page': '8-1. 보험_일반(2개월납, 3개월납, 6개월납, 일시납)_Type A : My-일반(03 정액적립식 (예시))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-6',
+            'category': '홈계좌',
+            'page': '8-2. 보험_일반(월납, 연납)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-7',
+            'category': '홈계좌',
+            'page': '8-2. 보험_일반(월납, 연납)_Type B : 홈-고정지출, My-고정지출(02 거래내역)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_52',
+            'category': '홈계좌',
+            'page': '8-3. 보험_자동차(모든납입 방식)_Type A : My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-5',
+            'category': '홈계좌',
+            'page': '8-3. 보험_자동차(모든납입 방식)_Type A : My-일반(02 거래내역)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_51-8',
+            'category': '홈계좌',
+            'page': '8-4. 보험_보험대출_Type A : My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_52-1',
+            'category': '홈계좌',
+            'page': '8-4. 보험_보험대출_Type A : My-일반(02 거래내역)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_54',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(02 카드 대출,리볼빙)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(2)(01 이번달,다음달 명세서)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-1',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(2)(02 이번달,다음달 결제예정)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-1',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(2)(03 이번달,다음달 청구서 미발행)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(2)(04 지난달,과거 명세서)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-2',
+            'category': '홈계좌',
+            'page': '10-1. 금융투자_연금 외 상품(종합매매, 위탁, 파생상품, 단기금융상품, 현물, 개인형IRP, 기타)_Type A : 계좌, My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-3',
+            'category': '홈계좌',
+            'page': '10-1. 금융투자_연금 외 상품(종합매매, 위탁, 파생상품, 단기금융상품, 현물, 개인형IRP, 기타)_Type A : 계좌, My-일반(02 계좌상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-2',
+            'category': '홈계좌',
+            'page': '10-1. 금융투자_연금상품_Type A : 계좌, My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-4',
+            'category': '홈계좌',
+            'page': '10-1. 금융투자_연금상품_Type A : 계좌, My-일반(02 계좌상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-2',
+            'category': '홈계좌',
+            'page': '11-1. 개인형 IRP_일반_Type A : 계좌, My-일반(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-5',
+            'category': '홈계좌',
+            'page': '11-1. 개인형 IRP_일반_Type A : 계좌, My-일반(02 계좌상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-6',
+            'category': '홈계좌',
+            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-7',
+            'category': '홈계좌',
+            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(02 계좌상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-8',
+            'category': '홈계좌',
+            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(03 청구서미발행)'
         }
     ]
 };

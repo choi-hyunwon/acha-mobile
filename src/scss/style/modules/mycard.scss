@@ -151,6 +151,9 @@
   }
 
   .btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 24px;
     padding: 0 20px;
     margin-bottom: 10px;
@@ -176,6 +179,27 @@
         right: -22px;
         top: 50%;
         transform: translateY(-50%);
+      }
+    }
+
+    .btn-update {
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 19px;
+      letter-spacing: -0.65px;
+      text-align: right;
+      color: var(--text-02);
+
+      .ico-refresh-mini {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url(../../img/common/ico-refresh-mini@2x.png);
+        background-size: cover;
+        vertical-align: middle;
+        margin-left: 2px;
       }
     }
   }
@@ -1156,8 +1180,38 @@
     padding: 12px 20px 31px;
     background-color: #fff;
 
+    .btn-refresh {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      span {
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 19px;
+        letter-spacing: -0.65px;
+        text-align: right;
+        color: var(--text-02);
+      }
+
+      .ico-refresh-mini {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url(../../img/common/ico-refresh-mini@2x.png);
+        background-size: cover;
+        vertical-align: middle;
+        margin-left: 2px;
+      }
+    }
+
     .card-info {
       .my-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 24px;
 
         .img {
@@ -1166,27 +1220,9 @@
           vertical-align: middle;
           width: 30px;
           height: 30px;
-          margin-right: 7px;
-
-          //.btn-search {
-          //  position: absolute;
-          //  top: -13px;
-          //  right: -13px;
-          //  width: 26px;
-          //  height: 26px;
-          //  border-radius: 50%;
-          //  text-align: center;
-          //  background-color: var(--blurple);
-          //  padding-top: 6px;
-          //
-          //  .ico-card-find-w {
-          //    display: inline-block;
-          //    width: 14px;
-          //    height: 14px;
-          //    background-image: url(../../img/common/ico-card-find-w@2x.png);
-          //    background-size: cover;
-          //  }
-          //}
+          border-radius: 50%;
+          overflow: hidden;
+          margin-bottom: 4px;
 
           img {
             width: 100%;
@@ -1195,16 +1231,23 @@
         }
 
         .card-name {
-          display: inline-block;
           vertical-align: middle;
-          width: calc(100% - 30px - 10px);
           font-family: var(--font3);
           font-size: 20px;
           font-weight: bold;
-          line-height: 30px;
+          line-height: 29px;
           letter-spacing: -0.5px;
-          text-align: left;
+          text-align: center;
           color: var(--text-01);
+          margin-bottom: 2px;
+        }
+
+        .card-num {
+          font-size: 13px;
+          line-height: 19px;
+          letter-spacing: -0.65px;
+          text-align: center;
+          color: var(--text-03);
         }
       }
 
@@ -1323,19 +1366,25 @@
       .val {
         float: right;
         display: inline-block;
-        font-size: 16px;
-        font-family: var(--font2);
-        font-weight: 500;
-        letter-spacing: -0.16px;
-        line-height: 21px;
+        vertical-align: middle;
+        font-size: 17px;
+        font-family: var(--font3);
+        font-weight: bold;
+        line-height: 25px;
+        letter-spacing: -0.43px;
+        text-align: right;
+        color: var(--blurple);
+      }
 
-        &::after {
-          content: '원';
-          font-family: var(--font2);
-          font-weight: 500;
-          font-size: 13px;
-          margin-left: 1px;
-        }
+      .ico-list-arrow-large {
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 24px;
+        background-image: url(../../img/common/ico-list-arrow-large@2x.png);
+        background-size: cover;
+        margin-left: 8px;
+        transform: translateY(-2px);
       }
     }
 
@@ -1810,11 +1859,11 @@
   }
 
   .card-detail-list-wrap {
-    padding-top: 30px;
+    border-top: 1px solid #f5f6f8;
+    margin-top: 20px;
+    padding: 20px 20px 0;
 
     .card-detail-title {
-      padding: 0 20px;
-
       > .title {
         font-family: var(--font2);
         font-size: 15px;
@@ -1824,13 +1873,12 @@
         color: var(--text-01);
         padding-bottom: 13px;
         border-bottom: 1px solid var(--text-01);
-        margin-bottom: 32px;
+        margin-bottom: 20px;
       }
     }
 
     .card-detail-calendar {
       overflow: hidden;
-      padding: 0 20px;
       margin-bottom: 20px;
 
       .input-calendar {
@@ -1938,17 +1986,50 @@
       }
     }
 
+    .select-date {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      border: solid 1px #e2e3e6;
+      background-color: var(--white);
+      padding-top: 9px;
+      padding-bottom: 10px;
+      margin-bottom: 21px;
+      height: 40px;
+
+      .btn-select {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-family: var(-- font3);
+        font-weight: bold;
+        line-height: 21px;
+        letter-spacing: -0.15px;
+        text-align: left;
+        color: var(--text-01);
+
+        .ico-mycard-arrow-nor {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background-image: url(../../img/common/ico-mycard-arrow-nor@2x.png);
+          background-size: cover;
+          margin-left: 6px;
+        }
+      }
+    }
+
     .date-info {
       position: relative;
-      margin-bottom: 50px;
-      padding: 0 20px;
+      margin-bottom: 36px;
 
       .title {
         display: inline-block;
         font-size: 15px;
         font-weight: bold;
         letter-spacing: -.3px;
-        line-height: 18px;
+        line-height: 22px;
         color: var(--text-01);
         font-family: var(--font3);
       }
@@ -1963,8 +2044,7 @@
         text-align: right;
         color: var(--text-01);
 
-        &::after {
-          content: '원';
+        em {
           font-size: 14px;
           font-family: var(--font3);
           font-weight: bold;
@@ -1993,8 +2073,8 @@
       .date {
         position: absolute;
         display: block;
-        top: 25px;
-        right: 20px;
+        top: 20px;
+        right: 0;
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -2024,19 +2104,35 @@
       flex-direction: column-reverse;
 
       li {
-        width: 100%;
-        height: 60px;
+        + li {
+          margin-bottom:  18px;
+        }
+
+        .info {
+          font-size: 13px;
+          line-height: 18px;
+          text-align: left;
+          color: var(--text-03);
+          margin-bottom: 3px;
+        }
+
+        .info2 {
+          display: flex;
+          justify-content: space-between;
+        }
 
         .day {
           display: inline-block;
+          vertical-align: middle;
           float: left;
-          width: 14%;
+          width: 23px;
+          height: 19px;
           font-size: 11px;
           font-family: var(--font2);
           color: #9b9aa6;
-          padding: 1px 0 0 20px;
-          line-height: 16px;
+          line-height: 19px;
           text-align: left;
+          padding-left: 4px;
         }
 
         .title {
@@ -2045,21 +2141,12 @@
           float: left;
           width: 58%;
           height: 100%;
-          font-size: 13px;
+          font-size: 15px;
           font-family: var(--font2);
           letter-spacing: -.65px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-          padding: 0 0 0 3px;
 
           em:first-child {
             line-height: 19px;
-          }
-
-          .div {
-            margin: 0 7px;
-            color: #e3e4e8;
           }
 
           .num {
@@ -2103,35 +2190,39 @@
         .val {
           display: inline-block;
           float: left;
-          width: 28%;
+          width: 42%;
           font-family: var(--font2);
-          font-size: 14px;
+          font-size: 15px;
           letter-spacing: -.14px;
           text-align: right;
-          padding-right: 20px;
 
-          &::after {
-            content: '원';
+          em {
             font-family: var(--font2);
             font-weight: 500;
-            font-size: 13px;
+            font-size: 14px;
           }
         }
       }
 
       &.spending-list-sm {
-        margin-top: -6px;
+        .title {
+          font-family: var(--font2);
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: -0.33px;
+          text-align: left;
+          color: var(--text-01);
+        }
 
-        li {
-          overflow: hidden;
-          height: 19px;
-          margin-bottom: 20px;
+        .val {
+          width: calc(100% - 58% - 23px);
         }
       }
     }
 
     > .caution-area {
-      padding: 10px 20px 0;
+      padding: 30px 0 0;
 
       .list {
         padding-top: 12px;

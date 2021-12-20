@@ -2,7 +2,7 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<div class="modal-slide upload-photo _modalSlide">
+<div class="modal-slide upload-photo _modalSlide" style="display:block;">
     <div class="modal-slide-content">
         <a href="#" class="btn-close _btnSlideClose"></a>
         <div class="inner">
@@ -20,7 +20,7 @@
         </div>
     </div>
 </div>
-<div class="modal-slide-backdrop"></div>
+<div class="modal-slide-backdrop" style="display:block;"></div>
 <script>
     $(document).ready(function () {
         // 슬라이드 이벤트
@@ -50,81 +50,7 @@
         });
 
         btnSlideOpen.trigger('click');
-
-        // 클릭 이벤트
-        $('._categoryList a').on('click', function (){
-            $('._categoryList').find('a').parent().removeClass('active')
-            $(this).parent().addClass('active')
-        })
     })
-</script>
-<script>
-    function countChar(val , target) {
-        var len = val.value.length;
-        var targetItem = $(`.${target}`);
-
-        targetItem.text(len);
-
-        if(len === 0) {
-            targetItem.css('color','#afaeb8')
-        }
-        else {
-            targetItem.css('color','#37354e')
-        }
-    }
-
-    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
-    var index = 6; // (li 갯수) - 1
-    var sum = 0;
-    for (var j=0; j <= index; j++) {
-        sum = sum + $("._faqMenu li:eq("+ j +")").outerWidth(true);
-    }
-    $('._faqMenu ul').css('width', sum + 1);
-
-    // 태그 검색
-    function tagSearch(a,b){
-        var tagList = ['강아지','망고','강아지간식','강뷰','강민경','한강','가나다','테스트'];
-
-        $(`#${a}`).autocomplete({
-            source : tagList,
-            // source : function( request, response ) {
-            //     $.ajax({
-            //         type: 'get',
-            //         url: "/json",
-            //         dataType: "json",
-            //         //data: {"param":"param"},
-            //         success: function(data) {
-            //             response(
-            //                 $.map(data, function(item) {
-            //                     return {
-            //                         label: item+"label",
-            //                         value: item,
-            //                         test : item+"test"
-            //                     }
-            //                 })
-            //             );
-            //         }
-            //     });
-            // },
-            select : function(event, ui) {
-                console.log(ui.item);
-            },
-            focus : function(event, ui) {
-                return false;
-            },
-            minLength: 1,
-            autoFocus: true,
-            // classes: {
-            //     "ui-autocomplete": "highlight"
-            // },
-            delay: 500,
-            // disabled: true, //자동완성 기능 끄기
-            position: { my : "right top", at: "right bottom" },
-            close : function(event){
-                console.log(event);
-            }
-        });
-    }
 </script>
 </body>
 </html>

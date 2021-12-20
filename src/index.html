@@ -86,18 +86,19 @@
     var source = $('#list-template').html(); //jQuery
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
+        .append(template(data.alert))
+        .append(template(data.add))
+        .append(template(data.my))
+        .append(template(data.cardExpenditure))
+        .append(template(data.myAccount))
         .append(template(data.expenditure2))
         .append(template(data.calendar))
         .append(template(data.dataPolicy))
         .append(template(data.mydata))
         .append(template(data.moreview))
         .append(template(data.input))
-        .append(template(data.my))
         .append(template(data.common))
-        .append(template(data.myAccount))
         .append(template(data.signIn2))
-        // .append(template(data.fixExpenditure))
-        .append(template(data.cardExpenditure))
 
         .append(template(data.signInRenewal))
         .append(template(data.myInfo))

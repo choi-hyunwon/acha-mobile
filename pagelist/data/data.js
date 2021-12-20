@@ -1,4 +1,32 @@
 var data = {}
+data.alert = {
+    'title': '홈(알림)',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_03',
+            'category': 'alert',
+            'page': '알림이 있는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_03-1',
+            'category': 'alert',
+            'page': '알림이 없는 경우'
+        },
+    ]
+};
+data.add = {
+    'title': '추가하기(컴포넌트)',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_21',
+            'category': 'add',
+            'page': '마이데이터 가입 안내'
+        },
+    ]
+};
 data.calendar = {
     'title': '캘린더',
     'list': [
@@ -1160,6 +1188,18 @@ data.my = {
             'category': 'My',
             'page': '개인신용정보 삭제'
         },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_11',
+            'category': 'My',
+            'page': '개인신용정보 삭제'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_04',
+            'category': 'My',
+            'page': '더보기'
+        },
     ]
 };
 data.mydata = {
@@ -1970,6 +2010,12 @@ data.cardExpenditure = {
             'url': '10_story_02',
             'category': '카드지출',
             'page': '04. 타임라인_1.1 거래내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02-1',
+            'category': '카드지출',
+            'page': '04. 타임라인_1.1 거래내역(없는 경우)'
         },
         {
             'stateClass': 'complete',

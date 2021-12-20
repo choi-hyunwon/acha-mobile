@@ -1062,8 +1062,8 @@
     top: 47px;
     left: 20px;
 
-    &::after {
-      content: '원';
+    em {
+      display: inline-block;
       position: absolute;
       font-family: var(--font3);
       font-size: 16px;
@@ -1195,6 +1195,14 @@
       img {
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+
+  .ac-bank {
+    .ac-list {
+      .ac-item {
+        overflow: visible;
       }
     }
   }
@@ -1397,7 +1405,7 @@
             margin-left: 1px;
             transform: translateY(-2px);
 
-            &.abroad  {
+            &.abroad {
               font-size: 19px;
               font-weight: bold;
               line-height: 25px;
@@ -1686,12 +1694,22 @@
           }
         }
 
-        &::after {
+        em {
           content: '원';
           font-family: var(--font2);
           font-size: 13px;
           line-height: 22px;
           letter-spacing: 0;
+        }
+
+        .ico-caution-red {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background-image: url(../../img/common/ico-caution-red@2x.png);
+          background-size: cover;
+          vertical-align: middle;
+          margin-left: 2px;
         }
       }
 
@@ -3183,16 +3201,64 @@
 
 .box_ex_alarm {
   overflow: hidden;
-  padding: 10px 20px 30px;
+  padding: 20px 20px 30px;
+
+  > .empty {
+    padding-top: 140px;
+
+    .img {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    p {
+      font-family: var(--font2);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: -0.38px;
+      text-align: center;
+      color: var(--text-01);
+    }
+  }
 
   li {
     position: relative;
     width: 100%;
-    border-radius: 6px;
     padding: 21px 30px 21px 48px;
     background-color: #ffffff;
+    border-radius: 6px;
     box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
     margin-bottom: 12px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      background-color: #cebbf4;
+      left: 0;
+      top: 0;
+    }
+
+    &.read {
+      .img, .txt, .time {
+        opacity: 0.75;
+      }
+      &::before {
+        content: none;
+      }
+    }
 
     .img {
       position: absolute;
@@ -4840,13 +4906,14 @@
         line-height: 28px;
         letter-spacing: -0.22px;
 
-        &::after {
-          content: '원';
+        em {
+          display: inline-block;
           font-family: var(--font3);
           font-size: 15px;
           font-weight: bold;
           margin-left: 2px;
           letter-spacing: -0.38px;
+          transform: translateY(-2px);
         }
       }
 
@@ -4959,8 +5026,9 @@
             color: var(--text-01);
 
             &.won {
-              &::after {
-                content: '원';
+              em {
+                color: var(--text-01);
+                margin: 0;
               }
             }
           }
@@ -6315,9 +6383,11 @@
       //  margin-bottom: 0 !important;
       //}
     }
+
     + .date-info {
       margin-top: 20px;
     }
+
     > div {
       display: flex;
       align-items: center;

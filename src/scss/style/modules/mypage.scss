@@ -124,9 +124,9 @@
   }
 
   > .title-area {
-    font-family: var(--font2);
+    font-family: var(--font3);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 20px;
     letter-spacing: -0.35px;
     color: var(--text-01);
@@ -136,7 +136,7 @@
     .btn-delete {
       float: right;
       padding: 0 10px;
-      height: 26px;
+      height: 28px;
       border-radius: 2px;
       border: solid 1px #e3e4e8;
       background-color: #fff;
@@ -144,6 +144,11 @@
       line-height: 24px;
       letter-spacing: -0.55px;
       color: var(--text-02);
+
+      span {
+        font-family: var(--font1);
+        font-weight: normal;
+      }
 
       .ico-delete-btn {
         display: inline-block;
@@ -260,9 +265,10 @@
 
           .info {
             float: left;
-            width: calc(100% - 10px - 36px - 54px);
+            width: calc(100% - 10px - 36px - 100px);
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            height: 36px;
 
             .tit {
               font-family: var(--font2);
@@ -282,6 +288,43 @@
               font-size: 11px;
               line-height: 15px;
               color: var(--text-03);
+            }
+          }
+
+          .info2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+            padding-right: 3px;
+
+            &.color-gray {
+              .day {
+                color: var(--text-02);
+                font-weight: normal;
+                font-family: var(--font1);
+              }
+              .repeat {
+                color: var(--text-02);
+              }
+            }
+
+            .day {
+              display: block;
+              font-size: 13px;
+              font-family: var(--font3);
+              font-weight: bold;
+              line-height: 18px;
+              letter-spacing: -0.33px;
+              color: var(--blurple);
+            }
+
+            .repeat {
+              display: block;
+              font-size: 13px;
+              line-height: 18px;
+              letter-spacing: -0.33px;
+              color: var(--blurple);
             }
           }
 
@@ -329,9 +372,9 @@
 
         > span {
           float: left;
-          font-family: var(--font2);
+          font-family: var(--font3);
           font-size: 14px;
-          font-weight: 500;
+          font-weight: bold;
           line-height: 26px;
           letter-spacing: -0.33px;
           color: var(--text-01);
@@ -340,7 +383,7 @@
         > .btn-add {
           float: right;
           padding: 0 10px;
-          height: 26px;
+          height: 28px;
           border-radius: 2px;
           border: solid 1px #e3e4e8;
           background-color: #fff;
@@ -368,6 +411,17 @@
           margin-bottom: 36px;
         }
 
+        .icon-expired {
+          display: inline-block;
+          vertical-align: middle;
+          width: 14px;
+          height: 14px;
+          background-image: url(../../img/common/icon-expirationintend@2x.png);
+          background-size: cover;
+          transform: translateY(-1px);
+          margin-left: 4px;
+        }
+
         .info-header {
           position: relative;
           width: 100%;
@@ -376,17 +430,6 @@
           align-items: center;
           border-bottom: 1px solid #f5f6f8;
           padding-left: 14px;
-
-          .icon-expired {
-            display: inline-block;
-            vertical-align: middle;
-            width: 14px;
-            height: 14px;
-            background-image: url(../../img/common/icon-expirationintend@2x.png);
-            background-size: cover;
-            transform: translateY(-1px);
-            margin-left: 4px;
-          }
 
           .icon-new {
             display: inline-block;
@@ -568,6 +611,16 @@
   padding: 10px 20px 0;
   margin-bottom: 20px;
 
+  .icon-expired {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background-image: url(../../img/common/icon-expirationintend@2x.png);
+    background-size: cover;
+    margin-left: 4px;
+  }
+
   .info-header {
     position: relative;
     width: 100%;
@@ -576,6 +629,7 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
+    border-radius: 6px;
 
     .img {
       width: 24px;
@@ -709,9 +763,9 @@
 
     > .tit {
       float: left;
-      font-family: var(--font2);
+      font-family: var(--font3);
       font-size: 14px;
-      font-weight: 500;
+      font-weight: bold;
       line-height: 26px;
       letter-spacing: -0.35px;
 
@@ -729,14 +783,14 @@
       float: right;
 
       .btn {
-        min-width: 40px;
-        height: 26px;
+        min-width: 50px;
+        height: 28px;
         padding: 0 10px;
         border-radius: 2px;
         border: solid 1px #e3e4e8;
         background-color: #fff;
-        font-size: 11px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 26px;
         letter-spacing: -0.55px;
         text-align: center;
         color: var(--text-02);
@@ -761,7 +815,7 @@
     .item {
       display: flex;
       width: 100%;
-      padding: 20px 0;
+      padding: 18px 0;
       align-items: start;
       border-bottom: 1px solid #f5f6f8;
 
@@ -773,7 +827,7 @@
         width: 130px;
         float: left;
         font-size: 13px;
-        line-height: 16px;
+        line-height: 19px;
         letter-spacing: -0.33px;
         color: var(--text-02);
       }
@@ -781,9 +835,10 @@
       .val {
         width: calc(100% - 130px);
         float: right;
-        font-size: 13px;
+        font-family: var(--font2);
+        font-size: 15px;
         font-weight: 500;
-        line-height: 16px;
+        line-height: 23px;
         letter-spacing: -0.33px;
         text-align: right;
         color: var(--text-01);
@@ -804,12 +859,13 @@
           a.btn-sm {
             display: inline-block;
             width: 59px;
+            height: 29px;
             min-width: auto;
             border-radius: 2px;
             border: solid 1px #e3e4e8;
             background-color: #fff;
             font-size: 11px;
-            line-height: 24px;
+            line-height: 27px;
             letter-spacing: -0.55px;
             text-decoration: none;
             color: var(--text-02);
@@ -843,8 +899,8 @@
 
     > .tit {
       float: left;
-      font-family: var(--font2);
       font-size: 14px;
+      font-family: var(--font3);
       font-weight: 500;
       line-height: 26px;
       letter-spacing: -0.35px;
@@ -944,7 +1000,6 @@
   .list-body {
     width: 100%;
     margin-bottom: 21px;
-    padding: 0 5px;
 
     .item {
       display: block;
@@ -958,9 +1013,11 @@
 
       .tit {
         display: block;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 13px;
+        line-height: 19px;
         letter-spacing: -0.33px;
+        font-family: var(--font2);
+        font-weight: 500;
         color: var(--text-02);
         margin-bottom: 4px;
       }
@@ -980,9 +1037,10 @@
 
       .val {
         display: block;
-        font-size: 13px;
+        font-size: 14px;
+        font-family: var(--font2);
         font-weight: 500;
-        line-height: 19px;
+        line-height: 20px;
         letter-spacing: -0.32px;
         color: var(--text-01);
 
@@ -1240,7 +1298,7 @@
     }
 
     a {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 24px;
       letter-spacing: -0.33px;
       text-decoration: underline;
@@ -1308,9 +1366,9 @@
     }
 
     .info-list-header {
-      font-family: var(--font2);
+      font-family: var(--font3);
       font-size: 14px;
-      font-weight: 500;
+      font-weight: bold;
       line-height: 20px;
       letter-spacing: -0.35px;
       margin-bottom: 20px;

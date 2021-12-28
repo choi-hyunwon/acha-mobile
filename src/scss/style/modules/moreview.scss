@@ -1665,7 +1665,6 @@
         line-height: 20px;
         letter-spacing: -0.35px;
         vertical-align: top;
-        margin-bottom: 5px;
       }
 
       .ic-new {
@@ -1896,18 +1895,17 @@
       height: fit-content;
       margin-bottom: 7px;
       padding-left: 23px;
-      //width: 210px;
 
       label {
-        //width: 78px;
         height: 18px;
 
-/*        &:first-child, &:nth-child(2) {
-          margin-bottom: 12px;
-        }*/
+        span {
+          font-family: var(--font1);
+          font-weight: 400;
+        }
 
-        &:first-child, &:nth-child(2) {
-          margin-right: 20px;
+        + label {
+          margin-left: 20px;
         }
       }
 

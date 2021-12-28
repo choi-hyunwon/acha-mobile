@@ -289,6 +289,17 @@
     border-bottom: 1px solid #f5f6f8;
     padding-top: 30px;
 
+    .ico-caution {
+      display: inline-block;
+      vertical-align: middle;
+      width: 12px;
+      height: 12px;
+      background-size: cover;
+      background-image: url(../../img/common/ico-caution@2x.png);
+      transform: translateY(-2px);
+      margin-left: 3px;
+    }
+
     &:last-child {
       border-bottom: 0;
     }
@@ -419,7 +430,7 @@
               height: 16px;
               background-image: url(../../img/common/ico_arrow_small_nor@2x.png);
               background-size: cover;
-              top: 2px;
+              top: 3px;
               right: 0;
             }
 
@@ -429,6 +440,12 @@
               letter-spacing: -0.14px;
               text-align: right;
               color: var(--text-01);
+
+              &.no-val {
+                font-size: 13px;
+                letter-spacing: -0.32px;
+                color: var(--text-02);
+              }
 
               em {
                 font-size: 13px;
@@ -627,12 +644,5 @@
         }
       }
     }
-  }
-}
-
-@media (max-width: 385px) {
-  .sign-in-wrap .card-wrap .card-box .item > .checkbox-select label:last-child {
-    transform: translateX(-17px);
-    margin-top: 8px;
   }
 }

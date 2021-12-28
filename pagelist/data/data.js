@@ -1030,9 +1030,21 @@ data.moreview = {
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_23',
+            'url': '09_moreview_28',
             'category': '더보기',
             'page': '동의관리'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_23',
+            'category': '더보기',
+            'page': '동의관리2'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_29',
+            'category': '더보기',
+            'page': '마이데이터 약관'
         },
         {
             'stateClass': 'complete',
@@ -1149,6 +1161,12 @@ data.my = {
         {
             'stateClass': 'complete',
             'url': '02_my_05',
+            'category': 'My',
+            'page': '전송요구내역 변경'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_12',
             'category': 'My',
             'page': '전송요구내역 변경'
         },
@@ -1345,6 +1363,12 @@ data.mycard = {
         },
         {
             'stateClass': 'complete',
+            'url': '05_my_card_03',
+            'category': 'mycard',
+            'page': '카드 상세정보 - 거래내역이 없을 경우'
+        },
+        {
+            'stateClass': 'complete',
             'url': '05_my_card_popup_04',
             'category': 'mycard',
             'page': '연회비 팝업'
@@ -1355,12 +1379,12 @@ data.mycard = {
             'category': 'mycard',
             'page': '연회비 팝업'
         },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_04',
-            'category': 'mycard',
-            'page': '결제예정 정보'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '05_my_card_04',
+        //     'category': 'mycard',
+        //     'page': '결제예정 정보'
+        // },
         {
             'stateClass': 'complete',
             'url': '05_my_card_07',

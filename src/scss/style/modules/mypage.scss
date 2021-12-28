@@ -824,7 +824,7 @@
       }
 
       .tit {
-        width: 130px;
+        width: 125px;
         float: left;
         font-size: 13px;
         line-height: 19px;
@@ -833,18 +833,18 @@
       }
 
       .val {
-        width: calc(100% - 130px);
+        width: calc(100% - 125px);
         float: right;
         font-family: var(--font2);
         font-size: 15px;
         font-weight: 500;
-        line-height: 23px;
+        line-height: 19px;
         letter-spacing: -0.33px;
         text-align: right;
         color: var(--text-01);
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        //overflow: hidden;
+        //white-space: nowrap;
+        //text-overflow: ellipsis;
 
         &.color-red {
           color: #ef4b61;
@@ -869,6 +869,7 @@
             letter-spacing: -0.55px;
             text-decoration: none;
             color: var(--text-02);
+            white-space: nowrap;
           }
         }
 
@@ -949,6 +950,7 @@
         width: 22px;
         height: 22px;
         float: left;
+        margin-right: 6px;
 
         img {
           width: 100%;
@@ -957,7 +959,7 @@
       }
 
       .val {
-        width: calc(100% - 28px);
+        width: calc(100% - 28px - 6px);
         float: left;
         font-size: 13px;
         line-height: 19px;
@@ -1018,8 +1020,24 @@
         letter-spacing: -0.33px;
         font-family: var(--font2);
         font-weight: 500;
-        color: var(--text-02);
+        color: var(--text-03);
         margin-bottom: 4px;
+      }
+
+      .v-table {
+        margin-bottom: 15px;
+
+        thead {
+          border-top: 1px solid #e3e4e8;
+        }
+        th {
+          padding: 8px 9px;
+          line-height: 16px;
+
+          &:nth-child(2) {
+            vertical-align: top;
+          }
+        }
       }
 
       .check-box {

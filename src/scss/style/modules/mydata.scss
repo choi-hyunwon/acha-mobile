@@ -748,14 +748,14 @@
     }
 
     .card-head {
-      font-family: var(--font3);
-      font-size: 15px;
-      font-weight: bold;
+      font-family: var(--font2);
+      font-size: 14px;
+      font-weight: 500;
       line-height: 22px;
       letter-spacing: -0.38px;
       text-align: left;
       color: var(--text-01);
-      margin-bottom: 3px;
+      margin-bottom: 14px;
     }
 
     .card-head-sm {
@@ -769,6 +769,7 @@
 
     .card-box {
       border-top: 2px  solid var(--text-01);
+
 
       .title-wrap {
         margin-bottom: 0 !important;

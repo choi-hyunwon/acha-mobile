@@ -165,3 +165,26 @@ caption.visually_hidden {
     background: #ffffff;
   }
 }
+
+
+.icon.ico-caution-filled {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  background-size: cover;
+  background-image: url(../../img/common/icon-expirationintend@2x.png);
+  transform: translateY(-2px);
+  margin-left: 3px;
+}
+
+.icon.ico-caution {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  background-size: cover;
+  background-image: url(../../img/common/ico-caution@2x.png);
+  transform: translateY(-2px);
+  margin-left: 3px;
+}

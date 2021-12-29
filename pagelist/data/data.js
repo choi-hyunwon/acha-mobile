@@ -1320,12 +1320,12 @@ data.mydata = {
             'category': 'mydata',
             'page': '개인(신용)정보 제공 동의서'
         },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_15',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_04. 개별인증_4.3 사이트 자체인증 (01_전송요구내역 선택(자체인증))'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '04_my_data_15',
+        //     'category': 'mydata',
+        //     'page': '04-1. 추가하기_04. 개별인증_4.3 사이트 자체인증 (01_전송요구내역 선택(자체인증))'
+        // },
         {
             'stateClass': 'complete',
             'url': '04_my_data_09',

@@ -5090,13 +5090,13 @@
     padding-top: 197px;
 
     .img {
-      width: 200px;
       height: 90px;
       margin: 0 auto 24px;
 
       img {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: auto;
+        max-height: 90px;
       }
     }
 

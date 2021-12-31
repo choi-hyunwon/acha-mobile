@@ -1,4 +1,33 @@
 var data = {}
+data.dataUpdate = {
+    'title': '데이터 업데이트',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '14_data_update_01',
+            'category': 'data update',
+            'page': '최초 마이데이터 연결'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '14_data_update_02',
+            'category': 'data update',
+            'page': '내역 추가 조회'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03',
+            'category': 'data update',
+            'page': '내 카드 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02',
+            'category': 'data update',
+            'page': '타임라인'
+        },
+    ]
+};
 data.alert = {
     'title': '홈(알림)',
     'list': [
@@ -919,6 +948,12 @@ data.moreview = {
             'url': '09_moreview_04',
             'category': '더보기',
             'page': '공지사항'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_04-1',
+            'category': '더보기',
+            'page': '공지사항 없는 경우'
         },
         {
             'stateClass': 'complete',

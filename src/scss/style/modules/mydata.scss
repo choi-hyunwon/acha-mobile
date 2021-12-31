@@ -115,6 +115,17 @@
       margin-bottom: 36px;
       overflow: hidden;
 
+      &.card-item-box {
+        border-radius: 6px;
+        box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+        border: solid 1px #f5f6f8;
+        background-color: var(--white);
+
+        .card-header {
+          border-bottom: 1px solid #f5f6f8;
+        }
+      }
+
       .dropdown-wrap {
         padding: 0;
         margin-bottom: 10px;
@@ -132,6 +143,25 @@
             background-color: var(--white);
             line-height: 20px;
             color: var(--text-01);
+
+            &[aria-expanded="true"] {
+              &::after {
+                transform: translateY(-50%) rotate(180deg);
+              }
+            }
+
+            img {
+              display: inline-block;
+              vertical-align: middle;
+              width: 22px;
+              height: 22px;
+              margin-right: 6px;
+            }
+
+            span {
+              display: inline-block;
+              vertical-align: middle;
+            }
 
             &::after {
               width: 16px;

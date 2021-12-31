@@ -164,6 +164,29 @@
     text-align: left;
     color: var(--text-02);
   }
+
+  > .empty {
+    padding-top: 160px;
+
+    .img {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .txt {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: -0.38px;
+      text-align: center;
+    }
+  }
 }
 
 .event-tab {

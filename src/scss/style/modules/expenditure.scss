@@ -6815,6 +6815,32 @@
   }
 }
 
+.box-ex-btn-wrap {
+  margin-top: -46px;
+  padding: 0 16px 30px;
+}
+
+.box-ex-loading {
+  margin-top: -62px;
+  margin-bottom: 20px;
+
+  img {
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
+    animation-name: rotateImage;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  + .box-ex-btn-wrap {
+    margin-top: 0;
+  }
+}
+
 @keyframes updateAnimation {
   from {
     opacity: .3;
@@ -6823,6 +6849,12 @@
   to {
     opacity: 1;
     bottom: 0;
+  }
+}
+
+@keyframes rotateImage {
+  100% {
+    transform: rotate(360deg);
   }
 }
 

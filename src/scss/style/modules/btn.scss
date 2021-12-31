@@ -352,6 +352,12 @@ a:hover {
     &:focus, &:hover {
       color: #737183;
     }
+
+    &.btn-big-border-radius {
+      border-radius: 6px;
+      font-family: var(--font1);
+      color: var(--text-03);
+    }
   }
 }
 

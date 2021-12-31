@@ -375,6 +375,27 @@
       }
     }
   }
+
+  .timeline-btn-wrap {
+    padding: 0 16px 30px;
+  }
+
+  .timeline-loading {
+    margin-top: -16px;
+    margin-bottom: 20px;
+
+    img {
+      display: block;
+      width: 26px;
+      height: 26px;
+      margin: 0 auto;
+      animation-name: rotateImage;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-play-state: paused;
+    }
+  }
 }
 
 .t-pay-list {

@@ -53,7 +53,7 @@
             columnHeaderText: function (date) {
                 return weekList[date.getDay()];
             },
-            navLinkDayClick: function (date, jsEvent) {
+            navLinkDayClick: function (date, jsEvent)                                                                                                                          {
                 console.log('클릭 시 보여지는 날짜 ↓')
                 console.log(date.toISOString().slice(0,10));
                 console.log('클릭되는 요소 타켓 ↓')
@@ -72,6 +72,17 @@
         console.log('확인 클릭 시 선택된 날짜 ↓')
         console.log($('.fc-day-number.active').data('goto').date)
     }
+
+    $(document).ready(function (){
+        // 최초 노출시 일이 선택 표시 방법
+        $('.fc-day-top[data-date="2021-10-15"]').addClass('fc-day-selected')
+
+        // 표시할 데이터 없음 표시 방법
+        $('.fc-day-top[data-date="2021-10-20"]').addClass('fc-day-disabled')
+        $('.fc-day-top[data-date="2021-10-21"]').addClass('fc-day-disabled')
+        $('.fc-day-top[data-date="2021-10-22"]').addClass('fc-day-disabled')
+        $('.fc-day-top[data-date="2021-10-23"]').addClass('fc-day-disabled')
+    })
 </script>
 </body>
 </html>

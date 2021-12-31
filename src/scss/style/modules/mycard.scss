@@ -2310,6 +2310,31 @@
       }
     }
   }
+
+  .card-detail-btn-wrap {
+    padding: 0 16px 30px;
+    margin-top: 31px;
+  }
+
+  .card-detail-loading {
+    margin-top: 14px;
+
+    img {
+      display: block;
+      width: 26px;
+      height: 26px;
+      margin: 0 auto;
+      animation-name: rotateImage;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-play-state: paused;
+    }
+
+    + .card-detail-btn-wrap {
+      margin-top: 20px;
+    }
+  }
 }
 
 .card-benefits-wrap {

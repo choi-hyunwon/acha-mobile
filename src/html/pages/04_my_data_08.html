@@ -15,7 +15,10 @@
                 <div class="card-item">
                     <div class="dropdown-wrap">
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">농협은행 외 3개 기관</button>
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../../img/@temp/499.png" alt="">
+                                <span>농협은행 외 3개 기관</span>
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" data-value="농협은행" href="#">
                                     <img src="../../img/@temp/499.png" alt="">
@@ -26,11 +29,11 @@
                                     <span>우리은행</span>
                                 </a>
                                 <a class="dropdown-item" data-value="BC카드" href="#">
-                                    <img src="../../img/@temp/woori.png" alt="">
+                                    <img src="../../img/@temp/ci_scbank@2x.png" alt="">
                                     <span>BC카드</span>
                                 </a>
                                 <a class="dropdown-item" data-value="현대카드" href="#">
-                                    <img src="../../img/@temp/woori.png" alt="">
+                                    <img src="../../img/@temp/hana.png" alt="">
                                     <span>현대카드</span>
                                 </a>
                             </div>
@@ -155,7 +158,9 @@
     $(".dropdown-item").on("click", function(e){
         var $dropdown = $(this).parent().siblings();
         var value = $(this).attr("data-value");
-        $dropdown.text(value);
+        var imgSrc = $(this).children('img').attr("src");
+        $dropdown.children('span').text(value);
+        $dropdown.children('img').attr('src',imgSrc);
     });
 
     if($('.dropdown').hasClass('disabled')) {

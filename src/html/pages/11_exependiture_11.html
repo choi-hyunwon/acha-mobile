@@ -14,7 +14,7 @@
             <div class="chartWrapper">
                 <div class="chartScroll">
                     <div class="chartArea">
-                        <canvas id="lineChart" width="1400" height="213"></canvas>
+                        <canvas id="lineChart" width="277.5" height="213"></canvas>
                     </div>
                     <!-- S
                         ** x축 day label **
@@ -22,39 +22,39 @@
                         - 해당 날짜에 데이터를 가지고 있으면, li에 active 클래스 추가
                     -->
                     <div class="xaxis-day-label">
-                        <ul class="clearfix">
+                        <ul class="clearfix" style="width: 295px">
                             <li>25</li>
                             <li>26</li>
                             <li class="active">27</li>
-                            <li>28</li>
-                            <li class="active">29</li>
-                            <li class="active">30</li>
-                            <li>31</li>
-                            <li class="active">1</li>
-                            <li>2</li>
-                            <li>3</li>
+                            <li >28</li>
+                            <li >29</li>
+<!--                            <li class="active">30</li>-->
+<!--                            <li>31</li>-->
+<!--                            <li class="active">1</li>-->
+<!--                            <li>2</li>-->
+<!--                            <li>3</li>-->
 
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>13</li>
+<!--                            <li>4</li>-->
+<!--                            <li>5</li>-->
+<!--                            <li>6</li>-->
+<!--                            <li>7</li>-->
+<!--                            <li>8</li>-->
+<!--                            <li>9</li>-->
+<!--                            <li>10</li>-->
+<!--                            <li>11</li>-->
+<!--                            <li>12</li>-->
+<!--                            <li>13</li>-->
 
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                            <li>18</li>
-                            <li>19</li>
-                            <li>20</li>
-                            <li>21</li>
-                            <li>22</li>
-                            <li>23</li>
+<!--                            <li>14</li>-->
+<!--                            <li>15</li>-->
+<!--                            <li>16</li>-->
+<!--                            <li>17</li>-->
+<!--                            <li>18</li>-->
+<!--                            <li>19</li>-->
+<!--                            <li>20</li>-->
+<!--                            <li>21</li>-->
+<!--                            <li>22</li>-->
+<!--                            <li>23</li>-->
                         </ul>
                     </div>
                     <!-- E X축 day label -->
@@ -65,39 +65,39 @@
                         - 1일인 데이터에 해당하는 '월'값 입력
                     -->
                     <div class="xaxis-month-label">
-                        <ul class="clearfix">
+                        <ul class="clearfix" style="width: 295px">
                             <li>5월</li>
                             <li></li>
                             <li></li>
                             <li></li>
                             <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>6월</li>
-                            <li></li>
-                            <li></li>
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li>6월</li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
 
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
 
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
+<!--                            <li></li>-->
                         </ul>
                     </div>
                     <!-- E X축 month label -->
@@ -248,9 +248,10 @@
             type: 'bar',
             data: {
                 labels: [
-                    null, null, null, null, null, null, null, null, null, null,
-                    null, null, null, null, null, null, null, null, null, null,
-                    null, null, null, null, null, null, null, null, null, null,
+                    null, null, null, null, null,
+                    // null, null, null, null, null,
+                    // null, null, null, null, null, null, null, null, null, null,
+                    // null, null, null, null, null, null, null, null, null, null,
                 ], // 30일 동안에 해당하는 데이터 - xaxis-day-label, xaxis-month-label에서 처리
                 datasets: [{
                     type: 'line',
@@ -274,6 +275,8 @@
                    */
                     data: [
                         40,
+                        25,
+                        25,
                         25,
                         -205,
                     ],
@@ -313,33 +316,34 @@
                         -205,
                         null,
                         -315,
-                        -393,
-                        null,
-                        -399,
-                        -350,
-                        -320,
 
-                        null,
-                        -300,
-                        -300,
-                        -300,
-                        -300,
-                        -300,
-                        -300,
-                        -300,
-                        -300,
-                        -300,
-
-                        null,
-                        null,
-                        -205,
-                        null,
-                        -315,
-                        -393,
-                        null,
-                        -399,
-                        -350,
-                        -320,
+                        // -393,
+                        // null,
+                        // -399,
+                        // -350,
+                        // -320,
+                        //
+                        // null,
+                        // -300,
+                        // -300,
+                        // -300,
+                        // -300,
+                        // -300,
+                        // -300,
+                        // -300,
+                        // -300,
+                        // -300,
+                        //
+                        // null,
+                        // null,
+                        // -205,
+                        // null,
+                        // -315,
+                        // -393,
+                        // null,
+                        // -399,
+                        // -350,
+                        // -320,
                     ],
                 }, {
                     type: 'bar',

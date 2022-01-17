@@ -86,38 +86,33 @@
     var source = $('#list-template').html(); //jQuery
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
-        .append(template(data.dataUpdate))
-        .append(template(data.mydata))
-        .append(template(data.alert))
-        .append(template(data.add))
-        .append(template(data.my))
-        .append(template(data.cardExpenditure))
-        .append(template(data.myAccount))
-        .append(template(data.expenditure2))
-        .append(template(data.calendar))
-        .append(template(data.dataPolicy))
-        .append(template(data.moreview))
-        .append(template(data.input))
+        .append(template(data.edit))
         .append(template(data.common))
-        .append(template(data.signIn2))
-
-        .append(template(data.signInRenewal))
+        .append(template(data.input))
+        .append(template(data.my))
+        .append(template(data.calendar))
+        .append(template(data.mydata))
         .append(template(data.myInfo))
+        .append(template(data.add))
+        .append(template(data.mycard))
+        .append(template(data.signIn))
+        .append(template(data.taxRenewal))
+        .append(template(data.expenditure))
+        .append(template(data.moreview))
+        .append(template(data.alert))
+        .append(template(data.story))
+        .append(template(data.expenditure1))
+        .append(template(data.expenditure2))
         .append(template(data.dormant))
         .append(template(data.connection))
-        .append(template(data.expenditure1))
-        .append(template(data.story))
-        .append(template(data.expenditure))
-        .append(template(data.taxRenewal))
-        .append(template(data.signIn))
-        .append(template(data.mycard))
-    // .append(template(data.tax2))
-    // .append(template(data.tax))
-    // .append(template(data.event))
-    // .append(template(data.edit1))
-    // .append(template(data.edit2))
-    // .append(template(data.edit3))
-    // .append(template(data.edit4));
+        .append(template(data.dataUpdate))
+
+
+
+        .append(template(data.cardExpenditure))
+        .append(template(data.signInRenewal))
+
+        .append(template(data.dataPolicy))
 </script>
 <script>
     $('.link').on('click', function () {

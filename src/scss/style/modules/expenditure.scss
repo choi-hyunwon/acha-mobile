@@ -3903,6 +3903,54 @@
       }
     }
   }
+  &.home_list{
+    padding-top: 50px;
+    .category-list-item{
+      border-bottom: none;
+      .ex-item{
+        a{
+          .b-info{
+            .title{
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+          .btn-move{
+            .value{
+              &:after{
+                content: '원';
+                padding-left: 1px;
+              }
+            }
+          }
+        }
+        &.disabled{
+          a{
+            .b-info{
+              .title{
+                color: var(--text-03);
+              }
+            }
+            .btn-move{
+              .value{
+                color: var(--text-03);
+                &:after{
+                  content: '원';
+                  padding-left: 1px;
+                }
+              }
+              .ico_arrow_small_nor{
+                background-image: url("../../img/sprite/common/arrow_list_add@2x.png");
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+  }
 }
 
 .tab_area {
@@ -6570,12 +6618,24 @@
 
 .loading-wrap {
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 26px;
-  height: 26px;
   z-index: 10;
-  bottom: 20px;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  background-color: #FFFFFF;
+  .img{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
 }
 
 .transaction-history-popup {

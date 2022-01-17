@@ -4,21 +4,9 @@ data.edit = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '09_moreview_04-1',
-            'category': '더보기',
-            'page': '공지사항 없는 경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_30',
-            'category': '더보기',
-            'page': '등록된 게시물이 없는 경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '14_data_update_03',
-            'category': 'data update',
-            'page': '네트워크 및 시스템 장애'
+            'url': '04_my_data_03-1',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (01_개인신용정보 전송요구(인증앱)1'
         },
         {
             'stateClass': 'complete',
@@ -38,6 +26,25 @@ data.edit = {
             'category': 'mydata',
             'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (02_개별인증 완료(만료 상품 MY 안내))'
         },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_04-1',
+            'category': '더보기',
+            'page': '공지사항 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_30',
+            'category': '더보기',
+            'page': '등록된 게시물이 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '14_data_update_03',
+            'category': 'data update',
+            'page': '네트워크 및 시스템 장애'
+        },
+
         {
             'stateClass': 'complete',
             'url': '14_data_update_04',
@@ -269,6 +276,48 @@ data.mydata = {
         },
         {
             'stateClass': 'complete',
+            'url': '04_my_data_03',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (01_개인신용정보 전송요구- 토스트팝업)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_03-1',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (01_개인신용정보 전송요구(인증앱)1)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_04',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (03_인증 완료)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_05',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.5 개인신용정보 선택 (01_개인신용정보 선택)'
+        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '04_my_data_07',
+        //     'category': 'mydata',
+        //     'page': '04-1. 추가하기_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (01_통합인증 완료(일반))'
+        // },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_08',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_09',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (01_개별인증 완료(일반))'
+        },
+        {
+            'stateClass': 'complete',
             'url': '04_my_data_10',
             'category': 'mydata',
             'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (01_가입상품 목록 전송요구서)'
@@ -287,46 +336,21 @@ data.mydata = {
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_data_03',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (01_개인신용정보 전송요구(인증앱)1)'
-        },
-        // 비밀번호
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_04',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (03_인증 완료)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_05',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.5 개인신용정보 선택 (01_개인신용정보 선택)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_08',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_date_popup_01',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (02_전송 종료시점 변경 팝업)'
-        },
-        {
-            'stateClass': 'complete',
             'url': '04_my_data_13',
             'category': 'mydata',
             'page': '04-1. 추가하기_02. 통합인증_2.7 약관동의2 (01_통합인증 약관동의2)'
         },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_14',
+            'category': 'mydata',
+            'page': '개인(신용)정보 제공 동의서'
+        },
         // {
         //     'stateClass': 'complete',
-        //     'url': '04_my_data_07',
+        //     'url': '04_my_data_15',
         //     'category': 'mydata',
-        //     'page': '04-1. 추가하기_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (01_통합인증 완료(일반))'
+        //     'page': '04-1. 추가하기_04. 개별인증_4.3 사이트 자체인증 (01_전송요구내역 선택(자체인증))'
         // },
         {
             'stateClass': 'complete',
@@ -354,27 +378,15 @@ data.mydata = {
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_data_14',
-            'category': 'mydata',
-            'page': '개인(신용)정보 제공 동의서'
-        },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '04_my_data_15',
-        //     'category': 'mydata',
-        //     'page': '04-1. 추가하기_04. 개별인증_4.3 사이트 자체인증 (01_전송요구내역 선택(자체인증))'
-        // },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_09',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (01_개별인증 완료(일반))'
-        },
-        {
-            'stateClass': 'complete',
             'url': '04_my_data_20',
             'category': 'mydata',
             'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (02_개별인증 완료(만료 상품 MY 안내))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_date_popup_01',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (02_전송 종료시점 변경 팝업)'
         },
     ]
 };
@@ -1660,9 +1672,6 @@ data.dataUpdate = {
 
     ]
 };
-
-
-
 
 data.cardExpenditure = {
     'title': '카드지출',

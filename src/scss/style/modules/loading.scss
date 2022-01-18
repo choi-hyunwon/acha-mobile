@@ -12,7 +12,7 @@
 }
 
 .loading-spinner {
-  color: official;
+  //color: official;
   display: inline-block;
   position: relative;
   width: 80px;
@@ -113,19 +113,22 @@
   height: 50px;
   bottom: 0;
   background-color: #FFFFFF;
-  .img{
+
+  .img {
     width: 26px;
     height: 26px;
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    img{
+
+    img {
       width: 100%;
       height: auto;
     }
   }
-  &.top-loading{
+
+  &.top-loading {
     width: 100%;
     height: 50px;
     text-align: center;
@@ -133,7 +136,8 @@
     background-color: #FFFFFF;
     position: fixed;
     bottom: 80px;
-    >img{
+
+    > img {
       width: 26px;
       height: 26px;
     }

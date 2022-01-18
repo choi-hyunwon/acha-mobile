@@ -23,7 +23,6 @@
 </div>
 <script>
     $('#calendarModal').modal('show');
-    // $('#modal').modal('hide');
 
     document.addEventListener('DOMContentLoaded', function () {
         var weekList = ['일', '월', '화', '수', '목', '금', '토'];
@@ -43,6 +42,7 @@
             titleFormat : function(date) {
                 console.log('현재 보여지는 월 ↓')
                 console.log(date.date.year + "-" + (date.date.month + 1)) // 좌우 버튼 눌렀을 때 (년-월) console 노출
+                showDay()
                 return date.date.year +"년 "+(date.date.month +1)+"월";
             },
             height: 'auto',
@@ -63,6 +63,13 @@
                 });
                 jsEvent.target.classList.add('active');
             },
+            events: [
+                {
+                    id: 'a',
+                    title: '',
+                    start: '2021-10-15',
+                }
+            ],
         });
 
         calendar.render();
@@ -73,16 +80,20 @@
         console.log($('.fc-day-number.active').data('goto').date)
     }
 
-    $(document).ready(function (){
-        // 최초 노출시 일이 선택 표시 방법
-        $('.fc-day-top[data-date="2021-10-15"]').addClass('fc-day-selected')
 
-        // 표시할 데이터 없음 표시 방법
-        $('.fc-day-top[data-date="2021-10-20"]').addClass('fc-day-disabled')
-        $('.fc-day-top[data-date="2021-10-21"]').addClass('fc-day-disabled')
-        $('.fc-day-top[data-date="2021-10-22"]').addClass('fc-day-disabled')
-        $('.fc-day-top[data-date="2021-10-23"]').addClass('fc-day-disabled')
-    })
+    function showDay(){
+        setTimeout(function (){
+                // 최초 노출시 일이 선택 표시 방법
+                $('.fc-day-top[data-date="2021-10-15"]').addClass('fc-day-selected')
+
+                // // 표시할 데이터 없음 표시 방법
+                $('.fc-day-top[data-date="2021-10-20"]').addClass('fc-day-disabled')
+                $('.fc-day-top[data-date="2021-10-21"]').addClass('fc-day-disabled')
+                $('.fc-day-top[data-date="2021-10-22"]').addClass('fc-day-disabled')
+                $('.fc-day-top[data-date="2021-10-23"]').addClass('fc-day-disabled')
+            }
+        ,200)
+    }
 </script>
 </body>
 </html>

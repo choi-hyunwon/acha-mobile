@@ -1,55 +1,86 @@
 var data = {}
 data.edit = {
-    'title': '2020.01.14 추가 요청 사항',
+    'title': '2020.01.23 추가 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '04_my_data_03-1',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (01_개인신용정보 전송요구(인증앱)1'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_04',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.4 보유계좌(상품)목록 전송요구 (03_인증 완료)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_09',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (01_개별인증 완료(일반))'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_20',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (02_개별인증 완료(만료 상품 MY 안내))'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_04-1',
+            'url': '09_moreview_01',
             'category': '더보기',
-            'page': '공지사항 없는 경우'
+            'page': '메인'
+        },
+        /*공인인증서복사_02_내보내기*/
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_19',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.2 약관동의(2) (01_개인(신용)정보 수집·이용 동의서)'
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_30',
+            'url': '04_my_data_13',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.7 약관동의2 (01_통합인증 약관동의2)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_08',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_11',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (02_개인(신용)정보 수집·이용 동의서)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_31',
             'category': '더보기',
-            'page': '등록된 게시물이 없는 경우'
+            'page': '마이데이터약관_개인정보 수입 및 이용동의'
         },
         {
             'stateClass': 'complete',
-            'url': '14_data_update_03',
-            'category': 'data update',
-            'page': '네트워크 및 시스템 장애'
+            'url': '09_moreview_32',
+            'category': '더보기',
+            'page': '마이데이터약관_마이데이터 서비스 이용약관'
         },
-
         {
             'stateClass': 'complete',
-            'url': '14_data_update_04',
-            'category': 'data update',
-            'page': '공통_DB 호출 및 데이터 출력'
+            'url': '04_my_data_22',
+            'category': 'mydata',
+            'page': '마이데이터가입_약관동의2_마이데이터 서비스 이용약관'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_23',
+            'category': 'mydata',
+            'page': '마이데이터가입_약관동의1_개인정보 수입 및 이용동의'
+        },
+        /* PC_아차 APP 리뉴얼 안내_211227*/
+        {
+            'stateClass': 'complete',
+            'url': '01_Input_list_popup_05',
+            'category': 'renewal 2.0',
+            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_주기설정한경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_Input_list_popup_06',
+            'category': 'renewal 2.0',
+            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_반복없음경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02-2',
+            'category': '카드지출',
+            'page': '04. 타임라인_1.1 거래내역(없는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02',
+            'category': '카드지출',
+            'page': '04. 타임라인_1.1 거래내역'
         },
     ]
 };
@@ -132,7 +163,19 @@ data.input = {
             'url': '01_Input_list_popup_04',
             'category': 'renewal 2.0',
             'page': '03.입력완료_1.2연 단위 입력 시(01_메인)'
-        }
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_Input_list_popup_05',
+            'category': 'renewal 2.0',
+            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_주기설정한경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_Input_list_popup_06',
+            'category': 'renewal 2.0',
+            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_반복없음경우)'
+        },
     ]
 };
 data.my = {
@@ -381,6 +424,18 @@ data.mydata = {
             'url': '04_my_data_20',
             'category': 'mydata',
             'page': '04-1. 추가하기_04. 개별인증_4.4 개별인증 완료 (02_개별인증 완료(만료 상품 MY 안내))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_22',
+            'category': 'mydata',
+            'page': '마이데이터가입_약관동의2_마이데이터 서비스 이용약관'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_23',
+            'category': 'mydata',
+            'page': '마이데이터가입_약관동의1_개인정보 수입 및 이용동의'
         },
         {
             'stateClass': 'complete',
@@ -979,6 +1034,18 @@ data.moreview = {
             'url': '09_moreview_30',
             'category': '더보기',
             'page': '등록된 게시물이 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_31',
+            'category': '더보기',
+            'page': '마이데이터약관_개인정보 수입 및 이용동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_32',
+            'category': '더보기',
+            'page': '마이데이터약관_마이데이터 서비스 이용약관'
         },
     ]
 };
@@ -1733,6 +1800,12 @@ data.cardExpenditure = {
         {
             'stateClass': 'complete',
             'url': '10_story_02-1',
+            'category': '카드지출',
+            'page': '04. 타임라인_1.1 거래내역(오류 발생시 데이터 없음)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02-2',
             'category': '카드지출',
             'page': '04. 타임라인_1.1 거래내역(없는 경우)'
         },

@@ -1,0 +1,31 @@
+<svg id="achapick_m" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 18px;
+        font-family: NotoSansCJKkr-Bold, Noto Sans CJK KR;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+      }
+
+      .cls-3 {
+        font-size: 16px;
+        font-family: SFProDisplay-Bold, SF Pro Display;
+        letter-spacing: -0.03em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="0" y2="0.01" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#df66f5"/>
+      <stop offset="0.453" stop-color="#9929ed"/>
+      <stop offset="1" stop-color="#5e45e5"/>
+    </linearGradient>
+  </defs>
+  <rect id="bg" class="cls-1" width="60" height="60"/>
+  <text id="아차_PICK" data-name="아차
+PICK" class="cls-2" transform="translate(12 29)"><tspan x="0" y="0">아차</tspan><tspan class="cls-3"><tspan x="0" y="17">PICK</tspan></tspan></text>
+</svg>

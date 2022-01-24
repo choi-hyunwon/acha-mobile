@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #37354e;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_pagenav_arrow" transform="translate(-609 1288) rotate(-90)">
+    <path id="합치기_87" data-name="합치기 87" class="cls-1" d="M5.063,5.774.431,1.142A.5.5,0,1,1,1.138.436l4.3,4.3,4.3-4.3a.5.5,0,0,1,.707.707L5.815,5.769a.5.5,0,0,1-.318.145.5.5,0,0,1-.434-.14Z" transform="translate(1275.804 613.078)"/>
+    <rect id="사각형_3025" data-name="사각형 3025" class="cls-2" width="14" height="14" transform="translate(1274 609)"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #37354e;
+        stroke: #37354e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_pagenav_home" transform="translate(-452 -110)">
+    <g id="그룹_4007" data-name="그룹 4007" transform="translate(-200 4.76)">
+      <path id="빼기_23" data-name="빼기 23" class="cls-1" d="M6481-3611.444h-3.925v-8.539H6475l9-8.576,9,8.576h-2.021v8.538H6487v-5.589a1,1,0,0,0-1-1h-4a1,1,0,0,0-1,1v5.589Z" transform="translate(-5821 3736.2)"/>
+    </g>
+    <rect id="사각형_3085" data-name="사각형 3085" class="cls-2" width="22" height="22" transform="translate(452 110)"/>
+  </g>
+</svg>

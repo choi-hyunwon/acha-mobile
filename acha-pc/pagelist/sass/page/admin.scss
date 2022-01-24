@@ -3,8 +3,8 @@ layout
  */
 
 #wrap {
-  /* padding: 50px;
-   min-width: 1280px; */
+ /* padding: 50px;
+  min-width: 1280px; */
 
   //min-width: 1000px;
   padding-top: 50px;
@@ -81,11 +81,9 @@ a {
     background-size: 28px;
     transition: .5s;
     cursor: pointer;
-
-    & i {
+    & i{
       margin-top: 10px;
     }
-
     &.close {
       left: 6.5px;
     }
@@ -102,7 +100,7 @@ a {
   background: $bgColor;
   transition: .5s;
   box-shadow: 2px 2px 3px #666;
-  padding: 20px 20px 0;
+  padding: 28px 20px 0 ;
 
   &.close {
     width: 0;
@@ -116,7 +114,7 @@ a {
 
   & .title {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     & h2 {
       font-size: 21px;
@@ -128,20 +126,21 @@ a {
     }
 
     & .btn_control_all {
-      position: relative;
+      position: absolute;
       right: 0;
       top: 0;
       width: 61px;
       height: 30px;
       display: block;
-      background: $bgColor-dark;
-      color: $white;
+      background: $bgColor;
+      color: $textColor;
       line-height: 30px;
+      position: relative;
       text-align: center;
       cursor: pointer;
 
       &:hover {
-        color: $white;
+        color: $bgColor-dark;
       }
 
       &::after {
@@ -174,16 +173,9 @@ a {
       & a {
         color: $textColor;
         cursor: pointer;
-        font-size: 14px;
-
-        &.mobile {
-          margin-right: 10px;
-        }
-
         & .fa-check-square {
           display: none;
-        }
-
+          }
         &.checked .fa-square {
           display: none;
         }
@@ -210,16 +202,15 @@ a {
       position: relative;
 
       & li:hover {
-        background-color: $bgColor-light;
+        background-color: $bgColor-dark;
         color: $textColor;
       }
-
       & > h3 {
-        font-size: 15px;
-        height: 31px;
-        line-height: 31px;
+        font-size: 16px;
+        height: 34px;
+        line-height: 34px;
         position: relative;
-        padding-bottom: 0;
+        padding-bottom: 10px;
         padding-left: 5px;
         color: $textColor;
         background-color: $bgColor-light;
@@ -228,19 +219,15 @@ a {
       & ul {
         padding-bottom: 10px;
 
-        & span {
+        & span{
           color: $textColor;
-
           &.depths_2_filename {
             font-weight: bold;
-            font-size: 12px;
           }
-
           &.tooltip {
             font-size: 12px;
           }
         }
-
         & .fas {
           position: absolute;
           right: 3px;
@@ -317,15 +304,15 @@ a {
       margin-bottom: 5px;
       font-size: 16px;
 
-      & .link, .unlink {
+      & .link , .unlink{
         position: relative;
         display: block;
-        padding: 5px 18px 5px 58px;
+        padding: 7px 18px 7px 60px;
         overflow: hidden;
         text-overflow: ellipsis;
 
         &.focus {
-          background-color: $bgColor-light;
+          background-color: #ccc;
         }
 
         &:hover span, &.focus span {
@@ -334,16 +321,18 @@ a {
 
         &.focus span.depths_2_filename {
           position: relative;
+          line-height: 20px;
         }
       }
 
       &:hover, &.nav_depth_2 .wrap_scroll ul li .link.focus {
-        background-color: rgb(219, 211, 237);
+        background: $bgColor;
       }
 
       &:hover .fa-external-link-alt:before {
         color: $textColor;
       }
+
     }
   }
 }

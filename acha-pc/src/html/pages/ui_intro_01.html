@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div>
+    @@include('../include/header_fixed.html')
+    <div class="dim"></div>
+    <div class="modal-loading">
+        <div><img src="../../img/common/loading.gif" alt="필수 프로그램 설치 확인 중..."></div>
+        <p>필수 프로그램 설치 확인 중...</p>
+    </div>
+    <div class="bg-security">
+        <article class="container">
+            <h2 class="visually_hidden">아차 컨텐츠</h2>
+            <!-- 메인  -->
+            <section class="section_authorization pt">
+                <h2 class="visually_hidden">메인</h2>
+                <div class="inner">
+                    <div class="step">
+                        <span class="current">1</span>
+                        <span class="slash">/</span>
+                        <span class="total">3</span>
+                    </div>
+                    <div class="title">
+                        <span>PC 공인인증서 아차앱으로 복사하기</span>
+                    </div>
+                    <div class="desc">
+                        <span>
+                            <span class="primary">'시작하기'</span> 버튼을 클릭하여<br/>
+                                필수 프로그램이 설치되어 있는지 확인합니다.
+                        </span>
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="btn-gradient btn-block _start">시작하기</button>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('._start').on('click', function () {
+                            $('.dim').css('display', 'block');
+                            $('.modal-loading').css('display', 'block');
+                            setTimeout(function () {
+                                $('.dim').css('display', 'none');
+                                $(location).attr('href', './ui_intro_02.html');
+                            }, 10000);
+                        })
+                    });
+                </script>
+            </section>
+        </article>
+    </div>
+    @@include('../include/footer.html')
+</div>
+</body>
+</html>
+
+

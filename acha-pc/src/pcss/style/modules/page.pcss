@@ -1,0 +1,310 @@
+.primary {
+    color: var(--color-point);
+}
+.yellow {
+    color: var(--yellow);
+}
+.white {
+    color: var(--white);
+}
+
+.txt-area {
+    & .txt-sm {
+        display: block;
+        font-family: var(--font1);
+        font-size: 15px;
+        letter-spacing: -0.75px;
+        margin-bottom: 10px;
+    }
+    & .txt-lg {
+        display: block;
+        font-family: var(--font1);
+        font-size: 34px;
+        line-height: 52px;
+        letter-spacing: -1.7px;
+        margin-left: -3px;
+        margin-bottom: 20px;
+    }
+    & .desc {
+        font-family: var(--font1);
+        font-size: 15px;
+        letter-spacing: -0.75px;
+        margin-top: 20px;
+    }
+}
+
+.modal-loading {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 169px;
+    background-color: #ffffff;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 26px 0;
+    & p {
+        font-family: var(--font2);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: var(--text-01);
+    }
+    & div {
+        width: 150px;
+        height: 67px;
+        margin: 0 auto 27px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.error {
+    width: 100%;
+    padding: 60px 40px;
+    & .logo {
+        margin-bottom: 25px;
+        & a {
+            display: block;
+            width: 100px;
+            height: 45px;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    & .content {
+        & p {
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.38px;
+            text-align: left;
+            & .line {
+                color: #cfced6;
+            }
+            & a {
+                color: #62a1d0;
+            }
+        }
+    }
+    & .i-img {
+        display: block;
+        float: right;
+        width: 190px;
+        height: 150px;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* pc */
+@media (min-width: 1060px) {
+    .error {
+        position: relative;
+        width: 1020px;
+        padding: 136px 0 0;
+        margin:  0 auto;
+        & .logo {
+            margin-bottom: 46px;
+            & a {
+                width: 125px;
+                height: 52px;
+            }
+        }
+        & .content {
+            & p {
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: -0.45px;
+                text-align: left;
+            }
+        }
+        & .i-img {
+            position: absolute;
+            right: 0;
+            top: 320px;
+            width: 350px;
+            height: 275px;
+        }
+    }
+}
+
+.p-copy {
+    width: 100%;
+    min-height: 500px;
+    padding: 60px 40px;
+    & .logo {
+        margin-bottom: 25px;
+        & a {
+            display: block;
+            width: 100px;
+            height: 45px;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    & .content {
+        & .i-img {
+            display: block;
+            width: 220px;
+            height: 165px;
+            margin: 0 auto 50px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & p {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -0.5px;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .p-copy {
+        min-height: 600px;
+        padding: 100px 40px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .p-copy {
+        width: 1060px;
+        min-height: 700px;
+        padding: 100px 0;
+        margin: 0 auto;
+    }
+}
+
+.page-error {
+    width: 100%;
+    min-height: 500px;
+    padding: 60px 40px;
+    & .logo {
+        margin-bottom: 25px;
+        & a {
+            display: block;
+            width: 100px;
+            height: 45px;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    & .content {
+        overflow: hidden;
+        & .title {
+            font-size: 28px;
+            line-height: 38px;
+            text-align: left;
+            color: var(--text-01);
+            margin-bottom: 25px;
+        }
+        & .text {
+            & p {
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: -0.38px;
+                text-align: left;
+                color: var(--text-01);
+                & .color-gray {
+                    color: #cfced6;
+                }
+                & .color-blue {
+                    color: #62a1d0;
+                }
+            }
+        }
+        & .i-img {
+            display: block;
+            width: 190px;
+            height: 150px;
+            float: right;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & p {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -0.5px;
+            text-align: center;
+        }
+    }
+    &.bg-error {
+        height: 800px;
+        background-image: url(../../img/common/m_img_error@2x.png);
+        background-position: bottom 90px right 40px;
+        background-repeat: no-repeat;
+        background-size: 190px 150px;
+    }
+}
+
+@media (min-width: 767px) {
+    .page-error {
+        min-height: 600px;
+        padding: 100px 40px;
+        &.bg-error {
+            background-position: bottom 220px right 80px;
+        }
+    }
+}
+
+@media (min-width: 1060px) {
+    .page-error {
+        width: 1060px;
+        min-height: 700px;
+        padding: 100px 0;
+        margin: 0 auto;
+
+        &.bg-error {
+            height: 1000px;
+            background-image: url(../../img/common/pc_img_error@2x.png);
+            background-position: top 260px right 80px;
+            background-size: 350px 275px;
+        }
+
+        & .logo {
+            margin-bottom: 46px;
+            & a {
+                width: 125px;
+                height: 52px;
+            }
+        }
+        & .content {
+            & .title {
+                font-size: 44px;
+                line-height: 62px;
+                letter-spacing: -1.1px;
+            }
+            & .text {
+                & p {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}

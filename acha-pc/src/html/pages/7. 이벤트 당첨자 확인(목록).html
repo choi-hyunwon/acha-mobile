@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap">
+    @@include('../include/header_renewal_v.0.1.html')
+    <div class="wrap">
+
+        <div class="breadcrumb-wrap d-none d-md-block">
+            <div class="inner">
+                <ul>
+                    <li class="home"><a href="#" class="icon-home"></a></li>
+                    <li><a href="#" class="item">이벤트</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-title">이벤트</div>
+
+        <div class="event-wrap"> <!--  이벤트 wrap -->
+            <div class="event-tab">
+                <ul class="_eventTab">
+                    <li><a href="#">이벤트</a></li>
+                    <li class="active"><a href="#">당첨자 확인</a></li>
+                </ul>
+            </div>
+            <script>
+                $('._eventTab li a').on('click',function (){
+                    $(this).parent().addClass('active').siblings().removeClass('active')
+                })
+            </script>
+            <div class="list-header d-none d-md-block">
+                <div class="item num">번호</div>
+                <div class="item tit">제목</div>
+                <div class="item event-date">이벤트 기간</div>
+                <div class="item date">당첨자 발표일</div>
+            </div>
+            <ul class="list">
+                <li class="item">
+                    <a href="#">
+                        <span class="num d-none d-md-block">20</span>
+                        <span class="title">[당첨자발표] 아차 제휴 카드 발급 이벤트[당첨자발표] 아차 제휴 카드 발급 이벤트[당첨자발표] 아차 제휴 카드 발급 이벤트</span>
+                        <span class="info"><em class="tit d-md-none">이벤트 기간</em><em class="date">2020.01.05 ~ 2020.01.28</em></span>
+                        <span class="info info-2"><em class="tit d-md-none">당첨자 발표일</em><em class="date">2021.03.19</em></span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span class="num d-none d-md-block">20</span>
+                        <span class="title">[당첨자발표] 아차 제휴 카드 발급 이벤트</span>
+                        <span class="info"><em class="tit d-md-none">이벤트 기간</em><em class="date">2020.01.05 ~ 2020.01.28</em></span>
+                        <span class="info info-2"><em class="tit d-md-none">당첨자 발표일</em><em class="date">2021.03.19</em></span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span class="num d-none d-md-block">20</span>
+                        <span class="title">[당첨자발표] 아차 제휴 카드 발급 이벤트</span>
+                        <span class="info"><em class="tit d-md-none">이벤트 기간</em><em class="date">2020.01.05 ~ 2020.01.28</em></span>
+                        <span class="info info-2"><em class="tit d-md-none">당첨자 발표일</em><em class="date">2021.03.19</em></span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span class="num d-none d-md-block">20</span>
+                        <span class="title">[당첨자발표] 아차 제휴 카드 발급 이벤트</span>
+                        <span class="info"><em class="tit d-md-none">이벤트 기간</em><em class="date">2020.01.05 ~ 2020.01.28</em></span>
+                        <span class="info info-2"><em class="tit d-md-none">당첨자 발표일</em><em class="date">2021.03.19</em></span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span class="num d-none d-md-block">20</span>
+                        <span class="title">[당첨자발표] 아차 제휴 카드 발급 이벤트</span>
+                        <span class="info"><em class="tit d-md-none">이벤트 기간</em><em class="date">2020.01.05 ~ 2020.01.28</em></span>
+                        <span class="info info-2"><em class="tit d-md-none">당첨자 발표일</em><em class="date">2021.03.19</em></span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span class="num d-none d-md-block">20</span>
+                        <span class="title">[당첨자발표] 아차 제휴 카드 발급 이벤트</span>
+                        <span class="info"><em class="tit d-md-none">이벤트 기간</em><em class="date">2020.01.05 ~ 2020.01.28</em></span>
+                        <span class="info info-2"><em class="tit d-md-none">당첨자 발표일</em><em class="date">2021.03.19</em></span>
+                    </a>
+                </li>
+            </ul>
+            <ul id="pagination" class="pagination justify-content-center d-none d-md-flex">
+                <li class="page-item first disabled"><a href="#" class="page-link"></a></li>
+                <li class="page-item prev disabled"><a href="#" class="page-link"></a></li>
+                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item next"><a href="#" class="page-link"></a></li>
+                <li class="page-item last"><a href="#" class="page-link"></a></li>
+            </ul>
+            <script>
+                //   https://josecebe.github.io/twbs-pagination/
+                $('#pagination').twbsPagination({
+                    totalPages: 35,
+                    visiblePages: 5,
+                    first: '<i class="icon btn-page-first"></i>',
+                    prev: '<i class="icon btn-page-pre"></i>',
+                    next: '<i class="icon btn-page-next"></i>',
+                    last: '<i class="icon btn-page-last"></i>',
+                    onPageClick: function (event, page) {
+                        $('#page-content').text('Page ' + page)
+                    }
+                })
+            </script>
+            <div class="btn-wrap d-md-none"><a href="#" class="btn-normal">더보기</a></div>
+        </div>
+    </div>
+    @@include('../include/footer.html')
+</div>
+</body>
+</html>

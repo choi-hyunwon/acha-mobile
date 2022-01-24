@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <h2>회원가입</h2>
+    </div>
+    <div class="contents">
+        <div class="sign-in-wrap">
+            <div class="title">약관동의</div>
+            <div class="step-wrap">
+                <ul>
+                    <li>01</li>
+                    <li class="active">02</li>
+                    <li>03</li>
+                </ul>
+            </div>
+            <!-- 문구 수정 -- 2021.11.24 -->
+            <div class="desc">
+                아차의 다양한 서비스 이용을 위해<br/>
+                아래의 약관 동의가 필요해요.
+            </div>
+            <!-- s 수정 -- 2021.11.18 -->
+            <div class="card-wrap all">
+                <div class="card-box">
+                    <div class="item">
+                        <label>
+                            <input type="checkbox" class="filled-in">
+                            <span>전체동의</span>
+                        </label>
+                        <div class="title-wrap"></div>
+                        <div class="desc no-dot">전체동의는 필수와 선택 약관을 모두 포함합니다.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- e 수정 -- 2021.11.18 -->
+            <div class="card-wrap must">
+                <div class="card-title">필수</div>
+                <div class="card-box">
+                    <div class="item">
+                        <label>
+                            <input type="checkbox" class="filled-in">
+                            <span></span>
+                        </label>
+                        <div class="title-wrap">
+                            <span class="tit">서비스 이용약관</span>
+                            <span class="ico"><i class="blue"></i></span>
+                        </div>
+                        <div class="desc">서비스 이용을 위한 필수 약관입니다.</div>
+<!--                        <div class="desc">아차 서비스를 이용함에 있어 회사와 회원의 권리·의무 및 책임사항을 규정합니다. </div>-->
+                        <div class="btn-more-wrap"><a href="#" class="btn-more"></a></div>
+                    </div>
+                    <div class="item">
+                          <label>
+                            <input type="checkbox" class="filled-in" checked="checked">
+                            <span></span>
+                        </label>
+                        <div class="title-wrap">
+                            <span class="tit">개인정보 수집 및 이용 동의서</span>
+                            <span class="ico"><i class="blue"></i><i class="orange"></i></span>
+                        </div>
+                        <div class="desc">
+                            고객님의 개인식별정보를 수집하고 관리합니다.<br/>
+                            (개인식별정보 수집 내용이 포함 되어 있습니다.)
+                        </div>
+<!--                        <div class="desc">이름, 연락처, 전자우편, 개인신용정보 등</div>-->
+                        <div class="btn-more-wrap"><a href="#" class="btn-more"></a></div>
+                    </div>
+<!--                    <div class="item">-->
+<!--                        <label>-->
+<!--                            <input type="checkbox" class="filled-in" checked="checked">-->
+<!--                            <span></span>-->
+<!--                        </label>-->
+<!--                        <div class="title-wrap">-->
+<!--                            <span class="tit">개인정보 제3자 제공 동의</span>-->
+<!--                            <span class="ico"><i class="blue"></i><i class="orange"></i></span>-->
+<!--                        </div>-->
+<!--                        <div class="desc">휴대폰 본인 인증 서비스를 위해 제공됩니다.</div>-->
+<!--&lt;!&ndash;                        <div class="desc">본인확인을 위한 필수 절차를 위해 제공됩니다.</div>&ndash;&gt;-->
+<!--                        <div class="btn-more-wrap"><a href="#" class="btn-more"></a></div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="card-title">선택</div>
+                <div class="card-box">
+                    <div class="item">
+                        <label>
+                            <input type="checkbox" class="filled-in">
+                            <span></span>
+                        </label>
+                        <div class="title-wrap">
+                            <span class="tit">마케팅 활용 및 수신 동의</span>
+                            <span class="ico"><i class="orange"></i><i class="green"></i></span>
+                        </div>
+                        <div class="checkbox-select">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>Push</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>E-Mail</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>SMS</span>
+                            </label>
+<!--                            <label>-->
+<!--                                <input type="checkbox" class="filled-in">-->
+<!--                                <span>알림톡</span>-->
+<!--                            </label>-->
+                        </div>
+                        <div class="desc no-dot">이벤트 및 프로모션 제공을 위한 정보 제공</div>
+                        <div class="btn-more-wrap"><a href="#" class="btn-more"></a></div>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="card-wrap single">-->
+<!--                <div class="card-box">-->
+<!--                    <div class="item">-->
+<!--                        <div class="title-wrap">-->
+<!--                            <span class="tit">개인정보 처리방침</span>-->
+<!--                            <span class="ico"><i class="orange"></i></span>-->
+<!--                        </div>-->
+<!--                        <div class="desc no-dot">개인정보 보관 기간 및 방침</div>-->
+<!--                        <div class="btn-more-wrap"><a href="#" class="btn-more"></a></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!-- s 문구 수정 -- 2021.11.18 -->
+            <div class="tip-wrap">
+                <div class="list-title">알기 쉽게 알아 보기</div>
+                <ul>
+                    <li class="blue">
+                        서비스 제공을 위한 필수 동의 사항입니다.<br/>
+                        (동의하지 않는 경우 서비스를 이용하실 수 없습니다.)
+                    </li>
+                    <li class="green">
+                        고객님을 위한 맞춤 서비스를 제공하기 위한 선택적 약관입니다.<br/>
+                        (동의하지 않는 경우에도 서비스를 이용하실 수 있습니다.)
+                    </li>
+                    <li class="orange">개인식별정보가 수집 내용이 포함 되어 있습니다. </li>
+                </ul>
+            </div>
+            <!-- e 수정 -- 2021.11.18 -->
+            <div class="sign-in-btn">
+                <a href="#" class="btn btn-lg btn-block btn-big btn-start">확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

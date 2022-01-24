@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>마이페이지</h2>
+    </div>
+    <div class="contents">
+        <div class="my-page-wrap">
+            <div class="info-wrap">
+                <ul>
+                    <li class="item">
+                        <div class="tit">커넥션명</div>
+                        <div class="info"><a class="link" href="#">예원이네</a></div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">한 줄 목표 </div>
+                        <div class="info"><a class="link" href="#">가족 지출 관리 렛츠두잇!</a></div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">커넥션 멤버</div>
+                        <div class="member">
+                            <div class="img"><img src="../../img/common/img-profile-default@2x.png" alt=""><span class="badge">공유</span><span class="name">신우식</span></div>
+                            <div class="img"><img src="../../img/common/img-profile-default@2x.png" alt=""><span class="name">유호경</span></div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="update">
+                            <div class="tit">상대방 최종 업데이트</div>
+                            <a href="#" class="date">2021년 07월 08일 15:30:11</a>
+                        </div>
+                        <div class="list caution">상대방이 공유하면 업데이트 일시를 알 수 있어요.</div>
+                        <div class="speech-balloon active"> <!-- active 시, 활성화 -->
+                            <span class="txt">상대방에게 업데이트를 요청해보세요</span>
+                            <a href="#" class="btn-close _btnClose"><i class="btn-toast-popup-close"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="connection-info-wrap">
+                <div class="top-area">
+                    <div class="tit">연결정보</div>
+                    <div class="btn-wrap"><a href="#" class="btn btn-sm">공유항목 편집</a></div>
+                </div>
+                <div class="no-data">
+                    <div class="img"><img src="../../img/common/ico-error-main.svg" alt=""></div>
+                    <div class="txt">연결한 사이트가 없어요</div>
+                    <div class="txt-sm">공동의 지출을 구성원에게 공유해보세요 </div>
+                    <div class="btn-wrap">
+                        <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_add"></i>내 지출 추가하기</a>
+                    </div>
+                </div>
+                <div class="btn-wrap"><a href="#">커넥션 끊기</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('._btnClose').on('click', function (){
+        $(this).parent().removeClass('active')
+    })
+    // ? 무슨 버튼을 눌러야 토스트 팝업이 나오는지 문의 필요
+    // _btnOpen 클래스 추가 시, 토스트 팝업 활성화
+    // $('._btnOpen').on('click', function (){
+    //     $('.speech-balloon').addClass('active')
+    // })
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="16" viewBox="0 0 6 16">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #737183;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <g id="arrow_list_add" transform="translate(-10)">
+    <rect id="사각형_2298" data-name="사각형 2298" class="cls-1" width="6" height="16" transform="translate(10)"/>
+    <g id="_" data-name="&gt;">
+      <rect id="사각형_2120" data-name="사각형 2120" class="cls-2" width="1" height="6" rx="0.5" transform="translate(11.757 12.243) rotate(-135)"/>
+      <rect id="사각형_2121" data-name="사각형 2121" class="cls-2" width="1" height="6" rx="0.5" transform="translate(11.05 4.464) rotate(-45)"/>
+    </g>
+  </g>
+</svg>

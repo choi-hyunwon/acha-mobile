@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <!--  S header  -->
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>서희님의 마이페이지</h2>
+    </div>
+    <!--  E header  -->
+
+    <!--  S contents  -->
+    <!--  E contents  -->
+</div>
+<div class="modal-slide story-emoji-select _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title"><span class="name">내 지출 기분</span>은?</div>
+            <div class="profile">
+                <div class="img">  <!-- profile 없을 경우 default 클래스 추가 -->
+                    <img src="../../img/common/ico-emoji-angry@2x.png" alt="">
+                    <a href="#" class="btn-delete"><i class="ico-profile-delete"></i></a>
+                </div>
+            </div>
+            <div class="icon-list">
+                <div class="row">
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-emoji-excited@2x.png" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-emoji-smile@2x.png" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-emoji-nothing@2x.png" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-emoji-surprise@2x.png" alt="아이콘"></a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-emoji-cry@2x.png" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-emoji-angry@2x.png" alt="아이콘"></a></div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="item"><a href="#"><img src="../../img/common/ico-emoji-vomit@2x.png" alt="아이콘"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg">저장하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

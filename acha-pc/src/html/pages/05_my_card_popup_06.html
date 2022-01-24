@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <!--  S header  -->
+    <div class="header bg-white">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>카드 혜택</h2>
+    </div>
+    <!--  E header  -->
+
+    <div class="contents">
+        <div class="card-benefits-wrap">
+            <div class="info-title">
+                <a href="#">
+                    <span>4월</span> 실적 달성까지<br>
+                    <span>849,462원</span> 남았어요 😃
+                </a>
+            </div>
+            <div class="graph-area">
+                <div class="required-performance">
+                    <span class="txt">실적 </span>
+                    <span class="val">150,538</span>
+                    <span class="txt">원</span>
+                </div>
+                <div class="bar-graph">
+                    <span class="bar" style="width: 30%"></span>
+                    <span class="sec sec-1">
+                        <span><em></em></span>
+                        <span><em>100만원</em></span>
+                    </span>
+                </div>
+            </div>
+            <div class="card_benefits">
+                <!--                <div class="empty">-->
+                <!--                    <p>혜택을 직접 입력해서 내 카드 실적을<br/>-->
+                <!--                        편리하게 관리하세요 😎</p>-->
+                <!--                </div>-->
+                <div class="badge-area">
+                    <span class="badge-pill">주요 혜택</span>
+                </div>
+                <div class="list-area">
+                    <ul>
+                        <li class="list ico-card-bene-sale">모든 가맹점 <span class="primary-color">0.7%</span> 청구할인</li>
+                        <li class="list ico-card-bene-shopping">6대 온라인쇼핑 업종 <span class="primary-color">0.8%</span> 추가할인</li>
+                        <li class="list ico-card-bene-sale">선결제 추가할인 <span class="primary-color">0.3%</span> 추가할인</li>
+                        <li class="list ico-card-bene-card">무이자할부 <span class="primary-color">2~3</span>개월</li>
+                    </ul>
+                </div>
+                <div class="badge-area">
+                    <span class="badge-pill grey">기본 혜택</span>
+                </div>
+                <div class="list-area">
+                    <ul>
+                        <li class="list ico-card-bene-sale">모든 가맹점 <span class="primary-color">0.7%</span> 청구할인</li>
+                        <li class="list ico-card-bene-shopping">6대 온라인쇼핑 업종 <span class="primary-color">0.8%</span> 추가할인</li>
+                        <li class="list ico-card-bene-sale">선결제 추가할인 <span class="primary-color">0.3%</span> 추가할인</li>
+                        <li class="list ico-card-bene-card">무이자할부 <span class="primary-color">2~3</span>개월</li>
+                    </ul>
+                </div>
+                <div class="direct-register-area">
+                    <div class="title-area">
+                        <span class="title">혜택 직접 입력 </span>
+                        <div class="btn-wrap-sm">
+                            <a class="btn btn-pay" href="#">삭제</a>
+                            <a class="btn btn-pay" href="#">수정</a>
+                            <a class="btn btn-pay" href="#">편집</a>
+                        </div>
+                    </div>
+                    <textarea class="custom" name="txt" placeholder="카드사 제공 정보에서 빠진 혜택이 있다면, 직접 입력해주세요.( 최대 한글 200글자까지 입력할 수 있습니다)"></textarea>
+                    <textarea class="custom" name="txt" readonly="">편의점 할인 10%, 영화관 평일 25% 할인 예매</textarea>
+                </div>
+                <!--                <div class="btn-area">-->
+                <!--                    <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_edit"></i>혜택 직접 입력</a>-->
+                <!--                </div>-->
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card-benefits-btn-wrap">
+            <div class="btn-full">
+                <a href="#">혜택 더보기<i class="sprite ico_arrow_small_nor"></i></a>
+            </div>
+            <div class="list caution">
+                <p>위 정보는 정확하지 않을 수 있으니 정확한 정보를 보려면 카드사
+                    홈페이지에서 확인해주세요.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-sm modal-my-card" id="myCardPopup6" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content pt-0">
+            <div class="modal-body py-5">
+                <div class="txt text-center">
+                    직접 입력한 카드 혜택 정보<br/>
+                    삭제 후 복구할 수 없어요.<br/>
+                    그래도 삭제 하시겠어요?
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer bg-grey" data-dismiss="modal">취소</a>
+                <a href="#" class="btn-footer">확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#myCardPopup6').modal('show');   // modal show
+</script>
+</body>
+<script>
+    $('._myCardTab li a').on('click',function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+</html>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #37354e;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 1.099px;
+      }
+
+      .cls-3 {
+        stroke: #6839d3;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="ico_list_convi_big" transform="translate(0)">
+    <g id="그룹_4433" data-name="그룹 4433">
+      <g id="그룹_4431" data-name="그룹 4431">
+        <line id="선_40" data-name="선 40" class="cls-1" y1="12.867" transform="translate(3.925 14.199)"/>
+        <line id="선_41" data-name="선 41" class="cls-1" y2="12.743" transform="translate(26.075 14.324)"/>
+      </g>
+      <g id="그룹_4432" data-name="그룹 4432">
+        <path id="패스_3759" data-name="패스 3759" class="cls-2" d="M8.768,12.57c0,2.858-6.232,2.858-6.232,0v-8.8a.835.835,0,0,1,.835-.835h5.4Z"/>
+        <path id="패스_3760" data-name="패스 3760" class="cls-2" d="M15,12.57c0,2.858-6.232,2.858-6.232,0V2.932H15Z"/>
+        <path id="패스_3761" data-name="패스 3761" class="cls-2" d="M21.232,12.57c0,2.858-6.232,2.858-6.232,0V2.932h6.232Z"/>
+        <path id="패스_3762" data-name="패스 3762" class="cls-2" d="M27.464,12.57c0,2.858-6.232,2.858-6.232,0V2.932h5.4a.835.835,0,0,1,.835.835Z"/>
+      </g>
+      <path id="패스_3763" data-name="패스 3763" class="cls-3" d="M12.022,26.962v-7.1a.838.838,0,0,1,.838-.838h4.28a.838.838,0,0,1,.838.838v7.1"/>
+      <line id="선_42" data-name="선 42" class="cls-4" x2="26.292" transform="translate(1.854 27.068)"/>
+    </g>
+    <g id="그룹_4434" data-name="그룹 4434">
+      <rect id="사각형_3424" data-name="사각형 3424" class="cls-5" width="30" height="30" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>

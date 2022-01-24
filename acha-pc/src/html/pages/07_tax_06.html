@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<!-- 의료비 세액공제 -->
+<div class="wrap">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>의료비 세액공제</h2>
+        <a class="btn-tooltip-lg" href="#"><img src="../../img/common/ico_tooltip_big@2x.png" alt="tooltip-large"></a>
+    </div>
+    <div class="contents">
+        <div class="box_tax_title">
+            <p>총 급여의 3%<br/><em class="font-lg">6,000,000</em><em class="font-md">원</em> 이후부터 세액공제!</p>
+        </div>
+        <div class="divider"></div>
+        <div class="box_tax_sub pt-0 ver2">
+            <div class="box_tax_list px-0">
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">기본 의료비<em>(본인, 65세이상인 자, 장애인에 해당)</em></div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" value="3,200,000"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">난임시술비<em>(본인만 해당)</em></div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg mb-20"> <!-- 항목 추가 -- 2021.06.07 -->
+                    <div class="title-xl">그 외 의료비<em>(기본 의료비 대상자 외)</em></div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+            </div>
+        </div>
+        <div class="box_deduction ver2 pt-0 mb-5">
+            <div class="tip-area mb-20">
+                <span class="badge">tip</span>
+                <p class="font-lg">공제 가능한 의료비 항목 예시</p>
+                <p class="font-md">- 병의원, 약국 비용<br/>
+                    - 난임시술비<br/>
+                    - 안경(콘택트렌즈)<br/>
+                    - 보청기, 장애인보장구<br/>
+                    - 의료기기(처방전에 의한 구매)<br/>
+                    - 장기요양급여비<br/>
+                    - 산후조리원비용</p>
+            </div>
+            <div class="btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-start" href="#">계산하기</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="box_tax_sub pt-0 pb-5 ver2">
+            <div class="box_tax_item mb-2">
+                <div class="title-sm">공제금액 예상</div>
+                <div class="value primary">3,000,000</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

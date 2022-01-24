@@ -1,0 +1,40 @@
+<svg id="ico_list_investmentcash_big" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #6839d3;
+        stroke-linecap: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #37454e;
+      }
+    </style>
+  </defs>
+  <g id="그룹_4036" data-name="그룹 4036">
+    <rect id="사각형_3162" data-name="사각형 3162" class="cls-1" width="30" height="30" transform="translate(0 0)"/>
+  </g>
+  <g id="그룹_4039" data-name="그룹 4039">
+    <g id="그룹_4037" data-name="그룹 4037">
+      <path id="패스_3657" data-name="패스 3657" class="cls-2" d="M6.718,14.547,8.39,19.323a.179.179,0,0,0,.341-.008l1.477-4.608a.059.059,0,0,1,.113,0l1.53,4.668a.179.179,0,0,0,.338,0l1.77-4.827"/>
+      <line id="선_19" data-name="선 19" class="cls-2" x2="0.862" transform="translate(13.326 16.761)"/>
+      <line id="선_20" data-name="선 20" class="cls-2" x2="0.917" transform="translate(6.489 16.761)"/>
+    </g>
+    <g id="그룹_4038" data-name="그룹 4038">
+      <ellipse id="타원_1552" data-name="타원 1552" class="cls-3" cx="6.644" cy="2.53" rx="6.644" ry="2.53" transform="translate(15.146 15.546)"/>
+      <path id="패스_3658" data-name="패스 3658" class="cls-3" d="M15.146,18.076v2.307c0,1.4,2.975,2.529,6.644,2.529s6.644-1.132,6.644-2.529V18.076"/>
+      <path id="패스_3659" data-name="패스 3659" class="cls-3" d="M15.146,20.246v2.443c0,1.4,2.975,2.53,6.644,2.53s6.644-1.132,6.644-2.53V20.246"/>
+      <path id="패스_3660" data-name="패스 3660" class="cls-3" d="M15.146,22.551V25c0,1.4,2.975,2.53,6.644,2.53s6.644-1.133,6.644-2.53V22.689"/>
+    </g>
+    <path id="패스_3661" data-name="패스 3661" class="cls-3" d="M18.341,15.914a29.516,29.516,0,0,0-5.833-7.445H7.775L4.922,3.945A2.505,2.505,0,0,1,7.245,2.483c1.275.112,2.183,1.9,5.055.279,1.849-1.046,3.271,1.183,3.271,1.183L12.508,8.469"/>
+    <path id="패스_3662" data-name="패스 3662" class="cls-3" d="M7.775,8.469c-11.762,13.294-3.2,16.287-3.2,16.287H15.146"/>
+  </g>
+</svg>

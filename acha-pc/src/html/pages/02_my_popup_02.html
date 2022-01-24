@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+    </div>
+    <div class="contents">
+        <div class="my-page-tutorial">
+            <div class="title">철회에 대한 안내</div>
+            <div class="desc">
+                고객이 선택하신 ‘내정보 그만 가져오기’는 이 시점 이후 나의 개인신용정보를 더 이상 가져오지 않는다는 의미이며 그간 수집된 정보를 삭제한다는 의미가 아닙니다.<br/><br/>
+                이에 따라 기존 정보 유지를 원하시면 ‘기존정보유지’를 기존정보 삭제를 원하시면 ‘기존정보삭제’를 선택하시기 바랍니다.
+            </div>
+        </div>
+        <div class="btn_box bg">
+            <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">삭제</a>
+            <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">유지</a>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="confirm" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="tit">데이터 철회가 완료 되었어요</div>
+            <a class="btn-close" data-dismiss="modal" aria-label="Close" href="#"></a>
+<!--            <div class="txt">-->
+<!--                기존에 수집된 고객님의 정보가<br/>-->
+<!--                모두 삭제됩니다-->
+<!--            </div>-->
+            <div class="txt">
+                지금부터 <span class="number">2023. 08. 23</span>일까지<br/>
+                데이터가 <span class="number">3년</span>간 유지됩니다
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#confirm').modal('show');
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<!-- 소득 정보 -->
+<div class="wrap">
+    <div class="header _sticky">
+        <h2>소득 정보</h2>
+        <a href="#" class="btn_close"></a>
+    </div>
+    <div class="contents">
+        <div class="box_tax_sub ver2">
+            <div class="title">소득 정보를 입력하세요</div>
+            <div class="deduct-input">
+                <div class="title">총 급여액</div>
+                <input type="text" onkeyup="inputNumberFormat(this)" title="sum" placeholder="0"><span class="won">만원</span>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="box_tax_sub detail ver2">
+            <div class="sec-deduct">
+                <div class="area-title">
+                    <span class="title">추가 정보</span>
+                </div>
+                <ul class="list-deduct">
+                    <li class="list-deduct-item list-deduct-item-lg clearfix">
+                        <span class="title">무주택 세대주</span>
+                        <span class="box-switch">
+                            <a class="btn-no" href="#">아니오</a>
+                            <a class="btn-yes active" href="#">예</a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-lg clearfix">
+                        <div class="desc_area">
+                            <span class="title">부양가족 정보를 입력하세요<em>(배우자 포함)</em></span>
+                            <p class="desc">연간 소득 100만원 이하/근로소득 경우 500만원 이하일 경우의
+                                가족만 해당</p>
+                        </div>
+                        <span class="title">부양가족 정보</span>
+                        <span class="count-num">
+                            <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                            <input type="number" title="qty" value="2" class="qty" min="0">
+                            <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-lg border-bottom-0 clearfix">
+                        <p class="list-desc">본인을 포함한 가족 중 해당하는 항목에<br/>
+                            인원 수를 입력해주세요 </p>
+                        <span class="title pl-20">경로자우대</span>
+                        <span class="count-num">
+                            <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                            <input type="number" title="qty" value="0" class="qty" min="0">
+                            <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-lg clearfix">
+                        <span class="title pl-20">장애인</span>
+                        <span class="count-num">
+                            <a class="qty-minus" href="#"><i class="sprite ico_minus_nor"></i></a>
+                            <input type="number" title="qty" value="0" class="qty" min="0">
+                            <a class="qty-plus" href="#"><i class="sprite ico_plus_nor"></i></a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-big clearfix">
+                        <span class="title">부녀자에 해당하시나요?</span>
+                        <span class="desc">소득이 4147만원 이상인 여성의 경우<br/>해당하지 않음</span>
+                        <span class="box-switch">
+                            <a class="btn-no" href="#">아니오</a>
+                            <a class="btn-yes active" href="#">예</a>
+                        </span>
+                    </li>
+                    <li class="list-deduct-item list-deduct-item-big  clearfix">
+                        <span class="title">한부모소득에 해당하시나요?</span>
+                        <span class="desc">배우자가 없고 기본공제대상자인<br/>직계비속이 있는 경우</span>
+                        <span class="box-switch">
+                            <a class="btn-no active" href="#">아니오</a>
+                            <a class="btn-yes" href="#">예</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-save" href="#">저장</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

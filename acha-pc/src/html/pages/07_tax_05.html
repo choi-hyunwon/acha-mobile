@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<!-- 교육비 세액공제 -->
+<div class="wrap">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>교육비 세액공제</h2>
+        <a class="btn-tooltip-lg" href="#"><img src="../../img/common/ico_tooltip_big@2x.png" alt="tooltip-large"></a>
+    </div>
+    <div class="contents">
+        <div class="box_tax_sub pt-0 ver2">
+            <div class="box_tax_item border-bottom">
+                <div class="title-sm">총 교육비</div>
+                <div class="value">0</div>
+            </div>
+            <div class="box_tax_list px-0">
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">본인 교육비</div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">장애인특수교육비<em>(본인, 직계존속 제외)</em></div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg">
+                    <div class="title-xl">대학생 교육비<em>(본인, 직계존속 제외)</em></div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+                <div class="deduct-input deduct-input-lg mb-20">
+                    <div class="title-xl">취학전~고등학생 교육비</div>
+                    <input type="text" title="inputNumber" onkeyup="inputNumberFormat(this)" placeholder="0"><span class="won">원</span>
+                </div>
+            </div>
+        </div>
+        <div class="box_deduction ver2 pt-0 mb-5">
+            <div class="tip-area mb-20">
+                <span class="badge">tip</span>
+                <p class="font-lg">공제 가능한 교육비 예시</p>
+                <p class="font-md">- 수업료, 등록금 등<br/>
+                    - 취학전아동 학원비<br/>
+                    - 교복구입비<br/>
+                    - 학교 외 도서구입비<br/>
+                    - 장애인특수교육비<br/>
+                    - 학자금대출 상환액<br/>
+                    - 국외 교육비 </p>
+            </div>
+            <div class="btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-start" href="#">계산하기</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="box_tax_sub pt-0 pb-5 ver2">
+            <div class="box_tax_item mb-2">
+                <div class="title-sm">공제금액 예상</div>
+                <div class="value primary">0</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

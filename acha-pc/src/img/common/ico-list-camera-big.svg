@@ -1,0 +1,50 @@
+<svg id="ico_list_camera_big" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #37454e;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #6839d3;
+      }
+
+      .cls-4 {
+        fill: #6839d3;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="그룹_4070" data-name="그룹 4070">
+    <rect id="사각형_3180" data-name="사각형 3180" class="cls-1" width="30" height="30" transform="translate(0 0)"/>
+  </g>
+  <g id="그룹_4072" data-name="그룹 4072">
+    <g id="그룹_4071" data-name="그룹 4071">
+      <g id="타원_1563" data-name="타원 1563" class="cls-2" transform="translate(7.533 8.933)">
+        <circle class="cls-5" cx="7.467" cy="7.467" r="7.467"/>
+        <circle class="cls-1" cx="7.467" cy="7.467" r="6.967"/>
+      </g>
+      <g id="타원_1564" data-name="타원 1564" class="cls-3" transform="translate(9.667 11.067)">
+        <circle class="cls-5" cx="5.333" cy="5.333" r="5.333"/>
+        <circle class="cls-1" cx="5.333" cy="5.333" r="4.833"/>
+      </g>
+    </g>
+    <g id="사각형_3181" data-name="사각형 3181" class="cls-2" transform="translate(1 6.408)">
+      <rect class="cls-5" width="28" height="20.259" rx="3.619"/>
+      <rect class="cls-1" x="0.5" y="0.5" width="27" height="19.259" rx="3.119"/>
+    </g>
+    <path id="패스_3678" data-name="패스 3678" class="cls-2" d="M5.2,6.49V5.138A1.837,1.837,0,0,1,7.068,3.333h4.2a1.837,1.837,0,0,1,1.868,1.805V6.49"/>
+    <circle id="타원_1565" data-name="타원 1565" class="cls-4" cx="0.933" cy="0.933" r="0.933" transform="translate(23.4 8.933)"/>
+  </g>
+</svg>

@@ -2,3 +2,6 @@
 /dist/
 /.idea/
 /package-lock.json
+/acha-pc/dist/
+/acha-mobile/node_modules/
+/acha-mobile/dist/

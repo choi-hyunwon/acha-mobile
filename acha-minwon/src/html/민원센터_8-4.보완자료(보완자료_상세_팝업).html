@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+<body>
+<div class="wrap">
+    @@include('../html/include/header.html')
+    <div class="breadcrumb-wrap">
+        <div class="inner">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">민원센터</a></li>
+                    <li class="breadcrumb-item"><a href="#">나의민원</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">보완자료 제출</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content-title">제출완료</div>
+        <div class="box-table">
+            <div class="title-area">제출완료</div>
+            <div class="inner sm-inner">
+                <div class="text">
+                    <span class="font-weight-bold">(신청번호 : <span class="color-primary">210205-00001</span>)</span>에 대한
+                    보완자료 제출이 완료되었습니다.<br/>
+                    제출하신 자료 검토 후 빠른 시일 이내에 답변해 드리겠습니다.
+                </div>
+            </div>
+        </div>
+        <div class="purple-box">
+            <div class="text">
+                <span>신청 민원 및 제출 보완자료는 [민원센터 – 나의민원]에서 확인 가능합니다. </span>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <a href="#" class="btn btn-lg">나의민원확인</a>
+        </div>
+    </div>
+    @@include('../html/include/footer.html')
+</div>
+<!-- Modal -->
+<div class="modal fade" id="modal2" tabindex="-1" data-backdrop="static" aria-labelledby="modalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="modal-title" id="modalLabel">보완자료 상세</p>
+                <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+            </div>
+            <div class="modal-body form">
+                <div class="table-title">
+                    <div class="tit">요청사항</div>
+                </div>
+                <table class="vertical-table mb-30">
+                    <colgroup>
+                        <col width="170px">
+                        <col width="calc(100% - 170px)">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <td>보완요청일</td>
+                        <td>
+                            <div class="text">2021-02-10</div>
+                        </td>
+                    </tr>
+                    <tr class="fixed-height">
+                        <td>보완요청사항</td>
+                        <td class="scroll">
+                            <div class="text">보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다.
+                                보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다.
+                                보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다.
+                                보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다.
+                                보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다.
+                                보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다. 보완요청바랍니다.
+                                보완요청바랍니다.
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="table-title">
+                    <div class="tit">민원인 제출자료</div>
+                </div>
+                <table class="vertical-table vertical-table-file mb-0">
+                    <colgroup>
+                        <col width="170px">
+                        <col width="calc(100% - 170px)">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <td>내용</td>
+                        <td>
+                            <div class="text">보상해주세요.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">첨부파일</td>
+                        <td>위임장.pdf</td>
+                    </tr>
+                    <tr>
+                        <td>통장사본.jpg</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#modal2').modal('show')
+</script>
+</body>
+</html>

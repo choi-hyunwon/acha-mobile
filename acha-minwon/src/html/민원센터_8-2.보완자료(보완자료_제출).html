@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+<body>
+<div class="wrap">
+    @@include('../html/include/header.html')
+    <div class="breadcrumb-wrap">
+        <div class="inner">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">민원센터</a></li>
+                    <li class="breadcrumb-item"><a href="#">나의민원</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">보완자료 제출</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content-title">보완자료 제출</div>
+        <div class="form">
+            <div class="table-title">
+                <div class="tit">요청사항</div>
+            </div>
+            <table class="vertical-table">
+                <colgroup>
+                    <col width="20%">
+                    <col width="80%">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td>
+                        <div>보완요청일</div>
+                    </td>
+                    <td>
+                        <div class="text">2021-02-10</div>
+                    </td>
+                </tr>
+                <tr class="fixed-height">
+                    <td>
+                        <div>보완요청사항</div>
+                    </td>
+                    <td>
+                        <div class="text">보완요청바랍니다.</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="table-title">
+                <div class="tit">보완자료</div>
+            </div>
+            <table class="vertical-table">
+                <colgroup>
+                    <col width="20%">
+                    <col width="80%">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td>
+                        <div>내용<br>(5000자 이하)</div>
+                    </td>
+                    <td>
+                        <div>
+                            <textarea type="text" class="form-control w-100" title="title" onkeyup="countChar(this,'_val')" maxlength="5000" placeholder="내용을 자세히 작성하여 주시기 바랍니다."></textarea>
+                        </div>
+                        <div class="text-limit"><em class="_val">0</em> / 5000</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="vertical-table mb-0">
+                <colgroup>
+                    <col width="20%">
+                    <col width="80%">
+                </colgroup>
+                <tbody>
+                <tr class="border-0">
+                    <td>
+                        <div>첨부파일</div>
+                    </td>
+                    <td class="has-height bg-transparent">
+                        <span class="file-desc">※ 최대 5개 파일 첨부 가능(전체 용량 50Mb 제한)</span>
+                        <a href="#" class="btn btn-border btn-add" onclick="onclick=document.all.file.click()">첨부하기</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+<!--            <div class="file-box">-->
+<!--                <div class="attachment">(총 <span class="color-primary">5개</span> 첨부파일)</div>-->
+<!--                <ul class="add-file-wrap">-->
+<!--                    <li><a href="#" class="file-link">통장사본.pdf</a><a href="#" class="btn-delete"><i class="icon btn-file-delete"></i></a></li>-->
+<!--                    <li><a href="#" class="file-link">파일명33333.pdf</a><a href="#" class="btn-delete"><i class="icon btn-file-delete"></i></a></li>-->
+<!--                    <li><a href="#" class="file-link">파일명44444.pdf</a><a href="#" class="btn-delete"><i class="icon btn-file-delete"></i></a></li>-->
+<!--                    <li><a href="#" class="file-link">파일명55555.pdf</a><a href="#" class="btn-delete"><i class="icon btn-file-delete"></i></a></li>-->
+<!--                    <li><a href="#" class="file-link">통장사본.pdf</a><a href="#" class="btn-delete"><i class="icon btn-file-delete"></i></a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+            <div class="text-normal mt-0">· 비속어와 욕설 및 기타 부적절한 내용을 포함한 글은 임의로 삭제함을 알려드립니다.</div>
+        </div>
+        <div class="btn-wrap">
+            <a href="#" class="btn btn-lg btn-border">취소</a>
+            <a href="#" class="btn btn-lg">제출하기</a>
+        </div>
+    </div>
+    @@include('../html/include/footer.html')
+</div>
+</body>
+</html>

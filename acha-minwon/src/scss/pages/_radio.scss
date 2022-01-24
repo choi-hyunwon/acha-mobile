@@ -1,0 +1,85 @@
+@import "variables";
+
+.custom-radio {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 22px;
+  padding-left: 0;
+
+  .custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0;
+
+    &:checked ~ .custom-control-label::before {
+      color: transparent;
+      background-color: transparent;
+      background-image: url(../img/common/radio-on.png);
+      border: 0;
+    }
+
+    &:checked ~ .custom-control-label::after {
+      background-image: none;
+    }
+
+    &:disabled ~ .custom-control-label {
+      color: #000;
+    }
+
+    &:disabled ~ .custom-control-label::before {
+      color: transparent;
+      background-color: transparent;
+      background-image: url(../img/common/radio-off-dim.png);
+      border: 0;
+    }
+
+    &.dim ~ .custom-control-label::before {
+      background-image: url(../img/common/radio-on-dim.png);
+    }
+
+    &:focus ~ .custom-control-label::before {
+      box-shadow: none;
+    }
+  }
+
+  .custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    padding-left: 28px;
+    line-height: 22px;
+    font-size: 13px;
+    letter-spacing: -0.65px;
+    color: #000;
+
+    &::before {
+      position: absolute;
+      top: 1px;
+      left: 0;
+      display: block;
+      width: 22px;
+      height: 22px;
+      pointer-events: none;
+      content: "";
+      background-color: transparent;
+      background-image: url(../img/common/radio-off.png);
+      background-size: cover;
+      border: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 22px;
+      height: 22px;
+      content: "";
+      background: none;
+    }
+  }
+}

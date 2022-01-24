@@ -1,0 +1,171 @@
+@import "variables";
+
+.color-primary {
+  color: $primary;
+}
+
+.color-red {
+  color: #ef4b61;
+}
+
+.font-weight-bold {
+  font-family: $font-bold;
+  font-weight: bold;
+}
+
+.content-title {
+  font-family: $font-bold;
+  text-align: center;
+  font-size: 27px;
+  line-height: 40px;
+  letter-spacing: -.68px;
+}
+
+.content-title-sm {
+  text-align: center;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: -.42px;
+  color: $text-02;
+  margin-top: 8px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.text-link {
+  color: #6291d0;
+  letter-spacing: -.4px;
+
+  &:focus, &:hover {
+    color: #6291d0;
+  }
+}
+
+.bg-purple {
+  width: 100%;
+  padding-bottom: 120px;
+  background-color: #fafbfd;
+}
+
+.text-md {
+  margin-bottom: 14px;
+  font-size: 17px;
+  font-family: $font-bold;
+  font-weight: bold;
+  letter-spacing: -.42px;
+}
+
+.text-normal {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.text-bottom {
+  font-family: $font-medium;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: -0.53px;
+  text-align: center;
+  color: $text-01;
+  margin-bottom: 40px;
+}
+
+.btn-wrap {
+  text-align: center;
+}
+
+.breadcrumb-wrap {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 80px;
+
+  .inner {
+    width: 1024px;
+    height: 60px;
+    margin: 0 auto;
+
+    .breadcrumb {
+      background-color: #fff;
+      line-height: 59px;
+      height: 100%;
+      padding: 0;
+      margin-bottom: 0;
+
+      .breadcrumb-item {
+        color: $text-01;
+        height: 100%;
+
+        &.active {
+          color: $text-01;
+
+          a {
+            font-size: 16px;
+            letter-spacing: -.4px;
+            color: $text-01;
+          }
+        }
+
+        a {
+          font-size: 16px;
+          letter-spacing: -.4px;
+          color: $text-01;
+          height: 100%;
+        }
+
+        + .breadcrumb-item {
+          position: relative;
+          padding-left: 44px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 9px;
+            height: 14px;
+            background-image: url(../img/common/ico_arrow_small_nor.png);
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e3e4e8 !important;
+}
+
+label {
+  margin: 0;
+}

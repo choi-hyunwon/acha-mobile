@@ -1,0 +1,270 @@
+@import "variables";
+
+.form-control {
+  display: inline-block;
+  width: 335px;
+  height: 40px;
+  padding: 0 12px;
+  color: $text-01;
+  font-size: 13px;
+  letter-spacing: -0.32px;
+  line-height: 38px;
+  margin: 0;
+  border-radius: 4px;
+  border: solid 1px #e2e3e6;
+  background-color: #fff;
+
+  &::placeholder {
+    color: $text-03;
+  }
+
+  &:focus, &:active, &:hover {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:focus, &:active {
+    color: $text-01;
+    border-color: $text-01;
+  }
+
+  &.completed {
+    border-color: #000;
+    color: $text-01;
+
+    &:focus, &:active {
+      color: $text-01;
+      border-color: $text-01;
+    }
+  }
+
+  &.disabled {
+    background-color: #f5f6f8;
+    border-color: #e2e3e6;
+
+    &:focus, &:active, &:hover {
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:focus, &:active {
+      color: $text-03;
+      border-color: #e2e3e6;
+
+      &::placeholder {
+        color: $text-03;
+      }
+    }
+  }
+}
+
+.custom-select {
+  display: inline-block;
+  width: 335px;
+  height: 40px;
+  padding: 0 12px;
+  color: $text-03;
+  font-size: 13px;
+  letter-spacing: -0.32px;
+  line-height: 38px;
+  margin: 0;
+  border-radius: 4px;
+  border: solid 1px #e2e3e6;
+  background: url(../img/common/ico-input-arrow-open.png) no-repeat right 0.75rem center/18px 18px;
+
+  &:focus, &:active, &:hover {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:focus, &:active {
+    border-color: $text-01;
+    background: url(../img/common/ico-input-arrow-close.png) no-repeat right 0.75rem center/18px 18px;
+  }
+
+  &.completed {
+    border-color: #000;
+    color: $text-01;
+
+    &:focus, &:active {
+      color: $text-01;
+      border-color: $text-01;
+    }
+  }
+
+  &.disabled {
+    background-color: #f5f6f8;
+    border-color: #e2e3e6;
+    opacity: 1;
+    color: $text-03;
+
+    &:focus, &:active, &:hover {
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:focus, &:active {
+      border-color: #e2e3e6;
+      background: #f5f6f8 url(../img/common/ico-input-arrow-open.png) no-repeat right 0.75rem center/18px 18px;
+    }
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.calendar-box {
+  padding: 36px 0;
+  border-radius: 6px;
+  border: solid 1px #e3e4e8;
+  margin-top: 60px;
+
+  > .desc {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.38px;
+    text-align: left;
+    color: $text-02;
+    margin-top: 16px;
+    padding-left: 140px;
+  }
+}
+
+.calendar-form {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > label {
+    float: left;
+    font-family: $font-medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: $text-01;
+    margin-right: 25px;
+  }
+
+  > span {
+    float: left;
+    font-family: $font-medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text-01;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .custom-select {
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .input-calendar {
+    float: left;
+    position: relative;
+    width: 170px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #e2e3e6;
+    color: $text-03;
+    overflow: hidden;
+    background-color: #fff;
+
+    &.fix-data {
+      border: 0;
+
+      input, input[readonly] {
+        color: $text-01;
+        padding: 10px 11px 10px 30px;
+      }
+
+      label {
+        display: none;
+      }
+
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+      }
+    }
+
+    label {
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/common/ico-input-calendar@2x.png);
+      background-size: cover;
+      right: 15px;
+      top: 10px;
+    }
+
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-clear-button {
+      display: none;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/common/ico-input-calendar@2x.png);
+      background-size: cover;
+      right: 12px;
+      top: 8px;
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 10px 12px 11px;
+      font-family: $font-medium;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 38px;
+      text-align: left;
+      color: $text-01;
+      border-radius: 4px;
+      background-color: #fff;
+      letter-spacing: -1px;
+
+      &.default {
+        font-family: $font;
+        font-weight: normal;
+        color: $text-03;
+      }
+
+      &::placeholder {
+        font-family: $font;
+        font-weight: 400;
+        color: $text-03;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .icon {
+    float: left;
+    width: 37px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: $text-01;
+  }
+}

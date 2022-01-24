@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+<body>
+<div class="wrap">
+    @@include('../html/include/header.html')
+    <div class="breadcrumb-wrap">
+        <div class="inner">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">민원센터</a></li>
+                    <li class="breadcrumb-item"><a href="#">민원신청</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">신청</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content-title">민원 신청서 완료</div>
+        <div class="step-wrap">
+            <div class="step">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <i class="icon ico-list-edit"></i>
+                            <span class="title">1 신청서 작성</span>
+                        </a>
+                    </li>
+                    <li class="item active">
+                        <a href="#">
+                            <i class="icon ico-list-accredit"></i>
+                            <span class="title">2 신청완료</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-table">
+            <div class="title-area">신청완료</div>
+            <div class="inner">
+                <div class="text">
+                    민원신청이 완료되었습니다. 빠른 시일 이내에 답변해 드리겠습니다.<br/>
+                    단, 상담 신청일이 공휴일이거나 질문의 내용에 따라 답변이 다소 늦어질 수 있습니다.<br/><br/>
+                    <span class="black">신청번호 : </span><span class="primary">210205-00001</span>
+                </div>
+            </div>
+        </div>
+        <div class="purple-box">
+            <div class="text">
+                <span class="mb-1">신청하신 민원은 [민원센터 – 나의민원]에서 확인 가능합니다. </span>
+                <span>단순 업무질의 및 경미한 사항 등 즉시 답변이 가능한 부분에 대하여는 [문의]로 분류되어 답변드릴 수 있습니다. </span>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <a href="#" class="btn btn-lg">나의민원확인</a>
+        </div>
+    </div>
+    @@include('../html/include/footer.html')
+</div>
+</body>
+</html>

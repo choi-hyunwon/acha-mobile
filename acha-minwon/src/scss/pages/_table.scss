@@ -1,0 +1,227 @@
+@import "variables";
+
+.table {
+  width: 100%;
+
+  &.mb-status {
+    margin-bottom: 30px;
+    margin-top: 41px;
+  }
+
+  thead {
+    tr {
+      th {
+        text-align: center;
+        background: #f7f8fc;
+        border-top: 1px solid $text-01;
+        border-bottom: 1px solid #e3e4e8;
+        padding: 15px 0;
+        font-size: 16px;
+        color: $text-01;
+        letter-spacing: -.4px;
+      }
+    }
+  }
+
+  tbody {
+    border-bottom: 1px solid $text-04;
+
+    .text-overflow {
+      max-width: 577px !important;
+    }
+
+    tr {
+      td {
+        position: relative;
+        text-align: center;
+        height: 54px;
+        padding: 14px 15px;
+        font-size: 16px;
+        color: $text-01;
+        letter-spacing: -.4px;
+        vertical-align: middle;
+
+        .btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          min-width: 122px;
+        }
+
+        .text-small {
+          position: absolute;
+          font-family: $font-medium;
+          font-size: 11px;
+          font-weight: 500;
+          line-height: 17px;
+          letter-spacing: -0.28px;
+          color: $primary;
+          left: 20px;
+          top: 5px;
+        }
+
+        span {
+          overflow: hidden;
+          display: inline-block;
+          line-height: 24px;
+          vertical-align: middle;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          max-width: 215px;
+        }
+
+        &.completed {
+          color: #6291d0;
+        }
+      }
+
+      &.empty {
+        height: 361px;
+
+        td {
+          font-size: 16px;
+          letter-spacing: -0.4px;
+          text-align: center;
+          color: $text-02;
+        }
+      }
+    }
+  }
+}
+
+.vertical-table {
+  width: 100%;
+  border-top: 1px solid $text-01;
+  border-bottom: 1px solid $text-04;
+
+  tr {
+    border-bottom: 1px solid #e3e4e8;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &.fixed-height {
+      height: 150px;
+
+      td {
+        vertical-align: top;
+      }
+    }
+
+    td {
+      height: 54px;
+      padding-left: 24px;
+      vertical-align: middle;
+
+      .icon {
+        margin-right: 10px;
+      }
+
+      .text {
+        display: inline-block;
+        font-size: 16px;
+        vertical-align: middle;
+      }
+
+      .ico-arrow-step {
+        margin-left: 13px;
+        margin-right: 10px;
+      }
+
+      &:first-child {
+        background-color: #f5f6f8;
+
+        .text {
+          font-family: $font-medium;
+        }
+      }
+    }
+
+    .box-wrap {
+      overflow: hidden;
+
+      .prevent-automatic-registration {
+        float: left;
+        width: 180px;
+        height: 70px;
+        border: solid 1px #e2e3e6;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .btn-square-wrap {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        .btn-square {
+          display: flex;
+          width: 120px;
+          height: 35px;
+          border: solid 1px #e2e3e6;
+          justify-content: left;
+          align-items: center;
+          padding-left: 12px;
+          border-left: 0 !important;
+
+          > i.ic-textcheck-sound {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/common/ic-textcheck-sound.svg);
+            background-size: cover;
+          }
+
+          > i.ic-textcheck-refresh {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/common/ic-textcheck-refresh.svg);
+            background-size: cover;
+          }
+
+          > span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 13px;
+            font-family: $font-medium;
+            font-weight: 500;
+            letter-spacing: -.33px;
+          }
+
+          &:first-child {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .input-box {
+      margin-top: 7px;
+
+      .form-control {
+        width: 350px !important;
+      }
+    }
+
+    .prevent-automatic-registration-desc {
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -0.38px;
+      color: $text-02;
+      margin-top: 7px;
+      padding-bottom: 8px;
+    }
+  }
+
+  + .text-normal.mt-0 {
+    margin-top: 15px !important;
+  }
+}

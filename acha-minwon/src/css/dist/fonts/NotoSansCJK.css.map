@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "NotoSansCJK.css",
+	"sources": [
+		"../../../scss/fonts/NotoSansCJK.scss"
+	],
+	"sourcesContent": [
+		"@font-face {\n  font-family: 'Noto Sans CJK KR Regular';\n  font-style: 400;\n  src: local('Noto Sans CJK KR Regular'), url('../fonts/NotoSansCJK/NotoSansCJKkr-Regular.woff') format('woff'),\n  url('../fonts/NotoSansCJK/NotoSansCJKkr-Regular.eot') format('embedded-opentype');\n  font-weight: normal;\n}\n@font-face {\n  font-family: 'Noto Sans CJK KR Medium';\n  font-style: normal;\n  font-weight: 500;\n  src: local('Noto Sans CJK KR Medium'), url('../fonts/NotoSansCJK/NotoSansCJKkr-Medium.woff') format('woff'),\n  url('../fonts/NotoSansCJK/NotoSansCJKkr-Medium.eot')  format('embedded-opentype');\n}\n@font-face {\n  font-family: 'Noto Sans CJK KR Bold';\n  font-style: normal;\n  font-weight: 900;\n  src: local('Noto Sans CJK KR Bold'), url('../fonts/NotoSansCJK/NotoSansCJKkr-Bold.woff') format('woff'),\n  url('../fonts/NotoSansCJK/NotoSansCJKkr-Bold.eot')  format('embedded-opentype');\n}\n@font-face {\n  font-family: 'Noto Sans KR Light';\n  font-style: normal;\n  font-weight: 300;\n  src: local('Noto Sans CJK KR Bold'), url('../fonts/NotoSansCJK/NotoSansCJKkr-Light.woff') format('woff'),\n  url('../fonts/NotoSansCJK/NotoSansCJKkr-Light.eot')  format('embedded-opentype');\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,UAAU;EACR,WAAW,EAAE,0BAA0B;EACvC,UAAU,EAAE,GAAG;EACf,GAAG,EAAE,iCAAiC,EAAE,sDAAsD,CAAC,cAAc,EAC7G,qDAAqD,CAAC,2BAA2B;EACjF,WAAW,EAAE,MAAM;;;AAErB,UAAU;EACR,WAAW,EAAE,yBAAyB;EACtC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,gCAAgC,EAAE,qDAAqD,CAAC,cAAc,EAC3G,oDAAoD,CAAE,2BAA2B;;;AAEnF,UAAU;EACR,WAAW,EAAE,uBAAuB;EACpC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,8BAA8B,EAAE,mDAAmD,CAAC,cAAc,EACvG,kDAAkD,CAAE,2BAA2B;;;AAEjF,UAAU;EACR,WAAW,EAAE,oBAAoB;EACjC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,8BAA8B,EAAE,oDAAoD,CAAC,cAAc,EACxG,mDAAmD,CAAE,2BAA2B"
+}

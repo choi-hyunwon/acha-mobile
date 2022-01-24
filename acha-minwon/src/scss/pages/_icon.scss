@@ -1,0 +1,88 @@
+@import "variables";
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+
+  &.ico-list-edit-w {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/common/ico-list-edit-w.png);
+  }
+  &.ico-list-accredit {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/common/ico-list-accredit.png);
+  }
+  &.ico-list-edit {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/common/ico-list-edit.png);
+  }
+  &.ico-list-accredit-w {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/common/ico-list-accredit-w.png);
+  }
+  &.ico-pc-desktop-m {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/common/ico-pc-desktop-m.png);
+  }
+  &.ico-pc-phone-m {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/common/ico-pc-phone-m.png);
+  }
+  &.ico-arrow-step {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/common/ico-arrow-step.png);
+  }
+  &.ico-arrow-right-w {
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/common/ico-arrow-right-w.png);
+  }
+  &.ico-note {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/common/ico-note.png);
+  }
+  &.btn-search {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/common/btn-search.png);
+  }
+  &.btn-page-first {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/common/btn-page-first.png);
+  }
+  &.btn-page-pre {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/common/btn-page-pre.png);
+  }
+  &.btn-page-next {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/common/btn-page-next.png);
+  }
+  &.btn-page-last {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/common/btn-page-last.png);
+  }
+  &.btn-file-delete {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/common/btn-file-delete.png);
+  }
+  &.ico-alram-06 {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/common/ico-alram-06.png);
+  }
+}

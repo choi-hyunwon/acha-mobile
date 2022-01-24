@@ -1,0 +1,63 @@
+@import "variables";
+
+.step {
+  ul {
+    display: flex;
+    flex-direction: row;
+    width: 850px;
+    height: 70px;
+    border: 1px solid #e3e4e8;
+    background-color: #fff;
+
+    .item {
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+
+      &.active {
+        .ico-list-edit {
+          background-image: url(../img/common/ico-list-edit-w.png);
+        }
+        .ico-list-accredit {
+          background-image: url(../img/common/ico-list-accredit-w.png);
+        }
+        .title {
+          display: inline-block;
+          vertical-align: middle;
+          font-family: $font-bold;
+          font-size: 17px;
+          color: #fff;
+          letter-spacing: -0.42px;
+          margin-left: 10px;
+        }
+      }
+      &:first-child {
+        width: calc(100% - 425px);
+        + &:nth-child(2) {
+          width: 425px;
+        }
+      }
+
+      &:first-child {
+        &.active {
+          width: 440px;
+          height: 70px;
+          background-image: url(../img/common/bg-application-step-1.png);
+          background-size: cover;
+          + &:nth-child(2) {
+            width: calc(100% - 440px);
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        &.active {
+          width: 425px;
+          height: 70px;
+          background-image: url(../img/common/bg-application-step-2.png);
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

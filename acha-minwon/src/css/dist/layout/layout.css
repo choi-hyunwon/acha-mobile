@@ -1,0 +1,201 @@
+/**
+  layout
+ */
+.wrap {
+    position: relative;
+    min-width: 1024px;
+    margin: 0 auto;
+    min-height: 1000px;
+}
+
+.contents {
+    width: 850px;
+    min-height: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header .inner {
+    position: relative;
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header .inner .logo a {
+    position: absolute;
+    display: block;
+    width: 77px;
+    height: 32px;
+    left: 0;
+    top: 29px;
+}
+
+.header .inner .logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .inner .logo span {
+    display: inline-block;
+    font-family: "Noto Sans CJK KR Medium";
+    font-size: 23px;
+    letter-spacing: -1.15px;
+    padding-left: 84px;
+}
+
+.header .inner .menu-tab {
+    margin-left: 150px;
+}
+
+.header .inner .menu-tab ul .item {
+    float: left;
+    display: flex;
+    width: auto;
+    margin-right: 100px;
+    height: 90px;
+}
+
+.header .inner .menu-tab ul .item a {
+    font-family: "Noto Sans CJK KR Medium";
+    color: #37354e;
+    line-height: 87px;
+    font-size: 20px;
+}
+
+.header .inner .menu-tab ul .item a:hover {
+    color: #6839d3;
+}
+
+.header .inner .menu-tab ul .item:last-child {
+    margin-right: 0;
+}
+
+.header .inner .menu-tab ul .item.active {
+    position: relative;
+}
+
+.header .inner .menu-tab ul .item.active a {
+    position: relative;
+    color: #6839d3;
+}
+
+.header .inner .menu-tab ul .item.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #6839d3;
+}
+
+.footer {
+    width: 100%;
+    height: 156px;
+    border-top: 1px solid #e2e3e6;
+}
+
+.footer .inner {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.footer .inner .company-info {
+    padding-top: 36px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+.footer .inner .company-info li {
+    position: relative;
+    float: left;
+    margin-right: 17px;
+}
+
+.footer .inner .company-info li:last-child {
+    margin-right: 0;
+}
+
+.footer .inner .company-info li:last-child::after {
+    content: none;
+}
+
+.footer .inner .company-info li::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 8px;
+    opacity: 0.4;
+    background-color: #8a8a8a;
+    right: -8px;
+    top: 11px;
+}
+
+.footer .inner .company-info li .tit {
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+    color: #737183;
+}
+
+.footer .inner .company-info li .val {
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+    color: #afaeb8;
+}
+
+.footer .inner .copyright {
+    font-size: 12px;
+    line-height: 18px;
+    color: #afaeb8;
+    margin-bottom: 20px;
+}
+
+.footer .inner .company-link li {
+    position: relative;
+    float: left;
+    margin-right: 17px;
+}
+
+.footer .inner .company-link li:last-child {
+    margin-right: 0;
+}
+
+.footer .inner .company-link li:last-child::after {
+    content: none;
+}
+
+.footer .inner .company-link li::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 8px;
+    opacity: 0.4;
+    background-color: #8a8a8a;
+    right: -8px;
+    top: 11px;
+}
+
+.footer .inner .company-link li a {
+    display: inline-block;
+    font-family: "Noto Sans CJK KR Bold";
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #9b9aa6;
+}
+
+.footer .inner .company-link li a:hover {
+    text-decoration: underline;
+}
+
+/*# sourceMappingURL=layout.css.map */

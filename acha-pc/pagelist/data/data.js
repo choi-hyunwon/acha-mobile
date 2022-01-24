@@ -1,4 +1,27 @@
 var data = {};
+data.edit = {
+    'title': "22.01.24",
+    'list': [
+        {
+            "stateClass": "complete",
+            "url": "아차APP_리뉴얼_안내",
+            "part": "pages",
+            "page": "아차APP_리뉴얼_안내"
+        },
+        {
+            "stateClass": "complete",
+            "url": "ui_intro_03",
+            "part": "pages",
+            "page": "PC_02_공인인증서복사_02_내보내기"
+        },
+        {
+            "stateClass": "complete",
+            "url": "ui_intro_04",
+            "part": "pages",
+            "page": "PC_02_공인인증서복사_03_완료"
+        },
+    ]
+};
 data.page = {
     'title': "메인",
     'list': [

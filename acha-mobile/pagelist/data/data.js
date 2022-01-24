@@ -1,25 +1,18 @@
 var data = {}
 data.edit = {
-    'title': '2020.01.23 추가 요청 사항',
+    'title': '2020.01.24 수정 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '09_moreview_01',
-            'category': '더보기',
-            'page': '메인'
-        },
-        /*공인인증서복사_02_내보내기*/
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_19',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_04. 개별인증_4.2 약관동의(2) (01_개인(신용)정보 수집·이용 동의서)'
+            'url': '01_Input_list_popup_05',
+            'category': 'renewal 2.0',
+            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_주기설정한경우)'
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_data_13',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.7 약관동의2 (01_통합인증 약관동의2)'
+            'url': '01_Input_list_popup_06',
+            'category': 'renewal 2.0',
+            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_반복없음경우)'
         },
         {
             'stateClass': 'complete',
@@ -35,15 +28,15 @@ data.edit = {
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_31',
-            'category': '더보기',
-            'page': '마이데이터약관_개인정보 수입 및 이용동의'
+            'url': '04_my_data_13',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.7 약관동의2 (01_통합인증 약관동의2)'
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_32',
-            'category': '더보기',
-            'page': '마이데이터약관_마이데이터 서비스 이용약관'
+            'url': '04_my_data_19',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.2 약관동의(2) (01_개인(신용)정보 수집·이용 동의서)'
         },
         {
             'stateClass': 'complete',
@@ -57,18 +50,29 @@ data.edit = {
             'category': 'mydata',
             'page': '마이데이터가입_약관동의1_개인정보 수입 및 이용동의'
         },
-        /* PC_아차 APP 리뉴얼 안내_211227*/
         {
             'stateClass': 'complete',
-            'url': '01_Input_list_popup_05',
-            'category': 'renewal 2.0',
-            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_주기설정한경우)'
+            'url': '09_moreview_01',
+            'category': '더보기',
+            'page': '메인'
         },
         {
             'stateClass': 'complete',
-            'url': '01_Input_list_popup_06',
-            'category': 'renewal 2.0',
-            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_반복없음경우)'
+            'url': '09_moreview_31',
+            'category': '더보기',
+            'page': '마이데이터약관_개인정보 수입 및 이용동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_32',
+            'category': '더보기',
+            'page': '마이데이터약관_마이데이터 서비스 이용약관'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02',
+            'category': '카드지출',
+            'page': '04. 타임라인_1.1 거래내역'
         },
         {
             'stateClass': 'complete',
@@ -78,9 +82,9 @@ data.edit = {
         },
         {
             'stateClass': 'complete',
-            'url': '10_story_02',
+            'url': '10_story_02-3',
             'category': '카드지출',
-            'page': '04. 타임라인_1.1 거래내역'
+            'page': '04. 타임라인_1.1 거래내역(카드지출연결데이터가 0일 경우)'
         },
     ]
 };
@@ -445,7 +449,7 @@ data.mydata = {
         },
     ]
 };
-data.myInfo = {
+/*data.myInfo = {
     'title': '마이데이터 이용약관',
     'list': [
         {
@@ -485,7 +489,7 @@ data.myInfo = {
             'page': '개인(신용)정보 제공 동의서'
         },
     ]
-};
+};*/
 data.add = {
     'title': '추가하기(컴포넌트)',
     'list': [
@@ -1808,6 +1812,12 @@ data.cardExpenditure = {
             'url': '10_story_02-2',
             'category': '카드지출',
             'page': '04. 타임라인_1.1 거래내역(없는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02-3',
+            'category': '카드지출',
+            'page': '04. 타임라인_1.1 거래내역(카드지출연결데이터가 0일 경우)'
         },
         {
             'stateClass': 'complete',

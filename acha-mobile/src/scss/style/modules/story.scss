@@ -782,9 +782,21 @@
           }
         }
 
+        @media (max-width: 280px) {
+          .pay-info {
+            padding: 0 5px;
+            .tit {
+              max-width: calc(100% - 115px);
+            }
+            .img {
+              margin-right: 5px;
+            }
+          }
+        }
+
         .story-slider {
           width: 100%;
-          height: 290px;
+        //  height: 290px;
 
           img {
             width: 100%;
@@ -1061,16 +1073,25 @@
 .swiper-story {
   .swiper-wrapper {
     .swiper-slide {
-      width: 100%;
-      height: 290px;
+      width: 100% ;
+      height: unset;
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+      padding-top: 100%;
 
       img {
         width: 100%;
-        height: auto;
-        max-height: 290px;
+        height: 100%;
+        overflow: hidden;
+      //  max-height: 290px;
+
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
       }
     }
   }

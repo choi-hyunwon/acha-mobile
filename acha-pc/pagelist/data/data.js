@@ -1,6 +1,6 @@
 var data = {};
 data.edit = {
-    'title': "22.01.24",
+    'title': '2020.01.24 수정 요청 사항',
     'list': [
         {
             "stateClass": "complete",

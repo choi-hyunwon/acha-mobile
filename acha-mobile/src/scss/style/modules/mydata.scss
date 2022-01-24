@@ -761,6 +761,61 @@
       }
     }
   }
+
+  /*예외 페이지*/
+  /* 09_moreview_31 / 09_moreview_32 /  04_my_data_22*/
+
+  &.more-view {
+    padding-top: 15px;
+    .dropdown-wrap{
+      padding: 0;
+    }
+    .item-wrap{
+      margin-bottom: 0;
+      .item{
+        margin-bottom: 25px;
+        .title{
+          margin-bottom: 20px;
+        }
+        .table{
+          margin-top: 10px;
+        }
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+        .sub-title{
+          margin-bottom: 15px;
+          font-size: 13px;
+          color: var(--text-01);
+          font-family: var(--font2);
+        }
+        .desc{
+          margin-bottom: 15px;
+          color: var(--text-02);
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+          .sub-desc{
+            padding-top :6px;
+            padding-left: 10px;
+            display: inline-block;
+          }
+          .dot{
+            padding-left: 7px;
+            margin-bottom: 6px;
+            position: relative;
+            &:last-of-type{
+              margin-bottom: 0;
+            }
+            &:before{
+              background-color: var(--text-02);
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 .my-data-service {

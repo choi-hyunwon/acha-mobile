@@ -449,7 +449,7 @@ data.mydata = {
         },
     ]
 };
-/*data.myInfo = {
+data.myInfo = {
     'title': '마이데이터 이용약관',
     'list': [
         {
@@ -489,7 +489,7 @@ data.mydata = {
             'page': '개인(신용)정보 제공 동의서'
         },
     ]
-};*/
+};
 data.add = {
     'title': '추가하기(컴포넌트)',
     'list': [

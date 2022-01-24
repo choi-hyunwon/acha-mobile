@@ -1274,6 +1274,46 @@
   }
 }
 
+@keyframes modal-sticky-bottom-animation8 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 293px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out8{
+  from {
+    height: 293px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation9 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 171px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out9{
+  from {
+    height: 171px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
+
+
 .modal-slide-backdrop {
   position: fixed;
   display: none;

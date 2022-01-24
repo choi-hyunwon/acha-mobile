@@ -339,7 +339,7 @@
     height: 56px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 14px;
+    margin-right: 12px;
 
     img {
        width: 100%;
@@ -382,7 +382,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        margin-right: 25px;
+        margin-right: 17px;
 
         + .item {
           &::before {
@@ -391,7 +391,7 @@
             width: 1px;
             height: 17px;
             background-color: #e3e4e8;
-            left: -11px;
+            left: -8px;
             top: 1px;
           }
         }
@@ -406,7 +406,7 @@
             line-height: 19px;
             letter-spacing: -0.33px;
             color: var(--text-01);
-            margin-right: 12px;
+            margin-right: 8px;
           }
 
           &:nth-child(2) {
@@ -2303,7 +2303,7 @@
   }
 }
 
-@media (max-width: 394px) {
+@media (max-width: 359px) {
   .more-view-my-page .my-page .info {
     flex-direction: column;
   }

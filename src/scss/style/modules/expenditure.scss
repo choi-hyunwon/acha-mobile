@@ -6879,6 +6879,86 @@
   }
 }
 
+/*예외 팝업 - 일정삭제하기*/
+.modal-slide {
+  &.delete-wrap {
+    .modal-slide-content {
+      .delete-inner {
+        .delete_list {
+          padding: 10px 20px 0;
+          border-bottom: 1px solid #f5f6f8;
+
+          li {
+            border-bottom: 1px solid #f5f6f8;
+
+            &:last-of-type {
+              border-bottom: none;
+            }
+
+            a {
+              display: block;
+              padding: 20px;
+              font-size: 14px;
+              line-height: 23px;
+              color: var(--text-01);
+              text-align: center;
+
+              &:focus, &:active {
+                color: var(--text-01);
+              }
+            }
+
+
+          }
+
+        }
+        .btn_area {
+          padding: 20px 20px 30px;
+          .btn {
+            border-radius: 6px;
+            border-color: var(--text-03);
+            background-color: var(--text-03);
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    &.animation8{
+      &.up {
+        transition: .5s;
+        .modal-slide-content {
+          height: 293px;
+          animation: modal-sticky-bottom-animation8 .5s;
+        }
+      }
+      &.down {
+        transition: .5s;
+        .modal-slide-content {
+          animation: modal-sticky-bottom-animation-out8 .5s;
+          height: 0;
+        }
+      }
+    }
+    &.animation9{
+      &.up {
+        transition: .5s;
+        .modal-slide-content {
+          height: 171px;
+          animation: modal-sticky-bottom-animation9 .5s;
+        }
+      }
+      &.down {
+        transition: .5s;
+        .modal-slide-content {
+          animation: modal-sticky-bottom-animation-out9 .5s;
+          height: 0;
+        }
+      }
+    }
+  }
+}
+
+
 @keyframes updateAnimation {
   from {
     opacity: .3;

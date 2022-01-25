@@ -5,3 +5,7 @@
 /acha-pc/dist/
 /acha-mobile/node_modules/
 /acha-mobile/dist/
+/acha-mobile/package-lock.json
+/acha-pc/node_modules/
+/acha-pc/dist/
+/acha-pc/package-lock.json

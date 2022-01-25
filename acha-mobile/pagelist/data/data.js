@@ -1,31 +1,74 @@
 var data = {}
-data.edit = {
-    'title': '2020.01.24 수정 요청 사항',
+data.edit2 = {
+    'title': '2022.01.18 수정 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '01_Input_list_popup_05',
+            'url': '06_sign_in_01',
+            'category': '회원가입',
+            'page': '본인확인 안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_Input_list_01',
             'category': 'renewal 2.0',
-            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_주기설정한경우)'
+            'page': '02.입력목록_1.1지출금액 입력(01_지출 직접입력_입력 전)'
         },
         {
             'stateClass': 'complete',
-            'url': '01_Input_list_popup_06',
-            'category': 'renewal 2.0',
-            'page': '04.직접입력 상세(03_지출 직접입력_삭제요청시_반복없음경우)'
+            'url': '03_calendar_01',
+            'category': 'calendar',
+            'page': '캘린더'
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_data_08',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인)'
+            'url': '05_my_card_03',
+            'category': '카드지출',
+            'page': '03. 카드 상세정보_1.1 구성'
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_data_11',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (02_개인(신용)정보 수집·이용 동의서)'
+            'url': '10_story_02',
+            'category': '카드지출',
+            'page': '04. 타임라인_1.1 거래내역'
         },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_04-1',
+            'category': '스토리',
+            'page': '지출 스토리 입력(상세화면-항목)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_01',
+            'category': '더보기',
+            'page': '메인'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_06',
+            'category': '더보기',
+            'page': '이벤트 목록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_13',
+            'category': '더보기',
+            'page': '자주 묻는 질문'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_11',
+            'category': 'My',
+            'page': '개인신용정보 삭제'
+        },
+
+
+    ]
+};
+data.edit = {
+    'title': '2022.01.24 수정 요청 사항',
+    'list': [
         {
             'stateClass': 'complete',
             'url': '04_my_data_13',
@@ -40,51 +83,15 @@ data.edit = {
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_data_22',
-            'category': 'mydata',
-            'page': '마이데이터가입_약관동의2_마이데이터 서비스 이용약관'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_23',
-            'category': 'mydata',
-            'page': '마이데이터가입_약관동의1_개인정보 수입 및 이용동의'
-        },
-        {
-            'stateClass': 'complete',
             'url': '09_moreview_01',
             'category': '더보기',
             'page': '메인'
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_31',
-            'category': '더보기',
-            'page': '마이데이터약관_개인정보 수입 및 이용동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_32',
-            'category': '더보기',
-            'page': '마이데이터약관_마이데이터 서비스 이용약관'
-        },
-        {
-            'stateClass': 'complete',
             'url': '10_story_02',
             'category': '카드지출',
             'page': '04. 타임라인_1.1 거래내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '10_story_02-2',
-            'category': '카드지출',
-            'page': '04. 타임라인_1.1 거래내역(없는 경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '10_story_02-3',
-            'category': '카드지출',
-            'page': '04. 타임라인_1.1 거래내역(카드지출연결데이터가 0일 경우)'
         },
     ]
 };
@@ -1095,7 +1102,13 @@ data.story = {
             'stateClass': 'complete',
             'url': '10_story_04',
             'category': '스토리',
-            'page': '지출 스토리 입력'
+            'page': '지출 스토리 입력(저장한 상태)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_04-1',
+            'category': '스토리',
+            'page': '지출 스토리 입력(항목)'
         },
         {
             'stateClass': 'complete',

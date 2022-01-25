@@ -80,6 +80,21 @@
     margin-bottom: 40px;
   }
 
+  >.img-wrap{
+    height: calc( 100vh - 342px);
+    display: flex;
+    align-items: center;
+    .img {
+      width: 140px;
+      height: 110px;
+      margin: 0 auto 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
   > .img {
     width: 140px;
     height: 110px;
@@ -95,6 +110,7 @@
       margin-bottom: 50px;
     }
   }
+
 
   > .list-text {
     text-align: center;

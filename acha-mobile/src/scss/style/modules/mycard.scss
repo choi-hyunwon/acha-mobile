@@ -2164,6 +2164,13 @@
           text-align: left;
           color: var(--text-03);
           margin-bottom: 3px;
+          .bar{
+            width: 1px;
+            height: 10px;
+            background-color: var(--text-03);
+            display: inline-block;
+            margin: 0 5px;
+          }
         }
 
         .info2 {

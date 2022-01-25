@@ -100,9 +100,9 @@
       border-radius: 50%;
       color: var(--color-point) !important;
       position: absolute;
-      top: 30%;
+      top: 0;
       left: 50%;
-      transform: translate(-50%, -35%);
+      transform: translatex(-50%);
     }
   }
 
@@ -117,9 +117,9 @@
       border-radius: 50%;
       color: var(--color-point);
       position: absolute;
-      top: 30%;
+      top: 0;
       left: 50%;
-      transform: translate(-50%, -35%);
+      transform: translatex(-50%);
     }
   }
 
@@ -317,7 +317,7 @@
           font-weight: bold;
           line-height: 21px;
           letter-spacing: -0.5px;
-
+          vertical-align: middle;
           em {
             font-family: var(--font3);
             font-size: 16px;
@@ -335,6 +335,7 @@
           color: var(--text-02);
           margin-left: 3px;
           margin-right: 5px;
+          vertical-align: middle;
         }
 
         .state {
@@ -346,6 +347,7 @@
           line-height: 19px;
           letter-spacing: -0.28px;
           text-align: center;
+          vertical-align: middle;
 
           &.today {
             color: var(--color-point);
@@ -366,14 +368,14 @@
           font-family: var(--font2);
           font-size: 17px;
           font-weight: 500;
-          line-height: 23px;
+          line-height: 21px;
           color: var(--text-01);
 
           em {
             font-family: var(--font2);
             font-size: 13px;
             font-weight: 500;
-            line-height: 23px;
+            line-height: 21px;
             letter-spacing: normal;
             color: var(--text-01);
           }

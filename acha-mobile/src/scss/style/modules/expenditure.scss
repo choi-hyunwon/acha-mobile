@@ -3144,7 +3144,7 @@
 }
 
 .box_ex_connect_item {
-  padding: 10px 20px 0;
+  padding: 10px 20px 30px;
 
   .title {
     font-size: 18px;
@@ -3209,6 +3209,20 @@
             letter-spacing: -0.25px;
             text-align: center;
             color: var(--text-03);
+          }
+
+          &.btn-category-delete{
+            padding: 0;
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            .icon-category-delete{
+              display: inline-block;
+              background: url("../../img/common/ico-category-delete.png") no-repeat center center / contain;
+              width: 19px;
+              height: 19px;
+
+            }
           }
         }
 

@@ -122,6 +122,42 @@ data.edit3 = {
             'category': 'common',
             'page': '마케팅 활용 및 수신 동의'
         },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_19',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_04. 개별인증_4.2 약관동의(2) (01_개인(신용)정보 수집·이용 동의서)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_08',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_12',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (03_개인(신용)정보 제공 동의서)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_Input_list_03',
+            'category': 'renewal 2.0',
+            'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(02_카테고리 아이콘 설정)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_Input_list_03-1',
+            'category': 'renewal 2.0',
+            'page': '03.입력목록_1.2 지출 카테고리 선택_카테고리추가후'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '00_common_icon',
+            'category': 'common ',
+            'page': '아이콘'
+        },
     ]
 };
 data.common = {
@@ -151,6 +187,12 @@ data.common = {
             'category': 'common ',
             'page': '로딩'
         },
+        {
+            'stateClass': 'complete',
+            'url': '00_common_icon',
+            'category': 'common ',
+            'page': '아이콘'
+        },
     ]
 };
 data.input = {
@@ -173,6 +215,12 @@ data.input = {
             'url': '01_Input_list_03',
             'category': 'renewal 2.0',
             'page': '03.입력목록_1.2지출 카테고리 선택_지출 카테고리 생성(02_카테고리 아이콘 설정)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '01_Input_list_03-1',
+            'category': 'renewal 2.0',
+            'page': '03.입력목록_1.2 지출 카테고리 선택_카테고리추가후'
         },
         {
             'stateClass': 'complete',

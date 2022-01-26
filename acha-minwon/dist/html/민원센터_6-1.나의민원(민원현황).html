@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-title" content="acha" />
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="acha"/>
+  <meta name="keywords" content="acha"/>
+  <link rel="shortcut icon" href="../a-cha_favicon.ico">
+  <title>아차 민원센터</title>
+  <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/bundle.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <header>
+  <div class="header">
+    <div class="inner">
+      <div class="logo"><a href="#"><img src="../img/common/logo.png" alt="아차"></a><span>민원센터</span></div>
+      <div class="menu-tab">
+        <ul class="clearfix">
+          <li class="item active"><a href="#">민원접수</a></li>
+          <li class="item"><a href="#">나의민원</a></li>
+          <li class="item"><a href="#">민원서식</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  $('.menu-tab .item a').on('click',function (){
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active')
+  })
+</script>
+
+    <div class="breadcrumb-wrap">
+        <div class="inner">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">민원센터</a></li>
+                    <li class="breadcrumb-item"><a href="#">나의민원</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">현황</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content-title">민원현황</div>
+        <div class="calendar-box">
+            <div class="calendar-form">
+                <label>신청일</label>
+                <div class="input-calendar">
+                    <label for="start"></label>
+                    <input type="date" id="start" value="2021-06-03" min="2021-05-01" max="2021-07-30">
+                </div>
+                <span>~</span>
+                <div class="input-calendar">
+                    <label for="end"></label>
+                    <input type="date" id="end" value="2021-06-03" min="2021-05-01" max="2021-07-30">
+                </div>
+                <select class="custom-select" title="select">
+                    <option selected="">선택</option>
+                    <option value="1">1개월</option>
+                    <option value="2">2개월</option>
+                    <option value="3">3개월</option>
+                </select>
+                <a href="#" class="btn">조회</a>
+            </div>
+            <div class="desc">· 민원 종결처리 후 5년이 지난 민원은 관련 법률에 따라 민원 정보를 제공하지 않습니다.</div>
+        </div>
+        <table class="table mb-status">
+            <colgroup>
+                <col width="15%">
+                <col width="28%">
+                <col width="15%">
+                <col width="21%">
+                <col width="31%">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>신청번호</th>
+                <th>제목</th>
+                <th>신청일</th>
+                <th>처리현황</th>
+                <th>비고</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 11111</span></td>
+                <td><span>2021-02-23</span></td>
+                <td><span>민원접수</span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 11111</span></td>
+                <td><span>2021-02-23</span></td>
+                <td><span>민원접수</span></td>
+                <td>취하</td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 11111</span></td>
+                <td><span>2021-02-23</span></td>
+                <td><span>민원접수</span></td>
+                <td><a href="#" class="btn btn-border">보완자료 제출</a></td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 글자수 20자이상 개인정보 관련 글자수 20자이상 </span></td>
+                <td><span>2021-02-23</span></td>
+                <td class="completed"><span>답변완료</span></td>
+                <td>취하</td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 11111</span></td>
+                <td><span>2021-02-23</span></td>
+                <td><span>종결</span></td>
+                <td>삭제</td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 11111</span></td>
+                <td><span>2021-02-23</span></td>
+                <td><span>종결</span></td>
+                <td>취하</td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 11111</span></td>
+                <td><span>2021-02-23</span></td>
+                <td><span>종결</span></td>
+                <td><a href="#" class="btn btn-border">보완자료 제출</a></td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 글자수 20자이상 개인정보 관련 글자수 20자이상 </span></td>
+                <td><span>2021-02-23</span></td>
+                <td class="completed"><span>답변완료</span></td>
+                <td>취하</td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 11111</span></td>
+                <td><span>2021-02-23</span></td>
+                <td><span>종결</span></td>
+                <td>삭제</td>
+            </tr>
+            <tr>
+                <td><span>00000-00001</span></td>
+                <td class="text-left"><span>개인정보 관련 11111</span></td>
+                <td><span>2021-02-23</span></td>
+                <td><span>종결</span></td>
+                <td>취하</td>
+            </tr>
+            <tr class="empty">
+                <td colspan="5">기간 내 신청 민원이 존재하지 않습니다.</td>
+            </tr>
+            </tbody>
+        </table>
+        <ul id="pagination" class="pagination justify-content-center mt-3">
+            <li class="page-item first disabled"><a href="#" class="page-link"></a></li>
+            <li class="page-item prev disabled"><a href="#" class="page-link"></a></li>
+            <li class="page-item active"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">4</a></li>
+            <li class="page-item next"><a href="#" class="page-link"></a></li>
+            <li class="page-item last"><a href="#" class="page-link"></a></li>
+        </ul>
+        <script>
+            //   https://josecebe.github.io/twbs-pagination/
+            $('#pagination').twbsPagination({
+                totalPages: 35,
+                visiblePages: 5,
+                first: '<i class="icon btn-page-first"></i>',
+                prev: '<i class="icon btn-page-pre"></i>',
+                next: '<i class="icon btn-page-next"></i>',
+                last: '<i class="icon btn-page-last"></i>',
+                onPageClick: function (event, page) {
+                    $('#page-content').text('Page ' + page)
+                }
+            })
+        </script>
+    </div>
+    <footer>
+  <div class="footer">
+    <div class="inner">
+      <ul class="company-info">
+        <li><span class="tit">본사</span><span class="val">서울특별시 구로구 디지털로31길 14층</span></li>
+        <li><span class="tit">대표이사</span><span class="val">이흥복</span></li>
+        <li><span class="tit">사업자등록번호</span><span class="val">119-81-41677</span></li>
+      </ul>
+      <div class="copyright">Ⓒ 2020 All rights reserved ㈜유비벨록스</div>
+      <ul class="company-link">
+        <li><a href="#">서비스 이용약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">민원센터</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script>
+    /* 날짜 객체 받아서 문자열로 리턴하는 함수 */
+    function getDateStr(myDate) {
+        return (myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + myDate.getDate())
+    }
+
+    /* 오늘 날짜를 문자열로 반환 */
+    function today() {
+        var d = new Date()
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 1개웗 후 날짜 반환 */
+    function nextMonth() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 1)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 2개웗 후 날짜 반환 */
+    function next2Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 2)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 3개웗 후 날짜 반환 */
+    function next3Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 3)
+        return getDateStr(d)
+    }
+</script>
+</body>
+</html>

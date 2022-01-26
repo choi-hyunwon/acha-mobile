@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-title" content="acha" />
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="acha"/>
+  <meta name="keywords" content="acha"/>
+  <link rel="shortcut icon" href="../a-cha_favicon.ico">
+  <title>아차 민원센터</title>
+  <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/bundle.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+  <header>
+  <div class="header">
+    <div class="inner">
+      <div class="logo"><a href="#"><img src="../img/common/logo.png" alt="아차"></a><span>민원센터</span></div>
+      <div class="menu-tab">
+        <ul class="clearfix">
+          <li class="item active"><a href="#">민원접수</a></li>
+          <li class="item"><a href="#">나의민원</a></li>
+          <li class="item"><a href="#">민원서식</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  $('.menu-tab .item a').on('click',function (){
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active')
+  })
+</script>
+
+
+  <div class="contents">
+
+    <p style="margin: 50px 0;"></p>
+
+    <!-- input -->
+    <input type="text" class="form-control" title="title" placeholder="텍스트 입력 전" />
+    <br/>
+    <input type="text" class="form-control completed" title="title" value="텍스트 입력 완료" />
+    <br/>
+    <input type="text" class="form-control disabled" title="title" placeholder="텍스트 입력 불가" disabled/>
+
+    <p style="margin: 25px 0;"></p>
+
+    <!-- select -->
+    <select class="custom-select" title="select">
+      <option selected>선택</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <br/>
+    <select class="custom-select completed" title="select">
+      <option selected>선택 완료</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <br/>
+    <select class="custom-select disabled" title="select" disabled>
+      <option selected>선택 불가</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <p style="margin: 25px 0;"></p>
+    <!-- radio -->
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio1" name="radio" class="custom-control-input" />
+      <label class="custom-control-label" for="radio1">선택 해제</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio2" name="radio" class="custom-control-input" checked />
+      <label class="custom-control-label" for="radio2">선택</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio3" name="radio" class="custom-control-input" disabled />
+      <label class="custom-control-label" for="radio3">선택 불가</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio4" name="radio2" class="custom-control-input dim" checked />
+      <label class="custom-control-label" for="radio4">선택 해제 불가</label>
+    </div>
+
+    <p style="margin: 50px 0;"></p>
+
+    <!-- checkbox -->
+    <label class="event-check">
+      <input type="checkbox" class="filled-in">
+      <span>체크해제</span>
+    </label>
+    <br/>
+    <label class="event-check">
+      <input type="checkbox" class="filled-in" checked="checked">
+      <span>체크</span>
+    </label>
+    <br/>
+    <label class="event-check">
+      <input type="checkbox" class="filled-in" disabled>
+      <span>체크 불가</span>
+    </label>
+    <br/>
+    <label class="event-check">
+      <input type="checkbox" class="filled-in" checked="checked" disabled>
+      <span>체크해제 불가</span>
+    </label>
+    <!-- checkbox -->
+
+    <p style="margin: 50px 0;"></p>
+
+    <div class="step">
+      <ul>
+        <li class="item active">
+          <a href="#">
+            <i class="icon ico-list-edit"></i>
+            <span class="title">1 신청서 작성</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#">
+            <i class="icon ico-list-accredit"></i>
+            <span class="title">2 신청완료</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p style="margin: 25px 0;"></p>
+
+    <div class="step">
+      <ul>
+        <li class="item">
+          <a href="#">
+            <i class="icon ico-list-edit"></i>
+            <span class="title">1 신청서 작성</span>
+          </a>
+        </li>
+        <li class="item active">
+          <a href="#">
+            <i class="icon ico-list-accredit"></i>
+            <span class="title">2 신청완료</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p style="margin: 50px 0;"></p>
+
+    <div class="tab">
+      <ul>
+        <li class="item active"><a href="#">전체</a></li>
+        <li class="item"><a href="#">로그인/회원가입</a></li>
+        <li class="item"><a href="#">정보연결</a></li>
+        <li class="item"><a href="#">지출관리</a></li>
+        <li class="item"><a href="#">내카드</a></li>
+        <li class="item"><a href="#">연말정산TIP</a></li>
+        <li class="item"><a href="#">기타</a></li>
+      </ul>
+    </div>
+    <script>
+      $('.tab .item a').on('click',function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+      })
+    </script>
+    <p style="margin: 50px 0;"></p>
+
+    <a href="#" class="btn">버튼</a>
+    <a href="#" class="btn btn-border">추가</a>
+    <a href="#" class="btn btn-sm"><em>접수하기</em><i class="icon ico-arrow-right-w"></i></a>
+    <a href="#" class="btn btn-lg">접수하기</a>
+    <a href="#" class="btn btn-lg btn-border">취소</a>
+
+    <p style="margin: 50px 0;"></p>
+
+    <table class="table">
+        <colgroup>
+          <col width="15%" />
+          <col width="35%" />
+          <col width="15%" />
+          <col width="21%" />
+          <col width="24%" />
+        </colgroup>
+        <thead>
+        <tr>
+          <th>신청번호</th>
+          <th>제목</th>
+          <th>신청일</th>
+          <th>처리현황</th>
+          <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><span>00000-00001</span></td>
+          <td class="text-left"><span>개인정보 관련 11111</span></td>
+          <td><span>2021-02-23</span></td>
+          <td><span>민원접수(담당자배정)</span></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><span>00000-00001</span></td>
+          <td class="text-left"><span>개인정보 관련 11111</span></td>
+          <td><span>2021-02-23</span></td>
+          <td><span>민원접수(담당자배정)</span></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><span>00000-00001</span></td>
+          <td class="text-left"><span>개인정보 관련 11111</span></td>
+          <td><span>2021-02-23</span></td>
+          <td><span>민원접수(담당자배정)</span></td>
+          <td><a href="#" class="btn bnt-border">자료제출</a></td>
+        </tr>
+        <tr>
+          <td><span>00000-00001</span></td>
+          <td class="text-left"><span>개인정보 관련 글자수 20자이상 개인정보 관련 글자수 20자이상 </span></td>
+          <td><span>2021-02-23</span></td>
+          <td class="completed"><span>답변완료</span></td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+
+  </div>
+  <footer>
+  <div class="footer">
+    <div class="inner">
+      <ul class="company-info">
+        <li><span class="tit">본사</span><span class="val">서울특별시 구로구 디지털로31길 14층</span></li>
+        <li><span class="tit">대표이사</span><span class="val">이흥복</span></li>
+        <li><span class="tit">사업자등록번호</span><span class="val">119-81-41677</span></li>
+      </ul>
+      <div class="copyright">Ⓒ 2020 All rights reserved ㈜유비벨록스</div>
+      <ul class="company-link">
+        <li><a href="#">서비스 이용약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">민원센터</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

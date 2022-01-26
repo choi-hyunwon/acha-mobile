@@ -1,5 +1,5 @@
 var data = {}
-data.edit2 = {
+data.edit1 = {
     'title': '2022.01.18 수정 요청 사항',
     'list': [
         {
@@ -66,7 +66,7 @@ data.edit2 = {
 
     ]
 };
-data.edit = {
+data.edit2 = {
     'title': '2022.01.24 수정 요청 사항',
     'list': [
         {
@@ -92,6 +92,35 @@ data.edit = {
             'url': '10_story_02',
             'category': '카드지출',
             'page': '04. 타임라인_1.1 거래내역'
+        },
+    ]
+};
+data.edit3 = {
+    'title': '2022.01.26 수정 요청 사항',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_23',
+            'category': 'mydata',
+            'page': '마이데이터가입_약관동의1_개인정보 수입 및 이용동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_31',
+            'category': '더보기',
+            'page': '마이데이터약관_개인정보 수입 및 이용동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_06',
+            'category': 'common',
+            'page': '서비스 이용약관'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_09',
+            'category': 'common',
+            'page': '마케팅 활용 및 수신 동의'
         },
     ]
 };

@@ -152,12 +152,12 @@ data.edit3 = {
             'category': 'renewal 2.0',
             'page': '03.입력목록_1.2 지출 카테고리 선택_카테고리추가후'
         },
-        {
-            'stateClass': 'complete',
-            'url': '00_common_icon',
-            'category': 'common ',
-            'page': '아이콘'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '00_common_icon',
+        //     'category': 'common ',
+        //     'page': '아이콘'
+        // },
     ]
 };
 data.common = {
@@ -187,12 +187,12 @@ data.common = {
             'category': 'common ',
             'page': '로딩'
         },
-        {
-            'stateClass': 'complete',
-            'url': '00_common_icon',
-            'category': 'common ',
-            'page': '아이콘'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '00_common_icon',
+        //     'category': 'common ',
+        //     'page': '아이콘'
+        // },
     ]
 };
 data.input = {

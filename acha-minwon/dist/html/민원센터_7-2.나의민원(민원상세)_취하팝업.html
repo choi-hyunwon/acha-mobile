@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-title" content="acha" />
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="acha"/>
+  <meta name="keywords" content="acha"/>
+  <link rel="shortcut icon" href="../a-cha_favicon.ico">
+  <title>아차 민원센터</title>
+  <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/bundle.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+  <header>
+  <div class="header">
+    <div class="inner">
+      <div class="logo"><a href="#"><img src="../img/common/logo.png" alt="아차"></a><span>민원센터</span></div>
+      <div class="menu-tab">
+        <ul class="clearfix">
+          <li class="item active"><a href="#">민원접수</a></li>
+          <li class="item"><a href="#">나의민원</a></li>
+          <li class="item"><a href="#">민원서식</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  $('.menu-tab .item a').on('click',function (){
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active')
+  })
+</script>
+
+  <div class="breadcrumb-wrap">
+    <div class="inner">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">민원센터</a></li>
+          <li class="breadcrumb-item active" aria-current="page">민원접수</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="contents">
+    <div class="content-title">민원상세</div>
+    <div class="box-status">
+      <div class="tit">민원 처리상태</div>
+      <div class="box-transparent">
+        <ul>
+          <li class="text-link">민원 신청(접수대기)</li>
+          <li>민원 접수(담당자 배정)</li>
+          <li>답변 완료</li>
+          <li>종결</li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion detail" id="accordionDetail">
+      <div class="card">
+        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <div class="card-title">민원 신청정보</div>
+          <i class="icon ic-detail"></i>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionDetail">
+          <div class="card-body form">
+            <table class="vertical-table">
+              <colgroup>
+                <col width="15%">
+                <col width="35%">
+                <col width="15%">
+                <col width="35%">
+              </colgroup>
+              <tbody>
+              <tr>
+                <td>
+                  <div class="tit">신청인</div>
+                </td>
+                <td>
+                  <div class="text">김*수</div>
+                </td>
+                <td>
+                  <div class="tit">신청일</div>
+                </td>
+                <td>
+                  <div class="text">2021-02-05</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="tit">신청번호</div>
+                </td>
+                <td>
+                  <div class="text">210203 - 00002</div>
+                </td>
+                <td>
+                  <div class="tit">휴대전화번호</div>
+                </td>
+                <td>
+                  <div class="text">010-****-1111</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="tit">신청인 구분</div>
+                </td>
+                <td>
+                  <div class="text">본인</div>
+                </td>
+                <td>
+                  <div class="tit">이메일</div>
+                </td>
+                <td>
+                  <div class="text">em***@gmail.com</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="tit">제목</div>
+                </td>
+                <td colspan="3">
+                  <div class="text">피해봤어요</div>
+                </td>
+              </tr>
+              <tr class="fixed-height">
+                <td>
+                  <div class="tit">내용</div>
+                </td>
+                <td colspan="3">
+                  <div class="text">보상해주세요.</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="tit">첨부파일</div>
+                </td>
+                <td colspan="3">
+                  <div class="text"><a href="#" class="text-link">위임장.pdf</a></div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-wrap">
+      <a href="#" class="btn btn-lg btn-border" data-toggle="modal" data-target="#modal1">취하하기</a>
+      <a href="#" class="btn btn-lg">목록</a>
+    </div>
+  </div>
+  <footer>
+  <div class="footer">
+    <div class="inner">
+      <ul class="company-info">
+        <li><span class="tit">본사</span><span class="val">서울특별시 구로구 디지털로31길 14층</span></li>
+        <li><span class="tit">대표이사</span><span class="val">이흥복</span></li>
+        <li><span class="tit">사업자등록번호</span><span class="val">119-81-41677</span></li>
+      </ul>
+      <div class="copyright">Ⓒ 2020 All rights reserved ㈜유비벨록스</div>
+      <ul class="company-link">
+        <li><a href="#">서비스 이용약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">민원센터</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" data-backdrop="static" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="modal-title" id="modalLabel">취하요청</p>
+                <a href="#" class="btn-close" data-dismiss="modal" aria-label="Close"></a>
+            </div>
+            <div class="modal-body form">
+                <p class="text">
+                    <span class="color-primary">전자민원접수건을 취하</span>하시겠습니까?<br/>
+                    취하사유를 입력해주세요.
+                </p>
+                <table class="vertical-table mb-0">
+                    <colgroup>
+                        <col width="170px">
+                        <col width="calc(100% - 170px)">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <td>취하사유 입력<br/>(100자 이하)</td>
+                        <td>
+                            <textarea type="text" class="form-control w-100" title="title" maxlength="100" onkeyup="countChar(this,'_val')" placeholder="내용을 간략히 작성하여 주시기 바랍니다."></textarea>
+                            <div class="text-limit"><em class="_val">0</em> / 100</div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-border btn-lg" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary btn-lg">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#modal1').modal('show');
+
+    // textarea limit
+    function countChar(val , target) {
+        var len = val.value.length;
+        var targetItem = $(`.${target}`);
+        targetItem.text(len);
+    }
+</script>
+</body>
+</html>

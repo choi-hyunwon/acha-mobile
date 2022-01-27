@@ -179,9 +179,9 @@ data.edit4 = {
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_popup_01',
-            'category': 'My',
-            'page': '프로필 사진 설정 팝업'
+            'url': '10_story_04-1',
+            'category': '스토리',
+            'page': '지출 스토리 입력(항목)'
         },
 
     ]

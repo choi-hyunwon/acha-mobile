@@ -86,33 +86,39 @@
     var source = $('#list-template').html(); //jQuery
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
-        //.append(template(data.edit1))
-        //.append(template(data.edit2))
-        .append(template(data.edit3))
-        .append(template(data.edit4))
-        .append(template(data.common))
-        .append(template(data.input))
-        .append(template(data.my))
-        .append(template(data.calendar))
-        .append(template(data.mydata))
-        .append(template(data.myInfo))
-        .append(template(data.add))
-        .append(template(data.mycard))
-        .append(template(data.signIn))
-        .append(template(data.taxRenewal))
-        .append(template(data.expenditure))
-        .append(template(data.moreview))
+        /*수정사항*/
+        .append(template(data.edit1))
+        .append(template(data.edit2))
+
+        /*아차 2.0_오픈개선안*/
         .append(template(data.alert))
-        .append(template(data.story))
+        .append(template(data.add))
+        .append(template(data.calendar))
+        .append(template(data.signIn))
+        .append(template(data.migration))
+        .append(template(data.cardExpenditure))
         .append(template(data.expenditure1))
+        .append(template(data.mydata))
+        .append(template(data.my))
+        .append(template(data.moreview))
+        .append(template(data.input))
         .append(template(data.expenditure2))
-        .append(template(data.dormant))
-        .append(template(data.connection))
         .append(template(data.dataUpdate))
 
-        .append(template(data.cardExpenditure))
+        /*아차 2.0*/
+        .append(template(data.common))
+        .append(template(data.mycard))
+        .append(template(data.taxRenewal))
+        .append(template(data.expenditure))
+        .append(template(data.story))
+        .append(template(data.dormant))
+        .append(template(data.connection))
         .append(template(data.signInRenewal))
         .append(template(data.dataPolicy))
+
+
+
+
 </script>
 <script>
     $('.link').on('click', function () {

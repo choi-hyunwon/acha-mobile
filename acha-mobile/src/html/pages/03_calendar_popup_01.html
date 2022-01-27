@@ -248,6 +248,16 @@
                             <span class="txt">2021년 3월</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <span class="txt">2021년 2월</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="txt">2021년 1월</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -267,6 +277,7 @@
             );
             $('._modalSlide').addClass('up').removeClass('down');
             $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
         });
 
         btnSlideClose.on('click',function (){
@@ -275,8 +286,9 @@
                     document.getElementsByClassName("_modalSlide")[0].style.display='none';
                 }, 1000
             );
-            $('._modalSlide').removeClass('up').addClass('down');
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
             $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
         });
 
         btnSlideOpen.trigger('click');

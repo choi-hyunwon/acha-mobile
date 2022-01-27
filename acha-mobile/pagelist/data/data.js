@@ -1,4 +1,5 @@
 var data = {}
+/*
 data.edit1 = {
     'title': '2022.01.18 수정 요청 사항',
     'list': [
@@ -95,6 +96,7 @@ data.edit2 = {
         },
     ]
 };
+*/
 data.edit3 = {
     'title': '2022.01.26 수정 요청 사항',
     'list': [
@@ -158,6 +160,30 @@ data.edit3 = {
         //     'category': 'common ',
         //     'page': '아이콘'
         // },
+    ]
+};
+data.edit4 = {
+    'title': '2022.01.27 수정 요청 사항',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_02',
+            'category': '카드지출',
+            'page': '02. 내카드_1.1 목록(메인 영역별 항목)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_popup_01',
+            'category': 'calendar',
+            'page': '캘린더'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_popup_01',
+            'category': 'My',
+            'page': '프로필 사진 설정 팝업'
+        },
+
     ]
 };
 data.common = {

@@ -631,7 +631,7 @@
 }
 
 .my-data-terms-of-use {
-  padding: 10px 20px 30px;
+  padding: 10px 20px 50px;
 
   > .title {
     font-family: var(--font3);
@@ -713,6 +713,15 @@
 
       tbody {
         tr {
+          th{ /*06_sign_in_13 예외 케이스 추가*/
+            color: var(--text-02);
+            background-color: #f5f6f8;
+            border-right: 1px solid #e3e4e8;
+            font-family: var(--font1);
+            text-align: center;
+            line-height: 16px;
+            padding: 8px 10px;
+          }
           td {
             font-family: var(--font1);
             font-weight: normal;

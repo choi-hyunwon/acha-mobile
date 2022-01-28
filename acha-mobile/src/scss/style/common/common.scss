@@ -228,7 +228,13 @@ caption.visually_hidden {
 
 .box-update-error {
   text-align: center;
-  padding-top: 160px;
+
+  //padding-top: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 
   .img {
     width: 56px;
@@ -254,6 +260,24 @@ caption.visually_hidden {
       margin-top: 20px;
     }
   }
+
+  .btn_area{
+    padding-top: 40px;
+    .btn_quit{
+     padding: 0 60px;
+      font-size: 15px;
+      color: #FFFFFF;
+      background-color: var(--color-point);
+      border-radius: 6px;
+      height: 50px;
+      border: 0;
+      line-height: 50px;
+      font-family: var(--font2);
+      letter-spacing: -0.35px;
+
+    }
+  }
+
 }
 
 

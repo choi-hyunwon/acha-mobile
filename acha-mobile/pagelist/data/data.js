@@ -62,8 +62,6 @@ data.edit2 = {
             'category': '더보기',
             'page': '더보기_마이데이터약관_마이데이터 서비스_마케팅 활용 및 수신동의'
         },
-
-
         {
             'stateClass': 'complete',
             'url': '01_Input_list_01',
@@ -76,8 +74,6 @@ data.edit2 = {
             'category': 'renewal 2.0',
             'page': '추가하기(직접입력)_01. 직접입력_1.3 입력목록(02_입력후)'
         },
-
-
         {
             'stateClass': 'complete',
             'url': '14_data_update_03',
@@ -88,19 +84,19 @@ data.edit2 = {
             'stateClass': 'complete',
             'url': '11_exependiture_18',
             'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(2)(01 이번달,다음달 명세서)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18',
-            'category': '홈계좌',
             'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
         },
         {
             'stateClass': 'complete',
+            'url': '11_exependiture_54',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(02 카드 대출,리볼빙)'
+        },
+        {
+            'stateClass': 'complete',
             'url': '11_exependiture_18',
             'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(2)(04 지난달,과거 명세서)'
+            'page': '9-1. 카드_고정지출(2)(01 이번달,다음달 명세서)'
         },
         {
             'stateClass': 'complete',
@@ -113,6 +109,12 @@ data.edit2 = {
             'url': '11_exependiture_18-1',
             'category': '홈계좌',
             'page': '9-1. 카드_고정지출(2)(03 이번달,다음달 청구서 미발행)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(2)(04 지난달,과거 명세서)'
         },
 
     ]
@@ -296,17 +298,10 @@ data.cardExpenditure = {
         },
         {
             'stateClass': 'complete',
-            'url': '05_my_card_13',
-            'category': '카드지출',
-            'page': '(카드지출_02. 내카드_1.2 편집)'
-        },
-        {
-            'stateClass': 'complete',
             'url': '05_my_card_03',
             'category': '카드지출',
             'page': '(카드지출_03. 카드 상세정보_1.1 구성)'
         },
-        /*카드지출_03. 카드 상세정보_1.1 구성(거래내역 없을 경우)*/
         {
             'stateClass': 'complete',
             'url': '05_my_card_05',
@@ -319,6 +314,16 @@ data.cardExpenditure = {
             'category': '카드지출',
             'page': '(카드지출_03. 카드 상세정보_1.2 자동결제 내역(자동결제내역_데이터 없는 경우))'
         },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_13',
+            'category': '카드지출',
+            'page': '(카드지출_02. 내카드_1.2 편집)'
+        },
+
+        /*카드지출_03. 카드 상세정보_1.1 구성(거래내역 없을 경우)*/
+
+
         {
             'stateClass': 'complete',
             'url': '10_story_02',
@@ -345,16 +350,17 @@ data.cardExpenditure = {
         },
         {
             'stateClass': 'complete',
-            'url': '10_story_04-1',
-            'category': '스토리',
-            'page': '(카드지출_05. 상세화면_1.2 스토리 편집(거래내역 상세_지출 스토리 저장한 상태))'
-        },
-        {
-            'stateClass': 'complete',
             'url': '10_story_04',
             'category': '카드지출',
             'page': '카드지출_05. 상세화면_1.2 스토리 편집(거래내역 상세_지출 스토리 저장한 상태)'
         },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_04-1',
+            'category': '스토리',
+            'page': '카드지출_05. 상세화면_1.1 항목'
+        },
+
        /* 카드지출_05. 상세화면_1.3 스토리 편집(스토리 편집)*/
 
         {
@@ -421,17 +427,17 @@ data.expenditure1 = {
         },
         {
             'stateClass': 'complete',
+            'url': '11_exependiture_11',
+            'category': '홈계좌',
+            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (01_현금 흐름 잔고 부족))'
+        },
+        {
+            'stateClass': 'complete',
             'url': '11_exependiture_56',
             'category': '홈계좌',
             'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (01_현금 흐름 잔고 부족))'
         },
         /*내돈관리_03. 내돈관리_1.2 현금흐름_5-3. 데이터 업데이트 완료*/
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_11',
-            'category': '홈계좌',
-            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (01_현금 흐름 잔고 부족))'
-        },
         /*내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (02_현금 흐름 잔고 여유,상세 펼침)*/
     ]
 };
@@ -443,24 +449,6 @@ data.mydata = {
             'url': '04_my_data_01',
             'category': 'mydata',
             'page': '추가하기(마이데이터 연결)_02. 통합인증_2.2 인증수단 선택 (01_통합인증 약관동의1)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_10',
-            'category': 'mydata',
-            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.3 약관동의1 (01_가입상품 목록 전송요구서)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_11',
-            'category': 'mydata',
-            'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (02_개인(신용)정보 수집·이용 동의서)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_12',
-            'category': 'mydata',
-            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.3 약관동의1 (03_개인(신용)정보 제공 동의서)'
         },
         {
             'stateClass': 'complete',
@@ -500,6 +488,24 @@ data.mydata = {
         },
         {
             'stateClass': 'complete',
+            'url': '04_my_data_10',
+            'category': 'mydata',
+            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.3 약관동의1 (01_가입상품 목록 전송요구서)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_11',
+            'category': 'mydata',
+            'page': '04-1. 추가하기_02. 통합인증_2.3 약관동의1 (02_개인(신용)정보 수집·이용 동의서)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_12',
+            'category': 'mydata',
+            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.3 약관동의1 (03_개인(신용)정보 제공 동의서)'
+        },
+        {
+            'stateClass': 'complete',
             'url': '04_my_data_13',
             'category': 'mydata',
             'page': '추가하기(마이데이터 연결)_02. 통합인증_2.7 약관동의2 (01_통합인증 약관동의2 (통합인증양식5))'
@@ -510,6 +516,13 @@ data.mydata = {
             'category': 'mydata',
             'page': '추가하기(마이데이터연결)_04. 개별인증_4.2 약관동의(2) (02_개인(신용)정보 제공 동의서)'
         },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_15',
+            'category': 'mydata',
+            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인(통합인증양식4))'
+        },
+        /*추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인(통합인증양식4)_selectbox_선택후)*/
         {
             'stateClass': 'complete',
             'url': '04_my_data_16',
@@ -554,14 +567,6 @@ data.mydata = {
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_data_15',
-            'category': 'mydata',
-            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인(통합인증양식4))'
-        },
-        /*추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인(통합인증양식4)_selectbox_선택후)*/
-
-        {
-            'stateClass': 'complete',
             'url': '04_my_date_popup_01',
             'category': 'mydata',
             'page': '추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (02_전송 종료시점 변경 팝업)'
@@ -584,19 +589,6 @@ data.my = {
             'category': 'My',
             'page': '더보기my_1.1 연결 데이터 없는 경우(02_마이페이지_직접입력만 있는 경우)'
         },
-        /*더보기my_02. 사용자 기본 정보_2.1 프로필 사진(01_프로필 사진 설정 팝업)*/
-        {
-            'stateClass': 'complete',
-            'url': '02_my_popup_01',
-            'category': 'My',
-            'page': '더보기my_02. 사용자 기본 정보_2.1 프로필 사진(02_프로필 사진 설정 팝업_단말 사진촬영 or 사진앨범 추가 이미지 있는 경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '02_my_popup_03',
-            'category': 'My',
-            'page': '더보기my_02. 사용자 기본 정보_2.3 이메일 주소 수정(01_이메일주소 변경 팝업)'
-        },
         {
             'stateClass': 'complete',
             'url': '02_my_03',
@@ -611,32 +603,33 @@ data.my = {
         },
         {
             'stateClass': 'complete',
+            'url': '02_my_04',
+            'category': 'My',
+            'page': '더보기my_04. 정보 제공자 연결 상세_4.1 전송요구내역 변경(02_연결상세_연결정보 데이터 있는 경우_철회)'
+        },
+        {
+            'stateClass': 'complete',
             'url': '02_my_05',
             'category': 'My',
             'page': '더보기my_04. 정보 제공자 연결 상세_4.1 인증방식 변경(04_전송요구내역 변경_(사이트 자체인증, 예시))'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_12',
-            'category': 'My',
-            'page': '더보기my_04. 정보 제공자 연결 상세_4.1 인증방식 변경(03_전송요구내역 변경_통합인증)'
-        },
-        {
-            'stateClass': 'complete',
             'url': '02_my_06',
             'category': 'My',
             'page': '더보기my_04. 정보 제공자 연결 상세 _4.2 전송요구내역 철회(01_철회 안내)'
-        },  {
-            'stateClass': 'complete',
-            'url': '02_my_popup_02',
-            'category': 'My',
-            'page': '더보기my_04. 정보 제공자 연결 상세 _4.2 전송요구내역 철회(03_연결철회 확인 팝업_2'
         },
         {
             'stateClass': 'complete',
             'url': '02_my_08',
             'category': 'My',
             'page': '더보기my_04. 정보 제공자 연결 상세 _4.3 전송요구 만료예정(02_전송 종료시점 변경)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_09',
+            'category': 'My',
+            'page': '더보기my_04. 정보 제공자 연결 상세 _4.3 전송요구 만료예정(03_(공통)통합인증 완료)'
         },
         {
             'stateClass': 'complete',
@@ -652,20 +645,33 @@ data.my = {
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_09',
+            'url': '02_my_12',
             'category': 'My',
-            'page': '더보기my_04. 정보 제공자 연결 상세 _4.3 전송요구 만료예정(03_(공통)통합인증 완료)'
+            'page': '더보기my_04. 정보 제공자 연결 상세_4.1 인증방식 변경(03_전송요구내역 변경_통합인증)'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_04',
+            'url': '02_my_popup_01',
             'category': 'My',
-            'page': '더보기my_04. 정보 제공자 연결 상세_4.1 전송요구내역 변경(02_연결상세_연결정보 데이터 있는 경우_철회)'
+            'page': '더보기my_02. 사용자 기본 정보_2.1 프로필 사진(02_프로필 사진 설정 팝업_단말 사진촬영 or 사진앨범 추가 이미지 있는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_popup_02',
+            'category': 'My',
+            'page': '더보기my_04. 정보 제공자 연결 상세 _4.2 전송요구내역 철회(03_연결철회 확인 팝업_2'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_popup_03',
+            'category': 'My',
+            'page': '더보기my_02. 사용자 기본 정보_2.3 이메일 주소 수정(01_이메일주소 변경 팝업)'
         },
         /*더보기my_04. 정보 제공자 연결 상세 _4.3 전송요구 만료예정(01_연결상세_연결정보 데이터 있는 경우)*/
         /*더보기my_04. 정보 제공자 연결 상세 _4.2 전송요구내역 철회(02_연결철회 확인 팝업_1)*/
         /*더보기my_03. 연결목록_3.3 개인신용정보 삭제(04_철회 정보제공자 상세)*/
         /*더보기my_03. 연결목록_3.3 개인신용정보 삭제(03_연결중 정보제공자 상세)*/
+        /*더보기my_02. 사용자 기본 정보_2.1 프로필 사진(01_프로필 사진 설정 팝업)*/
     ]
 };
 data.moreview = {
@@ -797,16 +803,9 @@ data.moreview = {
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_28',
+            'url': '09_moreview_23',
             'category': '더보기',
-            'page': '더보기_09. 동의 관리 (00_동의 관리)'
-        },
-
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_29',
-            'category': '더보기',
-            'page': '더보기_09. 동의 관리 (03_마이데이터 약관)'
+            'page': '더보기_09. 동의 관리 (02_동의 관리 동의시 팝업)'
         },
         {
             'stateClass': 'complete',
@@ -816,15 +815,21 @@ data.moreview = {
         },
         {
             'stateClass': 'complete',
-            'url': '11_app_info_AOS',
-            'category': '더보기',
-            'page': '더보기_11. 앱 정보 (02_오픈소스 라이센스_상세)'
-        },
-        {
-            'stateClass': 'complete',
             'url': '09_moreview_26',
             'category': '더보기',
             'page': '더보기_12. 회원탈퇴 (01_유의사항 안내 및 사유 작성)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_28',
+            'category': '더보기',
+            'page': '더보기_09. 동의 관리 (00_동의 관리)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_29',
+            'category': '더보기',
+            'page': '더보기_09. 동의 관리 (03_마이데이터 약관)'
         },
         {
             'stateClass': 'complete',
@@ -832,12 +837,7 @@ data.moreview = {
             'category': '더보기',
             'page': '등록된 게시물이 없는 경우'
         },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_23',
-            'category': '더보기',
-            'page': '더보기_09. 동의 관리 (02_동의 관리 동의시 팝업)'
-        },
+
         {
             'stateClass': 'complete',
             'url': '09_moreview_31',
@@ -855,6 +855,12 @@ data.moreview = {
             'url': '09_moreview_33',
             'category': '더보기',
             'page': '더보기_마이데이터약관_마이데이터 서비스_마케팅 활용 및 수신동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_app_info_AOS',
+            'category': '더보기',
+            'page': '더보기_11. 앱 정보 (02_오픈소스 라이센스_상세)'
         },
     ]
 };

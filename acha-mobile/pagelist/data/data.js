@@ -119,6 +119,23 @@ data.edit2 = {
 
     ]
 };
+data.edit3 = {
+    'title': 'v.1.31.1 요청 사항',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_12',
+            'category': 'common',
+            'page': '회원가입_약관동의2_마이데이터 서비스 이용약관'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_32',
+            'category': '더보기',
+            'page': '더보기_마이데이터약관_마이데이터 서비스 이용약관'
+        },
+    ]
+};
 
 /*아차 2.0_오픈개선안*/
 data.alert = {

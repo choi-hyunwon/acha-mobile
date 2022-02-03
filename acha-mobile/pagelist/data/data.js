@@ -1,7 +1,18 @@
 var data = {}
 
 data.edit1 = {
-    'title': 'v.1.30.2 요청 사항',
+    'title': 'v.1.31.2 요청 사항',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_11',
+            'category': '홈계좌',
+            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (01_현금 흐름 잔고 부족))'
+        },
+    ]
+};
+data.edit2 = {
+    'title': 'v.1.31.1 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
@@ -20,119 +31,6 @@ data.edit1 = {
             'url': '10_story_04-1',
             'category': '스토리',
             'page': '지출 스토리 입력(항목)'
-        },
-    ]
-};
-data.edit2 = {
-    'title': 'v.1.31.0 요청 사항',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '06_sign_in_11',
-            'category': 'common',
-            'page': '회원가입_약관동의1_개인정보 수입 및 이용동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '06_sign_in_12',
-            'category': 'common',
-            'page': '회원가입_약관동의2_마이데이터 서비스 이용약관'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '06_sign_in_13',
-            'category': 'common',
-            'page': '회원가입_약관동의1_마케팅 활용 및 수신동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_31',
-            'category': '더보기',
-            'page': '더보기_마이데이터약관_개인정보 수입 및 이용동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_32',
-            'category': '더보기',
-            'page': '더보기_마이데이터약관_마이데이터 서비스 이용약관'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_33',
-            'category': '더보기',
-            'page': '더보기_마이데이터약관_마이데이터 서비스_마케팅 활용 및 수신동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '01_Input_list_01',
-            'category': 'renewal 2.0',
-            'page': '추가하기(직접입력)_01. 직접입력_1.3 입력목록(01_입력전)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '01_Input_list_02',
-            'category': 'renewal 2.0',
-            'page': '추가하기(직접입력)_01. 직접입력_1.3 입력목록(02_입력후)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '14_data_update_03',
-            'category': 'data update',
-            'page': '네트워크 및 시스템 장애'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_54',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(02 카드 대출,리볼빙)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(2)(01 이번달,다음달 명세서)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-1',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(2)(02 이번달,다음달 결제예정)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-1',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(2)(03 이번달,다음달 청구서 미발행)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(2)(04 지난달,과거 명세서)'
-        },
-
-    ]
-};
-data.edit3 = {
-    'title': 'v.1.31.1 요청 사항',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '06_sign_in_12',
-            'category': 'common',
-            'page': '회원가입_약관동의2_마이데이터 서비스 이용약관'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_32',
-            'category': '더보기',
-            'page': '더보기_마이데이터약관_마이데이터 서비스 이용약관'
         },
     ]
 };
@@ -452,7 +350,7 @@ data.expenditure1 = {
             'stateClass': 'complete',
             'url': '11_exependiture_56',
             'category': '홈계좌',
-            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (01_현금 흐름 잔고 부족))'
+            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_5-2. 데이터 업데이트 진행중))'
         },
         /*내돈관리_03. 내돈관리_1.2 현금흐름_5-3. 데이터 업데이트 완료*/
         /*내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (02_현금 흐름 잔고 여유,상세 펼침)*/

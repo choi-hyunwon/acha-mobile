@@ -190,6 +190,25 @@
           outline: none;
         }
       }
+
+      /*예외 - 내돈관리 현금 흐름 - 캘린더 디자인 변경*/
+      &.no-calendar{
+        border: none;
+        label{
+          background-image: none;
+        }
+        input{
+          background-color: #f7f8fc;
+          text-align: center;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator{
+          opacity:0;
+          z-index: 1;
+          cursor: pointer;
+          width: 100%;
+        }
+
+      }
     }
 
     .icon {

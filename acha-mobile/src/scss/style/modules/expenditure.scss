@@ -192,7 +192,7 @@
       }
 
       /*예외 - 내돈관리 현금 흐름 - 캘린더 디자인 변경*/
-      &.no-calendar{
+      /*&.no-calendar{
         border: none;
         label{
           background-image: none;
@@ -208,7 +208,7 @@
           width: 100%;
         }
 
-      }
+      }*/
     }
 
     .icon {
@@ -5208,6 +5208,33 @@
     .card-detail-calendar {
       padding-top: 0;
     }
+
+    /*디자인 변경으로 캘린더 제거 */
+    .day-box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      >span{
+        display: inline-block;
+        font-size: 14px;
+        color: var(--text-01);
+        line-height: 1;
+        &.day{
+          padding:13px;
+          width: 150px;
+          background: #f7f8fc;
+          border-radius: 4px;
+          font-family: var(--font4);
+          text-align: center;
+        }
+        &.wave{
+          font-family: var(--font5);
+        }
+      }
+
+    }
+
   }
 
   .area-title {

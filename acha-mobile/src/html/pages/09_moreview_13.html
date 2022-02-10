@@ -17,16 +17,18 @@
             </div>
             <div class="faq-menu-top _faqMenu">
                 <ul class="clearfix">
-                    <li class="active"><a href="#">전체</a></li>
-                    <li><a href="#">로그인 / 회원가입</a></li>
-                    <li><a href="#">정보 연결</a></li>
-                    <li><a href="#">지출관리</a></li>
-                    <li><a href="#">내 카드</a></li>
-                    <li><a href="#">연말정산</a></li>
-                    <li><a href="#">기타</a></li>
+                    <li class="active"><a href="#">로그인 / 회원가입</a></li>
+                    <li><a href="#">마이데이터/직접입력</a></li>
+                    <li><a href="#">인증서 관리</a></li>
+                    <li><a href="#">서비스 이용</a></li>
+                    <li><a href="#">홈/고정지출</a></li>
+                    <li><a href="#">내돈관리</a></li>
+                    <li><a href="#">카드지출</a></li>
+                    <li><a href="#">데이터관리</a></li>
+                    <li><a href="#">고객지원</a></li>
                 </ul>
             </div>
-            <div class="result">총 <span>2건</span>의 검색결과입니다.</div>
+            <!--<div class="result">총 <span>2건</span>의 검색결과입니다.</div>-->
             <div class="faq-list">
                 <ul>
                     <li><a href="#"><span class="tit">지방 도시가스는 언제 <span>연결</span>되나요?</span></a></li>
@@ -47,7 +49,7 @@
     })
 
     // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
-    var index = 6; // (li 갯수) - 1
+    var index = 8; // (li 갯수) -1
     var sum = 0;
     for (var j=0; j <= index; j++) {
         sum = sum + $("._faqMenu li:eq("+ j +")").outerWidth(true);
@@ -55,10 +57,10 @@
     $('._faqMenu ul').css('width', sum + 1);
 
     // 기타 클릭 시, 스크롤 이동
-    function scrollGoRight() {
+  /*  function scrollGoRight() {
         var leftPos = $('._faqMenu').scrollLeft();
         $('._faqMenu').animate( { scrollLeft: leftPos + 210 }, 300);
-    }
+    }*/
 </script>
 </body>
 </html>

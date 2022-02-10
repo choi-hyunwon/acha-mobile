@@ -1,4 +1,27 @@
 const data = {}
+data.edit = {
+  title: '2022.02.10 요청 사항',
+  list: [
+    {
+      stateClass: 'complete',
+      url: '민원센터_1.홈(민원센터_메인)',
+      category: '',
+      page: '민원센터_1.홈(민원센터_메인)'
+    },
+    {
+      stateClass: 'complete',
+      url: '민원센터_2-1.민원신청(FAQ)',
+      category: '',
+      page: '민원센터_2-1.민원신청(FAQ)'
+    },
+    {
+      stateClass: 'complete',
+      url: '민원센터_9-1.민원서식(민원서식)',
+      category: '',
+      page: '민원센터_9-1.민원서식(민원서식)'
+    },
+  ]
+}
 data.common = {
   title: '공통',
   list: [

@@ -221,6 +221,8 @@
 }
 
 
+
+
 /* header */
 .menu-wrap {
     position: relative;
@@ -249,16 +251,16 @@
         position: absolute;
         display: none;
         width: 100%;
-        padding: 20px 0 25px;
+        padding: 10px 0 15px;
         background-color: #fff;
         top: 60px;
         left: 0;
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 
         & ul {
             & li {
                 display: block;
                 text-align: center;
-                margin-bottom: 20px;
 
                 & a {
                     font-family: var(--font2);
@@ -266,6 +268,8 @@
                     font-weight: 500;
                     line-height: 25px;
                     letter-spacing: -0.85px;
+                    display: block;
+                    padding: 10px 0;
                     color: var(--text-01);
 
                     &:active {
@@ -314,6 +318,49 @@
     }
 }
 
+/*메인페이지 예외 header*/
+._main-header {
+    &.up{
+        & .menu-wrap {
+            background-color: transparent;
+            border-bottom: 1px solid rgba(255,255,255, 0.2);
+
+            & h1 {
+                & .logo {
+                    background-image: url(../../img/renewal_v.0.1/logo_w.svg) !important;
+                }
+            }
+
+            & .menu-mobile {
+                background-color: #191919;
+                & ul {
+                    & li {
+                        & a {
+                            color: var(--white);
+                            &:active {
+                                color: var(--white);
+                            }
+                        }
+                        &.active {
+                            & a {
+                                color: var(--white);
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .btn-menu {
+                background-image: url(../../img/renewal_v.0.1/btn-menu-w.svg);
+
+                &.close {
+                    background-image: url(../../img/renewal_v.0.1/btn-menu-close-w.svg);
+                }
+            }
+        }
+    }
+}
+
 /* tablet */
 @media (min-width: 767px) {
     .menu-wrap {
@@ -349,47 +396,45 @@
             & ul {
                 display: flex;
                 justify-content: flex-end;
-                padding-right: 30px;
 
                 & li {
+                    margin-right: 30px;
                     position: relative;
                     display: flex;
-                    width: fit-content;
                     height: 90px;
-                    margin-right: 70px;
                     align-items: center;
 
-                    &:last-child {
-                        margin-right: 0;
-                    }
-
                     & a {
-                        display: inline-block;
+                        display: block;
+                        height: 100%;
                         font-family: var(--font2);
                         font-size: 20px;
                         font-weight: 500;
-                        line-height: 29px;
+                        line-height: 90px;
                         letter-spacing: -0.5px;
                         color: var(--text-01);
-
-                        &:hover {
-                            color: var(--blurple);
-                        }
                     }
-
-                    &.active {
-                        & a {
-                            color: var(--blurple);
-                        }
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            bottom: 0;
-                            width: 100%;
-                            height: 3px;
-                            background-color: var(--text-point-color);
+                }
+            }
+        }
+    }
+    ._main-header {
+        &.up{
+            & .menu-wrap {
+                & .menu-pc {
+                    & ul {
+                        & li {
+                            & a {
+                                color: var(--white);
+                                &:active {
+                                    color: var(--white);
+                                }
+                            }
+                            &.active {
+                                & a {
+                                    color: var(--white);
+                                }
+                            }
                         }
                     }
                 }
@@ -397,6 +442,46 @@
         }
     }
 }
+/* pc */
+@media (min-width: 1220px) {
+    .menu-wrap {
+        width: 100%;
+        height: 90px;
+        border-bottom: 1px solid #f0f0f0;
+
+        & h1 {
+            width: 77px;
+            height: 32px;
+            top: 29px;
+            left: 20px;
+
+            & .logo {
+                width: 77px;
+                height: 32px;
+            }
+        }
+
+        & .menu-mobile {
+            display: none !important;
+        }
+
+        & .btn-menu {
+            display: none;
+        }
+
+        & .menu-pc {
+            & ul {
+                & li {
+                    margin-left: 70px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 /* pc */
 @media (min-width: 1060px) {

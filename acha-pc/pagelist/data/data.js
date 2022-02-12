@@ -2,7 +2,12 @@ var data = {};
 data.edit = {
     'title': '2022.02.10 수정 요청 사항',
     'list': [
-
+        {
+            "stateClass": "complete",
+            "url": "ui_ma_01",
+            "part": "pages",
+            "page": "메인화면"
+        },
     ]
 };
 data.page = {

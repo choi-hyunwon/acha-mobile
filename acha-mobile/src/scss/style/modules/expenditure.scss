@@ -4945,8 +4945,7 @@
       width: 100%;
       padding: 25px 0 25px 15px;
       background-color: #f7f8fc;
-      margin-bottom: 30px;
-
+      margin:24px 0;
       .txt {
         font-size: 15px;
         line-height: 23px;
@@ -4963,7 +4962,12 @@
           height: 100%;
         }
       }
+      +.txt-md{
+        margin-bottom: 7px;
+        font-family: var(--font2);
+      }
     }
+
 
     .txt-md {
       font-size: 17px;

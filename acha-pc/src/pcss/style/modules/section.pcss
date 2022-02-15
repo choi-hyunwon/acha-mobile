@@ -438,17 +438,19 @@
             }
             &.pc-inner{
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 flex-direction: row-reverse;
                 padding-bottom: 105px;
+
                 & .txt-area{
-                    padding-left: 10.05%/*193px*/;
                     width: 34.37%/*660px*/;
+                    min-width: 21%/*404px*/;
                 }
                 & .tabs {
                     padding-top: 30px;
                     text-align: left;
+
                     & li {
                         display: inline-block;
                         margin-right: 0;
@@ -551,7 +553,7 @@
                 display: inline-block;
                 width: 33.33%;
                 height: 640px;
-                background: url("../../img/main/P-img-alarm.png") no-repeat center center/ 100% auto;
+                background: url("../../img/main/P-img-alarm.png") no-repeat center center/ 50% auto;
                 position: absolute;
                 right: 17.44%;
                 top: 50%;
@@ -597,6 +599,7 @@
 /* tablet */
 @media (min-width: 767px) {
     .section_story {
+        background: url("../../img/main/P-bg-story.png") no-repeat 0 0;
         & .inner {
             padding-bottom: 823px;
             background: url("../../img/main/T-img-story.png") no-repeat center bottom 8px / 680px 775px;
@@ -606,6 +609,7 @@
 /* pc */
 @media (min-width: 1024px) {
     .section_story {
+        background: url("../../img/main/P-bg-story.png") no-repeat 0 0;
         & .inner {
             padding-bottom: 991px;
             background: url("../../img/main/P-img-story.png") no-repeat center bottom 61px / 1260px 893px;
@@ -645,34 +649,6 @@
             width: 92.29%/*1772px*/;
             margin: 0 auto;
             position: relative;
-            &:before{
-                content: '';
-                display: inline-block;
-                width: 491px;
-                height: 638.8px;
-                -webkit-filter: blur(50px);
-                filter: blur(50px);
-                background-color: #ece6ff;
-                position: absolute;
-                left: 8.75%/*168px*/;
-                top: 281px;
-                opacity: 0.65;
-                z-index: -1;
-            }
-            &:after{
-                content: '';
-                display: inline-block;
-                width: 499.5px;
-                height: 691.5px;
-                -webkit-filter: blur(50px);
-                filter: blur(50px);
-                background-image: linear-gradient(207deg, #e6dbff 83%, #ffbfe6 17%);
-                position: absolute;
-                left: 23.75%/*456px*/;
-                top: 188px;
-                z-index: -1;
-                opacity: 0.37;
-            }
         }
     }
 }
@@ -682,8 +658,7 @@
 
 /* 안전한 금융생활 section_data */
 .section_security {
-    background: linear-gradient(to right, #3f199a 3%, #6a37dd 55%, #3f199a 97%);
-
+    background: #5025b5;
     & .inner {
         padding : 80px 0 281px;
         background: url("../../img/main/M-img-security.png") no-repeat center bottom 51px / 230px 180px;
@@ -697,7 +672,6 @@
 /* tablet */
 @media (min-width: 767px) {
     .section_security {
-        background: #5025b5;
         & .inner {
             padding : 80px 0 423px;
             background: url("../../img/main/T-img-security.png") no-repeat center bottom 75px / 370px 288px;
@@ -711,7 +685,6 @@
 /* pc -작업중 */
 @media (min-width: 1024px) {
     .section_security {
-        background: #5025b5;
         & .inner {
             width: 51.25%/*984px*/;
             padding : 152px 0 152px;

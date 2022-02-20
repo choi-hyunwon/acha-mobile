@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "grid.css",
+	"sources": [
+		"../../../../scss/style/modules/grid.scss"
+	],
+	"sourcesContent": [
+		".row {\r\n  &::after {\r\n    content: '';\r\n    display: block;\r\n    clear: both;\r\n  }\r\n\r\n  & .col {\r\n    float: left;\r\n\r\n    &.col-20 {\r\n      width: 20%;\r\n    }\r\n\r\n    &.col-25 {\r\n      width: 25%;\r\n    }\r\n\r\n    &.col-33 {\r\n      width: 33.3%;\r\n    }\r\n\r\n    &.col-40 {\r\n      width: 40%;\r\n    }\r\n\r\n    &.col-50 {\r\n      width: 50%;\r\n    }\r\n\r\n    &.col-60 {\r\n      width: 60%;\r\n    }\r\n\r\n    &.col-66 {\r\n      width: 66%;\r\n    }\r\n\r\n    &.col-80 {\r\n      width: 80%;\r\n    }\r\n\r\n    &.col-title {\r\n      width: 110px;\r\n    }\r\n\r\n    &.col-desc {\r\n      width: calc(100% - 110px);\r\n    }\r\n\r\n    &::after {\r\n      content: '';\r\n      display: block;\r\n      clear: both;\r\n    }\r\n  }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AACE,IADE,AACD,OAAO,CAAC;EACP,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;CACZ;;AALH,AAOE,IAPE,CAOA,IAAI,CAAC;EACL,KAAK,EAAE,IAAI;CA+CZ;;AAvDH,AAUI,IAVA,CAOA,IAAI,AAGH,OAAO,CAAC;EACP,KAAK,EAAE,GAAG;CACX;;AAZL,AAcI,IAdA,CAOA,IAAI,AAOH,OAAO,CAAC;EACP,KAAK,EAAE,GAAG;CACX;;AAhBL,AAkBI,IAlBA,CAOA,IAAI,AAWH,OAAO,CAAC;EACP,KAAK,EAAE,KAAK;CACb;;AApBL,AAsBI,IAtBA,CAOA,IAAI,AAeH,OAAO,CAAC;EACP,KAAK,EAAE,GAAG;CACX;;AAxBL,AA0BI,IA1BA,CAOA,IAAI,AAmBH,OAAO,CAAC;EACP,KAAK,EAAE,GAAG;CACX;;AA5BL,AA8BI,IA9BA,CAOA,IAAI,AAuBH,OAAO,CAAC;EACP,KAAK,EAAE,GAAG;CACX;;AAhCL,AAkCI,IAlCA,CAOA,IAAI,AA2BH,OAAO,CAAC;EACP,KAAK,EAAE,GAAG;CACX;;AApCL,AAsCI,IAtCA,CAOA,IAAI,AA+BH,OAAO,CAAC;EACP,KAAK,EAAE,GAAG;CACX;;AAxCL,AA0CI,IA1CA,CAOA,IAAI,AAmCH,UAAU,CAAC;EACV,KAAK,EAAE,KAAK;CACb;;AA5CL,AA8CI,IA9CA,CAOA,IAAI,AAuCH,SAAS,CAAC;EACT,KAAK,EAAE,kBAAkB;CAC1B;;AAhDL,AAkDI,IAlDA,CAOA,IAAI,AA2CH,OAAO,CAAC;EACP,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;CACZ"
+}

@@ -159,10 +159,13 @@
                         <li><a class="btn" href="#"><span>월별</span></a></li>
                     </ul>
                 </div>
-                <div class="wrap_tabs">
+<!--                <div class="wrap_tabs">
                     <div class="panel"><div class="img"></div></div>
                     <div class="panel"><div class="img"></div></div>
                     <div class="panel"><div class="img"> </div></div>
+                </div>-->
+                <div class="wrap_tabs">
+                    <div class="panel"><div class="img"></div><div class="img"></div><div class="img"></div></div>
                 </div>
                 <script>
                     $(document).ready(function () {
@@ -181,14 +184,31 @@
                                 tabs.removeClass("on");
                                 tabs.eq(idx).addClass("on");
                                 panels.removeClass("on");
-                                panels.parent().eq(idx).addClass("on");
+                                panels.parent().find('.img').eq(idx).addClass("on");
 
-                                    panels.parent().css({
+                                if (idx === 0 ){
+                                    panels.parent().animate({ left:"-0%"})
+                                }else if (idx === 1 ){
+                                    panels.parent().animate({ left:"-100%"})
+                                }else if (idx === 2 ){
+                                    panels.parent().animate({ left:"-200%"})
+                                }
+
+
+/*
+                                    panels.parent().find('.img').animate({
                                         left: '-100%'
                                     });
-                                    panels.parent().eq(idx).hide().delay(500).fadeIn().css({
-                                        left: '-0%'
-                                    });
+                                    panels.parent().eq(idx).find('.img').hide().animate({
+                                        left:'100%'
+                                    },function (){
+                                        panels.parent().eq(idx).find('.img').show().css({
+                                            left: '0%'
+                                        });
+                                        }
+                                    )
+*/
+
 
 
 

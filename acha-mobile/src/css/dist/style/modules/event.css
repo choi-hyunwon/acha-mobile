@@ -1,0 +1,421 @@
+@charset "UTF-8";
+/*
+    작성자 : 이주연
+    작성일 : 2020.10.08
+    내용 : event.pcss 추가
+*/
+.event {
+  width: 100%;
+  background-color: #a470f2;
+}
+
+.event > div:first-child .main {
+  width: 355px;
+  height: auto;
+  margin: 0 auto 28px;
+}
+
+.event > div:first-child .main img {
+  width: 100%;
+  height: 100%;
+}
+
+.event > div:first-child .text {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.38px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.event > div:first-child .btn-area {
+  padding: 0 20px 40px;
+}
+
+.event > div:first-child .btn-area .btn-event {
+  display: block;
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 70px;
+  letter-spacing: -0.45px;
+  text-align: center;
+  background-color: #fff579;
+  color: var(--text-01);
+}
+
+.event > div:first-child .btn-area .btn-event:active {
+  background-color: #EADB28;
+}
+
+.event .serviceInfo {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.event .serviceInfo > .title {
+  position: relative;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: -0.43px;
+  color: var(--text-point-color);
+  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 27px;
+}
+
+.event .serviceInfo > .title::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 46px;
+  width: 3px;
+  height: 17px;
+  background-color: var(--text-point-color);
+}
+
+.event .serviceInfo .sub .img {
+  width: 355px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.event .serviceInfo .sub .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.event .serviceInfo .sub .img-sm {
+  width: 300px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.event .serviceInfo .sub .img-sm img {
+  width: 100%;
+  height: 100%;
+}
+
+.event .serviceInfo .sub .text-lg {
+  font-family: var(--font2);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: var(--text-01);
+  margin-bottom: 5px;
+}
+
+.event .serviceInfo .sub .text-lg em {
+  color: var(--text-point-color);
+  font-family: var(--font2);
+  font-weight: 500;
+}
+
+.event .serviceInfo .sub .text {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: -0.33px;
+  text-align: center;
+  color: var(--text-02);
+  margin-bottom: 40px;
+}
+
+.event .serviceInfo .sub .btn-wrap {
+  padding-bottom: 40px;
+}
+
+.event .serviceInfo .sub .btn-wrap .btn-acha {
+  display: block;
+  width: 275px;
+  height: 50px;
+  border-radius: 10px;
+  border: solid 1px var(--text-point-color);
+  font-family: var(--font2);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.38px;
+  text-align: center;
+  color: var(--text-point-color);
+  margin: 0 auto;
+}
+
+.event .serviceInfo .line {
+  width: 355px;
+  height: auto;
+  margin: 0 auto 30px;
+}
+
+.event .serviceInfo .line img {
+  width: 100%;
+  height: 100%;
+}
+
+.event .noti {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.event .noti .title {
+  font-family: var(--font2);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.33px;
+  color: var(--text-02);
+  margin-bottom: 3px;
+}
+
+.event .noti p {
+  font-family: var(--font1);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--text-02);
+}
+
+.event .noti p a {
+  color: #4f97f3;
+}
+
+.d-xs-block {
+  display: none;
+}
+
+@media (max-width: 355px) {
+  .d-xs-none {
+    display: none;
+  }
+  .d-xs-block {
+    display: block;
+  }
+  .event > div:first-child .main {
+    width: 300px;
+  }
+  .event .serviceInfo .sub .img {
+    width: 300px;
+  }
+  .event .serviceInfo .line {
+    width: 300px;
+  }
+}
+
+.popup-normal.popup_event {
+  width: 315px;
+  height: 474px;
+}
+
+.popup-normal.popup_event .popup-header h2 {
+  font-family: var(--font3);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: var(--text-01);
+  padding-top: 20px;
+  margin: 0 0 20px;
+}
+
+.popup-normal.popup_event .popup-body {
+  padding: 0;
+}
+
+.popup-normal.popup_event .popup-body .form {
+  padding: 30px 20px 0;
+}
+
+.popup-normal.popup_event .popup-body .form .info {
+  border-radius: 10px;
+  border: solid 2px var(--text-point-color);
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.popup-normal.popup_event .popup-body .form .event-form .title {
+  font-family: var(--font2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: -0.35px;
+  color: var(--text-01);
+  margin-bottom: 10px;
+}
+
+.popup-normal.popup_event .popup-body .form .event-form input {
+  height: 35px;
+  border-radius: 4px;
+  border: solid 1px #e2e3e6;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-family: var(--font2);
+}
+
+.popup-normal.popup_event .popup-body .form .event-form input:focus {
+  outline: none;
+  border: 1px solid var(--text-01);
+}
+
+.popup-normal.popup_event .popup-body .form .event-form.name input {
+  width: 206px;
+  margin-left: 1px;
+  padding-left: 12px;
+}
+
+.popup-normal.popup_event .popup-body .form .event-form.phone .title {
+  margin-bottom: 0;
+}
+
+.popup-normal.popup_event .popup-body .form .event-form.phone .dNum {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.35px;
+  color: var(--text-01);
+}
+
+.popup-normal.popup_event .popup-body .form .event-form.phone input {
+  width: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.35px;
+  padding: 0 0 0 12px;
+  -moz-appearance: textfield;
+}
+
+.popup-normal.popup_event .popup-body .form .event-check span {
+  line-height: 17px;
+}
+
+.popup-normal.popup_event .popup-body .form > p {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--text-03);
+  padding-left: 28px;
+}
+
+.popup-normal.popup_event .popup-body .line {
+  width: 315px;
+  height: auto;
+}
+
+.popup-normal.popup_event .popup-body .line img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-normal.popup_event .popup-body .list-Wrap {
+  padding: 5px 25px 20px;
+}
+
+.popup-normal.popup_event .popup-body .list-Wrap .list {
+  color: var(--text-03);
+  font-size: 12px;
+}
+
+.popup-normal.popup_event .popup-body .btn-wrap {
+  padding: 0 20px;
+}
+
+.popup-normal.popup_event .popup-body .btn-wrap .btn {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--text-point-color);
+  font-family: var(--font1);
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 58px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.popupNormal .popup-body {
+  padding: 40px 0;
+}
+
+.popupNormal .popup-body p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: var(--text-01);
+  margin-bottom: 40px;
+}
+
+.popupNormal.event {
+  background-color: #fff;
+  width: 314px;
+  height: auto;
+}
+
+.popupNormal.event .popup-body {
+  padding: 24px 20px 72px;
+}
+
+.popupNormal.event .popup-body .top {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: -0.75px;
+  text-align: center;
+  color: var(--text-01);
+  margin-bottom: 17px;
+}
+
+.popupNormal.event .popup-body .middle {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: var(--text-01);
+  margin-bottom: 24px;
+}
+
+.popupNormal.event .popup-body .bottom {
+  font-size: 15px;
+  font-family: var(--font2);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.75px;
+  text-align: center;
+  color: var(--text-01);
+  margin-bottom: 0;
+}
+
+.popupNormal.event .popup-body .bottom .date {
+  font-weight: 500;
+  color: var(--text-point-color);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*# sourceMappingURL=event.css.map */

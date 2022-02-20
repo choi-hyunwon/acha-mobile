@@ -1,0 +1,498 @@
+@charset "UTF-8";
+a:hover {
+  text-decoration: none;
+  color: #37354e;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  min-width: 95px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 13px;
+  font-family: var(--font1);
+  letter-spacing: -0.33px;
+  padding: 0 10px;
+  background: #FFFFFF;
+  border: 1px solid #e3e4e8;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--text-02);
+}
+
+.btn:active, .btn:focus, .btn:hover {
+  outline: none;
+}
+
+.btn i.icon-btn-plus {
+  margin-right: 3px;
+}
+
+.btn.btn-sm {
+  height: 26px;
+  line-height: 24px;
+  border-radius: 2px;
+  padding: 0 10px;
+  min-width: 59px;
+  font-size: 11px;
+  letter-spacing: -.55px;
+  font-family: var(--font1);
+}
+
+.btn.btn-sm:focus, .btn.btn-sm:hover {
+  color: var(--text-02);
+}
+
+.btn.btn_primary {
+  min-width: 127px;
+  padding: 0 20px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 33px;
+  font-family: var(--font1);
+  letter-spacing: -0.65px;
+  color: #FFFFFF;
+  border: none;
+  background: var(--color-point);
+}
+
+.btn.btn_primary img {
+  width: 11px;
+  vertical-align: unset;
+  margin-left: 3px;
+}
+
+.btn.btn_primary.btn_primary_lg {
+  height: 41px;
+  min-width: 133px;
+  line-height: 41px;
+}
+
+.btn.btn_primary.btn_primary_lg i {
+  margin-right: 5px;
+}
+
+.btn.btn-gray {
+  border-color: #aaaaaa;
+  color: #888888;
+}
+
+.btn.btn-gray:focus, .btn.btn-gray:hover {
+  color: #888888;
+}
+
+.btn.btn-full {
+  width: 100%;
+  height: 55px;
+  font-size: 15px;
+  letter-spacing: -0.75px;
+  border-radius: unset;
+  padding: 0;
+  z-index: 100;
+}
+
+.btn.btn-full.nor {
+  background: -webkit-linear-gradient(left, transparent, black 50%, transparent);
+  background: -moz-linear-gradient(to right, #547eff, #6c36ff 51%);
+  background: -ms-linear-gradient(to right, #547eff, #6c36ff 51%);
+  background: -o-linear-gradient(to right, #547eff, #6c36ff 51%);
+  background: linear-gradient(to right, #547eff, #6c36ff 51%);
+}
+
+.btn.btn-full.pre {
+  background: #4c0ef3;
+}
+
+.btn.btn-full.dim {
+  background: #d6c7ff;
+}
+
+.btn.btn-add {
+  display: block;
+  width: 100%;
+  height: 41px;
+  border-radius: 6px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  line-height: 39px;
+  font-size: 11px;
+  letter-spacing: -0.55px;
+  text-align: center;
+  color: var(--text-02);
+  margin-top: 7px;
+}
+
+.btn.btn-add i {
+  vertical-align: middle;
+  margin-right: 5px;
+  transform: translateY(-1px);
+}
+
+.btn.dim {
+  background-color: #b39be9 !important;
+}
+
+.badge-tip {
+  display: inline-block;
+  height: 14px;
+  border-radius: 2px;
+  background: var(--color-point);
+  font-family: var(--font2);
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  line-height: 14px;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 3px;
+  padding: 0 5px;
+}
+
+/**
+    세금관리 - 연동추가하기 버튼
+ */
+.btn-lg {
+  height: 46px;
+  border-color: var(--color-point);
+  border-radius: 6px;
+  font-family: var(--font2);
+  color: var(--color-point);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: -0.6px;
+}
+
+.btn-lg:focus, .btn-lg:hover {
+  color: var(--color-point);
+}
+
+.btn_back {
+  position: absolute;
+  display: block;
+  background: url("../../img/common/ico_top_back_b_nor@2x.png") no-repeat;
+  background-position-y: center;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  top: 20px;
+  left: 16px;
+}
+
+/*
+    2020-02-14
+    수정사항
+    switch 수정
+ */
+.toggle {
+  width: 100%;
+  height: 30px;
+}
+
+.toggle .custom-control {
+  left: 0;
+}
+
+.toggle .custom-control .custom-control-label::before {
+  background: #d5d5d5;
+}
+
+.toggle .custom-control .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #FFFFFF;
+}
+
+.toggle .custom-control .custom-control-input:checked ~ .custom-control-label::before {
+  background: var(--color-point);
+}
+
+.custom-switch {
+  position: absolute;
+  top: 23px;
+  right: 25px;
+}
+
+.custom-switch .custom-control-label {
+  padding-left: 25px;
+}
+
+.custom-switch .custom-control-label::before {
+  width: 42px;
+  height: 22px;
+  pointer-events: all;
+  border-radius: 21px;
+  border: unset;
+  background: #d5d5d5;
+}
+
+.custom-switch .custom-control-label::after {
+  /*top: calc(0.33rem + 2px);*/
+  /*top: 5px;*/
+  /*left: -21px;*/
+  width: 18px;
+  height: 18px;
+  border-radius: 14px;
+  background-color: #ffffff;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+  background: var(--color-point);
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(1.95rem);
+  background-color: #FFFFFF;
+}
+
+.custom-switch .custom-control-input:disabled ~ .custom-control-label {
+  color: #212529;
+}
+
+.custom-switch .custom-control-input:disabled ~ .custom-control-label::before {
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+}
+
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label {
+  color: #212529;
+}
+
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: #c3aeff !important;
+  border: 1px solid #c3aeff;
+}
+
+/*
+2020.06.05 추가
+*/
+.btn-pay {
+  width: 57px;
+  border-radius: 2px;
+  float: right;
+  min-width: 57px;
+  font-size: 10px;
+  font-family: var(--font1);
+  padding: 0 10px;
+  height: 26px;
+  line-height: 24px;
+  color: #737183;
+  margin-bottom: -11px;
+}
+
+.btn-pay i {
+  transform: translate(2px, 1px);
+}
+
+.btn-md {
+  height: 41px;
+  line-height: 40px;
+  font-size: 11px;
+  letter-spacing: -.28px;
+  border: 1px solid #e3e4e8;
+  color: #737183;
+  font-weight: normal;
+}
+
+.btn-md i {
+  margin-right: 5px;
+}
+
+.btn-big {
+  font-size: 14px;
+  height: 50px;
+  line-height: 48px;
+  border-color: #6839d3;
+  color: #6839d3;
+  font-family: var(--font2);
+  font-weight: 500;
+  letter-spacing: -.6px;
+}
+
+.btn-big:hover, .btn-big:focus {
+  color: #6839d3;
+}
+
+.btn-big i {
+  margin-right: 5px;
+}
+
+.btn-big.btn-start {
+  border-radius: 6px;
+  height: 50px;
+  border: 0;
+  line-height: 50px;
+  background-color: var(--color-point);
+  font-family: var(--font2);
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  color: #ffffff;
+}
+
+.btn-big.btn-save {
+  border-radius: 6px;
+  height: 50px;
+  border: 0;
+  line-height: 50px;
+  background-color: var(--color-point);
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: -.75px;
+  font-family: var(--font2);
+}
+
+.btn-big.btn-save.dim {
+  background-color: #b39be9;
+}
+
+.btn-big.btn-big-light {
+  border: 1px solid #e3e4e8;
+  color: #737183;
+  font-weight: normal;
+}
+
+.btn-big.btn-big-light:focus, .btn-big.btn-big-light:hover {
+  color: #737183;
+}
+
+.btn-big.btn-big-light.btn-big-border-radius {
+  border-radius: 6px;
+  font-family: var(--font1);
+  color: var(--text-03);
+}
+
+.btn_box {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 0 20px;
+  background: #fff;
+}
+
+.btn_wrap {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  bottom: 0;
+  background: #fff;
+  height: 80px;
+}
+
+.btn_bottom {
+  width: 100%;
+  padding: 0 20px 40px;
+  margin-top: -12px;
+}
+
+.btn_area.bottom-fixed {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 5;
+  padding: 0 20px;
+  bottom: 0;
+  background: #fff;
+  height: 80px;
+}
+
+.btn_area.pd {
+  padding: 0 20px;
+}
+
+.btn_area.mb {
+  margin-bottom: 40px;
+}
+
+.btn_area.margin {
+  margin: 30px 0 0;
+  padding-bottom: 30px;
+}
+
+.btn-half {
+  width: 49%;
+}
+
+.btn-gray-bg {
+  border: 0;
+  background-color: #9b9aa6;
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  letter-spacing: -.75px;
+}
+
+.btn-gray-bg:focus, .btn-gray-bg:hover {
+  color: #ffffff;
+}
+
+.btn-purple-bg {
+  border: 0;
+  background-color: var(--color-point);
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  letter-spacing: -.75px;
+  border-radius: 6px;
+}
+
+.btn-purple-bg:focus, .btn-purple-bg:hover {
+  color: #ffffff;
+}
+
+.btn-purple-bg.btn-outline-purple {
+  height: 46px;
+  line-height: 44px;
+  border: 1px solid var(--text-point-color);
+  background-color: transparent;
+  color: var(--text-point-color);
+  font-size: 12px;
+}
+
+.btn-purple-bg.btn-outline-purple i {
+  margin-right: 5px;
+  transform: translateY(1px);
+}
+
+.box_ex_bottom {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px !important;
+}
+
+.box_ex_bottom .btn-more {
+  display: inline-block;
+  width: calc(100% - 45px);
+  height: 41px;
+  line-height: 40px;
+  font-size: 11px;
+  border: solid 1px #e5e5e5;
+  text-align: center;
+  color: var(--text-02);
+  letter-spacing: -.55px;
+  border-radius: 6px;
+}
+
+.box_ex_bottom .btn-more i {
+  margin-right: 5px;
+  transform: translate(0, 1px);
+}
+
+.box_ex_bottom .btn-top {
+  float: right;
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  border: solid 1px #e5e5e5;
+  text-align: center;
+  border-radius: 6px;
+  line-height: 46px;
+}
+
+/*# sourceMappingURL=btn.css.map */

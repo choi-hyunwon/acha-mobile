@@ -1,0 +1,170 @@
+table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: var(--font2);
+  font-size: 11px;
+}
+
+td, th {
+  position: relative;
+  height: 38px;
+  display: table-cell;
+  line-height: 33px;
+  vertical-align: middle;
+}
+
+td {
+  height: 36px;
+}
+
+table.centered thead tr th, table.centered tbody tr td, table.centered tfoot tr td {
+  text-align: center;
+}
+
+.scroll_auto {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.table thead tr th {
+  text-align: center;
+  font-family: var(--font1);
+  font-size: 11px;
+  font-weight: unset;
+  letter-spacing: -0.55px;
+  padding: 0;
+  border-top: 1px solid #e3e4e8;
+  border-bottom: 1px solid #e3e4e8;
+  border-right: 1px solid #e3e4e8;
+  background: #f5f6f8;
+  color: var(--text-02);
+}
+
+.table thead tr th:last-child {
+  border-right: none;
+}
+
+.table tbody, .table tfoot {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.table tbody tr td, .table tfoot tr td {
+  text-align: center;
+  font-family: var(--font2);
+  font-size: 11px;
+  letter-spacing: -0.55px;
+  color: var(--text-01);
+  border-right: 1px solid #e3e4e8;
+}
+
+.table tbody tr td:last-child, .table tfoot tr td:last-child {
+  border-right: none;
+}
+
+.table tbody tr td.td-lg, .table tfoot tr td.td-lg {
+  padding: 9px 15px 6px 16px;
+}
+
+.table tfoot tr td {
+  font-family: var(--font1);
+  color: var(--color-point);
+  font-weight: 500;
+}
+
+.table.coltype tr td {
+  font-size: 10px;
+  text-align: left;
+  letter-spacing: -0.5px;
+  padding: 15px 15px 15px 16px;
+  line-height: 15px;
+}
+
+.table.coltype tr td.title {
+  font-family: var(--font1);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -0.55px;
+  background: #fbfbfb;
+  padding: 0;
+}
+
+.table.coltype tr td .list {
+  font-size: 10px;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.table.coltype tr td .list .dot:after {
+  top: 6px;
+}
+
+.table.button_type {
+  margin-bottom: 18px;
+  border-collapse: collapse;
+}
+
+.table.button_type td {
+  height: 44px;
+  color: #737183;
+  letter-spacing: -0.6px;
+  font-size: 12px;
+  border: 1px solid #e2e3e6;
+}
+
+.table.button_type td:last-child {
+  border-right: 1px solid #e2e3e6;
+}
+
+.table.button_type td.active {
+  border-style: double;
+  border-color: var(--color-point);
+  color: var(--color-point);
+}
+
+.vertical-table {
+  border-top: 1px solid #e3e4e8;
+  margin-bottom: 15px;
+}
+
+.vertical-table tr {
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.vertical-table tr th, .vertical-table tr td {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: -.55px;
+  color: var(--text-02);
+}
+
+.vertical-table tr th {
+  font-weight: 500;
+  background-color: #f5f6f8;
+  border-right: 1px solid #e3e4e8;
+  text-align: center;
+  padding: 0 7px;
+  font-family: var(--font2);
+}
+
+.vertical-table tr td {
+  padding: 8px 10px;
+  font-weight: normal;
+  border-right: 1px solid #f5f6f8;
+  vertical-align: top;
+  font-family: var(--font1);
+}
+
+.vertical-table tr td:last-child {
+  border-right: 0;
+}
+
+.vertical-table tr.point th, .vertical-table tr.point td {
+  font-size: 12px;
+  color: var(--text-01);
+  font-family: var(--font2);
+}
+
+/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,1632 @@
+@charset "UTF-8";
+/*
+    작성자 : 이주연
+    작성일 : 2020.10.05
+    내용 : tax.pcss 추가
+*/
+.box_tax_home {
+  position: relative;
+  padding-top: 30px;
+}
+
+.box_tax_home .title_area {
+  padding-left: 28px;
+  margin-bottom: 0;
+}
+
+.box_tax_home .title_area .tit {
+  font-size: 18px;
+  font-family: var(--font2);
+  font-weight: 500;
+  letter-spacing: -.45px;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+
+.box_tax_home .title_area .tit span {
+  display: inline-block;
+  font-size: 12px;
+  font-family: var(--font2);
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -.3px;
+  margin-left: 2px;
+  color: var(--text-02);
+}
+
+.box_tax_home .title_area .val {
+  display: inline-block;
+  font-family: var(--font1);
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  color: var(--text-01);
+  margin-bottom: 6px;
+}
+
+.box_tax_home .title_area .val em {
+  display: inline-block;
+  font-family: var(--font1);
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 38px;
+  letter-spacing: -0.45px;
+  color: var(--text-01);
+  margin-left: 4px;
+  transform: translateY(-2px);
+}
+
+.box_tax_home .title_area .badge {
+  display: inline-block;
+  padding: 0 7px;
+  height: 22px;
+  border: 1px solid #e2e3e6;
+  text-align: center;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+  color: var(--text-03);
+  border-radius: 11px;
+  margin-bottom: 20px;
+}
+
+.box_tax_home .title_area .badge-lg {
+  display: inline-block;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: var(--text-point-color);
+  border-radius: 15px;
+  font-family: var(--font2);
+  font-weight: 500;
+  letter-spacing: -.65px;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-bottom: 48px;
+}
+
+.box_tax_home .title_area .badge-lg i {
+  margin-left: 6px;
+  transform: translateY(2px);
+}
+
+.box_tax_home .img_area {
+  position: absolute;
+  width: 86px;
+  height: 72px;
+  right: 26px;
+  top: 30px;
+}
+
+.box_tax_home .img_area img {
+  width: 100%;
+  height: 100%;
+}
+
+.box_tax_home.hide {
+  opacity: 1;
+}
+
+.box_tax_home.hide .title_area .val {
+  color: #e2e3e6;
+}
+
+.box_tax_home.hide .title_area .val em {
+  color: var(--text-01);
+}
+
+.box_tax_category {
+  padding: 0 20px;
+}
+
+.box_tax_category > .title-lg {
+  font-family: var(--font3);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  letter-spacing: -0.18px;
+  text-align: left;
+  color: var(--blurple);
+  margin-top: 20px;
+}
+
+.box_tax_category > .title-lg em {
+  color: var(--text-01);
+  border-bottom: 1px solid var(--text-01);
+  padding-bottom: 1px;
+}
+
+.box_tax_category .event-banner {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  background-color: #a491f5;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.box_tax_category .event-banner .text {
+  position: relative;
+  display: inline-block;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--font3);
+  letter-spacing: -.18px;
+  padding-top: 27px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.box_tax_category .event-banner .text .badge-new {
+  position: absolute;
+  right: -17px;
+  bottom: 17px;
+}
+
+.box_tax_category .event-banner .img {
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  right: 20px;
+  top: 20px;
+}
+
+.box_tax_category .event-banner .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.box_tax_category .badge-new {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/common/icon_new@2x.png");
+  background-size: cover;
+}
+
+.box_tax_category .date {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: var(--text-02);
+  margin: 20px 0 15px;
+}
+
+.box_tax_category .list.info {
+  padding-left: 16px;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: -0.28px;
+  text-align: left;
+  color: var(--text-03);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.box_tax_category .list.info::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(../../img/common/ico-caution@2x.png);
+  background-size: cover;
+  top: 3px;
+  left: 0;
+  background-color: transparent;
+}
+
+.box_tax_category .list.caution {
+  padding-left: 0;
+  margin-top: 4px;
+  color: #ef4b61;
+  margin-bottom: 15px;
+}
+
+.box_tax_category .list.caution::before {
+  content: none;
+  left: 0;
+}
+
+.box_tax_category .tip {
+  margin-bottom: 15px;
+}
+
+.box_tax_category .tip img {
+  display: inline-block;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+}
+
+.box_tax_category .tip span {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: -0.28px;
+  text-align: left;
+  color: var(--text-03);
+  vertical-align: middle;
+}
+
+.box_tax_category ul li {
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(55, 53, 78, 0.1);
+  border: solid 1px #a89fbc;
+  background-color: #ffffff;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.box_tax_category ul li.event {
+  border: 0;
+  background-color: #f4f1fd;
+  box-shadow: none;
+}
+
+.box_tax_category ul li.event .tit-lg {
+  padding: 30px 0;
+}
+
+.box_tax_category ul li.event .tit-lg.line-2 {
+  padding: 20px 0;
+}
+
+.box_tax_category ul li.event .tit-lg.line-2 span:last-child i {
+  transform: translateY(17px);
+}
+
+.box_tax_category ul li.event .tit-lg.line-2 span:first-child .badge-new {
+  top: 27px;
+}
+
+.box_tax_category ul li.event .tit-lg span {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.box_tax_category ul li.event .tit-lg span:first-child {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.box_tax_category ul li.event .tit-lg span:first-child .highlight {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #6839d3;
+}
+
+.box_tax_category ul li.event .tit-lg span:first-child .badge-new {
+  position: absolute;
+  right: -20px;
+  top: 0;
+}
+
+.box_tax_category ul li.event.new-tech {
+  background-color: #edf1fc;
+}
+
+.box_tax_category ul li .tit-lg {
+  padding: 20px 0;
+}
+
+.box_tax_category ul li .tit-lg span:first-child {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  text-align: left;
+  font-family: var(--font3);
+  color: var(--text-01);
+}
+
+.box_tax_category ul li .tit-lg span:first-child em {
+  font-size: 14px;
+  font-family: var(--font2);
+  font-weight: 500;
+  letter-spacing: -.35px;
+}
+
+.box_tax_category ul li .tit-lg span:last-child {
+  float: right;
+}
+
+.box_tax_category ul li .tit-lg span:last-child em {
+  font-family: var(--font1);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: var(--text-01);
+}
+
+.box_tax_category ul li .tit-lg span:last-child em::after {
+  content: '원';
+  font-family: var(--font3);
+  font-size: 14px;
+  letter-spacing: -.35px;
+}
+
+.box_tax_category ul li .tit-lg span:last-child i {
+  margin-left: 4px;
+  transform: translateY(1px);
+}
+
+.box_tax_category ul li .tit-lg > .btn-open {
+  transform: translateY(2px);
+}
+
+.box_tax_category ul li .tit-lg.update span:first-child {
+  position: relative;
+}
+
+.box_tax_category ul li .tit-lg.update span:first-child::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--text-point-color);
+  top: 0px;
+  right: -9px;
+}
+
+.box_tax_category ul li .tit {
+  padding: 20px 0;
+}
+
+.box_tax_category ul li .tit span:first-child {
+  font-family: var(--font2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+}
+
+.box_tax_category ul li .tit span:last-child {
+  float: right;
+  font-family: var(--font1);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.17px;
+}
+
+.box_tax_category ul li .tit span:last-child::after {
+  content: '원';
+  font-family: var(--font2);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -.35px;
+}
+
+.box_tax_category ul li > .val {
+  text-align: right;
+  font-family: var(--font1);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: var(--text-01);
+  padding-bottom: 20px;
+}
+
+.box_tax_category ul li > .val::after {
+  content: '원';
+  font-family: var(--font1);
+  font-size: 14px;
+  letter-spacing: -.35px;
+}
+
+.box_tax_category ul li .btn-open {
+  float: right;
+  display: inline-block;
+  font-family: var(--font2);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.65px;
+  text-align: right;
+  color: var(--text-point-color);
+  transform: translateY(-1px);
+}
+
+.box_tax_category ul li .btn-open i {
+  margin-left: 5px;
+  transform: translateY(3px);
+}
+
+.box_tax_category ul li.line .tit-lg {
+  border-bottom: 1px solid var(--text-01);
+}
+
+.box_tax_category ul li.line .tit {
+  border-bottom: 1px solid #f2f4f7;
+}
+
+.box_tax_category ul li.line .tit:last-child {
+  border-bottom: 0;
+}
+
+.expenditure-report-wrap {
+  position: relative;
+}
+
+.expenditure-report-wrap .top-area {
+  padding: 10px 20px 37px;
+}
+
+.expenditure-report-wrap .top-area .text-top {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -.45px;
+  margin-bottom: 5px;
+}
+
+.expenditure-report-wrap .top-area .text-top .highlight {
+  color: #6839d3;
+  font-weight: bold;
+  font-family: var(--font3);
+}
+
+.expenditure-report-wrap .top-area .list {
+  color: var(--text-03);
+  margin-bottom: 25px;
+  font-family: var(--text-01);
+}
+
+.expenditure-report-wrap .top-area .list .btn-reload {
+  display: inline-block;
+  padding: 0 10px;
+  height: 22px;
+  border-radius: 33px;
+  border: 1px solid #e3e4e8;
+  margin-left: 10px;
+}
+
+.expenditure-report-wrap .top-area .list .btn-reload em {
+  display: inline-block;
+  font-size: 10px;
+  color: var(--text-03);
+  letter-spacing: -.5px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.expenditure-report-wrap .top-area .list .btn-reload img {
+  display: inline-block;
+  width: 8px;
+  height: 9px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.expenditure-report-wrap .top-area .text-medium {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -.4px;
+  margin-bottom: 12px;
+}
+
+.expenditure-report-wrap .top-area .text-medium span {
+  font-weight: bold;
+  font-family: var(--font3);
+}
+
+.expenditure-report-wrap .top-area .value-info {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -.35px;
+}
+
+.expenditure-report-wrap .top-area .value-info span {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: var(--font3);
+  border-bottom: 1px solid var(--text-01);
+}
+
+.expenditure-report-wrap .event-banner {
+  border: 0;
+  background-color: #f4f1fd;
+  box-shadow: none;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.expenditure-report-wrap .event-banner .badge-new {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/common/icon_new@2x.png");
+  background-size: cover;
+}
+
+.expenditure-report-wrap .event-banner .tit {
+  padding: 20px 0;
+}
+
+.expenditure-report-wrap .event-banner .tit span {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  font-family: var(--font3);
+  letter-spacing: -0.4px;
+  text-align: left;
+}
+
+.expenditure-report-wrap .event-banner .tit span:nth-child(2) {
+  float: right;
+  padding-top: 15px;
+}
+
+.expenditure-report-wrap .event-banner .tit span .highlight {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  font-family: var(--font3);
+  color: #6839d3;
+}
+
+.expenditure-report-wrap .event-banner .tit span .badge-new {
+  position: absolute;
+  right: -17px;
+  top: 27px;
+}
+
+.expenditure-report-wrap .content-area {
+  padding: 36px 20px;
+}
+
+.expenditure-report-wrap .content-area .list-title {
+  font-family: var(--font2);
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #37354e;
+}
+
+.expenditure-report-wrap .content-area .item-list {
+  padding-top: 22px;
+}
+
+.expenditure-report-wrap .content-area .item-list .item {
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.expenditure-report-wrap .content-area .item-list .item .tit {
+  float: left;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: -.65px;
+}
+
+.expenditure-report-wrap .content-area .item-list .item .val {
+  float: right;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+  vertical-align: middle;
+}
+
+.expenditure-report-wrap .content-area .item-list .item .val::after {
+  content: '원';
+  font-family: var(--font2);
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
+.expenditure-report-wrap .content-area .item-list .item .caution {
+  float: right;
+}
+
+.expenditure-report-wrap .content-area .item-list .item .caution em {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: var(--font2);
+  font-size: 11px;
+  line-height: 17px;
+  color: #ef4b61;
+  margin-left: 4px;
+}
+
+.expenditure-report-wrap .content-area .item-list .item .caution .ic-caution {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 17px;
+  width: 13px;
+  height: 13px;
+  background-size: cover;
+  background-image: url(../../img/common/ico_caution_red@2x.png);
+}
+
+.expenditure-report-wrap .content-area .item-list .item:last-child {
+  margin-bottom: 0;
+}
+
+.expenditure-report-wrap .open-report {
+  padding: 40px 20px 30px;
+}
+
+.expenditure-report-wrap .open-report .main-text {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -.55px;
+  margin-bottom: 12px;
+  font-family: var(--font2);
+}
+
+.expenditure-report-wrap .open-report .main-text .highlight {
+  color: #6839d3;
+}
+
+.expenditure-report-wrap .open-report .desc-text {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-02);
+  letter-spacing: -.33px;
+  margin-bottom: 10px;
+}
+
+.expenditure-report-wrap .open-report .list.caution {
+  margin-bottom: 40px;
+  font-size: 11px;
+  line-height: 17px;
+  color: var(--text-03);
+  padding-left: 16px;
+  font-family: var(--font1);
+}
+
+.expenditure-report-wrap .open-report .list.caution::before {
+  left: 0;
+}
+
+.expenditure-report-wrap .open-report .img {
+  float: right;
+  display: block;
+  width: 280px;
+  height: 200px;
+  text-align: right;
+  margin-bottom: 52px;
+}
+
+.expenditure-report-wrap .open-report .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn_area.fixed_bottom {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px;
+  width: 100%;
+}
+
+.btn_area.fixed_bottom a {
+  display: block;
+}
+
+.expenditure-report-info-wrap {
+  padding: 20px 20px 40px;
+}
+
+.expenditure-report-info-wrap .info-item {
+  margin-bottom: 40px;
+}
+
+.expenditure-report-info-wrap .info-item .title {
+  display: block;
+  font-weight: bold;
+  font-family: var(--font3);
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 25px;
+  letter-spacing: -.55px;
+}
+
+.expenditure-report-info-wrap .info-item .title .highlight {
+  color: #6839d3;
+}
+
+.expenditure-report-info-wrap .info-item .title .font-weight-normal {
+  font-size: 19px;
+}
+
+.expenditure-report-info-wrap .info-item .title.plus {
+  position: relative;
+  padding-left: 26px;
+}
+
+.expenditure-report-info-wrap .info-item .title.plus::before {
+  content: '';
+  background-image: url(../../img/common/ic_tax_tit_point.png);
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-size: cover;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text {
+  width: 100%;
+  padding: 20px;
+  background-color: #f7f8fc;
+  margin-bottom: 40px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .text-center {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: var(--font2);
+  margin-bottom: 7px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .text-center .border-bottom {
+  display: inline-block;
+  border-bottom: 1px solid var(--text-01) !important;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .txt {
+  display: block;
+  font-weight: bold;
+  font-family: var(--font3);
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  letter-spacing: -.4px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .txt .highlight {
+  color: #6839d3;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .img {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 355px;
+  height: auto;
+  margin: 0 auto 15px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .txt-sm {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: -.33px;
+  color: var(--text-02);
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .txt-sm .highlight {
+  font-family: var(--font2);
+  color: var(--text-01);
+}
+
+.expenditure-report-info-wrap .info-item .bg-text .txt-sm .small {
+  font-size: 10px;
+  letter-spacing: -.25px;
+  color: var(--text-01);
+}
+
+.expenditure-report-info-wrap .info-item .bg-text.has-img {
+  padding: 20px 10px;
+  margin-bottom: 25px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text.has-img .txt-sm {
+  padding: 0 10px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text ul {
+  padding: 5px 0;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text ul li {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e3e4e8;
+  margin-bottom: 25px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text ul li .badge {
+  display: inline-block;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50px;
+  border: 1px solid #6839d3;
+  color: #6839d3;
+  font-family: var(--font1);
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: -.3px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text ul li .tit {
+  font-weight: bold;
+  font-family: var(--font3);
+  font-size: 17px;
+  letter-spacing: -.43px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text ul li .cont {
+  font-size: 13px;
+  color: var(--text-02);
+  line-height: 23px;
+  letter-spacing: -.33px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text ul li .cont .small {
+  font-size: 10px;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.expenditure-report-info-wrap .info-item .bg-text.mb-25 {
+  margin-bottom: 25px;
+}
+
+.expenditure-report-info-wrap .info-item .title-sm {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: var(--font3);
+  line-height: 20px;
+  letter-spacing: -0.38px;
+  margin-bottom: 5px;
+}
+
+.expenditure-report-info-wrap .info-item .title-md {
+  font-size: 14px;
+  font-family: var(--font2);
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  margin-bottom: 10px;
+}
+
+.expenditure-report-info-wrap .info-item .table {
+  margin-bottom: 25px;
+}
+
+.expenditure-report-info-wrap .info-item .table th {
+  height: 28px;
+  line-height: 28px;
+  padding: 0;
+  font-size: 11px;
+  font-family: var(--font2);
+}
+
+.expenditure-report-info-wrap .info-item .table td {
+  line-height: 15px;
+  padding: 8px 0;
+  font-size: 12px;
+  font-family: var(--font1);
+  color: var(--text-02);
+}
+
+.expenditure-report-info-wrap .info-item .table tbody tr td:first-child {
+  font-size: 11px;
+  font-family: var(--font2);
+}
+
+.expenditure-report-info-wrap .info-item .table tbody tr td.highlight {
+  color: #6839d3;
+}
+
+.expenditure-report-info-wrap .info-item .desc {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: -.33px;
+  color: var(--text-02);
+  margin-bottom: 15px;
+}
+
+.expenditure-report-info-wrap .info-item .desc.mb {
+  margin-bottom: 25px;
+}
+
+.expenditure-report-info-wrap .info-item .desc .highlight {
+  font-family: var(--font2);
+  color: var(--text-01);
+}
+
+.expenditure-report-info-wrap .info-item .desc .small {
+  font-size: 10px;
+  letter-spacing: -.25px;
+  color: var(--text-01);
+}
+
+.expenditure-report-info-wrap .info-item .img {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 355px;
+  height: auto;
+  margin: 0 auto 15px;
+}
+
+.expenditure-report-info-wrap .info-item .img.mb {
+  margin-bottom: 25px;
+}
+
+.expenditure-report-info-wrap .info-item .img.mb-lg {
+  margin-bottom: 35px;
+}
+
+.expenditure-report-info-wrap .info-item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.expenditure-report-info-wrap .info-item:last-child {
+  margin-bottom: 0;
+}
+
+.box_tax_btn {
+  width: 100%;
+  padding: 0 20px 40px;
+}
+
+.box_tax_btn .btn {
+  height: 46px;
+  line-height: 46px;
+}
+
+.box_tax_btn .btn:hover {
+  color: var(--text-02);
+}
+
+.box_tax_sub.ver2 > .title {
+  margin-bottom: 20px;
+}
+
+.box_tax_sub.ver2 .deduct-input {
+  margin-bottom: 40px;
+}
+
+.box_tax_sub.ver2 .deduct-input .title {
+  font-family: var(--font1);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: var(--text-01);
+  margin-bottom: 15px;
+}
+
+.box_tax_sub.ver2 .deduct-input .title-xl {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: var(--text-01);
+  margin-bottom: 10px;
+}
+
+.box_tax_sub.ver2 .deduct-input .title-xl em {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+  color: #afaeb8;
+  color: var(--text-04);
+  margin-bottom: 2px;
+}
+
+.box_tax_sub.ver2 .sec-deduct {
+  margin-bottom: 22px;
+}
+
+.box_tax_sub.ver2 .sec-deduct .area-title .title {
+  font-family: var(--font3);
+  margin-bottom: 0;
+}
+
+.box_tax_sub.ver2 .sec-deduct .list-deduct-item.list-deduct-item-big {
+  position: relative;
+  padding: 24px 0 54px 2px;
+}
+
+.box_tax_sub.ver2 .sec-deduct .list-deduct-item.list-deduct-item-big > .title {
+  transform: translateY(-4px);
+}
+
+.box_tax_sub.ver2 .sec-deduct .list-deduct-item.list-deduct-item-big > .desc {
+  position: absolute;
+  line-height: 17px;
+  top: 47px;
+  left: 2px;
+}
+
+.box_tax_sub.ver2 .sec-deduct .list-deduct-item:last-child {
+  border-bottom: 0;
+}
+
+.box_tax_sub.ver2 .list-deduct .desc_area {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.box_tax_sub.ver2 .list-deduct .desc_area .title {
+  float: none;
+  display: block;
+  font-family: var(--font1);
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: -0.38px;
+  text-align: left;
+  color: var(--text-01);
+}
+
+.box_tax_sub.ver2 .list-deduct .desc_area .title em {
+  font-size: 11px;
+  letter-spacing: -0.28px;
+  color: var(--text-03);
+}
+
+.box_tax_sub.ver2 .list-deduct .desc_area .desc {
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: -0.3px;
+  color: var(--text-03);
+}
+
+.box_tax_sub.ver2 .list-deduct .list-desc {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.35px;
+  color: var(--text-02);
+  padding-left: 20px;
+  margin-bottom: 23px;
+}
+
+.box_tax_sub.ver2 .list-deduct .title {
+  font-family: var(--font1);
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: -0.38px;
+  text-align: left;
+  color: var(--text-01);
+}
+
+.box_tax_sub.ver2 .btn_area {
+  padding-top: 0;
+}
+
+.box_tax_sub.ver2.detail {
+  padding-top: 36px;
+}
+
+.box_tax_sub.ver2 .box_tax_item {
+  position: relative;
+  padding: 24px 0;
+  border-bottom: 1px solid #f5f6f8;
+}
+
+.box_tax_sub.ver2 .box_tax_item > .title-sm {
+  font-family: var(--font2);
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.38px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.box_tax_sub.ver2 .box_tax_item > .value {
+  position: absolute;
+  font-family: var(--font1);
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: right;
+  color: var(--text-01);
+  top: 22px;
+  right: 0;
+  padding-top: 0;
+  padding-right: 3px;
+}
+
+.box_tax_sub.ver2 .box_tax_item > .value::after {
+  content: '원';
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  line-height: 24px;
+  font-family: var(--font1);
+  font-weight: bold;
+}
+
+.box_tax_sub.ver2 .box_tax_item.mb {
+  margin-bottom: 55px;
+}
+
+.box_tax_sub.ver2 .box_tax_item.border-bottom {
+  border-bottom: 1px solid var(--text-01) !important;
+}
+
+.box_tax_sub.ver2 .chart_graph {
+  margin-bottom: 0 !important;
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar {
+  margin-bottom: 7px;
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar .bg {
+  height: 4px;
+  background-color: #f2f4f7;
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar .amount {
+  height: 4px;
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar .amount .tooltip_box {
+  top: -41px;
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar .amount .tooltip_box .tooltip_text::after {
+  bottom: -5px;
+  transform: rotate(175deg);
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar.dark .amount {
+  background-color: var(--text-01);
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar.dark .amount .tooltip_box .tooltip_text {
+  border: 1px solid #afaeb8;
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar.dark .amount .tooltip_box .tooltip_text .value {
+  color: var(--text-01) !important;
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar.dark .amount .tooltip_box .tooltip_text .value::after {
+  font-size: 12px;
+}
+
+.box_tax_sub.ver2 .chart_graph .sort .bar.dark .amount .tooltip_box .tooltip_text::after {
+  bottom: -5px;
+  background-image: url(../../img/common/tooltip_shot_dark.png);
+  background-size: cover;
+  width: 8px;
+  height: 5px;
+  transform: none;
+}
+
+.box_tax_sub.ver2 .chart_graph .desc-sm {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  text-align: right;
+  color: var(--text-02);
+  margin-top: 10px;
+}
+
+.box_tax_sub.ver2 > .list.caution {
+  padding-bottom: 40px;
+}
+
+.box_tax_sub.ver2 > .list.caution p {
+  color: var(--text-03);
+  font-family: var(--font1);
+}
+
+.box_tax_sub.ver2 .list-connect {
+  padding: 24px 0 37px;
+}
+
+.box_deduction {
+  margin-bottom: 20px;
+}
+
+.box_deduction.ver2 .tip-area {
+  width: 100%;
+  padding: 10px 10px 12px;
+  background-color: #f7f8fc;
+}
+
+.box_deduction.ver2 .tip-area .badge {
+  display: inline-block;
+  height: 16px;
+  border-radius: 2px;
+  background-color: var(--text-point-color);
+  font-family: var(--font2);
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  padding: 0 6px;
+  margin-bottom: 3px;
+}
+
+.box_deduction.ver2 .tip-area p {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.33px;
+  color: var(--text-01);
+}
+
+.box_deduction.ver2 .tip-area p em {
+  color: var(--text-point-color);
+}
+
+.box_deduction.ver2 .tip-area p.font-lg {
+  font-family: var(--font3);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: var(--text-01);
+}
+
+.box_deduction.ver2 .tip-area p.font-md {
+  line-height: 22px;
+}
+
+.box_deduction.ver2 .tip-area.mb {
+  margin-bottom: 40px;
+}
+
+.box_deduction.ver2 > .chart {
+  margin-top: 20px;
+  margin-bottom: 52px;
+}
+
+.box_deduction.ver2 > .chart .chart-title {
+  font-family: var(--font2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  color: var(--text-point-color);
+  margin-bottom: 20px;
+}
+
+.box_deduction.ver2 > .chart .chart-title i {
+  margin-right: 4px;
+  transform: translateY(-2px);
+  vertical-align: middle;
+}
+
+.box_deduction.ver2 > .chart .sort {
+  margin-bottom: 32px;
+}
+
+.box_deduction.ver2 > .chart .sort .item {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.box_deduction.ver2 > .chart .sort .value {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.box_deduction.ver2 > .chart .sort .value::after {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.box_deduction.ver2 > .chart .sort .bar .bg {
+  height: 4px;
+}
+
+.box_deduction.ver2 > .chart .sort .bar .amount {
+  height: 4px;
+}
+
+.box_deduction.ver2 > .chart .sort:last-child {
+  margin-bottom: 0;
+}
+
+.box_deduction.ver2 > .chart.dark .sort .item {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.box_deduction.ver2 > .chart.dark .sort .bar .bg {
+  background-color: #f5f6f8;
+}
+
+.box_deduction.ver2 > .chart.dark .sort .bar .amount {
+  background-color: var(--text-03);
+}
+
+.box_tax_list {
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+.box_tax_title {
+  padding: 10px 20px 20px;
+}
+
+.box_tax_title p {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.4px;
+  text-align: left;
+}
+
+.box_tax_title p .font-lg {
+  color: var(--text-point-color);
+  font-family: var(--font1);
+  font-weight: bold;
+  letter-spacing: -.45px;
+  font-size: 18px;
+}
+
+.box_tax_title p .font-md {
+  font-family: var(--font2);
+  font-weight: 500;
+  color: var(--text-point-color);
+  letter-spacing: -.45px;
+  font-size: 18px;
+}
+
+.tax-loading {
+  padding-top: 131px;
+  padding-bottom: 100px;
+}
+
+.tax-loading .img {
+  width: 200px;
+  height: 90px;
+  margin: 0 auto 24px;
+}
+
+.tax-loading .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.tax-loading .txt {
+  font-family: var(--font2);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: -0.38px;
+  text-align: center;
+  color: var(--text-01);
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.pl-20 {
+  padding-left: 20px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+/*  팝업  */
+.modal-tax .modal-dialog .modal-content {
+  border-radius: 0;
+}
+
+.modal-tax .modal-dialog .modal-content .btn-close {
+  top: 15px;
+  right: 15px;
+}
+
+.modal-tax .modal-dialog .modal-body {
+  padding: 16px 0;
+}
+
+.modal-tax .modal-dialog .modal-body .inner {
+  padding: 0;
+}
+
+.modal-tax .modal-dialog .modal-body .inner p {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.35px;
+  text-align: center;
+}
+
+.modal-tax .modal-dialog .modal-body .inner p span {
+  font-size: 16px;
+  font-family: var(--font2);
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: var(--text-point-color);
+}
+
+.popupNormal.home-tax {
+  background-color: #fff;
+  width: 270px;
+  height: auto;
+}
+
+.popupNormal.home-tax .popup-body {
+  padding: 30px 18px 72px;
+}
+
+.popupNormal.home-tax .popup-body .desc {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.38px;
+  text-align: center;
+  color: var(--text-01);
+  margin-bottom: 10px;
+}
+
+.popupNormal.home-tax .popup-body .desc .highlight {
+  font-weight: bold;
+  font-family: var(--font3);
+}
+
+.popupNormal.home-tax .popup-body .desc-sm {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.35px;
+  text-align: center;
+  color: var(--text-01);
+  margin-bottom: 10px;
+}
+
+.popupNormal.home-tax .popup-body .time {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.6px;
+  text-align: center;
+  color: var(--text-03);
+  margin-bottom: 20px;
+}
+
+.popupNormal.home-tax .popup-body .img {
+  display: block;
+  margin: 0 auto;
+  width: 86px;
+  height: 72px;
+}
+
+.popupNormal.home-tax .popup-body .img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 연말정산 핵심 가이드 */
+.box_tax_guide {
+  padding: 20px;
+}
+
+.box_tax_guide .text {
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: -0.33px;
+  color: var(--text-02);
+}
+
+.box_tax_guide .text .bold {
+  font-family: var(--font2);
+  font-weight: 500;
+  letter-spacing: -.33px;
+  color: var(--text-01);
+}
+
+.box_tax_guide .text .small {
+  font-size: 11px;
+  font-family: var(--font1);
+  letter-spacing: -.25px;
+  color: var(--text-02);
+}
+
+.box_tax_guide .text .small.bold {
+  color: var(--text-01);
+}
+
+.box_tax_guide .text-md {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: var(--font3);
+  line-height: 22px;
+  letter-spacing: -0.38px;
+  color: var(--text-01);
+  margin-bottom: 5px;
+}
+
+.box_tax_guide .text-lg {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: var(--font3);
+  line-height: 32px;
+  letter-spacing: -0.45px;
+  color: var(--text-01);
+  margin-bottom: 25px;
+}
+
+.box_tax_guide .text-lg .primary {
+  color: var(--blurple);
+  font-family: var(--font3);
+  line-height: 32px;
+}
+
+.box_tax_guide img {
+  width: 100%;
+  height: 100%;
+}
+
+.box_tax_guide .img {
+  width: 335px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 355px) {
+  .expenditure-report-wrap .open-report {
+    padding: 20px 20px 30px;
+  }
+  .expenditure-report-wrap .open-report .list.caution {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .box_tax_guide .img {
+    width: 280px;
+  }
+}
+
+/*# sourceMappingURL=tax.css.map */

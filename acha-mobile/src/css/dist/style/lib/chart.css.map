@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "chart.css",
+	"sources": [
+		"../../../../scss/style/lib/chart.scss"
+	],
+	"sourcesContent": [
+		"/*\r\n * DOM element rendering detection\r\n * https://davidwalsh.name/detect-node-insertion\r\n */\r\n@keyframes chartjs-render-animation {\r\n  from {\r\n    opacity: 0.99;\r\n  }\r\n  to {\r\n    opacity: 1;\r\n  }\r\n}\r\n\r\n.chartjs-render-monitor {\r\n  animation: chartjs-render-animation 0.001s;\r\n}\r\n\r\n/*\r\n * DOM element resizing detection\r\n * https://github.com/marcj/css-element-queries\r\n */\r\n.chartjs-size-monitor,\r\n.chartjs-size-monitor-expand,\r\n.chartjs-size-monitor-shrink {\r\n  position: absolute;\r\n  direction: ltr;\r\n  left: 0;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  overflow: hidden;\r\n  pointer-events: none;\r\n  visibility: hidden;\r\n  z-index: -1;\r\n}\r\n\r\n.chartjs-size-monitor-expand > div {\r\n  position: absolute;\r\n  width: 1000000px;\r\n  height: 1000000px;\r\n  left: 0;\r\n  top: 0;\r\n}\r\n\r\n.chartjs-size-monitor-shrink > div {\r\n  position: absolute;\r\n  width: 200%;\r\n  height: 200%;\r\n  left: 0;\r\n  top: 0;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA;;;GAGG;AACH,UAAU,CAAV,wBAAU;EACR,IAAI;IACF,OAAO,EAAE,IAAI;;EAEf,EAAE;IACA,OAAO,EAAE,CAAC;;;;AAId,AAAA,uBAAuB,CAAC;EACtB,SAAS,EAAE,+BAA+B;CAC3C;;AAED;;;GAGG;AACH,AAAA,qBAAqB;AACrB,4BAA4B;AAC5B,4BAA4B,CAAC;EAC3B,QAAQ,EAAE,QAAQ;EAClB,SAAS,EAAE,GAAG;EACd,IAAI,EAAE,CAAC;EACP,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,CAAC;EACR,MAAM,EAAE,CAAC;EACT,QAAQ,EAAE,MAAM;EAChB,cAAc,EAAE,IAAI;EACpB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,EAAE;CACZ;;AAED,AAAA,4BAA4B,GAAG,GAAG,CAAC;EACjC,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,SAAS;EAChB,MAAM,EAAE,SAAS;EACjB,IAAI,EAAE,CAAC;EACP,GAAG,EAAE,CAAC;CACP;;AAED,AAAA,4BAA4B,GAAG,GAAG,CAAC;EACjC,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,IAAI,EAAE,CAAC;EACP,GAAG,EAAE,CAAC;CACP"
+}

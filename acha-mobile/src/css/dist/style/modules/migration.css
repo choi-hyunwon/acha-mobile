@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*
+    작성자 : 이주연
+    제목 : 마이그레이션
+    날짜 : 2021.11.24
+*/
+.migration-intro {
+  padding: 50px 20px 30px;
+}
+
+.migration-intro .heading {
+  font-family: var(--font2);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.55px;
+  text-align: left;
+  color: var(--text-01);
+  margin-bottom: 40px;
+  padding: 0 8px;
+}
+
+.migration-intro .img {
+  width: 166px;
+  height: auto;
+  margin: 0 auto 40px;
+}
+
+.migration-intro .img img {
+  width: 100%;
+  height: auto;
+}
+
+.migration-intro .sub-heading {
+  font-family: var(--font2);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.45px;
+  text-align: left;
+  color: var(--blurple);
+  margin-bottom: 14px;
+}
+
+.migration-intro .tip-box {
+  padding: 20px 16px;
+  margin-bottom: 80px;
+  border-radius: 6px;
+  border: solid 1px #f5f6f8;
+  background-color: #f7f8fc;
+}
+
+.migration-intro .tip-box .tip-box-heading {
+  font-family: var(--font3);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: var(--text-01);
+  margin-bottom: 15px;
+}
+
+.migration-intro .tip-box li {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: var(--text-01);
+  margin-bottom: 14px;
+  padding-left: 20px;
+}
+
+.migration-intro .tip-box li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 17px;
+  height: 17px;
+  background-image: url(../../img/common/ico-select-key@2x.png);
+  background-size: cover;
+}
+
+.migration-intro .tip-box li:last-child {
+  margin-bottom: 0;
+}
+
+.migration-intro .fixed-bottom {
+  padding: 0 20px;
+  bottom: 0;
+  height: 80px;
+  background: #fff;
+}
+
+.migration-end {
+  padding: 230px 20px 30px;
+}
+
+.migration-end .heading {
+  font-family: var(--font2);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: -0.65px;
+  text-align: left;
+  color: var(--text-01);
+  padding: 0 8px;
+  margin-bottom: 24px;
+}
+
+.migration-end .heading-sub {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.45px;
+  text-align: left;
+  color: var(--text-01);
+  padding: 0 8px;
+}
+
+.migration-end .fixed-bottom {
+  padding: 0 20px;
+  bottom: 0;
+  height: 80px;
+  background: #fff;
+}
+
+/*# sourceMappingURL=migration.css.map */

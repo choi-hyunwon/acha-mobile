@@ -39,12 +39,12 @@ data.edit1 = {
             'category': '스토리',
             'page': '카드지출_05. 상세화면_1.1 항목_가맹점명 Null'
         },
-       /* {
+       {
             'stateClass': 'complete',
             'url': '05_my_card_13',
             'category': '카드지출',
             'page': '카드지출_02. 내카드_1.2 편집'
-        },*/
+        }
     ]
 }
 

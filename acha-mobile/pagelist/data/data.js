@@ -1,153 +1,20 @@
 var data = {}
 
 data.edit1 = {
-    'title': 'v.1.32.0 요청 사항',
+    'title': 'v.1.33.0 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '09_moreview_03',
-            'category': 'alert',
-            'page': '알림이 있는 경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_13',
-            'category': '더보기',
-            'page': '더보기_04. 자주 묻는 질문 (01_자주묻는 질문 목록)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_14',
-            'category': '더보기',
-            'page': '더보기_04. 자주 묻는 질문 (03_검색 항목이 없는 경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_24',
-            'category': 'mydata',
-            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (02_통합인증 완료)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_25',
-            'category': 'mydata',
-            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (02_통합인증 완료_오류)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_47-1',
+            'url': '11_exependiture_11-1',
             'category': '홈계좌',
-            'page': '6-2. 대출_일반상환(원금균등분할상환, 원리금균등분할상환, 만기일시상환)_Type B : 홈-고정지출, My-고정지출(03 내역없음)'
+            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (03_고정지출없을경우)'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_51-4-1',
-            'category': '홈계좌',
-            'page': '8-1. 보험_일반(2개월납, 3개월납, 6개월납, 일시납)_Type A : My-일반(03 내역없음)'
+            'url': '05_my_card_13',
+            'category': '카드지출',
+            'page': '(카드지출_02. 내카드_1.2 편집)'
         },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_54',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(02 카드 대출,리볼빙)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_54-1',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(03 내역없음)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18_1',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(2)(05 이번달,다음달 청구서 내역없음)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18_2',
-            'category': '홈계좌',
-            'page': ' 9-1. 카드_고정지출(2)(06 지난달,과거 명세서 내역없음)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-3-1',
-            'category': '홈계좌',
-            'page': '10-1. 금융투자_연금 외 상품(종합매매, 위탁, 파생상품, 단기금융상품, 현물, 개인형IRP, 기타)_Type A : 계좌, My-일반(03 내역없음)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-5-1',
-            'category': '홈계좌',
-            'page': '11-1. 개인형 IRP_일반_Type A : 계좌, My-일반(03 내역없음)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-7-1',
-            'category': '홈계좌',
-            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(04 내역없음-소액결제)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-8-1',
-            'category': '홈계좌',
-            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(04 내역없음-통신지출)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_30',
-            'category': '홈계좌',
-            'page': '1.1 수신_요구불식_일반_Type A : 계좌, My-일반(03 내역없음)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_29-2-1',
-            'category': '홈계좌',
-            'page': '3.1 수신_정액 적립식 계좌_일반_Type A : 계좌, My-일반(03 내역없음)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_23',
-            'category': 'mydata',
-            'page': '마이데이터가입_약관동의1_개인정보 수입 및 이용동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_02',
-            'category': 'mycard',
-            'page': '연결한 데이터가 있는 경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_07',
-            'category': '홈계좌',
-            'page': '현금흐름 조회하기(내돈관리_03. 내돈관리_1.2 현금흐름_3. 현금흐름 조회하기(기존 설정 값이 없는 경우))'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_10',
-            'category': '홈계좌',
-            'page': '현금흐름 조회(내돈관리_03. 내돈관리_1.2 현금흐름_5-1. 내수입_등록된 값이 있을 경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_13',
-            'category': '더보기',
-            'page': '더보기_04. 자주 묻는 질문 (01_자주묻는 질문 목록)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_14',
-            'category': '더보기',
-            'page': '더보기_04. 자주 묻는 질문 (03_검색 항목이 없는 경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_06',
-            'category': '홈계좌',
-            'page': '현금흐름 소개(내돈관리_03. 내돈관리_1.2 현금흐름_2. 등록된 지출&계좌가 없는 경우)'
-        },
-
     ]
 }
 
@@ -461,6 +328,12 @@ data.expenditure1 = {
             'url': '11_exependiture_11',
             'category': '홈계좌',
             'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (01_현금 흐름 잔고 부족))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_11-1',
+            'category': '홈계좌',
+            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (03_고정지출없을경우)'
         },
         {
             'stateClass': 'complete',

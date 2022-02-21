@@ -5408,6 +5408,16 @@
         }
       }
     }
+    &.basic{
+      margin-bottom: 0;
+      .inner {
+        padding-bottom: 18px;
+        .value {
+          color: var(--text-01);
+        }
+      }
+
+    }
   }
 
   .ex03-list {
@@ -5488,6 +5498,34 @@
         margin-bottom: 0;
       }
     }
+
+    &.no-data {
+      margin-bottom: 0;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+
+      .img {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto 12px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .txt {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: -0.3px;
+        text-align: center;
+        color: var(--text-02);
+      }
+    }
+
+
   }
 
   .btn-detail-wrap {

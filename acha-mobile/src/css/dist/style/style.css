@@ -36522,6 +36522,18 @@ input[type=number] {
   color: #4393ff;
 }
 
+.ex-current .ex02-list.basic {
+  margin-bottom: 0;
+}
+
+.ex-current .ex02-list.basic .inner {
+  padding-bottom: 18px;
+}
+
+.ex-current .ex02-list.basic .inner .value {
+  color: var(--text-01);
+}
+
 .ex-current .ex03-list {
   margin-bottom: 46px;
 }
@@ -36600,6 +36612,32 @@ input[type=number] {
 
 .ex-current .ex03-list .ex03-item:last-child {
   margin-bottom: 0;
+}
+
+.ex-current .ex03-list.no-data {
+  margin-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.ex-current .ex03-list.no-data .img {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 12px;
+}
+
+.ex-current .ex03-list.no-data .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.ex-current .ex03-list.no-data .txt {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: var(--text-02);
 }
 
 .ex-current .btn-detail-wrap {

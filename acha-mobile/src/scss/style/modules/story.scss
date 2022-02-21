@@ -730,6 +730,16 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            &.disagree{
+              font-family: var(--font1);
+              color: #d3d3d5;
+              font-size: 12px;
+              line-height: 22px;
+              border: 1px solid #e3e4e8;
+              padding: 0 8px;
+              border-radius: 12px;
+              margin: 12px 0;
+            }
           }
 
           .val {
@@ -1277,6 +1287,18 @@
       color: var(--text-01);
       padding-left: 4px;
       margin-bottom: 8px;
+      &.disagree{
+        font-family: var(--font1);
+        color: #d3d3d5;
+        font-size: 12px;
+        line-height: 22px;
+        border: 1px solid #e3e4e8;
+        padding: 0 8px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-weight: normal;
+      }
     }
 
     .value {

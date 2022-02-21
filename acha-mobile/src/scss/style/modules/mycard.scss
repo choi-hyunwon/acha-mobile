@@ -1312,6 +1312,10 @@
                 font-family: var(--font2);
                 color: var(--text-01);
                 font-weight: 500;
+                &.disagree{
+                  font-family: var(--font1);
+                  color: var(--text-02);
+                }
               }
 
               &.won {

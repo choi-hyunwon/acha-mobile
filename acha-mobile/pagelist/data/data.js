@@ -1,7 +1,7 @@
 var data = {}
 
 data.edit1 = {
-    'title': 'v.1.33.0 요청 사항',
+    'title': 'v.1.32.1 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
@@ -11,10 +11,40 @@ data.edit1 = {
         },
         {
             'stateClass': 'complete',
+            'url': '09_moreview_08',
+            'category': '더보기',
+            'page': '더보기_03.이벤트(03_3.진행중 이벤트_상세_버튼1개)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02',
+            'category': '카드지출',
+            'page': '카드지출_04. 타임라인_1.1 거래내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03',
+            'category': '카드지출',
+            'page': '카드지출_03. 카드 상세정보_1.1 구성'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03-2',
+            'category': '카드지출',
+            'page': '카드지출_03. 카드 상세정보_1.1 구성(거래내역 없을 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_04-2',
+            'category': '스토리',
+            'page': '카드지출_05. 상세화면_1.1 항목_가맹점명 Null'
+        },
+       /* {
+            'stateClass': 'complete',
             'url': '05_my_card_13',
             'category': '카드지출',
-            'page': '(카드지출_02. 내카드_1.2 편집)'
-        },
+            'page': '카드지출_02. 내카드_1.2 편집'
+        },*/
     ]
 }
 
@@ -198,7 +228,13 @@ data.cardExpenditure = {
             'stateClass': 'complete',
             'url': '05_my_card_03',
             'category': '카드지출',
-            'page': '(카드지출_03. 카드 상세정보_1.1 구성)'
+            'page': '카드지출_03. 카드 상세정보_1.1 구성'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03-2',
+            'category': '카드지출',
+            'page': '카드지출_03. 카드 상세정보_1.1 구성(거래내역 없을 경우)'
         },
         {
             'stateClass': 'complete',
@@ -216,35 +252,31 @@ data.cardExpenditure = {
             'stateClass': 'complete',
             'url': '05_my_card_13',
             'category': '카드지출',
-            'page': '(카드지출_02. 내카드_1.2 편집)'
+            'page': '카드지출_02. 내카드_1.2 편집'
         },
-
-        /*카드지출_03. 카드 상세정보_1.1 구성(거래내역 없을 경우)*/
-
-
         {
             'stateClass': 'complete',
             'url': '10_story_02',
             'category': '카드지출',
-            'page': '(카드지출_04. 타임라인_1.1 거래내역)'
+            'page': '카드지출_04. 타임라인_1.1 거래내역'
         },
         {
             'stateClass': 'complete',
             'url': '10_story_02-1',
             'category': '카드지출',
-            'page': '(카드지출_04. 타임라인_1.1 거래내역 (오류 발생시 데이터 없음))'
+            'page': '카드지출_04. 타임라인_1.1 거래내역 (오류 발생시 데이터 없음)'
         },
         {
             'stateClass': 'complete',
             'url': '10_story_02-2',
             'category': '카드지출',
-            'page': '(카드지출_04. 타임라인_1.1 거래내역_없을경우)'
+            'page': '카드지출_04. 타임라인_1.1 거래내역_없을경우'
         },
         {
             'stateClass': 'complete',
             'url': '10_story_02-3',
             'category': '카드지출',
-            'page': '(카드지출_04. 타임라인_1.1 거래내역 (카드지출연결데이터가 0일 경우))'
+            'page': '카드지출_04. 타임라인_1.1 거래내역 (카드지출연결데이터가 0일 경우)'
         },
         {
             'stateClass': 'complete',
@@ -257,6 +289,12 @@ data.cardExpenditure = {
             'url': '10_story_04-1',
             'category': '스토리',
             'page': '카드지출_05. 상세화면_1.1 항목'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_04-2',
+            'category': '스토리',
+            'page': '카드지출_05. 상세화면_1.1 항목_가맹점명 Null'
         },
 
        /* 카드지출_05. 상세화면_1.3 스토리 편집(스토리 편집)*/

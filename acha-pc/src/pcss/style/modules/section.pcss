@@ -491,7 +491,7 @@
                     &::after{
                         content:'';
                         display:inline-block;
-                        width:640px;
+                        width:100%;
                         height: 100%;
                         background: url('../../img/main/P-img_expense_phone_basic.png') no-repeat center center / 100% auto;
                         position: absolute;
@@ -500,7 +500,7 @@
                     }
                     & .panel {
                         position:relative;
-                        width: 1920px;
+                        width: 300%;
                         height: 875px;
                         display: inline-block;
                         &::after{
@@ -508,16 +508,17 @@
                         }
                         & .img {
                             position: relative;
-                            width:33.333%;
+                            width:33.33333%;
+                            height: 875px;
                             display: inline-block;
                             &:nth-of-type(1){
-                                background: url("../../img/main/P-img_expense_phone_1_cal.png") no-repeat center top 71px / 330px 714px;
+                                background: url("../../img/main/P-img_expense_phone_1_cal.png") no-repeat center center/ 50% auto;
                             }
                             &:nth-of-type(2){
-                                background: url("../../img/main/P-img_expense_phone_2_cate.png") no-repeat center top 71px / 330px 714px;
+                                background: url("../../img/main/P-img_expense_phone_2_cate.png") no-repeat center center / 50% auto;
                             }
                             &:nth-of-type(3){
-                                background: url("../../img/main/P-img_expense_phone_3_mon.png") no-repeat center top 71px / 330px 714px;
+                                background: url("../../img/main/P-img_expense_phone_3_mon.png") no-repeat center center/ 50% auto;
                             }
                         }
                     }

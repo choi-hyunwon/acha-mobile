@@ -1066,7 +1066,7 @@
     .update {
       margin: 0 2px 0 0;
       font-size: 13px;
-      line-height: 19px;
+      line-height: 18px;
       letter-spacing: -0.65px;
       text-align: right;
       color: var(--text-02);
@@ -1075,7 +1075,7 @@
         display: inline-block;
         width: 16px;
         height: 16px;
-        background-image: url(../../img/common/ico-refresh-mini@2x.png);
+        background: url(../../img/common/ico_refresh_mini_t@2x.png) no-repeat center center;
         background-size: cover;
         vertical-align: middle;
         margin-left: 2px;
@@ -1339,7 +1339,7 @@
         font-family: var(--font2);
         font-size: 13px;
         font-weight: 500;
-        line-height: 19px;
+        line-height: 18px;
         letter-spacing: -0.6px;
         color: var(--text-02);
         border-radius: 50%;
@@ -1350,7 +1350,7 @@
         display: inline-block;
         width: 16px;
         height: 16px;
-        background-image: url(../../img/common/ico-refresh-mini@2x.png);
+        background: url(../../img/common/ico_refresh_mini_t@2x.png) no-repeat center center;
         background-size: cover;
         vertical-align: middle;
         margin-left: 2px;

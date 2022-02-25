@@ -94,6 +94,7 @@ function jsLib() {
         'src/js/lib/scrollreveal.min.js',
         'src/js/lib/jquery.twbsPagination.js',
         'src/js/lib/swiper.js',
+        'src/js/lib/aos.js',
         ];
     return gulp.src(sourceLib)
         .pipe(concat('front.lib.js'))

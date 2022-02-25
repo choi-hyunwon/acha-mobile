@@ -9,6 +9,7 @@ front.common = (function () {
         this.makeCommaText();
         this.hideNumber();
         this.clickIconEvent();
+        this.ani();
     };
 
     var a = function () {
@@ -98,6 +99,9 @@ front.common = (function () {
         })
     };
 
+    var ani = function () {
+        AOS.init();
+    }
     return {
         a : a,
         clickIconEvent : clickIconEvent,
@@ -105,7 +109,8 @@ front.common = (function () {
         makeCommaInput : makeCommaInput,
         makeCommaText : makeCommaText,
         hideNumber : hideNumber,
-        init : init
+        init : init,
+        ani : ani
     }
 })();
 $(function () {

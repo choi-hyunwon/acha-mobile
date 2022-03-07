@@ -51,11 +51,17 @@ data.edit1 = {
             'category': '더보기',
             'page': '더보기_03.이벤트(03_3.진행중 이벤트_상세_버튼1개)'
         },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': '10_story_06',
+        //     'category': '스토리',
+        //     'page': '스토리 - 항목'
+        // },
         {
             'stateClass': 'complete',
-            'url': '10_story_06',
+            'url': '10_story_02-4',
             'category': '스토리',
-            'page': '스토리 - 항목'
+            'page': '스토리 - 슬라이더 여러개 사용 시'
         },
     ]
 }

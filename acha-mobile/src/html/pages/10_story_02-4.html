@@ -35,7 +35,6 @@
                                     <span class="tit disagree">가맹점명 미동의</span>
                                     <span class="val">12,600</span>
                                 </a>
-                                <!--                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
                             </div>
                         </div>
                         <div class="item">
@@ -130,7 +129,6 @@
                                     <span class="tit">스타벅스구로점</span>
                                     <span class="val">12,600</span>
                                 </a>
-                                <!--                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
                             </div>
                         </div>
                     </div>
@@ -155,7 +153,6 @@
                                 <span class="img"><img src="../../img/common/ico-emoji-smile@2x.png" alt=""></span>
                                 <span class="tit">스타벅스구로점</span>
                                 <span class="val">12,600</span>
-                                <!--                                <a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
                             </div>
                             <div class="story-slider">
                                 <div class="swiper-container swiper-story _slider">
@@ -184,10 +181,19 @@
                                 <div class="time">19:20</div>
                                 <div class="btn-more"><span class="sr-only">더보기</span></div>
                             </div>
-                            <div class="pay-info">
+                            <div class="pay-info rounded-top">
+                                <span class="img"><img src="../../img/common/ico-emoji-smile@2x.png" alt=""></span>
                                 <span class="tit">스타벅스구로점</span>
                                 <span class="val">12,600</span>
-                                <!--<a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
+                            </div>
+                            <div class="story-slider">
+                                <div class="swiper-container swiper-story _slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-story-pagination"></div>
                             </div>
                             <div class="story-slider-desc">
                                 수영님이랑 점심시간에 메이비에서 브런치를 먹었는데, 완전 여유롭고 맛있었다~ 냠냠 🍰
@@ -204,15 +210,59 @@
                         <div class="item">
                             <div class="bank-info">
                                 <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
-                                <div class="name">우리직장인우대통장</div>
+                                <div class="name">카카오뱅크신한카드</div>
                                 <div class="time">19:20</div>
                                 <div class="btn-more"><span class="sr-only">더보기</span></div>
                             </div>
-                            <div class="pay-info">
+                            <div class="pay-info rounded-top">
                                 <span class="img"><img src="../../img/common/ico-emoji-smile@2x.png" alt=""></span>
-                                <span class="tit">적금</span>
+                                <span class="tit">스타벅스구로점</span>
                                 <span class="val">12,600</span>
-                                <!--<a href="#" class="btn-story"><span class="sr-only">story</span></a>-->
+                            </div>
+                            <div class="story-slider">
+                                <div class="swiper-container swiper-story _slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt=""></div>
+                                        <div class="swiper-slide"><img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-story-pagination"></div>
+                            </div>
+                            <div class="story-slider-desc">
+                                수영님이랑 점심시간에 메이비에서 브런치를 먹었는데, 완전 여유롭고 맛있었다~ 냠냠 🍰
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-pay-item">
+                    <div class="day-info">
+                        <div class="date">10</div>
+                        <div class="day">월</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item">
+                            <div class="bank-info">
+                                <div class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></div>
+                                <div class="name">카카오뱅크신한카드</div>
+                                <div class="time">19:20</div>
+                                <div class="btn-more"><span class="sr-only">더보기</span></div>
+                            </div>
+                            <div class="pay-info rounded-top">
+                                <span class="img"><img src="../../img/common/ico-emoji-smile@2x.png" alt=""></span>
+                                <span class="tit">스타벅스구로점</span>
+                                <span class="val">12,600</span>
+                            </div>
+                            <div class="story-slider">
+                                <div class="swiper-container swiper-story _slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-story-pagination"></div>
+                            </div>
+                            <div class="story-slider-desc">
+                                수영님이랑 점심시간에 메이비에서 브런치를 먹었는데, 완전 여유롭고 맛있었다~ 냠냠 🍰
                             </div>
                         </div>
                     </div>
@@ -244,11 +294,17 @@
         $('._timelineMenu').animate({scrollLeft: leftPos + 210}, 300);
     }
 
-    // swiper
-    var swiper = new Swiper("._slider", {
-        pagination: {
-            el: ".swiper-pagination",
-        }
+    // slider
+    $("._slider").each(function(index){
+        var $this = $(this);
+        $this.addClass('instance-' + index);
+        new Swiper('.instance-' + index, {
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: $('.instance-' + index).siblings('.swiper-pagination')
+            }
+        });
     });
 </script>
 </body>

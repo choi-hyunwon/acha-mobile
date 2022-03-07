@@ -1901,6 +1901,19 @@
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
+
+          /*가맹점명 미동의*/
+          &.disagree{
+            display: inline-block;
+            width: unset;
+            font-family: var(--font1);
+            color: #d3d3d5;
+            font-size: 11px;
+            line-height: 22px;
+            border: 1px solid #e3e4e8;
+            padding: 0 8px;
+            border-radius: 12px;
+          }
         }
 
         .value {
@@ -5687,12 +5700,19 @@
     }
 
     > .info-list {
+      margin-bottom: 40px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
       .item {
         padding: 0 0 22px;
         overflow: hidden;
 
         &:first-child {
           padding-top: 22px;
+        }
+        &:last-of-type{
+          padding-bottom: 0;
         }
 
         .tit {
@@ -5754,6 +5774,11 @@
             padding-bottom: 0;
           }
         }
+      }
+
+      +.info-list{
+        padding-top: 18px;
+        border-top: 1px solid #f5f6f8;
       }
     }
 
@@ -6029,6 +6054,11 @@
             content: '원';
             font-family: var(--font1);
           }
+        }
+
+        &.disagree{
+          font-family: var(--font1);
+          color: #d3d3d5;
         }
       }
 

@@ -1,13 +1,49 @@
 var data = {}
 
 data.edit1 = {
-    'title': 'v.1.32.1 요청 사항',
+    'title': 'v.1.32.3 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_11-1',
+            'url': '02_my_03',
+            'category': 'My',
+            'page': '더보기my_03. 연결목록_3.1 항목(01_연결된 사이트가 있는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_10',
+            'category': 'My',
+            'page': '더보기my_03. 연결목록_3.3 개인신용정보 삭제(01_삭제)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_11',
+            'category': 'My',
+            'page': '더보기my_03. 연결목록_3.3 개인신용정보 삭제(02_삭제 선택)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03-2',
+            'category': '카드지출',
+            'page': '카드지출_03. 카드 상세정보_1.1 구성(가맹점명 미동의)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-01',
             'category': '홈계좌',
-            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (03_고정지출없을경우)'
+            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)_가맹점명미동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-02',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)_청구결제정보미동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-3',
+            'category': '홈계좌',
+            'page': '10-1. 금융투자_연금 외 상품(종합매매, 위탁, 파생상품, 단기금융상품, 현물, 개인형IRP, 기타)_Type A : 계좌, My-일반(02 계좌상세)'
         },
         {
             'stateClass': 'complete',
@@ -17,34 +53,10 @@ data.edit1 = {
         },
         {
             'stateClass': 'complete',
-            'url': '10_story_02',
-            'category': '카드지출',
-            'page': '카드지출_04. 타임라인_1.1 거래내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_03',
-            'category': '카드지출',
-            'page': '카드지출_03. 카드 상세정보_1.1 구성'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_03-2',
-            'category': '카드지출',
-            'page': '카드지출_03. 카드 상세정보_1.1 구성(거래내역 없을 경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '10_story_04-2',
+            'url': '10_story_06',
             'category': '스토리',
-            'page': '카드지출_05. 상세화면_1.1 항목_가맹점명 Null'
+            'page': '스토리 - 항목'
         },
-       {
-            'stateClass': 'complete',
-            'url': '05_my_card_13',
-            'category': '카드지출',
-            'page': '카드지출_02. 내카드_1.2 편집'
-        }
     ]
 }
 
@@ -232,9 +244,15 @@ data.cardExpenditure = {
         },
         {
             'stateClass': 'complete',
-            'url': '05_my_card_03-2',
+            'url': '05_my_card_03-1',
             'category': '카드지출',
             'page': '카드지출_03. 카드 상세정보_1.1 구성(거래내역 없을 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_03-2',
+            'category': '카드지출',
+            'page': '카드지출_03. 카드 상세정보_1.1 구성(가맹점명 미동의)'
         },
         {
             'stateClass': 'complete',
@@ -1145,6 +1163,18 @@ data.expenditure2 = {
             'url': '11_exependiture_18',
             'category': '홈계좌',
             'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-01',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)_가맹점명미동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-02',
+            'category': '홈계좌',
+            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)_청구결제정보미동의'
         },
         {
             'stateClass': 'complete',

@@ -1312,10 +1312,11 @@
                 font-family: var(--font2);
                 color: var(--text-01);
                 font-weight: 500;
-                &.disagree{
-                  font-family: var(--font1);
-                  color: var(--text-02);
-                }
+              }
+
+              &.disagree{
+                font-family: var(--font1);
+                color: #d3d3d5;
               }
 
               &.won {
@@ -2245,6 +2246,19 @@
             position: absolute;
             top: 21px;
             left: 4px;
+          }
+
+          /*가맹점명 미동의*/
+          &.disagree{
+            display: inline-block;
+            width: unset;
+            font-family: var(--font1);
+            color: #d3d3d5;
+            font-size: 11px;
+            line-height: 22px;
+            border: 1px solid #e3e4e8;
+            padding: 0 8px;
+            border-radius: 12px;
           }
         }
 

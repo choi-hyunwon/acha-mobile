@@ -1459,7 +1459,41 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        .badge{
+          margin-left: 6px;
+          padding: 0 6px;
+          border: 1px solid #ece3ff;
+          color: var(--blurple);
+          background-color: #faf7ff;
+          display: inline-block;
+          height: 19px;
+          line-height: 17px;
+          letter-spacing: -0.25px;
+          font-weight: 600;
+          border-radius: 50px;
+          font-size: 10px;
+          text-align: center;
+          vertical-align: bottom;
+          &.disabled{
+            color: var( --text-03);
+            background-color: #ffffff;
+            border: 1px solid #f5f6f8;
+
+          }
+        }
       }
+    }
+  }
+
+  /*마이데이터 탈퇴하기 버튼*/
+  .btn-secession{
+    padding: 40px 0;
+    text-align: center;
+    a{
+      font-size: 13px;
+      letter-spacing: -0.33px;
+      color: var(--text-04);
+      text-decoration: underline;
     }
   }
 }

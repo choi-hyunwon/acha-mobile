@@ -107,13 +107,13 @@
                 </div>
                 <div class="wrap_tabs">
                     <ul class="tabs">
-                        <li><a class="btn" href="#"><span>캘린더</span></a></li>
-                        <li><a class="btn" href="#"><span>카테고리</span></a></li>
                         <li><a class="btn" href="#"><span>월별</span></a></li>
+                        <li><a class="btn" href="#"><span>캘린더</span></a></li>
+<!--                        <li><a class="btn" href="#"><span>카테고리</span></a></li>-->
                     </ul>
 
                     <div class="panel"><div class="img"></div></div>
-                    <div class="panel"><div class="img"></div></div>
+<!--                    <div class="panel"><div class="img"></div></div>-->
                     <div class="panel"><div class="img"> </div></div>
                 </div>
                 <script>
@@ -133,12 +133,14 @@
                                 tabs.removeClass("on");
                                 tabs.eq(idx).addClass("on");
                                 if(idx === 0){
-                                    desc.text("캘린더로 일자별 지출을 한 눈에 확인");
-                                } else if(idx === 1){
-                                    desc.text("카테고리별로 고정지출 분석");
-                                } else if(idx === 2){
                                     desc.text("일자별로 완료된 지출과 남은 지출을 조회");
+                                } else if(idx === 1){
+                                    desc.text("캘린더로 일자별 지출을 한 눈에 확인");
+                                    // desc.text("카테고리별로 고정지출 분석");
                                 }
+                                // else if(idx === 2){
+                                //     desc.text("일자별로 완료된 지출과 남은 지출을 조회");
+                                // }
 
                                 //  console.log(idx)
                             });
@@ -154,9 +156,9 @@
                     <p class="desc"><span>캘린더로 일자별 지출을 한 눈에 확인</span></p>
 
                     <ul class="tabs">
-                        <li><a class="btn" href="#"><span>캘린더</span></a></li>
-                        <li><a class="btn" href="#"><span>카테고리</span></a></li>
                         <li><a class="btn" href="#"><span>월별</span></a></li>
+                        <li><a class="btn" href="#"><span>캘린더</span></a></li>
+<!--                        <li><a class="btn" href="#"><span>카테고리</span></a></li>-->
                     </ul>
                 </div>
 <!--                <div class="wrap_tabs">
@@ -165,7 +167,11 @@
                     <div class="panel"><div class="img"> </div></div>
                 </div>-->
                 <div class="wrap_tabs">
-                    <div class="panel"><div class="img"></div><div class="img"></div><div class="img"></div></div>
+                    <div class="panel">
+                        <div class="img"></div>
+                        <div class="img"></div>
+<!--                        <div class="img"></div>-->
+                    </div>
                 </div>
                 <script>
                     $(document).ready(function () {
@@ -190,9 +196,11 @@
                                     panels.parent().animate({ left:"-0%"})
                                 }else if (idx === 1 ){
                                     panels.parent().animate({ left:"-100%"})
-                                }else if (idx === 2 ){
-                                    panels.parent().animate({ left:"-200%"})
+
                                 }
+                                // else if (idx === 2 ){
+                                //     panels.parent().animate({ left:"-200%"})
+                                // }
 
 
 /*
@@ -213,12 +221,14 @@
 
 
                                 if(idx === 0){
-                                    desc.text("캘린더로 일자별 지출을 한 눈에 확인");
-                                } else if(idx === 1){
-                                    desc.text("카테고리별로 고정지출 분석");
-                                } else if(idx === 2){
                                     desc.text("일자별로 완료된 지출과 남은 지출을 조회");
+                                } else if(idx === 1){
+                                    desc.text("캘린더로 일자별 지출을 한 눈에 확인");
+                                    // desc.text("카테고리별로 고정지출 분석");
                                 }
+                                // else if(idx === 2){
+                                //     desc.text("일자별로 완료된 지출과 남은 지출을 조회");
+                                // }
 
                                 //  console.log(idx)
                             });
@@ -257,8 +267,8 @@
             <h2 class="visually_hidden">현금흐름</h2>
             <div class="inner">
                 <div class="txt-area">
-                    <p class="txt-lg"><span>현금흐름 진단</span></p>
-                    <p class="desc"><span>앞으로의 내 잔고 상황을 현금흐름으로<br>한 눈에 확인해보세요</span></p>
+                    <p class="txt-lg"><span>계좌잔고</span></p>
+                    <p class="desc"><span>내가 보유한 모든 계좌의 잔고현황을<br/>실시간으로 조회해 보세요</span></p>
                 </div>
             </div>
         </section>

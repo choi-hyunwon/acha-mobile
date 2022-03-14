@@ -304,6 +304,7 @@
                 font-weight: normal;
                 font-family: var(--font1);
               }
+
               .repeat {
                 color: var(--text-02);
               }
@@ -1030,6 +1031,7 @@
         thead {
           border-top: 1px solid #e3e4e8;
         }
+
         th {
           padding: 8px 9px;
           line-height: 16px;
@@ -1450,16 +1452,23 @@
       }
 
       .name {
-        width: calc(100% - 28px - 22px - 6px - 50px);
+        width: calc(100% - 28px - 6px - 50px);
         font-family: var(--font2);
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
         letter-spacing: -0.35px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        .badge{
+
+        em {
+          display: inline-block;
+          max-width: calc(100% - 50px);
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          vertical-align: middle;
+        }
+
+        .badge {
           margin-left: 6px;
           padding: 0 6px;
           border: 1px solid #ece3ff;
@@ -1473,9 +1482,10 @@
           border-radius: 50px;
           font-size: 10px;
           text-align: center;
-          vertical-align: bottom;
-          &.disabled{
-            color: var( --text-03);
+          vertical-align: middle;
+
+          &.disabled {
+            color: var(--text-03);
             background-color: #ffffff;
             border: 1px solid #f5f6f8;
 
@@ -1486,10 +1496,11 @@
   }
 
   /*마이데이터 탈퇴하기 버튼*/
-  .btn-secession{
+  .btn-secession {
     padding: 40px 0;
     text-align: center;
-    a{
+
+    a {
       font-size: 13px;
       letter-spacing: -0.33px;
       color: var(--text-04);

@@ -259,13 +259,14 @@
 
         > .checkbox-select {
           height: fit-content;
-          margin-bottom: 7px;
+          margin-bottom: 11px;
+          margin-top: 11px;
 
           label {
             height: 18px;
 
             + label {
-              margin-left: 17px;
+              margin-left: 27px;
             }
           }
 
@@ -361,7 +362,7 @@
   }
 
   .tip-wrap {
-    padding: 0 28px;
+    padding: 0 20px;
     margin-bottom: 30px;
 
     .list-title {
@@ -371,7 +372,7 @@
       font-family: var(--font2);
       font-weight: 500;
       line-height: 19px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
 
       &::before {
         content: '';

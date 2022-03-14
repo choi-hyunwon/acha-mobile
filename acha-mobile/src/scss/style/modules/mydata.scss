@@ -194,6 +194,7 @@
             .dropdown-item {
               line-height: 20px;
               padding: 20px 0;
+              white-space: normal;
 
               &:focus, &:active, &:hover {
                 background-color: #fff;
@@ -216,7 +217,7 @@
                 vertical-align: middle;
                 font-size: 14px;
                 font-weight: 500;
-                line-height: 20px;
+                line-height: 24px;
                 letter-spacing: -0.35px;
                 text-align: left;
                 color: var(--text-01);

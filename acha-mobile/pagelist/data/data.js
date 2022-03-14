@@ -66,6 +66,36 @@ data.edit1 = {
     ]
 }
 
+data.edit2 = {
+    'title': 'v.1.33.0 요청 사항',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '02_my_11',
+            'category': '마이데이터',
+            'page': '마이데이터삭제/탈퇴(as-is: 개인신용정보삭제)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_08',
+            'category': 'expenditure',
+            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인(통합인증양식4)_selectbox_open)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_02',
+            'category': '회원가입',
+            'page': '회원가입_2.약관동의(요약 2~3개)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-7-2',
+            'category': 'expenditure',
+            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(02 계좌상세_가맹점명미동의)'
+        },
+    ]
+}
+
 /*아차 2.0_오픈개선안*/
 data.alert = {
     'title': '홈(알림)',

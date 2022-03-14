@@ -87,6 +87,7 @@
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
         /*수정사항*/
+        .append(template(data.edit2))
         .append(template(data.edit1))
 
         /*아차 2.0_오픈개선안*/

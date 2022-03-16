@@ -1,5 +1,58 @@
 var data = {}
 
+data.edit2 = {
+    'title': 'v.1.33.0 요청 사항',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '02_my_11',
+            'category': '마이데이터',
+            'page': '마이데이터삭제/탈퇴(as-is: 개인신용정보삭제)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_08',
+            'category': 'expenditure',
+            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인(통합인증양식4)_selectbox_open)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_02',
+            'category': '회원가입',
+            'page': '회원가입_2.약관동의(요약 2~3개)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_18-7-2',
+            'category': 'expenditure',
+            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(02 계좌상세_가맹점명미동의)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '10_story_02',
+            'category': 'expenditure',
+            'page': '타임라인 > 카드지출'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_popup_02',
+            'category': 'mydata',
+            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.5 개인신용정보 선택_자산선택해제시_최소높이'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_34',
+            'category': 'moreview',
+            'page': '더보기_02.공지사항_오픈가이드'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_01',
+            'category': 'moreview',
+            'page': '캘린더 > 일자 선택'
+        },
+    ]
+}
 data.edit1 = {
     'title': 'v.1.32.3 요청 사항',
     'list': [
@@ -62,36 +115,6 @@ data.edit1 = {
             'url': '10_story_02-4',
             'category': '스토리',
             'page': '스토리 - 슬라이더 여러개 사용 시'
-        },
-    ]
-}
-
-data.edit2 = {
-    'title': 'v.1.33.0 요청 사항',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '02_my_11',
-            'category': '마이데이터',
-            'page': '마이데이터삭제/탈퇴(as-is: 개인신용정보삭제)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_08',
-            'category': 'expenditure',
-            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인(통합인증양식4)_selectbox_open)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '06_sign_in_02',
-            'category': '회원가입',
-            'page': '회원가입_2.약관동의(요약 2~3개)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-7-2',
-            'category': 'expenditure',
-            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(02 계좌상세_가맹점명미동의)'
         },
     ]
 }
@@ -575,9 +598,15 @@ data.mydata = {
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_date_popup_01',
+            'url': '04_my_data_popup_01',
             'category': 'mydata',
             'page': '추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (02_전송 종료시점 변경 팝업)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_popup_02',
+            'category': 'expenditure',
+            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.5 개인신용정보 선택_자산선택해제시_최소높이'
         },
         /*추가하기(마이데이터연결)_04. 개별인증_4.3 사이트 자체인증 (01_전송요구내역 선택(자체인증))*/
     ]

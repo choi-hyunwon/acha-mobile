@@ -163,6 +163,14 @@
     letter-spacing: -0.32px;
     text-align: left;
     color: var(--text-02);
+
+    .img {
+      margin-top: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 
   > .empty {

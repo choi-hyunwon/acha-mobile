@@ -26,7 +26,7 @@
             <div class="email-form completed"><!-- 입렵완료 시, completed 클래스 추가 -->
                 <label for="email" class="desc">이메일</label>
                 <div class="custom-light">
-                    <input id="email" type="search" placeholder="acha@acha.co.kr" onkeyup="autoEmail('email',this.value)" autocomplete="off">
+                    <input id="email" type="search" placeholder="acha@acha.co.kr" onkeypress="autoEmail('email',this.value)" onkeyup="autoEmail('email',this.value)">
                 </div>
             </div>
             <div class="sign-in-btn-relative">
@@ -46,6 +46,7 @@
         }
         $("#"+a).autocomplete({
             source: availableCity,
+            minLength: 0,
             focus: function(event, ui) {
                 return false;
             }

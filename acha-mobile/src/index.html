@@ -86,6 +86,9 @@
     var source = $('#list-template').html(); //jQuery
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
+        /* 2022.03.24 */
+        .append(template(data.edit3))
+
         /*수정사항*/
         .append(template(data.edit2))
         .append(template(data.edit1))

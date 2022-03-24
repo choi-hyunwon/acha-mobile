@@ -53,6 +53,23 @@ data.edit2 = {
         },
     ]
 }
+data.edit3 = {
+    'title': '2022.03.24',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_35',
+            'category': '더보기',
+            'page': '더보기 > 공지사항 > 오픈공지'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_14',
+            'category': '카드지출',
+            'page': '카드지출 > 메인화면 > 카드 자산 미선택시'
+        },
+    ]
+}
 data.edit1 = {
     'title': 'v.1.32.3 요청 사항',
     'list': [
@@ -288,6 +305,12 @@ data.cardExpenditure = {
             'url': '05_my_card_00',
             'category': '카드지출',
             'page': '(카드지출_01. 메인화면_1.1 연결한 데이터가 없는 경우)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_14',
+            'category': '카드지출',
+            'page': '카드지출 > 메인화면 > 카드 자산 미선택시'
         },
         {
             'stateClass': 'complete',
@@ -897,6 +920,12 @@ data.moreview = {
             'url': '11_app_info_AOS',
             'category': '더보기',
             'page': '더보기_11. 앱 정보 (02_오픈소스 라이센스_상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_35',
+            'category': '더보기',
+            'page': '더보기 > 공지사항 > 오픈공지'
         },
     ]
 };

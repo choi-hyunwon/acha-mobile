@@ -2324,6 +2324,27 @@
   }
 }
 
+.open-notice {
+  padding: 17px 16px 0;
+  background-color: #f7f8fc;
+
+  p {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.33px;
+    color: var(--text-02);
+    margin-bottom: 10px;
+  }
+
+  .img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 359px) {
   .more-view-my-page .my-page .info {
     flex-direction: column;

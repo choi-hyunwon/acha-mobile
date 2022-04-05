@@ -1,137 +1,14 @@
 var data = {}
 
-data.edit2 = {
-    'title': 'v.1.33.0 요청 사항',
+
+data.edit1 = {
+    'title': 'v.1.33.1 요청 사항',
     'list': [
-        {
-            'stateClass': 'complete',
-            'url': '02_my_11',
-            'category': '마이데이터',
-            'page': '마이데이터삭제/탈퇴(as-is: 개인신용정보삭제)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_08',
-            'category': 'expenditure',
-            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.6 전송요구내역 확인 (01_전송요구 내역 확인(통합인증양식4)_selectbox_open)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '06_sign_in_02',
-            'category': '회원가입',
-            'page': '회원가입_2.약관동의(요약 2~3개)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-7-2',
-            'category': 'expenditure',
-            'page': '12-1. 통신_일반_Type B : 홈-고정지출, My-고정지출(02 계좌상세_가맹점명미동의)'
-        },
         {
             'stateClass': 'complete',
             'url': '10_story_02',
-            'category': 'expenditure',
-            'page': '타임라인 > 카드지출'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_popup_02',
-            'category': 'mydata',
-            'page': '추가하기(마이데이터 연결)_02. 통합인증_2.5 개인신용정보 선택_자산선택해제시_최소높이'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_34',
-            'category': 'moreview',
-            'page': '더보기_02.공지사항_오픈가이드'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '03_calendar_01',
-            'category': 'moreview',
-            'page': '캘린더 > 일자 선택'
-        },
-    ]
-}
-data.edit3 = {
-    'title': '2022.03.24',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_35',
-            'category': '더보기',
-            'page': '더보기 > 공지사항 > 오픈공지'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_14',
             'category': '카드지출',
-            'page': '카드지출 > 메인화면 > 카드 자산 미선택시'
-        },
-    ]
-}
-data.edit1 = {
-    'title': 'v.1.32.3 요청 사항',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '02_my_03',
-            'category': 'My',
-            'page': '더보기my_03. 연결목록_3.1 항목(01_연결된 사이트가 있는 경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '02_my_10',
-            'category': 'My',
-            'page': '더보기my_03. 연결목록_3.3 개인신용정보 삭제(01_삭제)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '02_my_11',
-            'category': 'My',
-            'page': '더보기my_03. 연결목록_3.3 개인신용정보 삭제(02_삭제 선택)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_03-2',
-            'category': '카드지출',
-            'page': '카드지출_03. 카드 상세정보_1.1 구성(가맹점명 미동의)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-01',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)_가맹점명미동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-02',
-            'category': '홈계좌',
-            'page': '9-1. 카드_고정지출(1)_Type B : 홈-고정지출, My-고정지출(01 기본 화면)_청구결제정보미동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_18-3',
-            'category': '홈계좌',
-            'page': '10-1. 금융투자_연금 외 상품(종합매매, 위탁, 파생상품, 단기금융상품, 현물, 개인형IRP, 기타)_Type A : 계좌, My-일반(02 계좌상세)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_08',
-            'category': '더보기',
-            'page': '더보기_03.이벤트(03_3.진행중 이벤트_상세_버튼1개)'
-        },
-        // {
-        //     'stateClass': 'complete',
-        //     'url': '10_story_06',
-        //     'category': '스토리',
-        //     'page': '스토리 - 항목'
-        // },
-        {
-            'stateClass': 'complete',
-            'url': '10_story_02-4',
-            'category': '스토리',
-            'page': '스토리 - 슬라이더 여러개 사용 시'
+            'page': '카드지출_04. 타임라인_1.1 거래내역'
         },
     ]
 }

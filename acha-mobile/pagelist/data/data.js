@@ -14,7 +14,7 @@ data.edit1 = {
             'stateClass': 'complete',
             'url': '04_my_data_27',
             'category': 'mydata',
-            'page': '본인증을 위한 제3자 제공동의'
+            'page': '본인인증을 위한 제3자 제공동의'
         },
     ]
 }

@@ -2,13 +2,19 @@ var data = {}
 
 
 data.edit1 = {
-    'title': 'v.1.33.3 요청 사항',
+    'title': 'v.1.33.4 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '10_story_02',
-            'category': '카드지출',
-            'page': '카드지출_04. 타임라인_1.1 거래내역'
+            'url': '04_my_data_26',
+            'category': 'mydata',
+            'page': '네이버인증서이동'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_27',
+            'category': 'mydata',
+            'page': '본인증을 위한 제3자 제공동의'
         },
     ]
 }
@@ -495,6 +501,18 @@ data.mydata = {
             'url': '04_my_data_25',
             'category': 'mydata',
             'page': '추가하기(마이데이터 연결)_02. 통합인증_2.8 계좌(상품)별 세부정보 전송 요구 (02_통합인증 완료_오류)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_26',
+            'category': 'mydata',
+            'page': '네이버인증서이동'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_27',
+            'category': 'mydata',
+            'page': '본인증을 위한 제3자 제공동의'
         },
         {
             'stateClass': 'complete',

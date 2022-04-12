@@ -2,20 +2,74 @@ var data = {}
 
 
 data.edit1 = {
-    'title': 'v.1.33.4 요청 사항',
+    'title': 'v2.1 고도화 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '04_my_data_26',
-            'category': 'mydata',
-            'page': '네이버인증서이동'
+            'url': '11_exependiture_01',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)'
         },
         {
             'stateClass': 'complete',
-            'url': '04_my_data_27',
-            'category': 'mydata',
-            'page': '본인인증을 위한 제3자 제공동의'
+            'url': '11_exependiture_02',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.5_목록정렬_연결자산or숨길경우(내돈관리>계좌잔고)'
         },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_03',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
+        },
+
+
+
+        /*
+        11_exependiture_11 /   11_exependiture_11-1 달력 날짜 선택가능 / 잔고추가 / 상세 버튼 내부 박스 디자인 변경
+        */
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_11',
+            'category': '홈계좌',
+            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (01_현금 흐름 잔고 부족))'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_11-1',
+            'category': '홈계좌',
+            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (03_고정지출없을경우)'
+        },
+
+
+        /*투자 신규*/
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_57',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_01_투자'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_58',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_02_내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_59',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_03_계좌상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_60',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_04_상품정보'
+        },
+
+
+
     ]
 }
 
@@ -294,7 +348,7 @@ data.cardExpenditure = {
 data.expenditure1 = {
     'title': '홈계좌(현금흐름)',
     'list': [
-        {
+       /* {
             'stateClass': 'complete',
             'url': '11_exependiture_01',
             'category': '홈계좌',
@@ -311,8 +365,26 @@ data.expenditure1 = {
             'url': '11_exependiture_03',
             'category': '홈계좌',
             'page': '계좌 전체 목록 및 편집(내돈관리_03. 내돈관리_1.1 계좌잔고_2. 편집(계좌 편집))'
-        },
+        },*/
 
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_01',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_02',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.5_목록정렬_연결자산or숨길경우(내돈관리>계좌잔고)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_03',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
+        },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_06',
@@ -996,6 +1068,30 @@ data.expenditure2 = {
             'url': '11_exependiture_29-4',
             'category': '홈계좌',
             'page': '3.1 수신_정액 적립식 계좌_일반 Type B : 홈-고정지출, My-고정지출(02 거래내역)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_57',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_01_투자'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_58',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_02_내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_59',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_03_계좌상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_60',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_04_상품정보'
         },
         {
             'stateClass': 'complete',

@@ -5,156 +5,407 @@
 <div class="wrap">
     <div class="header">
         <a href="#" class="sprite btn_back"></a>
-        <h2>계좌 편집</h2>
+        <h2>자산 편집</h2>
     </div>
     <div class="contents">
-        <div class="box-ex-detail-top border-bottom-bright">
-            <p class="title-wrap">
-                <span class="font-bold primary-color">주로 사용하는 지출 계좌</span>를 설정하고<br/>
-                홈에서 바로 확인하세요
-            </p>
+        <div class="box-ex-top box-card-top">
+            <p class="title"><span class="font-bold primary-color">주로 확인하는 자산을</span> 설정하고<br/>홈에서 바로 확인하세요</p>
         </div>
-        <div class="box-ex-list">
-            <div class="ac-bank">
-                <div class="category-heading">
-                    <span class="title">예.적금</span>
+        <div class="box-ex-list box-card-list">
+            <div class="card-item">
+                <div class="dropdown-wrap">
+                    <div class="dropdown clearfix">
+                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="title">계좌</span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">입출금</span>
+                                  <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">예적금</span>
+                                  <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">외화</span>
+                                  <!--  <span class="value"><i class="icon ico-caution"></i></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul class="ac-list">
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in" checked="">
-                            <span></span>
-                        </label>
-                    </li>
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in">
-                            <span></span>
-                        </label>
-                    </li>
-                </ul>
+            </div>
+            <div class="card-item">
+                <div class="dropdown-wrap">
+                    <div class="dropdown clearfix">
+                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="title">투자</span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">입출금</span>
+                                    <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">예적금</span>
+                                    <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">외화</span>
+                                    <!--  <span class="value"><i class="icon ico-caution"></i></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="dropdown-wrap">
+                    <div class="dropdown clearfix">
+                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="title">연금</span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">입출금</span>
+                                    <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">예적금</span>
+                                    <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">외화</span>
+                                    <!--  <span class="value"><i class="icon ico-caution"></i></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="dropdown-wrap">
+                    <div class="dropdown clearfix">
+                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="title">대출</span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">입출금</span>
+                                    <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">예적금</span>
+                                    <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">외화</span>
+                                    <!--  <span class="value"><i class="icon ico-caution"></i></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item ">
+                <div class="dropdown-wrap">
+                    <div class="dropdown clearfix">
+                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="title">보험</span>
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">입출금</span>
+                                    <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">예적금</span>
+                                    <!--  <span class="value">11,000,000<em>원</em></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <hr class="divider">
+                            <ul class="ac-list">
+                                <li class="ac-item total-sum clearfix">
+                                    <span class="name">외화</span>
+                                    <!--  <span class="value"><i class="icon ico-caution"></i></span>-->
+                                </li>
+                                <li class="ac-item clearfix">
+                                    <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
+                                    <span class="name">KB종합통장-보통예금</span>
+                                    <span class="ac-num">1002-841-394245</span>
+                                    <label class="label">
+                                        <input type="checkbox" class="filled-in" checked="">
+                                        <span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="box-ex-list">
-            <div class="ac-bank">
-                <div class="category-heading">
-                    <span class="title">예.적금</span>
-                </div>
-                <ul class="ac-list">
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in" checked="">
-                            <span></span>
-                        </label>
-                    </li>
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in">
-                            <span></span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="box-ex-list">
-            <div class="ac-bank">
-                <div class="category-heading">
-                    <span class="title">예.적금</span>
-                </div>
-                <ul class="ac-list">
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in" checked="">
-                            <span></span>
-                        </label>
-                    </li>
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in">
-                            <span></span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="box-ex-list">
-            <div class="ac-bank">
-                <div class="category-heading">
-                    <span class="title">예.적금</span>
-                </div>
-                <ul class="ac-list">
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in" checked="">
-                            <span></span>
-                        </label>
-                    </li>
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in">
-                            <span></span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="box-ex-list more-padding-bottom">
-            <div class="ac-bank">
-                <div class="category-heading">
-                    <span class="title">예.적금</span>
-                </div>
-                <ul class="ac-list">
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in" checked="">
-                            <span></span>
-                        </label>
-                    </li>
-                    <li class="ac-item clearfix">
-                        <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
-                        <span class="name">KB종합통장-보통예금</span>
-                        <span class="ac-num">1002-841-394245</span>
-                        <label class="label">
-                            <input type="checkbox" class="filled-in">
-                            <span></span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+
         <div class="my-card-btn-fixed">
             <a href="#" class="btn btn-block">설정 완료</a>
         </div>
     </div>
 </div>
-<div class="toast-popup position-top _toastPopup">
+<!--<div class="toast-popup position-top _toastPopup">
     <p>주 사용 계좌 설정 해제 이후<br/>잔고 합계 및 계좌 목록에 반영됩니다</p>
 </div>
 <script>
@@ -164,6 +415,6 @@
         2. toastPopupHide() : 토스트 팝업 hide 함수
     **/
     toastPopupShow()
-</script>
+</script>-->
 </body>
 </html>

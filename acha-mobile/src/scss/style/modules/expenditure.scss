@@ -166,12 +166,12 @@
         height: 100%;
         border: 0;
         padding: 10px 12px 11px;
-        font-family: var(--font2);
+        font-family: var(--font4);
         font-weight: 500;
         font-size: 14px;
         line-height: 42px;
         text-align: left;
-        color: var(--text-01);
+        color: var(--text-03);
         border-radius: 4px;
         background-color: #fff;
         letter-spacing: -1px;
@@ -1145,7 +1145,7 @@
     }
   }
 
-  &.card-ex-top{
+  &.box-card-top{
     border-bottom: none;
     display: flex;
     justify-content: space-between;
@@ -1307,12 +1307,14 @@
     }
   }
 
-  &.card-ex-list{
-    padding: 31px 0 4px;
+  &.box-card-list{
+    padding: 31px 0 56px;
     border-bottom: none;
-    >.card-item {
+    &.more-padding-bottom {
 
-      .dropdown-wrap {
+    }
+    >.card-item {
+        .dropdown-wrap {
         padding: 0;
         margin-bottom: 12px;
         width: calc(100% - 40px);
@@ -1399,7 +1401,7 @@
           }
           .dropdown-menu {
             width: 100%;
-            margin: -1px 0 24px 0;
+            margin: -1px 0 12px 0;
             padding: 22px 20px 0;
             max-height: unset;
             position: relative!important;
@@ -1407,6 +1409,7 @@
             transform: translate3d(0px, 0, 0px) !important;
             border-radius: 0 0 6px 6px;
             box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+            z-index: 0;
 
 
             .ac-list {
@@ -1415,13 +1418,13 @@
                 margin-bottom: 40px;
                 &.total-sum{
                   font-family: var(--font1);
-                  font-size: 14px;
                   line-height: 26px;
                   margin-bottom: 22px;
                   text-align: left;
                   color: var(--text-03);
                   .name{
                     color: var(--text-03);
+                    font-size: 14px;
                   }
                   .value{
                     font-family: var(--font4);
@@ -1754,6 +1757,26 @@
             }
           }
         }
+      }
+    }
+  }
+
+  &.box-investment-list{
+    padding: 36px 20px 56px;
+    .group-date{
+      .balance-box{
+          .balance{
+            font-family: var(--font4);
+
+            &.plus{
+              font-size: 13px;
+              color: #ef4b61;
+            }
+            &.minus{
+              font-size: 13px;
+              color: #4b71ef;
+            }
+          }
       }
     }
   }
@@ -2117,6 +2140,54 @@
     .txt{
       color: var(--text-02);
       font-size: 13px;
+    }
+  }
+
+  &.box-investment-top{
+    padding-bottom: 0;
+    .investment-tab {
+      margin-top: 8px;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      background-color: rgba(255, 255, 255, 0);
+      overflow: hidden;
+
+      ul {
+        li {
+          float: left;
+          margin-right: 24px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            display: inline-block;
+            font-size: 16px;
+            letter-spacing: -0.4px;
+            color: var(--text-03);
+          }
+
+          &.active {
+            a {
+              position: relative;
+              font-family: var(--font3);
+              color: var(--text-01);
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                bottom: 0;
+                background-color: var(--text-01);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -6659,6 +6730,31 @@
     .txt{
       color: var(--text-02);
       font-size: 13px;
+    }
+  }
+
+  &.box-investment-info{
+    padding: 36px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #f5f6f8;
+    .month{
+      margin: 0 0 3px;
+    }
+    .total{
+      margin: 0;
+      font-family: var(--font7);
+    }
+    .difference{
+      font-size: 13px;
+      color: var(--text-02);
+      &.plus{
+        font-size: 14px;
+        color: #ef4b61;
+      }
+      &.minus{
+        font-size: 14px;
+        color: #4b71ef;
+      }
     }
   }
 }

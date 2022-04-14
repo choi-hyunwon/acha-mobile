@@ -2,7 +2,7 @@ var data = {}
 
 
 data.edit1 = {
-    'title': 'v2.1 고도화 04.11 요청 사항',
+    'title': 'v2.1 고도화 04.11 요청 사항 (v1.34)',
     'list': [
         {
             'stateClass': 'complete',
@@ -32,7 +32,7 @@ data.edit1 = {
 }
 
 data.edit2 = {
-    'title': 'v2.1 고도화 04.12 요청 사항',
+    'title': 'v2.1 고도화 04.12 요청 사항 (v1.34)',
     'list': [
         {
             'stateClass': 'complete',
@@ -92,7 +92,7 @@ data.edit2 = {
 }
 
 data.edit3 = {
-    'title': 'v2.1 고도화 04.14 요청 사항',
+    'title': 'v2.1 고도화 04.14 요청 사항 (v1.34)',
     'list': [
         {
             'stateClass': 'complete',

@@ -855,6 +855,15 @@
         }
       }
     }
+
+    &.month-single{
+      text-align: center;
+      border: none;
+      padding-top: 10px;
+      .btn-select{
+        margin: 0;
+      }
+    }
   }
 
   .category-list-item {
@@ -932,6 +941,110 @@
           margin-bottom: 55px;
         }
       }
+    }
+
+    /*지난 지출내역 예외*/
+    &.past-history{
+      padding-bottom: 40px;
+
+      >div{
+        margin: 0 15px;
+        border-left: 1px solid #e3e4e8;
+        border-right: 1px solid #e3e4e8;
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 6px;
+          background-image: url(../../img/common/img-history-top-center@2x.png);
+          background-size: contain;
+          background-repeat: repeat-x;
+          left: 0;
+          top: 0;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 6px;
+          background-image: url(../../img/common/img-history-bottom-center@2x.png);
+          background-size: contain;
+          background-repeat: repeat-x;
+          left: 0;
+          bottom: 0;
+        }
+      }
+      .category-info{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 30px 0 24px;
+        margin: 0 20px 24px;
+        border-bottom: 1px solid #e3e4e8;
+        .title{
+          font-size: 16px;
+          line-height: 26px;
+        }
+        .value{
+          display: inline-block;
+          text-align: right;
+          p{
+            font-size: 12px;
+            color: var(--text-03);
+          }
+        }
+        .sum{
+          font-size: 28px;
+          line-height: 26px;
+          font-family: var(--font7);
+          position: static;
+          em{
+            font-size: 16px;
+            line-height: 26px;
+            font-family: var(--font3);
+          }
+        }
+
+      }
+      .ex-item{
+        margin-bottom: 30px;
+        &:last-of-type{
+          padding-bottom: 15px;
+          margin-bottom: 0;
+        }
+        .day{
+          font-size: 12px;
+          color: #3a3951;
+          font-family: var(--font2);
+          margin-bottom: 15px;
+          display: inline-block;
+        }
+        >a{
+          margin-bottom: 15px;
+          .img{
+            left: 0;
+            top: 0;
+          }
+          .btn-move{
+            padding-bottom: 0;
+            .ico-caution {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              background-image: url(../../img/common/ico-caution@2x.png);
+              transform: translate(-1px, -2px);
+              background-size: cover;
+              vertical-align: middle;
+            }
+            .desc-sm{
+              bottom: -18px;
+              color: var(--text-03);
+            }
+          }
+        }
+      }
+
     }
   }
 

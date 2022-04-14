@@ -2,7 +2,37 @@ var data = {}
 
 
 data.edit1 = {
-    'title': 'v2.1 고도화 요청 사항',
+    'title': 'v2.1 고도화 04.11 요청 사항',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_01',
+            'category': 'calendar',
+            'page': '캘린더(고정지출_04. 고정지출_1.1 캘린더_1.이번달)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '03_calendar_02',
+            'category': 'calendar',
+            'page': '캘린더-데이터없음(고정지출_04. 고정지출_1.1 캘린더)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_08',
+            'category': 'calendar',
+            'page': '고정지출_지난지출내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '00_common_card',
+            'category': 'common',
+            'page': '금융마켓_01_카드'
+        },
+    ]
+}
+
+data.edit2 = {
+    'title': 'v2.1 고도화 04.12 요청 사항',
     'list': [
         {
             'stateClass': 'complete',
@@ -22,12 +52,6 @@ data.edit1 = {
             'category': '홈계좌',
             'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
         },
-
-
-
-        /*
-        11_exependiture_11 /   11_exependiture_11-1 달력 날짜 선택가능 / 잔고추가 / 상세 버튼 내부 박스 디자인 변경
-        */
         {
             'stateClass': 'complete',
             'url': '11_exependiture_11',
@@ -40,9 +64,6 @@ data.edit1 = {
             'category': '홈계좌',
             'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (03_고정지출없을경우)'
         },
-
-
-        /*투자 신규*/
         {
             'stateClass': 'complete',
             'url': '11_exependiture_57',
@@ -67,9 +88,18 @@ data.edit1 = {
             'category': '홈계좌',
             'page': '3.2_투자_상세(연금외상품)_04_상품정보'
         },
+    ]
+}
 
-
-
+data.edit3 = {
+    'title': 'v2.1 고도화 04.14 요청 사항',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '14_migration_05',
+            'category': '마이그레이션',
+            'page': '기가입자 안내'
+        },
     ]
 }
 
@@ -152,6 +182,12 @@ data.calendar = {
             'category': '지출관리',
             'page': '지출계좌 목록-데이터없음(고정지출_04. 고정지출_1.3 월별_2.이번달(현재)_표시 데이터 無)'
         },
+        {
+            'stateClass': 'complete',
+            'url': '08_exependiture_08',
+            'category': 'calendar',
+            'page': '고정지출_지난지출내역'
+        },
         /*고정지출_04. 고정지출_1.3 월별_3.지난달(과거)*/
         /*고정지출_04. 고정지출_1.3 월별_3.지난달(과거)_표시 데이터 無*/
         /*고정지출_04. 고정지출_1.3 월별_4.다음달(미래)*/
@@ -230,6 +266,12 @@ data.migration = {
             'url': '14_migration_04',
             'category': '마이그레이션',
             'page': '마이그레이션_04.전환완료 안내(2)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '14_migration_05',
+            'category': '마이그레이션',
+            'page': '기가입자 안내'
         },
 
     ]
@@ -1467,6 +1509,12 @@ data.common = {
         //     'category': 'common ',
         //     'page': '아이콘'
         // },
+        {
+            'stateClass': 'complete',
+            'url': '00_common_card',
+            'category': 'common',
+            'page': '금융마켓_01_카드'
+        },
     ]
 };
 data.mycard = {

@@ -103,6 +103,24 @@ data.edit3 = {
     ]
 }
 
+data.edit4 = {
+    'title': 'v2.1 고도화 04.14 요청 사항 (v1.34.1)',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_01',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_03',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
+        },
+    ]
+}
+
 /*아차 2.0_오픈개선안*/
 data.alert = {
     'title': '홈(알림)',

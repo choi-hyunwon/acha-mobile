@@ -1621,6 +1621,9 @@
                   color: #9b9aa6;
                   left: 28px;
                   top: 25px;
+                  &.text-right{
+                    right: 0;
+                  }
                 }
 
                 .label {

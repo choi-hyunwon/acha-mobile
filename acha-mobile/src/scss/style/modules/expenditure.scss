@@ -1530,7 +1530,7 @@
                 position: relative;
                 margin-bottom: 40px;
                 &.total-sum{
-                  font-family: var(--font1);
+                  font-family: var(--font1) ;
                   line-height: 26px;
                   margin-bottom: 22px;
                   text-align: left;
@@ -1538,6 +1538,7 @@
                   .name{
                     color: var(--text-03);
                     font-size: 14px;
+                    font-family: var(--font1) ;
                   }
                   .value{
                     font-family: var(--font4);

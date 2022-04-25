@@ -1,3 +1,4 @@
+var front = front || {};
 front.form = front.form || {};
 front.form = (function () {
     var init = function() {

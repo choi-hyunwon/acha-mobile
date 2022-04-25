@@ -490,6 +490,16 @@
     .item-wrap {
       float: left;
       width: calc(100% - 32px - 13px);
+      &.no-dot{
+        .item{
+          &::before {
+            display: none;
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
 
       .item {
         position: relative;

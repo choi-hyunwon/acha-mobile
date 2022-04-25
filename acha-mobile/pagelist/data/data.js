@@ -6,27 +6,21 @@ data.edit1 = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '03_calendar_01',
-            'category': 'calendar',
-            'page': '캘린더(고정지출_04. 고정지출_1.1 캘린더_1.이번달)'
+            'url': '05_my_card_13',
+            'category': '카드지출',
+            'page': '카드지출_02. 내카드_1.2 편집'
         },
         {
             'stateClass': 'complete',
-            'url': '03_calendar_02',
-            'category': 'calendar',
-            'page': '캘린더-데이터없음(고정지출_04. 고정지출_1.1 캘린더)'
+            'url': '09_moreview_05',
+            'category': '더보기',
+            'page': '더보기_02.공지사항(02_상세 공지사항 컨텐츠 최소 길이)'
         },
         {
             'stateClass': 'complete',
-            'url': '08_exependiture_08',
-            'category': 'calendar',
-            'page': '고정지출_지난지출내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '00_common_card',
-            'category': 'common',
-            'page': '금융마켓_01_카드'
+            'url': '10_story_02',
+            'category': '카드지출',
+            'page': '카드지출_04. 타임라인_1.1 거래내역'
         },
     ]
 }

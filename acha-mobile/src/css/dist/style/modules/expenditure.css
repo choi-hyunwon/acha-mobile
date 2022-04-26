@@ -184,12 +184,12 @@
   height: 100%;
   border: 0;
   padding: 10px 12px 11px;
-  font-family: var(--font2);
+  font-family: var(--font4);
   font-weight: 500;
   font-size: 14px;
   line-height: 42px;
   text-align: left;
-  color: var(--text-01);
+  color: var(--text-03);
   border-radius: 4px;
   background-color: #fff;
   letter-spacing: -1px;
@@ -821,6 +821,20 @@
   color: var(--blurple);
 }
 
+.box_category_list .filter-area.month-single {
+  text-align: center;
+  border: none;
+  padding-top: 10px;
+}
+
+.box_category_list .filter-area.month-single .btn-select {
+  margin: 0;
+}
+
+.box_category_list .category-list-item {
+  /*지난 지출내역 예외*/
+}
+
 .box_category_list .category-list-item .category-info.total {
   margin-bottom: 30px;
   padding: 30px 20px 0;
@@ -885,6 +899,123 @@
   text-align: center;
   color: var(--text-02);
   margin-bottom: 55px;
+}
+
+.box_category_list .category-list-item.past-history {
+  padding-bottom: 40px;
+}
+
+.box_category_list .category-list-item.past-history > div {
+  margin: 0 15px;
+  border-left: 1px solid #e3e4e8;
+  border-right: 1px solid #e3e4e8;
+  position: relative;
+}
+
+.box_category_list .category-list-item.past-history > div:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-image: url(../../img/common/img-history-top-center@2x.png);
+  background-size: contain;
+  background-repeat: repeat-x;
+  left: 0;
+  top: 0;
+}
+
+.box_category_list .category-list-item.past-history > div:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-image: url(../../img/common/img-history-bottom-center@2x.png);
+  background-size: contain;
+  background-repeat: repeat-x;
+  left: 0;
+  bottom: 0;
+}
+
+.box_category_list .category-list-item.past-history .category-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px 0 24px;
+  margin: 0 20px 24px;
+  border-bottom: 1px solid #e3e4e8;
+}
+
+.box_category_list .category-list-item.past-history .category-info .title {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.box_category_list .category-list-item.past-history .category-info .value {
+  display: inline-block;
+  text-align: right;
+}
+
+.box_category_list .category-list-item.past-history .category-info .value p {
+  font-size: 12px;
+  color: var(--text-03);
+}
+
+.box_category_list .category-list-item.past-history .category-info .sum {
+  font-size: 28px;
+  line-height: 26px;
+  font-family: var(--font7);
+  position: static;
+}
+
+.box_category_list .category-list-item.past-history .category-info .sum em {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: var(--font3);
+}
+
+.box_category_list .category-list-item.past-history .ex-item {
+  margin-bottom: 30px;
+}
+
+.box_category_list .category-list-item.past-history .ex-item:last-of-type {
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.box_category_list .category-list-item.past-history .ex-item .day {
+  font-size: 12px;
+  color: #3a3951;
+  font-family: var(--font2);
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.box_category_list .category-list-item.past-history .ex-item > a {
+  margin-bottom: 15px;
+}
+
+.box_category_list .category-list-item.past-history .ex-item > a .img {
+  left: 0;
+  top: 0;
+}
+
+.box_category_list .category-list-item.past-history .ex-item > a .btn-move {
+  padding-bottom: 0;
+}
+
+.box_category_list .category-list-item.past-history .ex-item > a .btn-move .ico-caution {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../../img/common/ico-caution@2x.png);
+  transform: translate(-1px, -2px);
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.box_category_list .category-list-item.past-history .ex-item > a .btn-move .desc-sm {
+  bottom: -18px;
+  color: var(--text-03);
 }
 
 .box_category_list.fix-payment {
@@ -1009,7 +1140,7 @@
 .box-ex-top .sum-area .update {
   margin: 0 2px 0 0;
   font-size: 13px;
-  line-height: 19px;
+  line-height: 18px;
   letter-spacing: -0.65px;
   text-align: right;
   color: var(--text-02);
@@ -1019,7 +1150,7 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url(../../img/common/ico-refresh-mini@2x.png);
+  background: url(../../img/common/ico_refresh_mini_t@2x.png) no-repeat center center;
   background-size: cover;
   vertical-align: middle;
   margin-left: 2px;
@@ -1085,6 +1216,66 @@
 
 .box-ex-top .btn-wrap .btn i {
   margin-right: 4px;
+}
+
+.box-ex-top.box-card-top {
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px 0;
+}
+
+.box-ex-top.box-card-top > .title {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.45px;
+  text-align: left;
+  color: var(--text-01);
+}
+
+.box-ex-top.box-card-top .sum-area {
+  padding: 0;
+  flex-direction: column;
+}
+
+.box-ex-top.box-card-top .sum-area .update {
+  margin-bottom: 10px;
+  color: var(--text-02);
+  margin-right: 0;
+}
+
+.box-ex-top.box-card-top .sum-area .update .ico-refresh-mini {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/common/ico-refresh-mini@2x.png) no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+  margin-left: 2px;
+  margin-top: -2px;
+}
+
+.box-ex-top.box-card-top .sum-area .btn-edit {
+  display: block;
+  height: 28px;
+  text-align: center;
+}
+
+.box-ex-top.box-card-top .sum-area .btn-edit .ico-view-edit {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../img/common/ico-view-edit@2x.png);
+  background-size: cover;
+}
+
+.box-ex-top.box-card-top .sum-area .btn-edit span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  margin-left: 4px;
 }
 
 .box-ex-list {
@@ -1185,6 +1376,472 @@
   overflow: visible;
 }
 
+.box-ex-list.box-card-list {
+  padding: 31px 0 56px;
+  border-bottom: none;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap {
+  padding: 0;
+  margin-bottom: 12px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-toggle {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+  border: solid 1px #f5f6f8;
+  background-color: var(--white);
+  line-height: 20px;
+  color: var(--text-01);
+  align-items: center;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-toggle span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-toggle::after {
+  width: 16px;
+  height: 16px;
+  background-image: url(../../img/common/ico-arrow-down-small-nor@2x.png);
+  background-size: cover;
+  border: 0;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown.show .dropdown-toggle {
+  border-radius: 6px 6px 0 0;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .category-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .category-heading:after {
+  display: none;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .category-heading .title {
+  font-family: var(--font3);
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: -0.38px;
+  text-align: left;
+  color: var(--text-01);
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .category-heading .sum {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23px;
+  font-family: var(--font2);
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--text-01);
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .category-heading .sum em {
+  font-family: var(--font2);
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .category-heading .sum .btn-add-black {
+  background: url(../../img/common/icon_btn_add_black@2x.png) no-repeat center center;
+  width: 12px;
+  background-size: contain;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu {
+  width: 100%;
+  margin: -1px 0 12px 0;
+  padding: 22px 20px 0;
+  max-height: unset;
+  position: relative !important;
+  border: solid 1px #f5f6f8;
+  transform: translate3d(0px, 0, 0px) !important;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
+  z-index: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item.total-sum {
+  font-family: var(--font1);
+  line-height: 26px;
+  margin-bottom: 22px;
+  text-align: left;
+  color: var(--text-03);
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item.total-sum .name {
+  color: var(--text-03);
+  font-size: 14px;
+  font-family: var(--font1);
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item.total-sum .value {
+  font-family: var(--font4);
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item.total-sum .value em {
+  font-family: var(--font1);
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .img {
+  float: left;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .name {
+  float: left;
+  width: calc(100% - 135px);
+  font-family: var(--font2);
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.33px;
+  color: #37354e;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .value {
+  float: right;
+  font-size: 14px;
+  font-family: var(--font2);
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+  vertical-align: middle;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .value.text {
+  font-family: var(--font2);
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .value.text::after {
+  content: none;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .value em {
+  content: '원';
+  font-family: var(--font2);
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .value .ico-caution-red {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../../img/common/ico-caution-red@2x.png);
+  background-size: cover;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .ac-num {
+  position: absolute;
+  font-family: var(--font4);
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0;
+  color: #9b9aa6;
+  left: 28px;
+  top: 25px;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .ac-num.text-right {
+  right: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .label {
+  float: right;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .ac-list .ac-item .ico-caution {
+  margin-top: 1px;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .divider {
+  margin: 22px 0;
+  border-color: #f5f6f8;
+}
+
+.box-ex-list.box-card-list > .card-item .dropdown-wrap .dropdown .dropdown-menu .divider::before {
+  display: none;
+}
+
+.box-ex-list.box-card-list > .card-item .card-header {
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .card-header > img {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-header > span {
+  font-family: var(--font2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: var(--text-01);
+}
+
+.box-ex-list.box-card-list > .card-item .card-body {
+  padding: 0 20px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .tit {
+  font-family: var(--font3);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: var(--text-01);
+  margin-bottom: 7px;
+  padding-top: 21px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .desc {
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: var(--text-02);
+  margin-bottom: 17px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .checkbox {
+  margin-top: 14px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .checkbox label {
+  margin-right: 40px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .checkbox label span {
+  font-family: var(--font1);
+  font-weight: 400;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .checkbox label:last-child {
+  margin-right: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .cont .list-body {
+  width: 100%;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .cont .list-body .item {
+  width: 100%;
+  padding: 20px 0;
+  align-items: start;
+  border-bottom: 1px solid #f5f6f8;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .cont .list-body .item:last-child {
+  border-bottom: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .cont .list-body .item .tit {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  color: var(--text-02);
+  margin-bottom: 4px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .cont .list-body .item .val {
+  display: block;
+  font-size: 13px;
+  font-family: var(--font2);
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.33px;
+  color: var(--text-01);
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .cont .list-body .item .val > a {
+  font-size: 13px;
+  font-family: var(--font1);
+  line-height: 19px;
+  letter-spacing: -0.33px;
+  color: var(--text-03);
+  text-decoration: underline;
+  margin-left: 6px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .cont .list-body .item .val + .my-data-terms-of-use {
+  padding-top: 20px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .info-tit {
+  font-family: var(--font2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: var(--text-01);
+  padding-top: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--text-01);
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .info-list ul .item {
+  position: relative;
+  width: 100%;
+  padding: 20px 4px;
+  border-bottom: 1px solid #f5f6f8;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .info-list ul .item:last-child {
+  border-bottom: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .info-list ul .item .info {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .info-list ul .item .info .tit {
+  font-family: var(--font2);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  margin-bottom: 3px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .info-list ul .item .info .num {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--text-03);
+}
+
+.box-ex-list.box-card-list > .card-item .card-body > .info-list ul .item > label {
+  position: absolute;
+  width: calc(100% + 40px);
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 100%;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .my-data-terms-of-use {
+  padding: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .my-data-terms-of-use > .title {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.38px;
+  text-align: left;
+  color: var(--text-01);
+  margin-bottom: 10px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .my-data-terms-of-use > .title.title-sm {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  padding-top: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .my-data-terms-of-use .checkbox {
+  margin-bottom: 0;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .my-data-terms-of-use .table td {
+  vertical-align: top;
+  padding: 8px 10px;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .my-data-terms-of-use .table td.col-header {
+  text-align: center;
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .my-data-terms-of-use .table td.col-header span {
+  text-align: center;
+  color: var(--text-02);
+}
+
+.box-ex-list.box-card-list > .card-item .card-body .my-data-terms-of-use .table td span {
+  display: block;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: -0.28px;
+  text-align: left;
+  color: var(--text-02);
+}
+
+.box-ex-list.box-investment-list {
+  padding: 36px 20px 56px;
+}
+
+.box-ex-list.box-investment-list .group-date .balance-box .balance {
+  font-family: var(--font4);
+}
+
+.box-ex-list.box-investment-list .group-date .balance-box .balance.plus {
+  font-size: 13px;
+  color: #ef4b61;
+}
+
+.box-ex-list.box-investment-list .group-date .balance-box .balance.minus {
+  font-size: 13px;
+  color: #4b71ef;
+}
+
 .box-ex-detail-top {
   padding: 24px 20px 0;
 }
@@ -1279,7 +1936,7 @@
   font-family: var(--font2);
   font-size: 13px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 18px;
   letter-spacing: -0.6px;
   color: var(--text-02);
   border-radius: 50%;
@@ -1290,7 +1947,7 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url(../../img/common/ico-refresh-mini@2x.png);
+  background: url(../../img/common/ico_refresh_mini_t@2x.png) no-repeat center center;
   background-size: cover;
   vertical-align: middle;
   margin-left: 2px;
@@ -1541,6 +2198,51 @@
 .box-ex-detail-top + .no-data .txt {
   color: var(--text-02);
   font-size: 13px;
+}
+
+.box-ex-detail-top.box-investment-top {
+  padding-bottom: 0;
+}
+
+.box-ex-detail-top.box-investment-top .investment-tab {
+  margin-top: 8px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
+}
+
+.box-ex-detail-top.box-investment-top .investment-tab ul li {
+  float: left;
+  margin-right: 24px;
+}
+
+.box-ex-detail-top.box-investment-top .investment-tab ul li:last-child {
+  margin-right: 0;
+}
+
+.box-ex-detail-top.box-investment-top .investment-tab ul li a {
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  color: var(--text-03);
+}
+
+.box-ex-detail-top.box-investment-top .investment-tab ul li.active a {
+  position: relative;
+  font-family: var(--font3);
+  color: var(--text-01);
+}
+
+.box-ex-detail-top.box-investment-top .investment-tab ul li.active a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--text-01);
 }
 
 .box-ex-list-btn-wrap {
@@ -1831,6 +2533,19 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  /*가맹점명 미동의*/
+}
+
+.group-date .ex-list .ex-item .info .title.disagree {
+  display: inline-block;
+  width: unset;
+  font-family: var(--font1);
+  color: #d3d3d5;
+  font-size: 11px;
+  line-height: 22px;
+  border: 1px solid #e3e4e8;
+  padding: 0 8px;
+  border-radius: 12px;
 }
 
 .group-date .ex-list .ex-item .info .value {
@@ -5516,6 +6231,14 @@
   border-bottom: 1px solid var(--text-01);
 }
 
+.account-detail-wrap .info-wrap > .info-list {
+  margin-bottom: 40px;
+}
+
+.account-detail-wrap .info-wrap > .info-list:last-of-type {
+  margin-bottom: 0;
+}
+
 .account-detail-wrap .info-wrap > .info-list .item {
   padding: 0 0 22px;
   overflow: hidden;
@@ -5523,6 +6246,10 @@
 
 .account-detail-wrap .info-wrap > .info-list .item:first-child {
   padding-top: 22px;
+}
+
+.account-detail-wrap .info-wrap > .info-list .item:last-of-type {
+  padding-bottom: 0;
 }
 
 .account-detail-wrap .info-wrap > .info-list .item .tit {
@@ -5583,6 +6310,11 @@
 
 .account-detail-wrap .info-wrap > .info-list.type2 .item:last-child {
   padding-bottom: 0;
+}
+
+.account-detail-wrap .info-wrap > .info-list + .info-list {
+  padding-top: 18px;
+  border-top: 1px solid #f5f6f8;
 }
 
 .account-detail-wrap .info-wrap > .list.caution {
@@ -5850,6 +6582,11 @@
   font-family: var(--font1);
 }
 
+.box-ex-detail-info .item .txt .val.disagree {
+  font-family: var(--font1);
+  color: #d3d3d5;
+}
+
 .box-ex-detail-info .item .txt .btn-sm {
   float: right;
   min-width: auto;
@@ -5932,6 +6669,36 @@
 .box-ex-detail-info + .no-data .txt {
   color: var(--text-02);
   font-size: 13px;
+}
+
+.box-ex-detail-info.box-investment-info {
+  padding: 36px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid #f5f6f8;
+}
+
+.box-ex-detail-info.box-investment-info .month {
+  margin: 0 0 3px;
+}
+
+.box-ex-detail-info.box-investment-info .total {
+  margin: 0;
+  font-family: var(--font7);
+}
+
+.box-ex-detail-info.box-investment-info .difference {
+  font-size: 13px;
+  color: var(--text-02);
+}
+
+.box-ex-detail-info.box-investment-info .difference.plus {
+  font-size: 14px;
+  color: #ef4b61;
+}
+
+.box-ex-detail-info.box-investment-info .difference.minus {
+  font-size: 14px;
+  color: #4b71ef;
 }
 
 .ex-list-wrap {

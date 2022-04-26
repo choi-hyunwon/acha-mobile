@@ -185,6 +185,7 @@
 .my-data-required > .card-list .card-item .dropdown-wrap .dropdown .dropdown-menu .dropdown-item {
   line-height: 20px;
   padding: 20px 0;
+  white-space: normal;
 }
 
 .my-data-required > .card-list .card-item .dropdown-wrap .dropdown .dropdown-menu .dropdown-item:focus, .my-data-required > .card-list .card-item .dropdown-wrap .dropdown .dropdown-menu .dropdown-item:active, .my-data-required > .card-list .card-item .dropdown-wrap .dropdown .dropdown-menu .dropdown-item:hover {
@@ -208,7 +209,7 @@
   vertical-align: middle;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 24px;
   letter-spacing: -0.35px;
   text-align: left;
   color: var(--text-01);
@@ -546,6 +547,12 @@
   width: 200px;
   height: 90px;
   margin: 0 auto 24px;
+}
+
+.my-data-connected .img.naver {
+  width: 56px;
+  height: 56px;
+  margin-top: 20%;
 }
 
 .my-data-connected .img img {

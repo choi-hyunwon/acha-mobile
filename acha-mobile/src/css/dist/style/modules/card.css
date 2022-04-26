@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .card {
   position: relative;
   border: none;
@@ -238,6 +239,91 @@
 
 .card_plus .sub_title .primary {
   font-family: var(--font1);
+}
+
+/*금융마켓_카드*/
+.common-market .title-wrap {
+  padding: 24px 20px 20px;
+}
+
+.common-market .title-wrap .title-lg {
+  font-size: 24px;
+  font-family: var(--font3);
+  line-height: 30px;
+}
+
+.common-market .title-wrap .title-lg span {
+  font-size: 20px;
+  font-family: var(--font2);
+}
+
+.common-market .title-wrap .title-sm {
+  font-size: 18px;
+  font-family: var(--font2);
+  line-height: 27px;
+}
+
+.common-market .financial-products-list {
+  padding: 0 20px 40px;
+}
+
+.common-market .financial-products-list > li {
+  border-bottom: 1px solid #f5f6f8;
+  position: relative;
+  padding: 20px 0;
+}
+
+.common-market .financial-products-list > li a {
+  color: var(--text-01);
+}
+
+.common-market .financial-products-list > li a .img {
+  width: 30px;
+  height: 48px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.common-market .financial-products-list > li a .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.common-market .financial-products-list > li a .card-info {
+  padding-left: 46px;
+  width: calc(100% - 30px);
+  word-break: keep-all;
+}
+
+.common-market .financial-products-list > li a .card-info .card-name {
+  font-size: 16px;
+  font-family: var(--font3);
+  margin-bottom: 6px;
+}
+
+.common-market .financial-products-list > li a .card-info .discount {
+  color: var(--text-02);
+  font-size: 14px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.common-market .financial-products-list > li a .card-info .hashtag {
+  color: var(--blurple);
+  font-size: 13px;
+}
+
+.common-market .financial-products-list > li a > .icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=card.css.map */

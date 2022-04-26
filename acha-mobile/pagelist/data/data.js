@@ -2,7 +2,7 @@ var data = {}
 
 
 data.edit1 = {
-    'title': 'v2.1 고도화 04.11 요청 사항 (v1.34)',
+    'title': ' 04.22 / 04.26 요청 사항 (v1.34.3)',
     'list': [
         {
             'stateClass': 'complete',
@@ -22,12 +22,6 @@ data.edit1 = {
             'category': '카드지출',
             'page': '카드지출_04. 타임라인_1.1 거래내역'
         },
-    ]
-}
-
-data.edit2 = {
-    'title': 'v2.1 고도화 04.12 요청 사항 (v1.34)',
-    'list': [
         {
             'stateClass': 'complete',
             'url': '11_exependiture_01',
@@ -36,84 +30,13 @@ data.edit2 = {
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_02',
-            'category': '홈계좌',
-            'page': '내자산_01_내자산_1.5_목록정렬_연결자산or숨길경우(내돈관리>계좌잔고)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_03',
-            'category': '홈계좌',
-            'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_11',
-            'category': '홈계좌',
-            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (01_현금 흐름 잔고 부족))'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_11-1',
-            'category': '홈계좌',
-            'page': '현금흐름 조회 결과(내돈관리_03. 내돈관리_1.2 현금흐름_6. 현금흐름 조회 결과 (03_고정지출없을경우)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_57',
-            'category': '홈계좌',
-            'page': '3.2_투자_상세(연금외상품)_01_투자'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_58',
-            'category': '홈계좌',
-            'page': '3.2_투자_상세(연금외상품)_02_내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_59',
-            'category': '홈계좌',
-            'page': '3.2_투자_상세(연금외상품)_03_계좌상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_60',
-            'category': '홈계좌',
-            'page': '3.2_투자_상세(연금외상품)_04_상품정보'
+            'url': '02_my_01',
+            'category': 'My',
+            'page': '더보기my_1.1 연결 데이터 없는 경우(01_마이페이지_연결정보, 직접입력 없는 경우)'
         },
     ]
 }
 
-data.edit3 = {
-    'title': 'v2.1 고도화 04.14 요청 사항 (v1.34)',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '14_migration_05',
-            'category': '마이그레이션',
-            'page': '기가입자 안내'
-        },
-    ]
-}
-
-data.edit4 = {
-    'title': 'v2.1 고도화 04.14 요청 사항 (v1.34.1)',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_01',
-            'category': '홈계좌',
-            'page': '내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_03',
-            'category': '홈계좌',
-            'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
-        },
-    ]
-}
 
 /*아차 2.0_오픈개선안*/
 data.alert = {

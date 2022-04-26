@@ -118,6 +118,12 @@
   padding: 0 8px;
 }
 
+.migration-end .info-sub {
+  font-size: 15px;
+  color: var(--text-02);
+  padding-top: 25px;
+}
+
 .migration-end .fixed-bottom {
   padding: 0 20px;
   bottom: 0;

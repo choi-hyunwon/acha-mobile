@@ -1254,6 +1254,11 @@
   font-weight: 500;
 }
 
+.my-card-detail .card-detail-wrap .card-info .crad-info-list li span:nth-child(2).disagree {
+  font-family: var(--font1);
+  color: #d3d3d5;
+}
+
 .my-card-detail .card-detail-wrap .card-info .crad-info-list li span:nth-child(2).won::after {
   content: '원';
   font-family: var(--font1);
@@ -2095,6 +2100,7 @@
   font-size: 15px;
   font-family: var(--font2);
   letter-spacing: -.65px;
+  /*가맹점명 미동의*/
 }
 
 .my-card-detail .card-detail-list-wrap .spending-list li .title em:first-child {
@@ -2136,6 +2142,18 @@
   position: absolute;
   top: 21px;
   left: 4px;
+}
+
+.my-card-detail .card-detail-list-wrap .spending-list li .title.disagree {
+  display: inline-block;
+  width: unset;
+  font-family: var(--font1);
+  color: #d3d3d5;
+  font-size: 11px;
+  line-height: 22px;
+  border: 1px solid #e3e4e8;
+  padding: 0 8px;
+  border-radius: 12px;
 }
 
 .my-card-detail .card-detail-list-wrap .spending-list li .val {
@@ -3136,6 +3154,37 @@
 
 .my-card-main-wrap .btn-area {
   padding: 0 20px 22px;
+}
+
+.my-card-reconnect-wrap {
+  padding: 30px 20px 107px;
+}
+
+.my-card-reconnect-wrap .heading {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.my-card-reconnect-wrap .sub-heading {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  color: var(--text-02);
+  margin-bottom: 34px;
+}
+
+.my-card-reconnect-wrap .img {
+  width: 100%;
+}
+
+.my-card-reconnect-wrap .img img {
+  width: 100%;
+}
+
+.my-card-reconnect-wrap .btn-area {
+  padding: 0 22px 22px;
 }
 
 @media (max-width: 350px) {

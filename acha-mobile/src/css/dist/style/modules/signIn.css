@@ -255,7 +255,8 @@
 
 .sign-in-wrap .card-wrap .card-box .item > .checkbox-select {
   height: fit-content;
-  margin-bottom: 7px;
+  margin-bottom: 11px;
+  margin-top: 11px;
 }
 
 .sign-in-wrap .card-wrap .card-box .item > .checkbox-select label {
@@ -263,7 +264,7 @@
 }
 
 .sign-in-wrap .card-wrap .card-box .item > .checkbox-select label + label {
-  margin-left: 17px;
+  margin-left: 27px;
 }
 
 .sign-in-wrap .card-wrap .card-box .item > .checkbox-select .filled-in {
@@ -354,7 +355,7 @@
 }
 
 .sign-in-wrap .tip-wrap {
-  padding: 0 28px;
+  padding: 0 20px;
   margin-bottom: 30px;
 }
 
@@ -365,7 +366,7 @@
   font-family: var(--font2);
   font-weight: 500;
   line-height: 19px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .sign-in-wrap .tip-wrap .list-title::before {

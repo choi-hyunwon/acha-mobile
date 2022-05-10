@@ -7,41 +7,41 @@
                 <ul>
 <!--                    <li><a href="#">서비스 소개</a></li>-->
                     <li><a href="#">공동인증서 복사</a></li> <!-- active 시, 활성화 -->
-<!--                    <li><a href="#">이벤트</a></li>-->
-<!--                    <li><a href="#">공지사항</a></li>-->
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
                 </ul>
             </div>
             <div class="menu-pc _menuPC">
                 <ul>
 <!--                    <li><a href="#">서비스 소개</a></li>-->
                     <li><a href="#">공동인증서 복사</a></li> <!-- active 시, 활성화 -->
-<!--                    <li><a href="#">이벤트</a></li>-->
-<!--                    <li><a href="#">공지사항</a></li>-->
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">공지사항</a></li>
                 </ul>
             </div>
-<!--            <a class="btn-menu _btnMenu" href="javascript:void(0);"></a>-->
+            <a class="btn-menu _btnMenu" href="javascript:void(0);"></a>
         </div>
     </div>
     <script>
         $('#headerSticky').sticky({topSpacing: 0})
 
-        // $('._btnMenu').on('click', function (e){
-        //     e.preventDefault();
-        //     if($('._btnMenu').hasClass('close')){
-        //         $(this).removeClass('close')
-        //         $('._menu').removeClass('open')
-        //         $('._menuMobile').hide()
-        //         $('#wrap').removeClass('dim')
-        //         $('body,html').removeClass('dim-scroll')
-        //     }
-        //     else {
-        //         $(this).addClass('close')
-        //         $('._menu').addClass('open')
-        //         $('._menuMobile').show()
-        //         $('#wrap').addClass('dim')
-        //         $('body,html').addClass('dim-scroll')
-        //     }
-        // })
+        $('._btnMenu').on('click', function (e){
+            e.preventDefault();
+            if($('._btnMenu').hasClass('close')){
+                $(this).removeClass('close')
+                $('._menu').removeClass('open')
+                $('._menuMobile').hide()
+                $('#wrap').removeClass('dim')
+                $('body,html').removeClass('dim-scroll')
+            }
+            else {
+                $(this).addClass('close')
+                $('._menu').addClass('open')
+                $('._menuMobile').show()
+                $('#wrap').addClass('dim')
+                $('body,html').addClass('dim-scroll')
+            }
+        })
 
         $('._menuPC li a').on('click',function (){
             $(this).parent().addClass('active').siblings().removeClass('active')

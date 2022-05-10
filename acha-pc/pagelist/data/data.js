@@ -4,9 +4,9 @@ data.edit = {
     'list': [
         {
             "stateClass": "complete",
-            "url": "ui_ma_01",
+            "url": "4. 공지사항(상세)",
             "part": "pages",
-            "page": "메인화면"
+            "page": "4. 공지사항(상세)"
         },
     ]
 };

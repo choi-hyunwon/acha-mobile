@@ -274,6 +274,22 @@
       border-bottom: 1px solid #f5f6f8;
       position: relative;
       padding: 20px 0;
+      &.no-data{
+        border: none;
+        padding: 200px 0 0;
+        text-align: center;
+        font-size: 14px;
+        color: var(--text-02);
+        position: relative;
+        &:before{
+          content: '';
+          display: inline-block;
+          width: 52px;
+          height: 52px;
+          margin-bottom: 12px;
+          background: url("../../img/common/ico-no-market@2x.png") no-repeat center center/ contain;
+        }
+      }
       a{
         color: var(--text-01);
         .img{

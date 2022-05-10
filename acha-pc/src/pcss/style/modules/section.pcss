@@ -93,6 +93,7 @@
 }
 
 
+
 /* 메인 section_main */
 .section_main {
     width: 100%;
@@ -234,46 +235,8 @@
             }
         }
     }
-
-    /* .section_main {
-         height: 1000px;
-         background-image: url("../../img/main/img_main_visual_2400@2x.png");
-
-         & .inner {
-             max-width: 1060px;
-             margin: 0 auto;
-             padding-top: 347px;
-
-             & .logo {
-                 display: block;
-                 margin-bottom: 30px;
-
-                 & a {
-                     display: inline-block;
-                 }
-             }
-
-             & .desc {
-                 margin-bottom: 60px;
-                 padding-top: 30px;
-                 & p {
-                     text-align: left;
-                 }
-             }
-
-             & .btn_group {
-                 padding: 0;
-
-                 & ul {
-                     display: block;
-                 }
-                 & .btn-download-app {
-                     display: none;
-                 }
-             }
-         }
-     }*/
 }
+
 
 
 /* 미리확인 section_check */
@@ -322,22 +285,58 @@
 }
 
 
-/* 지출관리 section_expense */
-.section_expense {
+
+/* 고정지출관리 section_fixed */
+.section_fixed {
     position: relative;
-
     & .inner {
-        & .wrap_tabs {
-            position: relative;
-            width: 100%;
-            margin-bottom: 22px;
+        width: 100%;
+        padding-bottom: 20px;
 
+        & .txt-area {
+            margin-bottom: 40px;
+            & .desc {
+                color: #191f28;
+            }
+        }
+        & .panel {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 459px;
+            margin: 0 auto;
+            background: url('../../img/main/M-img-fixed-1.png') no-repeat center center / 173px 374px;
+
+
+            &::after {
+                content: '';
+                display: block;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                background: url('../../img/main/M-img-fixed-0.png') no-repeat center center / 336px 459px;
+                position: absolute;
+                top: 0;
+            }
+            & .img {
+                width: 100%;
+                height: 416px; /*374px */
+            }
+        }
+    }
+}
+
+/* tablet */
+@media (min-width: 767px) {
+    .section_fixed {
+        & .inner {
             & .panel {
+                height: 773px;
                 position: relative;
                 z-index: 1;
                 width: 100%;
-                height: 459px;
-                margin: 0 auto;
+                background: url('../../img/main/T-img-fixed-1.png') no-repeat center center / 292px 630px;
+
 
                 &::after {
                     content: '';
@@ -345,148 +344,23 @@
                     z-index: 1;
                     width: 100%;
                     height: 100%;
-                    background: url('../../img/main/M-img_expense_phone_basic.png') no-repeat center center / 336px 459px;
+                    background: url('../../img/main/T-img-fixed-0.png') no-repeat center center / 566px 773px;
                     position: absolute;
                     top: 0;
                 }
-
-                &:nth-of-type(1) {
-                    & .img {
-                        background: url("../../img/main/img-02-phone-1-cal-s@2x.png") no-repeat center 42px / 173px 374px;
-                    }
-                }
-
-                /**
-                &:nth-of-type(2) {
-                    & .img {
-                        background: url("../../img/main/M-img_expense_phone_2_cate.png") no-repeat center 42px / 173px 374px;
-                    }
-                }
-                 */
-
-                &:nth-of-type(2) {
-                    & .img {
-                        background: url("../../img/main/img-02-phone-3-mon-s@2x.png") no-repeat center 42px / 173px 374px;
-                    }
-                }
-
                 & .img {
                     width: 100%;
-                    height: 416px; /*374px */
+                    height: 773px; /*374px */
                 }
             }
 
-            & .tabs {
-                text-align: center;
-                margin-bottom: 40px;
-                padding-top: 40px;
-
-                & li {
-                    display: inline-block;
-                    margin-right: 4px;
-
-                    & .btn {
-                        padding: 0 20px;
-                        border: none;
-                        display: block;
-                        height: 34px;
-                        line-height: 34px;
-                        font-size: 16px;
-                        color: #6536d1;
-                        font-family: var(--font3);
-
-                        & span {
-                            display: inline-block;
-                            vertical-align: middle;
-                        }
-
-                        &:hover, &:focus {
-                            box-shadow: none;
-                            background: none;
-                            color: #6536d1;
-                        }
-                    }
-
-                    &.on {
-                        & .btn {
-                            color: #ffffff;
-                            background-color: #6536d1;
-                        }
-                    }
-                }
-            }
-        }
-
-        &.pc-inner {
-            display: none;
-        }
-    }
-}
-
-/* tablet */
-@media (min-width: 767px) {
-    .section_expense {
-        & .inner {
-            & .wrap_tabs {
-                margin-bottom: 12px;
-
-                & .panel {
-                    height: 773px;
-
-                    &::after {
-                        background: url('../../img/main/T-img_expense_phone_basic.png') no-repeat center center / 566px 773px;
-                        position: absolute;
-                        top: 0;
-                    }
-
-                    &:nth-of-type(1) {
-                        & .img {
-                            background: url("../../img/main/img-02-phone-1-cal-m@2x.png") no-repeat center 65px / 292px 630px;
-                        }
-                    }
-
-                    &:nth-of-type(2) {
-                        & .img {
-                            background: url("../../img/main/img-02-phone-3-mon-m@2x.png") no-repeat center 65px / 292px 630px;
-                        }
-                    }
-/*
-                    &:nth-of-type(3) {
-                        & .img {
-                            background: url("../../img/main/T-img_expense_phone_3_mon.png") no-repeat center 65px / 292px 630px;
-                        }
-                    }
-*/
-                    & .img {
-                        width: 100%;
-                        height: 773px;
-                    }
-                }
-
-                & .tabs {
-                    padding-top: 54px;
-
-                    & li {
-                        display: inline-block;
-                        margin-right: 0;
-
-
-                        & .btn {
-                            height: 56px;
-                            line-height: 56px;
-                            padding: 0 26px;
-                            font-size: 24px;
-                        }
-                    }
-                }
-            }
         }
     }
 }
 
 /* pc */
 @media (min-width: 1024px) {
-    .section_expense {
+    .section_fixed {
         & .inner {
             &.mobile-inner {
                 display: none;
@@ -576,17 +450,17 @@
                             display: inline-block;
 
                             &:nth-of-type(1) {
-                                background: url("../../img/main/img-02-phone-1-cal@2x.png") no-repeat center center/ 50% auto;
+                                background: url("../../img/main/P-img-fixed-1.png") no-repeat center center/ 50% auto;
                             }
 
                             &:nth-of-type(2) {
-                                background: url("../../img/main/img-02-phone-2-mon@2x.png") no-repeat center center / 50% auto;
+                                background: url("../../img/main/P-img-fixed-0.png") no-repeat center center / 50% auto;
                             }
-/*
-                            &:nth-of-type(3) {
-                                background: url("../../img/main/P-img_expense_phone_3_mon.png") no-repeat center center/ 50% auto;
-                            }
- */
+                            /*
+                                                        &:nth-of-type(3) {
+                                                            background: url("../../img/main/P-img_expense_phone_3_mon.png") no-repeat center center/ 50% auto;
+                                                        }
+                             */
                         }
                     }
                 }
@@ -595,6 +469,7 @@
     }
 
 }
+
 
 
 /* 알림 section_alarm */
@@ -660,13 +535,14 @@
 }
 
 
+
 /* 지출스토리 section_story */
 .section_story {
     background: rgba(248, 245, 250, 0.6) /*#f8f5fa*/;
 
     & .inner {
         padding-bottom: 522px;
-        background: url("../../img/main/img-04-phone-s@2x.png") no-repeat center bottom 9px / 360px 473px;
+        background: url("../../img/main/M-img-story.png") no-repeat center bottom 9px / 360px 473px;
         width: 100%;
 
         &::before {
@@ -702,11 +578,9 @@
 /* tablet */
 @media (min-width: 767px) {
     .section_story {
-        background: url("../../img/main/P-bg-story.png") no-repeat 0 0;
-
-        & .inner {
+          & .inner {
             padding-bottom: 823px;
-            background: url("../../img/main/img-04-phone-m@2x.png") no-repeat center bottom 8px / 680px 775px;
+            background: url("../../img/main/T-img-story.png") no-repeat center bottom 8px / 680px 775px;
         }
     }
 }
@@ -714,11 +588,9 @@
 /* pc */
 @media (min-width: 1024px) {
     .section_story {
-        background: url("../../img/main/P-bg-story.png") no-repeat 0 0;
-
         & .inner {
             padding-bottom: 991px;
-            background: url("../../img/main/img-04-phone@2x.png") no-repeat center bottom 61px / 1260px 893px;
+            background: url("../../img/main/P-img-story.png") no-repeat center bottom 61px / 1260px 893px;
 
             & .txt-area {
                 & .txt-lg, & .desc {
@@ -730,11 +602,279 @@
 }
 
 
-/* 현금흐름 section_current */
-.section_current {
+
+/* 금융자산 section_asset */
+.section_asset {
+    position: relative;
+
+    & .inner {
+        & .wrap_tabs {
+            position: relative;
+            width: 100%;
+            margin-bottom: 22px;
+
+            & .panel {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                height: 459px;
+                margin: 0 auto;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../../img/main/M-img-assets-0.png') no-repeat center center / 336px 459px;
+                    position: absolute;
+                    top: 0;
+                }
+
+                &:nth-of-type(1) {
+                    & .img {
+                        background: url("../../img/main/M-img-assets-1.png") no-repeat center 42px / 165px 357px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    & .img {
+                        background: url("../../img/main/M-img-assets-2.png") no-repeat center 42px / 165px 357px;
+                    }
+                }
+
+                & .img {
+                    width: 100%;
+                    height: 416px; /*374px */
+                }
+            }
+
+            & .tabs {
+                text-align: center;
+                margin-bottom: 40px;
+                padding-top: 40px;
+
+                & li {
+                    display: inline-block;
+                    margin-right: 4px;
+
+                    & .btn {
+                        padding: 0 20px;
+                        border: none;
+                        display: block;
+                        height: 34px;
+                        line-height: 34px;
+                        font-size: 16px;
+                        color: #6536d1;
+                        font-family: var(--font3);
+
+                        & span {
+                            display: inline-block;
+                        }
+
+                        &:hover, &:focus {
+                            box-shadow: none;
+                            background: none;
+                            color: #6536d1;
+                        }
+                    }
+
+                    &.on {
+                        & .btn {
+                            color: #ffffff;
+                            background-color: #6536d1;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.pc-inner {
+            display: none;
+        }
+    }
+}
+
+/* tablet */
+@media (min-width: 767px) {
+    .section_asset {
+        & .inner {
+            & .wrap_tabs {
+                margin-bottom: 12px;
+
+                & .panel {
+                    height: 773px;
+
+                    &::after {
+                        background: url('../../img/main/T-img-assets-0.png') no-repeat center center / 566px 773px;
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    &:nth-of-type(1) {
+                        & .img {
+                            background: url("../../img/main/T-img-assets-1.png") no-repeat center 65px / 292px 630px;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        & .img {
+                            background: url("../../img/main/T-img-assets-2.png") no-repeat center 65px / 292px 630px;
+                        }
+                    }
+/*
+                    &:nth-of-type(3) {
+                        & .img {
+                            background: url("../../img/main/T-img_expense_phone_3_mon.png") no-repeat center 65px / 292px 630px;
+                        }
+                    }
+*/
+                    & .img {
+                        width: 100%;
+                        height: 773px;
+                    }
+                }
+
+                & .tabs {
+                    padding-top: 54px;
+
+                    & li {
+                        display: inline-block;
+                        margin-right: 0;
+
+
+                        & .btn {
+                            height: 56px;
+                            line-height: 56px;
+                            padding: 0 26px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .section_asset {
+        & .inner {
+            &.mobile-inner {
+                display: none;
+            }
+
+            &.pc-inner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+                padding: 100px 13.17% /*253px*/ 105px;
+
+                & .txt-area {
+                    width: 41.08% /*1414 / 581px*/;
+                }
+
+                & .tabs {
+                    padding-top: 30px;
+                    text-align: left;
+
+                    & li {
+                        display: inline-block;
+                        margin-right: 0;
+
+                        & .btn {
+                            height: 56px;
+                            padding: 0 26px;
+                            font-size: 28px;
+                            line-height: 52px;
+                            border: none;
+                            color: #6537d1;
+                            font-weight: bold;
+
+                            &:hover {
+                                box-shadow: unset;
+                                background-color: unset;
+                            }
+                        }
+
+                        &.on {
+                            & .btn {
+                                border: 1px solid #6537d1;
+                                color: #ffffff;
+
+                                &:hover {
+                                    color: #ffffff;
+                                    background-color: #6537d1;
+                                    box-shadow: 0 5px 10px 0 rgb(108 54 255 / 40%);
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .wrap_tabs {
+                    position: relative;
+                    width: 640px;
+                    height: 875px;
+                    overflow: hidden;
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        background: url('../../img/main/P-img-assets-0.png') no-repeat center center / 100% auto;
+                        position: absolute;
+                        top: 0;
+                        z-index: 1;
+                    }
+
+                    & .panel {
+                        position: relative;
+                        width: 300%;
+                        height: 875px;
+                        display: inline-block;
+
+                        &::after {
+                            display: none;
+                        }
+
+                        & .img {
+                            position: relative;
+                            width: 33.33333%;
+                            height: 875px;
+                            display: inline-block;
+
+                            &:nth-of-type(1) {
+                                background: url("../../img/main/P-img-assets-1.png") no-repeat center center/ 50% auto;
+                            }
+
+                            &:nth-of-type(2) {
+                                background: url("../../img/main/P-img-assets-2.png") no-repeat center center / 50% auto;
+                            }
+/*
+                            &:nth-of-type(3) {
+                                background: url("../../img/main/P-img_expense_phone_3_mon.png") no-repeat center center/ 50% auto;
+                            }
+ */
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+/* 금융마켓 section_market */
+.section_market {
     & .inner {
         padding-bottom: 550px;
-        background: url("../../img/main/img-05-phone-s@2x.png") no-repeat center bottom 80px / auto 391px;
+        background: url("../../img/main/M-img-market.png") no-repeat center bottom 80px / auto 391px;
 
         & .txt-area {
             & .desc {
@@ -748,20 +888,20 @@
 
 /* tablet */
 @media (min-width: 767px) {
-    .section_current {
+    .section_market {
         & .inner {
             padding-bottom: 863px;
-            background: url("../../img/main/img-05-phone-m@2x.png") no-repeat center bottom 123px / auto 635px;
+            background: url("../../img/main/T-img-market.png") no-repeat center bottom 123px / auto 635px;
         }
     }
 }
 
 /* pc */
 @media (min-width: 1024px) {
-    .section_current {
+    .section_market {
         & .inner {
             padding: 460px 0 394px;
-            background: url("../../img/main/img-05-phone@2x.png") no-repeat left 82px top 148px / 49.843% /*960px*/ auto;
+            background: url("../../img/main/P-img-market.png") no-repeat left 82px top 148px / 49.843% /*960px*/ auto;
             margin: 0 auto;
             position: relative;
 
@@ -782,6 +922,8 @@
         }
     }
 }
+
+
 
 
 /* 안전한 금융생활 section_data */

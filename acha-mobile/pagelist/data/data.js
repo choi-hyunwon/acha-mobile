@@ -2,37 +2,25 @@ var data = {}
 
 
 data.edit1 = {
-    'title': ' 04.22 / 04.26 요청 사항 (v1.34.3)',
+    'title': ' 05.10 (v1.35)',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '05_my_card_13',
+            'url': '05_my_card_02',
             'category': '카드지출',
-            'page': '카드지출_02. 내카드_1.2 편집'
+            'page': '(카드지출_02. 내카드_1.1 목록(메인 영역별 항목))'
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_05',
-            'category': '더보기',
-            'page': '더보기_02.공지사항(02_상세 공지사항 컨텐츠 최소 길이)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '10_story_02',
-            'category': '카드지출',
-            'page': '카드지출_04. 타임라인_1.1 거래내역'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_01',
+            'url': '11_exependiture_06',
             'category': '홈계좌',
-            'page': '내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)'
+            'page': '현금흐름 소개(내돈관리_03. 내돈관리_1.2 현금흐름_2. 등록된 지출&계좌가 없는 경우)'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_01',
-            'category': 'My',
-            'page': '더보기my_1.1 연결 데이터 없는 경우(01_마이페이지_연결정보, 직접입력 없는 경우)'
+            'url': '00_common_card_no_product',
+            'category': 'common',
+            'page': '금융마켓_02_상품이없을경우'
         },
     ]
 }
@@ -1449,6 +1437,12 @@ data.common = {
             'url': '00_common_card',
             'category': 'common',
             'page': '금융마켓_01_카드'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '00_common_card_no_product',
+            'category': 'common',
+            'page': '금융마켓_02_상품이없을경우'
         },
     ]
 };

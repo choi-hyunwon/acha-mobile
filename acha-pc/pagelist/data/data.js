@@ -20,6 +20,12 @@ data.edit = {
             "part": "pages",
             "page": "6-2. 이벤트_없을경우"
         },
+        {
+            "stateClass": "complete",
+            "url": "ui_ma_01",
+            "part": "pages",
+            "page": "메인화면"
+        },
     ]
 };
 data.page = {

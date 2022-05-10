@@ -493,7 +493,7 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            width: calc(100% - 130px);
+            width: calc(100% - 155px);
           }
 
           .sum {
@@ -505,13 +505,15 @@
             letter-spacing: -.14px;
             line-height: 21px;
             padding-top: 6px;
-
-            &::after {
-              content: '원';
-              font-family: var(--font2);
-              font-size: 13px;
-              line-height: 19px;
+            .num{
+              &::after {
+                content: '원';
+                font-family: var(--font2);
+                font-size: 13px;
+                line-height: 19px;
+              }
             }
+
           }
         }
 

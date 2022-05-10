@@ -956,6 +956,25 @@
     & .btn-wrap {
         text-align: center;
     }
+
+    & .no-data{
+        font-size: 15px;
+        color: var(--text-02);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 430px;
+        &:before{
+            content: '';
+            display: inline-block;
+            background: url("../../img/common/img_no_notice_s@2x.png") no-repeat center center/ contain;
+            width: 210px;
+            height: 140px;
+            margin-bottom: 14px;
+        }
+    }
+
 }
 
 /* tablet */
@@ -1085,6 +1104,18 @@
                         }
                     }
                 }
+            }
+        }
+
+        & .no-data{
+            font-size: 20px;
+            min-height: 570px;
+            padding-bottom: 60px;
+            &:before{
+                background: url("../../img/common/img_no_notice_l@2x.png") no-repeat center center/ contain;
+                width: 300px;
+                height: 200px;
+                margin-bottom: 20px;
             }
         }
     }
@@ -1465,6 +1496,24 @@
             }
         }
     }
+
+    & .no-data{
+        font-size: 15px;
+        color: var(--text-02);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 430px;
+        &:before{
+            content: '';
+            display: inline-block;
+            background: url("../../img/common/img_no_event_s@2x.png") no-repeat center center/ contain;
+            width: 210px;
+            height: 140px;
+            margin-bottom: 14px;
+        }
+    }
 }
 
 /* tablet */
@@ -1695,6 +1744,18 @@
                         }
                     }
                 }
+            }
+        }
+
+        & .no-data{
+            font-size: 20px;
+            min-height: 570px;
+            padding-bottom: 60px;
+            &:before{
+                background: url("../../img/common/img_no_event_l@2x.png") no-repeat center center/ contain;
+                width: 300px;
+                height: 200px;
+                margin-bottom: 20px;
             }
         }
     }

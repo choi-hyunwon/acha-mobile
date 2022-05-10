@@ -1,12 +1,24 @@
 var data = {};
 data.edit = {
-    'title': '2022.02.21 수정 요청 사항',
+    'title': '2022.05.04 수정 요청 사항',
     'list': [
         {
             "stateClass": "complete",
             "url": "4. 공지사항(상세)",
             "part": "pages",
             "page": "4. 공지사항(상세)"
+        },
+        {
+            "stateClass": "complete",
+            "url": "4-2. 공지사항_없을경우",
+            "part": "pages",
+            "page": "4-2. 공지사항_없을경우"
+        },
+        {
+            "stateClass": "complete",
+            "url": "6-2. 이벤트_없을경우",
+            "part": "pages",
+            "page": "6-2. 이벤트_없을경우"
         },
     ]
 };
@@ -145,6 +157,12 @@ data.renewal = {
         },
         {
             "stateClass": "complete",
+            "url": "4-2. 공지사항_없을경우",
+            "part": "pages",
+            "page": "4-2. 공지사항_없을경우"
+        },
+        {
+            "stateClass": "complete",
             "url": "5. 이벤트(목록)",
             "part": "pages",
             "page": "5. 이벤트(목록)"
@@ -154,6 +172,12 @@ data.renewal = {
             "url": "6. 이벤트(상세)",
             "part": "pages",
             "page": "6. 이벤트(상세)"
+        },
+        {
+            "stateClass": "complete",
+            "url": "6-2. 이벤트_없을경우",
+            "part": "pages",
+            "page": "6-2. 이벤트_없을경우"
         },
         {
             "stateClass": "complete",

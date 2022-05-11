@@ -289,16 +289,19 @@
 /* 고정지출관리 section_fixed */
 .section_fixed {
     position: relative;
+
     & .inner {
         width: 100%;
         padding-bottom: 20px;
 
         & .txt-area {
             margin-bottom: 40px;
+
             & .desc {
                 color: #191f28;
             }
         }
+
         & .panel {
             position: relative;
             z-index: 1;
@@ -318,6 +321,7 @@
                 position: absolute;
                 top: 0;
             }
+
             & .img {
                 width: 100%;
                 height: 416px; /*374px */
@@ -348,6 +352,7 @@
                     position: absolute;
                     top: 0;
                 }
+
                 & .img {
                     width: 100%;
                     height: 773px; /*374px */
@@ -362,109 +367,44 @@
 @media (min-width: 1024px) {
     .section_fixed {
         & .inner {
-            &.mobile-inner {
-                display: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+
+            & .txt-area {
+                display: inline-block;
+                width: 500px;
+                word-break: keep-all;
+                margin-bottom: 0;
+                margin-left: 5%;
             }
 
-            &.pc-inner {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-direction: row-reverse;
-                padding: 100px 13.17% /*253px*/ 105px;
+            & .panel {
+                width: 640px;
+                height: 875px;
+                position: relative;
+                margin: 0;
+                z-index: 1;
+                background: url('../../img/main/P-img-fixed-1.png') no-repeat center center / 292px 630px;
 
-                & .txt-area {
-                    width: 41.08% /*1414 / 581px*/;
+                &::after {
+                    content: '';
+                    display: block;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    background: url('../../img/main/P-img-fixed-0.png') no-repeat center center / 566px 773px;
+                    position: absolute;
+                    top: 0;
                 }
 
-                & .tabs {
-                    padding-top: 30px;
-                    text-align: left;
-
-                    & li {
-                        display: inline-block;
-                        margin-right: 0;
-
-                        & .btn {
-                            height: 56px;
-                            padding: 0 26px;
-                            font-size: 28px;
-                            line-height: 52px;
-                            border: none;
-                            color: #6537d1;
-                            font-weight: bold;
-
-                            &:hover {
-                                box-shadow: unset;
-                                background-color: unset;
-                            }
-                        }
-
-                        &.on {
-                            & .btn {
-                                border: 1px solid #6537d1;
-                                color: #ffffff;
-
-                                &:hover {
-                                    color: #ffffff;
-                                    background-color: #6537d1;
-                                    box-shadow: 0 5px 10px 0 rgb(108 54 255 / 40%);
-
-                                }
-                            }
-                        }
-                    }
-                }
-
-                & .wrap_tabs {
-                    position: relative;
-                    width: 640px;
+                & .img {
+                    width: 100%;
                     height: 875px;
-                    overflow: hidden;
-
-                    &::after {
-                        content: '';
-                        display: inline-block;
-                        width: 100%;
-                        height: 100%;
-                        background: url('../../img/main/P-img_expense_phone_basic.png') no-repeat center center / 100% auto;
-                        position: absolute;
-                        top: 0;
-                        z-index: 1;
-                    }
-
-                    & .panel {
-                        position: relative;
-                        width: 300%;
-                        height: 875px;
-                        display: inline-block;
-
-                        &::after {
-                            display: none;
-                        }
-
-                        & .img {
-                            position: relative;
-                            width: 33.33333%;
-                            height: 875px;
-                            display: inline-block;
-
-                            &:nth-of-type(1) {
-                                background: url("../../img/main/P-img-fixed-1.png") no-repeat center center/ 50% auto;
-                            }
-
-                            &:nth-of-type(2) {
-                                background: url("../../img/main/P-img-fixed-0.png") no-repeat center center / 50% auto;
-                            }
-                            /*
-                                                        &:nth-of-type(3) {
-                                                            background: url("../../img/main/P-img_expense_phone_3_mon.png") no-repeat center center/ 50% auto;
-                                                        }
-                             */
-                        }
-                    }
                 }
             }
+
         }
     }
 
@@ -578,7 +518,7 @@
 /* tablet */
 @media (min-width: 767px) {
     .section_story {
-          & .inner {
+        & .inner {
             padding-bottom: 823px;
             background: url("../../img/main/T-img-story.png") no-repeat center bottom 8px / 680px 775px;
         }
@@ -722,13 +662,15 @@
                             background: url("../../img/main/T-img-assets-2.png") no-repeat center 65px / 292px 630px;
                         }
                     }
-/*
-                    &:nth-of-type(3) {
-                        & .img {
-                            background: url("../../img/main/T-img_expense_phone_3_mon.png") no-repeat center 65px / 292px 630px;
-                        }
-                    }
-*/
+
+                    /*
+                                        &:nth-of-type(3) {
+                                            & .img {
+                                                background: url("../../img/main/T-img_expense_phone_3_mon.png") no-repeat center 65px / 292px 630px;
+                                            }
+                                        }
+                    */
+
                     & .img {
                         width: 100%;
                         height: 773px;
@@ -782,6 +724,7 @@
                     & li {
                         display: inline-block;
                         margin-right: 0;
+                        margin-bottom: 10px;
 
                         & .btn {
                             height: 56px;
@@ -854,11 +797,12 @@
                             &:nth-of-type(2) {
                                 background: url("../../img/main/P-img-assets-2.png") no-repeat center center / 50% auto;
                             }
-/*
-                            &:nth-of-type(3) {
-                                background: url("../../img/main/P-img_expense_phone_3_mon.png") no-repeat center center/ 50% auto;
-                            }
- */
+
+                            /*
+                                                        &:nth-of-type(3) {
+                                                            background: url("../../img/main/P-img_expense_phone_3_mon.png") no-repeat center center/ 50% auto;
+                                                        }
+                             */
                         }
                     }
                 }
@@ -900,13 +844,14 @@
 @media (min-width: 1024px) {
     .section_market {
         & .inner {
-            padding: 460px 0 394px;
-            background: url("../../img/main/P-img-market.png") no-repeat left 82px top 148px / 49.843% /*960px*/ auto;
+            padding: 450px 0 394px;
+            background: url("../../img/main/P-img-market.png") no-repeat right 10% /*100px*/ center / 49.843% /*960px*/ auto;
             margin: 0 auto;
             position: relative;
 
             & .txt-area {
-                padding-left: 58.52% /*1037px*/;
+                padding-left: 20%;
+                display: inline-block;
 
                 & .txt-lg {
                     font-size: 50px;
@@ -922,7 +867,6 @@
         }
     }
 }
-
 
 
 
@@ -989,6 +933,7 @@
         }
     }
 }
+
 
 
 /*

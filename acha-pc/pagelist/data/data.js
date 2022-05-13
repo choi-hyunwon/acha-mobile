@@ -4,27 +4,15 @@ data.edit = {
     'list': [
         {
             "stateClass": "complete",
-            "url": "4. 공지사항(상세)",
-            "part": "pages",
-            "page": "4. 공지사항(상세)"
-        },
-        {
-            "stateClass": "complete",
-            "url": "4-2. 공지사항_없을경우",
-            "part": "pages",
-            "page": "4-2. 공지사항_없을경우"
-        },
-        {
-            "stateClass": "complete",
-            "url": "6-2. 이벤트_없을경우",
-            "part": "pages",
-            "page": "6-2. 이벤트_없을경우"
-        },
-        {
-            "stateClass": "complete",
             "url": "ui_ma_01",
             "part": "pages",
             "page": "메인화면"
+        },
+        {
+            "stateClass": "complete",
+            "url": "8. 이벤트 당첨자 확인(상세)",
+            "part": "pages",
+            "page": "8. 이벤트 당첨자 확인(상세)"
         },
     ]
 };

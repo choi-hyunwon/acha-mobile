@@ -663,6 +663,8 @@
 
 .event-content-wrap {
   padding: 30px 0 0;
+  min-height: calc(100vh - 102px);
+
 
   .event-item-detail-wrap {
     padding: 10px 20px 0;

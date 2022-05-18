@@ -5,7 +5,7 @@
 <div class="wrap">
     <div class="contents">
         <div class="box-ex-top box-card-top">
-            <div class="title"><span class="font-bold primary-color">내 자산현황</span>을<br/>확인해보세요 🙂</div>
+            <div class="title"><span class="total">총 자산</span><span class="total-sum">160,250,000</span></div>
 
             <div class="sum-area">
                 <p class="update">30분 전<a href="#" class="ico-refresh-mini"></a></p>
@@ -202,5 +202,16 @@
      **/
     toastPopupShow()
 </script>-->
+
+<script>
+    $('.dropdown-menu').click(function(e) {
+       e.stopPropagation();
+    });
+    $('body').click(function (e){
+        if( !$('.box-card-list').has(e.target).length ){
+            e.stopPropagation();
+        }
+    });
+</script>
 </body>
 </html>

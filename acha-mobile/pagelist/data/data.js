@@ -2,25 +2,43 @@ var data = {}
 
 
 data.edit1 = {
-    'title': ' 05.10 (v1.35)',
+    'title': ' 05.11 (v1.36)',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '05_my_card_02',
+            'url': '05_my_card_03',
+            'category': 'data update',
+            'page': '1.1 데이터 업데이트 Case_5. 내역 추가 조회 (Real 호출)_2)내 카드 상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_my_card_14',
             'category': '카드지출',
-            'page': '(카드지출_02. 내카드_1.1 목록(메인 영역별 항목))'
+            'page': '카드지출 > 메인화면 > 카드 자산 미선택시'
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_06',
+            'url': '11_exependiture_01',
             'category': '홈계좌',
-            'page': '현금흐름 소개(내돈관리_03. 내돈관리_1.2 현금흐름_2. 등록된 지출&계좌가 없는 경우)'
+            'page': '내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)'
         },
         {
             'stateClass': 'complete',
-            'url': '00_common_card_no_product',
-            'category': 'common',
-            'page': '금융마켓_02_상품이없을경우'
+            'url': '11_exependiture_02',
+            'category': '홈계좌',
+            'page': '내자산_01_내자산_1.5_목록정렬_연결자산or숨길경우(내돈관리>계좌잔고)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_57',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_01_투자'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_58',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_02_내역'
         },
     ]
 }

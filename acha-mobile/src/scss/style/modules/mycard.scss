@@ -1229,7 +1229,8 @@
         display: inline-block;
         width: 16px;
         height: 16px;
-        background-image: url(../../img/common/ico-refresh-mini@2x.png);
+        /*background-image: url(../../img/common/ico-refresh-mini@2x.png);*/
+        background-image: url(../../img/common/ico_refresh_mini_t@2x.png);
         background-size: cover;
         vertical-align: middle;
         margin-left: 2px;
@@ -3340,7 +3341,10 @@
     line-height: 20px;
     letter-spacing: -0.35px;
     color: var(--text-02);
-    margin-bottom: 34px;
+    margin-bottom: 20px;
+    .font-bold{
+      color: var(--text-01);
+    }
   }
 
   .img {

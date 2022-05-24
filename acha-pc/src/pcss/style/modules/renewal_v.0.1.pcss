@@ -953,6 +953,206 @@
                         height: 280px;
                     }
                 }
+
+                & .terms_of_service_notice {
+
+                    & .title-sm {
+                        font-family: var(--font2);
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 22px;
+                        letter-spacing: -0.38px;
+                        margin-bottom: 15px;
+                    }
+
+                    & .content {
+                        font-size: 14px;
+                        line-height: 23px;
+                        letter-spacing: -0.35px;
+                        margin-bottom: 25px;
+                        color: var(--text-01);
+                    }
+
+                    & .t-table {
+                        margin-bottom: 30px;
+
+                        & .table {
+                            & thead {
+                                & tr {
+                                    & th {
+                                        padding: 0 10px;
+                                        height: 30px;
+                                        font-family: var(--font2);
+                                        font-size: 13px;
+                                        color: var(--text-02);
+                                        line-height: 21px;
+                                        letter-spacing: -.33px;
+                                        border-bottom: 1px solid #dee2e6;
+                                        background-color: #f5f6f8;
+                                        text-align: center;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                            & tbody {
+                                & tr {
+                                    & td {
+                                        padding: 10px;
+                                        line-height: 21px;
+                                        font-size: 13px;
+                                        font-family: var(--font1);
+                                        color: var(--text-02);
+                                        vertical-align: top;
+                                        text-align: left;
+
+                                        &.font-medium {
+                                            font-family: var(--font2);
+                                            color: var(--text-01);
+                                        }
+                                        & .font-red{
+                                            color: red;
+                                            position: relative;
+                                            &.cancel_line{
+                                                &::after{
+                                                    content:'';
+                                                    clear: both;
+                                                    display: inline-block;
+                                                    position: absolute;
+                                                    width: calc(100% - 35px);
+                                                    height: 1px;
+                                                    top: 10px;
+                                                    right: 0;
+                                                    background-color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &.font-small {
+                                    & tr {
+                                        & td {
+                                            font-size: 11px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .table {
+                        & thead {
+                            & tr {
+                                & th {
+                                    text-align: center;
+                                    font-family: var(--font1);
+                                    font-size: 11px;
+                                    font-weight: unset;
+                                    letter-spacing: -0.55px;
+                                    padding: 0;
+                                    border-top: 1px solid #e3e4e8;
+                                    border-bottom: 1px solid #e3e4e8;
+                                    border-right: 1px solid #e3e4e8;
+                                    background: #f5f6f8;
+                                    color: var(--text-02);
+
+                                    &:last-child {
+                                        border-right: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        & tbody, & tfoot {
+                            border-bottom: 1px solid #d5d5d5;
+
+                            & tr {
+                                & td {
+                                    text-align: center;
+                                    font-family: var(--font2);
+                                    font-size: 11px;
+                                    letter-spacing: -0.55px;
+                                    color: var(--text-01);
+                                    border-right: 1px solid #e3e4e8;
+
+                                    &:last-child {
+                                        border-right: none;
+                                    }
+
+                                    &.td-lg {
+                                        padding: 9px 15px 6px 16px;
+                                    }
+                                }
+                            }
+                        }
+
+                        & tfoot {
+                            & tr {
+                                & td {
+                                    font-family: var(--font1);
+                                    color: var(--color-point);
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+
+                        &.coltype {
+                            & tr {
+                                & td {
+                                    font-size: 10px;
+                                    text-align: left;
+                                    letter-spacing: -0.5px;
+                                    padding: 15px 15px 15px 16px;
+                                    line-height: 15px;
+
+                                    &.title {
+                                        font-family: var(--font1);
+                                        text-align: center;
+                                        font-size: 11px;
+                                        font-weight: 500;
+                                        letter-spacing: -0.55px;
+                                        background: #fbfbfb;
+                                        padding: 0;
+                                    }
+
+                                    & .list {
+                                        font-size: 10px;
+                                        color: #000000;
+                                        margin-bottom: 7px;
+
+                                        & .dot:after {
+                                            top: 6px
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.button_type {
+                            margin-bottom: 18px;
+                            border-collapse: collapse;
+
+                            & td {
+                                height: 44px;
+                                color: #737183;
+                                letter-spacing: -0.6px;
+                                font-size: 12px;
+                                border: 1px solid #e2e3e6;
+
+                                &:last-child {
+                                    border-right: 1px solid #e2e3e6;
+                                }
+
+                                &.active {
+                                    border-style: double;
+                                    border-color: var(--color-point);
+                                    color: var(--color-point);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -978,6 +1178,7 @@
             margin-bottom: 14px;
         }
     }
+
 
 }
 

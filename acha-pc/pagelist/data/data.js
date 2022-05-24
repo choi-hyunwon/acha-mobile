@@ -8,6 +8,12 @@ data.edit = {
             "part": "pages",
             "page": "8. 이벤트 당첨자 확인(상세)"
         },
+        {
+            "stateClass": "complete",
+            "url": "4-3. 공지사항(약관개정)",
+            "part": "pages",
+            "page": "4-3. 공지사항(약관개정)"
+        },
     ]
 };
 data.page = {

@@ -1,0 +1,31 @@
+<ul id="pagination" class="pagination justify-content-center mt-3">
+  <li class="page-item first disabled"><a href="#" class="page-link"><i class="fal fa-chevron-double-left"><span class="sr-only">첫페이지</span></i></a></li>
+  <li class="page-item prev disabled"><a href="#" class="page-link"><i class="fal fa-chevron-left"><span class="sr-only">첫페이지</span></i></a></li>
+  <li class="page-item active"><a href="#" class="page-link">1</a></li>
+  <li class="page-item"><a href="#" class="page-link">2</a></li>
+  <li class="page-item"><a href="#" class="page-link">3</a></li>
+  <li class="page-item"><a href="#" class="page-link">4</a></li>
+  <li class="page-item"><a href="#" class="page-link">5</a></li>
+  <li class="page-item"><a href="#" class="page-link">6</a></li>
+  <li class="page-item"><a href="#" class="page-link">7</a></li>
+  <li class="page-item"><a href="#" class="page-link">8</a></li>
+  <li class="page-item"><a href="#" class="page-link">9</a></li>
+  <li class="page-item"><a href="#" class="page-link">10</a></li>
+  <li class="page-item next"><a href="#" class="page-link"><i class="fal fa-chevron-right"><span class="sr-only">첫페이지</span></i></a></li>
+  <li class="page-item last"><a href="#" class="page-link"><i class="fal fa-chevron-double-right"><span class="sr-only">첫페이지</span></i></a></li>
+</ul>
+<script>
+  $('#pagination')
+    .twbsPagination({
+      totalPages: 35,
+      visiblePages: 5,
+      first: '<i class="fal fa-chevron-double-left"><span class="sr-only">첫페이지</span>',
+      prev: '<i class="fal fa-chevron-left"><span class="sr-only">첫페이지</span>',
+      next: '<i class="fal fa-chevron-right"><span class="sr-only">첫페이지</span>',
+      last: '<i class="fal fa-chevron-double-right"><span class="sr-only">첫페이지</span>',
+      onPageClick: function (event, page) {
+        $('#page-content')
+          .text('Page ' + page)
+      }
+    })
+</script>

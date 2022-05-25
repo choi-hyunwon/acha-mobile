@@ -16,14 +16,14 @@
 
         <div class="box-ex-list box-card-list">
             <div class="card-item">
-                <div class="dropdown-wrap">
-                    <div class="dropdown clearfix">
-                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+                <div class="asset-wrap">
+                    <div class="asset">
+                        <div class="category-heading">
                             <span class="title">계좌</span>
                             <span class="sum">11,202,000<em>원</em></span>
-                        </button>
+                        </div>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <div class="category-menu">
                             <ul class="ac-list">
                                 <li class="ac-item total-sum clearfix">
                                     <span class="name">입출금</span>
@@ -79,14 +79,14 @@
                 </div>
             </div>
             <div class="card-item">
-                <div class="dropdown-wrap">
-                    <div class="dropdown clearfix">
-                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="asset-wrap">
+                    <div class="asset clearfix">
+                        <div class="category-heading">
                             <span class="title">투자</span>
                             <span class="sum">11,202,000<em>원</em></span>
-                        </button>
+                        </div>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <div class="category-menu">
                             <ul class="ac-list">
                                 <li class="ac-item total-sum clearfix">
                                     <span class="name">국내</span>
@@ -123,14 +123,14 @@
                 </div>
             </div>
             <div class="card-item">
-                <div class="dropdown-wrap">
-                    <div class="dropdown clearfix">
-                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="asset-wrap">
+                    <div class="asset clearfix">
+                        <div class="category-heading">
                             <span class="title">연금</span>
                             <span class="sum">11,202,000<em>원</em></span>
-                        </button>
+                        </div>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                        <div class="category-menu">
                             <ul class="ac-list">
                                 <li class="ac-item total-sum clearfix">
                                     <span class="name">국내</span>
@@ -167,14 +167,14 @@
                 </div>
             </div>
             <div class="card-item">
-                <div class="dropdown-wrap">
-                    <div class="dropdown clearfix">
-                        <button class="btn dropdown-toggle category-heading" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+                <div class="asset-wrap">
+                    <div class="asset clearfix">
+                        <div class="category-heading">
                             <span class="title">보험</span>
                             <span class="sum">0<em>원</em></span>
-                        </button>
+                        </div>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                        <div class="category-menu">
                             <ul class="ac-list">
                                 <li class="ac-item clearfix">
                                     <span class="img"><img src="../../img/common/ico_list_card_kb@2x.png" alt=""></span>
@@ -201,12 +201,12 @@
             </div>
 
             <div class="card-item">
-                <div class="dropdown-wrap">
-                    <div class="dropdown show">
-                        <button class="btn dropdown-toggle category-heading">
+                <div class="asset-wrap">
+                    <div class="asset show">
+                        <div class="category-heading">
                             <span class="title">대출</span>
                             <span class="sum"><i class="icon btn-add-black"></i></span>
-                        </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,6 +224,11 @@
      2. toastPopupHide() : 토스트 팝업 hide 함수
      **/
     toastPopupShow()
-</script>-->
+</script>-->\
+<script>
+    $('.category-heading').click(function () {
+        $(this).parent().toggleClass('show')
+    });
+</script>
 </body>
 </html>

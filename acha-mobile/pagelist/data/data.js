@@ -2,20 +2,8 @@ var data = {}
 
 
 data.edit1 = {
-    'title': ' 05.11 (v1.36)',
+    'title': '2022.05.24 (v1.37)',
     'list': [
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_03',
-            'category': 'data update',
-            'page': '1.1 데이터 업데이트 Case_5. 내역 추가 조회 (Real 호출)_2)내 카드 상세'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '05_my_card_14',
-            'category': '카드지출',
-            'page': '카드지출 > 메인화면 > 카드 자산 미선택시'
-        },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_01',
@@ -30,15 +18,9 @@ data.edit1 = {
         },
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_57',
+            'url': '11_exependiture_03',
             'category': '홈계좌',
-            'page': '3.2_투자_상세(연금외상품)_01_투자'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_58',
-            'category': '홈계좌',
-            'page': '3.2_투자_상세(연금외상품)_02_내역'
+            'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
         },
     ]
 }

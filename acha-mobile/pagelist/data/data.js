@@ -2,25 +2,13 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.05.24 (v1.37)',
+    'title': '2022.06.03 (v1.38)',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '11_exependiture_01',
-            'category': '홈계좌',
-            'page': '내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_02',
-            'category': '홈계좌',
-            'page': '내자산_01_내자산_1.5_목록정렬_연결자산or숨길경우(내돈관리>계좌잔고)'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_03',
-            'category': '홈계좌',
-            'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
+            'url': '00_common_card',
+            'category': 'common',
+            'page': '금융마켓_01_카드'
         },
     ]
 }

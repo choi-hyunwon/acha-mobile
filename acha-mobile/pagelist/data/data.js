@@ -2,13 +2,13 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.06.03 (v1.38)',
+    'title': '2022.06.09 (v1.39)',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '00_common_card',
-            'category': 'common',
-            'page': '금융마켓_01_카드'
+            'url': '05_my_card_03',
+            'category': '카드지출',
+            'page': '카드지출_03. 카드 상세정보_1.1 구성'
         },
     ]
 }

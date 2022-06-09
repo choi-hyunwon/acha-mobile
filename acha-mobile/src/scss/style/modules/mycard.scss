@@ -2279,6 +2279,11 @@
             font-weight: 500;
             font-size: 14px;
           }
+          &.cancel_line{
+            color: var(--text-04);
+            font-family: var(--font5);
+            text-decoration:line-through;
+          }
         }
       }
 

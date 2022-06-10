@@ -10,6 +10,30 @@ data.edit1 = {
             'category': 'expenditure',
             'page': '마이데이터 시스템 점검안내 팝업'
         },
+        {
+            'stateClass': 'complete',
+            'url': '01_mail_personal_credit_information',
+            'category': 'automail',
+            'page': '메일_개인정보 전송 내역 안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_mail_advertising_information',
+            'category': 'automail',
+            'page': '메일_광고성 정보 수신동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '03_mail_automatic_secession_processing',
+            'category': 'automail',
+            'page': '메일_탈퇴처리 예정 안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_mail_dormant_account',
+            'category': 'automail',
+            'page': '메일_휴면전환예정안내'
+        },
     ]
 }
 

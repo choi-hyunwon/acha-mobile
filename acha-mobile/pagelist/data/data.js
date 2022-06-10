@@ -2,13 +2,13 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.06.09 (v1.39)',
+    'title': '2022.06.10 (v1.40)',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '05_my_card_03',
-            'category': '카드지출',
-            'page': '카드지출_03. 카드 상세정보_1.1 구성'
+            'url': '04_my_data_popup_03',
+            'category': 'expenditure',
+            'page': '마이데이터 시스템 점검안내 팝업'
         },
     ]
 }
@@ -550,6 +550,12 @@ data.mydata = {
             'url': '04_my_data_popup_02',
             'category': 'expenditure',
             'page': '추가하기(마이데이터 연결)_02. 통합인증_2.5 개인신용정보 선택_자산선택해제시_최소높이'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_my_data_popup_03',
+            'category': 'expenditure',
+            'page': '마이데이터 시스템 점검안내 팝업'
         },
         /*추가하기(마이데이터연결)_04. 개별인증_4.3 사이트 자체인증 (01_전송요구내역 선택(자체인증))*/
     ]

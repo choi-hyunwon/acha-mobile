@@ -2,14 +2,8 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.06.10 (v1.40)',
+    'title': '2022.06.10 (v1.41)',
     'list': [
-        {
-            'stateClass': 'complete',
-            'url': '04_my_data_popup_03',
-            'category': 'expenditure',
-            'page': '마이데이터 시스템 점검안내 팝업'
-        },
         {
             'stateClass': 'complete',
             'url': '01_mail_personal_credit_information',

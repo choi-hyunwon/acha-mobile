@@ -62,35 +62,27 @@
   }
 }
 
-/*공지사항 - header 고정*/
-.header{
-  &.view-fixed{
-    padding: 0 20px 20px;
-    height: unset;
-    display: block;
-    .sub-title {
-      font-family: var(--font2);
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 27px;
-      letter-spacing: -0.45px;
-      text-align: left;
-      color: var(--text-01);
-    }
-    .sub-date {
-      font-family: var(--font1);
-      font-size: 13px;
-      line-height: 18px;
-      text-align: left;
-      color: var(--text-03);
-      padding-top: 10px;
-    }
-  }
-}
-
-
 .notice-wrap {
   padding: 10px 20px 40px;
+  .sub-title {
+    font-family: var(--font2);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: -0.45px;
+    text-align: left;
+    color: var(--text-01);
+  }
+  .sub-date {
+    font-family: var(--font1);
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    color: var(--text-03);
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
   &.detail {
     padding: 0 20px 120px;
     height: 75vh;

@@ -2,31 +2,13 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.06.10 (v1.41)',
+    'title': '2022.06.21 (v1.42)',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '01_mail_personal_credit_information',
-            'category': 'automail',
-            'page': '메일_개인정보 전송 내역 안내'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '02_mail_advertising_information',
-            'category': 'automail',
-            'page': '메일_광고성 정보 수신동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '03_mail_automatic_secession_processing',
-            'category': 'automail',
-            'page': '메일_탈퇴처리 예정 안내'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_mail_dormant_account',
-            'category': 'automail',
-            'page': '메일_휴면전환예정안내'
+            'url': '09_moreview_05',
+            'category': '더보기',
+            'page': '더보기_02.공지사항(02_상세 공지사항 컨텐츠 최소 길이)'
         },
     ]
 }

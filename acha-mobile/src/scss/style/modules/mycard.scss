@@ -3409,7 +3409,7 @@
 
     .name {
       display: inline-block;
-      width: calc(100% - 80px);
+      width: calc(100% - 100px);
       vertical-align: middle;
       font-family: var(--font2);
       font-size: 15px;
@@ -3436,6 +3436,14 @@
       display: inline-block;
       right: 22px;
       top: 32px;
+
+    }
+    .ico-caution-filled{
+      position: absolute;
+      display: inline-block;
+      right: 45px;
+      top: 36px;
+      margin: 0;
     }
   }
 }

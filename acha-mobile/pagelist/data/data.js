@@ -2,13 +2,13 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.06.21 (v1.42)',
+    'title': '2022.07.06 (v1.43)',
     'list': [
         {
             'stateClass': 'complete',
-            'url': '09_moreview_05',
-            'category': '더보기',
-            'page': '더보기_02.공지사항(02_상세 공지사항 컨텐츠 최소 길이)'
+            'url': '05_my_card_13',
+            'category': '카드지출',
+            'page': '카드지출_02. 내카드_1.2 편집'
         },
     ]
 }

@@ -13,6 +13,7 @@
                 <div class="input-search">
                     <label for="search"><a href="#"></a></label>
                     <input type="search" id="search" class="focus" placeholder="검색어를 입력해 주세요."> <!-- class="focus" -->
+                    <span class="input-search-close"></span> <!--07.20 태그 추가-->
                 </div>
             </div>
             <div class="faq-menu-top _faqMenu">
@@ -61,6 +62,15 @@
         var leftPos = $('._faqMenu').scrollLeft();
         $('._faqMenu').animate( { scrollLeft: leftPos + 210 }, 300);
     }*/
+
+    /*07.20 스크립트 추가*/
+    $('#search').keyup(function (){
+        $('.input-search-close').show();
+    });
+    $('.input-search-close').on('click',function (){
+        $('#search').val('');
+        $('.input-search-close').hide();
+    });
 </script>
 </body>
 </html>

@@ -511,7 +511,7 @@
           }
 
           &::after {
-            height: 40px;
+            height: 40px!important;
           }
         }
 
@@ -535,7 +535,7 @@
           }
         }
 
-        &::before {
+        &.dot::before {
           content: '';
           position: absolute;
           width: 6px;
@@ -547,7 +547,7 @@
           z-index: 1;
         }
 
-        &::after {
+        &.line::after {
           content: '';
           position: absolute;
           width: 1px;

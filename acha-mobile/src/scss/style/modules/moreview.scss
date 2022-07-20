@@ -881,7 +881,8 @@
         }
 
         &::-webkit-search-cancel-button {
-          position: absolute;
+          display: none;
+/*          position: absolute;
           right: 40px;
           top: 50%;
           transform: translateY(-50%);
@@ -889,7 +890,7 @@
           background-size: cover;
           width: 24px;
           height: 24px;
-          -webkit-appearance: none;
+          -webkit-appearance: none;*/
         }
 
         &:focus, &.focus {
@@ -898,6 +899,17 @@
           border-color: var(--text-01);
           color: var(--text-01);
         }
+      }
+      span{
+        display: none;
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../../img/common/ico-input-delete@2x.png);
+        background-size: cover;
+        width: 24px;
+        height: 24px;
       }
     }
   }

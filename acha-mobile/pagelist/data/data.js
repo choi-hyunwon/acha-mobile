@@ -2,14 +2,8 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.07.20 (v1.44)',
+    'title': '2022.07.29 (v1.45)',
     'list': [
-        {
-            'stateClass': 'complete',
-            'url': '09_moreview_13',
-            'category': '더보기',
-            'page': '더보기_04. 자주 묻는 질문 (01_자주묻는 질문 목록)'
-        },
         {
             'stateClass': 'complete',
             'url': '10_story_02',

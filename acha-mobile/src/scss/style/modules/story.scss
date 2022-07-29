@@ -513,7 +513,13 @@
           &::after {
             height: 40px!important;
           }
+          &.full-line{
+            &::after{
+              height: 90% !important;
+            }
+          }
         }
+
 
         &[style="display: none"]:first-child {
           + .item {
@@ -558,6 +564,20 @@
           left: -29.5px;
           bottom: -27px;
         }
+
+        &.full-line::after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: calc(100% + 7px) ;
+          background-image: url(../../img/common/line-dash-story-timeline@2x.png);
+          background-repeat: repeat-y;
+          background-size: 100%;
+          left: -29.5px;
+          bottom: -23px;
+        }
+
+
 
         .bank-info {
           position: relative;

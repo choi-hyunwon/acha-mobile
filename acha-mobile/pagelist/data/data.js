@@ -2,7 +2,7 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.07.29 (v1.45)',
+    'title': '2022.08.01 (v1.46)',
     'list': [
         {
             'stateClass': 'complete',

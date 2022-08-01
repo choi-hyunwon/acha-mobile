@@ -515,7 +515,7 @@
           }
           &.full-line{
             &::after{
-              height: 90% !important;
+              height: calc(100% - 32px) !important;
             }
           }
         }

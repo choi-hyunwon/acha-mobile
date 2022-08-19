@@ -119,6 +119,8 @@
       position: relative;
       float: left;
       margin-right: 17px; }
+      .footer .inner .company-link li:nth-of-type(2) {
+        font-weight: bold; }
       .footer .inner .company-link li:last-child {
         margin-right: 0; }
         .footer .inner .company-link li:last-child::after {
@@ -134,9 +136,8 @@
         top: 11px; }
       .footer .inner .company-link li a {
         display: inline-block;
-        font-family: "Noto Sans CJK KR Bold";
+        font-family: "Noto Sans CJK KR Regular";
         font-size: 12px;
-        font-weight: bold;
         line-height: 18px;
         color: #9b9aa6; }
         .footer .inner .company-link li a:hover {

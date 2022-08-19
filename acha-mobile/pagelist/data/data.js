@@ -2,14 +2,9 @@ var data = {}
 
 
 data.edit1 = {
-    'title': '2022.08.01 (v1.46)',
+    'title': '2022.08.19 메일-개인정보 수정(v1.47)',
     'list': [
-        {
-            'stateClass': 'complete',
-            'url': '10_story_02',
-            'category': '카드지출',
-            'page': '카드지출_04. 타임라인_1.1 거래내역'
-        },
+
     ]
 }
 

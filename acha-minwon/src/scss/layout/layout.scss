@@ -173,6 +173,9 @@
         float: left;
         margin-right: 17px;
 
+        &:nth-of-type(2){
+          font-weight: bold;
+        }
         &:last-child {
           margin-right: 0;
 
@@ -194,9 +197,8 @@
 
         a {
           display: inline-block;
-          font-family: $font-bold;
+          font-family: $font;
           font-size: 12px;
-          font-weight: bold;
           line-height: 18px;
           color: $text-03;
 

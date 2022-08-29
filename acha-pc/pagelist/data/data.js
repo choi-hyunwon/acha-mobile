@@ -1,19 +1,8 @@
 var data = {};
 data.edit = {
-    'title': '2022.05.24 수정 요청 사항',
+    'title': '2022.08.16 footer 수정',
     'list': [
-        {
-            "stateClass": "complete",
-            "url": "8. 이벤트 당첨자 확인(상세)",
-            "part": "pages",
-            "page": "8. 이벤트 당첨자 확인(상세)"
-        },
-        {
-            "stateClass": "complete",
-            "url": "4-3. 공지사항(약관개정)",
-            "part": "pages",
-            "page": "4-3. 공지사항(약관개정)"
-        },
+
     ]
 };
 data.page = {

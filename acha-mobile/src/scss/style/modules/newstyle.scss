@@ -18,6 +18,9 @@
 .bg_purple {
   background: #f7f8fc !important;
 }
+.bg_light_gray {
+  background: #f7f7f8 !important;
+}
 
 .primary-color {
   color: var(--blurple) !important;
@@ -106,6 +109,49 @@ textarea.custom {
   &:focus {
     outline: none;
   }
+}
+
+.textarea-box{
+  background: #efefef;
+  padding: 10px 20px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .textarea{
+    .custom{
+      background: #fff;
+      height: 70px;
+      margin-bottom: 0;
+      display: block;
+      &:focus + .submit-box{
+        display: flex;
+      }
+    }
+    .submit-box{
+      display: none;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 10px;
+      .length{
+        color: #c2c1cc;
+        font-size: 12px;
+        em{
+          color: var(--text-01);
+        }
+      }
+      .btn-purple{
+        height: 30px;
+        width: 50px;
+        border-radius: 4px;
+        overflow: hidden;
+        min-width: auto;
+        background: #6839d3;
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+
 }
 
 .mycard {

@@ -1,12 +1,166 @@
 var data = {}
 
 
-data.edit1 = {
-    'title': '2022.08.19 메일-개인정보 수정(v1.47)',
+data.start = {
+    'title': '----------아차 3.0 START----------',
     'list': [
-
     ]
-}
+};
+
+data.edit1 = {
+    'title': '지출상세_3.0변경',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_57',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_01_투자'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_58',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_02_내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_59',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_03_계좌상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_60',
+            'category': '홈계좌',
+            'page': '3.2_투자_상세(연금외상품)_04_종목상세'
+        },
+    ]
+};
+
+data.edit2 = {
+    'title': '더보기_3.0변경',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_03',
+            'category': 'alert',
+            'page': '더보기_알림이 있는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_03-1',
+            'category': 'alert',
+            'page': '더보기_알림이 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_03-2',
+            'category': 'alert',
+            'page': '더보기_알림 중지게시물'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_19',
+            'category': '더보기',
+            'page': '더보기_05_1:1 문의 (04_문의 상세)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_20',
+            'category': '더보기',
+            'page': '더보기_05_1:1 문의 (06_답변 확인)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_29',
+            'category': '더보기',
+            'page': '더보기_09. 동의 관리 (03_마이데이터 약관)'
+        },
+    ]
+};
+
+data.edit3 = {
+    'title': '더보기_마이데이터',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_36',
+            'category': '더보기',
+            'page': '07_더보기_메인'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_37',
+            'category': '더보기',
+            'page': '07_더보기_메인_앱버전업데이트'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_13',
+            'category': 'My',
+            'page': '07_더보기_2.1_프로필화면'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_popup_01',
+            'category': 'My',
+            'page': '07_더보기_2.1_프로필화면_프로필 사진_01_프로필 사진 설정'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_popup_03',
+            'category': 'My',
+            'page': '07_더보기_2.1_프로필화면_프로필 사진_03_이메일입력'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_14',
+            'category': 'My',
+            'page': '07_더보기_3.1_연결관리_연결기관없는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_15',
+            'category': 'My',
+            'page': '07_더보기_3.1_연결관리_연결기관있는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_16',
+            'category': 'My',
+            'page': '07_더보기_3.3_상세정보'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '02_my_popup_04',
+            'category': 'My',
+            'page': '07_더보기_3.4_수정하기_오류팝업'
+        },
+    ]
+};
+
+data.edit4 = {
+    'title': '마이데이터 연결',
+    'list': [
+    ]
+};
+
+data.edit4 = {
+    'title': '상품(금융마켓)',
+    'list': [
+    ]
+};
+
+data.edit5 = {
+    'title': '자산',
+    'list': [
+    ]
+};
+data.end = {
+    'title': '----------아차 3.0 END----------',
+    'list': [
+    ]
+};
 
 
 /*아차 2.0_오픈개선안*/
@@ -17,13 +171,19 @@ data.alert = {
             'stateClass': 'complete',
             'url': '09_moreview_03',
             'category': 'alert',
-            'page': '알림이 있는 경우'
+            'page': '더보기_알림이 있는 경우'
         },
         {
             'stateClass': 'complete',
             'url': '09_moreview_03-1',
             'category': 'alert',
-            'page': '알림이 없는 경우'
+            'page': '더보기_알림이 없는 경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_03-2',
+            'category': 'alert',
+            'page': '더보기_알림 중지게시물'
         },
     ]
 };
@@ -1045,7 +1205,7 @@ data.expenditure2 = {
             'stateClass': 'complete',
             'url': '11_exependiture_60',
             'category': '홈계좌',
-            'page': '3.2_투자_상세(연금외상품)_04_상품정보'
+            'page': '3.2_투자_상세(연금외상품)_04_종목상세'
         },
         {
             'stateClass': 'complete',

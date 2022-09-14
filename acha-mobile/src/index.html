@@ -86,8 +86,14 @@
     var source = $('#list-template').html(); //jQuery
     var template = Handlebars.compile(source); //컴파일
     $('.wrap_scroll')
-        /* 아차 2.1 수정사항* */
+        /* 아차 3.0 */
+        .append(template(data.start))
         .append(template(data.edit1))
+        .append(template(data.edit2))
+        .append(template(data.edit3))
+        .append(template(data.edit4))
+        .append(template(data.edit5))
+        .append(template(data.end))
 
         /*아차 2.0_오픈개선안*/
         .append(template(data.alert))

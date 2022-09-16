@@ -84,58 +84,131 @@ data.edit3 = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '09_moreview_36',
+            'url': 'v3_moreview_01',
             'category': '더보기',
             'page': '07_더보기_메인'
         },
         {
             'stateClass': 'complete',
-            'url': '09_moreview_37',
+            'url': 'v3_moreview_02',
             'category': '더보기',
-            'page': '07_더보기_메인_앱버전업데이트'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '02_my_13',
-            'category': 'My',
             'page': '07_더보기_2.1_프로필화면'
         },
         {
             'stateClass': 'complete',
             'url': '02_my_popup_01',
             'category': 'My',
-            'page': '07_더보기_2.1_프로필화면_프로필 사진_01_프로필 사진 설정'
+            'page': '더보기my_02. 사용자 기본 정보_2.1 프로필 사진(02_프로필 사진 설정 팝업_단말 사진촬영 or 사진앨범 추가 이미지 있는 경우)'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_popup_03',
-            'category': 'My',
-            'page': '07_더보기_2.1_프로필화면_프로필 사진_03_이메일입력'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '02_my_14',
-            'category': 'My',
+            'url': 'v3_moreview_03',
+            'category': '더보기',
             'page': '07_더보기_3.1_연결관리_연결기관없는경우'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_15',
-            'category': 'My',
+            'url': 'v3_moreview_04',
+            'category': '더보기',
             'page': '07_더보기_3.1_연결관리_연결기관있는경우'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_16',
-            'category': 'My',
+            'url': 'v3_moreview_05',
+            'category': '더보기',
             'page': '07_더보기_3.3_상세정보'
         },
         {
             'stateClass': 'complete',
-            'url': '02_my_popup_04',
-            'category': 'My',
+            'url': 'v3_moreview_popup_01',
+            'category': '더보기',
             'page': '07_더보기_3.4_수정하기_오류팝업'
         },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_popup_02',
+            'category': '더보기',
+            'page': '07_더보기_3.6_만료예정갱신_바텀시트'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'v3_moreview_06',
+            'category': '더보기',
+            'page': '07_더보기_3.6_만료예정갱신_신용정보선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_popup_03',
+            'category': '더보기',
+            'page': '07_더보기_3.6_만료예정갱신_데이터연결해제시팝업'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'v3_moreview_07',
+            'category': '더보기',
+            'page': '07_더보기_3.7_만료및 연결해제'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_popup_04',
+            'category': '더보기',
+            'page': '07_더보기_3.7_만료및 연결해제_전체삭제'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_popup_05',
+            'category': '더보기',
+            'page': '07_더보기_3.9_만료및 연결해제_만료목록삭제'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_popup_06',
+            'category': '더보기',
+            'page': '07_더보기_3.9_만료및 연결해제_연결해제목록삭제'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_popup_07',
+            'category': '더보기',
+            'page': '07_더보기_3.11_기관연결해제'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'v3_moreview_08',
+            'category': '더보기',
+            'page': '07_더보기_3.12_기관연결해제_철회고지항목'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'v3_moreview_09',
+            'category': '더보기',
+            'page': '07_더보기_3.13_마이데이터서비스탈퇴'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_10',
+            'category': '더보기',
+            'page': '07_더보기_4.1_데이터관리_보관중인데이터가없는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'v3_moreview_11',
+            'category': '더보기',
+            'page': '07_더보기_4.1_데이터관리'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_popup_08',
+            'category': '더보기',
+            'page': '07_더보기_4.2_데이터관리_전체삭제'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_popup_09',
+            'category': '더보기',
+            'page': '07_더보기_4.2_데이터관리_목록삭제'
+        },
+
     ]
 };
 

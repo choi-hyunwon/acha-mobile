@@ -432,6 +432,13 @@ a:hover {
   }
 }
 
+.btn-outline-gray{
+  border: 1px solid #e2e3e6;
+  color: #747679;
+  font-family: var(--font2);
+  border-radius: 6px;
+}
+
 .btn-purple-bg {
   border: 0;
   background-color: var(--color-point);

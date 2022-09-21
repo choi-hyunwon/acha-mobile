@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>데이터 관리</h2>
+        <a href="#" class="btn-delete">전체 삭제</a>
+    </div>
+    <div class="contents">
+        <div class="contents connection-management disconnected-institutions">
+
+            <div class="hold-data">
+                <div class="title">보관 중인 데이터</div>
+                <div class="desc">
+                    연결 해제된 데이터나 만료된 데이터만 관리해요.<br>
+                    데이터 삭제 없이 재연결 시, 기존 데이터를 유지한
+                    상태로 연결합니다.
+                </div>
+                <ul class="info">
+                    <li>데이터 삭제 시엔 [연결 관리] 메뉴에서 목록도 함께 삭제됩니다.</li>
+                    <li>수정한 데이터는 삭제가 불가합니다<br>
+                        [연결 해제>데이터 삭제>재연결] 해야 합니다.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="connection-category">
+                <div class="title-category">만료된 기관<span class="purple">2</span></div>
+                <div class="ex-list">
+                    <ul>
+                        <li class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="../../img/@temp/woori.png" alt="로고">
+                                </div>
+                                <div class="info">
+                                    <span class="tit">우리카드</span>
+                                </div>
+                            </div>
+                            <span class="btn_group">
+                                <a href="#" class="btn-delete">삭제</a>
+                            </span>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="../../img/@temp/woori.png" alt="로고">
+                                </div>
+                                <div class="info">
+                                    <span class="tit">우리카드</span>
+                                </div>
+                            </div>
+                            <span class="btn_group">
+                                <a href="#" class="btn-delete">삭제</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="connection-category">
+                <div class="title-category">연결 해제된 기관<span class="purple">2</span></div>
+                <div class="ex-list">
+                    <ul>
+                        <li class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="../../img/@temp/woori.png" alt="로고">
+                                </div>
+                                <div class="info">
+                                    <span class="tit">우리카드</span>
+                                </div>
+                            </div>
+                            <span class="btn_group">
+                                <a href="#" class="btn-delete">삭제</a>
+                            </span>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <div class="img">
+                                    <img src="../../img/@temp/woori.png" alt="로고">
+                                </div>
+                                <div class="info">
+                                    <span class="tit">우리카드</span>
+                                </div>
+                            </div>
+                            <span class="btn_group">
+                                <a href="#" class="btn-delete">삭제</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+
+    $('.btn-delete').click(function (){
+        $(this).parents('.item').remove();
+    })
+
+    $('.header .btn-delete').click(function (){
+        $('.ex-list').find('.item').remove();
+    })
+
+</script>
+</body>
+</html>

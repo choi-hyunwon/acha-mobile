@@ -2389,7 +2389,7 @@
       height: 100%;
     }
   }
-  .content{
+  .contents{
     >.title{
       font-size: 18px;
       padding: 10px 20px 0;
@@ -2572,7 +2572,8 @@
             &:last-child {
               border-bottom: 0;
             }
-            a{position: relative;
+            >a{
+              position: relative;
               display: block;
               width: 100%;
               height: 100%;
@@ -2635,8 +2636,136 @@
         transform: translateY(-50%);
         right: 20px;
       }
+
+
+    }
+
+    /*만료 및 연결해제된 기관*/
+    &.disconnected-institutions{
+      padding-bottom: 80px;
+      .hold-data{
+        padding: 10px 20px 30px;
+        .title{
+          font-size: 18px;
+          color: var(--text-01);
+          font-family: var(--font3);
+          margin-bottom: 12px;
+        }
+        .desc{
+          font-size: 15px;
+          margin-bottom: 20px;
+          word-break: keep-all;
+        }
+        .info{
+          li{
+            padding-left: 7px;
+            position: relative;
+            font-size: 13px;
+            letter-spacing: -0.33px;
+            color: var(--text-02);
+            &:before{
+              content: '';
+              clear: both;
+              display: inline-block;
+              width: 2px;
+              height: 2px;
+              border-radius: 50%;
+              background-color:var(--text-02);
+              position: absolute;
+              left: 0;
+              top: 9px;
+
+            }
+          }
+        }
+      }
+      .connection-category{
+        .connect_at_once{
+          position: absolute;
+          right: 20px;
+          top: 36px;
+          font-size: 13px;
+          color: var(--text-point-color);
+        }
+        .ex-list{
+          .item{
+            border-bottom: none;
+            display: flex;
+            justify-content: space-between;
+          }
+          .img{
+            float: left;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 10px;
+
+            img{
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .info{
+            height: 30px;
+            float: left;
+            display: flex;
+            align-items: center;
+            .tit{
+              font-size: 16px;
+              font-family: var(--font2);
+              font-weight: 500;
+              line-height: 19px;
+              letter-spacing: -0.33px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              color: var(--text-01);
+              margin-bottom: 3px;
+            }
+
+            .icon-expired {
+              display: inline-block;
+              vertical-align: middle;
+              width: 14px;
+              height: 14px;
+              background-image: url(../../img/common/icon-expirationintend@2x.png);
+              background-size: cover;
+              transform: translateY(-1px);
+              margin-left: 4px;
+            }
+          }
+          .btn_group{
+            a{
+              display: inline-block;
+              font-size: 12px;
+              color: var(--text-02);
+              font-family: var(--font1);
+              border: 1px solid #e2e3e6;
+              padding: 7px 10px;
+              line-height: 1;
+              border-radius: 14px;
+              margin-right: 2px;
+              &:last-of-type{
+                margin-right: 0;
+              }
+              &.on{
+                border-color: var(--text-point-color);
+                background-color: var(--text-point-color);
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .btn-wrap{
+        background: #fff;
+        padding: 0 20px 30px;
+      }
+
+
     }
   }
+
 
   /*데이터 관리*/
   .data-management{
@@ -2698,6 +2827,7 @@
     }
   }
 
+  /*상세정보*/
   .detailed-information{
     .info-title{
       display: flex;
@@ -2825,6 +2955,82 @@
       }
     }
 
+
+  }
+
+  /*자산갱신 - 신용정보선택*/
+  .asset-selection-list{
+    padding: 30px 20px;
+    .list-wrap{
+      border: 1px solid #efefef;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      .list-header{
+        border-bottom: 1px solid #efefef;
+        padding: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .img{
+          width:30px;
+          height: 30px;
+          margin-right: 10px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .info{
+          font-size: 16px;
+          font-family: var(--font2);
+          color: var(--text-01);
+
+        }
+      }
+      .list-body{
+        .item{
+          padding: 17px 0;
+          margin: 0 24px;
+          border-bottom: 1px solid #efefef;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &:last-of-type{
+            border: none;
+          }
+          .val{
+            font-size: 15px;
+            color: var(--text-01);
+            font-family: var(--font2);
+            .num{
+              font-size: 13px;
+              color: var(--text-03);
+              font-family: var(--font1);
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*철회 고지 항목*/
+  .withdraw-list{
+    padding: 10px 20px;
+    li{
+      margin-bottom: 30px;
+      .title{
+        font-size: 15px;
+        color: var(--text-01);
+        font-family: var(--font3);
+        margin-bottom: 8px;
+      }
+      .desc{
+        font-size: 13px;
+        color: var(--text-02);
+        font-family: var(--font1);
+      }
+    }
 
   }
 

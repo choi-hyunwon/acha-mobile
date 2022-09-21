@@ -8,7 +8,7 @@ data.start = {
 };
 
 data.edit1 = {
-    'title': '지출상세_3.0변경',
+    'title': '(수정)지출상세_3.0변경',
     'list': [
         {
             'stateClass': 'complete',
@@ -38,7 +38,7 @@ data.edit1 = {
 };
 
 data.edit2 = {
-    'title': '더보기_3.0변경',
+    'title': '(수정)더보기_3.0변경',
     'list': [
         {
             'stateClass': 'complete',
@@ -80,7 +80,7 @@ data.edit2 = {
 };
 
 data.edit3 = {
-    'title': '더보기_마이데이터',
+    'title': '(수정,신규)더보기_마이데이터',
     'list': [
         {
             'stateClass': 'complete',
@@ -131,7 +131,7 @@ data.edit3 = {
             'page': '07_더보기_3.6_만료예정갱신_바텀시트'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_moreview_06',
             'category': '더보기',
             'page': '07_더보기_3.6_만료예정갱신_신용정보선택'
@@ -143,7 +143,7 @@ data.edit3 = {
             'page': '07_더보기_3.6_만료예정갱신_데이터연결해제시팝업'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_moreview_07',
             'category': '더보기',
             'page': '07_더보기_3.7_만료및 연결해제'
@@ -173,13 +173,13 @@ data.edit3 = {
             'page': '07_더보기_3.11_기관연결해제'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_moreview_08',
             'category': '더보기',
             'page': '07_더보기_3.12_기관연결해제_철회고지항목'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_moreview_09',
             'category': '더보기',
             'page': '07_더보기_3.13_마이데이터서비스탈퇴'
@@ -191,7 +191,7 @@ data.edit3 = {
             'page': '07_더보기_4.1_데이터관리_보관중인데이터가없는경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_moreview_11',
             'category': '더보기',
             'page': '07_더보기_4.1_데이터관리'
@@ -218,17 +218,48 @@ data.edit4 = {
     ]
 };
 
-data.edit4 = {
-    'title': '상품(금융마켓)',
+data.edit5 = {
+    'title': '(수정)상품(금융마켓)',
     'list': [
+        {
+            'stateClass': 'complete',
+            'url': '00_common_card',
+            'category': 'common',
+            'page': '금융마켓_01_카드'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '00_common_card_no_product',
+            'category': 'common',
+            'page': '금융마켓_02_상품이없을경우'
+        },
     ]
 };
 
-data.edit5 = {
-    'title': '자산',
+data.edit6 = {
+    'title': '(수정)자산',
     'list': [
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_01',
+            'category': '자산',
+            'page': '05_자산_01'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_02',
+            'category': '자산',
+            'page': '05_자산_02_연결하지않은경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_03',
+            'category': '자산',
+            'page': '05_자산_04_편집'
+        },
     ]
 };
+
 data.end = {
     'title': '----------아차 3.0 END----------',
     'list': [
@@ -552,19 +583,22 @@ data.expenditure1 = {
             'stateClass': 'complete',
             'url': '11_exependiture_01',
             'category': '홈계좌',
-            'page': '내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)'
+            'page': '05_자산_01'
+            /*내자산_01_내자산_1.4_자산목록(내돈관리>계좌잔고)*/
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_02',
             'category': '홈계좌',
-            'page': '내자산_01_내자산_1.5_목록정렬_연결자산or숨길경우(내돈관리>계좌잔고)'
+            'page': '05_자산_02_연결하지않은경우'
+            /*내자산_01_내자산_1.5_목록정렬_연결자산or숨길경우(내돈관리>계좌잔고)*/
         },
         {
             'stateClass': 'complete',
             'url': '11_exependiture_03',
             'category': '홈계좌',
-            'page': '내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)'
+            'page': '05_자산_04_편집'
+            /*내자산_01_내자산_1.6_편집(내돈관리>계좌잔고)*/
         },
         {
             'stateClass': 'complete',

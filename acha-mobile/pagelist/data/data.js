@@ -7,6 +7,12 @@ data.start = {
     ]
 };
 
+data.date1 = {
+    'title': '< 22.09.07 >',
+    'list': [
+    ]
+};
+
 data.edit1 = {
     'title': '(수정)지출상세_3.0변경',
     'list': [
@@ -213,8 +219,128 @@ data.edit3 = {
 };
 
 data.edit4 = {
-    'title': '마이데이터 연결',
+    'title': '(신규)마이데이터 연결',
     'list': [
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_01',
+            'category': '마이데이터',
+            'page': '마이데이터_1.05_통합인증약관동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_02',
+            'category': '마이데이터',
+            'page': '마이데이터_1.05_통합인증약관동의_01_수집이용항목상세_계좌'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_03',
+            'category': '마이데이터',
+            'page': '마이데이터_1.05_통합인증약관동의_01_수집이용항목상세_카드'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_04',
+            'category': '마이데이터',
+            'page': '마이데이터_1.05_통합인증약관동의_01_수집이용항목상세_보험'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_05',
+            'category': '마이데이터',
+            'page': '마이데이터_1.05_통합인증약관동의_01_수집이용항목상세_증권'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_06',
+            'category': '마이데이터',
+            'page': '마이데이터_1.05_통합인증약관동의_02_수집이용항목상세_할부금융'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_07',
+            'category': '마이데이터',
+            'page': '마이데이터_1.05_통합인증약관동의_02_수집이용항목상세_복수업권선택시'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_08',
+            'category': '마이데이터',
+            'page': '마이데이터_1.06_프로그레스'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_09',
+            'category': '마이데이터',
+            'page': '마이데이터_1.07. 통합인증 오류페이지'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_popup_01',
+            'category': '마이데이터',
+            'page': '마이데이터_1.08_개인신용정보선택_일부기관오류'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_10',
+            'category': '마이데이터',
+            'page': '마이데이터_1.08_개인신용정보선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_popup_02',
+            'category': '마이데이터',
+            'page': '마이데이터_1.08_개인신용정보선택_카드청구정보해제 '
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_11',
+            'category': '마이데이터',
+            'page': '마이데이터_1.09_통합인증약관동의_2'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_popup_03',
+            'category': '마이데이터',
+            'page': '마이데이터_1.09_통합인증약관동의_2_전송기간 선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_popup_04',
+            'category': '마이데이터',
+            'page': '마이데이터_1.09_통합인증약관동의_2_정기적전송'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_popup_05',
+            'category': '마이데이터',
+            'page': '마이데이터_1.09_통합인증약관동의_2_수집•이용 미동의_1개 케이스'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_popup_06',
+            'category': '마이데이터',
+            'page': '마이데이터_1.09_통합인증약관동의_2_수집•이용 미동의_2개'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_12',
+            'category': '마이데이터',
+            'page': '마이데이터_2.02. 개별인증 약관동의'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_popup_07',
+            'category': '더보기',
+            'page': '마이데이터_2.03. 개별인증 중단 팝업'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_my_data_popup_08',
+            'category': '마이데이터',
+            'page': '마이데이터_2.04. 개별인증_연결실패'
+        },
     ]
 };
 
@@ -256,6 +382,509 @@ data.edit6 = {
             'url': '11_exependiture_03',
             'category': '자산',
             'page': '05_자산_04_편집'
+        },
+    ]
+};
+
+data.date2 = {
+    'title': '< 22.09.16 >',
+    'list': [
+    ]
+};
+
+data.edit7 = {
+    'title': '(수정,신규)더보기_3.0변경',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_28',
+            'category': '더보기',
+            'page': '더보기_09. 동의 관리 (00_동의 관리)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '09_moreview_36',
+            'category': '더보기',
+            'page': '07_더보기_동의관리_커넥션약관'
+        },
+    ]
+};
+
+data.edit8 = {
+    'title': '(신규)가계부>지출>변동지출',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.1_변동지출_일자별목록_내역이없는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.1_변동지출_옵션메뉴'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.2_변동지출_목록_내역이있는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.3_변동지출_상세'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.4_변동지출_상세_직접입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.4_변동지출_삭제'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.5_변동지출_직접등록_입력전'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.5_변동지출_직접등록_입력후'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.6_변동지출_직접등록_지출명입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.7_변동지출_직접등록_금액입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.8_변동지출_직접등록_카테고리선택'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_7.9_변동지출_직접등록_메모입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.1_변동지출_카테고리_내역이없는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.2_변동지출_카테고리_그외카테고리'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.3_변동지출_카테고리_내역이있는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.4_변동지출_카테고리_상세_지출예산있는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.4_변동지출_카테고리_상세_지출예산없는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.4_변동지출_카테고리_상세_지출예산있는경우_직접등록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.4_변동지출_카테고리_상세_지출예산없는경우_직접등록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.5_변동지출_카테고리_상세_예산등록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.6_변동지출_카테고리_상세_예산편집(1)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.6_변동지출_카테고리_상세_예산편집_스크롤'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.7_변동지출_카테고리_변경'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.7_변동지출_카테고리_변경_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.7_변동지출_카테고리_변경(2)_변경범위선택'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_8.8_변동지출_카테고리_편집'
+        },
+    ]
+};
+data.edit9 = {
+    'title': '(신규)가계부>지출>카드할부',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_6.1_카드할부_일자별목록_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_6.1_카드할부_카테고리별목록_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_6.1_카드할부_옵션메뉴'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_6.2_카드할부_일자별목록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_6.3_카드할부_카테고리별목록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_6.2_카드할부_지출상세_메모입력후'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_6.3_카드할부_지출상세_메모입력전'
+        },
+    ]
+};
+data.edit10 = {
+    'title': '(신규)가계부>지출>고정지출',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.1_고정지출_목록_내역이없는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.2_고정지출_목록_내역이있는경우(1)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.2_고정지출_목록_내역이있는경우(2)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.2_고정지출_목록_내역이있는경우(3)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.2_고정지출_옵션메뉴'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.3_고정지출_추가_내역'
+        },     {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.3_고정지출_추가_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.3_고정지출_추가_내역_팝업'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.4_고정지출_직접등록_입력전'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.4_고정지출_직접등록_입력완료'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.5_고정지출_직접등록_지출명입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.6_고정지출_직접등록_지출금액입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.7_고정지출_직접등록_지출일설정'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.8_고정지출_직접등록_카테고리선택'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.9_고정지출_직접등록_메모'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.10_고정지출_직접등록_고정지출등록하기'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.11_고정지출_상세_지출예정'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.11_고정지출_상세_지출예정_미지출'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.12_고정지출 상세_지출완료'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.13_직접등록한고정지출상세_지출예정-미지출'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.13_직접등록한고정지출상세_지출완료'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.14_지출금액변경(1)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.14_지출금액변경(2)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.15_지출예정일변경(1)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.15_지출예정일변경(2)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.16_고정지출_메모입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.17_지출스케쥴변경'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.18_고정지출_삭제(1)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_4.18_고정지출삭제(2)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_5.1_고정지출_카테고리_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_5.2_고정지출_카테고리목록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_5.4_카테고리_변경'
+        },     {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_5.4_카테고리_변경_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_5.5_카테고리_편집'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_5.6_카테고리_추가_입력전'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_5.7_카테고리_추가_입력중'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_5.8_카테고리_편집'
+        },
+    ]
+};
+data.edit11 = {
+    'title': '(신규)가계부>지출>지출플랜',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_3.1_지출플랜_내역이없는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_3.2_지출플랜_내역이있는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_3.3_지출플랜_지출현황패널'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '지출_3.4_지출플랜_지출그래프패널'
+        },
+    ]
+};
+data.date3 = {
+    'title': '< 22.09.20 >',
+    'list': [
+    ]
+};
+data.edit12 = {
+    'title': '(수정)회원가입_3.0변경',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '06_sign_in_02',
+            'category': '회원가입',
+            'page': '약관동의(회원가입_2.약관동의(요약 2~3개)'
         },
     ]
 };

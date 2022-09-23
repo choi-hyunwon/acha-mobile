@@ -114,9 +114,10 @@ textarea.custom {
 .textarea-box{
   background: #efefef;
   padding: 10px 20px 20px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 10;
   .textarea{
     .custom{
       background: #fff;

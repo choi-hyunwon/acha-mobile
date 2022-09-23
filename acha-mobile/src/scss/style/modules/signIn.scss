@@ -77,7 +77,7 @@
     line-height: 25px;
     letter-spacing: -0.38px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   >.img-wrap{
@@ -129,7 +129,9 @@
   .card-wrap {
     padding: 0 20px;
     margin-bottom: 28px;
-
+    &.mb-70{
+      margin-bottom: 70px;
+    }
     &.must {
       .card-title {
         color: var(--blurple);
@@ -169,12 +171,14 @@
             span {
               font-family: var(--font3);
               font-weight: bold;
-              font-size: 14px;
+              font-size: 15px;
             }
           }
 
           .desc {
             color: var(--text-01);
+            font-size: 13px;
+
           }
         }
       }
@@ -201,7 +205,7 @@
       .item {
         position: relative;
         padding-left: 48px;
-        padding-top: 22px;
+        padding-top: 21px;
         padding-right: 24px;
 
         > label {
@@ -258,6 +262,7 @@
         }
 
         > .checkbox-select {
+          display: none;
           height: fit-content;
           margin-bottom: 11px;
           margin-top: 11px;
@@ -278,6 +283,7 @@
             padding-left: 23px;
             line-height: 18px;
             height: 18px;
+            font-weight: normal;
           }
 
           [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {

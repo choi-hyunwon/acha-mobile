@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+    </div>
+    <div class="contents">
+        <div class="my-data-agreement">
+            <div class="title-area">
+                <div class="title"><span>김아차님의 불러올 자산 내역</span>을<br> 확인해주세요</div>
+                <div class="desc">유비벨록스(아차)는 ｢신용정보의 이용 및 보호에 관한 법률｣, ｢개인정보 보호법｣ 등 관련 법령에 따라 개인신용정보를 처리합니다.</div>
+            </div>
+            <div class="agreement-wrap">
+                <div class="sub-title">상세정보 전송요구 및 개인신용정보 수집•이용</div>
+                <ul class="pb-0">
+                    <li>
+                        <p class="tit">정보제공자</p>
+                        <span class="desc"> 카카오뱅크, 우리카드, 신한카드</span>
+                    </li>
+                    <li>
+                        <p class="tit">정보수신자</p>
+                        <span class="desc">유비벨록스</span>
+                    </li>
+                    <li>
+                        <p class="tit">전송 정보</p>
+                        <ul class="desc">
+                            <li>카드 : 카드 목록 및 선불 카드 목록</li>
+                            <li>은행 : 계좌(수신/투자상품/대출상품) 목록 및 개인형IRP 계좌 목록</li>
+                            <li>금융투자 : 계좌 목록 및 개인형IRP 계좌 목록</li>
+                            <li>보험 : 보험증권 목록, 대출계좌 목록 및 개인형IRP 계좌 목록</li>
+                            <li>전자금융 : 선불전자지급수단 목록 및 계정 목록</li>
+                            <li>할부금융 : 계좌(대출/운용리스) 목록</li>
+                            <li>전자서명, 접근토큰, 인증서, 전송요구서</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="tit">수집•이용 항목 상세보기</a>
+                    </li>
+                    <li>
+                        <p class="tit">전송 목적</p>
+                        <span class="desc">상세정보 전송요구를 위한 가입상품목록 조회</span>
+                    </li>
+                    <li>
+                        <p class="tit">보유•이용 기간</p>
+                        <span class="desc color-red">서비스 이용 종료 또는 삭제 요청 시까지</span>
+                    </li>
+                    <li>
+                        <p class="tit">전송 기간</p>
+                        <a href="#" class="btn-period _btnSlideOpen">1년</a>
+                    </li>
+                    <li>
+                        <p class="tit">정기적 전송</p>
+                        <a href="#" class="btn-period _btnSlideOpen2">예(주1회)</a>
+                    </li>
+                    <li>
+                        <p class="tit">거부 권리 및 불이익</p>
+                        <span class="desc">귀하는 개인(신용)정보 수집･이용에 관한 동의를 거부하실 수 있습니다. 다만, “수집･이용에 관한 동의”는 본인신용정보 통합조회 서비스의 이용을 위한 필수적 사항이므로 동의를 거부하실 경우 본인신용정보 통합조회, 데이터분석 서비스의 이용이 서비스의 이용이 제한될 수 있습니다.</span>
+                    </li>
+                    <li>
+                        <p class="tit">가맹점명/사업자등록번호</p>
+                        <ul class="desc">
+                            <li>구매한 상품의 카테고리 정보가 포함되어 있습니다</li>
+                            <li class="color-purple">결제 내역을 확인할 때 필요합니다</li>
+                        </ul>
+                        <div class="check-area">
+                            <label>
+                                <input type="checkbox" class="filled-in _chk">
+                                <span>(선택) 가맹점명 전송•수집•이용 동의</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="tit">적요/거래메모</p>
+                        <ul class="desc">
+                            <li>송금인/수취인명과 같이 사생활 및 경제 활동에 관련된 정보가 포함되어 있습니다</li>
+                            <li class="color-purple">계좌 내역을 확인할 때 필요합니다</li>
+                        </ul>
+                        <div class="check-area">
+                            <label>
+                                <input type="checkbox" class="filled-in _chk">
+                                <span>(선택) 적요 거래메모 전송•수집•이용 동의</span>
+                            </label>
+                        </div>
+                        <div class="check-area">
+                            <label>
+                                <input type="checkbox" class="filled-in _chk">
+                                <span>(필수) 개인신용정보 수집•이용에 동의</span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_area">
+                <a class="btn btn-lg btn-block btn-big btn-save" href="#">동의하고 계속</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-fixed btn_area scroll-btn-area">
+        <a class="btn btn-block" href="#" onclick="scrollGoBottom()">아래로 스크롤하기</a>
+    </div>
+
+</div>
+
+<div class="modal-slide modal-my-data transmission-period _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title">전송 기간</div>
+            <div class="month-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="txt">3개월</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="txt">6개월</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="txt">1년</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide modal-my-data regular-transmission _modalSlide2">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose2"></a>
+        <div class="inner">
+            <div class="title">정기적 전송</div>
+            <div class="month-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="txt">예(주1회)</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="txt">아니오</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+</body>
+</html>
+<script>
+    // scroll - bottom
+    function scrollGoBottom() {
+        $("html, body").animate({ scrollTop: $(document).height() }, 600);
+        $('.scroll-btn-area').hide();
+    }
+    $(document).scroll(function(){
+        var scrT = $(window).scrollTop();
+        console.log(scrT); //스크롤 값 확인용
+        if(scrT == $(document).height() - $(window).height()){
+            //스크롤이 끝에 도달했을때 실행될 이벤트
+            $('.scroll-btn-area').hide();
+        } else {
+            //아닐때 이벤트'
+            $('.scroll-btn-area').show();
+        }
+    });
+
+    $(document).ready(function() {
+        $("._chkAll").click(function() {
+            if($("._chkAll").is(":checked")) $("._chk").prop("checked", true);
+            else $("._chk").prop("checked", false);
+        });
+
+        $("._chk").click(function() {
+            var total = $("._chk").length;
+            var checked = $("._chk:checked").length;
+
+            if(total != checked) $("._chkAll").prop("checked", false);
+            else $("._chkAll").prop("checked", true);
+        });
+
+
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+        var btnSlideOpen2 = $('._btnSlideOpen2');
+        var btnSlideClose2 = $('._btnSlideClose2');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen2.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide2")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide2').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose2.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide2")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide2').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+    });
+
+</script>
+

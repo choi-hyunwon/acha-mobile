@@ -79,6 +79,16 @@
             <div class="list">운영 시간 : 평일 10:00~18:00 (공휴일 제외)</div>
         </div>
     </div>
+    <div class="textarea-box">
+        <div class="textarea">
+            <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" id="context" maxlength="200" placeholder="의견을 작성해 주세요"></textarea>
+
+            <div class="submit-box">
+                <span class="length"><em class="_val">0</em> / 200</span>
+                <a href="#" class="btn btn-purple">등록</a>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     function countChar(val , target) {
@@ -94,6 +104,14 @@
             targetItem.css('color','#37354e')
         }
     }
+
+    $('.custom').focus(function() {
+        $(this).parents('.textarea-box').css('paddingBottom','10px')
+    });
+
+    $('.custom').focusout(function() {
+        $(this).parents('.textarea-box').css('paddingBottom','20px')
+    });
 </script>
 </body>
 </html>

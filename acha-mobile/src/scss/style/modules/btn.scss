@@ -20,6 +20,10 @@ a:hover {
   cursor: pointer;
   color: var(--text-02);
 
+  &.disabled{
+    opacity: 0.5;
+  }
+
   &:active, &:focus, &:hover {
     outline: none;
   }

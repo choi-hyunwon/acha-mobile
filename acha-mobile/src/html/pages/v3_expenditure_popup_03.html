@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap _btnSlideOpen"></div>
+<div class="modal-slide modal-expenditure choose-category _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title">카테고리 선택</div>
+            <div class="category-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_loan"></i>
+                            <span>대출</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_save"></i>
+                            <span>저축/투자</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_insurance"></i>
+                            <span>보험</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_house"></i>
+                            <span>주거/관리</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_subscript"></i>
+                            <span>구독</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_mobile"></i>
+                            <span>통신</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_tax"></i>
+                            <span>세금</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_food"></i>
+                            <span>식비/외식비</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_dessert"></i>
+                            <span>간식</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_trip"></i>
+                            <span>여행/숙박</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_leisure"></i>
+                            <span>문화/여가</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_helath"></i>
+                            <span>병원/건강</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_event"></i>
+                            <span>경조/선물</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_cloth"></i>
+                            <span>의류/패션</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_goods"></i>
+                            <span>생활용품</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_beauty"></i>
+                            <span>뷰티/미용</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_education"></i>
+                            <span>교육/강습</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_car"></i>
+                            <span>자동차</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_baby"></i>
+                            <span>자녀/육아</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_pet"></i>
+                            <span>반려동물</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_meeting"></i>
+                            <span>모임</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_money"></i>
+                            <span>용돈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_transportation"></i>
+                            <span>교통</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon icon_cate_etc"></i>
+                            <span>기타</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn-wrap fixed-bottom">
+                    <a class="btn btn-big btn-purple-bg btn-block" href="#">[<span>카테고리명</span>] 카테고리 저장하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+
+
+/*        var list = $('.category-list');
+        var listLi = $('.category-list ul li');
+        var btn = $('.category-list .btn-wrap');
+        listLi.on('click',function (){
+            if(listLi.hasClass('active')) {
+                btn.addClass('active');
+                list.removeClass('on');
+            }else {
+                 btn.removeClass('active');
+                list.addClass('on')
+                listLi.addClass('active');
+            }
+        });*/
+
+        var list = $('.category-list');
+        var listLi = $('.category-list ul li');
+        var listLiA = $('.category-list ul li.active');
+        var btn = $('.category-list .btn-wrap');
+
+        listLi.on('click',function (){
+            let txt = $(this).find('span').html();
+
+
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+
+            }else {
+                listLi.removeClass('active');
+                $(this).addClass('active');
+                list.addClass('on');
+                btn.find('span').html(txt);
+            }
+
+                if(listLi.hasClass('active') == false) {
+                    if (listLiA.length == 0) {
+                        list.removeClass('on');
+                    }
+                }
+
+
+        });
+    })
+</script>
+</body>
+</html>

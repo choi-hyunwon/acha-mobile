@@ -8267,6 +8267,16 @@
         height: 26px;
         border-radius: 13px;
         background-color: #f5f6f8;
+        >.percent{
+          position: absolute;
+          left: 8px;
+          top: 2px;
+          z-index: 1;
+          font-size: 14px;
+          font-family: var(--font7);
+          font-weight: bold;
+          color: var(--text-02);
+        }
 
         .bar {
           display: block;
@@ -8339,8 +8349,215 @@
         font-size: 14px;
         color: var(--text-02);
       }
+    }
+
+    .spending-plan{
+      padding: 10px 20px 40px;
+      >.title{
+        font-size: 26px;
+        font-family: var(--font3);
+        color: var(--text-01);
+        line-height: 1;
+        margin-bottom: 14px;
+        span{
+          font-family: var(--font7);
+          font-weight: bold;
+        }
+      }
+      .bar-graph {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 26px;
+        border-radius: 13px;
+        background-color: #f5f6f8;
+
+        .bar {
+          display: block;
+          position: absolute;
+          height: 26px;
+          top: 0;
+          left: 0;
+          border-radius: 13px;
+          &.color-purple{
+            background-color: #7c4ce8;
+          }
+          &.color-pink{
+            background-color: #cc61ed;
+          }
+          .percent{
+            position: absolute;
+            right: 8px;
+            top: 2px;
+            z-index: 1;
+            font-size: 14px;
+            font-family: var(--font7);
+            font-weight: bold;
+            color: #fff;
+          }
+        }
+      }
+
+      .expenditure{
+        padding: 14px 0;
+        border-bottom: 1px solid #efefef;
+        &:last-of-type{
+          border-bottom: none;
+        }
+        >.total{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+          .title{
+            font-size: 18px;
+            color: var(--text-01);
+            font-family: var(--font3);
+          }
+          .sum{
+            font-size: 18px;
+            color: var(--text-01);
+            font-family: var(--font7);
+            font-weight: bold;
+            &:after{
+              content: '원';
+              display: inline-block;
+              font-family: var(--font3);
+            }
+          }
+        }
+
+        .item-list{
+          .item{
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .tit{
+              font-size: 15px;
+              color: var(--text-02);
+              font-family: var(--font1);
+            }
+            .val{
+              font-size: 15px;
+              color: var(--text-02);
+              font-family: var(--font4);
+              min-width: 128px;
+              text-align: right;
+              span{
+                font-family: var(--font1);
+              }
+              .ico_list_arrow_small{
+                background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+                display: inline-block;
+                width: 6px;
+                height: 16px;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+
 
     }
+    /*지출 추이*/
+    .spending-trends{
+      position: relative;
+      padding: 40px 20px;
+      >.title{
+        font-size: 20px;
+        color: var(--text-01);
+        font-family: var(--font3);
+        margin-bottom: 10px;
+      }
+
+      .no-data{
+        width: 100%;
+        img{
+          width: 100%;
+          height: auto;
+          margin: 10px;
+        }
+        +.btn-wrap{
+          .btn-purple-outline{
+            border-radius: 6px;
+          }
+        }
+      }
+      .swiper-slide{
+        width: 100%;
+        .graph-box{
+          width: 100%;
+          height: 224px;
+          overflow: hidden;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+
+          .axis {
+            z-index: 1;
+            display: flex;
+            padding-top: 10px;
+            text-align: center;
+            .tick{
+              flex: 1;
+              .day-month {
+                display: block;
+                color: var(--text-02);
+                font-size: 14px;
+                font-family: var(--font2);
+                &.active{
+                  color: var(--text-point-color);
+                }
+              }
+            }
+          }
+        }
+        .period{
+          font-size: 17px;
+          color: var(--text-01);
+          font-family: var(--font2);
+          text-align: center;
+          line-height: 40px;
+          margin: 20px 50px 0;
+        }
+      }
+
+      .swiper-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        .swiper-button{
+          position: relative;
+          width: 40px;
+          height: 40px;
+          &:after{
+            display: none;
+          }
+          &.swiper-button-disabled{
+            opacity: 1;
+          }
+          &.swiper-button-prev{
+            background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
+            &.swiper-button-disabled{
+              background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
+            }
+          }
+          &.swiper-button-next{
+            background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
+            &.swiper-button-disabled{
+              background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
+            }
+          }
+        }
+      }
+
+    }
+
     .expenditure-tab{
       display: flex;
       justify-content: space-between;
@@ -8363,8 +8580,8 @@
             a{
               font-size: 17px;
               color: var(--text-01);
+              font-family: var(--font3);
               line-height: 26px;
-              font-weight: bold;
             }
             &:after{
               content: '';
@@ -8387,6 +8604,9 @@
         border-radius: 14px;
         height: 28px;
         line-height: 26px;
+        &:hover{
+          color: var(--text-02);
+        }
       }
     }
     .expenditure-box{
@@ -8451,9 +8671,6 @@
 
           .details-history{
             .item-list{
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-start;
               padding: 15px 0;
               &:last-of-type{
                 margin-bottom: 0;
@@ -8471,92 +8688,109 @@
                   background: url("../../img/common/ico_caution_grey@2x.png") no-repeat left center / 12px 12px;
                 }
               }
-              .box{
-                margin-bottom: 0;
-                .img{
-                  width: 40px;
-                  height: 40px;
-                  display: inline-block;
-                  vertical-align: top;
-                  margin-right: 10px;
-                  margin-top: 5px;
-                  img{
-                    width: 100%;
-                    height: auto;
-                  }
-                  .icon{
+
+              >.group{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .box{
+                  margin-bottom: 0;
+                  .img{
                     width: 40px;
                     height: 40px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 10px;
+                    margin-top: 4px;
+                    img{
+                      width: 100%;
+                      height: auto;
+                    }
+                    .icon{
+                      width: 40px;
+                      height: 40px;
+                    }
                   }
-                }
 
-                .info{
-                  display: inline-block;
-                  position: relative;
-                  .place{
-                    span{
-                      overflow: hidden;
-                      white-space: nowrap;
-                      text-overflow: ellipsis;
-                      display: inline-block;
-                      font-size: 15px;
-                      max-width: 142px;
-                      min-width: 10px;
-                      vertical-align: sub;
-                    }
-                  }
-                  .type{
-                    span{
-                      overflow: hidden;
-                      white-space: nowrap;
-                      text-overflow: ellipsis;
-                      display: inline-block;
-                      font-size: 15px;
-                      max-width: 173px;
-                      min-width: 10px;
-                      vertical-align: sub;
-                    }
-                  }
-                  .amount{
-                    font-size: 18px;
+                  .info{
+                    display: inline-block;
                     position: relative;
-                    font-family: var(--font4);
-                    font-weight: 500;
-                    display: block;
-                    &:after{
-                      content: '원';
-                      display: inline-block;
-                      font-size: 17px;
-                      font-family: var(--font2);
+                    .place{
+                      span{
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        display: inline-block;
+                        font-size: 15px;
+                        max-width: 142px;
+                        min-width: 10px;
+                        vertical-align: sub;
+                      }
                     }
-                  }
-                  .hashtag{
-                    font-size: 12px;
-                    color: var(--text-03);
+                    .type{
+                      span{
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        display: inline-block;
+                        font-size: 15px;
+                        max-width: 162px;
+                        min-width: 10px;
+                        vertical-align: sub;
+                      }
+                    }
+                    .amount{
+                      font-size: 18px;
+                      position: relative;
+                      font-family: var(--font4);
+                      font-weight: 500;
+                      display: block;
+                      &:after{
+                        content: '원';
+                        display: inline-block;
+                        font-size: 17px;
+                        font-family: var(--font2);
+                      }
+                    }
                   }
                 }
-              }
-              .payment-method{
+                .payment-method{
                   display: inline-block;
                   font-size: 11px;
                   color: #9992a0;
                   background: #eeedf0;
                   padding:4px 6px;
                   border-radius: 6px;
-                  height: 25px;
-                  margin-top: 11px;
                   min-width: 33px;
+                  max-width: 80px;
+                  text-align: center;
+                }
               }
+              .hashtag{
+                font-size: 12px;
+                color: var(--text-03);
+                padding-left: 50px;
+              }
+
               .badge{
                 display: inline-block;
                 font-size: 11px;
                 padding:3px 6px;
                 border-radius: 6px;
-                margin-top: 10px;
                 font-weight: 500;
                 line-height: 1.5;
-                max-width: 58px;
+                max-width: 65px;
                 font-family: var(--font2);
+
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                white-space: initial;
+
+
                 &.badge-gray{
                   color: #9992a0;
                   background: #eeedf0;
@@ -8569,6 +8803,31 @@
                   color: #6839d3;
                   background: #f4efff;
                 }
+              }
+            }
+          }
+
+          >.total{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #efefef;
+            .title{
+              font-size: 15px;
+              color: var(--text-01);
+              font-family: var(--font3);
+            }
+            .sum{
+              font-size: 18px;
+              color: var(--text-01);
+              font-family: var(--font5);
+              &:after{
+                content: '원';
+                display: inline-block;
+                font-size: 13px;
+                font-family: var(--font2);
+                margin-left: 1px;
               }
             }
           }
@@ -8606,7 +8865,6 @@
                   font-family: var(--font4);
                   font-weight: 500;
                   position: relative;
-                  margin-top: 9px;
                   &:after{
                     content: '원';
                     display: inline-block;
@@ -8696,6 +8954,7 @@
                  padding: 16px 0 15px;
                  display: block;
                  .box{
+                   width: 100%;
                    .info{
                      width: calc(100% - 55px);
                      .place{
@@ -8733,6 +8992,11 @@
                 font-size: 15px;
                 font-family: var(--font3);
                 color: var(--text-01);
+                &.sub-title-border{
+                  border-bottom: 1px solid #efefef;
+                  padding-bottom: 18px;
+                  margin-bottom: 0;
+                }
               }
               .details-history{
                 .item-list{
@@ -8799,9 +9063,12 @@
                           font-size: 11px;
                           margin-left: 4px;
                           border-radius: 6px;
-                          padding: 3px 6px;
+                          padding: 3px 5px 5px;
                           position: relative;
                           bottom: 2px;
+                          display: inline-block;
+                          vertical-align: middle;
+                          line-height: 1;
                         }
                       }
                       .belong{
@@ -8871,76 +9138,79 @@
         }
         .details-history{
           .item-list{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
             padding: 15px 0;
             &:last-of-type{
               margin-bottom: 0;
             }
-            .box{
-              margin-bottom: 0;
-              .img{
-                width: 40px;
-                height: 40px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 10px;
-                margin-top: 5px;
-                img{
-                  width: 100%;
-                  height: auto;
-                }
-                .icon{
+            .group{
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              .box{
+                margin-bottom: 0;
+                .img{
                   width: 40px;
                   height: 40px;
+                  display: inline-block;
+                  vertical-align: top;
+                  margin-right: 10px;
+                  margin-top: 5px;
+                  img{
+                    width: 100%;
+                    height: auto;
+                  }
+                  .icon{
+                    width: 40px;
+                    height: 40px;
+                  }
+                }
+                .info{
+                  display: inline-block;
+                  position: relative;
+                  .place{
+                    span{
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      display: inline-block;
+                      font-size: 15px;
+                      max-width: 142px;
+                      min-width: 10px;
+                      vertical-align: sub;
+                    }
+                  }
+                  .amount{
+                    font-size: 18px;
+                    position: relative;
+                    font-family: var(--font4);
+                    font-weight: 500;
+                    display: block;
+                    &:after{
+                      content: '원';
+                      display: inline-block;
+                      font-size: 17px;
+                      font-family: var(--font2);
+                    }
+                  }
                 }
               }
-              .info{
+              .round{
                 display: inline-block;
-                position: relative;
-                .place{
-                  span{
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    display: inline-block;
-                    font-size: 15px;
-                    max-width: 142px;
-                    min-width: 10px;
-                    vertical-align: sub;
-                  }
-                }
-                .amount{
-                  font-size: 18px;
-                  position: relative;
-                  font-family: var(--font4);
-                  font-weight: 500;
-                  display: block;
-                  &:after{
-                    content: '원';
-                    display: inline-block;
-                    font-size: 17px;
-                    font-family: var(--font2);
-                  }
-                }
-                .hashtag{
-                  font-size: 12px;
-                  color: var(--text-03);
-                }
+                font-size: 11px;
+                color: #3968d3;
+                background: #eff8ff;
+                padding:1px 6px 3px;
+                border-radius: 6px;
+                height: 19px;
+                margin-top: 11px;
+                min-width: 48px;
+                font-family: var(--font2);
               }
             }
-            .round{
-              display: inline-block;
-              font-size: 11px;
-              color: #3968d3;
-              background: #eff8ff;
-              padding:2px 6px;
-              border-radius: 6px;
-              height: 19px;
-              margin-top: 11px;
-              min-width: 48px;
-              font-family: var(--font2);
+            .hashtag{
+              font-size: 12px;
+              color: var(--text-03);
+              padding-left: 50px;
             }
           }
         }
@@ -9207,6 +9477,7 @@
         }
       }
 
+      /*상세내역*/
       .account-detail-wrap{
         .info-wrap{
           margin-top: 0;
@@ -9214,8 +9485,11 @@
             font-size: 18px;
             color: var(--text-01);
             font-family: var(--font3);
-            padding: 20px 0 19px;
+            padding: 18px 0 17px;
             border-color: #efefef;
+            display: flex;
+            align-items: center;
+            line-height: 26px;
             .img{
               width: 40px;
               height: 40px;
@@ -9244,6 +9518,7 @@
                 font-size: 15px;
                 color: var(--text-01);
                 font-family: var(--font2);
+                max-width: 225px;
                 .ico_list_arrow_small{
                   background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                   display: inline-block;
@@ -9255,8 +9530,11 @@
                   color: #c2c1cc;
                   font-family: var(--font1);
                 }
+                .color-red{
+                  color: #f21730;
+                }
                 input{
-                  width: 212px;
+                  width: 211px;
                   height: unset;
                   padding: 0;
                   text-align: right;
@@ -9277,6 +9555,73 @@
                   +.ico_list_arrow_small{
                     margin-left: 4px;
                   }
+                }
+              }
+            }
+            +.schedule{
+              font-size: 16px;
+              color: var(--text-01);
+              font-family: var(--font2);
+              font-weight: 500;
+              display: flex;
+              justify-content: space-between;
+              padding: 30px 0 0;
+              border-top: 1px solid #efefef;
+              .ico_list_arrow_small{
+                background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+                display: inline-block;
+                width: 6px;
+                height: 16px;
+              }
+
+            }
+          }
+
+        }
+      }
+      /*최근 거래내역*/
+      .recent-transactions-wrap{
+        padding: 30px 20px;
+        .info-wrap{
+          margin-top: 0;
+          .title{
+            font-size: 15px;
+            color: var(--text-02);
+            font-family: var(--font1);
+            margin-bottom: 10px;
+          }
+          .info-list{
+            .item{
+              padding: 15px 0;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              .tit{
+                font-size: 16px;
+                color: var(--text-01);
+                font-family: var(--font2);
+                word-break: keep-all;
+                .day{
+                  display: block;
+                  font-size: 14px;
+                  color: var(--text-03);
+                  font-family: var(--font1);
+                  margin-bottom: 6px;
+
+                }
+              }
+              .val{
+                font-size: 15px;
+                color: var(--text-01);
+                font-family: var(--font4);
+                font-weight: bold;
+                min-width: 128px;
+                margin-top: 29px;
+                text-align: right;
+                span{
+                  font-size: 14px;
+                  font-family: var(--font2);
+                  font-weight: 500;
                 }
               }
             }
@@ -9378,6 +9723,44 @@
 
         }
       }
+
+      /*지출 스케줄 변경*/
+      .schedule-change-wrap{
+        padding: 20px 20px 150px;
+        .info-list{
+          .item{
+            margin-bottom: 30px;
+            &:last-of-type{
+              margin-bottom: 0;
+            }
+            .day{
+              font-size: 14px;
+              color: var(--text-02);
+              font-family: var(--font2);
+              margin-bottom: 4px;
+              display: inline-block;
+            }
+            .custom-light{
+              &:after{
+                content: '원';
+                clear: both;
+                display: inline-block;
+                position: absolute;
+                font-size: 14px;
+                color: var(--text-01);
+                font-family: var(--font1);
+                right: 5px;
+                top:10px;
+              }
+            }
+          }
+        }
+        .btn-wrap{
+          padding: 0 20px 30px;
+          background: #fff;
+        }
+      }
+
     }
 
     .btn-area{

@@ -168,6 +168,7 @@
   user-select: none;
 }
 
+/*
 [type="checkbox"] + span:not(.lever):before,
 [type="checkbox"]:not(.filled-in) + span:not(.lever):after {
   content: '';
@@ -183,6 +184,7 @@
   -webkit-transition: .2s;
   transition: .2s;
 }
+*/
 
 [type="checkbox"]:not(.filled-in) + span:not(.lever):after {
   border: 0;
@@ -205,7 +207,7 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-[type="checkbox"]:checked + span:not(.lever):before {
+/*[type="checkbox"]:checked + span:not(.lever):before {
   top: -4px;
   left: -5px;
   width: 12px;
@@ -220,7 +222,7 @@
   backface-visibility: hidden;
   -webkit-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
-}
+}*/
 
 [type="checkbox"]:checked:disabled + span:before {
   border-right: 2px solid rgba(0, 0, 0, 0.42);
@@ -254,17 +256,18 @@
   border-radius: 2px;
 }
 
-[type="checkbox"].filled-in + span:not(.lever):before,
+/*[type="checkbox"].filled-in + span:not(.lever):before,
 [type="checkbox"].filled-in + span:not(.lever):after {
   content: '';
   left: 0;
   position: absolute;
-  /* .1s delay is for check animation */
+  !* .1s delay is for check animation *!
   -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
   transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
   z-index: 1;
-}
+}*/
 
+/*
 [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
   width: 7px;
   height: 10px;
@@ -287,8 +290,16 @@
   top: 2px;
   z-index: 0;
 }
+*/
 
-[type="checkbox"].filled-in:checked + span:not(.lever):before {
+[type="checkbox"].filled-in:not(:checked) + span:not(.lever){
+  background: url("../../img/common/check_off@2x.png") no-repeat center center/ contain;
+  width: 22px;
+  height: 22px;
+}
+
+
+/*[type="checkbox"].filled-in:checked + span:not(.lever):before {
   width: 7px;
   height: 10px;
   left: 3px;
@@ -309,7 +320,14 @@
   border-radius: 50%;
   background-color: var(--color-point);
   z-index: 0;
+}*/
+
+[type="checkbox"].filled-in:checked + span:not(.lever) {
+  background: url("../../img/common/check_on@2x.png") no-repeat center center/ contain;
+  width: 22px;
+  height: 22px;
 }
+
 
 [type="checkbox"].filled-in.tabbed:focus + span:not(.lever):after {
   border-radius: 2px;

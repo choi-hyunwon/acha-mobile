@@ -12,7 +12,6 @@ data.date1 = {
     'list': [
     ]
 };
-
 data.edit1 = {
     'title': '(수정)지출상세_3.0변경',
     'list': [
@@ -42,7 +41,6 @@ data.edit1 = {
         },
     ]
 };
-
 data.edit2 = {
     'title': '(수정)더보기_3.0변경',
     'list': [
@@ -84,7 +82,6 @@ data.edit2 = {
         },
     ]
 };
-
 data.edit3 = {
     'title': '(수정,신규)더보기_마이데이터',
     'list': [
@@ -217,7 +214,6 @@ data.edit3 = {
 
     ]
 };
-
 data.edit4 = {
     'title': '(신규)마이데이터 연결',
     'list': [
@@ -343,7 +339,6 @@ data.edit4 = {
         },
     ]
 };
-
 data.edit5 = {
     'title': '(수정)상품(금융마켓)',
     'list': [
@@ -361,7 +356,6 @@ data.edit5 = {
         },
     ]
 };
-
 data.edit6 = {
     'title': '(수정)자산',
     'list': [
@@ -391,7 +385,6 @@ data.date2 = {
     'list': [
     ]
 };
-
 data.edit7 = {
     'title': '(수정,신규)더보기_3.0변경',
     'list': [
@@ -409,7 +402,6 @@ data.edit7 = {
         },
     ]
 };
-
 data.edit8 = {
     'title': '(신규)가계부>지출>변동지출',
     'list': [
@@ -789,6 +781,7 @@ data.edit11 = {
         },
     ]
 };
+
 data.date3 = {
     'title': '< 22.09.20 >',
     'list': [
@@ -802,6 +795,67 @@ data.edit12 = {
             'url': '06_sign_in_02',
             'category': '회원가입',
             'page': '약관동의(회원가입_2.약관동의(요약 2~3개)'
+        },
+    ]
+};
+
+data.date4 = {
+    'title': '< 22.09.23 >',
+    'list': [
+    ]
+};
+data.edit13 = {
+    'title': '(신규)가계부>지출수단>계좌',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_41',
+            'category': '가계부',
+            'page': '지출수단_9.1_계좌_내역이없는경우_계좌지출Tab'
+        },
+    ]
+};
+data.edit14 = {
+    'title': '(신규)가계부>지출수단>현금',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '',
+            'category': '',
+            'page': ''
+        },
+    ]
+};
+data.edit15 = {
+    'title': '(신규)가계부>지출수단>카드',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '',
+            'category': '',
+            'page': ''
+        },
+    ]
+};
+data.edit16 = {
+    'title': '(신규)가계부>카테고리',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '',
+            'category': '',
+            'page': ''
+        },
+    ]
+};
+data.edit17 = {
+    'title': '(신규)가계부>수입',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '',
+            'category': '',
+            'page': ''
         },
     ]
 };

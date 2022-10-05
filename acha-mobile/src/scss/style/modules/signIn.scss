@@ -289,6 +289,15 @@
           [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
             left: 1px;
             top: 0;
+            width: 7px;
+            height: 10px;
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            border-right: 2px solid #d7d6e0;
+            border-bottom: 2px solid #d7d6e0;
+            transform: rotateZ(45deg);
+            transform-origin: 100% 100%;
+            background: none;
           }
 
           [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
@@ -296,6 +305,8 @@
             width: 18px;
             border-radius: 2px;
             top: 0;
+            border: 1px solid #d7d6e0;
+
           }
 
           [type="checkbox"].filled-in:checked + span:not(.lever):after {

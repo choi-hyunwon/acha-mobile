@@ -1,6 +1,10 @@
 /**
 common
  */
+
+.unset-height{
+  min-height: unset!important;
+}
 .visually_hidden {
   overflow: hidden;
   position: absolute;

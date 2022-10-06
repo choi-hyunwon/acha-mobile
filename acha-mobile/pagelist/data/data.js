@@ -813,6 +813,156 @@ data.edit13 = {
             'category': '가계부',
             'page': '지출수단_9.1_계좌_내역이없는경우_계좌지출Tab'
         },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_42',
+            'category': '가계부',
+            'page': '지출수단_9.1_계좌_내역이없는경우_정기지출Tab'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_43',
+            'category': '가계부',
+            'page': '지출수단_9.2_계좌지출Tab_내역이있는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_44',
+            'category': '가계부',
+            'page': '지출수단_9.3_계좌지출Tab_계좌필터_계좌있는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_45',
+            'category': '가계부',
+            'page': '지출수단_9.3_계좌지출Tab_계좌필터_계좌없는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_46',
+            'category': '가계부',
+            'page': '지출수단_9.4_계좌지출Tab_계좌지출항목상세_변동지출상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_47',
+            'category': '가계부',
+            'page': '지출수단_9.4_계좌지출Tab_계좌지출항목상세_고정지출상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_48',
+            'category': '가계부',
+            'page': '지출수단_9.5_정기지출Tab_내역이있는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_49',
+            'category': '가계부',
+            'page': '지출수단_9.6_정기지출Tab_계좌목록(1)'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_50',
+            'category': '가계부',
+            'page': '지출수단_9.6_정기지출Tab_계좌목록(2)_지출완료항목없는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_51',
+            'category': '가계부',
+            'page': '지출수단_9.6_정기지출Tab_계좌목록(2)_지출예정항목없는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_52',
+            'category': '가계부',
+            'page': '지출수단_9.6_정기지출Tab_계좌목록(2)_과거'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_53',
+            'category': '가계부',
+            'page': '지출수단_9.6_정기지출Tab_계좌목록(2)_미래'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_54',
+            'category': '가계부',
+            'page': '지출수단_9.9_계좌지출Tab_정기지출_상세_카드명세서'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_55',
+            'category': '가계부',
+            'page': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_56',
+            'category': '가계부',
+            'page': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정_이용내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_57',
+            'category': '가계부',
+            'page': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정_할부예정'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_58',
+            'category': '가계부',
+            'page': '지출수단_9.11_현금흐름_설정'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_59',
+            'category': '가계부',
+            'page': '지출수단_9.12_현금흐름_계좌잔고_편집'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_60',
+            'category': '가계부',
+            'page': '지출수단_9.13_현금흐름_수입예정_편집'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_61',
+            'category': '가계부',
+            'page': '지출수단_9.13_현금흐름_수입예정_편집_내역없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_popup_21',
+            'category': '가계부',
+            'page': '지출수단_9.15_현금흐름_수입예정_편집_수입예정일수정'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_62',
+            'category': '가계부',
+            'page': '지출수단_9.16_현금흐름_지출편집'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_63',
+            'category': '가계부',
+            'page': '지출수단_9.16_현금흐름_지출편집_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'v3_expenditure_64',
+            'category': '가계부',
+            'page': '지출수단_9.19_현금흐름_조회결과 (1) '
+        },
+        {
+            'stateClass': 'working',
+            'url': 'v3_expenditure_65',
+            'category': '가계부',
+            'page': '지출수단_9.19_현금흐름_조회결과 (2)'
+        },
     ]
 };
 data.edit14 = {
@@ -820,9 +970,15 @@ data.edit14 = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '',
-            'category': '',
-            'page': ''
+            'url': 'v3_expenditure_66',
+            'category': '가계부',
+            'page': '지출수단_10.1_계좌지출_목록없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_67',
+            'category': '가계부',
+            'page': '지출수단_10.2_계좌지출_목록있음'
         },
     ]
 };
@@ -831,9 +987,93 @@ data.edit15 = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '',
-            'category': '',
-            'page': ''
+            'url': 'v3_expenditure_68',
+            'category': '가계부',
+            'page': '지출수단_11.1_카드_내역이없는경우_카드지출Tab'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_69',
+            'category': '가계부',
+            'page': '지출수단_11.1_카드_내역이없는경우_카드명세서Tab'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_70',
+            'category': '가계부',
+            'page': '지출수단_11.2_카드지출_보유카드목록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_71',
+            'category': '가계부',
+            'page': '지출수단_11.3_카드지출_보유카드노출선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_72',
+            'category': '가계부',
+            'page': '지출수단_11.3_카드지출_보유카드노출선택_카드없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_73',
+            'category': '가계부',
+            'page': '지출수단_11.4_카드별지출_카드상세_목표있음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_74',
+            'category': '가계부',
+            'page': '지출수단_11.4_카드별지출_카드상세_목표있음_지출없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_75',
+            'category': '가계부',
+            'page': '지출수단_11.4_카드별지출_카드상세_목표없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_76',
+            'category': '가계부',
+            'page': '지출수단_11.6_카드별지출_항목상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_77',
+            'category': '가계부',
+            'page': '지출수단_11.6_카드별지출_항목상세_승인취소'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_78',
+            'category': '가계부',
+            'page': '지출수단_11.6_카드별지출_항목상세_할부'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_79',
+            'category': '가계부',
+            'page': '지출수단_11.9_카드명세서'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_80',
+            'category': '가계부',
+            'page': '지출수단_11.10_카드명세서_상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_81',
+            'category': '가계부',
+            'page': '지출수단_11.8_카드명세서_결제예상금액_상세_이용내역'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_82',
+            'category': '가계부',
+            'page': '지출수단_11.8_카드명세서_결제예상금액_상세_할부예정금'
         },
     ]
 };
@@ -842,9 +1082,15 @@ data.edit16 = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': '',
-            'category': '',
-            'page': ''
+            'url': 'v3_expenditure_83',
+            'category': '가계부',
+            'page': '카테고리_12.1_전체카테고리'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_84',
+            'category': '가계부',
+            'page': '카테고리_12.4_카테고리_상세'
         },
     ]
 };
@@ -852,10 +1098,106 @@ data.edit17 = {
     'title': '(신규)가계부>수입',
     'list': [
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '',
-            'category': '',
-            'page': ''
+            'category': '가계부',
+            'page': '수입_13.2_이번달 남은 돈'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.2_수입'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.4_수입계획'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.7_수입목록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.7_수입목록_수입내역없을때'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.8_수입_추가삭제'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.8_수입_수입설정'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.8_수입_수입설정_수입내역없을때'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.9_수입_수입직접등록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.14_수입목록_수입상세'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.15_수입목록_수입상세_직접등록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.16_수입계획'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.16_수입계획_계획이없는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.17_수입계획_수입계획추가'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.21_수입계획_항목_상세'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.22_수입계획_항목_상세_삭제'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '수입_13.23_현금흐름상세'
         },
     ]
 };

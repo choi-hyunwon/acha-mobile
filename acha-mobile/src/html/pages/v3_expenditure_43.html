@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="total-amount">
+            <p class="title">총 계좌지출</p>
+            <span class="amount">2,500,000</span>
+            <p class="expected">현재 잔고 <span>0</span>원</p>
+        </div>
+        <div class="expenditure-tab _expenditureTab">
+            <ul class="clearfix">
+                <li class="active"><a href="#">계좌지출</a></li>
+                <li><a href="#">정기지출</a></li>
+            </ul>
+            <a href="#" class="btn btn-filter">계좌 <span class="color-purple">3</span></a>
+        </div>
+        <div class="expenditure-box bg_light_gray">
+            <ul class="usage-history-list">
+                <li class="description">
+                    <p>체크카드 결제와 카드대금 납부를 제외하고<br>계좌로 지출한 내역을 확인하세요.</p>
+                </li>
+                <li>
+                    <p class="sub-title">1일</p>
+                    <ul class="details-history">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" alt="우리은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="place"><span>우리은행대출</span></span>
+                                        <span class="amount">12,500</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method">SC계좌456</div>
+                            </div>
+                            <span class="hashtag">#주택담보대출</span>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <i class="icon icon_cate_subscript"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span class="place"><span>Netflix</span></span>
+                                        <span class="amount">13,500</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method">우리계좌745</div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="sub-title">5일</p>
+                    <ul class="details-history">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/tbroad.png" alt="티브로드 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="place"><span>SKT</span></span>
+                                        <span class="amount">56,000</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method">우리계좌745</div>
+                            </div>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <i class="icon icon_cate_house"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span class="place"><span>아파트관리비</span></span>
+                                        <span class="amount">315,800</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method">국민계좌123</div>
+                            </div>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <i class="icon icon_cate_house"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span class="place"><span>서울도시가스</span></span>
+                                        <span class="amount">202,000</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method">SC계좌456</div>
+                            </div>
+                            <span class="hashtag">#아들 핸드폰 요금</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

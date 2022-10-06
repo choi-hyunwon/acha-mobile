@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="total-amount">
+            <p class="title">총 청구금액</p>
+            <span class="amount">0</span>
+            <p class="expected"></p>
+        </div>
+        <div class="expenditure-tab _expenditureTab">
+            <ul class="clearfix">
+                <li><a href="#">카드지출</a></li>
+                <li class="active"><a href="#">카드명세서</a></li>
+            </ul>
+            <a href="#" class="btn btn-filter">카드 <span>0</span></a>
+        </div>
+        <div class="expenditure-box card-spending bg_light_gray">
+            <div class="empty">
+                <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
+                <p>카드명세서가 없습니다.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

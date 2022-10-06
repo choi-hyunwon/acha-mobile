@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="total-amount">
+            <p class="title">총 계좌지출</p>
+            <span class="amount">0</span>
+            <p class="expected">현재 잔고 <span>0</span>원</p>
+        </div>
+        <div class="expenditure-tab _expenditureTab">
+            <ul class="clearfix">
+                <li class="active"><a href="#">계좌지출</a></li>
+                <li><a href="#">정기지출</a></li>
+            </ul>
+            <a href="#" class="btn btn-filter">계좌 <span>0</span></a>
+        </div>
+        <div class="expenditure-box bg_light_gray">
+            <div class="empty means-account">
+                <div class="description">
+                    <p>체크카드 결제와 카드대금 납부를 제외하고<br>계좌로 지출한 내역을 확인하세요.</p>
+                </div>
+                <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
+                <p>지출내역이 없습니다.🙁</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+</script>
+
+</body>
+</html>
+

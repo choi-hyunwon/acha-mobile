@@ -8182,8 +8182,20 @@
     }
   }
   .expenditure{
+    >.description{
+      background: #f7f8fc;
+      border-radius: 10px;
+      font-size: 16px;
+      margin: 0 20px;
+      padding:20px;
+      span{
+        font-family: var(--font4);
+        color: var(--text-01);
+        font-weight: bold;
+      }
+    }
     .total-amount{
-      padding: 15px 20px;
+      margin: 15px 20px;
       .title{
         font-size: 16px;
         font-family: var(--font1);
@@ -8207,8 +8219,58 @@
         font-size: 14px;
         color: var(--text-03);
         padding-top: 6px;
+        min-height: 27px;
         span{
           font-family: var(--font4);
+        }
+      }
+      .name{
+        font-size: 18px;
+        font-family: var(--font3);
+        color: var(--text-01);
+        margin-bottom: 4px;
+      }
+      .account-number{
+        font-size: 14px;
+        font-family: var(--font4);
+        color: var(--text-03);
+      }
+      &.line{
+        margin: 0 20px;
+        padding: 15px 0 20px;
+        border-bottom: 1px solid #efefef;
+      }
+
+
+      /*정기지출*/
+      &.add-logo{
+        display: flex;
+        padding: 20px;
+        margin: 0;
+        .img{
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          margin-top: 6px;
+          margin-right: 10px;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+        >div{
+          .title{
+            font-size: 18px;
+            font-family: var(--font2);
+            color: var(--text-01);
+            margin-bottom: 2px;
+          }
+          .num{
+            font-size: 15px;
+            font-family: var(--font1);
+            color: var(--text-01);
+            margin-bottom:6px;
+          }
         }
       }
     }
@@ -8322,6 +8384,10 @@
             .val{
               font-size: 15px;
               font-family: var(--font2);
+              &.color-gray{
+                color: #c2c1cc;
+                font-family: var(--font1);
+              }
               span{
                 color: var(--text-01);
                 font-family: var(--font5);
@@ -8397,7 +8463,28 @@
           }
         }
       }
-
+      >.category{
+        font-size: 18px;
+        color: var(--text-01);
+        font-family: var(--font3);
+        padding-bottom: 20px;
+        padding-top: 10px;
+        border-bottom: 1px solid #efefef;
+        .img{
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          margin-right: 14px;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+        .icon{
+          width: 40px;
+          height: 40px;
+        }
+      }
       .expenditure{
         padding: 14px 0;
         border-bottom: 1px solid #efefef;
@@ -8458,8 +8545,6 @@
           }
         }
       }
-
-
     }
     /*지출 추이*/
     .spending-trends{
@@ -8608,6 +8693,25 @@
           color: var(--text-02);
         }
       }
+      .btn-filter{
+        font-size: 12px;
+        border-color: #e2e3e6;
+        min-width: 50px;
+        border-radius: 14px;
+        height: 28px;
+        line-height: 26px;
+        padding-left: 30px;
+        padding-right: 14px;
+        background: url("../../img/common/ic_filter@2x.png") no-repeat center left 14px /contain;
+        background-size: 14px;
+        span{
+          font-weight: bold;
+          font-family: var(--font4);
+        }
+        &:hover{
+          color: var(--text-02);
+        }
+      }
     }
     .expenditure-box{
       .icon-edit{
@@ -8634,11 +8738,17 @@
           padding-top: 10px;
           font-size: 14px;
           color: var(--text-02);
+          text-align: center;
         }
         .description{
           position: absolute;
           top: 20px;
           width: calc(100% - 40px);
+        }
+
+        &.means-account{
+          height: calc(100vh - 234px);
+          padding: 0;
         }
       }
 
@@ -8751,6 +8861,14 @@
                         font-size: 17px;
                         font-family: var(--font2);
                       }
+                      &.cancel_line{
+                        color: #c2c1cc;
+                        font-family: var(--font5);
+                        text-decoration:line-through;
+                        &:after{
+                          text-decoration:line-through;
+                        }
+                      }
                     }
                   }
                 }
@@ -8802,6 +8920,10 @@
                 &.badge-purple{
                   color: #6839d3;
                   background: #f4efff;
+                }
+                &.badge-blue{
+                  color: #3968d3;
+                  background: #eff8ff;
                 }
               }
             }
@@ -8998,6 +9120,16 @@
                   margin-bottom: 0;
                 }
               }
+              .info-title{
+                font-size: 18px;
+                font-family: var(--font1);
+                color: var(--text-01);
+                margin-bottom: 12px;
+                span{
+                  font-family: var(--font3);
+                  color: var(--text-point-color);
+                }
+              }
               .details-history{
                 .item-list{
                   padding: 16px 0 15px;
@@ -9009,6 +9141,13 @@
                         span{
                           max-width: 200px;
                         }
+                      }
+                      .num{
+                        display: block;
+                        font-size: 13px;
+                        color: var(--text-03);
+                        font-family: var(--font4);
+                        margin-bottom: 6px;
                       }
                     }
                   }
@@ -9086,6 +9225,84 @@
             }
           }
         }
+
+        /*정기지출 내역*/
+        &.regular-expenditure{
+          .sub-title{
+            font-size: 16px;
+            .img{
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              margin-right: 4px;
+              img{
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+          .details-history{
+            .item-list{
+              padding: 7px 0;
+              .group{
+                .box{
+                  .info{
+                    >span{
+                      display: inline-block;
+                      vertical-align: middle;
+                    }
+                    .tit{
+                      font-size: 14px;
+                      color: var(--text-02);
+                    }
+                    .badge{
+                      background: #eeedf0;
+                      color: #9992a0;
+                      border-radius: 10px;
+                      height: 21px;
+                      min-width: 32px;
+                      &.badge-purple{
+                        background: #f4efff;
+                        color: #6839d3;
+                      }
+                    }
+                  }
+                }
+                .amount{
+                  font-size: 16px;
+                  font-family: var(--font5);
+                  color: var(--text-01);
+                  font-weight: 500;
+                  &:after{
+                    content: '원';
+                    display: inline-block;
+                    font-size: 16px;
+                    font-family: var(--font2);
+                  }
+                }
+              }
+            }
+          }
+          .banner-area{
+            padding: 24px;
+            font-size: 16px;
+            color: var(--text-01);
+            font-family: var(--font3);
+            background: #eaeaf6 url("../../img/common/expenditure/img_banner_flow@2x.png") no-repeat right 30px center / contain;
+            background-size: 88px;
+          }
+        }
+
+        /*정기지출 리스트*/
+       &.regular-expenditure-list{
+         padding: 10px 0 0;
+         >li{
+           .total{
+             border: none;
+             padding-bottom: 10px;
+           }
+         }
+       }
 
         +.btn-wrap{
           padding: 0 20px 30px;
@@ -9530,6 +9747,10 @@
                   color: #c2c1cc;
                   font-family: var(--font1);
                 }
+                &.color-red{
+                  color: #f21730;
+                }
+                /* * */
                 .color-red{
                   color: #f21730;
                 }
@@ -9761,6 +9982,464 @@
         }
       }
 
+      /*지출수단 계좌 -카드명세서*/
+      &.card-statement{
+        .account-detail-wrap{
+          .info-wrap{
+            .info-list{
+              padding: 5px 0 15px;
+              .item{
+                .val{
+                  color: var(--text-01);
+                  font-family: var(--font4);
+                }
+              }
+            }
+          }
+        }
+        .usage-history-list{
+          &.regular-expenditure-list{
+            .empty{
+              padding: 40px 40px 80px;
+              height: unset;
+            }
+            .total2{
+              display: block;
+              padding-bottom: 20px;
+              border-bottom: 1px solid #efefef;
+              .title{
+                display: block;
+                font-size: 16px;
+                font-family: var(--font1);
+              }
+              .sum{
+                display: block;
+                font-size: 24px;
+                font-family: var(--font4);
+                font-weight: bold;
+                &:after{
+                  font-size: 16px;
+                  font-family: var(--font3);
+                }
+              }
+            }
+            .spending-list {
+              display: flex;
+              flex-direction: column-reverse;
+
+              li {
+                padding: 18px 0;
+
+                .info {
+                  display: flex;
+                  justify-content: space-between;
+                }
+
+                .info2 {
+                  font-size: 12px;
+                  line-height: 18px;
+                  text-align: left;
+                  color: var(--text-03);
+                  font-family: var(--font4);
+                  margin-top: 3px;
+                  .bar{
+                    width: 1px;
+                    height: 10px;
+                    background-color: var(--text-03);
+                    display: inline-block;
+                    margin: 0 4px;
+                  }
+                }
+
+                .day {
+                  display: inline-block;
+                  vertical-align: middle;
+                  float: left;
+                  width: 23px;
+                  height: 19px;
+                  font-size: 11px;
+                  font-family: var(--font2);
+                  color: #9b9aa6;
+                  line-height: 19px;
+                  text-align: left;
+                  padding-left: 4px;
+                }
+
+                .title {
+                  position: relative;
+                  display: inline-block;
+                  float: left;
+                  width: 58%;
+                  height: 100%;
+                  font-size: 16px;
+                  font-family: var(--font2);
+                  letter-spacing: -.65px;
+
+                  em:first-child {
+                    line-height: 19px;
+                  }
+
+                  .num {
+                    font-family: var(--font1);
+                    font-size: 11px;
+                    line-height: 17px;
+                    text-align: left;
+                    color: var(--text-03);
+                  }
+
+                  .time {
+                    position: absolute;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: var(--text-03);
+                    font-family: var(--font1);
+                    top: 21px;
+                    left: 4px;
+                    letter-spacing: 0;
+
+                    .category {
+                      font-family: var(--font1);
+                      font-size: 11px;
+                      letter-spacing: -.55px;
+                      margin-left: 2px;
+                    }
+                  }
+
+                  .desc {
+                    font-size: 11px;
+                    line-height: 17px;
+                    letter-spacing: -0.55px;
+                    text-align: left;
+                    color: var(--text-03);
+                    position: absolute;
+                    top: 21px;
+                    left: 4px;
+                  }
+
+                  /*가맹점명 미동의*/
+                  &.disagree{
+                    display: inline-block;
+                    width: unset;
+                    font-family: var(--font1);
+                    color: #d3d3d5;
+                    font-size: 11px;
+                    line-height: 22px;
+                    border: 1px solid #e3e4e8;
+                    padding: 0 8px;
+                    border-radius: 12px;
+                  }
+                }
+
+                .val {
+                  display: inline-block;
+                  float: left;
+                  width: 42%;
+                  font-family: var(--font5);
+                  font-size: 16px;
+                  letter-spacing: -.14px;
+                  text-align: right;
+
+                  em {
+                    font-family: var(--font2);
+                    font-weight: 500;
+                    font-size: 16px;
+                  }
+                  &.cancel_line{
+                    color: var(--text-04);
+                    font-family: var(--font5);
+                    text-decoration:line-through;
+                  }
+                }
+              }
+            }
+            +.btn-bill{
+              padding: 0 40px 60px;
+              .btn-outline-purple{
+                border-color: var(--text-point-color);
+                color: var(--text-point-color);
+                background: #fff;
+                border-radius: 6px;
+              }
+            }
+          }
+        }
+      }
+
+      /*현금흐름*/
+      &.cash-flow{
+        .ico_list_arrow_small{
+          background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+          display: inline-block;
+          width: 6px;
+          height: 16px;
+          margin-left: 8px;
+        }
+        >.empty{
+          padding-bottom: 0;
+        }
+       .title-area{
+         padding: 12px 20px 0;
+         .title{
+           font-size: 18px;
+           font-family: var(--font1);
+           color: var(--text-01);
+           margin-bottom: 10px;
+           span{
+             font-family: var(--font3);
+           }
+         }
+         .desc{
+           font-size: 14px;
+           color: var(--text-02);
+           word-break: keep-all;
+         }
+         .img{
+           padding-top: 20px;
+           margin-bottom: 30px;
+           img{
+             width: 100%;
+             height: auto;
+           }
+         }
+       }
+       .flow-list {
+         padding: 0 20px 120px;
+         .item {
+           display: flex;
+           justify-content: space-between;
+           padding:20px;
+           background: #f7f8fc;
+           border-radius: 10px;
+           margin-bottom: 14px;
+           &:last-of-type{
+             margin-bottom: 0;
+           }
+           &.no-bg{
+             background: none;
+             border: 1px solid #efefef;
+           }
+
+           .tit{
+             font-size: 15px;
+             font-family: var(--font1);
+             color: var(--text-02);
+           }
+           .amount{
+             font-size: 15px;
+             font-family: var(--font5);
+             color: var(--text-01);
+             em{
+               font-family: var(--font2);
+             }
+           }
+         }
+        }
+        .btn-area{
+          background: #fff;
+        }
+        .usage-history-list{
+          &.usage-category-list{
+            &.category-change{
+              >li{
+                margin-bottom: 30px;
+                &:last-of-type{
+                  margin-bottom: 0;
+                }
+              }
+              .month{
+                font-size: 20px;
+                margin-bottom: 10px;
+              }
+              .details-history{
+                .box{
+                  align-items: center;
+                  label{
+                    margin-right: 16px;
+                  }
+                  .info{
+                    .place{
+                      display: block;
+                    }
+                    .amount{
+                      display: inline-block;
+                    }
+                  }
+                }
+                .badge{
+                  &.badge-purple{
+                    color: #6839d3;
+                    background: #f4efff;
+                  }
+                }
+                .badge-outline-purple{
+                  position: relative;
+                  border: 1px solid #6839d3;
+                  border-radius: 11px;
+                  padding: 2px 16px 2px 7px;
+                  color: var(--text-point-color);
+                  font-family: var(--font2);
+                  font-size: 11px;
+                  &:after{
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    border-top: 1px solid #6839d3;
+                    border-right: 1px solid #6839d3;
+                    position: absolute;
+                    right: 8px;
+                    top: 7px;
+                    transform: rotate(45deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      /*계좌지출*/
+      &.account-spending{
+        .empty{
+          height: calc(100vh - 160px);
+          padding-bottom: 0;
+        }
+      }
+
+      /*지출수단 -카드*/
+      &.card-spending{
+        .empty{
+          height: calc(100vh - 233px);
+          padding-bottom: 0;
+        }
+        .usage-history-list{
+          .details-history{
+            .item-list{
+              padding: 0;
+              .group{
+                .box{
+                  align-items: center;
+                }
+                .info{
+                  .tit{
+                    font-size: 15px;
+                    font-family: var(--font1);
+                    color: var(--text-01);
+                    display: block;
+                    margin-bottom: 2px;
+                  }
+
+                  .amount-used {
+                    font-size: 18px;
+                    font-family: var(--font5);
+                    font-weight: 500;
+                    line-height: 1.2;
+                    span {
+                      font-size: 18px;
+                      font-family: var(--font2);
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .bar-graph {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 6px;
+            border-radius: 66px;
+            background-color: #f5f6f8;
+            margin-top: 16px;
+            .bar {
+              display: block;
+              position: absolute;
+              height: 6px;
+              top: 0;
+              left: 0;
+              border-radius: 66px;
+              &.color-purple{
+                background-color: #7c4ce8;
+              }
+              &.color-pink{
+                background-color: #cc61ed;
+              }
+            }
+          }
+          .numerical-value{
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            .percent{
+              font-size: 18px;
+              line-height: 1;
+              font-family: var(--font5);
+              color: var(--text-01);
+              &::after {
+                content: '%';
+                font-size: 12px;
+              }
+            }
+            .target-amount{
+              font-size: 14px;
+              line-height: 1;
+              font-family: var(--font1);
+              color: var(--text-03);
+              span{
+                font-family: var(--font4);
+                padding-left: 6px;
+              }
+              &::after {
+                content: '원';
+                font-family: var(--font1);
+                margin-left: 1px;
+              }
+            }
+          }
+        }
+
+      }
+
+      /*지출수단 카드 - 카드명세서*/
+      &.credit-card-statement{
+        .usage-history-list{
+          .details-history{
+            .item-list{
+              padding: 0;
+              .group{
+                padding-bottom: 20px;
+                border-bottom: 1px solid #efefef;
+                .badge{
+                  max-width: unset;
+                }
+              }
+              .info-list{
+                padding-top: 20px;
+                .item{
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 30px;
+                  &:last-of-type{
+                    margin-bottom: 0;
+                  }
+                  .tit{
+                    font-size: 15px;
+                    color: #747679;
+                    font-family: var(--font1);
+                  }
+                  .val{
+                    font-size: 15px;
+                    color: var(--text-01);
+                    font-family: var(--font1);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+
+      }
     }
 
     .btn-area{

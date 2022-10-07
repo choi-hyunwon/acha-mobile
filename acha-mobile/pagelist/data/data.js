@@ -1116,50 +1116,50 @@ data.edit17 = {
             'page': '수입_13.4_수입계획'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_88',
             'category': '가계부',
             'page': '수입_13.7_수입목록'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_89',
             'category': '가계부',
             'page': '수입_13.7_수입목록_수입내역없을때'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_popup_22',
             'category': '가계부',
             'page': '수입_13.8_수입_추가삭제'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_90',
             'category': '가계부',
             'page': '수입_13.8_수입_수입설정'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_91',
             'category': '가계부',
             'page': '수입_13.8_수입_수입설정_수입내역없을때'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_92',
             'category': '가계부',
             'page': '수입_13.9_수입_수입직접등록'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_93',
             'category': '가계부',
             'page': '수입_13.14_수입목록_수입상세'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_94',
             'category': '가계부',
             'page': '수입_13.15_수입목록_수입상세_직접등록'
         },
@@ -1170,8 +1170,8 @@ data.edit17 = {
             'page': '수입_13.16_수입계획'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_96',
             'category': '가계부',
             'page': '수입_13.16_수입계획_계획이없는경우'
         },
@@ -1192,12 +1192,6 @@ data.edit17 = {
             'url': '',
             'category': '가계부',
             'page': '수입_13.22_수입계획_항목_상세_삭제'
-        },
-        {
-            'stateClass': 'working',
-            'url': '',
-            'category': '가계부',
-            'page': '수입_13.23_현금흐름상세'
         },
     ]
 };

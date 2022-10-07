@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="total-amount">
+            <p class="title">수입계획</p>
+            <span class="amount">3,500,000</span>
+        </div>
+        <div class="expenditure-box bg_light_gray income-plan">
+            <ul>
+                <li>
+                    <div class="category">
+                        <div class="tit"></div>
+                        <div class="amount"></div>
+                        <div class="num"></div>
+                    </div>
+                    <div class="day">
+                        <div class="badge badge-outline-purple">매월 25일</div>
+                        <i class="ico_list_arrow_small"></i>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="btn-area fixed-bottom">
+            <a class="btn btn-big btn-outline-purple btn-block" href="#">수입계획 추가하기</a>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+</script>
+
+</body>
+</html>
+

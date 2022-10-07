@@ -169,6 +169,20 @@
       }
     }
   }
+
+  & .btn-wrap{
+    padding:80px 30px;
+    .btn{
+      width: calc(50% - 5px);
+      &.btn-outline-gray{
+        height: 50px;
+        line-height: 50px;
+        font-size: 15px;
+        color: #191f28;
+      }
+
+    }
+  }
 }
 
 @media (max-width: 320px) {

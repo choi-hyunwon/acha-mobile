@@ -10440,6 +10440,155 @@
 
 
       }
+
+      /*시뮬레이션결과*/
+      &.simulation-result{
+        position: relative;
+        .simulation{
+          padding: 12px 20px 30px;
+          .info-title{
+            font-size: 18px;
+            font-family: var(--font1);
+            color: var(--text-01);
+            margin-bottom: 30px;
+            .color-purple{
+              font-family: var(--font3);
+              color: var(--text-point-color);
+            }
+            .color-red{
+              font-family: var(--font3);
+              color: #f21730;
+            }
+          }
+          .swiper-slide{
+            width: 100%;
+            .period{
+              font-size: 17px;
+              color: var(--text-01);
+              font-family: var(--font2);
+              text-align: center;
+              line-height: 40px;
+              margin: 0 50px 20px;
+            }
+            .graph-box{
+              width: 100%;
+              height: 224px;
+              overflow: hidden;
+              display: flex;
+              justify-content: flex-end;
+              flex-direction: column;
+
+              .axis {
+                z-index: 1;
+                display: flex;
+                padding-top: 10px;
+                text-align: center;
+                .tick{
+                  flex: 1;
+                  .day-month {
+                    display: block;
+                    color: var(--text-02);
+                    font-size: 14px;
+                    font-family: var(--font2);
+                    &.active{
+                      color: var(--text-point-color);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .swiper-btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            top: 23px;
+            .swiper-button{
+              position: relative;
+              width: 40px;
+              height: 40px;
+              &:after{
+                display: none;
+              }
+              &.swiper-button-disabled{
+                opacity: 1;
+              }
+              &.swiper-button-prev{
+                background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
+                &.swiper-button-disabled{
+                  background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
+                }
+              }
+              &.swiper-button-next{
+                background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
+                &.swiper-button-disabled{
+                  background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
+                }
+              }
+            }
+          }
+        }
+        .current-money-list{
+          padding: 10px 20px 30px;
+          li{
+            padding: 16px 0 15px;
+            >div{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .tit{
+                font-size: 15px;
+                font-family: var(--font2);
+                color: var(--text-01);
+              }
+              .modification{
+                font-size: 18px;
+                font-family: var(--font5);
+                color: var(--text-01);
+                font-weight: 500;
+                &::after {
+                  content: '원';
+                  font-family: var(--font2);
+                  margin-left: 1px;
+                }
+                &.plus{
+                  color: var(--text-point-color);
+                  &::after {
+                    color: var(--text-point-color);
+                  }
+                }
+              }
+              .day{
+                font-size: 14px;
+                font-family: var(--font1);
+                color: var(--text-03);
+              }
+              .total{
+                font-size: 14px;
+                font-family: var(--font4);
+                color: var(--text-03);
+                &::before {
+                  content: '잔고';
+                  font-family: var(--font1);
+                  margin-right: 4px;
+                }
+                &::after {
+                  content: '원';
+                  font-family: var(--font1);
+                }
+              }
+            }
+          }
+        }
+
+
+
+
+
+
+      }
     }
 
     .btn-area{

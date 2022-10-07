@@ -1,8 +1,13 @@
 var data = {};
 data.edit = {
-    'title': '2022.08.16 footer 수정',
+    'title': '2022.10.07',
     'list': [
-
+        {
+            "stateClass": "complete",
+            "url": "ui_error",
+            "part": "pages",
+            "page": "화면 오류 페이지"
+        },
     ]
 };
 data.page = {

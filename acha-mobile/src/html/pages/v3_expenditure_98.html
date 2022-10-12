@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>수입 계획</h2>
+        <a href="#" class="btn-setting"><img src="../../img/common/expenditure/btn_title_edit@2x.png" alt="설정 버튼"></a>
+    </div>
+    <div class="contents expenditure">
+        <div class="expenditure-box">
+            <div class="box_my_income_add">
+                <form action="#">
+                    <fieldset>
+                        <div class="custom-light _focus">
+                            <label class="title">수입명</label>
+                            <input title="value" type="text" maxlength="12" onkeyup="countChar(this,'_val')" placeholder="수입명을 적어주세요" value="상여" readonly/>
+                            <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 12</span></div>
+                        </div>
+                        <div class="custom-light monetary-unit _focus">
+                            <label class="title">수입 금액</label>
+                            <input onkeyup="countChar(this)" title="value" type="number" placeholder="금액을 입력해주세요" value="500000" readonly/>
+                            <p class="sub-desc">100억원 미만까지 입력 가능</p>
+                        </div>
+                        <div class="custom-light select-category">
+                            <label class="title">수입 일시</label>
+                            <input title="value" type="text" placeholder="지출일을 입력해주세요" value="매월 25일" readonly/>
+                        </div>
+                        <div class="custom-light select-category">
+                            <label class="title">입금 계좌</label>
+                            <input title="value" type="text" placeholder="지출명을 입력해주세요" value="우리은행 100484123923829" readonly/>
+                        </div>
+
+                        <div class="btn_area">
+                            <a class="btn btn-big btn-purple-bg btn-block" href="#">저장</a>
+                        </div>
+                        <div class="confirm_wrap">
+                            <a class="btn btn-big btn-purple-bg btn-block" href="#">확인</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script>
+    $('.custom-control-input').on('click', function (){
+        $(this).toggleClass('off');
+        if($(this).hasClass('off')) {
+            $('._off').addClass('active')
+            $('._on').removeClass('active')
+        }
+        else {
+            $('._on').addClass('active')
+            $('._off').removeClass('active')
+        }
+    })
+
+    function countChar(val , target) {
+        var len = val.value.length;
+        var targetItem = $(`.${target}`);
+        var nextEle = val.nextElementSibling
+
+        targetItem.text(len);
+
+
+        if(len === 0) {
+            targetItem.css('color','#afaeb8');
+            nextEle.style.display="none";
+        }
+        else {
+            targetItem.css('color','#37354e');
+            nextEle.style.display="block"
+        }
+
+        val.addEventListener('focus', (event) => {
+            nextEle.style.display="block"
+        });
+        val.addEventListener('blur', (event) => {
+            nextEle.style.display="none";
+            targetBtn.hide();
+        });
+    }
+
+    var targetBtn = $(`.confirm_wrap`);
+
+    $('._focus input').on("focus",function (){
+        targetBtn.show();
+    });
+    $('._focus input').on("blur",function (){
+        targetBtn.hide();
+    });
+</script>
+</html>

@@ -8430,6 +8430,180 @@
       }
     }
 
+    .income-details-amount{
+      padding: 10px 20px 40px;
+      >.total{
+        font-size: 26px;
+        color: var(--text-01);
+        font-family: var(--font3);
+        margin-bottom: 14px;
+        span{
+          font-family: var(--font7);
+          font-weight: bold;
+        }
+      }
+      .bar-graph {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #f5f6f8;
+        >.percent{
+          position: absolute;
+          left: 8px;
+          top: 4px;
+          z-index: 1;
+          font-size: 14px;
+          font-family: var(--font7);
+          font-weight: bold;
+          color: var(--text-02);
+        }
+
+        .bar {
+          display: block;
+          position: absolute;
+          height: 30px;
+          top: 0;
+          left: 0;
+          border-radius: 15px;
+          &.color-purple{
+            background-color: #7c4ce8;
+          }
+          &.color-pink{
+            background-color: #cc61ed;
+          }
+          .percent{
+            position: absolute;
+            right: 8px;
+            top: 4px;
+            z-index: 1;
+            font-size: 14px;
+            font-family: var(--font7);
+            font-weight: bold;
+            color: #fff;
+          }
+        }
+      }
+      .budget{
+        border-bottom: 1px solid #efefef;
+        &:last-of-type{
+          border-bottom: none;
+        }
+        .item{
+          padding: 10px 0;
+          display: flex;
+          justify-content: space-between;
+          &:first-of-type{
+            padding-top: 20px;
+          }
+          &:last-of-type{
+            padding-bottom: 20px;
+          }
+          &.color-gray{
+            color: var(--text-03);
+            font-family: var(--font1);
+            font-size: 13px;
+          }
+          .tit{
+            font-size: 15px;
+            color: var(--text-02);
+            font-family: var(--font1);
+          }
+          .val{
+            font-size: 15px;
+            font-family: var(--font1);
+            color: var(--text-02);
+            span{
+              color: var(--text-02);
+              font-family: var(--font4);
+            }
+
+            .ico_list_arrow_small{
+              background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+              display: inline-block;
+              width: 6px;
+              height: 16px;
+              margin-left: 8px;
+            }
+          }
+
+          &.total{
+            .tit{
+              font-size: 18px;
+              font-family: var(--font3);
+              color: var(--text-01);
+            }
+            .val{
+              font-size: 18px;
+              color: var(--text-01);
+              font-family: var(--font3);
+              span{
+                color: var(--text-01);
+                font-family: var(--font7);
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      .definition{
+        background: #f7f8fc;
+        font-size: 14px;
+        color: var(--text-02);
+        padding: 15px 20px;
+        border-radius: 10px;
+      }
+      .memo{
+        padding: 20px 20px 0;
+        font-size: 14px;
+        color: var(--text-02);
+      }
+
+      &.type2{
+        .budget{
+          .item{
+            .tit{
+              font-size: 16px;
+              color: var(--text-01);
+              font-family: var(--font2);
+            }
+            .val{
+              font-size: 18px;
+              font-family: var(--font3);
+              color: var(--text-01);
+              span{
+                color: var(--text-01);
+                font-family: var(--font7);
+                font-weight: bold;
+              }
+            }
+          }
+          .definition{
+            margin: 10px 0;
+            ul{
+              li{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 14px;
+                &:last-of-type{
+                  margin-bottom: 0;
+                }
+                .ico_list_arrow_small{
+                  background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+                  display: inline-block;
+                  width: 6px;
+                  height: 16px;
+                  margin-left: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
     .spending-plan{
       padding: 10px 20px 40px;
       >.title{
@@ -10595,17 +10769,156 @@
             }
           }
         }
-
-
-
-
-
-
       }
 
       /*수입계획*/
       &.income-plan{
+        .plan-list{
+          padding: 0 20px;
+          li{
+            padding: 20px;
+            background: #f7f8fc;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            .tit{
+              font-size: 15px;
+              color: var(--text-01);
+              margin-bottom: 2px;
+            }
+            .amount{
+              font-size: 18px;
+              font-family: var(--font5);
+              line-height: 1.2;
+              margin-bottom: 2px;
+              &:after{
+                content: '원';
+                display: inline-block;
+                font-family: var(--font2);
+              }
+            }
+            .num{
+              font-size: 12px;
+              color: var(--text-03);
+            }
+            .badge-outline-purple{
+              position: relative;
+              border: 1px solid #6839d3;
+              border-radius: 11px;
+              padding: 2px 7px;
+              color: var(--text-point-color);
+              font-family: var(--font2);
+              font-size: 11px;
+              line-height: 1.5;
+              font-weight: normal;
+            }
+            .ico_list_arrow_small{
+              background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+              display: inline-block;
+              width: 6px;
+              height: 16px;
+              margin-left: 8px;
+            }
+          }
+        }
 
+      }
+
+      &.income-total{
+        padding: 40px 20px;
+        .title-wrap{
+          margin-bottom: 40px;
+          .info-title{
+            font-size: 20px;
+            font-family: var(--font3);
+            color: var(--text-01);
+            .color-purple{
+              font-family: var(--font3);
+              color: var(--text-point-color);
+            }
+          }
+          .sub-desc{
+            font-size: 15px;
+            font-family: var(--font1);
+            color: var(--text-03);
+            padding-top: 4px;
+          }
+
+        }
+        .income-chart{
+          .swiper-slide{
+            width: 100%;
+            .period{
+              font-size: 17px;
+              color: var(--text-01);
+              font-family: var(--font2);
+              text-align: center;
+              line-height: 40px;
+              margin: 0 50px 20px;
+            }
+            .graph-box{
+              width: 100%;
+              height: 224px;
+              overflow: hidden;
+              display: flex;
+              justify-content: flex-end;
+              flex-direction: column;
+
+              .axis {
+                z-index: 1;
+                display: flex;
+                padding-top: 10px;
+                text-align: center;
+                .tick{
+                  flex: 1;
+                  .day-month {
+                    display: block;
+                    color: var(--text-02);
+                    font-size: 14px;
+                    font-family: var(--font2);
+                    &.active{
+                      color: var(--text-point-color);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .swiper-btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            top: 23px;
+            .swiper-button{
+              position: relative;
+              width: 40px;
+              height: 40px;
+              &:after{
+                display: none;
+              }
+              &.swiper-button-disabled{
+                opacity: 1;
+              }
+              &.swiper-button-prev{
+                background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
+                &.swiper-button-disabled{
+                  background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
+                }
+              }
+              &.swiper-button-next{
+                background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
+                &.swiper-button-disabled{
+                  background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
+                }
+              }
+            }
+          }
+        }
       }
     }
 

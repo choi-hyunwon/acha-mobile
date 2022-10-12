@@ -1164,8 +1164,8 @@ data.edit17 = {
             'page': '수입_13.15_수입목록_수입상세_직접등록'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_95',
             'category': '가계부',
             'page': '수입_13.16_수입계획'
         },
@@ -1176,20 +1176,20 @@ data.edit17 = {
             'page': '수입_13.16_수입계획_계획이없는경우'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_97',
             'category': '가계부',
             'page': '수입_13.17_수입계획_수입계획추가'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_98',
             'category': '가계부',
             'page': '수입_13.21_수입계획_항목_상세'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_popup_23',
             'category': '가계부',
             'page': '수입_13.22_수입계획_항목_상세_삭제'
         },

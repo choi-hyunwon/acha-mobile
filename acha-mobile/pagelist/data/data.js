@@ -1196,7 +1196,6 @@ data.edit17 = {
     ]
 };
 
-
 data.date5 = {
     'title': '< 22.10.07 >',
     'list': [
@@ -1210,6 +1209,29 @@ data.edit18 = {
             'url': '12_dormant_account_04',
             'category': '휴면계좌',
             'page': '오류 안내 페이지'
+        },
+    ]
+};
+
+data.date6 = {
+    'title': '< 22.10.12 >',
+    'list': [
+    ]
+};
+data.edit19 = {
+    'title': '(수정)회원가입_3.0변경',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '14_migration_01',
+            'category': '마이그레이션',
+            'page': '마이그레이션_3.0전환안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '14_migration_03',
+            'category': '마이그레이션',
+            'page': '마이그레이션_직접입력_안내팝업'
         },
     ]
 };

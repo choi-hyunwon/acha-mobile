@@ -3,7 +3,7 @@
     제목 : 마이그레이션
     날짜 : 2021.11.24
 */
-.migration-intro {
+/*.migration-intro {
   padding: 50px 20px 30px;
 
   .heading {
@@ -89,6 +89,50 @@
     bottom: 0;
     height: 80px;
     background: #fff;
+  }
+}*/
+.migration-intro {
+  padding: 50px 20px 30px;
+  background: #f7f8fc;
+  height: 100vh;
+
+  .heading {
+    font-family: var(--font2);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.55px;
+    text-align: left;
+    color: var(--text-01);
+    margin-bottom: 10px;
+    padding: 0 8px;
+  }
+  .sub-heading {
+    font-family: var(--font1);
+    color: var(--text-02);
+    font-size: 16px;
+    line-height: 23px;
+    text-align: left;
+    padding: 0 8px;
+  }
+
+  .img {
+    width: 83.583%;
+    height: auto;
+    margin: 30% auto 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  .fixed-bottom {
+    padding: 0 20px;
+    bottom: 0;
+    height: 80px;
+    background: #f7f8fc;
   }
 }
 

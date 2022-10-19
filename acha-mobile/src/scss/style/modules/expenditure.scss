@@ -1269,6 +1269,7 @@
       letter-spacing: -0.45px;
       text-align: left;
       color: var(--text-01);
+      max-width: 50%;
       .total{
         display: block;
         font-size: 15px;
@@ -1301,11 +1302,35 @@
         }
       }
 
+      .icon{
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        margin-left: -10px;
+        border: 2px solid #f7f7f8;
+        &:first-of-type{
+          margin-left: 0;
+        }
+        img{
+          width: 100%;
+          height: auto;
+        }
+
+      }
+      .management{
+        color: var(--text-point-color);
+        font-family: var(--font2);
+        font-size: 12px;
+        margin-left: 4px;
+        word-break: keep-all;
+      }
+
     }
 
     .sum-area {
       padding:0;
       flex-direction: column;
+      align-items: end;
 
       .update {
        margin-bottom: 10px;
@@ -1323,6 +1348,17 @@
           margin-top: -2px;
         }
       }
+      .update-ing{
+        font-size: 13px;
+        color: var(--text-point-color);
+        font-family: var(--font2);
+        margin-right: 2px;
+        display: flex;
+        align-items: center;
+        lottie-player{
+          margin-left: 2px;
+        }
+      }
 
       .btn-edit {
         display: block;
@@ -1332,6 +1368,7 @@
         border: 1px solid #e2e3e6;
         padding: 6px 15px;
         line-height: 1;
+        margin-top: 12px;
 
         .ico-view-edit {
           display: inline-block;
@@ -1457,7 +1494,7 @@
   &.box-card-list{
     padding: 22px 0 56px;
     border-bottom: none;
-    min-height: calc(100vh - 81.5px);
+    min-height: calc(100vh - 59px);
 
 
     >.card-item {
@@ -1487,6 +1524,70 @@
               }
             }
           }
+          &.add-management{
+            .category-heading{
+              border: 1px solid #efefef;
+              position: relative;
+              padding: 20px 20px 21px;
+              .title{
+                font-size: 18px;
+                font-family: var(--font3);
+                display: inline-block;
+              }
+              .history-list{
+                padding-top: 14px;
+                >div{
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 12px;
+                  &:last-of-type{
+                    margin-bottom: 0;
+                  }
+                  .sub-title{
+                    font-size: 14px;
+                    color: var(--text-02);
+                    font-family: var(--font2);
+                  }
+                  .number{
+                    font-size: 16px;
+                    color: var(--text-01);
+                    &:after{
+                      content: '원';
+                      clear: both;
+                      display: inline-block;
+                      font-size: 16px;
+                      font-family: var(--font2);
+                    }
+                  }
+                  &.income{}
+                  &.expenditure{}
+                }
+              }
+              .badge-purple{
+                display: inline-block;
+                font-size: 11px;
+                color: var(--text-point-color);
+                padding: 4px 8px;
+                border-radius: 10px;
+                background: #f4efff;
+                font-family: var(--font2);
+                font-weight: unset;
+                margin-left: 4px;
+              }
+              &::after {
+                display: inline-block;
+                content: '';
+                width: 28px;
+                height: 28px;
+                background: url(../../img/common/icon-plus.png) no-repeat center center / 50%;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%) rotate(0deg);
+              }
+            }
+          }
+
           .category-heading {
             width: 100%;
             height: auto;
@@ -1497,6 +1598,11 @@
             line-height: 26px;
             color: var(--text-01);
             position: relative;
+            &.no-icon{
+              &::after {
+                display: none;
+              }
+            }
 
             span {
               display: block;
@@ -8248,6 +8354,29 @@
         transform: translateY(-50%);
         right: 0;
       }
+      .btn-filter{
+        font-size: 12px;
+        border-color: #e2e3e6;
+        min-width: 50px;
+        border-radius: 14px;
+        height: 28px;
+        line-height: 26px;
+        padding-left: 30px;
+        padding-right: 14px;
+        background: url("../../img/common/ic_filter@2x.png") no-repeat center left 14px /contain;
+        background-size: 14px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        span{
+          font-weight: bold;
+          font-family: var(--font4);
+        }
+        &:hover{
+          color: var(--text-02);
+        }
+      }
       &.line{
         margin: 0 20px;
         padding: 15px 0 20px;
@@ -8949,13 +9078,19 @@
 
       /*일자*/
       .usage-history-list{
-        padding: 20px 20px 30px;
+        padding: 20px;
         min-height: calc(100vh - 233px);
+        &.min175{
+          min-height: calc(100vh - 175px);
+        }
         >li{
           background: #fff;
           border-radius: 10px;
           padding: 20px;
           margin-bottom: 20px;
+          &.btn-wrap{
+            padding: 0;
+          }
           &:last-of-type{
             margin-bottom: 0;
           }
@@ -8964,6 +9099,14 @@
             color: var(--text-01);
             font-family: var(--font3);
             margin-bottom: 10px;
+            + .divider{
+              &:before{
+                height: 1px;
+                background:none;
+                border-top: 1px solid #efefef;
+                margin-top: 20px;
+              }
+            }
           }
 
           .details-history{
@@ -9077,6 +9220,13 @@
                 padding-left: 50px;
               }
 
+              .account-number{
+                font-size: 12px;
+                color: var(--text-03);
+                font-family: var(--font2);
+                padding-left: 50px;
+              }
+
               .badge{
                 display: inline-block;
                 font-size: 11px;
@@ -9086,7 +9236,6 @@
                 line-height: 1.5;
                 max-width: 65px;
                 font-family: var(--font2);
-
 
                 overflow: hidden;
                 text-overflow: ellipsis;

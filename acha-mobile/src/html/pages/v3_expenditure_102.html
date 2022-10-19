@@ -13,14 +13,26 @@
             <span class="amount">0</span>
             <a href="#" class="btn btn-edit">편집</a>
         </div>
-        <div class="expenditure-box account-spending bg_light_gray">
+        <div class="expenditure-box bg_light_gray">
             <div class="empty">
                 <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
-                <p>수입내역이 없습니다 🙁</p>
+                <p>수입 내역이 없습니다 🙁</p>
             </div>
         </div>
+        <div class="btn-area fixed-bottom bg_light_gray">
+            <a class="btn btn-big btn-purple-bg btn-block" href="#">수입계획 추가</a>
+        </div>
     </div>
+
 </div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+</script>
+
 </body>
 </html>
 

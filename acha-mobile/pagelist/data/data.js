@@ -1236,6 +1236,660 @@ data.edit19 = {
     ]
 };
 
+data.date7 = {
+    'title': '< 22.10.13 >',
+    'list': [
+    ]
+};
+data.edit20 = {
+    'title': '공통가이드',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_popup_24',
+            'category': '가계부',
+            'page': '카테고리_변경_아이콘선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_01-1',
+            'category': '가계부',
+            'page': '05_자산_데이터업데이트중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '11_exependiture_01-2',
+            'category': '가계부',
+            'page': '04_공동관리메인_데이터업데이트중'
+        },
+    ]
+};
+data.edit21 = {
+    'title': '가계부>지출>리포트',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_적당'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_초과'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출X'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.1_예산설정전_과거-이번달_전월지출X_이번달지출O'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.1_예산설정전_과거-이번달_전월지출X_이번달지출X'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.1_리포트_상세_남은돈그래프'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.1_리포트_상세_지출추이그래프'
+        }, {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)_지출예산설정'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(2)_카테고리예산설정'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(2)_카테고리예산설정_팝업'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출O_적당'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출O_초과'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출X'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.4_예산설정후_과거-이번달_예산X_지출O '
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.4_예산설정후_과거-이번달_예산X_지출X'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '리포트_3.4_예산설정후_미래_예정O_지출O'
+        },
+    ]
+};
+data.edit22 = {
+    'title': '가계부>총수입',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_99',
+            'category': '가계부',
+            'page': '총수입_4.3_수입목록_이번달_01'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_100',
+            'category': '가계부',
+            'page': '총수입_4.3_수입목록_이번달_02_내역이없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_101',
+            'category': '가계부',
+            'page': '총수입_4.3_수입목록_이번달_03_수입계획없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_102',
+            'category': '가계부',
+            'page': '총수입_4.3_수입목록_이번달_04_수입모든내역없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_88',
+            'category': '가계부',
+            'page': '총수입_4.3_수입목록_과거_01'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_89',
+            'category': '가계부',
+            'page': '총수입_4.3_수입목록_과거_02_수입내역이없는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_103',
+            'category': '가계부',
+            'page': '총수입_4.3_수입목록_미래_01'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_104',
+            'category': '가계부',
+            'page': '총수입_4.3_수입목록_미래_02_수입내역이없는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_popup_22',
+            'category': '가계부',
+            'page': '총수입_4.4_수입목록_추가삭제'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_90',
+            'category': '가계부',
+            'page': '총수입_4.4_수입추가_이번달수입목록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_91',
+            'category': '가계부',
+            'page': '총수입_4.4_수입추가_이번달수입목록_설정내역없음'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_92',
+            'category': '가계부',
+            'page': '총수입_4.5_수입추가_현금수입 직접등록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_93',
+            'category': '가계부',
+            'page': '총수입_4.10_수입상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_94',
+            'category': '가계부',
+            'page': '총수입_4.11_현금수입직접등록'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_97',
+            'category': '가계부',
+            'page': '총수입_4.12_수입계획추가'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_105',
+            'category': '가계부',
+            'page': '총수입_4.17_수입계획_상세'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_popup_23',
+            'category': '가계부',
+            'page': '총수입_4.18_수입계획_상세_삭제'
+        },
+    ]
+};
+data.edit23 = {
+    'title': '가계부 > 총지출',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.3_총지출목록_이번달_01'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.3_총지출목록_이번달_02_지출예정만있음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.3_총지출목록_이번달_03_지출내역만있음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.3_총지출목록_이번달_04_정보없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.3_총지출목록_과거_01'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.3_총지출목록_과거_02_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.3_총지출목록_미래_01'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.3_총지출목록_미래_02_내역없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.5_총지출목록_예산설정'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.6_총지출목록_필터_계좌목록만있음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.6_총지출목록_필터_카드-계좌있음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '총지출_5.6_총지출목록_필터_항목없음'
+        },
+
+    ]
+};
+data.edit24 = {
+    'title': '공동관리>연결/설정',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.1_공동관리메인'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.2_공동관리메인_연결방식선택'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.3_SMS메시지_1_번호입력_입력전'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.3_SMS메시지_1_번호입력_입력후'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.3_SMS메시지_3_이름입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.3_SMS메시지_4_초대완료'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.3_SMS메시지_6_초대취소'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.3_SMS메시지_7_초대장'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.3_SMS메시지_8_연결확인'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.3_SMS메시지_9_초대거절'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.4_연결취소'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.5_약관동의'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_1.5_약관동의_약관상세'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.1_공동관리설정_ME'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.3_공동관리설정_데이터없는 경우_공동'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.3_공동관리설정_데이터없는 경우_계좌'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.3_공동관리설정_YOU'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.2_공동관리설정_ME_데이터편집'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.2_공동관리설정_ME_데이터편집_변경확인'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.2_공동관리설정_ME_데이터편집_데이터선택변경_선택'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.2_공동관리설정_ME_데이터편집_데이터선택변경_해제'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.2_공동관리설정_ME_데이터편집_데이터범위변경'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.4_공동관리끊기'
+        },
+    ]
+};
+data.edit25 = {
+    'title': '공동관리>공동지출/계좌/카드',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_2.1_커넥션메인_연결전'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_2.2_커넥션메인_전체연결'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.1_공동관리메인_데이터무'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_10.4_공동관리끊기'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.2_공동관리메인_데이터유'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.1_공동지출관리메인_데이터무'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.2_공동지출관리메인_데이터유'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.5_공동지출관리설정'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.5_공동지출관리메인_1_수입지출표시'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.5_공동지출관리메인_4_데이터숨기기_1'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.5_공동지출관리메인_4_데이터숨기기_2'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_5.5_공동지출관리메인_4_데이터숨기기_3'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_6.1_같이보는계좌메인'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_6.1_같이보는계좌메인_6개이상일경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_6.2_같이보는계좌'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_6.3_같이보는계좌설정'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_7.1_같이보는카드메인'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_7.1_같이보는카드'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_7.2_같이보는카드설정'
+        },
+    ]
+};
+data.edit26 = {
+    'title': '공동관리>미션',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_9.1_미션메인_데이터무'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_9.1_미션메인_데이터유'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_9.2_미션_진행중_데이터무'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_9.2_미션_종료_데이터무'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가_데이터없을경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '9.2_미션추가'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가_1_무지출'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가_2_카드사용줄이기'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가_3_커피값줄이기'
+        },
+
+    ]
+};
+data.edit27 = {
+    'title': '(수정)더보기_마이데이터 관리',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': 'v3_moreview_01',
+            'category': '더보기',
+            'page': '07_더보기_메인'
+        },
+    ]
+};
+
+
 
 data.end = {
     'title': '----------아차 3.0 END----------',

@@ -1567,7 +1567,7 @@
                 display: inline-block;
                 font-size: 11px;
                 color: var(--text-point-color);
-                padding: 4px 8px;
+                padding: 6px 8px;
                 border-radius: 10px;
                 background: #f4efff;
                 font-family: var(--font2);
@@ -8274,6 +8274,19 @@
 
 
 .renewal{
+  .header{
+    .title{
+      +.text{
+        font-size: 15px;
+        color: var(--text-02);
+        font-family: var(--font2);
+        position: absolute;
+        top: 25px;
+        right: 20px;
+      }
+    }
+  }
+
   .btn-setting{
     position: absolute;
     display: block;
@@ -9066,6 +9079,9 @@
           height: calc(100vh - 234px);
           padding: 0;
         }
+        &.mission-area{
+          min-height: calc(100vh - 116px);
+        }
       }
 
       .description{
@@ -9213,6 +9229,14 @@
                   max-width: 80px;
                   text-align: center;
                 }
+                .badge-group{
+                  .badge{
+                    margin-bottom: 6px;
+                    &:last-of-type{
+                      margin-bottom: 0;
+                    }
+                  }
+                }
               }
               .hashtag{
                 font-size: 12px;
@@ -9294,9 +9318,105 @@
         /*카테고리*/
         &.usage-category-list{
           min-height: calc(100vh - 313px);
+          &.budget-setting{
+            padding: 20px 20px 30px;
+            >li{
+              position: relative;
+              padding: 18px 32px 18px 20px;
+              &:after{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+                width: 6px;
+                height: 16px;
+                margin-left: 8px;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+              .item-list{
+                .box{
+                  display: flex;
+                  align-items: center;
+                }
+              }
+            }
+
+          }
+
+          &.filter-setting{
+            padding: 20px 20px 120px;
+
+            >li{
+              padding: 0;
+              &.info-title{
+                font-size: 18px;
+                font-family: var(--font1);
+                color: var(--text-01);
+                margin-bottom: 12px;
+                span{
+                  font-family: var(--font3);
+                  color: var(--text-point-color);
+                }
+              }
+              .title-category{
+                font-size: 15px;
+                color: var(--text-01);
+                font-family: var(--font3);
+                border-bottom: 1px solid #efefef;
+                padding: 18px 0;
+                display: block;
+                margin-top: 20px;
+                &:first-of-type{
+                  margin-top: 0;
+                }
+              }
+
+              .details-history{
+                .item-list{
+                  padding: 9px 0;
+                  align-items: center;
+                  .box{
+                    display: flex;
+                    .title-category{
+                      border-bottom: 0;
+                    }
+
+                    .info{
+                      .place{
+                        span{
+                          max-width: 200px;
+                        }
+                      }
+                      .num{
+                        display: block;
+                        font-size: 13px;
+                        color: var(--text-03);
+                        font-family: var(--font4);
+                      }
+                    }
+                  }
+                }
+              }
+              .empty{
+                height: auto;
+                padding-top: 70px;
+              }
+            }
+            +.btn-wrap{
+              bottom: -80px;
+              transition: bottom 0.5s;
+              &.active{
+                bottom: 0;
+                transition: bottom 0.5s;
+              }
+            }
+          }
           >li{
             padding: 18px 20px;
             .details-history{
+
               .item-list{
                 margin-bottom: 0;
                 padding: 0;

@@ -5,24 +5,26 @@
 <div class="wrap renewal">
     <div class="header _sticky">
         <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">정기지출 추가</a></h2>
+        <h2 class="title"><a href="#">필터</a></h2>
     </div>
+
     <div class="contents expenditure">
         <div class="expenditure-box">
-            <ul class="usage-history-list usage-category-list category-change">
-                <li class="month">6월</li>
+
+            <ul class="usage-history-list usage-category-list filter-setting">
+                <li class="info-title">조회할 <span>계좌・카드・현금</span>을 선택해 주세요</li>
                 <li>
-                    <p class="sub-title">14일</p>
+                    <div class="title-category">계좌</div>
                     <ul class="details-history">
                         <li class="item-list">
                             <div class="group">
                                 <div class="box">
                                     <div class="img">
-                                        <i class="icon icon_cate_food"></i>
+                                        <img src="../../img/@temp/ci_uribank@2x.png" alt="우리은행 로고">
                                     </div>
                                     <div class="info">
-                                        <span class="place"><span>(주)호텔롯데</span></span>
-                                        <span class="amount">230,000</span>
+                                        <span class="place"><span>우리편한입출금통장</span></span>
+                                        <span class="num">05490104038220</span>
                                     </div>
                                 </div>
                                 <label>
@@ -35,15 +37,15 @@
                             <div class="group">
                                 <div class="box">
                                     <div class="img">
-                                        <i class="icon icon_cate_beauty"></i>
+                                        <img src="../../img/@temp/ci_kbbank@2x.png" alt="국민은행 로고">
                                     </div>
                                     <div class="info">
-                                        <span class="place"><span>(주)아모레퍼시픽</span></span>
-                                        <span class="amount">45,000</span>
+                                        <span class="place"><span>KB종합통장</span></span>
+                                        <span class="num">0549010403822</span>
                                     </div>
                                 </div>
                                 <label>
-                                    <input type="checkbox" class="filled-in" checked>
+                                    <input type="checkbox" class="filled-in">
                                     <span></span>
                                 </label>
                             </div>
@@ -52,11 +54,11 @@
                             <div class="group">
                                 <div class="box">
                                     <div class="img">
-                                        <i class="icon icon_cate_beauty"></i>
+                                        <img src="../../img/@temp/ci_scbank@2x.png" alt="SC은행 로고">
                                     </div>
                                     <div class="info">
-                                        <span class="place"><span>차홍아르더 도산</span></span>
-                                        <span class="amount">123,000</span>
+                                        <span class="place"><span>SC직장인우대통장</span></span>
+                                        <span class="num">0549010403822</span>
                                     </div>
                                 </div>
                                 <label>
@@ -68,17 +70,17 @@
                     </ul>
                 </li>
                 <li>
-                    <p class="sub-title">10일</p>
+                    <div class="title-category">카드</div>
                     <ul class="details-history">
                         <li class="item-list">
                             <div class="group">
                                 <div class="box">
                                     <div class="img">
-                                        <i class="icon icon_cate_cloth"></i>
+                                        <img src="../../img/@temp/ci_uribank@2x.png" alt="우리은행 로고">
                                     </div>
                                     <div class="info">
-                                        <span class="place"><span>나이키온라인스토어</span></span>
-                                        <span class="amount">55,800</span>
+                                        <span class="place"><span>우리편한입출금통장</span></span>
+                                        <span class="num">05490104038220</span>
                                     </div>
                                 </div>
                                 <label>
@@ -91,12 +93,44 @@
                             <div class="group">
                                 <div class="box">
                                     <div class="img">
-                                        <i class="icon icon_cate_subscript"></i>
+                                        <img src="../../img/@temp/ci_kbbank@2x.png" alt="국민은행 로고">
                                     </div>
                                     <div class="info">
-                                        <span class="place"><span>넷플릭스</span></span>
-                                        <span class="amount">14,500</span>
+                                        <span class="place"><span>KB종합통장</span></span>
+                                        <span class="num">0549010403822</span>
                                     </div>
+                                </div>
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_scbank@2x.png" alt="SC은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="place"><span>SC직장인우대통장</span></span>
+                                        <span class="num">0549010403822</span>
+                                    </div>
+                                </div>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="details-history">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="title-category">현금</div>
                                 </div>
                                 <label>
                                     <input type="checkbox" class="filled-in">
@@ -107,8 +141,8 @@
                     </ul>
                 </li>
             </ul>
-            <div class="btn-wrap fixed-bottom active">
-                <a class="btn btn-big btn-purple-bg btn-block" href="#">정기지출 추가하기</a>
+            <div class="btn-area fixed-bottom bg-white">
+                <a class="btn btn-big btn-purple-bg btn-block" href="#">적용하기</a>
             </div>
         </div>
     </div>
@@ -117,9 +151,9 @@
 <script>
     $('.filled-in').on('click',function (){
         if($('.filled-in').is(':checked')){
-            $('.btn-wrap').addClass('active');
+            $('.btn-area .btn').removeClass('disabled');
         }else{
-            $('.btn-wrap').removeClass('active');
+            $('.btn-area .btn').addClass('disabled');
         }
     })
 </script>

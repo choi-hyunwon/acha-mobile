@@ -1857,20 +1857,20 @@ data.edit26 = {
             'page': '9.2_미션추가'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_07',
             'category': '공동관리',
             'page': '04_9.2_미션추가_1_무지출'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_08',
             'category': '공동관리',
             'page': '04_9.2_미션추가_2_카드사용줄이기'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_09',
             'category': '공동관리',
             'page': '04_9.2_미션추가_3_커피값줄이기'
         },

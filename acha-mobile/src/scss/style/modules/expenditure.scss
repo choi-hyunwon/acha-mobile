@@ -11285,9 +11285,23 @@
     .text-box{
       padding: 10px 20px 30px;
       .title{
+        padding-right: 40px;
+        position:relative;
         font-size: 24px;
         font-family: var(--font2);
         line-height: 30px;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        background-position:  right top;
+        &.no-spending{
+          background-image: url(../../img/common/ic_cate_money_m@3x.png);
+        }
+        &.ico-card{
+          background-image: url(../../img/common/ic_cate_card_m@3x.png);
+        }
+        &.ico-dessert{
+          background-image: url(../../img/common/ic_cate_dessert@3x.png);
+        }
       }
       >p{
         font-size: 14px;
@@ -11296,6 +11310,9 @@
         word-break: keep-all;
         .color-purple{
           color: var(--text-point-color);
+        }
+        &.color-gray{
+          color: var(--text-02);
         }
       }
     }
@@ -11738,7 +11755,10 @@
       }
     }
     .step-box{
-      padding: 10px 20px 40px;
+      padding: 10px 20px 30px;
+      &:last-of-type{
+        padding-bottom: 40px;
+      }
       .step{
         .sub-title{
           font-size: 16px;
@@ -11752,6 +11772,110 @@
           font-family: var(--font1);
           color: var(--text-02);
           line-height: 20px;
+        }
+        .sub-desc-2{
+          font-size: 14px;
+          font-family: var(--font1);
+          color: var(--text-01);
+          line-height: 20px;
+        }
+        .form-box{
+          margin-top: 14px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #e2e3e6;
+          input{
+            padding-left: 5px;
+            width: 100%;
+            height: 40px;
+            border: none;
+            &::placeholder{
+              color: #c2c1cc;
+              font-size: 15px;
+              line-height: 1.4;
+              font-family: var(--font1);
+            }
+            &:focus-visible{
+              outline: none;
+            }
+          }
+          span{
+            margin-right: 5px;
+            width: 30px;
+            font-size: 14px;
+            color: var(--text-01);
+            text-align: right;
+          }
+        }
+        .radio-box{
+          margin-top: 10px;
+          padding:20px;
+          width: 100%;
+          border-radius: 6px;
+          border: solid 1px #e3e4e8;
+          font-weight: unset;
+          background: url(../../img/common/check_off@3x.png) no-repeat right 20px center / 22px 22px;
+          &.active{
+            border-color: #6839d3;
+            background: url(../../img/common/check_on@3x.png) no-repeat right 20px center / 22px 22px;
+            p{
+              color: #6839d3;
+            }
+          }
+          input{
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+          }
+          label{
+
+          }
+          .radio-tit{
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-family: var(--font2);
+            line-height: 1.25;
+          }
+          .radio-txt{
+            font-size: 12px;
+            line-height: 1.33;
+            color: var(--text-03);
+            font-family: var(--font1);
+          }
+        }
+        .tab-group{
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a{
+            display: block;
+            width:48.956%;
+            height: 40px;
+            line-height: 38px;
+            border-radius: 6px;
+            border: solid 1px #e3e4e8;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-03);
+            &.active{
+              border-color: #6839d3;
+              color: var(--text-point-color);
+              font-family: var(--font2);
+            }
+          }
+        }
+        .form-wrap{
+          .form-box{
+            display: none;
+            &.active{
+              display: flex;
+            }
+          }
         }
       }
 

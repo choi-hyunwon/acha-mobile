@@ -8,22 +8,30 @@
     </div>
     <div class="contents expenditure mission-contents">
         <div class="text-box">
-            <div class="title no-spending">무지출 챌린지<br>시작하기</div>
+            <div class="title ico-dessert">커피값 줄이기 미션<br>
+                시작하기</div>
             <p class="color-gray">
-                최근 살인적인 물가에 많이 놀라셨죠?<br>
-                MZ 세대의 자린고비 선언!<br>
-                요즘 유행하고 있는 <span class="color-purple">무지출, 무소비 챌린지(하루 동안 1원도 지출하지 않기)</span>를 아차에서 공동관리 상대와 함께<br>
-                시작 해보세요<br><br>
-                공동관리에 연결되어 있는 카드 전체 합산, 결제금액 0원 이하인 날을 카운팅하여 대결합니다.
+                공동관리에 연결되어 있는 카드 전체 대상<br>
+                <span class="color-purple">“카페 상호명”의  결제건</span>에 대해 <br>
+                월 누적 이용 금액 또는 건수를 가지고대결해요!
             </p>
         </div>
         <div class="step-box">
             <div class="step step1">
                 <p class="sub-title">조건 만들기</p>
-                <p class="sub-desc">한 달에 몇 일 이상 무지출 하시겠어요?</p>
-                <div class="form-box">
-                    <input type="text" placeholder="1~31 사이 입력 가능"/>
-                    <span>일</span>
+                <div class="tab-group">
+                    <a class="active" href="javascript:void(0);">금액</a>
+                    <a href="javascript:void(0);">건수</a>
+                </div>
+                <div class="form-wrap">
+                    <div class="form-box active">
+                        <input type="text"/>
+                        <span>만원</span>
+                    </div>
+                    <div class="form-box">
+                        <input type="text"/>
+                        <span>건</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,9 +54,9 @@
                 </label>
                 <label class="radio-box" for="radio-01-02">
                     <input type="radio" name="radio-01" id="radio-01-02"/>
-                    <p class="radio-tit">목표 무지출 일수로만 승부</p>
-                    <p class="radio-txt">무지출 날짜를 세어 무지출 일수가<br>
-                        더 많은 쪽이 승리!</p>
+                    <p class="radio-tit">목표 건수 또는 금액으로만 대결</p>
+                    <p class="radio-txt">목표 건수와 금액을 달성하면 승리!<br>
+                        나와 상대 모두 목표 달성시 최종 무승부 처리</p>
                 </label>
             </div>
         </div>
@@ -66,7 +74,17 @@
                 $('.radio-box').removeClass('active')
                 $(this).parent().addClass('active')
             }
-        })
+        });
+
+        $('.tab-group a').on('click',function (){
+            let el = $(this).index();
+
+            $('.tab-group a').removeClass('active');
+            $(this).addClass('active');
+            $('.form-wrap .form-box').removeClass('active');
+            $('.form-wrap .form-box').eq(el).addClass('active');
+        });
+
     })
 </script>
 </body>

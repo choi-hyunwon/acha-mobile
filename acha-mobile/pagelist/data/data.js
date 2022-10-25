@@ -1699,7 +1699,7 @@ data.edit24 = {
     ]
 };
 data.edit25 = {
-    'title': '공동관리>공동지출/계좌/카드',
+    'title': '공동관리>공동지출/계좌/카드/지출스토리',
     'list': [
         {
             'stateClass': 'working',
@@ -2079,6 +2079,103 @@ data.edit31 = {
 data.edit32 = {
     'title': '가계부>캘린더',
     'list': [
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.1_메인'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.1_메인_내역이없는경우'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.2_캘린더_필터'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.2_캘린더_필터_계좌카드없음'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.4_캘린더지출항목_고정지출'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.4_캘린더지출항목_고정지출_직접입력'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.4_캘린더지출항목_변동지출'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.4_캘린더지출항목_변동지출_직접등록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.5_캘린더지출항목_수입상세'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.5_캘린더지출항목_수입상세_직접등록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.6_캘린더지출항목_카드지출상세_승인취소'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.6_캘린더지출항목_카드지출상세_일시불승인'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.6_캘린더지출항목_카드지출상세_할부'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.7_스토리등록'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.8_스토리등록완료'
+        },
+        {
+            'stateClass': 'working',
+            'url': '',
+            'category': '가계부',
+            'page': '캘린더_15.8_스토리편집'
+        },
+
     ]
 };
 data.edit33 = {

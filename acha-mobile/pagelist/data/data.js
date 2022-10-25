@@ -1851,14 +1851,14 @@ data.edit26 = {
             'page': '04_9.2_미션추가_데이터없을경우'
         },
         {
-            'stateClass': 'working',
-            'url': '',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_06',
             'category': '공동관리',
             'page': '9.2_미션추가'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': 'v3_joint_management_07',
             'category': '공동관리',
             'page': '04_9.2_미션추가_1_무지출'
         },

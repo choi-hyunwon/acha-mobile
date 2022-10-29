@@ -24,23 +24,6 @@ function htmlPage() {
         .pipe(gulp.dest('dist/html/'))
 }
 
-// function copyCss() {
-//     gulp.src(['src/scss/style/*.scss'])
-//         .pipe(gulp.dest('dist/css/style'));
-//     return gulp.src('src/scss/fonts/**',)
-//         .pipe(gulp.dest('dist/css/fonts'));
-// }
-
-function copyCss() {
-    return gulp.src('src/css/style/**')
-        .pipe(gulp.dest('dist/css/style'));
-}
-
-function copyIndex() {
-    return gulp.src('src/index.html')
-        .pipe(gulp.dest('dist/'));
-}
-
 function copyImg() {
     return gulp.src('src/img/**/**')
         .pipe(gulp.dest('dist/img'));
@@ -61,10 +44,10 @@ function copyFonts() {
 //         .pipe(gulp.dest('dist/js'));
 // }
 
-function copyCSS() {
-    return gulp.src('src/css/**')
-        .pipe(gulp.dest('dist/css'));
-}
+// function copyCSS() {
+//     return gulp.src('src/css/**')
+//         .pipe(gulp.dest('dist/css'));
+// }
 
 function jsLib() {
     let sourceLib = [
@@ -148,8 +131,8 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFavicon, copyFonts, copyCSS, htmlPage, delInclude, jsCommon, jsLib));
-gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, copyCSS, htmlPage, delInclude, beautify));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyImg, copyFavicon, copyFonts, htmlPage, delInclude, jsCommon, jsLib));
+gulp.task("dist", gulp.series(setEnvProduct, delDist, scss, copyImg, copyFonts, htmlPage, delInclude, beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg, watchJs, watchFont));
 
 gulp.task('browser-sync', function () {
@@ -168,4 +151,4 @@ gulp.task('browser-sync', function () {
     gulp.watch('src/fonts/**/**', gulp.series(copyFonts)).on('change', browserSync.reload);
 });
 
-exports.default = gulp.series("dist");
+exports.default = gulp.series("dev");

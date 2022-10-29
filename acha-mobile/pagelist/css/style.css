@@ -523,18 +523,10 @@ layout
   margin-left: .3em; }
 
 .fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
 
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8); }
-
-@-webkit-keyframes fa-spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
 
 @keyframes fa-spin {
   0% {
@@ -4649,8 +4641,7 @@ layout
   padding-top: 50px; }
 
 a {
-  -webkit-animation: none 0s ease 0s 1 normal none running;
-          animation: none 0s ease 0s 1 normal none running;
+  animation: none 0s ease 0s 1 normal none running;
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
   background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
@@ -4700,7 +4691,6 @@ a {
   line-height: normal;
   height: auto;
   -webkit-hyphens: none;
-      -ms-hyphens: none;
           hyphens: none;
   left: auto;
   letter-spacing: normal;

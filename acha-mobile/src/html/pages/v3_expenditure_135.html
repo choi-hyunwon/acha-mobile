@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>캘린더</h2>
+        <div class="sum-area">
+            <p class="update mb-0">30분 전<i class="ico-refresh-mini"></i></p>
+        </div>
+    </div>
+    <div class="contents expenditure">
+        <div class="expenditure-calendar">
+            <div class="ex-calendar">
+                <div class="box-ex-calendar-header">
+                    <div class="date"><a href="#">2022년 10월<i class="icon-arrow-bottom"> </i></a></div>
+                    <a href="#" class="filter"><i class="btn btn-filter">필터 <span>3</span></i></a>
+                </div>
+                <div class="box_ex_calendar ex-calendar-v3">
+                    <div id='calendar'></div>
+                </div>
+            </div>
+            <!-- expenditure-box -->
+            <div class="expenditure-box bg_light_gray">
+                <div class="calendar-history">
+                    <div class="date-detail">
+                        <div class="t-day">
+                            <span class="day">1일</span>
+                            <span class="badge badge-gray">토</span>
+                        </div>
+                        <div class="detail">
+                            <div class="plus">
+                                <span class="tit">수입</span><span class="price">+15,000원</span>
+                            </div>
+                            <div class="minus">
+                                <span class="tit">지출</span><span class="price">-15,000원</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="history-list-calendar">
+                        <ul>
+                            <li>
+                                <span class="time">13:50 <em>|</em> 신한Deepdream</span>
+                                <span class="detail">
+                                    <span>아파트관리비</span>
+                                    <span>-15,000원</span>
+                                </span>
+                                <div class="tag">
+                                    <span>#칭구들돼지파티</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span>13:50 | 신한Deepdream</span>
+                                <span class="detail">
+                                    <span class="tit">아파트관리비</span>
+                                    <span class="price">-15,000원</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>13:50 | 신한Deepdream</span>
+                                <span class="detail">
+                                    <span class="tit">아파트관리비</span>
+                                    <span class="price">-15,000원</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>13:50 | 신한Deepdream</span>
+                                <span class="detail">
+                                    <span class="tit">아파트관리비</span>
+                                    <span class="price">-15,000원</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>13:50 | 신한Deepdream</span>
+                                <span class="detail">
+                                    <span class="tit">아파트관리비</span>
+                                    <span class="price">-15,000원</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>13:50 | 신한Deepdream</span>
+                                <span class="detail">
+                                    <span class="tit">아파트관리비</span>
+                                    <span class="price">-15,000원</span>
+                                </span>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //expenditure-box -->
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: ['interaction', 'dayGrid'],
+            showNonCurrentDates: true,
+            fixedWeekCount: false,
+            header: false,
+            height: 'auto',
+            defaultDate: '2022-10-30',  // 날짜 입력시, 달력 show
+            editable: false,
+            eventLimit: false,
+            navLinks: true,
+            timeZone: 'Asia/Seoul',
+            columnHeaderText: function (date) {
+                return weekList[date.getDay()];
+            },
+            navLinkDayClick: function (date, jsEvent) {
+                console.log(date.toISOString().slice(0,10));
+                console.log(jsEvent.target)
+            },
+            events: [
+                {
+                    className: 'minus-data',
+                    title: '-100,000',
+                    start: '2022-10-12'
+                },
+                {
+                    className: 'minus-data',
+                    title: '-480,000',
+                    start: '2022-10-13'
+                },
+                {
+                    className: 'minus-data',
+                    title: '-1,020,000',
+                    start: '2022-10-14'
+                },
+                // 표시 할 데이터가 있고, 선택된 일자가 있는 금액의 첫번째에 plus-data 클래스 추가 **
+                {
+                    className: 'plus-data',
+                    title: '+100,000',
+                    start: '2022-10-03'
+                },
+                {
+                    className: 'minus-data',
+                    title: '-50,000',
+                    start: '2022-10-03'
+                },
+                {
+                    className: 'plus-data',
+                    title: '+50,000',
+                    start: '2022-10-10'
+                },
+                {
+                    className: 'plus-data',
+                    title: '+100,000',
+                    start: '2022-10-17'
+                },
+                {
+                    className: 'plus-data',
+                    title: '+100,000',
+                    start: '2022-10-25'
+                },
+                {
+                    className: 'plus-data',
+                    title: '+100,000',
+                    start: '2022-10-28'
+                },
+            ],
+        });
+
+        calendar.render();
+    });
+</script>
+</body>
+</html>
+

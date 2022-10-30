@@ -2124,13 +2124,13 @@ data.edit32 = {
     'title': '가계부>캘린더',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_135',
             'category': '가계부',
             'page': '캘린더_15.1_메인'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_136',
             'category': '가계부',
             'page': '캘린더_15.1_메인_내역이없는경우'

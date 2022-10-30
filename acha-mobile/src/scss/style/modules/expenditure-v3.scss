@@ -3874,6 +3874,51 @@
       }
 
     }
+
+    .filter-desc {
+      font-size: 16px;
+      color: #37354e;
+      font-weight: 500;
+      padding: 0 20px;
+      span {
+        color: var(--color-point);
+        font-weight: 700;
+      }
+    }
+
+    .details-history {
+      .item-list {
+        padding: 10px 0  !important;
+      }
+      .box {
+
+        display: flex;
+        align-items: center;
+        .info {
+          padding-top: 5px;
+          .place {
+            margin-bottom: 3px;
+          }
+          .acount {
+            font-size: 12px;
+            color: #9b9aa6;
+            display: block;
+          }
+        }
+      }
+      label {
+        height: 25px;
+      }
+
+    }
+    .sub-title {
+      position: relative;
+      label {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
   }
 
 }

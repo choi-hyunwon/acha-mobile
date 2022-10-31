@@ -968,6 +968,10 @@
                   .info{
                     display: inline-block;
                     position: relative;
+                    &.info-line {
+                      line-height: 44px;
+                    }
+
                     .place{
                       span{
                         overflow: hidden;
@@ -1247,6 +1251,21 @@
                     font-family: var(--font2);
                     margin-left: 1px;
                   }
+                  &.category-amount-link{
+                    padding-right: 10px;
+                    &:before{
+                      content: '';
+                      display: inline-block;
+                      background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+                      width: 6px;
+                      height: 16px;
+                      margin-left: 8px;
+                      position: absolute;
+                      right: 0;
+                      top: 5px;
+                    }
+                  }
+
                 }
               }
               .bar-graph {
@@ -3882,7 +3901,6 @@
     .month-range {
       position: relative;
       height: 40px;
-      margin-bottom: 30px;
       .prev{
         position: absolute;
         top: 0;

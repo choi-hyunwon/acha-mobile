@@ -1338,17 +1338,6 @@ data.edit21 = {
         },
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_123',
-            'category': '가계부',
-            'page': '리포트_3.1_리포트_상세_남은돈그래프'
-        },
-        {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_124',
-            'category': '가계부',
-            'page': '리포트_3.1_리포트_상세_지출추이그래프'
-        }, {
-            'stateClass': 'working',
             'url': 'v3_expenditure_125',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)'

@@ -1307,7 +1307,7 @@ data.edit21 = {
     'title': '가계부>지출>리포트',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_118',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_적당'

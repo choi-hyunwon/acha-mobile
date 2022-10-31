@@ -83,6 +83,17 @@
     height: 10px;
     background-color: #f5f6f8;
   }
+  &-line {
+    &::before {
+      content: '';
+      display: block;
+      width: auto;
+      height: 1px;
+      background-color: #efefef;
+      margin: 0 20px 20px 20px;
+    }
+
+  }
 }
 
 textarea.custom {

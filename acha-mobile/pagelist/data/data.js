@@ -1313,85 +1313,85 @@ data.edit21 = {
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_적당'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_119',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_초과'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_120',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출X'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_121',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출X_이번달지출O'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_122',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출X_이번달지출X'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_125',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_126',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)_지출예산설정'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_127',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(2)_카테고리예산설정'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_128',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(2)_카테고리예산설정_팝업'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_129',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출O_적당'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_130',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출O_초과'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_131',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출X'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_132',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산X_지출O '
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_133',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산X_지출X'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_134',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_미래_예정O_지출O'

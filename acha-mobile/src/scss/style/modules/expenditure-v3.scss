@@ -3842,11 +3842,12 @@
 
         .empty{
           position: relative;
-          height: 200px;
+          height: 250px;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          padding-bottom: 0;
           img{
             width: 42px;
             height: 42px;
@@ -3947,8 +3948,8 @@
 
 
   .expenditure-story-wrap {
-    padding: 25px 20px 0 20px;
-    margin-top: 36px;
+    position: relative;
+    padding: 35px 20px 20px 20px;
 
     .title-story {
       font-family: var(--font3);
@@ -3960,6 +3961,16 @@
       color: var(--text-01);
       padding-bottom: 13px;
       margin-bottom: 20px;
+      position: relative;
+      .edit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: var(--color-point);
+        font-size: 12px;
+        font-weight: normal;
+        font-family: var(--font1);
+      }
     }
 
     label {
@@ -3984,6 +3995,16 @@
           border-radius: 50%;
           top: 0;
           right: -3px;
+        }
+      }
+    }
+    .box-img {
+      width: 100%;
+      p {
+        margin-bottom: 20px;
+        border: 1px solid #ebebed;
+        img {
+          max-width: 100%;
         }
       }
     }
@@ -4072,8 +4093,6 @@
       margin-bottom: 27px;
 
       .content {
-        background-color: #f7f8fc;
-        border-radius: 4px;
         font-size: 14px;
         font-family: var(--font2);
         font-weight: 500;
@@ -4081,7 +4100,6 @@
         letter-spacing: -0.35px;
         text-align: left;
         color: var(--text-01);
-        padding: 9px 12px 11px;
       }
 
       textarea.custom {
@@ -4114,7 +4132,7 @@
     }
 
     .gallery {
-      margin-bottom: 20px;
+      //margin-bottom: 20px;
 
       ul {
         li {
@@ -4189,14 +4207,13 @@
           margin-left: 10px;
           margin-bottom: 10px;
           cursor: pointer;
-          /*    &:nth-of-type(4n){
-                margin-right: 0;
-              }*/
 
-          //img {
-          //  width: 100%;
-          //  height: 100%;
-          //}
+          &.no-padding {
+            width: auto;
+            height: auto;
+            margin-left: 0;
+            border: none !important;
+          }
 
           i.emoji {
             width: 45px;

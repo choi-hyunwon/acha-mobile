@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>상세내역</h2>
+        <a href="#" class="btn-setting"><img src="../../img/common/expenditure/btn_title_edit@2x.png" alt="설정 버튼"></a>
+    </div>
+    <div class="contents expenditure">
+        <div class="expenditure-calendar">
+            <!-- expenditure-box -->
+            <div class="expenditure-box">
+                <div class="account-detail-wrap pt-0 pb-5">
+                    <div class="info-wrap">
+                        <div class="title">
+                        <span class="img">
+                           <img src="../../img/@temp/woori.png" alt="로고">
+                        </span>
+                            현대백화점 무역센터점
+                        </div>
+                        <ul class="info-list">
+                            <li class="item">
+                                <span class="tit">6월 지출금액</span>
+                                <span class="val">4,191,000원</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 일시</span>
+                                <span class="val">6월 25일 19:33</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 수단</span>
+                                <span class="val">현대카드</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 분류</span>
+                                <span class="val">변동지출</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">메모</span>
+                                <span class="val">위시템구매<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <div class="expenditure-story-wrap">
+                <div class="title-story">스토리</div>
+                <div class="mood">
+                    <label>내 지출 기분은?</label>
+                    <ul class="clearfix">
+                        <li><i class="emoji excited"></i></li>
+                        <li><i class="emoji smile"></i></li>
+                        <li><i class="emoji nothing"></i></li>
+                        <li><i class="emoji surprise"></i></li>
+                        <li><i class="emoji cry"></i></li>
+                        <li><i class="emoji angry"></i></li>
+                        <li><i class="emoji vomit"></i></li>
+                    </ul>
+                </div>
+                <div class="textarea">
+                    <label for="context">내용</label>
+                    <span class="txt-limit"><em class="_val">0</em> / 200</span>
+                    <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" id="context" maxlength="200" placeholder="내용을 입력해주세요"></textarea>
+                </div>
+                <div class="gallery">
+                    <label>사진 업로드</label>
+                    <ul class="clearfix">
+                        <li class="add"><a href="#"><i class="btn-gallery-add"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="btn-area bg-white pb-20">
+                <a class="btn btn-big btn-purple-bg btn-block" href="#">스토리 저장하기</a>
+            </div>
+            <!-- //expenditure-box -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

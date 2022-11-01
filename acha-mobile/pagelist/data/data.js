@@ -1748,7 +1748,7 @@ data.edit25 = {
             'page': '04_5.1_공동지출관리메인_데이터무'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_39',
             'category': '공동관리',
             'page': '04_5.2_공동지출관리메인_데이터유'

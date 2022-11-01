@@ -1778,25 +1778,25 @@ data.edit25 = {
             'page': '04_5.5_공동지출관리메인_4_데이터숨기기_2'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_44',
             'category': '공동관리',
             'page': '04_5.5_공동지출관리메인_4_데이터숨기기_3'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_45',
             'category': '공동관리',
             'page': '04_6.1_같이보는계좌메인'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_46',
             'category': '공동관리',
             'page': '04_6.1_같이보는계좌메인_6개이상일경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_47',
             'category': '공동관리',
             'page': '04_6.2_같이보는계좌'
@@ -1808,13 +1808,13 @@ data.edit25 = {
             'page': '04_6.3_같이보는계좌설정'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_49',
             'category': '공동관리',
             'page': '04_7.1_같이보는카드메인'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_50',
             'category': '공동관리',
             'page': '04_7.1_같이보는카드'

@@ -1730,18 +1730,6 @@ data.edit25 = {
     'title': '공동관리>공동지출/계좌/카드/지출스토리',
     'list': [
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_33',
-            'category': '공동관리',
-            'page': '04_2.1_커넥션메인_연결전'
-        },
-        {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_34',
-            'category': '공동관리',
-            'page': '04_2.2_커넥션메인_전체연결'
-        },
-        {
             'stateClass': 'complete',
             'url': 'v3_joint_management_35',
             'category': '공동관리',
@@ -1749,18 +1737,12 @@ data.edit25 = {
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_joint_management_36',
-            'category': '공동관리',
-            'page': '04_10.4_공동관리끊기'
-        },
-        {
-            'stateClass': 'working',
             'url': 'v3_joint_management_37',
             'category': '공동관리',
             'page': '04_5.2_공동관리메인_데이터유'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_38',
             'category': '공동관리',
             'page': '04_5.1_공동지출관리메인_데이터무'
@@ -1778,19 +1760,19 @@ data.edit25 = {
             'page': '04_5.5_공동지출관리설정'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_41',
             'category': '공동관리',
             'page': '04_5.5_공동지출관리메인_1_수입지출표시'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_42',
             'category': '공동관리',
             'page': '04_5.5_공동지출관리메인_4_데이터숨기기_1'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_43',
             'category': '공동관리',
             'page': '04_5.5_공동지출관리메인_4_데이터숨기기_2'

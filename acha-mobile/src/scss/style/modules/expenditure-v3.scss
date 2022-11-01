@@ -1129,6 +1129,7 @@
               font-size: 18px;
               color: var(--text-01);
               font-family: var(--font5);
+              font-weight: 500;
               &:after{
                 content: '원';
                 display: inline-block;
@@ -3162,7 +3163,6 @@
     }
     .box-card-list{
       min-height: unset;
-      padding: 0;
       >.card-item {
         .asset-wrap {
           .asset {
@@ -3189,6 +3189,99 @@
                 }
               }
             }
+            /**
+            together-management
+             */
+            &.together-management{
+              .title{
+                font-family: var(--font2);
+                font-size: 16px;
+                line-height: 26px;
+                color: var(--text-01);
+                margin-bottom: 24px;
+              }
+              .bank-img {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 24px;
+                span {
+                  display: inline-block;
+                  margin: 0 2px;
+                  padding: 5px;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 1px solid #f7f7f8;
+                  &.more {
+                    width: 40px;
+                    height: 40px;
+                    background: #efefef;
+                    color: #9992a0;
+                    font-size: 13px;
+                    line-height: 30px;
+                    text-align: center;
+                  }
+                }
+              }
+              .amount {
+                font-size: 18px;
+                font-weight: bold;
+                color: var(--text-01);
+                text-align: center;
+              }
+            }
+            /**
+            together-view-card
+             */
+            &.together-view-card{
+              .title{
+                font-family: var(--font2);
+                font-size: 20px;
+                line-height: 24px;
+                color: var(--text-01);
+                padding-bottom: 24px;
+                position: relative;
+                border-bottom: 1px solid #efefef;
+                .state {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  color: #6839d3;
+                  font-size: 14px;
+                  font-weight: 500;
+                }
+              }
+              .list-card {
+                .item{
+                  height: 70px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .name {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #37354e;
+                    .circle {
+                      display: inline-block;
+                      margin: 0 2px;
+                      padding: 5px;
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 50%;
+                      border: 1px solid #f7f7f8;
+                    }
+                  }
+                  .val {
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: right;
+                    color: #37354e;
+                  }
+                }
+              }
+
+            }
+
           }
         }
 
@@ -3971,14 +4064,7 @@
             vertical-align: middle;
           }
 
-          .icon-arrow-bottom {
-            background: url("../../img/common/btn_title_month@2x.png") no-repeat center center / contain;
-            width: 18px;
-            height: 18px;
-            display: inline-block;
-            vertical-align: middle;
-            margin-bottom: 3px;
-          }
+
 
 
         }
@@ -4609,6 +4695,19 @@
       font-weight: 500;
       line-height: 24px;
       color: var(--text-01);
+      display: inline-block;
+      vertical-align: middle;
+    }
+    /**
+      icon-arrow-bottom
+       */
+    .icon-arrow-bottom {
+      background: url("../../img/common/btn_title_month@2x.png") no-repeat center center / contain;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 3px;
     }
   }
 
@@ -4654,6 +4753,30 @@
   }
 
   /**
+  user-lock
+   */
+  .user-lock {
+    margin-bottom: 20px;
+
+    .lock-icon {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 8px;
+      line-height: 20px;
+      color: #737183;
+    }
+  }
+  .full-height {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 152px);
+  }
+  /**
   info-data-list
    */
   .info-data-list {
@@ -4671,7 +4794,9 @@
       }
       .val {
         font-size: 15px;
+        font-family: var(--font5);
         color: var(--text-01);
+        font-weight: 500 !important;
         .ico_list_arrow_small{
           background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
           display: inline-block;
@@ -4684,6 +4809,7 @@
         .tit {
           font-size: 15px;
           font-weight: bold;
+          font-family: var(--font2);
         }
         .val {
           font-size: 18px;
@@ -4698,6 +4824,9 @@
       }
     }
   }
+
+
+
 }
 
 

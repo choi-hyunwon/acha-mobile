@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">공동 지출 관리</h2>
+
+    </div>
+    <div class="contents expenditure">
+        <div class="current-month">
+            <a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i>
+        </div>
+        <div class="expenditure-tab _expenditureTab">
+            <ul class="clearfix">
+                <li class="active"><a href="#">#공동</a></li>
+                <li><a href="#">#유똑똑</a></li>
+                <li><a href="#">#김꼼꼼</a></li>
+            </ul>
+            <a href="#" class="btn btn-edit">편집</a>
+        </div>
+        <div class="expenditure-box bg_light_gray">
+            <ul class="usage-history-list">
+                <li>
+                    <div class="total">
+                        <div class="title">월 카드 이용료 합계</div>
+                        <div class="sum">700,000</div>
+                    </div>
+                    <ul class="info-data-list">
+                        <li class="item item-lg">
+                            <span class="tit">국민카드</span>
+                            <span class="val">493,400</span>
+                        </li>
+                    </ul>
+                    <ul class="details-history">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_kbbank@2x.png" alt="국민은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="type"><span>국민 드림</span></span>
+                                        <span class="amount">1,000,000</span>
+                                    </div>
+                                </div>
+                                <i class="icon-user"><img src="../../img/common/ico_mypage_profile_img03@2x.png" alt="아이콘"></i>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="divider divider-line divider-block"></div>
+                    <ul class="info-data-list">
+                        <li class="item item-lg">
+                            <span class="tit">우리카드</span>
+                            <span class="val">93,400</span>
+                        </li>
+                    </ul>
+                    <ul class="details-history">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/woori.png" alt="우리은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="type"><span>우리 마일리지</span></span>
+                                        <span class="amount">30,000</span>
+                                    </div>
+                                </div>
+                                <i class="icon-user"><img src="../../img/common/ico_mypage_profile_img03@2x.png" alt="아이콘"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

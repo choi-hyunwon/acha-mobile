@@ -1,6 +1,9 @@
 
 
 .renewal{
+  /**
+  header
+   */
   .header{
     .title{
       +.text{
@@ -40,6 +43,10 @@
     }
   }
 
+
+  /**
+  btn-setting
+   */
   .btn-setting{
     position: absolute;
     display: block;
@@ -55,7 +62,9 @@
   }
 
 
-
+  /**
+  expenditure
+   */
   .expenditure{
     >.description{
       background: #f7f8fc;
@@ -946,8 +955,10 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                position: relative;
                 .box{
                   margin-bottom: 0;
+                  position: relative;
                   .img{
                     width: 40px;
                     height: 40px;
@@ -1017,6 +1028,19 @@
                         }
                       }
                     }
+                  }
+                  
+
+                }
+                .icon-user {
+                  width: 30px;
+                  height: 30px;
+                  position: absolute;
+                  top: 10px;
+                  right: 0;
+                  img {
+                    width: 100%;
+                    height: auto;
                   }
                 }
                 .payment-method{
@@ -3017,6 +3041,9 @@
     }
   }
 
+  /**
+  icon
+   */
   .icon{
     &.icon_cate_baby{
       background: url(../../img/common/expenditure/icon-category/ic_cate_baby@2x.png) no-repeat center center/contain;
@@ -3699,8 +3726,6 @@
     }
   }
 
-
-
   /**
    * 2022.10.13
    * 가계부 > 지출 > 리포트
@@ -3928,6 +3953,7 @@
 
   /**
    * 2022.10.18
+   expenditure-calendar
    */
   .expenditure-calendar {
     .ex-calendar {
@@ -4126,38 +4152,7 @@
         }
 
 
-        .empty{
-          position: relative;
-          height: 250px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding-bottom: 0;
-          img{
-            width: 42px;
-            height: 42px;
-          }
-          >p{
-            padding-top: 10px;
-            font-size: 14px;
-            color: var(--text-02);
-            text-align: center;
-          }
-          .description{
-            position: absolute;
-            top: 20px;
-            width: calc(100% - 40px);
-          }
 
-          &.means-account{
-            height: calc(100vh - 234px);
-            padding: 0;
-          }
-          &.mission-area{
-            min-height: calc(100vh - 116px);
-          }
-        }
       }
 
     }
@@ -4598,6 +4593,106 @@
             background-size: cover;
             top: -2px;
             right: -2px;
+          }
+        }
+      }
+    }
+  }
+
+  /**
+  상단 타이틀 : 2022년 6월 >
+   */
+  .current-month {
+    margin: 0 20px 15px 20px;
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      color: var(--text-01);
+    }
+  }
+
+  /**
+  empty
+   */
+  .empty{
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+
+    &-sm {
+      height: 125px !important;
+      padding-bottom: 0 !important;
+    }
+    img{
+      width: 42px;
+      height: 42px;
+    }
+    >p{
+      padding-top: 10px;
+      font-size: 14px;
+      color: var(--text-02);
+      text-align: center;
+    }
+    .description{
+      position: absolute;
+      top: 20px;
+      width: calc(100% - 40px);
+    }
+
+    &.means-account{
+      height: calc(100vh - 234px);
+      padding: 0;
+    }
+    &.mission-area{
+      min-height: calc(100vh - 116px);
+    }
+  }
+
+  /**
+  info-data-list
+   */
+  .info-data-list {
+    padding-top: 20px;
+    .item {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .tit {
+        font-size: 15px;
+        color: var(--text-01);
+      }
+      .val {
+        font-size: 15px;
+        color: var(--text-01);
+        .ico_list_arrow_small{
+          background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+          display: inline-block;
+          width: 6px;
+          height: 16px;
+          margin-left: 8px;
+        }
+      }
+      &.item-lg {
+        .tit {
+          font-size: 15px;
+          font-weight: bold;
+        }
+        .val {
+          font-size: 18px;
+          font-weight: bold;
+          &::after{
+            content: '원';
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-01);
           }
         }
       }

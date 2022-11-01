@@ -92,7 +92,9 @@
       background-color: #efefef;
       margin: 0 20px;
     }
-
+  }
+  &-block {
+    &::before {margin: 0 !important;}
   }
 }
 

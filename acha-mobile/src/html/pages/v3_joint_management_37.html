@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">공동 지출 관리</h2>
+
+    </div>
+    <div class="contents expenditure">
+        <div class="current-month">
+            <a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i>
+        </div>
+        <div class="expenditure-tab _expenditureTab">
+            <ul class="clearfix">
+                <li class="active"><a href="#">#공동</a></li>
+                <li><a href="#">#유똑똑</a></li>
+                <li><a href="#">#김꼼꼼</a></li>
+            </ul>
+            <a href="#" class="btn btn-edit">편집</a>
+        </div>
+        <div class="expenditure-box bg_light_gray">
+            <ul class="usage-history-list">
+                <li>
+                    <div class="total">
+                        <div class="title">총 수입</div>
+                        <div class="sum">0</div>
+                    </div>
+                    <div class="empty empty-sm">
+                        <p><img src="../../img/common/ico-error-page@2x.png" style="width: 17px; height: 17px;"> 표 시할 수입 내역이 없습니다 🙁</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="total">
+                        <div class="title">총 지출</div>
+                        <div class="sum">0</div>
+                    </div>
+                    <ul class="info-data-list">
+                        <li class="item item-lg">
+                            <span class="tit">정기지출</span>
+                            <span class="val">0</span>
+                        </li>
+                    </ul>
+                    <div class="empty empty-sm">
+                        <p><img src="../../img/common/ico-error-page@2x.png" style="width: 17px; height: 17px;"> 표 시할 수입 내역이 없습니다 🙁</p>
+                    </div>
+                    <div class="divider divider-line divider-block"></div>
+                    <ul class="info-data-list">
+                        <li class="item item-lg">
+                            <span class="tit">할부지출</span>
+                            <span class="val">0</span>
+                        </li>
+                    </ul>
+                    <div class="empty empty-sm">
+                        <p><img src="../../img/common/ico-error-page@2x.png" style="width: 17px; height: 17px;"> 표 시할 수입 내역이 없습니다 🙁</p>
+                    </div>
+                    <div class="divider divider-line divider-block"></div>
+                    <ul class="info-data-list">
+                        <li class="item item-lg">
+                            <span class="tit">변동지출</span>
+                            <span class="val">0</span>
+                        </li>
+                    </ul>
+                    <div class="empty empty-sm">
+                        <p><img src="../../img/common/ico-error-page@2x.png" style="width: 17px; height: 17px;"> 표 시할 수입 내역이 없습니다 🙁</p>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

@@ -1742,13 +1742,13 @@ data.edit25 = {
             'page': '04_2.2_커넥션메인_전체연결'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_35',
             'category': '공동관리',
             'page': '04_5.1_공동관리메인_데이터무'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_36',
             'category': '공동관리',
             'page': '04_10.4_공동관리끊기'

@@ -1754,7 +1754,7 @@ data.edit25 = {
             'page': '04_5.2_공동지출관리메인_데이터유'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_40',
             'category': '공동관리',
             'page': '04_5.5_공동지출관리설정'
@@ -1802,7 +1802,7 @@ data.edit25 = {
             'page': '04_6.2_같이보는계좌'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_48',
             'category': '공동관리',
             'page': '04_6.3_같이보는계좌설정'
@@ -1820,7 +1820,7 @@ data.edit25 = {
             'page': '04_7.1_같이보는카드'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_51',
             'category': '공동관리',
             'page': '04_7.2_같이보는카드설정'

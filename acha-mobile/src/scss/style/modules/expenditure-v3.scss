@@ -4827,6 +4827,29 @@
 
 
 
+  /**
+  설정 메뉴
+  setting
+   */
+  .setting {
+    padding: 0 20px;
+    .title {
+      height: 60px;
+      line-height: 60px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      color: #37354c;
+      border-bottom: 1px solid #efefef;
+      margin-bottom: 20px;
+    }
+    .list-radio {
+      position: relative;
+      .item{
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 

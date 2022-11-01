@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">공동 지출 관리 설정</h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="setting">
+            <div class="title">
+                수입/지출 표시
+            </div>
+            <div class="list-radio">
+                <div class="item">
+                    <label for="radio1">
+                        <input type="radio" id="radio1" name="list1" class="filled-in" checked ><span>수입+지출(기본)</span>
+                    </label>
+                </div>
+                <div class="item">
+                    <label for="radio2">
+                        <input type="radio" id="radio2" name="list1" class="filled-in" ><span>지출만</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="title">
+                수입/지출 항목별 상세 접근
+            </div>
+
+            <div class="list-radio">
+                <div class="item">
+                    <label for="radio21">
+                        <input type="radio" id="radio21" name="list2" class="filled-in" checked ><span>접근 가능</span>
+                    </label>
+                </div>
+                <div class="item">
+                    <label for="radio22">
+                        <input type="radio" id="radio22" name="list2" class="filled-in" ><span>접근 막기</span>
+                    </label>
+                </div>
+            </div>
+            <div class="title">
+                지출 정보 선택
+            </div>
+            <div class="list-radio">
+                <div class="item">
+                    <label for="radio31">
+                        <input type="radio" id="radio31" name="list3" class="filled-in" checked ><span>정기지출</span>
+                    </label>
+                </div>
+                <div class="item">
+                    <label for="radio32">
+                        <input type="radio" id="radio32" name="list3" class="filled-in" ><span>할부지출</span>
+                    </label>
+                </div>
+                <div class="item">
+                    <label for="radio33">
+                        <input type="radio" id="radio33" name="list3" class="filled-in" ><span>변동지출(실시간 지출)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="title">
+                내 데이터 잠시 숨기기
+            </div>
+
+            <div class="list-radio">
+                <div class="item">
+                    <label for="radio41">
+                        <input type="radio" id="radio41" name="list4" class="filled-in" checked ><span>공개</span>
+                    </label>
+                </div>
+                <div class="item">
+                    <label for="radio42">
+                        <input type="radio" id="radio42" name="list4" class="filled-in" ><span>비공개</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function () {
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

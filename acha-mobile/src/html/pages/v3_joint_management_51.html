@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">같이 보는 카드 설정</h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="setting">
+            <div class="title">
+                카드별 상세 접근
+            </div>
+            <div class="list-radio">
+                <div class="item">
+                    <label for="radio1">
+                        <input type="radio" id="radio1" name="list1" class="filled-in" checked ><span>접근 가능</span>
+                    </label>
+                </div>
+                <div class="item">
+                    <label for="radio2">
+                        <input type="radio" id="radio2" name="list1" class="filled-in" ><span>접근 막기</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="title">
+                내 데이터 잠시 숨기기
+            </div>
+
+            <div class="list-radio">
+                <div class="item">
+                    <label for="radio21">
+                        <input type="radio" id="radio21" name="list2" class="filled-in" checked ><span>공개</span>
+                    </label>
+                </div>
+                <div class="item">
+                    <label for="radio22">
+                        <input type="radio" id="radio22" name="list2" class="filled-in" ><span>비공개</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function () {
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

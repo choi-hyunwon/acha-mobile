@@ -2227,34 +2227,51 @@ data.edit34 = {
     'title': '가계부>지출>리포트',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_151',
             'category': '가계부',
             'page': '리포트_3.1_데이터없는경우_이번달-과거'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_152',
             'category': '가계부',
             'page': '리포트_3.1_데이터없는경우_미래'
         },
+    ]
+};
+data.edit345 = {
+    'title': '가계부>지출>변동지출',
+    'list': [
         {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_153',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_189',
             'category': '가계부',
-            'page': '리포트_3.1_리포트_상세_남은돈그래프'
+            'page': '지출_8.1_변동지출_카테고리_데이터없는경우'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_154',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_190',
             'category': '가계부',
-            'page': '리포트_3.1_리포트_상세_남은돈그래프'
+            'page': '지출_8.1_변동지출_카테고리_데이터없는경우_01_상세'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_155',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_191',
             'category': '가계부',
-            'page': '리포트_3.1_리포트_상세_남은돈그래프'
+            'page': '지출_8.1_변동지출_카테고리_데이터없는경우_02_그외카테고리'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_192',
+            'category': '가계부',
+            'page': '지출_8.1_변동지출_카테고리_내역이없는경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_193',
+            'category': '가계부',
+            'page': '지출_8.3_변동지출_카테고리_내역이있는경우'
         },
     ]
 };
@@ -2330,7 +2347,7 @@ data.edit36 = {
     'title': '가계부>지출수단>현금',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_166',
             'category': '가계부',
             'page': '지출수단_10.2_현금_목록있음'

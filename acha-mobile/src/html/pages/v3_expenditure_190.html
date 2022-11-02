@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="total-amount total-amount-category">
+            <div class="img"><img src="../../img/common/expenditure/icon-category/ic_cate_food@2x.png" alt=""></div>
+            <div class="category">식비・외식비</div>
+            <div class="amount">0</div>
+        </div>
+        <div class="amount-wrap pt-2">
+            <div class="description-box">
+                <span>외식, 식재료 구입비, 배달음식</span>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="amount-wrap">
+            <div class="empty">
+                <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
+                <p>지출내역이 없습니다.🙁</p>
+            </div>
+            <div class="btn-wrap" style="background-color: transparent;">
+                <a class="btn btn-big btn-block btn-purple-bg" href="#">지출내역  한번에 불러오기</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

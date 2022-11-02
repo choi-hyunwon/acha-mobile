@@ -3947,6 +3947,11 @@
       margin-bottom: 20px;
       .stick {
         position: relative;
+        &-disabeled {
+          >div {
+            background-color: #f0f1f5 !important;
+          }
+        }
         &-minus {
           &::after {
             content: "";

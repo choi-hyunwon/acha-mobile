@@ -2396,13 +2396,13 @@ data.edit38 = {
     'title': '가계부>카테고리',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_172',
             'category': '가계부',
             'page': '카테고리_11.2_그외카테고리_예산설정후_과거-이번달'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_173',
             'category': '가계부',
             'page': '카테고리_11.2_그외카테고리_예산설정전(공통)-예산후(미래)'

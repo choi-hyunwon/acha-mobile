@@ -146,16 +146,9 @@
     padding:3px 6px;
     border-radius: 6px;
     font-weight: 500;
-    line-height: 1.5;
     max-width: 65px;
     font-family: var(--font2);
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    white-space: initial;
+    vertical-align: baseline;
 
     &.badge-outline-purple{
       position: relative;
@@ -1296,7 +1289,7 @@
         width: 20px;
         height: 20px;
         display: inline-block;
-        vertical-align: sub;
+        vertical-align: middle;
         margin-left: 2px;
       }
       .empty{
@@ -3670,6 +3663,93 @@
       }
     }
 
+    /*카테고리_11.2_그외카테고리_예산설정후_과거-이번달*/
+    .title-category {
+      .title {
+        font-size: 15px;
+        color: #37354c;
+      }
+    }
+    .list-category {
+      margin-bottom: 40px;
+      &-line {
+        .item {
+          border-bottom: 1px solid #efefef;
+        }
+      }
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        .cate {
+          display: flex;
+          align-items: center;
+          .percent {
+            width: 36px;
+            height: 36px;
+            margin-right: 14px;
+            padding: 10px 6px 11px 6px;
+            background-color: #f6edff;
+            font-size: 13px;
+            font-weight: 500;
+            color: #6839d3;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 15px;
+
+          }
+          .img {
+            width: 36px;
+            height: 36px;
+            margin-right: 14px;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .info {
+            display: flex;
+            flex-direction: column;
+            .tit {
+              font-size: 15px;
+              font-weight: bold;
+              color: #37354e;
+            }
+            .desc {
+              font-size: 14px;
+              color: #9b9aa6;
+            }
+          }
+        }
+        .amount {
+          display: flex;
+          align-items: center;
+
+          height: 44px;
+          span {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 500;
+            color: #37354e;
+            text-align: right;
+            &::after{
+              content: '원';
+              font-size: 13px;
+              font-weight: 500;
+              color: #37354e;
+            }
+          }
+
+          i {
+            vertical-align: middle;
+            display: inline-block;
+            margin-top: 2px;
+            margin-left: 5px;
+          };
+        }
+      }
+    }
   }
 
   /*미션*/

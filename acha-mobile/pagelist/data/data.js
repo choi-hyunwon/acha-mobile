@@ -2359,26 +2359,26 @@ data.edit37 = {
     'title': '가계부>지출수단>카드',
     'list': [
         {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_167',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_71',
             'category': '가계부',
             'page': '지출수단_11.3_카드지출_보유카드노출선택'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_168',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_73',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표있음'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_169',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표있음_초과'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_170',
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_75',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표없음'
         },

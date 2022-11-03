@@ -121,6 +121,13 @@ common
   }
 }
 
+
+.min-height-auto {
+  min-height: auto !important;
+}
+
+
+
 caption.visually_hidden {
   position: static;
 }
@@ -128,6 +135,10 @@ caption.visually_hidden {
 .blind {
   font-size: 0;
   color: transparent;
+}
+
+.padding-default {
+  padding: 0 20px;
 }
 
 .no_padding {

@@ -4870,6 +4870,13 @@
       min-height: calc(100vh - 116px);
     }
   }
+  .btn-wrap-block {
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+
+
 
   /**
   user-lock
@@ -4900,12 +4907,15 @@
    */
   .info-data-list {
     padding-top: 20px;
+    &-padding{
+      padding-bottom: 20px;
+    }
     .item {
       margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
       &:last-child{
-        margin-bottom: 0;
+        margin-bottom: 0px;
       }
       .tit {
         font-size: 15px;
@@ -4922,6 +4932,16 @@
           width: 6px;
           height: 16px;
           margin-left: 8px;
+        }
+        input[type="text"] {
+          width: 211px;
+          height: unset;
+          padding: 0;
+          text-align: right;
+          border: none;
+          font-size: 15px;
+          font-family: var(--font2);
+          color: var(--text-01);
         }
       }
       &.item-lg {

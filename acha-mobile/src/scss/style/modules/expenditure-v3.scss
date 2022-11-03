@@ -229,8 +229,31 @@
       height: auto;
     }
   }
+  /**
+  month-range
+   */
+  .month-range {
+    position: relative;
+    height: 40px;
+    .prev{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .next{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .range {
+      font-size: 17px;
+      font-weight: 500;
+      text-align: center;
+      color: #37354e;
+      line-height: 40px;
+    }
 
-
+  }
 
   .regist-story {
     margin: 20px;
@@ -3509,6 +3532,7 @@
     }
 
     /*지출수단_9.13_현금흐름_수입예정_편집*/
+
     .history-income-list {
       position: relative;
       .month {
@@ -3549,6 +3573,98 @@
 
             }
 
+          }
+        }
+      }
+    }
+
+    //지출수단_9.19_현금흐름_조회결과 (1)
+
+    .chart-legend {
+      margin: 30px 0 30px;
+      padding: 20px;
+      border-radius: 4px;
+      background-color: #f7f8fc;
+      ul {
+        li {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #737183;
+            line-height: 24px;
+            position: relative;
+            padding-left: 30px;
+            &::before {
+              content: '';
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              margin-right: 8px;
+              background-color: #7c4ce8;
+              position: absolute;
+              top: 1px;
+              left: 0;
+            }
+            &.color-2::before {
+              background-color: #ece5fc;
+            }
+            &.color-3::before {
+              background: transparent url("../../img/common/ico-chart-legend.png") no-repeat center center;
+              background-size: 100% auto;
+            }
+
+          }
+          em {
+            font-family: var(--font4);
+            font-size: 16px;
+            font-weight: 500;
+            color: #37354e;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+
+    .simulator-box {
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        .name {
+          display: flex;
+          flex-direction: column;
+          .tit {
+            font-size: 15px;
+            font-weight: 500;
+            color: #37354e;
+          }
+          .date {
+            font-size: 14px;
+            color: #9b9aa6;
+          }
+        }
+        .amount {
+          display: flex;
+          flex-direction: column;
+          > span {
+            font-size: 18px;
+            font-weight: 500;
+            color: #37354e;
+            text-align: right;
+          }
+          .balance {
+            font-size: 14px;
+            color: #9b9aa6;
+            font-family: var(--font4);
           }
         }
       }
@@ -4491,28 +4607,7 @@
         }
       }
     }
-    .month-range {
-      position: relative;
-      height: 40px;
-      .prev{
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      .next{
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .range {
-        font-size: 17px;
-        font-weight: 500;
-        text-align: center;
-        color: #37354e;
-        line-height: 40px;
-      }
 
-    }
     .btn-wrap {
       padding-top: 20px;
     }

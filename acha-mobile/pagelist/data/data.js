@@ -2292,49 +2292,49 @@ data.edit35 = {
             'page': '지출수단_9.2_계좌지출Tab_내역이있는경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_158',
             'category': '가계부',
             'page': '지출수단_9.5_현금흐름Tab_내역이없는경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_159',
             'category': '가계부',
             'page': '지출수단_9.5_현금흐름Tab_내역이있는경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_160',
             'category': '가계부',
             'page': '지출수단_9.13_현금흐름_수입예정_편집'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_161',
             'category': '가계부',
             'page': '지출수단_9.13_현금흐름_수입예정_편집_내역없음'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_162',
             'category': '가계부',
             'page': '지출수단_9.16_현금흐름_지출편집'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_163',
             'category': '가계부',
             'page': '지출수단_9.16_현금흐름_지출편집_내역없음'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_164',
             'category': '가계부',
             'page': '지출수단_9.19_현금흐름_조회결과 (1) '
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_165',
             'category': '가계부',
             'page': '지출수단_9.19_현금흐름_조회결과 (2)'

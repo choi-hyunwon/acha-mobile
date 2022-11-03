@@ -77,8 +77,13 @@ common
 }
 
 .f-point {
-  color: var(--color-point);
+  color: var(--color-point) !important;
 }
+
+.f-point-pink {
+  color: var(--color-point-secondary) !important;
+}
+
 .f-01 {
   color: var(--text-01);
 }

@@ -199,7 +199,7 @@
   text-description
    */
   .text-descriptiton {
-    padding: 30px 20px;
+    padding: 30px 20px 0 ;
     .title{
       font-size: 18px;
       color: #37354e;
@@ -335,6 +335,7 @@
     }
   }
   .btn-wrap {
+    margin-bottom: 20px;
     &.btn-wrap-block {
       .btn {
         margin-bottom: 10px;
@@ -1320,7 +1321,7 @@
     }
     .expenditure-box{
 
-      .empty{
+      /*.empty{
         position: relative;
         height: calc(100vh - 207px);
         padding-bottom: 80px;
@@ -1351,7 +1352,7 @@
         &.mission-area{
           min-height: calc(100vh - 116px);
         }
-      }
+      }*/
 
       .description{
         font-size: 15px;
@@ -3516,7 +3517,7 @@
 
     /*지출수단_9.5_현금흐름Tab_내역이없는경우*/
     .range-list {
-      padding: 30px 0;
+      padding: 0 0 30px 0;
       .scope {
         display: flex;
         justify-content: space-between;
@@ -3602,7 +3603,7 @@
     //지출수단_9.19_현금흐름_조회결과 (1)
 
     .chart-legend {
-      margin: 30px 0 30px;
+      margin: 30px 0 0 0;
       padding: 20px;
       border-radius: 4px;
       background-color: #f7f8fc;
@@ -3659,7 +3660,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
+        height: 50px;
+        margin-bottom: 30px;
         .name {
           display: flex;
           flex-direction: column;
@@ -3693,6 +3695,7 @@
 
     /*카테고리_11.2_그외카테고리_예산설정후_과거-이번달*/
     .title-category {
+      margin-bottom: 15px;
       .title {
         font-size: 15px;
         color: #37354c;
@@ -4479,7 +4482,7 @@
    * 가계부 > 지출 > 리포트
    */
   .amount-wrap {
-    padding: 30px 20px;
+    padding: 30px 20px 10px;
     .bar-graph {
       display: block;
       position: relative;
@@ -4664,7 +4667,9 @@
             top: 100px;
             width: 100%;
             height: 1px;
-            border-bottom: 1px dotted #9b9aa6;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25'  xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='2' stroke-dasharray='4' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+            background-repeat: repeat-x;
+            opacity: 0.5;
           }
         }
         >div {

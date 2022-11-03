@@ -2492,7 +2492,7 @@ data.edit38 = {
             'page': '카테고리_11.10_상세_예산후_예산 대비 지출 그래프'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_188',
             'category': '가계부',
             'page': '카테고리_11.11_상세_예산후_직접생성한변동지출_카테고리명변경'

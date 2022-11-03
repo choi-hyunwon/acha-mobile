@@ -2420,7 +2420,7 @@ data.edit38 = {
             'page': '카테고리_11.4._상세_예산전-이번달'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_176',
             'category': '가계부',
             'page': '카테고리_11.4_상세_지출예산설정_이번달'
@@ -2432,7 +2432,7 @@ data.edit38 = {
             'page': '카테고리_11.5_상세_예산전-과거'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_178',
             'category': '가계부',
             'page': '카테고리_11.5_상세_지출예산설정_과거'
@@ -2444,7 +2444,7 @@ data.edit38 = {
             'page': '카테고리_11.6._상세_예산전-미래'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_180',
             'category': '가계부',
             'page': '카테고리_11.6_상세_지출예산설정_미래'

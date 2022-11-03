@@ -4528,6 +4528,7 @@
       }
     }
     .amount-list {
+      margin-bottom: 20px;
       .title {
         display: flex;
         justify-content: space-between;
@@ -4579,6 +4580,16 @@
               font-weight: bold;
               color: var(--text-01);
             }
+          }
+          .memo {
+            width: 100%;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.47;
+            color: #37354e;
+            font-family: var(--font1);
+            border-bottom: 1px solid #efefef;
+            padding: 15px 0;
           }
           &-form {
             margin-top: -10px;

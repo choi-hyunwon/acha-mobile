@@ -134,7 +134,7 @@
                     labels: ['1', '2', '3', '4', '5'],
                     datasets: [{
                         label: '현금흐름',
-                        data: [1000000,600000,900000,1000000,800000],
+                        data: [500000,600000,900000,1000000,800000],
                         borderColor: '#9e99b2',
                         backgroundColor: 'transparent',
                         borderWidth:1,
@@ -144,9 +144,17 @@
                         pointRadius: 5,
                         pointBorderWidth:3,
                         pointBackgroundColor: '#ffffff',
+                        font: {
+                            size: 12,
+                            weight: 'bold',
+                        },
                         datalabels: {
                             align: 'end',
-                            anchor: 'end'
+                            anchor: 'end',
+                            formatter: function(value, context) {
+                                //number to money 1000 comma
+                                return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                            }
                         },
 
                     }]

@@ -2383,7 +2383,7 @@ data.edit37 = {
             'page': '지출수단_11.4_카드별지출_카드상세_목표없음'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_171',
             'category': '가계부',
             'page': '지출수단_11.8_카드명세서_결제예정금액_상세'
@@ -2426,7 +2426,7 @@ data.edit38 = {
             'page': '카테고리_11.4_상세_지출예산설정_이번달'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_177',
             'category': '가계부',
             'page': '카테고리_11.5_상세_예산전-과거'
@@ -2438,7 +2438,7 @@ data.edit38 = {
             'page': '카테고리_11.5_상세_지출예산설정_과거'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_179',
             'category': '가계부',
             'page': '카테고리_11.6._상세_예산전-미래'
@@ -2450,43 +2450,43 @@ data.edit38 = {
             'page': '카테고리_11.6_상세_지출예산설정_미래'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_181',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산O_지출O'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_182',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산O_지출O_초과'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_183',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산X_지출O'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_184',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산0원_지출O '
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_185',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산0원_지출0원'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_186',
             'category': '가계부',
             'page': '카테고리_11.11_상세_예산후_직접생성한변동지출_지출예산O_지출O'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_187',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_예산 대비 지출 그래프'

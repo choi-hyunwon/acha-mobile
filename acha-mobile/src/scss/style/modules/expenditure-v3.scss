@@ -55,6 +55,14 @@
     margin-bottom: 3px;
   }
 
+  .icon-edit{
+    background: url("../../img/common/expenditure/ic_my_register@2x.png") no-repeat center center/contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
   /**
   icon
    */
@@ -1311,14 +1319,7 @@
       }
     }
     .expenditure-box{
-      .icon-edit{
-        background: url("../../img/common/expenditure/ic_my_register@2x.png") no-repeat center center/contain;
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 2px;
-      }
+
       .empty{
         position: relative;
         height: calc(100vh - 207px);
@@ -4483,10 +4484,10 @@
       display: block;
       position: relative;
       width: 100%;
-      height: 26px;
+      height: 30px;
       border-radius: 13px;
       background-color: #f5f6f8;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       >.percent{
         position: absolute;
         left: 8px;
@@ -4715,10 +4716,6 @@
       }
     }
 
-    .btn-wrap {
-      padding-top: 20px;
-    }
-
     .description-box {
       height: 50px;
       padding: 15px 20px;
@@ -4730,6 +4727,15 @@
         color: #737183;
       }
     }
+    .memo-box {
+      padding: 0 20px;
+      border-radius: 10px;
+      span {
+        font-size: 14px;
+        color: #737183;
+      }
+    }
+
   }
   /**
    * 2022.10.18

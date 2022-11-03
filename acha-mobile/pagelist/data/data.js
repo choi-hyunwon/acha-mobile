@@ -2408,13 +2408,13 @@ data.edit38 = {
             'page': '카테고리_11.2_그외카테고리_예산설정전(공통)-예산후(미래)'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_174',
             'category': '가계부',
             'page': '카테고리_11.3_카테고리편집'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_175',
             'category': '가계부',
             'page': '카테고리_11.4._상세_예산전-이번달'

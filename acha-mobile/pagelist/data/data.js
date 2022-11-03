@@ -2280,13 +2280,13 @@ data.edit35 = {
     'title': '가계부>지출수단>계좌',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_156',
             'category': '가계부',
             'page': '지출수단_9.1_계좌_내역이없는경우_계좌지출Tab'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_157',
             'category': '가계부',
             'page': '지출수단_9.2_계좌지출Tab_내역이있는경우'

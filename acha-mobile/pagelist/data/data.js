@@ -2238,6 +2238,12 @@ data.edit34 = {
             'category': '가계부',
             'page': '리포트_3.1_데이터없는경우_미래'
         },
+        {
+            'stateClass': 'complete',
+            'url': 'v3_expenditure_153',
+            'category': '가계부',
+            'page': '리포트_3.1_리포트_상세_남은돈그래프'
+        },
     ]
 };
 data.edit345 = {

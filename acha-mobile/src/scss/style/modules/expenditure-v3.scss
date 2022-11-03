@@ -43,6 +43,17 @@
     }
   }
 
+  /**
+  icon-arrow-bottom
+   */
+  .icon-arrow-bottom {
+    background: url("../../img/common/btn_title_month@2x.png") no-repeat center center / contain;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 3px;
+  }
 
   /**
   btn-setting
@@ -86,6 +97,11 @@
         font-family: var(--font1);
         color: var(--text-01);
         margin-bottom: 4px;
+        a {
+          font-size: 18px;
+          font-weight: 500;
+          color: #37354e;
+        }
       }
       .amount{
         font-size: 30px;
@@ -4817,17 +4833,7 @@
       display: inline-block;
       vertical-align: middle;
     }
-    /**
-      icon-arrow-bottom
-       */
-    .icon-arrow-bottom {
-      background: url("../../img/common/btn_title_month@2x.png") no-repeat center center / contain;
-      width: 18px;
-      height: 18px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-bottom: 3px;
-    }
+
   }
 
   /**

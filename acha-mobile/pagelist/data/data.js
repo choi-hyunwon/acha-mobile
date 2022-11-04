@@ -2102,6 +2102,13 @@ data.edit32 = {
         },
         {
             'stateClass': 'complete',
+            'url': 'v3_expenditure_135_guide',
+            'category': '가계부',
+            'page': '캘린더_15.1_메인_지출내역_카드_케이스별정리'
+        },
+
+        {
+            'stateClass': 'complete',
             'url': 'v3_expenditure_136',
             'category': '가계부',
             'page': '캘린더_15.1_메인_내역이없는경우'

@@ -4965,7 +4965,7 @@
               font-size: 12px;
               color: #737183;
               display: block;
-              margin-bottom: 15px;
+              margin-bottom: 10px;
               em {
                 height: 10px;
                 display: inline-block;
@@ -4981,14 +4981,50 @@
                 color: #37354e;
                 font-weight: bold;
               }
+              .emotion {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 26px;
+                height: 26px;
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+            .desc {
+              padding-top: 14px;
+              font-size: 14px;
+              color: #37354e;
             }
             .tag {
               color: #9b9aa6;
               font-size: 14px;
               line-height: 1.5;
             }
-            //empty
+            .swiper-container {
+              padding-top: 14px;
+              .img-area {
+                img{
+                width: 100%;
+                height: auto;
+                }
 
+                padding-bottom: 30px;
+              }
+              .swiper-pagination-bullet{
+                width: 6px;
+                height: 6px;
+                background-color: #afaeb8;
+                opacity: 1;
+
+                &-active {
+                  background-color: #6839d3;
+
+                }
+              }
+            }
           }
         }
 

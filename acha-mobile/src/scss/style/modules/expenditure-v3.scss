@@ -1987,9 +1987,13 @@
                   .box{
                     .img{
                       vertical-align: middle;
+                      &+.info {
+                        max-width: calc(100vw - 95px);
+                      }
                     }
                     .info{
                       vertical-align: middle;
+
                       .category{
                         font-size: 16px;
                         .badge{

@@ -2422,7 +2422,7 @@ data.edit38 = {
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_174',
+            'url': 'v3_expenditure_16',
             'category': '가계부',
             'page': '카테고리_11.3_카테고리편집'
         },

@@ -1290,6 +1290,53 @@
     }
   }
 
+  .accordion {
+    position: relative;
+    border-top: 1px solid #efefef;
+    border-bottom: none;
+    .item {
+      .title {
+        border-bottom: 1px solid #efefef;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        color: #37354c;
+        font-family: var(--font3);
+        position: relative;
+        &::after {
+          display: inline-block;
+          content: '';
+          width: 20px;
+          height: 20px;
+          background-image: url(../../img/common/btn_accordian_main_down@2x.png);
+          background-size: cover;
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%) rotate(0deg);
+        }
+        &.on {
+          &::after {
+            transform : translateY(-50%) rotate(180deg);
+
+          }
+          &+.desc {
+            display: block;
+          }
+        }
+      }
+      .desc{
+        display: none;
+        padding: 20px 0;
+        border-bottom: 1px solid #efefef;
+        font-size: 14px;
+        color: #737183;
+      }
+
+    }
+  }
+
   .manage-footer {
     padding: 20px;
     .box{

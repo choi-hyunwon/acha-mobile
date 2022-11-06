@@ -2524,7 +2524,7 @@ data.edit39 = {
     'title': '공동관리>연결/설정',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_52',
             'category': '가계부',
             'page': '04_1.1_공동관리메인_도움말'
@@ -2596,7 +2596,7 @@ data.edit39 = {
             'page': '04_10.4_공동관리끊기'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_64',
             'category': '가계부',
             'page': '04_3.1_공동지출관리_1_시작'

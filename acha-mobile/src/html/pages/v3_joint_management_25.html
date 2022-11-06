@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">내 공동관리 설정</h2>
+    </div>
+    <div class="contents expenditure">
+
+        <div class="share-manage">
+            <div class="users">
+                <span class="me">
+                    <img src="../../img/management/ico_mypage_profile_img01@2x.png" width="40" alt="user1">
+                </span>
+                <span>
+                    <img src="../../img/management/ico_mypage_profile_img03@2x.png" width="40" alt="user1">
+                </span>
+            </div>
+            <div class="name">
+                <span class="title">유똑똑<em>(Host)</em></span>
+                <span class="desc">데이터업데이트 4일 전</span>
+            </div>
+        </div>
+
+
+        <div class="expenditure-tab _expenditureTab">
+            <ul class="clearfix">
+                <li><a href="#">공동지출</a></li>
+                <li class="active"><a href="#">계좌</a></li>
+                <li><a href="#">카드</a></li>
+            </ul>
+            <a href="#" class="btn btn-edit">편집</a>
+        </div>
+        <div class="divider"></div>
+        <div class="expenditure-box">
+            <div class="empty" style="height: 500px;">
+                <p class="txt"><img src="../../img/common/ico-error-main.svg" style="width: 12px;height: 12px;"> 표시할 데이터가 없습니다 🙁</p>
+            </div>
+        </div>
+        <div class="manage-footer bg_light_gray">
+            <div class="box p-0">
+                <select title="category">
+                    <option value="" selected>공동관리 유의사항</option>
+                    <option value="" selected>공동관리 유의사항</option>
+                    <option value="" selected>공동관리 유의사항</option>
+                </select>
+            </div>
+            <p class="desc">준법감시인 심의필 20-330 (2020.11.17~2021.11.16)</p>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

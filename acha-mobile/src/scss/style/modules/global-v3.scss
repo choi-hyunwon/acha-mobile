@@ -41,6 +41,15 @@
   /**
   icon-arrow-bottom
    */
+  .ico-refresh-mini {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../img/common/ico-refresh-mini@2x.png);
+    background-size: cover;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
   .icon-arrow-bottom {
     background: url("../../img/common/btn_title_month@2x.png") no-repeat center center / contain;
     width: 18px;
@@ -191,6 +200,22 @@
     }
   }
 
+  .justify-content-between {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .check-list {
+    height: 36px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 15px;
+      color: #37354e;
+      vertical-align: middle;
+    }
+  }
 
 }
 

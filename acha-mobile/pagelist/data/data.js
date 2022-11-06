@@ -1653,43 +1653,37 @@ data.edit24 = {
             'page': '04_1.4_연결취소'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_21',
             'category': '공동관리',
             'page': '04_1.5_약관동의'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_22',
-            'category': '공동관리',
-            'page': '04_1.5_약관동의_약관상세'
-        },
-        {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_23',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_61',
             'category': '공동관리',
             'page': '04_10.1_공동관리설정_ME'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_24',
             'category': '공동관리',
             'page': '04_10.3_공동관리설정_데이터없는 경우_공동'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_25',
             'category': '공동관리',
             'page': '04_10.3_공동관리설정_데이터없는 경우_계좌'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_26',
             'category': '공동관리',
             'page': '04_10.3_공동관리설정_YOU'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_27',
             'category': '공동관리',
             'page': '04_10.2_공동관리설정_ME_데이터편집'
@@ -2536,38 +2530,38 @@ data.edit39 = {
             'page': '04_1.1_공동관리메인_도움말'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_53',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_12',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_1_번호입력_입력전'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_54',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_14',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_3_이름입력'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_55',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_15',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_4_초대완료'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_56',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_18',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_8_연결확인'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_57',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_19',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_9_초대거절'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_58',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_21',
             'category': '가계부',
             'page': '04_1.5_약관동의'
         },
@@ -2584,20 +2578,20 @@ data.edit39 = {
             'page': '04_1.5_약관동의_개인정보의제3자제공동의'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_61',
             'category': '가계부',
             'page': '04_10.1_공동관리설정_ME'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_62',
             'category': '가계부',
             'page': '04_10.1_공동관리설정_ME_유의사항'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_63',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_32',
             'category': '가계부',
             'page': '04_10.4_공동관리끊기'
         },
@@ -2683,8 +2677,8 @@ data.edit40 = {
     'title': '공동관리>공동지출/계좌/카드/지출스토리',
     'list': [
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_76',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_39',
             'category': '가계부',
             'page': '04_5.2_공동지출관리메인_데이터유'
         },
@@ -2740,26 +2734,26 @@ data.edit41 = {
     'title': '공동관리>미션',
     'list': [
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_84',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_popup_01',
             'category': '가계부',
             'page': '04_9.2_미션추가_데이터없을경우'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_85',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_07',
             'category': '가계부',
             'page': '04_9.2_미션추가_1_무지출'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_86',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_08',
             'category': '가계부',
             'page': '04_9.2_미션추가_2_카드사용줄이기'
         },
         {
-            'stateClass': 'working',
-            'url': 'v3_joint_management_87',
+            'stateClass': 'complete',
+            'url': 'v3_joint_management_09',
             'category': '가계부',
             'page': '04_9.2_미션추가_3_커피값줄이기'
         },

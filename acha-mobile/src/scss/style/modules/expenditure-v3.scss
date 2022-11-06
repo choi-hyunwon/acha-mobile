@@ -1308,6 +1308,7 @@
                   .info{
                     display: inline-block;
                     position: relative;
+
                     &.info-line {
                       line-height: 44px;
                     }
@@ -1532,8 +1533,17 @@
                 .item-list{
                   padding: 9px 0;
                   align-items: center;
+                  &.sub-category{
+                    font-size: 14px;
+                    color: #9b9aa6;
+                  }
+                  &.desc {
+                    font-size: 14px;
+                    color: #9b9aa6;
+                  }
                   .box{
                     display: flex;
+                    align-items: center;
                     .title-category{
                       border-bottom: 0;
                     }

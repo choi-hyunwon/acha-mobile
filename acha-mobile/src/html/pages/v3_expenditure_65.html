@@ -11,91 +11,26 @@
         <div class="expenditure-box simulation-result">
             <div class="simulation">
                 <p class="info-title"><span class="color-red">잔고가 부족한 상황이 예측됩니다.</span><br>미리 준비해서 지출 미납에 대비하세요😲</p>
-                <div class="chart">
-                    <div class="swiper-container _slider">
-                        <div class="swiper-btn">
-                            <div class="swiper-button swiper-button-prev"></div>
-                            <div class="swiper-button swiper-button-next"></div>
+                <div class="amount-wrap">
+                    <div class="month-range">
+                        <div class="prev"><a href="#"><img src="../../img/common/btn_graph_back@2x.png" width="40" alt="prev"></a></div>
+                        <div class="range">현금흐름</div>
+                        <div class="next"><a href="#"><img src="../../img/common/btn_graph_forward@2x.png" width="40" alt="prev"></a></div>
+                    </div>
+                    <div class="graph">
+                        <div class="stick" style="height: 200px;">
+                            <div style="height: 40px; top:160px;"><span class="text">140</span></div>
+                            <div style="height: 20px; top:180px;"><span class="text">124</span></div>
+                            <div style="height: 80px; top:120px;"><span class="text">190</span></div>
+                            <div class="minus" style="height: 120px; top:80px;"><span class="text">210</span></div>
+                            <div class="active" style="height: 100px; top:100px;"><span class="text">185</span></div>
                         </div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    현금흐름
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas1"></canvas>
-
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">11월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">12월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">1월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">2월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">3월</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    2022년 4월 - 8월
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas2"></canvas>
-
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">4월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">5월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month active">6월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">7월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">8월</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    2022년 9월 - 2023년 1월
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas3"></canvas>
-
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">9월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">10월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month active">11월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">12월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">1월</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="month">
+                            <em>6월</em>
+                            <em>7월</em>
+                            <em>8월</em>
+                            <em>9월</em>
+                            <em>10월</em>
                         </div>
                     </div>
                 </div>

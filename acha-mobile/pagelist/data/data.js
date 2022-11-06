@@ -784,7 +784,7 @@ data.edit11 = {
             'page': '지출_3.1_지출플랜_내역이없는경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_40',
             'category': '가계부',
             'page': '지출_3.2_지출플랜_내역이있는경우'
@@ -973,13 +973,13 @@ data.edit13 = {
             'page': '지출수단_9.16_현금흐름_지출편집_내역없음'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_64',
             'category': '가계부',
             'page': '지출수단_9.19_현금흐름_조회결과 (1) '
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_expenditure_65',
             'category': '가계부',
             'page': '지출수단_9.19_현금흐름_조회결과 (2)'
@@ -1118,24 +1118,24 @@ data.edit16 = {
 data.edit17 = {
     'title': '가계부>수입',
     'list': [
-        {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_85',
-            'category': '가계부',
-            'page': '수입_13.2_이번달 남은 돈'
-        },
-        {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_86',
-            'category': '가계부',
-            'page': '수입_13.2_수입'
-        },
-        {
-            'stateClass': 'working',
-            'url': 'v3_expenditure_87',
-            'category': '가계부',
-            'page': '수입_13.4_수입계획'
-        },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': 'v3_expenditure_85',
+        //     'category': '가계부',
+        //     'page': '수입_13.2_이번달 남은 돈'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': 'v3_expenditure_86',
+        //     'category': '가계부',
+        //     'page': '수입_13.2_수입'
+        // },
+        // {
+        //     'stateClass': 'complete',
+        //     'url': 'v3_expenditure_87',
+        //     'category': '가계부',
+        //     'page': '수입_13.4_수입계획'
+        // },
         {
             'stateClass': 'complete',
             'url': 'v3_expenditure_88',
@@ -2898,13 +2898,13 @@ data.edit43 = {
     'title': '공동관리>연결/설정',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_103',
             'category': '가계부',
             'page': '04_2.1_상대방회원정보가없을때'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_104',
             'category': '가계부',
             'page': '04_3.1_상대방휴면계정예정'

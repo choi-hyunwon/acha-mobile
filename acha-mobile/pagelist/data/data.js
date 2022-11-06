@@ -1587,19 +1587,19 @@ data.edit24 = {
     'title': '공동관리>연결/설정',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_10',
             'category': '공동관리',
             'page': '04_1.1_공동관리메인'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_11',
             'category': '공동관리',
-            'page': '04_1.2_공동관리메인_연결방식선택'
+            'page': '04_1.3_SMS메시지_1_번호입력_입력후'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_12',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_1_번호입력_입력전'
@@ -1608,16 +1608,16 @@ data.edit24 = {
             'stateClass': 'working',
             'url': 'v3_joint_management_13',
             'category': '공동관리',
-            'page': '04_1.3_SMS메시지_1_번호입력_입력후'
+            'page': '04_1.2_공동관리메인_연결방식선택'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_14',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_3_이름입력'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_15',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_4_초대완료'
@@ -1629,13 +1629,13 @@ data.edit24 = {
             'page': '04_1.3_SMS메시지_6_초대취소'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_17',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_7_초대장'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_18',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_8_연결확인'
@@ -1719,7 +1719,7 @@ data.edit24 = {
             'page': '04_10.2_공동관리설정_ME_데이터편집_데이터범위변경'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_32',
             'category': '공동관리',
             'page': '04_10.4_공동관리끊기'

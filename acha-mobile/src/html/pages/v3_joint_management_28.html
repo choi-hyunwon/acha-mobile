@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal-slide modal-my-data _modalSlide">
+    <div class="modal-slide-content" style="height: 244px; animation: modal-sticky-bottom-animation6 .5s;">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title _btnSlideOpen"><span class="name">최종 변경 사항을 저장</span>하시겠어요?</div>
+            <div class="desc-box">
+                <p>공동 관리에서 보여지는 데이터가 변경되어 보여지게 됩니다. 시간이 다소 소요될 수 있어요 🙂</p>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">닫기</a>
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">적용하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

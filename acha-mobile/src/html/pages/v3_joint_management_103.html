@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal-slide modal-my-data _modalSlide">
+    <div class="modal-slide-content" style="height: 305px; animation: modal-sticky-bottom-animation3 .5s;">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title _btnSlideOpen"><span class="name">상대방의 정보</span>를 찾을 수 없습니다</div>
+            <div class="desc-box">
+                <p>U플래너 서비스에 탈퇴하였거나 휴면 고객으로 전환되었을 수 있어요<br>
+                    <br>
+                    아쉽게도 더 이상 공동관리  이용이 불가합니다<br>
+                    다음 기회에 또 이용해주세요.🙂</p>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-purple-bg" onclick="openPopup()">확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

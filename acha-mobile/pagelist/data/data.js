@@ -1605,7 +1605,7 @@ data.edit24 = {
             'page': '04_1.3_SMS메시지_1_번호입력_입력전'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_13',
             'category': '공동관리',
             'page': '04_1.2_공동관리메인_연결방식선택'
@@ -2572,13 +2572,13 @@ data.edit39 = {
             'page': '04_1.5_약관동의'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_59',
             'category': '가계부',
             'page': '04_1.5_약관동의_공동관리서비스이용약관'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_60',
             'category': '가계부',
             'page': '04_1.5_약관동의_개인정보의제3자제공동의'
@@ -2830,13 +2830,14 @@ data.edit41 = {
             'page': '04_9.3_미션상세_커피값줄이기_종료'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_99',
             'category': '가계부',
             'page': '04_9.3_미션상세_커피값줄이기_대결종료'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_100',
             'category': '가계부',
             'page': '04_9.3_미션상세_데어터업데이트진행되지않은경우'

@@ -6,6 +6,46 @@
   position: fixed;
 }
 
+.connect-choice {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  >a {
+    width: 150px;
+    height: 150px;
+    border: solid 1px #efefef;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 10px;
+    display: block;
+    &:first-child {
+      margin-right: 15px;
+    }
+    .img {
+      width: 94px;
+      margin: 0 auto 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .comment {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+      color: #737183;
+    }
+    .name {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      color: #000;
+      font-weight: bold;
+      font-family: var(--font3);
+    }
+  }
+}
+
+
 .popup_wrap {
   .contents {
     padding: 10px 20px;

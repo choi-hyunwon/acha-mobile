@@ -1623,7 +1623,7 @@ data.edit24 = {
             'page': '04_1.3_SMS메시지_4_초대완료'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_16',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_6_초대취소'
@@ -1641,13 +1641,13 @@ data.edit24 = {
             'page': '04_1.3_SMS메시지_8_연결확인'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_19',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_9_초대거절'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_20',
             'category': '공동관리',
             'page': '04_1.4_연결취소'
@@ -1695,25 +1695,25 @@ data.edit24 = {
             'page': '04_10.2_공동관리설정_ME_데이터편집'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_28',
             'category': '공동관리',
             'page': '04_10.2_공동관리설정_ME_데이터편집_변경확인'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_29',
             'category': '공동관리',
             'page': '04_10.2_공동관리설정_ME_데이터편집_데이터선택변경_선택'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_30',
             'category': '공동관리',
             'page': '04_10.2_공동관리설정_ME_데이터편집_데이터선택변경_해제'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_31',
             'category': '공동관리',
             'page': '04_10.2_공동관리설정_ME_데이터편집_데이터범위변경'

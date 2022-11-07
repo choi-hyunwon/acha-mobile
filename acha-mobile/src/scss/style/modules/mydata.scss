@@ -1184,6 +1184,9 @@
           border-top: 2px solid var(--text-01);
           padding:22px 10px 12px;
           margin-bottom: 20px;
+          height: auto;
+          display: block;
+          align-items: initial;
           .item{
             margin-bottom: 14px;
             &:last-of-type{

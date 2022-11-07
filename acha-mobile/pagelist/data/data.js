@@ -2683,25 +2683,25 @@ data.edit40 = {
             'page': '04_5.2_공동지출관리메인_데이터유'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_77',
             'category': '가계부',
             'page': '04_6.1_같이보는계좌메인_데이터없을경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_78',
             'category': '가계부',
             'page': '04_7.1_같이보는카드메인_데이터없을때'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_79',
             'category': '가계부',
             'page': '04_8.1_지출스토리메인_데이터무'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_80',
             'category': '가계부',
             'page': '04_8.2_지출스토리메인_데이터유'

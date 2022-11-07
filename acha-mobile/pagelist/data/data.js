@@ -2707,7 +2707,7 @@ data.edit40 = {
             'page': '04_8.2_지출스토리메인_데이터유'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_81',
             'category': '가계부',
             'page': '04_8.1_같이보는지출스토리_스토리없음'
@@ -2719,7 +2719,7 @@ data.edit40 = {
             'page': '04_8.2_같이보는지출스토리'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_83',
             'category': '가계부',
             'page': '04_8.3_지출스토리설정'

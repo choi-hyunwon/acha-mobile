@@ -36,6 +36,46 @@
         font-size: 16px;
       }
     }
+    .key-comment {
+      font-size: 18px;
+      font-family: var(--font2);
+      color: #1093c4;
+      &-two {
+        color: #515996;
+      }
+      &-three {
+        color: #b059c4;
+      }
+
+    }
+    .text-list {
+      position: relative;
+      dt {
+        padding-left: 10px;
+        font-size: 16px;
+        color: #37354e;
+        font-family: var(--font2);
+        margin-bottom: 2px;
+        margin-top: 30px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: #37354e;
+          transform: translateY(-50%);
+        }
+      }
+      dd {
+        padding-left: 10px;
+        font-size: 14px;
+        color: #737183;
+      }
+    }
   }
 
   /**
@@ -216,6 +256,77 @@
       vertical-align: middle;
     }
   }
+
+  /**
+  empty
+   */
+  .empty{
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+
+    &-sm {
+      height: 125px !important;
+      padding-bottom: 0 !important;
+    }
+    img{
+      width: 42px;
+      height: 42px;
+    }
+    >p{
+      padding-top: 10px;
+      font-size: 14px;
+      color: var(--text-02);
+      text-align: center;
+    }
+    .description{
+      position: absolute;
+      top: 20px;
+      width: calc(100% - 40px);
+    }
+
+    &.means-account{
+      height: calc(100vh - 234px);
+      padding: 0;
+    }
+    &.mission-area{
+      min-height: calc(100vh - 116px);
+    }
+  }
+  /**
+  btn-wrap
+   */
+  .btn-wrap {
+    &.btn-wrap-block {
+      .btn {
+        margin-bottom: 10px;
+      }
+    }
+    &.bottom-fixed{
+      width: 100%;
+      position: fixed;
+      left: 0;
+      z-index: 5;
+      padding: 0 20px;
+      bottom: 0;
+      background: #fff;
+      height: 80px;
+    }
+
+    &.btn-inline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .btn {
+        width: calc(50% - 4px);
+      }
+    }
+  }
+
 
 }
 

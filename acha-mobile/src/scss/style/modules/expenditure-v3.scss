@@ -16,6 +16,17 @@
       }
     }
 
+    .btn-close {
+      position: absolute;
+      display: inline-block;
+      top: 20px;
+      right: 16px;
+      width: 26px;
+      height: 26px;
+      background-image: url(../../img/sprite/common/btn_popup_close@2x.png);
+      background-size: cover;
+    }
+
     .sum-area {
       position: absolute;
       top: 0px;
@@ -129,65 +140,6 @@
     }
 
   }
-
-  /**
-  empty
-   */
-  .empty{
-    position: relative;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0;
-
-    &-sm {
-      height: 125px !important;
-      padding-bottom: 0 !important;
-    }
-    img{
-      width: 42px;
-      height: 42px;
-    }
-    >p{
-      padding-top: 10px;
-      font-size: 14px;
-      color: var(--text-02);
-      text-align: center;
-    }
-    .description{
-      position: absolute;
-      top: 20px;
-      width: calc(100% - 40px);
-    }
-
-    &.means-account{
-      height: calc(100vh - 234px);
-      padding: 0;
-    }
-    &.mission-area{
-      min-height: calc(100vh - 116px);
-    }
-  }
-  .btn-wrap {
-    &.btn-wrap-block {
-      .btn {
-        margin-bottom: 10px;
-      }
-    }
-    &.bottom-fixed{
-      width: 100%;
-      position: fixed;
-      left: 0;
-      z-index: 5;
-      padding: 0 20px;
-      bottom: 0;
-      background: #fff;
-      height: 80px;
-    }
-  }
-
 
 
 
@@ -1357,6 +1309,7 @@
                         }
                       }
                     }
+
                   }
                   
 
@@ -1391,6 +1344,11 @@
                     }
                   }
                 }
+                label {
+                  vertical-align: middle;
+                  margin-left: 5px;
+                }
+
               }
               .hashtag{
                 font-size: 12px;

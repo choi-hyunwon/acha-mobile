@@ -2602,67 +2602,67 @@ data.edit39 = {
             'page': '04_3.1_공동지출관리_1_시작'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_65',
             'category': '가계부',
             'page': '04_3.1_공동지출관리_마이데이터연결유_2_데이터선택'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_66',
             'category': '가계부',
             'page': '04_3.1_공동지출관리_마이데이터연결유_2_데이터범위선택'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_67',
             'category': '가계부',
             'page': '04_3.1_공동지출관리_마이데이터연결유_2_보드오픈완료'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_68',
             'category': '가계부',
             'page': '04_3.1_공동지출관리_마이데이터연결무'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_69',
             'category': '가계부',
             'page': '04_3.1_공동지출관리_표시목록없을경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_70',
             'category': '가계부',
             'page': '04_3.2_계좌공유_1_시작'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_71',
             'category': '가계부',
             'page': '04_3.2_계좌공유_2_데이터선택'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_72',
             'category': '가계부',
             'page': '04_3.2_계좌공유_마이데이터연결유_2_보드오픈완료'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_73',
             'category': '가계부',
             'page': '04_3.3_카드공유_1_시작'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_74',
             'category': '가계부',
             'page': '04_3.3_카드공유_2_데이터선택'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_75',
             'category': '가계부',
             'page': '04_3.3_카드공유_마이데이터연결유_2_보드오픈완료 '

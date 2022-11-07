@@ -805,16 +805,6 @@
         }
       }
 
-      &.btn-inline {
-        padding: 0 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .btn {
-          width: calc(50% - 4px);
-        }
-      }
     }
 
 
@@ -1159,6 +1149,13 @@
       }
     }
 
+    &-reverse {
+      >div {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
 
   }
 
@@ -1396,4 +1393,109 @@
     }
   }
 
+
+  /**
+  04_3.1_공동지출관리_1_시작
+   */
+
+  .share-spend-money {
+    .box-key {
+      height: 96px;
+      padding: 20px;
+      background-color: #2a99c3;
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      justify-content: center;
+      &-two {
+        background-color: #5863b1;
+      }
+      &-three {
+        background-color: #b556cb;
+      }
+
+      .title {
+        font-size: 24px;
+        color: #fff;
+          font-family: var(--font3);
+      }
+      .desc {
+        font-size: 14px;
+        color: #fff;
+      }
+      .img {
+        position: absolute;
+        top: 24px;
+        right: 30px;
+      }
+    }
+
+    .box-mydata {
+      height: 108px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      border: solid 1px #efefef;
+      background-color: #fff;
+      margin-bottom: 20px;
+      .desc {
+        font-size: 13px;
+        text-align: center;
+        color: #737183;
+        margin-bottom: 10px;
+        &+a {
+          font-size: 14px;
+          color: #6839d3;
+          font-family: var(--font2);
+          text-align: center;
+          text-decoration: underline;
+          i {
+            margin-left: 5px;
+          }
+        }
+      }
+
+    }
+
+    .text-loading {
+      padding: 30px 20px 0;
+      letter-spacing: -1px;
+      text-align: center;
+      height: calc(100vh - 66px);
+      display: flex;
+      align-items: center;
+      >div {
+        margin: 0 auto;
+        width: 100%;
+      }
+      .title {
+        font-size: 22px;
+        color: #37354e;
+        margin-bottom: 20px;
+        line-height: 1.32;
+        span {
+          font-family: var(--font2);
+        }
+      }
+
+      .desc {
+        font-size: 15px;
+        color: #37354e;
+        font-family: var(--font1);
+        line-height: 1.4;
+        margin-bottom: 164px;
+      }
+      .loading {
+        .img {
+          width: 90px;
+          margin: 0 auto;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
 }

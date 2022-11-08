@@ -18,6 +18,7 @@
        */
       &-md {
         font-size: 20px;
+        line-height: 26px;
       }
       /**
       font-size : 24px
@@ -26,7 +27,7 @@
         font-size: 24px;
       }
       span {
-        font-weight: bold;
+        font-family: var(--font3);
       }
     }
     .desc {
@@ -34,6 +35,9 @@
       color: #737183;
       &-lg {
         font-size: 16px;
+        font-family: var(--font1);
+        line-height: 22px;
+        font-weight: normal;
       }
     }
     .key-comment {
@@ -327,6 +331,11 @@
     }
   }
 
+
+  .fixed-style {
+    background-color: #fff;
+    padding: 0 20px 30px 20px;
+  }
 
 }
 

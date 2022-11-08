@@ -6,6 +6,11 @@
   /**
   text-description
    */
+  .share-spend-money {
+    .text-descriptiton {
+      padding-top: 10px;
+    }
+  }
   .text-descriptiton {
     padding: 30px 20px 0 ;
     letter-spacing: -1px;
@@ -336,7 +341,24 @@
     background-color: #fff;
     padding: 0 20px 30px 20px;
   }
+  /**
+  상단 타이틀 : 2022년 6월 >
+   */
+  .current-month {
+    margin: 0 20px 15px 20px;
+    &-manage {
+      margin-top: 10px;
+    }
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      color: var(--text-01);
+      display: inline-block;
+      vertical-align: middle;
+    }
 
+  }
 }
 
 

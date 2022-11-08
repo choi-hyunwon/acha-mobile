@@ -125,21 +125,7 @@
       transform: translateY(-50%);
     }
   }
-  /**
-  상단 타이틀 : 2022년 6월 >
-   */
-  .current-month {
-    margin: 0 20px 15px 20px;
-    a {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 24px;
-      color: var(--text-01);
-      display: inline-block;
-      vertical-align: middle;
-    }
 
-  }
 
 
 
@@ -241,7 +227,7 @@
       height: 60px;
       line-height: 60px;
       font-size: 15px;
-      font-weight: bold;
+      font-family: var(--font3);
       text-align: left;
       color: #37354c;
       border-bottom: 1px solid #efefef;
@@ -251,6 +237,13 @@
       position: relative;
       .item{
         margin-bottom: 20px;
+        label {
+          span{
+            font-size: 15px;
+            color: #37354e;
+            font-family: var(--font1);
+          }
+        }
       }
     }
   }
@@ -1323,6 +1316,21 @@
                   position: absolute;
                   top: 10px;
                   right: 0;
+                  &-me {
+                    &::after {
+                      content: '';
+                      width: 8px;
+                      height: 8px;
+                      border: solid 2px #fff;
+                      background-color: #6839d3;
+                      position: absolute;
+                      -webkit-border-radius: 50%;
+                      -moz-border-radius: 50%;
+                      border-radius: 50%;
+                      top: 0;
+                      right: 0;
+                    }
+                  }
                   img {
                     width: 100%;
                     height: auto;
@@ -1487,6 +1495,9 @@
                 &:first-of-type{
                   margin-top: 0;
                 }
+                &+.check-list {
+                  margin-top: 10px;
+                }
               }
 
               .details-history{
@@ -1511,7 +1522,7 @@
                     .info{
                       .place{
                         span{
-                          max-width: 200px;
+                          max-width: 180px;
                         }
                       }
                       .num{

@@ -82,8 +82,8 @@
              */
             &.together-management {
               .title {
-                font-family: var(--font2);
-                font-size: 16px;
+                font-family: var(--font3);
+                font-size: 18px;
                 line-height: 26px;
                 color: var(--text-01);
                 margin-bottom: 24px;
@@ -174,6 +174,7 @@
                     font-weight: bold;
                     text-align: right;
                     color: #37354e;
+                    font-family: var(--font5);
                   }
                 }
               }
@@ -724,6 +725,7 @@
             line-height: 1.33;
             color: var(--text-03);
             font-family: var(--font1);
+            width: calc(100% - 60px);
           }
         }
 
@@ -1531,6 +1533,14 @@
             height: auto;
           }
         }
+      }
+    }
+  }
+
+  .manage-tab{
+    ul{
+      li {
+        padding: 6px !important;
       }
     }
   }

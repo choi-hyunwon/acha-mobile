@@ -323,16 +323,17 @@
 }*/
 
 [type="checkbox"].filled-in:checked + span:not(.lever):before {
-  width: 7px;
-  height: 10px;
-  left: 3px;
-  top: 4px;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transform: rotateZ(45deg);
-  transform-origin: 100% 100%;
+  //width: 7px;
+  //height: 10px;
+  //left: 3px;
+  //top: 4px;
+  //border-top: 2px solid transparent;
+  //border-left: 2px solid transparent;
+  //border-right: 2px solid #fff;
+  //border-bottom: 2px solid #fff;
+  transform: rotate(0deg);
+  //transform-origin: 100% 100%;
+
 }
 
 [type="checkbox"].filled-in:checked + span:not(.lever):after {

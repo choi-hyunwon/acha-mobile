@@ -799,27 +799,6 @@ data.edit11 = {
 };
 
 
-/**
- * 22.09.20
- *
- */
-data.date3 = {
-    'title': '< 22.09.20 >',
-    'list': [
-    ]
-};
-data.edit12 = {
-    'title': '(수정)회원가입_3.0변경',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '06_sign_in_02',
-            'category': '회원가입',
-            'page': '약관동의(회원가입_2.약관동의(요약 2~3개)'
-        },
-    ]
-};
-
 
 /**
  * 22.09.23
@@ -4967,49 +4946,49 @@ data.guide = {
     'list': [
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_popup_24',
+            'url': '',
             'category': '가계부',
             'page': '가계부_Color Guide'
         },
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_popup_24',
+            'url': '',
             'category': '가계부',
             'page': '가계부_Common_List'
         },
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_popup_24',
+            'url': '',
             'category': '가계부',
             'page': '가계부_Common inputbox'
         },
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_popup_24',
+            'url': '',
             'category': '가계부',
             'page': '가계부_common_카테고리 아이콘'
         },
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_popup_24',
+            'url': '',
             'category': '가계부',
             'page': '카테고리 설명'
         },
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_popup_24',
+            'url': '',
             'category': '가계부',
             'page': '월선택팝업'
         },
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_popup_24',
+            'url': '',
             'category': '가계부',
             'page': '카테고리_선택'
         },
         {
             'stateClass': 'working',
-            'url': 'v3_expenditure_popup_24',
+            'url': '',
             'category': '가계부',
             'page': '카테고리_변경_아이콘선택'
         },

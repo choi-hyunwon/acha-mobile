@@ -1,0 +1,57 @@
+<!--<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="contents">
+        <div class="migration-end">
+            <div class="heading">
+                김아차님,<br/>
+                <span class="primary-color">아차</span>를 다시 찾아 주셔서<br/>
+                감사해요 🥰
+            </div>
+            <div class="heading-sub">
+                기존에 사용하시던<br/>
+                직접입력 정보를 불러올까요?
+            </div>
+            <div class="fixed-bottom">
+                <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half">아니오</a>
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">불러오기</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>-->
+
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="contents"></div>
+</div>
+<div class="modal fade modal-size-sm" id="migrationPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="migration-information">
+                    <div class="title">기존에 사용하던<br>직접입력 정보를 불러올까요?</div>
+                    <div class="desc">
+                        정보를 불러오는 경우, <br>지출이 중복되어 표시될 수 있어요.<br>해당 정보는 언제든지<br>수정 및 삭제 가능합니다.
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer bg-grey" data-dismiss="modal">아니오</a>
+                <a href="#" class="btn-footer">불러오기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    $('#migrationPopup').modal('show');
+</script>
+</body>
+</html>

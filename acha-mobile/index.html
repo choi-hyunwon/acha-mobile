@@ -88,10 +88,12 @@
     $('.wrap_scroll')
         /* 아차 3.0 */
         .append(template(data.category))
+        .append(template(data.homepage))//아차 홈페이지
+        .append(template(data.v3Join))//회원가입_3.0변경
+        .append(template(data.guide))//공동관리>미션
         .append(template(data.manageConnect))//공동관리>연결/설정 통합
         .append(template(data.manageShare))//공동관리>공동지출/계좌/카드/지출스토리
         .append(template(data.manageMission))//공동관리>미션
-        .append(template(data.homepage))//아차 홈페이지
 
 
         .append(template(data.start))

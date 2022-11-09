@@ -1248,35 +1248,6 @@ data.edit18 = {
 
 
 /**
- * 22.10.12
- *
- */
-
-data.date6 = {
-    'title': '< 22.10.12 >',
-    'list': [
-    ]
-};
-data.edit19 = {
-    'title': '(수정)회원가입_3.0변경',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': '14_migration_01',
-            'category': '마이그레이션',
-            'page': '마이그레이션_3.0전환안내'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '14_migration_03',
-            'category': '마이그레이션',
-            'page': '마이그레이션_직접입력_안내팝업'
-        },
-    ]
-};
-
-
-/**
  * 22.10.13
  *
  */
@@ -1286,29 +1257,7 @@ data.date7 = {
     'list': [
     ]
 };
-data.edit20 = {
-    'title': '공통가이드',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_24',
-            'category': '가계부',
-            'page': '카테고리_변경_아이콘선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '11_exependiture_01-1',
-            'category': '가계부',
-            'page': '05_자산_데이터업데이트중'
-        },
-        {
-            'stateClass': 'complete',
-            'url': '04_공동관리메인_데이터업데이트중',
-            'category': '가계부',
-            'page': '04_공동관리메인_데이터업데이트중'
-        },
-    ]
-};
+
 data.edit21 = {
     'title': '가계부>지출>리포트',
     'list': [
@@ -1589,304 +1538,7 @@ data.edit23 = {
 
     ]
 };
-data.edit24 = {
-    'title': '공동관리>연결/설정',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_10',
-            'category': '공동관리',
-            'page': '04_1.1_공동관리메인'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_11',
-            'category': '공동관리',
-            'page': '04_1.3_SMS메시지_1_번호입력_입력후'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_12',
-            'category': '공동관리',
-            'page': '04_1.3_SMS메시지_1_번호입력_입력전'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_13',
-            'category': '공동관리',
-            'page': '04_1.2_공동관리메인_연결방식선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_14',
-            'category': '공동관리',
-            'page': '04_1.3_SMS메시지_3_이름입력'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_15',
-            'category': '공동관리',
-            'page': '04_1.3_SMS메시지_4_초대완료'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_16',
-            'category': '공동관리',
-            'page': '04_1.3_SMS메시지_6_초대취소'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_17',
-            'category': '공동관리',
-            'page': '04_1.3_SMS메시지_7_초대장'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_18',
-            'category': '공동관리',
-            'page': '04_1.3_SMS메시지_8_연결확인'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_19',
-            'category': '공동관리',
-            'page': '04_1.3_SMS메시지_9_초대거절'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_20',
-            'category': '공동관리',
-            'page': '04_1.4_연결취소'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_21',
-            'category': '공동관리',
-            'page': '04_1.5_약관동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_61',
-            'category': '공동관리',
-            'page': '04_10.1_공동관리설정_ME'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_24',
-            'category': '공동관리',
-            'page': '04_10.3_공동관리설정_데이터없는 경우_공동'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_25',
-            'category': '공동관리',
-            'page': '04_10.3_공동관리설정_데이터없는 경우_계좌'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_26',
-            'category': '공동관리',
-            'page': '04_10.3_공동관리설정_YOU'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_27',
-            'category': '공동관리',
-            'page': '04_10.2_공동관리설정_ME_데이터편집'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_28',
-            'category': '공동관리',
-            'page': '04_10.2_공동관리설정_ME_데이터편집_변경확인'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_29',
-            'category': '공동관리',
-            'page': '04_10.2_공동관리설정_ME_데이터편집_데이터선택변경_선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_30',
-            'category': '공동관리',
-            'page': '04_10.2_공동관리설정_ME_데이터편집_데이터선택변경_해제'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_31',
-            'category': '공동관리',
-            'page': '04_10.2_공동관리설정_ME_데이터편집_데이터범위변경'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_32',
-            'category': '공동관리',
-            'page': '04_10.4_공동관리끊기'
-        },
-    ]
-};
-data.edit25 = {
-    'title': '공동관리>공동지출/계좌/카드/지출스토리',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_35',
-            'category': '공동관리',
-            'page': '04_5.1_공동관리메인_데이터무'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_37',
-            'category': '공동관리',
-            'page': '04_5.2_공동관리메인_데이터유'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_38',
-            'category': '공동관리',
-            'page': '04_5.1_공동지출관리메인_데이터무'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_39',
-            'category': '공동관리',
-            'page': '04_5.2_공동지출관리메인_데이터유'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_40',
-            'category': '공동관리',
-            'page': '04_5.5_공동지출관리설정'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_41',
-            'category': '공동관리',
-            'page': '04_5.5_공동지출관리메인_1_수입지출표시'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_42',
-            'category': '공동관리',
-            'page': '04_5.5_공동지출관리메인_4_데이터숨기기_1'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_43',
-            'category': '공동관리',
-            'page': '04_5.5_공동지출관리메인_4_데이터숨기기_2'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_44',
-            'category': '공동관리',
-            'page': '04_5.5_공동지출관리메인_4_데이터숨기기_3'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_45',
-            'category': '공동관리',
-            'page': '04_6.1_같이보는계좌메인'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_46',
-            'category': '공동관리',
-            'page': '04_6.1_같이보는계좌메인_6개이상일경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_47',
-            'category': '공동관리',
-            'page': '04_6.2_같이보는계좌'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_48',
-            'category': '공동관리',
-            'page': '04_6.3_같이보는계좌설정'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_49',
-            'category': '공동관리',
-            'page': '04_7.1_같이보는카드메인'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_50',
-            'category': '공동관리',
-            'page': '04_7.1_같이보는카드'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_51',
-            'category': '공동관리',
-            'page': '04_7.2_같이보는카드설정'
-        },
-    ]
-};
-data.edit26 = {
-    'title': '공동관리>미션',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_02',
-            'category': '공동관리',
-            'page': '04_9.1_미션메인_데이터무'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_03',
-            'category': '공동관리',
-            'page': '04_9.1_미션메인_데이터유'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_04',
-            'category': '공동관리',
-            'page': '04_9.2_미션_진행중_데이터무'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_05',
-            'category': '공동관리',
-            'page': '04_9.2_미션_종료_데이터무'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_popup_01',
-            'category': '공동관리',
-            'page': '04_9.2_미션추가_데이터없을경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_06',
-            'category': '공동관리',
-            'page': '9.2_미션추가'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_07',
-            'category': '공동관리',
-            'page': '04_9.2_미션추가_1_무지출'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_08',
-            'category': '공동관리',
-            'page': '04_9.2_미션추가_2_카드사용줄이기'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_09',
-            'category': '공동관리',
-            'page': '04_9.2_미션추가_3_커피값줄이기'
-        },
 
-    ]
-};
 data.edit27 = {
     'title': '(수정)더보기_마이데이터 관리',
     'list': [
@@ -2516,437 +2168,6 @@ data.edit38 = {
 
 
 
-/**
- * 22.10.21
- *
- */
-data.date10 = {
-    'title': '< 22.10.21 >',
-    'list': []
-};
-
-
-data.edit39 = {
-    'title': '공동관리>연결/설정',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_52',
-            'category': '가계부',
-            'page': '04_1.1_공동관리메인_도움말'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_12',
-            'category': '가계부',
-            'page': '04_1.3_SMS메시지_1_번호입력_입력전'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_14',
-            'category': '가계부',
-            'page': '04_1.3_SMS메시지_3_이름입력'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_15',
-            'category': '가계부',
-            'page': '04_1.3_SMS메시지_4_초대완료'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_18',
-            'category': '가계부',
-            'page': '04_1.3_SMS메시지_8_연결확인'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_19',
-            'category': '가계부',
-            'page': '04_1.3_SMS메시지_9_초대거절'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_21',
-            'category': '가계부',
-            'page': '04_1.5_약관동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_59',
-            'category': '가계부',
-            'page': '04_1.5_약관동의_공동관리서비스이용약관'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_60',
-            'category': '가계부',
-            'page': '04_1.5_약관동의_개인정보의제3자제공동의'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_61',
-            'category': '가계부',
-            'page': '04_10.1_공동관리설정_ME'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_62',
-            'category': '가계부',
-            'page': '04_10.1_공동관리설정_ME_유의사항'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_32',
-            'category': '가계부',
-            'page': '04_10.4_공동관리끊기'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_64',
-            'category': '가계부',
-            'page': '04_3.1_공동지출관리_1_시작'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_65',
-            'category': '가계부',
-            'page': '04_3.1_공동지출관리_마이데이터연결유_2_데이터선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_66',
-            'category': '가계부',
-            'page': '04_3.1_공동지출관리_마이데이터연결유_2_데이터범위선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_67',
-            'category': '가계부',
-            'page': '04_3.1_공동지출관리_마이데이터연결유_2_보드오픈완료'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_68',
-            'category': '가계부',
-            'page': '04_3.1_공동지출관리_마이데이터연결무'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_69',
-            'category': '가계부',
-            'page': '04_3.1_공동지출관리_표시목록없을경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_70',
-            'category': '가계부',
-            'page': '04_3.2_계좌공유_1_시작'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_71',
-            'category': '가계부',
-            'page': '04_3.2_계좌공유_2_데이터선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_72',
-            'category': '가계부',
-            'page': '04_3.2_계좌공유_마이데이터연결유_2_보드오픈완료'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_73',
-            'category': '가계부',
-            'page': '04_3.3_카드공유_1_시작'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_74',
-            'category': '가계부',
-            'page': '04_3.3_카드공유_2_데이터선택'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_75',
-            'category': '가계부',
-            'page': '04_3.3_카드공유_마이데이터연결유_2_보드오픈완료 '
-        },
-
-    ]
-};
-
-
-
-data.edit40 = {
-    'title': '공동관리>공동지출/계좌/카드/지출스토리',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_39',
-            'category': '가계부',
-            'page': '04_5.2_공동지출관리메인_데이터유'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_77',
-            'category': '가계부',
-            'page': '04_6.1_같이보는계좌메인_데이터없을경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_78',
-            'category': '가계부',
-            'page': '04_7.1_같이보는카드메인_데이터없을때'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_79',
-            'category': '가계부',
-            'page': '04_8.1_지출스토리메인_데이터무'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_80',
-            'category': '가계부',
-            'page': '04_8.2_지출스토리메인_데이터유'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_81',
-            'category': '가계부',
-            'page': '04_8.1_같이보는지출스토리_스토리없음'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_82',
-            'category': '가계부',
-            'page': '04_8.2_같이보는지출스토리'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_83',
-            'category': '가계부',
-            'page': '04_8.3_지출스토리설정'
-        },
-
-    ]
-};
-
-
-
-data.edit41 = {
-    'title': '공동관리>미션',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_popup_01',
-            'category': '가계부',
-            'page': '04_9.2_미션추가_데이터없을경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_07',
-            'category': '가계부',
-            'page': '04_9.2_미션추가_1_무지출'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_08',
-            'category': '가계부',
-            'page': '04_9.2_미션추가_2_카드사용줄이기'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_09',
-            'category': '가계부',
-            'page': '04_9.2_미션추가_3_커피값줄이기'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_88',
-            'category': '가계부',
-            'page': '04_9.2_미션_진행중_데이터유'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_89',
-            'category': '가계부',
-            'page': '04_9.2_미션_종료_데이터유'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_90',
-            'category': '가계부',
-            'page': '04_9.2_미션_진행중_3건미만'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_91',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_커피값줄이기_진행중_현재월_지고있을때'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_92',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_커피값줄이기_진행중_현재월_이기고있을때'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_93',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_커피값줄이기_진행중_지출이없을때'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_94',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_무지출_진행중_현재월_지고있을때'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_95',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_무지출_진행중_현재월_이기고있을때'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_96',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_무지출_진행중_현재월_비기고있을때'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_97',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_커피값줄이기_진행중_과거월'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_98',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_커피값줄이기_종료'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_99',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_커피값줄이기_대결종료'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_100',
-            'category': '가계부',
-            'page': '04_9.3_미션상세_데어터업데이트진행되지않은경우'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_101',
-            'category': '가계부',
-            'page': '04_9.3_미션_승패이미지'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_102',
-            'category': '가계부',
-            'page': '04_9.5_미션_결과_메인배너'
-        },
-    ]
-};
-
-
-
-
-/**
- * 22.10.28
- *
- */
-data.date11 = {
-    'title': '< 22.10.28 >',
-    'list': []
-};
-
-
-
-
-
-data.edit42 = {
-    'title': '아차 홈페이지',
-    'list': [
-        {
-            'stateClass': 'working',
-            'url': '',
-            'category': '가계부',
-            'page': '유플래너_1.0_PC_01_메인_1920'
-        },
-        {
-            'stateClass': 'working',
-            'url': '',
-            'category': '가계부',
-            'page': '유플래너_1.0_Tablet_01_메인_768'
-        },
-        {
-            'stateClass': 'working',
-            'url': '',
-            'category': '가계부',
-            'page': '유플래너_1.0_Mobile_01_메인_375'
-        },
-
-    ]
-};
-
-
-
-data.edit43 = {
-    'title': '공동관리>연결/설정',
-    'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_103',
-            'category': '가계부',
-            'page': '04_2.1_상대방회원정보가없을때'
-        },
-        {
-            'stateClass': 'complete',
-            'url': 'v3_joint_management_104',
-            'category': '가계부',
-            'page': '04_3.1_상대방휴면계정예정'
-        },
-
-    ]
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 data.end = {
     'title': '----------아차 3.0 END----------',
     'list': [
@@ -3093,8 +2314,6 @@ data.signIn = {
             'category': 'common',
             'page': '회원가입_약관동의1_마케팅 활용 및 수신동의'
         },
-
-
     ]
 };
 data.migration = {
@@ -5091,7 +4310,102 @@ data.dataPolicy = {
 
 
 
+data.homepage = {
+    'title': '아차 홈페이지',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '유플래너_1.0_반응형PC_@Guide_layout',
+            'category': '가계부',
+            'page': '유플래너_1.0_반응형PC_@Guide_layout'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'PC_화면 오류',
+            'category': '가계부',
+            'page': 'PC_화면 오류'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'M_화면 오류_768',
+            'category': '가계부',
+            'page': 'M_화면 오류_768'
+        },
 
+        {
+            'stateClass': 'working',
+            'url': 'M_화면 오류_320',
+            'category': '가계부',
+            'page': 'M_화면 오류_320'
+        },
+        {
+            'stateClass': 'working',
+            'url': '유플래너_1.0_PC_01_메인_1920',
+            'category': '가계부',
+            'page': '유플래너_1.0_PC_01_메인_1920'
+        },
+        {
+            'stateClass': 'working',
+            'url': '유플래너_1.0_Tablet_01_메인_768',
+            'category': '가계부',
+            'page': '유플래너_1.0_Tablet_01_메인_768'
+        },
+
+        {
+            'stateClass': 'working',
+            'url': '유플래너_1.0_Mobile_01_메인_375',
+            'category': '가계부',
+            'page': '유플래너_1.0_Mobile_01_메인_375'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'PC_02_공인인증서복사_01_복사하기',
+            'category': '가계부',
+            'page': 'PC_02_공인인증서복사_01_복사하기'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'PC_02_공인인증서복사_02_완료',
+            'category': '가계부',
+            'page': 'PC_02_공인인증서복사_02_완료'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'M_공인인증서복사',
+            'category': '가계부',
+            'page': 'M_공인인증서복사'
+        },
+    ]
+};
+data.v3Join = {
+    'title': '회원가입_3.0변경',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '회원가입_2.약관동의_마케팅동의시',
+            'category': '마이그레이션',
+            'page': '회원가입_2.약관동의_마케팅동의시'
+        },
+        {
+            'stateClass': 'working',
+            'url': '회원가입_2.약관동의_기본',
+            'category': '마이그레이션',
+            'page': '회원가입_2.약관동의_기본'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '마이그레이션_직접입력_안내팝업',
+            'category': '마이그레이션',
+            'page': '마이그레이션_3.0전환안내'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '마이그레이션_직접입력_안내팝업',
+            'category': '마이그레이션',
+            'page': '마이그레이션_직접입력_안내팝업'
+        },
+    ]
+};
 data.manageConnect = {
     'title': '공동관리>연결/설정',
     'list': [
@@ -5341,9 +4655,6 @@ data.manageConnect = {
         },
     ]
 };
-
-
-
 data.manageShare = {
     'title': '공동관리>공동지출/계좌/카드/지출스토리',
     'list': [
@@ -5502,7 +4813,6 @@ data.manageShare = {
         },
     ]
 };
-
 data.manageMission = {
     'title': '공동관리>미션',
     'list': [
@@ -5652,71 +4962,68 @@ data.manageMission = {
         },
     ]
 };
-
-data.homepage = {
-    'title': '아차 홈페이지',
+data.guide = {
+    'title': '공통가이드',
     'list': [
         {
             'stateClass': 'working',
-            'url': '유플래너_1.0_반응형PC_@Guide_layout',
+            'url': 'v3_expenditure_popup_24',
             'category': '가계부',
-            'page': '유플래너_1.0_반응형PC_@Guide_layout'
+            'page': '가계부_Color Guide'
         },
         {
             'stateClass': 'working',
-            'url': 'PC_화면 오류',
+            'url': 'v3_expenditure_popup_24',
             'category': '가계부',
-            'page': 'PC_화면 오류'
+            'page': '가계부_Common_List'
         },
         {
             'stateClass': 'working',
-            'url': 'M_화면 오류_768',
+            'url': 'v3_expenditure_popup_24',
             'category': '가계부',
-            'page': 'M_화면 오류_768'
-        },
-
-        {
-            'stateClass': 'working',
-            'url': 'M_화면 오류_320',
-            'category': '가계부',
-            'page': 'M_화면 오류_320'
+            'page': '가계부_Common inputbox'
         },
         {
             'stateClass': 'working',
-            'url': '유플래너_1.0_PC_01_메인_1920',
+            'url': 'v3_expenditure_popup_24',
             'category': '가계부',
-            'page': '유플래너_1.0_PC_01_메인_1920'
+            'page': '가계부_common_카테고리 아이콘'
         },
         {
             'stateClass': 'working',
-            'url': '유플래너_1.0_Tablet_01_메인_768',
+            'url': 'v3_expenditure_popup_24',
             'category': '가계부',
-            'page': '유플래너_1.0_Tablet_01_메인_768'
-        },
-
-        {
-            'stateClass': 'working',
-            'url': '유플래너_1.0_Mobile_01_메인_375',
-            'category': '가계부',
-            'page': '유플래너_1.0_Mobile_01_메인_375'
+            'page': '카테고리 설명'
         },
         {
             'stateClass': 'working',
-            'url': 'PC_02_공인인증서복사_01_복사하기',
+            'url': 'v3_expenditure_popup_24',
             'category': '가계부',
-            'page': 'PC_02_공인인증서복사_01_복사하기'
+            'page': '월선택팝업'
         },
         {
             'stateClass': 'working',
-            'url': 'PC_02_공인인증서복사_02_완료',
+            'url': 'v3_expenditure_popup_24',
             'category': '가계부',
-            'page': 'PC_02_공인인증서복사_02_완료'
+            'page': '카테고리_선택'
         },
         {
             'stateClass': 'working',
-            'url': 'M_공인인증서복사',
+            'url': 'v3_expenditure_popup_24',
             'category': '가계부',
-            'page': 'M_공인인증서복사'
+            'page': '카테고리_변경_아이콘선택'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '05_자산_데이터업데이트중',
+            'category': '가계부',
+            'page': '05_자산_데이터업데이트중'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_공동관리메인_데이터업데이트중',
+            'category': '가계부',
+            'page': '04_공동관리메인_데이터업데이트중'
         },
     ]
 };

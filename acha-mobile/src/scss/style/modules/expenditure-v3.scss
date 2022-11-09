@@ -26,6 +26,17 @@
       background-image: url(../../img/sprite/common/btn_popup_close@2x.png);
       background-size: cover;
     }
+     .btn_share {
+      position: absolute;
+      display: inline-block;
+      top: 20px;
+      right: 16px;
+      width: 26px;
+      height: 26px;
+      background-size: cover;
+      background-image: url(../../img/common/btn_title_share@2x.png);
+      vertical-align: middle;
+    }
 
     .sum-area {
       position: absolute;

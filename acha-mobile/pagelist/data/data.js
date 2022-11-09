@@ -2825,7 +2825,6 @@ data.edit41 = {
         },
         {
             'stateClass': 'complete',
-            'stateClass': 'complete',
             'url': 'v3_joint_management_99',
             'category': '가계부',
             'page': '04_9.3_미션상세_커피값줄이기_대결종료'

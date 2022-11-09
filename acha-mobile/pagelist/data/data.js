@@ -2758,67 +2758,67 @@ data.edit41 = {
             'page': '04_9.2_미션추가_3_커피값줄이기'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_88',
             'category': '가계부',
             'page': '04_9.2_미션_진행중_데이터유'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_89',
             'category': '가계부',
             'page': '04_9.2_미션_종료_데이터유'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_90',
             'category': '가계부',
             'page': '04_9.2_미션_진행중_3건미만'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_91',
             'category': '가계부',
             'page': '04_9.3_미션상세_커피값줄이기_진행중_현재월_지고있을때'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_92',
             'category': '가계부',
             'page': '04_9.3_미션상세_커피값줄이기_진행중_현재월_이기고있을때'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_93',
             'category': '가계부',
             'page': '04_9.3_미션상세_커피값줄이기_진행중_지출이없을때'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_94',
             'category': '가계부',
             'page': '04_9.3_미션상세_무지출_진행중_현재월_지고있을때'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_95',
             'category': '가계부',
             'page': '04_9.3_미션상세_무지출_진행중_현재월_이기고있을때'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_96',
             'category': '가계부',
             'page': '04_9.3_미션상세_무지출_진행중_현재월_비기고있을때'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_97',
             'category': '가계부',
             'page': '04_9.3_미션상세_커피값줄이기_진행중_과거월'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_98',
             'category': '가계부',
             'page': '04_9.3_미션상세_커피값줄이기_종료'
@@ -2836,13 +2836,13 @@ data.edit41 = {
             'page': '04_9.3_미션상세_데어터업데이트진행되지않은경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_101',
             'category': '가계부',
             'page': '04_9.3_미션_승패이미지'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': 'v3_joint_management_102',
             'category': '가계부',
             'page': '04_9.5_미션_결과_메인배너'

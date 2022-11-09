@@ -1303,7 +1303,7 @@ data.edit20 = {
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_joint_management_01',
+            'url': '04_공동관리메인_데이터업데이트중',
             'category': '가계부',
             'page': '04_공동관리메인_데이터업데이트중'
         },
@@ -5499,6 +5499,224 @@ data.manageShare = {
             'url': '04_8.3_지출스토리설정',
             'category': '가계부',
             'page': '04_8.3_지출스토리설정'
+        },
+    ]
+};
+
+data.manageMission = {
+    'title': '공동관리>미션',
+    'list': [
+        {
+            'stateClass': 'complete',
+            'url': '04_9.1_미션메인_데이터무',
+            'category': '공동관리',
+            'page': '04_9.1_미션메인_데이터무'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.1_미션메인_데이터유',
+            'category': '공동관리',
+            'page': '04_9.1_미션메인_데이터유'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션_진행중_데이터무',
+            'category': '공동관리',
+            'page': '04_9.2_미션_진행중_데이터무'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션_종료_데이터무',
+            'category': '공동관리',
+            'page': '04_9.2_미션_종료_데이터무'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션추가_데이터없을경우',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가_데이터없을경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션추가',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션추가_1_무지출',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가_1_무지출'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션추가_2_카드사용줄이기',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가_2_카드사용줄이기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션추가_3_커피값줄이기',
+            'category': '공동관리',
+            'page': '04_9.2_미션추가_3_커피값줄이기'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션_진행중_데이터유',
+            'category': '가계부',
+            'page': '04_9.2_미션_진행중_데이터유'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션_종료_데이터유',
+            'category': '가계부',
+            'page': '04_9.2_미션_종료_데이터유'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.2_미션_진행중_3건미만',
+            'category': '가계부',
+            'page': '04_9.2_미션_진행중_3건미만'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_커피값줄이기_진행중_현재월_지고있을때',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_커피값줄이기_진행중_현재월_지고있을때'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_커피값줄이기_진행중_현재월_이기고있을때',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_커피값줄이기_진행중_현재월_이기고있을때'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_커피값줄이기_진행중_지출이없을때',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_커피값줄이기_진행중_지출이없을때'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_무지출_진행중_현재월_지고있을때',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_무지출_진행중_현재월_지고있을때'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_무지출_진행중_현재월_이기고있을때',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_무지출_진행중_현재월_이기고있을때'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_무지출_진행중_현재월_비기고있을때',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_무지출_진행중_현재월_비기고있을때'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_커피값줄이기_진행중_과거월',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_커피값줄이기_진행중_과거월'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_커피값줄이기_종료',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_커피값줄이기_종료'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_커피값줄이기_대결종료',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_커피값줄이기_대결종료'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션상세_데어터업데이트진행되지않은경우',
+            'category': '가계부',
+            'page': '04_9.3_미션상세_데어터업데이트진행되지않은경우'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.3_미션_승패이미지',
+            'category': '가계부',
+            'page': '04_9.3_미션_승패이미지'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_9.5_미션_결과_메인배너',
+            'category': '가계부',
+            'page': '04_9.5_미션_결과_메인배너'
+        },
+    ]
+};
+
+data.homepage = {
+    'title': '아차 홈페이지',
+    'list': [
+        {
+            'stateClass': 'working',
+            'url': '유플래너_1.0_반응형PC_@Guide_layout',
+            'category': '가계부',
+            'page': '유플래너_1.0_반응형PC_@Guide_layout'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'PC_화면 오류',
+            'category': '가계부',
+            'page': 'PC_화면 오류'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'M_화면 오류_768',
+            'category': '가계부',
+            'page': 'M_화면 오류_768'
+        },
+
+        {
+            'stateClass': 'working',
+            'url': 'M_화면 오류_320',
+            'category': '가계부',
+            'page': 'M_화면 오류_320'
+        },
+        {
+            'stateClass': 'working',
+            'url': '유플래너_1.0_PC_01_메인_1920',
+            'category': '가계부',
+            'page': '유플래너_1.0_PC_01_메인_1920'
+        },
+        {
+            'stateClass': 'working',
+            'url': '유플래너_1.0_Tablet_01_메인_768',
+            'category': '가계부',
+            'page': '유플래너_1.0_Tablet_01_메인_768'
+        },
+
+        {
+            'stateClass': 'working',
+            'url': '유플래너_1.0_Mobile_01_메인_375',
+            'category': '가계부',
+            'page': '유플래너_1.0_Mobile_01_메인_375'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'PC_02_공인인증서복사_01_복사하기',
+            'category': '가계부',
+            'page': 'PC_02_공인인증서복사_01_복사하기'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'PC_02_공인인증서복사_02_완료',
+            'category': '가계부',
+            'page': 'PC_02_공인인증서복사_02_완료'
+        },
+        {
+            'stateClass': 'working',
+            'url': 'M_공인인증서복사',
+            'category': '가계부',
+            'page': 'M_공인인증서복사'
         },
     ]
 };

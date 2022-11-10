@@ -665,12 +665,7 @@ data.date9 = {
 data.edit36 = {
     'title': '가계부>지출수단>현금',
     'list': [
-        {
-            'stateClass': 'complete',
-            'url': 'v3_expenditure_166',
-            'category': '가계부',
-            'page': '지출수단_10.2_현금_목록있음'
-        },
+
     ]
 };
 
@@ -4344,175 +4339,175 @@ data.expenditureMethodAccount = {
 
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_156',
+            'url': '지출수단_9.1_계좌_내역이없는경우_계좌지출Tab',
             'category': '가계부',
             'page': '지출수단_9.1_계좌_내역이없는경우_계좌지출Tab'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_157',
+            'url': '지출수단_9.2_계좌지출Tab_내역이있는경우',
             'category': '가계부',
             'page': '지출수단_9.2_계좌지출Tab_내역이있는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_44',
+            'url': '지출수단_9.3_계좌지출Tab_계좌필터_계좌있는경우',
             'category': '가계부',
             'page': '지출수단_9.3_계좌지출Tab_계좌필터_계좌있는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_45',
+            'url': '지출수단_9.3_계좌지출Tab_계좌필터_계좌없는경우',
             'category': '가계부',
             'page': '지출수단_9.3_계좌지출Tab_계좌필터_계좌없는경우'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출수단_9.4_계좌지출Tab_정기지출_상세_미지출',
             'category': '가계부',
             'page': '지출수단_9.4_계좌지출Tab_정기지출_상세_미지출'
         },
         {
             'stateClass': 'complete',
-            'url': '',
+            'url': '지출수단_9.4_계좌지출Tab_정기지출_상세_지출완료',
             'category': '가계부',
             'page': '지출수단_9.4_계좌지출Tab_정기지출_상세_지출완료'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_46',
+            'url': '지출수단_9.4_계좌지출Tab_계좌지출항목상세_변동지출상세',
             'category': '가계부',
             'page': '지출수단_9.4_계좌지출Tab_계좌지출항목상세_변동지출상세'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_47',
+            'url': '지출수단_9.4_계좌지출Tab_계좌지출항목상세_고정지출상세',
             'category': '가계부',
             'page': '지출수단_9.4_계좌지출Tab_계좌지출항목상세_고정지출상세'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_48',
+            'url': '지출수단_9.5_정기지출Tab_내역이있는경우',
             'category': '가계부',
             'page': '지출수단_9.5_정기지출Tab_내역이있는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_158',
+            'url': '지출수단_9.5_현금흐름Tab_내역이없는경우',
             'category': '가계부',
             'page': '지출수단_9.5_현금흐름Tab_내역이없는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_159',
+            'url': '지출수단_9.5_현금흐름Tab_내역이있는경우',
             'category': '가계부',
             'page': '지출수단_9.5_현금흐름Tab_내역이있는경우'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_49',
+            'url': '지출수단_9.6_정기지출Tab_계좌목록(1)',
             'category': '가계부',
             'page': '지출수단_9.6_정기지출Tab_계좌목록(1)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_50',
+            'url': '지출수단_9.6_정기지출Tab_계좌목록(2)_지출완료항목없는경우',
             'category': '가계부',
             'page': '지출수단_9.6_정기지출Tab_계좌목록(2)_지출완료항목없는경우'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_51',
+            'url': '지출수단_9.6_정기지출Tab_계좌목록(2)_지출예정항목없는경우',
             'category': '가계부',
             'page': '지출수단_9.6_정기지출Tab_계좌목록(2)_지출예정항목없는경우'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_52',
+            'url': '지출수단_9.6_정기지출Tab_계좌목록(2)_과거',
             'category': '가계부',
             'page': '지출수단_9.6_정기지출Tab_계좌목록(2)_과거'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_53',
+            'url': '지출수단_9.6_정기지출Tab_계좌목록(2)_미래',
             'category': '가계부',
             'page': '지출수단_9.6_정기지출Tab_계좌목록(2)_미래'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_54',
+            'url': '지출수단_9.9_계좌지출Tab_정기지출_상세_카드명세서',
             'category': '가계부',
             'page': '지출수단_9.9_계좌지출Tab_정기지출_상세_카드명세서'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_55',
+            'url': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정',
             'category': '가계부',
             'page': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_56',
+            'url': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정_이용내역',
             'category': '가계부',
             'page': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정_이용내역'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_57',
+            'url': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정_할부예정',
             'category': '가계부',
             'page': '지출수단_9.10_계좌지출Tab_정기지출_상세_카드결제예정_할부예정'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_58',
+            'url': '지출수단_9.11_현금흐름_설정',
             'category': '가계부',
             'page': '지출수단_9.11_현금흐름_설정'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_59',
+            'url': '지출수단_9.12_현금흐름_계좌잔고_편집',
             'category': '가계부',
             'page': '지출수단_9.12_현금흐름_계좌잔고_편집'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_160',
+            'url': '지출수단_9.13_현금흐름_수입예정_편집',
             'category': '가계부',
             'page': '지출수단_9.13_현금흐름_수입예정_편집'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_161',
+            'url': '지출수단_9.13_현금흐름_수입예정_편집_내역없음',
             'category': '가계부',
             'page': '지출수단_9.13_현금흐름_수입예정_편집_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_21',
+            'url': '지출수단_9.15_현금흐름_수입예정_편집_수입예정일수정',
             'category': '가계부',
             'page': '지출수단_9.15_현금흐름_수입예정_편집_수입예정일수정'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_162',
+            'url': '지출수단_9.16_현금흐름_지출편집',
             'category': '가계부',
             'page': '지출수단_9.16_현금흐름_지출편집'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_163',
+            'url': '지출수단_9.16_현금흐름_지출편집_내역없음',
             'category': '가계부',
             'page': '지출수단_9.16_현금흐름_지출편집_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_164',
+            'url': '지출수단_9.19_현금흐름_조회결과 (1)',
             'category': '가계부',
-            'page': '지출수단_9.19_현금흐름_조회결과 (1) '
+            'page': '지출수단_9.19_현금흐름_조회결과 (1)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_165',
+            'url': '지출수단_9.19_현금흐름_조회결과 (2)',
             'category': '가계부',
             'page': '지출수단_9.19_현금흐름_조회결과 (2)'
         },
@@ -4526,131 +4521,139 @@ data.expenditureMethodCash = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_66',
+            'url': '지출수단_10.1_계좌지출_목록없음',
             'category': '가계부',
             'page': '지출수단_10.1_계좌지출_목록없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_67',
+            'url': '지출수단_10.2_계좌지출_목록있음',
             'category': '가계부',
             'page': '지출수단_10.2_계좌지출_목록있음'
         },
+        {
+            'stateClass': 'complete',
+            'url': '지출수단_10.2_현금_목록있음',
+            'category': '가계부',
+            'page': '지출수단_10.2_현금_목록있음'
+        },
     ]
 };
+
 //가계부>지출수단>카드 18
+
 
 data.expenditureMethodCard = {
     'title': '가계부>지출수단>카드',
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_68',
+            'url': '지출수단_11.1_카드_내역이없는경우_카드지출Tab',
             'category': '가계부',
             'page': '지출수단_11.1_카드_내역이없는경우_카드지출Tab'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_69',
+            'url': '지출수단_11.1_카드_내역이없는경우_카드명세서Tab',
             'category': '가계부',
             'page': '지출수단_11.1_카드_내역이없는경우_카드명세서Tab'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_70',
+            'url': '지출수단_11.2_카드지출_보유카드목록',
             'category': '가계부',
             'page': '지출수단_11.2_카드지출_보유카드목록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_71',
+            'url': '지출수단_11.3_카드지출_보유카드노출선택',
             'category': '가계부',
             'page': '지출수단_11.3_카드지출_보유카드노출선택'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_72',
+            'url': '지출수단_11.3_카드지출_보유카드노출선택_카드없음',
             'category': '가계부',
             'page': '지출수단_11.3_카드지출_보유카드노출선택_카드없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_73',
+            'url': '지출수단_11.4_카드별지출_카드상세_목표있음',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표있음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_169',
+            'url': '지출수단_11.4_카드별지출_카드상세_목표있음_초과',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표있음_초과'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_74',
+            'url': '지출수단_11.4_카드별지출_카드상세_목표있음_지출없음',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표있음_지출없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_75',
+            'url': '지출수단_11.4_카드별지출_카드상세_목표없음',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표없음'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출수단_11.4_카드별지출_카드상세_목표없음_지출없음',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표없음_지출없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_76',
+            'url': '지출수단_11.6_카드별지출_항목상세',
             'category': '가계부',
             'page': '지출수단_11.6_카드별지출_항목상세'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_77',
+            'url': '지출수단_11.6_카드별지출_항목상세_승인취소',
             'category': '가계부',
             'page': '지출수단_11.6_카드별지출_항목상세_승인취소'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_78',
+            'url': '지출수단_11.6_카드별지출_항목상세_할부',
             'category': '가계부',
             'page': '지출수단_11.6_카드별지출_항목상세_할부'
         },
 
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_171',
+            'url': '지출수단_11.8_카드명세서_결제예정금액_상세',
             'category': '가계부',
             'page': '지출수단_11.8_카드명세서_결제예정금액_상세'
         },
 
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_81',
+            'url': '지출수단_11.8_카드명세서_결제예상금액_상세_이용내역',
             'category': '가계부',
             'page': '지출수단_11.8_카드명세서_결제예상금액_상세_이용내역'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_82',
+            'url': '지출수단_11.8_카드명세서_결제예상금액_상세_할부예정금',
             'category': '가계부',
             'page': '지출수단_11.8_카드명세서_결제예상금액_상세_할부예정금'
         },
 
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_79',
+            'url': '지출수단_11.9_카드명세서',
             'category': '가계부',
             'page': '지출수단_11.9_카드명세서'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_80',
+            'url': '지출수단_11.10_카드명세서_상세',
             'category': '가계부',
             'page': '지출수단_11.10_카드명세서_상세'
         },
@@ -4658,124 +4661,122 @@ data.expenditureMethodCard = {
     ]
 };
 
-
 //가계부>카테고리 19
 
 data.expenditureCategory = {
     'title': '가계부>카테고리',
     'list': [
-
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_172',
+            'url': '카테고리_11.2_그외카테고리_예산설정후_과거-이번달',
             'category': '가계부',
             'page': '카테고리_11.2_그외카테고리_예산설정후_과거-이번달'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_173',
+            'url': '카테고리_11.2_그외카테고리_예산설정전(공통)-예산후(미래)',
             'category': '가계부',
             'page': '카테고리_11.2_그외카테고리_예산설정전(공통)-예산후(미래)'
         },
         {
-            'stateClass': 'complete',
-            'url': 'v3_expenditure_16',
+            'stateClass': '???',
+            'url': '카테고리_11.3_카테고리편집',
             'category': '가계부',
             'page': '카테고리_11.3_카테고리편집'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_175',
+            'url': '카테고리_11.4._상세_예산전-이번달',
             'category': '가계부',
             'page': '카테고리_11.4._상세_예산전-이번달'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_176',
+            'url': '카테고리_11.4_상세_지출예산설정_이번달',
             'category': '가계부',
             'page': '카테고리_11.4_상세_지출예산설정_이번달'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_177',
+            'url': '카테고리_11.5_상세_예산전-과거',
             'category': '가계부',
             'page': '카테고리_11.5_상세_예산전-과거'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_178',
+            'url': '카테고리_11.5_상세_지출예산설정_과거',
             'category': '가계부',
             'page': '카테고리_11.5_상세_지출예산설정_과거'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_179',
+            'url': '카테고리_11.6._상세_예산전-미래',
             'category': '가계부',
             'page': '카테고리_11.6._상세_예산전-미래'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_180',
+            'url': '카테고리_11.6_상세_지출예산설정_미래',
             'category': '가계부',
             'page': '카테고리_11.6_상세_지출예산설정_미래'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_181',
+            'url': '카테고리_11.10_상세_예산후_지출예산O_지출O',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산O_지출O'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_182',
+            'url': '카테고리_11.10_상세_예산후_지출예산O_지출O_초과',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산O_지출O_초과'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_183',
+            'url': '카테고리_11.10_상세_예산후_지출예산X_지출O',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산X_지출O'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_184',
+            'url': '카테고리_11.10_상세_예산후_지출예산0원_지출O',
             'category': '가계부',
-            'page': '카테고리_11.10_상세_예산후_지출예산0원_지출O '
+            'page': '카테고리_11.10_상세_예산후_지출예산0원_지출O'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_185',
+            'url': '카테고리_11.10_상세_예산후_지출예산0원_지출0원',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_지출예산0원_지출0원'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_186',
+            'url': '카테고리_11.11_상세_예산후_직접생성한변동지출_지출예산O_지출O',
             'category': '가계부',
             'page': '카테고리_11.11_상세_예산후_직접생성한변동지출_지출예산O_지출O'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_187',
+            'url': '카테고리_11.10_상세_예산후_예산 대비 지출 그래프',
             'category': '가계부',
             'page': '카테고리_11.10_상세_예산후_예산 대비 지출 그래프'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_188',
+            'url': '카테고리_11.11_상세_예산후_직접생성한변동지출_카테고리명변경',
             'category': '가계부',
             'page': '카테고리_11.11_상세_예산후_직접생성한변동지출_카테고리명변경'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_83',
+            'url': '카테고리_12.1_전체카테고리',
             'category': '가계부',
             'page': '카테고리_12.1_전체카테고리'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_84',
+            'url': '카테고리_12.4_카테고리_상세',
             'category': '가계부',
             'page': '카테고리_12.4_카테고리_상세'
         },
@@ -4789,152 +4790,152 @@ data.expenditureCalander = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_135',
+            'url': '캘린더_15.1_메인',
             'category': '가계부',
             'page': '캘린더_15.1_메인'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_135_guide',
+            'url': '캘린더_15.1_메인_지출내역_카드_케이스별정리',
             'category': '가계부',
             'page': '캘린더_15.1_메인_지출내역_카드_케이스별정리'
         },
 
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_136',
+            'url': '캘린더_15.1_메인_내역이없는경우',
             'category': '가계부',
             'page': '캘린더_15.1_메인_내역이없는경우'
         },
 
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '캘린더_15.1_메인_지출내역_카드_케이스별정리',
             'category': '가계부',
             'page': '캘린더_15.1_메인_지출내역_카드_케이스별정리'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_137',
+            'url': '캘린더_15.2_캘린더_필터',
             'category': '가계부',
             'page': '캘린더_15.2_캘린더_필터'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_138',
+            'url': '캘린더_15.2_캘린더_필터_계좌카드없음',
             'category': '가계부',
             'page': '캘린더_15.2_캘린더_필터_계좌카드없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_139',
+            'url': '캘린더_15.4_캘린더지출항목_고정지출',
             'category': '가계부',
             'page': '캘린더_15.4_캘린더지출항목_고정지출'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_140',
+            'url': '캘린더_15.4_캘린더지출항목_고정지출_직접입력',
             'category': '가계부',
             'page': '캘린더_15.4_캘린더지출항목_고정지출_직접입력'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_141',
+            'url': '캘린더_15.4_캘린더지출항목_변동지출',
             'category': '가계부',
             'page': '캘린더_15.4_캘린더지출항목_변동지출'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_142',
+            'url': '캘린더_15.4_캘린더지출항목_변동지출_직접등록',
             'category': '가계부',
             'page': '캘린더_15.4_캘린더지출항목_변동지출_직접등록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_143',
+            'url': '캘린더_15.5_캘린더지출항목_수입상세',
             'category': '가계부',
             'page': '캘린더_15.5_캘린더지출항목_수입상세'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_144',
+            'url': '캘린더_15.5_캘린더지출항목_수입상세_직접등록',
             'category': '가계부',
             'page': '캘린더_15.5_캘린더지출항목_수입상세_직접등록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_145',
+            'url': '캘린더_15.6_캘린더지출항목_카드지출상세_승인취소',
             'category': '가계부',
             'page': '캘린더_15.6_캘린더지출항목_카드지출상세_승인취소'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_146',
+            'url': '캘린더_15.6_캘린더지출항목_카드지출상세_일시불승인',
             'category': '가계부',
             'page': '캘린더_15.6_캘린더지출항목_카드지출상세_일시불승인'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_147',
+            'url': '캘린더_15.6_캘린더지출항목_카드지출상세_할부',
             'category': '가계부',
             'page': '캘린더_15.6_캘린더지출항목_카드지출상세_할부'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '캘린더_15.7_캘린더지출항목_고정지출_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_고정지출_예정상세'
         },
 
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '캘린더_15.7_캘린더지출항목_수입_계좌_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_수입_계좌_예정상세'
         },
 
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '캘린더_15.7_캘린더지출항목_수입_현금(직접입력)_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_수입_현금(직접입력)_예정상세'
         },
 
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '캘린더_15.7_캘린더지출항목_카드지출_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_카드지출_예정상세'
         },
 
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '캘린더_15.7_캘린더지출항목_현금(직접입력)_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_현금(직접입력)_예정상세'
         },
 
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_148',
+            'url': '캘린더_15.7_스토리등록',
             'category': '가계부',
             'page': '캘린더_15.7_스토리등록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_149',
+            'url': '캘린더_15.8_스토리등록완료',
             'category': '가계부',
             'page': '캘린더_15.8_스토리등록완료'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_150',
+            'url': '캘린더_15.8_스토리편집',
             'category': '가계부',
             'page': '캘린더_15.8_스토리편집'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '캘린더_15.8_스토리등록(내 지출 기분 선택_스토리 이모지)',
             'category': '가계부',
             'page': '캘린더_15.8_스토리등록(내 지출 기분 선택_스토리 이모지)'
         },

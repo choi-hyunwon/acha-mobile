@@ -2831,20 +2831,20 @@ data.v3Join = {
     'title': '회원가입_3.0변경',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '회원가입_2.약관동의_마케팅동의시',
             'category': '마이그레이션',
             'page': '회원가입_2.약관동의_마케팅동의시'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '회원가입_2.약관동의_기본',
             'category': '마이그레이션',
             'page': '회원가입_2.약관동의_기본'
         },
         {
             'stateClass': 'complete',
-            'url': '마이그레이션_직접입력_안내팝업',
+            'url': '마이그레이션_3.0전환안내',
             'category': '마이그레이션',
             'page': '마이그레이션_3.0전환안내'
         },
@@ -3858,13 +3858,13 @@ data.expenditureAllPlan = {
             'page': '지출_4.4_고정지출_직접등록_입력완료'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '지출_4.5_고정지출_직접등록_지출명입력',
             'category': '가계부',
             'page': '지출_4.5_고정지출_직접등록_지출명입력'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '지출_4.6_고정지출_직접등록_지출금액입력',
             'category': '가계부',
             'page': '지출_4.6_고정지출_직접등록_지출금액입력'
@@ -3882,7 +3882,7 @@ data.expenditureAllPlan = {
             'page': '지출_4.8_고정지출_직접등록_카테고리선택'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '지출_4.9_고정지출_직접등록_메모',
             'category': '가계부',
             'page': '지출_4.9_고정지출_직접등록_메모'

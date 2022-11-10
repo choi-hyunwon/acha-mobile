@@ -320,6 +320,19 @@
             left: 1px;
             top: 0;
           }
+          [type="checkbox"].filled-in-sq + span:not(.lever):before {
+            left: 1px;
+            top: 0;
+            width: 7px;
+            height: 10px;
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            border-right: 2px solid #d7d6e0;
+            border-bottom: 2px solid #d7d6e0;
+            transform: rotateZ(45deg);
+            transform-origin: 100% 100%;
+            background: none;
+          }
         }
 
         > .desc {

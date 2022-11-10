@@ -3554,115 +3554,115 @@ data.expenditureReport = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_118',
+            'url': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_적당',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_적당'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_119',
+            'url': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_초과',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출O_초과'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_120',
+            'url': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출X',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출O_이번달지출X'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_121',
+            'url': '리포트_3.1_예산설정전_과거-이번달_전월지출X_이번달지출O',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출X_이번달지출O'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_122',
+            'url': '리포트_3.1_예산설정전_과거-이번달_전월지출X_이번달지출X',
             'category': '가계부',
             'page': '리포트_3.1_예산설정전_과거-이번달_전월지출X_이번달지출X'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_151',
+            'url': '리포트_3.1_데이터없는경우_이번달-과거',
             'category': '가계부',
             'page': '리포트_3.1_데이터없는경우_이번달-과거'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_152',
+            'url': '리포트_3.1_데이터없는경우_미래',
             'category': '가계부',
             'page': '리포트_3.1_데이터없는경우_미래'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_153',
+            'url': '리포트_3.1_리포트_상세_남은돈그래프',
             'category': '가계부',
             'page': '리포트_3.1_리포트_상세_남은돈그래프'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '리포트_3.1_리포트_상세_지출추이그래프',
             'category': '가계부',
             'page': '리포트_3.1_리포트_상세_지출추이그래프'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_125',
+            'url': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_126',
+            'url': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)_지출예산설정',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(1)_지출예산설정'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_127',
+            'url': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(2)_카테고리예산설정',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(2)_카테고리예산설정'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_128',
+            'url': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(2)_카테고리예산설정_팝업',
             'category': '가계부',
             'page': '리포트_3.3_리포트_상세_예산전_지출예산설정하기(2)_카테고리예산설정_팝업'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_129',
+            'url': '리포트_3.4_예산설정후_과거-이번달_예산O_지출O_적당',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출O_적당'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_130',
+            'url': '리포트_3.4_예산설정후_과거-이번달_예산O_지출O_초과',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출O_초과'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_131',
+            'url': '리포트_3.4_예산설정후_과거-이번달_예산O_지출X',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산O_지출X'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_132',
+            'url': '리포트_3.4_예산설정후_과거-이번달_예산X_지출O',
             'category': '가계부',
-            'page': '리포트_3.4_예산설정후_과거-이번달_예산X_지출O '
+            'page': '리포트_3.4_예산설정후_과거-이번달_예산X_지출O'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_133',
+            'url': '리포트_3.4_예산설정후_과거-이번달_예산X_지출X',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_과거-이번달_예산X_지출X'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_134',
+            'url': '리포트_3.4_예산설정후_미래_예정O_지출O',
             'category': '가계부',
             'page': '리포트_3.4_예산설정후_미래_예정O_지출O'
         },
@@ -3678,103 +3678,103 @@ data.expenditureIncome = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_99',
+            'url': '총수입_4.3_수입목록_이번달_01',
             'category': '가계부',
             'page': '총수입_4.3_수입목록_이번달_01'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_100',
+            'url': '총수입_4.3_수입목록_이번달_02_내역이없음',
             'category': '가계부',
             'page': '총수입_4.3_수입목록_이번달_02_내역이없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_101',
+            'url': '총수입_4.3_수입목록_이번달_03_수입계획없음',
             'category': '가계부',
             'page': '총수입_4.3_수입목록_이번달_03_수입계획없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_102',
+            'url': '총수입_4.3_수입목록_이번달_04_수입모든내역없음',
             'category': '가계부',
             'page': '총수입_4.3_수입목록_이번달_04_수입모든내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_88',
+            'url': '총수입_4.3_수입목록_과거_01',
             'category': '가계부',
             'page': '총수입_4.3_수입목록_과거_01'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_89',
+            'url': '총수입_4.3_수입목록_과거_02_수입내역이없는경우',
             'category': '가계부',
             'page': '총수입_4.3_수입목록_과거_02_수입내역이없는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_103',
+            'url': '총수입_4.3_수입목록_미래_01',
             'category': '가계부',
             'page': '총수입_4.3_수입목록_미래_01'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_104',
+            'url': '총수입_4.3_수입목록_미래_02_수입내역이없는경우',
             'category': '가계부',
             'page': '총수입_4.3_수입목록_미래_02_수입내역이없는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_22',
+            'url': '총수입_4.4_수입목록_추가삭제',
             'category': '가계부',
             'page': '총수입_4.4_수입목록_추가삭제'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_90',
+            'url': '총수입_4.4_수입추가_이번달수입목록',
             'category': '가계부',
             'page': '총수입_4.4_수입추가_이번달수입목록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_91',
+            'url': '총수입_4.4_수입추가_이번달수입목록_설정내역없음',
             'category': '가계부',
             'page': '총수입_4.4_수입추가_이번달수입목록_설정내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_92',
+            'url': '총수입_4.5_수입추가_현금수입 직접등록',
             'category': '가계부',
             'page': '총수입_4.5_수입추가_현금수입 직접등록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_93',
+            'url': '총수입_4.10_수입상세',
             'category': '가계부',
             'page': '총수입_4.10_수입상세'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_94',
+            'url': '총수입_4.11_현금수입직접등록',
             'category': '가계부',
             'page': '총수입_4.11_현금수입직접등록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_97',
+            'url': '총수입_4.12_수입계획추가',
             'category': '가계부',
             'page': '총수입_4.12_수입계획추가'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_105',
+            'url': '총수입_4.17_수입계획_상세',
             'category': '가계부',
             'page': '총수입_4.17_수입계획_상세'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_23',
+            'url': '총수입_4.18_수입계획_상세_삭제',
             'category': '가계부',
             'page': '총수입_4.18_수입계획_상세_삭제'
         },
@@ -3787,73 +3787,73 @@ data.expenditureAll = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_106',
+            'url': '총지출_5.3_총지출목록_이번달_01',
             'category': '가계부',
             'page': '총지출_5.3_총지출목록_이번달_01'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_107',
+            'url': '총지출_5.3_총지출목록_이번달_02_지출예정만있음',
             'category': '가계부',
             'page': '총지출_5.3_총지출목록_이번달_02_지출예정만있음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_108',
+            'url': '총지출_5.3_총지출목록_이번달_03_지출내역만있음',
             'category': '가계부',
             'page': '총지출_5.3_총지출목록_이번달_03_지출내역만있음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_109',
+            'url': '총지출_5.3_총지출목록_이번달_04_정보없음',
             'category': '가계부',
             'page': '총지출_5.3_총지출목록_이번달_04_정보없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_110',
+            'url': '총지출_5.3_총지출목록_과거_01',
             'category': '가계부',
             'page': '총지출_5.3_총지출목록_과거_01'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_111',
+            'url': '총지출_5.3_총지출목록_과거_02_내역없음',
             'category': '가계부',
             'page': '총지출_5.3_총지출목록_과거_02_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_112',
+            'url': '총지출_5.3_총지출목록_미래_01',
             'category': '가계부',
             'page': '총지출_5.3_총지출목록_미래_01'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_113',
+            'url': '총지출_5.3_총지출목록_미래_02_내역없음',
             'category': '가계부',
             'page': '총지출_5.3_총지출목록_미래_02_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_114',
+            'url': '총지출_5.5_총지출목록_예산설정',
             'category': '가계부',
             'page': '총지출_5.5_총지출목록_예산설정'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_115',
+            'url': '총지출_5.6_총지출목록_필터_계좌목록만있음',
             'category': '가계부',
             'page': '총지출_5.6_총지출목록_필터_계좌목록만있음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_116',
+            'url': '총지출_5.6_총지출목록_필터_카드-계좌있음',
             'category': '가계부',
             'page': '총지출_5.6_총지출목록_필터_카드-계좌있음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_117',
+            'url': '총지출_5.6_총지출목록_필터_항목없음',
             'category': '가계부',
             'page': '총지출_5.6_총지출목록_필터_항목없음'
         },
@@ -3868,222 +3868,222 @@ data.expenditureAllPlan = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_23',
+            'url': '지출_4.1_고정지출_목록_내역이없는경우',
             'category': '가계부',
             'page': '지출_4.1_고정지출_목록_내역이없는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_24',
+            'url': '지출_4.2_고정지출_목록_내역이있는경우(1)',
             'category': '가계부',
             'page': '지출_4.2_고정지출_목록_내역이있는경우(1)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_25',
+            'url': '지출_4.2_고정지출_목록_내역이있는경우(2)',
             'category': '가계부',
             'page': '지출_4.2_고정지출_목록_내역이있는경우(2)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_26',
+            'url': '지출_4.2_고정지출_목록_내역이있는경우(3)',
             'category': '가계부',
             'page': '지출_4.2_고정지출_목록_내역이있는경우(3)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_08',
+            'url': '지출_4.2_고정지출_옵션메뉴',
             'category': '가계부',
             'page': '지출_4.2_고정지출_옵션메뉴'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_27',
+            'url': '지출_4.3_고정지출_추가_내역',
             'category': '가계부',
             'page': '지출_4.3_고정지출_추가_내역'
         },     {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_28',
+            'url': '지출_4.3_고정지출_추가_내역없음',
             'category': '가계부',
             'page': '지출_4.3_고정지출_추가_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_09',
+            'url': '지출_4.3_고정지출_추가_내역_팝업',
             'category': '가계부',
             'page': '지출_4.3_고정지출_추가_내역_팝업'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_29',
+            'url': '지출_4.4_고정지출_직접등록_입력전',
             'category': '가계부',
             'page': '지출_4.4_고정지출_직접등록_입력전'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_30',
+            'url': '지출_4.4_고정지출_직접등록_입력완료',
             'category': '가계부',
             'page': '지출_4.4_고정지출_직접등록_입력완료'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출_4.5_고정지출_직접등록_지출명입력',
             'category': '가계부',
             'page': '지출_4.5_고정지출_직접등록_지출명입력'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출_4.6_고정지출_직접등록_지출금액입력',
             'category': '가계부',
             'page': '지출_4.6_고정지출_직접등록_지출금액입력'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_10',
+            'url': '지출_4.7_고정지출_직접등록_지출일설정',
             'category': '가계부',
             'page': '지출_4.7_고정지출_직접등록_지출일설정'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출_4.8_고정지출_직접등록_카테고리선택',
             'category': '가계부',
             'page': '지출_4.8_고정지출_직접등록_카테고리선택'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출_4.9_고정지출_직접등록_메모',
             'category': '가계부',
             'page': '지출_4.9_고정지출_직접등록_메모'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_11',
+            'url': '지출_4.10_고정지출_직접등록_고정지출등록하기',
             'category': '가계부',
             'page': '지출_4.10_고정지출_직접등록_고정지출등록하기'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_31',
+            'url': '지출_4.11_고정지출_상세_지출예정',
             'category': '가계부',
             'page': '지출_4.11_고정지출_상세_지출예정'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_32',
+            'url': '지출_4.11_고정지출_상세_지출예정_미지출',
             'category': '가계부',
             'page': '지출_4.11_고정지출_상세_지출예정_미지출'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_33',
+            'url': '지출_4.12_고정지출 상세_지출완료',
             'category': '가계부',
             'page': '지출_4.12_고정지출 상세_지출완료'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_34',
+            'url': '지출_4.13_직접등록한고정지출상세_지출예정-미지출',
             'category': '가계부',
             'page': '지출_4.13_직접등록한고정지출상세_지출예정-미지출'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_35',
+            'url': '지출_4.13_직접등록한고정지출상세_지출완료',
             'category': '가계부',
             'page': '지출_4.13_직접등록한고정지출상세_지출완료'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_12',
+            'url': '지출_4.14_지출금액변경(1)',
             'category': '가계부',
             'page': '지출_4.14_지출금액변경(1)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_13',
+            'url': '지출_4.14_지출금액변경(2)',
             'category': '가계부',
             'page': '지출_4.14_지출금액변경(2)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_14',
+            'url': '지출_4.15_지출예정일변경(1)',
             'category': '가계부',
             'page': '지출_4.15_지출예정일변경(1)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_15',
+            'url': '지출_4.15_지출예정일변경(2)',
             'category': '가계부',
             'page': '지출_4.15_지출예정일변경(2)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_16',
+            'url': '지출_4.16_고정지출_메모입력',
             'category': '가계부',
             'page': '지출_4.16_고정지출_메모입력'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_36',
+            'url': '지출_4.17_지출스케쥴변경',
             'category': '가계부',
             'page': '지출_4.17_지출스케쥴변경'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_17',
+            'url': '지출_4.18_고정지출_삭제(1)',
             'category': '가계부',
             'page': '지출_4.18_고정지출_삭제(1)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_18',
+            'url': '지출_4.18_고정지출삭제(2)',
             'category': '가계부',
             'page': '지출_4.18_고정지출삭제(2)'
         },
         {
-            'stateClass': 'complete',
-            'url': '',
+            'stateClass': '???',
+            'url': '지출_5.1_고정지출_카테고리_내역없음',
             'category': '가계부',
             'page': '지출_5.1_고정지출_카테고리_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_37',
+            'url': '지출_5.2_고정지출_카테고리목록',
             'category': '가계부',
             'page': '지출_5.2_고정지출_카테고리목록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_38',
+            'url': '지출_5.4_카테고리_변경',
             'category': '가계부',
             'page': '지출_5.4_카테고리_변경'
         },
         {
             'stateClass': 'complete',
-            'url': '',
+            'url': '지출_5.4_카테고리_변경_내역없음',
             'category': '가계부',
             'page': '지출_5.4_카테고리_변경_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': '',
+            'url': '지출_5.5_카테고리_편집',
             'category': '가계부',
             'page': '지출_5.5_카테고리_편집'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_19',
+            'url': '지출_5.6_카테고리_추가_입력전',
             'category': '가계부',
             'page': '지출_5.6_카테고리_추가_입력전'
         },
         {
-            'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_19',
+            'stateClass': '???',
+            'url': '지출_5.7_카테고리_추가_입력중',
             'category': '가계부',
             'page': '지출_5.7_카테고리_추가_입력중'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_20',
+            'url': '지출_5.8_카테고리_편집',
             'category': '가계부',
             'page': '지출_5.8_카테고리_편집'
         },
@@ -4094,53 +4094,57 @@ data.expenditureAllPlan = {
 
 //가계부>지출>카드할부 7
 
+
 data.expenditureCard = {
     'title': '가계부>지출>카드할부',
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_17',
+            'url': '지출_6.1_카드할부_일자별목록_내역없음',
             'category': '가계부',
             'page': '지출_6.1_카드할부_일자별목록_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_18',
+            'url': '지출_6.1_카드할부_카테고리별목록_내역없음',
             'category': '가계부',
             'page': '지출_6.1_카드할부_카테고리별목록_내역없음'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출_6.1_카드할부_옵션메뉴',
             'category': '가계부',
             'page': '지출_6.1_카드할부_옵션메뉴'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_19',
+            'url': '지출_6.2_카드할부_일자별목록',
             'category': '가계부',
             'page': '지출_6.2_카드할부_일자별목록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_20',
+            'url': '지출_6.3_카드할부_카테고리별목록',
             'category': '가계부',
             'page': '지출_6.3_카드할부_카테고리별목록'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_21',
+            'url': '지출_6.2_카드할부_지출상세_메모입력후',
             'category': '가계부',
             'page': '지출_6.2_카드할부_지출상세_메모입력후'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_22',
+            'url': '지출_6.3_카드할부_지출상세_메모입력전',
             'category': '가계부',
             'page': '지출_6.3_카드할부_지출상세_메모입력전'
         },
     ]
 };
+
+
+
 //가계부>지출>변동지출 21
 
 data.expenditureChange = {
@@ -4148,184 +4152,184 @@ data.expenditureChange = {
     'list': [
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_01',
+            'url': '지출_7.1_변동지출_일자별목록_내역이없는경우',
             'category': '가계부',
             'page': '지출_7.1_변동지출_일자별목록_내역이없는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_01',
+            'url': '지출_7.1_변동지출_옵션메뉴',
             'category': '가계부',
             'page': '지출_7.1_변동지출_옵션메뉴'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_02',
+            'url': '지출_7.2_변동지출_목록_내역이있는경우',
             'category': '가계부',
             'page': '지출_7.2_변동지출_목록_내역이있는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_03',
+            'url': '지출_7.3_변동지출_상세',
             'category': '가계부',
             'page': '지출_7.3_변동지출_상세'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_04',
+            'url': '지출_7.4_변동지출_상세_직접입력',
             'category': '가계부',
             'page': '지출_7.4_변동지출_상세_직접입력'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_02',
+            'url': '지출_7.4_변동지출_삭제',
             'category': '가계부',
             'page': '지출_7.4_변동지출_삭제'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_05',
+            'url': '지출_7.5_변동지출_직접등록_입력전',
             'category': '가계부',
             'page': '지출_7.5_변동지출_직접등록_입력전'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_06',
+            'url': '지출_7.5_변동지출_직접등록_입력후',
             'category': '가계부',
             'page': '지출_7.5_변동지출_직접등록_입력후'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출_7.6_변동지출_직접등록_지출명입력',
             'category': '가계부',
             'page': '지출_7.6_변동지출_직접등록_지출명입력'
         },
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출_7.7_변동지출_직접등록_금액입력',
             'category': '가계부',
             'page': '지출_7.7_변동지출_직접등록_금액입력'
         },
 
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_03',
+            'url': '지출_7.8_변동지출_직접등록_카테고리선택',
             'category': '가계부',
             'page': '지출_7.8_변동지출_직접등록_카테고리선택'
         },
 
         {
             'stateClass': 'working',
-            'url': '',
+            'url': '지출_7.9_변동지출_직접등록_메모입력',
             'category': '가계부',
             'page': '지출_7.9_변동지출_직접등록_메모입력'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_07',
+            'url': '지출_8.1_변동지출_카테고리_내역이없는경우',
             'category': '가계부',
             'page': '지출_8.1_변동지출_카테고리_내역이없는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_189',
+            'url': '지출_8.1_변동지출_카테고리_데이터없는경우',
             'category': '가계부',
             'page': '지출_8.1_변동지출_카테고리_데이터없는경우'
         },
 
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_190',
+            'url': '지출_8.1_변동지출_카테고리_데이터없는경우_01_상세',
             'category': '가계부',
             'page': '지출_8.1_변동지출_카테고리_데이터없는경우_01_상세'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_191',
+            'url': '지출_8.1_변동지출_카테고리_데이터없는경우_02_그외카테고리',
             'category': '가계부',
             'page': '지출_8.1_변동지출_카테고리_데이터없는경우_02_그외카테고리'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_192',
+            'url': '지출_8.1_변동지출_카테고리_내역이없는경우',
             'category': '가계부',
             'page': '지출_8.1_변동지출_카테고리_내역이없는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_193',
+            'url': '지출_8.3_변동지출_카테고리_내역이있는경우',
             'category': '가계부',
             'page': '지출_8.3_변동지출_카테고리_내역이있는경우'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_08',
+            'url': '지출_8.2_변동지출_카테고리_그외카테고리',
             'category': '가계부',
             'page': '지출_8.2_변동지출_카테고리_그외카테고리'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_09',
+            'url': '지출_8.3_변동지출_카테고리_내역이있는경우',
             'category': '가계부',
             'page': '지출_8.3_변동지출_카테고리_내역이있는경우'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_10',
+            'url': '지출_8.4_변동지출_카테고리_상세_지출예산있는경우',
             'category': '가계부',
             'page': '지출_8.4_변동지출_카테고리_상세_지출예산있는경우'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_11',
+            'url': '지출_8.4_변동지출_카테고리_상세_지출예산없는경우',
             'category': '가계부',
             'page': '지출_8.4_변동지출_카테고리_상세_지출예산없는경우'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_12',
+            'url': '지출_8.4_변동지출_카테고리_상세_지출예산있는경우_직접등록',
             'category': '가계부',
             'page': '지출_8.4_변동지출_카테고리_상세_지출예산있는경우_직접등록'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_13',
+            'url': '지출_8.4_변동지출_카테고리_상세_지출예산없는경우_직접등록',
             'category': '가계부',
             'page': '지출_8.4_변동지출_카테고리_상세_지출예산없는경우_직접등록'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_popup_04',
+            'url': '지출_8.5_변동지출_카테고리_상세_예산등록',
             'category': '가계부',
             'page': '지출_8.5_변동지출_카테고리_상세_예산등록'
         },
         {
             'stateClass': '???',
-            'url': 'v3_expenditure_popup_05',
+            'url': '지출_8.6_변동지출_카테고리_상세_예산편집(1)',
             'category': '가계부',
             'page': '지출_8.6_변동지출_카테고리_상세_예산편집(1)'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_14',
+            'url': '지출_8.7_변동지출_카테고리_변경',
             'category': '가계부',
             'page': '지출_8.7_변동지출_카테고리_변경'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_15',
+            'url': '지출_8.7_변동지출_카테고리_변경_내역없음',
             'category': '가계부',
             'page': '지출_8.7_변동지출_카테고리_변경_내역없음'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_popup_06',
+            'url': '지출_8.7_변동지출_카테고리_변경(2)_변경범위선택',
             'category': '가계부',
             'page': '지출_8.7_변동지출_카테고리_변경(2)_변경범위선택'
         },
         {
             'stateClass': 'complete',
-            'url': 'v3_expenditure_16',
+            'url': '지출_8.8_변동지출_카테고리_편집',
             'category': '가계부',
             'page': '지출_8.8_변동지출_카테고리_편집'
         },

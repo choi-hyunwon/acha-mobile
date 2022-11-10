@@ -3692,6 +3692,7 @@
           margin-bottom: 20px;
           display: flex;
           justify-content: space-between;
+
           &:last-child{
             margin-bottom: 10px;
           }
@@ -3722,16 +3723,26 @@
               color: var(--text-01);
             }
           }
-          .memo {
-            width: 100%;
-            font-size: 15px;
-            font-weight: 500;
-            line-height: 1.47;
-            color: #37354e;
-            font-family: var(--font1);
-            border-bottom: 1px solid #efefef;
-            padding: 15px 0;
+          &-memo {
+            display: block;
+            textarea {
+              width: 100%;
+              height: auto !important;
+            }
+            .memo {
+              width: 100%;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 1.47;
+              color: #37354e;
+              font-family: var(--font1);
+              border-bottom: 1px solid #efefef;
+              padding: 15px 0;
+              display: block;
+            }
           }
+
+
           &-form {
             margin-top: -10px;
             position: relative;

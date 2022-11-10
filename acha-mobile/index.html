@@ -90,10 +90,25 @@
         .append(template(data.category))
         .append(template(data.homepage))//아차 홈페이지
         .append(template(data.v3Join))//회원가입_3.0변경
-        .append(template(data.guide))//공동관리>미션
-        .append(template(data.manageConnect))//공동관리>연결/설정 통합
-        .append(template(data.manageShare))//공동관리>공동지출/계좌/카드/지출스토리
-        .append(template(data.manageMission))//공동관리>미션
+
+        .append(template(data.guide))//공통가이드
+
+        .append(template(data.expenditureReport)) //가계부>지출>리포트 19
+        .append(template(data.expenditureIncome)) //가계부>총수입 17
+        .append(template(data.expenditureAll)) //가계부 > 총지출 12
+        .append(template(data.expenditureAllPlan)) //가계부>지출>정기지출 (구 고정지출) 37
+        .append(template(data.expenditureCard)) //가계부>지출>카드할부 7
+        .append(template(data.expenditureChange)) //가계부>지출>변동지출 21
+        .append(template(data.expenditureMethodAccount)) //가계부>지출수단>계좌 18 >
+        .append(template(data.expenditureMethodCash)) //가계부>지출수단>현금 2
+        .append(template(data.expenditureMethodCard)) //가계부>지출수단>카드 18
+        .append(template(data.expenditureCategory)) //가계부>카테고리 19 > 21
+        .append(template(data.expenditureCalander)) //가계부 > 캘린더 24
+
+
+        .append(template(data.manageConnect))//공동관리>연결/설정 40
+        .append(template(data.manageShare))//공동관리>공동지출/계좌/카드/지출스토리 25
+        .append(template(data.manageMission))//공동관리>미션 24
 
 
         .append(template(data.start))
@@ -109,29 +124,29 @@
 
 
 
-        .append(template(data.date9)) //22.10.20
-        .append(template(data.edit34)) //가계부>지출>리포트
-        .append(template(data.edit345)) //가계부>지출>변동지출
-        .append(template(data.edit35)) //가계부>지출수단>계좌
-        .append(template(data.edit36)) //가계부>지출수단>현금
+        // .append(template(data.date9)) //22.10.20
+        // .append(template(data.edit34)) //가계부>지출>리포트
+        // .append(template(data.edit345)) //가계부>지출>변동지출
+        // .append(template(data.edit35)) //가계부>지출수단>계좌
+        // .append(template(data.edit36)) //가계부>지출수단>현금
         .append(template(data.edit37)) //가계부>지출수단>카드
-        .append(template(data.edit38)) //가계부>카테고리
+        // .append(template(data.edit38)) //가계부>카테고리
 
 
 
-        .append(template(data.date8)) //22.10.18
-        .append(template(data.edit28)) //가계부>총수입
-        .append(template(data.edit29)) //가계부>지출>정기지출
-        .append(template(data.edit30)) //가계부>지출>카드할부
-        .append(template(data.edit31)) //가계부>지출>변동지출
-        .append(template(data.edit32)) //가계부>캘린더
+        // .append(template(data.date8)) //22.10.18
+        //.append(template(data.edit28)) //가계부>총수입
+        // .append(template(data.edit29)) //가계부>지출>정기지출
+        // .append(template(data.edit30)) //가계부>지출>카드할부
+        // .append(template(data.edit31)) //가계부>지출>변동지출
+        // .append(template(data.edit32)) //가계부>캘린더
         .append(template(data.edit33)) //더보기>3.0변경
 
-        .append(template(data.date7)) //22.10.13
+        // .append(template(data.date7)) //22.10.13
         // .append(template(data.edit20)) //공통가이드
-        .append(template(data.edit21)) //가계부>지출>리포트
-        .append(template(data.edit22)) //가계부>총수입
-        .append(template(data.edit23)) //가계부 > 총지출
+        // .append(template(data.edit21)) //가계부>지출>리포트
+        //.append(template(data.edit22)) //가계부>총수입
+        //.append(template(data.edit23)) //가계부 > 총지출
         //.append(template(data.edit24)) //공동관리>연결/설정
         // .append(template(data.edit25)) //공동관리>공동지출/계좌/카드/지출스토리
         //.append(template(data.edit26)) //공동관리>미션
@@ -144,10 +159,10 @@
         .append(template(data.edit18))//(수정)아차 홈페이지
 
         .append(template(data.date4)) //22.09.23
-        .append(template(data.edit13))//가계부>지출수단>계좌
-        .append(template(data.edit14))//가계부>지출수단>현금
-        .append(template(data.edit15))//가계부>지출수단>카드
-        .append(template(data.edit16))//가계부>카테고리
+        // .append(template(data.edit13))//가계부>지출수단>계좌
+        // .append(template(data.edit14))//가계부>지출수단>현금
+        // .append(template(data.edit15))//가계부>지출수단>카드
+        // .append(template(data.edit16))//가계부>카테고리
         .append(template(data.edit17))//가계부>수입
 
         // .append(template(data.date3)) //22.09.20
@@ -155,9 +170,9 @@
 
         .append(template(data.date2)) //22.09.16
         .append(template(data.edit7))//(수정,신규)더보기_3.0변경
-        .append(template(data.edit8))//가계부>지출>변동지출
-        .append(template(data.edit9))//가계부>지출>카드할부
-        .append(template(data.edit10))//가계부>지출>고정지출
+        // .append(template(data.edit8))//가계부>지출>변동지출
+        // .append(template(data.edit9))//가계부>지출>카드할부
+        //.append(template(data.edit10))//가계부>지출>고정지출
         .append(template(data.edit11))//가계부>지출>지출플랜
 
         .append(template(data.date1)) //22.09.07

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>변동지출 카테고리 상세</h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="expenditure-box">
+            <div class="box_my_income_add">
+                <form action="#">
+                    <fieldset>
+                        <div class="custom-light">
+                            <label class="title">지출명</label>
+                            <input title="value" type="text" maxlength="12" onkeyup="countChar(this,'_val')" placeholder="지출명을 입력해주세요"/>
+                            <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 12</span></div>
+                        </div>
+                        <div class="custom-light monetary-unit">
+                            <label class="title">지출금액</label>
+                            <input title="value" type="number" placeholder="지출 금액을 입력해주세요"/>
+                        </div>
+                        <div class="custom-light">
+                            <label class="title">지출일시</label>
+                            <input title="value" type="text" placeholder="지출명을 입력해주세요" value="6월 25일 18:54"/>
+                        </div>
+                        <div class="custom-light">
+                            <label class="title">지출수단</label>
+                            <input title="value" type="text" placeholder="지출명을 입력해주세요" value="현금" readonly/>
+                        </div>
+                        <div class="custom-light select-category">
+                            <label class="title">지출 카테고리</label>
+                            <input title="value" type="text" placeholder="카테고리를 선택하세요" value="문화/여가" readonly/>
+                        </div>
+                        <div class="custom-light">
+                            <label class="title">지출 메모</label>
+                            <input title="value" type="text" maxlength="20" onkeyup="countChar(this,'_val')" placeholder="메모를 입력해주세요" value=""/>
+                            <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span></div>
+                        </div>
+                        <div class="btn_area">
+                            <a class="btn btn-big btn-purple-bg btn-block disabled" href="#">변동지출 등록하기</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script>
+    $('.custom-control-input').on('click', function (){
+        $(this).toggleClass('off');
+        if($(this).hasClass('off')) {
+            $('._off').addClass('active')
+            $('._on').removeClass('active')
+        }
+        else {
+            $('._on').addClass('active')
+            $('._off').removeClass('active')
+        }
+    })
+
+    function countChar(val , target) {
+        var len = val.value.length;
+        var targetItem = $(`.${target}`);
+        var nextEle = val.nextElementSibling
+
+        targetItem.text(len);
+
+
+        if(len === 0) {
+            targetItem.css('color','#afaeb8');
+            nextEle.style.display="none";
+        }
+        else {
+            targetItem.css('color','#37354e');
+            nextEle.style.display="block"
+        }
+
+        val.addEventListener('focus', (event) => {
+            nextEle.style.display="block"
+        });
+        val.addEventListener('blur', (event) => {
+            nextEle.style.display="none";
+        });
+    }
+</script>
+</html>

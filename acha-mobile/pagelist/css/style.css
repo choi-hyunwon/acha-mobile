@@ -97,14 +97,20 @@ caption.visually_hidden {
   color: rgba(255,255,255,1);
   display: block;
   background: #e3dede; }
-
 .waiting {
   background: #bdbdbd !important;
+  color: #ffffff !important; }
+
+.design {
+  background: #f00 !important;
   color: #ffffff !important; }
 
 .waiting::after {
   content: '대기중'; }
 
+
+.design::after {
+  content: '확인 필요'; }
 .working {
   background: #ffa726 !important;
   color: #ffffff !important; }

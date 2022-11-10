@@ -122,8 +122,17 @@ caption.visually_hidden {
   color: #ffffff !important;;
 }
 
+.design {
+  background: #f00 !important;;
+  color: #ffffff !important;;
+}
+
 .waiting::after {
   content: '대기중';
+}
+
+.design::after {
+  content: '확인필요';
 }
 
 .working {

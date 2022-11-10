@@ -61,14 +61,14 @@
 [type="radio"]:not(:checked) + span:before {
   content: '';
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: #d7d6e0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  margin-top: 9px;
-  margin-left: 9px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 [type="radio"]:not(:checked) + span:after {

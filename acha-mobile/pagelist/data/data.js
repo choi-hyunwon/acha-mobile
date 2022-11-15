@@ -4660,26 +4660,26 @@ data.expenditureCalander = {
     'title': '가계부>캘린더',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.1_메인',
             'category': '가계부',
             'page': '캘린더_15.1_메인'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.1_메인_지출내역_카드_케이스별정리',
             'category': '가계부',
             'page': '캘린더_15.1_메인_지출내역_카드_케이스별정리'
         },
 
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.1_메인_내역이없는경우',
             'category': '가계부',
             'page': '캘린더_15.1_메인_내역이없는경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.1_메인_예정',
             'category': '가계부',
             'page': '캘린더_15.1_메인_예정'
@@ -4733,7 +4733,7 @@ data.expenditureCalander = {
             'page': '캘린더_15.5_캘린더지출항목_수입상세_직접등록'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.6_캘린더지출항목_카드지출상세_승인취소',
             'category': '가계부',
             'page': '캘린더_15.6_캘린더지출항목_카드지출상세_승인취소'
@@ -4751,35 +4751,35 @@ data.expenditureCalander = {
             'page': '캘린더_15.6_캘린더지출항목_카드지출상세_할부'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.7_캘린더지출항목_고정지출_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_고정지출_예정상세'
         },
 
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.7_캘린더지출항목_수입_계좌_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_수입_계좌_예정상세'
         },
 
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.7_캘린더지출항목_수입_현금(직접입력)_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_수입_현금(직접입력)_예정상세'
         },
 
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.7_캘린더지출항목_카드지출_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_카드지출_예정상세'
         },
 
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.7_캘린더지출항목_현금(직접입력)_예정상세',
             'category': '가계부',
             'page': '캘린더_15.7_캘린더지출항목_현금(직접입력)_예정상세'

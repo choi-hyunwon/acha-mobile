@@ -1528,6 +1528,36 @@
               border: 1px solid #efefef;
               position: relative;
               padding: 20px 20px 21px;
+              &-point {
+                background-color: #f1ebfd;
+                padding: 30px 20px;
+                &::after {
+                  display: none !important;
+                }
+                .title {
+                  font-size: 18px;
+                  font-family: var(--font3);
+                  line-height: 1.5;
+                  color: #37354e;
+
+                }
+                .point {
+                  font-size: 14px;
+                  font-family: var(--font2);
+                  line-height: 1.29;
+                  text-align: left;
+                  color: #37354e;
+                  span {
+                    display: inline;
+                  }
+                }
+                .img {
+                  position: absolute;
+                  top: 20px;
+                  right: 20px;
+                }
+
+              }
               .title{
                 font-size: 18px;
                 font-family: var(--font3);

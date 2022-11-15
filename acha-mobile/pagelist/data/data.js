@@ -3109,13 +3109,13 @@ data.manageShare = {
     'title': '공동관리>공동지출/계좌/카드/지출스토리',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_2.1_메인_연결전',
             'category': '공동관리',
             'page': '04_2.1_메인_연결전'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_2.2_메인_전체연결',
             'category': '공동관리',
             'page': '04_2.2_메인_전체연결'
@@ -4476,12 +4476,6 @@ data.expenditureMethodCard = {
             'url': '지출수단_11.4_카드별지출_카드상세_목표없음',
             'category': '가계부',
             'page': '지출수단_11.4_카드별지출_카드상세_목표없음'
-        },
-        {
-            'stateClass': 'working',
-            'url': '지출수단_11.4_카드별지출_카드상세_목표있음_지출없음',
-            'category': '가계부',
-            'page': '지출수단_11.4_카드별지출_카드상세_목표없음_지출없음'
         },
         {
             'stateClass': 'complete',

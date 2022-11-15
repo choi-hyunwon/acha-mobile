@@ -4804,7 +4804,7 @@ data.expenditureCalander = {
             'page': '캘린더_15.8_스토리편집'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '캘린더_15.8_스토리등록(내 지출 기분 선택_스토리 이모지)',
             'category': '가계부',
             'page': '캘린더_15.8_스토리등록(내 지출 기분 선택_스토리 이모지)'

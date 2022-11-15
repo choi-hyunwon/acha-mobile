@@ -2860,7 +2860,13 @@ data.manageConnect = {
     'title': '공동관리>연결/설정',
     'list': [
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
+            'url': '04_00_예외케이스',
+            'category': '공동관리',
+            'page': '04_00_예외케이스'
+        },
+        {
+            'stateClass': 'working',
             'url': '04_1.1_공동관리메인',
             'category': '공동관리',
             'page': '04_1.1_공동관리메인'
@@ -2870,6 +2876,12 @@ data.manageConnect = {
             'url': '04_1.1_공동관리메인_도움말',
             'category': '가계부',
             'page': '04_1.1_공동관리메인_도움말'
+        },
+        {
+            'stateClass': 'working',
+            'url': '04_1.1_공동관리메인_서비스소개',
+            'category': '가계부',
+            'page': '04_1.1_공동관리메인_서비스소개'
         },
         {
             'stateClass': 'complete',
@@ -2897,7 +2909,7 @@ data.manageConnect = {
             'page': '04_1.3_SMS메시지_3_이름입력'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '04_1.3_SMS메시지_4_초대완료',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_4_초대완료'
@@ -2910,13 +2922,13 @@ data.manageConnect = {
         },
 
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '04_1.3_SMS메시지_7_초대장',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_7_초대장'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '04_1.3_SMS메시지_8_연결확인',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_8_연결확인'
@@ -2953,7 +2965,7 @@ data.manageConnect = {
             'page': '04_1.5_약관동의_개인정보의제3자제공동의'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '04_3.1_공동지출관리_1_시작',
             'category': '가계부',
             'page': '04_3.1_공동지출관리_1_시작'
@@ -2989,7 +3001,7 @@ data.manageConnect = {
             'page': '04_3.1_공동지출관리_표시목록없을경우'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '04_3.2_계좌공유_1_시작',
             'category': '가계부',
             'page': '04_3.2_계좌공유_1_시작'
@@ -3007,7 +3019,7 @@ data.manageConnect = {
             'page': '04_3.2_계좌공유_마이데이터연결유_2_보드오픈완료'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '04_3.3_카드공유_1_시작',
             'category': '가계부',
             'page': '04_3.3_카드공유_1_시작'
@@ -3031,7 +3043,7 @@ data.manageConnect = {
             'page': '04_10.1_공동관리설정_ME'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '04_10.1_공동관리설정_ME_유의사항',
             'category': '가계부',
             'page': '04_10.1_공동관리설정_ME_유의사항'
@@ -4484,7 +4496,7 @@ data.expenditureMethodCard = {
             'page': '지출수단_11.6_카드별지출_항목상세'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '지출수단_11.6_카드별지출_항목상세_승인취소',
             'category': '가계부',
             'page': '지출수단_11.6_카드별지출_항목상세_승인취소'
@@ -4648,20 +4660,20 @@ data.expenditureCalander = {
     'title': '가계부>캘린더',
     'list': [
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '캘린더_15.1_메인',
             'category': '가계부',
             'page': '캘린더_15.1_메인'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '캘린더_15.1_메인_지출내역_카드_케이스별정리',
             'category': '가계부',
             'page': '캘린더_15.1_메인_지출내역_카드_케이스별정리'
         },
 
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '캘린더_15.1_메인_내역이없는경우',
             'category': '가계부',
             'page': '캘린더_15.1_메인_내역이없는경우'
@@ -4721,7 +4733,7 @@ data.expenditureCalander = {
             'page': '캘린더_15.5_캘린더지출항목_수입상세_직접등록'
         },
         {
-            'stateClass': 'complete',
+            'stateClass': 'working',
             'url': '캘린더_15.6_캘린더지출항목_카드지출상세_승인취소',
             'category': '가계부',
             'page': '캘린더_15.6_캘린더지출항목_카드지출상세_승인취소'

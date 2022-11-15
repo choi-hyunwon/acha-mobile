@@ -15,6 +15,7 @@
             <!-- expenditure-box -->
             <div class="expenditure-box bg_light_gray">
                 <div class="calendar-history">
+                    <h1>등록된 스토리가 없는 경우</h1>
                     <div class="history-list-calendar">
                         <ul>
                             <li>
@@ -41,6 +42,37 @@
                                     <span class="price">-15,000원</span>
                                 </span>
                             </li>
+                        </ul>
+                    </div>
+                    <h1>카드할부</h1>
+                    <div class="history-list-calendar">
+                        <ul>
+                            <li>
+                                <span class="time">13:50 <em>|</em> 할부6개월 <em>|</em> 신한Deepdream</span>
+                                <span class="detail">
+                                    <span>현대백화점</span>
+                                    <span>-1,500,100원</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="time">13:50 <em>|</em> 정정 <em>|</em> 신한Deepdream</span>
+                                <span class="detail">
+                                    <span>현대백화점</span>
+                                    <span>-1,500,100원</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="time">13:50 <em>|</em> 정정 <em>|</em> 신한Deepdream</span>
+                                <span class="detail">
+                                    <span>현대백화점</span>
+                                    <span class="f-cancel">-1,500,100원</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>등록된 스토리가 있는 경우</h1>
+                    <div class="history-list-calendar">
+                        <ul>
                             <li>
                                 <span class="time">13:50 | 현금</span>
                                 <span class="detail">
@@ -51,7 +83,7 @@
                                 <div class="desc">
                                     친구들이랑 주말데이트는 즐거워^^ 맛있는 안주와 좋은 술이 있는 와인하우스! 저렴한 가격에 완전 하이 퀄리티! 안주 맛집 드디어 찾은듯ㅋㅋㅋ
                                 </div>
-                            </li> 
+                            </li>
                             <li>
                                 <span class="time">13:50 | 현금</span>
                                 <span class="detail">
@@ -77,7 +109,7 @@
                                 <script>
                                     var swiper = new Swiper("._pageSlider", {
                                         autoHeight: true,
-                                        calculateHeight:true,
+                                        calculateHeight: true,
                                         pagination: {
                                             el: ".swiper-pagination",
                                         },
@@ -87,8 +119,51 @@
                                         }
                                     });
                                 </script>
-                            </li> 
-                            
+                            </li>
+                            <li>
+                                <span class="time">13:50 | 신한1.5Air</span>
+                                <span class="detail">
+                                    <span class="tit">현대백화점무역센터점</span>
+                                    <span class="price">-4,197,000원</span>
+                                    <span class="emotion"><img src="../../img/common/ico-emoji-excited@2x.png" alt=""></span>
+                                </span>
+                                <div class="tag">
+                                    <span>#칭구들돼지파티</span>
+                                </div>
+                                <div class="desc">
+                                    오늘 한방 질렀다. <br>
+                                    내 생일 선물🎂
+                                </div>
+                                <div class="swiper-container _pageSlider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="img-area">
+                                                <img src="../../img/@temp/@temp-slider-img-01.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img-area">
+                                                <img src="../../img/@temp/@temp-slider-img-01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <script>
+                                    var swiper = new Swiper("._pageSlider2", {
+                                        autoHeight: true,
+                                        calculateHeight: true,
+                                        pagination: {
+                                            el: ".swiper-pagination",
+                                        },
+                                        on: {
+                                            activeIndexChange: function () {
+                                            }
+                                        }
+                                    });
+                                </script>
+                            </li>
+
 
                         </ul>
                     </div>
@@ -96,10 +171,6 @@
                 </div>
             </div>
             <!-- //expenditure-box -->
-
-
-
-
 
 
         </div>
@@ -124,7 +195,7 @@
                 return weekList[date.getDay()];
             },
             navLinkDayClick: function (date, jsEvent) {
-                console.log(date.toISOString().slice(0,10));
+                console.log(date.toISOString().slice(0, 10));
                 console.log(jsEvent.target)
             },
             events: [

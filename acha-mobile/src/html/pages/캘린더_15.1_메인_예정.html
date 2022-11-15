@@ -31,18 +31,33 @@
                         </div>
                         <div class="detail">
                             <div class="plus">
-                                <span class="tit">수입</span><span class="price">+0원</span>
+                                <span class="tit">수입</span><span class="price">+15,000원</span>
                             </div>
                             <div class="minus">
-                                <span class="tit">지출</span><span class="price">-0원</span>
+                                <span class="tit">지출</span><span class="price">-15,000원</span>
                             </div>
                         </div>
                     </div>
+
                     <div class="history-list-calendar">
-                        <div class="empty" style="height: calc(100vh - 650px)">
-                            <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
-                            <p>지출 내역이 없습니다 🙁</p>
-                        </div>
+                        <ul>
+                            <li>
+                                <span class="time">수입예정 | 우리계좌271</span>
+                                <span class="detail">
+                                    <span class="tit">급여</span>
+                                    <span class="price">+2,250,000원</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="time">지출예정 | 우리계좌271</span>
+                                <span class="detail">
+                                    <span class="tit">신한카드</span>
+                                    <span class="price">-1,250,000원</span>
+                                </span>
+                            </li>
+
+
+                        </ul>
                     </div>
 
                 </div>
@@ -67,7 +82,7 @@
             fixedWeekCount: false,
             header: false,
             height: 'auto',
-            defaultDate: '2022-10-30',  // 날짜 입력시, 달력 show
+            defaultDate: '2022-11-15',  // 날짜 입력시, 달력 show
             editable: false,
             eventLimit: false,
             navLinks: true,
@@ -83,48 +98,53 @@
                 {
                     className: 'minus-data',
                     title: '-100,000',
-                    start: '2022-10-12'
+                    start: '2022-11-12'
                 },
                 {
                     className: 'minus-data',
                     title: '-480,000',
-                    start: '2022-10-13'
+                    start: '2022-11-13'
                 },
                 {
                     className: 'minus-data',
                     title: '-1,020,000',
-                    start: '2022-10-14'
+                    start: '2022-11-14'
                 },
                 // 표시 할 데이터가 있고, 선택된 일자가 있는 금액의 첫번째에 plus-data 클래스 추가 **
                 {
                     className: 'plus-data',
                     title: '+100,000',
-                    start: '2022-10-03'
+                    start: '2022-11-03'
                 },
                 {
                     className: 'minus-data',
                     title: '-50,000',
-                    start: '2022-10-03'
+                    start: '2022-11-03'
                 },
                 {
                     className: 'plus-data',
                     title: '+50,000',
-                    start: '2022-10-10'
+                    start: '2022-11-10'
                 },
                 {
-                    className: 'plus-data',
+                    className: 'plus-data-todo',
                     title: '+100,000',
-                    start: '2022-10-17'
+                    start: '2022-11-17'
                 },
                 {
-                    className: 'plus-data',
+                    className: 'plus-data-todo',
                     title: '+100,000',
-                    start: '2022-10-25'
+                    start: '2022-11-25'
                 },
                 {
-                    className: 'plus-data',
+                    className: 'plus-data-todo',
                     title: '+100,000',
-                    start: '2022-10-28'
+                    start: '2022-11-28'
+                },
+                {
+                    className: 'minus-data-todo',
+                    title: '-100,000',
+                    start: '2022-11-28'
                 },
             ],
         });

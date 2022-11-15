@@ -5614,7 +5614,7 @@
   }
 
   .fc-sun {
-    color: #ef4b61 !important;
+    color: var(--text-01);
 
     &.fc-other-month.fc-past {
       color: #fddbe0 !important;
@@ -5622,7 +5622,7 @@
   }
 
   .fc-sat {
-    color: #3992d3 !important;
+    color: var(--text-01);
 
     &.fc-other-month.fc-past {
       color: #c0d8ea !important;

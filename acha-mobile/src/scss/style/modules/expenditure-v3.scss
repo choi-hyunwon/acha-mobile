@@ -42,7 +42,7 @@
       position: absolute;
       top: 0px;
       right: 0px;
-      padding: 24px 20px 0;
+      padding: 24px 20px 0 0;
 
       .update {
         margin: 0 2px 0 0;
@@ -3947,7 +3947,9 @@
    expenditure-calendar
    */
   .expenditure-calendar {
+    padding-top: 10px;
     .ex-calendar {
+      margin-bottom: 50px;
       .box-ex-calendar-header {
         display: flex;
         justify-content: space-between;
@@ -4023,11 +4025,25 @@
               color: var(--color-point-secondary) !important;
             }
           }
+          &-todo {
+            .fc-content {
+              .fc-title {
+                color: #ebc0f8 !important;
+              }
+            }
+          }
         }
         .minus-data {
           .fc-content {
             .fc-title {
               color: var(--color-point) !important;
+            }
+          }
+          &-todo {
+            .fc-content {
+              .fc-title {
+                color: #cbb7f6 !important;
+              }
             }
           }
         }
@@ -4148,6 +4164,8 @@
             }
             .swiper-container {
               padding-top: 14px;
+              margin-left: -20px;
+              margin-right: -20px;
               .img-area {
                 img{
                 width: 100%;

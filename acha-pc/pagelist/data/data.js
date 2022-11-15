@@ -1,12 +1,24 @@
 var data = {};
 data.edit = {
-    'title': '2022.10.07',
+    'title': '2022.11.07',
     'list': [
         {
             "stateClass": "complete",
             "url": "ui_error",
             "part": "pages",
             "page": "화면 오류 페이지"
+        },
+        {
+            "stateClass": "complete",
+            "url": "PC_02_공인인증서복사_01_복사하기",
+            "part": "pages",
+            "page": "PC_02_공인인증서복사_01_복사하기"
+        },
+        {
+            "stateClass": "complete",
+            "url": "PC_02_공인인증서복사_02_완료",
+            "part": "pages",
+            "page": "PC_02_공인인증서복사_02_완료"
         },
     ]
 };

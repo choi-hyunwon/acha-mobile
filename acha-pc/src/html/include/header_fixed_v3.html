@@ -1,0 +1,37 @@
+<!-- s header-->
+<header class="fixed">
+    <div class="gnb-v3" id="sticker">
+        <div>
+            <h1><a href="#" class="logo"><span class="sr-only">U플래너</span></a></h1>
+            <div class="logo"><a href="#"><img src="../../img/common/logo_up@2x.png" width="128" alt="U플래너"></a></div>
+            <div class="menu d-lg-none">
+                <a href="#" class="m_open"><img src="../../img/common/btn_menu@2x.png" width="26" alt=""></a>
+                <a href="#" class="m_close"><img src="../../img/common/btn_menu_close@2x.png" width="26" alt=""></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li class="active"><a href="#">공동인증서 복사</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#sticker").sticky({topSpacing: 0});
+            var gnb = $('.gnb-v3');
+            gnb.find('.menu .m_open').click(function () {
+                gnb.addClass('active');
+                gnb.find('.menu .m_open').hide();
+                gnb.find('.menu .m_close').show();
+            });
+            gnb.find('.menu .m_close').click(function () {
+                gnb.removeClass('active');
+                gnb.find('.menu .m_close').hide();
+                gnb.find('.menu .m_open').show();
+            });
+        });
+    </script>
+</header>
+<!-- e header-->

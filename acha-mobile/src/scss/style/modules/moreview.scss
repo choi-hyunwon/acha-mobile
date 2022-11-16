@@ -878,6 +878,7 @@
 
         &::placeholder {
           color: var(--text-03);
+          font-family: var(--font1);
         }
 
         &::-webkit-search-cancel-button {

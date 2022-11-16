@@ -48,7 +48,6 @@
         margin: 0 2px 0 0;
         font-size: 13px;
         line-height: 18px;
-        letter-spacing: -0.65px;
         text-align: right;
         color: var(--text-02);
 
@@ -2695,7 +2694,6 @@
                   height: 100%;
                   font-size: 16px;
                   font-family: var(--font2);
-                  letter-spacing: -.65px;
 
                   em:first-child {
                     line-height: 19px;
@@ -2717,12 +2715,10 @@
                     font-family: var(--font1);
                     top: 21px;
                     left: 4px;
-                    letter-spacing: 0;
 
                     .category {
                       font-family: var(--font1);
                       font-size: 11px;
-                      letter-spacing: -.55px;
                       margin-left: 2px;
                     }
                   }
@@ -2730,7 +2726,6 @@
                   .desc {
                     font-size: 11px;
                     line-height: 17px;
-                    letter-spacing: -0.55px;
                     text-align: left;
                     color: var(--text-03);
                     position: absolute;
@@ -2758,7 +2753,6 @@
                   width: 42%;
                   font-family: var(--font5);
                   font-size: 16px;
-                  letter-spacing: -.14px;
                   text-align: right;
 
                   em {
@@ -3972,7 +3966,6 @@
           .btn-filter {
             padding: 0 13px 0 30px;
             font-size: 12px;
-            letter-spacing: -0.55px;
             text-align: left;
             color: var(--text-02);
             min-width: auto;
@@ -4350,7 +4343,6 @@
       font-size: 15px;
       font-weight: 500;
       line-height: 22px;
-      letter-spacing: -0.38px;
       text-align: left;
       color: var(--text-01);
       padding-bottom: 13px;
@@ -4374,7 +4366,6 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 20px;
-      letter-spacing: -0.35px;
       text-align: left;
       margin-bottom: 10px;
 
@@ -4409,7 +4400,6 @@
 
       input.custom {
         font-family: var(--font2);
-        letter-spacing: -.32px;
 
         &::placeholder {
           font-family: var(--font1);
@@ -4444,7 +4434,6 @@
             span {
               display: inline-block;
               font-size: 11px;
-              letter-spacing: -0.28px;
               text-align: center;
               color: var(--white);
 
@@ -4491,7 +4480,6 @@
         font-family: var(--font2);
         font-weight: 500;
         line-height: 1.43;
-        letter-spacing: -0.35px;
         text-align: left;
         color: var(--text-01);
       }
@@ -4500,7 +4488,6 @@
         height: 100px;
         padding: 9px 12px;
         font-family: var(--font2);
-        letter-spacing: -.32px;
         margin-bottom: 0;
         color: var(--text-01);
 
@@ -4519,7 +4506,6 @@
         right: 0;
         font-size: 11px;
         line-height: 17px;
-        letter-spacing: -0.28px;
         text-align: right;
         color: var(--text-04);
       }

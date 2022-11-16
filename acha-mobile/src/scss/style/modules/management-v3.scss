@@ -207,7 +207,6 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
-            letter-spacing: -0.35px;
             color: var(--text-01);
           }
         }
@@ -220,7 +219,6 @@
             font-size: 14px;
             font-weight: bold;
             line-height: 20px;
-            letter-spacing: -0.35px;
             color: var(--text-01);
             margin-bottom: 7px;
             padding-top: 21px;
@@ -229,7 +227,6 @@
           > .desc {
             font-size: 13px;
             line-height: 21px;
-            letter-spacing: -0.33px;
             text-align: left;
             color: var(--text-02);
             margin-bottom: 17px;
@@ -270,7 +267,6 @@
                   display: block;
                   font-size: 12px;
                   line-height: 18px;
-                  letter-spacing: -0.3px;
                   color: var(--text-02);
                   margin-bottom: 4px;
                 }
@@ -281,14 +277,12 @@
                   font-family: var(--font2);
                   font-weight: 500;
                   line-height: 20px;
-                  letter-spacing: -0.33px;
                   color: var(--text-01);
 
                   > a {
                     font-size: 13px;
                     font-family: var(--font1);
                     line-height: 19px;
-                    letter-spacing: -0.33px;
                     color: var(--text-03);
                     text-decoration: underline;
                     margin-left: 6px;
@@ -307,7 +301,6 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
-            letter-spacing: -0.35px;
             color: var(--text-01);
             padding-top: 20px;
             padding-bottom: 14px;
@@ -337,7 +330,6 @@
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 20px;
-                    letter-spacing: -0.35px;
                     margin-bottom: 3px;
                   }
 
@@ -345,7 +337,6 @@
                     font-size: 12px;
                     font-weight: normal;
                     line-height: 18px;
-                    letter-spacing: -0.3px;
                     text-align: left;
                     color: var(--text-03);
                   }
@@ -369,7 +360,6 @@
             > .title {
               font-size: 15px;
               line-height: 22px;
-              letter-spacing: -0.38px;
               text-align: left;
               color: var(--text-01);
               margin-bottom: 10px;
@@ -377,7 +367,6 @@
               &.title-sm {
                 font-size: 14px;
                 line-height: 20px;
-                letter-spacing: -0.35px;
                 padding-top: 0;
               }
             }
@@ -404,7 +393,6 @@
                   display: block;
                   font-size: 11px;
                   line-height: 17px;
-                  letter-spacing: -0.28px;
                   text-align: left;
                   color: var(--text-02);
                 }
@@ -422,7 +410,6 @@
         .content {
           font-size: 18px;
           line-height: 28px;
-          letter-spacing: -0.5px;
           font-weight: 500;
           text-align: left;
           color: var(--text-01);
@@ -452,7 +439,6 @@
             background-color: var(--color-point);
             color: #ffffff;
             font-size: 15px;
-            letter-spacing: -.75px;
             font-family: var(--font2);
           }
         }
@@ -465,7 +451,6 @@
         .content {
           font-size: 18px;
           line-height: 28px;
-          letter-spacing: -0.5px;
           font-weight: 500;
           text-align: left;
           color: var(--text-01);
@@ -527,7 +512,6 @@
             background-color: var(--color-point);
             color: #ffffff;
             font-size: 15px;
-            letter-spacing: -.75px;
             font-family: var(--font2);
           }
         }
@@ -1474,7 +1458,6 @@
       font-size: 17px;
       font-weight: bold;
       line-height: 25px;
-      letter-spacing: -0.43px;
       text-align: center;
       margin-bottom: 30px;
     }
@@ -1495,7 +1478,6 @@
         font-size: 15px;
         font-weight: bold;
         line-height: 22px;
-        letter-spacing: -0.35px;
         margin-bottom: 10px;
 
         &:nth-child(3) {
@@ -1507,7 +1489,6 @@
       .desc {
         font-size: 12px;
         line-height: 19px;
-        letter-spacing: -0.3px;
         color: var(--text-02);
         margin-bottom: 10px;
 
@@ -1515,7 +1496,6 @@
           display: inline-block;
           font-size: 15px;
           line-height: 19px;
-          letter-spacing: -0.38px;
           color: #ef4b61;
           border-bottom: 1px solid #ef4b61;
         }
@@ -1549,7 +1529,6 @@
               font-family: var(--font1);
               font-weight: normal;
               color: var(--text-02);
-              letter-spacing: -.28px;
               line-height: 16px;
               padding: 8px;
             }
@@ -1564,7 +1543,6 @@
           display: inline-block;
           font-size: 11px;
           line-height: 17px;
-          letter-spacing: -0.28px;
           text-align: left;
           color: var(--text-02);
         }
@@ -1580,7 +1558,6 @@
         font-size: 11px;
         font-weight: 500;
         line-height: 1.45;
-        letter-spacing: -0.55px;
         text-align: center;
         color: var(--text-02);
       }
@@ -1945,7 +1922,6 @@
 
     .text-loading {
       padding: 30px 20px 0;
-      letter-spacing: -1px;
       text-align: center;
       height: calc(100vh - 66px);
       display: flex;

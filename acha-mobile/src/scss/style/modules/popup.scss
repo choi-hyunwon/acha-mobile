@@ -3258,9 +3258,10 @@
           }
           ul{
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
             li{
-              width: 70px;
+              width: 25%;
+              //width: 70px;
               display: inline-block;
               margin-bottom: 30px;
               span{

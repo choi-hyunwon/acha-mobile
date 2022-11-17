@@ -1,3 +1,5 @@
+
+
 /* section 공통 */
 .section {
     position: relative;
@@ -20,28 +22,69 @@
                 & span {
                     display: inline;
                 }
+                & .dot-top {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -2px;
+                        left: calc(50% - 2px);
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background-color: #fff;
+
+                    }
+                }
             }
 
             & .desc {
                 font-family: var(--font5);
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 22px;
-                letter-spacing: -0.38px;
+                opacity: 0.8;
+                font-size: 14px;
+                letter-spacing: -0.56px;
+                text-align: center;
                 color: #45444a;
-                padding-top: 10px;
-                margin-top: 0;
-
                 & span {
                     display: inline-block;
                 }
             }
+
+            & .comment {
+                font-family: var(--font5);
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: -0.35px;
+                text-align: center;
+                color: #939393;
+                margin-top: 22px;
+            }
+
+        }
+        & .panel {
+            padding-top: 50px;
+            width: 320px;
+            margin: 0 auto;
+            & img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
+}
+.d-pc-block {
+    display: none;
 }
 
 /* tablet */
 @media (min-width: 767px) {
+    .d-tablet-none {
+        display: none;
+    }
+    .d-tablet-block {
+        display: block;
+    }
+
     .section {
         position: relative;
 
@@ -49,14 +92,30 @@
             padding-top: 120px;
 
             & .txt-area {
+                & .ico img {
+                    width: 39px;
+                }
                 & .txt-lg {
-                    font-size: 40px;
-                    line-height: 48px;
+                    font-size: 36px;
+                    line-height: 50px;
+                    & .dot-top {
+                        &::before {
+                            left: calc(50% - 3px);
+                            width: 6px;
+                            height: 6px;
+                        }
+                    }
                 }
 
                 & .desc {
-                    font-size: 24px;
-                    line-height: 32px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-top: 16px;
+                }
+                & .comment {
+                    font-size: 16px;
+                    color: #939393;
+                    margin-top: 36px;
                 }
             }
         }
@@ -65,27 +124,204 @@
 
 /* pc */
 @media (min-width: 1024px) {
+
     .section {
         width: 100%;
 
         & .inner {
             padding-top: 130px;
-            width: 100%;
-            max-width: 1920px;
+            width: 1200px;
             margin: 0 auto;
 
             & .txt-area {
+                & .ico img {
+                    width: 51px;
+                }
                 & .txt-lg {
-                    text-align: left;
-                    font-size: 56px;
-                    line-height: 66px;
+                    text-align: center;
+                    font-size: 48px;
+                    line-height: 68px;
+                    & .dot-top {
+                        &::before {
+                            left: calc(50% - 5px);
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
                 }
 
                 & .desc {
-                    font-size: 28px;
-                    line-height: 38px;
-                    padding-top: 12px;
+                    font-size: 22px;
+                    line-height: 1.64;
+                    letter-spacing: -0.55px;
+                    text-align: center;
+                    color: #45444a;
+                }
+
+                & .comment {
+                    font-size: 20px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+
+    .d-pc-block {
+        display: block !important;
+    }
+}
+
+
+/* 메인 section_main */
+.section_main_v3 {
+    width: 100%;
+    height: 700px;
+    background-image: url("../../img/main/v3/M-img_visual.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & .inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 60px;
+
+        & .txt-area {
+            padding-top: 40px;
+            margin-bottom: 440px;
+
+            & .txt-lg {
+                color: #ffffff;
+                line-height: 28px;
+                letter-spacing: 0;
+
+            }
+            & .desc {
+                color: #FFFFFF;
+            }
+        }
+
+        & .btn_group {
+            position: relative;
+            display: block;
+            padding: 0 28px;
+            z-index: 11;
+
+            & ul {
+                display: none;
+            }
+
+            & .btn-download-app {
+                display: block;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 10px;
+                background-color: #fcd532;
+                font-family: var(--font2);
+                font-size: 18px;
+                text-align: center;
+            }
+
+            &.down {
+                & .btn-download-app {
+                    position: fixed;
+                    width: 100%;
+                    height: 60px;
+                    line-height: 60px;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+
+/* tablet */
+@media (min-width: 767px) {
+    .section_main_v3 {
+        height: 800px;
+        background-image: url("../../img/main/v3/T-img_visual.png");
+
+        & .inner {
+            padding-top: 90px;
+
+            & .txt-area {
+                padding-top: 52px;
+                margin-bottom: 400px;
+
+                & .txt-lg {
+                    line-height: 50px;
+                }
+            }
+
+            & .btn_group {
+                padding: 0 40px;
+
+                & .btn-download-app {
+                    height: 80px;
+                    line-height: 80px;
+                    background-color: #fcd532;
+                    font-size: 24px;
+                }
+
+                &.down {
+                    & .btn-download-app {
+                        height: 80px;
+                        line-height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .section_main_v3 {
+        height: 1000px;
+        background-image: url("../../img/main/v3/P-img_visual.png");
+
+        & .inner {
+            width: 1024px;
+            margin: 0 auto;
+            text-align: left;
+
+            & .txt-area {
+                padding-top: 280px;
+                margin-bottom: 70px;
+                text-align: left;
+
+                & .txt-lg {
+                    line-height: 82px;
+                    font-size: 56px;
                     text-align: left;
+                }
+                & .desc {
+                    font-size: 24px;
+                    line-height: 38px;
+                    mrrgin-top: 20px;
+                    text-align: left;
+                }
+
+            }
+
+            & .btn_group {
+                padding: 0;
+
+                & ul {
+                    display: block;
+
+                    li {
+                        min-width: 190px;
+                    }
+                }
+
+                & .btn-download-app {
+                    display: none;
                 }
             }
         }
@@ -93,6 +329,419 @@
 }
 
 
+
+
+/* 미리확인 section_check */
+.section_auto {
+    position: relative;
+    background-color: #fcf8ff;
+    & .inner {
+        min-height: 660px;
+        background: transparent url("../../img/main/v3/M-img_check.png") no-repeat bottom center / 270px auto;
+    }
+}
+
+/* tablet */
+@media (min-width: 767px) {
+    .section_auto {
+        & .inner {
+            min-height: 900px;
+            background: transparent url("../../img/main/v3/T-img_check.png") no-repeat bottom center / 668px auto;
+        }
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .section_auto {
+        & .inner {
+            min-height: 1210px;
+            background: transparent url("../../img/main/v3/T-img_check.png") no-repeat bottom center / 1050px auto;
+        }
+    }
+}
+
+
+
+/* 월 정기지출 조회에서 납부현황까지 한눈에! */
+.section_one_point {
+    position: relative;
+    & .inner {
+        padding-top: 30px;
+        min-height: 1000px;
+        & .panel {
+            width: 300px;
+            margin: 0 auto;
+            padding-top: 0;
+            & img {
+                width: 100%;
+                height: auto;
+            }
+            &.panel1 {
+                width: 303px;
+                margin-bottom: 100px;
+            }
+            &.panel2 {
+                width: 311px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+}
+
+/* tablet */
+@media (min-width: 767px) {
+    .section_one_point {
+        & .inner {
+            padding-top: 120px;
+            min-height: 1150px;
+            & .comment br {
+                display: none;
+            }
+            & .panel {
+                &.panel1 {
+                    display: none;
+                }
+                &.panel2 {
+                    width: 640px;
+                    margin-top: 90px;
+                }
+            }
+        }
+
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .section_one_point {
+        & .inner {
+            min-height: 1500px;
+            padding-top: 0;
+            & .txt-area {
+                position: absolute;
+                top: 200px;
+                right: 32px;
+                text-align: left;
+
+                & .txt-lg  {
+                    text-align: left;
+                }
+                & .desc {
+                    text-align: left;
+                }
+                & .comment {
+                    text-align: left;
+                }
+                & .comment br {
+                    display: block;
+                }
+            }
+            & .panel {
+                position: absolute;
+                &.panel2 {
+                    display: block;
+                    width: 424px;
+                    left: 40px;
+                    top: 200px;
+                    margin-top: 0;
+                }
+                &.panel1 {
+                    display: block;
+                    width: 424px;
+                    top: 674px;
+                    right: 60px;
+                    margin-top: 0;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+/* 카드 / 계좌 같이보기 */
+.section_share {
+    position: relative;
+    & .inner {
+        min-height: 760px;
+    }
+
+}
+@media (min-width: 767px) {
+    .section_share {
+        & .inner {
+            padding-top: 120px;
+            min-height: 1150px;
+            & .comment br {
+                //display: none;
+            }
+            & .panel {
+                width: 548px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+/* pc */
+@media (min-width: 1024px) {
+    .section_share {
+        & .inner {
+            min-height: 1000px;
+            padding-top: 0;
+            & .txt-area {
+                position: absolute;
+                top: 400px;
+                right: 55px;
+                text-align: left;
+                width: 400px;
+
+                & .txt-lg  {
+                    text-align: left;
+                }
+                & .desc {
+                    text-align: left;
+
+                }
+                & .comment {
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    margin-left: 15px;
+                    text-indent: -15px;
+                }
+                & br {
+                    display: none;
+                }
+            }
+            & .panel {
+                position: absolute;
+                display: block;
+                width: 520px;
+                left: -20px;
+                top: 200px;
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+
+    }
+}
+
+
+
+/* 카드 / 계좌 같이보기 */
+.section_together {
+    position: relative;
+    & .inner {
+        min-height: 720px;
+    }
+}
+
+@media (min-width: 767px) {
+    .section_together {
+        & .inner {
+            padding-top: 150px;
+            min-height: 1100px;
+            & .panel {
+                width: 548px;
+                margin-top: 90px;
+            }
+        }
+    }
+}
+
+
+/* pc */
+@media (min-width: 1024px) {
+    .section_together {
+        & .inner {
+            min-height: 1000px;
+            padding-top: 0;
+            & .txt-area {
+                position: absolute;
+                top: 360px;
+                left: -20px;
+                width: 400px;
+                text-align: left;
+
+                & .txt-lg  {
+                    text-align: left;
+                }
+                & .desc {
+                    text-align: left;
+
+                }
+                & .comment {
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    margin-left: 15px;
+                    text-indent: -15px;
+                }
+                & br {
+                    display: none;
+                }
+            }
+            & .panel {
+                position: absolute;
+                display: block;
+                width: 768px;
+                right: -30px;
+                top: 200px;
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+
+    }
+}
+
+/* 카드 / 계좌 같이보기 */
+.section_personal {
+    position: relative;
+    & .inner {
+        min-height: 760px;
+        & .panel {
+            width: 255px;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .section_personal {
+        & .inner {
+            padding-top: 150px;
+            min-height: 1100px;
+            & .panel {
+                width: 622px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .section_personal {
+        & .inner {
+            min-height: 1000px;
+            padding-top: 0;
+            & .txt-area {
+                position: absolute;
+                top: 360px;
+                right: -50px;
+                width: 493px;
+                text-align: left;
+
+                & .txt-lg  {
+                    text-align: left;
+                }
+                & .desc {
+                    text-align: left;
+
+                }
+                & .comment {
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    margin-left: 15px;
+                    text-indent: -15px;
+                }
+                & br {
+                    display: none;
+                }
+            }
+            & .panel {
+                position: absolute;
+                display: block;
+                width: 652px;
+                left: -50px;
+                top: 200px;
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+
+    }
+}
+
+
+/* 카드 / 계좌 같이보기 */
+.section_simulation {
+    position: relative;
+    & .inner {
+        min-height: 760px;
+        & .panel {
+            width: 255px;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .section_simulation {
+        & .inner {
+            padding-top: 150px;
+            min-height: 1300px;
+            & .panel {
+                width: 424px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+/* pc */
+@media (min-width: 1024px) {
+    .section_simulation {
+        & .inner {
+            min-height: 1000px;
+            padding-top: 0;
+            & .txt-area {
+                position: absolute;
+                top: 360px;
+                left: -10px;
+                width: 493px;
+                text-align: left;
+
+                & .txt-lg  {
+                    text-align: left;
+                }
+                & .desc {
+                    text-align: left;
+
+                }
+                & .comment {
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    margin-left: 15px;
+                    text-indent: -15px;
+                }
+                & br {
+                    display: none;
+                }
+            }
+            & .panel {
+                position: absolute;
+                display: block;
+                width: 432px;
+                right: -20px;
+                top: 200px;
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+
+    }
+}
+
+/* 2차 과정 */
 
 /* 메인 section_main */
 .section_main {

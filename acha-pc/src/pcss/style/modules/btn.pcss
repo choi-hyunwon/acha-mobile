@@ -31,6 +31,13 @@
 .btn_group {
     & li {
         float: left;
+        &:hover {
+            & a {
+                background-color: rgba(255, 255, 255, 0.15);
+                border-radius: 30px;
+                overflow: hidden;
+            }
+        }
         &:first-child {
             margin-right: 14px;
            & a {
@@ -42,13 +49,7 @@
                    background-image: url("../../img/common/AOS_white_nor.png");
                }
            }
-            &:hover {
-                & a {
-                    & .icon-google {
-                        background-image: url("../../img/common/AOS_white_pre.png");
-                    }
-                }
-            }
+
         }
         &:nth-child(2) {
             & a {
@@ -58,13 +59,6 @@
                     width: 190px;
                     height: 60px;
                     background-image: url("../../img/common/iOS_white_nor.png");
-                }
-            }
-            &:hover {
-                & a {
-                    & .icon-ios {
-                        background-image: url("../../img/common/iOS_white_pre.png");
-                    }
                 }
             }
         }

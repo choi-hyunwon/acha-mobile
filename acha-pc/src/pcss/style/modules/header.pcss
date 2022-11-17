@@ -576,7 +576,9 @@ header {
     height: 60px;
     border-bottom: 1px solid #f0f0f0;
     background-color: #fff;
-
+    & .white {
+        display: none;
+    }
     & > div {
         position: relative;
         width: 100%;
@@ -586,6 +588,7 @@ header {
             top: 17px;
             left: 20px;
             width: 92px;
+
 
             & a {
                 display: block;
@@ -629,7 +632,6 @@ header {
 
     }
 
-
     &.active {
         border-bottom: none;
         & .nav {
@@ -654,6 +656,40 @@ header {
                 &.active {
                     & a {
                         color: #6839d3;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &.gnb-v3-transparent {
+        background-color: transparent;
+
+        & .white {
+            display: block;
+        }
+        & .black {
+            display: none;
+        }
+
+
+        &.active {
+            border-bottom: none;
+            & .nav {
+                background-color: #191919;
+                box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+                & li {
+                    text-align: center;
+                    color: #ffffff;
+                    & a {
+                        color: #ffffff;
+                    }
+                    &:hover,
+                    &.active {
+                        & a {
+                            color: #ffffff;
+                        }
                     }
                 }
             }
@@ -717,7 +753,29 @@ header {
                     }
                 }
             }
+
         }
+
+        &.gnb-v3-transparent {
+            & .nav {
+                & ul {
+                    & li {
+                        color: #ffffff;
+                        margin-left: 70px;
+                        & a {
+                            color: #ffffff;
+                        }
+                        &:hover,
+                        &.active {
+                            & a {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
 
     }
 }
@@ -746,6 +804,54 @@ header {
                 }
             }
         }
+        &.gnb-v3-transparent {
+            & .nav {
+                right: 0;
+
+                & ul {
+                    & li {
+                        & a {
+                            color: #ffffff;
+                        }
+                        &.active {
+                            padding-bottom: 27px;
+                            border-bottom: 0 none;
+                        }
+                    }
+                }
+            }
+        }
 
     }
+}
+
+
+
+.is-sticky {
+    & .gnb-v3 {
+        background-color: #fff !important;
+        &.active {
+            & .nav {
+                background-color: #fff;
+                & li {
+                    & a {
+                        color: #37354e;
+                    }
+                    &:hover,
+                    &.active {
+                        & a {
+                            color: #6839d3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .white {
+        display: none !important;
+    }
+    & .black {
+        display: block !important;
+    }
+
 }

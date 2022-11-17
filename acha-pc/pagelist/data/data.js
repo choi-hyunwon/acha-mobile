@@ -4,6 +4,11 @@ data.edit = {
     'list': [
         {
             "stateClass": "complete",
+            "url": "유플래너_1.0_01_메인",
+            "part": "pages",
+            "page": "유플래너_1.0_01_메인"
+        },{
+            "stateClass": "complete",
             "url": "ui_error",
             "part": "pages",
             "page": "화면 오류 페이지"
@@ -19,6 +24,12 @@ data.edit = {
             "url": "PC_02_공인인증서복사_02_완료",
             "part": "pages",
             "page": "PC_02_공인인증서복사_02_완료"
+        },
+        {
+            "stateClass": "complete",
+            "url": "M_공인인증서복사",
+            "part": "pages",
+            "page": "M_공인인증서복사"
         },
     ]
 };

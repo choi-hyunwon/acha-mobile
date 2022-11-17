@@ -3818,10 +3818,10 @@
         padding-top: 20px;
         .chart {
           position: absolute;
-          top: 0;
+          top: 20px;
           width: 100%;
           height: 100px;
-          z-index: 100;
+          z-index: 200;
         }
       }
       .stick {

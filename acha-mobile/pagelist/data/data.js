@@ -2909,7 +2909,7 @@ data.manageConnect = {
             'page': '04_1.3_SMS메시지_3_이름입력'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_1.3_SMS메시지_4_초대완료',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_4_초대완료'
@@ -2922,13 +2922,13 @@ data.manageConnect = {
         },
 
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_1.3_SMS메시지_7_초대장',
             'category': '공동관리',
             'page': '04_1.3_SMS메시지_7_초대장'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_1.3_SMS메시지_8_연결확인',
             'category': '가계부',
             'page': '04_1.3_SMS메시지_8_연결확인'

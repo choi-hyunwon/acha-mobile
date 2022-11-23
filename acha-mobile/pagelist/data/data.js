@@ -2860,13 +2860,13 @@ data.manageConnect = {
     'title': '공동관리>연결/설정',
     'list': [
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_00_예외케이스',
             'category': '공동관리',
             'page': '04_00_예외케이스'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_1.1_공동관리메인',
             'category': '공동관리',
             'page': '04_1.1_공동관리메인'
@@ -2878,7 +2878,7 @@ data.manageConnect = {
             'page': '04_1.1_공동관리메인_도움말'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_1.1_공동관리메인_서비스소개',
             'category': '가계부',
             'page': '04_1.1_공동관리메인_서비스소개'

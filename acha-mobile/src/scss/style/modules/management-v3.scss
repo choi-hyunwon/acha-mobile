@@ -1968,4 +1968,75 @@
       }
     }
   }
+
+  .management-intro {
+    position: relative;
+    padding: 10px 20px 20px 20px;
+
+    .text-descriptiton {
+      padding: 0;
+      & p.bold {
+        font-family: var(--font3);
+        color: #37354c;
+      }
+    }
+    .space-bottom {
+      margin-bottom: 30px;
+      &-xs {
+        margin-bottom: 10px;
+      }
+      &-sm {
+        margin-bottom: 20px;
+      }
+      &-lg {
+        margin-bottom: 40px;
+      }
+      &-xl {
+        margin-bottom: 80px;
+      }
+    }
+    .desc {
+      font-size: 14px;
+      line-height: 1.43;
+      color: #737183;
+      &-lg {
+        font-size: 16px;
+        font-family: var(--font2);
+        line-height: 1.38;
+        color: #37354c;
+      }
+    }
+    .img-box {
+      text-align: center;
+      img {
+        width: 335px;
+        margin: 0 auto;
+      }
+    }
+    .list {
+      position: relative;
+      .item {
+        padding-left: 9px;
+        font-size: 14px;
+        color: #37354e;
+        position: relative;
+        line-height: 20px;
+        margin-bottom: 6px;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #737183;
+        }
+        span {
+          color: #6839d3;
+        }
+      }
+    }
+  }
 }

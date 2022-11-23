@@ -9,3 +9,6 @@
 /acha-pc/node_modules/
 /acha-pc/package-lock.json
 /acha-mobile/yarn.lock
+/acha-minwon/.idea/
+/acha-minwon/dist/
+/acha-minwon/node_modules/

@@ -1264,8 +1264,8 @@
         justify-content: center;
         align-items: center;
         padding-top: 0;
-        height: calc(100vh - 480px);
-        margin-bottom: 240px;
+        //height: calc(100vh - 480px);
+        padding-bottom: 240px;
       }
     }
 
@@ -1357,7 +1357,9 @@
         border-radius: 10px;
         background-color: #f7f8fc;
         margin: 0 auto 20px auto;
-
+        &::before{
+          display: none;
+        }
         li {
           font-family: var(--font1);
           font-size: 13px;

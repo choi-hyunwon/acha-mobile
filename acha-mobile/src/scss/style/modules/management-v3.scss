@@ -1796,16 +1796,32 @@
       padding: 0 20px;
       border: 1px solid #efefef;
       margin-bottom: 0;
-      select {
-        height: 50px;
-        line-height: 50px;
+      .common-collapse {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: transparent;
-        font-size: 14px;
-        color: #737183;
-        border: none;
-        padding-left: 0;
-        padding-right: 0;
-        font-family: var(--font1);
+        a {
+          height: 50px;
+          line-height: 50px;
+          font-size: 14px;
+          color: #737183;
+          border: none;
+          padding-left: 0;
+          padding-right: 0;
+          font-family: var(--font1);
+        }
+        i {
+          transform: rotate(90deg);
+        }
+        &.open {
+          i {
+              transform: rotate(-90deg);
+          }
+          & + .info {
+            display: block;
+          }
+        }
       }
       .info {
         border-top: 1px solid #efefef;
@@ -1814,7 +1830,7 @@
         padding:  14px 0 ;
         font-family: var(--font1);
         line-height: 21px;
-
+        display: none;
       }
       .help {
         .list {

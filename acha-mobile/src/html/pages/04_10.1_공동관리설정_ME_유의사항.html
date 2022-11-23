@@ -152,11 +152,7 @@
         </div>
         <div class="manage-footer bg_light_gray">
             <div class="box">
-                <select title="category">
-                    <option value="" selected>공동관리 유의사항</option>
-                    <option value="" selected>공동관리 유의사항</option>
-                    <option value="" selected>공동관리 유의사항</option>
-                </select>
+                <p class="common-collapse"><a href="#">공동관리 유의사항</a><i class="sprite ico_arrow_small_nor"></i></p>
                 <div class="info">
                     <p>타인에게 자신의 소중한 개인(신용)정보가  공유되어질 수 있으므로 신중하게 공동관리에 연결해주세요. 아차는 여러분의 안전하고 유용한 서비스 이용을 위해 최선을 다하겠습니다.🙂</p>
                 </div>
@@ -179,6 +175,12 @@
     $('._expenditureTab li a').on('click', function (){
         $(this).parent().addClass('active').siblings().removeClass('active')
     })
+
+    $('.common-collapse').on('click', function (){
+        $(this).toggleClass('open');
+    })
+
+
 </script>
 
 </body>

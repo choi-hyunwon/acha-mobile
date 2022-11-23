@@ -61,6 +61,17 @@
           margin-left: 2px;
         }
       }
+      .update-ing {
+        font-size: 13px;
+        color: var(--text-point-color);
+        font-family: var(--font2);
+        margin-right: 2px;
+        display: flex;
+        align-items: center;
+        img {
+          margin-left: 5px;
+        }
+      }
     }
     .btn-text {
       position: absolute;

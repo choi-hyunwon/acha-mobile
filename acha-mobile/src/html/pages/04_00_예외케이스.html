@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap _btnSlideOpen"></div>
+<div class="modal-slide modal-management data-connection _modalSlide">
+    <div class="modal-slide-content" style="height: 205px; animation: modal-sticky-bottom-animation21 .5s">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <p style="font-size: 16px;line-height: 22px">알 수 없는 오류로 인해<br>
+                공동관리 서비스 이용이 불가합니다<br>
+                잠시 후 다시 서비스를 이용해주세요</p>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg">확인</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

@@ -54,10 +54,6 @@ function copyCss() {
     .pipe(gulp.dest('dist/css/fonts'));
 }
 
-function copyIndex() {
-  return gulp.src('src/index.html')
-    .pipe(gulp.dest('dist/'));
-}
 
 function copyImg() {
   return gulp.src('src/img/**/**')
@@ -141,7 +137,7 @@ function setEnvDevelope(cb) {
 
 
 //task
-gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyIndex, copyImg, copyFonts, jsLib, jsCommon, htmlPage));
+gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage));
 gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont));
 

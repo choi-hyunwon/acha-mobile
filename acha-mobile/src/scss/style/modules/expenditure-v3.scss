@@ -4220,9 +4220,10 @@
       .story-list-calendar {
         > .date {
           font-size: 16px;
-          line-height: 2.69;
+          line-height: 20px;
           color: #37354e;
           font-family: var(--font3);
+          padding: 20px 0;
           span {
             margin-right: 4px;
             vertical-align: middle;

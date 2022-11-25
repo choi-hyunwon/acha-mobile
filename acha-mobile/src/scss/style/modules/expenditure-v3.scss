@@ -145,7 +145,7 @@
     .tit {
       font-size: 15px;
       color: var(--color-point);
-      font-weight: 700;
+      font-family: var(--font3);
     }
     .desc {
       font-size: 13px;
@@ -518,6 +518,7 @@
         .desc {
           font-size: 18px;
           line-height: 1.5;
+          font-family: var(--font3);
         }
       }
     }
@@ -3703,12 +3704,12 @@
         padding-bottom: 30px;
         .tit {
           font-size: 17px;
-          font-weight: 700;
+          font-family: var(--font3);
           color: var(--text-01);
         }
         .val {
           font-size: 17px;
-          font-weight: 700;
+          font-family: var(--font3);
           color: var(--text-01);
         }
       }
@@ -3737,14 +3738,15 @@
             }
           }
           &.text-lg {
+            margin-bottom: 20px;
             .tit {
               font-size: 17px;
-              font-weight: bold;
+              font-family: var(--font3);
               color: var(--text-01);
             }
             .val {
               font-size: 17px;
-              font-weight: bold;
+              font-family: var(--font3);
               color: var(--text-01);
             }
           }
@@ -3810,12 +3812,16 @@
           }
         }
       }
+      .btn-wrap {
+        padding-top: 10px;
+      }
     }
     .title {
       font-size: 17px;
       font-weight: bold;
       color: var(--text-01);
       position: relative;
+      font-family: var(--font3);
       .regend {
         position: absolute;
         top: 0;
@@ -3871,9 +3877,13 @@
         }
         >div {
           width: 42px;
-          border-radius: 4px;
+          border-radius: 4px 4px 0 0;
           background-color: #ece5fc;
           position: absolute;
+
+          &.minus {
+            border-radius: 0 0 4px 4px;
+          }
 
           &:nth-child(1) {
             left: calc( 10% - 21px);
@@ -3911,6 +3921,8 @@
               font-weight: 500;
             }
           }
+
+
 
         }
       }
@@ -3966,6 +3978,11 @@
       }
     }
 
+    .btn-big {
+      height: 46px;
+      line-height: 44px;
+      font-family: var(--font2);
+    }
   }
   /**
    * 2022.10.18
@@ -4330,7 +4347,7 @@
       padding: 0 20px;
       span {
         color: var(--color-point);
-        font-weight: 700;
+        font-family: var(--font3);
       }
     }
 

@@ -3658,8 +3658,8 @@
       position: relative;
       width: 100%;
       height: 30px;
-      border-radius: 13px;
-      background-color: #f5f6f8;
+      border-radius: 15px;
+      background-color: #f1f1f4;
       margin-bottom: 50px;
       >.percent{
         position: absolute;
@@ -3678,7 +3678,7 @@
         height: 30px;
         top: 0;
         left: 0;
-        border-radius: 13px;
+        border-radius: 15px;
         &.color-purple{
           background-color: #7c4ce8;
         }
@@ -3850,38 +3850,10 @@
       }
       .stick {
         position: relative;
-        &-disabeled {
-          >div {
-            background-color: #f0f1f5 !important;
-          }
-        }
-        &-minus {
-          &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            height: 1px;
-            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25'  xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='2' stroke-dasharray='4' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
-            background-repeat: repeat-x;
-            opacity: 0.3;
-          }
-        }
-        &-half {
-          &::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 50%;
-            top: 50%;
-            left: 0;
-            z-index: 100;
-            background-color: rgba(255, 255, 255, 0.5);
-          }
-        }
+
         >div {
           width: 42px;
-          border-radius: 4px 4px 0 0;
+          border-radius: 4px;
           background-color: #ece5fc;
           position: absolute;
 
@@ -3929,12 +3901,48 @@
 
 
         }
+        &-disabeled {
+          >div {
+            background-color: #f0f1f5 !important;
+          }
+        }
+        &-minus {
+          >div {
+            border-radius: 4px 4px 0 0;
+            &.minus {
+              border-radius: 0 0 4px 4px;
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25'  xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='2' stroke-dasharray='4' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+            background-repeat: repeat-x;
+            opacity: 0.3;
+          }
+        }
+        &-half {
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            top: 50%;
+            left: 0;
+            z-index: 100;
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+        }
       }
       .month {
         position: relative;
         display: flex;
         justify-content: space-between;
-        height: 20px;
+        padding-top: 10px;
+        height: 40px;
         em {
           width: 42px;
           font-size: 14px;

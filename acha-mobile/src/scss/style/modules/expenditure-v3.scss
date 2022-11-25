@@ -199,6 +199,9 @@
       margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
+      &-lg {
+        margin-bottom: 30px;
+      }
       &:last-child{
         margin-bottom: 0px;
       }

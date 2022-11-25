@@ -79,7 +79,7 @@
 
 /* Checked styles */
 [type="radio"]:checked + span:before {
-  border: 1px solid var(--color-point);
+  border: 1px solid #d5d5d5;
 }
 
 [type="radio"]:checked + span:after,

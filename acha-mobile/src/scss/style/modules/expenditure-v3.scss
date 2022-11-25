@@ -1540,15 +1540,18 @@
 
               .details-history{
                 .item-list{
-                  padding: 9px 0;
+                  padding-bottom: 10px;
                   align-items: center;
                   &.sub-category{
+                    padding-top: 20px;
                     font-size: 14px;
                     color: #9b9aa6;
+                    padding-bottom: 0;
                   }
                   &.desc {
                     font-size: 14px;
                     color: #9b9aa6;
+                    padding-top: 10px;
                   }
                   .box{
                     display: flex;

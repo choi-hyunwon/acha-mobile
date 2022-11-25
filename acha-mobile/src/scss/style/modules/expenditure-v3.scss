@@ -132,6 +132,7 @@
       text-align: center;
       color: #37354e;
       line-height: 40px;
+      font-family: var(--font2);
     }
 
   }
@@ -494,7 +495,7 @@
         line-height: 1.6;
         span {
           color: var(--color-point);
-          font-weight: bold;
+          font-family: var(--font3);
         }
         &.minus {
           span {

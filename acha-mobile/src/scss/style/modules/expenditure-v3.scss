@@ -129,11 +129,10 @@
     }
     .range {
       font-size: 17px;
-      font-weight: 500;
+      font-family: var(--font2);
       text-align: center;
       color: #37354e;
       line-height: 40px;
-      font-family: var(--font2);
     }
 
   }
@@ -233,16 +232,15 @@
       &.item-lg {
         .tit {
           font-size: 15px;
-          font-weight: bold;
           font-family: var(--font2);
         }
         .val {
           font-size: 18px;
-          font-weight: bold;
+          font-family: var(--font3);
           &::after{
             content: '원';
             font-size: 13px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: var(--text-01);
           }
         }
@@ -297,7 +295,6 @@
       span{
         font-family: var(--font4);
         color: var(--text-01);
-        font-weight: bold;
       }
     }
     .total-amount{
@@ -313,14 +310,13 @@
         margin-bottom: 4px;
         a {
           font-size: 18px;
-          font-weight: 500;
+          font-family: var(--font2);
           color: #37354e;
         }
       }
       .amount{
         font-size: 30px;
         font-family: var(--font4);
-        font-weight: bold;
         line-height: 1.2;
         &:after{
           content: '원';
@@ -380,7 +376,6 @@
         transform: translateY(-50%);
         right: 0;
         span{
-          font-weight: bold;
           font-family: var(--font4);
         }
         &:hover{
@@ -484,7 +479,6 @@
           left: 74px;
           bottom: 0;
           font-size: 24px;
-          font-weight: 500;
           color: #37354e;
           font-family: var(--font4);
         }
@@ -566,14 +560,12 @@
             font-size: 24px;
             font-family: var(--font4);
             color: var(--text-01);
-            font-weight: 500;
             display: block;
             position: relative;
             &:after{
               content: '원';
               display: inline-block;
               font-family: var(--font2);
-              font-weight: 500;
             }
           }
         }
@@ -592,7 +584,6 @@
           z-index: 1;
           font-size: 14px;
           font-family: var(--font7);
-          font-weight: bold;
           color: var(--text-02);
         }
 
@@ -616,7 +607,6 @@
             z-index: 1;
             font-size: 14px;
             font-family: var(--font7);
-            font-weight: bold;
             color: #fff;
           }
         }
@@ -682,7 +672,6 @@
         margin-bottom: 14px;
         span{
           font-family: var(--font7);
-          font-weight: bold;
         }
       }
       .bar-graph {
@@ -699,7 +688,6 @@
           z-index: 1;
           font-size: 14px;
           font-family: var(--font7);
-          font-weight: bold;
           color: var(--text-02);
         }
 
@@ -723,7 +711,6 @@
             z-index: 1;
             font-size: 14px;
             font-family: var(--font7);
-            font-weight: bold;
             color: #fff;
           }
         }
@@ -784,7 +771,6 @@
               span{
                 color: var(--text-01);
                 font-family: var(--font7);
-                font-weight: bold;
               }
             }
           }
@@ -818,7 +804,6 @@
               span{
                 color: var(--text-01);
                 font-family: var(--font7);
-                font-weight: bold;
               }
             }
           }
@@ -855,7 +840,6 @@
         margin-bottom: 14px;
         span{
           font-family: var(--font7);
-          font-weight: bold;
         }
       }
       .bar-graph {
@@ -886,7 +870,6 @@
             z-index: 1;
             font-size: 14px;
             font-family: var(--font7);
-            font-weight: bold;
             color: #fff;
           }
         }
@@ -933,7 +916,6 @@
             font-size: 18px;
             color: var(--text-01);
             font-family: var(--font7);
-            font-weight: bold;
             &:after{
               content: '원';
               display: inline-block;
@@ -1133,7 +1115,6 @@
         background: url("../../img/common/ic_filter@2x.png") no-repeat center left 14px /contain;
         background-size: 14px;
         span{
-          font-weight: bold;
           font-family: var(--font4);
         }
         &:hover{
@@ -1222,7 +1203,6 @@
               top: -10px;
               right: 0;
               font-size: 18px;
-              font-weight: 500;
               color: #37354e;
               font-family: var(--font4);
 
@@ -1230,7 +1210,7 @@
                 content: '원';
                 display: inline-block;
                 font-size: 13px;
-                font-weight: 500;
+                font-family: var(--font2);
                 color: #37354e;
               }
             }
@@ -1330,7 +1310,6 @@
                       font-size: 18px;
                       position: relative;
                       font-family: var(--font4);
-                      font-weight: 500;
                       display: block;
                       &:after{
                         content: '원';
@@ -1426,10 +1405,9 @@
                 font-size: 11px;
                 padding:3px 6px;
                 border-radius: 6px;
-                font-weight: 500;
+                font-family: var(--font2);
                 line-height: 1.5;
                 max-width: 65px;
-                font-family: var(--font2);
 
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -1474,7 +1452,6 @@
               font-size: 18px;
               color: var(--text-01);
               font-family: var(--font5);
-              font-weight: 500;
               &:after{
                 content: '원';
                 display: inline-block;
@@ -1627,7 +1604,6 @@
                 .category-amount{
                   font-size: 18px;
                   font-family: var(--font4);
-                  font-weight: 500;
                   position: relative;
                   &:after{
                     content: '원';
@@ -1933,7 +1909,6 @@
                   font-size: 16px;
                   font-family: var(--font5);
                   color: var(--text-01);
-                  font-weight: 500;
                   &:after{
                     content: '원';
                     display: inline-block;
@@ -2061,7 +2036,6 @@
                     font-size: 18px;
                     position: relative;
                     font-family: var(--font4);
-                    font-weight: 500;
                     display: block;
                     &:after{
                       content: '원';
@@ -2124,7 +2098,6 @@
                 .category-amount{
                   font-size: 18px;
                   font-family: var(--font4);
-                  font-weight: 500;
                   position: relative;
                   margin-top: 9px;
                   &:after{
@@ -2444,7 +2417,6 @@
               font-size: 16px;
               color: var(--text-01);
               font-family: var(--font2);
-              font-weight: 500;
               display: flex;
               justify-content: space-between;
               padding: 30px 0 0;
@@ -2496,14 +2468,12 @@
                 font-size: 15px;
                 color: var(--text-01);
                 font-family: var(--font4);
-                font-weight: bold;
                 min-width: 128px;
                 margin-top: 29px;
                 text-align: right;
                 span{
                   font-size: 14px;
                   font-family: var(--font2);
-                  font-weight: 500;
                 }
               }
             }
@@ -2677,7 +2647,6 @@
                 display: block;
                 font-size: 24px;
                 font-family: var(--font4);
-                font-weight: bold;
                 &:after{
                   font-size: 16px;
                   font-family: var(--font3);
@@ -2797,7 +2766,6 @@
 
                   em {
                     font-family: var(--font2);
-                    font-weight: 500;
                     font-size: 16px;
                   }
                   &.cancel_line{
@@ -2968,7 +2936,6 @@
                   .amount-used {
                     font-size: 18px;
                     font-family: var(--font5);
-                    font-weight: 500;
                     line-height: 1.2;
                     span {
                       font-size: 18px;
@@ -3184,7 +3151,6 @@
                 font-size: 18px;
                 font-family: var(--font5);
                 color: var(--text-01);
-                font-weight: 500;
                 &::after {
                   content: '원';
                   font-family: var(--font2);
@@ -3389,8 +3355,9 @@
         justify-content: space-between;
         .tit {
           font-size: 15px;
-          font-weight: bold;
+          font-family: var(--font3);
           color: #37354e;
+
         }
         .date {
           font-size: 15px;
@@ -3412,8 +3379,15 @@
           }
           .amount {
             font-size: 16px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: #37354e;
+            .ico_list_arrow_small {
+              background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+              display: inline-block;
+              width: 6px;
+              height: 16px;
+              margin-left: 8px;
+            }
           }
         }
       }
@@ -3425,7 +3399,7 @@
       position: relative;
       .month {
         font-size: 20px;
-        font-weight: bold;
+        font-family: var(--font3);
         color: #37354e;
         margin-bottom: 10px;
       }
@@ -3454,7 +3428,6 @@
               .amount {
                 display: block;
                 font-size: 18px;
-                font-weight: 500;
                 color: #37354e;
                 font-family: var(--font4);
               }
@@ -3484,7 +3457,7 @@
           }
           span {
             font-size: 16px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: #737183;
             line-height: 24px;
             position: relative;
@@ -3512,7 +3485,6 @@
           em {
             font-family: var(--font4);
             font-size: 16px;
-            font-weight: 500;
             color: #37354e;
             line-height: 24px;
           }
@@ -3533,7 +3505,7 @@
           flex-direction: column;
           .tit {
             font-size: 15px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: #37354e;
           }
           .date {
@@ -3546,7 +3518,7 @@
           flex-direction: column;
           > span {
             font-size: 18px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: #37354e;
             text-align: right;
           }
@@ -3588,7 +3560,7 @@
             padding: 10px 0 11px;
             background-color: #f6edff;
             font-size: 13px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: #6839d3;
             text-align: center;
             border-radius: 50%;
@@ -3609,7 +3581,7 @@
             flex-direction: column;
             .tit {
               font-size: 15px;
-              font-weight: bold;
+              font-family: var(--font3);
               color: #37354e;
             }
             .desc {
@@ -3626,13 +3598,13 @@
           span {
             display: inline-block;
             font-size: 18px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: #37354e;
             text-align: right;
             &::after{
               content: '원';
               font-size: 13px;
-              font-weight: 500;
+              font-family: var(--font2);
               color: #37354e;
             }
           }
@@ -3674,7 +3646,6 @@
         z-index: 1;
         font-size: 14px;
         font-family: var(--font7);
-        font-weight: bold;
         color: var(--text-02);
       }
 
@@ -3698,7 +3669,7 @@
           z-index: 1;
           font-size: 14px;
           font-family: var(--font7);
-          font-weight: bold;
+          font-family: var(--font3);
           color: #fff;
           &.zero {
             color: #737183;
@@ -3771,10 +3742,9 @@
             .memo {
               width: 100%;
               font-size: 15px;
-              font-weight: 500;
+              font-family: var(--font2);
               line-height: 1.47;
               color: #37354e;
-              font-family: var(--font1);
               border-bottom: 1px solid #efefef;
               padding: 15px 0;
               display: block;
@@ -3796,7 +3766,6 @@
               font-size: 15px;
               line-height: 42px;
               font-family: var(--font2);
-              font-weight: 500;
               text-align: left;
               margin-right: 5px;
               padding: 0 5px;
@@ -3828,7 +3797,6 @@
 
     .title {
       font-size: 17px;
-      font-weight: bold;
       color: var(--text-01);
       position: relative;
       font-family: var(--font3);
@@ -3889,18 +3857,18 @@
             text-align: center;
             width: 100%;
             font-size: 14px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: #737183;
           }
           &.active {
             background-color: #7c4ce8;
             .text {
               color: #6839d3;
-              font-weight: 500;
+              font-family: var(--font2);
             }
             em {
               color: #6839d3;
-              font-weight: 500;
+              font-family: var(--font2);
             }
           }
 
@@ -3952,7 +3920,7 @@
         em {
           width: 42px;
           font-size: 14px;
-          font-weight: 500;
+          font-family: var(--font2);
           color: #37354e;
           text-align: center;
           position: absolute;
@@ -4020,7 +3988,7 @@
         .date {
           a {
             font-size: 18px;
-            font-weight: 500;
+            font-family: var(--font2);
             color: var(--text-01);
             vertical-align: middle;
           }
@@ -4054,7 +4022,7 @@
             }
             span {
               color: #6839d3;
-              font-weight: bold;
+              font-family: var(--font3);
             }
           }
         }
@@ -4124,7 +4092,7 @@
           margin-right: 15px;
           .day {
             font-size: 15px;
-            font-weight: bold;
+            font-family: var(--font3);
             color: #37354e;
             margin-bottom: 5px;
             display: block;
@@ -4198,7 +4166,7 @@
               font-size: 15px;
               span {
                 color: #37354e;
-                font-weight: bold;
+                font-family: var(--font3);
               }
               .emotion {
                 position: absolute;
@@ -4300,7 +4268,7 @@
               font-size: 15px;
               span {
                 color: #37354e;
-                font-weight: bold;
+                font-family: var(--font3);
               }
               .emotion {
                 position: absolute;
@@ -4362,7 +4330,7 @@
     .filter-desc {
       font-size: 16px;
       color: #37354e;
-      font-weight: 500;
+      font-family: var(--font2);
       padding: 0 20px;
       span {
         color: var(--color-point);
@@ -4412,7 +4380,6 @@
     .title-story {
       font-family: var(--font3);
       font-size: 15px;
-      font-weight: 500;
       line-height: 22px;
       text-align: left;
       color: var(--text-01);
@@ -4434,7 +4401,6 @@
       position: relative;
       display: inline-block;
       font-family: var(--font2);
-      font-weight: 500;
       font-size: 14px;
       line-height: 20px;
       text-align: left;
@@ -4549,7 +4515,6 @@
       .content {
         font-size: 14px;
         font-family: var(--font2);
-        font-weight: 500;
         line-height: 1.43;
         text-align: left;
         color: var(--text-01);

@@ -110,6 +110,7 @@
   .month-range {
     position: relative;
     height: 40px;
+    margin-bottom: 20px;
     .prev{
       position: absolute;
       top: 0;
@@ -3647,7 +3648,7 @@
    * 가계부 > 지출 > 리포트
    */
   .amount-wrap {
-    padding: 30px 20px 10px;
+    padding: 20px 20px 10px;
     .btn-wrap {
       padding-top: 10px;
       padding-bottom: 20px;
@@ -3659,7 +3660,7 @@
       height: 30px;
       border-radius: 13px;
       background-color: #f5f6f8;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       >.percent{
         position: absolute;
         left: 8px;
@@ -3985,6 +3986,7 @@
       height: 46px;
       line-height: 44px;
       font-family: var(--font2);
+      font-size: 13px;
     }
   }
   /**

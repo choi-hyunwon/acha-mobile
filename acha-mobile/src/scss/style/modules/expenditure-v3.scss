@@ -490,6 +490,9 @@
 
     .text-desc {
       margin-bottom: 20px;
+      &-lg {
+        margin-bottom: 40px;
+      }
       .desc {
         font-size: 20px;
         color: var(--text-01);

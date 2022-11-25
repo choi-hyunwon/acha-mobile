@@ -3647,6 +3647,10 @@
    */
   .amount-wrap {
     padding: 30px 20px 10px;
+    .btn-wrap {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
     .bar-graph {
       display: block;
       position: relative;
@@ -3695,7 +3699,7 @@
       }
     }
     .amount-list {
-      margin-bottom: 20px;
+      //margin-bottom: 20px;
       .title {
         display: flex;
         justify-content: space-between;
@@ -3719,9 +3723,9 @@
           display: flex;
           justify-content: space-between;
 
-          &:last-child{
-            margin-bottom: 10px;
-          }
+          //&:last-child{
+          //  margin-bottom: 10px;
+          //}
           .tit {
             font-size: 15px;
             color: #737183;
@@ -3812,10 +3816,8 @@
           }
         }
       }
-      .btn-wrap {
-        padding-top: 10px;
-      }
     }
+
     .title {
       font-size: 17px;
       font-weight: bold;
@@ -3832,7 +3834,7 @@
     }
 
     .graph {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       position: relative;
       &-chart {
         padding-top: 20px;

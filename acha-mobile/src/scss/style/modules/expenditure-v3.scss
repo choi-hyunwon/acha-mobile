@@ -4083,8 +4083,15 @@
 
 
       .fc {
+        .fc-day-header {
+          color: #37354e !important;
+          font-size: 13px;
+          font-family: var(--font1);
+        }
         .fc-day-number {
           color: #737183 !important;
+          font-size: 15px;
+          font-family: var(--font1);
         }
         .fc-today .fc-day-number {
           width: 26px;
@@ -4148,6 +4155,8 @@
             color: #37354e;
             margin-bottom: 5px;
             display: block;
+            text-align: center;
+            padding-right: 20px;
           }
           .badge-gray {
             height: 20px;
@@ -4171,9 +4180,13 @@
               width: 35px;
               display: inline-block;
               color: #37354e;
+              font-size: 14px;
+              font-family: var(--font2);
             }
             .price {
               display: inline-block;
+              font-size: 14px;
+              font-family: var(--font2);
             }
           }
           .plus {
@@ -4201,7 +4214,7 @@
             -moz-border-radius: 10px;
             border-radius: 10px;
             .time {
-              font-size: 12px;
+              font-size: 13px;
               color: #737183;
               display: block;
               margin-bottom: 10px;
@@ -4218,7 +4231,7 @@
               font-size: 15px;
               span {
                 color: #37354e;
-                font-family: var(--font3);
+                font-family: var(--font2);
               }
               .emotion {
                 position: absolute;
@@ -4239,8 +4252,9 @@
             }
             .tag {
               color: #9b9aa6;
-              font-size: 14px;
-              line-height: 1.5;
+              font-size: 13px;
+              line-height: 20px;
+              margin-top: 2px;
             }
             .swiper-container {
               padding-top: 14px;

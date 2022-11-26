@@ -428,6 +428,8 @@
           }
         }
         &.add-logo-amount {
+          padding-top: 16px;
+          padding-bottom: 24px;
           .img{
             width: 54px;
             height: 54px;
@@ -441,16 +443,21 @@
           }
           >div{
             .title{
-              font-size: 15px;
+              font-size: 14px;
               font-family: var(--font1);
               color: var(--text-01);
-              margin-bottom:6px;
+              line-height: 20px;
+              margin-bottom: 0;
+              margin-top: 4px;
+              //margin-bottom:6px;
             }
             .amount{
               font-size: 24px;
               font-family: var(--font2);
               color: var(--text-01);
               margin-bottom: 2px;
+              line-height: 36px;
+              margin-bottom: 0;
             }
           }
         }
@@ -1752,6 +1759,7 @@
                 font-size: 15px;
                 font-family: var(--font3);
                 color: var(--text-01);
+                margin-bottom: 0;
                 &.sub-title-border{
                   border-bottom: 1px solid #efefef;
                   padding-bottom: 18px;
@@ -3724,7 +3732,9 @@
           }
           .val {
             font-size: 15px;
-            color: #737183;
+            color: #37354e;
+            font-family: var(--font2);
+
             .ico_list_arrow_small{
               background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
               display: inline-block;
@@ -3814,6 +3824,7 @@
       position: relative;
       font-family: var(--font3);
       .regend {
+        font-family: var(--font1);
         position: absolute;
         top: 0;
         right: 0;
@@ -3979,11 +3990,10 @@
     }
 
     .description-box {
-
       padding: 15px 20px;
       border-radius: 10px;
       background-color: #f7f8fc;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
       span {
         font-size: 14px;
         color: #737183;

@@ -4385,19 +4385,14 @@
             }
           }
         }
-
-
-
-
       }
-
     }
 
     .filter-desc {
-      font-size: 16px;
+      font-size: 18px;
       color: #37354e;
-      font-family: var(--font2);
-      padding: 0 20px;
+      font-family: var(--font1);
+      padding: 2px 20px 0 ;
       span {
         color: var(--color-point);
         font-family: var(--font3);
@@ -4415,10 +4410,10 @@
         .info {
           padding-top: 5px;
           .place {
-            margin-bottom: 3px;
+            margin-bottom: 2px;
           }
           .acount {
-            font-size: 12px;
+            font-size: 13px;
             color: #9b9aa6;
             display: block;
           }

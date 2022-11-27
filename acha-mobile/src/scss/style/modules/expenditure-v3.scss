@@ -4436,7 +4436,7 @@
 
   .expenditure-story-wrap {
     position: relative;
-    padding: 35px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
 
     .title-story {
       font-family: var(--font3);
@@ -4444,7 +4444,7 @@
       line-height: 22px;
       text-align: left;
       color: var(--text-01);
-      padding-bottom: 13px;
+      padding-bottom: 10px;
       margin-bottom: 20px;
       position: relative;
       .edit {
@@ -4465,7 +4465,7 @@
       font-size: 14px;
       line-height: 20px;
       text-align: left;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
 
       &.must {
         &::after {
@@ -4669,10 +4669,14 @@
     .mood {
       ul {
         //  padding: 0 10px;
-
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 326px;
+        margin: 0 auto;
+        margin-bottom: 16px;
         li {
           position: relative;
-          float: left;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -4681,9 +4685,12 @@
           border: 1px solid #f5f6f8;
           border-radius: 50%;
           background-color: var(--white);
-          margin-left: 10px;
-          margin-bottom: 10px;
+          margin-left: 14px;
+          margin-bottom: 14px;
           cursor: pointer;
+          &:nth-child(4n-3) {
+            margin-left: 0;
+          }
 
           &.no-padding {
             width: auto;

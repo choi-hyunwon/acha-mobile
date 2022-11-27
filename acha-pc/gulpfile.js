@@ -17,6 +17,7 @@ const replace = require('gulp-replace');
 const htmlbeautify = require('gulp-html-beautify');
 const cssImport = require('postcss-import');
 const sprites = require('postcss-sprites');
+const sourcemaps = require('gulp-sourcemaps');
 
 
 gulp.task('distDel', function () {
@@ -50,6 +51,7 @@ gulp.task("spriteMake", gulp.series(sprite,sprite_copy));
 /* pcss TASK*/
 function pcss() {
     return gulp.src(['src/pcss/*/*.pcss'])
+        .pipe(sourcemaps.init())
         .pipe(
             postcss([
                 cssImport(),
@@ -62,6 +64,7 @@ function pcss() {
             ])
         )
         .pipe(rename({extname: '.css' }))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/css/'))
 }
 function htmlInclude() {

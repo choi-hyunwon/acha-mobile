@@ -2033,6 +2033,7 @@
         position: relative;
         line-height: 20px;
         margin-bottom: 6px;
+        font-family: var(--font1);
         &::before {
           content: '';
           position: absolute;
@@ -2046,6 +2047,7 @@
         }
         span {
           color: #6839d3;
+          font-family: var(--font2);
         }
       }
     }

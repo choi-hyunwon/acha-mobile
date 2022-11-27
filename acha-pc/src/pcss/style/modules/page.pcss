@@ -67,7 +67,7 @@
 
 .error {
     width: 100%;
-    padding: 60px 80px;
+    padding: 60px 40px;
     & .logo {
         margin-bottom: 54px;
         & a {
@@ -99,7 +99,7 @@
         width: 190px;
         height: 150px;
         position: absolute;
-        top: 250px;
+        top: 300px;
         right: 0;
         & img {
             width: 100%;
@@ -116,11 +116,21 @@
 }
 
 /* pc */
+@media (min-width: 767px) {
+    .error {
+        padding: 60px 80px;
+        & .i-img {
+            top: 250px;
+        }
+    }
+}
+
+/* pc */
 @media (min-width: 1060px) {
     .error {
         position: relative;
         width: 1020px;
-        padding: 136px 0 0;
+        padding: 136px 80px 0;
         margin:  0 auto;
         & .logo {
             margin-bottom:85px;

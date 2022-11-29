@@ -1625,6 +1625,7 @@
                 .category-amount{
                   font-size: 18px;
                   font-family: var(--font5);
+                  font-weight: 600;
                   position: relative;
                   &:after{
                     content: '원';
@@ -3839,7 +3840,7 @@
       font-size: 17px;
       color: var(--text-01);
       position: relative;
-      font-weight: bold;
+      font-family: var(--font3);
       .regend {
         font-family: var(--font1);
         position: absolute;

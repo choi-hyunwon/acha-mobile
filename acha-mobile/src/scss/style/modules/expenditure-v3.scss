@@ -213,7 +213,7 @@
       }
       .tit {
         font-size: 15px;
-        color: var(--text-01);
+        color: #747679;
       }
       .val {
         font-size: 15px;
@@ -622,8 +622,8 @@
           }
           .percent{
             position: absolute;
-            right: 8px;
-            top: 2px;
+            right: 10px;
+            top: 4px;
             z-index: 1;
             font-size: 14px;
             font-family: var(--font7);
@@ -1473,6 +1473,7 @@
               font-size: 18px;
               color: var(--text-01);
               font-family: var(--font5);
+              font-weight: 600;
               &:after{
                 content: '원';
                 display: inline-block;
@@ -2391,7 +2392,7 @@
               padding: 15px 0;
               .tit{
                 font-size: 15px;
-                color: #737183;
+                color: #747679;
                 font-family: var(--font1);
               }
               .val{

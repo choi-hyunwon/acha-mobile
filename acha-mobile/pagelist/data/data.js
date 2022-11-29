@@ -4496,7 +4496,7 @@ data.expenditureMethodCard = {
             'page': '지출수단_11.6_카드별지출_항목상세'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '지출수단_11.6_카드별지출_항목상세_승인취소',
             'category': '가계부',
             'page': '지출수단_11.6_카드별지출_항목상세_승인취소'

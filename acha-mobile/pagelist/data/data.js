@@ -3001,7 +3001,7 @@ data.manageConnect = {
             'page': '04_3.1_공동지출관리_표시목록없을경우'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_3.2_계좌공유_1_시작',
             'category': '가계부',
             'page': '04_3.2_계좌공유_1_시작'
@@ -3019,7 +3019,7 @@ data.manageConnect = {
             'page': '04_3.2_계좌공유_마이데이터연결유_2_보드오픈완료'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_3.3_카드공유_1_시작',
             'category': '가계부',
             'page': '04_3.3_카드공유_1_시작'
@@ -3043,7 +3043,7 @@ data.manageConnect = {
             'page': '04_10.1_공동관리설정_ME'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '04_10.1_공동관리설정_ME_유의사항',
             'category': '가계부',
             'page': '04_10.1_공동관리설정_ME_유의사항'
@@ -3545,7 +3545,7 @@ data.expenditureReport = {
             'page': '리포트_3.1_리포트_상세_남은돈그래프'
         },
         {
-            'stateClass': 'working',
+            'stateClass': 'complete',
             'url': '리포트_3.1_리포트_상세_지출추이그래프',
             'category': '가계부',
             'page': '리포트_3.1_리포트_상세_지출추이그래프'

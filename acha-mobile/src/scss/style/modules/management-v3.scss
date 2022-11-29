@@ -117,8 +117,8 @@
 
               .amount {
                 font-size: 18px;
-                font-weight: bold;
                 color: var(--text-01);
+                font-family: var(--font3);
                 text-align: center;
               }
             }
@@ -157,12 +157,14 @@
                     font-size: 15px;
                     font-weight: 500;
                     color: #37354e;
-
+                    .circle {
+                      display: inline-block;
+                    }
                   }
 
                   .val {
                     font-size: 16px;
-                    font-weight: bold;
+                    font-weight: 600;
                     text-align: right;
                     color: #37354e;
                     font-family: var(--font5);
@@ -1592,6 +1594,17 @@
       }
     }
 
+    .select-all-box {
+      height: 60px;
+      border-radius: 10px;
+      border: solid 1px #e3e4e8;
+      background-color: #fff;
+      label {
+        span {
+          padding-left: 22px;
+        }
+      }
+    }
     &-reverse {
       >div {
         display: flex;
@@ -1875,12 +1888,21 @@
     }
   }
 
+  .item-list {
+    label {
+      span {
+        padding-left: 22px;
+      }
+    }
+  }
+
 
   /**
   04_3.1_공동지출관리_1_시작
    */
 
   .share-spend-money {
+
     .box-key {
       height: 96px;
       padding: 20px;

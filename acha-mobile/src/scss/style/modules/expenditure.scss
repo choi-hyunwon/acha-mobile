@@ -1580,6 +1580,7 @@
                   .number{
                     font-size: 16px;
                     color: var(--text-01);
+                    font-weight: 600;
                     &:after{
                       content: '원';
                       clear: both;

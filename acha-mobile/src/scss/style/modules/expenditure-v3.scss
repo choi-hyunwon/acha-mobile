@@ -4123,6 +4123,7 @@
           left: 50%;
           transform: translate(-50%, -35%);
         }
+
         .plus-data {
           .fc-content {
             .fc-title {
@@ -4151,9 +4152,10 @@
             }
           }
         }
+
+
       }
     }
-
     //v3_expenditure_135
     .calendar-history {
       position: relative;
@@ -4241,6 +4243,7 @@
                 display: inline-block;
                 font-size: 10px;
                 color: #e3e4e8;
+                vertical-align: 2px;
               }
             }
             .detail {
@@ -4485,7 +4488,7 @@
       font-size: 14px;
       line-height: 20px;
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
 
       &.must {
         &::after {
@@ -4693,8 +4696,7 @@
         align-items: center;
         flex-wrap: wrap;
         width: 326px;
-        margin: 0 auto;
-        margin-bottom: 16px;
+        margin: 10px auto 16px auto;
         li {
           position: relative;
           display: flex;
@@ -4820,6 +4822,16 @@
             background-size: cover;
             top: -2px;
             right: -2px;
+          }
+        }
+      }
+      &.mood-complete {
+        ul {
+          display: block;
+          text-align: left;
+          width: 100%;
+          li {
+            justify-content: flex-start;
           }
         }
       }

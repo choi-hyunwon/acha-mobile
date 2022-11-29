@@ -156,7 +156,7 @@
                 <div class="info">
                     <p>타인에게 자신의 소중한 개인(신용)정보가  공유되어질 수 있으므로 신중하게 공동관리에 연결해주세요. 아차는 여러분의 안전하고 유용한 서비스 이용을 위해 최선을 다하겠습니다.🙂</p>
                 </div>
-                <div class="help">
+                <div class="help" style="display:none;">
                     <ul class="list">
                         <li class="item"><a href="#">서비스 소개</a><i class="sprite ico_arrow_small_nor"></i></li>
                         <li class="item"><a href="#">서비스 이용 약관</a><i class="sprite ico_arrow_small_nor"></i></li>
@@ -178,9 +178,12 @@
 
     $('.common-collapse').on('click', function (){
         $(this).toggleClass('open');
+        if ($(this).hasClass('open')) {
+            $('.manage-footer .help').show();
+        } else {
+            $('.manage-footer .help').hide();
+        }
     })
-
-
 </script>
 
 </body>

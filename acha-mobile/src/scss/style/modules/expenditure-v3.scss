@@ -4183,11 +4183,12 @@
             line-height: 25px;
             font-size: 13px;
             .tit {
-              width: 35px;
+              min-width: 35px;
               display: inline-block;
               color: #37354e;
               font-size: 14px;
               font-family: var(--font2);
+              margin-right: 8px;
             }
             .price {
               display: inline-block;

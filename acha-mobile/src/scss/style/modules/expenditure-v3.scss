@@ -72,6 +72,12 @@
           margin-left: 5px;
         }
       }
+      .delete {
+        font-size: 15px;
+        font-family: var(--font2);
+        text-align: right;
+        color: #737183;
+      }
     }
     .btn-text {
       position: absolute;
@@ -301,7 +307,7 @@
       }
     }
     .total-amount{
-      padding: 20px;
+      margin: 20px;
       position: relative;
       &-lg {
         margin: 30px 20px;

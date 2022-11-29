@@ -387,7 +387,8 @@
         transform: translateY(-50%);
         right: 0;
         span{
-          font-family: var(--font4);
+          font-family: var(--font7);
+          font-weight: bold;
         }
         &:hover{
           color: var(--text-02);
@@ -1277,7 +1278,7 @@
                     height: 40px;
                     display: inline-block;
                     vertical-align: top;
-                    margin-right: 10px;
+                    margin-right: 14px;
                     margin-top: 4px;
                     img{
                       width: 100%;
@@ -1329,6 +1330,7 @@
                       position: relative;
                       font-family: var(--font4);
                       display: block;
+                      font-weight: bold;
                       &:after{
                         content: '원';
                         display: inline-block;
@@ -1415,7 +1417,7 @@
                 font-size: 12px;
                 color: var(--text-03);
                 font-family: var(--font2);
-                padding-left: 50px;
+                padding-left: 56px;
               }
 
               .badge{
@@ -1621,7 +1623,7 @@
                 }
                 .category-amount{
                   font-size: 18px;
-                  font-family: var(--font4);
+                  font-family: var(--font5);
                   position: relative;
                   &:after{
                     content: '원';
@@ -3714,12 +3716,12 @@
         padding-bottom: 30px;
         .tit {
           font-size: 17px;
-          font-weight: 700;
+          font-family: var(--font3);;
           color: var(--text-01);
         }
         .val {
-          font-size: 17px;
-          font-weight: 700;
+          font-size: 18px;
+          font-family: var(--font3);;
           color: var(--text-01);
         }
       }
@@ -3747,7 +3749,7 @@
           .val {
             font-size: 15px;
             color: #37354e;
-            font-family: var(--font2);
+            font-family: var(--font1);
 
             .ico_list_arrow_small{
               background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
@@ -3761,12 +3763,12 @@
             margin-bottom: 20px;
             .tit {
               font-size: 17px;
-              font-weight: bold;
+              font-family: var(--font3);
               color: var(--text-01);
             }
             .val {
-              font-size: 17px;
-              font-weight: bold;
+              font-size: 18px;
+              font-family: var(--font3);
               color: var(--text-01);
             }
           }

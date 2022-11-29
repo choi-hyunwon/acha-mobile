@@ -470,10 +470,9 @@ input, textarea {
 
     &::placeholder {
       font-family: var(--font1);
-      font-size: 14px;
+      font-size: 15px;
       line-height: 21px;
-      letter-spacing: -0.7px;
-      color: #888888;
+      color: #c2c1cc;
     }
 
     &:read-only {
@@ -846,7 +845,6 @@ input.custom {
     &::placeholder {
       font-family: var(--font1);
       color: var(--text-03);
-      font-weight: 400;
     }
 
     &:focus {
@@ -887,4 +885,7 @@ input.custom {
   .filled-in {
     width: auto;
   }
+}
+input::placeholder {
+  font-family: var(--font1) !important;
 }

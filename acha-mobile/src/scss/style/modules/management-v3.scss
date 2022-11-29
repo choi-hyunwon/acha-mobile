@@ -1630,7 +1630,10 @@
         display: block;
         margin-right: 10px;
         img {
-          width: 100%;
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          overflow: hidden;
         }
         &.me {
           width: 48px;

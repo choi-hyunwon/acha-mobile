@@ -367,8 +367,9 @@
         height: 28px;
         line-height: 26px;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        //top: 50%;
+        //transform: translateY(-50%);
+        top: 23px;
         right: 0;
       }
       .btn-filter{
@@ -2388,7 +2389,7 @@
               padding: 15px 0;
               .tit{
                 font-size: 15px;
-                color: #747679;
+                color: #737183;
                 font-family: var(--font1);
               }
               .val{

@@ -5,11 +5,34 @@
     display: block !important;
 }
 
+/* tablet */
+@media (min-width: 767px) {
+    .d-tablet-none {
+        display: none !important;
+    }
+
+    .d-tablet-block {
+        display: block !important;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .d-pc-none {
+        display: none !important;
+    }
+    .d-pc-block {
+        display: block !important;
+    }
+}
+
+
+
+
+
 /* section 공통 */
 .section {
     position: relative;
-
-
 
     & .inner {
         padding-top: 80px;
@@ -19,7 +42,7 @@
             text-align: center;
 
             & .txt-lg {
-                font-size: 24px;
+                font-size: 22px;
                 font-family: var(--font3);
                 line-height: 33px;
                 color: #191f28;
@@ -49,8 +72,9 @@
 
             & .desc {
                 font-family: var(--font1);
-                opacity: 1;
+                opacity: 0.8;
                 font-size: 15px;
+                line-height: 22px;
                 letter-spacing: -0.56px;
                 text-align: center;
                 color: #45444a;
@@ -67,6 +91,10 @@
                 text-align: center;
                 color: #939393;
                 margin-top: 22px;
+                & img {
+                    width: 12px;
+                    height: 12px;
+                }
             }
 
         }
@@ -81,19 +109,10 @@
         }
     }
 }
-.d-pc-block {
-    display: none;
-}
+
 
 /* tablet */
 @media (min-width: 767px) {
-    .d-tablet-none {
-        display: none;
-    }
-    .d-tablet-block {
-        display: block !important;
-    }
-
     .section {
         position: relative;
 
@@ -107,6 +126,7 @@
                 & .txt-lg {
                     font-size: 36px;
                     line-height: 50px;
+                    margin-bottom: 16px;
                     & .dot-top {
                         &::before {
                             left: calc(50% - 3px);
@@ -117,15 +137,21 @@
                 }
 
                 & .desc {
-                    font-size: 16px;
+                    font-size: 20px;
                     line-height: 30px;
-                    margin-top: 16px;
-                    opacity: 1;
+                    letter-spacing: -0.5px;
+                    text-align: center;
+                    color: #45444a;
+                    opacity: 0.8;
                 }
                 & .comment {
-                    font-size: 18px;
+                    font-size: 16px;
                     color: #939393;
                     margin-top: 36px;
+                    & img {
+                        width: 18px;
+                        height: 18px;
+                    }
                 }
             }
         }
@@ -162,7 +188,7 @@
 
                 & .desc {
                     font-size: 22px;
-                    line-height: 1.64;
+                    line-height: 36px;
                     letter-spacing: -0.55px;
                     text-align: center;
                     color: #45444a;
@@ -174,14 +200,15 @@
                     text-indent: -25px;
                     margin-left: 25px;
                     letter-spacing: -0.45px;
+                    & img {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
             }
         }
     }
 
-    .d-pc-block {
-        display: block !important;
-    }
 }
 
 
@@ -203,16 +230,17 @@
 
         & .txt-area {
             padding-top: 40px;
-            margin-bottom: 440px;
+            margin-bottom: 430px;
 
             & .txt-lg {
                 color: #ffffff;
                 line-height: 28px;
                 letter-spacing: 0;
-
+                font-size: 24px;
             }
             & .desc {
                 color: #FFFFFF;
+                font-size: 14px;
             }
         }
 
@@ -264,8 +292,11 @@
 
             & .txt-area {
                 padding-top: 52px;
-                margin-bottom: 400px;
-
+                margin-bottom: 415px;
+                & .desc {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
                 & .txt-lg {
                     line-height: 50px;
                 }
@@ -351,7 +382,14 @@
     & .inner {
         min-height: 660px;
         background: transparent url("../../img/main/v3/M-img_check.png") no-repeat bottom center / 270px auto;
+        & .txt-area {
+            & .desc {
+                font-size: 15px;
+                line-height: 22px;
+            }
+        }
     }
+
 }
 
 /* tablet */
@@ -360,7 +398,14 @@
         & .inner {
             min-height: 900px;
             background: transparent url("../../img/main/v3/T-img_check.png") no-repeat bottom center / 668px auto;
+            & .txt-area {
+                & .desc {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
         }
+
     }
 }
 
@@ -368,9 +413,16 @@
 @media (min-width: 1024px) {
     .section_auto {
         & .inner {
-            min-height: 1210px;
-            background: transparent url("../../img/main/v3/T-img_check.png") no-repeat bottom center / 1050px auto;
+            min-height: 1150px;
+            background: transparent url("../../img/main/v3/P-img_check.png") no-repeat bottom center / 1050px auto;
+            & .txt-area {
+                & .desc {
+                    font-size: 22px;
+                    line-height: 36px;
+                }
+            }
         }
+
     }
 }
 
@@ -382,6 +434,13 @@
     & .inner {
         padding-top: 30px;
         min-height: 1000px;
+        & .txt-area {
+            & .desc {
+                font-size: 15px;
+                line-height: 22px;
+                margin-top: 10px;
+            }
+        }
         & .panel {
             width: 300px;
             margin: 0 auto;
@@ -409,6 +468,13 @@
         & .inner {
             padding-top: 120px;
             min-height: 1150px;
+            & .txt-area {
+                & .desc {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-top: 16px;
+                }
+            }
             & .comment br {
                 display: none;
             }
@@ -480,6 +546,11 @@
     position: relative;
     & .inner {
         min-height: 760px;
+        & .txt-area {
+            & .desc {
+                margin-top: 10px;
+            }
+        }
     }
 
 }
@@ -488,8 +559,11 @@
         & .inner {
             padding-top: 120px;
             min-height: 1150px;
-            & .comment br {
-                //display: none;
+            & .txt-area {
+                & .comment {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
             }
             & .panel {
                 width: 548px;
@@ -511,7 +585,7 @@
                 top: 400px;
                 right: 55px;
                 text-align: left;
-                width: 400px;
+                width: 410px;
 
                 & .txt-lg  {
                     text-align: left;
@@ -523,9 +597,8 @@
                 & .comment {
                     text-align: left;
                     font-size: 18px;
-                    line-height: 1.5;
-                    margin-left: 15px;
-                    text-indent: -15px;
+                    margin-left: 25px;
+                    text-indent: -25px;
                 }
                 & br {
                     display: none;
@@ -552,6 +625,16 @@
     position: relative;
     & .inner {
         min-height: 720px;
+        & .txt-area {
+            & .desc {
+                font-size: 15px;
+                line-height: 22px;
+            }
+            & .comment {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
     }
 }
 
@@ -560,6 +643,17 @@
         & .inner {
             padding-top: 150px;
             min-height: 1100px;
+            & .txt-area {
+                & .desc {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                & .comment {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+
             & .panel {
                 width: 548px;
                 margin-top: 90px;
@@ -584,17 +678,19 @@
 
                 & .txt-lg  {
                     text-align: left;
+                    margin-bottom: 30px;
                 }
                 & .desc {
                     text-align: left;
-
+                    font-size: 22px;
+                    line-height: 36px;
                 }
                 & .comment {
                     text-align: left;
                     font-size: 18px;
-                    line-height: 1.5;
-                    margin-left: 15px;
-                    text-indent: -15px;
+                    margin-left: 25px;
+                    text-indent: -25px;
+                    line-height: 28px;
                 }
                 & br {
                     display: none;
@@ -619,6 +715,13 @@
     position: relative;
     & .inner {
         min-height: 760px;
+
+        & .txt-area {
+            & .comment {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
         & .panel {
             width: 255px;
         }
@@ -653,6 +756,7 @@
 
                 & .txt-lg  {
                     text-align: left;
+                    margin-bottom: 30px;
                 }
                 & .desc {
                     text-align: left;
@@ -662,8 +766,8 @@
                     text-align: left;
                     font-size: 18px;
                     line-height: 1.5;
-                    margin-left: 15px;
-                    text-indent: -15px;
+                    margin-left: 25px;
+                    text-indent: -25px;
                 }
                 & br {
                     display: none;
@@ -700,6 +804,17 @@
         & .inner {
             padding-top: 150px;
             min-height: 1300px;
+            & .txt-area {
+                & .desc {
+                    font-size: 22px;
+                    line-height: 36px;
+                }
+                & .comment {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+
             & .panel {
                 width: 424px;
                 margin-top: 30px;
@@ -724,6 +839,7 @@
 
                 & .txt-lg  {
                     text-align: left;
+                    margin-bottom: 24px;
                 }
                 & .desc {
                     text-align: left;
@@ -733,8 +849,8 @@
                     text-align: left;
                     font-size: 18px;
                     line-height: 1.5;
-                    margin-left: 15px;
-                    text-indent: -15px;
+                    margin-left: 25px;
+                    text-indent: -25px;
                 }
                 & br {
                     display: none;
@@ -1547,6 +1663,8 @@
 
             & .desc {
                 color: #ffffff;
+                font-size: 16px;
+                line-height: 22px;
             }
         }
     }
@@ -1588,7 +1706,8 @@
                 }
 
                 & .desc {
-                    font-size: 24px;
+                    font-size: 22px;
+                    line-height: 34px;
                     text-align: right;
                 }
             }

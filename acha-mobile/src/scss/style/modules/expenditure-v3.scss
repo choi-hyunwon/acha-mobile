@@ -1411,7 +1411,7 @@
               .hashtag{
                 font-size: 12px;
                 color: var(--text-03);
-                padding-left: 50px;
+                padding-left: 56px;
               }
 
               .account-number{
@@ -1547,7 +1547,8 @@
 
               .details-history{
                 .item-list{
-                  padding-bottom: 10px;
+                  padding-bottom: 8px;
+                  padding-top: 8px;
                   align-items: center;
                   &.sub-category{
                     padding-top: 20px;

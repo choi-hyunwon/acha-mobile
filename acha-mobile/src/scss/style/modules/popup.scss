@@ -1581,6 +1581,24 @@
     display: none;
   }
 }
+@keyframes modal-sticky-bottom-animation214{
+  from {
+    height: 0;
+  }
+  to {
+    height: 214px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out214{
+  from {
+    height: 214px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
 
 
 .modal-slide-backdrop {

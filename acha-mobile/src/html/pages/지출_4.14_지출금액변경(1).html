@@ -4,14 +4,17 @@
 <body>
 <div class="wrap _btnSlideOpen"></div>
 <div class="modal-slide modal-expenditure change-amount _modalSlide">
-    <div class="modal-slide-content">
+    <div class="modal-slide-content" style="height: 214px; animation: modal-sticky-bottom-animation214 .5s">
         <a href="#" class="btn-close _btnSlideClose"></a>
-        <div class="inner">
+        <div class="inner pb-0">
             <div class="title">지출금액 변경</div>
             <div class="custom-light monetary-unit _focus">
                 <input onkeyup="countChar(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="6000000"/>
                 <p class="sub-desc">100억원 미만까지 입력 가능</p>
             </div>
+        </div>
+        <div class="btn-wrap">
+            <a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">확인</a>
         </div>
     </div>
 </div>

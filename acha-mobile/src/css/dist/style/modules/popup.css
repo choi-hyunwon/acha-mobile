@@ -1268,6 +1268,25 @@
   }
 }
 
+@keyframes modal-sticky-bottom-animation10 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 210px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out10 {
+  from {
+    height: 210px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
 .modal-slide-backdrop {
   position: fixed;
   display: none;

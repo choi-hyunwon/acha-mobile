@@ -4,14 +4,17 @@
 <body>
 <div class="wrap _btnSlideOpen"></div>
 <div class="modal-slide modal-expenditure memo-input _modalSlide">
-    <div class="modal-slide-content">
+    <div class="modal-slide-content" style="height: 214px; animation: modal-sticky-bottom-animation214 .5s">
         <a href="#" class="btn-close _btnSlideClose"></a>
-        <div class="inner">
+        <div class="inner pb-0">
             <div class="title">메모 입력</div>
             <div class="custom-light _focus">
                 <input title="지출 메모" type="text" maxlength="20" onkeyup="countChar(this,'_val')" placeholder="메모를 입력해주세요" value="원리금 균등상환 2045년"/>
                 <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span></div>
             </div>
+        </div>
+        <div class="btn-wrap">
+            <a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">확인</a>
         </div>
     </div>
 </div>

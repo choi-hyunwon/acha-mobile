@@ -1137,6 +1137,7 @@
         background-size: 14px;
         span{
           font-family: var(--font4);
+          font-weight: bold;
         }
         &:hover{
           color: var(--text-02);
@@ -2653,7 +2654,7 @@
               .item{
                 .val{
                   color: var(--text-01);
-                  font-family: var(--font4);
+                  font-family: var(--font1);
                 }
               }
             }
@@ -3571,6 +3572,7 @@
       .title {
         font-size: 15px;
         color: #37354c;
+        font-family: var(--font3);
       }
     }
     .list-category {
@@ -3622,7 +3624,7 @@
             .desc {
               font-size: 14px;
               color: #9b9aa6;
-              font-family: var(--font2);
+              font-family: var(--font1);
             }
           }
         }
@@ -3989,7 +3991,7 @@
         em {
           width: 42px;
           font-size: 14px;
-          color: #737183;
+          color: #37354e;
           text-align: center;
           position: absolute;
           &:nth-child(1) {

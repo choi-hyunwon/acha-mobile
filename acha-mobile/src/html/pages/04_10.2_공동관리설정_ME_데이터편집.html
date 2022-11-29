@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <body>
 <div class="wrap renewal">
     <div class="header _sticky">
@@ -11,6 +12,13 @@
         <div class="data-manage">
             <span class="update">데이터업데이트 4일 전</span>
             <a href="#" class="btn btn-data-update">내 데이터 가져오기 <i class="ico-refresh-mini"></i></a>
+        </div>
+        <div class="data-manage">
+            <span class="update">데이터업데이트 4일 전</span>
+            <p class="update-ing">
+                업데이트 중입니다
+                <lottie-player src="../../img/common/circleloader_16x16.json" style="width: 13px; height: 13px;" loop="" autoplay="" background="transparent"></lottie-player>
+            </p>
         </div>
 
         <div class="expenditure-tab manage-tab _expenditureTab">

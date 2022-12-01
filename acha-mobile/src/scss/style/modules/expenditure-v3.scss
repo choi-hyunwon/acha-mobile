@@ -3765,7 +3765,7 @@
           .val {
             font-size: 15px;
             color: #37354e;
-            font-family: var(--font1);
+            font-family: var(--font2);
 
             .ico_list_arrow_small{
               background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
@@ -4054,7 +4054,7 @@
   .expenditure-calendar {
     padding-top: 10px;
     .ex-calendar {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       .box-ex-calendar-header {
         display: flex;
         justify-content: space-between;

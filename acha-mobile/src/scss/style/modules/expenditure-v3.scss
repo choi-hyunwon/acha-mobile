@@ -1334,7 +1334,7 @@
                       position: relative;
                       font-family: var(--font4);
                       display: block;
-                      font-weight: bold;
+                      font-weight: 500;
                       &:after{
                         content: '원';
                         display: inline-block;
@@ -2395,7 +2395,7 @@
               padding: 15px 0;
               .tit{
                 font-size: 15px;
-                color: #747679;
+                color: #737183;
                 font-family: var(--font1);
               }
               .val{
@@ -3061,7 +3061,7 @@
                   }
                   .tit{
                     font-size: 15px;
-                    color: #747679;
+                    color: #737183;
                     font-family: var(--font1);
                   }
                   .val{

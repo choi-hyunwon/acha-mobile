@@ -1590,6 +1590,9 @@
                       }
                     }
                   }
+                  &-lg {
+                    padding: 15px 0 16px;
+                  }
                 }
               }
               .empty{
@@ -4613,10 +4616,10 @@
     }
 
     .textarea {
-      margin-bottom: 20px;
+      margin-bottom: 27px;
 
       .content {
-        font-size: 14px;
+        font-size: 16px;
         font-family: var(--font2);
         line-height: 1.43;
         text-align: left;

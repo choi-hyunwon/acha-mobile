@@ -1363,11 +1363,7 @@
                   position: absolute;
                   top: 10px;
                   right: 0;
-                  -webkit-border-radius: 50%;
-                  -moz-border-radius: 50%;
-                  border-radius: 50%;
 
-                  overflow: hidden;
                   &-me {
                     &::after {
                       content: '';
@@ -1386,6 +1382,11 @@
                   img {
                     width: 100%;
                     height: auto;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+
+                    overflow: hidden;
                   }
                 }
                 .payment-method{

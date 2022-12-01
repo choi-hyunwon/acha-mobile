@@ -142,7 +142,7 @@
                         <li class="item"><a href="#">개인(신용)정보 제3자 제공</a><i class="sprite ico_arrow_small_nor"></i></li>
                     </ul>
                 </div>
-                <p class="cancel">공동관리 연결 해제하기</p>
+                <p class="cancel" style="display:none;">공동관리 연결 해제하기</p>
             </div>
             <p class="desc">준법감시인 심의필 20-330 (2020.11.17~2021.11.16)</p>
         </div>
@@ -159,8 +159,10 @@
         $(this).toggleClass('open');
         if ($(this).hasClass('open')) {
             $('.manage-footer .help').show();
+            $('.manage-footer .cancel').show();
         } else {
             $('.manage-footer .help').hide();
+            $('.manage-footer .cancel').hide();
         }
     })
 </script>

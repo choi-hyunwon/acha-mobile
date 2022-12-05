@@ -205,7 +205,8 @@
         var btnSlideOpen2 = $('._btnSlideOpen2');
         var btnSlideClose2 = $('._btnSlideClose2');
 
-        btnSlideOpen.on('click',function (){
+        btnSlideOpen.on('click',function (e){
+            e.preventDefault();
             setTimeout(
                 function(){
                     document.getElementsByClassName("_modalSlide")[0].style.display='block';
@@ -216,18 +217,19 @@
             $('body').addClass('scrOn')
         });
 
-        btnSlideClose.on('click',function (){
+        btnSlideClose.on('click',function (e){
+            e.preventDefault();
             setTimeout(
                 function(){
                     document.getElementsByClassName("_modalSlide")[0].style.display='none';
                 }, 1000
             );
-            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
             $('.modal-slide-backdrop').removeClass('show');
             $('body').removeClass('scrOn')
         });
 
-        btnSlideOpen2.on('click',function (){
+        btnSlideOpen2.on('click',function (e){
+            e.preventDefault();
             setTimeout(
                 function(){
                     document.getElementsByClassName("_modalSlide2")[0].style.display='block';
@@ -238,13 +240,13 @@
             $('body').addClass('scrOn')
         });
 
-        btnSlideClose2.on('click',function (){
+        btnSlideClose2.on('click',function (e){
+            e.preventDefault();
             setTimeout(
                 function(){
                     document.getElementsByClassName("_modalSlide2")[0].style.display='none';
                 }, 1000
             );
-            $('._modalSlide2').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
             $('.modal-slide-backdrop').removeClass('show');
             $('body').removeClass('scrOn')
         });

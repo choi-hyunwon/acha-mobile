@@ -1,9 +1,9 @@
 .scrOff {
-  position: static;
+  overflow: auto;
 }
 
 .scrOn {
-  position: fixed;
+  overflow: hidden;
 }
 
 .connect-choice {

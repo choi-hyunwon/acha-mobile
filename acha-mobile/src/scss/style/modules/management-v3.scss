@@ -1809,9 +1809,11 @@
 
   .manage-footer {
     padding: 20px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    &.fixed{
+      position: fixed;
+      bottom: 0;
+    }
     .box{
       padding: 0 20px;
       border: 1px solid #efefef;

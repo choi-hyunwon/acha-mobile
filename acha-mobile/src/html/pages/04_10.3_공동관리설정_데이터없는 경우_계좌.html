@@ -65,6 +65,13 @@
         $(this).parent().addClass('active').siblings().removeClass('active')
     })
 
+    // 공동관리 유의사항
+    // 하단 고정 체크 함수
+    var vh = $(window).outerHeight();
+    var docH = $(document).outerHeight();
+    var footerH = $('.manage-footer').outerHeight();
+    (docH - footerH > vh) ? $('.manage-footer').removeClass('fixed'): $('.manage-footer').addClass('fixed');
+
     $('.common-collapse').on('click', function (){
         $(this).toggleClass('open');
         if ($(this).hasClass('open')) {

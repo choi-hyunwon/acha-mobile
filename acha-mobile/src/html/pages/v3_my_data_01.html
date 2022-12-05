@@ -142,8 +142,20 @@
 <script>
     // scroll - bottom
     function scrollGoBottom() {
-        $("html, body").animate({ scrollTop: $(document).height() }, 600);
-        $('.scroll-btn-area').hide();
+        var docH = $(document).height();
+        var winH = $(window).height();
+        // scrolltop
+        var scrollT = $(window).scrollTop();
+        if (scrollT < docH) {
+            $('html, body').animate({
+                scrollTop: scrollT + winH
+            }, 600);
+        } else {
+            $('html, body').animate({
+                scrollTop: docH
+            }, 600);
+            $('.scroll-btn-area').hide();
+        }
     }
     $(document).scroll(function(){
         var scrT = $(window).scrollTop();

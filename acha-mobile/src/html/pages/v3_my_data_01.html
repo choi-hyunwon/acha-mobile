@@ -146,9 +146,10 @@
         var winH = $(window).height();
         // scrolltop
         var scrollT = $(window).scrollTop();
+        var gap = 110;
         if (scrollT < docH) {
             $('html, body').animate({
-                scrollTop: scrollT + winH
+                scrollTop: scrollT + winH - gap
             }, 600);
         } else {
             $('html, body').animate({

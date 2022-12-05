@@ -59,6 +59,16 @@
         }
     }
 
+    $('.custom').focus(function() {
+        $('.textarea-box').addClass('active');
+    });
+
+    $('.custom').focusout(function() {
+        if ($(this).val().length === 0) {
+            $('.textarea-box').removeClass('active');
+        }
+    });
+
 </script>
 </body>
 </html>

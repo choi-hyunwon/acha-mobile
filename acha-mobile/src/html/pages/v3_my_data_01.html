@@ -160,8 +160,7 @@
     }
     $(document).scroll(function(){
         var scrT = $(window).scrollTop();
-        console.log(scrT); //스크롤 값 확인용
-        if(scrT == $(document).height() - $(window).height()){
+        if(scrT >= ($(document).height() - $(window).height()) - 10){
             //스크롤이 끝에 도달했을때 실행될 이벤트
             $('.scroll-btn-area').hide();
         } else {

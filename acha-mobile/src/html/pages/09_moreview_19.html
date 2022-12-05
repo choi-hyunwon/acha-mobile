@@ -35,7 +35,7 @@
         <div class="textarea">
             <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" id="context" maxlength="200" placeholder="의견을 작성해 주세요"></textarea>
 
-            <div class="submit-box">
+            <div class="submit-box ">
                 <span class="length"><em class="_val">0</em> / 200</span>
                 <a href="#" class="btn btn-purple">등록</a>
            </div>
@@ -51,19 +51,13 @@
 
         if(len === 0) {
             targetItem.css('color','#afaeb8')
+            $('.textarea-box').removeClass('active');
         }
         else {
             targetItem.css('color','#37354e')
+            $('.textarea-box').addClass('active');
         }
     }
-
-    $('.custom').focus(function() {
-        $(this).parents('.textarea-box').css('paddingBottom','10px')
-    });
-
-    $('.custom').focusout(function() {
-        $(this).parents('.textarea-box').css('paddingBottom','20px')
-    });
 
 </script>
 </body>

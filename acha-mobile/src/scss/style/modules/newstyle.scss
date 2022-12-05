@@ -18,6 +18,7 @@
 .bg_purple {
   background: #f7f8fc !important;
 }
+
 .bg_light_gray {
   background: #f7f7f8 !important;
 }
@@ -83,6 +84,7 @@
     height: 10px;
     background-color: #f5f6f8;
   }
+
   &-line {
     &::before {
       content: '';
@@ -93,9 +95,13 @@
       margin: 0 20px;
     }
   }
+
   &-block {
     margin: 25px 0 10px;
-    &::before {margin: 0 !important;}
+
+    &::before {
+      margin: 0 !important;
+    }
   }
 }
 
@@ -125,36 +131,49 @@ textarea.custom {
   }
 }
 
-.textarea-box{
+.textarea-box {
   background: #efefef;
   padding: 10px 20px 20px;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 10;
-  .textarea{
-    .custom{
+
+  &.active {
+    padding-bottom: 10px;
+
+    .textarea {
+      .submit-box {
+        display: flex;
+      }
+    }
+  }
+
+  .textarea {
+    .custom {
       background: #fff;
       height: 70px;
       margin-bottom: 0;
       display: block;
-      &:focus + .submit-box{
-        display: flex;
-      }
     }
-    .submit-box{
+
+    .submit-box {
+
       display: none;
       justify-content: space-between;
       align-items: flex-start;
       padding-top: 10px;
-      .length{
+
+      .length {
         color: #c2c1cc;
         font-size: 12px;
-        em{
+
+        em {
           color: var(--text-01);
         }
       }
-      .btn-purple{
+
+      .btn-purple {
         height: 30px;
         width: 50px;
         border-radius: 4px;

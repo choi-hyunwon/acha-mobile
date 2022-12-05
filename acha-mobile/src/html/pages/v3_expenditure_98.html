@@ -35,9 +35,6 @@
                         <div class="btn_area">
                             <a class="btn btn-big btn-purple-bg btn-block" href="#">저장</a>
                         </div>
-                        <div class="confirm_wrap">
-                            <a class="btn btn-big btn-purple-bg btn-block" href="#">확인</a>
-                        </div>
                     </fieldset>
                 </form>
             </div>
@@ -81,17 +78,7 @@
         });
         val.addEventListener('blur', (event) => {
             nextEle.style.display="none";
-            targetBtn.hide();
-        });
+         });
     }
-
-    var targetBtn = $(`.confirm_wrap`);
-
-    $('._focus input').on("focus",function (){
-        targetBtn.show();
-    });
-    $('._focus input').on("blur",function (){
-        targetBtn.hide();
-    });
 </script>
 </html>

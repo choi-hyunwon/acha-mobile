@@ -3064,11 +3064,14 @@
             }
           }
         }
-
       }
 
       /*지출수단 카드 - 카드명세서*/
       &.credit-card-statement{
+        .empty{
+          height: calc(100vh - 233px);
+          padding-bottom: 0;
+        }
         .usage-history-list{
           .details-history{
             .item-list{
@@ -3104,8 +3107,6 @@
             }
           }
         }
-
-
       }
 
       /*시뮬레이션결과*/

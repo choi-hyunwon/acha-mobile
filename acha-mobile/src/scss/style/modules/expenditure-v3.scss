@@ -4342,6 +4342,13 @@
                 color: #37354e;
                 font-family: var(--font2);
               }
+              .tit {
+                // 1line ellipsis
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+              }
               .price {
                 white-space: nowrap;
               }

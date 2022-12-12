@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "Roboto.css",
+	"sources": [
+		"../../../../scss/style/fonts/Roboto.scss"
+	],
+	"sourcesContent": [
+		"@font-face {\r\n  font-family: 'Noto Sans CJK KR Regular';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: url('../../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),\r\n  url('../../fonts/Roboto/Roboto-Regular.woff') format('woff'),\r\n  url('../../fonts/Roboto/Roboto-Regular.ttf') format('opentype');\r\n  unicode-range: U+0030-0039;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Noto Sans CJK KR Medium';\r\n  font-style: normal;\r\n  font-weight: 500;\r\n  src: url('../../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),\r\n  url('../../fonts/Roboto/Roboto-Medium.woff') format('woff'),\r\n  url('../../fonts/Roboto/Roboto-Medium.ttf') format('opentype');\r\n  unicode-range: U+0030-0039;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Noto Sans CJK KR Bold';\r\n  font-style: normal;\r\n  font-weight: 700;\r\n  src: url('../../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),\r\n  url('../../fonts/Roboto/Roboto-Bold.woff') format('woff'),\r\n  url('../../fonts/Roboto/Roboto-Bold.ttf') format('opentype');\r\n  unicode-range: U+0030-0039;\r\n}\r\n\r\n.roboto {\r\n  font-family: 'Roboto';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n}\r\n\r\n.robotoM {\r\n  font-family: 'Roboto Medium';\r\n  font-style: normal;\r\n  font-weight: 500;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,UAAU;EACR,WAAW,EAAE,0BAA0B;EACvC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,8CAA8C,CAAC,eAAe,EACnE,6CAA6C,CAAC,cAAc,EAC5D,4CAA4C,CAAC,kBAAkB;EAC/D,aAAa,EAAE,WAAW;;;AAG5B,UAAU;EACR,WAAW,EAAE,yBAAyB;EACtC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,6CAA6C,CAAC,eAAe,EAClE,4CAA4C,CAAC,cAAc,EAC3D,2CAA2C,CAAC,kBAAkB;EAC9D,aAAa,EAAE,WAAW;;;AAG5B,UAAU;EACR,WAAW,EAAE,uBAAuB;EACpC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,GAAG,EAAE,2CAA2C,CAAC,eAAe,EAChE,0CAA0C,CAAC,cAAc,EACzD,yCAAyC,CAAC,kBAAkB;EAC5D,aAAa,EAAE,WAAW;;;AAG5B,AAAA,OAAO,CAAC;EACN,WAAW,EAAE,QAAQ;EACrB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;CACjB;;AAED,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,eAAe;EAC5B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;CACjB"
+}

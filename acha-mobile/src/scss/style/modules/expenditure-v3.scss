@@ -146,24 +146,31 @@
   .regist-story {
     margin: 20px;
     background-color: #f4efff;
-    padding: 17px 25px;
     border-radius: 10px;
     position: relative;
-    .tit {
-      font-size: 15px;
-      color: var(--color-point);
-      font-weight: 700;
+    a {
+      display: block;
+      padding: 17px 25px;
+      span {
+        display: block;
+      }
+      .tit {
+        font-size: 15px;
+        color: var(--color-point);
+        font-weight: 700;
+      }
+      .desc {
+        font-size: 13px;
+        color: #9b9aa6;
+      }
+      .btn-more {
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+      }
     }
-    .desc {
-      font-size: 13px;
-      color: #9b9aa6;
-    }
-    .btn-more {
-      position: absolute;
-      top: 50%;
-      right: 25px;
-      transform: translateY(-50%);
-    }
+
   }
 
 
@@ -4061,6 +4068,7 @@
    */
   .expenditure-calendar {
     padding-top: 10px;
+    padding-bottom: 20px;
     .ex-calendar {
       margin-bottom: 20px;
       .box-ex-calendar-header {

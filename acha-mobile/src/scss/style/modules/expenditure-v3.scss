@@ -3767,6 +3767,13 @@
           font-size: 18px;
           font-family: var(--font3);;
           color: var(--text-01);
+          .ico_list_arrow_small{
+            background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+            display: inline-block;
+            width: 6px;
+            height: 16px;
+            margin-left: 8px;
+          }
         }
       }
       .info-list {

@@ -1286,6 +1286,8 @@
                 .box{
                   margin-bottom: 0;
                   position: relative;
+                  display: flex;
+                  align-items: center;
                   .img{
                     width: 40px;
                     height: 40px;

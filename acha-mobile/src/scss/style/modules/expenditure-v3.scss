@@ -4166,6 +4166,19 @@
           left: 50%;
           transform: translate(-50%, -35%);
         }
+        .fc-day-target .fc-day-number {
+          width: 26px;
+          height: 26px;
+          line-height: 26px;
+          text-align: center;
+          background: #37354e;
+          border-radius: 50%;
+          color: #ffffff !important;
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%, -35%);
+        }
 
         .plus-data {
           .fc-content {

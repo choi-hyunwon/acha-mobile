@@ -1644,10 +1644,13 @@
     .users {
       display: flex;
       span {
-        width: 40px;
-        height: 40px;
         display: block;
         margin-right: 10px;
+        width: 48px;
+        height: 48px;
+        padding: 2px;
+        border: 2px solid transparent;
+        margin-top: -4px;
         img {
           width: 40px;
           height: 40px;
@@ -1655,11 +1658,7 @@
           overflow: hidden;
         }
         &.me {
-          width: 48px;
-          height: 48px;
-          padding: 2px;
           border: 2px solid #6839d3;
-          margin-top: -4px;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;

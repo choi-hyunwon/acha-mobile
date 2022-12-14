@@ -15,36 +15,42 @@
                         <span class="day">2022년 6월 25일</span>
                         <div class="custom-light">
                             <input onkeyup="countChar(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="6000000"/>
+                            <p class="sub-desc">10억원 미만까지 입력 가능</p>
                         </div>
                     </li>
                     <li class="item">
                         <span class="day">2022년 7월 25일</span>
                         <div class="custom-light">
                             <input onkeyup="countChar(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="6000000"/>
+                            <p class="sub-desc">10억원 미만까지 입력 가능</p>
                         </div>
                     </li>
                     <li class="item">
                         <span class="day">2022년 8월 25일</span>
                         <div class="custom-light">
                             <input onkeyup="countChar(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="6000000"/>
+                            <p class="sub-desc">10억원 미만까지 입력 가능</p>
                         </div>
                     </li>
                     <li class="item">
                         <span class="day">2022년 9월 25일</span>
                         <div class="custom-light">
                             <input onkeyup="countChar(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="6000000"/>
+                            <p class="sub-desc">10억원 미만까지 입력 가능</p>
                         </div>
                     </li>
                     <li class="item">
                         <span class="day">2022년 10월 25일</span>
                         <div class="custom-light">
                             <input onkeyup="countChar(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="6000000"/>
+                            <p class="sub-desc">10억원 미만까지 입력 가능</p>
                         </div>
                     </li>
                     <li class="item">
                         <span class="day">2022년 11월 25일</span>
                         <div class="custom-light">
                             <input onkeyup="countChar(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="6000000"/>
+                            <p class="sub-desc">10억원 미만까지 입력 가능</p>
                         </div>
                     </li>
                 </ul>
@@ -57,6 +63,30 @@
     </div>
 
 </div>
+
+<script>
+    function countChar(val , target) {
+        var len = val.value.length;
+        console.log(len)
+        var targetItem = $(`.${target}`);
+        var nextEle = val.nextElementSibling
+        targetItem.text(len);
+        if(len === 0) {
+            targetItem.css('color','#afaeb8');
+            nextEle.style.display="none";
+        } else {
+            targetItem.css('color','#37354e');
+            nextEle.style.display="block"
+        }
+
+        val.addEventListener('focus', (event) => {
+            nextEle.style.display="block"
+        });
+        val.addEventListener('blur', (event) => {
+            nextEle.style.display="none";
+        });
+    }
+</script>
 </body>
 </html>
 

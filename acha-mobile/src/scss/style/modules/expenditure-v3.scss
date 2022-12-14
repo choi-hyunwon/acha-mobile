@@ -2674,6 +2674,13 @@
                 right: 5px;
                 top:10px;
               }
+              .sub-desc {
+                font-size: 12px;
+                font-family: var(--font1);
+                color: var(--text-point-color);
+                padding: 5px 5px 0;
+                display: none;
+              }
             }
           }
         }

@@ -157,6 +157,9 @@
                     font-size: 15px;
                     font-weight: 500;
                     color: #37354e;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
 
                     .circle {
                       display: inline-block;
@@ -170,6 +173,7 @@
                     text-align: right;
                     color: #37354e;
                     font-family: var(--font5);
+                    white-space: nowrap;
                   }
                 }
               }

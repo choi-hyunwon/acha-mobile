@@ -4,6 +4,12 @@ var data = {}
 data.category = {
     'title': '----------아차 카테고리별----------',
     'list': [
+        {
+            'stateClass': 'complete',
+            'url': 'paginate',
+            'category': 'paginate',
+            'page': 'paginate 추가 22.12.21'
+        },
     ]
 
 

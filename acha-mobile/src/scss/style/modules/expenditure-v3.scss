@@ -1531,7 +1531,7 @@
                 height: 16px;
                 margin-left: 8px;
                 right: 20px;
-                top: 50%;
+                top: calc(50% - 2px);
                 transform: translateY(-50%);
               }
               .item-list{
@@ -1611,6 +1611,11 @@
                         font-family: var(--font4);
                       }
                     }
+                    & + div {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                    }
                   }
                   &-lg {
                     padding: 15px 0 16px;
@@ -1661,12 +1666,15 @@
                   font-family: var(--font5);
                   font-weight: 600;
                   position: relative;
+                  top: 2px;
                   &:after{
                     content: '원';
                     display: inline-block;
                     font-size: 13px;
                     font-family: var(--font2);
                     margin-left: 1px;
+                    position: relative;
+                    top: -2px;
                   }
                   &.category-amount-link{
                     padding-right: 10px;
@@ -1728,6 +1736,8 @@
                       font-size: 13px;
                       font-family: var(--font2);
                       margin-left: 1px;
+                      position: relative;
+                      top: -2px;
                     }
                     &:before{
                       content: '';
@@ -1738,7 +1748,7 @@
                       margin-left: 8px;
                       position: absolute;
                       right: 0;
-                      top: 5px;
+                      top: 2px;
                     }
                   }
                 }

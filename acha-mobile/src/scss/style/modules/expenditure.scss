@@ -8258,7 +8258,9 @@
 .pagination {
   justify-content: center;
   padding: 20px;
+  border-top: none !important;
   border-bottom: none !important;
+
   .page-item {
     .page-link {
       font-size: 14px;

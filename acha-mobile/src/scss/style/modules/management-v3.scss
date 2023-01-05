@@ -1994,13 +1994,17 @@
           font-family: var(--font2);
         }
       }
+      .key-img {
+        margin-bottom: 30px;
+      }
 
       .desc {
         font-size: 15px;
         color: #37354e;
         font-family: var(--font1);
         line-height: 1.4;
-        margin-bottom: 164px;
+        margin-bottom: 180px;
+        font-weight: 500;
       }
       .loading {
         .img {

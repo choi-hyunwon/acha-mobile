@@ -1574,7 +1574,6 @@
                   margin-top: 10px;
                 }
               }
-
               .details-history{
                 .item-list{
                   padding-bottom: 8px;
@@ -1625,6 +1624,20 @@
               .empty{
                 height: auto;
                 padding-top: 70px;
+              }
+              /*04_3.1_데이터공유하기_데이터유_첫데이터공유.html*/
+              .list-radio {
+                padding-top: 20px;
+                .item {
+                  margin-bottom: 20px;
+                }
+              }
+              .data-description {
+                padding-top: 20px;
+                border-top: 1px solid #efefef;
+                font-size: 13px;
+                line-height: 19px;
+                color: #737183;
               }
             }
             +.btn-wrap{

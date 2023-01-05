@@ -40,7 +40,7 @@
   content: '';
   position: absolute;
   left: -5px;
-  top: -2px;
+  top: -1px;
   margin: 4px;
   width: 20px;
   height: 20px;
@@ -128,7 +128,11 @@
 }
 
 [type="radio"]:disabled + span {
-  color: #d2d2d2;
+  color: #9b9aa6;
+}
+
+[type="radio"]:disabled + span::after {
+  background-color: #efefef;
 }
 
 [type="radio"]:disabled:checked + span {
@@ -140,7 +144,7 @@
 }
 
 [type="checkbox"]:disabled + span:not(.lever) {
-  color: #d2d2d2;
+  color: #9b9aa6;
 }
 
 [type="radio"]:disabled:not(:checked) + span:before {

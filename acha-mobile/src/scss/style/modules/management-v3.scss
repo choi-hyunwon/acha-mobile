@@ -1742,6 +1742,104 @@
 
   }
 
+
+  .share-profile {
+    position: relative;
+    padding-top: 20px;
+    .profile {
+      margin: 0 20px 20px;
+      padding: 10px 10px 16px;
+      border-radius: 10px;
+      border: solid 1px #efefef;
+      background-color: #fff;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .badge {
+          height: 21px;
+          padding: 2px 8px;
+          border-radius: 10px;
+          color: #fff;
+          font-size: 11px;
+          font-weight: 500;
+          line-height: 17px;
+          &.me {
+            background-color: #6839d3;
+          }
+          &.you {
+            background-color: #d879f5;
+          }
+        }
+        .update {
+          font-size: 12px;
+          color: #737183;
+          i {
+            margin-top: -1px;
+          }
+          &.update-ing {
+            font-size: 13px;
+            color: #6839d3;
+          }
+        }
+
+      }
+      .user {
+        padding-top: 5px;
+        text-align: center;
+        p {
+          text-align: center;
+          &.img {
+            margin-bottom: 6px;
+          }
+          &.name {
+            margin-bottom: 5px;
+            span {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 18px;
+              color: #37354e;
+            }
+          }
+          &.share {
+            margin-bottom: 20px;
+            span {
+              min-width: 51px;
+              height: 23px;
+              padding: 3px 8px;
+              border-radius: 11.5px;
+              background-color: #f4efff;
+              line-height: 17px;
+              font-size: 11px;
+              font-weight: 500;
+              color: #6839d3;
+            }
+          }
+          &.btn-wrap {
+            margin-bottom: 4px;
+            .btn {
+              height: 32px;
+              border-radius: 6px;
+              font-size: 12px;
+            }
+          }
+        }
+
+      }
+      .desc {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #9b9aa6;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+  }
+
+
   .data-manage {
     display: flex;
     justify-content: space-between;
@@ -1823,6 +1921,7 @@
       padding: 0 20px;
       border: 1px solid #efefef;
       margin-bottom: 0;
+      border-radius: 6px;
       .common-collapse {
         display: flex;
         justify-content: space-between;
@@ -2099,5 +2198,10 @@
         }
       }
     }
+  }
+
+
+  .profile-update {
+    padding: 20px;
   }
 }

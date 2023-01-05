@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal-slide modal-my-data _modalSlide">
+    <div class="modal-slide-content" style="height: 263px; animation: modal-sticky-bottom-animation5 .5s;">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title _btnSlideOpen">며칠째 <span class="name">상대방의 데이터</span>가<br>
+                업데이트되지 않았어요</div>
+            <div class="desc-box">
+                <p>최신 데이터가 아닐 경우 공동관리에 보이는 정보가 실제 금액과 다를 수 있으니 참고해주세요</p>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">확인</a>
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">변경하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

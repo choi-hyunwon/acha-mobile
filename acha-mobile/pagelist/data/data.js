@@ -2867,6 +2867,57 @@ data.manageConnect = {
     'list': [
         {
             'stateClass': 'complete',
+            'url': '04_3.1_데이터공유하기_데이터유_첫데이터공유',
+            'category': '공동관리',
+            'page': '04_3.1_데이터공유하기_데이터유_첫데이터공유'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_3.1_데이터공유하기_데이터유_오픈이후데이터',
+            'category': '공동관리',
+            'page': '04_3.1_데이터공유하기_데이터유_오픈이후데이터'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_3.2_데이터공유하기_데이터무',
+            'category': '공동관리',
+            'page': '04_3.2_데이터공유하기_데이터무'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '4.3_상대방업데이트_알림',
+            'category': '공동관리',
+            'page': '4.3_상대방업데이트_알림'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_10.1_공동관리설정',
+            'category': '공동관리',
+            'page': '04_10.1_공동관리설정'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_10.1_공동관리설정_상대방업데이트3일초과',
+            'category': '공동관리',
+            'page': '04_10.1_공동관리설정_상대방업데이트3일초과'
+        },
+        {
+            'stateClass': 'complete',
+            'url': '04_10.1_공동관리설정_업데이트중',
+            'category': '공동관리',
+            'page': '04_10.1_공동관리설정_업데이트중'
+        },
+
+
+
+
+
+
+
+
+
+        {
+            'stateClass': 'complete',
             'url': '04_00_예외케이스',
             'category': '공동관리',
             'page': '04_00_예외케이스'

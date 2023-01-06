@@ -2,41 +2,25 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<div class="wrap renewal">
+<div class="wrap renewal bg_light_gray">
     <div class="header _sticky">
         <a href="#" class="sprite btn_back"></a>
-        <h2 class="title">같이 보는 지출 스토리</h2>
-
+        <h2 class="title">스토리</h2>
+        <a href="#" class="btn-setting"><img src="../../img/common/expenditure/btn_title_edit@2x.png" alt="설정 버튼"></a>
     </div>
-    <div class="contents expenditure">
-        <div class="current-month current-month-manage">
-            <a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i>
-        </div>
-        <div class="expenditure-tab manage-tab _expenditureTab">
-            <ul class="clearfix">
-                <li class="active"><a href="#">#공동</a></li>
-                <li><a href="#">#유똑똑</a></li>
-                <li><a href="#">#김꼼꼼</a></li>
-            </ul>
-            <a href="#" class="btn btn-edit">편집</a>
-        </div>
-        <div class="expenditure-box bg_light_gray">
-            <div class="empty" style="height: calc(100vh - 152px);">
-                <div class="img"><img src="../../img/common/ico_error@2x.png" alt="empty"></div>
-                <p>지출 스토리가 없습니다 <br>
-                    카드&계좌 연결 또는 내 거래 내역에 <br>
-                    지출 스토리가 등록되어 있는지 확인해주세요</p>
+    <div class="contents">
+        <div class="d-flex justify-content-center align-items-center" style="height: calc(100vh - 86px);">
+            <div class="empty">
+                <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
+                <p>
+                    스토리가 없어요<br>
+                    카드&계좌 연결 또는 내 거래 내역에<br>
+                    스토리가 등록되어 있는지 확인해주세요
+                </p>
             </div>
         </div>
     </div>
-
 </div>
-<script>
-    // 일자 카테고리 탭
-    $('._expenditureTab li a').on('click', function (){
-        $(this).parent().addClass('active').siblings().removeClass('active')
-    })
-</script>
 
 </body>
 </html>

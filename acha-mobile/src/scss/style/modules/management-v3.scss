@@ -2263,4 +2263,65 @@
   .profile-update {
     padding: 20px;
   }
+  .area-off-before {
+    padding: 20px;
+    .off-before {
+      margin-bottom: 50px;
+      padding: 36px 0 30px;
+      border-radius: 10px;
+      border: solid 1px #efefef;
+      background-color: #fff;
+      text-align: center;
+      .img {
+        margin-bottom: 32px;
+      }
+      .tit {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #37354e;
+      }
+      .desc {
+        font-size: 16px;
+        line-height: 22px;
+        color: #737183;
+        margin-bottom: 30px;
+      }
+    }
+    .comment {
+      position: relative;
+      a {
+        display: block;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 24px;
+        background-image: url('../../img/common/ico_list_arrow_large@2x.png');
+        background-size: 10px;
+      }
+      .tit {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 27px;
+        color: #37354e;
+        margin-bottom: 2px;
+        display: block;
+      }
+      .desc {
+        font-size: 14px;
+        line-height: 18px;
+        color: #737183;
+        padding-left: 30px;
+        display: block;
+      }
+
+    }
+  }
+
+
 }

@@ -1862,6 +1862,11 @@
           text-align: center;
           &.img {
             margin-bottom: 6px;
+            border: solid 1px #e3e4e8;
+            display: inline-block;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
           }
           &.name {
             margin-bottom: 5px;
@@ -1892,6 +1897,7 @@
               height: 32px;
               border-radius: 6px;
               font-size: 12px;
+              font-family: var(--font1);
             }
           }
         }

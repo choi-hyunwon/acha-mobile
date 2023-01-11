@@ -1,0 +1,15 @@
+<svg id="_-g-btn_add_mydata" data-name="-g-btn_add_mydata" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #37354e;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path id="합치기_16" data-name="합치기 16" class="cls-1" d="M8.75,18.75v-7.5H1.25a1.25,1.25,0,1,1,0-2.5h7.5V1.25a1.25,1.25,0,1,1,2.5,0v7.5h7.5a1.25,1.25,0,0,1,0,2.5h-7.5v7.5a1.25,1.25,0,0,1-2.5,0Z" transform="translate(1 1)"/>
+  <rect id="사각형_2027" data-name="사각형 2027" class="cls-2" width="22" height="22"/>
+</svg>

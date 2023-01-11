@@ -152,6 +152,18 @@
                   color: var(--text-01);
                   font-weight: 600;
                 }
+                .badge-purple {
+                  display: inline-block;
+                  font-size: 11px;
+                  color: var(--text-point-color);
+                  padding: 6px 8px;
+                  border-radius: 10px;
+                  background: #f4efff;
+                  font-family: var(--font2);
+                  font-weight: unset;
+                  margin-left: 4px;
+                  vertical-align: 3px;
+                }
               }
 
               .list-card {
@@ -2311,6 +2323,11 @@
         color: #37354e;
         margin-bottom: 2px;
         display: block;
+        font-family: var(--font3);
+        img {
+          position: relative;
+          top: -2px;
+        }
       }
       .desc {
         font-size: 14px;

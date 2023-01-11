@@ -213,6 +213,7 @@
                       .icon-user {
                         position: relative;
                         display: inline-block;
+                        margin-right: 6px;
                         &-me {
                           &::after {
                             content: '';

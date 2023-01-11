@@ -354,7 +354,7 @@
               color: var(--text-01);
 
               &::after {
-                content: '원';
+                content: '';
                 font-family: var(--font3);
                 font-size: 14px;
                 letter-spacing: -.35px;
@@ -413,7 +413,7 @@
             letter-spacing: -0.17px;
 
             &::after {
-              content: '원';
+              content: '';
               font-family: var(--font2);
               font-weight: 500;
               font-size: 13px;
@@ -434,7 +434,7 @@
         padding-bottom: 20px;
 
         &::after {
-          content: '원';
+          content: '';
           font-family: var(--font1);
           font-size: 14px;
           letter-spacing: -.35px;
@@ -641,7 +641,7 @@
           vertical-align: middle;
 
           &::after {
-            content: '원';
+            content: '';
             font-family: var(--font2);
             font-size: 13px;
             line-height: 22px;
@@ -1206,7 +1206,7 @@
         padding-right: 3px;
 
         &::after {
-          content: '원';
+          content: '';
           font-size: 14px;
           letter-spacing: -0.35px;
           line-height: 24px;

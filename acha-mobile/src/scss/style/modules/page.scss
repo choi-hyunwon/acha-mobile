@@ -1193,7 +1193,7 @@
 
             &.won {
               &::after {
-                content: '원';
+                content: '';
                 font-family: var(--font2);
                 font-size: 12px;
               }
@@ -1853,7 +1853,7 @@
         padding-right: 2px;
 
         &::after {
-          content: '원';
+          content: '';
           font-family: var(--font2);
           font-size: 12px;
         }
@@ -1968,7 +1968,7 @@
 
           &.won {
             &::after {
-              content: '원';
+              content: '';
               color: #737183;
               font-size: 11px;
             }
@@ -2000,7 +2000,7 @@
 
           &.won {
             &::after {
-              content: '원';
+              content: '';
               color: #737183;
               font-size: 11px;
             }
@@ -2011,7 +2011,7 @@
 
             &.won {
               &::after {
-                content: '원';
+                content: '';
                 color: var(--color-point) !important;
                 font-size: 11px;
               }
@@ -2076,7 +2076,7 @@
       right: 3px;
 
       &::after {
-        content: '원';
+        content: '';
         font-family: var(--font2);
         font-size: 13px;
         line-height: 22px;

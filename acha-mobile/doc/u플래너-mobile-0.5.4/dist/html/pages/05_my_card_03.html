@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>카드 상세정보</h2>
+    </div>
+    <div class="contents">
+        <div class="my-card-detail">
+            <div class="card-detail-wrap">
+                <div class="btn-refresh"><span>30분 전</span><a href="#" class="ico-refresh-mini"></a></div>
+                <div class="card-info">
+                    <div class="my-card">
+                        <div class="img">
+                            <img src="../../img/@temp/card_noimg_w_kb@2x.png" alt="">
+                        </div>
+                        <p class="card-name">현대카드 스마일페이카드</p>
+                        <p class="card-num">[신용]VISA 111120*****1101</p>
+                    </div>
+                    <ul class="crad-info-list">
+                        <li class="clearfix">
+                            <span>현대카드 포인트</span>
+                            <span class="point">15,000P</span>
+                        </li>
+                        <li class="clearfix">
+                            <span>결제은행</span>
+                            <span class="grey">국민은행</span>
+                        </li>
+                        <li class="clearfix">
+                            <span>결제일</span>
+                            <span class="grey">26일</span>
+                        </li>
+                        <li class="clearfix">
+                            <span>연회비</span>
+                            <span class="grey">10,000원 <!--<a href="#" class="ico-tooltip"></a>--></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-total-ex-wrap">
+                <div class="card-item">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-info">
+                                    <span class="txt">정기결제내역  💳</span>
+                                    <span class="val">총 5건<i class="ico-list-arrow-large"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-detail-list-wrap">
+                <div class="card-detail-title">
+                    <div class="title">카드사용금액</div>
+                </div>
+                <div class="select-date">
+                    <a href="#" class="btn-select">2021년 3월 <i class="ico-mycard-arrow-nor"></i></a>
+                </div>
+                <div class="date-info">
+                    <span class="title">총 금액</span>
+                    <span class="total">550,000<em>원</em></span>
+                    <span class="date">5월1일~5월31일</span>
+                </div>
+<!--                <div class="month">10월</div>-->
+                <ul class="spending-list">
+                    <li>
+                        <div class="info">21/03/11 16:20<span class="bar"></span>할부</div>
+                        <div class="info2">
+                            <span class="title">브랜드(주)</span>
+                            <span class="val">127,000<em>원</em></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">21/03/11 11:56  </div>
+                        <div class="info2">
+                            <span class="title">스타벅스구로점</span>
+                            <span class="val cancel_line">127,000<em>원</em></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">21/03/10 14:30  </div>
+                        <div class="info2">
+                            <span class="title">SKT 010**34**7</span>
+                            <span class="val">127,000<em>원</em></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-detail-loading">
+                <img src="../../img/common/loading.gif" alt="">
+            </div>
+            <div class="card-detail-btn-wrap">
+                <a class="btn btn-big btn-big-light btn-big-border-radius btn-block" href="#">더보기</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    /* 날짜 객체 받아서 문자열로 리턴하는 함수 */
+    function getDateStr(myDate){
+        return (myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + myDate.getDate())
+    }
+
+    /* 오늘 날짜를 문자열로 반환 */
+    function today() {
+        var d = new Date()
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 1개월전 날짜 반환 */
+    function lastMonth() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear - 1)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 2개웗 후 날짜 반환 */
+    function next2Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 2)
+        return getDateStr(d)
+    }
+
+    /* 오늘로부터 3개웗 후 날짜 반환 */
+    function next3Month() {
+        var d = new Date()
+        var monthOfYear = d.getMonth()
+        d.setMonth(monthOfYear + 3)
+        return getDateStr(d)
+    }
+</script>
+</html>

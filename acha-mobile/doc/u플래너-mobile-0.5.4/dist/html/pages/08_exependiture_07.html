@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+<!--    <div class="my-card-tab _myCardTab">  &lt;!&ndash; todo! 안드로이드/IOS 개발 영역 확인 &ndash;&gt;-->
+<!--        <ul class="clearfix">-->
+<!--            <li class="active"><a href="#">지출상세</a></li>-->
+<!--            <li><a href="#">내카드</a></li>-->
+<!--            <li><a href="#">연말정산</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+    <div class="ex-menu-top _exMenu">
+        <ul class="clearfix">
+            <li><a href="#">월별</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">지출계좌</a></li>
+            <li class="active"><a href="#">카드 고정비</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="fixed-card-wrap">
+            <div class="select-wrap">
+                <div class="select-box disabled"> <!-- disabled -- 2021.08.09 -->
+                    <span class="bank-img"><img src="../../img/@temp/ci_uribank@2x.png" alt=""></span>
+                    <select title="account" disabled> <!-- disabled -- 2021.08.09 -->
+                        <option class="all" value="1" selected="">카드 전체</option>
+                        <option value="2">KB국민카드</option>
+                        <option value="3">카카오뱅크</option>
+                        <option value="4">우리은행</option>
+                    </select>
+                </div>
+            </div>
+            <div class="empty">
+                <div class="img"><img src="../../img/common/ico_error@2x.png" alt=""></div>
+                <p class="txt">
+                    연결되어 있는 카드가 없어요<br/>
+                    카드를 연결 후 이용해주세요 🙂
+                </p>
+<!--                <p class="txt">-->
+<!--                    앞으로 6개월간<br/>-->
+<!--                    예상되는 고정비가 없습니다 🙂-->
+<!--                </p>-->
+                <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_add"></i>내 카드 연결</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

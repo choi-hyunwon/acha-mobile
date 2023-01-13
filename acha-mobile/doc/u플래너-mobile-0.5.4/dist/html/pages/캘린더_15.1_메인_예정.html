@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>캘린더</h2>
+        <div class="sum-area">
+            <p class="update mb-0">30분 전<i class="ico-refresh-mini"></i></p>
+        </div>
+    </div>
+    <div class="contents expenditure">
+        <div class="expenditure-calendar">
+            <div class="ex-calendar">
+                <div class="box-ex-calendar-header">
+                    <div class="date"><a href="#">2022년 10월<i class="icon-arrow-bottom"> </i></a></div>
+                    <a href="#" class="filter"><i class="btn btn-filter">필터 <span>3</span></i></a>
+                </div>
+                <div class="box_ex_calendar ex-calendar-v3">
+                    <div id='calendar'></div>
+                </div>
+            </div>
+            <!-- expenditure-box -->
+            <div class="expenditure-box bg_light_gray" style="height: calc(100vh - 550px);">
+                <div class="calendar-history">
+                    <div class="date-detail">
+                        <div class="t-day">
+                            <span class="day">1일</span>
+                            <span class="badge badge-gray">토</span>
+                        </div>
+                        <div class="detail">
+                            <div class="plus">
+                                <span class="tit">수입예정</span><span class="price">+15,000원</span>
+                            </div>
+                            <div class="minus">
+                                <span class="tit">지출예정</span><span class="price">-15,000원</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="history-list-calendar">
+                        <ul>
+                            <li>
+                                <span class="time">수입예정 | 우리계좌271</span>
+                                <span class="detail">
+                                    <span class="tit">급여</span>
+                                    <span class="price">+2,250,000원</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="time">지출예정 | 우리계좌271</span>
+                                <span class="detail">
+                                    <span class="tit">신한카드</span>
+                                    <span class="price">-1,250,000원</span>
+                                </span>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //expenditure-box -->
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: ['interaction', 'dayGrid'],
+            showNonCurrentDates: true,
+            fixedWeekCount: false,
+            header: false,
+            height: 'auto',
+            defaultDate: '2022-11-15',  // 날짜 입력시, 달력 show
+            editable: false,
+            eventLimit: false,
+            navLinks: true,
+            timeZone: 'Asia/Seoul',
+            columnHeaderText: function (date) {
+                return weekList[date.getDay()];
+            },
+            navLinkDayClick: function (date, jsEvent) {
+                console.log(date.toISOString().slice(0,10));
+                console.log(jsEvent.target)
+            },
+            events: [
+                {
+                    className: 'minus-data',
+                    title: '-100,000',
+                    start: '2022-11-12'
+                },
+                {
+                    className: 'minus-data',
+                    title: '-480,000',
+                    start: '2022-11-13'
+                },
+                {
+                    className: 'minus-data',
+                    title: '-1,020,000',
+                    start: '2022-11-14'
+                },
+                // 표시 할 데이터가 있고, 선택된 일자가 있는 금액의 첫번째에 plus-data 클래스 추가 **
+                {
+                    className: 'plus-data',
+                    title: '+100,000',
+                    start: '2022-11-03'
+                },
+                {
+                    className: 'minus-data',
+                    title: '-50,000',
+                    start: '2022-11-03'
+                },
+                {
+                    className: 'plus-data',
+                    title: '+50,000',
+                    start: '2022-11-10'
+                },
+                {
+                    className: 'plus-data-todo',
+                    title: '+100,000',
+                    start: '2022-11-17'
+                },
+                {
+                    className: 'plus-data-todo',
+                    title: '+100,000',
+                    start: '2022-11-25'
+                },
+                {
+                    className: 'plus-data-todo',
+                    title: '+100,000',
+                    start: '2022-11-28'
+                },
+                {
+                    className: 'minus-data-todo',
+                    title: '-100,000',
+                    start: '2022-11-28'
+                },
+            ],
+        });
+
+        calendar.render();
+    });
+</script>
+</body>
+</html>
+

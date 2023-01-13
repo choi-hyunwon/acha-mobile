@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="contents">
+        <div class="connection-main-wrap">
+            <div class="main-header">
+                <div class="inner">
+                    <div class="title"><a href="#">예원이네</a></div>
+<!--                    <div class="desc">가족 지출 관리 렛츠두잇!</div>-->
+                    <div class="connection-state">
+                        <div class="profile my">
+                            <div class="img"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
+                            <div class="tag">나</div>
+                            <div class="toast-popup">
+                                <span class="txt">상대방에게 커넥션 공유를 요청해보세요</span>
+                                <a class="btn-close" href="#"><i class="btn-toast-popup-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="img"><img src="../../img/common/img-profile-default@2x.png" alt=""></div>
+                            <div class="toast-popup">
+                                <span class="txt">상대방에게 커넥션 공유를 요청해보세요</span>
+                                <a class="btn-close" href="#"><i class="btn-toast-popup-close"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-connection-top-area">
+                <div class="select-box">
+                    <div class="custom-light">
+                        <select title="calendar">
+                            <option value="1" selected>5월</option>
+                            <option value="2">6월</option>
+                            <option value="3">7월</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tab">
+                    <ul class="clearfix">
+                        <li class="active"><a href="#" data-tab="1">일자별</a></li>
+                        <li><a href="#" data-tab="2">구성원</a></li>
+                        <li><a href="#" data-tab="3">카테고리</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="connection-tab-content-container">
+                <div class="connection-tab-content active" data-tab="0">
+                <div class="connection-tab-content active" data-tab="0">
+                    <div class="box-connection">
+                        <div class="box-spending">
+                            <ul>
+                                <li>
+                                    <span class="tit">총 지출</span>
+                                    <span class="val">0</span>
+                                </li>
+                                <li>
+                                    <span class="tit">지출완료</span>
+                                    <span class="val">0</span>
+                                </li>
+                                <li>
+                                    <span class="tit">남은 지출</span>
+                                    <span class="val">0</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-daily-spending">
+                            <div class="no-data">
+                                <div class="img"><img src="../../img/common/ico_error@2x.png" alt=""></div>
+                                <div class="txt">표시 할 지출이 없어요 🙁</div>
+                                <div class="txt-sm">공동의 지출을 구성원에게 공유해보세요</div>
+                                <div class="btn-wrap">
+                                    <a class="btn btn-lg btn-block btn-big" href="#"><i class="sprite icon_btn_add"></i>내
+                                        지출
+                                        공유하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-bg-receipt">
+                        <div class="top-area">
+                            <div class="txt-lg">카드 고정 결제 금액 💳</div>
+                            <div class="txt">카드로 결제하는 지출만 모았어요</div>
+                            <div class="val">0</div>
+                        </div>
+                        <div class="box-daily-spending">
+                            <div class="no-data">
+                                <div class="img"><img src="../../img/common/ico_error@2x.png" alt=""></div>
+                                <div class="txt-sm">카드 고정 결제 내역이 없어요 🙁</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-connection">
+                        <div class="link-area">
+                            <div class="tit">계좌 잔고 💰</div>
+                            <div class="link">
+                                <span class="val">0</span>
+                                <a href="#" class="btn-more"><i class="arrow-list-add"></i></a>
+                            </div>
+                        </div>
+                        <div class="box-daily-spending">
+                            <div class="no-data type2">
+                                <div class="img"><img src="../../img/common/ico_error@2x.png" alt=""></div>
+                                <div class="txt-sm">표시할 계좌 잔고가 없어요 🙁</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $('._tab li a').on('click', function (){
+        var tabInx = $(this).data('tab')
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $(`.connection-tab-content[data-tab=${tabInx}]`).addClass('active').siblings().removeClass('active');
+    })
+</script>
+</body>
+</html>

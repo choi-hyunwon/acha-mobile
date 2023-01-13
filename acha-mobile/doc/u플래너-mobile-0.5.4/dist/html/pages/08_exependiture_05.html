@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>필터 설정</h2>
+    </div>
+    <div class="contents">
+        <div class="filter-setting">
+            <div class="item">
+                <div class="label">결제수단</div>
+                <div class="btn-wrap _btnWrap">
+                    <a class="active" href="#"><i class="icon"></i><em>전체</em></a>
+                    <a href="#"><i class="icon"></i><em>계좌이체</em></a>
+                    <a href="#"><i class="icon"></i><em>카드결제</em></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label">지출 상태</div>
+                <div class="btn-wrap _btnWrap">
+                    <a class="disabled" href="#"><i class="icon"></i><em>전체</em></a>
+                    <a class="disabled" href="#"><i class="icon"></i><em>지출예정</em></a>
+                    <a class="active" href="#"><i class="icon"></i><em>지출완료</em></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toastPopup _toastPopup">
+        <p>결제수단-전체로 설정되었습니다</p>
+    </div>
+</div>
+</body>
+<script>
+    $('._btnWrap a').on('click', function (){
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+
+    function toastPopup() {
+        var target = $('._toastPopup');
+        target.addClass('show');
+
+        setTimeout(function () {
+            target.removeClass('show');
+        }, 3000);
+    }
+
+    // 토스트 팝업 실행 함수
+    toastPopup();
+</script>
+</html>

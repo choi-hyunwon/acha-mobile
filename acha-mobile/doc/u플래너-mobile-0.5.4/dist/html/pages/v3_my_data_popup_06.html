@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap"></div>
+<div class="modal-slide modal-my-data analytics-service2 _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title _btnSlideOpen">아차가 제공하는<br><span class="name">지출분석 서비스</span>를 이용해볼까요?</div>
+            <div class="desc-box">
+                <p class="sub-title">가맹점/사업자등록번호 전송 및 수집•이용</p>
+                <p>가맹점/사업자등록번호 전송 및 수집이용에 동의하셔야 카드 지출을 분석하여 각 지출처로 분류할 수 있어요</p>
+                <div class="box img-box">
+                    <img src="../../img/common/img_info_store@2x.png" alt="지출분석 서비스 예시">
+                </div>
+            </div>
+            <div class="desc-box">
+                <p class="sub-title">적요/거래메모 전송 및 수집•이용</p>
+                <p>적요/거래메모 전송 및 수집이용에 동의하셔야 입출금 내역을 분류하여 계좌 내역을 정리할 수 있어요</p>
+                <div class="box img-box">
+                    <img src="../../img/common/img_info_deal@2x.png" alt="지출분석 서비스 예시">
+                </div>
+
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">아니요</a>
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">좋아요</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

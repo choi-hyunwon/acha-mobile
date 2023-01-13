@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+<!--    <div class="my-card-tab _myCardTab">  &lt;!&ndash; todo! 안드로이드/IOS 개발 영역 확인 &ndash;&gt;-->
+<!--        <ul class="clearfix">-->
+<!--            <li class="active"><a href="#">지출상세</a></li>-->
+<!--            <li><a href="#">내카드</a></li>-->
+<!--            <li><a href="#">연말정산</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+    <!-- s 추가 -- 2021.06.14 -->
+    <div class="ex-menu-top _exMenu">
+        <ul class="clearfix">
+            <li><a href="#">월별</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">지출계좌</a></li>
+            <li class="active"><a href="#">카드 고정비</a></li>
+        </ul>
+    </div>
+    <!-- e 추가 -- 2021.06.14 -->
+    <div class="contents">
+        <div class="fixed-card-wrap">
+            <div class="select-wrap">
+                <div class="select-box">
+                    <span class="bank-img"><img src="../../img/@temp/ci_uribank@2x.png" alt=""></span>
+                    <select title="account">
+                        <option value="1" selected="">KB국민카드</option>
+                        <option value="2">카카오뱅크</option>
+                        <option value="3">우리은행</option>
+                    </select>
+                </div>
+            </div>
+<!--            <div class="title">-->
+<!--                <span class="font-medium">5월 </span>예상 고정비는 <span class="font-num-medium">1,200,000</span><span class="font-medium">원</span>으로<br/>-->
+<!--                <span class="font-bold">전월대비 </span><span class="font-num-medium">22%</span><span> 증가 되었어요 🤔</span> &lt;!&ndash;<span> 감소 되었어요 😀</span>&ndash;&gt;-->
+<!--            </div>-->
+            <!-- s 추가 -- 2021.08.17 -->
+            <div class="update-box">
+                <div class="txt">최신 데이터로 가져오고 있어요 🙂</div>
+                <div class="img">
+                    <!-- <img src="../../img/@temp/woori.png" alt="">  // gif -->
+                    <span>최신 정보를 가져오는 중</span>
+                </div>
+            </div>
+            <!-- e 추가 -- 2021.08.17 -->
+            <div class="table-wrap">
+                <div class="table-fixed">
+                    <div class="table-header">
+                        <div class="table-col month">월<br/>(예상) 고정비</div>
+                        <div class="table-col sum">카드 할부 합계</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col sum">정기 결제 합계</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                        <div class="table-col item">본인576<br/>하이마트<br/>810,000원 (10개월)</div>
+                    </div>
+                    <!-- todo! table-row에 table-col width() 더한 값 넣기 -->
+                    <div class="table-body">
+                        <div class="inner" style="width: 1000px">
+                            <div class="table-row month">
+                                <div class="table-col">5월<br/>380,000</div>
+                                <div class="table-col">6월<br/>380,000</div>
+                                <div class="table-col">7월<br/>380,000</div>
+                                <div class="table-col">8월<br/>380,000</div>
+                                <div class="table-col">9월<br/>380,000</div>
+                                <div class="table-col">10월<br/>380,000</div>
+                                <div class="table-col">11월<br/>380,000</div>
+                                <div class="table-col">12월<br/>380,000</div>
+                            </div>
+                            <div class="table-row sum">
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row sum">
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                                <div class="table-col">480,000</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                            <div class="table-row item">
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                                <div class="table-col">45,000<br/>(1/3)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        ** 화살표 이미지 방향에 따른 클래스 명
+        <i class="right"></i>
+        <i class="left"></i>
+        <i class="top"></i>
+        <i class="bottom"></i>
+
+        ** 스크롤 함수
+        scrollGoTop() // 최상단으로 이동
+        scrollGoBottom() // 최하단으로 이동
+        scrollGoLeft()
+        scrollGoRight()
+    -->
+<!--    <a href="#" class="btn-scroll right" onclick="scrollGoRight()"><i class="right"></i></a>-->
+<!--    <a href="#" class="btn-scroll bottom" onclick="scrollGoBottom()"><i class="bottom"></i></a>-->
+</div>
+</body>
+<script>
+    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+    var index = 3; // (li 갯수) - 1
+    var sum = 0;
+    for (var j=0; j <= index; j++) {
+        sum = sum + $("._exMenu li:eq("+ j +")").outerWidth(true);
+    }
+    $('._exMenu ul').css('width', sum + 1);
+
+    // 테이블 - 컨텐츠 따른 스크롤 넓이
+    var itemLength = $('.table-body .table-row.month .table-col').length;
+    var contentWidth = itemLength * 70;
+    $('.table-body .inner').css('width', contentWidth);
+
+    // scroll - top
+    function scrollGoTop() {
+        $('html, body').animate( { scrollTop: '0' }, 600);
+    }
+
+    // scroll - bottom
+    function scrollGoBottom() {
+        $("html, body").animate({ scrollTop: $(document).height() }, 600);
+    }
+
+    // scroll - left
+    function scrollGoLeft() {
+        $('.table-body').animate( { scrollLeft: '0' }, 600);
+    }
+
+    // scroll - Right
+    function scrollGoRight() {
+        var leftPos = $('.table-body').scrollLeft();
+        $('.table-body').animate( { scrollLeft: leftPos + 210 }, 600);
+    }
+</script>
+</html>

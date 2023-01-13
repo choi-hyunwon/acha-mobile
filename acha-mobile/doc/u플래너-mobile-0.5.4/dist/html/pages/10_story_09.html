@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+<!--    <div class="my-card-tab _myCardTab">-->
+<!--        <ul class="clearfix">-->
+<!--            <li><a href="#">내카드</a></li>-->
+<!--            <li><a href="#">타임라인</a></li>-->
+<!--            <li class="active"><a href="#">카드고정결제</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+    <div class="contents">
+        <div class="my-card-main border-bottom">
+            <div class="btn-wrap"><a href="#" class="btn-select _btnPopup">5월</a></div>
+            <div class="heading">
+                카드로 결제하는<br/>
+                고정지출 내역만 모았어요 💳
+            </div>
+            <div class="main-info">
+                <span class="val">111,250,000</span><span class="sm">원</span>
+            </div>
+        </div>
+        <div class="box_category_list fix-payment">
+            <div class="category-list-item">
+                <div class="ex-item">
+                    <a href="#">
+                        <span class="day">8일</span>
+                        <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                        <ul class="b-info">
+                            <li class="title">KB국민카드 (국내000)</li>
+                        </ul>
+                        <p class="btn-move">
+                            <span class="value">11,000,000</span>
+                            <i class="sprite ico_arrow_small_nor"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="ex-item">
+                    <a href="#">
+                        <span class="day">8일</span>
+                        <span class="img"><img src="../../img/@temp/hana.png" alt=""></span>
+                        <ul class="b-info">
+                            <li class="title">하나카드 데일리 플러스</li>
+                        </ul>
+                        <p class="btn-move">
+                            <span class="value">1,280,000</span>
+                            <i class="sprite ico_arrow_small_nor"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="ex-item">
+                    <a href="#">
+                        <span class="day">10일</span>
+                        <span class="img"><img src="../../img/@temp/499.png" alt=""></span>
+                        <ul class="b-info">
+                            <li class="title">우체국 행복한 카드 우체국 행복한 카드 우체국 행복</li>
+                        </ul>
+                        <p class="btn-move">
+                            <span class="value">45,000</span>
+                            <i class="sprite ico_arrow_small_nor"></i>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // 타임라인 / 스토리 탭
+    $('._headerTab li a').on('click', function () {
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+    // 결제 탭
+    $('._timelineMenu li a').on('click', function () {
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+    // 상단 메뉴 탭 - 컨텐츠 따른 스크롤 넓이
+    var index = 2; // (li 갯수) - 1
+    var sum = 0;
+
+    for (var j = 0; j <= index; j++) {
+        sum = sum + $("._timelineMenu li:eq(" + j + ")").outerWidth(true);
+    }
+
+    $('._timelineMenu ul').css('width', sum + 1);
+
+    // 기타 클릭 시, 스크롤 이동
+    function scrollGoRight() {
+        var leftPos = $('._timelineMenu').scrollLeft();
+        $('._timelineMenu').animate({scrollLeft: leftPos + 210}, 300);
+    }
+
+    // swiper
+    var swiper = new Swiper("._slider", {
+        pagination: {
+            el: ".swiper-pagination",
+        }
+    });
+</script>
+</body>
+</html>
+
+

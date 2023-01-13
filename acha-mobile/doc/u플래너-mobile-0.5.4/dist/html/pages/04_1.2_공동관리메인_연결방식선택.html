@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap _btnSlideOpen"></div>
+<div class="modal-slide modal-expenditure expected-import-date _modalSlide">
+    <div class="modal-slide-content" style="height: 263px; animation: modal-sticky-bottom-animation5 .5s">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title">연결 방식 선택하기</div>
+            <div class="connect-choice">
+                <a href="#">
+                    <div class="img">
+                        <img src="../../img/management/img_connet_sms@2x.png" width="94" alt="user1">
+                    </div>
+                    <div class="comment">멀리 떨어져 있다면</div>
+                    <div class="name">SMS 메시지</div>
+                </a>
+                <a href="#">
+                    <div class="img">
+                        <img src="../../img/management/img_connet_qr@2x.png" width="94" alt="user1">
+                    </div>
+                    <div class="comment">옆에 있다면</div>
+                    <div class="name">QR코드</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+
+        let listE = $('.day-list li.active').prevUntil().length - 1;
+        let scrollH = listE * 56;
+
+        (function() {
+            if($('.modal-slide').show()){
+                $('.day-list ul').scrollTop(scrollH);
+            }
+        }());
+    })
+</script>
+<script>
+    $('.day-list li a').on('click',function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+</body>
+</html>

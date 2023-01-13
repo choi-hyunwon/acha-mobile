@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">미션</h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="expenditure-tab manage-tab _expenditureTab">
+            <ul class="clearfix">
+                <li class="active"><a href="#">진행 중인 미션</a></li>
+                <li><a href="#">종료된 미션</a></li>
+            </ul>
+        </div>
+        <div class="mission-challenge bg_light_gray" style="height: calc(100vh - 117px);">
+            <div class="mission-box">
+                <div class="item">
+                    <div class="title">무지출 챌린지</div>
+                    <div class="text">2022.08 ~ 진행 중</div>
+                    <div class="category"><img src="../../img/common/expenditure/icon-category/ic_cate_loan@2x.png" width="40" alt="지출"></div>
+                    <div class="desc f-point">현재 내가 이기고 있는 중! 👑</div>
+                    <div class="state-current">
+                        <div class="graph">
+                            <span class="bar"><span class="fill" style="width: 100%;"></span></span>
+                        </div>
+                        <div class="info">
+                            <span class="state">달성</span>
+                            <span class="goal">월 무지출 일수 10일 목표!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">커피값 줄이기</div>
+                    <div class="text">2022.08 ~ 진행 중</div>
+                    <div class="category"><img src="../../img/common/expenditure/icon-category/ic_cate_food@2x.png" width="40" alt="지출"></div>
+                    <div class="desc f-point">현재 내가 이기고 있는 중! 👑</div>
+                    <div class="state-current">
+                        <div class="graph">
+                            <span class="bar"><span class="fill fill-over" style="width: 100%;"></span></span>
+                        </div>
+                        <div class="info">
+                            <span class="state state-over">달성</span>
+                            <span class="goal">월 15만원 지출 목표!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-area fixed-bottom bg_light_gray">
+            <a class="btn btn-big btn-purple-bg btn-block" href="#">미션 추가하기</a>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function () {
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+    </div>
+    <div class="contents expenditure mission-contents">
+        <div class="text-box">
+            <div class="title ico-card">카드 사용 줄이기 미션<br>
+                시작하기</div>
+            <p class="color-gray">
+                공동관리에 연결되어 있는 카드 전체 대상<br>
+                <span class="color-purple">월 누적 이용 금액 또는 건수</span>를 가지고 대결해요!
+            </p>
+        </div>
+        <div class="step-box">
+            <div class="step step1">
+                <p class="sub-title">조건 만들기</p>
+                <div class="tab-group">
+                    <a class="active" href="javascript:void(0);">금액</a>
+                    <a href="javascript:void(0);">건수</a>
+                </div>
+                <div class="form-wrap">
+                    <div class="form-box active">
+                        <input type="text"/>
+                        <span>만원</span>
+                    </div>
+                    <div class="form-box">
+                        <input type="text"/>
+                        <span>건</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-box">
+            <div class="step step2">
+                <p class="sub-title">기간</p>
+                <p class="sub-desc-2">이번달부터 시작 ~ 매월 정기</p>
+            </div>
+        </div>
+        <div class="step-box mb-3">
+            <div class="step step2">
+                <p class="sub-title">최종 승부 방법</p>
+                <p class="sub-desc">매월 1일 지난달의 최종 대결 결과를 확인할 수 있어요<br>
+                    최종 승부 방법을 골라주세요</p>
+                <label class="radio-box active" for="radio-01-01">
+                    <input type="radio" name="radio-01" id="radio-01-01" checked="checked"/>
+                    <p class="radio-tit">최종 덜 지출한 쪽이 승리</p>
+                    <p class="radio-txt">나와 상대 모두 목표 지출 건수와 금액 지출을
+                        달성했다면, 최종 더 조금 지출한 쪽이 승리!</p>
+                </label>
+                <label class="radio-box" for="radio-01-02">
+                    <input type="radio" name="radio-01" id="radio-01-02"/>
+                    <p class="radio-tit">목표 건수 또는 금액으로만 대결</p>
+                    <p class="radio-txt">목표 건수와 금액을 달성하면 승리!<br>
+                        나와 상대 모두 목표 달성시 최종 무승부 처리</p>
+                </label>
+            </div>
+        </div>
+        <div class="btn-area">
+            <a class="btn btn-big btn-purple-bg btn-block" href="#">시작하기</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.radio-box input').on('click',function (){
+            if($('.radio-box input').is(":checked") == true){
+                $('.radio-box').removeClass('active')
+                $(this).parent().addClass('active')
+            }
+        });
+
+        $('.tab-group a').on('click',function (){
+            let el = $(this).index();
+
+            $('.tab-group a').removeClass('active');
+            $(this).addClass('active');
+            $('.form-wrap .form-box').removeClass('active');
+            $('.form-wrap .form-box').eq(el).addClass('active');
+        });
+
+    })
+</script>
+</body>
+</html>
+

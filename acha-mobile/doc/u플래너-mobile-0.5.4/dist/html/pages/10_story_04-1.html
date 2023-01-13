@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+    </div>
+    <div class="contents">
+        <div class="timeline-detail-wrap">
+            <div class="timeline-detail-info">
+                <div class="detail-info-header">
+                    <div class="title">이마트구로점</div>
+                    <div class="value">87,500</div>
+                    <div class="date">2021. 02. 15 18: 28: 38</div>
+                </div>
+                <div class="detail-info-body">
+                    <div class="inner">
+                        <div class="b-info">
+                            <span class="b-icon"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                            <span class="b-name">신한 카카오뱅크</span>
+                        </div>
+                        <div class="b-account">본인 VISA 4518-42**-****-9232</div>
+                        <div class="b-info-list">
+                            <ul>
+                                <li><span class="tit">거래결과</span><span class="info">승인(일시불)</span></li>
+<!--                                <li><span class="tit">승인번호</span><span class="info">45058572</span></li>-->
+<!--                                <li><span class="tit">주소</span><span class="info">서울시 중구 후암로 110, 10층 (남대문로5가 서울시티타워)</span></li>-->
+<!--                                <li><span class="tit">전화번호</span><span class="info">02-3451-5235</span></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ex-story-wrap">
+                <div class="title-story">지출 스토리</div>
+                <div class="textarea">
+                    <label for="context">내용</label>
+                    <span class="txt-limit"><em class="_val">0</em> / 200</span>
+                    <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" id="context" maxlength="200" placeholder="내용을 입력해주세요"></textarea>
+                </div>
+                <div class="gallery">
+                    <label>사진 업로드</label>
+                    <ul class="clearfix">
+                        <li class="add"><a href="#"><i class="btn-gallery-add"></i></a></li>
+                    </ul>
+                </div>
+                <div class="mood">
+                    <label>내 지출 기분은?</label>
+                    <ul class="clearfix">
+                        <li><i class="emoji excited"></i></li>
+                        <li><i class="emoji smile"></i></li>
+                        <li><i class="emoji nothing"></i></li>
+                        <li><i class="emoji surprise"></i></li>
+                        <li><i class="emoji cry"></i></li>
+                        <li><i class="emoji angry"></i></li>
+                        <li><i class="emoji vomit"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <a class="btn btn-lg btn-block btn-big btn-save" href="#">스토리 저장하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function countChar(val , target) {
+        let len = val.value.length;
+        let targetItem = $(`.${target}`);
+
+        targetItem.text(len);
+
+        if(len === 0) {
+            targetItem.css('color','#afaeb8')
+        }
+        else {
+            targetItem.css('color','#37354e')
+        }
+    }
+
+
+    $('.mood li').on('click',function (){
+        if($(this).hasClass('on')) {
+            $(this).removeClass('on');
+        }
+        else {
+            $(this).addClass('on').siblings().removeClass('on');
+        }
+    })
+</script>
+</body>
+</html>

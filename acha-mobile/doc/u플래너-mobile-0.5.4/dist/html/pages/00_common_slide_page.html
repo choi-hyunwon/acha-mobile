@@ -1,0 +1,710 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="my-card-tab _tab">
+        <ul class="clearfix">
+            <li class="active"><a href="#">캘린더</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">월별</a></li>
+        </ul>
+    </div>
+    <div class="swiper-container _pageSlider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <script>
+                    $('._tab li a').on('click', function (){
+                        $(this).parent().addClass('active').siblings().removeClass('active')
+                    })
+                </script>
+                <div class="contents">
+                    <div class="box_ex_calendar_header">
+                        <div class="top-area">
+                            <a href="#" class="btn-select-month _btnSlideOpen"><span>5월</span><i class="ico-arrow"></i></a>
+                        </div>
+                        <div class="text-area">
+                            <p>지출 예정/완료 내역을 캘린더로 확인하세요<br/>
+                                일 선택 및 다중 선택이 가능합니다 🙂</p>
+                        </div>
+                    </div>
+                    <div class="box_ex_calendar">
+                        <div class="sort-area">
+                            <ul class="clearfix">
+                                <li class="active"><a href="#">전체</a></li>
+                                <li><a href="#">카드결제</a></li>
+                                <li><a href="#">계좌이체</a></li>
+                            </ul>
+                            <a href="#" class="btn-reset"></a>
+                        </div>
+                        <div id='calendar'></div>
+                    </div>
+                    <div class="box_ex_calendar_list">
+                        <div class="ex-total">
+                            <div class="txt">
+                                <span>💰 총 지출</span>
+                                <span>(예정/완료)</span>
+                            </div>
+                            <div class="val">
+                                <span>1,520,000</span>
+                                <span>원</span>
+                            </div>
+                        </div>
+                        <div class="ex-day">
+                            <div class="ex-total">
+                                <div class="date">
+                                    <span class="day">1<em>일</em></span>
+                                    <span class="day2">(월)</span>
+                                    <span class="state today">오늘</span> <!-- today/expected -->
+                                </div>
+                                <div class="total">
+                                    <span class="val">520,000<em>원</em></span>
+                                </div>
+                            </div>
+                            <ul class="ex-list">
+                                <li class="item">
+                                    <div class="info-tit">
+                                        <img src="../../img/@temp/499.png" alt="">
+                                        <span class="tit">KB국민카드 이용 대금</span>
+                                    </div>
+                                    <div class="info-val">
+                                        <a href="#"><span class="val">1,280,000<em>원</em></span></a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="info-tit">
+                                        <img src="../../img/@temp/499.png" alt="">
+                                        <span class="tit">KB국민카드 이용 대금</span>
+                                    </div>
+                                    <div class="info-val">
+                                        <a href="#"><span class="val">1,280,000<em>원</em></span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ex-day">
+                            <div class="ex-total">
+                                <div class="date">
+                                    <span class="day">10<em>일</em></span>
+                                    <span class="day2">(월)</span>
+                                    <span class="state expected">예정</span> <!-- today/expected -->
+                                </div>
+                                <div class="total">
+                                    <span class="val">520,000<em>원</em></span>
+                                </div>
+                            </div>
+                            <ul class="ex-list">
+                                <li class="item">
+                                    <div class="info-tit">
+                                        <img src="../../img/@temp/499.png" alt="">
+                                        <span class="tit">KB국민카드 이용 대금</span>
+                                    </div>
+                                    <div class="info-val">
+                                        <a href="#"><span class="val">1,280,000<em>원</em></span></a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="info-tit">
+                                        <img src="../../img/@temp/499.png" alt="">
+                                        <span class="tit">KB국민카드 이용 대금</span>
+                                    </div>
+                                    <div class="info-val">
+                                        <a href="#"><span class="val">1,280,000<em>원</em></span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ex-day">
+                            <div class="ex-total">
+                                <div class="date">
+                                    <span class="day">10<em>일</em></span>
+                                    <span class="day2">(월)</span>
+                                    <span class="state expected">예정</span> <!-- today/expected -->
+                                </div>
+                                <div class="total">
+                                    <span class="val">520,000<em>원</em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+                        var calendarEl = document.getElementById('calendar');
+                        var calendar = new FullCalendar.Calendar(calendarEl, {
+                            plugins: ['interaction', 'dayGrid'],
+                            showNonCurrentDates: true,
+                            fixedWeekCount: false,
+                            header: false,
+                            height: 'auto',
+                            defaultDate: '2021-05-25',  // 날짜 입력시, 달력 show
+                            editable: false,
+                            eventLimit: false,
+                            navLinks: true,
+                            timeZone: 'Asia/Seoul',
+                            columnHeaderText: function (date) {
+                                return weekList[date.getDay()];
+                            },
+                            navLinkDayClick: function (date, jsEvent) {
+                                console.log('클릭 시 보여지는 날짜 ↓')
+                                console.log(date.toISOString().slice(0,10));
+                                console.log('클릭되는 요소 타켓 ↓')
+                                console.log(jsEvent.target);
+                                document.querySelectorAll('.fc-day-number').forEach( a => {
+                                    a.classList.remove('active')
+                                });
+                                jsEvent.target.classList.add('active');
+                            },
+                            events: [
+                                {
+                                    className: '',
+                                    title: '100,000',
+                                    start: '2021-05-12'
+                                },
+                                {
+                                    className: '',
+                                    title: '480,000',
+                                    start: '2021-05-13'
+                                },
+                                {
+                                    className: '',
+                                    title: '1,020,000',
+                                    start: '2021-05-14'
+                                },
+                                // 표시 할 데이터가 있고, 선택된 일자가 있는 금액의 첫번째에 first-data 클래스 추가 **
+                                {
+                                    className: 'first-data',
+                                    title: '100,000',
+                                    start: '2021-05-03'
+                                },
+                                {
+                                    className: '',
+                                    title: '50,000',
+                                    start: '2021-05-03'
+                                },
+                                {
+                                    className: 'first-data',
+                                    title: '50,000',
+                                    start: '2021-05-10'
+                                },
+                                {
+                                    className: 'first-data',
+                                    title: '100,000',
+                                    start: '2021-05-17'
+                                },
+                                {
+                                    className: 'first-data',
+                                    title: '100,000',
+                                    start: '2021-05-25'
+                                },
+                                {
+                                    className: 'first-data',
+                                    title: '100,000',
+                                    start: '2021-05-28'
+                                },
+                            ],
+                        });
+
+                        calendar.render();
+                    });
+
+                    $(document).ready(function (){
+                        // 표시할 데이터 없음 표시 방법
+                        $('.fc-day-top[data-date="2021-05-04"]').addClass('fc-day-disabled')
+                        $('.fc-day-top[data-date="2021-05-05"]').addClass('fc-day-disabled')
+                        $('.fc-day-top[data-date="2021-05-06"]').addClass('fc-day-disabled')
+                        $('.fc-day-top[data-date="2021-05-07"]').addClass('fc-day-disabled')
+
+                        // 표시할 데이터 있음, 선택된 일자 표시 방법
+                        $('.fc-day-top[data-date="2021-05-03"]').addClass('fc-day-selected')
+                        $('.fc-day-top[data-date="2021-05-10"]').addClass('fc-day-selected')
+                        $('.fc-day-top[data-date="2021-05-17"]').addClass('fc-day-selected')
+                        $('.fc-day-top[data-date="2021-05-25"]').addClass('fc-day-selected')
+                        $('.fc-day-top[data-date="2021-05-28"]').addClass('fc-day-selected')
+                    })
+
+                    function showDate() {
+                        console.log('확인 클릭 시 선택된 날짜 ↓')
+                        console.log($('.fc-day-number.active').data('goto').date)
+                    }
+                </script>
+                <script>
+                    $('.sort-area li a').on('click',function (){
+                        $(this).parent().addClass('active').siblings().removeClass('active')
+                    })
+                </script>
+            </div>
+            <div class="swiper-slide">
+                <div class="contents">
+                    <div class="box_category_list">
+                        <div>
+                            <!-- s 추가 -- 2021.06.14 -->
+                            <div class="filter-area">
+                                <a href="#" class="btn-select _btnPopup">5월</a>
+                                <div class="title">
+                                    카테고리별 월 지출 내역을<br>
+                                    확인하세요 💰
+                                </div>
+                                <!--                    <div class="btn-wrap">-->
+                                <!--                        <a href="#" class="btn btn-filter">필터</a>-->
+                                <!--                    </div>-->
+                            </div>
+                            <!-- e 추가 -- 2021.06.14 -->
+                            <div class="category-list-item">
+                                <ul>
+                                    <li class="category-info">
+                                        <span class="title">카드</span>
+                                        <span class="sum">12,400,000원</span>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">8일</span>
+                                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">KB국민카드 (국내000)</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+                                            <p class="btn-move">
+                                                <span class="value text">청구서 미발행</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                                <!--                                    <span class="desc-sm">청구서 미발행</span> &lt;!&ndash; 추가 &#45;&#45; 2021.06.14 &ndash;&gt;-->
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day"></span>
+                                            <span class="img"><img src="../../img/@temp/hana.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">하나카드 데일리 플러스</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">결제수단 미확인</i>
+                                                </li>
+                                            </ul>
+                                            <p class="btn-move">
+                                                <span class="value">45,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">10일</span>
+                                            <span class="img"><img src="../../img/@temp/499.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">우체국 행복한 카드 우체국 행복한 카드 우체국 행복</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">국민은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move">
+                                                <span class="value">45,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-list-item">
+                                <ul>
+                                    <li class="category-info">
+                                        <span class="title">보험</span>
+                                        <span class="sum">250,000원</span>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">10일</span>
+                                            <span class="img"><img src="../../img/@temp/ci_meritz@2x.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">메리츠 건강보험</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move">
+                                                <span class="value">45,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">11일</span>
+                                            <span class="img"><img src="../../img/@temp/ci_samsung@2x.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">삼성생명 연금저축 손해보험</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">국민은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+                                            <p class="btn-move">
+                                                <span class="value">45,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-list-item">
+                                <ul>
+                                    <li class="category-info">
+                                        <span class="title">금융상품</span>
+                                        <span class="sum">12,400,000원</span>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">8일</span>
+                                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">KB국민카드 (국내000)</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move" href="#">
+                                                <span class="value">186,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day"></span>
+                                            <span class="img"><img src="../../img/@temp/ci_scbank@2x.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">SC차이트차이나 드림 펀드</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move" href="#">
+                                                <span class="value">45,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-list-item">
+                                <ul>
+                                    <li class="category-info">
+                                        <span class="title">대출</span>
+                                        <span class="sum">10,203,950원</span>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">8일</span>
+                                            <span class="img"><img src="../../img/@temp/woori.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">우리은행 직장인 대출</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move" href="#">
+                                                <span class="value">45,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">8일</span>
+                                            <span class="img"><img src="../../img/@temp/ci_scbank@2x.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">SC제일은행 중금리 대출</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move" href="#">
+                                                <span class="value">45,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-list-item">
+                                <ul>
+                                    <li class="category-info">
+                                        <span class="title">통신/공과금</span>
+                                        <span class="sum">10,203,950원</span>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">8일</span>
+                                            <span class="img"><img src="../../img/@temp/kt.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">KT 인터넷전화</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move" href="#">
+                                                <span class="value">186,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">8일</span>
+                                            <span class="img"><img src="../../img/@temp/595.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">전기요금</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move" href="#">
+                                                <span class="value">186,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">8일</span>
+                                            <span class="img"><img src="../../img/@temp/tbroad.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">SKT 010**34**78</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move" href="#">
+                                                <span class="value">186,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-list-item">
+                                <ul>
+                                    <li class="category-info">
+                                        <span class="title">생활비</span>
+                                        <span class="sum">12,400,000원</span>
+                                    </li>
+                                    <li class="ex-item">
+                                        <a href="#">
+                                            <span class="day">10일</span>
+                                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""></span>
+                                            <ul class="b-info">
+                                                <li class="title">하나카드 데일리 플러스</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">결제수단 미확인</i>
+                                                </li>
+                                            </ul>
+
+                                            <p class="btn-move" href="#">
+                                                <span class="value">45,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-list-item">
+                                <ul>
+                                    <li class="category-info">
+                                        <span class="title">기타</span>
+                                        <!--                            <span class="sum">0원</span>-->
+                                    </li>
+                                    <li class="ex-item empty">
+                                        <div class="img"><img src="../../img/common/ico_error@2x.png" alt=""></div>
+                                        <p class="txt">표시 할 지출이 없습니다 🙁</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="contents">
+                    <div class="box_category_list">
+                        <!-- s 추가 -- 2021.06.14 -->
+                        <div class="filter-area">
+                            <a href="#" class="btn-select _btnSlideOpen">5월</a>
+                            <div class="title">
+                                상세 조건을 설정하여 지출을<br/>
+                                확인 할 수 있어요 🙂
+                            </div>
+                            <!-- s 추가 -- 2021.08.05 // script 추가-->
+                            <div class="dropdown-wrap">
+                                <div class="dropdown disabled">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">결제수단 전체
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" data-value="전체" href="#">전체</a>
+                                        <a class="dropdown-item" data-value="계좌이체" href="#">계좌이체</a>
+                                        <a class="dropdown-item" data-value="카드결제" href="#">카드결제</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">지출 상태 전체
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <a class="dropdown-item disabled" data-value="전체" href="#">전체</a>
+                                        <a class="dropdown-item" data-value="계좌이체" href="#">계좌이체</a>
+                                        <a class="dropdown-item" data-value="카드결제" href="#">카드결제</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- e 추가 -- 2021.08.05 -->
+                            <!-- s 제거 -- 2021.08.05 -->
+                            <!--                <div class="btn-wrap">-->
+                            <!--                    <a href="#" class="btn btn-filter">필터</a>-->
+                            <!--                </div>-->
+                            <!-- e 제거 -- 2021.08.05 -->
+                        </div>
+                        <!-- e 추가 -- 2021.06.14 -->
+                        <div>
+                            <div class="category-list-item border-bottom-0"> <!-- border-bottom-0 클래스 추가 -- 2021.06.14 -->
+                                <div>
+                                    <div class="category-info total"> <!-- total 클래스 추가 -- 2021.06.14 -->
+                                        <span class="title">지출 합계</span>
+                                        <span class="sum">0</span>
+                                    </div>
+                                    <div class="ex-item">
+                                        <a href="#">
+                                            <span class="day">8일</span>
+                                            <span class="img"><img src="../../img/@temp/ci_kbbank@2x.png" alt=""/></span>
+                                            <ul class="b-info">
+                                                <li class="title">KB국민카드 (국내000)</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">우리은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+                                            <p class="btn-move">
+                                                <span class="value">11,000,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="ex-item">
+                                        <a href="#">
+                                            <span class="day"></span>
+                                            <span class="img"><img src="../../img/@temp/hana.png" alt=""/></span>
+                                            <ul class="b-info">
+                                                <li class="title">하나카드 데일리 플러스</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">결제수단 미확인</i>
+                                                </li>
+                                            </ul>
+                                            <p class="btn-move">
+                                                <span class="value">1,280,000원</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="ex-item">
+                                        <a href="#">
+                                            <span class="day">10일</span>
+                                            <span class="img"><img src="../../img/@temp/499.png" alt=""/></span>
+                                            <ul class="b-info">
+                                                <li class="title">우체국 행복한 카드 우체국 행복한 카드 우체국 행복</li>
+                                                <li class="ac-info">
+                                                    <i class="b-name">국민은행</i>
+                                                    <i class="ac-num">1002-841-*****5</i>
+                                                </li>
+                                            </ul>
+                                            <p class="btn-move">
+                                                <span class="value text">청구서 미발행</span>
+                                                <i class="sprite ico_arrow_small_nor"></i>
+                                                <!--                                    <span class="desc-sm">청구서 미발행</span>-->
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+        });
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+        });
+    })
+
+    // page slider
+    var swiper = new Swiper("._pageSlider", {
+        autoHeight: true,
+        calculateHeight:true,
+        on: {
+            activeIndexChange: function () {
+                $('._tab li').eq(this.realIndex).addClass('active').siblings().removeClass('active')
+            }
+        }
+    });
+
+    $('._tab li').on('click', function(){
+        var idx = $(this).index()
+        console.log(idx)
+        swiper.slideTo(idx,500,false);
+    });
+</script>
+</body>
+</html>

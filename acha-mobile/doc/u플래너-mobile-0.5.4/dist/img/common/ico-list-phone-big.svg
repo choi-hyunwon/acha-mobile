@@ -1,0 +1,23 @@
+<svg id="ico_list_phone_big" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6839d3;
+      }
+
+      .cls-2 {
+        fill: #37354e;
+      }
+
+      .cls-3 {
+        fill: red;
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <g id="그룹_2996" data-name="그룹 2996" transform="translate(-60.136 -36.733)">
+    <path id="패스_2385" data-name="패스 2385" class="cls-1" d="M77.636,41.733h-5a.5.5,0,0,0,0,1h5a.5.5,0,0,0,0-1Z"/>
+    <path id="패스_2386" data-name="패스 2386" class="cls-2" d="M85.136,60.233h0v-18.5a3,3,0,0,0-3-3h-14a3,3,0,0,0-3,3v20a3,3,0,0,0,3,3h14a3,3,0,0,0,3-3v-1.5Zm-17-20.5h14a2,2,0,0,1,2,2v18h-18v-18A2,2,0,0,1,68.136,39.733Zm14,24h-14a2,2,0,0,1-2-2v-1h18v1A2,2,0,0,1,82.136,63.732Z"/>
+  </g>
+  <rect id="area" class="cls-3" width="30" height="30"/>
+</svg>

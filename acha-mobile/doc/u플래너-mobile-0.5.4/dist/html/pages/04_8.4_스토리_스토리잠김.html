@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">스토리</h2>
+        <a href="#" class="btn-setting"><img src="../../img/common/expenditure/btn_title_edit@2x.png" alt="설정 버튼"></a>
+    </div>
+    <div class="contents expenditure">
+        <div class="current-month current-month-manage">
+            <a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i>
+        </div>
+        <div class="expenditure-tab manage-tab _expenditureTab">
+            <ul class="clearfix">
+                <li class="active"><a href="#">#공동</a></li>
+                <li><a href="#">#유똑똑</a></li>
+                <li><a href="#">#김꼼꼼</a></li>
+            </ul>
+        </div>
+        <div class="expenditure-box bg_light_gray expenditure-calendar pt-0">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: calc(100vh - 186px);">
+                <div class="empty">
+                    <div class="img"><img src="../../img/common/ic_list_lock@2x.png" width="48" alt="잠김"></div>
+                    <p class="f-point">(2022.08.17 김꼼꼼님 수정)</p>
+                    <p>
+                        현재 <span class="f-point">김꼼꼼님의 스토리 공유 기능</span>이 꺼져 있어요<br>
+                        김꼼꼼님이 설정을 통해<br>
+                        다시 정보를 공개할 수 있어요
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+
+</body>
+</html>
+

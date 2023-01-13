@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="income-details-amount">
+            <div class="total">
+                <span>1,520,000</span>원 남음
+            </div>
+            <div class="bar-graph">
+                <span class="bar color-purple" style="width: 68%">
+                       <span class="percent">68%</span>
+                </span>
+            </div>
+            <ul class="budget">
+                <li class="item total">
+                    <span class="tit">남는 돈 계획</span>
+                    <span class="val"><span>2,425,000</span>원</span>
+                </li>
+                <li class="item">
+                    <span class="tit">수입계획</span>
+                    <span class="val"><span>700,000</span>원</span>
+                </li>
+                <li class="item">
+                    <span class="tit">지출계획</span>
+                    <span class="val"><span>125,000</span>원</span>
+                </li>
+                <li class="item color-gray">
+                    남는 돈 계획 = 수입계획 - 지출계획
+                </li>
+            </ul>
+            <ul class="budget">
+                <li class="item total">
+                    <span class="tit">남은 돈</span>
+                    <span class="val"><span>25,000</span>원</span>
+                </li>
+                <li class="item">
+                    <span class="tit">수입</span>
+                    <span class="val"><span>600,000</span>원<i class="ico_list_arrow_small"></i></span>
+                </li>
+                <li class="item">
+                    <span class="tit">지출</span>
+                    <span class="val"><span>600,000</span>원</span>
+                </li>
+                <li class="item color-gray pb-0">
+                    남은 돈 = 수입- 지출
+                </li>
+            </ul>
+           <!-- <div class="definition">여행숙박, 식비, 교통, 주유</div>-->
+        </div>
+        <div class="divider"></div>
+        <div class="expenditure-box income-total">
+            <div class="income-chart">
+                <div class="chart">
+                    <div class="swiper-container _slider">
+                        <div class="swiper-btn">
+                            <div class="swiper-button swiper-button-prev"></div>
+                            <div class="swiper-button swiper-button-next"></div>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="period">
+                                    2022년 6월 - 10월
+                                </div>
+                                <div class="graph-box">
+                                    <canvas id="canvas1"></canvas>
+
+                                    <div class="axis">
+                                        <div class="tick">
+                                            <span class="day-month">11월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">12월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">1월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">2월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">3월</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="period">
+                                    2022년 4월 - 8월
+                                </div>
+                                <div class="graph-box">
+                                    <canvas id="canvas2"></canvas>
+
+                                    <div class="axis">
+                                        <div class="tick">
+                                            <span class="day-month">4월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">5월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month active">6월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">7월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">8월</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="period">
+                                    2022년 9월 - 2023년 1월
+                                </div>
+                                <div class="graph-box">
+                                    <canvas id="canvas3"></canvas>
+
+                                    <div class="axis">
+                                        <div class="tick">
+                                            <span class="day-month">9월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">10월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month active">11월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">12월</span>
+                                        </div>
+                                        <div class="tick">
+                                            <span class="day-month">1월</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+<script>
+
+    var canvas1 = document.getElementById("canvas1");
+
+    // Apply multiply blend when drawing datasets
+    var multiply = {
+        beforeDatasetsDraw: function(chart, options, el) {
+            chart.ctx.globalCompositeOperation = 'multiply';
+        },
+        afterDatasetsDraw: function(chart, options) {
+            chart.ctx.globalCompositeOperation = 'source-over';
+        },
+    };
+
+    var config1 = {
+        type: 'line',
+        data: {
+            labels: ["6월", "7월", "8월", "9월", "10월"],
+            datasets: [
+                {
+                    label: 'Temperature',
+                    data: [350, 180, 250, 190, 350],
+                    borderColor: "#7c4ce8",
+                    backgroundColor: "rgba(124,76,232,0.05)",
+                    pointBorderColor: "#7c4ce8",
+                    pointBackgroundColor: "white",
+                    pointBorderWidth: 2,
+                    fill: true,
+                    lineTension: 0
+                },
+                {
+                    label: 'Temperature',
+                    data: [0, 200, 200],
+                    borderColor: "#f03a8e",
+                    backgroundColor: "rgba(240,58,142,0.1)",
+                    pointBorderColor: "#f03a8e",
+                    pointBackgroundColor: "white",
+                    pointBorderWidth: 2,
+                    fill: true,
+                    lineTension: 0
+
+                }
+            ]
+        },
+        options: {
+            layout: {
+                padding:{
+                  top:20
+                }
+            },
+            legend: {
+                display: false,
+            },
+            tooltips: {
+                enabled: false,
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    ticks: {
+                        min: '6월',
+                        max: '10월',
+                    }
+                }],
+                yAxes: [{
+                    display: false,
+                    ticks: {
+                        beginAtZero: true,
+                    },
+                }]
+            }
+        },
+
+        plugins: [multiply],
+    };
+
+
+    window.chart = new Chart(canvas1, config1);
+
+
+
+
+
+    // swiper
+    var swiper = new Swiper("._slider", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+
+            nextEl: '.swiper-button-next',
+
+            prevEl: '.swiper-button-prev',
+
+        },
+    });
+
+</script>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-title" content="종합금융정보서비스" />
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="종합금융정보서비스"/>
+    <meta name="keywords" content="종합금융정보서비스"/>
+    <title>종합금융정보서비스</title>
+    <link rel="stylesheet" href="../../css/style/style.css?v=1.33.0">
+    <script src="../../js/lib/front.lib.js?v=1.15.6"></script>
+    <script src="../../js/ui/front.common.js?v=1.4"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">이벤트</h2>
+    </div>
+    <div class="contents">
+        <div class="event-tab _eventTab">
+            <ul class="clearfix">
+                <li><a href="#">진행중 이벤트</a></li>
+                <li class="active"><a href="#">종료된 이벤트</a></li>
+                <li><a href="#">당첨자 확인</a></li>
+            </ul>
+        </div>
+        <div class="swiper-container event-content-wrap _slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="event-tab-content">
+                        <div class="event-list">
+                            <div class="event-list">
+                                <div class="empty">
+                                    <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt="이벤트없음"></div>
+                                    <p class="txt">
+                                        아차! 지금은 진행중인 이벤트가 없어요 :(<br/>
+                                        열심히 준비중이니 조금만 기다려주세요 🙂
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event-tab-content">
+                        <div class="event-list">
+                            <div class="empty">
+                                <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt="이벤트없음"></div>
+                                <p class="txt">
+                                    종료된 이벤트가 없어요
+                                </p>
+                            </div>
+                            <!--                    <ul>-->
+                            <!--                        <li class="event ended">-->
+                            <!--                            <span class="title">아차 서비스 오픈 기념 BIG 이벤트</span>-->
+                            <!--                            <span class="date">2020.02.04 ~ 2020.04.22</span>-->
+                            <!--                            <span class="img"><img src="../../img/@temp/event-img-sample-01@2x.png" alt="이벤트1"></span>-->
+                            <!--                        </li>-->
+                            <!--                        <li class="event ended">-->
+                            <!--                            <span class="title">제목이 긴 경우 말줄임표를 사용하지 않고 두줄로 사용합니다. 제목이 긴 경우</span>-->
+                            <!--                            <span class="date">2020.02.04 ~ 2020.04.22</span>-->
+                            <!--                            <span class="img"><img src="../../img/@temp/event-img-sample-02@2x.png" alt="이벤트2"></span>-->
+                            <!--                        </li>-->
+                            <!--                        <li class="event ended">-->
+                            <!--                            <span class="title">아차 서비스 오픈 기념 BIG 이벤트</span>-->
+                            <!--                            <span class="date">2020.02.04 ~ 2020.04.22</span>-->
+                            <!--                            <span class="img"><img src="../../img/@temp/event-img-sample-02@2x.png" alt="이벤트3"></span>-->
+                            <!--                        </li>-->
+                            <!--                    </ul>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event-tab-content">
+                        <div class="event-list">
+                            <div class="empty">
+                                <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt="이벤트없음"></div>
+                                <p class="txt">
+                                    아차! 지금은 진행중인 이벤트가 없어요 :(<br/>
+                                    열심히 준비중이니 조금만 기다려주세요 🙂
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var swiper = new Swiper("._slider", {
+        autoHeight: true,
+        calculateHeight:true,
+        on: {
+            activeIndexChange: function () {
+                $('._eventTab li').eq(this.realIndex).addClass('active').siblings().removeClass('active')
+            }
+        }
+    });
+
+    $('._eventTab li').on('click', function(){
+        var idx = $(this).index()
+        console.log(idx)
+        swiper.slideTo(idx,500,false);
+    });
+</script>
+</body>
+</html>
+
+

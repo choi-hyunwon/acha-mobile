@@ -1321,6 +1321,12 @@
         &-share {
           width: 40px;
           height: 40px;
+          img {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+          }
           &.me {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;

@@ -1491,6 +1491,10 @@
 
         img {
           width: 100%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          overflow: hidden;
         }
       }
 
@@ -1868,6 +1872,12 @@
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
+            img {
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              overflow: hidden;
+            }
           }
           &.name {
             margin-bottom: 5px;

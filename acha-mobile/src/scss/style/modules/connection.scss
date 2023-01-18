@@ -174,7 +174,7 @@
         text-align: right;
 
         &::after {
-          content: '';
+          content: '원';
           font-family: var(--font2);
           font-size: 13px;
           font-weight: 500;
@@ -866,7 +866,7 @@
         padding-top: 6px;
 
         &::after {
-          content: '';
+          content: '원';
           display: inline-block;
           font-family: var(--font2);
           font-size: 14px;
@@ -956,7 +956,7 @@
             color: var(--text-01);
 
             &::after {
-              content: '';
+              content: '원';
               font-size: 14px;
               font-family: var(--font2);
               margin-left: 1px;
@@ -993,7 +993,7 @@
           color: var(--text-01);
 
           &::after {
-            content: '';
+            content: '원';
             display: inline-block;
             font-family: var(--font3);
             font-size: 11px;
@@ -1327,7 +1327,7 @@
                 text-align: right;
 
                 &::after {
-                  content: '';
+                  content: '원';
                   font-family: var(--font1);
                   font-size: 13px;
                   line-height: 14px;
@@ -1458,7 +1458,7 @@
       color: var(--text-01);
 
       &::after {
-        content: '';
+        content: '원';
         font-family: var(--font1);
         font-size: 13px;
         line-height: 19px;
@@ -1526,7 +1526,7 @@
         text-align: right;
 
         &::after {
-          content: '';
+          content: '원';
           display: inline-block;
           margin-left: 1px;
           font-family: var(--font2);
@@ -1693,7 +1693,7 @@
       top: 14px;
 
       &::after {
-        content: '';
+        content: '원';
         display: inline-block;
         font-family: var(--font3);
         font-size: 11px;

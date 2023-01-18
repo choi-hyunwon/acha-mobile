@@ -668,7 +668,7 @@
                 /*padding-right: 8px;*/
 
                 &::after {
-                  content: '';
+                  content: '원';
                   font-family: var(--font2);
                   font-size: 13px;
                   line-height: 19px;
@@ -730,7 +730,7 @@
             top: 0;
 
             &::after {
-              content: '';
+              content: '원';
               font-family: var(--font2);
               font-size: 13px;
               line-height: 17px;
@@ -3410,7 +3410,7 @@
               &.monetary-unit{
                 position: relative;
                 &:after{
-                  content: '';
+                  content: '원';
                   clear: both;
                   display: inline-block;
                   position: absolute;
@@ -3874,7 +3874,7 @@
         .monetary-unit{
           position: relative;
           &:after{
-            content: '';
+            content: '원';
             clear: both;
             display: inline-block;
             position: absolute;

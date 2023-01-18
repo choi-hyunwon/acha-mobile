@@ -507,7 +507,7 @@
             padding-top: 6px;
             .num{
               &::after {
-                content: '';
+                content: '원';
                 font-family: var(--font2);
                 font-size: 13px;
                 line-height: 19px;
@@ -710,7 +710,7 @@
             color: #37354e;
 
             &::after {
-              content: '';
+              content: '원';
               font-family: var(--font1);
               font-size: 11px;
               letter-spacing: -.28px;
@@ -1326,7 +1326,7 @@
 
 
                 &::after {
-                  content: '';
+                  content: '원';
                   font-family: var(--font1);
                   font-weight: bold;
                 }
@@ -1644,7 +1644,7 @@
           color: #37354e;
 
           &::after {
-            content: '';
+            content: '원';
             font-family: var(--font1);
             font-size: 11px;
             letter-spacing: -.28px;
@@ -1735,7 +1735,7 @@
             font-weight: 500;
 
             &::after {
-              content: '';
+              content: '원';
               font-family: var(--font2);
               font-weight: 500;
               font-size: 13px;
@@ -1883,7 +1883,7 @@
             color: var(--text-01);
 
             &::after {
-              content: '';
+              content: '원';
               font-family: var(--font1);
               font-weight: bold;
             }
@@ -2659,7 +2659,7 @@
         color: #37354e;
 
         &::after {
-          content: '';
+          content: '원';
           font-family: var(--font1);
           font-size: 11px;
           letter-spacing: -.28px;

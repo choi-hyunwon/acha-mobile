@@ -3604,10 +3604,14 @@
         .name {
           display: flex;
           flex-direction: column;
+          width: 60%;
           .tit {
             font-size: 15px;
             font-family: var(--font2);
             color: #37354e;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
           }
           .date {
             font-size: 14px;

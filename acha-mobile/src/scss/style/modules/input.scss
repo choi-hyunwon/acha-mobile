@@ -621,6 +621,10 @@ input + .error {
   }
 }
 
+textarea {
+  resize: none;
+}
+
 input, textarea {
   box-shadow: none !important;
   border-radius: 0;

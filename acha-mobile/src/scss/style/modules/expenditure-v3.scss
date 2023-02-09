@@ -1106,8 +1106,9 @@
             a{
               font-size: 17px;
               color: var(--text-01);
-              font-family: var(--font3);
+              //font-family: var(--font3);
               line-height: 26px;
+              font-weight: bold;
             }
             &:after{
               content: '';

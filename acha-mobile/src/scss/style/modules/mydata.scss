@@ -1340,6 +1340,11 @@
             font-size: 15px;
             color: var(--text-01);
             font-family: var(--font2);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: calc(100% - 50px) ;
+
             .num{
               font-size: 13px;
               color: var(--text-03);

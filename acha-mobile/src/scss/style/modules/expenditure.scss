@@ -1321,6 +1321,7 @@
         &-share {
           width: 40px;
           height: 40px;
+          border: 1px solid rgba(0, 0, 0, 0.05);
           img {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
@@ -1331,6 +1332,7 @@
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
+            border: 2px solid #f7f7f8;
             position: relative;
             &::after{
               content: 'ME';

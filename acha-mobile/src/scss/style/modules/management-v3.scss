@@ -214,11 +214,15 @@
                         position: relative;
                         display: inline-block;
                         margin-right: 6px;
+                        width: 30px;
+                        height: 30px;
                         img {
                           -webkit-border-radius: 50%;
                           -moz-border-radius: 50%;
                           border-radius: 50%;
                           overflow: hidden;
+                          width: 100%;
+                          height: 100%;
                         }
                         &-me {
                           &::after {
@@ -1489,6 +1493,7 @@
 
       .img {
         width: 100px;
+        height: 100px;
         margin: 0 auto 10px;
         border: solid 1px #e3e4e8;
         -webkit-border-radius: 50%;
@@ -1497,6 +1502,7 @@
 
         img {
           width: 100%;
+          height: 100%;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -1872,6 +1878,8 @@
         p {
           text-align: center;
           &.img {
+            width: 62px;
+            height: 62px;
             margin-bottom: 6px;
             border: solid 1px #e3e4e8;
             display: inline-block;
@@ -1879,6 +1887,8 @@
             -moz-border-radius: 50%;
             border-radius: 50%;
             img {
+              width: 100%;
+              height: 100%;
               -webkit-border-radius: 50%;
               -moz-border-radius: 50%;
               border-radius: 50%;

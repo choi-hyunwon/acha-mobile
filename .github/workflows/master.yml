@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./acha-mobile
+      working-directory: ./acha-mobile/acha-mobile
 
     steps:
       - name: Checkout source code

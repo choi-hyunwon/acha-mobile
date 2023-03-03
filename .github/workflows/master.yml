@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./acha-mobile
+
     steps:
       - name: Checkout source code
         uses: actions/checkout@master

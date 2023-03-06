@@ -13,20 +13,20 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@master
 
-      - name: Cache node modules  # node modules 캐싱
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-master-build-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.OS }}-build-
-            ${{ runner.OS }}-
+#      - name: Cache node modules  # node modules 캐싱
+#        uses: actions/cache@v1
+#        with:
+#          path: node_modules
+#          key: ${{ runner.OS }}-master-build-${{ hashFiles('**/yarn.lock') }}
+#          restore-keys: |
+#            ${{ runner.OS }}-build-
+#            ${{ runner.OS }}-
 
       - name: Install Dependencies
         run: yarn install
 
-      - name: yarn add gulp
-        run: yarn add gulp
+#      - name: yarn add gulp
+#        run: yarn add gulp
 
       - name: Build
         run: gulp dev
@@ -42,4 +42,4 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            /home/runner/work/acha-mobile/acha-mobile/acha-mobile/dist s3://acha-mobile
+            /home/runner/work/acha-mobile/dist s3://acha-mobile

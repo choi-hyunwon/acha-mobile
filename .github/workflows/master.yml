@@ -47,5 +47,3 @@ jobs:
             --recursive \
             --region ap-northeast-2 \
             /home/runner/work/acha-mobile/acha-mobile/dist s3://acha-mobile/dist
-            /home/runner/work/acha-mobile/acha-mobile/pagelist s3://acha-mobile/pagelist
-            /home/runner/work/acha-mobile/acha-mobile/index-v3.0.html s3://acha-mobile/index-v3.0.html

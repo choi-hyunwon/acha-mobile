@@ -23,6 +23,8 @@ jobs:
 #            ${{ runner.OS }}-
 
       - name: Install Dependencies
+        with:
+          node-version: 12.22.6
         run: yarn install
 
 #      - name: yarn add gulp

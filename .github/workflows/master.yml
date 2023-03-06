@@ -24,16 +24,16 @@ jobs:
       - name: setup-node
         uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 16.x
 
       - name: Install Dependencies
-        run: yarn install
+        run: npm install
 
 #      - name: yarn add gulp
 #        run: yarn add gulp
 
       - name: Build
-        run: gulp dev
+        run: gulp dist
         
       - name: pwd in build
         run: pwd
@@ -46,4 +46,6 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            /home/runner/work/acha-mobile/acha-mobile/dist s3://acha-mobile
+            /home/runner/work/acha-mobile/acha-mobile/dist s3://acha-mobile/dist
+            /home/runner/work/acha-mobile/acha-mobile/pagelist s3://acha-mobile/pagelist
+            /home/runner/work/acha-mobile/acha-mobile/index-v3.0.html s3://acha-mobile/index-v3.0.html

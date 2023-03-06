@@ -1,12 +1,15 @@
-const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
-const concat = require('gulp-concat');
-const html = require('gulp-file-include');
-const del = require('del');
-const htmlbeautify = require('gulp-html-beautify');
-const sass = require('gulp-sass');
-sass.compiler = require('node-sass');
-const sourcemaps = require('gulp-sourcemaps');
+import {deleteAsync} from 'del';
+
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+browserSync.create();
+import concat from  'gulp-concat';
+import html from 'gulp-file-include';
+import htmlbeautify from 'gulp-html-beautify';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
+import sourcemaps from 'gulp-sourcemaps';
 
 
 /* scss TASK*/
@@ -112,11 +115,12 @@ function beautify() {
 }
 
 function delDist() {
-    return del('dist');
+
+    return deleteAsync('dist');
 }
 
 function delInclude() {
-    return del('dist/html/include');
+    return deleteAsync('dist/html/include');
 }
 
 function setEnvProduct(cb) {
@@ -132,7 +136,7 @@ function setEnvDevelope(cb) {
 
 //task
 gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyImg, copyFavicon, copyFonts, htmlPage, delInclude, jsCommon, jsLib));
-gulp.task("dist", gulp.series(setEnvProduct, delDist, scss, copyImg, copyFonts, htmlPage, delInclude, beautify));
+gulp.task("dist", gulp.series(setEnvDevelope, delDist, scss, copyImg, copyFavicon, copyFonts, htmlPage, delInclude, jsCommon, jsLib));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchImg, watchJs, watchFont));
 
 gulp.task('browser-sync', function () {
@@ -151,4 +155,4 @@ gulp.task('browser-sync', function () {
     gulp.watch('src/fonts/**/**', gulp.series(copyFonts)).on('change', browserSync.reload);
 });
 
-exports.default = gulp.series("dev");
+export default gulp.series('dev', 'browser-sync');

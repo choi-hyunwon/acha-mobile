@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Dependencies
         with:
-          node-version: 12.22.6
+          node-version: 12.x
         run: yarn install
 
 #      - name: yarn add gulp

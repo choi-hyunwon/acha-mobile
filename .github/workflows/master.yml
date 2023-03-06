@@ -46,4 +46,4 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            /home/runner/work/acha-mobile/dist s3://acha-mobile
+            /home/runner/work/acha-mobile/acha-mobile/dist s3://acha-mobile

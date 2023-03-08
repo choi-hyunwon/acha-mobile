@@ -6,6 +6,12 @@ data.category = {
     'list': [
         {
             'stateClass': 'complete',
+            'url': '공통팝업_마이데이터19세연결불가',
+            'category': '공통팝업_마이데이터19세연결불가',
+            'page': '공통팝업_마이데이터19세연결불가 추가 23.03.08'
+        },
+        {
+            'stateClass': 'complete',
             'url': 'paginate',
             'category': 'paginate',
             'page': 'paginate 추가 22.12.21'
@@ -13,7 +19,9 @@ data.category = {
     ]
 
 
-};data.start = {
+};
+
+data.start = {
     'title': '----------아차 3.0 START----------',
     'list': [
     ]

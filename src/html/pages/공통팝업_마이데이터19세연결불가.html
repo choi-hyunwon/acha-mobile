@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="contents"></div>
+</div>
+<div class="modal fade modal-size-sm" id="migrationPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="migration-information">
+                    <div class="title"><span style="color:#3968d3;">19세 미만 고객님은<br>마이데이터 연결이 불가능해요😉</span></div>
+                    <div class="title">법적 성인이 되면 재시도해 주세요</div>
+                    <div class="desc">
+                        19세 미만 고객님은<br>
+                        수입 및 지출을 직접입력하여<br>
+                        관리할 수 있어요
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer single">확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    $('#migrationPopup').modal('show');
+</script>
+</body>
+</html>

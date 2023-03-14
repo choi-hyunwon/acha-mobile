@@ -232,20 +232,20 @@
                                 panels.parent().find('.img').eq(idx).addClass("on");
 
                                 if (idx === 0) {
-                                    panels.parent().animate({left: "-0%"})
+                                    panels.parent().stop().animate({left: "-0%"})
                                 } else if (idx === 1) {
-                                    panels.parent().animate({left: "-100%"})
+                                    panels.parent().stop().animate({left: "-100%"})
 
                                 }
                                 // else if (idx === 2 ){
-                                //     panels.parent().animate({ left:"-200%"})
+                                //     panels.parent().stop().animate({ left:"-200%"})
                                 // }
 
                                 /*
-                                                                panels.parent().find('.img').animate({
+                                                                panels.parent().find('.img').stop().animate({
                                                                     left: '-100%'
                                                                 });
-                                                                panels.parent().eq(idx).find('.img').hide().animate({
+                                                                panels.parent().eq(idx).find('.img').hide().stop().animate({
                                                                         left: '100%'
                                                                     }, function () {
                                                                         panels.parent().eq(idx).find('.img').show().css({

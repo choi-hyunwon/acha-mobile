@@ -71,23 +71,23 @@
 
     // scroll - top
     function scrollGoTop() {
-        $('html, body').animate( { scrollTop: '0' }, 600);
+        $('html, body').stop().animate( { scrollTop: '0' }, 600);
     }
 
     // scroll - bottom
     function scrollGoBottom() {
-        $("html, body").animate({ scrollTop: $(document).height() }, 600);
+        $("html, body").stop().animate({ scrollTop: $(document).height() }, 600);
     }
 
     // scroll - left
     function scrollGoLeft() {
-        $('.table-body').animate( { scrollLeft: '0' }, 600);
+        $('.table-body').stop().animate( { scrollLeft: '0' }, 600);
     }
 
     // scroll - Right
     function scrollGoRight() {
         var leftPos = $('.table-body').scrollLeft();
-        $('.table-body').animate( { scrollLeft: leftPos + 210 }, 600);
+        $('.table-body').stop().animate( { scrollLeft: leftPos + 210 }, 600);
     }
 </script>
 </html>

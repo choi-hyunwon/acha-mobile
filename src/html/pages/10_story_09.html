@@ -90,7 +90,7 @@
     // 기타 클릭 시, 스크롤 이동
     function scrollGoRight() {
         var leftPos = $('._timelineMenu').scrollLeft();
-        $('._timelineMenu').animate({scrollLeft: leftPos + 210}, 300);
+        $('._timelineMenu').stop().animate({scrollLeft: leftPos + 210}, 300);
     }
 
     // swiper

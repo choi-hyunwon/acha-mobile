@@ -164,11 +164,11 @@
         var scrollT = $(window).scrollTop();
         var gap = 110;
         if (scrollT < docH) {
-            $('html, body').animate({
+            $('html, body').stop().animate({
                 scrollTop: scrollT + winH - gap
             }, 600);
         } else {
-            $('html, body').animate({
+            $('html, body').stop().animate({
                 scrollTop: docH
             }, 600);
             $('.scroll-btn-area').hide();

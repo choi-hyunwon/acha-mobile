@@ -1511,6 +1511,17 @@
                 font-family: var(--font2);
                 color: var(--text-01);
               }
+              &-global {
+                font-size: 18px;
+                color: var(--text-01);
+                font-family: var(--font4);
+                font-weight: 600;
+                span {
+                  font-size: 13px;
+                  font-family: var(--font2);
+                  color: var(--text-01);
+                }
+              }
             }
           }
         }

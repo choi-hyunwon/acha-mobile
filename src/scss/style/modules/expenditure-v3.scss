@@ -4438,8 +4438,9 @@
               margin-right: -20px;
               .img-area {
                 img{
-                width: 100%;
-                height: auto;
+                  width: 100%;
+                  height: auto;
+                  max-width: 100%;
                 }
 
                 padding-bottom: 30px;
@@ -4686,6 +4687,8 @@
         border: 1px solid #ebebed;
         img {
           max-width: 100%;
+          width: 100%;
+          height: auto;
         }
       }
     }

@@ -304,6 +304,19 @@
       color: #3968d3;
       background: #eff8ff;
     }
+    &-lg {
+      width: auto;
+      min-width: 100px;
+      height: 29px;
+      padding: 5px 10px 6px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-right: 4px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
   }
 
   .justify-content-between {

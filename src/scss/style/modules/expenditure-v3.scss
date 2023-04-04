@@ -1362,6 +1362,18 @@
                           text-decoration:line-through;
                         }
                       }
+                      &-global {
+                        font-size: 18px;
+                        position: relative;
+                        font-family: var(--font4);
+                        display: block;
+                        font-weight: 500;
+                        span {
+                          display: inline-block;
+                          font-size: 17px;
+                          font-family: var(--font2);
+                        }
+                      }
                     }
 
                   }

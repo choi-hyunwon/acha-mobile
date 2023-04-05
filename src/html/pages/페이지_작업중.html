@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="contents"></div>
+</div>
+<div class="modal fade modal-size-sm" id="migrationPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="migration-information">
+                    <div class="title"><span style="color:#3968d3;">현재 이 페이지는 작업중입니다.😉</span></div>
+                    <div class="desc">
+                        작업이 완료되면 <br>정상적으로 페이지가 노출 될 예정입니다.
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer single">확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    $('#migrationPopup').modal('show');
+</script>
+</body>
+</html>

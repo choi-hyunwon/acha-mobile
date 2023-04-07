@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+        <div class="btn_area">
+            <a class="img" href="#">
+                <img src="../../img/common/ico_top_add_b_nor@2x.png" width="26" alt="더보기 버튼">
+            </a>
+        </div>
+    </div>
+    <div class="contents expenditure">
+        <div class="total-amount mb-5">
+            <p class="title">총 수입 <a href="#"><img src="../../img/common/ico_tooltip_big@2x.png" width="16" alt="tooltip-large"></a></p>
+            <span class="amount">2,500,000</span>
+            <span class="amount-sub">수입 예정 4,000,000원</span>
+        </div>
+        <div class="expenditure-box account-spending bg_light_gray">
+            <div class="empty" style="height: calc(100vh - 208px);">
+                <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
+                <p>수입내역이 없습니다 🙁</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let $list = $('.list-collapse');
+    $list.on('click', '.btn-collapse', function (){
+        if ($(this).parent().hasClass('list-collapse-close')){
+            $list.removeClass('list-collapse-close');
+            $list.siblings('.divider').show();
+            $list.siblings('.sub-title').show();
+            $list.siblings('.details-history').show();
+        } else {
+            $list.addClass('list-collapse-close');
+            $list.siblings('.divider').hide();
+            $list.siblings('.sub-title').hide();
+            $list.siblings('.details-history').hide();
+        }
+    })
+</script>
+</body>
+</html>
+

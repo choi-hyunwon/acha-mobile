@@ -4409,6 +4409,27 @@
             }
           }
         }
+
+        .list-type {
+          li {
+            font-size: 15px;
+            line-height: 21px;
+            color: #37354e;
+            padding-left: 20px;
+            text-align: left;
+            position: relative;
+            margin-bottom: 8px;
+            &::before {
+              content: '';
+              width: 4px;
+              height: 4px;
+              background-color: #737183;
+              position: absolute;
+              top: 7px;
+              left: 7px;
+            }
+          }
+        }
       }
     }
     &.income-plan-delete{

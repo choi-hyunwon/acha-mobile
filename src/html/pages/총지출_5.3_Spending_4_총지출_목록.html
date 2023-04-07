@@ -5,20 +5,44 @@
 <div class="wrap renewal">
     <div class="header _sticky">
         <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">2022년 10월</a><i class="icon-arrow-bottom"></i></h2>
-        <a href="#" class="text">예산</a>
-    </div>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+        <div class="btn_area">
+            <a class="img" href="#">
+                <img src="../../img/common/ico_top_add_b_nor@2x.png" width="26" alt="더보기 버튼">
+            </a>
+        </div>    </div>
     <div class="contents expenditure">
         <div class="total-amount mb-5">
-            <p class="title">총 지출</p>
+            <p class="title">총 지출 <a href="#"><img src="../../img/common/ico_tooltip_big@2x.png" width="16" alt="tooltip-large"></a></p>
             <span class="amount">490,500</span>
             <p class="expected">지난달 <span>2,500,000</span>원</p>
             <a href="#" class="btn btn-filter">필터 <span class="color-purple">3</span></a>
         </div>
 
         <div class="expenditure-box account-spending bg_light_gray">
+            <!-- 총계 -->
+            <div class="usage-sum">
+                <p class="count">
+                    총<span class="f-point">14</span>건
+                </p>
+                <p class="filter">
+                    <em>가계부 내역만 보기</em>
+                    <label>
+                        <input type="checkbox" class="filled-in">
+                        <span></span>
+                    </label>
+                </p>
+            </div>
+
             <ul class="usage-history-list min175">
                 <li>
+                    <p class="list-collapse">
+                        <span>지출 예정</span>
+                        <a class="btn-collapse">
+                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
+                        </a>
+                    </p>
+                    <div class="divider"></div>
                     <p class="sub-title">1일</p>
                     <ul class="details-history">
                         <li class="item-list">
@@ -65,11 +89,14 @@
                                         <span class="amount">230,000</span>
                                     </div>
                                 </div>
-                                <span class="badge badge-blue badge-payment">1/3회차</span>
+                                <div class="badge-group">
+                                    <span class="badge badge-gray badge-payment">신한카드</span>
+                                    <span class="badge badge-blue badge-payment">1/3회차</span>
+                                </div>
                             </div>
                             <span class="hashtag">#어머니 환갑</span>
                         </li>
-                        <li class="item-list">
+                        <li class="item-list undercoverage">
                             <div class="group">
                                 <div class="box">
                                     <div class="img">
@@ -83,7 +110,7 @@
                                 <div class="payment-method badge-payment"><span>신한카드 1575-1575</span></div>
                             </div>
                         </li>
-                        <li class="item-list">
+                        <li class="item-list pay-cancel">
                             <div class="group">
                                 <div class="box">
                                     <div class="img">
@@ -104,6 +131,24 @@
     </div>
 
 </div>
+
+
+<script>
+    let $list = $('.list-collapse');
+    $list.on('click', '.btn-collapse', function (){
+        if ($(this).parent().hasClass('list-collapse-close')){
+            $list.removeClass('list-collapse-close');
+            $list.siblings('.divider').show();
+            $list.siblings('.sub-title').show();
+            $list.siblings('.details-history').show();
+        } else {
+            $list.addClass('list-collapse-close');
+            $list.siblings('.divider').hide();
+            $list.siblings('.sub-title').hide();
+            $list.siblings('.details-history').hide();
+        }
+    })
+</script>
 
 </body>
 </html>

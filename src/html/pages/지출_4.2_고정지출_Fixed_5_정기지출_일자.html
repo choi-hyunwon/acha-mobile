@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+        <div class="btn_area">
+            <a class="img" href="#">
+                <img src="../../img/common/ico_top_add_b_nor@2x.png" width="26" alt="더보기 버튼">
+            </a>
+        </div>
+    </div>
+    <div class="contents expenditure">
+        <div class="total-amount">
+            <p class="title">총 정기지출</p>
+            <span class="amount">34,290,000</span>
+            <p class="expected">지출 예정 <span>450,000</span>원</p>
+            <div class="util">
+                <img src="../../img/common/ico_top_option_menu_nor@2x.png" width="26" alt="유틸 더보기">
+            </div>
+        </div>
+        <div class="expenditure-tab _expenditureTab">
+            <ul class="clearfix">
+                <li class="active"><a href="#">일자</a></li>
+                <li><a href="#">카테고리</a></li>
+            </ul>
+        </div>
+        <div class="expenditure-box bg_light_gray">
+            <ul class="usage-history-list">
+                <li>
+                    <p class="list-collapse">
+                        <span>지출 예정</span>
+                        <a class="btn-collapse">
+                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
+                        </a>
+                    </p>
+                    <div class="divider"></div>
+                    <p class="sub-title f-alert">15일 예정(미지출)</p>
+                    <ul class="details-history">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="type"><span>우리은행 신용대출</span></span>
+                                        <span class="amount">1,000,000</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method badge-payment"><span>신한카드</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="sub-title">25일 예정</p>
+                    <ul class="details-history">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="type"><span>우리은행 신용대출</span></span>
+                                        <span class="amount">1,000,000</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method badge-payment"><span>신한카드</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="sub-title">10일</p>
+                    <ul class="details-history">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_samsung@2x.png" class="img-ci" alt="삼성생명 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="type"><span>타이틀이 길어질 시 ...처리</span></span>
+                                        <span class="amount">9,999,999,999</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method badge-payment"><span>신한카드</span></div>
+                            </div>
+                            <span class="hashtag">#우리 아들 생명보험</span>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="국민은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="type"><span>국민은행 부부 신용대출</span></span>
+                                        <span class="amount">1,200,000</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method badge-payment"><span>신한카드</span></div>
+                            </div>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <i class="icon icon_cate_mobile"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span class="type"><span>KT 통신요금 납부</span><a href="#" class="icon-edit"></a></span>
+                                        <span class="amount">49,000</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method badge-payment"><span>신한카드</span></div>
+                            </div>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_meritz@2x.png" class="img-ci" alt="메리츠 화재 로고">
+                                    </div>
+                                    <div class="info">
+                                        <span class="type"><span>메리츠 화재 실비보험</span></span>
+                                        <span class="amount">100,000</span>
+                                    </div>
+                                </div>
+                                <div class="payment-method badge-payment"><span>신한카드</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+<script>
+    let $list = $('.list-collapse');
+    $list.on('click', '.btn-collapse', function (){
+        if ($(this).parent().hasClass('list-collapse-close')){
+            $list.removeClass('list-collapse-close');
+            $list.siblings('.divider').show();
+            $list.siblings('.sub-title').show();
+            $list.siblings('.details-history').show();
+        } else {
+            $list.addClass('list-collapse-close');
+            $list.siblings('.divider').hide();
+            $list.siblings('.sub-title').hide();
+            $list.siblings('.details-history').hide();
+        }
+    })
+</script>
+</body>
+</html>
+

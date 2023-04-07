@@ -347,14 +347,6 @@
           margin-left: 2px;
         }
       }
-      .amount-sub {
-        line-height: 20px;
-        color: #9b9aa6;
-        display: block;
-        font-size: 14px;
-        font-weight: 400;
-        padding-top: 5px;
-      }
       .expected{
         font-size: 14px;
         color: var(--text-03);
@@ -369,6 +361,11 @@
         font-family: var(--font3);
         color: var(--text-01);
         margin-bottom: 4px;
+      }
+      .util {
+        position: absolute;
+        top: 0;
+        right: 0;
       }
 
 

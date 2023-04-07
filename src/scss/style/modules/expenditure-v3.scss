@@ -314,6 +314,9 @@
         color: var(--text-01);
       }
     }
+    /**
+    총수입 금액 노출 영역
+     */
     .total-amount{
       margin: 20px;
       position: relative;
@@ -343,6 +346,14 @@
           font-family: var(--font3);
           margin-left: 2px;
         }
+      }
+      .amount-sub {
+        line-height: 20px;
+        color: #9b9aa6;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        padding-top: 5px;
       }
       .expected{
         font-size: 14px;
@@ -1198,6 +1209,38 @@
         padding: 20px;
       }
 
+      /**
+      가계부 총계 및 필터기능 추가
+      v3.1.0
+       */
+      .usage-sum {
+        position: relative;
+        padding: 20px 20px 0 20px;
+        display: flex;
+        justify-content: space-between;
+        .count {
+          font-size: 15px;
+          line-height: 26px;
+          color: #37354e;
+          span {
+            font-family: var(--font2);
+          }
+        }
+        .filter {
+          em {
+            font-size: 14px;
+            color: #737183;
+          }
+          label {
+            vertical-align: middle;
+            font-size: 14px;
+            color: #737183;
+
+          }
+
+        }
+      }
+
       /*일자*/
       .usage-history-list{
         padding: 20px;
@@ -1216,6 +1259,32 @@
           &:last-of-type{
             margin-bottom: 0;
           }
+
+          .list-collapse {
+            font-size: 15px;
+            color: var(--text-01);
+            font-family: var(--font3);
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            &-close {
+              .btn-collapse {
+                transform: rotate(180deg);
+              }
+            }
+            + .divider{
+              margin-top: 10px;
+              margin-bottom: 20px;
+              &:before{
+                height: 1px;
+                background:none;
+                border-top: 1px solid #efefef;
+                margin-top: 20px;
+              }
+            }
+          }
+
+
           .sub-title{
             font-size: 15px;
             color: var(--text-01);
@@ -1229,6 +1298,13 @@
                 border-top: 1px solid #efefef;
                 margin-top: 20px;
               }
+            }
+
+            /**
+            아코디언 기능 추가
+             */
+            .btn-collapse {
+
             }
 
             .sum {
@@ -1418,21 +1494,43 @@
                   }
                 }
                 .payment-method{
-                  display: inline-block;
                   font-size: 11px;
                   color: #9992a0;
                   background: #eeedf0;
-                  padding:4px 6px;
+                  padding:2px 6px;
                   border-radius: 6px;
-                  min-width: 33px;
-                  max-width: 80px;
+                  //min-width: 33px;
+                  //max-width: 80px;
+                  width: 76px;
+                  height: 22px;
                   text-align: center;
                   overflow: hidden;
                   text-overflow: ellipsis;
                   display: -webkit-box;
                   -webkit-line-clamp: 2;
                   -webkit-box-orient: vertical;
-                  line-height: 19px;
+                  line-height: 18px;
+                  &-lg {
+                    padding: 0;
+                    height: 36px;
+                    display: flex;
+                    align-items: center;
+                    span {
+                      font-size: 11px;
+                      color: #9992a0;
+                      background: #eeedf0;
+                      padding:2px 6px;
+                      width: 76px;
+                      border-radius: 6px;
+                      text-align: center;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                      line-height: 18px;
+                    }
+                  }
                 }
                 .badge-group{
                   display: flex;
@@ -1501,6 +1599,18 @@
                 &.badge-blue{
                   color: #3968d3;
                   background: #eff8ff;
+                }
+              }
+
+              &.undercoverage{
+                .img {
+                  opacity: 0.5;
+                }
+                .info {
+                  color: #c2c1cc !important;
+                }
+                .badge-payment {
+                  color: #c2c1cc !important;
                 }
               }
             }

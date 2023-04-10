@@ -1,12 +1,11 @@
 
-
-.renewal{
+.renewal {
   /**
   header
    */
-  .header{
-    .title{
-      +.text{
+  .header {
+    .title {
+      + .text {
         font-size: 15px;
         color: var(--text-02);
         font-family: var(--font2);
@@ -26,7 +25,8 @@
       background-image: url(../../img/sprite/common/btn_popup_close@2x.png);
       background-size: cover;
     }
-     .btn_share {
+
+    .btn_share {
       position: absolute;
       display: inline-block;
       top: 20px;
@@ -61,6 +61,7 @@
           margin-left: 2px;
         }
       }
+
       .update-ing {
         font-size: 13px;
         color: var(--text-point-color);
@@ -68,10 +69,12 @@
         margin-right: 2px;
         display: flex;
         align-items: center;
+
         img {
           margin-left: 5px;
         }
       }
+
       .delete {
         font-size: 15px;
         font-family: var(--font2);
@@ -79,11 +82,13 @@
         color: #737183;
       }
     }
+
     .btn-text {
       position: absolute;
       top: 0px;
       right: 0px;
       padding: 24px 20px 0 0;
+
       a {
         font-size: 15px;
         font-family: var(--font2);
@@ -97,7 +102,7 @@
   /**
   btn-setting
    */
-  .btn-setting{
+  .btn-setting {
     position: absolute;
     display: block;
     margin-left: 22px;
@@ -105,11 +110,13 @@
     right: 16px;
     width: 26px;
     height: 26px;
-    img{
+
+    img {
       width: 100%;
       height: auto;
     }
   }
+
   /**
   month-range
    */
@@ -117,22 +124,27 @@
     position: relative;
     height: 40px;
     margin-bottom: 20px;
-    .prev{
+
+    .prev {
       position: absolute;
       top: 0;
       left: 0;
+
       &.disabled {
         opacity: 0.5;
       }
     }
-    .next{
+
+    .next {
       position: absolute;
       top: 0;
       right: 0;
+
       &.disabled {
         opacity: 0.5;
       }
     }
+
     .range {
       font-size: 17px;
       font-family: var(--font2);
@@ -148,21 +160,26 @@
     background-color: #f4efff;
     border-radius: 10px;
     position: relative;
+
     a {
       display: block;
       padding: 17px 25px;
+
       span {
         display: block;
       }
+
       .tit {
         font-size: 15px;
         color: var(--color-point);
         font-weight: 700;
       }
+
       .desc {
         font-size: 13px;
         color: #9b9aa6;
       }
+
       .btn-more {
         position: absolute;
         top: 50%;
@@ -172,8 +189,6 @@
     }
 
   }
-
-
 
 
   /**
@@ -186,6 +201,7 @@
       text-align: center;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 14px;
       text-align: center;
@@ -194,47 +210,57 @@
       color: #737183;
     }
   }
+
   .full-height {
     display: flex;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 152px);
   }
+
   /**
   info-data-list
    */
   .info-data-list {
     padding-top: 20px;
-    &-padding{
+
+    &-padding {
       padding-bottom: 20px;
     }
+
     .item {
       margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       &-lg {
         margin-bottom: 30px;
       }
-      &:last-child{
+
+      &:last-child {
         margin-bottom: 0px;
       }
+
       .tit {
         font-size: 15px;
         color: #747679;
       }
+
       .val {
         font-size: 15px;
         font-family: var(--font5);
         color: var(--text-01);
         font-weight: 500 !important;
-        .ico_list_arrow_small{
+
+        .ico_list_arrow_small {
           background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
           display: inline-block;
           width: 6px;
           height: 16px;
           margin-left: 8px;
         }
+
         input[type="text"] {
           width: 211px;
           height: unset;
@@ -246,15 +272,18 @@
           color: var(--text-01);
         }
       }
+
       &.item-lg {
         .tit {
           font-size: 15px;
           font-family: var(--font2);
         }
+
         .val {
           font-size: 18px;
           font-family: var(--font4);
-          &::after{
+
+          &::after {
             content: '원';
             font-size: 13px;
             font-family: var(--font2);
@@ -266,13 +295,13 @@
   }
 
 
-
   /**
   설정 메뉴
   setting
    */
   .setting {
     padding: 0 20px;
+
     .title {
       height: 60px;
       line-height: 60px;
@@ -283,12 +312,15 @@
       border-bottom: 1px solid #efefef;
       margin-bottom: 20px;
     }
+
     .list-radio {
       position: relative;
-      .item{
+
+      .item {
         margin-bottom: 20px;
+
         label {
-          span{
+          span {
             font-size: 15px;
             color: #37354e;
             font-family: var(--font1);
@@ -302,44 +334,51 @@
   /**
   expenditure
    */
-  .expenditure{
-    >.description{
+  .expenditure {
+    > .description {
       background: #f7f8fc;
       border-radius: 10px;
       font-size: 16px;
       margin: 0 20px;
-      padding:20px;
-      span{
+      padding: 20px;
+
+      span {
         font-family: var(--font4);
         color: var(--text-01);
       }
     }
+
     /**
     총수입 금액 노출 영역
      */
-    .total-amount{
+    .total-amount {
       margin: 20px;
       position: relative;
+
       &-lg {
         margin: 30px 20px;
       }
-      .title{
+
+      .title {
         font-size: 16px;
         font-family: var(--font1);
         color: var(--text-01);
         margin-bottom: 4px;
+
         a {
           font-size: 18px;
           font-family: var(--font2);
           color: #37354e;
         }
       }
-      .amount{
+
+      .amount {
         font-size: 30px;
         font-family: var(--font7);
         font-weight: bold;
         line-height: 1.2;
-        &:after{
+
+        &:after {
           content: '원';
           display: inline-block;
           font-size: 18px;
@@ -347,21 +386,25 @@
           margin-left: 2px;
         }
       }
-      .expected{
+
+      .expected {
         font-size: 14px;
         color: var(--text-03);
         padding-top: 6px;
         min-height: 27px;
-        span{
+
+        span {
           font-family: var(--font4);
         }
       }
-      .name{
+
+      .name {
         font-size: 18px;
         font-family: var(--font3);
         color: var(--text-01);
         margin-bottom: 4px;
       }
+
       .util {
         position: absolute;
         top: 0;
@@ -369,13 +412,14 @@
       }
 
 
-      .account-number{
+      .account-number {
         font-size: 14px;
         font-family: var(--font4);
         color: var(--text-03);
         margin-bottom: 8px;
       }
-      .btn-edit{
+
+      .btn-edit {
         font-size: 12px;
         border-color: #e2e3e6;
         min-width: 50px;
@@ -388,7 +432,8 @@
         top: 23px;
         right: 0;
       }
-      .btn-filter{
+
+      .btn-filter {
         font-size: 12px;
         border-color: #e2e3e6;
         min-width: 50px;
@@ -403,18 +448,20 @@
         top: 34px;
         //transform: translateY(-50%);
         right: 0;
-        span{
+
+        span {
           font-family: var(--font7);
           font-weight: bold;
         }
-        &:hover{
+
+        &:hover {
           color: var(--text-02);
         }
 
 
-
       }
-      &.line{
+
+      &.line {
         margin: 0 20px;
         padding: 15px 0 20px;
         border-bottom: 1px solid #efefef;
@@ -422,51 +469,59 @@
 
 
       /*정기지출*/
-      &.add-logo{
+      &.add-logo {
         display: flex;
         padding: 20px;
         margin: 0;
-        .img{
+
+        .img {
           width: 40px;
           height: 40px;
           display: inline-block;
           margin-top: 6px;
           margin-right: 10px;
-          img{
+
+          img {
             width: 100%;
             height: auto;
           }
         }
-        >div{
-          .title{
+
+        > div {
+          .title {
             font-size: 18px;
             font-family: var(--font2);
             color: var(--text-01);
             margin-bottom: 2px;
           }
-          .num{
+
+          .num {
             font-size: 15px;
             font-family: var(--font1);
             color: var(--text-01);
-            margin-bottom:6px;
+            margin-bottom: 6px;
           }
         }
+
         &.add-logo-amount {
           padding-top: 16px;
           padding-bottom: 24px;
-          .img{
+
+          .img {
             width: 54px;
             height: 54px;
             display: inline-block;
             margin-top: 4px;
             margin-right: 10px;
-            img{
+
+            img {
               width: 100%;
               height: auto;
             }
           }
-          >div{
-            .title{
+
+          > div {
+            .title {
               font-size: 14px;
               font-family: var(--font1);
               color: var(--text-01);
@@ -475,7 +530,8 @@
               margin-top: 4px;
               //margin-bottom:6px;
             }
-            .amount{
+
+            .amount {
               font-size: 24px;
               font-family: var(--font2);
               color: var(--text-01);
@@ -492,17 +548,20 @@
         position: relative;
         height: 54px;
         margin-bottom: 25px;
+
         .img {
           width: 54px;
           height: 54px;
           position: absolute;
           top: 0;
           left: 0;
+
           img {
             width: 100%;
             height: auto;
           }
         }
+
         .category {
           position: absolute;
           top: 2px;
@@ -510,6 +569,7 @@
           font-size: 14px;
           color: #37354e;
         }
+
         .amount {
           position: absolute;
           left: 74px;
@@ -524,35 +584,43 @@
 
     .text-desc {
       margin-bottom: 20px;
+
       &-lg {
         margin-bottom: 40px;
       }
+
       .desc {
         font-size: 20px;
         color: var(--text-01);
         line-height: 1.6;
+
         span {
           color: var(--color-point);
           font-family: var(--font3);
         }
+
         &.minus {
           span {
             color: var(--color-point-secondary);
           }
         }
       }
+
       .sub-desc {
         display: flex;
         justify-content: space-between;
+
         .month {
           font-size: 15px;
           color: #9b9aa6;
         }
+
         .legend {
           font-size: 14px;
           color: #9b9aa6;
         }
       }
+
       &.text-desc-sub {
         .desc {
           font-size: 18px;
@@ -561,30 +629,37 @@
         }
       }
     }
-    .category-detail-amount{
+
+    .category-detail-amount {
       padding: 20px 20px 30px;
-      .total{
-        margin-bottom:26px;
+
+      .total {
+        margin-bottom: 26px;
         display: flex;
-        .img{
+
+        .img {
           width: 54px;
           height: 54px;
           margin-right: 20px;
-          img{
+
+          img {
             width: 100%;
             height: auto;
           }
-          .icon{
+
+          .icon {
             width: 54px;
             height: 54px;
           }
         }
-        p{
-          .title{
+
+        p {
+          .title {
             font-size: 14px;
             font-family: var(--font1);
             color: var(--text-01);
-            .icon-edit{
+
+            .icon-edit {
               background: url("../../img/common/expenditure/ic_my_register@2x.png") no-repeat center center/contain;
               width: 20px;
               height: 20px;
@@ -593,13 +668,15 @@
               margin-left: 2px;
             }
           }
-          .amount{
+
+          .amount {
             font-size: 24px;
             font-family: var(--font4);
             color: var(--text-01);
             display: block;
             position: relative;
-            &:after{
+
+            &:after {
               content: '원';
               display: inline-block;
               font-family: var(--font2);
@@ -607,6 +684,7 @@
           }
         }
       }
+
       .bar-graph {
         display: block;
         position: relative;
@@ -614,7 +692,8 @@
         height: 26px;
         border-radius: 13px;
         background-color: #f5f6f8;
-        >.percent{
+
+        > .percent {
           position: absolute;
           left: 8px;
           top: 2px;
@@ -631,13 +710,16 @@
           top: 0;
           left: 0;
           border-radius: 13px;
-          &.color-purple{
+
+          &.color-purple {
             background-color: #7c4ce8;
           }
-          &.color-pink{
+
+          &.color-pink {
             background-color: #cc61ed;
           }
-          .percent{
+
+          .percent {
             position: absolute;
             right: 10px;
             top: 4px;
@@ -648,36 +730,43 @@
           }
         }
       }
-      .budget{
-        .item{
+
+      .budget {
+        .item {
           padding: 10px 0;
           display: flex;
           justify-content: space-between;
-          &:first-of-type{
+
+          &:first-of-type {
             padding-top: 20px;
           }
-          &:last-of-type{
+
+          &:last-of-type {
             padding-bottom: 20px;
           }
-          .tit{
+
+          .tit {
             font-size: 15px;
             color: var(--text-02);
             font-family: var(--font1);
           }
-          .val{
+
+          .val {
             font-size: 15px;
             font-family: var(--font2);
-            &.color-gray{
+
+            &.color-gray {
               color: #c2c1cc;
               font-family: var(--font1);
             }
-            span{
+
+            span {
               color: var(--text-01);
               font-family: var(--font5);
               font-weight: bold;
             }
 
-            .ico_list_arrow_small{
+            .ico_list_arrow_small {
               background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
               display: inline-block;
               width: 6px;
@@ -687,31 +776,36 @@
           }
         }
       }
-      .definition{
+
+      .definition {
         background: #f7f8fc;
         font-size: 14px;
         color: var(--text-02);
         padding: 15px 20px;
         border-radius: 10px;
       }
-      .memo{
+
+      .memo {
         padding: 20px 20px 0;
         font-size: 14px;
         color: var(--text-02);
       }
     }
 
-    .income-details-amount{
+    .income-details-amount {
       padding: 10px 20px 40px;
-      >.total{
+
+      > .total {
         font-size: 26px;
         color: var(--text-01);
         font-family: var(--font3);
         margin-bottom: 14px;
-        span{
+
+        span {
           font-family: var(--font7);
         }
       }
+
       .bar-graph {
         display: block;
         position: relative;
@@ -719,7 +813,8 @@
         height: 30px;
         border-radius: 15px;
         background-color: #f5f6f8;
-        >.percent{
+
+        > .percent {
           position: absolute;
           left: 8px;
           top: 4px;
@@ -736,13 +831,16 @@
           top: 0;
           left: 0;
           border-radius: 15px;
-          &.color-purple{
+
+          &.color-purple {
             background-color: #7c4ce8;
           }
-          &.color-pink{
+
+          &.color-pink {
             background-color: #cc61ed;
           }
-          .percent{
+
+          .percent {
             position: absolute;
             right: 8px;
             top: 4px;
@@ -753,41 +851,50 @@
           }
         }
       }
-      .budget{
+
+      .budget {
         border-bottom: 1px solid #efefef;
-        &:last-of-type{
+
+        &:last-of-type {
           border-bottom: none;
         }
-        .item{
+
+        .item {
           padding: 10px 0;
           display: flex;
           justify-content: space-between;
-          &:first-of-type{
+
+          &:first-of-type {
             padding-top: 20px;
           }
-          &:last-of-type{
+
+          &:last-of-type {
             padding-bottom: 20px;
           }
-          &.color-gray{
+
+          &.color-gray {
             color: var(--text-03);
             font-family: var(--font1);
             font-size: 13px;
           }
-          .tit{
+
+          .tit {
             font-size: 15px;
             color: var(--text-02);
             font-family: var(--font1);
           }
-          .val{
+
+          .val {
             font-size: 15px;
             font-family: var(--font1);
             color: var(--text-02);
-            span{
+
+            span {
               color: var(--text-02);
               font-family: var(--font4);
             }
 
-            .ico_list_arrow_small{
+            .ico_list_arrow_small {
               background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
               display: inline-block;
               width: 6px;
@@ -796,17 +903,19 @@
             }
           }
 
-          &.total{
-            .tit{
+          &.total {
+            .tit {
               font-size: 18px;
               font-family: var(--font3);
               color: var(--text-01);
             }
-            .val{
+
+            .val {
               font-size: 18px;
               color: var(--text-01);
               font-family: var(--font3);
-              span{
+
+              span {
                 color: var(--text-01);
                 font-family: var(--font7);
               }
@@ -814,48 +923,56 @@
           }
         }
       }
-      .definition{
+
+      .definition {
         background: #f7f8fc;
         font-size: 14px;
         color: var(--text-02);
         padding: 15px 20px;
         border-radius: 10px;
       }
-      .memo{
+
+      .memo {
         padding: 20px 20px 0;
         font-size: 14px;
         color: var(--text-02);
       }
 
-      &.type2{
-        .budget{
-          .item{
-            .tit{
+      &.type2 {
+        .budget {
+          .item {
+            .tit {
               font-size: 16px;
               color: var(--text-01);
               font-family: var(--font2);
             }
-            .val{
+
+            .val {
               font-size: 18px;
               font-family: var(--font3);
               color: var(--text-01);
-              span{
+
+              span {
                 color: var(--text-01);
                 font-family: var(--font7);
               }
             }
           }
-          .definition{
+
+          .definition {
             margin: 10px 0;
-            ul{
-              li{
+
+            ul {
+              li {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 14px;
-                &:last-of-type{
+
+                &:last-of-type {
                   margin-bottom: 0;
                 }
-                .ico_list_arrow_small{
+
+                .ico_list_arrow_small {
                   background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                   display: inline-block;
                   width: 6px;
@@ -868,18 +985,22 @@
         }
       }
     }
-    .spending-plan{
+
+    .spending-plan {
       padding: 10px 20px 40px;
-      >.title{
+
+      > .title {
         font-size: 26px;
         font-family: var(--font3);
         color: var(--text-01);
         line-height: 1;
         margin-bottom: 14px;
-        span{
+
+        span {
           font-family: var(--font7);
         }
       }
+
       .bar-graph {
         display: block;
         position: relative;
@@ -895,13 +1016,16 @@
           top: 0;
           left: 0;
           border-radius: 13px;
-          &.color-purple{
+
+          &.color-purple {
             background-color: #7c4ce8;
           }
-          &.color-pink{
+
+          &.color-pink {
             background-color: #cc61ed;
           }
-          .percent{
+
+          .percent {
             position: absolute;
             right: 8px;
             top: 2px;
@@ -912,49 +1036,59 @@
           }
         }
       }
-      >.category{
+
+      > .category {
         font-size: 18px;
         color: var(--text-01);
         font-family: var(--font3);
         padding-bottom: 20px;
         padding-top: 10px;
         border-bottom: 1px solid #efefef;
-        .img{
+
+        .img {
           width: 40px;
           height: 40px;
           display: inline-block;
           margin-right: 14px;
-          img{
+
+          img {
             width: 100%;
             height: auto;
           }
         }
-        .icon{
+
+        .icon {
           width: 40px;
           height: 40px;
         }
       }
-      .expenditure{
+
+      .expenditure {
         padding: 14px 0;
         border-bottom: 1px solid #efefef;
-        &:last-of-type{
+
+        &:last-of-type {
           border-bottom: none;
         }
-        >.total{
+
+        > .total {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 10px 0;
-          .title{
+
+          .title {
             font-size: 18px;
             color: var(--text-01);
             font-family: var(--font3);
           }
-          .sum{
+
+          .sum {
             font-size: 18px;
             color: var(--text-01);
             font-family: var(--font7);
-            &:after{
+
+            &:after {
               content: '원';
               display: inline-block;
               font-family: var(--font3);
@@ -962,27 +1096,31 @@
           }
         }
 
-        .item-list{
-          .item{
+        .item-list {
+          .item {
             padding: 10px 0;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            .tit{
+
+            .tit {
               font-size: 15px;
               color: var(--text-02);
               font-family: var(--font1);
             }
-            .val{
+
+            .val {
               font-size: 15px;
               color: var(--text-02);
               font-family: var(--font4);
               min-width: 128px;
               text-align: right;
-              span{
+
+              span {
                 font-family: var(--font1);
               }
-              .ico_list_arrow_small{
+
+              .ico_list_arrow_small {
                 background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                 display: inline-block;
                 width: 6px;
@@ -994,33 +1132,39 @@
         }
       }
     }
+
     /*지출 추이*/
-    .spending-trends{
+    .spending-trends {
       position: relative;
       padding: 40px 20px;
-      >.title{
+
+      > .title {
         font-size: 20px;
         color: var(--text-01);
         font-family: var(--font3);
         margin-bottom: 10px;
       }
 
-      .no-data{
+      .no-data {
         width: 100%;
-        img{
+
+        img {
           width: 100%;
           height: auto;
           margin: 10px;
         }
-        +.btn-wrap{
-          .btn-purple-outline{
+
+        + .btn-wrap {
+          .btn-purple-outline {
             border-radius: 6px;
           }
         }
       }
-      .swiper-slide{
+
+      .swiper-slide {
         width: 100%;
-        .graph-box{
+
+        .graph-box {
           width: 100%;
           height: 224px;
           overflow: hidden;
@@ -1033,21 +1177,25 @@
             display: flex;
             padding-top: 10px;
             text-align: center;
-            .tick{
+
+            .tick {
               flex: 1;
+
               .day-month {
                 display: block;
                 color: var(--text-02);
                 font-size: 14px;
                 font-family: var(--font2);
-                &.active{
+
+                &.active {
                   color: var(--text-point-color);
                 }
               }
             }
           }
         }
-        .period{
+
+        .period {
           font-size: 17px;
           color: var(--text-01);
           font-family: var(--font2);
@@ -1057,32 +1205,39 @@
         }
       }
 
-      .swiper-btn{
+      .swiper-btn {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         position: absolute;
         bottom: 0;
-        .swiper-button{
+
+        .swiper-button {
           position: relative;
           width: 40px;
           height: 40px;
-          &:after{
+
+          &:after {
             display: none;
           }
-          &.swiper-button-disabled{
+
+          &.swiper-button-disabled {
             opacity: 1;
           }
-          &.swiper-button-prev{
+
+          &.swiper-button-prev {
             background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
-            &.swiper-button-disabled{
+
+            &.swiper-button-disabled {
               background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
             }
           }
-          &.swiper-button-next{
+
+          &.swiper-button-next {
             background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
-            &.swiper-button-disabled{
+
+            &.swiper-button-disabled {
               background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
             }
           }
@@ -1091,34 +1246,36 @@
 
     }
 
-    .expenditure-tab{
+    .expenditure-tab {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 20px;
       background-color: #fff;
 
-      ul{
-        li{
+      ul {
+        li {
           position: relative;
           float: left;
           margin-right: 5px;
           padding: 10px 5px !important;
-          a{
+
+          a {
             font-size: 17px;
             color: var(--text-03);
             line-height: 26px;
           }
 
-          &.active{
-            a{
+          &.active {
+            a {
               font-size: 17px;
               color: var(--text-01);
               //font-family: var(--font3);
               line-height: 26px;
               font-weight: bold;
             }
-            &:after{
+
+            &:after {
               content: '';
               position: absolute;
               width: 100%;
@@ -1132,18 +1289,21 @@
 
         }
       }
-      .btn-edit{
+
+      .btn-edit {
         font-size: 12px;
         border-color: #e2e3e6;
         min-width: 50px;
         border-radius: 14px;
         height: 28px;
         line-height: 26px;
-        &:hover{
+
+        &:hover {
           color: var(--text-02);
         }
       }
-      .btn-filter{
+
+      .btn-filter {
         font-size: 12px;
         border-color: #e2e3e6;
         min-width: 50px;
@@ -1154,16 +1314,19 @@
         padding-right: 14px;
         background: url("../../img/common/ic_filter@2x.png") no-repeat center left 14px /contain;
         background-size: 14px;
-        span{
+
+        span {
           font-family: var(--font4);
           font-weight: bold;
         }
-        &:hover{
+
+        &:hover {
           color: var(--text-02);
         }
       }
     }
-    .expenditure-box{
+
+    .expenditure-box {
 
       /*.empty{
         position: relative;
@@ -1198,7 +1361,7 @@
         }
       }*/
 
-      .description{
+      .description {
         font-size: 15px;
         color: #747679;
         background: #fff;
@@ -1215,19 +1378,23 @@
         padding: 20px 20px 0 20px;
         display: flex;
         justify-content: space-between;
+
         .count {
           font-size: 15px;
           line-height: 26px;
           color: #37354e;
+
           span {
             font-family: var(--font2);
           }
         }
+
         .filter {
           em {
             font-size: 14px;
             color: #737183;
           }
+
           label {
             vertical-align: middle;
             font-size: 14px;
@@ -1239,25 +1406,29 @@
       }
 
       /*일자*/
-      .usage-history-list{
+      .usage-history-list {
         padding: 20px;
         min-height: calc(100vh - 233px);
-        &.min175{
+
+        &.min175 {
           min-height: calc(100vh - 175px);
         }
-        &.min225{
+
+        &.min225 {
           min-height: calc(100vh - 225px);
         }
 
-        >li{
+        > li {
           background: #fff;
           border-radius: 10px;
           padding: 20px;
           margin-bottom: 20px;
-          &.btn-wrap{
+
+          &.btn-wrap {
             padding: 0;
           }
-          &:last-of-type{
+
+          &:last-of-type {
             margin-bottom: 0;
           }
 
@@ -1268,17 +1439,20 @@
             position: relative;
             display: flex;
             justify-content: space-between;
+
             &-close {
               .btn-collapse {
                 transform: rotate(180deg);
               }
             }
-            + .divider{
+
+            + .divider {
               margin-top: 10px;
               margin-bottom: 20px;
-              &:before{
+
+              &:before {
                 height: 1px;
-                background:none;
+                background: none;
                 border-top: 1px solid #efefef;
                 margin-top: 20px;
               }
@@ -1286,26 +1460,27 @@
           }
 
 
-          .sub-title{
+          .sub-title {
             font-size: 15px;
             color: var(--text-01);
             font-family: var(--font3);
             margin-bottom: 10px;
             position: relative;
-            + .divider{
-              &:before{
+            display: flex;
+            justify-content: space-between;
+
+            + .divider {
+              &:before {
                 height: 1px;
-                background:none;
+                background: none;
                 border-top: 1px solid #efefef;
                 margin-top: 20px;
               }
             }
-
-            /**
-            아코디언 기능 추가
-             */
-            .btn-collapse {
-
+            &-budget {
+              + .divider::before {
+                margin-top: 10px;
+              }
             }
 
             .sum {
@@ -1316,6 +1491,7 @@
               color: #37354e;
               font-family: var(--font4);
               font-weight: 500;
+              text-align: right;
 
               &::after {
                 content: '원';
@@ -1324,7 +1500,33 @@
                 font-family: var(--font2);
                 color: #37354e;
               }
+
             }
+
+
+            /**
+            budget 있는 경우 추가
+             */
+            .budget {
+              display: flex;
+              flex-direction: column;
+
+              .price {
+                font-size: 18px;
+                color: #37354e;
+                font-family: var(--font4);
+                font-weight: 500;
+                text-align: right;
+              }
+
+              .desc {
+                font-size: 13px;
+                text-align: right;
+                color: #9b9aa6;
+                font-family: var(--font1);
+              }
+            }
+
             .last {
               position: absolute;
               bottom: -10px;
@@ -1337,18 +1539,21 @@
 
           }
 
-          .details-history{
-            .item-list{
+          .details-history {
+            .item-list {
               padding: 15px 0;
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
-              &.empty{
+
+              &.empty {
                 position: relative;
                 height: 80px;
                 align-items: center;
                 justify-content: center;
-                >span{
+
+                > span {
                   padding-left: 16px;
                   font-size: 14px;
                   color: var(--text-02);
@@ -1357,34 +1562,38 @@
                 }
               }
 
-              >.group{
+              > .group {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 position: relative;
-                .box{
+
+                .box {
                   margin-bottom: 0;
                   position: relative;
                   display: flex;
                   align-items: center;
-                  .img{
+
+                  .img {
                     width: 40px;
                     height: 40px;
                     display: inline-block;
                     vertical-align: top;
                     margin-right: 14px;
                     margin-top: 4px;
-                    img{
+
+                    img {
                       width: 100%;
                       height: auto;
                     }
-                    .icon{
+
+                    .icon {
                       width: 40px;
                       height: 40px;
                     }
                   }
 
-                  .info{
+                  .info {
                     display: inline-block;
                     position: relative;
 
@@ -1392,10 +1601,10 @@
                       line-height: 44px;
                     }
 
-                    .place{
+                    .place {
                       display: block;
 
-                      span{
+                      span {
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
@@ -1407,8 +1616,9 @@
                         vertical-align: middle;
                       }
                     }
-                    .type{
-                      span{
+
+                    .type {
+                      span {
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
@@ -1419,32 +1629,38 @@
                         vertical-align: middle;
                       }
                     }
-                    .amount{
+
+                    .amount {
                       font-size: 18px;
                       position: relative;
                       font-family: var(--font4);
                       display: block;
                       font-weight: 500;
-                      &:after{
+
+                      &:after {
                         content: '원';
                         display: inline-block;
                         font-size: 17px;
                         font-family: var(--font2);
                       }
-                      &.cancel_line{
+
+                      &.cancel_line {
                         color: #c2c1cc;
                         font-family: var(--font5);
-                        text-decoration:line-through;
-                        &:after{
-                          text-decoration:line-through;
+                        text-decoration: line-through;
+
+                        &:after {
+                          text-decoration: line-through;
                         }
                       }
+
                       &-global {
                         font-size: 18px;
                         position: relative;
                         font-family: var(--font4);
                         display: block;
                         font-weight: 500;
+
                         span {
                           display: inline-block;
                           font-size: 17px;
@@ -1459,9 +1675,10 @@
                       color: #9b9aa6;
                     }
                   }
-                  
+
 
                 }
+
                 .icon-user {
                   width: 30px;
                   height: 30px;
@@ -1484,6 +1701,7 @@
                       right: 0;
                     }
                   }
+
                   img {
                     width: 100%;
                     height: 100%;
@@ -1494,7 +1712,8 @@
                     overflow: hidden;
                   }
                 }
-                .payment-method{
+
+                .payment-method {
                   font-size: 11px;
                   color: #9992a0;
                   background: #eeedf0;
@@ -1504,10 +1723,11 @@
                   text-align: center;
                   display: flex;
                   align-items: center;
+
                   span {
                     font-size: 11px;
                     color: #9992a0;
-                    padding:2px 6px;
+                    padding: 2px 6px;
                     width: 76px;
                     border-radius: 6px;
                     text-align: center;
@@ -1519,23 +1739,28 @@
                     line-height: 18px;
                   }
                 }
-                .badge-group{
+
+                .badge-group {
                   display: flex;
                   flex-direction: column;
-                  .badge{
+
+                  .badge {
                     margin-bottom: 6px;
-                    &:last-of-type{
+
+                    &:last-of-type {
                       margin-bottom: 0;
                     }
                   }
                 }
+
                 label {
                   vertical-align: middle;
                   margin-left: 5px;
                 }
 
               }
-              .hashtag{
+
+              .hashtag {
                 font-size: 12px;
                 color: var(--text-03);
                 padding-left: 56px;
@@ -1547,17 +1772,17 @@
                 -webkit-box-orient: vertical;
               }
 
-              .account-number{
+              .account-number {
                 font-size: 12px;
                 color: var(--text-03);
                 font-family: var(--font2);
                 padding-left: 56px;
               }
 
-              .badge{
+              .badge {
                 display: inline-block;
                 font-size: 11px;
-                padding:3px 4px;
+                padding: 3px 4px;
                 border-radius: 6px;
                 font-family: var(--font2);
                 line-height: 1.5;
@@ -1571,46 +1796,55 @@
                 white-space: initial;
 
 
-                &.badge-gray{
+                &.badge-gray {
                   color: #9992a0;
                   background: #eeedf0;
                 }
-                &.badge-pink{
+
+                &.badge-pink {
                   color: #f21730;
                   background: #feecee;
                 }
-                &.badge-purple{
+
+                &.badge-purple {
                   color: #6839d3;
                   background: #f4efff;
                 }
-                &.badge-blue{
+
+                &.badge-blue {
                   color: #3968d3;
                   background: #eff8ff;
                 }
               }
 
-              &.undercoverage{
+              &.undercoverage {
                 .img {
                   opacity: 0.5;
                 }
+
                 .info {
                   color: #c2c1cc !important;
                 }
-                .badge-payment span{
+
+                .badge-payment span {
                   color: #c2c1cc !important;
 
                 }
               }
-              &.pay-cancel{
+
+              &.pay-cancel {
                 .img {
                   opacity: 0.5;
                 }
+
                 .info {
                   color: #c2c1cc !important;
                 }
+
                 .badge-payment span {
                   color: #c2c1cc !important;
                 }
+
                 .amount, .place span {
                   text-decoration: line-through;
                 }
@@ -1618,33 +1852,38 @@
             }
           }
 
-          >.total{
+          > .total {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 20px;
             border-bottom: 1px solid #efefef;
-            .title{
+
+            .title {
               font-size: 15px;
               color: var(--text-01);
               font-family: var(--font3);
             }
-            .sum{
+
+            .sum {
               font-size: 18px;
               color: var(--text-01);
               font-family: var(--font4);
               font-weight: 600;
-              &::after{
+
+              &::after {
                 content: '원';
                 font-size: 13px;
                 font-family: var(--font2);
                 color: var(--text-01);
               }
+
               &-global {
                 font-size: 18px;
                 color: var(--text-01);
                 font-family: var(--font4);
                 font-weight: 600;
+
                 span {
                   font-size: 13px;
                   font-family: var(--font2);
@@ -1656,14 +1895,17 @@
         }
 
         /*카테고리*/
-        &.usage-category-list{
+        &.usage-category-list {
           min-height: calc(100vh - 313px);
-          &.budget-setting{
+
+          &.budget-setting {
             padding: 20px 20px 30px;
-            >li{
+
+            > li {
               position: relative;
               padding: 18px 32px 18px 20px;
-              &:after{
+
+              &:after {
                 content: '';
                 display: inline-block;
                 position: absolute;
@@ -1675,8 +1917,9 @@
                 top: calc(50% - 2px);
                 transform: translateY(-50%);
               }
-              .item-list{
-                .box{
+
+              .item-list {
+                .box {
                   display: flex;
                   align-items: center;
                 }
@@ -1685,22 +1928,25 @@
 
           }
 
-          &.filter-setting{
+          &.filter-setting {
             padding: 20px 20px 120px;
 
-            >li{
+            > li {
               padding: 0;
-              &.info-title{
+
+              &.info-title {
                 font-size: 18px;
                 font-family: var(--font1);
                 color: var(--text-01);
                 margin-bottom: 12px;
-                span{
+
+                span {
                   font-family: var(--font3);
                   color: var(--text-point-color);
                 }
               }
-              .title-category{
+
+              .title-category {
                 font-size: 15px;
                 color: var(--text-01);
                 font-family: var(--font3);
@@ -1708,71 +1954,85 @@
                 padding: 18px 0;
                 display: block;
                 margin-top: 20px;
-                &:first-of-type{
+
+                &:first-of-type {
                   margin-top: 0;
                 }
-                &+.check-list {
+
+                & + .check-list {
                   margin-top: 10px;
                 }
               }
-              .details-history{
-                .item-list{
+
+              .details-history {
+                .item-list {
                   padding-bottom: 8px;
                   padding-top: 8px;
                   align-items: center;
-                  &.sub-category{
+
+                  &.sub-category {
                     padding-top: 20px;
                     font-size: 14px;
                     color: #9b9aa6;
                     padding-bottom: 0;
                   }
+
                   &.desc {
                     font-size: 14px;
                     color: #9b9aa6;
                     padding-top: 10px;
                   }
-                  .box{
+
+                  .box {
                     display: flex;
                     align-items: center;
-                    .title-category{
+
+                    .title-category {
                       border-bottom: 0;
                     }
 
-                    .info{
-                      .place{
-                        span{
+                    .info {
+                      .place {
+                        span {
                           max-width: 180px;
                         }
                       }
-                      .num{
+
+                      .num {
                         display: block;
                         font-size: 13px;
                         color: var(--text-03);
                         font-family: var(--font4);
                       }
                     }
+
                     & + div {
                       display: flex;
                       justify-content: space-between;
                       align-items: center;
                     }
                   }
+
                   &-lg {
                     padding: 15px 0 16px;
                   }
                 }
               }
-              .empty{
+
+              .empty {
                 height: auto;
                 padding-top: 70px;
               }
+
               /*04_3.1_데이터공유하기_데이터유_첫데이터공유.html*/
               .list-radio {
                 padding-top: 20px;
+
                 .item {
                   margin-bottom: 20px;
                 }
               }
+
               .data-description {
                 padding-top: 20px;
                 border-top: 1px solid #efefef;
@@ -1781,47 +2041,56 @@
                 color: #737183;
               }
             }
-            +.btn-wrap{
+
+            + .btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
-              &.active{
+
+              &.active {
                 bottom: 0;
                 transition: bottom 0.5s;
               }
             }
           }
-          >li{
-            padding: 18px 20px;
-            .details-history{
 
-              .item-list{
+          > li {
+            padding: 18px 20px;
+
+            .details-history {
+
+              .item-list {
                 margin-bottom: 0;
                 padding: 0;
-                .box{
-                  .info{
-                    .category{
+
+                .box {
+                  .info {
+                    .category {
                       font-size: 15px;
                       color: var(--text-01);
                       font-family: var(--font3);
                       display: block;
                     }
-                    .budget{
+
+                    .budget {
                       font-size: 14px;
                       color: var(--text-03);
                       font-family: var(--font1);
-                      span{
+
+                      span {
                         font-family: var(--font4);
                       }
                     }
                   }
                 }
-                .category-amount{
+
+                .category-amount {
                   font-size: 18px;
                   font-family: var(--font5);
                   font-weight: 600;
                   position: relative;
                   top: 2px;
-                  &:after{
+
+                  &:after {
                     content: '원';
                     display: inline-block;
                     font-size: 13px;
@@ -1830,9 +2099,11 @@
                     position: relative;
                     top: -2px;
                   }
-                  &.category-amount-link{
+
+                  &.category-amount-link {
                     padding-right: 10px;
-                    &:before{
+
+                    &:before {
                       content: '';
                       display: inline-block;
                       background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
@@ -1847,6 +2118,7 @@
 
                 }
               }
+
               .bar-graph {
                 display: block;
                 position: relative;
@@ -1864,10 +2136,12 @@
                   left: 0;
                   border-radius: 66px;
                   margin-bottom: 6px;
-                  &.color-purple{
+
+                  &.color-purple {
                     background-color: #7c4ce8;
                   }
-                  &.color-pink{
+
+                  &.color-pink {
                     background-color: #cc61ed;
                   }
                 }
@@ -1876,15 +2150,17 @@
           }
 
           /*그 외 카테고리*/
-          &.etc-category-list{
-            >li{
+          &.etc-category-list {
+            > li {
               padding: 18px 0;
               margin-bottom: 0;
-              .details-history{
-                .item-list{
-                  .category-amount{
+
+              .details-history {
+                .item-list {
+                  .category-amount {
                     padding-right: 14px;
-                    &:after{
+
+                    &:after {
                       content: '원';
                       display: inline-block;
                       font-size: 13px;
@@ -1893,7 +2169,8 @@
                       position: relative;
                       top: -2px;
                     }
-                    &:before{
+
+                    &:before {
                       content: '';
                       display: inline-block;
                       background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
@@ -1913,27 +2190,34 @@
           }
 
           /*카테고리 상세페이지*/
-          &.category-details{
+          &.category-details {
             padding: 30px 20px;
-            >li{
+
+            > li {
               padding: 0;
               margin-bottom: 40px;
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
-              .day{
+
+              .day {
                 margin-bottom: 0;
               }
-              .details-history{
-                .item-list{
+
+              .details-history {
+                .item-list {
                   padding: 16px 0 15px;
                   display: block;
-                  .box{
+
+                  .box {
                     width: 100%;
-                    .info{
+
+                    .info {
                       width: calc(100% - 55px);
-                      .place{
-                        span{
+
+                      .place {
+                        span {
                           max-width: 100%;
                         }
                       }
@@ -1941,7 +2225,8 @@
                   }
                 }
               }
-              .empty{
+
+              .empty {
                 height: auto;
                 padding-top: 70px;
               }
@@ -1949,54 +2234,65 @@
           }
 
           /*카테고리 변경*/
-          &.category-change{
+          &.category-change {
             padding: 20px 20px 120px;
-            >li{
+
+            > li {
               padding: 0;
               margin-bottom: 40px;
-              &.month{
+
+              &.month {
                 font-size: 24px;
                 font-family: var(--font3);
                 color: var(--text-01);
                 margin-bottom: 20px;
               }
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
-              .sub-title{
+
+              .sub-title {
                 font-size: 15px;
                 font-family: var(--font3);
                 color: var(--text-01);
                 margin-bottom: 0;
-                &.sub-title-border{
+
+                &.sub-title-border {
                   border-bottom: 1px solid #efefef;
                   padding-bottom: 18px;
                   margin-bottom: 0;
                 }
               }
-              .info-title{
+
+              .info-title {
                 font-size: 18px;
                 font-family: var(--font1);
                 color: var(--text-01);
                 margin-bottom: 12px;
-                span{
+
+                span {
                   font-family: var(--font3);
                   color: var(--text-point-color);
                 }
               }
-              .details-history{
-                .item-list{
+
+              .details-history {
+                .item-list {
                   padding: 16px 0 15px;
                   align-items: center;
-                  .box{
+
+                  .box {
                     display: flex;
-                    .info{
-                      .place{
-                        span{
+
+                    .info {
+                      .place {
+                        span {
                           max-width: 200px;
                         }
                       }
-                      .num{
+
+                      .num {
                         display: block;
                         font-size: 13px;
                         color: var(--text-03);
@@ -2006,21 +2302,25 @@
                     }
                   }
                 }
+
                 &-sm {
-                  .item-list{
+                  .item-list {
                     padding: 8px 0;
                   }
                 }
               }
-              .empty{
+
+              .empty {
                 height: auto;
                 padding-top: 70px;
               }
             }
-            +.btn-wrap{
+
+            + .btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
-              &.active{
+
+              &.active {
                 bottom: 0;
                 transition: bottom 0.5s;
               }
@@ -2028,38 +2328,46 @@
           }
 
           /*카테고리 편집*/
-          &.category-edit{
+          &.category-edit {
             padding: 20px 20px 110px;
-            >li{
+
+            > li {
               padding: 0;
               margin-bottom: 40px;
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
-              .sub-title{
+
+              .sub-title {
                 font-size: 15px;
                 font-family: var(--font3);
                 color: var(--text-01);
               }
-              .details-history{
-                .item-list{
+
+              .details-history {
+                .item-list {
                   margin-bottom: 0;
                   padding: 16px 0;
                   border-bottom: 1px solid #efefef;
                   border-radius: 0;
-                  .box{
-                    .img{
+
+                  .box {
+                    .img {
                       vertical-align: middle;
-                      &+.info {
+
+                      & + .info {
                         max-width: calc(100vw - 95px);
                       }
                     }
-                    .info{
+
+                    .info {
                       vertical-align: middle;
 
-                      .category{
+                      .category {
                         font-size: 16px;
-                        .badge{
+
+                        .badge {
                           background: #f4efff;
                           color: #6839d3;
                           font-size: 11px;
@@ -2073,7 +2381,8 @@
                           line-height: 1;
                         }
                       }
-                      .belong{
+
+                      .belong {
                         font-size: 14px;
                         font-family: var(--font1);
                         color: var(--text-03);
@@ -2083,59 +2392,69 @@
                 }
               }
             }
-            +.btn-wrap{
+
+            + .btn-wrap {
               background: #fff;
             }
           }
         }
 
         /*정기지출 내역*/
-        &.regular-expenditure{
-          .sub-title{
+        &.regular-expenditure {
+          .sub-title {
             font-size: 16px;
-            .img{
+
+            .img {
               width: 40px;
               height: 40px;
               display: inline-block;
               margin-right: 4px;
-              img{
+
+              img {
                 width: 100%;
                 height: auto;
               }
             }
           }
-          .details-history{
-            .item-list{
+
+          .details-history {
+            .item-list {
               padding: 7px 0;
-              .group{
-                .box{
-                  .info{
-                    >span{
+
+              .group {
+                .box {
+                  .info {
+                    > span {
                       display: inline-block;
                       vertical-align: middle;
                     }
-                    .tit{
+
+                    .tit {
                       font-size: 14px;
                       color: var(--text-02);
                     }
-                    .badge{
+
+                    .badge {
                       background: #eeedf0;
                       color: #9992a0;
                       border-radius: 10px;
                       height: 21px;
                       min-width: 32px;
-                      &.badge-purple{
+
+                      &.badge-purple {
                         background: #f4efff;
                         color: #6839d3;
                       }
                     }
                   }
                 }
-                .amount{
+
+                .amount {
                   font-size: 16px;
                   font-family: var(--font5);
                   color: var(--text-01);
-                  &:after{
+
+                  &:after {
                     content: '원';
                     display: inline-block;
                     font-size: 16px;
@@ -2145,7 +2464,8 @@
               }
             }
           }
-          .banner-area{
+
+          .banner-area {
             padding: 24px;
             font-size: 16px;
             color: var(--text-01);
@@ -2156,22 +2476,25 @@
         }
 
         /*정기지출 리스트*/
-        &.regular-expenditure-list{
+        &.regular-expenditure-list {
           padding: 10px 0 0;
-          >li{
-            .total{
+
+          > li {
+            .total {
               border: none;
               padding-bottom: 10px;
             }
           }
         }
 
-        +.btn-wrap{
+        + .btn-wrap {
           padding: 0 20px 30px;
           background: #fff;
-          .btn{
+
+          .btn {
             margin-bottom: 14px;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-bottom: 0;
             }
           }
@@ -2179,34 +2502,40 @@
       }
 
       /*할부내역*/
-      .installment-history-list{
+      .installment-history-list {
         padding: 20px 20px 30px;
         min-height: calc(100vh - 208px);
-        >li{
+
+        > li {
           background: #fff;
           border-radius: 10px;
           padding: 20px;
           margin-bottom: 20px;
-          &:last-of-type{
+
+          &:last-of-type {
             margin-bottom: 0;
           }
-          >.total{
+
+          > .total {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 20px;
             border-bottom: 1px solid #efefef;
-            .title{
+
+            .title {
               font-size: 15px;
               color: var(--text-01);
               font-family: var(--font3);
             }
-            .sum{
+
+            .sum {
               font-size: 18px;
               color: var(--text-01);
               font-family: var(--font5);
               font-weight: 600;
-              &:after{
+
+              &:after {
                 content: '원';
                 display: inline-block;
                 font-size: 13px;
@@ -2216,39 +2545,48 @@
             }
           }
         }
-        .details-history{
-          .item-list{
+
+        .details-history {
+          .item-list {
             padding: 15px 0;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-bottom: 0;
             }
-            .group{
+
+            .group {
               display: flex;
               justify-content: space-between;
               align-items: flex-start;
-              .box{
+
+              .box {
                 margin-bottom: 0;
-                .img{
+
+                .img {
                   width: 40px;
                   height: 40px;
                   display: inline-block;
                   vertical-align: top;
                   margin-right: 10px;
                   margin-top: 5px;
-                  img{
+
+                  img {
                     width: 100%;
                     height: auto;
                   }
-                  .icon{
+
+                  .icon {
                     width: 40px;
                     height: 40px;
                   }
                 }
-                .info{
+
+                .info {
                   display: inline-block;
                   position: relative;
-                  .place{
-                    span{
+
+                  .place {
+                    span {
                       overflow: hidden;
                       white-space: nowrap;
                       text-overflow: ellipsis;
@@ -2259,13 +2597,15 @@
                       vertical-align: sub;
                     }
                   }
-                  .amount{
+
+                  .amount {
                     font-size: 18px;
                     position: relative;
                     font-family: var(--font4);
                     display: block;
                     font-weight: 500;
-                    &:after{
+
+                    &:after {
                       content: '원';
                       display: inline-block;
                       font-size: 17px;
@@ -2274,12 +2614,13 @@
                   }
                 }
               }
-              .round{
+
+              .round {
                 display: inline-block;
                 font-size: 11px;
                 color: #3968d3;
                 background: #eff8ff;
-                padding:1px 6px 3px;
+                padding: 1px 6px 3px;
                 border-radius: 6px;
                 height: 19px;
                 margin-top: 11px;
@@ -2287,7 +2628,8 @@
                 font-family: var(--font2);
               }
             }
-            .hashtag{
+
+            .hashtag {
               font-size: 12px;
               color: var(--text-03);
               padding-left: 50px;
@@ -2302,39 +2644,46 @@
         }
 
         /*카테고리*/
-        &.usage-category-list{
-          >li{
+        &.usage-category-list {
+          > li {
             padding: 18px 20px;
-            .details-history{
-              .item-list{
+
+            .details-history {
+              .item-list {
                 margin-bottom: 0;
-                .box{
-                  .icon{
+
+                .box {
+                  .icon {
                     margin-top: 4px;
                   }
-                  .info{
-                    .category{
+
+                  .info {
+                    .category {
                       font-size: 15px;
                       color: var(--text-01);
                       font-family: var(--font3);
                       display: block;
                     }
-                    .budget{
+
+                    .budget {
                       font-size: 14px;
                       color: var(--text-03);
                       font-family: var(--font1);
-                      span{
+
+                      span {
                         font-family: var(--font4);
                       }
                     }
                   }
                 }
-                .category-amount{
+
+                .category-amount {
                   font-size: 18px;
                   font-family: var(--font4);
                   position: relative;
                   margin-top: 9px;
-                  &:after{
+
+                  &:after {
                     content: '원';
                     display: inline-block;
                     font-size: 13px;
@@ -2343,6 +2692,7 @@
                   }
                 }
               }
+
               .bar-graph {
                 display: block;
                 position: relative;
@@ -2360,10 +2710,12 @@
                   left: 0;
                   border-radius: 66px;
                   margin-bottom: 6px;
-                  &.color-purple{
+
+                  &.color-purple {
                     background-color: #7c4ce8;
                   }
-                  &.color-pink{
+
+                  &.color-pink {
                     background-color: #cc61ed;
                   }
                 }
@@ -2372,22 +2724,25 @@
           }
 
           /*그 외 카테고리*/
-          &.etc-category-list{
-            >li{
+          &.etc-category-list {
+            > li {
               padding: 18px 0;
               margin-bottom: 0;
-              .details-history{
-                .item-list{
-                  .category-amount{
+
+              .details-history {
+                .item-list {
+                  .category-amount {
                     padding-right: 14px;
-                    &:after{
+
+                    &:after {
                       content: '원';
                       display: inline-block;
                       font-size: 13px;
                       font-family: var(--font2);
                       margin-left: 1px;
                     }
-                    &:before{
+
+                    &:before {
                       content: '';
                       display: inline-block;
                       background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
@@ -2407,26 +2762,32 @@
           }
 
           /*카테고리 상세페이지*/
-          &.category-details{
+          &.category-details {
             padding: 30px 20px;
-            >li{
+
+            > li {
               padding: 0;
               margin-bottom: 40px;
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
-              .day{
+
+              .day {
                 margin-bottom: 0;
               }
-              .details-history{
-                .item-list{
+
+              .details-history {
+                .item-list {
                   padding: 16px 0 15px;
                   display: block;
-                  .box{
-                    .info{
+
+                  .box {
+                    .info {
                       width: calc(100% - 55px);
-                      .place{
-                        span{
+
+                      .place {
+                        span {
                           max-width: 100%;
                         }
                       }
@@ -2434,7 +2795,8 @@
                   }
                 }
               }
-              .empty{
+
+              .empty {
                 height: auto;
                 padding-top: 70px;
               }
@@ -2444,33 +2806,40 @@
           }
 
           /*카테고리 변경*/
-          &.category-change{
+          &.category-change {
             padding: 20px 20px 120px;
-            >li{
+
+            > li {
               padding: 0;
               margin-bottom: 40px;
-              &.month{
+
+              &.month {
                 font-size: 24px;
                 font-family: var(--font3);
                 color: var(--text-01);
                 margin-bottom: 20px;
               }
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
-              .sub-title{
+
+              .sub-title {
                 font-size: 15px;
                 font-family: var(--font3);
                 color: var(--text-01);
               }
-              .details-history{
-                .item-list{
+
+              .details-history {
+                .item-list {
                   padding: 16px 0 15px;
-                  .box{
+
+                  .box {
                     display: flex;
-                    .info{
-                      .place{
-                        span{
+
+                    .info {
+                      .place {
+                        span {
                           max-width: 200px;
                         }
                       }
@@ -2478,15 +2847,18 @@
                   }
                 }
               }
-              .empty{
+
+              .empty {
                 height: auto;
                 padding-top: 70px;
               }
             }
-            +.btn-wrap{
+
+            + .btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
-              &.active{
+
+              &.active {
                 bottom: 0;
                 transition: bottom 0.5s;
               }
@@ -2496,34 +2868,42 @@
           }
 
           /*카테고리 편집*/
-          &.category-edit{
+          &.category-edit {
             padding: 20px 20px 110px;
-            >li{
+
+            > li {
               padding: 0;
               margin-bottom: 40px;
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
-              .sub-title{
+
+              .sub-title {
                 font-size: 15px;
                 font-family: var(--font3);
                 color: var(--text-01);
               }
-              .details-history{
-                .item-list{
+
+              .details-history {
+                .item-list {
                   margin-bottom: 0;
                   padding: 16px 0;
                   border-bottom: 1px solid #efefef;
                   border-radius: 0;
-                  .box{
-                    .icon{
+
+                  .box {
+                    .icon {
                       vertical-align: middle;
                     }
-                    .info{
+
+                    .info {
                       vertical-align: middle;
-                      .category{
+
+                      .category {
                         font-size: 16px;
-                        .badge{
+
+                        .badge {
                           background: #f4efff;
                           color: #6839d3;
                           font-size: 11px;
@@ -2534,7 +2914,8 @@
                           bottom: 2px;
                         }
                       }
-                      .belong{
+
+                      .belong {
                         font-size: 14px;
                         font-family: var(--font1);
                         color: var(--text-03);
@@ -2545,17 +2926,20 @@
               }
 
             }
-            +.btn-wrap{
+
+            + .btn-wrap {
               background: #fff;
             }
           }
         }
 
-        +.btn-wrap{
+        + .btn-wrap {
           padding: 0 20px 30px;
-          .btn{
+
+          .btn {
             margin-bottom: 14px;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-bottom: 0;
             }
           }
@@ -2563,10 +2947,11 @@
       }
 
       /*상세내역*/
-      .account-detail-wrap{
-        .info-wrap{
+      .account-detail-wrap {
+        .info-wrap {
           margin-top: 0;
-          .title{
+
+          .title {
             font-size: 18px;
             color: var(--text-01);
             font-family: var(--font3);
@@ -2575,54 +2960,66 @@
             display: flex;
             align-items: center;
             line-height: 26px;
-            .img{
+
+            .img {
               width: 40px;
               height: 40px;
               display: inline-block;
               margin-right: 14px;
-              img{
+
+              img {
                 width: 100%;
                 height: auto;
               }
             }
-            .icon{
+
+            .icon {
               width: 40px;
               height: 40px;
             }
           }
-          .info-list{
+
+          .info-list {
             padding: 15px 0;
-            .item{
+
+            .item {
               padding: 15px 0;
-              .tit{
+
+              .tit {
                 font-size: 15px;
                 color: #737183;
                 font-family: var(--font1);
               }
-              .val{
+
+              .val {
                 font-size: 15px;
                 color: var(--text-01);
                 font-family: var(--font2);
                 max-width: 225px;
-                .ico_list_arrow_small{
+
+                .ico_list_arrow_small {
                   background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                   display: inline-block;
                   width: 6px;
                   height: 16px;
                   margin-left: 8px;
                 }
-                &.color-gray{
+
+                &.color-gray {
                   color: #c2c1cc;
                   font-family: var(--font1);
                 }
-                &.color-red{
+
+                &.color-red {
                   color: #f21730;
                 }
+
                 /* * */
-                .color-red{
+                .color-red {
                   color: #f21730;
                 }
-                input{
+
+                input {
                   width: 211px;
                   height: unset;
                   padding: 0;
@@ -2632,22 +3029,25 @@
                   font-family: var(--font2);
                   color: var(--text-01);
 
-                  &:focus-visible{
+                  &:focus-visible {
                     outline: none;
                   }
-                  &::placeholder{
+
+                  &::placeholder {
                     font-size: 15px;
                     color: #c2c1cc;
                     font-family: var(--font1);
                     font-weight: normal;
                   }
-                  +.ico_list_arrow_small{
+
+                  + .ico_list_arrow_small {
                     margin-left: 4px;
                   }
                 }
               }
             }
-            +.schedule{
+
+            + .schedule {
               font-size: 16px;
               color: var(--text-01);
               font-family: var(--font2);
@@ -2655,7 +3055,8 @@
               justify-content: space-between;
               padding: 30px 0 0;
               border-top: 1px solid #efefef;
-              .ico_list_arrow_small{
+
+              .ico_list_arrow_small {
                 background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                 display: inline-block;
                 width: 6px;
@@ -2667,29 +3068,35 @@
 
         }
       }
+
       /*최근 거래내역*/
-      .recent-transactions-wrap{
+      .recent-transactions-wrap {
         padding: 30px 20px;
-        .info-wrap{
+
+        .info-wrap {
           margin-top: 0;
-          .title{
+
+          .title {
             font-size: 15px;
             color: var(--text-02);
             font-family: var(--font1);
             margin-bottom: 10px;
           }
-          .info-list{
-            .item{
+
+          .info-list {
+            .item {
               padding: 15px 0;
               display: flex;
               justify-content: space-between;
               align-items: flex-start;
-              .tit{
+
+              .tit {
                 font-size: 16px;
                 color: var(--text-01);
                 font-family: var(--font2);
                 word-break: keep-all;
-                .day{
+
+                .day {
                   display: block;
                   font-size: 14px;
                   color: var(--text-03);
@@ -2698,7 +3105,8 @@
 
                 }
               }
-              .val{
+
+              .val {
                 font-size: 15px;
                 color: var(--text-01);
                 font-family: var(--font4);
@@ -2706,7 +3114,8 @@
                 margin-top: 29px;
                 text-align: right;
                 font-weight: 500;
-                span{
+
+                span {
                   font-size: 14px;
                   font-family: var(--font2);
                 }
@@ -2716,25 +3125,31 @@
 
         }
       }
-      .box_my_income_add{
+
+      .box_my_income_add {
         padding-bottom: 30px;
-        .input-byte{
+
+        .input-byte {
           display: none;
           bottom: 13px;
           right: 6px;
           top: unset;
           transform: unset;
-          .byte{
+
+          .byte {
             font-size: 14px;
           }
-          .total{
+
+          .total {
             font-size: 14px;
           }
         }
-        .custom-light{
-          &.monetary-unit{
+
+        .custom-light {
+          &.monetary-unit {
             position: relative;
-            &:after{
+
+            &:after {
               content: '원';
               clear: both;
               display: inline-block;
@@ -2743,22 +3158,26 @@
               color: var(--text-01);
               font-family: var(--font1);
               right: 5px;
-              top:35px;
+              top: 35px;
             }
-            .sub-desc{
+
+            .sub-desc {
               font-size: 12px;
               font-family: var(--font1);
               color: var(--text-point-color);
               padding: 5px 5px 0;
               display: none;
             }
-            input{
+
+            input {
               padding-right: 20px;
             }
           }
-          &.select-category{
+
+          &.select-category {
             position: relative;
-            &:after{
+
+            &:after {
               content: '';
               clear: both;
               display: inline-block;
@@ -2769,43 +3188,51 @@
               width: 18px;
               height: 18px;
             }
-            input{
+
+            input {
               padding-right: 20px;
               min-width: 100%;
             }
           }
-          input{
-            &::placeholder{
+
+          input {
+            &::placeholder {
               color: #c2c1cc;
               font-family: var(--font1);
             }
-            &:read-only{
+
+            &:read-only {
               border-color: #e2e3e6;
             }
           }
-          select{
-            &:not(:focus){
+
+          select {
+            &:not(:focus) {
               color: var(--text-01);
             }
           }
-          .title{
+
+          .title {
             font-size: 14px;
             color: var(--text-02);
             font-family: var(--font2);
             margin-bottom: 4px;
           }
         }
-        .btn_area{
+
+        .btn_area {
           padding-top: 26px;
         }
-        .confirm_wrap{
+
+        .confirm_wrap {
           position: fixed;
           width: 100%;
           bottom: 0;
           right: 0;
           left: 0;
           display: none;
-          .btn{
+
+          .btn {
             border-radius: 0;
           }
 
@@ -2813,23 +3240,27 @@
       }
 
       /*지출 스케줄 변경*/
-      .schedule-change-wrap{
+      .schedule-change-wrap {
         padding: 20px 20px 150px;
-        .info-list{
-          .item{
+
+        .info-list {
+          .item {
             margin-bottom: 30px;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-bottom: 0;
             }
-            .day{
+
+            .day {
               font-size: 14px;
               color: var(--text-02);
               font-family: var(--font2);
               margin-bottom: 4px;
               display: inline-block;
             }
-            .custom-light{
-              &:after{
+
+            .custom-light {
+              &:after {
                 content: '원';
                 clear: both;
                 display: inline-block;
@@ -2838,8 +3269,9 @@
                 color: var(--text-01);
                 font-family: var(--font1);
                 right: 5px;
-                top:10px;
+                top: 10px;
               }
+
               .sub-desc {
                 font-size: 12px;
                 font-family: var(--font1);
@@ -2850,20 +3282,22 @@
             }
           }
         }
-        .btn-wrap{
+
+        .btn-wrap {
           padding: 0 20px 30px;
           background: #fff;
         }
       }
 
       /*지출수단 계좌 -카드명세서*/
-      &.card-statement{
-        .account-detail-wrap{
-          .info-wrap{
-            .info-list{
+      &.card-statement {
+        .account-detail-wrap {
+          .info-wrap {
+            .info-list {
               padding: 5px 0 15px;
-              .item{
-                .val{
+
+              .item {
+                .val {
                   color: var(--text-01);
                   font-family: var(--font1);
                 }
@@ -2871,31 +3305,37 @@
             }
           }
         }
-        .usage-history-list{
-          &.regular-expenditure-list{
-            .empty{
+
+        .usage-history-list {
+          &.regular-expenditure-list {
+            .empty {
               padding: 40px 40px 80px;
               height: unset;
             }
-            .total2{
+
+            .total2 {
               display: block;
               padding-bottom: 20px;
               border-bottom: 1px solid #efefef;
-              .title{
+
+              .title {
                 display: block;
                 font-size: 16px;
                 font-family: var(--font1);
               }
-              .sum{
+
+              .sum {
                 display: block;
                 font-size: 24px;
                 font-family: var(--font4);
-                &:after{
+
+                &:after {
                   font-size: 16px;
                   font-family: var(--font3);
                 }
               }
             }
+
             .spending-list {
               display: flex;
               flex-direction: column-reverse;
@@ -2915,7 +3355,8 @@
                   color: var(--text-03);
                   font-family: var(--font4);
                   margin-top: 3px;
-                  .bar{
+
+                  .bar {
                     width: 1px;
                     height: 10px;
                     background-color: var(--text-03);
@@ -2986,7 +3427,7 @@
                   }
 
                   /*가맹점명 미동의*/
-                  &.disagree{
+                  &.disagree {
                     display: inline-block;
                     width: unset;
                     font-family: var(--font1);
@@ -3011,17 +3452,20 @@
                     font-family: var(--font2);
                     font-size: 16px;
                   }
-                  &.cancel_line{
+
+                  &.cancel_line {
                     color: var(--text-04);
                     font-family: var(--font5);
-                    text-decoration:line-through;
+                    text-decoration: line-through;
                   }
                 }
               }
             }
-            +.btn-bill{
+
+            + .btn-bill {
               padding: 0 40px 60px;
-              .btn-outline-purple{
+
+              .btn-outline-purple {
                 border-color: var(--text-point-color);
                 color: var(--text-point-color);
                 background: #fff;
@@ -3033,107 +3477,129 @@
       }
 
       /*현금흐름*/
-      &.cash-flow{
-        .ico_list_arrow_small{
+      &.cash-flow {
+        .ico_list_arrow_small {
           background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
           display: inline-block;
           width: 6px;
           height: 16px;
           margin-left: 8px;
         }
-        >.empty{
+
+        > .empty {
           padding-bottom: 0;
         }
-        .title-area{
+
+        .title-area {
           padding: 12px 20px 0;
-          .title{
+
+          .title {
             font-size: 18px;
             font-family: var(--font1);
             color: var(--text-01);
             margin-bottom: 10px;
-            span{
+
+            span {
               font-family: var(--font3);
             }
           }
-          .desc{
+
+          .desc {
             font-size: 14px;
             color: var(--text-02);
             word-break: keep-all;
           }
-          .img{
+
+          .img {
             padding-top: 20px;
             margin-bottom: 30px;
-            img{
+
+            img {
               width: 100%;
               height: auto;
             }
           }
         }
+
         .flow-list {
           padding: 0 20px 120px;
+
           .item {
             display: flex;
             justify-content: space-between;
-            padding:20px;
+            padding: 20px;
             background: #f7f8fc;
             border-radius: 10px;
             margin-bottom: 14px;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-bottom: 0;
             }
-            &.no-bg{
+
+            &.no-bg {
               background: none;
               border: 1px solid #efefef;
             }
 
-            .tit{
+            .tit {
               font-size: 15px;
               font-family: var(--font1);
               color: var(--text-02);
             }
-            .amount{
+
+            .amount {
               font-size: 15px;
               font-family: var(--font5);
               color: var(--text-01);
-              em{
+
+              em {
                 font-family: var(--font2);
               }
             }
           }
         }
-        .btn-area{
+
+        .btn-area {
           background: #fff;
         }
-        .usage-history-list{
-          &.usage-category-list{
-            &.category-change{
-              >li{
+
+        .usage-history-list {
+          &.usage-category-list {
+            &.category-change {
+              > li {
                 margin-bottom: 30px;
-                &:last-of-type{
+
+                &:last-of-type {
                   margin-bottom: 0;
                 }
               }
-              .month{
+
+              .month {
                 font-size: 20px;
                 margin-bottom: 10px;
               }
-              .details-history{
-                .box{
+
+              .details-history {
+                .box {
                   align-items: center;
-                  label{
+
+                  label {
                     margin-right: 16px;
                   }
-                  .info{
-                    .place{
+
+                  .info {
+                    .place {
                       display: block;
                     }
-                    .amount{
+
+                    .amount {
                       display: inline-block;
                     }
                   }
                 }
-                .badge{
-                  &.badge-purple{
+
+                .badge {
+                  &.badge-purple {
                     color: #6839d3;
                     background: #f4efff;
                   }
@@ -3146,29 +3612,32 @@
       }
 
       /*계좌지출*/
-      &.account-spending{
-        .empty{
+      &.account-spending {
+        .empty {
           height: calc(100vh - 160px);
           padding-bottom: 0;
         }
       }
 
       /*지출수단 -카드*/
-      &.card-spending{
-        .empty{
+      &.card-spending {
+        .empty {
           height: calc(100vh - 233px);
           padding-bottom: 0;
         }
-        .usage-history-list{
-          .details-history{
-            .item-list{
+
+        .usage-history-list {
+          .details-history {
+            .item-list {
               padding: 0;
-              .group{
-                .box{
+
+              .group {
+                .box {
                   align-items: center;
                 }
-                .info{
-                  .tit{
+
+                .info {
+                  .tit {
                     font-size: 15px;
                     font-family: var(--font1);
                     color: var(--text-01);
@@ -3180,6 +3649,7 @@
                     font-size: 18px;
                     font-family: var(--font5);
                     line-height: 1.2;
+
                     span {
                       font-size: 18px;
                       font-family: var(--font2);
@@ -3198,6 +3668,7 @@
             border-radius: 66px;
             background-color: #f5f6f8;
             margin-top: 16px;
+
             .bar {
               display: block;
               position: absolute;
@@ -3205,37 +3676,45 @@
               top: 0;
               left: 0;
               border-radius: 66px;
-              &.color-purple{
+
+              &.color-purple {
                 background-color: #7c4ce8;
               }
-              &.color-pink{
+
+              &.color-pink {
                 background-color: #cc61ed;
               }
             }
           }
-          .numerical-value{
+
+          .numerical-value {
             padding-top: 10px;
             display: flex;
             justify-content: space-between;
-            .percent{
+
+            .percent {
               font-size: 18px;
               line-height: 1;
               font-family: var(--font5);
               color: var(--text-01);
+
               &::after {
                 content: '%';
                 font-size: 12px;
               }
             }
-            .target-amount{
+
+            .target-amount {
               font-size: 14px;
               line-height: 1;
               font-family: var(--font1);
               color: var(--text-03);
-              span{
+
+              span {
                 font-family: var(--font4);
                 padding-left: 6px;
               }
+
               &::after {
                 content: '원';
                 font-family: var(--font1);
@@ -3247,37 +3726,45 @@
       }
 
       /*지출수단 카드 - 카드명세서*/
-      &.credit-card-statement{
-        .empty{
+      &.credit-card-statement {
+        .empty {
           height: calc(100vh - 233px);
           padding-bottom: 0;
         }
-        .usage-history-list{
-          .details-history{
-            .item-list{
+
+        .usage-history-list {
+          .details-history {
+            .item-list {
               padding: 0;
-              .group{
+
+              .group {
                 padding-bottom: 20px;
                 border-bottom: 1px solid #efefef;
-                .badge{
+
+                .badge {
                   max-width: unset;
                 }
               }
-              .info-list{
+
+              .info-list {
                 padding-top: 20px;
-                .item{
+
+                .item {
                   display: flex;
                   justify-content: space-between;
                   margin-bottom: 30px;
-                  &:last-of-type{
+
+                  &:last-of-type {
                     margin-bottom: 0;
                   }
-                  .tit{
+
+                  .tit {
                     font-size: 15px;
                     color: #737183;
                     font-family: var(--font1);
                   }
-                  .val{
+
+                  .val {
                     font-size: 15px;
                     color: var(--text-01);
                     font-family: var(--font1);
@@ -3290,27 +3777,33 @@
       }
 
       /*시뮬레이션결과*/
-      &.simulation-result{
+      &.simulation-result {
         position: relative;
-        .simulation{
+
+        .simulation {
           padding: 12px 20px 30px;
-          .info-title{
+
+          .info-title {
             font-size: 18px;
             font-family: var(--font1);
             color: var(--text-01);
             margin-bottom: 30px;
-            .color-purple{
+
+            .color-purple {
               font-family: var(--font3);
               color: var(--text-point-color);
             }
-            .color-red{
+
+            .color-red {
               font-family: var(--font3);
               color: #f21730;
             }
           }
-          .swiper-slide{
+
+          .swiper-slide {
             width: 100%;
-            .period{
+
+            .period {
               font-size: 17px;
               color: var(--text-01);
               font-family: var(--font2);
@@ -3318,7 +3811,8 @@
               line-height: 40px;
               margin: 0 50px 20px;
             }
-            .graph-box{
+
+            .graph-box {
               width: 100%;
               height: 224px;
               overflow: hidden;
@@ -3331,14 +3825,17 @@
                 display: flex;
                 padding-top: 10px;
                 text-align: center;
-                .tick{
+
+                .tick {
                   flex: 1;
+
                   .day-month {
                     display: block;
                     color: var(--text-02);
                     font-size: 14px;
                     font-family: var(--font2);
-                    &.active{
+
+                    &.active {
                       color: var(--text-point-color);
                     }
                   }
@@ -3346,81 +3843,101 @@
               }
             }
           }
-          .swiper-btn{
+
+          .swiper-btn {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
             position: absolute;
             top: 23px;
-            .swiper-button{
+
+            .swiper-button {
               position: relative;
               width: 40px;
               height: 40px;
-              &:after{
+
+              &:after {
                 display: none;
               }
-              &.swiper-button-disabled{
+
+              &.swiper-button-disabled {
                 opacity: 1;
               }
-              &.swiper-button-prev{
+
+              &.swiper-button-prev {
                 background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
-                &.swiper-button-disabled{
+
+                &.swiper-button-disabled {
                   background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
                 }
               }
-              &.swiper-button-next{
+
+              &.swiper-button-next {
                 background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
-                &.swiper-button-disabled{
+
+                &.swiper-button-disabled {
                   background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
                 }
               }
             }
           }
         }
-        .current-money-list{
+
+        .current-money-list {
           padding: 10px 20px 30px;
-          li{
+
+          li {
             padding: 16px 0 15px;
-            >div{
+
+            > div {
               display: flex;
               justify-content: space-between;
               align-items: center;
-              .tit{
+
+              .tit {
                 font-size: 15px;
                 font-family: var(--font2);
                 color: var(--text-01);
               }
-              .modification{
+
+              .modification {
                 font-size: 18px;
                 font-family: var(--font5);
                 color: var(--text-01);
+
                 &::after {
                   content: '원';
                   font-family: var(--font2);
                   margin-left: 1px;
                 }
-                &.plus{
+
+                &.plus {
                   color: var(--text-point-color);
+
                   &::after {
                     color: var(--text-point-color);
                   }
                 }
               }
-              .day{
+
+              .day {
                 font-size: 14px;
                 font-family: var(--font1);
                 color: var(--text-03);
               }
-              .total{
+
+              .total {
                 font-size: 14px;
                 font-family: var(--font4);
                 color: var(--text-03);
+
                 &::before {
                   content: '잔고';
                   font-family: var(--font1);
                   margin-right: 4px;
                 }
+
                 &::after {
                   content: '원';
                   font-family: var(--font1);
@@ -3432,10 +3949,11 @@
       }
 
       /*수입계획*/
-      &.income-plan{
-        .plan-list{
+      &.income-plan {
+        .plan-list {
           padding: 0 20px;
-          li{
+
+          li {
             padding: 20px;
             background: #f7f8fc;
             border-radius: 10px;
@@ -3444,27 +3962,32 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 14px;
-            .tit{
+
+            .tit {
               font-size: 15px;
               color: var(--text-01);
               margin-bottom: 2px;
             }
-            .amount{
+
+            .amount {
               font-size: 18px;
               font-family: var(--font5);
               line-height: 1.2;
               margin-bottom: 2px;
-              &:after{
+
+              &:after {
                 content: '원';
                 display: inline-block;
                 font-family: var(--font2);
               }
             }
-            .num{
+
+            .num {
               font-size: 12px;
               color: var(--text-03);
             }
-            .badge-outline-purple{
+
+            .badge-outline-purple {
               position: relative;
               border: 1px solid #6839d3;
               border-radius: 11px;
@@ -3475,7 +3998,8 @@
               line-height: 1.5;
               font-weight: normal;
             }
-            .ico_list_arrow_small{
+
+            .ico_list_arrow_small {
               background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
               display: inline-block;
               width: 6px;
@@ -3487,20 +4011,24 @@
 
       }
 
-      &.income-total{
+      &.income-total {
         padding: 40px 20px;
-        .title-wrap{
+
+        .title-wrap {
           margin-bottom: 40px;
-          .info-title{
+
+          .info-title {
             font-size: 20px;
             font-family: var(--font3);
             color: var(--text-01);
-            .color-purple{
+
+            .color-purple {
               font-family: var(--font3);
               color: var(--text-point-color);
             }
           }
-          .sub-desc{
+
+          .sub-desc {
             font-size: 15px;
             font-family: var(--font1);
             color: var(--text-03);
@@ -3508,10 +4036,12 @@
           }
 
         }
-        .income-chart{
-          .swiper-slide{
+
+        .income-chart {
+          .swiper-slide {
             width: 100%;
-            .period{
+
+            .period {
               font-size: 17px;
               color: var(--text-01);
               font-family: var(--font2);
@@ -3519,7 +4049,8 @@
               line-height: 40px;
               margin: 0 50px 20px;
             }
-            .graph-box{
+
+            .graph-box {
               width: 100%;
               height: 224px;
               overflow: hidden;
@@ -3532,14 +4063,17 @@
                 display: flex;
                 padding-top: 10px;
                 text-align: center;
-                .tick{
+
+                .tick {
                   flex: 1;
+
                   .day-month {
                     display: block;
                     color: var(--text-02);
                     font-size: 14px;
                     font-family: var(--font2);
-                    &.active{
+
+                    &.active {
                       color: var(--text-point-color);
                     }
                   }
@@ -3547,32 +4081,40 @@
               }
             }
           }
-          .swiper-btn{
+
+          .swiper-btn {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
             position: absolute;
             top: 23px;
-            .swiper-button{
+
+            .swiper-button {
               position: relative;
               width: 40px;
               height: 40px;
-              &:after{
+
+              &:after {
                 display: none;
               }
-              &.swiper-button-disabled{
+
+              &.swiper-button-disabled {
                 opacity: 1;
               }
-              &.swiper-button-prev{
+
+              &.swiper-button-prev {
                 background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
-                &.swiper-button-disabled{
+
+                &.swiper-button-disabled {
                   background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
                 }
               }
-              &.swiper-button-next{
+
+              &.swiper-button-next {
                 background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
-                &.swiper-button-disabled{
+
+                &.swiper-button-disabled {
                   background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
                 }
               }
@@ -3582,9 +4124,10 @@
       }
     }
 
-    .btn-area{
+    .btn-area {
       padding: 0 20px 30px;
-      .btn-outline-purple{
+
+      .btn-outline-purple {
         border-radius: 6px;
         font-size: 15px;
 
@@ -3594,21 +4137,25 @@
     /*지출수단_9.5_현금흐름Tab_내역이없는경우*/
     .range-list {
       padding: 0 0 30px 0;
+
       .scope {
         display: flex;
         justify-content: space-between;
+
         .tit {
           font-size: 15px;
           font-family: var(--font3);
           color: #37354e;
 
         }
+
         .date {
           font-size: 15px;
           color: #37354e;
           font-family: var(--font4);
         }
       }
+
       .item {
         li {
           margin: 14px 0;
@@ -3617,14 +4164,17 @@
           background-color: #fff;
           display: flex;
           justify-content: space-between;
+
           .tit {
             font-size: 15px;
             color: #737183;
           }
+
           .amount {
             font-size: 16px;
             font-family: var(--font2);
             color: #37354e;
+
             .ico_list_arrow_small {
               background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
               display: inline-block;
@@ -3641,20 +4191,24 @@
 
     .history-income-list {
       position: relative;
+
       .month {
         font-size: 20px;
         font-family: var(--font3);
         color: #37354e;
         margin-bottom: 10px;
       }
+
       .item-list {
         margin-bottom: 30px;
+
         .item {
           display: flex;
           justify-content: space-between;
           align-items: center;
           height: 80px;
           position: relative;
+
           > span {
             display: flex;
             align-items: center;
@@ -3664,11 +4218,13 @@
               margin-left: 10px;
               align-items: flex-start;
               flex-direction: column;
+
               .name {
                 display: block;
                 font-size: 15px;
                 color: #37354e;
               }
+
               .amount {
                 display: block;
                 font-size: 18px;
@@ -3692,15 +4248,18 @@
       border-radius: 4px;
       background-color: #f7f8fc;
       margin-bottom: 20px;
+
       ul {
         li {
           width: 100%;
           display: flex;
           justify-content: space-between;
           margin-bottom: 14px;
+
           &:last-child {
             margin-bottom: 0;
           }
+
           span {
             font-size: 16px;
             font-family: var(--font2);
@@ -3708,6 +4267,7 @@
             line-height: 24px;
             position: relative;
             padding-left: 30px;
+
             &::before {
               content: '';
               display: inline-block;
@@ -3720,15 +4280,18 @@
               left: 3px;
               border-radius: 2px;
             }
+
             &.color-2::before {
               background-color: #ece5fc;
             }
+
             &.color-3::before {
               background: transparent url("../../img/common/ico-chart-legend.png") no-repeat center center;
               background-size: 100% auto;
             }
 
           }
+
           em {
             font-family: var(--font4);
             font-weight: bold;
@@ -3748,10 +4311,12 @@
         align-items: center;
         height: 50px;
         margin-bottom: 30px;
+
         .name {
           display: flex;
           flex-direction: column;
           width: 60%;
+
           .tit {
             font-size: 15px;
             font-family: var(--font2);
@@ -3760,20 +4325,24 @@
             white-space: nowrap;
             overflow: hidden;
           }
+
           .date {
             font-size: 14px;
             color: #9b9aa6;
           }
         }
+
         .amount {
           display: flex;
           flex-direction: column;
+
           > span {
             font-size: 18px;
             font-family: var(--font2);
             color: #37354e;
             text-align: right;
           }
+
           .balance {
             font-size: 14px;
             color: #9b9aa6;
@@ -3791,24 +4360,30 @@
         font-family: var(--font3);
       }
     }
+
     .list-category {
       margin-bottom: 40px;
+
       &-line {
         .item {
           border-bottom: 1px solid #efefef;
+
           .info {
             width: calc(100% - 50px)
           }
         }
       }
+
       .item {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 80px;
+
         .cate {
           display: flex;
           align-items: center;
+
           .percent {
             width: 36px;
             height: 36px;
@@ -3823,23 +4398,28 @@
             line-height: 15px;
 
           }
+
           .img {
             width: 36px;
             height: 36px;
             margin-right: 14px;
+
             img {
               width: 100%;
               height: auto;
             }
           }
+
           .info {
             display: flex;
             flex-direction: column;
+
             .tit {
               font-size: 15px;
               font-family: var(--font3);
               color: #37354e;
             }
+
             .desc {
               font-size: 14px;
               color: #9b9aa6;
@@ -3847,18 +4427,21 @@
             }
           }
         }
+
         .amount {
           display: flex;
           align-items: center;
 
           height: 44px;
+
           span {
             display: inline-block;
             font-size: 18px;
             font-family: var(--font2);
             color: #37354e;
             text-align: right;
-            &::after{
+
+            &::after {
               content: '원';
               font-size: 13px;
               font-family: var(--font2);
@@ -3871,7 +4454,8 @@
             display: inline-block;
             margin-top: 2px;
             margin-left: 5px;
-          };
+          }
+        ;
         }
       }
     }
@@ -3884,10 +4468,12 @@
    */
   .amount-wrap {
     padding: 30px 20px 10px;
+
     .btn-wrap {
       padding-top: 10px;
       padding-bottom: 20px;
     }
+
     .bar-graph {
       display: block;
       position: relative;
@@ -3896,7 +4482,8 @@
       border-radius: 13px;
       background-color: #f1f1f4;
       margin-bottom: 50px;
-      >.percent{
+
+      > .percent {
         position: absolute;
         left: 8px;
         top: 2px;
@@ -3913,13 +4500,16 @@
         top: 0;
         left: 0;
         border-radius: 13px;
-        &.color-purple{
+
+        &.color-purple {
           background-color: #7c4ce8;
         }
-        &.color-pink{
+
+        &.color-pink {
           background-color: #cc61ed;
         }
-        .percent{
+
+        .percent {
           position: absolute;
           right: 10px;
           top: 4px;
@@ -3928,12 +4518,14 @@
           font-family: var(--font7);
           font-weight: bold;
           color: #fff;
+
           &.zero {
             color: #737183;
           }
         }
       }
     }
+
     .amount-list {
       //margin-bottom: 20px;
       .title {
@@ -3942,16 +4534,19 @@
         border-bottom: 1px solid #efefef;
         margin-bottom: 30px;
         padding-bottom: 30px;
+
         .tit {
           font-size: 17px;
           font-family: var(--font3);;
           color: var(--text-01);
         }
+
         .val {
           font-size: 18px;
           font-family: var(--font3);;
           color: var(--text-01);
-          .ico_list_arrow_small{
+
+          .ico_list_arrow_small {
             background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
             display: inline-block;
             width: 6px;
@@ -3960,6 +4555,7 @@
           }
         }
       }
+
       .info-list {
         .item {
           margin-bottom: 20px;
@@ -3969,20 +4565,23 @@
           .tit {
             font-size: 15px;
             color: #737183;
+
             &-sm {
               font-size: 14px;
             }
+
             em {
               font-size: 12px;
               color: #9b9aa6;
             }
           }
+
           .val {
             font-size: 15px;
             color: #37354e;
             font-family: var(--font2);
 
-            .ico_list_arrow_small{
+            .ico_list_arrow_small {
               background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
               display: inline-block;
               width: 6px;
@@ -3990,6 +4589,7 @@
               margin-left: 8px;
             }
           }
+
           .txt-limit {
             display: block;
             text-align: right;
@@ -3999,25 +4599,31 @@
             color: var(--text-04);
             margin-right: 8px;
           }
+
           &.text-lg {
             margin-bottom: 20px;
+
             .tit {
               font-size: 17px;
               font-family: var(--font3);
               color: var(--text-01);
             }
+
             .val {
               font-size: 18px;
               font-family: var(--font3);
               color: var(--text-01);
             }
           }
+
           &-memo {
             display: block;
+
             textarea {
               width: 100%;
               height: auto !important;
             }
+
             .memo {
               width: 100%;
               font-size: 15px;
@@ -4035,6 +4641,7 @@
             margin-top: -10px;
             position: relative;
             margin-bottom: 40px;
+
             input {
               width: 100%;
               display: inline-block;
@@ -4057,6 +4664,7 @@
                 color: #c2c1cc;
               }
             }
+
             textarea {
               width: 100%;
               height: 100px;
@@ -4072,10 +4680,11 @@
               border-radius: 0;
               background-color: #ffffff;
               //placeholder color
-                &::-webkit-input-placeholder {
-                    color: #c2c1cc;
-                }
+              &::-webkit-input-placeholder {
+                color: #c2c1cc;
+              }
             }
+
             .won {
               position: absolute;
               right: -2px;
@@ -4098,6 +4707,7 @@
       color: var(--text-01);
       position: relative;
       font-family: var(--font3);
+
       .regend {
         font-family: var(--font1);
         position: absolute;
@@ -4111,6 +4721,7 @@
     .graph {
       margin-bottom: 10px;
       position: relative;
+
       &-chart {
         //padding-top: 20px;
         .chart {
@@ -4121,10 +4732,11 @@
           z-index: 200;
         }
       }
+
       .stick {
         position: relative;
 
-        >div {
+        > div {
           width: 42px;
           border-radius: 4px;
           background-color: #ece5fc;
@@ -4135,19 +4747,23 @@
           }
 
           &:nth-child(1) {
-            left: calc( 10% - 21px);
+            left: calc(10% - 21px);
           }
+
           &:nth-child(2) {
-            left: calc( 30% - 21px);
+            left: calc(30% - 21px);
           }
+
           &:nth-child(3) {
-            left: calc( 50% - 21px);
+            left: calc(50% - 21px);
           }
+
           &:nth-child(4) {
-            left: calc( 70% - 21px);
+            left: calc(70% - 21px);
           }
+
           &:nth-child(5) {
-            left: calc( 90% - 21px);
+            left: calc(90% - 21px);
           }
 
           .text {
@@ -4159,12 +4775,15 @@
             font-family: var(--font2);
             color: #737183;
           }
+
           &.active {
             background-color: #7c4ce8;
+
             .text {
               color: #6839d3;
               font-family: var(--font2);
             }
+
             em {
               color: #6839d3;
               font-family: var(--font2);
@@ -4172,20 +4791,23 @@
           }
 
 
-
         }
+
         &-disabeled {
-          >div {
+          > div {
             background-color: #f0f1f5 !important;
           }
         }
+
         &-minus {
-          >div {
+          > div {
             border-radius: 4px 4px 0 0;
+
             &.minus {
               border-radius: 0 0 4px 4px;
             }
           }
+
           &::after {
             content: "";
             position: absolute;
@@ -4197,29 +4819,35 @@
             opacity: 0.3;
           }
         }
+
         &-half {
-          >div {
+          > div {
             width: 30px;
             border-radius: 4px;
             background-color: #ece5fc;
             position: absolute;
 
             &:nth-child(1) {
-              left: calc( 10% - 15px);
+              left: calc(10% - 15px);
             }
+
             &:nth-child(2) {
-              left: calc( 30% - 15px);
+              left: calc(30% - 15px);
             }
+
             &:nth-child(3) {
-              left: calc( 50% - 15px);
+              left: calc(50% - 15px);
             }
+
             &:nth-child(4) {
-              left: calc( 70% - 15px);
+              left: calc(70% - 15px);
             }
+
             &:nth-child(5) {
-              left: calc( 90% - 15px);
+              left: calc(90% - 15px);
             }
           }
+
           &::before {
             content: '';
             position: absolute;
@@ -4232,32 +4860,39 @@
           }
         }
       }
+
       .month {
         position: relative;
         display: flex;
         justify-content: space-between;
         padding-top: 10px;
         height: 40px;
+
         em {
           width: 42px;
           font-size: 14px;
           color: #37354e;
           text-align: center;
           position: absolute;
+
           &:nth-child(1) {
-            left: calc( 10% - 21px);
+            left: calc(10% - 21px);
           }
+
           &:nth-child(2) {
-            left: calc( 30% - 21px);
+            left: calc(30% - 21px);
           }
+
           &:nth-child(3) {
-            left: calc( 50% - 21px);
+            left: calc(50% - 21px);
           }
+
           &:nth-child(4) {
-            left: calc( 70% - 21px);
+            left: calc(70% - 21px);
           }
+
           &:nth-child(5) {
-            left: calc( 90% - 21px);
+            left: calc(90% - 21px);
           }
 
         }
@@ -4269,14 +4904,17 @@
       border-radius: 10px;
       background-color: #f7f8fc;
       margin-bottom: 24px;
+
       span {
         font-size: 14px;
         color: #737183;
       }
     }
+
     .memo-box {
       padding: 0 20px;
       border-radius: 10px;
+
       span {
         font-size: 14px;
         color: #737183;
@@ -4290,6 +4928,7 @@
       font-size: 13px;
     }
   }
+
   /**
    * 2022.10.18
    expenditure-calendar
@@ -4297,8 +4936,10 @@
   .expenditure-calendar {
     padding-top: 10px;
     padding-bottom: 20px;
+
     .ex-calendar {
       margin-bottom: 20px;
+
       .box-ex-calendar-header {
         display: flex;
         justify-content: space-between;
@@ -4314,9 +4955,8 @@
           }
 
 
-
-
         }
+
         .filter {
           .btn-filter {
             padding: 0 13px 0 30px;
@@ -4340,6 +4980,7 @@
               left: 13px;
               transform: translateY(-50%);
             }
+
             span {
               color: #6839d3;
               font-family: var(--font3);
@@ -4356,11 +4997,13 @@
           font-size: 13px;
           font-family: var(--font1);
         }
+
         .fc-day-number {
           color: #737183 !important;
           font-size: 15px;
           font-family: var(--font1);
         }
+
         .fc-today .fc-day-number {
           width: 26px;
           height: 26px;
@@ -4374,6 +5017,7 @@
           left: 50%;
           transform: translate(-50%, -35%);
         }
+
         .fc-day-target .fc-day-number {
           width: 26px;
           height: 26px;
@@ -4394,6 +5038,7 @@
               color: var(--color-point-secondary) !important;
             }
           }
+
           &-todo {
             .fc-content {
               .fc-title {
@@ -4402,12 +5047,14 @@
             }
           }
         }
+
         .minus-data {
           .fc-content {
             .fc-title {
               color: var(--color-point) !important;
             }
           }
+
           &-todo {
             .fc-content {
               .fc-title {
@@ -4416,31 +5063,38 @@
             }
           }
         }
+
         tr:first-child > td > .fc-day-grid-event {
           margin-top: 2px;
           top: 0px;
         }
+
         td {
           height: 18px;
         }
+
         .fc-day-grid-event .fc-content {
           display: block;
           padding-top: 0px;
         }
       }
     }
+
     //v3_expenditure_135
     .calendar-history {
       position: relative;
       padding: 30px 20px;
+
       .date-detail {
         display: flex;
         margin-bottom: 30px;
+
         .t-day {
           height: 50px;
           width: 55px;
           border-right: 1px solid #e3e4e8;
           margin-right: 15px;
+
           .day {
             font-size: 15px;
             font-family: var(--font3);
@@ -4450,6 +5104,7 @@
             text-align: center;
             padding-right: 20px;
           }
+
           .badge-gray {
             height: 20px;
             line-height: 15px;
@@ -4463,11 +5118,13 @@
           }
 
         }
+
         .detail {
-          >div {
+          > div {
             height: 25px;
             line-height: 25px;
             font-size: 13px;
+
             .tit {
               min-width: 35px;
               display: inline-block;
@@ -4476,17 +5133,20 @@
               font-family: var(--font2);
               margin-right: 8px;
             }
+
             .price {
               display: inline-block;
               font-size: 14px;
               font-family: var(--font2);
             }
           }
+
           .plus {
             .price {
               color: var(--color-point-secondary);
             }
           }
+
           .minus {
             .price {
               color: var(--color-point);
@@ -4506,11 +5166,13 @@
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             border-radius: 10px;
+
             .time {
               font-size: 13px;
               color: #737183;
               display: block;
               margin-bottom: 10px;
+
               em {
                 height: 10px;
                 display: inline-block;
@@ -4520,14 +5182,17 @@
                 margin: 0 6px;
               }
             }
+
             .detail {
               display: flex;
               justify-content: space-between;
               font-size: 15px;
+
               span {
                 color: #37354e;
                 font-family: var(--font2);
               }
+
               .tit {
                 // 1line ellipsis
                 overflow: hidden;
@@ -4535,38 +5200,45 @@
                 white-space: nowrap;
 
               }
+
               .price {
                 white-space: nowrap;
               }
+
               .emotion {
                 position: absolute;
                 top: 20px;
                 right: 20px;
                 width: 26px;
                 height: 26px;
+
                 img {
                   width: 100%;
                   height: auto;
                 }
               }
             }
+
             .desc {
               padding-top: 14px;
               font-size: 14px;
               color: #37354e;
             }
+
             .tag {
               color: #9b9aa6;
               font-size: 13px;
               line-height: 20px;
               margin-top: 2px;
             }
+
             .swiper-container {
               padding-top: 14px;
               margin-left: -20px;
               margin-right: -20px;
+
               .img-area {
-                img{
+                img {
                   width: 100%;
                   height: auto;
                   max-width: 100%;
@@ -4574,7 +5246,8 @@
 
                 padding-bottom: 30px;
               }
-              .swiper-pagination-bullet{
+
+              .swiper-pagination-bullet {
                 width: 6px;
                 height: 6px;
                 background-color: #afaeb8;
@@ -4590,7 +5263,6 @@
         }
 
 
-
       }
 
       .story-list-calendar {
@@ -4600,37 +5272,43 @@
           color: #37354e;
           font-family: var(--font3);
           padding: 20px 0;
+
           span {
             margin-right: 4px;
             vertical-align: middle;
-           &.badge {
-             width: 34px;
-             height: 21px;
-             line-height: 15px;
-             text-align: center;
-             display: inline-block;
-             border-radius: 10px;
-             background-color: #e1e1ea;
-             color: #737183;
-             font-size: 11px;
-             font-family: var(--font2);
-           }
+
+            &.badge {
+              width: 34px;
+              height: 21px;
+              line-height: 15px;
+              text-align: center;
+              display: inline-block;
+              border-radius: 10px;
+              background-color: #e1e1ea;
+              color: #737183;
+              font-size: 11px;
+              font-family: var(--font2);
+            }
           }
         }
+
         .item {
           display: flex;
           justify-content: space-between;
+
           .user {
             width: 30px;
             height: 30px;
             margin-right: 10px;
             border-radius: 50%;
             overflow: hidden;
+
             img {
               width: 100%;
               height: 100%;
             }
           }
+
           .story {
             width: calc(100% - 40px);
             position: relative;
@@ -4640,6 +5318,7 @@
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             border-radius: 10px;
+
             .time {
               font-size: 12px;
               color: #737183;
@@ -4649,6 +5328,7 @@
               overflow: hidden;
               white-space: nowrap;
               width: calc(100% - 30px);
+
               em {
                 height: 10px;
                 display: inline-block;
@@ -4656,42 +5336,50 @@
                 color: #e3e4e8;
               }
             }
+
             .detail {
               display: flex;
               justify-content: space-between;
               font-size: 15px;
+
               span {
                 color: #37354e;
                 font-family: var(--font2);
               }
+
               .emotion {
                 position: absolute;
                 top: 20px;
                 right: 20px;
                 width: 26px;
                 height: 26px;
+
                 img {
                   width: 100%;
                   height: auto;
                 }
               }
             }
+
             .desc {
               padding-top: 14px;
               font-size: 14px;
               color: #37354e;
             }
+
             .tag {
               color: #9b9aa6;
               font-size: 14px;
               line-height: 1.5;
             }
+
             .swiper-container {
               padding-top: 14px;
               margin-left: -20px;
               margin-right: -20px;
+
               .img-area {
-                img{
+                img {
                   width: 100%;
                   height: auto;
 
@@ -4699,7 +5387,8 @@
 
                 padding-bottom: 30px;
               }
-              .swiper-pagination-bullet{
+
+              .swiper-pagination-bullet {
                 width: 6px;
                 height: 6px;
                 background-color: #afaeb8;
@@ -4720,7 +5409,8 @@
       font-size: 18px;
       color: #37354e;
       font-family: var(--font1);
-      padding: 2px 20px 0 ;
+      padding: 2px 20px 0;
+
       span {
         color: var(--color-point);
         font-family: var(--font3);
@@ -4729,17 +5419,21 @@
 
     .details-history {
       .item-list {
-        padding: 10px 0  !important;
+        padding: 10px 0 !important;
       }
+
       .box {
 
         display: flex;
         align-items: center;
+
         .info {
           padding-top: 5px;
+
           .place {
             margin-bottom: 2px;
           }
+
           .acount {
             font-size: 13px;
             color: #9b9aa6;
@@ -4747,13 +5441,16 @@
           }
         }
       }
+
       label {
         height: 25px;
       }
 
     }
+
     .sub-title {
       position: relative;
+
       label {
         position: absolute;
         top: 0;
@@ -4775,6 +5472,7 @@
       padding-bottom: 10px;
       margin-bottom: 20px;
       position: relative;
+
       .edit {
         position: absolute;
         top: 0;
@@ -4809,11 +5507,14 @@
         }
       }
     }
+
     .box-img {
       width: 100%;
+
       p {
         margin-bottom: 20px;
         border: 1px solid #ebebed;
+
         img {
           max-width: 100%;
           width: 100%;
@@ -5004,6 +5705,7 @@
         flex-wrap: wrap;
         width: 326px;
         margin: 10px auto 16px auto;
+
         li {
           position: relative;
           display: flex;
@@ -5017,6 +5719,7 @@
           margin-left: 14px;
           margin-bottom: 14px;
           cursor: pointer;
+
           &:nth-child(4n-3) {
             margin-left: 0;
           }
@@ -5132,11 +5835,13 @@
           }
         }
       }
+
       &.mood-complete {
         ul {
           display: block;
           text-align: left;
           width: 100%;
+
           li {
             justify-content: flex-start;
           }
@@ -5144,7 +5849,6 @@
       }
     }
   }
-
 
 
 }

@@ -30,6 +30,13 @@
         <div class="expenditure-box bg_light_gray">
             <ul class="usage-history-list">
                 <li>
+                    <p class="list-collapse">
+                        <span>지출 예정</span>
+                        <a class="btn-collapse">
+                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
+                        </a>
+                    </p>
+                    <div class="divider"></div>
                     <p class="sub-title">1일</p>
                     <ul class="details-history">
                         <li class="item-list">
@@ -128,7 +135,22 @@
         $(this).parent().addClass('active').siblings().removeClass('active')
     })
 </script>
-
+<script>
+    let $list = $('.list-collapse');
+    $list.on('click', '.btn-collapse', function (){
+        if ($(this).parent().hasClass('list-collapse-close')){
+            $list.removeClass('list-collapse-close');
+            $list.siblings('.divider').show();
+            $list.siblings('.sub-title').show();
+            $list.siblings('.details-history').show();
+        } else {
+            $list.addClass('list-collapse-close');
+            $list.siblings('.divider').hide();
+            $list.siblings('.sub-title').hide();
+            $list.siblings('.details-history').hide();
+        }
+    })
+</script>
 </body>
 </html>
 

@@ -1603,11 +1603,10 @@
 
 @keyframes modal-sticky-bottom-animation-out138{
   from {
-    height: 138px;
+    height: 0;
   }
   to {
-    height: 0;
-    display: none;
+    height: 138px;
   }
 }
 

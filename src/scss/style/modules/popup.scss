@@ -1601,6 +1601,17 @@
 }
 
 
+@keyframes modal-sticky-bottom-animation-out138{
+  from {
+    height: 138px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
+
 .modal-slide-backdrop {
   position: fixed;
   display: none;

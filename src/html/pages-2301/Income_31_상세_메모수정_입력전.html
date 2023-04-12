@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+	@@include('../include/head.html')
+	<body>
+		<div class="wrap _btnSlideOpen"></div>
+		<div class="modal-slide modal-expenditure memo-input _modalSlide">
+			<div class="modal-slide-content" style="height: 214px; animation: modal-sticky-bottom-animation214 0.5s">
+				<a href="#" class="btn-close _btnSlideClose"></a>
+				<div class="inner pb-0">
+					<div class="title">메모 입력</div>
+					<div class="custom-light _focus">
+						<input title="지출 메모" type="text" maxlength="20" onkeyup="countChar(this,'_val')" placeholder="메모를 입력해주세요" value="" />
+						<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span></div>
+					</div>
+				</div>
+				<div class="btn-wrap">
+					<a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">확인</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal-slide-backdrop"></div>
+		<script>
+			$(document).ready(function () {
+				var btnSlideOpen = $("._btnSlideOpen");
+				var btnSlideClose = $("._btnSlideClose");
+
+				btnSlideOpen.on("click", function () {
+					setTimeout(function () {
+						document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+					}, 500);
+					$("._modalSlide").addClass("up").removeClass("down");
+					$(".modal-slide-backdrop").addClass("show");
+					$("body").addClass("scrOn");
+				});
+
+				btnSlideClose.on("click", function () {
+					setTimeout(function () {
+						document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+					}, 1000);
+					$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+					$(".modal-slide-backdrop").removeClass("show");
+					$("body").removeClass("scrOn");
+				});
+
+				btnSlideOpen.trigger("click");
+			});
+			function countChar(val, target) {
+				var len = val.value.length;
+				var targetItem = $(`.${target}`);
+				var nextEle = val.nextElementSibling;
+
+				targetItem.text(len);
+
+				if (len === 0) {
+					targetItem.css("color", "#afaeb8");
+					nextEle.style.display = "none";
+				} else {
+					targetItem.css("color", "#37354e");
+					nextEle.style.display = "block";
+				}
+
+				val.addEventListener("focus", (event) => {
+					nextEle.style.display = "block";
+				});
+				val.addEventListener("blur", (event) => {
+					nextEle.style.display = "none";
+					targetBtn.hide();
+				});
+			}
+		</script>
+	</body>
+</html>

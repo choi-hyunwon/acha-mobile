@@ -3195,6 +3195,12 @@
               min-width: 100%;
             }
           }
+          &._disabled{
+            .title,
+            :disabled{
+              color:#c2c1cc;
+            }
+          }
 
           input {
             &::placeholder {
@@ -3232,6 +3238,12 @@
               .sub-desc{
                 color:#c2c1cc;
                 font-size: 13px;
+              }
+              &._disabled{
+                .title,
+                .sub-desc{
+                  color:#c2c1cc
+                }
               }
             }
           }

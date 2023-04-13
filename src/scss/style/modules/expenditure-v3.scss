@@ -1325,6 +1325,22 @@
           color: var(--text-02);
         }
       }
+
+      &.block-tab{
+        padding-left: 0;
+        padding-right: 0;
+        ul{
+          width:100%;
+          display: flex;
+        }
+        li{
+          float: none;
+          flex-grow: 1;
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
     }
 
     .expenditure-box {
@@ -3202,6 +3218,22 @@
             color: var(--text-02);
             font-family: var(--font2);
             margin-bottom: 4px;
+          }
+
+          &.switch-split{
+            display: flex;
+            flex-wrap: nowrap;
+            .wrap-title{
+              flex-grow: 1;
+              .title{
+                color:#37354e;
+                font-size: 15px;
+              }
+              .sub-desc{
+                color:#c2c1cc;
+                font-size: 13px;
+              }
+            }
           }
         }
 
@@ -5837,18 +5869,6 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

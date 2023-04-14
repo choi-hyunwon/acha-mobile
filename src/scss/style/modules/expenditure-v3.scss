@@ -3172,6 +3172,9 @@
 
             input {
               padding-right: 20px;
+              &:focus + [style*="block"] + .btn-clear-input{
+                right:20px;
+              }
             }
           }
 
@@ -3211,6 +3214,9 @@
             &:read-only {
               border-color: #e2e3e6;
             }
+            &:focus + [style*="block"] + .btn-clear-input{
+              display: inline-block;
+            }
           }
 
           select {
@@ -3246,6 +3252,19 @@
                 }
               }
             }
+          }
+
+          .btn-clear-input{
+            display: none;
+            position:absolute;
+            top:37px; //label 25 + clearbutton height 18/2
+            right:50px;
+            font-size: 0;
+            width:18px;
+            height:18px;
+            content: '';
+            background: url("../../img/common/ico_input_delete@2x.png") center center no-repeat;
+            background-size: contain;
           }
         }
 

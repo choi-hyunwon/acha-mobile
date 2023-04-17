@@ -215,6 +215,11 @@ a:hover {
   position: absolute;
   top: 23px;
   right: 25px;
+  &-relative {
+    position: relative;
+    top: -3px;
+    right: -3px;
+  }
 
   & .custom-control-label {
     padding-left: 25px;

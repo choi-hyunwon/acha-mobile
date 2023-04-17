@@ -2985,7 +2985,8 @@
 
             .item {
               padding: 15px 0;
-
+              display: flex;
+              justify-content: space-between;
               .tit {
                 font-size: 15px;
                 color: #737183;

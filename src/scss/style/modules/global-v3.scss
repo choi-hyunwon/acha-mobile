@@ -456,6 +456,33 @@
       margin-left: 2px;
     }
   }
+
+
+  .link-type  {
+    font-size: 16px;
+    color: var(--text-01);
+    font-family: var(--font2);
+    padding: 30px 20px 0;
+    border-top: 1px solid #efefef;
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      margin-bottom: 30px;
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        color: #37354e;
+        font-family: var(--font2);
+      }
+      .ico_list_arrow_small {
+        background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 5px center/contain;
+        display: inline-block;
+        width: 6px;
+        height: 24px;
+      }
+    }
+  }
 }
 
 

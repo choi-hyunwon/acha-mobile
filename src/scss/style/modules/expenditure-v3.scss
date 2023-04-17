@@ -1325,6 +1325,22 @@
           color: var(--text-02);
         }
       }
+
+      &.block-tab{
+        padding-left: 0;
+        padding-right: 0;
+        ul{
+          width:100%;
+          display: flex;
+        }
+        li{
+          float: none;
+          flex-grow: 1;
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
     }
 
     .expenditure-box {
@@ -2969,7 +2985,8 @@
 
             .item {
               padding: 15px 0;
-
+              display: flex;
+              justify-content: space-between;
               .tit {
                 font-size: 15px;
                 color: #737183;
@@ -3047,7 +3064,6 @@
                 width: 6px;
                 height: 16px;
               }
-
             }
           }
 
@@ -3156,6 +3172,9 @@
 
             input {
               padding-right: 20px;
+              &:focus + [style*="block"] + .btn-clear-input{
+                right:20px;
+              }
             }
           }
 
@@ -3179,6 +3198,12 @@
               min-width: 100%;
             }
           }
+          &._disabled{
+            .title,
+            :disabled{
+              color:#c2c1cc;
+            }
+          }
 
           input {
             &::placeholder {
@@ -3188,6 +3213,9 @@
 
             &:read-only {
               border-color: #e2e3e6;
+            }
+            &:focus + [style*="block"] + .btn-clear-input{
+              display: inline-block;
             }
           }
 
@@ -3202,6 +3230,41 @@
             color: var(--text-02);
             font-family: var(--font2);
             margin-bottom: 4px;
+          }
+
+          &.switch-split{
+            display: flex;
+            flex-wrap: nowrap;
+            .wrap-title{
+              flex-grow: 1;
+              .title{
+                color:#37354e;
+                font-size: 15px;
+              }
+              .sub-desc{
+                color:#c2c1cc;
+                font-size: 13px;
+              }
+              &._disabled{
+                .title,
+                .sub-desc{
+                  color:#c2c1cc
+                }
+              }
+            }
+          }
+
+          .btn-clear-input{
+            display: none;
+            position:absolute;
+            top:37px; //label 25 + clearbutton height 18/2
+            right:50px;
+            font-size: 0;
+            width:18px;
+            height:18px;
+            content: '';
+            background: url("../../img/common/ico_input_delete@2x.png") center center no-repeat;
+            background-size: contain;
           }
         }
 
@@ -5837,18 +5900,6 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

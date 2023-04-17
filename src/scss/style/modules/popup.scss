@@ -1697,6 +1697,103 @@
 
       .custom-light {
         margin-bottom: 50px;
+          &.monetary-unit {
+            position: relative;
+
+            &:after {
+              content: '원';
+              clear: both;
+              display: inline-block;
+              position: absolute;
+              font-size: 14px;
+              color: var(--text-01);
+              font-family: var(--font1);
+              right: 5px;
+              top: 35px;
+            }
+
+            .sub-desc {
+              font-size: 12px;
+              font-family: var(--font1);
+              color: var(--text-point-color);
+              padding: 5px 5px 0;
+              display: none;
+            }
+
+            input {
+              padding-right: 20px;
+              &:focus + [style*="block"] + .btn-clear-input{
+                right:20px;
+              }
+            }
+          }
+
+          &.select-category {
+            position: relative;
+
+            &:after {
+              content: '';
+              clear: both;
+              display: inline-block;
+              background: url("../../img/common/ico_input_arrow_open@2x.png") no-repeat right center/ contain;
+              position: absolute;
+              right: 5px;
+              bottom: 12px;
+              width: 18px;
+              height: 18px;
+            }
+
+            input {
+              padding-right: 20px;
+              min-width: 100%;
+            }
+          }
+          &._disabled{
+            .title,
+            :disabled{
+              color:#c2c1cc;
+            }
+          }
+
+          input {
+            &::placeholder {
+              color: #c2c1cc;
+              font-family: var(--font1);
+            }
+
+            &:read-only {
+              border-color: #e2e3e6;
+            }
+            &:focus + [style*="block"] + .btn-clear-input{
+              display: inline-block;
+            }
+          }
+
+          select {
+            &:not(:focus) {
+              color: var(--text-01);
+            }
+          }
+
+          .title {
+            font-size: 14px;
+            color: var(--text-02);
+            font-family: var(--font2);
+            margin-bottom: 4px;
+          }
+
+          .btn-clear-input{
+            display: none;
+            position:absolute;
+            top:12px;
+            right:50px;
+            font-size: 0;
+            width:18px;
+            height:18px;
+            content: '';
+            background: url("../../img/common/ico_input_delete@2x.png") center center no-repeat;
+            background-size: contain;
+          }
       }
 
       .desc {

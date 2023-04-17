@@ -5,7 +5,8 @@
 		<div class="wrap renewal">
 			<div class="header _sticky">
 				<a href="#" class="sprite btn_back"></a>
-				<h2>현금 수입 직접 등록</h2>
+				<h2>수입 수정하기</h2>
+                <div class="sum-area"><a href="#" class="delete">삭제</a></div>
 			</div>
 			<div class="contents expenditure">
 				<div class="expenditure-box">
@@ -14,12 +15,12 @@
 							<fieldset>
 								<div class="custom-light _focus">
 									<label class="title">수입명</label>
-									<input title="value" type="text" maxlength="12" onkeyup="countChar(this,'_val')" placeholder="수입명을 적어주세요" />
+									<input title="value" type="text" maxlength="12" onkeyup="countChar(this,'_val')" placeholder="수입명을 적어주세요" value="용돈"/>
 									<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 12</span></div>
 								</div>
 								<div class="custom-light monetary-unit _focus">
 									<label class="title">수입 금액</label>
-									<input onkeyup="countChar(this)" title="value" type="number" placeholder="금액을 입력해주세요" />
+									<input onkeyup="countChar(this)" title="value" type="number" placeholder="금액을 입력해주세요" value="12500"/>
 									<p class="sub-desc">10억원 미만까지 입력 가능</p>
 								</div>
 								<div class="custom-light select-category">
@@ -30,17 +31,29 @@
 									<label class="title">수입 일시</label>
 									<input title="value" type="datetime-local" placeholder="지출일을 입력해주세요" value="6월 25일 오후 6:54" style="padding-top: 10px" />
 								</div>
-								<div class="custom-light">
+								
+								<div class="custom-light switch-split">
+									<div class="wrap-title _disabled">
+										<p class="title">매월 수입으로 등록</p>
+										<p class="sub-desc">28일 이후 수입은 매월 28일 수입으로 적용돼요</p>
+									</div>
+									<div class="custom-switch">
+										<input type="checkbox" class="custom-control-input" id="switch1" checked="checked" disabled="disabled">
+										<label class="custom-control-label" for="switch1"></label>
+									</div>
+									<!-- </span> -->
+								</div>
+								<div class="custom-light _disabled">
 									<label class="title">입금 수단</label>
-									<input title="value" type="text" placeholder="지출명을 입력해주세요" value="현금" readonly />
+									<input title="value" type="text" placeholder="지출명을 입력해주세요" value="현금" disabled />
 								</div>
 								<div class="custom-light">
 									<label class="title">수입 메모</label>
-									<input title="value" type="text" maxlength="20" onkeyup="countChar(this,'_val')" placeholder="메모를 입력해주세요" value="" />
+									<input title="value" type="text" maxlength="20" onkeyup="countChar(this,'_val')" placeholder="메모를 입력해주세요" value="용돈인상" />
 									<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span></div>
 								</div>
 								<div class="btn_area">
-									<a class="btn btn-big btn-purple-bg btn-block disabled" href="#">현금 수입 등록</a>
+									<a class="btn btn-big btn-purple-bg btn-block" href="#">수정하기</a>
 								</div>
 							</fieldset>
 						</form>

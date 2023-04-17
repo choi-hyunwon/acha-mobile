@@ -17,14 +17,25 @@
             </p>
         </div>
         <div class="agree-wrap agree-wrap-reverse padding-default-x">
-            <div class="select-all-box">
+            <a href="#" class="select-all-box">
                 <span>전체 선택</span>
                 <label>
                     <input type="checkbox" class="filled-in">
                     <span></span>
                 </label>
-            </div>
+            </a>
         </div>
+        <script type="text/javascript">
+            $('.select-all-box').on('click', function (){
+                if ($(this).hasClass('checked')){
+                    $(this).removeClass('checked')
+                        .find('input').prop('checked', false)
+                } else {
+                    $(this).addClass('checked')
+                        .find('input').prop('checked', true)
+                }
+            })
+        </script>
 
         <div class="expenditure-box pt-0" style="padding-bottom: 80px;">
             <ul class="usage-history-list usage-category-list filter-setting  pt-0 min-height-auto" style="padding-bottom: 20px;">

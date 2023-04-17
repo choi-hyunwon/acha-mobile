@@ -1482,7 +1482,7 @@
 
         .count {
           font-size: 15px;
-          line-height: 26px;
+          line-height: 22px;
           color: #37354e;
 
           span {
@@ -1491,6 +1491,7 @@
         }
 
         .filter {
+          height: 22px;
           em {
             font-size: 14px;
             color: #737183;
@@ -1501,8 +1502,16 @@
             font-size: 14px;
             color: #737183;
             margin-left: 5px;
+            margin-top: -2px;
+            height: 22px;
+            input {
+              height: 22px;
+            }
             span {
               padding-left: 22px;
+              &::before {
+                margin-top: 0;
+              }
             }
           }
 

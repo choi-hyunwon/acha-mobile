@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">계좌</h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="text-descriptiton mb-30">
+            <p class="title">앞으로 <span>3개월간의 계좌잔고 추이</span>를<br>시뮬레이션 해보세요.</p>
+            <p class="desc">잔고가 여유로운지 부족한지 한눈에 확인할 수 있어요 😃</p>
+        </div>
+        <div class="expenditure-tab _expenditureTab">
+            <ul class="clearfix">
+                <li><a href="#">계좌지출</a></li>
+                <li class="active"><a href="#">현금흐름</a></li>
+            </ul>
+        </div>
+        <div class="expenditure-box bg_light_gray padding-default" style="min-height: calc(100vh - 254px);">
+            <div class="range-list">
+                <div class="scope">
+                    <div class="tit">조회기간 (3개월)</div>
+                    <div class="date">2022.06.23 ~ 09.23</div>
+                </div>
+                <ul class="item">
+                    <li>
+                        <span class="tit">계좌 잔고</span>
+                        <span class="amount">0원 <i class="sprite ico_list_arrow_small"></i></span>
+                    </li>
+                    <li>
+                        <span class="tit">수입예정</span>
+                        <span class="amount">0원 <i class="sprite ico_list_arrow_small"></i></span>
+                    </li>
+                    <li>
+                        <span class="tit">지출예정</span>
+                        <span class="amount">0원 <i class="sprite ico_list_arrow_small"></i></span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="btn-wrap btn-wrap-block fixed-bottom" style="padding: 0 20px 20px;">
+                <a class="btn btn-big btn-block btn-purple-bg" href="#">현금흐름 조회하기</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 일자 카테고리 탭
+    $('._expenditureTab li a').on('click', function (){
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+
+</script>
+
+</body>
+</html>
+

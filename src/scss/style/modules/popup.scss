@@ -1515,6 +1515,15 @@
   }
 }
 
+@keyframes modal-sticky-bottom-animation18-1{
+  from {
+    height: 0;
+  }
+  to {
+    height: 180px;
+  }
+}
+
 @keyframes modal-sticky-bottom-animation-out18{
   from {
     height: 272px;
@@ -3461,7 +3470,6 @@
             transition: bottom 0.5s;
           }
         }
-
       }
     }
     &.budget-category{
@@ -3629,6 +3637,28 @@
           span{
             font-family: var(--font3);
           }
+        }
+      }
+    }
+    &.upload-img{
+      &.up {
+        transition: .5s;
+        .modal-slide-content {
+          height: 180px;
+          animation: modal-sticky-bottom-animation18-1 .5s;
+        }
+      }
+      .upload-img-list{
+        display: flex;
+        .upload-img-item{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 7.5px;
+          width: 71px;
+          height: 71px;
+          border: 1px solid #efefef;
+          border-radius: 100%;
         }
       }
     }

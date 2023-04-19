@@ -5140,7 +5140,29 @@
     //v3_expenditure_135
     .calendar-history {
       position: relative;
-      padding: 30px 20px;
+      padding: 11px 20px 30px 20px;
+      
+      .filter-wrap{
+        text-align: right;
+        margin-bottom: 22px;
+        
+        p{
+          font-size: 14px;
+          color: #737183;
+          line-height: 16px;
+          
+          label{
+            vertical-align: middle;
+
+            span{
+              padding-left: 22px;
+            }
+
+          }
+
+        }
+
+      }
 
       .date-detail {
         display: flex;
@@ -5223,6 +5245,18 @@
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             border-radius: 10px;
+
+            &.uninclude{
+
+              span{
+                color: #c2c1cc !important;
+              }
+
+              img{
+                opacity: 0.5;
+              }
+
+            }
 
             .time {
               font-size: 13px;
@@ -5906,28 +5940,4 @@
       }
     }
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

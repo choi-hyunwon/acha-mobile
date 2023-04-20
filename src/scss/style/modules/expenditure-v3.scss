@@ -3181,9 +3181,9 @@
 
             input {
               padding-right: 20px;
-              &:focus + [style*="block"] + .btn-clear-input{
-                right:20px;
-              }
+            }
+            .btn-clear-input{
+              right:20px;
             }
           }
 
@@ -3223,9 +3223,6 @@
             &:read-only {
               border-color: #e2e3e6;
             }
-            &:focus + [style*="block"] + .btn-clear-input{
-              display: inline-block;
-            }
           }
 
           select {
@@ -3264,7 +3261,7 @@
           }
 
           .btn-clear-input{
-            display: none;
+            //display: none;
             position:absolute;
             top:37px; //label 25 + clearbutton height 18/2
             right:50px;

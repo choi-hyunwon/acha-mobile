@@ -5104,6 +5104,11 @@
             }
           }
         }
+        .story_tag {
+          position: absolute;
+          top: 0;
+          left: calc(50% + 8px);
+        }
 
         .minus-data {
           .fc-content {

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ko">
+<html lang="ko" xmlns="">
 @@include('../include/head.html')
 <body>
 <div class="wrap renewal">
@@ -211,6 +211,17 @@
     </div>
 </div>
 <script>
+
+    var storyTag = [
+        {
+            start: '2022-12-16'
+        },
+        {
+            start: '2022-12-20'
+        },
+    ]
+
+
     document.addEventListener('DOMContentLoaded', function () {
         var weekList = ['일', '월', '화', '수', '목', '금', '토'];
         var calendarEl = document.getElementById('calendar');
@@ -232,7 +243,22 @@
                 console.log(date.toISOString().slice(0,10));
                 console.log(jsEvent.target)
             },
+            dayRender: function (date, cell) {
+                //gallery 데이터와 일치하는 날짜에 이미지 추가
+                var theDate = $(date.el).data('date');
+                for (var i = 0; i < storyTag.length; i++) {
+                    if (theDate === storyTag[i].start) {
+                        $(date.el).addClass('has-data');
+                        $(date.el).prepend("<span class='story_tag'><img src='../../img/common/icon_tag_cal_story@2x.png' id='스토리 작성' width='8'/></span>");
+                    }
+                }
+            },
             events: [
+                {
+                    className: 'minus-data',
+                    title: '-100,000',
+                    start: '2022-12-16'
+                },
                 {
                     className: 'minus-data',
                     title: '-100,000',
@@ -370,6 +396,7 @@
         calendar.render();
     });
 </script>
+
 </body>
 </html>
 

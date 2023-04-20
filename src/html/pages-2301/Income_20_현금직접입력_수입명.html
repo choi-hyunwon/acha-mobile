@@ -80,6 +80,8 @@
 			}
 		});
 
+	</script>
+	<script>
 		function countCharDelete(val, target) {
 			var len = $(val).val().length;
 			var targetItem = $(target);
@@ -100,9 +102,11 @@
 			}
 			$(val).on("focus", function () {
 				nextEle.show();
+				$(val).parent().find('.btn-clear-input').show();
 			});
 			$(val).on("blur", function () {
 				nextEle.hide();
+				$(val).parent().find('.btn-clear-input').hide();
 			});
 		}
 

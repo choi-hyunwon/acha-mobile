@@ -1743,7 +1743,7 @@
                   span {
                     font-size: 11px;
                     color: #9992a0;
-                    padding: 3px 8px 4px 8px;
+                    margin: 3px 8px 4px 8px;
                     width: 76px;
                     border-radius: 6px;
                     text-align: center;
@@ -3187,9 +3187,9 @@
 
             input {
               padding-right: 20px;
-              &:focus + [style*="block"] + .btn-clear-input{
-                right:20px;
-              }
+            }
+            .btn-clear-input{
+              right:20px;
             }
           }
 
@@ -3229,9 +3229,6 @@
             &:read-only {
               border-color: #e2e3e6;
             }
-            &:focus + [style*="block"] + .btn-clear-input{
-              display: inline-block;
-            }
           }
 
           select {
@@ -3270,7 +3267,7 @@
           }
 
           .btn-clear-input{
-            display: none;
+            //display: none;
             position:absolute;
             top:37px; //label 25 + clearbutton height 18/2
             right:50px;

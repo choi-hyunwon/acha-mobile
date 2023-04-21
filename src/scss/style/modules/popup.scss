@@ -1773,9 +1773,6 @@
             &:read-only {
               border-color: #e2e3e6;
             }
-            &:focus + [style*="block"] + .btn-clear-input{
-              display: inline-block;
-            }
           }
 
           select {
@@ -1792,7 +1789,7 @@
           }
 
           .btn-clear-input{
-            display: none;
+            //display: none;
             position:absolute;
             top:12px;
             right:50px;
@@ -1802,6 +1799,7 @@
             content: '';
             background: url("../../img/common/ico_input_delete@2x.png") center center no-repeat;
             background-size: contain;
+            z-index: 100;
           }
       }
 

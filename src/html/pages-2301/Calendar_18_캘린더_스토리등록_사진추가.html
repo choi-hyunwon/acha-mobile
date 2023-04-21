@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap _btnSlideOpen"></div>
+<div class="modal-slide modal-expenditure change-scope upload-img _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title">업로드할 사진 추가하기</div>
+            <ul class="upload-img-list">
+                <li class="upload-img-item">
+                    <a href="#">
+                        <em class="img"><img src="../../img/common/expenditure/icon-transparent/ico_list_camera_big@2x.png" width="30" alt="사진"></em>
+                    </a>
+                </li>
+                <li class="upload-img-item">
+                    <a href="#">
+                        <em class="img"><img src="../../img/common/expenditure/icon-transparent/ico_list_album_big@2x.png" width="30" alt="이미지"></em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+
+
+/*        var list = $('.category-list');
+        var listLi = $('.category-list ul li');
+        var btn = $('.category-list .btn-wrap');
+        listLi.on('click',function (){
+            if(listLi.hasClass('active')) {
+                btn.addClass('active');
+                list.removeClass('on');
+            }else {
+                 btn.removeClass('active');
+                list.addClass('on')
+                listLi.addClass('active');
+            }
+        });*/
+
+        var list = $('.category-list');
+        var listLi = $('.category-list ul li');
+        var listLiA = $('.category-list ul li.active');
+        var btn = $('.category-list .btn-wrap');
+
+        listLi.on('click',function (){
+            let txt = $(this).find('span').html();
+
+
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+
+            }else {
+                listLi.removeClass('active');
+                $(this).addClass('active');
+                list.addClass('on');
+                btn.find('span').html(txt);
+            }
+
+                if(listLi.hasClass('active') == false) {
+                    if (listLiA.length == 0) {
+                        list.removeClass('on');
+                    }
+                }
+
+
+        });
+    })
+</script>
+</body>
+</html>

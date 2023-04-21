@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title">시뮬레이션 결과</h2>
+    </div>
+    <div class="contents expenditure">
+        <div class="text-descriptiton" style="padding-top: 12px">
+            <p class="title"><span class="f-point font-bold">잔고가 계속 여유롭네요</span><br>
+                남는 돈을 효율적으로 활용해보세요😉</p>
+        </div>
+
+        <div class="amount-wrap">
+            <div class="month-range">
+                <div class="prev"><a href="#"><img src="../../img/common/btn_graph_back@2x.png" width="40" alt="prev"></a></div>
+                <div class="range">현금흐름</div>
+                <div class="next"><a href="#"><img src="../../img/common/btn_graph_forward@2x.png" width="40" alt="prev"></a></div>
+            </div>
+            <div class="graph graph-chart">
+                <div class="chart">
+                    <canvas id="canvas" style="width: 100%;height: 200px;"></canvas>
+                </div>
+                <div class="stick stick-minus stick-half" style="height: 200px;">
+                    <div class="active" style="height: 200px; top:00px;"></div>
+                    <div class="active" style="height: 60px; top:90px;"></div>
+                    <div class="active" style="height: 70px; top:60px;"></div>
+                    <div class="active" style="height: 80px; top:80px;"></div>
+                    <div class="active" style="height: 100px; top:50px;"></div>
+                </div>
+                <div class="month">
+                    <em>6/13</em>
+                    <em>7/13</em>
+                    <em>8/13</em>
+                    <em>9/13</em>
+                    <em>10/13</em>
+                </div>
+            </div>
+            <div class="chart-legend">
+                <ul>
+                    <li>
+                        <span class="color-1">수입/잔고</span>
+                        <em>2,551,250원</em>
+                    </li>
+                    <li>
+                        <span class="color-2">지출</span>
+                        <em>2,551,250원</em>
+                    </li>
+                    <li>
+                        <span class="color-3">잔고</span>
+                        <em>8,800,000원</em>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                new Chart(document.getElementById("canvas"), {
+                    type: 'line',
+                    data: {
+                        labels: ['6/13', '7/13', '8/13', '9/13', '10/13'],
+                        datasets: [{
+                            label: '현금흐름',
+                            data: [500000,-1200000,0,1200000,800000],
+                            borderColor: '#9e99b2',
+                            backgroundColor: 'transparent',
+                            borderWidth:1,
+                            fill: false,
+                            lineTension: 0,
+                            pointStyle: 'circle',
+                            pointRadius: 5,
+                            pointBorderWidth:3,
+                            pointBackgroundColor: '#ffffff',
+                            font: {
+                                size: 12,
+                                weight: 'bold',
+                                color : '#9e99b2'
+                            },
+                            datalabels: {
+                                align: 'end',
+                                anchor: 'end',
+                                color : '#9e99b2',
+                                formatter: function(value, context) {
+                                    //number to money 1000 comma
+                                    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                                }
+                            },
+
+                        }]
+                    },
+                    options: {
+                        layout: {
+                            padding: {
+                                left: (window.outerWidth - 50) / 100 * 10,
+                                right: (window.outerWidth - 50) / 100 * 10,
+                                top: 30,
+                                bottom: 30
+                            }
+                        },
+                        responsive: false,
+                        title: {
+                            display: false,
+                        },
+                        tooltips: {
+                            mode: 'index',
+                            intersect: false,
+                        },
+                        hover: {
+                            mode: 'nearest',
+                            intersect: true
+                        },
+                        scales: {
+                            xAxes: [{
+                                display: false,
+                            }],
+                            yAxes: [{
+                                display: false,
+                                ticks: {
+                                    suggestedMin: -1200000,
+                                    suggestedMax: 1200000,
+                                }
+                            }]
+                        },
+                        legend: {
+                            display: false,
+                        },
+                    }
+                });
+                Chart.defaults.global.legend.display = false;
+            </script>
+        </div>
+
+        <div class="divider"></div>
+        <div class="expenditure-box padding-default">
+            <div class="simulator-box">
+                <ul>
+                    <li class="item">
+                        <span class="name">
+                            <span class="tit">현재 잔고</span>
+                            <span class="date">6월 14일</span>
+                        </span>
+                        <span class="amount">
+                            <span class="f-point">1,600,000원</span>
+                            <span class="balance">잔고 1,600,000원</span>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="name">
+                            <span class="tit">아파트관리비</span>
+                            <span class="date">6월 14일</span>
+                        </span>
+                        <span class="amount">
+                            <span class="f-point">1,600,000원</span>
+                            <span class="balance">잔고 1,600,000원</span>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="name">
+                            <span class="tit">유비벨록스 월급</span>
+                            <span class="date">6월 14일</span>
+                        </span>
+                        <span class="amount">
+                            <span> -600,000원</span>
+                            <span class="balance">잔고 1,600,000원</span>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="name">
+                            <span class="tit">국민카드대금</span>
+                            <span class="date">6월 14일</span>
+                        </span>
+                        <span class="amount">
+                            <span class="f-point">30,000원</span>
+                            <span class="balance">잔고 1,600,000원</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -173,6 +173,12 @@
     //margin-left: 2px;
     transform: translateY(-1px);
   }
+  // renewal 자산 상세정보 edit
+  .edit{
+    img{
+      transform: translateY(-1px);
+    }
+  }
   /**
   icon
    */
@@ -279,6 +285,7 @@
       color: var(--text-point-color);
       font-family: var(--font2);
       font-size: 11px;
+      line-height: 1;
       &:after{
         content: '';
         width: 5px;

@@ -5164,6 +5164,9 @@
 
             span{
               padding-left: 22px;
+              &:before{
+                margin-top: 0;
+              }
             }
 
           }

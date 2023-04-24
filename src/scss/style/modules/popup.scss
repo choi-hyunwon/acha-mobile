@@ -1731,9 +1731,9 @@
 
             input {
               padding-right: 20px;
-              &:focus + [style*="block"] + .btn-clear-input{
-                right:20px;
-              }
+              // &:focus + [style*="block"] + .btn-clear-input{
+              //   right:20px;
+              // }
             }
           }
 
@@ -1792,7 +1792,7 @@
             //display: none;
             position:absolute;
             top:12px;
-            right:50px;
+            right:20px; //기본값 50
             font-size: 0;
             width:18px;
             height:18px;

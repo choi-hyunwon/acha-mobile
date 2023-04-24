@@ -1730,12 +1730,13 @@
                 }
 
                 .payment-method {
+                  padding: 2px 0;
                   font-size: 11px;
                   color: #9992a0;
                   background: #eeedf0;
                   border-radius: 6px;
                   width: 76px;
-                  height: 36px;
+                  // height: 36px;
                   text-align: center;
                   display: flex;
                   align-items: center;

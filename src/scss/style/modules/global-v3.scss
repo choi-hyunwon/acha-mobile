@@ -19,6 +19,9 @@
   .f-color02 {
     color: var(--text-02) !important;
   }
+  .f-color04 {
+    color: var(--text-04) !important;
+  }
 
 
   .pt-10 {
@@ -270,7 +273,7 @@
   .badge{
     display: inline-block;
     font-size: 11px;
-    padding:3px 6px;
+    padding:5px 6px;
     border-radius: 6px;
     font-weight: 500;
     font-family: var(--font2);
@@ -332,7 +335,7 @@
 
   .badge-payment {
     width: 76px;
-    height: 22px;
+    // height: 22px;
   }
   .justify-content-between {
     display: flex !important;

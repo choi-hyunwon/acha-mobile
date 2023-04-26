@@ -10,7 +10,7 @@
 				<div class="inner pb-0" style="height: 164px">
 					<div class="title">지출 목표</div>
 					<div class="custom-light monetary-unit _focus mb-0">
-						<input onkeyup="countChar(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="" />
+						<input onkeyup="countCharDelete(this)" title="지출금액" type="number" placeholder="지출 금액을 입력해주세요" value="6000000" />
 						<p class="sub-desc">1원 이상 입력해주세요</p>
 						<button class="btn-clear-input">삭제</button>
 					</div>
@@ -57,5 +57,6 @@
 				});
 			});
 		</script>
+		@@include('../include/countCharDelete.html')
 	</body>
 </html>

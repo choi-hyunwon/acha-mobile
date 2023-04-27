@@ -2681,6 +2681,18 @@
           }
         }
       }
+      .description{
+        font-size: 14px !important;
+        padding: 12px !important;
+  
+       .agreeCheck{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: var(--color-text-default);
+       }
+  
+      }
       .ico_list_arrow_small {
         position: absolute;
         top: 50%;
@@ -2688,6 +2700,22 @@
         right: 20px;
       }
 
+
+    }
+    .description{
+      font-size: 14px !important;
+      padding: 12px !important;
+
+     .agreeCheck{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color-text-default);
+        .purple{
+          color: #6839d3;
+        }
+     }
+     
 
     }
 

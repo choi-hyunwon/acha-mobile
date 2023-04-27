@@ -2568,7 +2568,7 @@
     }
     .connection-category{
       position: relative;
-      padding: 36px 20px 20px;
+      padding: 20px;
       background: #fff;
 
       &.expiration{
@@ -2930,10 +2930,10 @@
       letter-spacing: -0.33px;
       color: var(--text-04);
       text-decoration: underline;
-      position: absolute;
-      bottom: 40px;
-      left: 50%;
-      transform: translateX(-50%);
+      // position: absolute;
+      // bottom: 40px;
+      // left: 50%;
+      // transform: translateX(-50%);
     }
   }
 

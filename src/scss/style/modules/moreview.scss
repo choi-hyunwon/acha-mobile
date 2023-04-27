@@ -2504,7 +2504,6 @@
 
   /*연결관리*/
   .connection-management{
-    height: calc(100vh - 66px);
     .empty{
       padding-top: 190px;
       height: 330px;
@@ -2654,6 +2653,24 @@
                   margin-left: 4px;
                 }
               }
+
+              .badge{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 6px;
+                background: #feecee;
+                border-radius: 6px;
+
+                span{
+                  font-size: 11px;
+                  color: #f21730;
+                  font-weight: 500;
+                  font-family: var(--font2);
+                }
+              }
+
               .ico_list_arrow_small {
                 position: absolute;
                 right: 4px;

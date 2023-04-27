@@ -1515,6 +1515,15 @@
   }
 }
 
+@keyframes modal-sticky-bottom-animation18-1{
+  from {
+    height: 0;
+  }
+  to {
+    height: 180px;
+  }
+}
+
 @keyframes modal-sticky-bottom-animation-out18{
   from {
     height: 272px;
@@ -1722,9 +1731,9 @@
 
             input {
               padding-right: 20px;
-              &:focus + [style*="block"] + .btn-clear-input{
-                right:20px;
-              }
+              // &:focus + [style*="block"] + .btn-clear-input{
+              //   right:20px;
+              // }
             }
           }
 
@@ -1764,9 +1773,6 @@
             &:read-only {
               border-color: #e2e3e6;
             }
-            &:focus + [style*="block"] + .btn-clear-input{
-              display: inline-block;
-            }
           }
 
           select {
@@ -1783,16 +1789,17 @@
           }
 
           .btn-clear-input{
-            display: none;
+            //display: none;
             position:absolute;
             top:12px;
-            right:50px;
+            right:20px; //기본값 50
             font-size: 0;
             width:18px;
             height:18px;
             content: '';
             background: url("../../img/common/ico_input_delete@2x.png") center center no-repeat;
             background-size: contain;
+            z-index: 100;
           }
       }
 
@@ -1805,6 +1812,15 @@
         color: var(--text-04);
         margin-bottom: 60px;
         padding: 0 5px;
+
+        &.txt{
+          font-size: 13px;
+          color: var(--text-02);
+          font-family: var(--font2);
+          margin: 4px 0;
+          line-height: 17px;
+          text-align: left;
+        }
       }
     }
   }
@@ -3461,7 +3477,6 @@
             transition: bottom 0.5s;
           }
         }
-
       }
     }
     &.budget-category{
@@ -3629,6 +3644,28 @@
           span{
             font-family: var(--font3);
           }
+        }
+      }
+    }
+    &.upload-img{
+      &.up {
+        transition: .5s;
+        .modal-slide-content {
+          height: 180px;
+          animation: modal-sticky-bottom-animation18-1 .5s;
+        }
+      }
+      .upload-img-list{
+        display: flex;
+        .upload-img-item{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 7.5px;
+          width: 71px;
+          height: 71px;
+          border: 1px solid #efefef;
+          border-radius: 100%;
         }
       }
     }
@@ -4350,6 +4387,13 @@
 
             }
           }
+        
+          .custom-light{
+            .btn-clear-input{
+              top: 39px;
+              right: 45px;
+            }
+          }
         }
       }
     }
@@ -4449,8 +4493,8 @@
       &.up {
         transition: .5s;
         .modal-slide-content {
-          height: 221px;
-          animation: modal-sticky-bottom-animation19 .5s;
+          height: 193px;
+          animation: modal-sticky-bottom-animation12 .5s;
         }
       }
       &.down {

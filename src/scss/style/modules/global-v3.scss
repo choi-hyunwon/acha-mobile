@@ -19,6 +19,9 @@
   .f-color02 {
     color: var(--text-02) !important;
   }
+  .f-color04 {
+    color: var(--text-04) !important;
+  }
 
 
   .pt-10 {
@@ -173,6 +176,12 @@
     //margin-left: 2px;
     transform: translateY(-1px);
   }
+  // renewal 자산 상세정보 edit
+  .edit{
+    img{
+      transform: translateY(-1px);
+    }
+  }
   /**
   icon
    */
@@ -264,12 +273,12 @@
   .badge{
     display: inline-block;
     font-size: 11px;
-    padding:3px 6px;
+    padding:5px 6px;
     border-radius: 6px;
     font-weight: 500;
     font-family: var(--font2);
     vertical-align: baseline;
-    line-height: 1.5;
+    line-height: 1em;
 
     &.badge-outline-purple{
       position: relative;
@@ -279,6 +288,7 @@
       color: var(--text-point-color);
       font-family: var(--font2);
       font-size: 11px;
+      line-height: 1;
       &:after{
         content: '';
         width: 5px;
@@ -325,7 +335,7 @@
 
   .badge-payment {
     width: 76px;
-    height: 22px;
+    // height: 22px;
   }
   .justify-content-between {
     display: flex !important;

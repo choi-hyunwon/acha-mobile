@@ -44,29 +44,7 @@
 
 				btnSlideOpen.trigger("click");
 			});
-			function countChar(val, target) {
-				var len = val.value.length;
-				var targetItem = $(`.${target}`);
-				var nextEle = val.nextElementSibling;
-
-				targetItem.text(len);
-
-				if (len === 0) {
-					targetItem.css("color", "#afaeb8");
-					nextEle.style.display = "none";
-				} else {
-					targetItem.css("color", "#37354e");
-					nextEle.style.display = "block";
-				}
-
-				val.addEventListener("focus", (event) => {
-					nextEle.style.display = "block";
-				});
-				val.addEventListener("blur", (event) => {
-					nextEle.style.display = "none";
-					targetBtn.hide();
-				});
-			}
 		</script>
+		@@include('../include/countCharDelete.html')
 	</body>
 </html>

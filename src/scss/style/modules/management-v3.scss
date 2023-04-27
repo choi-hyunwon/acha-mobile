@@ -1698,6 +1698,9 @@
       background-color: #fff;
       &.checked {
         border-color: #6839d3;
+        span{
+          color: #6839d3;
+        }
       }
       label {
         span {

@@ -20,27 +20,27 @@
 							<fieldset>
 								<div class="custom-light _focus">
 									<label class="title">지출명</label>
-									<input title="value" type="text" maxlength="12" onkeyup="countChar(this,'_val')" placeholder="지출명을 적어주세요" />
+									<input title="value" type="text" maxlength="12" onkeyup="countCharDelete(this,'_val')" placeholder="지출명을 적어주세요" />
 									<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 12</span></div>
 								</div>
 								<div class="custom-light monetary-unit _focus">
 									<label class="title">지출 금액</label>
-									<input onkeyup="countChar(this)" title="value" type="number" placeholder="금액을 입력해주세요" />
+									<input onkeyup="countCharDelete(this)" title="value" type="number" placeholder="금액을 입력해주세요" />
 									<p class="sub-desc">10억원 미만까지 입력 가능</p>
 								</div>
 								<div class="custom-light select-category">
 									<label class="title">지출 일시</label>
 									<input title="value" type="text" placeholder="지출일을 입력해주세요" value="6월 25일 오후 6:54" />
 								</div>
-								<div class="custom-light select-category">
+								<!-- <div class="custom-light select-category">
 									<label class="title">지출 일시</label>
 									<input title="value" type="datetime-local" placeholder="지출일을 입력해주세요" value="6월 25일 오후 6:54" style="padding-top: 10px" />
-								</div>
+								</div> -->
 								
 								<div class="custom-light switch-split">
 									<div class="wrap-title">
-										<p class="title">매월 지출으로 등록</p>
-										<p class="sub-desc">28일 이후 지출은 매월 28일 지출으로 적용돼요</p>
+										<p class="title">매월 지출로 등록</p>
+										<p class="sub-desc">28일 이후 지출은 매월 28일 지출로 적용돼요</p>
 									</div>
 									<div class="custom-switch">
 										<input type="checkbox" class="custom-control-input" id="switch1" checked="checked">
@@ -58,7 +58,7 @@
 								</div>
 								<div class="custom-light">
 									<label class="title">지출 메모</label>
-									<input title="value" type="text" maxlength="20" onkeyup="countChar(this,'_val')" placeholder="메모를 입력해주세요" value="" />
+									<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요" value="" />
 									<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span></div>
 								</div>
 								<div class="btn_area">
@@ -82,28 +82,7 @@
 				$("._off").removeClass("active");
 			}
 		});
-
-		function countChar(val, target) {
-			var len = val.value.length;
-			var targetItem = $(`.${target}`);
-			var nextEle = val.nextElementSibling;
-
-			targetItem.text(len);
-
-			if (len === 0) {
-				targetItem.css("color", "#afaeb8");
-				nextEle.style.display = "none";
-			} else {
-				targetItem.css("color", "#37354e");
-				nextEle.style.display = "block";
-			}
-
-			val.addEventListener("focus", (event) => {
-				nextEle.style.display = "block";
-			});
-			val.addEventListener("blur", (event) => {
-				nextEle.style.display = "none";
-			});
-		}
 	</script>
+	@@include('../include/countCharDelete.html')
+
 </html>

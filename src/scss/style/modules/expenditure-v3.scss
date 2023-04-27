@@ -156,7 +156,7 @@
   }
 
   .regist-story {
-    margin: 20px;
+    margin: 0 20px;
     background-color: #f4efff;
     border-radius: 10px;
     position: relative;
@@ -723,7 +723,7 @@
           .percent {
             position: absolute;
             right: 10px;
-            top: 4px;
+            top: 2px;
             z-index: 1;
             font-size: 14px;
             font-family: var(--font7);
@@ -1339,12 +1339,20 @@
           text-align: center;
           padding-left: 10px;
           padding-right: 10px;
+          border-bottom: 1px solid #efefef;
         }
       }
     }
 
     .expenditure-box {
 
+      .desc{
+        padding: 15px 20px;
+        width: 100%;
+        background: #f7f8fc;
+        font-size: 14px;
+        color: var(--text-02);
+      }
 
       /**
       리스트 접기/펴기 기능
@@ -1545,6 +1553,11 @@
             margin-bottom: 0;
           }
 
+          .info{
+            font-size: 16px;
+            word-break: keep-all;
+          }
+
 
 
 
@@ -1643,7 +1656,7 @@
                     .amount {
                       font-size: 18px;
                       position: relative;
-                      font-family: var(--font4);
+                      font-family: var(--font5);
                       display: block;
                       font-weight: 500;
 
@@ -1724,12 +1737,13 @@
                 }
 
                 .payment-method {
+                  padding: 2px 0;
                   font-size: 11px;
                   color: #9992a0;
                   background: #eeedf0;
                   border-radius: 6px;
                   width: 76px;
-                  height: 36px;
+                  // height: 36px;
                   text-align: center;
                   display: flex;
                   align-items: center;
@@ -1737,7 +1751,7 @@
                   span {
                     font-size: 11px;
                     color: #9992a0;
-                    padding: 3px 8px 4px 8px;
+                    margin: 3px 8px 4px 8px;
                     width: 76px;
                     border-radius: 6px;
                     text-align: center;
@@ -1975,6 +1989,14 @@
               }
 
               .details-history {
+
+                &.details{
+                  .item-list{
+                    padding: 0;
+                    padding-bottom: 30px;
+                  }
+                }
+
                 .item-list {
                   padding-bottom: 8px;
                   padding-top: 8px;
@@ -2014,6 +2036,12 @@
                         color: var(--text-03);
                         font-family: var(--font4);
                       }
+
+                      .name{
+                        font-size: 16px;
+                        color: var(--text-01);
+                        font-weight: 500;
+                      }
                     }
 
                     & + div {
@@ -2021,6 +2049,12 @@
                       justify-content: space-between;
                       align-items: center;
                     }
+                  }
+
+                  .amount {
+                    font-size: 16px;
+                    color: var(--text-01);
+                    font-weight: bold;
                   }
 
                   &-lg {
@@ -2294,6 +2328,7 @@
 
                   .box {
                     display: flex;
+                    align-items: flex-start;
 
                     .info {
                       .place {
@@ -3181,9 +3216,9 @@
 
             input {
               padding-right: 20px;
-              &:focus + [style*="block"] + .btn-clear-input{
-                right:20px;
-              }
+            }
+            .btn-clear-input{
+              right:20px;
             }
           }
 
@@ -3223,9 +3258,6 @@
             &:read-only {
               border-color: #e2e3e6;
             }
-            &:focus + [style*="block"] + .btn-clear-input{
-              display: inline-block;
-            }
           }
 
           select {
@@ -3264,7 +3296,7 @@
           }
 
           .btn-clear-input{
-            display: none;
+            //display: none;
             position:absolute;
             top:37px; //label 25 + clearbutton height 18/2
             right:50px;
@@ -3679,7 +3711,7 @@
       /*지출수단 -카드*/
       &.card-spending {
         .empty {
-          height: calc(100vh - 233px);
+          height: calc(100vh - 312px);
           padding-bottom: 0;
         }
 
@@ -4211,6 +4243,7 @@
           color: #37354e;
           font-family: var(--font4);
         }
+        
       }
 
       .item {
@@ -5104,6 +5137,11 @@
             }
           }
         }
+        .story_tag {
+          position: absolute;
+          top: 0;
+          left: calc(50% + 8px);
+        }
 
         .minus-data {
           .fc-content {
@@ -5140,7 +5178,32 @@
     //v3_expenditure_135
     .calendar-history {
       position: relative;
-      padding: 30px 20px;
+      padding: 11px 20px 30px 20px;
+      
+      .filter-wrap{
+        text-align: right;
+        margin-bottom: 22px;
+        
+        p{
+          font-size: 14px;
+          color: #737183;
+          line-height: 16px;
+          
+          label{
+            vertical-align: middle;
+
+            span{
+              padding-left: 22px;
+              &:before{
+                margin-top: 0;
+              }
+            }
+
+          }
+
+        }
+
+      }
 
       .date-detail {
         display: flex;
@@ -5223,6 +5286,18 @@
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             border-radius: 10px;
+
+            &.uninclude{
+
+              span{
+                color: #c2c1cc !important;
+              }
+
+              img{
+                opacity: 0.5;
+              }
+
+            }
 
             .time {
               font-size: 13px;
@@ -5667,6 +5742,7 @@
         line-height: 1.43;
         text-align: left;
         color: var(--text-01);
+        word-break: break-all;
       }
 
       textarea.custom {
@@ -5777,6 +5853,13 @@
           margin-bottom: 14px;
           cursor: pointer;
 
+          &.icon-item{
+            flex-direction: column;
+            border: none;
+            &:nth-child(4n-3) {
+              margin-left: 14px;
+            }
+          }
           &:nth-child(4n-3) {
             margin-left: 0;
           }
@@ -5906,28 +5989,4 @@
       }
     }
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

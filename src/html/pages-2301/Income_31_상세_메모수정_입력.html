@@ -9,9 +9,8 @@
 				<div class="inner pb-0">
 					<div class="title">메모 입력</div>
 					<div class="custom-light">
-						<input title="지출 메모" type="text" maxlength="20" onkeyup="countChar(this,'_val')" placeholder="메모를 입력해주세요" value="원리금 균등상환 2045년" />
+						<input title="지출 메모" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요" value="원리금 균등상환 2045년" />
 						<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span></div>
-						<button class="btn-clear-input">삭제</button>
 					</div>
 				</div>
 				<div class="btn-wrap">
@@ -45,29 +44,9 @@
 
 				btnSlideOpen.trigger("click");
 			});
-			function countChar(val, target) {
-				var len = val.value.length;
-				var targetItem = $(`.${target}`);
-				var nextEle = val.nextElementSibling;
-
-				targetItem.text(len);
-
-				if (len === 0) {
-					targetItem.css("color", "#afaeb8");
-					nextEle.style.display = "none";
-				} else {
-					targetItem.css("color", "#37354e");
-					nextEle.style.display = "block";
-				}
-
-				val.addEventListener("focus", (event) => {
-					nextEle.style.display = "block";
-				});
-				val.addEventListener("blur", (event) => {
-					nextEle.style.display = "none";
-					targetBtn.hide();
-				});
-			}
 		</script>
+
+		@@include('../include/countCharDelete.html')
+
 	</body>
 </html>

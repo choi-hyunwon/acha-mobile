@@ -2504,10 +2504,10 @@
 
   /*연결관리*/
   .connection-management{
+    height: calc(100vh - 66px);
     .empty{
-      padding-top: 100px;
-      height: 250px;
-      margin-bottom: 40px;
+      padding-top: 190px;
+      height: 330px;
       .img {
         display: block;
         width: 56px;
@@ -2544,8 +2544,8 @@
       }
     }
     .btn_area {
+      margin-top: 40px;
       text-align: center;
-      margin-bottom: 100px;
       .btn{
         width: 163px;
         .plus{
@@ -2555,6 +2555,10 @@
       }
     }
     .out {
+      position: absolute;
+      left: 50%;
+      bottom: 40px;
+      transform: translateX(-50%);
       text-align: center;
       a {
         color: #afaeb8;

@@ -1346,6 +1346,13 @@
 
     .expenditure-box {
 
+      .desc{
+        padding: 15px 20px;
+        width: 100%;
+        background: #f7f8fc;
+        font-size: 14px;
+        color: var(--text-02);
+      }
 
       /**
       리스트 접기/펴기 기능
@@ -1982,6 +1989,14 @@
               }
 
               .details-history {
+
+                &.details{
+                  .item-list{
+                    padding: 0;
+                    padding-bottom: 30px;
+                  }
+                }
+
                 .item-list {
                   padding-bottom: 8px;
                   padding-top: 8px;
@@ -2021,6 +2036,12 @@
                         color: var(--text-03);
                         font-family: var(--font4);
                       }
+
+                      .name{
+                        font-size: 16px;
+                        color: var(--text-01);
+                        font-weight: 500;
+                      }
                     }
 
                     & + div {
@@ -2028,6 +2049,12 @@
                       justify-content: space-between;
                       align-items: center;
                     }
+                  }
+
+                  .amount {
+                    font-size: 16px;
+                    color: var(--text-01);
+                    font-weight: bold;
                   }
 
                   &-lg {
@@ -4216,6 +4243,7 @@
           color: #37354e;
           font-family: var(--font4);
         }
+        
       }
 
       .item {
@@ -5825,6 +5853,13 @@
           margin-bottom: 14px;
           cursor: pointer;
 
+          &.icon-item{
+            flex-direction: column;
+            border: none;
+            &:nth-child(4n-3) {
+              margin-left: 14px;
+            }
+          }
           &:nth-child(4n-3) {
             margin-left: 0;
           }

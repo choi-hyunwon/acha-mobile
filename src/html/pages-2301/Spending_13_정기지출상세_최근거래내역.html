@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2 class="title"><a href="#">최근 거래 내역</a></h2>
+    </div>
+    
+    <div class="contents expenditure">
+        <div class="expenditure-box ">
+            <div class="scope">
+                <p class="desc">6개월 내 최근 거래내역을 보여드려요</p>
+            </div>
+            <ul class="usage-history-list usage-category-list filter-setting" style="padding: 15px 20px">
+                <li>
+                    <ul class="details-history details">
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="info">
+                                        <span class="num">5월 25일</span>
+                                        <span class="name">신한은행 일반신용대출</span>
+                                    </div>
+                                </div>
+                                <div class="amount">1,000,000 원</div>
+                            </div>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="info">
+                                        <span class="num">4월 25일</span>
+                                        <span class="name">신한은행 일반신용대출</span>
+                                    </div>
+                                </div>
+                                <div class="amount">1,000,000 원</div>
+                            </div>
+                        </li>
+                        <li class="item-list">
+                            <div class="group">
+                                <div class="box">
+                                    <div class="info">
+                                        <span class="num">3월 25일</span>
+                                        <span class="name">신한은행 일반신용대출</span>
+                                    </div>
+                                </div>
+                                <div class="amount">1,000,000 원</div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script>
+    $('.filled-in').on('click',function (){
+        if($('.filled-in').is(':checked')){
+            $('.btn-area .btn').removeClass('disabled');
+        }else{
+            $('.btn-area .btn').addClass('disabled');
+        }
+    })
+</script>
+</body>
+</html>
+

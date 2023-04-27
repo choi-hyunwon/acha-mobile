@@ -2505,9 +2505,8 @@
   /*연결관리*/
   .connection-management{
     .empty{
-      padding-top: 100px;
-      height: 250px;
-      margin-bottom: 40px;
+      padding-top: 190px;
+      height: 330px;
       .img {
         display: block;
         width: 56px;
@@ -2544,8 +2543,8 @@
       }
     }
     .btn_area {
+      margin-top: 40px;
       text-align: center;
-      margin-bottom: 100px;
       .btn{
         width: 163px;
         .plus{
@@ -2555,6 +2554,10 @@
       }
     }
     .out {
+      position: absolute;
+      left: 50%;
+      bottom: 40px;
+      transform: translateX(-50%);
       text-align: center;
       a {
         color: #afaeb8;
@@ -2650,15 +2653,63 @@
                   margin-left: 4px;
                 }
               }
+
+              .badge{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 6px;
+                background: #feecee;
+                border-radius: 6px;
+
+                span{
+                  font-size: 11px;
+                  color: #f21730;
+                  font-weight: 500;
+                  font-family: var(--font2);
+                }
+              }
+
               .ico_list_arrow_small {
                 position: absolute;
                 right: 4px;
                 top: 50%;
                 transform: translateY(-50%);
               }
+
+              .badge{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 6px;
+                background: #feecee;
+                border-radius: 6px;
+
+                span{
+                  font-size: 11px;
+                  color: #f21730;
+                  font-weight: 500;
+                  font-family: var(--font2);
+                }
+              }
+
             }
           }
         }
+      }
+      .description{
+        font-size: 14px !important;
+        padding: 12px !important;
+  
+       .agreeCheck{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: var(--color-text-default);
+       }
+  
       }
       .ico_list_arrow_small {
         position: absolute;
@@ -2667,6 +2718,35 @@
         right: 20px;
       }
 
+
+    }
+    .description{
+      font-size: 14px !important;
+      padding: 12px !important;
+
+     .agreeCheck{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color-text-default);
+        .purple{
+          color: #6839d3;
+        }
+     }
+     
+
+    }
+
+    .description{
+      font-size: 14px !important;
+      padding: 12px !important;
+
+     .agreeCheck{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color-text-default);
+     }
 
     }
 

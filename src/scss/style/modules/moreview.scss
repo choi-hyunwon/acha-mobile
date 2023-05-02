@@ -2504,26 +2504,18 @@
 
   /*연결관리*/
   .connection-management{
-    .expenditure-box.certify{
-      height: calc( 100vh - 80px);
 
+    .transform-50{
+      padding-top: 0; 
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%,-50%);
       .empty{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding: unset;;
-        height: auto;
-
-        .img{
-          margin: 0 auto 10px;
-        }
-        p{
-          font-size: 15px;
-          font-family: var(--font2);
-        }
+        padding-top: 0;
+        height: fit-content;
       }
-    }
+     }
     .empty{
       padding-top: 190px;
       height: 330px;
@@ -2697,24 +2689,6 @@
                 top: 50%;
                 transform: translateY(-50%);
               }
-
-              .badge{
-                position: absolute;
-                right: 20px;
-                top: 50%;
-                transform: translateY(-50%);
-                padding: 6px;
-                background: #feecee;
-                border-radius: 6px;
-
-                span{
-                  font-size: 11px;
-                  color: #f21730;
-                  font-weight: 500;
-                  font-family: var(--font2);
-                }
-              }
-
             }
           }
         }
@@ -2996,39 +2970,40 @@
     }
     .info-list{
       .expires{
-        background: #feecee;
-        padding: 8px 14px;
-        margin: 5px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 18px;
-        >p{
+        .link{
+          background: #feecee;
+          padding: 8px 14px;
+          margin: 5px 0;
           display: flex;
+          justify-content: space-between;
           align-items: center;
-          color: #f21730;
-          font-size: 13px;
-          font-family: var(--font1);
-          vertical-align: middle;
-          .icon-caution{
-            margin-right: 4px;
+          border-radius: 18px;
+          >p{
+            display: flex;
+            align-items: center;
+            color: #f21730;
+            font-size: 13px;
+            font-family: var(--font1);
+            vertical-align: middle;
+            .icon-caution{
+              margin-right: 4px;
+              display: inline-block;
+              vertical-align: middle;
+              width: 12px;
+              height: 12px;
+              background: url("../../img/common/ico_caution_red@3x.png") no-repeat 0 0 / 100% auto;
+            }
+          }
+
+          .icon-arrow-small-red{
             display: inline-block;
             vertical-align: middle;
-            width: 12px;
-            height: 12px;
-            background: url("../../img/common/ico_caution_red@3x.png") no-repeat 0 0 / 100% auto;
+            width: 6px;
+            height: 16px;
+            background: url("../../img/common/ico_arrow_small_red_nor@3x.png") no-repeat 0 0 / 100% auto;
+
           }
         }
-
-        .icon-arrow-small-red{
-          display: inline-block;
-          vertical-align: middle;
-          width: 6px;
-          height: 16px;
-          background: url("../../img/common/ico_arrow_small_red_nor@3x.png") no-repeat 0 0 / 100% auto;
-
-        }
-
       }
       .title{
         font-size: 15px;

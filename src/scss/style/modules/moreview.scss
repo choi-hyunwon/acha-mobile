@@ -2504,6 +2504,17 @@
 
   /*연결관리*/
   .connection-management{
+    .transform-50{
+      padding-top: 0; 
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%,-50%);
+      .empty{
+        padding-top: 0;
+        height: fit-content;
+      }
+     }
     .empty{
       padding-top: 190px;
       height: 330px;

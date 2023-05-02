@@ -1619,6 +1619,25 @@
   }
 }
 
+@keyframes modal-sticky-bottom-animation588{
+  from {
+    height: 0;
+  }
+  to {
+    height: 588px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out16{
+  from {
+    height: 588px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
 
 .modal-slide-backdrop {
   position: fixed;
@@ -3372,14 +3391,14 @@
       &.up {
         transition: .5s;
         .modal-slide-content {
-          height: 524px;
-          animation: modal-sticky-bottom-animation16 .5s;
+          height: 588px;
+          animation: modal-sticky-bottom-animation588 .5s;
         }
       }
       &.down {
         transition: .5s;
         .modal-slide-content {
-          animation: modal-sticky-bottom-animation-out16 .5s;
+          animation: modal-sticky-bottom-animation-out588 .5s;
           height: 0;
         }
       }
@@ -3400,7 +3419,7 @@
         .category-list{
           font-size: 0;
           overflow-y: auto;
-          height: 450px;
+          height: auto;
           padding-bottom: 10px;
           transition: padding-bottom 0.5s;
           &.on{

@@ -1359,13 +1359,14 @@
     }
 
     .expenditure-box {
-
-      .desc{
-        padding: 15px 20px;
-        width: 100%;
-        background: #f7f8fc;
-        font-size: 14px;
-        color: var(--text-02);
+      .scope{
+        .desc{
+          padding: 15px 20px;
+          width: 100%;
+          background: #f7f8fc;
+          font-size: 14px;
+          color: var(--text-02);
+        }
       }
 
       /**

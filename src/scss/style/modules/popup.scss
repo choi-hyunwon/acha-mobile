@@ -3424,11 +3424,7 @@
           &.on{
             padding-bottom: 78px;
             transition: padding-bottom 0.5s;
-            ul{
-              li{
 
-              }
-            }
             .btn-wrap{
               bottom: 0;
               transition: bottom 0.5s;
@@ -3487,6 +3483,11 @@
 
               }
             }
+          &:last-of-type{
+            li{
+              margin-bottom: 0;
+            }
+          }
           }
           .btn-wrap{
             padding: 0 20px 30px;

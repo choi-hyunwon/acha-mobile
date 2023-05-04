@@ -1619,6 +1619,25 @@
   }
 }
 
+@keyframes modal-sticky-bottom-animation588{
+  from {
+    height: 0;
+  }
+  to {
+    height: 588px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out16{
+  from {
+    height: 588px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
 
 .modal-slide-backdrop {
   position: fixed;
@@ -3373,13 +3392,13 @@
         transition: .5s;
         .modal-slide-content {
           height: 588px;
-          animation: modal-sticky-bottom-animation16 .5s;
+          animation: modal-sticky-bottom-animation588 .5s;
         }
       }
       &.down {
         transition: .5s;
         .modal-slide-content {
-          animation: modal-sticky-bottom-animation-out16 .5s;
+          animation: modal-sticky-bottom-animation-out588 .5s;
           height: 0;
         }
       }
@@ -3475,6 +3494,11 @@
             background: #fff;
             bottom: -80px;
             transition: bottom 0.5s;
+          }
+        }
+        & ul:last-of-type{
+          li{
+            margin-bottom: 0;
           }
         }
       }
@@ -4315,7 +4339,7 @@
       .inner {
         padding: 20px;
         .category-registration{
-          overflow-y: scroll;
+          overflow-y: auto;
           overflow-x: hidden;
           height: 330px;
           margin-top: 30px;
@@ -4374,7 +4398,7 @@
                   font-size: 13px;
                   line-height: 17px;
                   letter-spacing: -0.28px;
-                  color: var(--text-04);
+                  color: var(--text-01);
                 }
 
                 .total {

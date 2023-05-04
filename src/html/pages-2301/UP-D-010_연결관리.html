@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal bg_light_gray">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>연결 관리</h2>
+        <a href="#" class="btn-more"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="더보기 버튼"></a>
+    </div>
+    <div class="contents connection-management">
+        <div class="connection-category">
+            <div class="title-category">카드<span class="purple">2</span></div>
+            <div class="ex-list">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="img">
+                                <img src="../../img/@temp/woori.png" alt="로고">
+                            </div>
+                            <div class="info">
+                                <span class="tit">우리카드</span>
+                            </div>
+                            <div class="badge badge-pink"><span>만료 D-3</span></div>
+                            <span class="btn_more"><i class="sprite ico_list_arrow_small"></i></span>
+
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="img">
+                                <img src="../../img/@temp/hyundai.png" alt="로고">
+                            </div>
+                            <div class="info">
+                                <span class="tit">현대카드</span>
+                            </div>
+                            <span class="btn_more"><i class="sprite ico_list_arrow_small"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="connection-category">
+            <div class="title-category">은행<span class="purple">3</span></div>
+            <div class="ex-list">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="img">
+                                <img src="../../img/@temp/ci_kbbank@2x.png" alt="로고">
+                            </div>
+                            <div class="info">
+                                <span class="tit">국민은행</span>
+                                <i class="icon-expired"></i>
+                            </div>
+                            <span class="btn_more"><i class="sprite ico_list_arrow_small"></i></span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="img">
+                                <img src="../../img/@temp/ci_scbank@2x.png" alt="로고">
+                            </div>
+                            <div class="info">
+                                <span class="tit">SC제일은행</span>
+                            </div>
+                            <div class="badge badge-pink"><span>만료 D-20</span></div>
+                            <span class="btn_more"><i class="sprite ico_list_arrow_small"></i></span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="img">
+                                <img src="../../img/@temp/woori.png" alt="로고">
+                            </div>
+                            <div class="info">
+                                <span class="tit">우리은행</span>
+                            </div>
+                            <span class="btn_more"><i class="sprite ico_list_arrow_small"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="connection-category expiration">
+            <a href="#">
+                <div class="title-category">만료 및 연결 해제된 기관<span class="purple">4</span><i class="sprite ico_list_arrow_small"></i></div>
+            </a>
+        </div>
+    </div>
+    <div class="btn-service-secession">
+        <a href="#">마이데이터 서비스 탈퇴</a>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            function test(){
+                let windowH = window.innerHeight;
+                let contentsH = $('.wrap').height();
+                let btnArea = $('.btn-secession');
+                let headerH = $('.header').height();
+                let contents = $('.connection-management').height();
+                let totalH = headerH + contents
+                let resultH = contentsH - totalH
+
+                if(contentsH > windowH){
+                    btnArea.css({
+                        padding: "40px 0 40px 0"
+                    })
+                }else if(contentsH == windowH){
+                    btnArea.css({
+                        height: resultH + 'px',
+                    })
+                }
+            }
+            test();
+
+        });
+    </script>
+
+</div>
+</body>
+</html>

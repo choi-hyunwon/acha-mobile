@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal fade modal-inspection" id="inspectionPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="title">초기화 확인</div>
+            </div>
+            <div class="modal-body">
+                <p>가계부 데이터를 모두 <br>초기화 하시겠어요? <br> 초기화 시 복원할 수 없어요.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer bg-grey" data-dismiss="modal">취소</a>
+                <a href="#" class="btn-footer single" style="width: 50% !important;" data-dismiss="modal">초기화</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#inspectionPopup').modal('show');   // modal show
+</script>
+</body>
+</html>

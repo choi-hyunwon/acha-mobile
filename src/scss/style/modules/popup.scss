@@ -3403,7 +3403,7 @@
       &.down {
         transition: .5s;
         .modal-slide-content {
-          animation: modal-sticky-bottom-animation-out16 .5s;
+          animation: modal-sticky-bottom-animation-out588 .5s;
           height: 0;
 
           &.modal-category-icon{
@@ -3434,6 +3434,7 @@
           &.on{
             padding-bottom: 78px;
             transition: padding-bottom 0.5s;
+
             .btn-wrap{
               bottom: 0;
               transition: bottom 0.5s;
@@ -3495,12 +3496,22 @@
                 margin-bottom: 0;
               }
             }
+          &:last-of-type{
+            li{
+              margin-bottom: 0;
+            }
+          }
           }
           .btn-wrap{
             padding: 0 20px 30px;
             background: #fff;
             bottom: -80px;
             transition: bottom 0.5s;
+          }
+        }
+        & ul:last-of-type{
+          li{
+            margin-bottom: 0;
           }
         }
       }
@@ -4350,7 +4361,7 @@
       .inner {
         padding: 20px;
         .category-registration{
-          overflow-y: scroll;
+          overflow-y: auto;
           overflow-x: hidden;
           height: 330px;
           margin-top: 30px;
@@ -4409,7 +4420,7 @@
                   font-size: 13px;
                   line-height: 17px;
                   letter-spacing: -0.28px;
-                  color: var(--text-04);
+                  color: var(--text-01);
                 }
 
                 .total {

@@ -3372,7 +3372,7 @@
       &.up {
         transition: .5s;
         .modal-slide-content {
-          height: 524px;
+          height: 588px;
           animation: modal-sticky-bottom-animation16 .5s;
         }
       }
@@ -3400,17 +3400,12 @@
         .category-list{
           font-size: 0;
           overflow-y: auto;
-          height: 450px;
-          padding-bottom: 10px;
+          height: 474px;
           transition: padding-bottom 0.5s;
           &.on{
             padding-bottom: 78px;
             transition: padding-bottom 0.5s;
-            ul{
-              li{
 
-              }
-            }
             .btn-wrap{
               bottom: 0;
               transition: bottom 0.5s;
@@ -3469,6 +3464,11 @@
 
               }
             }
+          &:last-of-type{
+            li{
+              margin-bottom: 0;
+            }
+          }
           }
           .btn-wrap{
             padding: 0 20px 30px;

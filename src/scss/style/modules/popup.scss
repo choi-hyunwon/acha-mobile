@@ -3419,8 +3419,7 @@
         .category-list{
           font-size: 0;
           overflow-y: auto;
-          height: auto;
-          padding-bottom: 10px;
+          height: 474px;
           transition: padding-bottom 0.5s;
           &.on{
             padding-bottom: 78px;
@@ -3494,6 +3493,11 @@
             background: #fff;
             bottom: -80px;
             transition: bottom 0.5s;
+          }
+        }
+        & ul:last-of-type{
+          li{
+            margin-bottom: 0;
           }
         }
       }

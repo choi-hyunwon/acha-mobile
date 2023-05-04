@@ -1619,6 +1619,25 @@
   }
 }
 
+@keyframes modal-sticky-bottom-animation588{
+  from {
+    height: 0;
+  }
+  to {
+    height: 588px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out588{
+  from {
+    height: 588px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
 
 .modal-slide-backdrop {
   position: fixed;
@@ -3374,6 +3393,11 @@
         .modal-slide-content {
           height: 524px;
           animation: modal-sticky-bottom-animation16 .5s;
+
+          &.modal-category-icon{
+            height: 588px;
+            animation: modal-sticky-bottom-animation588 .5s;
+          }
         }
       }
       &.down {
@@ -3381,6 +3405,11 @@
         .modal-slide-content {
           animation: modal-sticky-bottom-animation-out16 .5s;
           height: 0;
+
+          &.modal-category-icon{
+            height: 0;
+            animation: modal-sticky-bottom-animation-out588 .5s;
+          }
         }
       }
       .inner {
@@ -3400,17 +3429,11 @@
         .category-list{
           font-size: 0;
           overflow-y: auto;
-          height: 450px;
-          padding-bottom: 10px;
+          height: 430px;
           transition: padding-bottom 0.5s;
           &.on{
             padding-bottom: 78px;
             transition: padding-bottom 0.5s;
-            ul{
-              li{
-
-              }
-            }
             .btn-wrap{
               bottom: 0;
               transition: bottom 0.5s;
@@ -3464,9 +3487,12 @@
                     bottom: -6px;
                     z-index: 1;
                   }
-
                 }
-
+              }
+            }
+            &:last-of-type{
+              li{
+                margin-bottom: 0;
               }
             }
           }
@@ -3476,6 +3502,11 @@
             bottom: -80px;
             transition: bottom 0.5s;
           }
+        }
+      }
+      .modal-category-icon{
+        .category-list{
+          height: 475px;
         }
       }
     }

@@ -349,15 +349,15 @@
 
       &.desc{
         background: #fff;
-        padding: 0 20px !important;
         margin: 0;
+        padding: 0 20px !important;
       }
 
       .agreeCheck{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: var(--color-text-default);
+        background: #f7f7f8;
+        padding: 20px 12px;
+        border-radius: 10px;
+        p{
 
         p{
           span{

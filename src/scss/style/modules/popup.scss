@@ -1628,7 +1628,7 @@
   }
 }
 
-@keyframes modal-sticky-bottom-animation-out16{
+@keyframes modal-sticky-bottom-animation-out588{
   from {
     height: 588px;
   }
@@ -1811,7 +1811,7 @@
             //display: none;
             position:absolute;
             top:12px;
-            right:20px; //기본값 50
+            right:50px;
             font-size: 0;
             width:18px;
             height:18px;
@@ -3391,8 +3391,13 @@
       &.up {
         transition: .5s;
         .modal-slide-content {
-          height: 588px;
-          animation: modal-sticky-bottom-animation588 .5s;
+          height: 524px;
+          animation: modal-sticky-bottom-animation16 .5s;
+
+          &.modal-category-icon{
+            height: 588px;
+            animation: modal-sticky-bottom-animation588 .5s;
+          }
         }
       }
       &.down {
@@ -3400,6 +3405,11 @@
         .modal-slide-content {
           animation: modal-sticky-bottom-animation-out588 .5s;
           height: 0;
+
+          &.modal-category-icon{
+            height: 0;
+            animation: modal-sticky-bottom-animation-out588 .5s;
+          }
         }
       }
       .inner {
@@ -3419,17 +3429,12 @@
         .category-list{
           font-size: 0;
           overflow-y: auto;
-          height: auto;
-          padding-bottom: 10px;
+          height: 430px;
           transition: padding-bottom 0.5s;
           &.on{
             padding-bottom: 78px;
             transition: padding-bottom 0.5s;
-            ul{
-              li{
 
-              }
-            }
             .btn-wrap{
               bottom: 0;
               transition: bottom 0.5s;
@@ -3483,11 +3488,19 @@
                     bottom: -6px;
                     z-index: 1;
                   }
-
                 }
-
               }
             }
+            &:last-of-type{
+              li{
+                margin-bottom: 0;
+              }
+            }
+          &:last-of-type{
+            li{
+              margin-bottom: 0;
+            }
+          }
           }
           .btn-wrap{
             padding: 0 20px 30px;
@@ -3495,6 +3508,16 @@
             bottom: -80px;
             transition: bottom 0.5s;
           }
+        }
+        & ul:last-of-type{
+          li{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .modal-category-icon{
+        .category-list{
+          height: 475px;
         }
       }
     }
@@ -4058,6 +4081,10 @@
           input{
             padding-right: 20px;
           }
+
+          .btn-clear-input{
+            right:24px;
+          }
         }
       }
     }
@@ -4512,8 +4539,8 @@
       &.up {
         transition: .5s;
         .modal-slide-content {
-          height: 221px;
-          animation: modal-sticky-bottom-animation19 .5s;
+          height: 193px;
+          animation: modal-sticky-bottom-animation12 .5s;
         }
       }
       &.down {

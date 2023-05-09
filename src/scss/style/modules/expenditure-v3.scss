@@ -1677,7 +1677,7 @@
                     .amount {
                       font-size: 18px;
                       position: relative;
-                      font-family: var(--font4);
+                      font-family: var(--font5);
                       display: block;
                       font-weight: 500;
 
@@ -3732,7 +3732,7 @@
       /*지출수단 -카드*/
       &.card-spending {
         .empty {
-          height: calc(100vh - 233px);
+          height: calc(100vh - 312px);
           padding-bottom: 0;
         }
 
@@ -5763,6 +5763,7 @@
         line-height: 1.43;
         text-align: left;
         color: var(--text-01);
+        word-break: break-all;
       }
 
       textarea.custom {

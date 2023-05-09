@@ -2732,9 +2732,12 @@
     }
 
     .description{
-      font-size: 14px !important;
-      padding: 12px !important;
 
+     .agreeCheck{
+        padding: 20px 10px;
+        background: #f7f7f8;
+        border-radius: 10px;
+      }
     }
 
     /*만료 및 연결해제된 기관*/

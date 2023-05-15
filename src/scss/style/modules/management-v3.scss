@@ -1672,6 +1672,10 @@
 
   .agree-wrap {
     position: relative;
+
+    .agree-item{
+      justify-content: start;
+    }
     > div , > a {
       height: 60px;
       border-radius: 6px;

@@ -2002,7 +2002,7 @@
                     padding: 0 20px;
                     width: calc(100% + 40px);
                     height: calc(100vh - 372px);
-                    overflow: scroll;
+                    overflow-y: scroll;
                   }
 
                   &.details {

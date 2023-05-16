@@ -1,4 +1,3 @@
-
 .renewal {
   /*미션*/
   .mission-contents {
@@ -198,7 +197,6 @@
                 }
               }
 
-
               &.together-view-card-user {
                 .list-card {
                   .item {
@@ -226,7 +224,7 @@
                         }
                         &-me {
                           &::after {
-                            content: '';
+                            content: "";
                             width: 8px;
                             height: 8px;
                             border: solid 2px #fff;
@@ -255,13 +253,9 @@
                       color: #737183;
                     }
                   }
-
-
                 }
               }
-
             }
-
           }
         }
 
@@ -557,7 +551,7 @@
             line-height: 20px;
 
             &:before {
-              content: '';
+              content: "";
               display: inline-block;
               clear: both;
               width: 2px;
@@ -570,7 +564,6 @@
               background-color: var(--text-02);
             }
           }
-
         }
 
         .img {
@@ -629,7 +622,6 @@
                 .name {
                   font-size: 14px;
                   color: var(--text-03);
-
                 }
               }
 
@@ -658,7 +650,6 @@
                     em {
                       font-size: 14px;
                       font-family: var(--font2);
-
                     }
                   }
 
@@ -753,11 +744,13 @@
           border-radius: 6px;
           border: solid 1px #e3e4e8;
           font-weight: unset;
-          background: url(../../img/common/check_off@3x.png) no-repeat right 20px center / 22px 22px;
+          background: url(../../img/common/check_off@3x.png) no-repeat right
+            20px center / 22px 22px;
 
           &.active {
             border-color: #6839d3;
-            background: url(../../img/common/check_on@3x.png) no-repeat right 20px center / 22px 22px;
+            background: url(../../img/common/check_on@3x.png) no-repeat right
+              20px center / 22px 22px;
 
             p {
               color: #6839d3;
@@ -775,7 +768,6 @@
           }
 
           label {
-
           }
 
           .radio-tit {
@@ -829,7 +821,6 @@
           }
         }
       }
-
     }
   }
 
@@ -1173,7 +1164,7 @@
               margin-top: 7px;
               .span {
                 display: inline-block;
-                vertical-align: baseline
+                vertical-align: baseline;
               }
               .state {
                 font-size: 13px;
@@ -1202,8 +1193,6 @@
                     background-color: #eff8ff;
                   }
                 }
-
-
               }
               .goal {
                 font-size: 13px;
@@ -1242,7 +1231,7 @@
           margin-bottom: 2px;
           position: relative;
           &::before {
-            content: '•';
+            content: "•";
             display: inline-block;
             margin-right: 3px;
           }
@@ -1278,7 +1267,6 @@
       color: #afaeb8;
       font-family: var(--font1);
     }
-
   }
 
   /**
@@ -1286,7 +1274,7 @@
    */
 
   .management-wrap {
-    padding: 20px 20px 30px 20px ;
+    padding: 20px 20px 30px 20px;
     /* global class*/
     img {
       max-width: 100%;
@@ -1318,9 +1306,7 @@
           border-radius: 0;
         }
       }
-
     }
-
 
     /* 04_1.1_공동관리메인 */
 
@@ -1393,7 +1379,6 @@
       }
     }
 
-
     .massage {
       margin-top: 25px;
       margin-bottom: 25px;
@@ -1404,7 +1389,7 @@
         border-radius: 10px;
         background-color: #efecfa;
         text-align: center;
-        margin: 0 auto ;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1440,7 +1425,7 @@
         border-radius: 10px;
         background-color: #f7f8fc;
         margin: 0 auto 20px auto;
-        &::before{
+        &::before {
           display: none;
         }
         li {
@@ -1456,9 +1441,7 @@
           padding-bottom: 40px;
         }
       }
-
     }
-
 
     /* 04_1.3_SMS메시지_4_초대완료 */
 
@@ -1485,7 +1468,8 @@
   .matching-wrap {
     display: flex;
     justify-content: center;
-    background: url("../../img/management/ic_connect_dot@2x.png") no-repeat center 50px / 36px;
+    background: url("../../img/management/ic_connect_dot@2x.png") no-repeat
+      center 50px / 36px;
     margin-top: 80px;
 
     > div {
@@ -1606,7 +1590,8 @@
 
         tbody {
           tr {
-            th { /*06_sign_in_13 예외 케이스 추가*/
+            th {
+              /*06_sign_in_13 예외 케이스 추가*/
               color: var(--text-02);
               background-color: #f5f6f8;
               border-right: 1px solid #e3e4e8;
@@ -1666,17 +1651,16 @@
 
     /*예외 페이지*/
     /* 09_moreview_31 / 09_moreview_32 /  04_my_data_22*/
-
-
   }
 
   .agree-wrap {
     position: relative;
 
-    .agree-item{
+    .agree-item {
       justify-content: start;
     }
-    > div , > a {
+    > div,
+    > a {
       height: 60px;
       border-radius: 6px;
       border: solid 1px #efefef;
@@ -1686,7 +1670,6 @@
       align-items: center;
       padding: 0 18px;
       margin-bottom: 10px;
-
 
       span {
         font-size: 15px;
@@ -1702,7 +1685,7 @@
       background-color: #fff;
       &.checked {
         border-color: #6839d3;
-        span{
+        span {
           color: #6839d3;
         }
       }
@@ -1713,7 +1696,7 @@
       }
     }
     &-reverse {
-      >div {
+      > div {
         display: flex;
         justify-content: space-between;
       }
@@ -1726,6 +1709,18 @@
       padding-bottom: 3px;
     }
 
+    &.allChk {
+      display: flex;
+      justify-content: end;
+      margin-bottom: 5px;
+      border-top: 1px solid #efefef;
+      p {
+        margin-top: 17px;
+        font-size: 15px;
+        color: #6839d3;
+        font-family: var(--font2);
+      }
+    }
   }
 
   .Precautions {
@@ -1770,8 +1765,8 @@
           -moz-border-radius: 50%;
           border-radius: 50%;
           position: relative;
-          &::after{
-            content: 'ME';
+          &::after {
+            content: "ME";
             position: absolute;
             bottom: -12px;
             left: 7px;
@@ -1781,8 +1776,7 @@
             border-radius: 9.5px;
             background-color: #6839d3;
             text-align: center;
-            color: #FFFFFF;
-
+            color: #ffffff;
           }
         }
 
@@ -1796,8 +1790,8 @@
           -moz-border-radius: 50%;
           border-radius: 50%;
           position: relative;
-          &::after{
-            content: 'YOU';
+          &::after {
+            content: "YOU";
             position: absolute;
             bottom: -12px;
             left: 6px;
@@ -1807,8 +1801,7 @@
             border-radius: 9.5px;
             background-color: #6839d3;
             text-align: center;
-            color: #FFFFFF;
-
+            color: #ffffff;
           }
         }
       }
@@ -1830,7 +1823,6 @@
           font-size: 14px;
           color: #9b9aa6;
         }
-
       }
       .btn {
         font-size: 12px;
@@ -1840,9 +1832,7 @@
         margin-top: 9px;
       }
     }
-
   }
-
 
   .share-profile {
     position: relative;
@@ -1883,7 +1873,6 @@
             color: #6839d3;
           }
         }
-
       }
       .user {
         padding-top: 5px;
@@ -1941,7 +1930,6 @@
             }
           }
         }
-
       }
       .desc {
         font-size: 12px;
@@ -1952,10 +1940,8 @@
       &:last-child {
         margin-bottom: 0;
       }
-
     }
   }
-
 
   .data-manage {
     display: flex;
@@ -1996,7 +1982,7 @@
         position: relative;
         &::after {
           display: inline-block;
-          content: '';
+          content: "";
           width: 20px;
           height: 20px;
           background-image: url(../../img/common/btn_accordian_main_down@2x.png);
@@ -2008,33 +1994,31 @@
         }
         &.on {
           &::after {
-            transform : translateY(-50%) rotate(180deg);
-
+            transform: translateY(-50%) rotate(180deg);
           }
-          &+.desc {
+          & + .desc {
             display: block;
           }
         }
       }
-      .desc{
+      .desc {
         display: none;
         padding: 20px 0;
         border-bottom: 1px solid #efefef;
         font-size: 14px;
         color: #737183;
       }
-
     }
   }
 
   .manage-footer {
     padding: 20px;
     width: 100%;
-    &.fixed{
+    &.fixed {
       position: fixed;
       bottom: 0;
     }
-    .box{
+    .box {
       padding: 0 20px;
       border: 1px solid #efefef;
       margin-bottom: 0;
@@ -2059,7 +2043,7 @@
         }
         &.open {
           i {
-              transform: rotate(-90deg);
+            transform: rotate(-90deg);
           }
           & + .info {
             display: block;
@@ -2070,7 +2054,7 @@
         border-top: 1px solid #efefef;
         font-size: 14px;
         color: #9b9aa6;
-        padding:  14px 0 ;
+        padding: 14px 0;
         font-family: var(--font1);
         line-height: 21px;
         display: none;
@@ -2122,13 +2106,11 @@
     }
   }
 
-
   /**
   04_3.1_공동지출관리_1_시작
    */
 
   .share-spend-money {
-
     .box-key {
       height: 96px;
       padding: 20px;
@@ -2148,7 +2130,7 @@
       .title {
         font-size: 24px;
         color: #fff;
-          font-family: var(--font3);
+        font-family: var(--font3);
       }
       .desc {
         font-size: 14px;
@@ -2177,7 +2159,7 @@
         text-align: center;
         color: #737183;
         margin-bottom: 10px;
-        &+a {
+        & + a {
           font-size: 14px;
           color: #6839d3;
           font-family: var(--font2);
@@ -2188,7 +2170,6 @@
           }
         }
       }
-
     }
 
     .text-loading {
@@ -2197,7 +2178,7 @@
       height: calc(100vh - 66px);
       display: flex;
       align-items: center;
-      >div {
+      > div {
         margin: 0 auto;
         width: 100%;
       }
@@ -2235,9 +2216,9 @@
     }
   }
 
-  .manage-tab{
+  .manage-tab {
     padding-top: 5px !important;
-    ul{
+    ul {
       li {
         padding: 10px !important;
       }
@@ -2299,7 +2280,7 @@
         margin-bottom: 6px;
         font-family: var(--font1);
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           left: 0;
           top: 50%;
@@ -2316,7 +2297,6 @@
       }
     }
   }
-
 
   .profile-update {
     padding: 20px;
@@ -2352,14 +2332,14 @@
         display: block;
       }
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         right: 0;
         transform: translateY(-50%);
         width: 10px;
         height: 24px;
-        background-image: url('../../img/common/ico_list_arrow_large@2x.png');
+        background-image: url("../../img/common/ico_list_arrow_large@2x.png");
         background-size: 10px;
       }
       .tit {
@@ -2382,9 +2362,6 @@
         padding-left: 30px;
         display: block;
       }
-
     }
   }
-
-
 }

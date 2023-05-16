@@ -7,35 +7,22 @@
         <a href="#" class="sprite btn_back"></a>
     </div>
     <div class="contents expenditure share-spend-money">
-        <div class="text-descriptiton mb-30">
+        <div class="text-descriptiton mb-20">
             <p class="title">
                 <span class="f-point">정보 수신에 동의</span>할<br>
                 기관을 선택해 주세요🙂</p>
-            <p class="badge-box mt-3">
+            <p class="badge-box mt-3 mb-2">
                 <span class="badge badge-lg badge-gray">카드 : 가맹점명</span>
                 <span class="badge badge-lg badge-gray">계좌 : 적요/메모</span>
             </p>
+            <p class="desc mt-4" >
+                ✽동의로 변경 시, 과거 거래내역에 직접 입력한 내용 및 
+                설정이 초기화 되어요 
+            </p>
         </div>
-        <div class="agree-wrap agree-wrap-reverse padding-default-x">
-            <a href="#" class="select-all-box">
-                <span>전체 선택</span>
-                <label>
-                    <input type="checkbox" class="filled-in">
-                    <span></span>
-                </label>
-            </a>
+        <div class="allChk agree-wrap padding-default-x">
+            <p>선택 해제</p>
         </div>
-        <script type="text/javascript">
-            $('.select-all-box').on('click', function (){
-                if ($(this).hasClass('checked')){
-                    $(this).removeClass('checked')
-                        .find('input').prop('checked', false)
-                } else {
-                    $(this).addClass('checked')
-                        .find('input').prop('checked', true)
-                }
-            })
-        </script>
 
         <div class="expenditure-box pt-0" style="padding-bottom: 80px;">
             <ul class="usage-history-list usage-category-list filter-setting  pt-0 min-height-auto" style="padding-bottom: 20px;">
@@ -53,7 +40,7 @@
                                 </div>
                                 <div>
                                     <label>
-                                        <input type="checkbox" class="filled-in">
+                                        <input type="checkbox" class="filled-in" checked>
                                         <span></span>
                                     </label>
                                 </div>
@@ -71,7 +58,7 @@
                                 </div>
                                 <div>
                                     <label>
-                                        <input type="checkbox" class="filled-in">
+                                        <input type="checkbox" class="filled-in" checked>
                                         <span></span>
                                     </label>
                                 </div>
@@ -89,7 +76,7 @@
                                 </div>
                                 <div>
                                     <label>
-                                        <input type="checkbox" class="filled-in">
+                                        <input type="checkbox" class="filled-in" checked>
                                         <span></span>
                                     </label>
                                 </div>

@@ -1996,6 +1996,15 @@
                 }
 
                 .details-history {
+
+                  &.limit{
+                    margin-left: -20px;
+                    padding: 0 20px;
+                    width: calc(100% + 40px);
+                    height: calc(100vh - 372px);
+                    overflow: scroll;
+                  }
+
                   &.details {
                     .item-list {
                       padding: 0;

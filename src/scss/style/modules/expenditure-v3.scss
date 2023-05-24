@@ -5737,6 +5737,7 @@
           font-family: var(--font2);
           margin-bottom: 0;
           color: var(--text-01);
+          word-break: break-all;
 
           &::placeholder {
             font-family: var(--font1);

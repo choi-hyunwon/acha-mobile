@@ -390,6 +390,10 @@ input[type="month"] {
   -webkit-appearance: listbox;
 }
 
+input::-webkit-date-and-time-value {
+  text-align: left;
+}
+
 textarea {
   overflow: auto; // Remove the default vertical scrollbar in IE.
   // Textareas should really only resize vertically so they don't break their (horizontal) containers.

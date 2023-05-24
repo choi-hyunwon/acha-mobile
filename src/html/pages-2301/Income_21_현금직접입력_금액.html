@@ -68,6 +68,10 @@
 		</div>
 	</body>
 	<script>
+		const dateControl = document.querySelector('input[type="datetime-local"]');
+		dateControl.value = '2017-06-01T08:30';
+		dateControl.style.textAlign = "right"
+
 		$(".custom-control-input").on("click", function () {
 			$(this).toggleClass("off");
 			if ($(this).hasClass("off")) {

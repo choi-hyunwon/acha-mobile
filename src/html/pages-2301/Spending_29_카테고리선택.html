@@ -151,6 +151,15 @@
 
         btnSlideOpen.trigger('click');
 
+        // 20230524 추가
+        $(window).click(function (e) {
+        var $target = e.target.nextElementSibling.className
+          if ( $target === "modal-slide-backdrop show") {
+            $("._modalSlide").removeClass("up").addClass("down").css({'display':'none'});
+            $(".modal-slide-backdrop").removeClass("show");
+          }
+        });
+
 
 /*        var list = $('.category-list');
         var listLi = $('.category-list ul li');

@@ -3049,15 +3049,17 @@
 
         .title {
           float: left;
-          width: calc(100% - 145px);
-          font-family: var(--font2);
-          font-size: 15px;
-          line-height: 22px;
-          letter-spacing: -0.33px;
-          color: var(--text-01);
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
+    width: calc(100% - 145px);
+    font-family: var(--font2);
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.33px;
+    color: var(--text-01);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 
           /*가맹점명 미동의*/
           &.disagree{
@@ -7303,7 +7305,13 @@
     padding: 80px;
     text-align: center;
     .img{
-      margin-bottom: 13px;
+      width: 42px;
+      height: 42px;
+      margin: 0 auto 13px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
     .txt{
       color: var(--text-02);
@@ -7740,6 +7748,8 @@
   border-top: 10px solid #f5f6f8;
   padding: 0 20px 60px;
   margin-top: 36px;
+  height: calc( 100vh - 185px);
+  position: relative;
 
   .item {
     padding: 36px 0 40px;
@@ -7923,7 +7933,11 @@
   }
 
   >.no-data{
-    padding: 80px;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
     .img{
       margin-bottom: 13px;
@@ -8431,3 +8445,34 @@
     right: 12px;
   }
 }
+
+
+
+
+  // 20230524 추가
+  .no-data-wrap{
+    position: relative;
+    .no-data{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      .img{
+        width: 42px;
+        height: 42px;
+        margin: 0 auto 13px;
+        display: inline-block;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .txt{
+        font-size: 14px;
+        color: var(--text-02);
+        text-align: center;
+      }
+    }
+  }

@@ -284,7 +284,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: url('../../img/common/check_off@2x.png') no-repeat center center / contain;
+  background: url('../../img/common/check_off@2x.png') no-repeat center center / 100% auto;
   border: none;
   transition: none;
 }
@@ -294,7 +294,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: url('../../img/common/check_on@2x.png') no-repeat center center / contain;
+  background: url('../../img/common/check_on@2x.png') no-repeat center center / 100% auto;
   border: none;
   transition: none;
 }
@@ -346,7 +346,7 @@
   height: 22px;
   border: 2px solid var(--color-point);
   border-radius: 50%;
-  background-color: var(--color-point);
+  // background-color: var(--color-point);
   z-index: 0;
   border: none;
 }
@@ -867,6 +867,8 @@ input.custom {
     }
   }
 
+  input::-webkit-date-and-time-value{ text-align:left; }
+  
   .won {
     position: absolute;
     right: -2px;

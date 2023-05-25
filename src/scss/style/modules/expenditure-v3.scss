@@ -1404,6 +1404,12 @@
           }
         }
 
+        .list-day-wrap{
+          & + .list-day-wrap{
+            margin-top: 20px;
+          }
+        }
+
         /**
       sub-title 전역 처리
        */
@@ -1693,6 +1699,7 @@
                           font-family: var(--font4);
                           display: block;
                           font-weight: 500;
+                          text-decoration: line-through;
 
                           span {
                             display: inline-block;
@@ -1875,8 +1882,7 @@
                     color: #c2c1cc !important;
                   }
 
-                  .amount,
-                  .place span {
+                  .amount {
                     text-decoration: line-through;
                   }
                 }

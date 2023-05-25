@@ -22,12 +22,39 @@
             </div>
         </div>
         <div class="box-ex-list border-bottom-0">
-            <div class="no-data">
-                <div class="img"><img src="../../img/common/ico_error@2x.png" alt=""></div>
-                <div class="txt">거래 내역이 없습니다</div>
+            <div class="no-data-wrap">
+                <div class="no-data">
+                    <div class="img"><img src="../../img/common/ico_error@2x.png" alt=""></div>
+                    <div class="txt">거래 내역이 없습니다</div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+      $(window).resize(function () {
+        nodataWrap ()
+      });
+      nodataWrap ()
+      function nodataWrap (){
+        var header = $(".header").outerHeight();
+        var detailTop = $(".box-ex-detail-top").outerHeight();
+        var detailInfo = $(".box-ex-detail-info").outerHeight();
+
+        var h = ''
+        var calcH = ''
+
+        if ($(".box-ex-detail-info").length) {
+          h = header + detailTop + detailInfo;
+        } else {
+          h = header + detailTop;
+        }
+        calcH = $(window).height() - h;
+        console.log(calcH);
+        $(".no-data-wrap").css({ height: calcH });
+      }
+    });
+  </script>
 </body>
 </html>

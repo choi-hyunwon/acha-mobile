@@ -342,11 +342,12 @@ a:hover {
     height: 50px;
     border: 0;
     line-height: 50px;
-    background-color: var(--color-point);
+    background-color: var(--color-point) !important;
     color: #ffffff;
     font-size: 15px;
     letter-spacing: -.75px;
     font-family: var(--font2);
+    box-shadow: none !important;
 
     &.dim {
       background-color: #b39be9;

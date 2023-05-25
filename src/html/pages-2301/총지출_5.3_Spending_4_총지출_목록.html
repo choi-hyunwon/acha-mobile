@@ -174,13 +174,11 @@
         if ($(this).parent().hasClass('list-collapse-close')){
             $list.removeClass('list-collapse-close');
             $list.siblings('.divider').show();
-            $list.siblings('.sub-title').show();
-            $list.siblings('.details-history').show();
+            $list.siblings('.list-day-wrap').show();
         } else {
             $list.addClass('list-collapse-close');
             $list.siblings('.divider').hide();
-            $list.siblings('.sub-title').hide();
-            $list.siblings('.details-history').hide();
+            $list.siblings('.list-day-wrap').hide();
         }
     })
 </script>

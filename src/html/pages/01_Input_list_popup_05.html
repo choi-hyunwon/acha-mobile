@@ -49,7 +49,11 @@
         $(window).click(function (e) {
         var $target = e.target.nextElementSibling.className
           if ( $target === "modal-slide-backdrop show") {
-            $("._modalSlide").removeClass("up").addClass("down").css({'display':'none'});
+            $("._modalSlide").removeClass("up").addClass("down");
+            setTimeout(function () {
+            document.getElementsByClassName("_modalSlide")[0].style.display =
+              "none";
+          }, 300);
             $(".modal-slide-backdrop").removeClass("show");
           }
         });

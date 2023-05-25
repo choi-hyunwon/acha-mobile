@@ -1404,6 +1404,12 @@
           }
         }
 
+        .list-day-wrap{
+          & + .list-day-wrap{
+            margin-top: 20px;
+          }
+        }
+
         /**
       sub-title 전역 처리
        */

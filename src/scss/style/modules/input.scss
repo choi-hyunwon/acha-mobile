@@ -866,6 +866,8 @@ input.custom {
     }
   }
 
+  input::-webkit-date-and-time-value{ text-align:left; }
+  
   .won {
     position: absolute;
     right: -2px;

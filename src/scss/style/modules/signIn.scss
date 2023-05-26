@@ -317,6 +317,7 @@
             width: 18px;
             border-radius: 2px;
             top: 0;
+            background: var(--blurple);
           }
 
           [type="checkbox"].filled-in:checked + span:not(.lever):before {

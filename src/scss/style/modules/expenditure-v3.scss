@@ -1877,7 +1877,9 @@
                   }
 
                   .amount {
-                    text-decoration: line-through;
+                    &-global{
+                      text-decoration: line-through;
+                    }
                   }
                 }
               }

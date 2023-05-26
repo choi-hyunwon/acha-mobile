@@ -735,7 +735,8 @@
             .percent {
               position: absolute;
               right: 10px;
-              top: 2px;
+              top: 50%;
+              transform: translateY(-50%);
               z-index: 1;
               font-size: 14px;
               font-family: var(--font7);
@@ -1044,7 +1045,8 @@
             .percent {
               position: absolute;
               right: 8px;
-              top: 2px;
+              top: 50%;
+              transform: translateY(-50%);
               z-index: 1;
               font-size: 14px;
               font-family: var(--font7);
@@ -1364,6 +1366,7 @@
       }
 
       .expenditure-box {
+        overflow: hidden;
         .scope {
           .desc {
             padding: 15px 20px;
@@ -1883,7 +1886,9 @@
                   }
 
                   .amount {
-                    text-decoration: line-through;
+                    &-global{
+                      text-decoration: line-through;
+                    }
                   }
                 }
               }

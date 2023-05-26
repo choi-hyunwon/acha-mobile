@@ -1347,6 +1347,23 @@
     display: none;
   }
 }
+@keyframes modal-sticky-bottom-animation215 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 215px;
+  }
+}
+@keyframes modal-sticky-bottom-animation-out215 {
+  from {
+    height: 215px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
 
 @keyframes modal-sticky-bottom-animation10 {
   from {
@@ -1676,6 +1693,7 @@
       background-size: cover;
       right: 16px;
       top: 20px;
+      z-index: 10;
     }
 
     .inner {
@@ -4353,14 +4371,14 @@
       &.up {
         transition: 0.5s;
         .modal-slide-content {
-          height: 171px;
-          animation: modal-sticky-bottom-animation9 0.5s;
+          height: 215px;
+          animation: modal-sticky-bottom-animation215 0.5s;
         }
       }
       &.down {
         transition: 0.5s;
         .modal-slide-content {
-          animation: modal-sticky-bottom-animation-out9 0.5s;
+          animation: modal-sticky-bottom-animation-out215 0.5s;
           height: 0;
         }
       }

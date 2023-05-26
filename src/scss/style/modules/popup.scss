@@ -1583,6 +1583,25 @@
   }
 }
 
+@keyframes modal-sticky-bottom-animation20 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 263px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out20 {
+  from {
+    height: 263px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
 @keyframes modal-sticky-bottom-animation21 {
   from {
     height: 0;
@@ -1620,12 +1639,21 @@
   }
 }
 
-@keyframes modal-sticky-bottom-animation-out138 {
+@keyframes modal-sticky-bottom-animation138 {
   from {
     height: 0;
   }
   to {
     height: 138px;
+  }
+}
+@keyframes modal-sticky-bottom-animation-out138 {
+  from {
+    height: 138px;
+  }
+  to {
+    height: 0;
+    display: none;
   }
 }
 
@@ -1641,6 +1669,43 @@
 @keyframes modal-sticky-bottom-animation-out588 {
   from {
     height: 588px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation221 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 221px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out221 {
+  from {
+    height: 221px;
+  }
+  to {
+    height: 0;
+    display: none;
+  }
+}
+@keyframes modal-sticky-bottom-animation214 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 214px;
+  }
+}
+
+@keyframes modal-sticky-bottom-animation-out214 {
+  from {
+    height: 214px;
   }
   to {
     height: 0;
@@ -2714,6 +2779,22 @@
 
   /*마이데이터*/
   &.modal-my-data {
+    &.h221{
+      &.up {
+        transition: 0.5s;
+        .modal-slide-content {
+          height: 221px;
+          animation: modal-sticky-bottom-animation221 0.5s;
+        }
+      }
+      &.down {
+        transition: 0.5s;
+        .modal-slide-content {
+          animation: modal-sticky-bottom-animation-out221 0.5s;
+          height: 0;
+        }
+      }
+    }
     .inner {
       padding: 30px 28px;
       overflow: hidden;
@@ -4142,6 +4223,22 @@
       }
     }
     &.change-amount {
+      &.h214{
+        &.up {
+          transition: 0.5s;
+          .modal-slide-content {
+            height: 214px;
+            animation: modal-sticky-bottom-animation214 0.5s;
+          }
+        }
+        &.down {
+          transition: 0.5s;
+          .modal-slide-content {
+            animation: modal-sticky-bottom-animation-out214 0.5s;
+            height: 0;
+          }
+        }  
+      }
       &.up {
         transition: 0.5s;
         .modal-slide-content {
@@ -4368,6 +4465,22 @@
       }
     }
     &.memo-input {
+      &.h214{
+        &.up {
+          transition: 0.5s;
+          .modal-slide-content {
+            height: 214px;
+            animation: modal-sticky-bottom-animation214 0.5s;
+          }
+        }
+        &.down {
+          transition: 0.5s;
+          .modal-slide-content {
+            animation: modal-sticky-bottom-animation-out214 0.5s;
+            height: 0;
+          }
+        }
+      }
       &.up {
         transition: 0.5s;
         .modal-slide-content {
@@ -4557,6 +4670,22 @@
       }
     }
     &.expected-import-date {
+      &.h263{
+        &.up {
+          transition: 0.5s;
+          .modal-slide-content {
+            height: 263px;
+            animation: modal-sticky-bottom-animation5 0.5s;
+          }
+        }
+        &.down {
+          transition: 0.5s;
+          .modal-slide-content {
+            animation: modal-sticky-bottom-animation-out5 0.5s;
+            height: 0;
+          }
+        }
+      }
       &.up {
         transition: 0.5s;
         .modal-slide-content {
@@ -4649,6 +4778,22 @@
       }
     }
     &.income-menu {
+      &.h138{
+        &.up {
+          transition: 0.5s;
+          .modal-slide-content {
+            height: 138px;
+            animation: modal-sticky-bottom-animation138 0.5s;
+          }
+        }
+        &.down {
+          transition: 0.5s;
+          .modal-slide-content {
+            animation: modal-sticky-bottom-animation-out138 0.5s;
+            height: 0;
+          }
+        }
+      }
       &.up {
         transition: 0.5s;
         .modal-slide-content {

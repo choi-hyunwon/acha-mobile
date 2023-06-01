@@ -179,6 +179,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border: none;
+  box-shadow: none;;
 }
 
 [type="checkbox"] + span:not(.lever):before,

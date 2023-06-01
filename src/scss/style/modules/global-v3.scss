@@ -188,8 +188,10 @@
   .icon{
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain
-    ;
+    background-size: contain;
+    &.icon_cate_salary{
+      background-image: url(../../img/common/expenditure/icon-category/img_cate_salary@2x.png);
+    }
     &.icon_cate_baby{
       background-image: url(../../img/common/expenditure/icon-category/ic_cate_baby@2x.png);
     }

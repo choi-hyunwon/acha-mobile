@@ -1295,6 +1295,9 @@
                 font-family: var(--font3);
                 line-height: 26px;
                 //font-weight: bold;
+                img{
+                  margin-top: -5px;
+                }
               }
 
               &:after {
@@ -5415,7 +5418,7 @@
               &.badge {
                 width: 34px;
                 height: 21px;
-                line-height: 15px;
+                // line-height: 15px;
                 text-align: center;
                 display: inline-block;
                 border-radius: 10px;

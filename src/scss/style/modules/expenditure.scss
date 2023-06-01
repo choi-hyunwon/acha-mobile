@@ -2290,6 +2290,7 @@
                 .label{
                   float: left;
                   margin-right: 4px;
+                  height: 22px;
                 }
                 .img{
                   margin-right: 8px;
@@ -2300,6 +2301,11 @@
                   font-size: 15px;
                   color: var(--text-01);
                   font-family: var(--font5);
+                  //
+                  position: relative;
+                  display: inline-block;
+                  width: 100%;
+                  margin-top: 5px;
                   em{
                     font-size: 14px;
                     font-family: var(--font2);
@@ -2307,7 +2313,13 @@
                   }
                 }
                 .btn-edit{
-                  float: right;
+                  // float: right;
+
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  width: 16px;
+                  height: 16px;
                 }
               }
             }

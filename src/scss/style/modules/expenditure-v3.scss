@@ -4494,11 +4494,11 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          height: 80px;
+          padding: 20px 0;
 
           .cate {
             display: flex;
-            align-items: center;
+            height: auto;
 
             .percent {
               width: 36px;
@@ -4539,6 +4539,7 @@
                 font-size: 14px;
                 color: #9b9aa6;
                 font-family: var(--font1);
+                word-break: break-all;
               }
             }
           }

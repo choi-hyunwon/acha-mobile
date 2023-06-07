@@ -15,12 +15,12 @@
                 <ul>
                     <li class="custom-light">
                         <label class="title">카테고리명</label>
-                        <input title="value" type="text" maxlength="12" onkeyup="countChar(this,'_val')" placeholder="카테고리 이름을 입력해주세요" value="운동" style="padding-right: 45px;"/>
+                        <input title="value" type="text" maxlength="12" onkeyup="countCharDelete(this,'_val')" placeholder="카테고리 이름을 입력해주세요" value="운동" style="padding-right: 45px;"/>
                         <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 12</span></div>
                     </li>
                     <li class="custom-light">
                         <label class="title">카테고리 설명</label>
-                        <input title="value" type="text" maxlength="24" onkeyup="countChar(this,'_val')" placeholder="어떤 지출로 분류할지 설명을 적어주세요." value="헬스장 이용료, 운동화, 소도구 구매" style="padding-right: 45px;"/>
+                        <input title="value" type="text" maxlength="24" onkeyup="countCharDelete(this,'_val')" placeholder="어떤 지출로 분류할지 설명을 적어주세요." value="헬스장 이용료, 운동화, 소도구 구매" style="padding-right: 70px;"/>
                         <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 24</span></div>
                     </li>
                 </ul>
@@ -63,25 +63,6 @@
         btnSlideOpen.trigger('click');
     })
 
-    function countChar(val , target) {
-        var len = val.value.length;
-        var targetItem = $(`.${target}`);
-        var nextEle = val.nextElementSibling
-
-        targetItem.text(len);
-
-
-        if(len === 0) {
-            targetItem.css('color','#afaeb8');
-            nextEle.style.display="none";
-        }
-        else {
-            targetItem.css('color','#37354e');
-            nextEle.style.display="block"
-        }
-
-    }
-
     function resize(obj) {
         obj.style.height = "1px";
         obj.style.height = (12+obj.scrollHeight)+"px";
@@ -98,5 +79,6 @@
 
     })
 </script>
+@@include('../include/countCharDelete.html')
 </body>
 </html>

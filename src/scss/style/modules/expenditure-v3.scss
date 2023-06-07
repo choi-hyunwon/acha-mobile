@@ -1286,6 +1286,9 @@
               font-size: 17px;
               color: var(--text-03);
               line-height: 26px;
+              img{
+                margin-top: -5px;
+              }
             }
 
             &.active {
@@ -1295,9 +1298,6 @@
                 font-family: var(--font3);
                 line-height: 26px;
                 //font-weight: bold;
-                img{
-                  margin-top: -5px;
-                }
               }
 
               &:after {

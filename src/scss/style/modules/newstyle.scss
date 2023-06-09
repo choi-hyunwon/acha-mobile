@@ -141,12 +141,6 @@ textarea.custom {
 
   &.active {
     padding-bottom: 10px;
-
-    .textarea {
-      .submit-box {
-        display: flex;
-      }
-    }
   }
 
   .textarea {
@@ -158,8 +152,7 @@ textarea.custom {
     }
 
     .submit-box {
-
-      display: none;
+      display: flex;
       justify-content: space-between;
       align-items: flex-start;
       padding-top: 10px;

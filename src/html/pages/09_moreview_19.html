@@ -8,7 +8,7 @@
         <h2 class="title">문의 상세</h2>
     </div>
     <div class="contents">
-        <div class="faq_list_detail">
+        <div class="faq_list_detail pb-0">
             <div class="faq_info">
                 <div class="title">왜 카드사 연동이 안되는거예요?</div>
                 <div class="title-sm">
@@ -35,7 +35,7 @@
         <div class="textarea">
             <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" id="context" maxlength="200" placeholder="의견을 작성해 주세요"></textarea>
 
-            <div class="submit-box ">
+            <div class="submit-box">
                 <span class="length"><em class="_val">0</em> / 200</span>
                 <a href="#" class="btn btn-purple">등록</a>
            </div>
@@ -58,17 +58,6 @@
             $('.textarea-box').addClass('active');
         }
     }
-
-    $('.custom').focus(function() {
-        $('.textarea-box').addClass('active');
-    });
-
-    $('.custom').focusout(function() {
-        if ($(this).val().length === 0) {
-            $('.textarea-box').removeClass('active');
-        }
-    });
-
 </script>
 </body>
 </html>

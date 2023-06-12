@@ -183,168 +183,6 @@
     }
   }
   /**
-  icon
-   */
-  .icon{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    &.icon_cate_salary{
-      background-image: url(../../img/common/expenditure/icon-category/img_cate_salary@2x.png);
-    }
-    &.icon_cate_baby{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_baby@2x.png);
-    }
-    &.icon_cate_beauty{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_beauty@2x.png);
-    }
-    &.icon_cate_car{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_car@2x.png);
-    }
-    &.icon_cate_cloth{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_cloth@2x.png);
-    }
-    &.icon_cate_dessert{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_dessert@2x.png);
-    }
-    &.icon_cate_education {
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_education@2x.png);
-    }
-    &.icon_cate_etc{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_etc@2x.png);
-    }
-    &.icon_cate_event{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_event@2x.png);
-    }
-    &.icon_cate_exception{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_exception@2x.png);
-    }
-    &.icon_cate_food{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_food@2x.png);
-    }
-    &.icon_cate_goods{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_goods@2x.png);
-    }
-    &.icon_cate_helath{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_helath@2x.png);
-    }
-    &.icon_cate_house{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_house@2x.png);
-    }
-    &.icon_cate_insurance{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_insurance@2x.png);
-    }
-    &.icon_cate_leisure{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_leisure@2x.png);
-    }
-    &.icon_cate_loan{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_loan@2x.png);
-    }
-    &.icon_cate_meeting{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_meeting@2x.png);
-    }
-    &.icon_cate_mobile{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_mobile@2x.png);
-    }
-    &.icon_cate_money{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_money@2x.png);
-    }
-    &.icon_cate_pet{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_pet@2x.png);
-    }
-    &.icon_cate_save{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_save@2x.png);
-    }
-    &.icon_cate_subscript{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_subscript@2x.png);
-    }
-    &.icon_cate_tax{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_tax@2x.png);
-    }
-    &.icon_cate_transportation{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_transportation@2x.png);
-    }
-    &.icon_cate_trip{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_trip@2x.png);
-    }
-    &.icon_cate_cash{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_cash@2x.png);
-    }
-    &.icon_cate_donation{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_heart@2x.png);
-    }
-    &.icon_cate_mart{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_mart@2x.png);
-    }
-    &.icon_cate_cafe{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_dessert@2x.png);
-    }
-    &.icon_cate_wine{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_entertainment@2x.png);
-    }
-    &.icon_cate_living{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_goods@2x.png);
-    }
-    &.icon_cate_shopping{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_shopping@2x.png);
-    }
-
-    &.icon_cate_hobbies{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_leisure@2x.png);
-    }
-    &.icon_cate_travel{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_travel@2x.png);
-    }
-    &.icon_cate_gift{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_event@2x.png);
-    }
-    &.icon_cate_health{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_helath@2x.png);
-    }
-    &.icon_cate_allowance{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_allowance@2x.png);
-    }
-    &.icon_cate_allowance{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_allowance@2x.png);
-    }
-    &.icon_cate_allowance{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_transportation@2x.png);
-    }
-    &.icon_cate_descendant{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_descendant@2x.png);
-    }
-    &.icon_cate_animal{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_pet@2x.png);
-    }
-    &.icon_cate_country{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_trip@2x.png);
-    }
-    &.icon_cate_ATM{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_ATM@2x.png);
-    }
-    &.icon_cate_transfer{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_transfer@2x.png);
-    }
-    &.icon_cate_cardPayment{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_cardpayment@2x.png);
-    }
-    &.icon_cate_cardPayment{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_cardpayment@2x.png);
-    }
-    &.icon_cate_traffic{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_transportation@2x.png);
-    }
-
-    &.icon_cate_income{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_deposit@2x.png);
-    }
-    &.icon_cate_deposit{
-      background-image: url(../../img/common/expenditure/icon-category/ic_cate_income@2x.png);
-    }
-    
-
-  }
-  /**
   badge
   */
   .badge{
@@ -571,6 +409,216 @@
       }
     }
   }
+}
+/**
+  icon
+   */
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &.icon_cate_salary {
+    background-image: url(../../img/common/expenditure/icon-category/img_cate_salary@2x.png);
+  }
+
+  &.icon_cate_baby {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_baby@2x.png);
+  }
+
+  &.icon_cate_beauty {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_beauty@2x.png);
+  }
+
+  &.icon_cate_car {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_car@2x.png);
+  }
+
+  &.icon_cate_cloth {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_cloth@2x.png);
+  }
+
+  &.icon_cate_dessert {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_dessert@2x.png);
+  }
+
+  &.icon_cate_education {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_education@2x.png);
+  }
+
+  &.icon_cate_etc {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_etc@2x.png);
+  }
+
+  &.icon_cate_event {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_event@2x.png);
+  }
+
+  &.icon_cate_exception {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_exception@2x.png);
+  }
+
+  &.icon_cate_food {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_food@2x.png);
+  }
+
+  &.icon_cate_goods {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_goods@2x.png);
+  }
+
+  &.icon_cate_helath {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_helath@2x.png);
+  }
+
+  &.icon_cate_house {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_house@2x.png);
+  }
+
+  &.icon_cate_insurance {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_insurance@2x.png);
+  }
+
+  &.icon_cate_leisure {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_leisure@2x.png);
+  }
+
+  &.icon_cate_loan {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_loan@2x.png);
+  }
+
+  &.icon_cate_meeting {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_meeting@2x.png);
+  }
+
+  &.icon_cate_mobile {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_mobile@2x.png);
+  }
+
+  &.icon_cate_money {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_money@2x.png);
+  }
+
+  &.icon_cate_pet {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_pet@2x.png);
+  }
+
+  &.icon_cate_save {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_save@2x.png);
+  }
+
+  &.icon_cate_subscript {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_subscript@2x.png);
+  }
+
+  &.icon_cate_tax {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_tax@2x.png);
+  }
+
+  &.icon_cate_transportation {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_transportation@2x.png);
+  }
+
+  &.icon_cate_trip {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_trip@2x.png);
+  }
+
+  &.icon_cate_cash {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_cash@2x.png);
+  }
+
+  &.icon_cate_donation {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_heart@2x.png);
+  }
+
+  &.icon_cate_mart {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_mart@2x.png);
+  }
+
+  &.icon_cate_cafe {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_dessert@2x.png);
+  }
+
+  &.icon_cate_wine {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_entertainment@2x.png);
+  }
+
+  &.icon_cate_living {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_goods@2x.png);
+  }
+
+  &.icon_cate_shopping {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_shopping@2x.png);
+  }
+
+  &.icon_cate_hobbies {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_leisure@2x.png);
+  }
+
+  &.icon_cate_travel {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_travel@2x.png);
+  }
+
+  &.icon_cate_gift {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_event@2x.png);
+  }
+
+  &.icon_cate_health {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_helath@2x.png);
+  }
+
+  &.icon_cate_allowance {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_allowance@2x.png);
+  }
+
+  &.icon_cate_allowance {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_allowance@2x.png);
+  }
+
+  &.icon_cate_allowance {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_transportation@2x.png);
+  }
+
+  &.icon_cate_descendant {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_descendant@2x.png);
+  }
+
+  &.icon_cate_animal {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_pet@2x.png);
+  }
+
+  &.icon_cate_country {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_trip@2x.png);
+  }
+
+  &.icon_cate_ATM {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_ATM@2x.png);
+  }
+
+  &.icon_cate_transfer {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_transfer@2x.png);
+  }
+
+  &.icon_cate_cardPayment {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_cardpayment@2x.png);
+  }
+
+  &.icon_cate_cardPayment {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_cardpayment@2x.png);
+  }
+
+  &.icon_cate_traffic {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_transportation@2x.png);
+  }
+
+  &.icon_cate_income {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_deposit@2x.png);
+  }
+
+  &.icon_cate_deposit {
+    background-image: url(../../img/common/expenditure/icon-category/ic_cate_income@2x.png);
+  }
+
+
 }
 
 

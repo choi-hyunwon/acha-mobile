@@ -24,7 +24,7 @@
                         <li class="custom-light">
                             <label class="title">카테고리 설명</label>
                             <input title="value" type="text" maxlength="24" onkeyup="countCharDelete(this,'_val')"
-                                placeholder="어떤 지출로 분류할지 설명을 적어주세요." />
+                                placeholder="어떤 지출로 분류할지 설명을 적어주세요." autofocus />
                             <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> /
                                     24</span></div>
                         </li>
@@ -66,13 +66,16 @@
 
             btnSlideOpen.trigger('click');
 
-        })
+            $(".custom-light input").on('focus', function (e) {
+                const maxLength = 50;
+                const el = e.target;
+                setTimeout(() => {
+                    el.setSelectionRange(maxLength, maxLength);
+                    el.scrollLeft = maxLength * 50;
+                }, 0)
+            });
 
-        function inputfocus() {
-            const $input_02 = document.getElementById('.custom-light input');
-            $input_02.focus(); // 여기까지만 하면 포커스가 맨 앞으로 간다.
-            $input_02.value = "js로 추가한 value"; // 여기 까지 해줘야 커서가 뒤로 간다.
-        }
+        })
 
 
         function resize(obj) {

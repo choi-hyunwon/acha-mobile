@@ -4647,7 +4647,6 @@
             .custom-light {
               text-align: left;
               margin-bottom: 30px;
-              border-bottom: solid 1px #e2e3e6;
               .title {
                 font-size: 14px;
                 color: var(--text-02);
@@ -4655,12 +4654,7 @@
                 margin-bottom: 4px;
               }
               input {
-                max-width: 80%;
-                border-bottom: none;;
                 padding-right: 0;
-                &:focus{
-                  border-bottom: 1px solid var(--text-01);
-                }
                 &::placeholder {
                   color: #c2c1cc;
                   font-family: var(--font1);

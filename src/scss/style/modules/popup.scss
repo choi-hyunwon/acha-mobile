@@ -4633,9 +4633,6 @@
                 max-width: 80%;
                 border-bottom: none;;
                 padding-right: 0;
-                &:focus{
-                  border-bottom: 1px solid var(--text-01);
-                }
                 &::placeholder {
                   color: #c2c1cc;
                   font-family: var(--font1);

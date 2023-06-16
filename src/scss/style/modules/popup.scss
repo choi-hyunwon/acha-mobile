@@ -4657,6 +4657,7 @@
               input {
                 max-width: 80%;
                 border-bottom: none;;
+                padding-right: 0;
                 &:focus{
                   border-bottom: 1px solid var(--text-01);
                 }

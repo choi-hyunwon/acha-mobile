@@ -1730,16 +1730,6 @@
   }
 }
 
-@keyframes modal-sticky-bottom-animation5881 {
-  from {
-    height: 0;
-  }
-
-  to {
-    height: 358px;
-  }
-}
-
 @keyframes modal-sticky-bottom-animation-out588 {
   from {
     height: 588px;
@@ -3793,9 +3783,8 @@
           animation: modal-sticky-bottom-animation16 0.5s;
 
           &.modal-category-icon {
-            height: 358px;
-            // animation: modal-sticky-bottom-animation588 0.5s;
-            animation: modal-sticky-bottom-animation5881 0.5s;
+            height: 588px;
+            animation: modal-sticky-bottom-animation588 0.5s;
           }
         }
       }

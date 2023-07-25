@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide expiration">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title _btnSlideOpen"><span class="name">마이데이터 연결 기간</span>이 곧 만료돼요<br />
+                    연결 기간을 연장할 기관을 선택해 주세요
+                </div>
+                <div class="allChk agree-wrap">
+                    <p>전체 선택</p>
+                </div>
+                <ul class="details-history limit">
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <div class="badge badge-pink"><span>만료 D-day</span></div>
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <div class="badge badge-pink"><span>만료 D-3</span></div>
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <div class="badge badge-pink"><span>만료 D-30</span></div>
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <div class="badge badge-pink"><span>만료 D-30</span></div>
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <div class="badge badge-pink"><span>만료 D-30</span></div>
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-wrap" style="margin-top: 20px;">
+                    <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half"
+                        style="line-height: 18px; padding: 6px 0;" onclick="openPopup()">국민카드
+                        <br />상세정보 보기</a>
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half disabled">연장하러 가기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

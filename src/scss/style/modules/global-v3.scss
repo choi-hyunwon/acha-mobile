@@ -687,11 +687,11 @@
     }
 
     &-md {
-      width: 40% !important;
+      width: 100px !important;
     }
 
     &-lg {
-      width: 70% !important;
+      width: 136px !important;
     }
   }
 
@@ -704,6 +704,10 @@
 
     &-sm {
       height: 16px !important;
+    }
+
+    &-md {
+      height: 20px !important;
     }
 
     &-lg {

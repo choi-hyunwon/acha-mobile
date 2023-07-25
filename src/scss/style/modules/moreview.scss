@@ -1867,9 +1867,6 @@ _ .event-btn-area {
       .title {
         display: inline-block;
         width: calc(100% - 5px);
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         margin-bottom: 6px;
       }
 

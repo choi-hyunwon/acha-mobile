@@ -20,12 +20,22 @@ a:hover {
   cursor: pointer;
   color: var(--text-02);
 
-  &.disabled{
+  &-floating {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    width: calc(100% - 40px);
+    transform: translateX(-50%);
+  }
+
+  &.disabled {
     opacity: 0.5;
     color: var(--text-04);
   }
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     outline: none;
   }
 
@@ -43,7 +53,8 @@ a:hover {
     letter-spacing: -.55px;
     font-family: var(--font1);
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: var(--text-02);
     }
   }
@@ -81,7 +92,8 @@ a:hover {
     border-color: #aaaaaa;
     color: #888888;
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: #888888;
     }
   }
@@ -169,7 +181,8 @@ a:hover {
   line-height: 45px;
   letter-spacing: -0.6px;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: var(--color-point);
   }
 }
@@ -202,11 +215,11 @@ a:hover {
       background: #d5d5d5;
     }
 
-    & .custom-control-input:checked ~ .custom-control-label::after {
+    & .custom-control-input:checked~.custom-control-label::after {
       background-color: #FFFFFF;
     }
 
-    & .custom-control-input:checked ~ .custom-control-label::before {
+    & .custom-control-input:checked~.custom-control-label::before {
       background: var(--color-point);
     }
   }
@@ -216,6 +229,7 @@ a:hover {
   position: absolute;
   top: 23px;
   right: 25px;
+
   &-relative {
     position: relative;
     top: -3px;
@@ -245,29 +259,29 @@ a:hover {
     background-color: #ffffff;
   }
 
-  & .custom-control-input:checked ~ .custom-control-label::before {
+  & .custom-control-input:checked~.custom-control-label::before {
     background: var(--color-point);
   }
 
-  & .custom-control-input:checked ~ .custom-control-label::after {
+  & .custom-control-input:checked~.custom-control-label::after {
     transform: translateX(1.95rem);
     background-color: #FFFFFF;
   }
 
-  & .custom-control-input:disabled ~ .custom-control-label {
+  & .custom-control-input:disabled~.custom-control-label {
     color: #212529;
   }
 
-  & .custom-control-input:disabled ~ .custom-control-label::before {
+  & .custom-control-input:disabled~.custom-control-label::before {
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
   }
 
-  & .custom-control-input:disabled:checked ~ .custom-control-label {
+  & .custom-control-input:disabled:checked~.custom-control-label {
     color: #212529;
   }
 
-  & .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  & .custom-control-input:disabled:checked~.custom-control-label::before {
     background-color: #c3aeff !important;
     border: 1px solid #c3aeff;
   }
@@ -317,7 +331,8 @@ a:hover {
   font-family: var(--font2);
   font-weight: 500;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #6839d3;
   }
 
@@ -359,7 +374,8 @@ a:hover {
     color: #737183;
     font-weight: normal;
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: #737183;
     }
 
@@ -436,17 +452,20 @@ a:hover {
   line-height: 50px;
   font-size: 15px;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: #ffffff;
   }
 }
 
-.btn-outline-gray{
+.btn-outline-gray {
   border: 1px solid #e2e3e6;
   color: #747679;
   font-family: var(--font2);
   border-radius: 6px;
-  &:focus, &:hover {
+
+  &:focus,
+  &:hover {
     color: #747679;
   }
 }
@@ -460,7 +479,8 @@ a:hover {
   border-radius: 6px;
   font-size: 15px;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: #ffffff;
   }
 

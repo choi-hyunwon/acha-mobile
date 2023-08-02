@@ -1,180 +1,182 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">가계부_Common_List 뱃지 수정 부분</a><i class="icon-arrow-bottom"></i></h2>
-        <div class="btn_area">
-            <a class="img" href="#">
-                <img src="../../img/common/ico_top_add_b_nor@2x.png" width="26" alt="더보기 버튼">
-            </a>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">가계부_Common_List 뱃지 수정 부분</a><i class="icon-arrow-bottom"></i></h2>
+            <div class="btn_area">
+                <a class="img" href="#">
+                    <img src="../../img/common/ico_top_add_b_nor@2x.png" width="26" alt="더보기 버튼">
+                </a>
+            </div>
+        </div>
+        <div class="contents expenditure">
+            <div class="total-amount mb-5">
+                <p class="title">총 수입</p>
+                <span class="amount">2,500,000</span>
+                <p class="expected">지출 예정 <span>0</span>원</p>
+            </div>
+            <div class="expenditure-box account-spending bg_light_gray">
+                <ul class="usage-history-list">
+                    <li>
+                        <p class="list-collapse">
+                            <span>수입 계획</span>
+                            <a class="btn-collapse">
+                                <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
+                            </a>
+                        </p>
+                        <div class="divider"></div>
+                        <p class="sub-title">25일</p>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>지출 수단 길이가 긴경우</span></span>
+                                            <span class="desc">2줄 이상일 경우에는 말줄임표</span>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method badge-payment badge-md"><span>신한카드 3줄 이상 긴 경우 말줄임표
+                                            나오는</span></div>
+                                </div>
+                            </li>
+
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>지출수단 단독</span></span>
+                                            <span class="desc">1줄일 경우에는 세로 중앙</span>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method badge-payment badge-md"><span>짧은내용</span></div>
+                                </div>
+                            </li>
+
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>지출수단 + 할부지출 기존</span></span>
+                                            <span class="desc">기존 화면 블루</span>
+                                        </div>
+                                    </div>
+                                    <div class="badge badge-blue"><span>할부지출</span></div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>지출수단 + 할부지출 기존</span></span>
+                                            <span class="desc">기존 화면 퍼플</span>
+                                        </div>
+                                    </div>
+                                    <div class="badge badge-purple"><span>3건</span></div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>지출수단 + 할부지출 기존</span></span>
+                                            <span class="desc">기존 화면 퍼플</span>
+                                        </div>
+                                    </div>
+                                    <div class="badge badge-gray"><span>3일 완료</span></div>
+                                </div>
+                            </li>
+
+
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>지출수단 + 할부지출 기존</span></span>
+                                            <span class="desc">신규 화면 badge-payment 클래스 추가</span>
+                                        </div>
+                                    </div>
+                                    <div class="badge badge-blue badge-payment"><span>할부지출</span></div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>지출수단 + 할부지출 기존</span></span>
+                                            <span class="desc">신규 화면 badge-payment 클래스 추가</span>
+                                        </div>
+                                    </div>
+                                    <div class="badge badge-purple badge-payment"><span>3건</span></div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>지출수단 + 할부지출 기존</span></span>
+                                            <span class="desc">신규 화면 badge-payment 클래스 추가</span>
+                                        </div>
+                                    </div>
+                                    <div class="badge badge-gray badge-payment"><span>3일 완료</span></div>
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="contents expenditure">
-        <div class="total-amount mb-5">
-            <p class="title">총 수입</p>
-            <span class="amount">2,500,000</span>
-            <p class="expected">지출 예정 <span>0</span>원</p> 
-        </div>
-        <div class="expenditure-box account-spending bg_light_gray">
-            <ul class="usage-history-list">
-                <li>
-                    <p class="list-collapse">
-                        <span>수입 계획</span>
-                        <a class="btn-collapse">
-                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
-                        </a>
-                    </p>
-                    <div class="divider"></div>
-                    <p class="sub-title">25일</p>
-                    <ul class="details-history">
-                        <li class="item-list">
-                            <div class="group">
-                                <div class="box">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="info">
-                                        <span class="place"><span>지출 수단 길이가 긴경우</span></span>
-                                        <span class="desc">2줄 이상일 경우에는 말줄임표</span>
-                                    </div>
-                                </div>
-                                <div class="payment-method badge-payment"><span>신한카드 3줄 이상 긴 경우 말줄임표 나오는</span></div>
-                            </div>
-                        </li>
-
-                        <li class="item-list">
-                            <div class="group">
-                                <div class="box">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="info">
-                                        <span class="place"><span>지출수단 단독</span></span>
-                                        <span class="desc">1줄일 경우에는 세로 중앙</span>
-                                    </div>
-                                </div>
-                                <div class="payment-method badge-payment"><span>짧은내용</span></div>
-                            </div>
-                        </li>
-
-                        <li class="item-list">
-                            <div class="group">
-                                <div class="box">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="info">
-                                        <span class="place"><span>지출수단 + 할부지출 기존</span></span>
-                                        <span class="desc">기존 화면 블루</span>
-                                    </div>
-                                </div>
-                                <div class="badge badge-blue"><span>할부지출</span></div>
-                            </div>
-                        </li>
-                        <li class="item-list">
-                            <div class="group">
-                                <div class="box">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="info">
-                                        <span class="place"><span>지출수단 + 할부지출 기존</span></span>
-                                        <span class="desc">기존 화면 퍼플</span>
-                                    </div>
-                                </div>
-                                <div class="badge badge-purple"><span>3건</span></div>
-                            </div>
-                        </li>
-                        <li class="item-list">
-                            <div class="group">
-                                <div class="box">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="info">
-                                        <span class="place"><span>지출수단 + 할부지출 기존</span></span>
-                                        <span class="desc">기존 화면 퍼플</span>
-                                    </div>
-                                </div>
-                                <div class="badge badge-gray"><span>3일 완료</span></div>
-                            </div>
-                        </li>
 
 
-                        <li class="item-list">
-                            <div class="group">
-                                <div class="box">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="info">
-                                        <span class="place"><span>지출수단 + 할부지출 기존</span></span>
-                                        <span class="desc">신규 화면 badge-payment 클래스 추가</span>
-                                    </div>
-                                </div>
-                                <div class="badge badge-blue badge-payment"><span>할부지출</span></div>
-                            </div>
-                        </li>
-                        <li class="item-list">
-                            <div class="group">
-                                <div class="box">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="info">
-                                        <span class="place"><span>지출수단 + 할부지출 기존</span></span>
-                                        <span class="desc">신규 화면 badge-payment 클래스 추가</span>
-                                    </div>
-                                </div>
-                                <div class="badge badge-purple badge-payment"><span>3건</span></div>
-                            </div>
-                        </li>
-                        <li class="item-list">
-                            <div class="group">
-                                <div class="box">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="info">
-                                        <span class="place"><span>지출수단 + 할부지출 기존</span></span>
-                                        <span class="desc">신규 화면 badge-payment 클래스 추가</span>
-                                    </div>
-                                </div>
-                                <div class="badge badge-gray badge-payment"><span>3일 완료</span></div>
-                            </div>
-                        </li>
-
-
-
-                    </ul>
-                </li>
-
-
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    let $list = $('.list-collapse');
-    $list.on('click', '.btn-collapse', function (){
-        if ($(this).parent().hasClass('list-collapse-close')){
-            $list.removeClass('list-collapse-close');
-            $list.siblings('.divider').show();
-            $list.siblings('.sub-title').show();
-            $list.siblings('.details-history').show();
-        } else {
-            $list.addClass('list-collapse-close');
-            $list.siblings('.divider').hide();
-            $list.siblings('.sub-title').hide();
-            $list.siblings('.details-history').hide();
-        }
-    })
-</script>
+    <script>
+        let $list = $('.list-collapse');
+        $list.on('click', '.btn-collapse', function () {
+            if ($(this).parent().hasClass('list-collapse-close')) {
+                $list.removeClass('list-collapse-close');
+                $list.siblings('.divider').show();
+                $list.siblings('.sub-title').show();
+                $list.siblings('.details-history').show();
+            } else {
+                $list.addClass('list-collapse-close');
+                $list.siblings('.divider').hide();
+                $list.siblings('.sub-title').hide();
+                $list.siblings('.details-history').hide();
+            }
+        })
+    </script>
 </body>
-</html>
 
+</html>

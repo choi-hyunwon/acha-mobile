@@ -224,6 +224,8 @@
     vertical-align: baseline;
     line-height: 1em;
 
+
+
     &.badge-outline-purple {
       position: relative;
       border: 1px solid #6839d3;
@@ -265,6 +267,11 @@
     &.badge-blue {
       color: #3968d3;
       background: #eff8ff;
+    }
+
+    &-md {
+      width: 76px;
+      height: 36px;
     }
 
     &-lg {

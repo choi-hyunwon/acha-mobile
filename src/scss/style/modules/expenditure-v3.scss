@@ -1401,6 +1401,11 @@
             margin-top: 20px;
           }
         }
+
+        .lumpSum {
+          display: flex;
+          align-items: center;
+        }
       }
 
       .list-day-wrap {
@@ -5990,4 +5995,18 @@
       }
     }
   }
+
+
+  // 총금액
+  .lump {
+    margin-right: 8px;
+    font-size: 16px;
+    color: #37354e !important;
+
+    >span {
+      font-size: 15px;
+      margin-right: 0;
+    }
+  }
+
 }

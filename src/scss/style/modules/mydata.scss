@@ -1,7 +1,7 @@
 .my-data-sign-in {
   padding: 10px 20px 0;
 
-  > .title-area {
+  >.title-area {
     margin-bottom: 40px;
 
     .title {
@@ -46,7 +46,7 @@
       padding-top: 22px;
       margin-bottom: -4px;
 
-      [type="checkbox"] + span:not(.lever) {
+      [type="checkbox"]+span:not(.lever) {
         font-size: 13px;
         font-family: var(--font2);
         letter-spacing: -0.65px;
@@ -77,7 +77,7 @@
 
       .card-box {
         .item {
-          > label {
+          >label {
             left: 20px;
           }
         }
@@ -94,7 +94,7 @@
 .my-data-required {
   padding: 10px 20px 52px;
 
-  > .title-area {
+  >.title-area {
     margin-bottom: 30px;
 
     .title {
@@ -110,7 +110,7 @@
     }
   }
 
-  > .card-list {
+  >.card-list {
     .card-item {
       margin-bottom: 36px;
       overflow: hidden;
@@ -188,7 +188,7 @@
             box-shadow: 0 5px 10px 0 rgba(55, 53, 78, 0.1);
             margin: -1px 0 30px 0;
             padding: 0 20px;
-            position: relative!important;
+            position: relative !important;
             transform: translate3d(0px, 0, 0px) !important;
 
             .dropdown-item {
@@ -196,11 +196,13 @@
               padding: 20px 0;
               white-space: normal;
 
-              &:focus, &:active, &:hover {
+              &:focus,
+              &:active,
+              &:hover {
                 background-color: #fff;
               }
 
-              + .dropdown-item {
+              +.dropdown-item {
                 border-top: solid 1px #f5f6f8;
               }
 
@@ -239,13 +241,13 @@
         border-radius: 0;
         padding: 0;
 
-        > img {
+        >img {
           width: 22px;
           height: 22px;
           margin-right: 6px;
         }
 
-        > span {
+        >span {
           font-family: var(--font2);
           font-size: 14px;
           font-weight: 500;
@@ -258,7 +260,7 @@
       .card-body {
         padding: 0 20px;
 
-        > .tit {
+        >.tit {
           font-family: var(--font3);
           font-size: 14px;
           font-weight: bold;
@@ -269,7 +271,7 @@
           padding-top: 21px;
         }
 
-        > .desc {
+        >.desc {
           font-size: 13px;
           line-height: 21px;
           letter-spacing: -0.33px;
@@ -295,7 +297,7 @@
           }
         }
 
-        > .cont {
+        >.cont {
           .list-body {
             width: 100%;
 
@@ -327,7 +329,7 @@
                 letter-spacing: -0.33px;
                 color: var(--text-01);
 
-                > a {
+                >a {
                   font-size: 13px;
                   font-family: var(--font1);
                   line-height: 19px;
@@ -336,7 +338,8 @@
                   text-decoration: underline;
                   margin-left: 6px;
                 }
-                +.my-data-terms-of-use{
+
+                +.my-data-terms-of-use {
                   padding-top: 20px;
                 }
               }
@@ -344,7 +347,7 @@
           }
         }
 
-        > .info-tit {
+        >.info-tit {
           font-family: var(--font2);
           font-size: 14px;
           font-weight: 500;
@@ -356,7 +359,7 @@
           border-bottom: 1px solid var(--text-01);
         }
 
-        > .info-list {
+        >.info-list {
           ul {
             .item {
               position: relative;
@@ -393,7 +396,7 @@
                 }
               }
 
-              > label {
+              >label {
                 position: absolute;
                 width: calc(100% + 40px);
                 right: -16px;
@@ -408,7 +411,7 @@
         .my-data-terms-of-use {
           padding: 0;
 
-          > .title {
+          >.title {
             font-size: 15px;
             line-height: 22px;
             letter-spacing: -0.38px;
@@ -457,7 +460,7 @@
     }
   }
 
-  > .security-area {
+  >.security-area {
     .desc {
       margin-bottom: 40px;
 
@@ -515,17 +518,20 @@
     color: var(--text-01);
     margin-bottom: 12px;
   }
-  .btn-wrap{
+
+  .btn-wrap {
     text-align: center;
     margin-bottom: 12px;
-    a{
+
+    a {
       color: var(--text-point-color);
       font-family: var(--font2);
       font-size: 14px;
       height: 32px;
       min-width: 114px;
       border-radius: 16px;
-      .num{
+
+      .num {
         font-family: var(--font3);
       }
     }
@@ -553,9 +559,11 @@
         }
       }
     }
-    &.bank{
+
+    &.bank {
       padding-top: 12px;
-      span{
+
+      span {
         display: block;
       }
     }
@@ -571,7 +579,7 @@
     height: 90px;
     margin: 0 auto 24px;
 
-    &.naver{
+    &.naver {
       width: 56px;
       height: 56px;
       margin-top: 20%;
@@ -661,7 +669,7 @@
 .my-data-terms-of-use {
   padding: 10px 20px 50px;
 
-  > .title {
+  >.title {
     font-family: var(--font3);
     font-size: 17px;
     font-weight: bold;
@@ -682,7 +690,7 @@
       margin-bottom: 0;
     }
 
-    > .title {
+    >.title {
       font-family: var(--font3);
       font-size: 15px;
       font-weight: bold;
@@ -741,7 +749,8 @@
 
       tbody {
         tr {
-          th{ /*06_sign_in_13 예외 케이스 추가*/
+          th {
+            /*06_sign_in_13 예외 케이스 추가*/
             color: var(--text-02);
             background-color: #f5f6f8;
             border-right: 1px solid #e3e4e8;
@@ -750,6 +759,7 @@
             line-height: 16px;
             padding: 8px 10px;
           }
+
           td {
             font-family: var(--font1);
             font-weight: normal;
@@ -806,47 +816,60 @@
 
   &.more-view {
     padding-top: 15px;
-    .dropdown-wrap{
+
+    .dropdown-wrap {
       padding: 0;
     }
-    .item-wrap{
+
+    .item-wrap {
       margin-bottom: 0;
-      .item{
+
+      .item {
         margin-bottom: 25px;
-        .title{
+
+        .title {
           margin-bottom: 20px;
         }
-        .table{
+
+        .table {
           margin-top: 10px;
         }
-        &:last-of-type{
+
+        &:last-of-type {
           margin-bottom: 0;
         }
-        .sub-title{
+
+        .sub-title {
           margin-bottom: 15px;
           font-size: 13px;
           color: var(--text-01);
           font-family: var(--font2);
         }
-        .desc{
+
+        .desc {
           margin-bottom: 15px;
           color: var(--text-02);
-          &:last-of-type{
+
+          &:last-of-type {
             margin-bottom: 0;
           }
-          .sub-desc{
-            padding-top :6px;
+
+          .sub-desc {
+            padding-top: 6px;
             padding-left: 10px;
             display: inline-block;
           }
-          .dot{
+
+          .dot {
             padding-left: 7px;
             margin-bottom: 6px;
             position: relative;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-bottom: 0;
             }
-            &:before{
+
+            &:before {
               background-color: var(--text-02);
             }
           }
@@ -923,7 +946,7 @@
         background-size: cover;
       }
 
-      + li {
+      +li {
         margin-top: 12px;
       }
     }
@@ -969,7 +992,7 @@
     }
 
     .card-box {
-      border-top: 2px  solid var(--text-01);
+      border-top: 2px solid var(--text-01);
 
 
       .title-wrap {
@@ -979,12 +1002,15 @@
   }
 }
 
-.renewal{
+.renewal {
+
   /*마이데이터 - 통합인증약관동의*/
-  .my-data-agreement{
+  .my-data-agreement {
     padding: 10px 20px 0;
-    > .title-area {
+
+    >.title-area {
       margin-bottom: 45px;
+
       .title {
         font-size: 18px;
         letter-spacing: -.45px;
@@ -997,6 +1023,7 @@
           color: var(--color-point);
         }
       }
+
       .desc {
         font-size: 13px;
         line-height: 20px;
@@ -1005,27 +1032,31 @@
         color: var(--text-02);
       }
 
-      &.title-center{
+      &.title-center {
         text-align: center;
         margin-bottom: 30px;
-        .title{
+
+        .title {
           color: var(--text-01);
           font-family: var(--font3);
         }
       }
     }
-    >.btn_area{
+
+    >.btn_area {
       padding-bottom: 30px;
     }
-    .agreement-wrap{
-      .sub-title{
+
+    .agreement-wrap {
+      .sub-title {
         font-size: 17px;
         color: var(--text-01);
         font-family: var(--font3);
         position: relative;
         padding-left: 12px;
         margin-bottom: 30px;
-        &:before{
+
+        &:before {
           content: '';
           display: inline-block;
           clear: both;
@@ -1038,18 +1069,23 @@
           transform: translateY(-50%);
         }
       }
-      >ul{
+
+      >ul {
         padding-bottom: 60px;
-        >li{
+
+        >li {
           margin-bottom: 30px;
-          &:last-of-type{
+
+          &:last-of-type {
             margin-bottom: 0;
           }
-          a{
-            &.tit{
+
+          a {
+            &.tit {
               text-decoration: underline;
               position: relative;
-              &:after{
+
+              &:after {
                 content: '';
                 display: inline-block;
                 clear: both;
@@ -1062,7 +1098,8 @@
                 transform: translateY(-50%);
               }
             }
-            &.btn-period{
+
+            &.btn-period {
               border: 1px solid #efefef;
               border-radius: 6px;
               font-size: 14px;
@@ -1072,7 +1109,8 @@
               display: block;
               width: 100%;
               position: relative;
-              &:after{
+
+              &:after {
                 content: '';
                 display: inline-block;
                 position: absolute;
@@ -1086,67 +1124,78 @@
 
             }
           }
-          .tit{
+
+          .tit {
             font-size: 15px;
             color: var(--text-01);
             font-family: var(--font3);
             margin-bottom: 10px;
           }
-          .desc{
+
+          .desc {
             font-size: 13px;
             line-height: 20px;
             color: var(--text-02);
-            &.color-red{
+
+            &.color-red {
               color: #ef4b61;
               font-size: 14px;
             }
-            &.color-purple{
+
+            &.color-purple {
               color: #6839d3;
               font-size: 14px;
             }
           }
 
-          .small-tit{
+          .small-tit {
             font-size: 13px;
             color: var(--text-01);
             font-family: var(--font2);
             margin-bottom: 5px;
-            &.color-gray{
+
+            &.color-gray {
               color: var(--text-02);
             }
           }
-          .small-desc{
+
+          .small-desc {
             font-size: 12px;
             color: var(--text-02);
             letter-spacing: -0.3px;
           }
 
-          .check-area{
+          .check-area {
             border: 1px solid #efefef;
             border-radius: 6px;
             margin-top: 10px;
-            label{
-              padding: 17px 10px ;
+
+            label {
+              padding: 17px 10px;
               width: 100%;
-              span{
+
+              span {
                 font-size: 15px;
                 color: var(--text-01);
                 font-family: var(--font3);
               }
             }
-            +.check-area{
+
+            +.check-area {
               margin-top: 60px;
               margin-bottom: 20px;
             }
 
 
           }
-          ul{
-            li{
+
+          ul {
+            li {
               position: relative;
               padding-left: 7px;
               margin-bottom: 6px;
-              &:before{
+
+              &:before {
                 content: '';
                 display: inline-block;
                 clear: both;
@@ -1158,7 +1207,8 @@
                 border-radius: 50%;
                 background-color: var(--text-02);
               }
-              &:last-of-type{
+
+              &:last-of-type {
                 margin-bottom: 0;
               }
             }
@@ -1169,7 +1219,7 @@
 
       /*전체 동의*/
       .consent-check {
-        .check-title{
+        .check-title {
           font-size: 15px;
           color: var(--text-01);
           font-family: var(--font3);
@@ -1177,39 +1227,46 @@
           display: flex;
           align-items: flex-start;
           margin-bottom: 13px;
-          padding:0 10px;
+          padding: 0 10px;
         }
-        .check-list{
+
+        .check-list {
           border: 1px solid #efefef;
           border-top: 2px solid var(--text-01);
-          padding:22px 10px 12px;
+          padding: 22px 10px 12px;
           margin-bottom: 20px;
           height: auto;
           display: block;
           align-items: initial;
-          .item{
+
+          .item {
             margin-bottom: 14px;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-bottom: 0;
             }
-            label{
+
+            label {
               float: left;
             }
-            .area{
+
+            .area {
               display: inline-block;
               width: calc(100% - 20px);
             }
 
-            .tit{
+            .tit {
               font-size: 14px;
               line-height: 24px;
               font-family: var(--font2);
             }
-            .btn-more-wrap{
+
+            .btn-more-wrap {
               position: relative;
               display: inline-block;
               width: 6px;
               height: 16px;
+
               .btn-more {
                 display: inline-block;
                 width: 6px;
@@ -1226,11 +1283,12 @@
       }
     }
   }
-  .scroll-btn-area{
-    a{
+
+  .scroll-btn-area {
+    a {
       background: #efecfa;
       border-radius: 6px;
-      border:none;
+      border: none;
       color: var(--blurple);
       height: 44px;
       line-height: 44px;
@@ -1240,112 +1298,132 @@
   }
 
   /*마이데이터 - 로딩*/
-  .my-data-loading{
+  .my-data-loading {
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 30px;
-    .txt{
+
+    .txt {
       font-size: 18px;
       font-family: var(--font2);
     }
-    .img{
+
+    .img {
       width: 90px;
       height: 30px;
       margin: 0 auto 67px;
-      img{
+
+      img {
         width: 100%;
         height: auto;
       }
     }
   }
+
   /*마이데이터 - 오류페이지*/
-  .my-data-error-page{
+  .my-data-error-page {
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 44px;
-    .txt{
+
+    .txt {
       font-size: 15px;
       font-family: var(--font2);
       margin-bottom: 40px;
     }
-    .img{
+
+    .img {
       width: 56px;
       height: 56px;
       margin: 0 auto 20px;
-      img{
+
+      img {
         width: 100%;
         height: auto;
       }
     }
-    .btn{
+
+    .btn {
       min-width: 163px;
     }
   }
 
   /*마이데이터 - 개인신용정보선택*/
-  .personal-credit-list{
+  .personal-credit-list {
     padding: 30px 20px;
-    .list-wrap{
+    padding-bottom: 120px;
+
+    .list-wrap {
       border: 1px solid #efefef;
       margin-bottom: 40px;
       border-radius: 10px;
-      .list-header{
+
+      .list-header {
         padding: 19px;
         display: flex;
         align-items: center;
         justify-content: center;
-        .img{
-          width:30px;
+
+        .img {
+          width: 30px;
           height: 30px;
           margin-right: 10px;
-          img{
+
+          img {
             width: 100%;
             height: 100%;
           }
         }
-        .info{
+
+        .info {
           font-size: 16px;
           font-family: var(--font2);
           color: var(--text-01);
         }
-        i{
+
+        i {
           margin-left: 4px;
           display: inline-block;
           width: 14px;
           height: 14px;
-          img{
+
+          img {
             width: 100%;
           }
         }
       }
-      .list-body{
+
+      .list-body {
         border-top: 1px solid #efefef;
-        .item{
+
+        .item {
           padding: 17px 0;
           margin: 0 24px;
           border-bottom: 1px solid #efefef;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          &:last-of-type{
+
+          &:last-of-type {
             border: none;
           }
-          .val{
+
+          .val {
             font-size: 15px;
             color: var(--text-01);
             font-family: var(--font2);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            width: calc(100% - 50px) ;
+            width: calc(100% - 50px);
 
-            .num{
+            .num {
               font-size: 13px;
               color: var(--text-03);
               font-family: var(--font1);

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap">
+        <div class="container" style="padding: 26px;">
+            <div class="textarea removal">
+                <label for="context">입력 전</label>
+                <textarea class="custom" name="context" id="context" maxlength="200"
+                    placeholder="메모를 입력해 주세요"></textarea>
+                <p class="length">
+                    <span class="txt-limit"><em class="_val">0</em> / 200</span>
+                    <button class="del disable">전체삭제</button>
+                </p>
+            </div>
+            <div class="mb-10"></div>
+            <div class="textarea removal">
+                <label for="context">입력 중</label>
+                <textarea class="custom" name="context" id="context" maxlength="200" placeholder="메모를 입력해 주세요">
+오늘 한방 질렀다.
+내 생일 선물🎂
+            </textarea>
+                <p class="length">
+                    <span class="txt-limit"><em class="_val">30</em> / 200</span>
+                    <button class="del">전체삭제</button>
+                </p>
+            </div>
+            <div class="mb-10"></div>
+            <div class="textarea removal">
+                <label for="context">입력 후</label>
+                <textarea class="custom" name="context" id="context" maxlength="200" placeholder="메모를 입력해 주세요">
+오늘 한방 질렀다.
+내 생일 선물🎂
+            </textarea>
+                <p class="length">
+                    <span class="txt-limit"><em class="_val">30</em> / 200</span>
+                    <button class="del">전체삭제</button>
+                </p>
+            </div>
+            <div class="textarea removal">
+                <label for="context">입력 오류</label>
+                <textarea class="custom" name="context" id="context" maxlength="200" placeholder="메모를 입력해 주세요">
+문구문구문구
+샘플 문구</textarea>
+                <p class="length">
+                    <span class="txt-limit"><em class="_val intput-error">200</em> / 200</span>
+                    <button class="del">전체삭제</button>
+                    <span class="error">최대 200자까지 입력할 수 있어요</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+            });
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+            });
+        })
+
+        // page slider
+        var swiper = new Swiper("._pageSlider", {
+            autoHeight: true,
+            calculateHeight: true,
+            on: {
+                activeIndexChange: function () {
+                    $('._tab li').eq(this.realIndex).addClass('active').siblings().removeClass('active')
+                }
+            }
+        });
+
+        $('._tab li').on('click', function () {
+            var idx = $(this).index()
+            console.log(idx)
+            swiper.slideTo(idx, 500, false);
+        });
+    </script>
+</body>
+
+</html>

@@ -3400,6 +3400,18 @@
           padding: 0 20px 30px;
           background: #fff;
         }
+
+        .btn-clear-input {
+          position: absolute;
+          top: 12px;
+          right: 26px;
+          font-size: 0;
+          width: 18px;
+          height: 18px;
+          content: "";
+          background: url(../../img/common/ico_input_delete@2x.png) center center no-repeat;
+          background-size: contain;
+        }
       }
 
       /*지출수단 계좌 -카드명세서*/
@@ -4744,7 +4756,9 @@
           &-form {
             margin-top: -10px;
             position: relative;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+
+
 
             input {
               width: 100%;
@@ -4794,12 +4808,32 @@
             .won {
               position: absolute;
               right: -2px;
-              bottom: 2px;
+              top: 2px;
               display: inline-block;
               line-height: 40px;
               font-size: 14px;
               margin-right: 8px;
               color: var(--text-01);
+            }
+
+            .btn-clear-input {
+              position: absolute;
+              top: 12px;
+              right: 26px;
+              font-size: 0;
+              width: 18px;
+              height: 18px;
+              content: "";
+              background: url(../../img/common/ico_input_delete@2x.png) center center no-repeat;
+              background-size: contain;
+            }
+
+            .sub-desc {
+              font-size: 12px;
+              font-family: var(--font1);
+              color: var(--text-point-color);
+              padding: 5px 5px 0;
+              display: none;
             }
           }
         }

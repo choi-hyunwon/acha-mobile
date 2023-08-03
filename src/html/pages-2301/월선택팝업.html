@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko">
-	@@include('../include/head.html')
-	<body>
-		<div class="wrap _btnSlideOpen"></div>
-		<div class="modal-slide modal-expenditure cycle-selection _modalSlide">
-			<div class="modal-slide-content">
-				<a href="#" class="btn-close _btnSlideClose"></a>
-				<div class="inner">
-					<div class="title">월 선택</div>
-					<div class="day-list">
-						<ul>
-							<li>
-								<a href="#"><span class="txt">2023년 1월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 2월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 3월</span></a>
-							</li>
-							<li class="active">
-								<a href="#"><span class="txt">2023년 4월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 5월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 6월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 7월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 8월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 9월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 10월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 11월</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="txt">2023년 12월</span></a>
-							</li>
-						</ul>
-					</div>
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide modal-expenditure cycle-selection _modalSlide">
+		<div class="modal-slide-content">
+			<a href="#" class="btn-close _btnSlideClose"></a>
+			<div class="inner">
+				<div class="title">월 선택</div>
+				<div class="day-list">
+					<ul>
+						<li>
+							<a href="#"><span class="txt">2023년 1월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 2월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 3월</span></a>
+						</li>
+						<li class="active">
+							<a href="#"><span class="txt">2023년 4월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 5월
+									<span class="badge badge-purple outline">오늘</span>
+								</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 6월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 7월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 8월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 9월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 10월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 11월</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">2023년 12월</span></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="modal-slide-backdrop"></div>
-		<script>
-			$(document).ready(function () {
-				var btnSlideOpen = $("._btnSlideOpen");
-				var btnSlideClose = $("._btnSlideClose");
+	</div>
+	<div class="modal-slide-backdrop"></div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
 
-				btnSlideOpen.on("click", function () {
-					setTimeout(function () {
-						document.getElementsByClassName("_modalSlide")[0].style.display = "block";
-					}, 500);
-					$("._modalSlide").addClass("up").removeClass("down");
-					$(".modal-slide-backdrop").addClass("show");
-					$("body").addClass("scrOn");
-				});
-
-				btnSlideClose.on("click", function () {
-					setTimeout(function () {
-						document.getElementsByClassName("_modalSlide")[0].style.display = "none";
-					}, 1000);
-					$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
-					$(".modal-slide-backdrop").removeClass("show");
-					$("body").removeClass("scrOn");
-				});
-
-				btnSlideOpen.trigger("click");
-
-				let listE = $(".day-list li.active").prevUntil().length - 1;
-				let scrollH = listE * 56;
-
-				(function () {
-					if ($(".modal-slide").show()) {
-						$(".day-list ul").scrollTop(scrollH);
-					}
-				})();
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
 			});
-		</script>
-		<script>
-			$(".day-list li a").on("click", function () {
-				$(this).parent().addClass("active").siblings().removeClass("active");
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
 			});
-		</script>
-	</body>
+
+			btnSlideOpen.trigger("click");
+
+			let listE = $(".day-list li.active").prevUntil().length - 1;
+			let scrollH = listE * 56;
+
+			(function () {
+				if ($(".modal-slide").show()) {
+					$(".day-list ul").scrollTop(scrollH);
+				}
+			})();
+		});
+	</script>
+	<script>
+		$(".day-list li a").on("click", function () {
+			$(this).parent().addClass("active").siblings().removeClass("active");
+		});
+	</script>
+</body>
+
 </html>

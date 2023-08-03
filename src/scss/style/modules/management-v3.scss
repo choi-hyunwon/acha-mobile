@@ -720,6 +720,7 @@
           display: flex;
           align-items: center;
           border-bottom: 1px solid #e2e3e6;
+          position: relative;
 
           input {
             padding-left: 5px;
@@ -745,6 +746,18 @@
             font-size: 14px;
             color: var(--text-01);
             text-align: right;
+          }
+
+          .btn-clear-input {
+            position: absolute;
+            top: 12px;
+            right: 26px;
+            font-size: 0;
+            width: 18px;
+            height: 18px;
+            content: "";
+            background: url(../../img/common/ico_input_delete@2x.png) center center no-repeat;
+            background-size: contain;
           }
         }
 
@@ -825,6 +838,10 @@
 
             &.active {
               display: flex;
+
+              .btn-clear-input {
+                right: 35px;
+              }
             }
           }
         }

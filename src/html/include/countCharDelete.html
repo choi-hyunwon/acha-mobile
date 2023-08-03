@@ -31,7 +31,7 @@
         });
     }
 
-    $('.custom-light').on('click','.btn-clear-input', function (){
+    $('.custom-light, .step-box').on('click', '.btn-clear-input', function () {
         console.log('clear')
         $(this).siblings('input').val('')
             .siblings('.input-byte').find('._val').text('0')

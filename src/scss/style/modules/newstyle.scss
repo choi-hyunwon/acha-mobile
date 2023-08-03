@@ -158,11 +158,11 @@ textarea.custom {
       position: relative;
       text-align: right;
 
-      & .txt-limit {
+      .txt-limit {
         display: inline-block;
-        position: relative;
+        position: relative !important;
         margin-right: 12px;
-        font-size: 12px;
+        font-size: 12px !important;
         color: #9b9aa6;
 
         ._val {

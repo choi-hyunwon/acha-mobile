@@ -1873,8 +1873,8 @@
                 .img {
                   float: left;
                   display: inline-block;
-                  width: 22px;
-                  height: 22px;
+                  width: 34px;
+                  height: 34px;
                   vertical-align: middle;
                   margin-right: 6px;
 
@@ -2426,6 +2426,53 @@
             &:after {
               width: 100%;
               background-color: #37354c;
+            }
+
+            &.contents-item-center {
+              .ac-list {
+                .ac-item {
+                  display: flex;
+                  align-items: center;
+
+                  .img {
+                    flex-shrink: 0;
+                    margin-right: 11px;
+                  }
+
+                  p {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+
+                    span {
+                      float: unset;
+
+                      &.name {
+                        width: calc(100% - 40px);
+                      }
+
+                      &.ac-num {
+                        left: 0;
+                      }
+                    }
+                  }
+
+                  .btn-edit {
+                    position: relative;
+                    width: 18px;
+                    flex-shrink: 0;
+
+                    .sprite {
+                      &.ico_card_edit {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }

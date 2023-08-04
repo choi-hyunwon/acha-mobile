@@ -68,13 +68,20 @@
         <div class="textarea-box">
             <div class="textarea removal">
                 <textarea class="custom" name="context" id="context" maxlength="200" placeholder="의견을 작성해 주세요"
-                    style="height: 120px;"></textarea>
+                    style="height: 120px;">
+댓글 작성 중 댓글 작성중
+댓글 작성 중
+                </textarea>
 
                 <div class="submit-box">
                     <a href="#" class="btn btn-purple">등록</a>
                     <p class="length">
-                        <span class="txt-limit"><em class="_val">30</em> / 200</span>
+                        <span class="txt-limit"><em class="_val intput-error">200</em> / 200</span>
                         <button class="del">전체삭제</button>
+                        <span class="error" style="top: 100%;
+    width: max-content;
+    left: unset;
+    right: 0;">최대 200자까지 입력할 수 있어요</span>
                     </p>
                 </div>
             </div>

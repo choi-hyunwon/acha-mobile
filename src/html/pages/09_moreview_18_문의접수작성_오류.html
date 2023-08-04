@@ -23,23 +23,24 @@
                     <div class="title">
                         <div class="textarea removal">
                             <label for="title" class="must">제목</label>
-                            <input class="custom" type="text" id="title" maxlength="30" placeholder="제목을 입력해주세요." />
+                            <input class="custom" type="text" id="title" maxlength="30" placeholder="제목을 입력해주세요."
+                                value="제목" />
                             <p class="length">
-                                <span class="txt-limit"><em class="_val">0</em> / 30</span>
-                                <button class="del disable">전체삭제</button>
+                                <span class="txt-limit"><em class="_val">10</em> / 30</span>
+                                <button class="del">전체삭제</button>
                             </p>
                         </div>
                     </div>
                     <div class="textarea removal">
                         <label for="context" class="must">문의 내용</label>
                         <textarea class="custom" name="context" id="context" maxlength="500"
-                            placeholder="문의 내용을 입력해주세요."></textarea>
+                            placeholder="문의 내용을 입력해주세요.">문의 내용</textarea>
                         <p class="length">
-                            <span class="txt-limit"><em class="_val">0</em> / 500</span>
-                            <button class="del disable">전체삭제</button>
+                            <span class="txt-limit"><em class="_val intput-error">500</em> / 500</span>
+                            <button class="del">전체삭제</button>
+                            <span class="error">최대 200자까지 입력할 수 있어요</span>
                         </p>
                     </div>
-
                     <div class="push_alert">
                         <label>
                             <input type="checkbox" class="filled-in" checked="">

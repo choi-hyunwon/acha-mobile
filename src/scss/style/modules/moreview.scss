@@ -1325,7 +1325,7 @@ _ .event-btn-area {
 
     .category,
     .title {
-      margin-bottom: 36px;
+      margin-bottom: 20px;
     }
 
     .title,
@@ -1341,6 +1341,20 @@ _ .event-btn-area {
         letter-spacing: -0.28px;
         text-align: right;
         color: var(--text-04);
+      }
+
+      .btn-clear-input {
+        display: none;
+        position: absolute;
+        top: 12px;
+        right: 50px;
+        font-size: 0;
+        width: 18px;
+        height: 18px;
+        content: "";
+        background: url("../../img/common/ico_input_delete@2x.png") center center no-repeat;
+        background-size: contain;
+        z-index: 100;
       }
     }
 
@@ -1379,6 +1393,7 @@ _ .event-btn-area {
     }
 
     .push_alert {
+      margin-top: 13px;
       margin-bottom: 40px;
 
       label {

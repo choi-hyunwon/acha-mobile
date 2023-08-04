@@ -4777,6 +4777,11 @@
               border-right: 0;
               border-radius: 0;
               background-color: #ffffff;
+              outline: 0;
+
+              &:focus {
+                border-bottom: solid 1px #37354e;
+              }
 
               //placeholder color
               &::-webkit-input-placeholder {

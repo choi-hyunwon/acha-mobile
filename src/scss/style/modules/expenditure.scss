@@ -2433,6 +2433,9 @@
                 .ac-item {
                   display: flex;
                   align-items: center;
+                  background-color: #fff;
+                  margin-bottom: 0;
+                  padding: 19px 0;
 
                   .img {
                     flex-shrink: 0;
@@ -7054,6 +7057,14 @@
       color: var(--text-01);
       padding-bottom: 14px;
       border-bottom: 1px solid var(--text-01);
+
+      >.btn-collapse {
+        img {
+          height: 27px;
+          object-fit: contain;
+          margin-left: 4px;
+        }
+      }
     }
 
     >.info-list {

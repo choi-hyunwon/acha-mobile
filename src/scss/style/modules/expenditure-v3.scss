@@ -1683,9 +1683,15 @@
                       font-family: var(--font5);
                       display: block;
                       font-weight: 500;
+                      font-size: 17px;
+
+                      span {
+                        display: inline-block;
+                        font-size: 16px;
+                      }
 
                       &:after {
-                        content: "";
+                        content: "원";
                         display: inline-block;
                         font-size: 17px;
                         font-family: var(--font2);
@@ -1713,6 +1719,12 @@
                           display: inline-block;
                           font-size: 17px;
                           font-family: var(--font2);
+                        }
+                      }
+
+                      &.empty-deta {
+                        &:after {
+                          content: "";
                         }
                       }
                     }

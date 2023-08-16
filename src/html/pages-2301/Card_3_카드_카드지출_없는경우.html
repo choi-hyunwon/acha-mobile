@@ -1,40 +1,43 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">2022년 4월</a><i class="icon-arrow-bottom"></i></h2>
-    </div>
-    <div class="contents expenditure">
-        <div class="total-amount">
-            <p class="title">총 카드지출</p>
-            <span class="amount">0</span>
-            <p class="expected">6월1일~6월25일</p>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">2022년 4월</a><i class="icon-arrow-bottom"></i></h2>
         </div>
-        <div class="expenditure-tab _expenditureTab">
-            <ul class="clearfix">
-                <li class="active"><a href="#">카드지출</a></li>
-                <li><a href="#">카드명세서</a></li>
-            </ul>
-        </div>
-        <div class="expenditure-box card-spending bg_light_gray">
-            <div class="empty">
-                <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
-                <p>카드가 없습니다.</p>
+        <div class="contents expenditure">
+            <div class="total-amount">
+                <p class="title">총 카드지출
+                    <a href="#"><img src="../../img/common/ico_tooltip_big@2x.png" width="16" alt="tooltip-large"></a>
+                </p>
+                <span class="amount">0</span>
+                <p class="expected">6월1일~6월25일</p>
+            </div>
+            <div class="expenditure-tab _expenditureTab">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">카드지출</a></li>
+                    <li><a href="#">카드명세서</a></li>
+                </ul>
+            </div>
+            <div class="expenditure-box card-spending bg_light_gray">
+                <div class="empty">
+                    <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
+                    <p>카드가 없습니다.</p>
+                </div>
             </div>
         </div>
-    </div>
 
-</div>
-<script>
-    // 일자 카테고리 탭
-    $('._expenditureTab li a').on('click', function (){
-        $(this).parent().addClass('active').siblings().removeClass('active')
-    })
-</script>
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
 
 </body>
-</html>
 
+</html>

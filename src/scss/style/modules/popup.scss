@@ -5373,6 +5373,7 @@
             text-align: left;
             position: relative;
             margin-bottom: 8px;
+            word-break: keep-all;
 
             &::before {
               content: "";

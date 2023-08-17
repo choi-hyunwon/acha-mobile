@@ -22,10 +22,18 @@ a:hover {
 
   &-floating {
     position: fixed;
-    bottom: 30px;
     left: 50%;
-    width: calc(100% - 40px);
+    bottom: 0;
     transform: translateX(-50%);
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+
+    >a {
+      width: calc(100% - 40px);
+    }
+
   }
 
   &.disabled {

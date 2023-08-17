@@ -1415,6 +1415,8 @@
           }
 
           .val {
+            width: calc(100% - 50px);
+
             p {
               font-size: 15px;
               color: var(--text-01);
@@ -1424,7 +1426,7 @@
               display: -webkit-box;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
-              width: calc(100% - 50px);
+
             }
 
             .num {

@@ -3172,6 +3172,10 @@
                     outline: none;
                     border: none;
                     font-family: var(--font4);
+
+                    &::placeholder {
+                      color: #c2c1cc;
+                    }
                   }
 
                   .ico_list_arrow_small {

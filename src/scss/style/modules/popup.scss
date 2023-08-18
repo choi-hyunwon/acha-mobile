@@ -1999,6 +1999,21 @@
           background-size: contain;
           z-index: 100;
         }
+
+        .textarea-label {
+          border-bottom: 1px solid #37354e;
+          padding-bottom: 9px;
+          width: 100%;
+          text-align: left;
+
+          .textarea {
+            width: calc(100% - 78px);
+            border: 0;
+            height: 24px;
+            outline: none;
+            max-height: 43px;
+          }
+        }
       }
 
       .desc {

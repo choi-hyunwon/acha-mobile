@@ -3138,6 +3138,58 @@
                   }
                 }
               }
+
+              &.item-column {
+                flex-direction: column;
+
+                .val-memo {
+                  position: relative;
+                  margin-top: 10px;
+                  width: 100%;
+                  max-width: 100%;
+                  background-color: #f7f8fc;
+                  border-radius: 10px;
+                  float: left;
+                  text-align: left;
+
+                  label {
+                    padding: 15px 20px;
+                    width: calc(100% - 20px);
+                    text-align: left;
+                    font-size: 14px;
+                  }
+
+                  textarea {
+                    padding: 0;
+                    padding-right: 10px;
+                    width: 100%;
+                    height: 20px;
+                    // max-height: 50px;
+                    background: transparent;
+                    font-size: 14px;
+                    color: #37354e;
+                    line-height: 20px;
+                    outline: none;
+                    border: none;
+                    font-family: var(--font4);
+
+                    &::placeholder {
+                      color: #c2c1cc;
+                    }
+                  }
+
+                  .ico_list_arrow_small {
+                    position: absolute;
+                    right: 12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin: 0;
+                    width: 6px;
+                    height: 16px;
+                    background-position: center;
+                  }
+                }
+              }
             }
 
             +.schedule {

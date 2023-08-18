@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
-@@include('../include/head.html')
+    @@include('../include/head.html')
 
-<body>
-	<div class="wrap _btnSlideOpen"></div>
-	<div class="modal-slide modal-expenditure memo-input _modalSlide autoHeight">
-		<div class="modal-slide-content">
-			<a href="#" class="btn-close _btnSlideClose"></a>
-			<div class="inner pb-0">
-				<div class="title">메모 입력</div>
-				<div class="custom-light">
-					<!-- <input title="지출 메모" type="text" maxlength="60" onkeyup="countCharDelete(this,'_val')"
+    <body>
+        <div class="wrap _btnSlideOpen"></div>
+        <div class="modal-slide modal-expenditure memo-input _modalSlide autoHeight">
+            <div class="modal-slide-content">
+                <a href="#" class="btn-close _btnSlideClose"></a>
+                <div class="inner pb-0">
+                    <div class="title">메모 입력</div>
+                    <div class="custom-light">
+                        <!-- <input title="지출 메모" type="text" maxlength="60" onkeyup="countCharDelete(this,'_val')"
 						placeholder="메모를 입력해주세요" value="원리금 균등상환 2045년" /> -->
-					<div class="textarea-label">
-						<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60"
-							onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요">원리금 균등상환 2045년</textarea>
-						<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 60</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="btn-wrap">
-				<a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">확인</a>
-			</div>
-		</div>
-	</div>
-	<div class="modal-slide-backdrop"></div>
-	<script>
-		$(document).ready(function () {
-			var btnSlideOpen = $("._btnSlideOpen");
-			var btnSlideClose = $("._btnSlideClose");
+                        <div class="textarea-label">
+                            <textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60" onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요" rows="1">원리금 균등상환 2045년</textarea>
+                            <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 60</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-slide-backdrop"></div>
+        <script>
+            $(document).ready(function () {
+                var btnSlideOpen = $('._btnSlideOpen');
+                var btnSlideClose = $('._btnSlideClose');
 
-			btnSlideOpen.on("click", function () {
-				setTimeout(function () {
-					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
-				}, 500);
-				$("._modalSlide").addClass("up").removeClass("down");
-				$(".modal-slide-backdrop").addClass("show");
-				$("body").addClass("scrOn");
-			});
+                btnSlideOpen.on('click', function () {
+                    setTimeout(function () {
+                        document.getElementsByClassName('_modalSlide')[0].style.display = 'block';
+                    }, 500);
+                    $('._modalSlide').addClass('up').removeClass('down');
+                    $('.modal-slide-backdrop').addClass('show');
+                    $('body').addClass('scrOn');
+                });
 
-			btnSlideClose.on("click", function () {
-				setTimeout(function () {
-					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
-				}, 1000);
-				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
-				$(".modal-slide-backdrop").removeClass("show");
-				$("body").removeClass("scrOn");
-			});
+                btnSlideClose.on('click', function () {
+                    setTimeout(function () {
+                        document.getElementsByClassName('_modalSlide')[0].style.display = 'none';
+                    }, 1000);
+                    $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+                    $('.modal-slide-backdrop').removeClass('show');
+                    $('body').removeClass('scrOn');
+                });
 
-			btnSlideOpen.trigger("click");
-		});
+                btnSlideOpen.trigger('click');
+            });
 
-		const DEFAULT_HEIGHT = 0;
-		const $textarea = document.querySelector(".textarea");
+            const DEFAULT_HEIGHT = 0;
+            const $textarea = document.querySelector('.textarea');
 
-		$textarea.oninput = (e) => {
-			const $target = e.target;
-			$target.style.height = 0;
-			$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
-		}
-	</script>
+            $textarea.oninput = (e) => {
+                const $target = e.target;
+                $target.style.height = 0;
+                $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
+            };
+        </script>
 
-	@@include('../include/countCharDelete.html')
-
-</body>
-
+        @@include('../include/countCharDelete.html')
+    </body>
 </html>

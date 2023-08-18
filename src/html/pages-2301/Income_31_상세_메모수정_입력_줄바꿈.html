@@ -14,7 +14,9 @@
 						placeholder="메모를 입력해주세요" value="원리금 균등상환 2045년" /> -->
 					<div class="textarea-label">
 						<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60"
-							onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요"></textarea>
+							onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요">
+원리금 균등상환 2045년
+메모입력</textarea>
 						<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 60</span>
 						</div>
 					</div>
@@ -38,6 +40,7 @@
 				$("._modalSlide").addClass("up").removeClass("down");
 				$(".modal-slide-backdrop").addClass("show");
 				$("body").addClass("scrOn");
+
 			});
 
 			btnSlideClose.on("click", function () {
@@ -49,21 +52,17 @@
 				$("body").removeClass("scrOn");
 			});
 
-			btnSlideOpen.trigger("click");
+			const $textarea = document.querySelector(".textarea");
+			btnSlideOpen.trigger("click",);
+
+			$textarea.oninput = (e) => {
+				const $target = e.target;
+				$target.style.height = 0;
+				$target.style.height = $target.scrollHeight + "px";
+			}
 		});
-
-		const DEFAULT_HEIGHT = 0;
-		const $textarea = document.querySelector(".textarea");
-
-		$textarea.oninput = (e) => {
-			const $target = e.target;
-			$target.style.height = 0;
-			$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
-		}
 	</script>
-
 	@@include('../include/countCharDelete.html')
-
 </body>
 
 </html>

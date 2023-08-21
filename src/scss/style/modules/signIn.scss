@@ -4,7 +4,7 @@
     날짜 : 2021.06.04
 */
 .sign-in-wrap {
-  > .title {
+  >.title {
     font-family: var(--font3);
     font-size: 18px;
     font-weight: bold;
@@ -20,7 +20,7 @@
     }
   }
 
-  > .step-wrap {
+  >.step-wrap {
     margin-bottom: 25px;
 
     ul {
@@ -72,7 +72,7 @@
     }
   }
 
-  > .desc {
+  >.desc {
     font-size: 15px;
     line-height: 25px;
     letter-spacing: -0.38px;
@@ -80,10 +80,11 @@
     margin-bottom: 30px;
   }
 
-  >.img-wrap{
-    height: calc( 100vh - 342px);
+  >.img-wrap {
+    height: calc(100vh - 342px);
     display: flex;
     align-items: center;
+
     .img {
       width: 140px;
       height: 110px;
@@ -95,7 +96,8 @@
       }
     }
   }
-  > .img {
+
+  >.img {
     width: 140px;
     height: 110px;
     margin: 0 auto;
@@ -112,7 +114,7 @@
   }
 
 
-  > .list-text {
+  >.list-text {
     text-align: center;
     margin-top: -36px;
 
@@ -129,9 +131,11 @@
   .card-wrap {
     padding: 0 20px;
     margin-bottom: 28px;
-    &.mb-70{
+
+    &.mb-70 {
       margin-bottom: 70px;
     }
+
     &.must {
       .card-title {
         color: var(--blurple);
@@ -139,7 +143,7 @@
       }
 
       .card-box {
-        > label {
+        >label {
           height: 78%;
         }
       }
@@ -208,17 +212,18 @@
         padding-top: 21px;
         padding-right: 20px;
 
-        > label {
+        >label {
           position: absolute;
           left: 20px;
           top: 18px;
           width: 70%;
+
           >span {
             padding-left: 28px;
           }
         }
 
-        > .title-wrap {
+        >.title-wrap {
           display: flex;
           height: 19px;
           align-items: center;
@@ -264,7 +269,7 @@
           }
         }
 
-        > .checkbox-select {
+        >.checkbox-select {
           display: none;
           height: fit-content;
           margin-bottom: 11px;
@@ -273,7 +278,7 @@
           label {
             height: 18px;
 
-            + label {
+            +label {
               margin-left: 27px;
             }
           }
@@ -282,14 +287,14 @@
             height: 18px;
           }
 
-          [type="checkbox"] + span:not(.lever) {
+          [type="checkbox"]+span:not(.lever) {
             padding-left: 23px;
             line-height: 18px;
             height: 18px;
             font-weight: normal;
           }
 
-          [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
+          [type="checkbox"].filled-in:not(:checked)+span:not(.lever):before {
             left: 1px;
             top: 0;
             width: 7px;
@@ -303,7 +308,7 @@
             background: none;
           }
 
-          [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+          [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
             height: 18px;
             width: 18px;
             border-radius: 2px;
@@ -312,7 +317,7 @@
 
           }
 
-          [type="checkbox"].filled-in:checked + span:not(.lever):after {
+          [type="checkbox"].filled-in:checked+span:not(.lever):after {
             height: 18px;
             width: 18px;
             border-radius: 2px;
@@ -320,11 +325,13 @@
             background: var(--blurple);
           }
 
-          [type="checkbox"].filled-in:checked + span:not(.lever):before {
+          [type="checkbox"].filled-in:checked+span:not(.lever):before {
             left: 1px;
             top: 0;
           }
-          [type="checkbox"].filled-in-sq + span:not(.lever):before {
+
+          [type="checkbox"].filled-in-sq+span:not(.lever):before {
+            margin-top: 3px;
             left: 1px;
             top: 0;
             width: 7px;
@@ -339,7 +346,7 @@
           }
         }
 
-        > .desc {
+        >.desc {
           position: relative;
           font-size: 12px;
           line-height: 18px;
@@ -491,7 +498,7 @@
       }
     }
 
-    > .desc {
+    >.desc {
       font-family: var(--font2);
       font-size: 14px;
       font-weight: 500;
@@ -642,7 +649,7 @@
       }
     }
 
-    > .desc {
+    >.desc {
       text-align: center;
       font-size: 14px;
       line-height: 18px;
@@ -651,7 +658,7 @@
       margin-bottom: 10px;
     }
 
-    > .link {
+    >.link {
       text-align: center;
 
       a {
@@ -736,7 +743,7 @@
 }
 
 .ui-helper-hidden-accessible {
-  > div:last-child {
+  >div:last-child {
     display: none;
   }
 }

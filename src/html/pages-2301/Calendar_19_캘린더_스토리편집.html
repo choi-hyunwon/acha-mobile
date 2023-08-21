@@ -55,12 +55,9 @@
                                         </span>
                                     </span>
                                 </li>
-                                <li class="item">
+                                <li class="item item-column">
                                     <span class="tit">메모</span>
-                                    <span class="val">
-                                        <input title="value" type="text" placeholder="메모를 입력해주세요" value="" />
-                                        <i class="ico_list_arrow_small"></i>
-                                    </span>
+                                    @@include('../include/varMemoPlaceholder.html')
                                 </li>
                             </ul>
                         </div>
@@ -111,6 +108,16 @@
             </div>
         </div>
     </div>
+    <script>
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector(".textarea");
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
+        }
+    </script>
 </body>
 
 </html>

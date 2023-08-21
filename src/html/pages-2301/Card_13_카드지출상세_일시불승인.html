@@ -1,60 +1,68 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2>상세내역</h2>
-    </div>
-    <div class="contents expenditure">
-        <div class="expenditure-box">
-            <div class="account-detail-wrap pt-0 pb-5">
-                <div class="info-wrap">
-                    <div class="title">
-                        <span class="img">
-                          <i class="icon icon_cate_cloth"></i>
-                        </span>
-                        백화점
-                    </div>
-                    <ul class="info-list">
-                        <li class="item">
-                            <span class="tit">지출 금액</span>
-                            <span class="val">91,000원</span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">지출 일시</span>
-                            <span class="val">2022년 6월 5일 19:20</span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">지출 수단</span>
-                            <span class="val">현대카드</span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">지출 분류</span>
-                            <span class="val">변동지출</span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">승인 상태</span>
-                            <span class="val">승인</span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">카테고리</span>
-                            <span class="val">의류/패션<i class="ico_list_arrow_small"></i></span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">메모</span>
-                            <span class="val">
-                                <input title="value" type="text" placeholder="메모를 입력해주세요" value=""/>
-                                <i class="ico_list_arrow_small"></i>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>상세내역</h2>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-box">
+                <div class="account-detail-wrap pt-0 pb-5">
+                    <div class="info-wrap">
+                        <div class="title">
+                            <span class="img">
+                                <i class="icon icon_cate_cloth"></i>
                             </span>
-                        </li>
-                    </ul>
+                            백화점
+                        </div>
+                        <ul class="info-list">
+                            <li class="item">
+                                <span class="tit">지출 금액</span>
+                                <span class="val">91,000원</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 일시</span>
+                                <span class="val">2022년 6월 5일 19:20</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 수단</span>
+                                <span class="val">현대카드</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 분류</span>
+                                <span class="val">변동지출</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">승인 상태</span>
+                                <span class="val">승인</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">카테고리</span>
+                                <span class="val">의류/패션<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                            <li class="item item-column">
+                                <span class="tit">메모</span>
+                                @@include('../include/varMemoPlaceholder.html')
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</body>
-</html>
+    <script>
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector(".textarea");
 
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
+        }
+    </script>
+</body>
+
+</html>

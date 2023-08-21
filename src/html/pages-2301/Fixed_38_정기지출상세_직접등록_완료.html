@@ -1,71 +1,79 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2>상세내역</h2>
-        <div class="sum-area"><a href="#" class="delete">수정</a></div>
-    </div>
-    <div class="contents expenditure">
-        <div class="expenditure-box">
-            <div class="account-detail-wrap pt-0 pb-0">
-                <div class="info-wrap">
-                    <div class="title">
-                        <span class="img">
-                            <i class="icon icon_cate_subscript"></i>
-                        </span>
-                        모임 정산<a href="#" class="icon-edit"></a>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>상세내역</h2>
+            <div class="sum-area"><a href="#" class="delete">수정</a></div>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-box">
+                <div class="account-detail-wrap pt-0 pb-0">
+                    <div class="info-wrap">
+                        <div class="title">
+                            <span class="img">
+                                <i class="icon icon_cate_subscript"></i>
+                            </span>
+                            모임 정산<a href="#" class="icon-edit"></a>
+                        </div>
+                        <ul class="info-list">
+                            <li class="item">
+                                <span class="tit">지출 금액</span>
+                                <span class="val">13,100원
+                                    <i class="ico_list_arrow_small"></i>
+                                </span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 일시</span>
+                                <span class="val">2022년 4월 5일 11:26
+                                    <i class="ico_list_arrow_small"></i>
+                                </span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 수단</span>
+                                <span class="val">현금</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">거래 분류</span>
+                                <span class="val">정기지출</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">카테고리</span>
+                                <span class="val">모임<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                            <li class="item item-column">
+                                <span class="tit">메모</span>
+                                @@include('../include/varMemoPlaceholder.html')
+                            </li>
+                        </ul>
+
                     </div>
-                    <ul class="info-list">
-                        <li class="item">
-                            <span class="tit">지출 금액</span>
-                            <span class="val">13,100원
-                                <i class="ico_list_arrow_small"></i>
-                            </span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">지출 일시</span>
-                            <span class="val">2022년 4월 5일 11:26
-                                <i class="ico_list_arrow_small"></i>
-                            </span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">지출 수단</span>
-                            <span class="val">현금</span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">거래 분류</span>
-                            <span class="val">정기지출</span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">카테고리</span>
-                            <span class="val">모임<i class="ico_list_arrow_small"></i></span>
-                        </li>
-                        <li class="item">
-                            <span class="tit">메모</span>
-                            <span class="val">
-                                <input title="value" type="text" placeholder="메모를 입력해주세요" value=""/>
-                                <i class="ico_list_arrow_small"></i>
-                            </span>
-                        </li>
-                    </ul>
-
                 </div>
-            </div>
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <div class="link-type">
-                <a href="#">
-                    <span>지출 스케쥴</span>
-                    <i class="ico_list_arrow_small"></i>
-                </a>
+                <div class="link-type">
+                    <a href="#">
+                        <span>지출 스케쥴</span>
+                        <i class="ico_list_arrow_small"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</body>
-</html>
+    <script>
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector(".textarea");
 
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
+        }
+    </script>
+</body>
+
+</html>

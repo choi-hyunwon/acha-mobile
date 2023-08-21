@@ -1,10 +1,11 @@
 .renewal {
+
   /**
   header
    */
   .header {
     .title {
-      + .text {
+      +.text {
         font-size: 15px;
         color: var(--text-02);
         font-family: var(--font2);
@@ -328,7 +329,7 @@
   expenditure
    */
   .expenditure {
-    > .description {
+    >.description {
       background: #f7f8fc;
       border-radius: 10px;
       font-size: 16px;
@@ -497,7 +498,7 @@
           }
         }
 
-        > div {
+        >div {
           .title {
             font-size: 18px;
             font-family: var(--font2);
@@ -530,7 +531,7 @@
             }
           }
 
-          > div {
+          >div {
             .title {
               font-size: 14px;
               font-family: var(--font1);
@@ -703,7 +704,7 @@
         border-radius: 13px;
         background-color: #f5f6f8;
 
-        > .percent {
+        >.percent {
           position: absolute;
           left: 8px;
           top: 2px;
@@ -806,7 +807,7 @@
     .income-details-amount {
       padding: 10px 20px 40px;
 
-      > .total {
+      >.total {
         font-size: 26px;
         color: var(--text-01);
         font-family: var(--font3);
@@ -825,7 +826,7 @@
         border-radius: 15px;
         background-color: #f5f6f8;
 
-        > .percent {
+        >.percent {
           position: absolute;
           left: 8px;
           top: 4px;
@@ -1000,7 +1001,7 @@
     .spending-plan {
       padding: 10px 20px 40px;
 
-      > .title {
+      >.title {
         font-size: 26px;
         font-family: var(--font3);
         color: var(--text-01);
@@ -1049,7 +1050,7 @@
         }
       }
 
-      > .category {
+      >.category {
         font-size: 18px;
         color: var(--text-01);
         font-family: var(--font3);
@@ -1083,7 +1084,7 @@
           border-bottom: none;
         }
 
-        > .total {
+        >.total {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -1150,7 +1151,7 @@
       position: relative;
       padding: 40px 20px;
 
-      > .title {
+      >.title {
         font-size: 20px;
         color: var(--text-01);
         font-family: var(--font3);
@@ -1166,7 +1167,7 @@
           margin: 10px;
         }
 
-        + .btn-wrap {
+        +.btn-wrap {
           .btn-purple-outline {
             border-radius: 6px;
           }
@@ -1389,7 +1390,7 @@
           }
         }
 
-        + .divider {
+        +.divider {
           margin-top: 10px;
           margin-bottom: 20px;
 
@@ -1408,7 +1409,7 @@
       }
 
       .list-day-wrap {
-        & + .list-day-wrap {
+        &+.list-day-wrap {
           margin-top: 20px;
         }
       }
@@ -1425,7 +1426,7 @@
         display: flex;
         justify-content: space-between;
 
-        + .divider {
+        +.divider {
           &:before {
             height: 1px;
             background: none;
@@ -1435,7 +1436,7 @@
         }
 
         &-budget {
-          + .divider::before {
+          +.divider::before {
             margin-top: 10px;
           }
         }
@@ -1566,7 +1567,7 @@
           min-height: calc(100vh - 225px);
         }
 
-        > li {
+        >li {
           background: #fff;
           border-radius: 10px;
           padding: 20px;
@@ -1599,7 +1600,7 @@
                 align-items: center;
                 justify-content: center;
 
-                > span {
+                >span {
                   padding-left: 16px;
                   font-size: 14px;
                   color: var(--text-02);
@@ -1608,7 +1609,7 @@
                 }
               }
 
-              > .group {
+              >.group {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1626,7 +1627,7 @@
                     display: inline-block;
                     vertical-align: top;
                     margin-right: 14px;
-                    margin-top: 4px;
+                    // margin-top: 4px;
 
                     img {
                       width: 100%;
@@ -1925,7 +1926,7 @@
             }
           }
 
-          > .total {
+          >.total {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1974,7 +1975,7 @@
           &.budget-setting {
             padding: 20px 20px 30px;
 
-            > li {
+            >li {
               position: relative;
               padding: 18px 32px 18px 20px;
 
@@ -2003,7 +2004,7 @@
           &.filter-setting {
             padding: 20px 20px 120px;
 
-            > li {
+            >li {
               padding: 0;
 
               &.info-title {
@@ -2031,7 +2032,7 @@
                   margin-top: 0;
                 }
 
-                & + .check-list {
+                &+.check-list {
                   margin-top: 10px;
                 }
               }
@@ -2099,7 +2100,7 @@
                       }
                     }
 
-                    & + div {
+                    &+div {
                       display: flex;
                       justify-content: space-between;
                       align-items: center;
@@ -2141,7 +2142,7 @@
               }
             }
 
-            + .btn-wrap {
+            +.btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
 
@@ -2152,7 +2153,7 @@
             }
           }
 
-          > li {
+          >li {
             padding: 18px 20px;
 
             .details-history {
@@ -2248,7 +2249,7 @@
 
           /*그 외 카테고리*/
           &.etc-category-list {
-            > li {
+            >li {
               padding: 18px 0;
               margin-bottom: 0;
 
@@ -2288,7 +2289,7 @@
           &.category-details {
             padding: 30px 20px;
 
-            > li {
+            >li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2332,7 +2333,7 @@
           &.category-change {
             padding: 20px 20px 120px;
 
-            > li {
+            >li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2379,8 +2380,15 @@
 
                   .box {
                     display: flex;
-                    // align-items: flex-start;
                     background-color: red;
+
+                    &.box-start {
+                      align-items: flex-start;
+
+                      .img {
+                        margin-top: 4px;
+                      }
+                    }
 
                     .info {
                       .place {
@@ -2413,7 +2421,7 @@
               }
             }
 
-            + .btn-wrap {
+            +.btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
 
@@ -2428,7 +2436,7 @@
           &.category-edit {
             padding: 20px 20px 110px;
 
-            > li {
+            >li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2453,7 +2461,7 @@
                     .img {
                       vertical-align: middle;
 
-                      & + .info {
+                      &+.info {
                         max-width: calc(100vw - 95px);
                       }
                     }
@@ -2490,7 +2498,7 @@
               }
             }
 
-            + .btn-wrap {
+            +.btn-wrap {
               background: #fff;
             }
           }
@@ -2521,7 +2529,7 @@
               .group {
                 .box {
                   .info {
-                    > span {
+                    >span {
                       display: inline-block;
                       vertical-align: middle;
                     }
@@ -2576,7 +2584,7 @@
         &.regular-expenditure-list {
           padding: 10px 0 0;
 
-          > li {
+          >li {
             .total {
               border: none;
               padding-bottom: 10px;
@@ -2584,7 +2592,7 @@
           }
         }
 
-        + .btn-wrap {
+        +.btn-wrap {
           padding: 0 20px 30px;
           background: #fff;
 
@@ -2603,7 +2611,7 @@
         padding: 20px 20px 30px;
         min-height: calc(100vh - 208px);
 
-        > li {
+        >li {
           background: #fff;
           border-radius: 10px;
           padding: 20px;
@@ -2613,7 +2621,7 @@
             margin-bottom: 0;
           }
 
-          > .total {
+          >.total {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -2742,7 +2750,7 @@
 
         /*카테고리*/
         &.usage-category-list {
-          > li {
+          >li {
             padding: 18px 20px;
 
             .details-history {
@@ -2822,7 +2830,7 @@
 
           /*그 외 카테고리*/
           &.etc-category-list {
-            > li {
+            >li {
               padding: 18px 0;
               margin-bottom: 0;
 
@@ -2860,7 +2868,7 @@
           &.category-details {
             padding: 30px 20px;
 
-            > li {
+            >li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2902,7 +2910,7 @@
           &.category-change {
             padding: 20px 20px 120px;
 
-            > li {
+            >li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2947,7 +2955,7 @@
               }
             }
 
-            + .btn-wrap {
+            +.btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
 
@@ -2962,7 +2970,7 @@
           &.category-edit {
             padding: 20px 20px 110px;
 
-            > li {
+            >li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -3017,13 +3025,13 @@
               }
             }
 
-            + .btn-wrap {
+            +.btn-wrap {
               background: #fff;
             }
           }
         }
 
-        + .btn-wrap {
+        +.btn-wrap {
           padding: 0 20px 30px;
 
           .btn {
@@ -3132,7 +3140,7 @@
                     font-weight: normal;
                   }
 
-                  + .ico_list_arrow_small {
+                  +.ico_list_arrow_small {
                     margin-left: 4px;
                   }
                 }
@@ -3191,7 +3199,7 @@
               }
             }
 
-            + .schedule {
+            +.schedule {
               font-size: 16px;
               color: var(--text-01);
               font-family: var(--font2);
@@ -3340,6 +3348,7 @@
           }
 
           &._disabled {
+
             .title,
             :disabled {
               color: #c2c1cc;
@@ -3388,6 +3397,7 @@
               }
 
               &._disabled {
+
                 .title,
                 .sub-desc {
                   color: #c2c1cc;
@@ -3663,7 +3673,7 @@
               }
             }
 
-            + .btn-bill {
+            +.btn-bill {
               padding: 0 40px 60px;
 
               .btn-outline-purple {
@@ -3687,7 +3697,7 @@
           margin-left: 8px;
         }
 
-        > .empty {
+        >.empty {
           padding-bottom: 0;
         }
 
@@ -3767,7 +3777,7 @@
         .usage-history-list {
           &.usage-category-list {
             &.category-change {
-              > li {
+              >li {
                 margin-bottom: 30px;
 
                 &:last-of-type {
@@ -4090,7 +4100,7 @@
           li {
             padding: 16px 0 15px;
 
-            > div {
+            >div {
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -4405,7 +4415,7 @@
           height: 80px;
           position: relative;
 
-          > span {
+          >span {
             display: flex;
             align-items: center;
 
@@ -4528,7 +4538,7 @@
           display: flex;
           flex-direction: column;
 
-          > span {
+          >span {
             font-size: 18px;
             font-family: var(--font2);
             color: #37354e;
@@ -4673,7 +4683,7 @@
       background-color: #f1f1f4;
       margin-bottom: 50px;
 
-      > .percent {
+      >.percent {
         position: absolute;
         left: 8px;
         top: 2px;
@@ -4718,6 +4728,7 @@
     }
 
     .amount-list {
+
       //margin-bottom: 20px;
       .title {
         display: flex;
@@ -4938,6 +4949,7 @@
       position: relative;
 
       &-chart {
+
         //padding-top: 20px;
         .chart {
           position: absolute;
@@ -4951,7 +4963,7 @@
       .stick {
         position: relative;
 
-        > div {
+        >div {
           width: 42px;
           border-radius: 4px;
           background-color: #ece5fc;
@@ -5007,13 +5019,13 @@
         }
 
         &-disabeled {
-          > div {
+          >div {
             background-color: #f0f1f5 !important;
           }
         }
 
         &-minus {
-          > div {
+          >div {
             border-radius: 4px 4px 0 0;
 
             &.minus {
@@ -5034,7 +5046,7 @@
         }
 
         &-half {
-          > div {
+          >div {
             width: 30px;
             border-radius: 4px;
             background-color: #ece5fc;
@@ -5278,7 +5290,7 @@
           }
         }
 
-        tr:first-child > td > .fc-day-grid-event {
+        tr:first-child>td>.fc-day-grid-event {
           margin-top: 2px;
           top: 0px;
         }
@@ -5356,7 +5368,7 @@
         }
 
         .detail {
-          > div {
+          >div {
             height: 25px;
             line-height: 25px;
             font-size: 13px;
@@ -5508,7 +5520,7 @@
       }
 
       .story-list-calendar {
-        > .date {
+        >.date {
           font-size: 16px;
           line-height: 20px;
           color: #37354e;
@@ -6112,7 +6124,7 @@
     font-size: 16px;
     color: #37354e !important;
 
-    > span {
+    >span {
       font-size: 15px;
       margin-right: 0;
     }

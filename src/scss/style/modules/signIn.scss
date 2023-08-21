@@ -295,7 +295,6 @@
           }
 
           [type="checkbox"].filled-in:not(:checked)+span:not(.lever):before {
-            margin-top: 3px;
             left: 1px;
             top: 0;
             width: 7px;
@@ -332,6 +331,7 @@
           }
 
           [type="checkbox"].filled-in-sq+span:not(.lever):before {
+            margin-top: 3px;
             left: 1px;
             top: 0;
             width: 7px;

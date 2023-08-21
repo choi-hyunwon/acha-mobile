@@ -1,11 +1,10 @@
 .renewal {
-
   /**
   header
    */
   .header {
     .title {
-      +.text {
+      + .text {
         font-size: 15px;
         color: var(--text-02);
         font-family: var(--font2);
@@ -257,7 +256,7 @@
           margin-left: 8px;
         }
 
-        input[type="text"] {
+        input[type='text'] {
           width: 211px;
           height: unset;
           padding: 0;
@@ -280,7 +279,7 @@
           font-family: var(--font4);
 
           &::after {
-            content: "원";
+            content: '원';
             font-size: 13px;
             font-family: var(--font2);
             color: var(--text-01);
@@ -329,7 +328,7 @@
   expenditure
    */
   .expenditure {
-    >.description {
+    > .description {
       background: #f7f8fc;
       border-radius: 10px;
       font-size: 16px;
@@ -393,7 +392,7 @@
         line-height: 1.2;
 
         &:after {
-          content: "원";
+          content: '원';
           display: inline-block;
           font-size: 18px;
           font-family: var(--font3);
@@ -456,7 +455,7 @@
         line-height: 26px;
         padding-left: 30px;
         padding-right: 14px;
-        background: url("../../img/common/ic_filter@2x.png") no-repeat center left 14px / contain;
+        background: url('../../img/common/ic_filter@2x.png') no-repeat center left 14px / contain;
         background-size: 14px;
         position: absolute;
         top: 34px;
@@ -498,7 +497,7 @@
           }
         }
 
-        >div {
+        > div {
           .title {
             font-size: 18px;
             font-family: var(--font2);
@@ -531,7 +530,7 @@
             }
           }
 
-          >div {
+          > div {
             .title {
               font-size: 14px;
               font-family: var(--font1);
@@ -671,7 +670,7 @@
             color: var(--text-01);
 
             .icon-edit {
-              background: url("../../img/common/expenditure/ic_my_register@2x.png") no-repeat center center/contain;
+              background: url('../../img/common/expenditure/ic_my_register@2x.png') no-repeat center center/contain;
               width: 20px;
               height: 20px;
               display: inline-block;
@@ -688,7 +687,7 @@
             position: relative;
 
             &:after {
-              content: "원";
+              content: '원';
               display: inline-block;
               font-family: var(--font2);
             }
@@ -704,7 +703,7 @@
         border-radius: 13px;
         background-color: #f5f6f8;
 
-        >.percent {
+        > .percent {
           position: absolute;
           left: 8px;
           top: 2px;
@@ -807,7 +806,7 @@
     .income-details-amount {
       padding: 10px 20px 40px;
 
-      >.total {
+      > .total {
         font-size: 26px;
         color: var(--text-01);
         font-family: var(--font3);
@@ -826,7 +825,7 @@
         border-radius: 15px;
         background-color: #f5f6f8;
 
-        >.percent {
+        > .percent {
           position: absolute;
           left: 8px;
           top: 4px;
@@ -1001,7 +1000,7 @@
     .spending-plan {
       padding: 10px 20px 40px;
 
-      >.title {
+      > .title {
         font-size: 26px;
         font-family: var(--font3);
         color: var(--text-01);
@@ -1050,7 +1049,7 @@
         }
       }
 
-      >.category {
+      > .category {
         font-size: 18px;
         color: var(--text-01);
         font-family: var(--font3);
@@ -1084,7 +1083,7 @@
           border-bottom: none;
         }
 
-        >.total {
+        > .total {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -1102,7 +1101,7 @@
             font-family: var(--font7);
 
             &:after {
-              content: "원";
+              content: '원';
               display: inline-block;
               font-family: var(--font3);
             }
@@ -1151,7 +1150,7 @@
       position: relative;
       padding: 40px 20px;
 
-      >.title {
+      > .title {
         font-size: 20px;
         color: var(--text-01);
         font-family: var(--font3);
@@ -1167,7 +1166,7 @@
           margin: 10px;
         }
 
-        +.btn-wrap {
+        + .btn-wrap {
           .btn-purple-outline {
             border-radius: 6px;
           }
@@ -1240,18 +1239,18 @@
           }
 
           &.swiper-button-prev {
-            background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
+            background: url('../../img/common/btn_graph_back@2x.png') no-repeat center center / contain;
 
             &.swiper-button-disabled {
-              background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
+              background: url('../../img/common/btn_graph_back_dim@2x.png') no-repeat center center / contain;
             }
           }
 
           &.swiper-button-next {
-            background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
+            background: url('../../img/common/btn_graph_forward@2x.png') no-repeat center center / contain;
 
             &.swiper-button-disabled {
-              background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
+              background: url('../../img/common/btn_graph_forward_dim@2x.png') no-repeat center center / contain;
             }
           }
         }
@@ -1292,7 +1291,7 @@
             }
 
             &:after {
-              content: "";
+              content: '';
               position: absolute;
               width: 100%;
               height: 2px;
@@ -1327,7 +1326,7 @@
         line-height: 26px;
         padding-left: 30px;
         padding-right: 14px;
-        background: url("../../img/common/ic_filter@2x.png") no-repeat center left 14px / contain;
+        background: url('../../img/common/ic_filter@2x.png') no-repeat center left 14px / contain;
         background-size: 14px;
 
         span {
@@ -1390,7 +1389,7 @@
           }
         }
 
-        +.divider {
+        + .divider {
           margin-top: 10px;
           margin-bottom: 20px;
 
@@ -1409,7 +1408,7 @@
       }
 
       .list-day-wrap {
-        &+.list-day-wrap {
+        & + .list-day-wrap {
           margin-top: 20px;
         }
       }
@@ -1426,7 +1425,7 @@
         display: flex;
         justify-content: space-between;
 
-        +.divider {
+        + .divider {
           &:before {
             height: 1px;
             background: none;
@@ -1436,7 +1435,7 @@
         }
 
         &-budget {
-          +.divider::before {
+          + .divider::before {
             margin-top: 10px;
           }
         }
@@ -1452,7 +1451,7 @@
           text-align: right;
 
           &::after {
-            content: "원";
+            content: '원';
             display: inline-block;
             font-size: 13px;
             font-family: var(--font2);
@@ -1567,7 +1566,7 @@
           min-height: calc(100vh - 225px);
         }
 
-        >li {
+        > li {
           background: #fff;
           border-radius: 10px;
           padding: 20px;
@@ -1600,16 +1599,16 @@
                 align-items: center;
                 justify-content: center;
 
-                >span {
+                > span {
                   padding-left: 16px;
                   font-size: 14px;
                   color: var(--text-02);
                   text-align: center;
-                  background: url("../../img/common/ico_caution_grey@2x.png") no-repeat left center / 12px 12px;
+                  background: url('../../img/common/ico_caution_grey@2x.png') no-repeat left center / 12px 12px;
                 }
               }
 
-              >.group {
+              > .group {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1691,7 +1690,7 @@
                       }
 
                       &:after {
-                        content: "원";
+                        content: '원';
                         display: inline-block;
                         font-size: 17px;
                         font-family: var(--font2);
@@ -1724,7 +1723,7 @@
 
                       &.empty-deta {
                         &:after {
-                          content: "";
+                          content: '';
                         }
                       }
                     }
@@ -1761,7 +1760,7 @@
 
                   &-me {
                     &::after {
-                      content: "";
+                      content: '';
                       width: 8px;
                       height: 8px;
                       border: solid 2px #fff;
@@ -1926,7 +1925,7 @@
             }
           }
 
-          >.total {
+          > .total {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1946,7 +1945,7 @@
               font-weight: 600;
 
               &::after {
-                content: "원";
+                content: '원';
                 font-size: 13px;
                 font-family: var(--font2);
                 color: var(--text-01);
@@ -1975,12 +1974,12 @@
           &.budget-setting {
             padding: 20px 20px 30px;
 
-            >li {
+            > li {
               position: relative;
               padding: 18px 32px 18px 20px;
 
               &:after {
-                content: "";
+                content: '';
                 display: inline-block;
                 position: absolute;
                 background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
@@ -2004,7 +2003,7 @@
           &.filter-setting {
             padding: 20px 20px 120px;
 
-            >li {
+            > li {
               padding: 0;
 
               &.info-title {
@@ -2032,13 +2031,12 @@
                   margin-top: 0;
                 }
 
-                &+.check-list {
+                & + .check-list {
                   margin-top: 10px;
                 }
               }
 
               .details-history {
-
                 &.limit {
                   margin-left: -20px;
                   padding: 0 20px;
@@ -2101,7 +2099,7 @@
                       }
                     }
 
-                    &+div {
+                    & + div {
                       display: flex;
                       justify-content: space-between;
                       align-items: center;
@@ -2143,7 +2141,7 @@
               }
             }
 
-            +.btn-wrap {
+            + .btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
 
@@ -2154,7 +2152,7 @@
             }
           }
 
-          >li {
+          > li {
             padding: 18px 20px;
 
             .details-history {
@@ -2191,7 +2189,7 @@
                   top: 2px;
 
                   &:after {
-                    content: "원";
+                    content: '원';
                     display: inline-block;
                     font-size: 13px;
                     font-family: var(--font2);
@@ -2204,7 +2202,7 @@
                     padding-right: 10px;
 
                     &:before {
-                      content: "";
+                      content: '';
                       display: inline-block;
                       background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                       width: 6px;
@@ -2250,7 +2248,7 @@
 
           /*그 외 카테고리*/
           &.etc-category-list {
-            >li {
+            > li {
               padding: 18px 0;
               margin-bottom: 0;
 
@@ -2260,7 +2258,7 @@
                     padding-right: 14px;
 
                     &:after {
-                      content: "원";
+                      content: '원';
                       display: inline-block;
                       font-size: 13px;
                       font-family: var(--font2);
@@ -2270,7 +2268,7 @@
                     }
 
                     &:before {
-                      content: "";
+                      content: '';
                       display: inline-block;
                       background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                       width: 6px;
@@ -2290,7 +2288,7 @@
           &.category-details {
             padding: 30px 20px;
 
-            >li {
+            > li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2334,7 +2332,7 @@
           &.category-change {
             padding: 20px 20px 120px;
 
-            >li {
+            > li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2381,7 +2379,8 @@
 
                   .box {
                     display: flex;
-                    align-items: flex-start;
+                    // align-items: flex-start;
+                    background-color: red;
 
                     .info {
                       .place {
@@ -2414,7 +2413,7 @@
               }
             }
 
-            +.btn-wrap {
+            + .btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
 
@@ -2429,7 +2428,7 @@
           &.category-edit {
             padding: 20px 20px 110px;
 
-            >li {
+            > li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2454,7 +2453,7 @@
                     .img {
                       vertical-align: middle;
 
-                      &+.info {
+                      & + .info {
                         max-width: calc(100vw - 95px);
                       }
                     }
@@ -2491,7 +2490,7 @@
               }
             }
 
-            +.btn-wrap {
+            + .btn-wrap {
               background: #fff;
             }
           }
@@ -2522,7 +2521,7 @@
               .group {
                 .box {
                   .info {
-                    >span {
+                    > span {
                       display: inline-block;
                       vertical-align: middle;
                     }
@@ -2553,7 +2552,7 @@
                   color: var(--text-01);
 
                   &:after {
-                    content: "원";
+                    content: '원';
                     display: inline-block;
                     font-size: 16px;
                     font-family: var(--font2);
@@ -2568,7 +2567,7 @@
             font-size: 16px;
             color: var(--text-01);
             font-family: var(--font3);
-            background: #eaeaf6 url("../../img/common/expenditure/img_banner_flow@2x.png") no-repeat right 30px center / contain;
+            background: #eaeaf6 url('../../img/common/expenditure/img_banner_flow@2x.png') no-repeat right 30px center / contain;
             background-size: 88px;
           }
         }
@@ -2577,7 +2576,7 @@
         &.regular-expenditure-list {
           padding: 10px 0 0;
 
-          >li {
+          > li {
             .total {
               border: none;
               padding-bottom: 10px;
@@ -2585,7 +2584,7 @@
           }
         }
 
-        +.btn-wrap {
+        + .btn-wrap {
           padding: 0 20px 30px;
           background: #fff;
 
@@ -2604,7 +2603,7 @@
         padding: 20px 20px 30px;
         min-height: calc(100vh - 208px);
 
-        >li {
+        > li {
           background: #fff;
           border-radius: 10px;
           padding: 20px;
@@ -2614,7 +2613,7 @@
             margin-bottom: 0;
           }
 
-          >.total {
+          > .total {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -2634,7 +2633,7 @@
               font-weight: 600;
 
               &:after {
-                content: "원";
+                content: '원';
                 display: inline-block;
                 font-size: 13px;
                 font-family: var(--font2);
@@ -2704,7 +2703,7 @@
                     font-weight: 500;
 
                     &:after {
-                      content: "원";
+                      content: '원';
                       display: inline-block;
                       font-size: 17px;
                       font-family: var(--font2);
@@ -2743,7 +2742,7 @@
 
         /*카테고리*/
         &.usage-category-list {
-          >li {
+          > li {
             padding: 18px 20px;
 
             .details-history {
@@ -2782,7 +2781,7 @@
                   margin-top: 9px;
 
                   &:after {
-                    content: "원";
+                    content: '원';
                     display: inline-block;
                     font-size: 13px;
                     font-family: var(--font2);
@@ -2823,7 +2822,7 @@
 
           /*그 외 카테고리*/
           &.etc-category-list {
-            >li {
+            > li {
               padding: 18px 0;
               margin-bottom: 0;
 
@@ -2833,7 +2832,7 @@
                     padding-right: 14px;
 
                     &:after {
-                      content: "원";
+                      content: '원';
                       display: inline-block;
                       font-size: 13px;
                       font-family: var(--font2);
@@ -2841,7 +2840,7 @@
                     }
 
                     &:before {
-                      content: "";
+                      content: '';
                       display: inline-block;
                       background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                       width: 6px;
@@ -2861,7 +2860,7 @@
           &.category-details {
             padding: 30px 20px;
 
-            >li {
+            > li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2903,7 +2902,7 @@
           &.category-change {
             padding: 20px 20px 120px;
 
-            >li {
+            > li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -2948,7 +2947,7 @@
               }
             }
 
-            +.btn-wrap {
+            + .btn-wrap {
               bottom: -80px;
               transition: bottom 0.5s;
 
@@ -2963,7 +2962,7 @@
           &.category-edit {
             padding: 20px 20px 110px;
 
-            >li {
+            > li {
               padding: 0;
               margin-bottom: 40px;
 
@@ -3018,13 +3017,13 @@
               }
             }
 
-            +.btn-wrap {
+            + .btn-wrap {
               background: #fff;
             }
           }
         }
 
-        +.btn-wrap {
+        + .btn-wrap {
           padding: 0 20px 30px;
 
           .btn {
@@ -3133,7 +3132,7 @@
                     font-weight: normal;
                   }
 
-                  +.ico_list_arrow_small {
+                  + .ico_list_arrow_small {
                     margin-left: 4px;
                   }
                 }
@@ -3192,7 +3191,7 @@
               }
             }
 
-            +.schedule {
+            + .schedule {
               font-size: 16px;
               color: var(--text-01);
               font-family: var(--font2);
@@ -3291,7 +3290,7 @@
             position: relative;
 
             &:after {
-              content: "원";
+              content: '원';
               clear: both;
               display: inline-block;
               position: absolute;
@@ -3323,10 +3322,10 @@
             position: relative;
 
             &:after {
-              content: "";
+              content: '';
               clear: both;
               display: inline-block;
-              background: url("../../img/common/ico_input_arrow_open@2x.png") no-repeat right center/ contain;
+              background: url('../../img/common/ico_input_arrow_open@2x.png') no-repeat right center/ contain;
               position: absolute;
               right: 5px;
               bottom: 12px;
@@ -3341,7 +3340,6 @@
           }
 
           &._disabled {
-
             .title,
             :disabled {
               color: #c2c1cc;
@@ -3390,7 +3388,6 @@
               }
 
               &._disabled {
-
                 .title,
                 .sub-desc {
                   color: #c2c1cc;
@@ -3407,8 +3404,8 @@
             font-size: 0;
             width: 18px;
             height: 18px;
-            content: "";
-            background: url("../../img/common/ico_input_delete@2x.png") center center no-repeat;
+            content: '';
+            background: url('../../img/common/ico_input_delete@2x.png') center center no-repeat;
             background-size: contain;
           }
         }
@@ -3453,7 +3450,7 @@
 
             .custom-light {
               &:after {
-                content: "원";
+                content: '원';
                 clear: both;
                 display: inline-block;
                 position: absolute;
@@ -3487,7 +3484,7 @@
           font-size: 0;
           width: 18px;
           height: 18px;
-          content: "";
+          content: '';
           background: url(../../img/common/ico_input_delete@2x.png) center center no-repeat;
           background-size: contain;
         }
@@ -3666,7 +3663,7 @@
               }
             }
 
-            +.btn-bill {
+            + .btn-bill {
               padding: 0 40px 60px;
 
               .btn-outline-purple {
@@ -3690,7 +3687,7 @@
           margin-left: 8px;
         }
 
-        >.empty {
+        > .empty {
           padding-bottom: 0;
         }
 
@@ -3770,7 +3767,7 @@
         .usage-history-list {
           &.usage-category-list {
             &.category-change {
-              >li {
+              > li {
                 margin-bottom: 30px;
 
                 &:last-of-type {
@@ -3902,7 +3899,7 @@
               color: var(--text-01);
 
               &::after {
-                content: "%";
+                content: '%';
                 font-size: 12px;
               }
             }
@@ -3919,7 +3916,7 @@
               }
 
               &::after {
-                content: "원";
+                content: '원';
                 font-family: var(--font1);
                 margin-left: 1px;
               }
@@ -4069,18 +4066,18 @@
               }
 
               &.swiper-button-prev {
-                background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
+                background: url('../../img/common/btn_graph_back@2x.png') no-repeat center center / contain;
 
                 &.swiper-button-disabled {
-                  background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
+                  background: url('../../img/common/btn_graph_back_dim@2x.png') no-repeat center center / contain;
                 }
               }
 
               &.swiper-button-next {
-                background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
+                background: url('../../img/common/btn_graph_forward@2x.png') no-repeat center center / contain;
 
                 &.swiper-button-disabled {
-                  background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
+                  background: url('../../img/common/btn_graph_forward_dim@2x.png') no-repeat center center / contain;
                 }
               }
             }
@@ -4093,7 +4090,7 @@
           li {
             padding: 16px 0 15px;
 
-            >div {
+            > div {
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -4110,7 +4107,7 @@
                 color: var(--text-01);
 
                 &::after {
-                  content: "원";
+                  content: '원';
                   font-family: var(--font2);
                   margin-left: 1px;
                 }
@@ -4136,13 +4133,13 @@
                 color: var(--text-03);
 
                 &::before {
-                  content: "잔고";
+                  content: '잔고';
                   font-family: var(--font1);
                   margin-right: 4px;
                 }
 
                 &::after {
-                  content: "원";
+                  content: '원';
                   font-family: var(--font1);
                 }
               }
@@ -4179,7 +4176,7 @@
               margin-bottom: 2px;
 
               &:after {
-                content: "원";
+                content: '원';
                 display: inline-block;
                 font-family: var(--font2);
               }
@@ -4305,18 +4302,18 @@
               }
 
               &.swiper-button-prev {
-                background: url("../../img/common/btn_graph_back@2x.png") no-repeat center center / contain;
+                background: url('../../img/common/btn_graph_back@2x.png') no-repeat center center / contain;
 
                 &.swiper-button-disabled {
-                  background: url("../../img/common/btn_graph_back_dim@2x.png") no-repeat center center / contain;
+                  background: url('../../img/common/btn_graph_back_dim@2x.png') no-repeat center center / contain;
                 }
               }
 
               &.swiper-button-next {
-                background: url("../../img/common/btn_graph_forward@2x.png") no-repeat center center / contain;
+                background: url('../../img/common/btn_graph_forward@2x.png') no-repeat center center / contain;
 
                 &.swiper-button-disabled {
-                  background: url("../../img/common/btn_graph_forward_dim@2x.png") no-repeat center center / contain;
+                  background: url('../../img/common/btn_graph_forward_dim@2x.png') no-repeat center center / contain;
                 }
               }
             }
@@ -4408,7 +4405,7 @@
           height: 80px;
           position: relative;
 
-          >span {
+          > span {
             display: flex;
             align-items: center;
 
@@ -4466,7 +4463,7 @@
             padding-left: 30px;
 
             &::before {
-              content: "";
+              content: '';
               display: inline-block;
               width: 18px;
               height: 18px;
@@ -4483,7 +4480,7 @@
             }
 
             &.color-3::before {
-              background: transparent url("../../img/common/ico-chart-legend.png") no-repeat center center;
+              background: transparent url('../../img/common/ico-chart-legend.png') no-repeat center center;
               background-size: 100% auto;
             }
           }
@@ -4531,7 +4528,7 @@
           display: flex;
           flex-direction: column;
 
-          >span {
+          > span {
             font-size: 18px;
             font-family: var(--font2);
             color: #37354e;
@@ -4637,7 +4634,7 @@
             text-align: right;
 
             &::after {
-              content: "원";
+              content: '원';
               font-size: 13px;
               font-family: var(--font2);
               color: #37354e;
@@ -4654,7 +4651,6 @@
       }
     }
   }
-
 
   /**
    * 2022.10.13
@@ -4677,7 +4673,7 @@
       background-color: #f1f1f4;
       margin-bottom: 50px;
 
-      >.percent {
+      > .percent {
         position: absolute;
         left: 8px;
         top: 2px;
@@ -4722,7 +4718,6 @@
     }
 
     .amount-list {
-
       //margin-bottom: 20px;
       .title {
         display: flex;
@@ -4837,8 +4832,6 @@
             position: relative;
             margin-bottom: 20px;
 
-
-
             input {
               width: 100%;
               display: inline-block;
@@ -4907,7 +4900,7 @@
               font-size: 0;
               width: 18px;
               height: 18px;
-              content: "";
+              content: '';
               background: url(../../img/common/ico_input_delete@2x.png) center center no-repeat;
               background-size: contain;
             }
@@ -4945,7 +4938,6 @@
       position: relative;
 
       &-chart {
-
         //padding-top: 20px;
         .chart {
           position: absolute;
@@ -4959,7 +4951,7 @@
       .stick {
         position: relative;
 
-        >div {
+        > div {
           width: 42px;
           border-radius: 4px;
           background-color: #ece5fc;
@@ -5015,13 +5007,13 @@
         }
 
         &-disabeled {
-          >div {
+          > div {
             background-color: #f0f1f5 !important;
           }
         }
 
         &-minus {
-          >div {
+          > div {
             border-radius: 4px 4px 0 0;
 
             &.minus {
@@ -5030,7 +5022,7 @@
           }
 
           &::after {
-            content: "";
+            content: '';
             position: absolute;
             top: 50%;
             width: 100%;
@@ -5042,7 +5034,7 @@
         }
 
         &-half {
-          >div {
+          > div {
             width: 30px;
             border-radius: 4px;
             background-color: #ece5fc;
@@ -5070,7 +5062,7 @@
           }
 
           &::before {
-            content: "";
+            content: '';
             position: absolute;
             width: 100%;
             height: 50%;
@@ -5187,7 +5179,7 @@
             height: 26px;
 
             &::before {
-              content: "";
+              content: '';
               width: 14px;
               height: 14px;
               background-image: url(../../img/common/ic_filter@2x.png);
@@ -5286,7 +5278,7 @@
           }
         }
 
-        tr:first-child>td>.fc-day-grid-event {
+        tr:first-child > td > .fc-day-grid-event {
           margin-top: 2px;
           top: 0px;
         }
@@ -5364,7 +5356,7 @@
         }
 
         .detail {
-          >div {
+          > div {
             height: 25px;
             line-height: 25px;
             font-size: 13px;
@@ -5516,7 +5508,7 @@
       }
 
       .story-list-calendar {
-        >.date {
+        > .date {
           font-size: 16px;
           line-height: 20px;
           color: #37354e;
@@ -5741,7 +5733,7 @@
 
       &.must {
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           display: block;
           width: 3px;
@@ -6114,17 +6106,15 @@
     }
   }
 
-
   // 총금액
   .lump {
     margin-right: 8px;
     font-size: 16px;
     color: #37354e !important;
 
-    >span {
+    > span {
       font-size: 15px;
       margin-right: 0;
     }
   }
-
 }

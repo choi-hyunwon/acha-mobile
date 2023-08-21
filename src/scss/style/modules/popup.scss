@@ -2005,15 +2005,15 @@
                     padding-bottom: 9px;
                     width: 100%;
                     text-align: left;
-
+                  
                     .textarea,
                     textarea[data-auto-resize] {
-                        width: calc(100% - 78px);
-                        height: auto;
-                        font-size: 15px;
-                        line-height: 22px;
-                        border: 0;
-                        outline: none;
+                      width: calc(100% - 78px);
+                      height: auto;
+                      font-size: 15px;
+                      line-height: 22px;
+                      border: 0;
+                      outline: none;
                     }
                 }
             }
@@ -3533,6 +3533,14 @@
 
                             >div {
                                 margin-right: 8px;
+                            }
+                          
+                            label {
+                                [type='checkbox'].filled-in {
+                                    &+span:empty {
+                                        padding-left: 22px;
+                                    }
+                                }
                             }
                         }
                     }

@@ -11,7 +11,7 @@
     justify-content: center;
     padding-top: 20px;
 
-    > a {
+    >a {
         width: 150px;
         height: 150px;
         border: solid 1px #efefef;
@@ -251,7 +251,7 @@
             font-weight: bold;
         }
 
-        > .desc {
+        >.desc {
             font-size: 13px;
             line-height: 20px;
             letter-spacing: -0.65px;
@@ -454,7 +454,7 @@
             }
         }
 
-        > .desc {
+        >.desc {
             font-size: 13px;
             line-height: 18px;
             letter-spacing: -0.33px;
@@ -549,7 +549,7 @@
         .popup-body {
             padding: 8px 18px 0 20px;
 
-            > ul {
+            >ul {
                 border-bottom: 1px solid #e3e4e8;
 
                 .list {
@@ -1086,6 +1086,8 @@
     }
 
     &.modal-sm {
+        max-width: unset;
+
         .modal-dialog {
             width: 270px;
             max-width: 270px !important;
@@ -1858,7 +1860,7 @@
             padding: 60px 30px 0;
             text-align: center;
 
-            > .img {
+            >.img {
                 position: relative;
                 display: block;
                 width: 100px;
@@ -1953,6 +1955,7 @@
                 }
 
                 &._disabled {
+
                     .title,
                     :disabled {
                         color: #c2c1cc;
@@ -2002,15 +2005,15 @@
                     padding-bottom: 9px;
                     width: 100%;
                     text-align: left;
-
+                  
                     .textarea,
                     textarea[data-auto-resize] {
-                        width: calc(100% - 78px);
-                        height: auto;
-                        font-size: 15px;
-                        line-height: 22px;
-                        border: 0;
-                        outline: none;
+                      width: calc(100% - 78px);
+                      height: auto;
+                      font-size: 15px;
+                      line-height: 22px;
+                      border: 0;
+                      outline: none;
                     }
                 }
             }
@@ -2060,7 +2063,7 @@
             padding: 30px 28px;
             overflow: hidden;
 
-            > .title {
+            >.title {
                 font-size: 18px;
                 line-height: 28px;
                 letter-spacing: -0.45px;
@@ -2228,7 +2231,7 @@
             padding: 30px 28px;
             overflow: hidden;
 
-            > .title {
+            >.title {
                 font-size: 18px;
                 line-height: 28px;
                 letter-spacing: -0.45px;
@@ -2387,7 +2390,7 @@
         .inner {
             padding: 20px;
 
-            > .title {
+            >.title {
                 font-family: var(--font3);
                 font-size: 15px;
                 font-weight: bold;
@@ -2516,7 +2519,7 @@
             padding: 20px 30px;
             overflow: hidden;
 
-            > .title {
+            >.title {
                 font-family: var(--font3);
                 font-size: 15px;
                 font-weight: bold;
@@ -2582,7 +2585,7 @@
             padding: 30px;
             overflow: hidden;
 
-            > .title {
+            >.title {
                 font-family: var(--font3);
                 font-size: 20px;
                 font-weight: bold;
@@ -2593,7 +2596,7 @@
                 margin-bottom: 19px;
             }
 
-            > .desc {
+            >.desc {
                 font-size: 15px;
                 line-height: 23px;
                 letter-spacing: -0.38px;
@@ -2628,7 +2631,7 @@
             padding: 20px 30px;
             overflow: hidden;
 
-            > .title {
+            >.title {
                 font-family: var(--font3);
                 font-size: 15px;
                 font-weight: bold;
@@ -2669,7 +2672,7 @@
             padding: 30px 28px;
             overflow: hidden;
 
-            > .title {
+            >.title {
                 font-size: 18px;
                 line-height: 28px;
                 letter-spacing: -0.45px;
@@ -2944,7 +2947,7 @@
             padding: 30px 28px;
             overflow: hidden;
 
-            > .title {
+            >.title {
                 font-size: 18px;
                 line-height: 28px;
                 letter-spacing: -0.45px;
@@ -3198,7 +3201,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -3306,7 +3309,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -3442,7 +3445,7 @@
                     margin-bottom: 8px;
                 }
 
-                + .desc-box {
+                +.desc-box {
                     padding-top: 10px;
                 }
             }
@@ -3528,8 +3531,16 @@
                             display: flex;
                             align-items: center;
 
-                            > div {
+                            >div {
                                 margin-right: 8px;
+                            }
+                          
+                            label {
+                                [type='checkbox'].filled-in {
+                                    &+span:empty {
+                                        padding-left: 22px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -3687,7 +3698,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -3767,7 +3778,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -3847,7 +3858,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -3937,7 +3948,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4081,7 +4092,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4232,7 +4243,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4244,7 +4255,7 @@
                     padding-bottom: 30px;
                 }
 
-                > p {
+                >p {
                     font-size: 16px;
                     padding: 20px 20px 50px;
 
@@ -4303,7 +4314,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4383,7 +4394,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4463,7 +4474,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4475,7 +4486,7 @@
                     padding-bottom: 30px;
                 }
 
-                > p {
+                >p {
                     font-size: 16px;
                     padding: 20px 20px 50px;
 
@@ -4508,7 +4519,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4611,7 +4622,7 @@
                 position: relative;
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4623,7 +4634,7 @@
                     padding-bottom: 30px;
                 }
 
-                > p {
+                >p {
                     font-size: 16px;
                     padding: 20px 20px 50px;
                     display: flex;
@@ -4681,7 +4692,7 @@
                 position: relative;
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4750,7 +4761,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4762,7 +4773,7 @@
                     padding-bottom: 30px;
                 }
 
-                > p {
+                >p {
                     font-size: 16px;
                     padding: 20px 20px 50px;
 
@@ -4795,7 +4806,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4897,7 +4908,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -4909,7 +4920,7 @@
                     padding-bottom: 30px;
                 }
 
-                > p {
+                >p {
                     font-size: 16px;
                     padding: 20px 20px 50px;
 
@@ -4963,7 +4974,7 @@
                 position: relative;
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -5021,7 +5032,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -5033,7 +5044,7 @@
                     padding-bottom: 30px;
                 }
 
-                > p {
+                >p {
                     font-size: 16px;
                     padding: 20px 20px 50px;
 
@@ -5198,7 +5209,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -5320,7 +5331,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;
@@ -5423,7 +5434,7 @@
             .inner {
                 padding: 20px;
 
-                > .title {
+                >.title {
                     font-family: var(--font3);
                     font-size: 16px;
                     font-weight: bold;

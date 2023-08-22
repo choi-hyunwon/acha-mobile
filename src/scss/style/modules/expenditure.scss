@@ -1332,7 +1332,7 @@
         width: 34px;
         height: 34px;
         border-radius: 50%;
-        margin-left: -10px;
+        margin-left: -13px;
         border: 2px solid #f7f7f8;
         position: relative;
         overflow: visible;
@@ -1350,20 +1350,20 @@
         &-share {
           width: 40px;
           height: 40px;
-          border: 1px solid rgba(0, 0, 0, 0.05);
+          // border: 1px solid rgba(0, 0, 0, 0.05);
 
           img {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
             overflow: hidden;
+            border: 1px solid #e1e1e1;
           }
 
           &.me {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
-            border: 2px solid #f7f7f8;
             position: relative;
 
             &::after {

@@ -1986,6 +1986,7 @@
 
             .category-menu {
               display: block;
+              padding-top: 10px;
             }
           }
         }
@@ -2342,13 +2343,14 @@
 
     /*목록 편집*/
     &.edit-list {
+      padding-top: 10px;
       padding-bottom: 100px;
 
       .card-item {
         .asset-wrap {
           .category-heading {
             border: none;
-            padding: 16px 0;
+            padding: 17px 0;
 
             .title {
               font-size: 17px;
@@ -2366,7 +2368,7 @@
             margin-bottom: 0;
 
             .total-sum {
-              margin-bottom: 34px;
+              line-height: 46px;
 
               .name {
                 font-size: 14px;
@@ -2376,7 +2378,7 @@
             }
 
             .ac-list {
-              padding: 0 10px;
+              // padding: 0 10px;
 
               .ac-item {
                 min-height: 42px;
@@ -2384,7 +2386,7 @@
 
                 .label {
                   float: left;
-                  margin-right: 4px;
+                  // margin-right: 4px;
                   height: 22px;
                 }
 
@@ -2402,7 +2404,8 @@
                   position: relative;
                   display: inline-block;
                   width: 100%;
-                  margin-top: 5px;
+                  margin-top: 2px;
+                  line-height: 20px;
 
                   em {
                     font-size: 14px;
@@ -2462,20 +2465,29 @@
                   }
 
                   .btn-edit {
-                    position: relative;
-                    width: 18px;
                     flex-shrink: 0;
+                    position: relative;
+                    width: 20px;
+                    height: 16px;
+                    right: 10px;
 
                     .sprite {
                       &.ico_card_edit {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
+                        // width: 100%;
+                        // height: 100%;
+                        // object-fit: contain;
+                        width: 20px;
+                        height: 18px;
+                        background: url('../../img/sprite/btn_list_move@2x.png') no-repeat center / 100%;
                       }
                     }
                   }
                 }
               }
+            }
+
+            .divider {
+              margin: 29px 0 10px;
             }
           }
         }

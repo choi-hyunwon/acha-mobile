@@ -189,12 +189,6 @@ front.common = (function () {
         axis: 'y',
         handle: '.handle',
       });
-      $('.sortable.type-each').each(function (index, item) {
-        $(this).sortable({
-          axis: 'y',
-          handle: '.handle',
-        });
-      });
 
       $('._sticky').sticky({ topSpacing: 0 }).css('background-color', '#ffffff');
 

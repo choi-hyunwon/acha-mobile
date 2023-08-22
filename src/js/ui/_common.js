@@ -184,10 +184,12 @@ front.common = (function () {
 
   var commonHandler = function () {
     // sortable
-    $(document).ready(function () {
+    $(function () {
       $('.sortable').sortable({
         axis: 'y',
         handle: '.handle',
+        containment: 'parent',
+        forcePlaceholderSize: true,
       });
 
       $('._sticky').sticky({ topSpacing: 0 }).css('background-color', '#ffffff');

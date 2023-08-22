@@ -1886,7 +1886,7 @@
 
                 .name {
                   float: left;
-                  width: calc(100% - 135px);
+                  width: calc(100% - 165px);
                   font-family: var(--font2);
                   font-size: 14px;
                   line-height: 20px;
@@ -1942,15 +1942,19 @@
                   position: absolute;
                   font-family: var(--font4);
                   font-size: 12px;
-                  line-height: 13px;
+                  line-height: 16px;
                   letter-spacing: 0;
                   color: #9b9aa6;
-                  left: 28px;
-                  bottom: -16px;
+                  left: 40px;
+                  bottom: -4px;
 
                   &.text-right {
                     right: 0;
                     top: 25px;
+                  }
+
+                  &.ac-num-pos {
+                    bottom: -20px;
                   }
                 }
 

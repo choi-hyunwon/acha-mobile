@@ -5,7 +5,7 @@
   src: url('../../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
   url('../../fonts/Roboto/Roboto-Regular.woff') format('woff'),
   url('../../fonts/Roboto/Roboto-Regular.ttf') format('opentype');
-  unicode-range: U+0030-0039, U+002C;
+  unicode-range: U+0030-0039, U+002C, U+20A9, U+005c;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   src: url('../../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
   url('../../fonts/Roboto/Roboto-Medium.woff') format('woff'),
   url('../../fonts/Roboto/Roboto-Medium.ttf') format('opentype');
-  unicode-range: U+0030-0039, U+002C;
+  unicode-range: U+0030-0039, U+002C, U+20A9, U+005c;
 }
 
 @font-face {
@@ -25,7 +25,7 @@
   src: url('../../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
   url('../../fonts/Roboto/Roboto-Bold.woff') format('woff'),
   url('../../fonts/Roboto/Roboto-Bold.ttf') format('opentype');
-  unicode-range: U+0030-0039, U+002C;
+  unicode-range: U+0030-0039, U+002C, U+20A9, U+005c;
 }
 
 .roboto {

@@ -193,7 +193,8 @@ textarea.custom {
         outline: 0;
 
         &.disable {
-          color: #e2e3e6;
+          // color: #e2e3e6;
+          color: #c2c1cc;
         }
       }
 
@@ -227,6 +228,10 @@ textarea.custom {
       height: 70px;
       margin-bottom: 0;
       display: block;
+
+      &::placeholder {
+        color: #c2c1cc;
+      }
     }
 
     .submit-box {

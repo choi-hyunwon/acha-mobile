@@ -2001,7 +2001,7 @@ _ .event-btn-area {
 
       [type="checkbox"].filled-in:not(:checked)+span:not(.lever):before {
         left: 1px;
-        top: 0;
+        top: 3px;
       }
 
       [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
@@ -2022,7 +2022,7 @@ _ .event-btn-area {
 
       [type="checkbox"].filled-in:checked+span:not(.lever):before {
         left: 1px;
-        top: 0;
+        top: 3px;
       }
 
       [type="checkbox"].filled-in-sq+span:not(.lever):before {

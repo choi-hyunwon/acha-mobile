@@ -451,15 +451,14 @@ input[type=number] {
 
 // 230831
 .event-area {
-
   .mb-10 {
     margin-bottom: 10px;
   }
 
-
   .bg-purple {
     background-color: #a579ff;
   }
+
 
   .h3 {
     display: inline-block;
@@ -499,7 +498,19 @@ input[type=number] {
     // .benefit-wrap {}
 
     .invite-code {
-      padding: 30px 20px 40px;
+      padding: 30px 20px 20px;
+
+      &.connect {
+        padding-bottom: 40px;
+
+        .content {
+          .coupon-code {
+            .code {
+              color: #222;
+            }
+          }
+        }
+      }
 
       .content {
         padding: 20px;
@@ -516,7 +527,7 @@ input[type=number] {
             font-size: 20px;
             font-weight: 500;
             line-height: 24px;
-            color: #222;
+            color: #c2c1cc;
           }
         }
 
@@ -529,6 +540,13 @@ input[type=number] {
             border-radius: 10px;
           }
         }
+      }
+
+      .invite-txt {
+        font-size: 15px;
+        font-weight: 500;
+        font-family: var(--font2);
+        line-height: 1.4;
       }
     }
 
@@ -554,10 +572,18 @@ input[type=number] {
 
             &.number {
               font-size: 18px;
+
+              &.sheets {
+                opacity: 0.5;
+              }
             }
           }
+        }
 
-
+        .dot {
+          ::before {
+            display: none;
+          }
         }
       }
 
@@ -567,6 +593,10 @@ input[type=number] {
         span {
           font-weight: bold;
         }
+      }
+
+      .f-cancel {
+        text-decoration: unset;
       }
     }
 

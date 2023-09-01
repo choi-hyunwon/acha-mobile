@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal event-area">
+		<div class="header _sticky">
+			<a href="#" class="sprite btn_back"></a>
+			<h2>친구 초대</h2>
+		</div>
+		<div class="contents expenditure">
+			<div class="expenditure-tab _expenditureTab block-tab">
+				<ul>
+					<li class="active"><a href="#">이벤트 소개</a></li>
+					<li><a href="#">상품 주문</a></li>
+				</ul>
+			</div>
+			<div class="event-box">
+				<div class="img-wrap">
+					<img src="../../img/common/event/invite/img_event_top_01@2x.png" alt="나랑 같이 U플래너 할래?">
+				</div>
+				<div class="img-wrap">
+					<img src="../../img/common/event/invite/img_event_top_02@2x.png"
+						alt="내 초대 코드를 통해 가입한 친구가 마이데이터 연결하면 친구도 나도 아메리카노 무료!">
+				</div>
+				<!-- <div class="benefit-wrap"></div> -->
+
+				<div class="divider"></div>
+
+				<div class="invite-code bg-purple text-center">
+					<h3 class="h3 purple">나의 초대 코드</h3>
+					<div class="content bg-white mb-10">
+						<div class="coupon-code">
+							<p class="code">12ABCDEFG123</p>
+						</div>
+						<div class="btn-wrap mb-10">
+							<button class="btn btn-outline-purple btn-block f-point">초대 코드 복사하기</button>
+						</div>
+						<div class="btn-wrap">
+							<button class="btn btn-purple-bg btn-block">초대 링크 공유하기</button>
+						</div>
+					</div>
+					<p class="desc text-white">
+						가계부 > 프로필 클릭 > 마이페이지에서도 <br />확인할 수 있어요.
+					</p>
+				</div>
+
+				<div class="divider"></div>
+
+				<div class="invitation-state text-center">
+					<h3 class="h3">나의 초대 현황</h3>
+					<ul class="mb-10">
+						<li class="bg_light_gray mb-10">
+							<p class="new">
+								신규 가입한 친구</p>
+							<p class="number"><span>15</span>명</p>
+						</li>
+						<li class="bg-purple text-white">
+							<p>내 보유 교환권</p>
+							<p class="number"><span>10</span>장</p>
+						</li>
+					</ul>
+					<p class="desc">교환권은 <span class="f-point">최대 20장</span>까지 받을 수 있어요.</p>
+
+					<div class="order-period text-center">
+						<h3 class="h3">상품 주문 기간</h3>
+						<div class="date">
+							~ 23.11.05 까지
+							<p class="badge badge-pink">D-6</p>
+						</div>
+						<div class="btn-area">
+							<a class="btn btn-lg btn-block btn_primary" href="#">상품 주문하러 가기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer 기획 미정으로 추후 해당 내용 반영할 예정 -->
+		<!-- :after로 dim 처리 -->
+		<div class="footer">
+			<h4 class="h4">안내사항</h4>
+			<div class="notice mt-30">
+				<h5>[이벤트 기간]</h5>
+				<ul class="dot">
+					<li>ㆍ응모기간: 2023년 6월 15일 ~ 6월 30일</li>
+					<li>ㆍ당첨자 발표 : 2023년 7월 5일 (홈페이지, U플래너 앱) 이벤트 당첨자 페이지에서 확인</li>
+				</ul>
+			</div>
+
+			<div class="notice mt-20">
+				<h5>[응모 경품]</h5>
+				<ul class="rank">
+					<li>1등 : 백화점 상품권 (20만원) (20명)</li>
+					<li>2등 : 네이버 페이 포인트 쿠폰 (200명)</li>
+				</ul>
+			</div>
+
+			<div class="notice mt-20">
+				<h5>[유의사항]</h5>
+				<ul class="num">
+					<li>1. U플래너 어플 최신 버전 업데이트 후 참여 가능합니다.</li>
+					<li>2. 행사기간 내 매일 이벤트 방문 후 '스탬프 찍기' 클릭해야 응모 가능합니다.</li>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+<script>
+	$(".custom-control-input").on("click", function () {
+		$(this).toggleClass("off");
+		if ($(this).hasClass("off")) {
+			$("._off").addClass("active");
+			$("._on").removeClass("active");
+		} else {
+			$("._on").addClass("active");
+			$("._off").removeClass("active");
+		}
+	});
+</script>
+@@include('../include/countCharDelete.html')
+
+</html>

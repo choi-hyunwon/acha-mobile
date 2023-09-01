@@ -7,7 +7,7 @@
   width: 100%;
   background-color: #a470f2;
 
-  & > div:first-child {
+  &>div:first-child {
     & .main {
       width: 355px;
       height: auto;
@@ -56,7 +56,7 @@
     height: auto;
     background-color: #fff;
 
-    & > .title {
+    &>.title {
       position: relative;
       font-size: 17px;
       font-weight: bold;
@@ -199,11 +199,13 @@
   .d-xs-none {
     display: none;
   }
+
   .d-xs-block {
     display: block;
   }
+
   .event {
-    & > div:first-child {
+    &>div:first-child {
       & .main {
         width: 300px;
       }
@@ -320,7 +322,7 @@
         }
       }
 
-      & > p {
+      &>p {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -443,4 +445,220 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+
+
+// 230831
+.event-area {
+
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+
+
+  .bg-purple {
+    background-color: #a579ff;
+  }
+
+  .h3 {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: bold;
+
+    &.purple {
+      padding: 7px 20px;
+      background-color: #7f4ee2;
+      border-radius: 50px;
+      color: #fff;
+    }
+  }
+
+  .h4 {
+    font-size: 18px;
+    color: #737183;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+
+  .event-box {
+    .img-wrap {
+      img {
+        width: 100%;
+      }
+    }
+
+    // .benefit-wrap {}
+
+    .invite-code {
+      padding: 30px 20px 40px;
+
+      .content {
+        padding: 20px;
+        border-radius: 16px;
+
+        .coupon-code {
+          padding: 38px 0;
+          margin-bottom: 20px;
+          background-color: #f7f7f8;
+          border-radius: 10px;
+
+          .code {
+            font-family: var(--font3);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #222;
+          }
+        }
+
+        .btn-wrap {
+          button {
+            font-size: 16px;
+            height: 56px;
+            line-height: 56px;
+            font-family: var(--font3);
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .invitation-state {
+      padding: 40px 20px 60px;
+
+      ul {
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 18px 20px;
+          border-radius: 10px;
+
+          p {
+            font-size: 15px;
+            font-weight: bold;
+
+            &.new {
+              color: var(--text-02);
+              font-weight: normal;
+            }
+
+            &.number {
+              font-size: 18px;
+            }
+          }
+
+
+        }
+      }
+
+      .desc {
+        color: var(--text-02);
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .order-period {
+      margin-top: 60px;
+
+      .h3 {
+        margin-bottom: 6px;
+      }
+
+      .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 35px;
+
+        font-size: 16px;
+        line-height: 22px;
+        color: #f21730;
+        font-weight: 500;
+        font-family: var(--font2);
+
+        p {
+          margin-left: 3px;
+        }
+      }
+
+      .btn-area {
+        padding: 0 20px;
+
+        .btn {
+          line-height: 24px;
+          padding: 16px 0;
+          height: auto;
+          border-radius: 10px;
+          font-size: 16px;
+          font-family: NotoSansCJKKR;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .footer {
+    position: relative;
+    padding: 30px 20px 40px;
+
+    .notice {
+
+      h5 {
+        font-size: 15px;
+        font-weight: bold;
+        color: #737183;
+      }
+
+      ul {
+        li {
+          font-size: 14px;
+          color: #737183;
+          font-family: var(--font4);
+
+          margin-left: 14px;
+          text-indent: -14px;
+        }
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      content: "기획 미정으로 \a추후 해당 내용 반영할 예정입니다.";
+      top: 45px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+      z-index: 1;
+      white-space: pre;
+    }
+
+    &::after {
+      background: #000;
+      opacity: 0.3;
+    }
+  }
 }

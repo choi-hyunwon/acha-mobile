@@ -522,8 +522,17 @@ input[type=number] {
           background-color: #f7f7f8;
           border-radius: 10px;
 
+          &.coupon-disconnect {
+            background-color: #eeedf0;
+
+            .code {
+              color: #c2c1cc;
+              opacity: 0.3;
+            }
+          }
+
           .code {
-            font-family: var(--font3);
+            font-family: var(--font1);
             font-size: 20px;
             font-weight: 500;
             line-height: 24px;
@@ -536,7 +545,6 @@ input[type=number] {
             font-size: 16px;
             height: 56px;
             line-height: 56px;
-            font-family: var(--font3);
             border-radius: 10px;
           }
         }
@@ -565,12 +573,14 @@ input[type=number] {
             font-size: 15px;
             font-weight: bold;
 
+
             &.new {
               color: var(--text-02);
               font-weight: normal;
             }
 
             &.number {
+              font-family: var(--font3) !important;
               font-size: 18px;
 
               &.sheets {

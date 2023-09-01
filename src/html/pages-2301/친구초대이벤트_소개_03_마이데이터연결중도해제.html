@@ -31,17 +31,18 @@
 				<div class="invite-code connect bg-purple text-center">
 					<h3 class="h3 purple">나의 초대 코드</h3>
 					<div class="content bg-white">
-						<div class="coupon-code">
+						<!-- 연결중도해제시 .coupon-disconnect 추가 -->
+						<div class="coupon-code coupon-disconnect">
 							<p class="code">12ABCDEFG123</p>
 						</div>
 						<!-- .connect 붙었을 경우 .d-none 제거 -->
-						<p class="d-none invite-txt mb-20">마이데이터를 연결하면 <br />초대 코드를 받고 참여할 수 있어요.</p>
+						<p class="invite-txt mb-20">마이데이터를 연결해야 <br />친구를 초대할 수 있어요.</p>
 						<!-- .connect 붙었을 경우 .d-none 추가 -->
-						<div class="btn-wrap mb-10">
-							<button class=" btn btn-purple-bg btn-outline-purple btn-block f-point">초대 코드 복사하기</button>
+						<div class="d-none btn-wrap mb-10">
+							<button class="btn btn-purple-bg btn-outline-purple btn-block f-point">초대 코드 복사하기</button>
 						</div>
 						<div class="btn-wrap">
-							<button class="btn btn-purple-bg btn-block">초대 코드 받으러 가기</button>
+							<button class="btn btn-purple-bg btn-block">마이데이터 연결하러 가기</button>
 						</div>
 					</div>
 					<p class="desc text-white mt-10">

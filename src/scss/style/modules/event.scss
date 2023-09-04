@@ -736,6 +736,8 @@ input[type=number] {
                   text-align: center;
                   font-size: 16px;
                   font-weight: normal;
+                  max-width: 48px;
+                  border: unset;
                 }
 
                 button {

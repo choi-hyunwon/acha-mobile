@@ -60,7 +60,7 @@
 										<!-- <span class="total">: <em>0</em>개</span> -->
 										<div class="count-box">
 											<button class="minus"></button>
-											<p class="count">1</p>
+											<input type="number" value="1" class="count">
 											<button class="plus"></button>
 										</div>
 									</div>
@@ -87,7 +87,7 @@
 										<!-- 쿠폰의 최소 갯수가 되면 .disabled-minus 추가 -->
 										<div class="count-box disabled-plus">
 											<button class="minus"></button>
-											<p class="count">5</p>
+											<input type="number" value="1" class="count">
 											<button class="plus"></button>
 										</div>
 									</div>
@@ -113,7 +113,7 @@
 										<!-- 교환권 갯수가 0개 일때 .disabled .disabled-minus .disabled-plus 추가 -->
 										<div class="count-box disabled">
 											<button class="minus"></button>
-											<p class="count">0</p>
+											<input type="number" value="1" class="count">
 											<button class="plus"></button>
 										</div>
 									</div>
@@ -145,16 +145,15 @@
 	</div>
 </body>
 <script>
-	$(".custom-control-input").on("click", function () {
-		$(this).toggleClass("off");
-		if ($(this).hasClass("off")) {
-			$("._off").addClass("active");
-			$("._on").removeClass("active");
-		} else {
-			$("._on").addClass("active");
-			$("._off").removeClass("active");
-		}
-	});
+	$(document).ready(function () {
+		$('.minus').click(function () {
+			if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+		});
+		$('.plus').click(function () {
+			$(this).prev().val(+$(this).prev().val() + 1);
+		});
+	})
+
 </script>
 @@include('../include/countCharDelete.html')
 

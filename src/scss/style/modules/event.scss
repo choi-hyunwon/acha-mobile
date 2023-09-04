@@ -780,12 +780,31 @@ input[type=number] {
             font-size: 14px;
             line-height: 20px;
             font-family: var(--font1);
+            letter-spacing: -0.3px;
 
             span {
               font-family: var(--font2);
             }
           }
         }
+      }
+    }
+
+    .coupon-order {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--text-02);
       }
     }
 

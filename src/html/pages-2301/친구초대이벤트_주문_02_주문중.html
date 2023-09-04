@@ -21,11 +21,11 @@
 					<h3 class="h3">주문할 상품을 선택해주세요</h3>
 					<ul>
 						<li>
-							ㆍ주문 가능한 기간 내에 쿠폰을 주문하지 않으면, <br />
+							<i class="dot"></i> 주문 가능한 기간 내에 쿠폰을 주문하지 않으면, <br />
 							<span class="f-alert">교환권이 소멸돼요.</span>
 						</li>
 						<li>
-							ㆍ교환한 쿠폰은 상품 선택 기간이 끝난 이후 <br />
+							<i class="dot"></i>교환한 쿠폰은 상품 선택 기간이 끝난 이후 <br />
 							문자로 발송돼요.
 						</li>
 					</ul>
@@ -34,7 +34,7 @@
 				<div class="divider"></div>
 
 				<div class="order order-period">
-					<h3 class="h3">상품 주문기간</h3>
+					<h3 class="h3">상품 주문 기간</h3>
 					<div class="date">
 						23.09.15 ~ 23.11.05
 						<p class="badge badge-pink">D-6</p>
@@ -43,11 +43,12 @@
 					<div class="coupon-box bg-purple text-white">
 						<p>사용가능 교환권</p>
 						<p class="number use">
-							<span class="rang">10장</span> <span class="total"> /10장</span>
+							<span class="rang">2장</span> <span class="total"> /10장</span>
 						</p>
 					</div>
 					<ul class="coupon-list mt-20">
-						<li>
+						<!-- 쿠폰 갯수가 1개 이상일 경우 li에 클래스 추가 .coupon-length -->
+						<li class="coupon-length">
 							<div class="top">
 								<div class="img-wrap">
 									<img src="../../img/common/event/invite/img_gift_coffee@2x.png" alt="이미지">
@@ -55,7 +56,14 @@
 								<div class="info">
 									<h4 class="h4">교환권 1장</h4>
 									<p>스타벅스 아메리카노 T 1잔</p>
-									<div class="quantity font-weight-bolder">주문수량 : <span>0개</span></div>
+									<div class="quantity font-weight-bolder">주문수량
+										<!-- <span class="total">: <em>0</em>개</span> -->
+										<div class="count-box">
+											<button class="minus"></button>
+											<p class="count">1</p>
+											<button class="plus"></button>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="bottom">
@@ -64,7 +72,7 @@
 								</p>
 							</div>
 						</li>
-						<li>
+						<li class="coupon-length">
 							<div class="top">
 								<div class="img-wrap">
 									<img src="../../img/common/event/invite/img_gift_pizza@2x.png" alt="이미지">
@@ -72,7 +80,17 @@
 								<div class="info">
 									<h4 class="h4">교환권 5장</h4>
 									<p>도미노피자 (씬)포테이토 M+ 콜라 1.25L</p>
-									<div class="quantity font-weight-bolder">주문수량 : <span>0개</span></div>
+									<div class="quantity font-weight-bolder">주문수량
+										<!-- <span class="total">: <em>0</em>개</span> -->
+
+										<!-- 쿠폰의 최대 갯수가 되면 .disabled-plus 추가 -->
+										<!-- 쿠폰의 최소 갯수가 되면 .disabled-minus 추가 -->
+										<div class="count-box disabled-plus">
+											<button class="minus"></button>
+											<p class="count">5</p>
+											<button class="plus"></button>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="bottom">
@@ -87,9 +105,18 @@
 									<img src="../../img/common/event/invite/img_gift_starbucks@2x.png" alt="이미지">
 								</div>
 								<div class="info">
-									<h4 class="h4">교환권 1장</h4>
+									<h4 class="h4">교환권 0장</h4>
 									<p>스타벅스 &lt;APP전용&gt; e카드 5만원 교환권</p>
-									<div class="quantity font-weight-bolder">주문수량 : <span>0개</span></div>
+									<div class="quantity font-weight-bolder">주문수량
+										<!-- <span class="total">: <em>0</em>개</span> -->
+
+										<!-- 교환권 갯수가 0개 일때 .disabled .disabled-minus .disabled-plus 추가 -->
+										<div class="count-box disabled">
+											<button class="minus"></button>
+											<p class="count">0</p>
+											<button class="plus"></button>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="bottom">
@@ -100,8 +127,16 @@
 						</li>
 					</ul>
 				</div>
-				<div class="btn-wrap btn-floating">
-					<a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">주문하기</a>
+				<div class="btn-wrap btn-floating btn-half">
+					<!-- 최초 주문전 -->
+					<!-- <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">주문하기</a> -->
+
+					<!-- 주문 중 -->
+					<a href="#" class="btn btn-block btn-lg btn-gray-bg">초기화</a>
+					<a href="#" class="btn btn-block btn-lg btn-purple-bg">주문 저장</a>
+				</div>
+				<div class="btn-wrap">
+
 				</div>
 
 			</div>

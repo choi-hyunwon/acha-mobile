@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal event-area">
+		<div class="header _sticky">
+			<a href="#" class="sprite btn_back"></a>
+			<h2>친구 초대</h2>
+		</div>
+		<div class="contents expenditure">
+			<div class="expenditure-tab _expenditureTab block-tab">
+				<ul>
+					<li><a href="#">이벤트 소개</a></li>
+					<li class="active"><a href="#">상품 주문</a></li>
+				</ul>
+			</div>
+
+			<div class="event-box">
+				<div class="order order-notice">
+					<h3 class="h3">주문할 상품을 선택해주세요</h3>
+					<ul>
+						<li>
+							ㆍ주문 가능한 기간 내에 쿠폰을 주문하지 않으면, <br />
+							<span class="f-alert">교환권이 소멸돼요.</span>
+						</li>
+						<li>
+							ㆍ교환한 쿠폰은 상품 선택 기간이 끝난 이후 <br />
+							문자로 발송돼요.
+						</li>
+					</ul>
+				</div>
+
+				<div class="divider"></div>
+
+				<div class="order order-period">
+					<h3 class="h3">상품 주문기간</h3>
+					<div class="date">
+						23.09.15 ~ 23.11.05
+						<p class="badge badge-pink">D-6</p>
+					</div>
+
+					<div class="coupon-box bg-purple text-white">
+						<p>내 보유 교환권</p>
+						<p class="number sheets"><span>0</span>장</p>
+					</div>>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(".custom-control-input").on("click", function () {
+		$(this).toggleClass("off");
+		if ($(this).hasClass("off")) {
+			$("._off").addClass("active");
+			$("._on").removeClass("active");
+		} else {
+			$("._on").addClass("active");
+			$("._off").removeClass("active");
+		}
+	});
+</script>
+@@include('../include/countCharDelete.html')
+
+</html>

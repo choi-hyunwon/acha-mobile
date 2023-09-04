@@ -1272,6 +1272,10 @@
           margin-right: 5px;
           padding: 10px 5px !important;
 
+          &:last-child {
+            margin-right: 0;
+          }
+
           a {
             font-size: 17px;
             color: var(--text-03);

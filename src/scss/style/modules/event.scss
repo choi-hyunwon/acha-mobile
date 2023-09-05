@@ -977,7 +977,7 @@ input[type=number] {
       margin-top: 14px;
       padding: 0 20px;
 
-      li {
+      >li {
         position: relative;
         padding: 16px 20px;
         margin-bottom: 40px;
@@ -987,8 +987,33 @@ input[type=number] {
         display: flex;
         align-items: center;
 
+        overflow: hidden;
+
         &:last-child {
           margin-bottom: 0;
+        }
+
+        &.expire {
+          .dim {
+            display: block;
+            background-color: rgba(36, 26, 57, 0.8);
+
+            .text {
+              font-size: 24px;
+            }
+
+            .sub-text {
+              margin-top: 4px;
+              font-size: 16px;
+              display: block;
+              font-weight: bold;
+              line-height: 24px;
+
+              &:last-child {
+                margin-top: 2px;
+              }
+            }
+          }
         }
 
         &:nth-child(1),
@@ -1021,7 +1046,7 @@ input[type=number] {
           align-items: center;
         }
 
-        span {
+        .step-num {
           margin-right: 20px;
           padding: 7px 16px;
           background: rgba(187, 157, 255, 0.19);
@@ -1031,7 +1056,7 @@ input[type=number] {
           border-radius: 17px;
         }
 
-        p {
+        .txt {
           font-size: 18px;
           font-weight: 500;
           color: var(--text-01);

@@ -2543,6 +2543,55 @@ _ .event-btn-area {
         }
       }
     }
+
+    // 230905
+    .event-code {
+      margin-top: 60px;
+
+      .sub-title {
+        font-size: 14px;
+        color: var(--text-02);
+        font-weight: 500;
+      }
+
+      .code-wrap {
+        .invite-code {
+          position: relative;
+          display: inline-block;
+          padding: 21px 0;
+          margin-bottom: 15px;
+          width: 100%;
+          background-color: #f7f7f8;
+          font-size: 15px;
+          color: #c2c1cc;
+          border-radius: 10px;
+          font-weight: 500;
+          line-height: 18px;
+          text-align: center;
+          outline: unset;
+
+        }
+
+        &.connect {
+          .invite-code {
+            color: #222;
+
+            button {
+              img {
+                content: "";
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+
   }
 
   /*연결관리*/

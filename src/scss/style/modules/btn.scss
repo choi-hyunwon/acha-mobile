@@ -37,6 +37,7 @@ a:hover {
 
     }
 
+
     &-half {
         padding: 0 20px 20px;
         display: flex;
@@ -45,8 +46,12 @@ a:hover {
         width: 100% !important;
 
         >a {
-            width: calc(50% - 3.5px);
+            width: calc(50% - 4.5px);
         }
+    }
+
+    &-wrap.btn-half {
+        padding: 0;
     }
 
     &.disabled {

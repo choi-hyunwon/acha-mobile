@@ -921,6 +921,7 @@ input[type=number] {
 
     ul {
       li {
+        position: relative;
         margin-left: 18px;
         margin-bottom: 4px;
         font-size: 14px;
@@ -929,13 +930,10 @@ input[type=number] {
         text-indent: 0px;
 
         i.dot {
-          position: relative;
-
           &:before {
             background-color: #737183;
-            top: 50%;
-            left: -6px;
-            transform: translate(-50%, -50%);
+            top: 10px;
+            left: -8px;
           }
         }
 

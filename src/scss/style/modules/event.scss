@@ -1124,8 +1124,23 @@ input[type=number] {
       letter-spacing: -0.4px;
     }
   }
-}
 
+  .box_my_income_add {
+    .title {
+      margin-bottom: 4px;
+      color: var(--text-02);
+      line-height: 20px;
+    }
+
+    .custom-light {
+      input {
+        &::placeholder {
+          color: #c2c1cc;
+        }
+      }
+    }
+  }
+}
 
 .footer {
   position: relative;

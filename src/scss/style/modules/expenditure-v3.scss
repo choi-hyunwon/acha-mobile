@@ -1272,6 +1272,10 @@
           margin-right: 5px;
           padding: 10px 5px !important;
 
+          &:last-child {
+            margin-right: 0;
+          }
+
           a {
             font-size: 17px;
             color: var(--text-03);
@@ -1299,7 +1303,7 @@
               background-color: var(--color-point);
               left: 50%;
               transform: translateX(-50%);
-              bottom: 0;
+              bottom: -1px;
             }
           }
         }

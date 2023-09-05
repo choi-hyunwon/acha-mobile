@@ -1737,7 +1737,7 @@ _ .event-btn-area {
     .item_title {
       padding-right: 50px;
 
-      i {
+      line i {
         transform: translate(0, 2px);
       }
 
@@ -1745,7 +1745,7 @@ _ .event-btn-area {
         display: block;
         font-family: var(--font2);
         font-size: 14px;
-        line-height: 20px;
+        line-height: 22px;
         letter-spacing: -0.35px;
         vertical-align: top;
       }

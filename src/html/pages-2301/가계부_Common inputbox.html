@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
-	@@include('../include/head.html')
-	<body>
-		<div class="wrap renewal">
-			<div class="contents expenditure">
-				<div class="expenditure-box">
-					<div class="box_my_income_add">
-						<div class="custom-light _focus">
-							<label class="title">서브타이틀</label>
-							<input title="value" type="text" maxlength="12" onkeyup="countCharDelete(this,'_val')" placeholder="수입명을 적어주세요" />
-							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 12</span></div>
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal">
+		<div class="contents expenditure">
+			<div class="expenditure-box">
+				<div class="box_my_income_add">
+					<div class="custom-light _focus">
+						<label class="title">서브타이틀</label>
+						<input title="value" type="text" maxlength="12" onkeyup="countCharDelete(this,'_val')"
+							placeholder="수입명을 적어주세요" />
+						<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 12</span>
 						</div>
-						<div class="custom-light monetary-unit _focus">
-							<label class="title">서브타이틀</label>
-							<input onkeyup="countCharDelete(this)" title="value" type="number" placeholder="금액을 입력해주세요" />
-							<p class="sub-desc">100억원 미만까지 입력 가능</p>
-						</div>
-						<div class="custom-light">
-							<label class="title">서브타이틀</label>
-							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요" value="가나다라마바사아자차카타파하" />
-							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span></div>
+					</div>
+					<div class="custom-light monetary-unit _focus">
+						<label class="title">서브타이틀</label>
+						<input onkeyup="countCharDelete(this)" title="value" type="number" placeholder="금액을 입력해주세요" />
+						<p class="sub-desc">100억원 미만까지 입력 가능</p>
+					</div>
+					<div class="custom-light">
+						<label class="title">서브타이틀</label>
+						<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+							placeholder="메모를 입력해주세요" value="가나다라마바사아자차카타파하" />
+						<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</body>
-	@@include('../include/countCharDelete.html')
+	</div>
+</body>
+@@include('../include/countCharDelete.html')
+
 </html>

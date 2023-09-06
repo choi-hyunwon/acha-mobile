@@ -48,11 +48,13 @@ a:hover {
         >a {
             width: calc(50% - 4.5px);
         }
+
+        &.btn-half-wrap {
+            padding: 0;
+        }
+
     }
 
-    &-wrap.btn-half {
-        padding: 0;
-    }
 
     &.disabled {
         opacity: 0.5;

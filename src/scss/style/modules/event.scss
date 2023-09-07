@@ -962,9 +962,9 @@ input[type=number] {
 
       .title {
         font-size: 22px;
-        line-height: 31.5px;
+        line-height: 1, 36;
         font-weight: bold;
-        margin-top: 4px;
+        margin-top: 6px;
       }
 
       .desc {
@@ -1002,6 +1002,7 @@ input[type=number] {
 
             .text {
               font-size: 24px;
+              line-height: 36px;
             }
 
             .sub-text {

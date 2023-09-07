@@ -540,7 +540,7 @@ input[type=number] {
 
         .coupon-code {
           padding: 38px 0;
-          margin-bottom: 20px;
+          margin-bottom: 22px;
           background-color: #f7f7f8;
           border-radius: 10px;
 
@@ -568,6 +568,7 @@ input[type=number] {
             height: 56px;
             line-height: 56px;
             border-radius: 10px;
+            font-weight: bold;
           }
         }
       }
@@ -898,12 +899,13 @@ input[type=number] {
       }
     }
 
-    .btn-area {
+    .btn-warp {
       padding: 0 20px;
 
       .btn {
         line-height: 24px;
         padding: 16px 0;
+        width: 100%;
         height: auto;
         border-radius: 10px;
         font-size: 16px;
@@ -921,6 +923,7 @@ input[type=number] {
 
     ul {
       li {
+        position: relative;
         margin-left: 18px;
         margin-bottom: 4px;
         font-size: 14px;
@@ -929,13 +932,10 @@ input[type=number] {
         text-indent: 0px;
 
         i.dot {
-          position: relative;
-
           &:before {
             background-color: #737183;
-            top: 50%;
-            left: -6px;
-            transform: translate(-50%, -50%);
+            top: 10px;
+            left: -8px;
           }
         }
 

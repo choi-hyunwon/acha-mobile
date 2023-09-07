@@ -508,6 +508,7 @@ input[type=number] {
       text-align: center;
       letter-spacing: -0.3px;
       word-break: keep-all;
+      line-height: 24px;
     }
   }
 
@@ -706,7 +707,7 @@ input[type=number] {
               font-size: 14px;
               line-height: 20px;
               word-break: keep-all;
-
+              letter-spacing: -0.3px;
             }
 
             .quantity {
@@ -863,6 +864,8 @@ input[type=number] {
     .f-cancel {
       text-decoration: unset;
     }
+
+
   }
 
   .order {
@@ -959,9 +962,9 @@ input[type=number] {
 
       .title {
         font-size: 22px;
-        line-height: 31.5px;
+        line-height: 1, 36;
         font-weight: bold;
-        margin-top: 4px;
+        margin-top: 6px;
       }
 
       .desc {
@@ -999,6 +1002,7 @@ input[type=number] {
 
             .text {
               font-size: 24px;
+              line-height: 36px;
             }
 
             .sub-text {
@@ -1146,61 +1150,112 @@ input[type=number] {
       }
     }
   }
+
+  .event-content {
+    padding: 0 20px;
+
+    .title {
+      font-size: 17px;
+      font-weight: bold;
+      color: var(--text-01);
+      line-height: 25px;
+    }
+
+    .personal-info {
+      margin-top: 40px;
+
+      .h3 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 17px;
+      }
+
+      .table {
+        font-family: var(--font1);
+
+        th,
+        td {
+          padding: 15px 10px;
+          font-size: 12px;
+          color: var(--text-02);
+          line-height: 1.58;
+          font-weight: 500;
+        }
+
+        th {
+          background-color: #f5f6f8;
+        }
+      }
+
+      .desc {
+        font-size: 12px;
+        line-height: 1.58;
+        color: var(--text-02);
+      }
+    }
+  }
+
+  .btn-close {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../../img/common/btn_close@2x.png) no-repeat center / contain;
+    background-size: cover;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .footer {
   position: relative;
   padding: 30px 20px 40px;
+  background-color: #eaeaea;
+
+  .h4 {
+    line-height: 27px;
+  }
 
   .notice {
+    margin-top: 24px;
 
     h5 {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: bold;
-      color: #737183;
+      color: var(--text-02);
+      line-height: 20px;
+    }
+
+    h6 {
+      margin-top: 12px;
+      font-size: 13px;
+      line-height: 19px;
+      color: var(--text-02);
+      font-weight: bold;
     }
 
     ul {
       li {
-        font-size: 14px;
-        color: #737183;
-        font-family: var(--font4);
+        margin-bottom: 6px;
+        font-size: 13px;
+        color: var(--text-02);
+        line-height: 18px;
+        letter-spacing: -0.3px;
+        word-break: break-all;
 
-        margin-left: 14px;
-        text-indent: -14px;
-      }
-
-      &.dot {
-        &::before {
-          display: none;
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }
-  }
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
 
-  &::before {
-    content: "기획 미정으로 \a추후 해당 내용 반영할 예정입니다.";
-    top: 45px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    z-index: 1;
-    white-space: pre;
-  }
-
-  &::after {
-    background: #000;
-    opacity: 0.3;
+    .text-indent {
+      li {
+        margin-left: 14px;
+        text-indent: -14px;
+      }
+    }
   }
 }

@@ -864,6 +864,8 @@ input[type=number] {
     .f-cancel {
       text-decoration: unset;
     }
+
+
   }
 
   .order {
@@ -1146,6 +1148,62 @@ input[type=number] {
         right: 5px !important;
       }
     }
+  }
+
+  .event-content {
+    padding: 0 20px;
+
+    .title {
+      font-size: 17px;
+      font-weight: bold;
+      color: var(--text-01);
+      line-height: 25px;
+    }
+
+    .personal-info {
+      margin-top: 40px;
+
+      .h3 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 17px;
+      }
+
+      .table {
+        font-family: var(--font1);
+
+        th,
+        td {
+          padding: 15px 10px;
+          font-size: 12px;
+          color: var(--text-02);
+          line-height: 1.58;
+          font-weight: 500;
+        }
+
+        th {
+          background-color: #f5f6f8;
+        }
+      }
+
+      .desc {
+        font-size: 12px;
+        line-height: 1.58;
+        color: var(--text-02);
+      }
+    }
+  }
+
+  .btn-close {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../../img/common/btn_close@2x.png) no-repeat center / contain;
+    background-size: cover;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 

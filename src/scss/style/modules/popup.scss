@@ -2751,8 +2751,8 @@
         transition: 0.5s;
 
         .modal-slide-content {
-            height: 367px;
-            animation: modal-sticky-bottom-animation 0.5s;
+            height: fit-content;
+            animation: modal-sticky-bottom-animation-auto 0.5s !important;
         }
     }
 
@@ -2760,7 +2760,7 @@
         transition: 0.5s;
 
         .modal-slide-content {
-            animation: modal-sticky-bottom-animation-out 0.5s;
+            animation: modal-sticky-bottom-animation-outauto 0.5s !important;
             height: 0;
         }
     }

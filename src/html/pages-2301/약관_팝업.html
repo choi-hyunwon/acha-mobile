@@ -4,8 +4,8 @@
 
 <body>
     <div class="wrap"></div>
-    <div class="modal-slide modal-my-data _modalSlide">
-        <div class="modal-slide-content autoHeight">
+    <div class="modal-slide modal-my-data _modalSlide autoHeight">
+        <div class="modal-slide-content">
             <a href="#" class="btn-close _btnSlideClose"></a>
             <div class="inner">
                 <div class="title _btnSlideOpen"><span class="name">이벤트 참여</span>를 위해서 아래 약관에
@@ -48,7 +48,7 @@
                         document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
                     }, 1000
                 );
-                $('._modalSlide').removeClass('up').addClass('down');
+                $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
                 $('.modal-slide-backdrop').removeClass('show');
                 $('body').removeClass('scrOn')
             });

@@ -3064,6 +3064,7 @@
             }
 
             .desc-box {
+                position: relative;
                 padding: 20px 0;
                 text-align: left;
 
@@ -3234,6 +3235,15 @@
                             }
                         }
                     }
+                }
+
+                // 230907추가
+                .ico_list_arrow_small {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
                 }
             }
         }
@@ -5848,5 +5858,13 @@
 
     // 230831
     .modal-event {}
+
+    .ico_list_arrow_small {
+        background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+        display: inline-block;
+        width: 6px;
+        height: 16px;
+        margin-left: 8px;
+    }
 
 }

@@ -508,6 +508,7 @@ input[type=number] {
       text-align: center;
       letter-spacing: -0.3px;
       word-break: keep-all;
+      line-height: 24px;
     }
   }
 
@@ -706,7 +707,7 @@ input[type=number] {
               font-size: 14px;
               line-height: 20px;
               word-break: keep-all;
-
+              letter-spacing: -0.3px;
             }
 
             .quantity {

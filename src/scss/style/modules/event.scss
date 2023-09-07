@@ -501,12 +501,12 @@ input[type=number] {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 200px;
+      width: max-content;
       font-family: var(--font3);
       font-size: 18px;
       color: #fff;
       text-align: center;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.3px;
       word-break: keep-all;
     }
   }
@@ -987,8 +987,6 @@ input[type=number] {
         display: flex;
         align-items: center;
 
-        overflow: hidden;
-
         &:last-child {
           margin-bottom: 0;
         }
@@ -997,6 +995,7 @@ input[type=number] {
           .dim {
             display: block;
             background-color: rgba(36, 26, 57, 0.8);
+            border-radius: 20px;
 
             .text {
               font-size: 24px;
@@ -1085,10 +1084,13 @@ input[type=number] {
           padding: 31px 20px;
 
           p {
+            display: flex;
+            flex-direction: column;
+
             .point {
               position: relative;
-              display: block;
               margin-bottom: 4px;
+              width: fit-content;
               font-size: 16px;
               line-height: 24px;
               font-weight: bold;
@@ -1100,9 +1102,9 @@ input[type=number] {
               &::before {
                 content: "";
                 position: absolute;
-                left: -3px;
+                left: -2px;
                 bottom: -2px;
-                width: 100%;
+                width: calc(100% + 4px);
                 height: 10px;
                 background: #bb9dff;
                 opacity: 0.35;

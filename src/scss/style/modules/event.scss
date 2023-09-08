@@ -957,14 +957,14 @@ input[type=number] {
         font-size: 16px;
         color: var(--text-02);
         line-height: 24px;
-        font-weight: 500;
+
       }
 
       .title {
-        font-size: 22px;
-        line-height: 1, 36;
-        font-weight: bold;
         margin-top: 6px;
+        font-size: 22px;
+        line-height: 1.36;
+        font-family: var(--font3);
       }
 
       .desc {
@@ -1065,6 +1065,9 @@ input[type=number] {
           color: var(--text-01);
           line-height: 25.5px;
           font-family: var(--font2);
+          b{
+            font-family: var(--font3);
+          }
         }
 
         figure {
@@ -1184,6 +1187,10 @@ input[type=number] {
 
         th {
           background-color: #f5f6f8;
+        }
+        td{
+          font-family: var(--font1);
+          font-weight: normal;
         }
       }
 

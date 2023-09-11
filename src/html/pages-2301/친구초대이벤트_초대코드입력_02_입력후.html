@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal event-area">
+        <div class="header">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>초대 코드 입력하기</h2>
+        </div>
+        <div class="contents invite-prize expenditure ">
+            <div class="expenditure-box">
+                <div class="text-top">
+                    <p class="text">U플래너에 초대받았나요?</p>
+                    <p class="title">초대 코드를 입력해주세요</p>
+                </div>
+                <div class="box_my_income_add">
+                    <div class="custom-light _focus">
+                        <label class="title">초대코드</label>
+                        <input title="value" type="text" onkeyup="countCharDelete(this)"
+                            placeholder="공유받은 초대 코드를 입력해주세요" value="ABC123" />
+                    </div>
+                </div>
+
+                <div class="btn-wrap btn-floating">
+                    <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+@@include('../include/countCharDelete.html')
+
+</html>

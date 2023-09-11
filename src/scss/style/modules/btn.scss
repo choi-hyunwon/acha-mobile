@@ -33,11 +33,13 @@ a:hover {
 
         >a {
             width: calc(100% - 40px);
+            font-family: var(--font1);
         }
 
     }
 
-    &-half {
+
+    &-half.btn-wrap {
         padding: 0 20px 20px;
         display: flex;
         align-items: center;
@@ -45,9 +47,11 @@ a:hover {
         width: 100% !important;
 
         >a {
-            width: calc(50% - 3.5px);
+            width: calc(50% - 4.5px);
+            font-family: var(--font1);
         }
     }
+
 
     &.disabled {
         opacity: 0.5;

@@ -2714,10 +2714,13 @@
 
                 .btn-area {
                     .btn {
-                        font-family: NotoSans;
                         font-weight: 500;
                     }
                 }
+            }
+
+            .btn-half {
+                padding: 0;
             }
         }
 
@@ -2734,6 +2737,11 @@
                             line-height: 21px;
                         }
                     }
+
+                    &.line-text {
+                        padding-top: 30px;
+                        padding-bottom: 60px;
+                    }
                 }
             }
         }
@@ -2743,8 +2751,8 @@
         transition: 0.5s;
 
         .modal-slide-content {
-            height: 367px;
-            animation: modal-sticky-bottom-animation 0.5s;
+            height: fit-content;
+            animation: modal-sticky-bottom-animation-auto 0.5s !important;
         }
     }
 
@@ -2752,7 +2760,7 @@
         transition: 0.5s;
 
         .modal-slide-content {
-            animation: modal-sticky-bottom-animation-out 0.5s;
+            animation: modal-sticky-bottom-animation-outauto 0.5s !important;
             height: 0;
         }
     }
@@ -3056,6 +3064,7 @@
             }
 
             .desc-box {
+                position: relative;
                 padding: 20px 0;
                 text-align: left;
 
@@ -3226,6 +3235,15 @@
                             }
                         }
                     }
+                }
+
+                // 230907추가
+                .ico_list_arrow_small {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
                 }
             }
         }
@@ -5840,5 +5858,13 @@
 
     // 230831
     .modal-event {}
+
+    .ico_list_arrow_small {
+        background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
+        display: inline-block;
+        width: 6px;
+        height: 16px;
+        margin-left: 8px;
+    }
 
 }

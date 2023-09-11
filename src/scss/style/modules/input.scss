@@ -947,11 +947,27 @@ input.custom {
     .filled-in {
         width: auto;
     }
+
+    .textarea-label {
+        border-bottom: 1px solid #37354e;
+        padding-bottom: 9px;
+        width: 100%;
+        text-align: left;
+
+        .textarea,
+        textarea[data-auto-resize] {
+            width: calc(100% - 78px);
+            height: auto;
+            font-size: 15px;
+            line-height: 22px;
+            border: 0;
+            outline: none;
+        }
+    }
 }
 
 input::placeholder {
     font-family: var(--font1) !important;
-}
 
 // 230906
 .event-area {

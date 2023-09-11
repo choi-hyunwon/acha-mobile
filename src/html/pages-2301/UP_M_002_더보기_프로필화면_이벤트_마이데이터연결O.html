@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>마이페이지</h2>
+        </div>
+        <div class="contents">
+            <div class="my-page-info">
+                <div class="profile">
+                    <div class="img default"> <!-- profile 없을 경우 default 클래스 추가 -->
+                        <img src="../../img/common/ico-list-date-big.svg" alt="profile">
+                        <a href="#" class="btn-edit"><i class="ico-expense-modify-w"></i></a>
+                    </div>
+                    <div class="name">김아차</div>
+                    <div class="email-box">
+                        <p class="sub-title">이메일</p>
+                        <p class="email">Seo9***@naver.com</p>
+                    </div>
+                </div>
+
+                <!-- 이벤트 미 진행 시 미노출 -->
+                <div class="event-code">
+                    <p class="sub-title">내 초대 코드</p>
+                    <!-- 마이데이터 연결시 .connect 추가 -->
+                    <div class="code-wrap connect mt-10">
+                        <!-- 마이데이터 연결 되었을시 hide -->
+                        <!-- <a href="#" class="invite-code">
+                            마이데이터 연결하고 초대 코드 받기
+                        </a> -->
+                        <!-- 마이데이터 연결 되었을시  show -->
+                        <p class="invite-code">
+                            12ABCDEFG123
+                            <button>
+                                <img src="../../img/common/img_code_copy@2x.png" alt="복사">
+                            </button>
+                        </p>
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="btn btn-lg btn-block btn-big btn-save">초대 링크 공유하기</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

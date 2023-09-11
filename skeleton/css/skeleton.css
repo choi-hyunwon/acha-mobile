@@ -135,6 +135,7 @@ dl {
 .more-main .more-view-tab ul li {
   position: relative;
   flex-grow: 1;
+  height: 62px;
 }
 .more-main .more-view-tab ul li::after {
   content: "";
@@ -146,6 +147,10 @@ dl {
   top: 50%;
   transform: translateY(-50%);
 }
+.more-main .more-view-tab ul li:last-child:after {
+  display: none;
+}
+
 .more-main .more-view-tab ul li a {
   display: flex;
   flex-direction: column;
@@ -342,6 +347,10 @@ dl {
 .skeleton-radius-lg {
   width: 36px !important;
   height: 36px !important;
+}
+.skeleton-radius-xl {
+  width: 48px !important;
+  height: 48px !important;
 }
 .skeleton-mt-1 {
   margin-top: 4px;

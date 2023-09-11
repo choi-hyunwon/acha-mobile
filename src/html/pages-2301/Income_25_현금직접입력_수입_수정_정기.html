@@ -49,8 +49,11 @@
 								</div>
 								<div class="custom-light">
 									<label class="title">수입 메모</label>
-									<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요" value="용돈인상" />
-									<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span></div>
+									<div class="textarea-label">
+										<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60" onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요">원리금 균등상관 2045년
+메모 입력해주세요</textarea>
+										<div class="input-byte mt-0"><span class="byte _val">0</span><spanclass="total">/60</spanclass=></div>
+									</div>
 								</div>
 								<div class="btn_area">
 									<a class="btn btn-big btn-purple-bg btn-block" href="#">수정하기</a>
@@ -63,16 +66,28 @@
 		</div>
 	</body>
 	<script>
-		$(".custom-control-input").on("click", function () {
-			$(this).toggleClass("off");
-			if ($(this).hasClass("off")) {
-				$("._off").addClass("active");
-				$("._on").removeClass("active");
-			} else {
-				$("._on").addClass("active");
-				$("._off").removeClass("active");
-			}
-		});
+		$(document).ready(function () {
+			$(".custom-control-input").on("click", function () {
+				$(this).toggleClass("off");
+				if ($(this).hasClass("off")) {
+					$("._off").addClass("active");
+					$("._on").removeClass("active");
+				} else {
+					$("._on").addClass("active");
+					$("._off").removeClass("active");
+				}
+			});
+
+			const DEFAULT_HEIGHT = 0;
+			const $textarea = document.querySelector('.textarea');
+
+			$textarea.oninput = (e) => {
+				const $target = e.target;
+				$target.style.height = 0;
+				$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
+			};
+
+		})
 
 	</script>
 	@@include('../include/countCharDelete.html')

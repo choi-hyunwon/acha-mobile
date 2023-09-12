@@ -1829,8 +1829,8 @@
 
           .category-menu {
             width: 100%;
-            margin: -1px 0 20px 0;
-            padding: 22px 20px 0;
+            margin-bottom: 20px;
+            padding: 20px 20px;
             max-height: unset;
             position: relative !important;
             border: 1px solid #efefef;
@@ -1857,7 +1857,19 @@
             .ac-list {
               .ac-item {
                 position: relative;
-                margin-bottom: 40px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 18px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+                .info {
+                  display: flex;
+                  align-items: flex-start;
+                  flex-grow: 1;
+                }
 
                 &.total-sum {
                   font-family: var(--font1);
@@ -1882,7 +1894,7 @@
                 }
 
                 .img {
-                  float: left;
+                  flex-shrink: 0;
                   display: inline-block;
                   width: 34px;
                   height: 34px;
@@ -1896,85 +1908,56 @@
                 }
 
                 .name {
-                  float: left;
-                  width: calc(100% - 165px);
+                  width: 100%;
                   font-family: var(--font2);
                   font-size: 14px;
                   line-height: 20px;
-                  letter-spacing: -0.33px;
                   color: #37354e;
+
+                  display: -webkit-box;
                   overflow: hidden;
                   text-overflow: ellipsis;
-                  // white-space: nowrap;
                   word-break: break-all;
-                  display: -webkit-box;
                   -webkit-line-clamp: 2;
-                  -webkit-box-orient: vertical
+                  -webkit-box-orient: vertical;
                 }
 
                 .value {
-                  float: right;
+                  flex-shrink: 0;
+                  margin-left: 8px;
                   font-size: 15px;
                   font-family: var(--font2);
                   line-height: 22px;
                   letter-spacing: -0.14px;
-                  vertical-align: middle;
 
                   &.text {
                     font-family: var(--font2);
                     font-size: 13px;
                     line-height: 22px;
-
-                    &::after {
-                      content: none;
-                    }
                   }
 
                   em {
-                    content: '원';
                     font-family: var(--font2);
                     font-size: 14px;
                     line-height: 22px;
-                    letter-spacing: 0;
+                    margin-left: 1px;
                   }
 
-                  .ico-caution-red {
-                    display: inline-block;
-                    width: 12px;
-                    height: 12px;
-                    background-image: url(../../img/common/ico-caution-red@2x.png);
-                    background-size: cover;
-                    vertical-align: middle;
-                    margin-left: 2px;
+                  .ico-caution {
+                    margin-top: 2px;
+                  }
+
+                  .ac-payment {
+                    display: block;
                   }
                 }
 
                 .ac-num {
-                  position: absolute;
-                  font-family: var(--font4);
                   font-size: 12px;
                   line-height: 16px;
-                  letter-spacing: 0;
                   color: #9b9aa6;
-                  left: 40px;
-                  bottom: -4px;
-
-                  &.text-right {
-                    right: 0;
-                    top: 25px;
-                  }
-
-                  &.ac-num-pos {
-                    bottom: -20px;
-                  }
-                }
-
-                .label {
-                  float: right;
-                }
-
-                .ico-caution {
-                  margin-top: 1px;
+                  margin-top: 4px;
+                  display: inline-block;
                 }
               }
             }
@@ -2001,7 +1984,6 @@
 
             .category-menu {
               display: block;
-              padding-top: 10px;
             }
           }
         }

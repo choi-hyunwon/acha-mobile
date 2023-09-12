@@ -5,18 +5,15 @@
 <body>
 	<div class="wrap _btnSlideOpen"></div>
 	<div class="modal-slide connection-edit event-edit _modalSlide autoHeight">
-		<div class="modal-slide-content">
+		<div class="modal-slide-content ">
 			<a href="#" class="btn-close _btnSlideClose"></a>
 			<div class="inner text-center">
 				<div class="title">친구 초대 이벤트 참여 안내</div>
 				<div class="desc-box box">
-					<p>
-						앗! 이벤트 대상자가 아니에요.
-						<br />
-						<br />
-						초대받고 상품 받기는 <br />
-						신규 회원만 참여할 수 있어요.
-					</p>
+					<p>앗! 이벤트 대상자가 아니에요.</p>
+					<br/>
+					<p>초대받고 상품 받기는</p>
+					<p>신규 회원만 참여할 수 있어요.</p>							
 				</div>
 				<div class="btn-wrap">
 					<a class="btn btn-purple-bg btn-block" href="#">확인</a>
@@ -25,32 +22,35 @@
 		</div>
 	</div>
 	<div class="modal-slide-backdrop"></div>
-	<script>
-		$(document).ready(function () {
-			var btnSlideOpen = $("._btnSlideOpen");
-			var btnSlideClose = $("._btnSlideClose");
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
 
-			btnSlideOpen.on("click", function () {
-				setTimeout(function () {
-					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
-				}, 500);
-				$("._modalSlide").addClass("up").removeClass("down");
-				$(".modal-slide-backdrop").addClass("show");
-				$("body").addClass("scrOn");
-			});
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
 
-			btnSlideClose.on("click", function () {
-				setTimeout(function () {
-					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
-				}, 1000);
-				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
-				$(".modal-slide-backdrop").removeClass("show");
-				$("body").removeClass("scrOn");
-			});
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
 
-			btnSlideOpen.trigger("click");
-		});
-	</script>
+            btnSlideOpen.trigger('click');
+        })
+    </script>
 </body>
-
 </html>

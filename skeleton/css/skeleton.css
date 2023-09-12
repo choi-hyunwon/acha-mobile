@@ -49,7 +49,7 @@ dl {
 }
 .box-card-top .title .total {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 .box-card-top .title .total:last-child {
   margin-bottom: 0px;
@@ -75,12 +75,13 @@ dl {
 }
 .box-card-list .asset-wrap .category-heading {
   position: relative;
-  padding: 20px;
+  padding: 23.5px;
   width: 100%;
   background-color: white;
   border: 1px solid #efefef;
   border-radius: 10px;
   box-sizing: border-box;
+  border-bottom: unset;
 }
 .box-card-list .asset-wrap .category-heading span {
   display: block;
@@ -93,6 +94,16 @@ dl {
   border: 1px solid #efefef;
   border-top: none;
   border-radius: 0 0 10px 10px;
+}
+.box-card-list .asset-wrap .category-menu:after {
+  content: "";
+  width: calc(100% - 40px);
+  height: 1px;
+  background: #efefef;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
 .box-card-list .asset-wrap.show .category-menu {
   display: block;
@@ -189,16 +200,14 @@ dl {
   align-items: center;
   padding: 0 20px;
 }
-/* .asset-wrap {
-  padding: 0 20px;
-} */
 
-.asset-wrap .box-card-top{
-  padding: 10px 20px 0
+.asset-wrap .box-card-top {
+  padding: 10px 20px 0;
 }
 .asset-wrap .title {
   width: 100% !important;
 }
+
 .asset-wrap .personal-credit-list {
   padding: 30px 20px;
 }
@@ -239,7 +248,7 @@ dl {
 .mission-contents .box-card-top .title span:last-child {
   margin-left: 8px;
 }
-.mission-contents .box-card-top .title i{
+.mission-contents .box-card-top .title i {
   position: relative;
   border: solid 2px #f7f7f8;
 }
@@ -293,6 +302,16 @@ dl {
 }
 .mission-contents .asset-wrap .category-heading .list-card .item .box-txt {
   flex-direction: column;
+}
+
+.sum-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sum-area > div:last-child {
+  margin-top: 12px;
+  border-radius: 12px;
 }
 /* style */
 

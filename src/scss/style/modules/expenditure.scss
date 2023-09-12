@@ -1424,7 +1424,7 @@
       align-items: end;
 
       .update {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         color: var(--text-02);
         margin-right: 0;
 
@@ -1461,7 +1461,7 @@
         border: 1px solid #e2e3e6;
         padding: 6px 15px;
         line-height: 1;
-        margin-top: 12px;
+        // margin-top: 12px;
 
         .ico-view-edit {
           display: inline-block;
@@ -1761,15 +1761,16 @@
           }
 
           .category-heading {
+            position: relative;
+            padding: 20px;
             width: 100%;
             height: auto;
-            border: 1px solid #efefef;
-            padding: 20px;
-            border-radius: 10px;
             background-color: var(--white);
-            line-height: 26px;
             color: var(--text-01);
-            position: relative;
+            line-height: 26px;
+            border: 1px solid #efefef;
+            border-bottom: unset;
+            border-radius: 10px;
 
             &.no-icon {
               &::after {
@@ -1975,7 +1976,7 @@
           &.show {
             .category-heading {
               position: relative;
-              border-radius: 6px 6px 0 0;
+              border-radius: 10px 10px 0 0;
 
               &::after {
                 transform: translateY(-50%) rotate(180deg);

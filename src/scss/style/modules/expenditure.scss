@@ -1424,7 +1424,7 @@
       align-items: end;
 
       .update {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         color: var(--text-02);
         margin-right: 0;
 
@@ -1461,7 +1461,7 @@
         border: 1px solid #e2e3e6;
         padding: 6px 15px;
         line-height: 1;
-        margin-top: 12px;
+        // margin-top: 12px;
 
         .ico-view-edit {
           display: inline-block;
@@ -1761,15 +1761,16 @@
           }
 
           .category-heading {
+            position: relative;
+            padding: 20px;
             width: 100%;
             height: auto;
-            border: 1px solid #efefef;
-            padding: 20px;
-            border-radius: 10px;
             background-color: var(--white);
-            line-height: 26px;
             color: var(--text-01);
-            position: relative;
+            line-height: 26px;
+            border: 1px solid #efefef;
+            border-bottom: unset;
+            border-radius: 10px;
 
             &.no-icon {
               &::after {
@@ -1797,13 +1798,13 @@
             .title {
               font-family: var(--font2);
               font-size: 16px;
-              line-height: 26px;
+              line-height: 24px;
               color: var(--text-01);
             }
 
             .sum {
               font-size: 20px;
-              line-height: 26px;
+              line-height: 24px;
               font-family: var(--font4);
               font-weight: bold;
               color: var(--text-01);
@@ -1829,8 +1830,8 @@
 
           .category-menu {
             width: 100%;
-            margin: -1px 0 20px 0;
-            padding: 22px 20px 0;
+            margin-bottom: 20px;
+            padding: 20px 20px;
             max-height: unset;
             position: relative !important;
             border: 1px solid #efefef;
@@ -1857,7 +1858,19 @@
             .ac-list {
               .ac-item {
                 position: relative;
-                margin-bottom: 40px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 18px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+                .info {
+                  display: flex;
+                  align-items: flex-start;
+                  flex-grow: 1;
+                }
 
                 &.total-sum {
                   font-family: var(--font1);
@@ -1882,7 +1895,7 @@
                 }
 
                 .img {
-                  float: left;
+                  flex-shrink: 0;
                   display: inline-block;
                   width: 34px;
                   height: 34px;
@@ -1896,85 +1909,56 @@
                 }
 
                 .name {
-                  float: left;
-                  width: calc(100% - 165px);
+                  width: 100%;
                   font-family: var(--font2);
                   font-size: 14px;
                   line-height: 20px;
-                  letter-spacing: -0.33px;
                   color: #37354e;
+
+                  display: -webkit-box;
                   overflow: hidden;
                   text-overflow: ellipsis;
-                  // white-space: nowrap;
                   word-break: break-all;
-                  display: -webkit-box;
                   -webkit-line-clamp: 2;
-                  -webkit-box-orient: vertical
+                  -webkit-box-orient: vertical;
                 }
 
                 .value {
-                  float: right;
+                  flex-shrink: 0;
+                  margin-left: 8px;
                   font-size: 15px;
                   font-family: var(--font2);
                   line-height: 22px;
                   letter-spacing: -0.14px;
-                  vertical-align: middle;
 
                   &.text {
                     font-family: var(--font2);
                     font-size: 13px;
                     line-height: 22px;
-
-                    &::after {
-                      content: none;
-                    }
                   }
 
                   em {
-                    content: '원';
                     font-family: var(--font2);
                     font-size: 14px;
                     line-height: 22px;
-                    letter-spacing: 0;
+                    margin-left: 1px;
                   }
 
-                  .ico-caution-red {
-                    display: inline-block;
-                    width: 12px;
-                    height: 12px;
-                    background-image: url(../../img/common/ico-caution-red@2x.png);
-                    background-size: cover;
-                    vertical-align: middle;
-                    margin-left: 2px;
+                  .ico-caution {
+                    margin-top: 2px;
+                  }
+
+                  .ac-payment {
+                    display: block;
                   }
                 }
 
                 .ac-num {
-                  position: absolute;
-                  font-family: var(--font4);
                   font-size: 12px;
                   line-height: 16px;
-                  letter-spacing: 0;
                   color: #9b9aa6;
-                  left: 40px;
-                  bottom: -4px;
-
-                  &.text-right {
-                    right: 0;
-                    top: 25px;
-                  }
-
-                  &.ac-num-pos {
-                    bottom: -20px;
-                  }
-                }
-
-                .label {
-                  float: right;
-                }
-
-                .ico-caution {
-                  margin-top: 1px;
+                  margin-top: 4px;
+                  display: inline-block;
                 }
               }
             }
@@ -1992,7 +1976,7 @@
           &.show {
             .category-heading {
               position: relative;
-              border-radius: 6px 6px 0 0;
+              border-radius: 10px 10px 0 0;
 
               &::after {
                 transform: translateY(-50%) rotate(180deg);
@@ -2001,7 +1985,6 @@
 
             .category-menu {
               display: block;
-              padding-top: 10px;
             }
           }
         }

@@ -1836,6 +1836,7 @@ _ .event-btn-area {
 
     &.multiple {
       padding: 17px 0 17px 5px;
+      display: block !important;
 
       .custom-switch {
         top: 23px;
@@ -2484,7 +2485,13 @@ _ .event-btn-area {
           border-top: none;
 
           .list_group_item {
-            padding: 20px 0 20px 5px;
+            // padding: 20px 0 20px 5px;
+
+            display: flex;
+            justify-content: space-between;
+            padding: 21px 0;
+            width: 100%;
+            border-bottom: 1px solid #f0f0f0;
 
             .item_title {
               .title {

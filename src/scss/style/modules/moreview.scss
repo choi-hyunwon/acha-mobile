@@ -2578,14 +2578,17 @@ _ .event-btn-area {
             color: #222;
 
             button {
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 30px;
+              height: 30px;
+
               img {
-                content: "";
-                position: absolute;
-                right: 20px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 30px;
-                height: 30px;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
               }
             }
           }

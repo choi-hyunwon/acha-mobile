@@ -31,10 +31,27 @@ a:hover {
         text-align: center;
         z-index: 10;
 
-        > a {
+        >a {
             width: calc(100% - 40px);
+            font-family: var(--font1);
+        }
+
+    }
+
+
+    &-half.btn-wrap {
+        padding: 0 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100% !important;
+
+        >a {
+            width: calc(50% - 4.5px);
+            font-family: var(--font1);
         }
     }
+
 
     &.disabled {
         opacity: 0.5;
@@ -223,11 +240,11 @@ a:hover {
             background: #d5d5d5;
         }
 
-        & .custom-control-input:checked ~ .custom-control-label::after {
+        & .custom-control-input:checked~.custom-control-label::after {
             background-color: #ffffff;
         }
 
-        & .custom-control-input:checked ~ .custom-control-label::before {
+        & .custom-control-input:checked~.custom-control-label::before {
             background: var(--color-point);
         }
     }
@@ -267,29 +284,29 @@ a:hover {
         background-color: #ffffff;
     }
 
-    & .custom-control-input:checked ~ .custom-control-label::before {
+    & .custom-control-input:checked~.custom-control-label::before {
         background: var(--color-point);
     }
 
-    & .custom-control-input:checked ~ .custom-control-label::after {
+    & .custom-control-input:checked~.custom-control-label::after {
         transform: translateX(1.95rem);
         background-color: #ffffff;
     }
 
-    & .custom-control-input:disabled ~ .custom-control-label {
+    & .custom-control-input:disabled~.custom-control-label {
         color: #212529;
     }
 
-    & .custom-control-input:disabled ~ .custom-control-label::before {
+    & .custom-control-input:disabled~.custom-control-label::before {
         background-color: #f2f2f2;
         border: 1px solid #f2f2f2;
     }
 
-    & .custom-control-input:disabled:checked ~ .custom-control-label {
+    & .custom-control-input:disabled:checked~.custom-control-label {
         color: #212529;
     }
 
-    & .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    & .custom-control-input:disabled:checked~.custom-control-label::before {
         background-color: #c3aeff !important;
         border: 1px solid #c3aeff;
     }

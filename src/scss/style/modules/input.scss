@@ -969,3 +969,15 @@ input.custom {
 input::placeholder {
     font-family: var(--font1) !important;
 }
+
+// 230906
+.event-area {
+    .custom-light {
+        input {
+            font-family: var(--font4);
+            &::placeholder {
+                color: #c2c1cc;
+            }
+        }
+    }
+}

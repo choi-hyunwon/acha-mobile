@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal event-area">
+		<div class="header _sticky">
+			<a href="#" class="sprite btn_back"></a>
+			<h2>친구 초대</h2>
+		</div>
+		<div class="contents expenditure">
+			<div class="expenditure-tab _expenditureTab block-tab">
+				<ul>
+					<li><a href="#">이벤트 소개</a></li>
+					<li class="active"><a href="#">상품 주문</a></li>
+				</ul>
+			</div>
+
+			<div class="event-box">
+				<div class="order order-notice">
+					<h3 class="h3">주문할 상품을 선택해주세요</h3>
+					<ul>
+						<li>
+							<i class="dot"></i> 주문 가능한 기간 내에 쿠폰을 주문하지 않으면, <br />
+							<span class="f-alert">교환권이 소멸돼요.</span>
+						</li>
+						<li>
+							<i class="dot"></i>교환한 쿠폰은 상품 선택 기간이 끝난 이후 <br />
+							문자로 발송돼요.
+						</li>
+					</ul>
+				</div>
+
+				<div class="divider"></div>
+
+				<div class="order order-period">
+					<h3 class="h3">상품 주문 기간</h3>
+					<div class="date">
+						23.09.15 ~ 23.11.05
+						<p class="badge badge-pink">D-6</p>
+					</div>
+
+					<div class="coupon-box bg-purple text-white">
+						<p>사용가능 교환권</p>
+						<p class="number use">
+							<span class="rang">2장</span> <span class="total"> /10장</span>
+						</p>
+					</div>
+
+					<!-- 주문 완료시 활성화  -->
+					<div class="coupon-order mt-20">
+						<p class="f-point">교환권 총 8장 주문완료</p>
+						<span class="data">2023.09.24</span>
+					</div>
+
+					<ul class="coupon-list mt-20">
+						<!-- 쿠폰 갯수가 1개 이상일 경우 li에 클래스 추가 .coupon-length -->
+						<li class="coupon-length">
+							<div class="top">
+								<div class="img-wrap">
+									<img src="../../img/common/event/invite/img_gift_coffee@2x.png" alt="이미지">
+								</div>
+								<div class="info">
+									<h4 class="h4">교환권 1장</h4>
+									<p>메가MGC커피 (ICE) 아메리카노 1잔</p>
+									<div class="quantity font-weight-bolder">주문수량
+										<!-- 주문 완료 시 .f-point 추가 -->
+										<span class="total f-point">: <em>5</em>개</span>
+										<!-- <div class="count-box">
+											<button class="minus"></button>
+											<input type="number" value="1" class="count">
+											<button class="plus"></button>
+										</div> -->
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<p>
+									교환권 1장 X 0개 = <span>총 교환권 0장 사용</span>
+								</p>
+							</div>
+						</li>
+						<!-- 쿠폰 갯수가 1개 이상일 경우 li에 클래스 추가 .coupon-length -->
+						<li class="coupon-length">
+							<div class="top">
+								<div class="img-wrap">
+									<img src="../../img/common/event/invite/img_gift_cu@2x.png" alt="이미지">
+								</div>
+								<div class="info">
+									<h4 class="h4">교환권 3장</h4>
+									<p>CU 모바일 금액권 6,000원</p>
+									<div class="quantity font-weight-bolder">주문수량
+										<!-- 주문 완료 시 .f-point 추가 -->
+										<span class="total f-point">: <em>1</em>개</span>
+
+										<!-- 쿠폰의 최대 갯수가 되면 .disabled-plus 추가 -->
+										<!-- 쿠폰의 최소 갯수가 되면 .disabled-minus 추가 -->
+										<!-- <div class="count-box disabled-plus">
+											<button class="minus"></button>
+											<input type="number" value="1" class="count">
+											<button class="plus"></button>
+										</div> -->
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<p>
+									교환권 1장 X 0개 = <span>총 교환권 0장 사용</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="top">
+								<div class="img-wrap">
+									<img src="../../img/common/event/invite/img_gift_emart@2x.png" alt="이미지">
+								</div>
+								<div class="info">
+									<h4 class="h4">교환권 5장</h4>
+									<p>[이마트_GS칼텍스] 10,000원</p>
+									<div class="quantity font-weight-bolder">주문수량
+										<!-- 주문 완료 시 .f-point 추가 -->
+										<span class="total">: <em>0</em>개</span>
+
+										<!-- 교환권 갯수가 0개 일때 .disabled .disabled-minus .disabled-plus 추가 -->
+										<!-- <div class="count-box disabled">
+											<button class="minus"></button>
+											<input type="number" value="1" class="count">
+											<button class="plus"></button>
+										</div> -->
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<p>
+									교환권 1장 X 0개 = <span>총 교환권 0장 사용</span>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 최초 주문 button 2개일 경우 .btn-half 추가 -->
+				<div class="btn-wrap btn-floating">
+					<a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">주문 수정하기</a>
+				</div>
+				<div class="btn-wrap">
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function () {
+		$('.minus').click(function () {
+			if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+		});
+		$('.plus').click(function () {
+			$(this).prev().val(+$(this).prev().val() + 1);
+		});
+	})
+</script>
+@@include('../include/countCharDelete.html')
+
+</html>

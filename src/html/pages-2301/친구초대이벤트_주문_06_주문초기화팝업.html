@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide connection-edit event-edit _modalSlide autoHeight">
+		<div class="modal-slide-content">
+			<a href="#" class="btn-close _btnSlideClose"></a>
+			<div class="inner text-center">
+				<div class="title">주문 초기화</div>
+				<div class="desc-box box">
+					<p>
+						주문 수량을 초기화 할까요?<br>
+						초기화 하면, <span class="f-point">전체 주문 수량이</span>0이 돼요.
+					</p>
+				</div>
+				<div class="btn-wrap btn-half">
+					<a href="#" class="btn btn-gray-bg" onclick="openPopup()">전체
+						초기화</a>
+					<a href="#" class="btn btn-purple-bg">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-slide-backdrop"></div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
+
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
+			});
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
+			});
+
+			btnSlideOpen.trigger("click");
+		});
+	</script>
+</body>
+
+</html>

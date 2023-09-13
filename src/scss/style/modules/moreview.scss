@@ -4,7 +4,7 @@
     날짜 : 2021.06.21
 */
 .more-view-wrap {
-  padding: 0 24px;
+  padding: 0 20px;
 
   .sub-title-sm {
     line-height: 20px;
@@ -256,7 +256,7 @@
 }
 
 .more-view-tab {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   ul {
     li {
@@ -352,7 +352,7 @@
     height: 56px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 12px;
+    margin-right: 16px;
     border: 1px solid #e3e4e8;
 
     img {
@@ -1737,7 +1737,7 @@ _ .event-btn-area {
     .item_title {
       padding-right: 50px;
 
-      i {
+      line i {
         transform: translate(0, 2px);
       }
 
@@ -1745,7 +1745,7 @@ _ .event-btn-area {
         display: block;
         font-family: var(--font2);
         font-size: 14px;
-        line-height: 20px;
+        line-height: 22px;
         letter-spacing: -0.35px;
         vertical-align: top;
       }
@@ -1836,6 +1836,7 @@ _ .event-btn-area {
 
     &.multiple {
       padding: 17px 0 17px 5px;
+      display: block !important;
 
       .custom-switch {
         top: 23px;
@@ -2484,7 +2485,13 @@ _ .event-btn-area {
           border-top: none;
 
           .list_group_item {
-            padding: 21px 0 21px 5px;
+            // padding: 20px 0 20px 5px;
+
+            display: flex;
+            justify-content: space-between;
+            padding: 21px 0;
+            width: 100%;
+            border-bottom: 1px solid #f0f0f0;
 
             .item_title {
               .title {
@@ -2543,244 +2550,275 @@ _ .event-btn-area {
         }
       }
     }
-  }
 
-  /*연결관리*/
-  .connection-management {
+    // 230905
+    .event-code {
+      margin-top: 60px;
 
-    .transform-50 {
-      padding-top: 0;
-      position: absolute;
-      left: 50%;
-      top: 45%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-
-      .empty {
-        padding-top: 0;
-        height: fit-content;
+      .sub-title {
+        font-size: 14px;
+        color: var(--text-02);
+        font-weight: 500;
       }
-    }
 
-    .empty {
-      padding-top: 190px;
-      height: 330px;
-
-      .img {
-        display: block;
-        width: 56px;
-        height: 56px;
-        margin: 0 auto 20px;
-
-        &.naver {
-          width: 56px;
-          height: 56px;
-          margin-top: 20%;
-        }
-
-        img {
+      .code-wrap {
+        .invite-code {
+          position: relative;
+          display: inline-block;
+          padding: 21px 0;
+          margin-bottom: 15px;
           width: 100%;
-          height: 100%;
-        }
-      }
-
-      .tit-lg {
-        font-family: var(--font3);
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 25px;
-        letter-spacing: -0.43px;
-        text-align: center;
-        color: var(--text-01);
-        margin-bottom: 12px;
-      }
-
-      .tit-md {
-        font-size: 16px;
-        line-height: 22px;
-        text-align: center;
-        color: var(--text-01);
-        font-family: var(--font1);
-      }
-    }
-
-    .btn_area {
-      margin-top: 40px;
-      text-align: center;
-
-      .btn {
-        width: 163px;
-
-        .plus {
-          margin-right: 5px;
-          display: inline-block;
-        }
-      }
-    }
-
-    .out {
-      position: absolute;
-      left: 50%;
-      bottom: 40px;
-      transform: translateX(-50%);
-      text-align: center;
-
-      a {
-        color: #afaeb8;
-        text-decoration: underline;
-        font-size: 13px;
-        line-height: 21px;
-      }
-    }
-
-    .connection-category {
-      position: relative;
-      padding: 20px;
-      background: #fff;
-
-      &.expiration {
-        padding: 20px;
-
-        >a {
-          padding: 9px 0;
-          display: inline-block;
-        }
-
-        .title-category {
-          border-bottom: none;
-          padding-bottom: 0;
+          background-color: #f7f7f8;
+          font-size: 15px;
+          color: #c2c1cc;
+          border-radius: 10px;
+          font-weight: 500;
+          line-height: 18px;
+          text-align: center;
+          outline: unset;
 
         }
-      }
 
-      .title-category {
-        font-size: 15px;
-        color: var(--text-01);
-        font-family: var(--font3);
-        border-bottom: 1px solid #efefef;
-        padding-bottom: 18px;
+        &.connect {
+          .invite-code {
+            color: #222;
 
-        .purple {
-          color: #6839d3;
-          padding-left: 5px;
-        }
-      }
-
-      .ex-list {
-        width: 100%;
-
-        ul {
-          padding: 10px 0 0;
-
-          .item {
-            padding: 10px 0;
-            border-bottom: 1px solid #f5f6f8;
-
-            &:last-child {
-              border-bottom: 0;
-            }
-
-            >a {
-              position: relative;
-              display: block;
-              width: 100%;
-              height: 100%;
-              overflow: hidden;
-
-              .img {
-                float: left;
-                border-radius: 50%;
-                text-align: center;
-                margin-right: 10px;
-
-                img {
-                  display: inline-block;
-                  width: 30px;
-                  height: 30px;
-                }
-              }
-
-              .info {
-                height: 30px;
-                float: left;
-                width: calc(100% - 10px - 36px - 100px);
-                display: flex;
-                align-items: center;
-
-                .tit {
-                  font-size: 16px;
-                  font-family: var(--font2);
-                  font-weight: 500;
-                  line-height: 19px;
-                  letter-spacing: -0.33px;
-                  overflow: hidden;
-                  white-space: nowrap;
-                  text-overflow: ellipsis;
-                  color: var(--text-01);
-                  margin-bottom: 3px;
-                }
-
-                .icon-expired {
-                  display: inline-block;
-                  vertical-align: middle;
-                  width: 14px;
-                  height: 14px;
-                  background-image: url(../../img/common/icon-expirationintend@2x.png);
-                  background-size: cover;
-                  transform: translateY(-1px);
-                  margin-left: 4px;
-                }
-              }
-
-              .badge {
+            button {
+              img {
+                content: "";
                 position: absolute;
                 right: 20px;
                 top: 50%;
                 transform: translateY(-50%);
-                padding: 6px;
-                background: #feecee;
-                border-radius: 6px;
-
-                span {
-                  font-size: 11px;
-                  color: #f21730;
-                  font-weight: 500;
-                  font-family: var(--font2);
-                }
-              }
-
-              .ico_list_arrow_small {
-                position: absolute;
-                right: 4px;
-                top: 50%;
-                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
               }
             }
           }
         }
       }
 
-      .description {
-        font-size: 14px !important;
-        padding: 12px !important;
+      .btn-save {
+        font-family: var(--font1);
+        letter-spacing: -0.3px;
+      }
+    }
+  }
+}
 
-        .agreeCheck {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          color: var(--color-text-default);
+/*연결관리*/
+.connection-management {
+
+  .transform-50 {
+    padding-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    .empty {
+      padding-top: 0;
+      height: fit-content;
+    }
+  }
+
+  .empty {
+    padding-top: 190px;
+    height: 330px;
+
+    .img {
+      display: block;
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 20px;
+
+      &.naver {
+        width: 56px;
+        height: 56px;
+        margin-top: 20%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .tit-lg {
+      font-family: var(--font3);
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 25px;
+      letter-spacing: -0.43px;
+      text-align: center;
+      color: var(--text-01);
+      margin-bottom: 12px;
+    }
+
+    .tit-md {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: var(--text-01);
+      font-family: var(--font1);
+    }
+  }
+
+  .btn_area {
+    margin-top: 40px;
+    text-align: center;
+
+    .btn {
+      width: 163px;
+
+      .plus {
+        margin-right: 5px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .out {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    text-align: center;
+
+    a {
+      color: #afaeb8;
+      text-decoration: underline;
+      font-size: 13px;
+      line-height: 21px;
+    }
+  }
+
+  .connection-category {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+
+    &.expiration {
+      padding: 20px;
+
+      >a {
+        padding: 9px 0;
+        display: inline-block;
+      }
+
+      .title-category {
+        border-bottom: none;
+        padding-bottom: 0;
+
+      }
+    }
+
+    .title-category {
+      font-size: 15px;
+      color: var(--text-01);
+      font-family: var(--font3);
+      border-bottom: 1px solid #efefef;
+      padding-bottom: 18px;
+
+      .purple {
+        color: #6839d3;
+        padding-left: 5px;
+      }
+    }
+
+    .ex-list {
+      width: 100%;
+
+      ul {
+        padding: 10px 0 0;
+
+        .item {
+          padding: 10px 0;
+          border-bottom: 1px solid #f5f6f8;
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          >a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            .img {
+              float: left;
+              border-radius: 50%;
+              text-align: center;
+              margin-right: 10px;
+
+              img {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+              }
+            }
+
+            .info {
+              height: 30px;
+              float: left;
+              width: calc(100% - 10px - 36px - 100px);
+              display: flex;
+              align-items: center;
+
+              .tit {
+                font-size: 16px;
+                font-family: var(--font2);
+                font-weight: 500;
+                line-height: 19px;
+                letter-spacing: -0.33px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                color: var(--text-01);
+                margin-bottom: 3px;
+              }
+
+              .icon-expired {
+                display: inline-block;
+                vertical-align: middle;
+                width: 14px;
+                height: 14px;
+                background-image: url(../../img/common/icon-expirationintend@2x.png);
+                background-size: cover;
+                transform: translateY(-1px);
+                margin-left: 4px;
+              }
+            }
+
+            .badge {
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              padding: 6px;
+              background: #feecee;
+              border-radius: 6px;
+
+              span {
+                font-size: 11px;
+                color: #f21730;
+                font-weight: 500;
+                font-family: var(--font2);
+              }
+            }
+
+            .ico_list_arrow_small {
+              position: absolute;
+              right: 4px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
         }
-
       }
-
-      .ico_list_arrow_small {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 20px;
-      }
-
-
     }
 
     .description {
@@ -2792,468 +2830,488 @@ _ .event-btn-area {
         align-items: center;
         justify-content: space-between;
         color: var(--color-text-default);
-
-        .purple {
-          color: #6839d3;
-        }
       }
-
 
     }
 
-    .description {
+    .ico_list_arrow_small {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+    }
 
-      .agreeCheck {
-        padding: 20px 10px;
-        background: #f7f7f8;
-        border-radius: 10px;
+
+  }
+
+  .description {
+    font-size: 14px !important;
+    padding: 12px !important;
+
+    .agreeCheck {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--color-text-default);
+
+      .purple {
+        color: #6839d3;
       }
     }
 
-    /*만료 및 연결해제된 기관*/
-    &.disconnected-institutions {
-      padding-bottom: 80px;
 
-      .hold-data {
-        padding: 10px 20px 30px;
+  }
 
-        .title {
-          font-size: 18px;
-          color: var(--text-01);
-          font-family: var(--font3);
-          margin-bottom: 12px;
-        }
+  .description {
 
-        .desc {
-          font-size: 15px;
-          margin-bottom: 20px;
-          word-break: keep-all;
-        }
-
-        .info {
-          li {
-            padding-left: 7px;
-            position: relative;
-            font-size: 13px;
-            letter-spacing: -0.33px;
-            color: var(--text-02);
-
-            &:before {
-              content: '';
-              clear: both;
-              display: inline-block;
-              width: 2px;
-              height: 2px;
-              border-radius: 50%;
-              background-color: var(--text-02);
-              position: absolute;
-              left: 0;
-              top: 9px;
-
-            }
-          }
-        }
-      }
-
-      .connection-category {
-        .connect_at_once {
-          position: absolute;
-          right: 20px;
-          top: 36px;
-          font-size: 13px;
-          color: var(--text-point-color);
-        }
-
-        .ex-list {
-          .item {
-            border-bottom: none;
-            display: flex;
-            justify-content: space-between;
-          }
-
-          .img {
-            float: left;
-            border-radius: 50%;
-            text-align: center;
-            margin-right: 10px;
-
-            img {
-              display: inline-block;
-              width: 30px;
-              height: 30px;
-            }
-          }
-
-          .info {
-            height: 30px;
-            float: left;
-            display: flex;
-            align-items: center;
-
-            .tit {
-              font-size: 16px;
-              font-family: var(--font2);
-              font-weight: 500;
-              line-height: 19px;
-              letter-spacing: -0.33px;
-              overflow: hidden;
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              color: var(--text-01);
-              margin-bottom: 3px;
-            }
-
-            .icon-expired {
-              display: inline-block;
-              vertical-align: middle;
-              width: 14px;
-              height: 14px;
-              background-image: url(../../img/common/icon-expirationintend@2x.png);
-              background-size: cover;
-              transform: translateY(-1px);
-              margin-left: 4px;
-            }
-          }
-
-          .btn_group {
-            a {
-              display: inline-block;
-              font-size: 12px;
-              color: var(--text-02);
-              font-family: var(--font1);
-              border: 1px solid #e2e3e6;
-              padding: 7px 10px;
-              line-height: 1;
-              border-radius: 14px;
-              margin-right: 2px;
-
-              &:last-of-type {
-                margin-right: 0;
-              }
-
-              &.on {
-                border-color: var(--text-point-color);
-                background-color: var(--text-point-color);
-                color: #fff;
-              }
-            }
-          }
-        }
-      }
-
-      .btn-wrap {
-        background: #fff;
-        padding: 0 20px 30px;
-      }
-
-
+    .agreeCheck {
+      padding: 20px 10px;
+      background: #f7f7f8;
+      border-radius: 10px;
     }
   }
 
+  /*만료 및 연결해제된 기관*/
+  &.disconnected-institutions {
+    padding-bottom: 80px;
 
-  /*데이터 관리*/
-  .data-management {
-    .empty {
-      padding-top: 190px;
+    .hold-data {
+      padding: 10px 20px 30px;
 
-      .img {
-        display: block;
-        width: 56px;
-        height: 56px;
-        margin: 0 auto 24px;
-
-        &.naver {
-          width: 56px;
-          height: 56px;
-          margin-top: 20%;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      .tit-lg {
-        font-family: var(--font3);
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 25px;
-        letter-spacing: -0.43px;
-        text-align: center;
+      .title {
+        font-size: 18px;
         color: var(--text-01);
+        font-family: var(--font3);
         margin-bottom: 12px;
       }
 
-      .tit-md {
+      .desc {
         font-size: 15px;
-        line-height: 23px;
-        letter-spacing: -0.38px;
-        text-align: center;
-        color: var(--text-01);
-      }
-    }
-  }
-
-  /*마이데이터 탈퇴하기 버튼*/
-  .btn-service-secession {
-    padding: 40px 0 40px;
-    text-align: center;
-    background: #f7f7f8;
-
-    a {
-      font-size: 13px;
-      letter-spacing: -0.33px;
-      color: var(--text-04);
-      text-decoration: underline;
-      // position: absolute;
-      // bottom: 40px;
-      // left: 50%;
-      // transform: translateX(-50%);
-    }
-  }
-
-  /*상세정보*/
-  .detailed-information {
-    .info-title {
-      display: flex;
-      align-items: center;
-      padding: 22px 20px 30px;
-
-      .img {
-        width: 40px;
-        height: 40px;
-        margin-right: 14px;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
+        margin-bottom: 20px;
+        word-break: keep-all;
       }
 
-      .text {
-        .title {
-          font-size: 16px;
-          font-family: var(--font2);
-        }
-
-        .time {
-          font-size: 14px;
-          font-family: var(--font4);
-          color: var(--text-03);
-        }
-
-        .ico-refresh {
-          display: inline-block;
-          width: 16px;
-          height: 16px;
+      .info {
+        li {
+          padding-left: 7px;
           position: relative;
-          top: 2px;
-          left: 1px;
-          background: url(../../img/common/ico_refresh_mini_g@2x.png) no-repeat center center / contain;
+          font-size: 13px;
+          letter-spacing: -0.33px;
+          color: var(--text-02);
+
+          &:before {
+            content: '';
+            clear: both;
+            display: inline-block;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: var(--text-02);
+            position: absolute;
+            left: 0;
+            top: 9px;
+
+          }
         }
       }
-
     }
 
-    .info-list {
-      .expires {
-        .link {
-          background: #feecee;
-          padding: 8px 14px;
-          margin: 5px 0;
+    .connection-category {
+      .connect_at_once {
+        position: absolute;
+        right: 20px;
+        top: 36px;
+        font-size: 13px;
+        color: var(--text-point-color);
+      }
+
+      .ex-list {
+        .item {
+          border-bottom: none;
           display: flex;
           justify-content: space-between;
+        }
+
+        .img {
+          float: left;
+          border-radius: 50%;
+          text-align: center;
+          margin-right: 10px;
+
+          img {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        .info {
+          height: 30px;
+          float: left;
+          display: flex;
           align-items: center;
-          border-radius: 18px;
 
-          >p {
-            display: flex;
-            align-items: center;
-            color: #f21730;
-            font-size: 13px;
-            font-family: var(--font1);
-            vertical-align: middle;
-
-            .icon-caution {
-              margin-right: 4px;
-              display: inline-block;
-              vertical-align: middle;
-              width: 12px;
-              height: 12px;
-              background: url("../../img/common/ico_caution_red@3x.png") no-repeat 0 0 / 100% auto;
-            }
+          .tit {
+            font-size: 16px;
+            font-family: var(--font2);
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: -0.33px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: var(--text-01);
+            margin-bottom: 3px;
           }
 
-          .icon-arrow-small-red {
+          .icon-expired {
             display: inline-block;
             vertical-align: middle;
-            width: 6px;
-            height: 16px;
-            background: url("../../img/common/ico_arrow_small_red_nor@3x.png") no-repeat 0 0 / 100% auto;
-
+            width: 14px;
+            height: 14px;
+            background-image: url(../../img/common/icon-expirationintend@2x.png);
+            background-size: cover;
+            transform: translateY(-1px);
+            margin-left: 4px;
           }
         }
-      }
 
-      .title {
-        font-size: 15px;
-        font-family: var(--font3);
-        padding: 30px 20px 0;
-      }
-
-      ul {
-        padding: 15px 20px;
-
-        .item {
-          padding: 15px 0;
-          font-size: 15px;
-          display: flex;
-          justify-content: space-between;
-
-          .tit {
-            font-family: var(--font1);
+        .btn_group {
+          a {
+            display: inline-block;
+            font-size: 12px;
             color: var(--text-02);
-          }
+            font-family: var(--font1);
+            border: 1px solid #e2e3e6;
+            padding: 7px 10px;
+            line-height: 1;
+            border-radius: 14px;
+            margin-right: 2px;
 
-          .val-item {
-            width: 45%;
-            text-align: right;
-            word-break: keep-all;
-
-            .val {
-              font-family: var(--font2);
-              color: var(--text-01);
+            &:last-of-type {
+              margin-right: 0;
             }
-          }
-        }
-      }
 
-      .data-connect {
-        padding: 15px 20px;
-
-        .item {
-          padding: 15px 0;
-          font-size: 15px;
-          display: block;
-
-          .tit {
-            font-family: var(--font2);
-            color: var(--text-01);
-          }
-
-          .number {
-            font-size: 14px;
-            font-family: var(--font4);
-            color: var(--text-03);
+            &.on {
+              border-color: var(--text-point-color);
+              background-color: var(--text-point-color);
+              color: #fff;
+            }
           }
         }
       }
     }
 
     .btn-wrap {
-      padding: 10px 20px 30px;
-
-      .btn {
-        margin-bottom: 12px;
-
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-      }
+      background: #fff;
+      padding: 0 20px 30px;
     }
 
 
   }
+}
 
-  /*자산갱신 - 신용정보선택*/
-  .asset-selection-list {
-    padding: 30px 20px;
 
-    .list-wrap {
-      border: 1px solid #efefef;
-      margin-bottom: 40px;
-      border-radius: 10px;
+/*데이터 관리*/
+.data-management {
+  .empty {
+    padding-top: 190px;
 
-      .list-header {
-        border-bottom: 1px solid #efefef;
-        padding: 19px;
+    .img {
+      display: block;
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 24px;
+
+      &.naver {
+        width: 56px;
+        height: 56px;
+        margin-top: 20%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .tit-lg {
+      font-family: var(--font3);
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 25px;
+      letter-spacing: -0.43px;
+      text-align: center;
+      color: var(--text-01);
+      margin-bottom: 12px;
+    }
+
+    .tit-md {
+      font-size: 15px;
+      line-height: 23px;
+      letter-spacing: -0.38px;
+      text-align: center;
+      color: var(--text-01);
+    }
+  }
+}
+
+/*마이데이터 탈퇴하기 버튼*/
+.btn-service-secession {
+  padding: 40px 0 40px;
+  text-align: center;
+  background: #f7f7f8;
+
+  a {
+    font-size: 13px;
+    letter-spacing: -0.33px;
+    color: var(--text-04);
+    text-decoration: underline;
+    // position: absolute;
+    // bottom: 40px;
+    // left: 50%;
+    // transform: translateX(-50%);
+  }
+}
+
+/*상세정보*/
+.detailed-information {
+  .info-title {
+    display: flex;
+    align-items: center;
+    padding: 22px 20px 30px;
+
+    .img {
+      width: 40px;
+      height: 40px;
+      margin-right: 14px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .text {
+      .title {
+        font-size: 16px;
+        font-family: var(--font2);
+      }
+
+      .time {
+        font-size: 14px;
+        font-family: var(--font4);
+        color: var(--text-03);
+      }
+
+      .ico-refresh {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 2px;
+        left: 1px;
+        background: url(../../img/common/ico_refresh_mini_g@2x.png) no-repeat center center / contain;
+      }
+    }
+
+  }
+
+  .info-list {
+    .expires {
+      .link {
+        background: #feecee;
+        padding: 8px 14px;
+        margin: 5px 0;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
+        border-radius: 18px;
 
-        .img {
-          width: 30px;
-          height: 30px;
-          margin-right: 10px;
+        >p {
+          display: flex;
+          align-items: center;
+          color: #f21730;
+          font-size: 13px;
+          font-family: var(--font1);
+          vertical-align: middle;
 
-          img {
-            width: 100%;
-            height: 100%;
+          .icon-caution {
+            margin-right: 4px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 12px;
+            height: 12px;
+            background: url("../../img/common/ico_caution_red@3x.png") no-repeat 0 0 / 100% auto;
           }
         }
 
-        .info {
-          font-size: 16px;
-          font-family: var(--font2);
-          color: var(--text-01);
+        .icon-arrow-small-red {
+          display: inline-block;
+          vertical-align: middle;
+          width: 6px;
+          height: 16px;
+          background: url("../../img/common/ico_arrow_small_red_nor@3x.png") no-repeat 0 0 / 100% auto;
 
         }
       }
+    }
 
-      .list-body {
-        .item {
-          padding: 17px 0;
-          margin: 0 24px;
-          border-bottom: 1px solid #efefef;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+    .title {
+      font-size: 15px;
+      font-family: var(--font3);
+      padding: 30px 20px 0;
+    }
 
-          &:last-of-type {
-            border: none;
-          }
+    ul {
+      padding: 15px 20px;
+
+      .item {
+        padding: 15px 0;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .tit {
+          font-family: var(--font1);
+          color: var(--text-02);
+        }
+
+        .val-item {
+          width: 45%;
+          text-align: right;
+          word-break: keep-all;
 
           .val {
-            font-size: 15px;
-            color: var(--text-01);
             font-family: var(--font2);
-
-            .num {
-              font-size: 13px;
-              color: var(--text-03);
-              font-family: var(--font1);
-              display: block;
-            }
+            color: var(--text-01);
           }
+        }
+      }
+    }
+
+    .data-connect {
+      padding: 15px 20px;
+
+      .item {
+        padding: 15px 0;
+        font-size: 15px;
+        display: block;
+
+        .tit {
+          font-family: var(--font2);
+          color: var(--text-01);
+        }
+
+        .number {
+          font-size: 14px;
+          font-family: var(--font4);
+          color: var(--text-03);
         }
       }
     }
   }
 
-  /*철회 고지 항목*/
-  .withdraw-list {
-    padding: 10px 20px;
+  .btn-wrap {
+    padding: 10px 20px 30px;
 
-    li {
-      margin-bottom: 30px;
+    .btn {
+      margin-bottom: 12px;
 
-      .title {
-        font-size: 15px;
-        color: var(--text-01);
-        font-family: var(--font3);
-        margin-bottom: 8px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+}
+
+/*자산갱신 - 신용정보선택*/
+.asset-selection-list {
+  padding: 30px 20px;
+
+  .list-wrap {
+    border: 1px solid #efefef;
+    margin-bottom: 40px;
+    border-radius: 10px;
+
+    .list-header {
+      border-bottom: 1px solid #efefef;
+      padding: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
 
-      .desc {
-        font-size: 13px;
-        color: var(--text-02);
-        font-family: var(--font1);
+      .info {
+        font-size: 16px;
+        font-family: var(--font2);
+        color: var(--text-01);
+
       }
     }
 
-  }
+    .list-body {
+      .item {
+        padding: 17px 0;
+        margin: 0 24px;
+        border-bottom: 1px solid #efefef;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        &:last-of-type {
+          border: none;
+        }
+
+        .val {
+          font-size: 15px;
+          color: var(--text-01);
+          font-family: var(--font2);
+
+          .num {
+            font-size: 13px;
+            color: var(--text-03);
+            font-family: var(--font1);
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*철회 고지 항목*/
+.withdraw-list {
+  padding: 10px 20px;
+
+  li {
+    margin-bottom: 30px;
+
+    .title {
+      font-size: 15px;
+      color: var(--text-01);
+      font-family: var(--font3);
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: var(--text-02);
+      font-family: var(--font1);
+    }
+  }
 }
 
 /*점검팝업*/

@@ -36,7 +36,7 @@
                 setTimeout(function () {
                     document.getElementsByClassName('_modalSlide')[0].style.display = 'block';
                 }, 500);
-                $('._modalSlide').addClass('up').removeClass('down').css('overflow-y', 'hidden');
+                $('._modalSlide').addClass('up').removeClass('down').parents('body').css('overflow-y', 'hidden');
                 $('.modal-slide-backdrop').addClass('show');
                 $('body').addClass('scrOn');
             });

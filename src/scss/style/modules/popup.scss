@@ -1986,9 +1986,9 @@
                     margin-bottom: 4px;
                 }
 
-                .desc + .btn-clear-input {
+                .desc+.btn-clear-input {
                     top: 12px;
-                }    
+                }
 
                 .btn-clear-input {
                     //display: none;
@@ -4374,6 +4374,10 @@
 
                     span {
                         font-family: var(--font3);
+
+                        &.primary {
+                            font-family: var(--font1);
+                        }
                     }
                 }
             }

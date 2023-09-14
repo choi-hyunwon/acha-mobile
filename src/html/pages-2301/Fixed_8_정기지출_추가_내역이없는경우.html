@@ -1,28 +1,39 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">정기지출 추가</a></h2>
-    </div>
-    <div class="contents expenditure">
-        <div class="expenditure-box">
-            <ul class="d-flex justify-content-center align-items-center" style="height: calc(100vh - 66px);">
-                <div class="empty">
-                    <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
-                    <p>지출 내역이 없습니다 🙁</p>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">정기지출 추가</a></h2>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-box">
+                <div class="month text-center">
+                    <button class="btn mr-20">
+                        <img src="../../img/common/btn_month_forward@2x.png" alt="prev">
+                    </button>
+                    <p class="data">2023년 6월</p>
+                    <button class="btn ml-20">
+                        <img src="../../img/common/btn_month_backward@2x.png" alt="next">
+                    </button>
                 </div>
-            </ul>
-            <div class="btn-wrap fixed-bottom disabled active" style="margin: 0 20px 30px;">
-                 <a class="btn btn-big btn-purple-bg btn-block disabled" href="#">정기지출 추가하기</a>
+                <ul class="d-flex justify-content-center align-items-center"
+                    style="height: calc(100vh - 66px - 39px - 80px);">
+                    <div class="empty">
+                        <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
+                        <p>지출 내역이 없습니다 🙁</p>
+                    </div>
+                </ul>
+                <div class="btn-wrap fixed-bottom disabled active" style="margin: 0 20px 30px;">
+                    <a class="btn btn-big btn-purple-bg btn-block disabled" href="#">정기지출 추가하기</a>
+                </div>
             </div>
         </div>
+
     </div>
 
-</div>
-
 </body>
-</html>
 
+</html>

@@ -1985,7 +1985,7 @@
                     font-family: var(--font2);
                     margin-bottom: 4px;
                 }
-
+              
                 .desc+.btn-clear-input,
                 .sub-desc+.btn-clear-input {
                     top: 12px;
@@ -4375,6 +4375,10 @@
 
                     span {
                         font-family: var(--font3);
+
+                        &.primary {
+                            font-family: var(--font1);
+                        }
                     }
                 }
             }

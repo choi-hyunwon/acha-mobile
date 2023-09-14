@@ -1377,6 +1377,68 @@
         }
       }
 
+      // 230913
+      .month {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+
+        height: 29px;
+        font-size: 24px;
+        font-family: var(--font3);
+        color: var(--text-01);
+
+        border-radius: 0;
+
+        p {
+          font-size: 20px;
+        }
+
+        button {
+          width: 22px;
+          height: 22px;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: unset;
+          border: unset;
+          padding: 0;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .select-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        p {
+          font-size: 15px;
+
+          .num-total {
+            font-family: var(--font3);
+          }
+        }
+
+        .allChk {
+          font-family: var(--font2);
+          font-size: 15px;
+          line-height: 22px;
+          border: unset;
+          min-width: auto;
+          height: fit-content;
+          padding: 0;
+          background: transparent;
+        }
+      }
+
       /**
       리스트 접기/펴기 기능
        */
@@ -2341,12 +2403,6 @@
               padding: 0;
               margin-bottom: 40px;
 
-              &.month {
-                font-size: 24px;
-                font-family: var(--font3);
-                color: var(--text-01);
-                margin-bottom: 20px;
-              }
 
               &:last-of-type {
                 margin-bottom: 0;

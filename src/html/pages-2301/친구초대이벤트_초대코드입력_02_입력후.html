@@ -34,7 +34,11 @@
         $('.custom-light input').click(function () {
             setTimeout(() => alert(window.innerHeight), 1000)
 
+
+            let Keyboard = window.innerHeight - 187
+            $('body').css('height', Keyboard)
         })
+
     </script>
 </body>
 @@include('../include/countCharDelete.html')

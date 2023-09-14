@@ -2,7 +2,7 @@
 <html lang="ko">
 @@include('../include/head.html')
 
-<body style="min-height: 100vh; min-height: -webkit-fill-available;">
+<body>
     <div class="wrap renewal event-area">
         <div class="header">
             <a href="#" class="sprite btn_back"></a>
@@ -28,17 +28,6 @@
             </div>
         </div>
     </div>
-    <script>
-        console.log(window.innerHeight);
-
-        $('.custom-light input').click(function () {
-            // setTimeout(() => alert(window.innerHeight), 1000)
-
-            let Keyboard = window.innerHeight - 187
-            $('body').css('height', Keyboard)
-        })
-
-    </script>
 </body>
 @@include('../include/countCharDelete.html')
 

@@ -135,10 +135,6 @@ dl {
 .more-main .more-view-my-page div:first-child {
   margin-right: 12px;
 }
-
-.more-main .more-view-tab {
-  padding: 12px 0;
-}
 .more-main .more-view-tab ul {
   display: flex;
   align-items: center;
@@ -174,7 +170,7 @@ dl {
 }
 
 .more-main .more-view-wrap {
-  padding: 30px 24px;
+  padding: 20px 24px;
 }
 .more-main .more-view-wrap .box {
   margin-bottom: 30px;

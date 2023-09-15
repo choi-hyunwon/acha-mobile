@@ -266,6 +266,12 @@
       height: 86px;
       display: block;
 
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
       &.update {
         .ico {
           position: relative;
@@ -277,7 +283,7 @@
             width: 3px;
             height: 3px;
             border-radius: 50%;
-            background-color: #ef4b61;
+            background-color: #e7e8ea;
             right: -4px;
             top: 0;
           }
@@ -289,7 +295,7 @@
         position: absolute;
         width: 1px;
         height: 62px;
-        background-color: #f5f6f8;
+        background-color: #e7e8ea;
         right: 0;
         top: 50%;
         transform: translateY(-50%);

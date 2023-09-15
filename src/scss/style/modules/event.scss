@@ -985,7 +985,7 @@ input[type=number] {
 
       >li {
         position: relative;
-        padding: 16px 20px;
+        padding: 16px;
         margin-bottom: 40px;
         background-color: #f6edff;
         border-radius: 20px;
@@ -1050,16 +1050,25 @@ input[type=number] {
         >a {
           display: flex;
           align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          >div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
         }
 
         .step-num {
-          margin-right: 20px;
-          padding: 7px 16px;
+          margin-right: 14px;
+          padding: 8px 11px;
           background: rgba(187, 157, 255, 0.19);
-          font-size: 15px;
-          line-height: 18px;
-          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+          font-family: var(--font3);
           border-radius: 17px;
+          letter-spacing: -0.6px;
         }
 
         .txt {
@@ -1075,10 +1084,6 @@ input[type=number] {
         }
 
         figure {
-          position: absolute;
-          right: 20px;
-          top: 50%;
-          transform: translateY(-50%);
           width: 60px;
           height: 60px;
 
@@ -1093,6 +1098,12 @@ input[type=number] {
 
         &.step-end {
           padding: 31px 20px;
+          justify-content: space-between;
+
+          >div {
+            display: flex;
+            align-items: center;
+          }
 
           p {
             display: flex;
@@ -1124,8 +1135,11 @@ input[type=number] {
           }
 
           figure {
-            width: 82px;
-            height: 82px;
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            margin: 0;
+            margin-left: 10px;
           }
         }
       }

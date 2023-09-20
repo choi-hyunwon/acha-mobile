@@ -3,7 +3,7 @@
 @@include('../include/head.html')
 
 <body>
-    <div class="wrap _btnSlideOpen">
+    <div class="wrap _btnSlideOpen" style="height: calc(100vh + 1px);">
         <div class="header">
             <a href="#" class="sprite btn_back"></a>
         </div>
@@ -45,10 +45,10 @@
         var btnSlideOpen = $('._btnSlideOpen');
         var btnSlideClose = $('._btnSlideClose');
 
-        btnSlideOpen.on('click',function (){
+        btnSlideOpen.on('click', function () {
             setTimeout(
-                function(){
-                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                function () {
+                    document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
                 }, 500
             );
             $('._modalSlide').addClass('up').removeClass('down');
@@ -56,13 +56,13 @@
             $('body').addClass('scrOn')
         });
 
-        btnSlideClose.on('click',function (){
+        btnSlideClose.on('click', function () {
             setTimeout(
-                function(){
-                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                function () {
+                    document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
                 }, 1000
             );
-            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
             $('.modal-slide-backdrop').removeClass('show');
             $('body').removeClass('scrOn')
         });

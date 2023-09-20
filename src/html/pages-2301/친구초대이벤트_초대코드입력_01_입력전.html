@@ -30,30 +30,4 @@
 </body>
 @@include('../include/countCharDelete.html')
 
-<script>
-    const appHeightKeyboard = window.innerHeight;
-    const spaceAboveKeyboard = '';
-
-    // 키보드가 나타날 때 이벤트 리스너 등록
-    document.addEventListener('focusin', (e) => {
-        const element = e.target;
-
-        if (element.tagName === 'input' || element.tagName === 'textarea') {
-            setTimeout(() => {
-                const windowHeight = window.innerHeight;
-                spaceAboveKeyboard = appHeightKeyboard - windowHeight;
-            }, 1000)
-
-            // 여기에서 필요한 작업을 수행하세요.
-        }
-        console.log(`${'키보드높이'} : ${spaceAboveKeyboard}`)
-        document.write(`${'키보드높이'} : ${spaceAboveKeyboard}`);
-    });
-
-
-
-
-
-</script>
-
 </html>

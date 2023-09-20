@@ -3383,11 +3383,13 @@
             }
 
             input {
-              padding-right: 20px;
+              padding-right: 45px;
             }
 
             .btn-clear-input {
               right: 20px;
+              bottom: unset;
+              top: 38px;
             }
           }
 

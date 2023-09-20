@@ -1267,8 +1267,9 @@ input[type=number] {
         font-size: 13px;
         color: var(--text-02);
         line-height: 18px;
-        letter-spacing: -0.3px;
+        // letter-spacing: -0.3px;
         word-break: break-all;
+        font-family: 'Noto Sans CJK KR Regular';
 
         &:last-child {
           margin-bottom: 0;

@@ -51,6 +51,9 @@
         text-align: right;
         color: var(--text-02);
 
+        display: flex;
+        align-items: center;
+
         .ico-refresh-mini {
           display: inline-block;
           width: 16px;
@@ -74,6 +77,8 @@
           margin-left: 5px;
         }
       }
+
+
 
       .delete {
         font-size: 15px;
@@ -801,6 +806,7 @@
         padding: 20px 20px 0;
         font-size: 14px;
         color: var(--text-02);
+        word-break: break-all;
       }
     }
 
@@ -1374,6 +1380,68 @@
           background: #f7f8fc;
           font-size: 14px;
           color: var(--text-02);
+        }
+      }
+
+      // 230913
+      .month {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+
+        height: 29px;
+        font-size: 24px;
+        font-family: var(--font3);
+        color: var(--text-01);
+
+        border-radius: 0;
+
+        p {
+          font-size: 20px;
+        }
+
+        button {
+          width: 22px;
+          height: 22px;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: unset;
+          border: unset;
+          padding: 0;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .select-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        p {
+          font-size: 15px;
+
+          .num-total {
+            font-family: var(--font3);
+          }
+        }
+
+        .allChk {
+          font-family: var(--font2);
+          font-size: 15px;
+          line-height: 22px;
+          border: unset;
+          min-width: auto;
+          height: fit-content;
+          padding: 0;
+          background: transparent;
         }
       }
 
@@ -2341,12 +2409,6 @@
               padding: 0;
               margin-bottom: 40px;
 
-              &.month {
-                font-size: 24px;
-                font-family: var(--font3);
-                color: var(--text-01);
-                margin-bottom: 20px;
-              }
 
               &:last-of-type {
                 margin-bottom: 0;

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">정기지출 추가</a></h2>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-box">
+                <div class="month text-center">
+                    <button class="btn mr-20">
+                        <img src="../../img/common/btn_month_forward@2x.png" alt="prev">
+                    </button>
+                    <p class="data">2023년 4월</p>
+                    <button class="btn ml-20">
+                        <img src="../../img/common/btn_month_backward@2x.png" alt="next">
+                    </button>
+                </div>
+                <div class="select-box mt-20">
+                    <p>총 <span class="num-total f-point">2</span>건</p>
+                    <button class="btn allChk f-point">전체 선택</button>
+                </div>
+                <ul class="usage-history-list usage-category-list category-change">
+                    <li>
+                        <p class="sub-title">14일</p>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_food"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>(주)호텔롯데</span></span>
+                                            <span class="amount">230,000</span>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <input type="checkbox" class="filled-in">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_beauty"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>(주)아모레퍼시픽</span></span>
+                                            <span class="amount">45,000</span>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" checked>
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_beauty"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>차홍아르더 도산</span></span>
+                                            <span class="amount">123,000</span>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" checked>
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="sub-title">4월 10일</p>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_cloth"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>나이키온라인스토어</span></span>
+                                            <span class="amount">55,800</span>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <input type="checkbox" class="filled-in">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>넷플릭스</span></span>
+                                            <span class="amount">14,500</span>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <input type="checkbox" class="filled-in">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="btn-wrap fixed-bottom active">
+                    <!-- 선택된 항목 없을 경우 disabled 추가 -->
+                    <a class="btn btn-big btn-purple-bg btn-block" href="#">정기지출 추가하기</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $('.filled-in').on('click', function () {
+            if ($('.filled-in').is(':checked')) {
+                $('.btn-wrap').addClass('active');
+            } else {
+                $('.btn-wrap').removeClass('active');
+            }
+        })
+    </script>
+</body>
+
+</html>

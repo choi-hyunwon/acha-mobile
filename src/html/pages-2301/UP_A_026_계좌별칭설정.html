@@ -47,6 +47,18 @@
 			});
 
 			btnSlideOpen.trigger("click");
+
+
+			const maxLength = 20;
+			$('.custom-light input').focus(function (e) {
+				const el = e.target;
+				const value = e.value
+				setTimeout(() => {
+					el.setSelectionRange(maxLength, maxLength)
+					el.scrollLeft = maxLength * 30;
+				}, 0);
+			})
+
 		});
 	</script>
 	@@include('../include/countCharDelete.html')

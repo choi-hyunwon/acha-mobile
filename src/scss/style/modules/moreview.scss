@@ -14,7 +14,7 @@
   }
 
   .box {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
 
     .list_group {
       .list_group_item {
@@ -256,7 +256,8 @@
 }
 
 .more-view-tab {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+  padding: 12px 0 !important;
 
   ul {
     li {
@@ -345,6 +346,10 @@
       }
     }
   }
+}
+
+.more-view-wrap {
+  padding: 30px 24px !important;
 }
 
 .more-view-my-page {
@@ -2460,6 +2465,7 @@ _ .event-btn-area {
       padding: 0px 20px 20px;
 
       .img {
+        margin-right: 12px;
         width: 48px;
         height: 48px;
       }
@@ -2468,8 +2474,8 @@ _ .event-btn-area {
     .more-view-tab {
       ul {
         li {
-          margin: 12px 0;
-          border-right: 1px solid #e7e8ea;
+          margin: 0;
+          border-right: unset;
           height: 62px;
 
           &:last-of-type {
@@ -2488,6 +2494,7 @@ _ .event-btn-area {
         }
 
         .list_group {
+          padding-left: 5px !important;
           border-top: none;
 
           .list_group_item {

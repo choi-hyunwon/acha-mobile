@@ -186,7 +186,6 @@ front.common = (function () {
     // sortable
     $(function () {
       $('.sortable').sortable({
-        items: $('.ac-item'),
         axis: 'y',
         handle: '.handle',
         containment: 'parent',

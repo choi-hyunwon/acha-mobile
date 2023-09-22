@@ -363,6 +363,16 @@
       </div>
     </div>
   </div>
+  <script>
+    const $sortableUl = $('.sortable')
+    for (let i = 0; i < $sortableUl.length; i++) {
+      let _item = $sortableUl[i]
+      let UlHeight = _item.offsetHeight
+      console.log(UlHeight);
+      $sortableUl[i].style.height = UlHeight + 'px';
+      // $item.height()
+    }
+  </script>
 </body>
 
 </html>

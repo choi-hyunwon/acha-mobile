@@ -1296,8 +1296,9 @@
       //max-width: 50%;
       .total {
         display: block;
-        font-size: 15px;
         margin-bottom: 6px;
+        font-size: 15px;
+        height: 22px;
 
         .icon-caution {
           background: url(../../img/common/ico_caution@2x.png) no-repeat center center /contain;
@@ -1306,8 +1307,6 @@
           display: inline-block;
           margin-left: 4px;
         }
-
-
       }
 
       .total-sum {

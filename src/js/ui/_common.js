@@ -190,6 +190,8 @@ front.common = (function () {
         handle: '.handle',
         containment: 'parent',
         forcePlaceholderSize: true,
+        scrollSensitivity: 100,
+        scrollSpeed: 20
       });
 
       $('._sticky').sticky({ topSpacing: 0 }).css('background-color', '#ffffff');

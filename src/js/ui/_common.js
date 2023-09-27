@@ -193,6 +193,8 @@ front.common = (function () {
         scrollSensitivity: 100,
         scrollSpeed: 20
       });
+      // 자산목록 타이틀 disable
+      $('.sortable .total-sum').sortable('disable')
 
       $('._sticky').sticky({ topSpacing: 0 }).css('background-color', '#ffffff');
 

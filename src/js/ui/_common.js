@@ -193,6 +193,7 @@ front.common = (function () {
         scrollSensitivity: 100,
         scrollSpeed: 20
       });
+      $('.sortable .total-sum').sortable('disable')
 
       $('._sticky').sticky({ topSpacing: 0 }).css('background-color', '#ffffff');
 

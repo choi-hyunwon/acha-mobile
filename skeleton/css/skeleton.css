@@ -74,13 +74,12 @@ dl {
 }
 .skeleton-box-card-list .skeleton-asset-wrap .skeleton-category-heading {
   position: relative;
-  padding: 23.5px;
+  padding: 22.5px;
   width: 100%;
   background-color: white;
   border: 1px solid #efefef;
   border-radius: 10px;
   box-sizing: border-box;
-  border-bottom: unset;
 }
 .skeleton-box-card-list .skeleton-asset-wrap .skeleton-category-heading span {
   display: block;
@@ -302,9 +301,6 @@ dl {
 .skeleton-mission-contents .skeleton-box-card-list .skeleton-asset-wrap {
   padding: 0;
 }
-.skeleton-mission-contents .skeleton-box-card-list .skeleton-asset-wrap ul {
-  padding: 0 8px;
-}
 .skeleton-mission-contents .skeleton-box-card-list .skeleton-asset-wrap ul li {
   display: flex;
   justify-content: space-between;
@@ -324,7 +320,7 @@ dl {
   .skeleton-title {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0 25px;
+  padding-bottom: 25px;
 }
 .skeleton-mission-contents
   .skeleton-asset-wrap

@@ -52,18 +52,15 @@
         color: var(--text-02);
         display: flex;
         align-items: center;
-        display: -webkit-box;
-        -webkit-box-align: center;
 
         .ico-refresh-mini {
           display: inline-block;
           width: 16px;
-          height: 16px;
+          height: 19px;
           background: url(../../img/common/ico_refresh_mini_g@2x.png) no-repeat center center;
-          background-size: cover;
+          background-size: contain;
           vertical-align: unset;
           margin-left: 2px;
-          margin-top: -2px;
         }
       }
 

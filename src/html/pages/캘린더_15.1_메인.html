@@ -1,366 +1,370 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2>캘린더</h2>
-        <div class="sum-area">
-            <p class="update mb-0">30분 전<i class="ico-refresh-mini"></i></p>
-            <!--<p class="update-ing">
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>캘린더</h2>
+            <div class="sum-area">
+                <p class="update mb-0">31분 전<i class="ico-refresh-mini"></i></p>
+                <!--<p class="update-ing">
                 업데이트 중입니다
                 <img src="../../img/common/animation_16.gif" width="13" alt="로딩">
             </p>-->
+            </div>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-calendar">
+                <div class="ex-calendar">
+                    <div class="box-ex-calendar-header">
+                        <div class="date"><a href="#">2022년 10월<i class="icon-arrow-bottom"> </i></a></div>
+                        <a href="#" class="filter"><i class="btn btn-filter">필터 <span>3</span></i></a>
+                    </div>
+                    <div class="box_ex_calendar ex-calendar-v3">
+                        <div id='calendar'></div>
+                    </div>
+                </div>
+                <!-- expenditure-box -->
+                <div class="expenditure-box bg_light_gray">
+                    <div class="calendar-history">
+                        <div class="date-detail">
+                            <div class="t-day">
+                                <span class="day">1일</span>
+                                <span class="badge badge-gray">토</span>
+                            </div>
+                            <div class="detail">
+                                <div class="plus">
+                                    <span class="tit">수입</span><span class="price">+15,000원</span>
+                                </div>
+                                <div class="minus">
+                                    <span class="tit">지출</span><span class="price">-15,000원</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="history-list-calendar">
+                            <ul>
+                                <li class="pb-0">
+                                    <span class="time">13:50 <em>|</em> 신한계좌254</span>
+                                    <span class="detail">
+                                        <span class="tit">Netflix</span>
+                                        <span class="price">-14,500원</span>
+                                        <span class="emotion"><img src="../../img/common/ico-emoji-excited@2x.png"
+                                                alt=""></span>
+
+                                    </span>
+                                    <div class="desc">
+                                        드디어 넷플 다시 결제!ㅋㅋ<br>
+                                        기묘한이야기 시즌4 달려보쟈~
+                                    </div>
+                                    <div class="swiper-container _pageSlider2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="img-area">
+                                                    <img src="../../img/@temp/@temp-slider-img-01.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="img-area">
+                                                    <img src="../../img/@temp/@temp-slider-img-01.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <script>
+                                        var swiper = new Swiper("._pageSlider2", {
+                                            autoHeight: true,
+                                            calculateHeight: true,
+                                            pagination: {
+                                                el: ".swiper-pagination",
+                                            },
+                                            on: {
+                                                activeIndexChange: function () {
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </li>
+                                <li>
+                                    <span class="time">13:50 <em>|</em> 신한Deepdream</span>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                    <div class="tag">
+                                        <span>#칭구들돼지파티</span>
+                                    </div>
+                                </li>
+                                <li class="pb-0">
+                                    <span class="time">13:50 <em>|</em> 신한계좌254</span>
+                                    <span class="detail">
+                                        <span class="tit">본비빔밥</span>
+                                        <span class="price">-14,500원</span>
+                                        <span class="emotion"><img src="../../img/common/ico-emoji-excited@2x.png"
+                                                alt=""></span>
+                                    </span>빕
+                                    <div class="tag">
+                                        <span>#클린한저녁</span>
+                                    </div>
+                                    <div class="desc">
+                                        건강을 위해 야채가득한 비빔밥으로 저녁해결 <br>
+                                        사이드도 넘 맛나보여서 추가ㅠ
+                                    </div>
+                                    <div class="swiper-container _pageSlider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="img-area">
+                                                    <img src="../../img/@temp/@temp-slider-img-01.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="img-area">
+                                                    <img src="../../img/@temp/@temp-spring.png" height="271"
+                                                        width="300" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <script>
+                                        var swiper = new Swiper("._pageSlider", {
+                                            autoHeight: true,
+                                            calculateHeight: true,
+                                            pagination: {
+                                                el: ".swiper-pagination",
+                                            },
+                                            on: {
+                                                activeIndexChange: function () {
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </li>
+                                <li>
+                                    <span class="time">13:50 <em>|</em> 신한Deepdream</span>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                    <div class="tag">
+                                        <span>#칭구들돼지파티</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time">13:50 <em>|</em> 신한Deepdream</span>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="time">13:50 <em>|</em> 신한Deepdream</span>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="time">13:50 <em>|</em> 신한Deepdream</span>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="time">13:50 <em>|</em> 신한Deepdream</span>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="time">13:50 <em>|</em> 신한Deepdream</span>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- //expenditure-box -->
+
+
+
+
+
+
+            </div>
         </div>
     </div>
-    <div class="contents expenditure">
-        <div class="expenditure-calendar">
-            <div class="ex-calendar">
-                <div class="box-ex-calendar-header">
-                    <div class="date"><a href="#">2022년 10월<i class="icon-arrow-bottom"> </i></a></div>
-                    <a href="#" class="filter"><i class="btn btn-filter">필터 <span>3</span></i></a>
-                </div>
-                <div class="box_ex_calendar ex-calendar-v3">
-                    <div id='calendar'></div>
-                </div>
-            </div>
-            <!-- expenditure-box -->
-            <div class="expenditure-box bg_light_gray">
-                <div class="calendar-history">
-                    <div class="date-detail">
-                        <div class="t-day">
-                            <span class="day">1일</span>
-                            <span class="badge badge-gray">토</span>
-                        </div>
-                        <div class="detail">
-                            <div class="plus">
-                                <span class="tit">수입</span><span class="price">+15,000원</span>
-                            </div>
-                            <div class="minus">
-                                <span class="tit">지출</span><span class="price">-15,000원</span>
-                            </div>
-                        </div>
-                    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid'],
+                showNonCurrentDates: true,
+                fixedWeekCount: false,
+                header: false,
+                height: 'auto',
+                defaultDate: '2022-12-15',  // 날짜 입력시, 달력 show
+                editable: false,
+                eventLimit: false,
+                navLinks: true,
+                timeZone: 'Asia/Seoul',
+                columnHeaderText: function (date) {
+                    return weekList[date.getDay()];
+                },
+                navLinkDayClick: function (date, jsEvent) {
+                    console.log(date.toISOString().slice(0, 10));
+                    console.log(jsEvent.target)
+                },
+                events: [
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-12'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-01'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-02'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-03'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-04'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-05'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-06'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-07'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-07'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-08'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-09'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-10'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-11'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-1'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-1'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-1'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-12'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-100,000',
+                        start: '2022-12-12'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-480,000',
+                        start: '2022-12-13'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-1,020,000',
+                        start: '2022-12-14'
+                    },
+                    // 표시 할 데이터가 있고, 선택된 일자가 있는 금액의 첫번째에 plus-data 클래스 추가 **
+                    {
+                        className: 'plus-data',
+                        title: '+100,000',
+                        start: '2022-12-03'
+                    },
+                    {
+                        className: 'minus-data',
+                        title: '-50,000',
+                        start: '2022-12-03'
+                    },
+                    {
+                        className: 'plus-data',
+                        title: '+50,000',
+                        start: '2022-12-10'
+                    },
+                    {
+                        className: 'plus-data',
+                        title: '+100,000',
+                        start: '2022-12-17'
+                    },
+                    {
+                        className: 'plus-data',
+                        title: '+8,100,000',
+                        start: '2022-12-23'
+                    },
+                    {
+                        className: 'plus-data',
+                        title: '+8,100,000',
+                        start: '2022-12-28'
+                    },
+                ],
+            });
 
-                    <div class="history-list-calendar">
-                        <ul>
-                            <li class="pb-0">
-                                <span class="time">13:50 <em>|</em> 신한계좌254</span>
-                                <span class="detail">
-                                    <span class="tit">Netflix</span>
-                                    <span class="price">-14,500원</span>
-                                    <span class="emotion"><img src="../../img/common/ico-emoji-excited@2x.png" alt=""></span>
-
-                                </span>
-                                <div class="desc">
-                                    드디어 넷플 다시 결제!ㅋㅋ<br>
-                                    기묘한이야기 시즌4 달려보쟈~
-                                </div>
-                                <div class="swiper-container _pageSlider2">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="img-area">
-                                                <img src="../../img/@temp/@temp-slider-img-01.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="img-area">
-                                                <img src="../../img/@temp/@temp-slider-img-01.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <script>
-                                    var swiper = new Swiper("._pageSlider2", {
-                                        autoHeight: true,
-                                        calculateHeight:true,
-                                        pagination: {
-                                            el: ".swiper-pagination",
-                                        },
-                                        on: {
-                                            activeIndexChange: function () {
-                                            }
-                                        }
-                                    });
-                                </script>
-                            </li>
-                            <li>
-                                <span class="time">13:50 <em>|</em> 신한Deepdream</span>
-                                <span class="detail">
-                                    <span class="tit">아파트관리비</span>
-                                    <span class="price">-15,000원</span>
-                                </span>
-                                <div class="tag">
-                                    <span>#칭구들돼지파티</span>
-                                </div>
-                            </li>
-                            <li class="pb-0">
-                                <span class="time">13:50 <em>|</em> 신한계좌254</span>
-                                <span class="detail">
-                                    <span class="tit">본비빔밥</span>
-                                    <span class="price">-14,500원</span>
-                                    <span class="emotion"><img src="../../img/common/ico-emoji-excited@2x.png" alt=""></span>
-                                </span>빕
-                                <div class="tag">
-                                    <span>#클린한저녁</span>
-                                </div>
-                                <div class="desc">
-                                    건강을 위해 야채가득한 비빔밥으로 저녁해결 <br>
-                                    사이드도 넘 맛나보여서 추가ㅠ
-                                </div>
-                                <div class="swiper-container _pageSlider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="img-area">
-                                                <img src="../../img/@temp/@temp-slider-img-01.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="img-area">
-                                                <img src="../../img/@temp/@temp-spring.png" height="271" width="300"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <script>
-                                    var swiper = new Swiper("._pageSlider", {
-                                        autoHeight: true,
-                                        calculateHeight:true,
-                                        pagination: {
-                                            el: ".swiper-pagination",
-                                        },
-                                        on: {
-                                            activeIndexChange: function () {
-                                            }
-                                        }
-                                    });
-                                </script>
-                            </li>
-                            <li>
-                                <span class="time">13:50 <em>|</em> 신한Deepdream</span>
-                                <span class="detail">
-                                    <span class="tit">아파트관리비</span>
-                                    <span class="price">-15,000원</span>
-                                </span>
-                                <div class="tag">
-                                    <span>#칭구들돼지파티</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="time">13:50 <em>|</em> 신한Deepdream</span>
-                                <span class="detail">
-                                    <span class="tit">아파트관리비</span>
-                                    <span class="price">-15,000원</span>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="time">13:50 <em>|</em> 신한Deepdream</span>
-                                <span class="detail">
-                                    <span class="tit">아파트관리비</span>
-                                    <span class="price">-15,000원</span>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="time">13:50 <em>|</em> 신한Deepdream</span>
-                                <span class="detail">
-                                    <span class="tit">아파트관리비</span>
-                                    <span class="price">-15,000원</span>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="time">13:50 <em>|</em> 신한Deepdream</span>
-                                <span class="detail">
-                                    <span class="tit">아파트관리비</span>
-                                    <span class="price">-15,000원</span>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="time">13:50 <em>|</em> 신한Deepdream</span>
-                                <span class="detail">
-                                    <span class="tit">아파트관리비</span>
-                                    <span class="price">-15,000원</span>
-                                </span>
-                            </li>
-
-
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <!-- //expenditure-box -->
-
-
-
-
-
-
-        </div>
-    </div>
-</div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var weekList = ['일', '월', '화', '수', '목', '금', '토'];
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            plugins: ['interaction', 'dayGrid'],
-            showNonCurrentDates: true,
-            fixedWeekCount: false,
-            header: false,
-            height: 'auto',
-            defaultDate: '2022-12-15',  // 날짜 입력시, 달력 show
-            editable: false,
-            eventLimit: false,
-            navLinks: true,
-            timeZone: 'Asia/Seoul',
-            columnHeaderText: function (date) {
-                return weekList[date.getDay()];
-            },
-            navLinkDayClick: function (date, jsEvent) {
-                console.log(date.toISOString().slice(0,10));
-                console.log(jsEvent.target)
-            },
-            events: [
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-12'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-01'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-02'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-03'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-04'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-05'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-06'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-07'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-07'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-08'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-09'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-10'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-11'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-1'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-1'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-1'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-12'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-100,000',
-                    start: '2022-12-12'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-480,000',
-                    start: '2022-12-13'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-1,020,000',
-                    start: '2022-12-14'
-                },
-                // 표시 할 데이터가 있고, 선택된 일자가 있는 금액의 첫번째에 plus-data 클래스 추가 **
-                {
-                    className: 'plus-data',
-                    title: '+100,000',
-                    start: '2022-12-03'
-                },
-                {
-                    className: 'minus-data',
-                    title: '-50,000',
-                    start: '2022-12-03'
-                },
-                {
-                    className: 'plus-data',
-                    title: '+50,000',
-                    start: '2022-12-10'
-                },
-                {
-                    className: 'plus-data',
-                    title: '+100,000',
-                    start: '2022-12-17'
-                },
-                {
-                    className: 'plus-data',
-                    title: '+8,100,000',
-                    start: '2022-12-23'
-                },
-                {
-                    className: 'plus-data',
-                    title: '+8,100,000',
-                    start: '2022-12-28'
-                },
-            ],
+            calendar.render();
         });
-
-        calendar.render();
-    });
-</script>
+    </script>
 </body>
-</html>
 
+</html>

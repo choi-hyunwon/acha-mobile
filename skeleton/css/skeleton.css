@@ -304,7 +304,14 @@ dl {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 26px;
+}
+.skeleton-mission-contents
+  .skeleton-box-card-list
+  .skeleton-asset-wrap
+  ul
+  li.skeleton-mt-5 {
+  margin-top: 18px !important;
 }
 .skeleton-mission-contents
   .skeleton-box-card-list
@@ -319,13 +326,13 @@ dl {
   .skeleton-title {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 .skeleton-mission-contents
   .skeleton-asset-wrap
   .skeleton-category-heading
   .skeleton-list-card {
-  padding: 24px 0;
+  padding: 13px 0;
   border-top: 1px solid #efefef;
 }
 .skeleton-mission-contents

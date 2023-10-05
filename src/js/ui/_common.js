@@ -299,22 +299,3 @@ function toastPopupShow() {
 function toastPopupHide() {
   $('._toastPopup').fadeOut();
 }
-
-
-function checkMobile() {
-  let varUA = navigator.userAgent.toLowerCase();
-
-
-  if ( varUA.indexOf('android') > -1) {
-      //안드로이드
-      return "android";
-  } else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1||varUA.indexOf("ipod") > -1||varUA.indexOf("mac") > -1 ) {
-      //IOS
-      $('.ico-refresh-mini').css('marin-top', '1px')
-      alert(1111)
-      return "ios";
-    }
-    alert(varUA)
-}
-checkMobile()
-

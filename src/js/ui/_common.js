@@ -299,3 +299,13 @@ function toastPopupShow() {
 function toastPopupHide() {
   $('._toastPopup').fadeOut();
 }
+
+function checkMobile() {
+  let varUA = navigator.userAgent.toLowerCase();
+
+  if (varUA.indexOf('ios')) {
+    $('.ico-refresh-mini').css('marin-top', '1px')
+    alert('check')
+  }
+}
+

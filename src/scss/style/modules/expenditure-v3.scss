@@ -62,6 +62,10 @@
           background-size: cover;
           vertical-align: unset;
           margin-left: 2px;
+
+          display: -webkit-box;
+          -webkit-box-pack: center;
+          -webkit-box-align: center;
         }
       }
 

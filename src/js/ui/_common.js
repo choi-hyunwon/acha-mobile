@@ -300,12 +300,15 @@ function toastPopupHide() {
   $('._toastPopup').fadeOut();
 }
 
+
 function checkMobile() {
   let varUA = navigator.userAgent.toLowerCase();
 
-  if (varUA.indexOf('ios')) {
+  if (varUA === 'ios') {
     $('.ico-refresh-mini').css('marin-top', '1px')
     alert('check')
   }
+  alert(varUA)
 }
+checkMobile()
 

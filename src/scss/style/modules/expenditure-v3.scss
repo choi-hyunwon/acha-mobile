@@ -2296,6 +2296,35 @@
                 }
               }
 
+              &.details-history-custom {
+                .img {
+                  top: 50% !important;
+                  transform: translateY(-50%) !important;
+                }
+
+                .info {
+                  height: 40px;
+
+                  .place {
+                    span {
+                      line-height: 40px !important;
+                    }
+                  }
+                }
+
+
+              }
+
+              &.details-history-badge {
+                .info {
+                  max-width: 100% !important;
+                }
+
+                .payment-method {
+                  position: unset !important;
+                }
+              }
+
               .bar-graph {
                 display: block;
                 position: relative;

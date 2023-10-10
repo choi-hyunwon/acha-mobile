@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide modal-expenditure cycle-selection _modalSlide autoHeight">
+		<div class="modal-slide-content">
+			<a href="#" class="btn-close _btnSlideClose"></a>
+			<div class="inner">
+				<div class="title">입금수단 변경</div>
+				<div class="day-list list-swap">
+					<ul>
+						<li>
+							<a href="#"><span class="txt">현금</span></a>
+						</li>
+						<li class="active">
+							<a href="#"><span class="txt">계좌</span></a>
+						</li>
+						<li>
+							<a href="#"><span class="txt">기타</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-slide-backdrop"></div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
+
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
+			});
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
+			});
+
+			btnSlideOpen.trigger("click");
+
+			let listE = $(".day-list li.active").prevUntil().length - 1;
+			let scrollH = listE * 56;
+
+			(function () {
+				if ($(".modal-slide").show()) {
+					$(".day-list ul").scrollTop(scrollH);
+				}
+			})();
+		});
+	</script>
+	<script>
+		$(".day-list li a").on("click", function () {
+			$(this).parent().addClass("active").siblings().removeClass("active");
+		});
+	</script>
+</body>
+
+</html>

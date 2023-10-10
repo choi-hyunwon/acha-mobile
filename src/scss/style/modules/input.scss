@@ -953,6 +953,7 @@ input.custom {
         padding-bottom: 9px;
         width: 100%;
         text-align: left;
+        margin-top: 14px;
 
         .textarea,
         textarea[data-auto-resize] {
@@ -962,6 +963,10 @@ input.custom {
             line-height: 22px;
             border: 0;
             outline: none;
+        }
+
+        textarea::placeholder {
+            color: #c2c1cc;
         }
     }
 }
@@ -975,6 +980,7 @@ input::placeholder {
     .custom-light {
         input {
             font-family: var(--font4);
+
             &::placeholder {
                 color: #c2c1cc;
             }

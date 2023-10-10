@@ -1659,6 +1659,33 @@
           }
 
           .details-history {
+            &.details-history-align-top {
+              .item-list {
+                .group {
+                  .box {
+                    width: 100%;
+
+                    .img {
+                      position: absolute;
+                      top: 6px;
+                    }
+
+                    .info {
+                      padding-left: 54px;
+                      width: 100%;
+                      max-width: calc(100% - 76px);
+                    }
+                  }
+
+                  .badge-payment {
+                    position: absolute;
+                    right: 0;
+                    top: 8px;
+                  }
+                }
+              }
+            }
+
             .item-list {
               padding: 15px 0;
 
@@ -1722,6 +1749,7 @@
 
                     .place {
                       display: block;
+                      line-height: 1;
 
                       span {
                         overflow: hidden;

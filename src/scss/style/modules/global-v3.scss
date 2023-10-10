@@ -324,8 +324,12 @@
 
 
   .badge-payment {
+    position: absolute;
+    right: 0;
+    top: 13px;
+
+
     width: 76px;
-    // height: 22px;
   }
 
   .justify-content-between {
@@ -794,4 +798,26 @@
   &.icon_cate_deposit {
     background-image: url(../../img/common/expenditure/icon-category/ic_cate_income@2x.png);
   }
+}
+
+
+.ico_list_arrow_small {
+  display: inline-block;
+  width: 6px;
+  height: 16px;
+  background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat center / contain;
+}
+
+.ico_list_arrow_large {
+  display: inline-block;
+  width: 10px;
+  height: 24px;
+  background: url(../../img/common/ico-list-arrow-large@2x.png) no-repeat center / contain;
+}
+
+.ico_statement {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../../img/sprite/common/ic_statement@2x.png) no-repeat center / contain;
 }

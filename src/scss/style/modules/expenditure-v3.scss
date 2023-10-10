@@ -47,7 +47,8 @@
       .update {
         margin: 0 2px 0 0;
         font-size: 13px;
-        line-height: 18px;
+        // line-height: 18px;
+        height: 18px;
         text-align: right;
         color: var(--text-02);
 
@@ -1659,6 +1660,33 @@
           }
 
           .details-history {
+            &.details-history-align-top {
+              .item-list {
+                .group {
+                  .box {
+                    width: 100%;
+
+                    .img {
+                      position: absolute;
+                      top: 6px;
+                    }
+
+                    .info {
+                      padding-left: 54px;
+                      width: 100%;
+                      max-width: calc(100% - 76px);
+                    }
+                  }
+
+                  .badge-payment {
+                    position: absolute;
+                    right: 0;
+                    top: 8px;
+                  }
+                }
+              }
+            }
+
             .item-list {
               padding: 15px 0;
 
@@ -1725,6 +1753,7 @@
 
                     .place {
                       display: block;
+                      line-height: 1;
 
                       span {
                         overflow: hidden;
@@ -3153,10 +3182,11 @@
           margin-top: 0;
 
           .title {
+            position: relative;
             font-size: 18px;
             color: var(--text-01);
             font-family: var(--font3);
-            padding: 18px 0 17px;
+            padding: 20px 0 19px;
             border-color: #efefef;
             display: flex;
             align-items: center;
@@ -3177,6 +3207,36 @@
             .icon {
               width: 40px;
               height: 40px;
+            }
+
+            .ico_list_arrow_large {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+
+            }
+          }
+
+          .statement {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-family: var(--font3);
+            padding: 20px 0;
+            line-height: 22px;
+            border-bottom: 1px solid #efefef;
+
+            .img {
+              margin-right: 8px;
+              height: 20px;
+            }
+
+            .ico {
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
             }
           }
 
@@ -3433,6 +3493,12 @@
 
           &.select-category {
             position: relative;
+
+            &._disabled {
+              &:after {
+                opacity: 0.3;
+              }
+            }
 
             &:after {
               content: '';

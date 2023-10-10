@@ -3154,10 +3154,11 @@
           margin-top: 0;
 
           .title {
+            position: relative;
             font-size: 18px;
             color: var(--text-01);
             font-family: var(--font3);
-            padding: 18px 0 17px;
+            padding: 20px 0 19px;
             border-color: #efefef;
             display: flex;
             align-items: center;
@@ -3178,6 +3179,36 @@
             .icon {
               width: 40px;
               height: 40px;
+            }
+
+            .ico_list_arrow_large {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+
+            }
+          }
+
+          .statement {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-family: var(--font3);
+            padding: 20px 0;
+            line-height: 22px;
+            border-bottom: 1px solid #efefef;
+
+            .img {
+              margin-right: 8px;
+              height: 20px;
+            }
+
+            .ico {
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
             }
           }
 
@@ -3434,6 +3465,12 @@
 
           &.select-category {
             position: relative;
+
+            &._disabled {
+              &:after {
+                opacity: 0.3;
+              }
+            }
 
             &:after {
               content: '';

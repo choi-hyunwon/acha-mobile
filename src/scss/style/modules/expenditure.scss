@@ -1826,6 +1826,101 @@
             }
           }
 
+          .category-new {
+            width: 100%;
+            padding: 20px 20px;
+            max-height: unset;
+            position: relative !important;
+            border: 1px solid #efefef;
+            border-top: none;
+            border-bottom: none;
+            transform: translate3d(0px, 0, 0px) !important;
+            z-index: 0;
+            display: none;
+            background: #fff;
+
+            &::after {
+              display: inline-block;
+              content: '';
+              width: calc(100% - 40px);
+              height: 1px;
+              background: #efefef;
+              position: absolute;
+              left: 50%;
+              top: 0;
+              transform: translateX(-50%);
+            }
+
+            .ac-list {
+              .ac-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+                .badge {
+                  background: #6839d3;
+                  color: #fff;
+                  font-family: var(--font1);
+                  border-radius: 16px;
+                  padding: 3px 6px;
+                  font-size: 10px;
+                  font-weight: normal;
+                  height: 16px;
+                  margin-right: 6px;
+
+                  em {
+                    transform: scale(0.83);
+                    display: inline-block;
+                  }
+                }
+
+                >div {
+                  display: flex;
+
+                  .img {
+                    margin-right: 8px;
+                    width: 22px;
+                    height: 22px;
+
+                    img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: contain;
+                    }
+                  }
+
+                  p {
+                    font-size: 14px;
+                    color: var(--text-01);
+                    font-family: var(--font2);
+                    letter-spacing: -0.5px;
+                  }
+                }
+
+                .btn-delete {
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  transform: translateY(-50%);
+                  width: 22px;
+                  height: 22px;
+                  background: transparent;
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                  }
+                }
+              }
+            }
+          }
+
           .category-menu {
             width: 100%;
             margin-bottom: 20px;
@@ -1854,6 +1949,15 @@
 
 
             .ac-list {
+              &.ac-list-img {
+                .ac-item {
+                  .img {
+                    width: 22px;
+                    height: 22px;
+                  }
+                }
+              }
+
               .ac-item {
                 position: relative;
                 display: flex;
@@ -1862,6 +1966,25 @@
 
                 &:last-child {
                   margin-bottom: 0;
+                }
+
+                &.ac-expire {
+                  padding-top: 24px;
+
+                  .expire-badge {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+
+                    padding: 1px 6px;
+                    height: 18px;
+                    background: #eeedf0;
+                    font-size: 10px;
+                    font-family: var(--font2);
+                    color: #9992a0;
+                    border-radius: 18px;
+
+                  }
                 }
 
                 .info {
@@ -1949,6 +2072,18 @@
                   .ac-payment {
                     display: block;
                   }
+
+                  &.undefined {
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 8px;
+                    height: 22px;
+                    background: #eeedf0;
+                    font-size: 11px;
+                    color: #9992a0;
+                    font-family: var(--font2);
+                    border-radius: 22px;
+                  }
                 }
 
                 .ac-num {
@@ -1982,6 +2117,7 @@
               }
             }
 
+            .category-new,
             .category-menu {
               display: block;
             }

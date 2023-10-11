@@ -2369,6 +2369,26 @@
         color: var(--text-01);
         font-family: var(--font2);
         margin-bottom: 150px;
+
+        &.edit {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .btn-edit {
+            font-size: 13px;
+            border: 1px solid #e2e3e6;
+            min-width: 50px;
+            border-radius: 15px;
+            background: transparent;
+            padding: 5px 16px;
+            line-height: unset;
+            height: 29px;
+            display: flex;
+            align-items: center;
+            color: #707070;
+          }
+        }
       }
 
       .img {

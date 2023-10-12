@@ -3172,6 +3172,28 @@
             }
           }
 
+          .statement {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-family: var(--font3);
+            padding: 20px 0;
+            line-height: 22px;
+            border-bottom: 1px solid #efefef;
+
+            .img {
+              margin-right: 8px;
+              height: 20px;
+            }
+
+            .ico {
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+
           .info-list {
             padding: 15px 0;
 

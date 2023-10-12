@@ -5722,6 +5722,24 @@
                 }
             }
         }
+
+        &.delete-connect {
+            .inner {
+                padding: 30px;
+
+                p {
+                    padding: 20px 0 50px;
+
+                    span {
+                        font-family: var(--font1);
+                    }
+                }
+
+                .btn-wrap {
+                    height: 50px;
+                }
+            }
+        }
     }
 
     /*공동관리*/

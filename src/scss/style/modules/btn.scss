@@ -56,7 +56,7 @@ a:hover {
 
     &.disabled {
         opacity: 0.5;
-        color: var(--text-04);
+        color: var(--text-04) !important;
     }
 
     &:active,

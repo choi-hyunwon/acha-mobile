@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide expiration">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title _btnSlideOpen">
+                    다음 기관의 상품을<br />
+                    <span class="name">추가 연결</span>할 수 있어요
+                </div>
+                <div class="allChk agree-wrap">
+                    <p>선택 해제</p>
+                </div>
+                <ul class="details-history limit">
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>국민카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>국민은행</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <label>
+                                    <input type="checkbox" class="filled-in">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-wrap" style="margin-top: 20px;">
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg">다음</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

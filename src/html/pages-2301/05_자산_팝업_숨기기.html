@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title _btnSlideOpen"><span class="name">자산목록</span>에서 숨길까요?</div>
+                <div class="desc-box">
+                    <p style="min-height: 42px;">
+                        숨기기한 자산은 [자산 > 편집]에서 확인 가능해요
+                    </p>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">자산
+                        삭제하기</a>
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">다시 연결하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

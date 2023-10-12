@@ -2834,9 +2834,10 @@
       position: relative;
       padding-top: 14px;
       // overflow: hidden;
+      overflow: auto;
 
       +.info2 {
-        padding-top: 0;
+        padding-top: 19px;
       }
 
       .ac-name {

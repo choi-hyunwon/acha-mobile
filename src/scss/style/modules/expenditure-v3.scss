@@ -4496,6 +4496,7 @@
       position: relative;
 
       .month {
+        justify-content: unset;
         font-size: 20px;
         font-family: var(--font3);
         color: #37354e;

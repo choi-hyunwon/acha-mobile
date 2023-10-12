@@ -24,7 +24,7 @@
                         <li class="item">
                             <div class="val status">
                                 <p>
-                                    <span class="badge badge-gray badge-status">실효</span>
+                                    <span class="badge badge-purple badge-status">신규</span>
                                     KB 00국민카드KB
                                 </p>
                                 <span class="num">[신용] 2349-2341-****-1234</span>
@@ -37,14 +37,14 @@
                         <li class="item">
                             <div class="val status">
                                 <p>
-                                    <span class="badge badge-gray badge-status">휴면</span>
+                                    <span class="badge badge-purple badge-status">신규</span>
                                     KB 00국민카드 KB 00국민카드 KB 00국민카드 KB 00국민카드 KB 00국민카드 KB 00국민카드 KB 00국민카드 KB 00국민카드 KB
                                     00국민카드 KB 00국민카드 KB 00국민카드 KB 00국민카드 KB 00국민카드
                                 </p>
                                 <span class="num">[신용] 2349-2341-****-1234</span>
                             </div>
                             <label class="check-area">
-                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <input type="checkbox" class="filled-in" />
                                 <span></span>
                             </label>
                         </li>
@@ -53,10 +53,13 @@
                                 <p>KB 00국민카드</p>
                                 <span class="num">[신용] 2349-2341-****-1234</span>
                             </div>
-                            <label class="check-area">
+                            <!-- 연결중일경우 label display: none 처리 -->
+                            <label class="check-area" style="display: none;">
                                 <input type="checkbox" class="filled-in" checked="checked" />
                                 <span></span>
                             </label>
+                            <!-- 연결중일경우 .connect display: block 처리 -->
+                            <div class="connect f-point">연결중</div>
                         </li>
                         <li class="item">
                             <div class="val">

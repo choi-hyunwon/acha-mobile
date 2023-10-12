@@ -2691,12 +2691,11 @@
   .account-info {
     border: 1px solid var(--text-01);
     border-radius: 4px;
-    padding: 0 20px;
+    padding: 20px;
 
     .info1 {
       position: relative;
-      padding-top: 17px;
-      padding-bottom: 14px;
+      margin-bottom: 14px;
 
       +.info2 {
         border-top: 1px solid #e3e4e8;
@@ -2762,6 +2761,31 @@
           transform: translate(-1px, -1px);
         }
       }
+
+      &.expire {
+        padding-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .expire-badge {
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: 1px 6px;
+          height: 18px;
+          background: #eeedf0;
+          font-size: 10px;
+          font-family: var(--font2);
+          color: #9992a0;
+          border-radius: 18px;
+        }
+
+        .btn-refresh {
+          position: unset;
+          transform: unset;
+        }
+      }
     }
 
     .btn-refresh {
@@ -2808,7 +2832,7 @@
 
     .info2 {
       position: relative;
-      padding: 14px 0 19px;
+      padding-top: 14px;
       overflow: hidden;
 
       +.info2 {
@@ -7359,6 +7383,56 @@
       font-size: 12px;
       padding: 0 10px;
       letter-spacing: -0.28px;
+    }
+  }
+}
+
+.account-remove-wrap {
+  padding: 0 20px;
+
+  .info-wrap {
+    padding: 22px 0;
+    border-top: 1px solid var(--text-01);
+    border-bottom: 1px solid #e3e4e8;
+
+    .info-list {
+      .item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+        font-family: var(--font2);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.35px;
+        text-align: left;
+        color: var(--text-01);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .custom-switch {
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+
+          .custom-control-label {
+            &::before {
+              top: 0;
+            }
+
+            &::after {
+              top: calc(0.25rem + -1px);
+            }
+          }
+        }
+
+        .tit {}
+
+        .val {}
+      }
     }
   }
 }

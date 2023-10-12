@@ -2833,7 +2833,7 @@
     .info2 {
       position: relative;
       padding-top: 14px;
-      overflow: hidden;
+      // overflow: hidden;
 
       +.info2 {
         padding-top: 0;
@@ -2887,6 +2887,7 @@
         float: right;
         text-align: right;
 
+
         .val {
           display: block;
           font-family: var(--font3);
@@ -2927,6 +2928,58 @@
 
           .num {
             font-family: var(--font1);
+          }
+        }
+
+        .unkown {
+          position: relative;
+          font-size: 16px;
+          font-family: var(--font2);
+          color: #afaeb8;
+          display: flex;
+          align-items: center;
+          height: 20px;
+          letter-spacing: -0.16px;
+
+          .ico_tooltip {
+            margin-left: 4px;
+            margin-top: 2px;
+            z-index: 9999;
+          }
+
+          .tooltip-txt {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: calc(100% + 10px);
+            padding: 12px 20px;
+            opacity: 0.9;
+            border-radius: 6px 0 6px 6px;
+            background: #37354e;
+            width: 196px;
+            height: 64px;
+            z-index: 999;
+            text-align: center;
+            font-size: 13px;
+            color: #fff;
+            font-family: var(--font1);
+
+            &.show {
+              display: block;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              bottom: 100%;
+              opacity: 0.9;
+              border-top: 5px solid transparent;
+              border-right: 8px solid #37354e;
+              border-bottom: 5px solid #37354e;
+              border-left: 8px solid transparent;
+
+            }
           }
         }
       }
@@ -3373,7 +3426,8 @@
   &:last-child {
     border-bottom: 0;
     padding-bottom: 0;
-    margin-bottom: 72px;
+    // margin-bottom: 72px;
+    margin-bottom: 95px;
   }
 
   .date-area {

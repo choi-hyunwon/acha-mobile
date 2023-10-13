@@ -2834,9 +2834,14 @@
       position: relative;
       padding-top: 14px;
       overflow: hidden;
+      // overflow: auto;
 
       +.info2 {
-        padding-top: 0;
+        padding-top: 19px;
+      }
+
+      &.unconfirmed {
+        overflow: unset;
       }
 
       .ac-name {
@@ -2887,6 +2892,7 @@
         float: right;
         text-align: right;
 
+
         .val {
           display: block;
           font-family: var(--font3);
@@ -2927,6 +2933,60 @@
 
           .num {
             font-family: var(--font1);
+          }
+        }
+
+        .unkown {
+          position: relative;
+          font-size: 16px;
+          font-family: var(--font2);
+          color: #afaeb8;
+          display: flex;
+          align-items: center;
+          height: 20px;
+          letter-spacing: -0.16px;
+          // overflow: hidden;
+          line-height: 20px;
+
+          .ico_tooltip {
+            margin-left: 4px;
+            margin-top: 2px;
+            z-index: 9999;
+          }
+
+          .tooltip-txt {
+            display: none;
+            position: absolute;
+            right: 7px;
+            top: calc(100% + 12px);
+            padding: 12px 20px;
+            opacity: 0.9;
+            border-radius: 6px 0 6px 6px;
+            background: #37354e;
+            width: 196px;
+            height: 64px;
+            z-index: 999;
+            text-align: center;
+            font-size: 13px;
+            color: #fff;
+            font-family: var(--font1);
+
+            &.show {
+              display: block;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              bottom: 100%;
+              opacity: 0.9;
+              border-top: 5px solid transparent;
+              border-right: 8px solid #37354e;
+              border-bottom: 5px solid #37354e;
+              border-left: 8px solid transparent;
+
+            }
           }
         }
       }
@@ -3373,7 +3433,8 @@
   &:last-child {
     border-bottom: 0;
     padding-bottom: 0;
-    margin-bottom: 72px;
+    // margin-bottom: 72px;
+    margin-bottom: 95px;
   }
 
   .date-area {
@@ -7228,7 +7289,7 @@
     }
 
     +.info-wrap {
-      margin-top: 23px;
+      margin-top: 24px;
     }
 
     &:last-child {
@@ -7271,9 +7332,9 @@
           padding-top: 22px;
         }
 
-        &:last-of-type {
-          padding-bottom: 0;
-        }
+        // &:last-of-type {
+        //   padding-bottom: 0;
+        // }
 
         .tit {
           float: left;
@@ -7353,6 +7414,52 @@
         left: 0;
       }
     }
+
+    &.remove-wrap {
+      // padding: 22px 0;
+      border-top: 1px solid var(--text-01);
+      border-bottom: 1px solid #e3e4e8;
+
+      .info-list {
+        .item {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // margin-bottom: 22px;
+          font-family: var(--font2);
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -0.35px;
+          text-align: left;
+          color: var(--text-01);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .custom-switch {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+
+            .custom-control-label {
+              &::before {
+                top: 0;
+              }
+
+              &::after {
+                top: calc(0.25rem + -1px);
+              }
+            }
+          }
+        }
+      }
+
+      &+.info-wrap {
+        margin-top: 46px;
+      }
+    }
   }
 
   .table {
@@ -7388,7 +7495,7 @@
 }
 
 .account-remove-wrap {
-  padding: 0 20px;
+  padding: 0 20px 30px;
 
   .info-wrap {
     padding: 22px 0;

@@ -1467,5 +1467,40 @@
         }
       }
     }
+
+    .list-data-hold {
+
+      label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f7f8fc;
+        padding: 19px 25px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 1px solid #f7f8fc;
+      }
+
+      .tit {
+        font-size: 15px;
+        color: #37354e;
+        font-weight: 300;
+      }
+
+      .val {
+        font-size: 15px;
+        font-family: var(--font3);
+        color: var(--text-point-color);
+      }
+
+      input:checked+label {
+        background: #fff;
+        border: 1px solid #f2f2f2;
+
+        .val {
+          color: var(--text-01);
+        }
+      }
+    }
   }
 }

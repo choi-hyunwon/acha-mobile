@@ -17,7 +17,8 @@
                         <span class="name">마이너스 통장</span>
                         <a href="#" class="btn-refresh"><span>10시간 전</span><i class="ico-refresh-mini"></i></a>
                     </div>
-                    <div class="info2">
+                    <!-- 계정정보 확인 불가시  클래스 추가 unconfirmed -->
+                    <div class="info2 unconfirmed">
                         <span class="ac-num">135-875-6589</span>
                         <div class="ac-total">
                             <!-- <span class="val">7.45<em class="abroad">USD</em></span>
@@ -25,6 +26,11 @@
                             <div class="unkown">
                                 계좌정보 확인불가
                                 <i class="sprite ico_tooltip"></i>
+                                <!-- 클릭 이벤트 스크립트 추가되었습니다. -->
+                                <div class="tooltip-txt" data-tooltip="hidden">
+                                    만기·상환 ·기관오류로 <br />
+                                    계좌 정보를 불러올 수 없어요
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -95,6 +101,18 @@
             </div>
         </div>
     </div>
+    <script>
+        $('.unkown').click(function () {
+            let $tooltip = $('.tooltip-txt')
+            if ($tooltip.data('tooltip') === "show") {
+                $tooltip.addClass('show')
+                $tooltip.data('tooltip', 'hidden')
+            } else {
+                $tooltip.removeClass('show')
+                $tooltip.data('tooltip', 'show')
+            }
+        })
+    </script>
 </body>
 
 </html>

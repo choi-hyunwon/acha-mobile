@@ -7526,12 +7526,22 @@
           transform: translateY(-50%);
 
           .custom-control-label {
+            height: 22px;
+
             &::before {
               top: 0;
             }
 
             &::after {
               top: calc(0.25rem + -1px);
+              top: 50%;
+              transform: translate(0, -50%);
+            }
+          }
+
+          .custom-control-input:checked+label {
+            &::after {
+              transform: translate(1.95rem, -50%);
             }
           }
         }

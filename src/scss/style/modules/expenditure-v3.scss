@@ -1375,6 +1375,10 @@
     .expenditure-box {
       overflow: hidden;
 
+      &.expenditure-padding-bottom-153 {
+        padding-bottom: 153px;
+      }
+
       .scope {
         .desc {
           padding: 15px 20px;

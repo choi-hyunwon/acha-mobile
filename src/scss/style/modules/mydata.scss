@@ -1444,17 +1444,11 @@
             }
 
             &.status {
-              p {
-                text-indent: 36px;
-              }
-
               .badge {
-                position: absolute;
-                top: 2px;
-                left: 0;
                 width: 30px;
                 height: 18px;
-                text-indent: 0;
+                transform: translateY(-2px);
+                font-family: var(--font2);
               }
             }
           }

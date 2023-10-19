@@ -1447,12 +1447,14 @@
               p {
                 // text-indent: 36px;
                 padding-left: 36px;
+                margin-left: 0;
+
               }
 
               .badge {
                 position: absolute;
                 top: 2px;
-                left: 0;
+                left: -36px;
                 width: 30px;
                 height: 18px;
                 text-indent: 0;

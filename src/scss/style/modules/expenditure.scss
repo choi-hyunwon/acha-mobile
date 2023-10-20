@@ -1428,6 +1428,8 @@
         color: var(--text-02);
         margin-right: 0;
         height: 18px;
+        display: flex;
+        align-items: center;
 
         .ico-refresh-mini {
           display: inline-block;
@@ -1437,7 +1439,6 @@
           background-size: cover;
           vertical-align: middle;
           margin-left: 2px;
-          margin-top: -2px;
         }
       }
 
@@ -1445,7 +1446,7 @@
         font-size: 13px;
         color: var(--text-point-color);
         font-family: var(--font2);
-        margin-right: 2px;
+        // margin-right: 2px;
         display: flex;
         align-items: center;
         height: 18px;

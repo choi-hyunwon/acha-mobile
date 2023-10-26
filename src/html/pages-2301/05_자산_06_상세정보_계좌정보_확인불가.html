@@ -38,13 +38,14 @@
             </div>
 
             <div class="box-ex-list border-bottom-0">
-                <!-- 정보가 없을 경우 노출 -->
+                <!-- 정보를 가져올수 없을 경우 display: block; -->
                 <div class="empty">
                     <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
                     <p>정보를 불러올 수 없어요</p>
                 </div>
 
-                <!-- <div class="group-date">
+                <!-- 정보를 가져올수 없을 경우 display: none; -->
+                <div class="group-date" style="display: none;;">
                     <div class="title-area">
                         <div class="title">3월</div>
                     </div>
@@ -72,7 +73,7 @@
                             <div class="balance">589,000<em>USD</em></div>
                         </li>
                     </ul>
-                </div> -->
+                </div>
             </div>
             <div class="btn-area fixed-bottom" style="padding: 0 20px 30px; background: #fff;">
                 <a class="btn btn-big btn-purple-bg btn-block" href="#">계좌 삭제하기</a>

@@ -2769,9 +2769,9 @@
 
       &.expire {
         padding-top: 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
 
         .expire-badge {
           position: absolute;
@@ -2787,8 +2787,7 @@
         }
 
         .btn-refresh {
-          position: unset;
-          transform: unset;
+          top: 37px;
         }
       }
     }

@@ -5778,6 +5778,50 @@
                 }
             }
         }
+
+        .modal-slide-content {
+            .inner {
+                padding: 35px 30px 30px;
+
+                .title {
+                    font-size: 20px;
+                    font-family: var(--font3);
+                }
+
+                .contents {
+                    p {
+                        margin-top: 20px;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: var(--text-01);
+                        word-break: keep-all;
+                    }
+
+                    .point-box {
+                        margin-top: 12px;
+                        border-radius: 10px;
+                        background: #f7f8fc;
+                        padding: 16px 78px;
+                        font-size: 16px;
+                        color: var(--text-01);
+
+                        .f-point {
+                            font-family: var(--font3);
+                            font-size: 18px;
+                        }
+                    }
+
+                    .desc {
+                        display: inline-block;
+                        margin: 12px 0 20px;
+                        font-size: 14px;
+                        color: var(--text-02);
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
     }
 
     @media (min-width: 576px) {

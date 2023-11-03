@@ -3197,6 +3197,7 @@
             display: flex;
             align-items: center;
             line-height: 26px;
+            position: relative;
 
             .img {
               width: 40px;
@@ -3213,6 +3214,13 @@
             .icon {
               width: 40px;
               height: 40px;
+            }
+
+            .ico_list_arrow_large {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
             }
           }
 

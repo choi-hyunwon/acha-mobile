@@ -2617,7 +2617,7 @@
             transition: 0.5s;
 
             .modal-slide-content {
-                height: 244px;
+                height: fit-content;
                 animation: modal-sticky-bottom-animation6 0.5s;
             }
         }
@@ -2826,6 +2826,32 @@
                     &.line-text {
                         padding-top: 30px;
                         padding-bottom: 60px;
+                    }
+                }
+            }
+
+            &.manage-edit {
+                .inner {
+                    padding: 30px;
+
+                    .desc-box {
+                        text-align: left;
+
+                        .tit {
+                            font-size: 18px;
+                            font-family: var(--font3);
+                            line-height: 27px;
+                        }
+
+                        .desc {
+                            margin-top: 10px;
+                            margin-bottom: 0;
+                            padding: 0;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: var(--text-01);
+                            word-break: keep-all;
+                        }
                     }
                 }
             }
@@ -5204,6 +5230,16 @@
                     color: var(--text-01);
                     border: none;
                     padding-bottom: 30px;
+
+                    .sub {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: var(--text-02);
+                        font-family: var(--font1);
+                        font-weight: 400;
+                        margin-top: 10px;
+                        letter-spacing: 0;
+                    }
                 }
 
                 .input-byte {
@@ -6034,6 +6070,12 @@
                             }
                         }
                     }
+                }
+            }
+
+            &.manage-edit {
+                .desc-box {
+                    display: block;
                 }
             }
         }

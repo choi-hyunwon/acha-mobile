@@ -115,6 +115,17 @@
     .text-descriptiton {
       padding-top: 10px;
     }
+
+    &.share {
+      .title {
+        font-family: var(--font2);
+        margin-bottom: 2px;
+      }
+
+      .desc {
+        line-height: 20px;
+      }
+    }
   }
 
   .text-descriptiton {

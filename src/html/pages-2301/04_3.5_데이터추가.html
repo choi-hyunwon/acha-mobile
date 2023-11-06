@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header">
+            <h2>공유 데이터 추가</h2>
+            <a href="#" class="sprite btn_close"></a>
+        </div>
+        <div class="contents expenditure share-spend-money share-add">
+            <div class="text-descriptiton mb-30">
+                <p class="title">
+                    <span class="f-point">공유하고 싶은 <br /> 데이터와 시작일</span>
+                    을 선택해주세요<img src="../../img/common/ico_tooltip@2x.png" alt="tooltip">
+                </p>
+                <p class="desc mt-10">공유 데이터의 상품명 및 공유 범위는 <br />[공동관리 >프로필]을 클릭하여 수정할 수 있어요</p>
+            </div>
+
+            <div class="expenditure-tab manage-tab _expenditureTab mb-30" style="border-bottom: 1px solid #e3e4e8;">
+                <ul>
+                    <li class="active"><a href="#">카드 <span class="f-point bold">2</span></a></li>
+                    <li><a href="#">계좌</a></li>
+                    <li><a href="#">투자</a></li>
+                    <li><a href="#">보험</a></li>
+                    <li><a href="#">기타</a></li>
+                </ul>
+            </div>
+
+            <div class="agree-wrap agree-wrap-reverse padding-default-x">
+                <div class="select-all-box">
+                    <span>전체 선택</span>
+                    <label>
+                        <input type="checkbox" class="filled-in">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $('.select-all-box').on('click', function () {
+                    if ($(this).hasClass('checked')) {
+                        $(this).removeClass('checked')
+                            .find('input').prop('checked', false)
+                    } else {
+                        $(this).addClass('checked')
+                            .find('input').prop('checked', true)
+                    }
+                })
+            </script>
+
+            <div class="expenditure-box" style="padding-bottom: 100px;">
+                <ul class="usage-history-list usage-category-list filter-setting " style="padding:20px 20px;">
+                    <!-- 카드 -->
+                    <li>
+                        <div class="title-category justify-content-between">
+                            <span>카드 <span class="f-point bold">2</span></span>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                        </div>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <!-- 공유완료 시 클래스 추가 .disabled-->
+                                <div class="group disabled">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>우리편한입출금통장</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="connect f-point">공유 완료</div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="국민은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>국민은행 카드</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_samsung@2x.png" class="img-ci" alt="삼성카드 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>삼성 taptap O</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="box-mydata">
+                    <p class="desc">공유하려는 데이터가 안보인다면?</p>
+                    <a href="#">마이데이터 연결하기<i class="sprite icon ico_arrow_small_nor"></i></a>
+                </div>
+            </div>
+
+            <div class="padding-default fixed-bottom bg-white pt-0">
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg">다음</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
+
+</body>
+
+</html>

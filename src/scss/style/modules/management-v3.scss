@@ -2954,4 +2954,166 @@
       }
     }
   }
+
+  // 공동관리 데이터 추가
+  .share-add {
+    .manage-tab {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    .agree-wrap {
+      .select-all-box {
+        margin-bottom: 0;
+      }
+    }
+
+    .text-descriptiton {
+      .title {
+        img {
+          width: 16px;
+          height: 16px;
+          object-fit: contain;
+          margin-bottom: 2px;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .expenditure-box {
+      .usage-history-list {
+        &.usage-category-list {
+          &.filter-setting {
+            min-height: auto;
+            padding: 0 20px;
+
+            li {
+              margin-bottom: 20px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              .title-category {
+                border-bottom: 1px solid #37354e;
+
+                label {
+                  span {
+                    padding-left: 22px;
+                  }
+                }
+              }
+
+              .details-history {
+                .item-list {
+                  padding: 10px 0;
+                  border-bottom: 1px solid #efefef;
+
+                  &:last-child {
+                    border-bottom: none;
+                  }
+
+                  .name {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--text-03);
+                    padding: 14px 0;
+                  }
+
+                  .group {
+                    padding: 10px 0;
+
+                    &.disabled {
+                      pointer-events: none;
+
+                      .box {
+                        opacity: 0.5;
+                      }
+                    }
+
+                    .box {
+                      .info {
+                        .place {
+                          span {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            white-space: unset;
+                            word-break: break-all;
+                            max-width: 240px;
+                          }
+                        }
+                      }
+                    }
+
+                    .connect {
+                      font-size: 13px;
+                      line-height: 19px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .share-date-begin {
+        padding: 0 20px;
+
+        .pick {
+          padding: 20px 0;
+          border-radius: 10px;
+          background: #f7f8fc;
+          text-align: center;
+          font-size: 16px;
+          font-family: var(--font1);
+        }
+      }
+
+      .check-list {
+        height: auto;
+        margin-bottom: 0;
+
+        label {
+          span {
+            height: 22px;
+            font-family: var(--font1);
+
+            &::after {
+              left: -3px;
+              top: 1px;
+              width: 16px;
+              height: 16px;
+
+            }
+          }
+        }
+      }
+
+      .custom-light {
+        display: none;
+        position: relative;
+        padding-left: 27px;
+        margin-top: 6px;
+
+        &.show {
+          display: block;
+        }
+
+        img {
+          position: absolute;
+          right: 0;
+          top: 14px;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
 }

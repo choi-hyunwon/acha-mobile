@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header">
+            <h2>공유 데이터 추가</h2>
+            <a href="#" class="sprite btn_close"></a>
+        </div>
+        <div class="contents expenditure share-spend-money share-add">
+            <div class="text-descriptiton mb-30">
+                <p class="title">
+                    <span class="f-point">공유하고 싶은 <br /> 데이터와 시작일</span>
+                    을 선택해주세요<img src="../../img/common/ico_tooltip@2x.png" alt="tooltip">
+                </p>
+                <p class="desc">공유 데이터의 상품명 및 공유 범위는 <br />[공동관리 >프로필]을 클릭하여 수정할 수 있어요</p>
+            </div>
+
+            <div class="expenditure-tab manage-tab _expenditureTab mb-30" style="border-bottom: 1px solid #e3e4e8;">
+                <ul>
+                    <li class="active"><a href="#">카드 <span class="f-point bold">2</span></a></li>
+                    <li><a href="#">계좌 <span class="f-point bold">2</span></a></li>
+                    <li><a href="#">투자</a></li>
+                    <li><a href="#">보험 <span class="f-point bold">1</span></a></li>
+                    <li><a href="#">기타</a></li>
+                </ul>
+            </div>
+
+            <div class="agree-wrap agree-wrap-reverse padding-default-x">
+                <div class="select-all-box">
+                    <span>전체 선택</span>
+                    <label>
+                        <input type="checkbox" class="filled-in">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="expenditure-box" style="padding-bottom: 100px;">
+                <ul class="usage-history-list usage-category-list filter-setting " style="padding:20px 20px;">
+                    <!-- 카드 -->
+                    <li>
+                        <div class="title-category justify-content-between">
+                            <span>카드 <span class="f-point bold">2</span></span>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                        </div>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>우리편한입출금통장</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="국민은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>국민은행 카드</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_samsung@2x.png" class="img-ci" alt="삼성카드 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>삼성 taptap O</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 계좌 -->
+                    <li>
+                        <div class="title-category justify-content-between">
+                            <span>계좌 <span class="f-point bold">2</span></span>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                        </div>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="name">입출금</div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>우리편한입출금통장</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="국민은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>국민은행 카드</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="name">예적금</div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="국민은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>국민은행 카드</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="name">외화</div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_samsung@2x.png" class="img-ci" alt="삼성카드 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>삼성 taptap O</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 투자 -->
+                    <li>
+                        <div class="title-category justify-content-between">
+                            <span>투자 <span class="f-point bold">2</span></span>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                        </div>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="name">국내</div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>우리편한입출금통장</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="name">해외</div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="국민은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>국민은행 카드</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 연금 -->
+                    <li>
+                        <div class="title-category justify-content-between">
+                            <span>연금<span class="f-point bold">2</span></span>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                        </div>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>우리 여수신 IRP</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 대출 -->
+                    <li>
+                        <div class="title-category justify-content-between">
+                            <span>대출<span class="f-point bold">2</span></span>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                        </div>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="name">대출</div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>하나은행 은행은행 은행은행대출명 최대 두줄 처리 하나은행 은행은행 은행은행대출명 최대 두줄
+                                                    처리</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>KB 주택담보대출</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="name">보험대출</div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/hana.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>하나은행 은행은행 은행은행대출명 최대 두줄 처리 하나은행 은행은행 은행은행대출명 최대 두줄
+                                                    처리</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="name">운용리스</div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/hyundai.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>하나은행 은행은행 은행은행대출명 최대 두줄 처리</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 보험 -->
+                    <li>
+                        <div class="title-category justify-content-between">
+                            <span>보험<span class="f-point bold">0</span></span>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                        </div>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/hanwha.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>흥국생명 보험</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 기타 -->
+                    <li>
+                        <div class="title-category justify-content-between">
+                            <span>기타<span class="f-point bold">0</span></span>
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span></span>
+                            </label>
+                        </div>
+                        <ul class="details-history">
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="box-mydata">
+                    <p class="desc">공유하려는 데이터가 안보인다면?</p>
+                    <a href="#">마이데이터 연결하기<i class="sprite icon ico_arrow_small_nor"></i></a>
+                </div>
+            </div>
+
+            <div class="padding-default fixed-bottom bg-white pt-0">
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg">다음</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
+
+</body>
+
+</html>

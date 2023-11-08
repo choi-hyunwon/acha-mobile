@@ -84,8 +84,7 @@
                                     <p class="number">-40,000<span>원</span></p>
                                 </div>
                             </div>
-
-                            <div class="history-plan-box">
+                            <div class="history-plan-box" style="display: block;">
                                 <div class="divider"></div>
 
                                 <ul class="details-history">
@@ -153,7 +152,7 @@
                                 <div class="title">10일</div>
                                 <div class="sum">
                                     <p>+1,70,000<span>원</span></p>
-                                    <p>-52,000원<span>원</span></p>
+                                    <p>-52,000<span>원</span></p>
                                 </div>
                             </div>
                             <ul class="details-history">
@@ -232,13 +231,17 @@
         })
 
         // 펼침 수입예정, 지출예정
-        $('.plan-list').on('click', function () {
+        $('.plan-list .plan').on('click', function () {
             if ($(this).hasClass('list-collapse-close')) {
                 $(this).removeClass('list-collapse-close')
+                $('.history-plan-box').hide()
             } else {
                 $(this).addClass('list-collapse-close');
+                $('.history-plan-box').show()
             }
         })
+        $('.plan-list .plan').trigger('click')
+
     </script>
 
 </body>

@@ -114,6 +114,10 @@
   .share-spend-money {
     .text-descriptiton {
       padding-top: 10px;
+
+      &.head {
+        padding: 10px 0 0;
+      }
     }
 
     &.share {

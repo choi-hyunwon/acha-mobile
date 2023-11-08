@@ -20,9 +20,9 @@
             </div>
             <div class="expenditure-tab manage-tab _expenditureTab">
                 <ul class="clearfix">
-                    <li class="active mr-20"><a href="#">일자</a></li>
-                    <li class="mr-20"><a href="#">카테고리별 지출</a></li>
-                    <li class="mr-20"><a href="#">유형별 지출</a></li>
+                    <li class="active mr-10"><a href="#">일자</a></li>
+                    <li class="mr-10"><a href="#">카테고리별 지출</a></li>
+                    <li class="mr-10"><a href="#">유형별 지출</a></li>
                 </ul>
             </div>
 
@@ -61,7 +61,7 @@
                         </p>
                         <div class="filter">
                             <img src="../../img/common/btn_filter@2x.png" alt="전체·최신순">
-                            <p><span class="type">수입만</span><em>·</em><span class="sort">최신순</span></p>
+                            <p><span class="type">전체</span><em>·</em><span class="sort">최신순</span></p>
                         </div>
                     </div>
 
@@ -84,7 +84,6 @@
                                     <p class="number">-40,000<span>원</span></p>
                                 </div>
                             </div>
-
                             <div class="history-plan-box">
                                 <div class="divider"></div>
 
@@ -231,11 +230,14 @@
         })
 
         // 펼침 수입예정, 지출예정
-        $('.plan-list').on('click', function () {
+        // 펼침 수입예정, 지출예정
+        $('.plan-list .plan').on('click', function () {
             if ($(this).hasClass('list-collapse-close')) {
                 $(this).removeClass('list-collapse-close')
+                $('.history-plan-box').hide()
             } else {
                 $(this).addClass('list-collapse-close');
+                $('.history-plan-box').show()
             }
         })
     </script>

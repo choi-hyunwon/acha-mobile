@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal bg_light_gray">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>04_5.8_공동가계부_유형별지출_데이터무
+            <h2 class="title">공동 가계부</h2>
+
+        </div>
+        <div class="contents expenditure share-add">
+            <div class="current-month current-month-manage report">
+                <a href="#">2022년 6월<i class="icon-arrow-bottom"></i></a>
+                <a href="#" class="btn btn-edit">
+                    <img src="../../img/common/ic_share_report@2x.png" width="16" height="16" alt="분석">
+                    분석
+                </a>
+            </div>
+
+            <div class="expenditure-tab manage-tab _expenditureTab">
+                <ul class="clearfix">
+                    <li class="mr-20"><a href="#">일자</a></li>
+                    <li class="mr-20"><a href="#">카테고리별 지출</a></li>
+                    <li class="active mr-20"><a href="#">유형별 지출</a></li>
+                </ul>
+            </div>
+
+            <div class="expenditure-box bg_light_gray">
+                <div class="share-us">
+                    <ul class="tab-list">
+                        <li class="active">공동</li>
+                        <li>김꼼꼼</li>
+                        <li>유똑똑</li>
+                    </ul>
+                </div>
+
+                <div class="asset-management">
+                    <div class="box mb-0">
+                        <div class="total-list">
+                            <!-- <div class="income">
+                                <p class="name">총 수입</p>
+                                <p class="total">83,610,000<span>원</span></p>
+                            </div> -->
+                            <div class="expenditure">
+                                <p class="name">총 지출</p>
+                                <p class="total">0<span>원</span>
+                                    <em>예정 0원</em>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <a href="#" class="btn mt-20">
+                            <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘">
+                            캘린더로 보기
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="asset-state">
+                    <div class="usage-sum">
+                        <p class="count">
+                            총 <span class="f-point">0</span>건
+                        </p>
+                        <!-- <div class="filter">
+                            <img src="../../img/common/btn_filter@2x.png" alt="전체·최신순">
+                            <p>지출금액 많은 순</p>
+                        </div> -->
+                    </div>
+
+                    <ul class="usage-history-list type-history-list">
+                        <li>
+                            <div class="usage-plan">
+                                <!-- 데이터 없을경우 .no-data 클래스 추가 -->
+                                <div class="plan-list no-data">
+                                    <div class="plan">
+                                        <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                        <!-- <a class="btn-collapse">
+                                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22"
+                                                alt="접기">
+                                        </a> -->
+                                        <div class="income">
+                                            <span class="sub-title">정기지출
+                                                <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                                <!-- <span class="badge badge-purple badge-payment">3건</span> -->
+                                            </span>
+                                            <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                            <!-- <p class="number">1,300,000<span>원</span></p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="empty">
+                                    <div class="txt">
+                                        <img src="../../img/common/ico_caution_grey@2x.png" alt="지출없음">
+                                        표시할 정기지출 내역이 없습니다 🙁
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="usage-plan">
+                                <!-- 데이터 없을경우 .no-data 클래스 추가 -->
+                                <div class="plan-list no-data">
+                                    <div class="plan">
+                                        <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                        <!-- <a class="btn-collapse">
+                                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22"
+                                                alt="접기">
+                                        </a> -->
+                                        <div class="income">
+                                            <span class="sub-title">할부지출
+                                                <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                                <!-- <span class="badge badge-purple badge-payment">3건</span> -->
+                                            </span>
+                                            <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                            <!-- <p class="number">1,300,000<span>원</span></p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="empty">
+                                    <div class="txt">
+                                        <img src="../../img/common/ico_caution_grey@2x.png" alt="지출없음">
+                                        표시할 할부지출 내역이 없습니다 🙁
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="usage-plan">
+                                <!-- 데이터 없을경우 .no-data 클래스 추가 -->
+                                <div class="plan-list no-data">
+                                    <div class="plan">
+                                        <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                        <!-- <a class="btn-collapse">
+                                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22"
+                                                alt="접기">
+                                        </a> -->
+                                        <div class="income">
+                                            <span class="sub-title">변동지출
+                                                <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                                <!-- <span class="badge badge-purple badge-payment">3건</span> -->
+                                            </span>
+                                            <!-- no-data일 .btn-collapse 경우 삭제 -->
+                                            <!-- <p class="number">1,300,000<span>원</span></p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="empty">
+                                    <div class="txt">
+                                        <img src="../../img/common/ico_caution_grey@2x.png" alt="지출없음">
+                                        표시할 변동지출 내역이 없습니다 🙁
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+
+        // 공동
+        $('.share-us li').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+
+        // 유형별지출 닫힘
+        $('.plan-list').on('click', function (e) {
+            let $this = $(e.currentTarget)
+            if ($this.hasClass('list-collapse-close')) {
+                $this.removeClass('list-collapse-close')
+                $this.siblings('.history-plan-box').hide()
+            } else {
+                $this.addClass('list-collapse-close');
+                $this.siblings('.history-plan-box').show()
+            }
+        })
+    </script>
+
+</body>
+
+</html>

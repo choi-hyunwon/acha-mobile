@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title">공유 데이터</h2>
+            <a href="#" class="btn-setting"><img src="../../img/common/btn_add_mydata@2x.png" alt="설정 버튼"></a>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-tab manage-tab _expenditureTab">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">#김꼼꼼<em class="badge badge-purple badge-manage">0</em></a></li>
+                    <li><a href="#">#유똑똑<em class="badge badge-purple badge-manage">4</em></a></li>
+                </ul>
+            </div>
+            <div class="manage-box bg_light_gray pt-0" style="min-height: calc(100vh - 117px);">
+                <div class="empty">
+                    <div class="img">
+                        <img src="../../img/common/ico-error-page@2x.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <p class="">아직 공유한 내 데이터가 없어요.</p>
+                        <span class="desc">데이터를 공유하고, 공동으로 관리해보세요!</span>
+                    </div>
+                </div>
+                <div class="btn-wrap btn-floating">
+                    <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">+ 공유 데이터 추가하기</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
+
+</body>
+
+</html>

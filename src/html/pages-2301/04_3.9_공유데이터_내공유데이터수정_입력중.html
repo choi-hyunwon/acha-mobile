@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title">공유 데이터 수정</h2>
+            <a href="#" class="btn-setting"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="설정 버튼"></a>
+        </div>
+        <div class="contents share share-spend-money">
+            <div class="text-descriptiton head">
+                <p class="title">공유 중인 내 데이터를 수정할 수 있어요.</p>
+                <p class="desc">수정한 정보는 상대방에게도 보여져요!</p>
+            </div>
+
+            <div class="manage-box">
+                <div class="edit">
+                    <div class="info">
+                        <div class="img">
+                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                        </div>
+                        <div class="txt">
+                            <div class="tit">국민카드</div>
+                        </div>
+                    </div>
+                    <div class="date-input">
+                        <ul>
+                            <li class="custom-light">
+                                <label class="title">카드명</label>
+                                <input title="value" type="text" maxlength="12" onkeyup="countCharDelete(this,'_val')"
+                                    placeholder="카테고리 이름을 입력해주세요" value="그냥 막 쓰는 카드">
+                                <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> /
+                                        12</span>
+                                </div>
+                                <div class="exist-date">✽기존 카드명 : KB 국민 굿데이카드</div>
+                            </li>
+                            <li class="custom-light">
+                                <label class="title">공유시작일</label>
+                                <input title="value" type="text" placeholder="어떤 지출로 분류할지 설명을 적어주세요."
+                                    value="2023.10.30">
+                                <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘"
+                                    class="calendar">
+                                <div class="exist-date">✽ 마이데이터로 연동한 기간 동안만 공유 가능해요</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-wrap btn-floating">
+                        <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">저장</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @@include('../include/countCharDelete.html')
+</body>
+
+</html>

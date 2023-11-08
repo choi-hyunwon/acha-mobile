@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap _btnSlideOpen"></div>
+    <div class="modal-slide connection-edit _modalSlide autoHeight manage-edit">
+        <div class="modal-slide-content ">
+            <div class="inner text-center">
+                <div class="title">정렬</div>
+                <div class="filter-wrap">
+                    <div class="type">
+                        <p class="tit">유형</p>
+                        <ul class="filter">
+                            <li class="active">전체</li>
+                            <li>수입만</li>
+                            <li>지출만</li>
+                        </ul>
+                    </div>
+                    <div class="align">
+                        <p class="tit">정렬</p>
+                        <ul class="filter">
+                            <li class="active">최신순</li>
+                            <li>과거순</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <a class="btn btn-purple-bg btn-block" href="#">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+
+            $('.filter-wrap .filter li').on('click', function () {
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+
+        })
+    </script>
+</body>
+
+</html>

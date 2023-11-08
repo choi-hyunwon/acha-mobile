@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide modal-expenditure change-scope _modalSlide delete-connect">
+		<div class="modal-slide-content" style="height:  fit-content;">
+			<div class="inner ">
+				<p class="">
+					“<span class="bold">KB 막 쓰는 카드</span>” 카드의<br />
+					공유를 해제할까요?
+				</p>
+				<div class="btn-wrap">
+					<a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half"
+						onclick="openPopup()">취소</a>
+					<a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">해제</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-slide-backdrop"></div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
+
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
+			});
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
+			});
+
+			btnSlideOpen.trigger("click");
+		});
+	</script>
+</body>
+
+</html>

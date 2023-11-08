@@ -5690,6 +5690,17 @@
               }
             }
           }
+
+          .info-head {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .time {
+              margin-bottom: 0;
+              margin-left: 8px;
+            }
+          }
         }
       }
 
@@ -5826,6 +5837,18 @@
                 }
               }
             }
+
+            .info-head {
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+
+              .time {
+                margin-left: 8px;
+                margin-bottom: 0;
+                width: calc(100% - 70px);
+              }
+            }
           }
         }
       }
@@ -5880,6 +5903,10 @@
         top: 0;
         right: 0;
       }
+    }
+
+    .manage-tab {
+      border-bottom: 1px solid #e3e4e8;
     }
   }
 

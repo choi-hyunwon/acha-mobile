@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal bg_light_gray">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title">연금</h2>
+        </div>
+        <div class="contents expenditure share-add">
+            <div class="expenditure-tab manage-tab _expenditureTab">
+                <ul class="clearfix justify-content-start">
+                    <li class="active"><a href="#">#공동</a></li>
+                    <li><a href="#">#김꼼꼼</a></li>
+                    <li><a href="#">#유똑똑</a></li>
+                </ul>
+            </div>
+
+            <div class="expenditure-box bg_light_gray">
+                <div class="asset-state">
+                    <ul class="usage-history-list category-list pt-20">
+                        <li>
+                            <div class="total ">
+                                <div class="title">평가금액 합계</div>
+                                <div class="sum">
+                                    <p>790,000<span>원</span></p>
+                                </div>
+                            </div>
+                            <div class="card-item details">
+                                <ul class="details-history">
+                                    <li class="item-list">
+
+                                        <div class="group">
+                                            <div class="box">
+                                                <div class="img">
+                                                    <img src="../../img/@temp/woori.png" width="30" alt="우리">
+                                                </div>
+                                                <div class="info">
+                                                    <p class="place">신한 드림</p>
+                                                    <p class="value">1,000,000<em>원</em></p>
+                                                </div>
+                                            </div>
+                                            <i class="icon-user">
+                                                <img src="../../img/common/ico_mypage_profile_img01@2x.png" alt="아이콘">
+                                            </i>
+                                        </div>
+                                        <div class="group">
+                                            <div class="box">
+                                                <div class="img">
+                                                    <img src="../../img/@temp/woori.png" width="30" alt="우리">
+                                                </div>
+                                                <div class="info">
+                                                    <p class="place">신한 플러스</p>
+                                                    <p class="value">53,65<em>USD</em><img
+                                                            src="../../img/common/ico_tooltip@2x.png" alt="tooltip"
+                                                            class="icon">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <i class="icon-user">
+                                                <img src="../../img/common/ico_mypage_profile_img01@2x.png" alt="아이콘">
+                                            </i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+
+        // 공동
+        $('.share-us li').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+
+    </script>
+
+</body>
+
+</html>

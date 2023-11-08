@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal bg_light_gray">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title">공동 가계부</h2>
+
+        </div>
+        <div class="contents expenditure share-add">
+            <div class="current-month current-month-manage report">
+                <a href="#">2022년 6월<i class="icon-arrow-bottom"></i></a>
+                <a href="#" class="btn btn-edit">
+                    <img src="../../img/common/ic_share_report@2x.png" width="16" height="16" alt="분석">
+                    분석
+                </a>
+            </div>
+
+            <div class="expenditure-tab manage-tab _expenditureTab">
+                <ul class="clearfix">
+                    <li class="mr-20"><a href="#">일자</a></li>
+                    <li class="mr-20"><a href="#">카테고리별 지출</a></li>
+                    <li class="active mr-20"><a href="#">유형별 지출</a></li>
+                </ul>
+            </div>
+
+            <div class="expenditure-box bg_light_gray">
+                <div class="share-us">
+                    <ul class="tab-list">
+                        <li class="active">공동</li>
+                        <li>김꼼꼼</li>
+                        <li>유똑똑</li>
+                    </ul>
+                </div>
+
+                <div class="asset-management">
+                    <div class="box mb-0">
+                        <div class="total-list">
+                            <!-- <div class="income">
+                                <p class="name">총 수입</p>
+                                <p class="total">83,610,000<span>원</span></p>
+                            </div> -->
+                            <div class="expenditure">
+                                <p class="name">총 지출</p>
+                                <p class="total">2,610,000<span>원</span>
+                                    <em>예정 30,000원</em>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <a href="#" class="btn mt-20">
+                            <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘">
+                            캘린더로 보기
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="asset-state">
+                    <div class="usage-sum">
+                        <p class="count">
+                            총 <span class="f-point">31</span>건
+                        </p>
+                        <!-- <div class="filter">
+                            <img src="../../img/common/btn_filter@2x.png" alt="전체·최신순">
+                            <p>지출금액 많은 순</p>
+                        </div> -->
+                    </div>
+
+                    <ul class="usage-history-list type-history-list">
+                        <li>
+                            <div class="usage-plan">
+                                <div class="plan-list">
+                                    <div class="plan">
+                                        <a class="btn-collapse">
+                                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22"
+                                                alt="접기">
+                                        </a>
+                                        <div class="income">
+                                            <span class="sub-title">정기지출
+                                                <span class="badge badge-purple badge-payment">3건</span>
+                                            </span>
+                                            <p class="number">1,300,000<span>원</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-plan-box">
+                                    <div class="divider"></div>
+                                    <ul class="details-history">
+                                        <li class="item-list">
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci"
+                                                            alt="우리은행 로고">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">유비벨록스급여</p>
+                                                        <p class="amount">1,000,000</p>
+                                                        <p class="expected">12일 <i></i> 우리계좌123</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                        alt="아이콘">
+                                                </i>
+                                            </div>
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <i class="icon icon_cate_subscript"></i>
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">수입명(현금)</p>
+                                                        <p class="amount">60,000</p>
+                                                        <p class="expected">30일 <i></i> 현금</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img03@2x.png"
+                                                        alt="아이콘"></i>
+                                            </div>
+                                        </li>
+                                        <li class="item-list">
+                                            <div class="head">
+                                                <p>지출 예정 <span class="f-point bold">1</span></p>
+                                                <p class="total">240,000<span>원</span></p>
+                                            </div>
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci"
+                                                            alt="우리은행 로고">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">지출명</p>
+                                                        <p class="amount">60,000</p>
+                                                        <p class="expected">30일 예정<i></i> 카카오뱅크</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                        alt="아이콘">
+                                                </i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="usage-plan">
+                                <div class="plan-list">
+                                    <div class="plan">
+                                        <a class="btn-collapse">
+                                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22"
+                                                alt="접기">
+                                        </a>
+                                        <div class="income">
+                                            <span class="sub-title">할부지출
+                                                <span class="badge badge-purple badge-payment">3건</span>
+                                            </span>
+                                            <p class="number">1,300,000<span>원</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-plan-box">
+                                    <div class="divider"></div>
+                                    <ul class="details-history">
+                                        <li class="item-list">
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci"
+                                                            alt="우리은행 로고">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">유비벨록스급여</p>
+                                                        <p class="amount">1,000,000</p>
+                                                        <p class="expected">12일 <i></i> 우리계좌123</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                        alt="아이콘">
+                                                </i>
+                                            </div>
+                                        </li>
+                                        <li class="item-list">
+                                            <div class="head">
+                                                <p>지출 예정 <span class="f-point bold">1</span></p>
+                                                <p class="total">240,000<span>원</span></p>
+                                            </div>
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci"
+                                                            alt="우리은행 로고">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">지출명</p>
+                                                        <p class="amount">60,000</p>
+                                                        <p class="expected">30일 예정<i></i>1/2회차<i></i>카카오뱅크</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                        alt="아이콘">
+                                                </i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="usage-plan">
+                                <div class="plan-list">
+                                    <div class="plan">
+                                        <a class="btn-collapse">
+                                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22"
+                                                alt="접기">
+                                        </a>
+                                        <div class="income">
+                                            <span class="sub-title">변동지출
+                                                <span class="badge badge-purple badge-payment">3건</span>
+                                            </span>
+                                            <p class="number">1,300,000<span>원</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-plan-box">
+                                    <div class="divider"></div>
+                                    <ul class="details-history">
+                                        <li class="item-list">
+                                            <div class="total">
+                                                <div class="title">17일</div>
+                                                <div class="sum">90,000<span>원</span></div>
+                                            </div>
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci"
+                                                            alt="우리은행 로고">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">유비벨록스급여</p>
+                                                        <p class="amount">1,000,000</p>
+                                                        <p class="expected">12일 <i></i> 우리계좌123</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                        alt="아이콘">
+                                                </i>
+                                            </div>
+                                        </li>
+                                        <li class="item-list">
+                                            <div class="total">
+                                                <div class="title">13일</div>
+                                                <div class="sum">90,000<span>원</span></div>
+                                            </div>
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci"
+                                                            alt="우리은행 로고">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">유비벨록스급여</p>
+                                                        <p class="amount">1,000,000</p>
+                                                        <p class="expected">12일 <i></i> 우리계좌123</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                        alt="아이콘">
+                                                </i>
+                                            </div>
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <i class="icon icon_cate_subscript"></i>
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">수입명(현금)</p>
+                                                        <p class="amount">60,000</p>
+                                                        <p class="expected">30일 <i></i> 현금</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img03@2x.png"
+                                                        alt="아이콘"></i>
+                                            </div>
+                                        </li>
+                                        <li class="item-list">
+                                            <div class="head">
+                                                <p>지출 예정 <span class="f-point bold">1</span></p>
+                                                <p class="total">240,000<span>원</span></p>
+                                            </div>
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci"
+                                                            alt="우리은행 로고">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">지출명</p>
+                                                        <p class="amount">60,000</p>
+                                                        <p class="expected">30일 예정<i></i> 카카오뱅크</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                        alt="아이콘">
+                                                </i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+
+        // 공동
+        $('.share-us li').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+
+        // 유형별지출 닫힘
+        $('.plan-list').on('click', function (e) {
+            let $this = $(e.currentTarget)
+            if ($this.hasClass('list-collapse-close')) {
+                $this.removeClass('list-collapse-close')
+                $this.siblings('.history-plan-box').hide()
+            } else {
+                $this.addClass('list-collapse-close');
+                $this.siblings('.history-plan-box').show()
+            }
+        })
+
+        $('.plan-list').trigger('click')
+    </script>
+
+</body>
+
+</html>

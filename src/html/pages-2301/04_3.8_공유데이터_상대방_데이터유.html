@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title">공유 데이터</h2>
+            <a href="#" class="btn-setting"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="설정 버튼"></a>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-tab manage-tab _expenditureTab">
+                <ul class="clearfix">
+                    <li><a href="#">#김꼼꼼<em class="badge badge-purple badge-manage">0</em></a></li>
+                    <li class="active"><a href="#">#유똑똑<em class="badge badge-purple badge-manage">4</em></a></li>
+                </ul>
+            </div>
+            <div class="manage-box bg_light_gray pt-0">
+                <!-- 카드 -->
+                <div class="card-item">
+                    <div class="usage-sum">
+                        <p class="count">
+                            카드&nbsp;<span class="f-point">1</span>
+                        </p>
+                        <p class="filter">
+                            <span>업데이트 <em>8일</em> 전</span>
+                        </p>
+                    </div>
+                    <ul class="usage-history-list">
+                        <li>
+                            <div class="box">
+                                <div class="info">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="tit">
+                                            신한 공동관리 카드
+                                            <a href="#" class="edit">
+                                                <img src="../../img/common/expenditure/ic_my_register@2x.png" width="20"
+                                                    alt="수정">
+                                            </a>
+                                        </div>
+                                        <span class="desc">신한 Deep Dream</span>
+                                    </div>
+                                </div>
+                                <div class="share-date">
+                                    <p>공유 시작일 : <span>2023.08.12</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 계좌 -->
+                <div class="card-item">
+                    <div class="usage-sum">
+                        <p class="count">
+                            계좌&nbsp;<span class="f-point">2</span>
+                        </p>
+                    </div>
+                    <ul class="usage-history-list">
+                        <li>
+                            <div class="box">
+                                <div class="info">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="tit">
+                                            신한 공동관리 카드
+                                            <a href="#" class="edit">
+                                                <img src="../../img/common/expenditure/ic_my_register@2x.png" width="20"
+                                                    alt="수정">
+                                            </a>
+                                        </div>
+                                        <span class="desc">KB 직장인 급여통장(재테크형)</span>
+                                    </div>
+                                </div>
+                                <div class="share-date">
+                                    <p>공유 시작일 : <span>2023.08.12</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div class="info">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                    </div>
+                                    <div class="txt">
+                                        <div class="tit">
+                                            신한 공동관리 카드
+                                            <a href="#" class="edit">
+                                                <img src="../../img/common/expenditure/ic_my_register@2x.png" width="20"
+                                                    alt="수정">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="share-date">
+                                    <p>공유 시작일 : <span>2023.08.12</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 기타 -->
+                <div class="card-item">
+                    <div class="usage-sum">
+                        <p class="count">
+                            기타&nbsp;<span class="f-point">1</span>
+                        </p>
+                    </div>
+                    <ul class="usage-history-list">
+                        <li>
+                            <div class="box">
+                                <div class="info">
+                                    <div class="img">
+                                        <i class="icon icon_cate_subscript"></i>
+                                    </div>
+                                    <div class="txt">
+                                        <span class="tit"><span>현금</span></span>
+                                    </div>
+                                </div>
+                                <div class="share-date">
+                                    <p>공유 시작일 : <span>2023.08.12</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-wrap btn-floating">
+                <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">데이터 업데이트 요청하기</a>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
+
+</body>
+
+</html>

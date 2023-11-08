@@ -209,6 +209,7 @@
                       font-family: var(--font2);
                       color: var(--text-02);
                       line-height: 2.14;
+                      font-weight: normal;
                     }
                   }
                 }
@@ -2495,6 +2496,14 @@
   .manage-tab {
     padding-top: 5px !important;
 
+    &.expenditure-tab {
+      ul {
+        li {
+          padding: 10px 7px !important;
+        }
+      }
+    }
+
     ul {
       li {
         padding: 10px !important;
@@ -3473,11 +3482,38 @@
                     padding-left: 54px;
 
                     .place {
+                      font-size: 15px;
                       line-height: 22px;
                     }
 
                     .amount {
                       margin-top: 2px;
+                    }
+
+                    .value {
+                      display: flex;
+                      align-items: center;
+                      font-size: 18px;
+                      line-height: 25px;
+                      font-family: var(--font2);
+                      color: var(--text-01);
+
+                      .method {
+                        display: inline-block;
+                        margin-left: 4px;
+                        font-size: 14px;
+                        font-family: var(--font2);
+                        color: var(--text-02);
+                        line-height: 20px;
+                        font-weight: normal;
+                      }
+
+                      .icon {
+                        display: inline-block;
+                        margin-left: 4px;
+                        width: 16px;
+                        height: 16px;
+                      }
                     }
 
                     .expected {
@@ -3501,6 +3537,8 @@
                   font-size: 18px;
 
                   span {
+                    display: inline-block;
+                    margin-left: 1px;
                     font-size: 13px;
                   }
                 }
@@ -3519,9 +3557,17 @@
                 justify-content: space-between;
 
                 p {
-                  font-size: 14px;
+                  display: flex;
+                  align-items: center;
+                  font-size: 15px;
                   color: var(--text-01);
                   font-family: var(--font2);
+
+                  .icon {
+                    margin-left: 4px;
+                    width: 16px;
+                    height: 16px;
+                  }
                 }
 
                 .total {
@@ -3530,7 +3576,16 @@
                   line-height: 20px;
 
                   span {
+                    display: inline-block;
+                    margin-left: 1px;
                     font-size: 13px;
+                    line-height: 19px;
+                  }
+                }
+
+                &.head {
+                  .total {
+                    font-size: 18px;
                   }
                 }
               }
@@ -3539,7 +3594,12 @@
                 padding: 10px 0;
 
                 .item-list {
+                  // 상세카드
+                  padding: 0;
+
                   .group {
+                    padding: 16px 0;
+
                     .box {
                       .info {
                         .expected {
@@ -3556,7 +3616,19 @@
                         }
                       }
                     }
+
+                    .icon-user {
+                      top: 25px;
+                    }
                   }
+                }
+              }
+
+              &.details {
+                border-bottom: 1px solid #efefef;
+
+                &:last-child {
+                  border-bottom: 0;
                 }
               }
             }

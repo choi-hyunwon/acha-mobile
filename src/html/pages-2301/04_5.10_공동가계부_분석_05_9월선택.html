@@ -51,7 +51,7 @@
                             </li>
                             <li class="item">
                                 <div class="graph">
-                                    <div class="income" style="height: 50%"></div>
+                                    <div class="income" style="height: 1%"></div>
                                     <div class="expense" style="height: 40%"></div>
                                 </div>
                                 <p class="month">9월</p>
@@ -99,42 +99,48 @@
                                     <div class="swiper-slide">
                                         <div class="graph-box income">
                                             <p class="title">수입</p>
-                                            <div class="chart-box doughnut">
-                                                <canvas id="canvas-income" width="100" height="100"></canvas>
+                                            <!-- 데이터가 없을 경우 -->
+                                            <div class="empty">
+                                                <div class="doughnut"></div>
                                             </div>
-                                            <script>
-                                                const canvas_1 = document.getElementById('canvas-income').getContext('2d');
+                                            <div style="display: none;">
+                                                <div class="chart-box doughnut">
+                                                    <canvas id="canvas-income" width="100" height="100"></canvas>
+                                                </div>
+                                                <script>
+                                                    const canvas_1 = document.getElementById('canvas-income').getContext('2d');
 
-                                                const config_1 = new Chart(canvas_1, {
-                                                    type: 'doughnut',
-                                                    plugins: [ChartDataLabels],
-                                                    data: {
-                                                        labels: ['김꼼꼼', '유똑똑',],
-                                                        datasets: [{
-                                                            label: '수입',
-                                                            data: [60, 40],
-                                                            backgroundColor: ['#4c6ae8', '#21389a'],
-                                                            borderColor: ['#4c6ae8', '#21389a'],
-                                                        }]
-                                                    },
-                                                    options: {
-                                                        radius: 60,
-                                                        cutout: '30%',
-                                                        plugins: {
-                                                            legend: {
-                                                                display: false,
-                                                            },
-                                                            datalabels: {
-                                                                display: true,
-                                                                color: '#fff',
-                                                                formatter: function (value, context) {
-                                                                    return value + '%';
+                                                    const config_1 = new Chart(canvas_1, {
+                                                        type: 'doughnut',
+                                                        plugins: [ChartDataLabels],
+                                                        data: {
+                                                            labels: ['김꼼꼼', '유똑똑',],
+                                                            datasets: [{
+                                                                label: '수입',
+                                                                data: [60, 40],
+                                                                backgroundColor: ['#4c6ae8', '#21389a'],
+                                                                borderColor: ['#4c6ae8', '#21389a'],
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: 60,
+                                                            cutout: '30%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                },
+                                                                datalabels: {
+                                                                    display: true,
+                                                                    color: '#fff',
+                                                                    formatter: function (value, context) {
+                                                                        return value + '%';
+                                                                    },
                                                                 },
                                                             },
                                                         },
-                                                    },
-                                                });
-                                            </script>
+                                                    });
+                                                </script>
+                                            </div>
 
                                             <div class="info-box">
                                                 <div class="user">
@@ -145,11 +151,11 @@
                                                         </i>
                                                         <div class="name">
                                                             김꼼꼼
-                                                            <span class="per">40%</span>
+                                                            <span class="per">0%</span>
                                                         </div>
                                                     </div>
                                                     <div class="value">
-                                                        1,000,000<span>원</span>
+                                                        0<span>원</span>
                                                     </div>
                                                 </div>
                                                 <div class="user">
@@ -160,11 +166,11 @@
                                                         </i>
                                                         <div class="name">
                                                             유똑똑
-                                                            <span class="per">60%</span>
+                                                            <span class="per">0%</span>
                                                         </div>
                                                     </div>
                                                     <div class="value">
-                                                        1,500,000<span>원</span>
+                                                        0<span>원</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -173,42 +179,49 @@
                                     <div class="swiper-slide">
                                         <div class="graph-box expense">
                                             <p class="title">지출</p>
-                                            <div class="chart-box doughnut">
-                                                <canvas id="canvas-expense_2" height="165"></canvas>
+                                            <!-- 데이터가 없을 경우 -->
+                                            <div class="empty">
+                                                <div class="doughnut"></div>
                                             </div>
-                                            <script>
-                                                const canvas_2 = document.getElementById('canvas-expense_2').getContext('2d');
+                                            <!-- 데이터가 있을 경우 -->
+                                            <div style="display: none;">
+                                                <div class="chart-box doughnut">
+                                                    <canvas id="canvas-expense_2" height="165"></canvas>
+                                                </div>
+                                                <script>
+                                                    const canvas_2 = document.getElementById('canvas-expense_2').getContext('2d');
 
-                                                const config_2 = new Chart(canvas_2, {
-                                                    type: 'doughnut',
-                                                    plugins: [ChartDataLabels],
-                                                    data: {
-                                                        labels: ['김꼼꼼', '유똑똑',],
-                                                        datasets: [{
-                                                            label: '수입',
-                                                            data: [40, 60],
-                                                            backgroundColor: ['#b42b50', '#f4507c'],
-                                                            borderColor: ['#b42b50', '#f4507c'],
-                                                        }]
-                                                    },
-                                                    options: {
-                                                        radius: 60,
-                                                        cutout: '30%',
-                                                        plugins: {
-                                                            legend: {
-                                                                display: false,
-                                                            },
-                                                            datalabels: {
-                                                                display: true,
-                                                                color: '#fff',
-                                                                formatter: function (value, context) {
-                                                                    return value + '%';
+                                                    const config_2 = new Chart(canvas_2, {
+                                                        type: 'doughnut',
+                                                        plugins: [ChartDataLabels],
+                                                        data: {
+                                                            labels: ['김꼼꼼', '유똑똑',],
+                                                            datasets: [{
+                                                                label: '수입',
+                                                                data: [40, 60],
+                                                                backgroundColor: ['#b42b50', '#f4507c'],
+                                                                borderColor: ['#b42b50', '#f4507c'],
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: 60,
+                                                            cutout: '30%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                },
+                                                                datalabels: {
+                                                                    display: true,
+                                                                    color: '#fff',
+                                                                    formatter: function (value, context) {
+                                                                        return value + '%';
+                                                                    },
                                                                 },
                                                             },
                                                         },
-                                                    },
-                                                });
-                                            </script>
+                                                    });
+                                                </script>
+                                            </div>
                                             <div class="info-box">
                                                 <div class="user">
                                                     <div class="left">
@@ -218,11 +231,11 @@
                                                         </i>
                                                         <div class="name">
                                                             김꼼꼼
-                                                            <span class="per">40%</span>
+                                                            <span class="per">0%</span>
                                                         </div>
                                                     </div>
                                                     <div class="value">
-                                                        1,000,000<span>원</span>
+                                                        0<span>원</span>
                                                     </div>
                                                 </div>
                                                 <div class="user">
@@ -233,11 +246,11 @@
                                                         </i>
                                                         <div class="name">
                                                             유똑똑
-                                                            <span class="per">40%</span>
+                                                            <span class="per">0%</span>
                                                         </div>
                                                     </div>
                                                     <div class="value">
-                                                        1,000,000<span>원</span>
+                                                        0<span>원</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -273,7 +286,7 @@
                             </ul>
                         </div>
 
-                        <div class="category-list">
+                        <div class="category-list expense">
                             <ul>
                                 <li class="item">
                                     <div class="tit">
@@ -315,6 +328,24 @@
                                     <div class="tit">
                                         <i class="obj graph-05"></i>
                                         <p class="name">교육·강습 <span>6%</span></p>
+                                    </div>
+                                    <div class="value">
+                                        <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">
+                                        <i class="obj graph-05"></i>
+                                        <p class="name">반려동물 <span>3%</span></p>
+                                    </div>
+                                    <div class="value">
+                                        <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">
+                                        <i class="obj graph-05"></i>
+                                        <p class="name">생활용품 <span>1%</span></p>
                                     </div>
                                     <div class="value">
                                         <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
@@ -448,7 +479,7 @@
                             <p class="title">
                                 10월에는 <span class="color-purple">217,050원</span> 썼어요
                             </p>
-                            <p class="desc">9월 이맘때보다 <span>18,080원 더</span> 썼어요</p>
+                            <!-- <p class="desc">9월 이맘때보다 <span>18,080원 더</span> 썼어요</p> -->
                         </div>
 
                         <div class="chart-box">
@@ -477,16 +508,6 @@
                                         data: {
                                             labels: Array.from({ length: 31 }, (_, i) => i + 1),
                                             datasets: [{
-                                                label: '9월',
-                                                data: [0, 2, 3, 4, 14, 15, 36, 58, 110, 110, 114, 117, 119, 119, 119, 119, 120, 120, 124, 125, 126, 127, 130, 134, 150, 150, 151, 152, 154, 154, 190],
-                                                backgroundColor: ['#d2d5db'],
-                                                borderColor: ['#d2d5db'],
-                                                borderWidth: 3,
-                                                fill: false,
-                                                pointRadius: [0, 0, 0, 0, daily],
-                                                pointHoverRadius: 4,
-                                                pointStyle: 'rect'
-                                            }, {
                                                 label: '10월',
                                                 data: [0, 12, 13, 41, 34, 45, 67, 28, 120, 120, 80, 125, 125, 125, 125, 125, 140, 141, 144, 145, 146, 147, 150, 164,],
                                                 backgroundColor: ['#6839d3'],
@@ -574,8 +595,18 @@
             }
         })
 
+
+        $(".category-list.expense ul li:gt(4)").hide();
+
         $('.spread-btn').click(function () {
-            $(this).toggleClass('active')
+            $bool = $(this).hasClass('active')
+            if ($bool) {
+                $(this).removeClass('active').text('펼치기 ').append('<i class="ico_list_arrow_small"></i>')
+                $(".category-list.expense ul li:gt(4)").hide();
+            } else {
+                $(this).addClass('active').text('접기').append('<i class="ico_list_arrow_small"></i>')
+                $(".category-list.expense ul li").show();
+            }
         })
 
 

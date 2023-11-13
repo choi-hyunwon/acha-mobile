@@ -1,0 +1,635 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>공동 가계부 분석</h2>
+        </div>
+        <div class="current-month current-month-manage report mb-0">
+            <a href="#">2022년 10월<i class="icon-arrow-bottom"></i></a>
+            <a href="#" class="btn btn-edit">
+                <img src="../../img/common/ic_share_report@2x.png" width="16" height="16" alt="분석">
+                캘린더
+            </a>
+        </div>
+        <div class="contents">
+            <div class="manage-content">
+                <div class="month-flow">
+                    <div class="title-wrap">
+                        <p class="desc">월별 수입·지출 추이</p>
+                        <p class="title">
+                            이번달 수입·지출이 없어요
+                        </p>
+                    </div>
+
+                    <div class="chart-box">
+                        <ul class="chart-month">
+                            <li class="item">
+                                <div class="graph">
+                                    <div class="income" style="height: 1%"></div>
+                                    <div class="expense" style="height: 1%"></div>
+                                </div>
+                                <p class="month">6월</p>
+                            </li>
+                            <li class="item">
+                                <div class="graph">
+                                    <div class="income" style="height: 1%"></div>
+                                    <div class="expense" style="height: 1%"></div>
+                                </div>
+                                <p class="month">7월</p>
+                            </li>
+                            <li class="item">
+                                <div class="graph">
+                                    <div class="income" style="height: 1%"></div>
+                                    <div class="expense" style="height: 1%"></div>
+                                </div>
+                                <p class="month">8월</p>
+                            </li>
+                            <li class="item">
+                                <div class="graph">
+                                    <div class="income" style="height: 1%"></div>
+                                    <div class="expense" style="height: 1%"></div>
+                                </div>
+                                <p class="month">9월</p>
+                            </li>
+                            <li class="item active">
+                                <div class="graph">
+                                    <div class="income" style="height: 1%"></div>
+                                    <div class="expense" style="height: 1%"></div>
+                                </div>
+                                <p class="month">10월</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 월별 클릭 했을경우 on off -->
+                    <div class="chart-month-details">
+                        <i class="arrow-top"></i>
+                        <div class="budget-box">
+                            <div class="income">
+                                <div class="top">
+                                    <i class="obj"></i>
+                                    <p>수입</p>
+                                </div>
+                                <div class="value">
+                                    0<span>원</span>
+                                </div>
+                            </div>
+                            <div class="expense">
+                                <div class="top">
+                                    <i class="obj"></i>
+                                    <p>수입</p>
+                                </div>
+                                <div class="value">
+                                    0<span>원</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="remain">
+                                <p>남은 돈 <img src="../../img/common/ico_tooltip_big@2x.png" width="16" height="16"
+                                        alt="tooltip-large"></p>
+                                <div class="value">0<span>원</span></div>
+                            </div>
+                            <!-- 과거 데이터가 없을 경우 display: none -->
+                            <div class="_Slider swiper swiper-container" style="display: none;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="graph-box income">
+                                            <p class="title">수입</p>
+                                            <div class="chart-box doughnut">
+                                                <canvas id="canvas-income" width="100" height="100"></canvas>
+                                            </div>
+                                            <script>
+                                                const canvas_1 = document.getElementById('canvas-income').getContext('2d');
+
+                                                const config_1 = new Chart(canvas_1, {
+                                                    type: 'doughnut',
+                                                    plugins: [ChartDataLabels],
+                                                    data: {
+                                                        labels: ['김꼼꼼', '유똑똑',],
+                                                        datasets: [{
+                                                            label: '수입',
+                                                            data: [60, 40],
+                                                            backgroundColor: ['#4c6ae8', '#21389a'],
+                                                            borderColor: ['#4c6ae8', '#21389a'],
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        radius: 60,
+                                                        cutout: '30%',
+                                                        plugins: {
+                                                            legend: {
+                                                                display: false,
+                                                            },
+                                                            datalabels: {
+                                                                display: true,
+                                                                color: '#fff',
+                                                                formatter: function (value, context) {
+                                                                    return value + '%';
+                                                                },
+                                                            },
+                                                        },
+                                                    },
+                                                });
+                                            </script>
+
+                                            <div class="info-box">
+                                                <div class="user">
+                                                    <div class="left">
+                                                        <i class="icon-user me">
+                                                            <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                                alt="아이콘">
+                                                        </i>
+                                                        <div class="name">
+                                                            김꼼꼼
+                                                            <span class="per">40%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="value">
+                                                        1,000,000<span>원</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user">
+                                                    <div class="left">
+                                                        <i class="icon-user you">
+                                                            <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                                alt="아이콘">
+                                                        </i>
+                                                        <div class="name">
+                                                            유똑똑
+                                                            <span class="per">60%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="value">
+                                                        1,500,000<span>원</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="graph-box expense">
+                                            <p class="title">지출</p>
+                                            <div class="chart-box doughnut">
+                                                <canvas id="canvas-expense_2" height="165"></canvas>
+                                            </div>
+                                            <script>
+                                                const canvas_2 = document.getElementById('canvas-expense_2').getContext('2d');
+
+                                                const config_2 = new Chart(canvas_2, {
+                                                    type: 'doughnut',
+                                                    plugins: [ChartDataLabels],
+                                                    data: {
+                                                        labels: ['김꼼꼼', '유똑똑',],
+                                                        datasets: [{
+                                                            label: '수입',
+                                                            data: [40, 60],
+                                                            backgroundColor: ['#b42b50', '#f4507c'],
+                                                            borderColor: ['#b42b50', '#f4507c'],
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        radius: 60,
+                                                        cutout: '30%',
+                                                        plugins: {
+                                                            legend: {
+                                                                display: false,
+                                                            },
+                                                            datalabels: {
+                                                                display: true,
+                                                                color: '#fff',
+                                                                formatter: function (value, context) {
+                                                                    return value + '%';
+                                                                },
+                                                            },
+                                                        },
+                                                    },
+                                                });
+                                            </script>
+                                            <div class="info-box">
+                                                <div class="user">
+                                                    <div class="left">
+                                                        <i class="icon-user me">
+                                                            <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                                alt="아이콘">
+                                                        </i>
+                                                        <div class="name">
+                                                            김꼼꼼
+                                                            <span class="per">40%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="value">
+                                                        1,000,000<span>원</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user">
+                                                    <div class="left">
+                                                        <i class="icon-user you">
+                                                            <img src="../../img/common/ico_mypage_profile_img01@2x.png"
+                                                                alt="아이콘">
+                                                        </i>
+                                                        <div class="name">
+                                                            유똑똑
+                                                            <span class="per">40%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="value">
+                                                        1,000,000<span>원</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="divider" style="margin-left: -20px; width: calc(100% + 40px);"></div>
+
+                <div class="analysis">
+                    <h3 class="title">지출분석</h3>
+                    <!-- 카테고리별지출 -->
+                    <div class="group ">
+                        <div class="category head">
+                            <p class="name">카테고리별 지출</p>
+                            <!-- <a href="#" class="btn">상세보기 <i class="ico_list_arrow_small"></i></a> -->
+                        </div>
+
+                        <!-- 데이터가 없을 경우 -->
+                        <div class="empty">
+                            <div class="category-graph"></div>
+                            <div class="txt">
+                                <img src="../../img/common/ico_caution_grey@2x.png" alt="지출없음">표시할 카테고리별 지출이 없어요 🙁
+                            </div>
+                        </div>
+
+                        <!-- 데이터가 있을 경우 -->
+                        <div style="display: none;">
+                            <div class="chart-box">
+                                <!-- %값으로 width 스파일 표시 백분율  -->
+                                <ul class="category-graph">
+                                    <li class="category-item item1 graph-01" style="width: 42%;"></li>
+                                    <li class="category-item item2 graph-02" style="width: 22%;"></li>
+                                    <li class="category-item item3 graph-03" style="width: 15%;"></li>
+                                    <li class="category-item item4 graph-04" style="width: 9%;"></li>
+                                    <li class="category-item item5 graph-05" style="width: 6%;"></li>
+                                    <li class="category-item item5 graph-etc" style="width: 6%;"></li>
+                                </ul>
+                            </div>
+
+                            <div class="category-list expense">
+                                <ul>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj graph-01"></i>
+                                            <p class="name">식비·외식비 <span>42%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>1,400,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj graph-02"></i>
+                                            <p class="name">카페·간식 <span>22%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>870,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj graph-03"></i>
+                                            <p class="name">마트·편의점 <span>15%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>655,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj graph-04"></i>
+                                            <p class="name">이체 <span>9%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>230,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj graph-05"></i>
+                                            <p class="name">교육·강습 <span>6%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj graph-05"></i>
+                                            <p class="name">반려동물 <span>3%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj graph-05"></i>
+                                            <p class="name">생활용품 <span>1%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="btn spread-btn">
+                                    펼치기 <i class="ico_list_arrow_small"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 유형별 지출 -->
+                    <div class="group ">
+                        <div class="type head">
+                            <p class="name">유형별 지출</p>
+                            <!-- <a href="#" class="btn">상세보기 <i class="ico_list_arrow_small"></i></a> -->
+                        </div>
+
+                        <!-- 데이터가 없을 경우 -->
+                        <div class="empty">
+                            <div class="doughnut"></div>
+                            <div class="txt">
+                                <img src="../../img/common/ico_caution_grey@2x.png" alt="지출없음">표시할 카테고리별 지출이 없어요 🙁
+                            </div>
+                        </div>
+
+                        <!-- 데이터가 있을 경우 -->
+                        <div style="display: none;;">
+                            <div class="chart-box doughnut">
+                                <canvas id="chart-category"></canvas>
+                                <script>
+                                    const canvas_3 = document.getElementById('chart-category').getContext('2d');
+
+                                    const config_3 = new Chart(canvas_3, {
+                                        type: 'doughnut',
+                                        plugins: [ChartDataLabels],
+                                        data: {
+                                            labels: ['정기지출', '변동지출', '할부지출'],
+                                            datasets: [{
+                                                data: [35, 30, 21],
+                                                backgroundColor: ['#a883fb', '#fd7d9f', '#fdb3a8'],
+                                                borderColor: ['#a883fb', '#fd7d9f', '#fdb3a8'],
+                                                hoverOffset: 20,
+                                                borderColor: 'white',
+                                                borderWidth: 3,
+                                                hoverBorderColor: 'white',
+                                            }]
+                                        },
+                                        options: {
+                                            radius: 85,
+                                            cutout: '60%',
+                                            plugins: {
+                                                legend: {
+                                                    display: false,
+                                                },
+                                                datalabels: {
+                                                    display: false,
+                                                },
+                                                tooltip: {
+                                                    displayColors: false,
+                                                    padding: { top: 8, bottom: 8, left: 17, right: 17, },
+                                                    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                                                    titleFont: {
+                                                        size: 12,
+                                                        weight: "shin",
+                                                        lineHeight: 0.8,
+                                                    },
+                                                    bodyFont: {
+                                                        size: 20,
+                                                        weight: "bold",
+                                                        lineHeight: 0.8,
+                                                    },
+                                                    font: {
+                                                        family: 'Roboto","Noto Sans CJK KR Regular'
+                                                    },
+                                                    caretSize: 0,
+                                                    titleColor: '#37354e',
+                                                    bodyColor: '#37354e',
+                                                    boxWidth: 20,
+
+                                                    titleAlign: 'center',
+                                                    bodyAlign: 'center',
+                                                    borderWidth: 1,
+                                                    borderRadius: 6,
+                                                    borderColor: '#c2c1cc',
+                                                    callbacks: {
+                                                        title: function (tooltipItem, data) {
+                                                            return tooltipItem[0].label;
+                                                        },
+                                                        label: function (tooltipItem, data) {
+
+                                                            return tooltipItem.formattedValue + '%';
+                                                        },
+                                                    },
+                                                },
+                                            },
+                                        },
+                                    });
+                                </script>
+                            </div>
+
+                            <div class="category-list">
+                                <ul>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj type-graph-01"></i>
+                                            <p class="name">식비·외식비 <span>35%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>1,400,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj type-graph-02"></i>
+                                            <p class="name">식비·외식비 <span>30%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>870,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="tit">
+                                            <i class="obj type-graph-03"></i>
+                                            <p class="name">식비·외식비 <span>21%</span></p>
+                                        </div>
+                                        <div class="value">
+                                            <p>655,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 일별 변동지출 현황 -->
+                    <div class="group ">
+                        <div class="category head">
+                            <p class="name">일별 변동지출 현황</p>
+                        </div>
+                        <div class="title-wrap">
+                            <!-- <p class="title">
+                                10월에는 <span class="color-purple">217,050원</span> 썼어요
+                            </p> -->
+                            <!-- <p class="desc">9월 이맘때보다 <span>18,080원 더</span> 썼어요</p> -->
+                        </div>
+
+                        <!-- 데이터가 없을 경우 -->
+                        <div class="empty">
+                            <div class="txt">
+                                <img src="../../img/common/ico_caution_grey@2x.png" alt="지출없음">표시할 카테고리별 지출이 없어요 🙁
+                            </div>
+                        </div>
+
+                        <!-- 데이터가 있을 경우 -->
+                        <div style="display: none;;">
+                            <div class="chart-box">
+                                <div class="mt-30 daily-box">
+                                    <div>
+                                        <canvas id="chart-daily" height="200"></canvas>
+                                    </div>
+                                    <script>
+                                        const canvas_4 = document.getElementById('chart-daily').getContext('2d');
+
+                                        var date = new Date();
+                                        y = date.getFullYear();
+                                        m = date.getMonth();
+                                        var lastDay = new Date(y, m + 1, 0).getDate();
+
+                                        let daily = []
+
+                                        for (let i = 0; i < lastDay; i++) {
+                                            daily.push(i)
+                                        }
+
+
+                                        const config_4 = new Chart(canvas_4, {
+                                            type: 'line',
+                                            plugins: [ChartDataLabels],
+                                            data: {
+                                                labels: Array.from({ length: 31 }, (_, i) => i + 1),
+                                                datasets: [{
+                                                    label: '10월',
+                                                    data: [0, 12, 13, 41, 34, 45, 67, 28, 120, 120, 80, 125, 125, 125, 125, 125, 140, 141, 144, 145, 146, 147, 150, 164,],
+                                                    backgroundColor: ['#6839d3'],
+                                                    borderColor: ['#6839d3'],
+                                                    borderWidth: 3,
+                                                    fill: false,
+                                                    pointRadius: [0, 0, 0, 0, daily],
+                                                    pointHoverRadius: 4,
+                                                    pointStyle: 'rect'
+                                                },]
+                                            },
+                                            options: {
+                                                plugins: {
+                                                    legend: {
+                                                        display: 'true',
+                                                        // position: 'top ',
+                                                        align: 'end',
+
+                                                        labels: {
+                                                            usePointStyle: true,
+                                                            pointStyle: 'line',
+                                                            font: {
+                                                                size: 12,
+                                                            }
+                                                        },
+                                                    },
+                                                    datalabels: {
+                                                        display: false,
+                                                    },
+                                                },
+                                                scales: {
+                                                    y: {
+                                                        beginAtZero: true,
+                                                        ticks: {
+                                                            stepSize: 50,
+                                                            max: 200,
+                                                        },
+                                                    },
+                                                    x: {
+                                                        grid: {
+                                                            display: false,
+                                                        },
+                                                    },
+                                                },
+                                            },
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        Chart.register(ChartDataLabels);
+
+        var swiper = new Swiper("._Slider", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+        });
+
+        // 월별 수입·지출 추이
+        $('.chart-month .item').click(function () {
+            $(this).addClass('active').siblings().removeClass('active')
+            let item = $(this).index()
+
+            switch (item) {
+                case 0:
+                    $('.arrow-top').css('left', "8%")
+                    break;
+                case 1:
+                    $('.arrow-top').css('left', "26%")
+                    break;
+                case 2:
+                    $('.arrow-top').css('left', "45%")
+                    break;
+                case 3:
+                    $('.arrow-top').css('left', "64%")
+                    break;
+                case 4:
+                    $('.arrow-top').css('left', "84%")
+                    break;
+            }
+        })
+
+
+        $(".category-list.expense ul li:gt(4)").hide();
+
+        $('.spread-btn').click(function () {
+            $bool = $(this).hasClass('active')
+            if ($bool) {
+                $(this).removeClass('active').text('펼치기 ').append('<i class="ico_list_arrow_small"></i>')
+                $(".category-list.expense ul li:gt(4)").hide();
+            } else {
+                $(this).addClass('active').text('접기').append('<i class="ico_list_arrow_small"></i>')
+                $(".category-list.expense ul li").show();
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

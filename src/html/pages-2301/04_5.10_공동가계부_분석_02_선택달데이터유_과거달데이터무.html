@@ -273,7 +273,7 @@
                             </ul>
                         </div>
 
-                        <div class="category-list">
+                        <div class="category-list expense">
                             <ul>
                                 <li class="item">
                                     <div class="tit">
@@ -315,6 +315,24 @@
                                     <div class="tit">
                                         <i class="obj graph-05"></i>
                                         <p class="name">교육·강습 <span>6%</span></p>
+                                    </div>
+                                    <div class="value">
+                                        <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">
+                                        <i class="obj graph-05"></i>
+                                        <p class="name">반려동물 <span>3%</span></p>
+                                    </div>
+                                    <div class="value">
+                                        <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">
+                                        <i class="obj graph-05"></i>
+                                        <p class="name">생활용품 <span>1%</span></p>
                                     </div>
                                     <div class="value">
                                         <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
@@ -448,7 +466,7 @@
                             <p class="title">
                                 10월에는 <span class="color-purple">217,050원</span> 썼어요
                             </p>
-                            <p class="desc">9월 이맘때보다 <span>18,080원 더</span> 썼어요</p>
+                            <!-- <p class="desc">9월 이맘때보다 <span>18,080원 더</span> 썼어요</p> -->
                         </div>
 
                         <div class="chart-box">
@@ -477,16 +495,6 @@
                                         data: {
                                             labels: Array.from({ length: 31 }, (_, i) => i + 1),
                                             datasets: [{
-                                                label: '9월',
-                                                data: [0, 2, 3, 4, 14, 15, 36, 58, 110, 110, 114, 117, 119, 119, 119, 119, 120, 120, 124, 125, 126, 127, 130, 134, 150, 150, 151, 152, 154, 154, 190],
-                                                backgroundColor: ['#d2d5db'],
-                                                borderColor: ['#d2d5db'],
-                                                borderWidth: 3,
-                                                fill: false,
-                                                pointRadius: [0, 0, 0, 0, daily],
-                                                pointHoverRadius: 4,
-                                                pointStyle: 'rect'
-                                            }, {
                                                 label: '10월',
                                                 data: [0, 12, 13, 41, 34, 45, 67, 28, 120, 120, 80, 125, 125, 125, 125, 125, 140, 141, 144, 145, 146, 147, 150, 164,],
                                                 backgroundColor: ['#6839d3'],
@@ -574,8 +582,18 @@
             }
         })
 
+
+        $(".category-list.expense ul li:gt(4)").hide();
+
         $('.spread-btn').click(function () {
-            $(this).toggleClass('active')
+            $bool = $(this).hasClass('active')
+            if ($bool) {
+                $(this).removeClass('active').text('펼치기 ').append('<i class="ico_list_arrow_small"></i>')
+                $(".category-list.expense ul li:gt(4)").hide();
+            } else {
+                $(this).addClass('active').text('접기').append('<i class="ico_list_arrow_small"></i>')
+                $(".category-list.expense ul li").show();
+            }
         })
 
 

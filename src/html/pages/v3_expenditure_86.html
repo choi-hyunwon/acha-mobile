@@ -1,138 +1,141 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
-    </div>
-    <div class="contents expenditure">
-        <div class="income-details-amount type2">
-            <ul class="budget">
-                <li class="item">
-                    <span class="tit">수입</span>
-                    <span class="val"><span>5,500,000</span>원<i class="ico_list_arrow_small"></i></span>
-                </li>
-                <li class="item">
-                    <span class="tit">지출</span>
-                    <span class="val"><span>2,520,000</span>원</span>
-                </li>
-                <li class="definition">
-                  <ul>
-                      <li>
-                          <span class="tit">고정지출</span>
-                          <span class="val"><span>1,500,000</span>원<i class="ico_list_arrow_small"></i></span>
-                      </li>
-                      <li>
-                          <span class="tit">카드할부</span>
-                          <span class="val"><span>200,000</span>원<i class="ico_list_arrow_small"></i></span>
-                      </li>
-                      <li>
-                          <span class="tit">변동지출</span>
-                          <span class="val"><span>200,000</span>원<i class="ico_list_arrow_small"></i></span>
-                      </li>
-                  </ul>
-                </li>
-                <li class="item pb-0">
-                    <span class="tit">남은 돈</span>
-                    <span class="val"><span>2,520,000</span>원</span>
-                </li>
-                <li class="item color-gray p-0">
-                    남은 돈 = 수입- 지출
-                </li>
-            </ul>
-            <!-- <div class="definition">여행숙박, 식비, 교통, 주유</div>-->
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
         </div>
-        <div class="divider"></div>
-        <div class="expenditure-box income-total">
-            <div class="title-wrap">
-                <p class="info-title"><span>6월부터 10월까지 <span class="color-purple">남은 돈은<br>780만원</span> 입니다.</span></p>
-                <p class="sub-desc">5개월 월평균 100만원</p>
+        <div class="contents expenditure">
+            <div class="income-details-amount type2">
+                <ul class="budget">
+                    <li class="item">
+                        <span class="tit">수입</span>
+                        <span class="val"><span>5,500,000</span>원<i class="ico_list_arrow_small"></i></span>
+                    </li>
+                    <li class="item">
+                        <span class="tit">지출</span>
+                        <span class="val"><span>2,520,000</span>원</span>
+                    </li>
+                    <li class="definition">
+                        <ul>
+                            <li>
+                                <span class="tit">고정지출</span>
+                                <span class="val"><span>1,500,000</span>원<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                            <li>
+                                <span class="tit">카드할부</span>
+                                <span class="val"><span>200,000</span>원<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                            <li>
+                                <span class="tit">변동지출</span>
+                                <span class="val"><span>200,000</span>원<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item pb-0">
+                        <span class="tit">남은 돈</span>
+                        <span class="val"><span>2,520,000</span>원</span>
+                    </li>
+                    <li class="item color-gray p-0">
+                        남은 돈 = 수입- 지출
+                    </li>
+                </ul>
+                <!-- <div class="definition">여행숙박, 식비, 교통, 주유</div>-->
             </div>
+            <div class="divider"></div>
+            <div class="expenditure-box income-total">
+                <div class="title-wrap">
+                    <p class="info-title"><span>6월부터 10월까지 <span class="color-purple">남은 돈은<br>780만원</span> 입니다.</span>
+                    </p>
+                    <p class="sub-desc">5개월 월평균 100만원</p>
+                </div>
 
-            <div class="income-chart">
-                <div class="chart">
-                    <div class="swiper-container _slider">
-                        <div class="swiper-btn">
-                            <div class="swiper-button swiper-button-prev"></div>
-                            <div class="swiper-button swiper-button-next"></div>
-                        </div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    2022년 6월 - 8월
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas1"></canvas>
+                <div class="income-chart">
+                    <div class="chart">
+                        <div class="swiper-container _slider">
+                            <div class="swiper-btn">
+                                <div class="swiper-button swiper-button-prev"></div>
+                                <div class="swiper-button swiper-button-next"></div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="period">
+                                        2022년 6월 - 8월
+                                    </div>
+                                    <div class="graph-box">
+                                        <canvas id="canvas1"></canvas>
 
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">11월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">12월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">1월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">2월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">3월</span>
+                                        <div class="axis">
+                                            <div class="tick">
+                                                <span class="day-month">11월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">12월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">1월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">2월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">3월</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    2022년 4월 - 8월
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas2"></canvas>
+                                <div class="swiper-slide">
+                                    <div class="period">
+                                        2022년 4월 - 8월
+                                    </div>
+                                    <div class="graph-box">
+                                        <canvas id="canvas2"></canvas>
 
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">4월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">5월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month active">6월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">7월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">8월</span>
+                                        <div class="axis">
+                                            <div class="tick">
+                                                <span class="day-month">4월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">5월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month active">6월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">7월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">8월</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    2022년 9월 - 2023년 1월
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas3"></canvas>
+                                <div class="swiper-slide">
+                                    <div class="period">
+                                        2022년 9월 - 2023년 1월
+                                    </div>
+                                    <div class="graph-box">
+                                        <canvas id="canvas3"></canvas>
 
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">9월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">10월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month active">11월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">12월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">1월</span>
+                                        <div class="axis">
+                                            <div class="tick">
+                                                <span class="day-month">9월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">10월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month active">11월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">12월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">1월</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -142,10 +145,10 @@
                 </div>
             </div>
         </div>
-    </div>
 
-</div>
+    </div>
 </body>
+
 </html>
 
 <script>
@@ -156,10 +159,10 @@
 
     // Apply multiply blend when drawing datasets
     var multiply = {
-        beforeDatasetsDraw: function(chart, options, el) {
+        beforeDatasetsDraw: function (chart, options, el) {
             chart.ctx.globalCompositeOperation = 'multiply';
         },
-        afterDatasetsDraw: function(chart, options) {
+        afterDatasetsDraw: function (chart, options) {
             chart.ctx.globalCompositeOperation = 'source-over';
         },
     };
@@ -221,7 +224,7 @@
                 }
             },
             layout: {
-                padding:{
+                padding: {
                     top: 30
                 }
             },
@@ -285,7 +288,7 @@
                 }
             },
             layout: {
-                padding:{
+                padding: {
                     top: 30
                 }
             },
@@ -349,7 +352,7 @@
                 }
             },
             layout: {
-                padding:{
+                padding: {
                     top: 30
                 }
             },

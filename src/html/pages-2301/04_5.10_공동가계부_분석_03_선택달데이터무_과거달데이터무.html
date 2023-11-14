@@ -501,47 +501,123 @@
                         <!-- 데이터가 있을 경우 -->
                         <div style="display: none;;">
                             <div class="chart-box">
-                                <div class="mt-30 daily-box">
+                                <div class="daily-box">
                                     <div>
-                                        <canvas id="chart-daily" height="200"></canvas>
+                                        <div class="last-this-month">
+                                            <div class="won">(만원)</div>
+                                            <p class="last"><span></span>9월</p>
+                                            <p class="this"><span></span>10월</p>
+                                        </div>
+                                        <canvas id="chart-daily" height="190"></canvas>
+                                        <div class="last-this-day">
+                                            <p class="first"></p>
+                                            <p class="last"></p>
+                                        </div>
+
                                     </div>
                                     <script>
                                         const canvas_4 = document.getElementById('chart-daily').getContext('2d');
 
-                                        var date = new Date();
-                                        y = date.getFullYear();
-                                        m = date.getMonth();
-                                        var lastDay = new Date(y, m + 1, 0).getDate();
-
-                                        let daily = []
-
-                                        for (let i = 0; i < lastDay; i++) {
-                                            daily.push(i)
+                                        let currentDate = new Date(); // 현재 날짜 가져오기
+                                        let daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1).getMonth() // 현재 달
+                                        let daysInDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate(); // 현재 달의 일 수
+                                        let today = new Date().getDate() - 1;  // 오늘 날짜
+                                        let labels = [];
+                                        for (let i = 1; i <= daysInDay; i++) {
+                                            labels.push(daysInMonth + '.' + i.toString());
                                         }
 
+                                        // 이달의 첫 날과 마지막 날 적용
+                                        $('.last-this-day .first').text(`${daysInMonth}. 01`)
+                                        $('.last-this-day .last').text(`${daysInMonth}. ${daysInDay}`)
 
-                                        const config_4 = new Chart(canvas_4, {
+                                        const pointImage = new Image(20, 20);
+                                        pointImage.src = '../../img/common/chart-point.png'
+
+
+                                        const verticalLine = {
+                                            id: 'verticalLine',
+                                            beforeDatasetsDraw(chart, args, plugins) {
+                                                const { ctx, tooltip, chartArea: { top, bottom, left, right, width, heigth }, scales: { x, y } } = chart;
+
+                                                const _index = chart.scales.x.ticks[0].value
+                                                if (_index === today) {
+
+                                                    const xCoor = x.getPixelForValue(today)
+                                                    const yCoor = y.getPixelForValue(chart.hight)
+
+                                                    ctx.save();
+                                                    ctx.beginPath();
+                                                    ctx.lineWidth = 2;
+                                                    ctx.strokeStyle = '#d2d5db';
+                                                    ctx.setLineDash([8, 5]);
+                                                    ctx.moveTo(xCoor, top);
+                                                    ctx.lineTo(xCoor, bottom);
+                                                    ctx.stroke();
+                                                }
+                                            }
+                                        }
+
+                                        config_4 = new Chart(canvas_4, {
                                             type: 'line',
-                                            plugins: [ChartDataLabels],
+                                            plugins: [ChartDataLabels, verticalLine],
                                             data: {
-                                                labels: Array.from({ length: 31 }, (_, i) => i + 1),
-                                                datasets: [{
-                                                    label: '10월',
-                                                    data: [0, 12, 13, 41, 34, 45, 67, 28, 120, 120, 80, 125, 125, 125, 125, 125, 140, 141, 144, 145, 146, 147, 150, 164,],
-                                                    backgroundColor: ['#6839d3'],
-                                                    borderColor: ['#6839d3'],
-                                                    borderWidth: 3,
-                                                    fill: false,
-                                                    pointRadius: [0, 0, 0, 0, daily],
-                                                    pointHoverRadius: 4,
-                                                    pointStyle: 'rect'
-                                                },]
+                                                labels: labels,
+                                                datasets: [
+                                                    {
+                                                        label: '10월',
+                                                        data: [0, 12, 13, 41, 34, 45, 67, 78, 100, 101, 110, 125, 127, 130, 138],
+                                                        backgroundColor: ['#6839d3'],
+                                                        borderColor: ['#6839d3'],
+                                                        borderWidth: 3,
+                                                        fill: false,
+                                                        // pointStyle: 'rect',
+                                                        pointBackgroundColor: '#fff',
+                                                        pointBorderColor: 'rgba(104, 57, 211, 1)',
+                                                        pointBorderWidth: 3,
+                                                        lineTension: 0,
+                                                        borderWidth: 3,
+                                                        pointHoverRadius: 'rgba(104, 57, 211, 0.21)',
+                                                        pointHoverRadius: 3,
+                                                        pointHoverBorderWidth: 3,
+                                                        pointRadius: (ctx) => {
+                                                            const pointsLength = ctx.chart.data.labels.length - 1
+                                                            const pointsArray = [];
+                                                            for (let i = 0; i < pointsLength; i++) {
+                                                                if (i === today) {
+                                                                    pointsArray.push(5)
+                                                                } else {
+                                                                    pointsArray.push(0)
+                                                                }
+                                                            }
+                                                            return pointsArray
+                                                        }
+                                                    },
+                                                    {
+                                                        label: '9월',
+                                                        data: [0, 2, 3, 4, 14, 15, 36, 58, 110, 110, 114, 117, 119, 119, 119, 119, 120, 120, 124, 125, 126, 127, 130, 134, 150, 150, 151, 152, 154, 184],
+                                                        backgroundColor: ['#d2d5db'],
+                                                        borderColor: ['#d2d5db'],
+                                                        borderWidth: 3,
+                                                        fill: false,
+                                                        pointRadius: [0],
+                                                    },
+                                                ]
                                             },
                                             options: {
+                                                elements: {
+                                                    point: {
+                                                        pointStyle: [pointImage],
+                                                        radius: 2,
+                                                    },
+                                                },
+
                                                 plugins: {
+                                                    tooltips: {
+                                                        enabled: false
+                                                    },
                                                     legend: {
-                                                        display: 'true',
-                                                        // position: 'top ',
+                                                        display: false,
                                                         align: 'end',
 
                                                         labels: {
@@ -559,6 +635,9 @@
                                                 scales: {
                                                     y: {
                                                         beginAtZero: true,
+                                                        grid: {
+                                                            drawBorder: false,
+                                                        },
                                                         ticks: {
                                                             stepSize: 50,
                                                             max: 200,
@@ -567,7 +646,19 @@
                                                     x: {
                                                         grid: {
                                                             display: false,
+                                                            drawBorder: false,
                                                         },
+                                                        ticks: {
+                                                            // 오늘 날짜만 출력
+                                                            callback: (value) => {
+                                                                if (value == today) {
+
+                                                                    return '오늘'
+                                                                }
+                                                            },
+                                                            font: 12,
+                                                            color: '#9b9aa6'
+                                                        }
                                                     },
                                                 },
                                             },

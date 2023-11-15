@@ -1,309 +1,100 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">시뮬레이션 결과</a></h2>
-    </div>
-    <div class="contents expenditure">
-        <div class="expenditure-box simulation-result">
-            <div class="simulation">
-                <p class="info-title"><span class="color-red">잔고가 부족한 상황이 예측됩니다.</span><br>미리 준비해서 지출 미납에 대비하세요😲</p>
-                <div class="amount-wrap">
-                    <div class="month-range">
-                        <div class="prev"><a href="#"><img src="../../img/common/btn_graph_back@2x.png" width="40" alt="prev"></a></div>
-                        <div class="range">현금흐름</div>
-                        <div class="next"><a href="#"><img src="../../img/common/btn_graph_forward@2x.png" width="40" alt="prev"></a></div>
-                    </div>
-                    <div class="graph">
-                        <div class="stick" style="height: 200px;">
-                            <div style="height: 40px; top:160px;"><span class="text">140</span></div>
-                            <div style="height: 20px; top:180px;"><span class="text">124</span></div>
-                            <div style="height: 80px; top:120px;"><span class="text">190</span></div>
-                            <div class="minus" style="height: 120px; top:80px;"><span class="text">210</span></div>
-                            <div class="active" style="height: 100px; top:100px;"><span class="text">185</span></div>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">시뮬레이션 결과</a></h2>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-box simulation-result">
+                <div class="simulation">
+                    <p class="info-title"><span class="color-red">잔고가 부족한 상황이 예측됩니다.</span><br>미리 준비해서 지출 미납에 대비하세요😲
+                    </p>
+                    <div class="amount-wrap">
+                        <div class="month-range">
+                            <div class="prev"><a href="#"><img src="../../img/common/btn_graph_back@2x.png" width="40"
+                                        alt="prev"></a></div>
+                            <div class="range">현금흐름</div>
+                            <div class="next"><a href="#"><img src="../../img/common/btn_graph_forward@2x.png"
+                                        width="40" alt="prev"></a></div>
                         </div>
-                        <div class="month">
-                            <em>6월</em>
-                            <em>7월</em>
-                            <em>8월</em>
-                            <em>9월</em>
-                            <em>10월</em>
+                        <div class="graph">
+                            <div class="stick" style="height: 200px;">
+                                <div style="height: 40px; top:160px;"><span class="text">140</span></div>
+                                <div style="height: 20px; top:180px;"><span class="text">124</span></div>
+                                <div style="height: 80px; top:120px;"><span class="text">190</span></div>
+                                <div class="minus" style="height: 120px; top:80px;"><span class="text">210</span></div>
+                                <div class="active" style="height: 100px; top:100px;"><span class="text">185</span>
+                                </div>
+                            </div>
+                            <div class="month">
+                                <em>6월</em>
+                                <em>7월</em>
+                                <em>8월</em>
+                                <em>9월</em>
+                                <em>10월</em>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="divider"></div>
+                <ul class="current-money-list">
+                    <li>
+                        <div>
+                            <span class="tit">현재 잔고</span>
+                            <span class="modification">0</span>
+                        </div>
+                        <div>
+                            <span class="day">6월 14일</span>
+                            <span class="total">0</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="tit">아파트관리비</span>
+                            <span class="modification">-410,000</span>
+                        </div>
+                        <div>
+                            <span class="day">6월 13일</span>
+                            <span class="total">300,000</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="tit">유비벨록스 월급</span>
+                            <span class="modification plus">5,600,000</span>
+                        </div>
+                        <div>
+                            <span class="day">6월 18일</span>
+                            <span class="total">5,900,000</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="tit">국민카드대금</span>
+                            <span class="modification">-1,510,000</span>
+                        </div>
+                        <div>
+                            <span class="day">6월 13일</span>
+                            <span class="total">4,090,000</span>
+                        </div>
+                    </li>
+
+
+                </ul>
+
             </div>
-            <div class="divider"></div>
-            <ul class="current-money-list">
-                <li>
-                    <div>
-                        <span class="tit">현재 잔고</span>
-                        <span class="modification">0</span>
-                    </div>
-                    <div>
-                        <span class="day">6월 14일</span>
-                        <span class="total">0</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <span class="tit">아파트관리비</span>
-                        <span class="modification">-410,000</span>
-                    </div>
-                    <div>
-                        <span class="day">6월 13일</span>
-                        <span class="total">300,000</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <span class="tit">유비벨록스 월급</span>
-                        <span class="modification plus">5,600,000</span>
-                    </div>
-                    <div>
-                        <span class="day">6월 18일</span>
-                        <span class="total">5,900,000</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <span class="tit">국민카드대금</span>
-                        <span class="modification">-1,510,000</span>
-                    </div>
-                    <div>
-                        <span class="day">6월 13일</span>
-                        <span class="total">4,090,000</span>
-                    </div>
-                </li>
-
-
-            </ul>
-
         </div>
-    </div>
 
-</div>
+    </div>
 </body>
+
 </html>
 
 <script>
-
-    var canvas1 = document.getElementById("canvas1");
-    var canvas2 = document.getElementById("canvas2");
-    var canvas3 = document.getElementById("canvas3");
-
-    // Apply multiply blend when drawing datasets
-    var multiply = {
-        beforeDatasetsDraw: function(chart, options, el) {
-            chart.ctx.globalCompositeOperation = 'multiply';
-        },
-        afterDatasetsDraw: function(chart, options) {
-            chart.ctx.globalCompositeOperation = 'source-over';
-        },
-    };
-
-    var config1 = {
-        type: 'bar',
-        data: {
-            labels: ["11월", "12월", "1월", "2월", "3월"],
-            datasets: [
-                {
-                    label: 'Temperature',
-                    data: [240, 200, 350, 100, 400],
-                    backgroundColor: '#ece5fc',
-                    pointBackgroundColor: '#7c4ce8',
-                    borderSkipped: false,
-                }
-            ]
-        },
-        options: {
-            maintainAspectRatio: false,
-            responsive: false,
-            events: false,
-            elements: {
-                point: {
-                    radius: 6,
-                    hitRadius: 6,
-                    hoverRadius: 6
-                },
-                bar: {
-                    borderRadius: 10,
-                }
-            },
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                enabled: false,
-            },
-            scales: {
-                xAxes: [{
-                    display: false,
-                }],
-                yAxes: [{
-                    display: false,
-                    ticks: {
-                        beginAtZero: true,
-                    },
-                }]
-            },
-            plugins: {
-                datalabels: {
-                    anchor: 'end',
-                    align: 'top',
-                    font: {
-                        size: 14,
-                        color: '#737183'
-                    }
-                }
-            },
-            layout: {
-                padding:{
-                    top: 30
-                }
-            },
-        },
-        plugins: [multiply],
-    };
-
-    var config2 = {
-        type: 'bar',
-        data: {
-            labels: ["4월", "5월", "6월", "7월", "8월"],
-            datasets: [
-                {
-                    label: 'Temperature',
-                    data: [156, 180, 175, 210, 140],
-                    backgroundColor: '#ece5fc',
-                    pointBackgroundColor: '#7c4ce8',
-                    borderSkipped: false,
-                }
-            ]
-        },
-        options: {
-            maintainAspectRatio: false,
-            responsive: false,
-            events: false,
-            elements: {
-                point: {
-                    radius: 6,
-                    hitRadius: 6,
-                    hoverRadius: 6
-                },
-                bar: {
-                    borderRadius: 10,
-                }
-            },
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                enabled: false,
-            },
-            scales: {
-                xAxes: [{
-                    display: false,
-                }],
-                yAxes: [{
-                    display: false,
-                    ticks: {
-                        beginAtZero: true,
-                    },
-                }]
-            },
-            plugins: {
-                datalabels: {
-                    anchor: 'end',
-                    align: 'top',
-                    font: {
-                        size: 14,
-                        color: '#737183'
-                    }
-                }
-            },
-            layout: {
-                padding:{
-                    top: 30
-                }
-            },
-        },
-        plugins: [multiply],
-    };
-
-    var config3 = {
-        type: 'bar',
-        data: {
-            labels: ["9월", "10월", "11월", "12월", "1월"],
-            datasets: [
-                {
-                    label: 'Temperature',
-                    data: [120, 170, 100, 90, 150],
-                    backgroundColor: '#ece5fc',
-                    pointBackgroundColor: '#7c4ce8',
-                    borderSkipped: false,
-                }
-            ]
-        },
-        options: {
-            maintainAspectRatio: false,
-            responsive: false,
-            events: false,
-            elements: {
-                point: {
-                    radius: 6,
-                    hitRadius: 6,
-                    hoverRadius: 6
-                },
-                bar: {
-                    borderRadius: 10,
-                }
-            },
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                enabled: false,
-            },
-            scales: {
-                xAxes: [{
-                    display: false,
-                }],
-                yAxes: [{
-                    display: false,
-                    ticks: {
-                        beginAtZero: true,
-                    },
-                }]
-            },
-            plugins: {
-                datalabels: {
-                    anchor: 'end',
-                    align: 'top',
-                    font: {
-                        size: 14,
-                        color: '#737183'
-                    }
-                }
-            },
-            layout: {
-                padding:{
-                    top: 30
-                }
-            },
-        },
-        plugins: [multiply],
-    };
-
-
-    window.chart = new Chart(canvas1, config1);
-    window.chart = new Chart(canvas2, config2);
-    window.chart = new Chart(canvas3, config3);
-
-
-
-
     // swiper
     var swiper = new Swiper("._slider", {
         pagination: {

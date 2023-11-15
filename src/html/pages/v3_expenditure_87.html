@@ -1,138 +1,141 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
-    </div>
-    <div class="contents expenditure">
-        <div class="income-details-amount type2">
-            <ul class="budget">
-                <li class="item">
-                    <span class="tit">수입계획</span>
-                    <span class="val"><span>5,500,000</span>원<i class="ico_list_arrow_small"></i></span>
-                </li>
-                <li class="item">
-                    <span class="tit">지출계획</span>
-                    <span class="val"><span>2,520,000</span>원</span>
-                </li>
-                <li class="definition">
-                    <ul>
-                        <li>
-                            <span class="tit">고정지출 예정</span>
-                            <span class="val"><span>1,500,000</span>원<i class="ico_list_arrow_small"></i></span>
-                        </li>
-                        <li>
-                            <span class="tit">카드할부 예정</span>
-                            <span class="val"><span>200,000</span>원<i class="ico_list_arrow_small"></i></span>
-                        </li>
-                        <li>
-                            <span class="tit">변동지출 예산</span>
-                            <span class="val"><span>200,000</span>원<i class="ico_list_arrow_small"></i></span>
-                        </li>
-                    </ul>
-                </li>
-                <li class="item pb-0">
-                    <span class="tit">남는 돈 계획</span>
-                    <span class="val"><span>2,520,000</span>원</span>
-                </li>
-                <li class="item color-gray p-0">
-                    남는 돈 계획 = 수입계획 - 지출계획
-                </li>
-            </ul>
-            <!-- <div class="definition">여행숙박, 식비, 교통, 주유</div>-->
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
         </div>
-        <div class="divider"></div>
-        <div class="expenditure-box income-total">
-            <div class="title-wrap">
-                <p class="info-title"><span>6월부터 10월까지 <span class="color-purple">남은 돈은<br>780만원</span> 입니다.</span></p>
-                <p class="sub-desc">5개월 월평균 100만원</p>
+        <div class="contents expenditure">
+            <div class="income-details-amount type2">
+                <ul class="budget">
+                    <li class="item">
+                        <span class="tit">수입계획</span>
+                        <span class="val"><span>5,500,000</span>원<i class="ico_list_arrow_small"></i></span>
+                    </li>
+                    <li class="item">
+                        <span class="tit">지출계획</span>
+                        <span class="val"><span>2,520,000</span>원</span>
+                    </li>
+                    <li class="definition">
+                        <ul>
+                            <li>
+                                <span class="tit">고정지출 예정</span>
+                                <span class="val"><span>1,500,000</span>원<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                            <li>
+                                <span class="tit">카드할부 예정</span>
+                                <span class="val"><span>200,000</span>원<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                            <li>
+                                <span class="tit">변동지출 예산</span>
+                                <span class="val"><span>200,000</span>원<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item pb-0">
+                        <span class="tit">남는 돈 계획</span>
+                        <span class="val"><span>2,520,000</span>원</span>
+                    </li>
+                    <li class="item color-gray p-0">
+                        남는 돈 계획 = 수입계획 - 지출계획
+                    </li>
+                </ul>
+                <!-- <div class="definition">여행숙박, 식비, 교통, 주유</div>-->
             </div>
+            <div class="divider"></div>
+            <div class="expenditure-box income-total">
+                <div class="title-wrap">
+                    <p class="info-title"><span>6월부터 10월까지 <span class="color-purple">남은 돈은<br>780만원</span> 입니다.</span>
+                    </p>
+                    <p class="sub-desc">5개월 월평균 100만원</p>
+                </div>
 
-            <div class="income-chart">
-                <div class="chart">
-                    <div class="swiper-container _slider">
-                        <div class="swiper-btn">
-                            <div class="swiper-button swiper-button-prev"></div>
-                            <div class="swiper-button swiper-button-next"></div>
-                        </div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    2022년 6월 - 8월
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas1"></canvas>
+                <div class="income-chart">
+                    <div class="chart">
+                        <div class="swiper-container _slider">
+                            <div class="swiper-btn">
+                                <div class="swiper-button swiper-button-prev"></div>
+                                <div class="swiper-button swiper-button-next"></div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="period">
+                                        2022년 6월 - 8월
+                                    </div>
+                                    <div class="graph-box">
+                                        <canvas id="canvas1"></canvas>
 
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">11월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">12월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">1월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">2월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">3월</span>
+                                        <div class="axis">
+                                            <div class="tick">
+                                                <span class="day-month">11월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">12월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">1월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">2월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">3월</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    2022년 4월 - 8월
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas2"></canvas>
+                                <div class="swiper-slide">
+                                    <div class="period">
+                                        2022년 4월 - 8월
+                                    </div>
+                                    <div class="graph-box">
+                                        <canvas id="canvas2"></canvas>
 
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">4월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">5월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month active">6월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">7월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">8월</span>
+                                        <div class="axis">
+                                            <div class="tick">
+                                                <span class="day-month">4월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">5월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month active">6월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">7월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">8월</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="period">
-                                    2022년 9월 - 2023년 1월
-                                </div>
-                                <div class="graph-box">
-                                    <canvas id="canvas3"></canvas>
+                                <div class="swiper-slide">
+                                    <div class="period">
+                                        2022년 9월 - 2023년 1월
+                                    </div>
+                                    <div class="graph-box">
+                                        <canvas id="canvas3"></canvas>
 
-                                    <div class="axis">
-                                        <div class="tick">
-                                            <span class="day-month">9월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">10월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month active">11월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">12월</span>
-                                        </div>
-                                        <div class="tick">
-                                            <span class="day-month">1월</span>
+                                        <div class="axis">
+                                            <div class="tick">
+                                                <span class="day-month">9월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">10월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month active">11월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">12월</span>
+                                            </div>
+                                            <div class="tick">
+                                                <span class="day-month">1월</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -142,13 +145,14 @@
                 </div>
             </div>
         </div>
-    </div>
 
-</div>
+    </div>
 </body>
+
 </html>
 
 <script>
+    Chart.register(ChartDataLabels);
 
     var canvas1 = document.getElementById("canvas1");
     var canvas2 = document.getElementById("canvas2");
@@ -156,16 +160,17 @@
 
     // Apply multiply blend when drawing datasets
     var multiply = {
-        beforeDatasetsDraw: function(chart, options, el) {
+        beforeDatasetsDraw: function (chart, options, el) {
             chart.ctx.globalCompositeOperation = 'multiply';
         },
-        afterDatasetsDraw: function(chart, options) {
+        afterDatasetsDraw: function (chart, options) {
             chart.ctx.globalCompositeOperation = 'source-over';
         },
     };
 
     var config1 = {
         type: 'bar',
+        plugins: [ChartDataLabels, multiply],
         data: {
             labels: ["11월", "12월", "1월", "2월", "3월"],
             datasets: [
@@ -181,36 +186,42 @@
         options: {
             maintainAspectRatio: false,
             responsive: false,
-            events: false,
             elements: {
                 point: {
                     radius: 6,
                     hitRadius: 6,
                     hoverRadius: 6
                 },
-                bar: {
-                    borderRadius: 10,
-                }
-            },
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                enabled: false,
             },
             scales: {
-                xAxes: [{
+                x: {
                     display: false,
-                }],
-                yAxes: [{
-                    display: true,
+
+                },
+                y: {
                     ticks: {
                         beginAtZero: true,
                     },
+                    grid: {
+                        drawBorder: false,
+                        color: (value) => {
+                            if (value.tick.value === 0) {
+                                return '#737183'
+                            } else {
+                                return '#d2d5db'
+                            }
+                        },
+                    }
 
-                }]
+                }
             },
             plugins: {
+                legend: {
+                    display: false,
+                },
+                tooltips: {
+                    enabled: false,
+                },
                 datalabels: {
                     anchor: 'end',
                     align: 'top',
@@ -218,19 +229,19 @@
                         size: 14,
                         color: '#737183'
                     }
-                }
+                },
             },
             layout: {
-                padding:{
+                padding: {
                     top: 30
                 }
             },
         },
-        plugins: [multiply],
     };
 
     var config2 = {
         type: 'bar',
+        plugins: [ChartDataLabels, multiply],
         data: {
             labels: ["4월", "5월", "6월", "7월", "8월"],
             datasets: [
@@ -246,35 +257,31 @@
         options: {
             maintainAspectRatio: false,
             responsive: false,
-            events: false,
             elements: {
                 point: {
                     radius: 6,
                     hitRadius: 6,
                     hoverRadius: 6
                 },
-                bar: {
-                    borderRadius: 10,
-                }
-            },
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                enabled: false,
             },
             scales: {
-                xAxes: [{
+                x: {
                     display: false,
-                }],
-                yAxes: [{
+                },
+                y: {
                     display: false,
                     ticks: {
                         beginAtZero: true,
                     },
-                }]
+                }
             },
             plugins: {
+                legend: {
+                    display: false,
+                },
+                tooltips: {
+                    enabled: false,
+                },
                 datalabels: {
                     anchor: 'end',
                     align: 'top',
@@ -285,16 +292,16 @@
                 }
             },
             layout: {
-                padding:{
+                padding: {
                     top: 30
                 }
             },
         },
-        plugins: [multiply],
     };
 
     var config3 = {
         type: 'bar',
+        plugins: [ChartDataLabels, multiply],
         data: {
             labels: ["9월", "10월", "11월", "12월", "1월"],
             datasets: [
@@ -310,35 +317,32 @@
         options: {
             maintainAspectRatio: false,
             responsive: false,
-            events: false,
             elements: {
                 point: {
                     radius: 6,
                     hitRadius: 6,
                     hoverRadius: 6
                 },
-                bar: {
-                    borderRadius: 10,
-                }
             },
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                enabled: false,
-            },
+
             scales: {
-                xAxes: [{
+                x: {
                     display: false,
-                }],
-                yAxes: [{
+                },
+                y: {
                     display: false,
                     ticks: {
                         beginAtZero: true,
                     },
-                }]
+                }
             },
             plugins: {
+                legend: {
+                    display: false,
+                },
+                tooltips: {
+                    enabled: false,
+                },
                 datalabels: {
                     anchor: 'end',
                     align: 'top',
@@ -349,18 +353,17 @@
                 }
             },
             layout: {
-                padding:{
+                padding: {
                     top: 30
                 }
             },
         },
-        plugins: [multiply],
     };
 
 
-    window.chart = new Chart(canvas1, config1);
-    window.chart = new Chart(canvas2, config2);
-    window.chart = new Chart(canvas3, config3);
+    new Chart(canvas1, config1);
+    new Chart(canvas2, config2);
+    new Chart(canvas3, config3);
 
 
 

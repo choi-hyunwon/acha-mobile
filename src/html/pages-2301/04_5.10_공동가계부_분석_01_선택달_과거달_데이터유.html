@@ -100,7 +100,7 @@
                                         <div class="graph-box income">
                                             <p class="title">수입</p>
                                             <div class="chart-box doughnut">
-                                                <canvas id="canvas-income" width="100" height="100"></canvas>
+                                                <canvas id="canvas-income" height="100"></canvas>
                                             </div>
                                             <script>
                                                 const canvas_1 = document.getElementById('canvas-income').getContext('2d');
@@ -115,10 +115,17 @@
                                                             data: [60, 40],
                                                             backgroundColor: ['#4c6ae8', '#21389a'],
                                                             borderColor: ['#4c6ae8', '#21389a'],
+                                                            tooltip: {
+                                                                callbacks: {
+                                                                    label: function (context) {
+                                                                        return `${context.label}: ${context.formattedValue}%`;
+                                                                    },
+                                                                },
+                                                            },
                                                         }]
                                                     },
                                                     options: {
-                                                        radius: 60,
+                                                        radius: 100,
                                                         cutout: '30%',
                                                         plugins: {
                                                             legend: {
@@ -130,6 +137,9 @@
                                                                 formatter: function (value, context) {
                                                                     return value + '%';
                                                                 },
+                                                                font: {
+                                                                    size: 14,
+                                                                }
                                                             },
                                                         },
                                                     },
@@ -189,10 +199,17 @@
                                                             data: [40, 60],
                                                             backgroundColor: ['#b42b50', '#f4507c'],
                                                             borderColor: ['#b42b50', '#f4507c'],
+                                                            tooltip: {
+                                                                callbacks: {
+                                                                    label: function (context) {
+                                                                        return `${context.label}: ${context.formattedValue}%`;
+                                                                    },
+                                                                },
+                                                            },
                                                         }]
                                                     },
                                                     options: {
-                                                        radius: 60,
+                                                        radius: 90,
                                                         cutout: '30%',
                                                         plugins: {
                                                             legend: {

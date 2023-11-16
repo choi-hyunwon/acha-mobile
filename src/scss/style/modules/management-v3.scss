@@ -4161,7 +4161,7 @@
               font-size: 15px;
               font-family: var(--font3);
               line-height: 22px;
-              // margin-bottom: 10px;
+              margin-bottom: 10px;
             }
 
             .chart-box {
@@ -4171,7 +4171,7 @@
 
             &.income {
               .info-box {
-                margin-top: 10px;
+                margin-top: 24px;
 
                 .icon-user {
                   &.me {
@@ -4405,9 +4405,12 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          margin-bottom: 10px;
         }
 
         .category-list {
+          margin-top: 24px;
+
           .btn {
             .ico_list_arrow_small {
               transform: rotate(90deg);

@@ -407,6 +407,12 @@
     &.mission-area {
       min-height: calc(100vh - 116px);
     }
+
+    &-data {
+      &:after {
+        display: none !important;
+      }
+    }
   }
 
   /**

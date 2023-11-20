@@ -3505,6 +3505,22 @@
                       object-fit: contain;
                     }
                   }
+
+                  &-me {
+                    &::after {
+                      content: '';
+                      width: 8px;
+                      height: 8px;
+                      border: solid 2px #fff;
+                      background-color: #6839d3;
+                      position: absolute;
+                      -webkit-border-radius: 50%;
+                      -moz-border-radius: 50%;
+                      border-radius: 50%;
+                      top: 0;
+                      right: 0;
+                    }
+                  }
                 }
               }
             }

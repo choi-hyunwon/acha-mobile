@@ -100,7 +100,7 @@
                                                         <p class="expected">12일 <i></i> 우리계좌123</p>
                                                     </div>
                                                 </div>
-                                                <i class="icon-user">
+                                                <i class="icon-user icon-user-me">
                                                     <img src="../../img/common/ico_mypage_profile_img01@2x.png"
                                                         alt="아이콘">
                                                 </i>
@@ -121,7 +121,8 @@
                                                         alt="아이콘"></i>
                                             </div>
                                         </li>
-                                        <li class="item-list">
+                                        <!-- 지출 예정인 item-list에만 .expect 추가 -->
+                                        <li class="item-list expect">
                                             <div class="head">
                                                 <p>지출 예정 <span class="f-point bold">1</span></p>
                                                 <p class="total">240,000<span>원</span></p>
@@ -148,6 +149,8 @@
                                 </div>
                             </div>
                         </li>
+
+                        <!-- 적용 예시 부분 개발에선 제거 -->
                         <li>
                             <div class="usage-plan">
                                 <div class="plan-list">
@@ -185,8 +188,50 @@
                                                         alt="아이콘">
                                                 </i>
                                             </div>
+                                            <div class="group">
+                                                <div class="box">
+                                                    <div class="img">
+                                                        <i class="icon icon_cate_subscript"></i>
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="place">수입명(현금)</p>
+                                                        <p class="amount">60,000</p>
+                                                        <p class="expected">30일 <i></i> 현금</p>
+                                                    </div>
+                                                </div>
+                                                <i class="icon-user">
+                                                    <img src="../../img/common/ico_mypage_profile_img03@2x.png"
+                                                        alt="아이콘"></i>
+                                            </div>
                                         </li>
-                                        <li class="item-list">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- //적용 예시 부분 개발에선 제거 -->
+
+                        <li>
+                            <div class="usage-plan">
+                                <div class="plan-list">
+                                    <div class="plan">
+                                        <a class="btn-collapse">
+                                            <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22"
+                                                alt="접기">
+                                        </a>
+                                        <div class="income">
+                                            <span class="sub-title">할부지출
+                                                <span class="badge badge-purple badge-payment">3건</span>
+                                            </span>
+                                            <p class="number">1,300,000<span>원</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-plan-box">
+                                    <div class="divider"></div>
+                                    <ul class="details-history">
+                                        <!-- 지출 예정인 item-list에만 .expect 추가 -->
+                                        <!-- 지출 예정만 있을 경우 .mt-10 추가-->
+                                        <li class="item-list expect mt-10">
                                             <div class="head">
                                                 <p>지출 예정 <span class="f-point bold">1</span></p>
                                                 <p class="total">240,000<span>원</span></p>
@@ -293,7 +338,8 @@
                                                         alt="아이콘"></i>
                                             </div>
                                         </li>
-                                        <li class="item-list">
+                                        <!-- 지출 예정인 item-list에만 .expect 추가 -->
+                                        <li class="item-list expect">
                                             <div class="head">
                                                 <p>지출 예정 <span class="f-point bold">1</span></p>
                                                 <p class="total">240,000<span>원</span></p>

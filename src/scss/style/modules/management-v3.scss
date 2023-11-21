@@ -3098,9 +3098,11 @@
                     margin-top: 0;
                   }
 
-                  &:last-child {
+                  &.expect {
                     margin-top: 40px;
                   }
+
+
 
                   .total {
                     display: flex;
@@ -3311,14 +3313,13 @@
               }
             }
 
-
             +.history-plan-box {
               .details-history {
                 min-height: auto;
-                padding: 0;
+                padding: 10px 0 0;
 
                 .item-list {
-                  margin-top: 20px;
+                  margin-top: 0;
 
                   .group {
                     position: relative;

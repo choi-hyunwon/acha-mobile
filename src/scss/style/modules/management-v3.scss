@@ -2498,8 +2498,15 @@
 
     &.expenditure-tab {
       ul {
+        white-space: nowrap;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
         li {
-          padding: 10px 7px !important;
+          padding: 7px !important;
         }
       }
     }

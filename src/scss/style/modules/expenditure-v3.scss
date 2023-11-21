@@ -1370,6 +1370,15 @@
           border-bottom: 1px solid #efefef;
         }
       }
+
+      &.sticky {
+        position: sticky;
+        left: 0;
+        top: 66px;
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+      }
     }
 
     .expenditure-box {

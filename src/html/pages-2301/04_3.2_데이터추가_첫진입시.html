@@ -4,11 +4,11 @@
 
 <body>
     <div class="wrap renewal">
-        <div class="header">
+        <div class="header fixed">
             <h2>공유 데이터 추가</h2>
             <a href="#" class="sprite btn_close"></a>
         </div>
-        <div class="contents expenditure share-spend-money share-add">
+        <div class="contents expenditure share-spend-money share-add pt-66">
             <div class="text-descriptiton mb-30">
                 <p class="title">
                     <span class="f-point">공유하고 싶은 <br /> 데이터와 시작일</span>
@@ -17,13 +17,16 @@
                 <p class="desc">공유 데이터의 상품명 및 공유 범위는 <br />[공동관리 >프로필]을 클릭하여 수정할 수 있어요</p>
             </div>
 
-            <div class="expenditure-tab manage-tab _expenditureTab mb-30" style="border-bottom: 1px solid #e3e4e8;">
+            <div class="expenditure-tab manage-tab _expenditureTab sticky-top sticky mb-30"
+                style="border-bottom: 1px solid #e3e4e8;">
                 <ul>
-                    <li class="active"><a href="#">카드 <span class="f-point bold">2</span></a></li>
-                    <li><a href="#">계좌 <span class="f-point bold">2</span></a></li>
-                    <li><a href="#">투자</a></li>
-                    <li><a href="#">보험 <span class="f-point bold">1</span></a></li>
-                    <li><a href="#">기타</a></li>
+                    <li class="active"><a href="#share-item-01">카드 <span class="f-point bold">2</span></a></li>
+                    <li><a href="#share-item-02">계좌</a></li>
+                    <li><a href="#share-item-03">투자</a></li>
+                    <li><a href="#share-item-04">연금</a></li>
+                    <li><a href="#share-item-05">대출</a></li>
+                    <li><a href="#share-item-06">보험</a></li>
+                    <li><a href="#share-item-07">기타</a></li>
                 </ul>
             </div>
 
@@ -51,7 +54,7 @@
             <div class="expenditure-box" style="padding-bottom: 100px;">
                 <ul class="usage-history-list usage-category-list filter-setting " style="padding:20px 20px;">
                     <!-- 카드 -->
-                    <li>
+                    <li id="share-item-01">
                         <div class="title-category justify-content-between">
                             <span>카드 <span class="f-point bold">2</span></span>
                             <label>
@@ -113,7 +116,7 @@
                         </ul>
                     </li>
                     <!-- 계좌 -->
-                    <li>
+                    <li id="share-item-02">
                         <div class="title-category justify-content-between">
                             <span>계좌 <span class="f-point bold">2</span></span>
                             <label>
@@ -198,7 +201,7 @@
                         </ul>
                     </li>
                     <!-- 투자 -->
-                    <li>
+                    <li id="share-item-03">
                         <div class="title-category justify-content-between">
                             <span>투자 <span class="f-point bold">2</span></span>
                             <label>
@@ -248,7 +251,7 @@
                         </ul>
                     </li>
                     <!-- 연금 -->
-                    <li>
+                    <li id="share-item-04">
                         <div class="title-category justify-content-between">
                             <span>연금<span class="f-point bold">2</span></span>
                             <label>
@@ -278,7 +281,7 @@
                         </ul>
                     </li>
                     <!-- 대출 -->
-                    <li>
+                    <li id="share-item-05">
                         <div class="title-category justify-content-between">
                             <span>대출<span class="f-point bold">2</span></span>
                             <label>
@@ -365,7 +368,7 @@
                         </ul>
                     </li>
                     <!-- 보험 -->
-                    <li>
+                    <li id="share-item-06">
                         <div class="title-category justify-content-between">
                             <span>보험<span class="f-point bold">0</span></span>
                             <label>
@@ -395,7 +398,7 @@
                         </ul>
                     </li>
                     <!-- 기타 -->
-                    <li>
+                    <li id="share-item-07">
                         <div class="title-category justify-content-between">
                             <span>기타<span class="f-point bold">0</span></span>
                             <label>
@@ -440,10 +443,46 @@
 
     </div>
     <script>
-        // 일자 카테고리 탭
-        $('._expenditureTab li a').on('click', function () {
-            $(this).parent().addClass('active').siblings().removeClass('active')
+
+        let numTabs = $('.manage-tab ul li')
+        let scrollEnabled = true
+
+        // 탭 클릭
+        $('._expenditureTab li a').on('click', function (e) {
+            e.preventDefault();
+            scrollEnabled = false;
+
+            let tabNumber = $(this).parent().index()
+            setActiveTab(tabNumber + 1)
+
+            let scroll = $(this.hash)
+            let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
+
+            $('html,body').animate({ scrollTop: scrollTop }, 500, function () {
+                scrollEnabled = true
+            });
         })
+
+        // 스크롤 할때 탭 활성화
+        $(window).scroll(function () {
+            if (scrollEnabled) {
+                let scroll = $(window).scrollTop()
+
+                for (var i = 1; i <= numTabs.length; i++) {
+                    let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                    if (scroll >= item) {
+                        setActiveTab(i);
+                    }
+                }
+            }
+
+        })
+
+        function setActiveTab(tabNumber) {
+            numTabs.removeClass('active').eq(tabNumber - 1).addClass('active');;
+        }
+
+
     </script>
 
 </body>

@@ -288,10 +288,7 @@ input[type='month'] {
     -webkit-appearance: listbox;
 }
 
-input[type='date'],
-input[type='time'],
-input[type='datetime-local'],
-input[type='month'] {
+input[type='date'] {
     &::-webkit-calendar-picker-indicator {
         display: none;
     }

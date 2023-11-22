@@ -288,6 +288,15 @@ input[type='month'] {
     -webkit-appearance: listbox;
 }
 
+input[type='date'],
+input[type='time'],
+input[type='datetime-local'],
+input[type='month'] {
+    &::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+}
+
 textarea {
     overflow: auto;
     resize: vertical;
@@ -305,7 +314,8 @@ legend {
     overflow: hidden;
     position: absolute;
     left: -999999px;
-    clip: rect(0, 0, 0, 0); /*ie6,7*/
+    clip: rect(0, 0, 0, 0);
+    /*ie6,7*/
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;

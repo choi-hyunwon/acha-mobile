@@ -2498,13 +2498,6 @@
 
     &.expenditure-tab {
       ul {
-        white-space: nowrap;
-        overflow-x: scroll;
-
-        &::-webkit-scrollbar {
-          display: none;
-        }
-
         li {
           padding: 7px !important;
         }
@@ -3689,7 +3682,7 @@
                 p {
                   display: flex;
                   align-items: center;
-                  font-size: 15px;
+                  font-size: 14px;
                   color: var(--text-01);
                   font-family: var(--font2);
 
@@ -3697,6 +3690,10 @@
                     margin-left: 4px;
                     width: 16px;
                     height: 16px;
+                  }
+
+                  .f-point {
+                    margin-left: 4px;
                   }
                 }
 

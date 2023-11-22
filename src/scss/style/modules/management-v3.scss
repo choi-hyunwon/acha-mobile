@@ -2498,13 +2498,6 @@
 
     &.expenditure-tab {
       ul {
-        white-space: nowrap;
-        overflow-x: scroll;
-
-        &::-webkit-scrollbar {
-          display: none;
-        }
-
         li {
           padding: 7px !important;
         }
@@ -3099,7 +3092,7 @@
 
                 .item-list {
                   padding: 0;
-                  margin-top: 10px;
+                  margin-top: 20px;
 
                   &:first-child {
                     margin-top: 0;
@@ -3108,8 +3101,6 @@
                   &.expect {
                     margin-top: 40px;
                   }
-
-
 
                   .total {
                     display: flex;
@@ -3273,7 +3264,7 @@
               >div {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
                 margin-bottom: 14px;
 
                 &:last-child {
@@ -3299,10 +3290,19 @@
                 font-size: 18px;
                 font-family: var(--font2) !important;
                 line-height: 22px;
+                text-align: right;
 
                 span {
                   font-size: 13px;
                   line-height: 19px;
+                }
+
+                em {
+                  display: block;
+                  font-size: 13px;
+                  color: var(--text-03);
+                  font-family: var(--font1);
+                  margin-top: 2px;
                 }
               }
 
@@ -3313,10 +3313,11 @@
                 transform: rotate(180deg);
               }
 
-              &.list-collapse-close {
-                .btn-collapse {
-                  transform: rotate(0);
-                }
+            }
+
+            &.list-collapse-close {
+              .btn-collapse {
+                transform: rotate(0) !important;
               }
             }
 
@@ -3326,12 +3327,10 @@
                 padding: 10px 0 0;
 
                 .item-list {
-                  margin-top: 0;
-
                   .group {
-                    position: relative;
-                    display: flex;
-                    justify-content: space-between;
+                    // position: relative;
+                    // display: flex;
+                    // justify-content: space-between;
                     padding: 16px 0;
 
                     .box {
@@ -3340,14 +3339,9 @@
                       width: 100%;
                       margin-bottom: 0;
 
-
-
                       .img {
                         position: absolute;
                         top: 4px;
-                        width: 40px;
-                        height: 40px;
-
 
                         i {
                           width: 100%;
@@ -3439,93 +3433,13 @@
               padding: 0;
 
               .item-list {
-                margin-top: 20px;
-
                 .group {
-                  position: relative;
-                  display: flex;
-                  justify-content: space-between;
-                  padding: 16px 0;
-
                   .box {
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-                    margin-bottom: 0;
-
-
-
                     .img {
-                      position: absolute;
-                      top: 4px;
-                      width: 40px;
-                      height: 40px;
-
-
                       i {
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
-                      }
-                    }
-
-                    .info {
-                      padding-left: 54px;
-                      width: 100%;
-                      max-width: calc(100% - 40px);
-
-                      .place {
-                        display: block;
-                        font-size: 15px;
-                        color: var(--text-01);
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        max-width: 199px;
-                      }
-
-                      .amount {
-                        font-size: 18px;
-                        color: var(--text-01);
-                        font-family: var(--font2);
-                        line-height: 25px;
-                      }
-
-                      .expected {
-                        margin-top: 2px;
-                        line-height: 18px;
-                        font-size: 12px;
-                        color: var(--text-03);
-                      }
-                    }
-                  }
-
-                  .icon-user {
-                    position: absolute;
-                    top: 26px;
-                    right: 0;
-                    width: 30px;
-                    height: 30px;
-
-                    img {
-                      width: 100%;
-                      height: 100%;
-                      object-fit: contain;
-                    }
-
-                    &-me {
-                      &::after {
-                        content: '';
-                        width: 8px;
-                        height: 8px;
-                        border: solid 2px #fff;
-                        background-color: #6839d3;
-                        position: absolute;
-                        -webkit-border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        border-radius: 50%;
-                        top: 0;
-                        right: 0;
                       }
                     }
                   }
@@ -3586,8 +3500,6 @@
                   .img {
                     position: absolute;
                     top: 4px;
-                    width: 40px;
-                    height: 40px;
                   }
 
                   .info {
@@ -3689,7 +3601,7 @@
                 p {
                   display: flex;
                   align-items: center;
-                  font-size: 15px;
+                  font-size: 14px;
                   color: var(--text-01);
                   font-family: var(--font2);
 
@@ -3697,6 +3609,10 @@
                     margin-left: 4px;
                     width: 16px;
                     height: 16px;
+                  }
+
+                  .f-point {
+                    margin-left: 4px;
                   }
                 }
 

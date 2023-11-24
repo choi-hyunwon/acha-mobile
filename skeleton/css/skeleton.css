@@ -54,6 +54,57 @@ dl {
 .skeleton-box-card-top .skeleton-title-height-27 {
   height: 27px !important;
 }
+.skeleton-box-card-top .skeleton-title .skeleton-profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.skeleton-box-card-top .skeleton-title .skeleton-profile .skeleton-with {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skeleton-box-card-top
+  .skeleton-title
+  .skeleton-profile
+  .skeleton-with
+  .skeleton-icon {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  border: 2px solid #f7f7f8;
+  z-index: 99;
+}
+.skeleton-box-card-top
+  .skeleton-title
+  .skeleton-profile
+  .skeleton-with
+  .skeleton-icon.skeleton-left {
+  left: -18px;
+}
+.skeleton-box-card-top
+  .skeleton-title
+  .skeleton-profile
+  .skeleton-with
+  .skeleton-icon.skeleton-right {
+  right: -18px;
+}
+.skeleton-box-card-top .skeleton-title .skeleton-profile .skeleton-share {
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+}
+
+.skeleton-box-card-top .skeleton-btn {
+  position: absolute;
+  right: 16px;
+  top: 18px;
+}
 
 .skeleton-box-card-list {
   padding: 22px 20px 56px;
@@ -272,6 +323,7 @@ dl {
 .skeleton-mission-contents .skeleton-box-card-top .skeleton-title span {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .skeleton-mission-contents
   .skeleton-box-card-top
@@ -305,7 +357,7 @@ dl {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 26px;
+  margin-top: 12px;
 }
 .skeleton-mission-contents
   .skeleton-box-card-list
@@ -325,6 +377,7 @@ dl {
   .skeleton-asset-wrap
   .skeleton-category-heading
   .skeleton-title {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-bottom: 24px;
@@ -332,8 +385,16 @@ dl {
 .skeleton-mission-contents
   .skeleton-asset-wrap
   .skeleton-category-heading
+  .skeleton-title
+  .skeleton-calendar {
+  right: 0;
+  top: -5px;
+}
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
   .skeleton-list-card {
-  padding: 13px 0;
+  /* padding: 13px 0; */
   border-top: 1px solid #efefef;
 }
 .skeleton-mission-contents
@@ -342,6 +403,7 @@ dl {
   .skeleton-list-card
   .skeleton-item {
   justify-content: flex-start;
+  padding: 16px 0;
 }
 .skeleton-mission-contents
   .skeleton-asset-wrap
@@ -397,6 +459,9 @@ dl {
 .skeleton-width-lg {
   width: 136px !important;
 }
+.skeleton-width-70 {
+  width: 70px !important;
+}
 .skeleton-block {
   width: 100% !important;
   height: 46px !important;
@@ -412,6 +477,12 @@ dl {
 }
 .skeleton-height-xl {
   height: 30px !important;
+}
+.skeleton-height-34 {
+  height: 34px !important;
+}
+.skeleton-height-70 {
+  height: 70px !important;
 }
 .skeleton-radius {
   border-radius: 100%;
@@ -470,6 +541,51 @@ dl {
 }
 .skeleton-mb-6 {
   margin-bottom: 24px !important;
+}
+.skeleton-ml-1 {
+  margin-left: 4px !important;
+}
+.skeleton-ml-2 {
+  margin-left: 8px !important;
+}
+.skeleton-ml-3 {
+  margin-left: 12px !important;
+}
+.skeleton-ml-4 {
+  margin-left: 16px !important;
+}
+.skeleton-ml-5 {
+  margin-left: 20px !important;
+}
+.skeleton-ml-6 {
+  margin-left: 24px !important;
+}
+.skeleton-ml-9 {
+  margin-left: 36px !important;
+}
+.skeleton-mr-1 {
+  margin-right: 4px !important;
+}
+.skeleton-ml-2 {
+  margin-right: 8px !important;
+}
+.skeleton-ml-3 {
+  margin-right: 12px !important;
+}
+.skeleton-ml-4 {
+  margin-right: 16px !important;
+}
+.skeleton-ml-5 {
+  margin-right: 20px !important;
+}
+.skeleton-ml-6 {
+  margin-right: 24px !important;
+}
+.skeleton-pb-4 {
+  padding-bottom: 16px !important;
+}
+.skeleton-pb-5 {
+  padding-bottom: 20px !important;
 }
 .skeleton-transform-center {
   left: 50%;

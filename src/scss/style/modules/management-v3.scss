@@ -3575,11 +3575,20 @@
                   }
 
                   .info {
+                    width: calc(100% - 35px);
                     padding-left: 54px;
 
                     .place {
                       font-size: 15px;
                       line-height: 22px;
+
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                      white-space: unset;
+                      word-break: break-all;
                     }
 
                     .amount {
@@ -3715,10 +3724,27 @@
                   // 상세카드
                   padding: 0;
 
+                  &.lease {
+                    display: flex;
+                    min-height: 76px;
+
+                    .group {
+                      .box {
+                        .img {
+                          top: 50%;
+                          transform: translateY(-50%);
+                        }
+                      }
+                    }
+                  }
+
                   .group {
+                    width: 100%;
                     padding: 16px 0;
 
                     .box {
+                      width: 100%;
+
                       .info {
                         .expected {
                           display: flex;

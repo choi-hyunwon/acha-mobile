@@ -649,12 +649,6 @@ textarea {
     appearance: none;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-}
-
 input.valid:not([type]),
 input.valid:not([type]):focus,
 input.valid[type='text']:not(.browser-default),
@@ -920,6 +914,12 @@ input.custom {
             font-family: var(--font1);
             font-size: 14px;
         }
+    }
+
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
     }
 
     input::-webkit-date-and-time-value {

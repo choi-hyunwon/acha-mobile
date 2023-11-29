@@ -58,6 +58,12 @@
     border-radius: 50%;
 }
 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
 [type='radio']:not(:checked)+span:before {
     content: '';
     display: inline-block;
@@ -916,11 +922,6 @@ input.custom {
         }
     }
 
-    input[type="date"]::-webkit-inner-spin-button,
-    input[type="date"]::-webkit-calendar-picker-indicator {
-        display: none;
-        -webkit-appearance: none;
-    }
 
     input::-webkit-date-and-time-value {
         text-align: left;

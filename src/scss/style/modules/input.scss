@@ -58,11 +58,6 @@
     border-radius: 50%;
 }
 
-input[type="date"] {
-    -webkit-appearance: none;
-}
-
-
 [type='radio']:not(:checked)+span:before {
     content: '';
     display: inline-block;

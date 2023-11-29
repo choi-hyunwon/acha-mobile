@@ -649,6 +649,11 @@ textarea {
     appearance: none;
 }
 
+input[type="date"],
+input[type='datetime'] {
+    -webkit-appearance: none;
+}
+
 input.valid:not([type]),
 input.valid:not([type]):focus,
 input.valid[type='text']:not(.browser-default),

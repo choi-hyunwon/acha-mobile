@@ -1458,7 +1458,7 @@
         .btn_area {
           position: absolute;
           right: 16px;
-          top: 13px;
+          top: 23px;
 
           .img {
             display: flex;
@@ -1566,6 +1566,51 @@
               height: 100%;
               object-fit: contain;
             }
+          }
+        }
+
+        .with-us-day {
+          position: relative;
+          display: flex;
+          font-size: 12px;
+          align-items: center;
+          justify-content: center;
+          color: var(--text-03);
+          padding: 3px 20px;
+          border: 1px solid #e2e3e6;
+          border-radius: 15px;
+          margin-top: 10px;
+          background-color: #fff;
+          letter-spacing: 0;
+
+          &::before,
+          &::after {
+            content: "";
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            position: absolute;
+          }
+
+          &::before {
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid #e2e3e6;
+            top: -6px;
+          }
+
+          &::after {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #fff;
+            top: -5px;
+          }
+
+          p {
+            margin-left: 4px;
+            font-family: var(--font3);
+            font-size: 14px;
           }
         }
       }

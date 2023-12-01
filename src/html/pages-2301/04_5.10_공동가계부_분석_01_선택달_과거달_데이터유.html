@@ -475,17 +475,12 @@
                                         <p class="this"><span></span>10월</p>
                                     </div>
                                     <canvas id="chart-daily" height="190"></canvas>
-                                    <div class="last-this-day">
-                                        <p class="first"></p>
-                                        <p class="last"></p>
-                                    </div>
-
                                 </div>
                                 <script>
                                     const canvas_4 = document.getElementById('chart-daily').getContext('2d');
 
                                     let currentDate = new Date(); // 현재 날짜 가져오기
-                                    let daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1).getMonth() // 현재 달
+                                    let daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth()).getMonth() + 1 // 현재 달
                                     let daysInDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate(); // 현재 달의 일 수
                                     let today = new Date().getDate() - 1;  // 오늘 날짜
                                     let labels = [];
@@ -493,11 +488,7 @@
                                         labels.push(daysInMonth + '.' + i.toString());
                                     }
 
-                                    // 이달의 첫 날과 마지막 날 적용
-                                    $('.last-this-day .first').text(`${daysInMonth}. 01`)
-                                    $('.last-this-day .last').text(`${daysInMonth}. ${daysInDay}`)
-
-                                    const pointImage = new Image(20, 20);
+                                    const pointImage = new Image(17, 17);
                                     pointImage.src = '../../img/common/chart-point.png'
 
 
@@ -619,7 +610,7 @@
                                                         callback: (value) => {
                                                             if (value == today) {
 
-                                                                return '오늘'
+                                                                return `${daysInMonth}.${today + 1}`
                                                             }
                                                         },
                                                         font: 12,

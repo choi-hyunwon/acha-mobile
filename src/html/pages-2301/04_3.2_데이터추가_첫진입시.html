@@ -465,10 +465,10 @@
             if (scrollEnabled) {
                 let scroll = $(window).scrollTop()
 
-                for (var i = 0; i <= numTabs.length; i++) {
-                    let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                for (var i = 1; i <= numTabs.length; i++) {
+                    let item = $('#share-item-0' + i).offset().top - (66 - 52 - 60 - 20) // header - tab - .group - liMarginBottom
                     if (scroll >= item) {
-                        setActiveTab(i + 1);
+                        setActiveTab(i);
                     }
                 }
             }

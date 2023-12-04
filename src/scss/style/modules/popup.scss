@@ -5699,8 +5699,8 @@
 
                 .menu-list {
                     ul {
-                        // height: 225px;
                         height: fit-content;
+                        max-height: 225px;
                         overflow-y: scroll;
                         -ms-overflow-style: none;
                         scrollbar-width: none;

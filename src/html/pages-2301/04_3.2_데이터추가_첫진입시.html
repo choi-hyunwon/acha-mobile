@@ -278,6 +278,24 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>우리 여수신 IRP</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                     <!-- 대출 -->
@@ -395,6 +413,42 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/hanwha.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>흥국생명 보험</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <img src="../../img/@temp/hanwha.png" class="img-ci" alt="우리은행 로고">
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>흥국생명 보험</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                     <!-- 기타 -->
@@ -407,6 +461,60 @@
                             </label>
                         </div>
                         <ul class="details-history">
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-list">
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="item-list">
                                 <div class="group">
                                     <div class="box">
@@ -448,39 +556,39 @@
         let scrollEnabled = true
 
         // 탭 클릭
-        $('._expenditureTab li a').on('click', function (e) {
-            e.preventDefault();
+        // $('._expenditureTab li a').on('click', function (e) {
+        //     e.preventDefault();
 
-            let tabNumber = $(this).parent().index()
-            setActiveTab(tabNumber)
+        //     let tabNumber = $(this).parent().index()
+        //     setActiveTab(tabNumber)
 
-            let scroll = $(this.hash)
-            let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
+        //     let scroll = $(this.hash)
+        //     let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
 
-            $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
-                scrollEnabled = false;
-            });
-        })
-
-        // 스크롤 할때 탭 활성화
-        // $(window).stop().scroll(function () {
-        //     if (scrollEnabled) {
-        //         let scroll = $(window).scrollTop()
-
-        //         for (var i = 0; i <= numTabs.length; i++) {
-        //             let item = $('#share-item-0' + (i + 1)).offset().top - (66 - 52 - 60 - 20) // header - tab - .group - liMarginBottom
-        //             if (scroll >= item) {
-        //                 setActiveTab(i);
-        //             }
-        //         }
-        //     }
-
+        //     $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
+        //         scrollEnabled = false;
+        //     });
         // })
 
-        function setActiveTab(tabNumber) {
-            console.log(tabNumber);
-            numTabs.removeClass('active').eq(tabNumber).addClass('active');;
-        }
+        // 스크롤 할때 탭 활성화
+        $(window).stop().scroll(function () {
+            if (scrollEnabled) {
+                let scroll = $(window).scrollTop()
+
+                for (var i = 1; i <= numTabs.length; i++) {
+                    let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                    if (scroll >= item) {
+                        // setActiveTab(i - 1);
+                        numTabs.removeClass('active').eq(i - 1).addClass('active');;
+                    }
+                }
+            }
+        })
+
+        // function setActiveTab(tabNumber) {
+        //     console.log(tabNumber);
+        //     numTabs.removeClass('active').eq(tabNumber).addClass('active');;
+        // }
 
 
     </script>

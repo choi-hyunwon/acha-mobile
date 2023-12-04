@@ -533,9 +533,7 @@
 
     </div>
     <script>
-
         let numTabs = $('.manage-tab ul li')
-        let scrollEnabled = true
 
         // 탭 클릭
         $('._expenditureTab li a').on('click', function (e) {
@@ -548,22 +546,18 @@
             let scroll = $(this.hash)
             let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
 
-            $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
-                scrollEnabled = false;
-            });
+            $('html,body').stop().animate({ scrollTop: scrollTop }, 500);
         })
 
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(function () {
-            if (scrollEnabled) {
-                let scroll = $(window).scrollTop()
+            let scroll = $(window).scrollTop()
 
-                for (var i = 1; i <= numTabs.length; i++) {
-                    let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
-                    if (scroll >= item) {
-                        // setActiveTab(i - 1);
-                        numTabs.removeClass('active').eq(i - 1).addClass('active');
-                    }
+            for (var i = 1; i <= numTabs.length; i++) {
+                let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                if (scroll >= item) {
+                    // setActiveTab(i - 1);
+                    numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
             }
         })

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide expiration">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title _btnSlideOpen"><span class="name">일부 기관 연결에 실패하였어요</span></div>
+                <div class="err-desc">
+                    <p>연결을 실패한 기관의 데이터를 불러올 수 없어요</p>
+                    <p>가계부 화면 하단의 [계좌·카드 내역 불러오기]를 통해 다시 연결이 가능해요</p>
+                </div>
+                <div class="connect-check">
+                    <p class="success">성공 <span>7</span></p>,
+                    <p class="failure">실패 <span>3</span></p>
+                </div>
+                <ul class="details-history limit">
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="connect connect-failure">실패</div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="connect connect-success">성공</div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="connect connect-success">성공</div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="connect connect-success">성공</div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                            <div class="connect connect-failure">실패</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-wrap" style="margin-top: 20px;">
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg">다음</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

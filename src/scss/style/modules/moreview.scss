@@ -2665,6 +2665,13 @@ _ .event-btn-area {
       text-align: center;
       color: var(--text-01);
       margin-bottom: 12px;
+
+      &.tit-err {
+        font-size: 15px;
+        font-family: var(--font2);
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
     }
 
     .tit-md {
@@ -2673,7 +2680,15 @@ _ .event-btn-area {
       text-align: center;
       color: var(--text-01);
       font-family: var(--font1);
+
+      &.tit-err {
+        font-size: 15px;
+        color: var(--text-02);
+        line-height: 21px;
+      }
     }
+
+
   }
 
   .btn_area {

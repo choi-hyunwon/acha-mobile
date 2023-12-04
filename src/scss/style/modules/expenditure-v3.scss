@@ -5738,6 +5738,15 @@
               margin-right: 6px;
               width: 30px;
               height: 30px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                overflow: hidden;
+              }
             }
 
             .icon-user-me {

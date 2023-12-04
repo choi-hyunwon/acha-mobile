@@ -452,31 +452,34 @@
             e.preventDefault();
 
             let tabNumber = $(this).parent().index()
-            setActiveTab(tabNumber + 1)
+            setActiveTab(tabNumber)
 
             let scroll = $(this.hash)
             let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
 
-            $('html,body').stop().animate({ scrollTop: scrollTop }, 500);
+            $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
+                scrollEnabled = false;
+            });
         })
 
         // 스크롤 할때 탭 활성화
-        $(window).stop().scroll(function () {
-            if (scrollEnabled) {
-                let scroll = $(window).scrollTop()
+        // $(window).stop().scroll(function () {
+        //     if (scrollEnabled) {
+        //         let scroll = $(window).scrollTop()
 
-                for (var i = 1; i <= numTabs.length; i++) {
-                    let item = $('#share-item-0' + i).offset().top - (66 - 52 - 60 - 20) // header - tab - .group - liMarginBottom
-                    if (scroll >= item) {
-                        setActiveTab(i);
-                    }
-                }
-            }
+        //         for (var i = 0; i <= numTabs.length; i++) {
+        //             let item = $('#share-item-0' + (i + 1)).offset().top - (66 - 52 - 60 - 20) // header - tab - .group - liMarginBottom
+        //             if (scroll >= item) {
+        //                 setActiveTab(i);
+        //             }
+        //         }
+        //     }
 
-        })
+        // })
 
         function setActiveTab(tabNumber) {
-            numTabs.removeClass('active').eq(tabNumber - 1).addClass('active');;
+            console.log(tabNumber);
+            numTabs.removeClass('active').eq(tabNumber).addClass('active');;
         }
 
 

@@ -546,10 +546,17 @@
 
             let scroll = $(this.hash)
             let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
-
             $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
                 scrollEnabled = true
             });
+
+            let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
+            if (tabNumber === 0) {
+                $('.manage-tab ul').scrollLeft(0);
+            }
+            if (tabNumber === numTabs.length - 1) {
+                $('.manage-tab ul').scrollLeft(tabLeftScroll);
+            }
         })
 
         // 스크롤 할때 탭 활성화

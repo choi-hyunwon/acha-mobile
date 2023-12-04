@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide expiration">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title _btnSlideOpen">아래 기관은<span class="name">자산을 불러올 수 없어요</span></div>
+                <div class="err-desc">
+                    <p>해당 기관에 자산을 보유하고 있지 않거나, <br />일시적인 문제로 인해 연결할 수 없어요</p>
+                </div>
+                <ul class="details-history limit">
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-list">
+                        <div class="group">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                </div>
+                                <div class="info">
+                                    <span class="place"><span>우리카드</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-wrap" style="margin-top: 20px;">
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg">다음</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

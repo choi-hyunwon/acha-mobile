@@ -667,6 +667,10 @@
             let scroll = $(window).scrollTop();
             let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
 
+            console.log($('.expenditure-box').height());
+
+
+
             if (scrollEnabled) {
                 for (var i = 1; i <= numTabs.length; i++) {
                     let item = $('#share-item-0' + i)
@@ -674,8 +678,9 @@
                     if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
 
-                if (scroll > $('#share-item-03').offset().top) {
-                    $('.manage-tab ul').scrollLeft($(this).offset().left)
+
+                if (scroll > ($('.expenditure-box').height() / 2)) {
+                    $('.manage-tab ul').scrollLeft(tabLeftScroll)
                     // $('.manage-tab ul').animate({
                     //     scrollLeft: 100,
                     //     backgroundColor: '#000'

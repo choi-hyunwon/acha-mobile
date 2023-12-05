@@ -644,9 +644,14 @@
         $('._expenditureTab li a').on('click', function (e) {
             e.preventDefault();
             scrollEnabled = false;
-
             let tabNumber = $(this).parent().index()
-            numTabs.removeClass('active').eq(tabNumber).addClass('active');;
+            let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
+
+            if (tabNumber === 0) $('.manage-tab ul').scrollLeft(0)
+            if (tabNumber === numTabs.length - 1) $('.manage-tab ul').scrollLeft($(this).offset().left)
+            console.log($(this).offset().left);
+
+            numTabs.removeClass('active').eq(tabNumber).addClass('active');
 
             let scroll = $(this.hash)
             let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
@@ -654,9 +659,7 @@
                 scrollEnabled = true
             });
 
-            let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
-            if (tabNumber === 0) $('.manage-tab ul').scrollLeft(0)
-            if (tabNumber === numTabs.length - 1) $('.manage-tab ul').scrollLeft(tabLeftScroll)
+
         })
 
         // 스크롤 할때 탭 활성화
@@ -672,7 +675,7 @@
                 }
 
                 if (scroll > $('#share-item-03').offset().top) {
-                    $('.manage-tab ul').scrollLeft(tabLeftScroll)
+                    $('.manage-tab ul').scrollLeft($(this).offset().left)
                     // $('.manage-tab ul').animate({
                     //     scrollLeft: 100,
                     //     backgroundColor: '#000'

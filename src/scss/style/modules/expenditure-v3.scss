@@ -5658,10 +5658,20 @@
               }
 
               .tit {
-                // 1line ellipsis
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+
+                padding-right: 19px;
+                position: relative;
+                margin-right: 8px;
+
+                .icon-edit {
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
               }
 
               .price {

@@ -639,6 +639,7 @@
     <script>
         let numTabs = $('.manage-tab ul li')
         let scrollEnabled = true
+        let scroll
 
         // 탭 클릭
         $('._expenditureTab li a').on('click', function (e) {
@@ -652,18 +653,16 @@
 
             numTabs.removeClass('active').eq(tabNumber).addClass('active');
 
-            let scroll = $(this.hash)
-            let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
+            let scrollHash = $(this.hash)
+            let scrollTop = scrollHash[0].offsetTop - 66 - 52  // header + teb
             $('html,body').stop().animate({ scrollTop: scrollTop }, 300, function () {
                 scrollEnabled = true
             });
-
-
         })
 
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(function () {
-            let scroll = $(window).scrollTop();
+            scroll = $(window).scrollTop();
             let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
 
             if (scrollEnabled) {
@@ -672,27 +671,30 @@
                     let itemHeight = item.offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
                     if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
-
-                if (scroll <= ($('.expenditure-box').height() / 2)) {
-                    $('.manage-tab ul').scrollLeft(0)
-                    // $('.manage-tab ul').scrollLeft($('.manage-tab ul')[0].offsetWidth)
-                    // $('.manage-tab ul').animate({
-                    //     scrollLeft: 100,
-                    //     backgroundColor: '#000'
-                    // }, 'fast')
-                    console.log('트루');
-                }
-                else {
-                    // $('.manage-tab ul').scrollLeft(0)
-                    $('.manage-tab ul').scrollLeft($('.manage-tab ul')[0].offsetWidth)
-                    // $('.manage-tab ul').animate({
-                    //     scrollLeft: 0,
-                    //     backgroundColor: 'red'
-                    // }, 'fast')
-                    console.log('펄스');
-                }
             }
         })
+
+
+        if (scrollEnabled) {
+            if (scroll <= ($('.expenditure-box').height() / 2)) {
+                $('.manage-tab ul').scrollLeft(0)
+                // $('.manage-tab ul').scrollLeft($('.manage-tab ul')[0].offsetWidth)
+                // $('.manage-tab ul').animate({
+                //     scrollLeft: 100,
+                //     backgroundColor: '#000'
+                // }, 'fast')
+                console.log('트루');
+            }
+            else {
+                // $('.manage-tab ul').scrollLeft(0)
+                $('.manage-tab ul').scrollLeft($('.manage-tab ul')[0].offsetWidth)
+                // $('.manage-tab ul').animate({
+                //     scrollLeft: 0,
+                //     backgroundColor: 'red'
+                // }, 'fast')
+                console.log('펄스');
+            }
+        }
     </script>
 
 </body>

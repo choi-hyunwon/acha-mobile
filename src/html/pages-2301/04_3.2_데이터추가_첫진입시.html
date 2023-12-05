@@ -424,6 +424,150 @@
                                         </label>
                                     </div>
                                 </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <div class="box">
+                                        <div class="img">
+                                            <i class="icon icon_cate_subscript"></i>
+                                        </div>
+                                        <div class="info">
+                                            <span class="place"><span>현금</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </li>
@@ -461,39 +605,29 @@
             });
 
             let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
-            if (tabNumber === 0) {
-                $('.manage-tab ul').animate({
-                    scrollLeft: ($('.manage-tab ul').width() - $(window).width()) / 2
-                }, 'slow');
-            }
-            if (tabNumber === numTabs.length - 1) {
-                $('.manage-tab ul').animate({
-                    scrollLeft: tabLeftScroll
-                }, 'slow');
-            }
+            if (tabNumber === 0) $('.manage-tab ul').scrollLeft(0)
+            if (tabNumber === numTabs.length - 1) $('.manage-tab ul').scrollLeft(tabLeftScroll)
         })
 
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(function () {
-            let scroll = $(window).scrollTop()
+            let scroll = $(window).scrollTop();
+            let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
 
             if (scrollEnabled) {
                 for (var i = 1; i <= numTabs.length; i++) {
-                    let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
-                    if (scroll >= item) {
-                        numTabs.removeClass('active').eq(i - 1).addClass('active');
-                    }
+                    let item = $('#share-item-0' + i)
+                    let itemHeight = item.offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                    if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
+                }
+
+                if (scroll > $('#share-item-03').offset().top) {
+                    $('.manage-tab ul').scrollLeft(($('.manage-tab ul').width()) / 2)
+                } else {
+                    $('.manage-tab ul').scrollLeft(0)
                 }
             }
         })
-
-
-        // function setActiveTab(tabNumber) {
-        //     console.log(tabNumber);
-        //     numTabs.removeClass('active').eq(tabNumber).addClass('active');;
-        // }
-
-
     </script>
 
 </body>

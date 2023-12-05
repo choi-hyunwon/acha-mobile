@@ -712,9 +712,15 @@
                 }
 
                 if (scroll > $('#share-item-03').offset().top) {
-                    $('.manage-tab ul').scrollLeft(tabLeftScroll)
+                    // $('.manage-tab ul').scrollLeft(tabLeftScroll)
+                    $('.manage-tab ul').animate({
+                        scrollLeft: tabLeftScroll
+                    })
                 } else {
-                    $('.manage-tab ul').scrollLeft(0)
+                    // $('.manage-tab ul').scrollLeft(0)
+                    $('.manage-tab ul').animate({
+                        scrollLeft: 0
+                    })
                 }
             }
         })

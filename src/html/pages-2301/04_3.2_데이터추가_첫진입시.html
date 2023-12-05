@@ -683,7 +683,8 @@
                     console.log('트루');
                 }
                 else {
-                    $('.manage-tab ul').scrollLeft(0)
+                    // $('.manage-tab ul').scrollLeft(0)
+                    $('.manage-tab ul').scrollLeft($('.manage-tab ul')[0].offsetWidth)
                     // $('.manage-tab ul').animate({
                     //     scrollLeft: 0,
                     //     backgroundColor: 'red'

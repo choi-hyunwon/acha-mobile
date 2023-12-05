@@ -1382,6 +1382,7 @@
         ul {
           white-space: nowrap;
           overflow-x: scroll;
+          scroll-behavior: smooth;
 
           &::-webkit-scrollbar {
             display: none;

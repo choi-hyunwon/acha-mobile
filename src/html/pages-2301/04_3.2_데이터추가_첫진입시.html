@@ -712,15 +712,17 @@
                 }
 
                 if (scroll > $('#share-item-03').offset().top) {
-                    // $('.manage-tab ul').scrollLeft(tabLeftScroll)
-                    $('.manage-tab ul').animate({
-                        scrollLeft: tabLeftScroll
-                    }, 300)
+                    $('.manage-tab ul').scrollLeft(tabLeftScroll)
+                    console.log(55);
+                    // $('.manage-tab ul').animate({
+                    //     scrollLeft: 100,
+                    // }, 500)
                 } else {
-                    // $('.manage-tab ul').scrollLeft(0)
-                    $('.manage-tab ul').animate({
-                        scrollLeft: 0
-                    }, 300)
+                    console.log(88);
+                    $('.manage-tab ul').scrollLeft(0)
+                    // $('.manage-tab ul').animate({
+                    //     scrollLeft: 0
+                    // }, 500)
                 }
             }
         })

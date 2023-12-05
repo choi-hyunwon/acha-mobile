@@ -3727,6 +3727,10 @@
                 }
 
                 &.head {
+                  p {
+                    font-family: var(--font3);
+                  }
+
                   .total {
                     font-size: 18px;
                   }

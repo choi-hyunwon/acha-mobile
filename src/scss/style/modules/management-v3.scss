@@ -216,14 +216,8 @@
               }
 
               .card-item {
-                border-bottom: 1px solid #efefef;
-
-                &:last-child {
-                  border-bottom: 0;
-
-                  ul {
-                    padding-bottom: 0;
-                  }
+                &~.card-item {
+                  border-top: 1px solid #efefef;
                 }
 
                 .category-head {

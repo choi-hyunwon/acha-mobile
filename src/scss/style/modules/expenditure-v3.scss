@@ -1384,6 +1384,8 @@
           overflow-x: scroll;
           scroll-behavior: smooth;
           -webkit-overflow-scrolling: touch;
+          scroll-snap-align: center;
+
 
           &::-webkit-scrollbar {
             display: none;

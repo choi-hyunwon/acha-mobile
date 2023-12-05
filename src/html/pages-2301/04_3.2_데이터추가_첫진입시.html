@@ -552,10 +552,14 @@
 
             let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
             if (tabNumber === 0) {
-                $('.manage-tab ul').scrollLeft(0);
+                $('.manage-tab ul').animate({
+                    scrollLeft: ($('.manage-tab ul').width() - $(window).width()) / 2
+                }, 'slow');
             }
             if (tabNumber === numTabs.length - 1) {
-                $('.manage-tab ul').scrollLeft(tabLeftScroll);
+                $('.manage-tab ul').animate({
+                    scrollLeft: tabLeftScroll
+                }, 'slow');
             }
         })
 

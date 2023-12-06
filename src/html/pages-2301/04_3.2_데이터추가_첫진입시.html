@@ -674,19 +674,19 @@
                     if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
 
-            }
-            if (scroll > ($('.expenditure-box').height() / 2)) {
-                $('.manage-tab ul').scrollLeft(tabLeftScroll)
-                // $('.manage-tab ul').animate({
-                //     scrollLeft: 100,
-                //     backgroundColor: '#000'
-                // }, 500)
-            } else {
-                $('.manage-tab ul').scrollLeft(0)
-                // $('.manage-tab ul').animate({
-                //     scrollLeft: 0,
-                //     backgroundColor: '#'
-                // }, 500)
+                if (scroll > ($('.expenditure-box').height() / 2)) {
+                    $('.manage-tab ul').scrollLeft(tabLeftScroll)
+                    // $('.manage-tab ul').animate({
+                    //     scrollLeft: 100,
+                    //     backgroundColor: '#000'
+                    // }, 500)
+                } else {
+                    $('.manage-tab ul').scrollLeft(0)
+                    // $('.manage-tab ul').animate({
+                    //     scrollLeft: 0,
+                    //     backgroundColor: '#'
+                    // }, 500)
+                }
             }
         })
     </script>

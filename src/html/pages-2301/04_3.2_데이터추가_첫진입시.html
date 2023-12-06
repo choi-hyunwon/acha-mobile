@@ -639,13 +639,16 @@
     <script>
         let numTabs = $('.manage-tab ul li')
         let scrollEnabled = true
+        let scrolled = true
+        let scroll;
+        let tabLeftScroll;
 
         // 탭 클릭
         $('._expenditureTab li a').on('click', function (e) {
             e.preventDefault();
             scrollEnabled = false;
             let tabNumber = $(this).parent().index()
-            let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
+            tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
 
             if (tabNumber === 0) $('.manage-tab ul').scrollLeft(0)
             if (tabNumber === numTabs.length - 1) $('.manage-tab ul').scrollLeft($(this).offset().left)
@@ -659,14 +662,12 @@
                 scrollEnabled = true
             });
 
-
         })
 
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(function () {
-            let scroll = $(window).scrollTop();
-            let scrolled = true
-            let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
+            scroll = $(window).scrollTop();
+            tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
 
             if (scrollEnabled) {
                 for (var i = 1; i <= numTabs.length; i++) {
@@ -675,23 +676,19 @@
                     if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
 
-                if (scrolled && scroll > ($('.expenditure-box').height() / 2)) {
-                    $('.manage-tab ul').scrollLeft(tabLeftScroll)
-                    scrolled = false
-                    // $('.manage-tab ul').animate({
-                    //     scrollLeft: 100,
-                    //     backgroundColor: '#000'
-                    // }, 500)
-                } else {
-                    $('.manage-tab ul').scrollLeft(0)
-                    scrolled = true
-                    // $('.manage-tab ul').animate({
-                    //     scrollLeft: 0,
-                    //     backgroundColor: '#'
-                    // }, 500)
-                }
+                console.log(scroll > ($('.expenditure-box').height() / 2));
             }
         })
+
+        if (scrolled && scroll > ($('.expenditure-box').height() / 2)) {
+            $('.manage-tab ul').scrollLeft(tabLeftScroll)
+            scrolled = false
+            console.log(555);
+        } else {
+            console.log(999);
+            $('.manage-tab ul').scrollLeft(0)
+            scrolled = true
+        }
     </script>
 
 </body>

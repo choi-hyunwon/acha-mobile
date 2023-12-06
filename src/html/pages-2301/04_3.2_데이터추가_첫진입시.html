@@ -17,7 +17,7 @@
                 <p class="desc">공유 데이터의 상품명 및 공유 범위는 <br />[공동관리 >프로필]을 클릭하여 수정할 수 있어요</p>
             </div>
 
-            <div class="expenditure-tab manage-tab _expenditureTab sticky-top sticky mb-30"
+            <div id="manage-tab" class="expenditure-tab manage-tab _expenditureTab sticky-top sticky mb-30"
                 style="border-bottom: 1px solid #e3e4e8; overflow: hidden;">
                 <ul>
                     <li class="active"><a href="#share-item-01">카드 <span class="f-point bold">2</span></a></li>
@@ -54,7 +54,7 @@
             <div class="expenditure-box" style="padding-bottom: 100px;">
                 <ul class="usage-history-list usage-category-list filter-setting " style="padding:20px 20px;">
                     <!-- 카드 -->
-                    <li id="share-item-01">
+                    <li id="share-item-01" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>카드 <span class="f-point bold">2</span></span>
                             <label>
@@ -116,7 +116,7 @@
                         </ul>
                     </li>
                     <!-- 계좌 -->
-                    <li id="share-item-02">
+                    <li id="share-item-02" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>계좌 <span class="f-point bold">2</span></span>
                             <label>
@@ -201,7 +201,7 @@
                         </ul>
                     </li>
                     <!-- 투자 -->
-                    <li id="share-item-03">
+                    <li id="share-item-03" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>투자 <span class="f-point bold">2</span></span>
                             <label>
@@ -251,7 +251,7 @@
                         </ul>
                     </li>
                     <!-- 연금 -->
-                    <li id="share-item-04">
+                    <li id="share-item-04" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>연금 <span class="f-point bold">2</span></span>
                             <label>
@@ -299,7 +299,7 @@
                         </ul>
                     </li>
                     <!-- 대출 -->
-                    <li id="share-item-05">
+                    <li id="share-item-05" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>대출 <span class="f-point bold">2</span></span>
                             <label>
@@ -386,7 +386,7 @@
                         </ul>
                     </li>
                     <!-- 보험 -->
-                    <li id="share-item-06">
+                    <li id="share-item-06" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>보험 <span class="f-point bold">0</span></span>
                             <label>
@@ -448,7 +448,7 @@
                         </ul>
                     </li>
                     <!-- 기타 -->
-                    <li id="share-item-07">
+                    <li id="share-item-07" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>기타 <span class="f-point bold">0</span></span>
                             <label>
@@ -636,6 +636,8 @@
         </div>
     </div>
     <script>
+
+        // $(document).ready(function () {
         let numTabs = $('.manage-tab ul li')
         let scrollEnabled = true
         let scroll = $(window).scrollTop();
@@ -661,7 +663,7 @@
         })
 
         // 스크롤
-        $(window).stop().scroll(function () {
+        $(window).scroll(function () {
             scroll = $(window).scrollTop();
 
             if (scrollEnabled) {
@@ -671,19 +673,29 @@
                     if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
             }
-
-            if ($(window).scrollTop() > ($('.expenditure-box').height() / 2)) {
-                $('.manage-tab ul')[0].scrollTo({
-                    left: tabLeftScroll,
-                    behavior: 'smooth'
-                })
-            } else {
-                $('.manage-tab ul')[0].scrollTo({
-                    left: 0,
-                    behavior: 'smooth'
-                })
-            }
+            centerActiveTab()
         })
+
+        // });
+        function centerActiveTab() {
+            const tabs = document.getElementById('manage-tab');
+            const tabsUl = tabs.querySelector('ul');
+            const activeTab = tabs.querySelector('.active');
+
+            if (!activeTab) return;
+
+            const containerWidth = tabs.offsetWidth;  //ul width  375
+            const activeTabWidth = activeTab.offsetWidth;  //li width  45
+            let activeTabLeft = activeTab.offsetLeft; // 좌 간격 
+
+            let scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
+
+            // $('.manage-tab ul').scrollLeft(scrollLeft)
+            tabsUl.scrollBy({
+                left: scrollLeft,
+                behavior: 'smooth'
+            });
+        }
 
 
     </script>

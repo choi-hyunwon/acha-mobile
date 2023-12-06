@@ -1381,10 +1381,10 @@
 
         ul {
           white-space: nowrap;
-          overflow: scroll;
-          scroll-behavior: smooth;
-          -webkit-overflow-scrolling: touch;
-          scroll-snap-align: center;
+          overflow-x: auto;
+          // scroll-behavior: smooth;
+          // -webkit-overflow-scrolling: touch;
+          // scroll-snap-align: center;
 
 
           &::-webkit-scrollbar {

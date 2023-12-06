@@ -638,7 +638,7 @@
     <script>
         let numTabs = $('.manage-tab ul li')
         let scrollEnabled = true
-        let scrolled = true
+        let scrolled = false
         let scroll = $(window).scrollTop();
         let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
 
@@ -671,12 +671,17 @@
                     let itemHeight = item.offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
                     if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
-                scrollTabLeft()
-            }
-        })
 
-        function scrollTabLeft() {
-            if (scrolled && scroll > ($('.expenditure-box').height() / 2)) {
+                if ($(window).scrollTop() > ($('.expenditure-box').height() / 2)) {
+                    scrolled = true;
+                    console.log('스크롤 반이상');
+                } else {
+                    scrolled = false;
+                    console.log('스크롤 반이하');
+                }
+            }
+
+            if (scrolled) {
                 $('.manage-tab ul').scrollLeft(tabLeftScroll)
                 // scrolled = false
                 console.log(555);
@@ -685,7 +690,8 @@
                 $('.manage-tab ul').scrollLeft(0)
                 // scrolled = true
             }
-        }
+        })
+
 
     </script>
 

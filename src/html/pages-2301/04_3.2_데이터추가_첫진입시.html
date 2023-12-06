@@ -665,6 +665,7 @@
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(function () {
             let scroll = $(window).scrollTop();
+            let scrolled = true
             let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
 
             if (scrollEnabled) {
@@ -674,14 +675,16 @@
                     if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
 
-                if (scroll > ($('.expenditure-box').height() / 2)) {
+                if (scrolled && scroll > ($('.expenditure-box').height() / 2)) {
                     $('.manage-tab ul').scrollLeft(tabLeftScroll)
+                    scrolled = false
                     // $('.manage-tab ul').animate({
                     //     scrollLeft: 100,
                     //     backgroundColor: '#000'
                     // }, 500)
                 } else {
                     $('.manage-tab ul').scrollLeft(0)
+                    scrolled = true
                     // $('.manage-tab ul').animate({
                     //     scrollLeft: 0,
                     //     backgroundColor: '#'

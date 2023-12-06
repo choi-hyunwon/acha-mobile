@@ -45,6 +45,12 @@
             padding: 10px;
             border: 1px solid #ddd;
             text-align: center;
+            transition: font-weight 0.3s ease, font-size 0.3s ease;
+        }
+
+        li a.active {
+            font-weight: bold;
+            font-size: 20px;
         }
 
         .content {
@@ -77,96 +83,84 @@
     </div>
 
     <script>
-        // 탭과 콘텐츠를 위한 데이터
-        const tabsData = Array.from({ length: 8 }, (_, index) => `Tab ${index + 1}`);
-        const contentData = Array.from({ length: 8 }, (_, index) => `Content ${index + 1}`);
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabsData = Array.from({ length: 8 }, (_, index) => `Tab ${index + 1}`);
+            const contentData = Array.from({ length: 8 }, (_, index) => `Content ${index + 1}`);
 
-        // 탭과 콘텐츠 요소 찾기
-        const tabsContainer = document.getElementById('tabs');
-        const contentContainer = document.getElementById('tabContent');
+            const tabsContainer = document.getElementById('tabs');
+            const contentContainer = document.getElementById('tabContent');
+            let activeTabIndex = 0;
 
-        // 현재 활성화된 탭의 인덱스
-        let activeTabIndex = 0;
+            initializeTabs();
 
-        // 초기화 함수 호출
-        initializeTabs();
+            function initializeTabs() {
+                tabsData.forEach((tab, index) => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="#" data-index="${index}">${tab}</a>`;
+                    li.addEventListener('click', handleTabClick);
+                    tabsContainer.appendChild(li);
 
-        function initializeTabs() {
-            // 탭과 콘텐츠 생성
-            tabsData.forEach((tab, index) => {
-                const li = document.createElement('li');
-                li.innerHTML = `<a href="#" data-index="${index}">${tab}</a>`;
-                li.addEventListener('click', handleTabClick);
-                tabsContainer.appendChild(li);
+                    const contentDiv = document.createElement('div');
+                    contentDiv.innerText = contentData[index];
+                    contentContainer.appendChild(contentDiv);
+                });
 
-                const contentDiv = document.createElement('div');
-                contentDiv.innerText = contentData[index];
-                contentContainer.appendChild(contentDiv);
-            });
+                window.addEventListener('scroll', handleScroll);
+                setActiveTab(activeTabIndex);
+            }
 
-            // 스크롤 이벤트 리스너 등록
-            window.addEventListener('scroll', handleScroll);
+            function handleTabClick(event) {
+                event.preventDefault();
+                const index = event.target.getAttribute('data-index');
+                scrollToContent(index);
+                setActiveTab(index);
+            }
 
-            // 초기 탭 활성화
-            setActiveTab(activeTabIndex);
-        }
+            function scrollToContent(index) {
+                const targetDiv = document.querySelectorAll('.content div')[index];
+                targetDiv.scrollIntoView({ behavior: 'smooth' });
+            }
 
-        function handleTabClick(event) {
-            event.preventDefault();
+            function setActiveTab(index) {
+                activeTabIndex = index;
+                const tabs = document.querySelectorAll('#tabs li');
+                tabs.forEach((tab, tabIndex) => {
+                    const link = tab.querySelector('a');
+                    if (tabIndex === index) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
 
-            const index = event.target.getAttribute('data-index');
-            scrollToContent(index);
-            setActiveTab(index);
-        }
+                centerActiveTab();
+            }
 
-        function scrollToContent(index) {
-            const contentDivs = document.querySelectorAll('.content div');
-            const targetDiv = contentDivs[index];
-            targetDiv.scrollIntoView({ behavior: 'smooth' });
-        }
+            function handleScroll() {
+                const contentDivs = document.querySelectorAll('.content div');
+                contentDivs.forEach((contentDiv, index) => {
+                    const rect = contentDiv.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        setActiveTab(index);
+                    }
+                });
+            }
 
-        function setActiveTab(index) {
-            activeTabIndex = index;
-            const tabs = document.querySelectorAll('#tabs li');
-            tabs.forEach((tab, tabIndex) => {
-                const link = tab.querySelector('a');
-                if (tabIndex == index) {
-                    link.style.fontWeight = 'bold';
-                    link.style.fontSize = '20px';
-                } else {
-                    link.style.fontWeight = 'normal';
-                    link.style.fontSize = '12px';
-                }
-            });
+            function centerActiveTab() {
+                const tabs = document.getElementById('tabs');
+                const activeTab = tabs.querySelector(`[data-index="${activeTabIndex}"]`);
 
-            // 가운데로 이동하는 함수 호출
-            centerActiveTab();
-        }
+                const containerWidth = tabs.offsetWidth;
+                const activeTabWidth = activeTab.offsetWidth;
+                const activeTabLeft = activeTab.offsetLeft;
 
-        function handleScroll() {
-            const contentDivs = document.querySelectorAll('.content div');
-            contentDivs.forEach((contentDiv, index) => {
-                const rect = contentDiv.getBoundingClientRect();
-                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-                    setActiveTab(index);
-                }
-            });
-        }
-
-        function centerActiveTab() {
-            const tabs = document.getElementById('tabs');
-            const activeTab = tabs.querySelector(`[data-index="${activeTabIndex}"]`);
-
-            const containerWidth = tabs.offsetWidth;
-            const activeTabWidth = activeTab.offsetWidth;
-            const activeTabLeft = activeTab.offsetLeft;
-
-            const scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
-            tabs.scrollTo({
-                left: scrollLeft,
-                behavior: 'smooth'
-            });
-        }
+                const scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
+                tabs.scrollTo({
+                    left: scrollLeft,
+                    behavior: 'smooth'
+                });
+            }
+        });
     </script>
 
 </body>

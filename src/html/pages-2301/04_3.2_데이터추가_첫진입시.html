@@ -673,11 +673,15 @@
             }
 
             if ($(window).scrollTop() > ($('.expenditure-box').height() / 2)) {
-                $('.manage-tab ul').scrollLeft(tabLeftScroll)
-                console.log(555);
+                $('.manage-tab ul')[0].scrollTo({
+                    left: tabLeftScroll,
+                    behavior: 'smooth'
+                })
             } else {
-                $('.manage-tab ul').scrollLeft(0)
-                console.log(999);
+                $('.manage-tab ul')[0].scrollTo({
+                    left: 0,
+                    behavior: 'smooth'
+                })
             }
         })
 

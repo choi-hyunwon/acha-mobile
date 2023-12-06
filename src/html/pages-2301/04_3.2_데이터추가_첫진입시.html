@@ -672,8 +672,8 @@
                     let itemHeight = item.offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
                     if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
                 }
+                scrollTabLeft()
             }
-            scrollTabLeft()
         })
 
         function scrollTabLeft() {

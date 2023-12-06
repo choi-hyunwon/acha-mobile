@@ -3283,12 +3283,15 @@
                 line-height: 22px;
 
                 .badge {
+                  display: flex;
+                  align-items: center;
                   margin-left: 4px;
-                  border-radius: 12px;
-                  padding: 3px 8px;
-                  line-height: 1;
-                  font-size: 11px;
+                  padding: 0 8px;
                   height: 19px;
+                  font-size: 11px;
+                  line-height: 19px;
+                  border-radius: 12px;
+
                 }
               }
 

@@ -23,6 +23,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            height: 50px;
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             z-index: 1000;
@@ -63,8 +64,8 @@
         }
 
         .content div {
-            height: 500px;
             margin-bottom: 10px;
+            height: 500px;
             border: 1px solid #ddd;
             padding: 10px;
         }
@@ -75,55 +76,82 @@
 <body>
 
     <ul id="tabs">
-        <!-- 탭 버튼들이 들어갈 자리 -->
+        <li><a href="#section1">Tab 1</a></li>
+        <li><a href="#section2">Tab 2</a></li>
+        <li><a href="#section3">Tab 3</a></li>
+        <li><a href="#section4">Tab 4</a></li>
+        <li><a href="#section5">Tab 5</a></li>
+        <li><a href="#section6">Tab 6</a></li>
+        <li><a href="#section7">Tab 7</a></li>
+        <li><a href="#section8">Tab 8</a></li>
     </ul>
 
-    <div id="tabContent" class="content">
-        <!-- 탭 내용들이 들어갈 자리 -->
+    <div class="content" id="tabContent">
+        <div id="section1">Content 1</div>
+        <div id="section2">Content 2</div>
+        <div id="section3">Content 3</div>
+        <div id="section4">Content 4</div>
+        <div id="section5">Content 5</div>
+        <div id="section6">Content 6</div>
+        <div id="section7">Content 7</div>
+        <div id="section8">Content 8</div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const tabsData = Array.from({ length: 8 }, (_, index) => `Tab ${index + 1}`);
-            const contentData = Array.from({ length: 8 }, (_, index) => `Content ${index + 1}`);
-
             const tabsContainer = document.getElementById('tabs');
-            const contentContainer = document.getElementById('tabContent');
             let activeTabIndex = 0;
 
             initializeTabs();
 
             function initializeTabs() {
-                tabsData.forEach((tab, index) => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<a href="#" data-index="${index}">${tab}</a>`;
-                    li.addEventListener('click', handleTabClick);
-                    tabsContainer.appendChild(li);
-
-                    const contentDiv = document.createElement('div');
-                    contentDiv.innerText = contentData[index];
-                    contentContainer.appendChild(contentDiv);
+                const tabs = tabsContainer.querySelectorAll('li');
+                tabs.forEach((tab, index) => {
+                    tab.addEventListener('click', () => handleTabClick(index));
                 });
 
                 window.addEventListener('scroll', handleScroll);
                 setActiveTab(activeTabIndex);
             }
 
-            function handleTabClick(event) {
-                event.preventDefault();
-                const index = event.target.getAttribute('data-index');
-                scrollToContent(index);
+            function handleTabClick(index) {
                 setActiveTab(index);
+                scrollToContent(`section${index + 1}`);
             }
 
-            function scrollToContent(index) {
-                const targetDiv = document.querySelectorAll('.content div')[index];
-                targetDiv.scrollIntoView({ behavior: 'smooth' });
+            function scrollToContent(sectionId) {
+                const targetDiv = document.getElementById(sectionId);
+                const targetOffset = targetDiv.offsetTop;
+                const currentScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+                // Calculate the distance to scroll
+                const distance = targetOffset - currentScrollTop;
+                const duration = 500; // Animation duration in milliseconds
+                const startTime = performance.now();
+
+                function scrollStep(timestamp) {
+                    const currentTime = timestamp - startTime;
+                    const progress = currentTime / duration;
+
+                    // Apply easing function for smooth scrolling (e.g., easeInOutQuad)
+                    const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+                    const easeProgress = easeInOutQuad(Math.min(progress, 1));
+
+                    // Scroll to the target position
+                    document.documentElement.scrollTop = document.body.scrollTop = currentScrollTop + distance * easeProgress;
+
+                    if (currentTime < duration) {
+                        requestAnimationFrame(scrollStep);
+                    }
+                }
+
+                // Start the animation
+                requestAnimationFrame(scrollStep);
             }
 
             function setActiveTab(index) {
                 activeTabIndex = index;
-                const tabs = document.querySelectorAll('#tabs li');
+                const tabs = tabsContainer.querySelectorAll('li');
                 tabs.forEach((tab, tabIndex) => {
                     const link = tab.querySelector('a');
                     if (tabIndex === index) {
@@ -147,8 +175,10 @@
             }
 
             function centerActiveTab() {
-                const tabs = document.getElementById('tabs');
-                const activeTab = tabs.querySelector(`[data-index="${activeTabIndex}"]`);
+                const tabs = tabsContainer;
+                const activeTab = tabs.querySelector('.active');
+
+                if (!activeTab) return;
 
                 const containerWidth = tabs.offsetWidth;
                 const activeTabWidth = activeTab.offsetWidth;

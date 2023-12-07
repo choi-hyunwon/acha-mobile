@@ -643,7 +643,7 @@
         const tabs = document.getElementById('manage-tab');
         const tabsUl = tabs.querySelector('ul');
         let activeTabIndex = 0;
-        let bool = true
+        let bool = true;
 
         initializeTabs()
 
@@ -657,7 +657,14 @@
             setActiveTab(activeTabIndex);
         }
         function handleTabClick(index) {
-            setActiveTab(index);
+            bool = false;
+            setTimeout(() => {
+                bool = true
+            }, 100);
+            if (bool) {
+                setActiveTab(index);
+                console.log(555);
+            }
             scrollToContent(`share-item-0${index + 1}`);
         }
 
@@ -670,9 +677,6 @@
                 const link = tab;
                 if (tabIndex === index) {
                     link.classList.add('active');
-                    setTimeout(() => {
-                        bool = false;
-                    }, 500);
                 } else {
                     link.classList.remove('active');
                 }
@@ -695,7 +699,7 @@
 
         // 스크롤되면 탭 scrollLeft
         function centerActiveTab() {
-            console.log('테스트2');
+            // console.log('테스트2');
             const tabs = document.getElementById('manage-tab');
             const tabsUl = tabs.querySelector('ul');
             const activeTab = tabs.querySelector('.active');

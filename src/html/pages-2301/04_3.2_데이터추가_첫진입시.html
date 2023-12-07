@@ -642,7 +642,6 @@
         // 스로틀 이벤트
         const throttle = (fn, delay) => {
             let timer
-            console.log(fn);
             return function () {
                 if (!timer) {
                     timer = setTimeout(() => {
@@ -668,7 +667,7 @@
                 tab.addEventListener('click', () => handleTabClick(index));
             })
 
-            window.addEventListener('scroll', throttle(handleScroll, 500))
+            window.addEventListener('scroll', throttle(handleScroll, 600))
             setActiveTab(activeTabIndex);
         }
         function handleTabClick(index) {

@@ -635,7 +635,7 @@
             </div>
         </div>
     </div>
-    <script>
+   <script>
 
 
         // 재 작업
@@ -681,6 +681,7 @@
             centerActiveTab();
         }
 
+
         // 스크롤 될때 탭 active
         function handleScroll() {
             const contentLi = document.querySelectorAll('.filter-setting > li');
@@ -693,6 +694,7 @@
                 }
             });
         }
+
 
         // 스크롤되면 탭 scrollLeft
         function centerActiveTab() {
@@ -735,6 +737,7 @@
 
                 if (currentTime < duration) {
                     requestAnimationFrame(scrollStep);
+
                 }
             }
             requestAnimationFrame(scrollStep);
@@ -742,6 +745,7 @@
 
 
     </script>
+
 
 </body>
 

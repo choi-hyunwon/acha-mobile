@@ -26,7 +26,7 @@
                     <li><a href="#share-item-04">연금</a></li>
                     <li><a href="#share-item-05">대출</a></li>
                     <li><a href="#share-item-06">보험</a></li>
-                    <li><a href="#share-item-04">기타</a></li>
+                    <li><a href="#share-item-07">기타</a></li>
                 </ul>
             </div>
 
@@ -439,7 +439,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="share-item-04" class="share-item">
+                    <li id="share-item-07" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>기타 <span class="f-point bold">0</span></span>
                             <label>
@@ -484,7 +484,33 @@
     </div>
     <script>
 
-        // window.addEventListener('scroll', throttle(handleEvent, 100))
+
+        // const tabs = document.getElementById('manage-tab');
+        // const tabsUl = tabs.querySelector('ul');
+        // window.addEventListener('scroll', function () {
+        //     const io = new IntersectionObserver(entries => {
+        //         entries.forEach((entry, index) => {
+        //             // entry의 target으로 DOM에 접근합니다.
+        //             const $target = entry.target;
+
+        //             // 화면에 노출 상태에 따라 해당 엘리먼트의 class를 컨트롤 합니다.
+        //             if (entry.boundingClientRect.top <= (66 + 52 + 20)) {
+        //                 $target.classList.add("active");
+        //             } else {
+        //                 $target.classList.remove("active");
+        //             }
+        //         });
+        //     });
+
+        //     // 옵저버할 대상 DOM을 선택하여 옵저버 시작합니다.
+        //     const contentLi = document.querySelectorAll('.filter-setting > li');
+        //     contentLi.forEach(item => {
+        //         io.observe(item);
+        //     });
+        // })
+
+
+
 
         // 스로틀 이벤트
         const throttle = (fn, delay) => {
@@ -514,7 +540,7 @@
                 tab.addEventListener('click', () => handleTabClick(index));
             })
 
-            window.addEventListener('scroll', throttle(handleScroll, 400))
+            window.addEventListener('scroll', throttle(handleScroll, 300))
             setActiveTab(activeTabIndex);
         }
         function handleTabClick(index) {
@@ -567,7 +593,7 @@
 
             const containerWidth = tabs.offsetWidth;  //ul width  375
             const activeTabWidth = activeTab.offsetWidth;  //li width  45
-            let activeTabLeft = activeTab.offsetLeft; // 좌로부터 간격 
+            let activeTabLeft = activeTab.offsetLeft; // 좌로부터 간격
 
             let scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
 

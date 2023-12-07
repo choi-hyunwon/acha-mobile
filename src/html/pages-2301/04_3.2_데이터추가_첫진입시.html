@@ -635,7 +635,7 @@
             </div>
         </div>
     </div>
-   <script>
+    <script>
 
 
         // 재 작업
@@ -653,7 +653,7 @@
                 tab.addEventListener('click', () => handleTabClick(index));
             })
 
-            window.addEventListener('scroll', handleScroll)
+            window.addEventListener('touchmove', handleScroll)
             setActiveTab(activeTabIndex);
         }
         function handleTabClick(index) {
@@ -742,8 +742,6 @@
             }
             requestAnimationFrame(scrollStep);
         }
-
-
     </script>
 
 

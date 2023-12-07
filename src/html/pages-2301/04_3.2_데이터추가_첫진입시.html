@@ -642,6 +642,7 @@
         // 스로틀 이벤트
         const throttle = (fn, delay) => {
             let timer
+            console.log(fn);
             return function () {
                 if (!timer) {
                     timer = setTimeout(() => {
@@ -667,7 +668,7 @@
                 tab.addEventListener('click', () => handleTabClick(index));
             })
 
-            window.addEventListener('scroll', throttle(handleScroll, 100))
+            window.addEventListener('scroll', throttle(handleScroll, 500))
             setActiveTab(activeTabIndex);
         }
         function handleTabClick(index) {
@@ -723,7 +724,7 @@
             let scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
 
             tabsUl.scrollTo({
-                left: scrollLeft + 30,
+                left: scrollLeft,
                 behavior: 'smooth'
             });
         }

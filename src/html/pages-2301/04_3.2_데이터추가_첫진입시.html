@@ -560,6 +560,7 @@
                     }
                 }
             });
+            scrollToBot()
         }
 
         // 스크롤되면 탭 scrollLeft
@@ -607,9 +608,18 @@
             }
             requestAnimationFrame(scrollStep);
         }
+
+        function scrollToBot() {
+            let scrT = $(window).scrollTop()
+            const tabItem = tabsUl.querySelectorAll('li')
+            console.log(scrT, $(document).height() - $(window).height() + 80);
+            if (scrT == $(document).height() - $(window).height()) {
+                // console.log(tabItem);
+                setActiveTab(tabItem.length - 1)
+            }
+        }
+
     </script>
-
-
 </body>
 
 </html>

@@ -643,27 +643,36 @@
         const tabs = document.getElementById('manage-tab');
         const tabsUl = tabs.querySelector('ul');
         let activeTabIndex = 0;
+        let bool = true
 
-        handleTabClick()
+        initializeTabs()
 
-        function handleTabClick() {
+        function initializeTabs() {
             const tabItem = tabsUl.querySelectorAll('li')
             tabItem.forEach((tab, index) => {
-                tab.addEventListener('click', () => setActiveTab(index));
+                tab.addEventListener('click', () => handleTabClick(index));
             })
 
             window.addEventListener('scroll', handleScroll)
             setActiveTab(activeTabIndex);
+        }
+        function handleTabClick(index) {
+            setActiveTab(index);
+            scrollToContent(`share-item-0${index + 1}`);
         }
 
         // 탭 클릭
         function setActiveTab(index) {
             activeTabIndex = index;
             const tabs = tabsUl.querySelectorAll('li');
+
             tabs.forEach((tab, tabIndex) => {
                 const link = tab;
                 if (tabIndex === index) {
                     link.classList.add('active');
+                    setTimeout(() => {
+                        bool = false;
+                    }, 500);
                 } else {
                     link.classList.remove('active');
                 }
@@ -677,14 +686,16 @@
             contentLi.forEach((contentLi, index) => {
                 const rect = contentLi.getBoundingClientRect();
                 if (rect.top <= (66 + 52 + 60 + 20) && rect.bottom - (66 + 52 + 60 + 20) <= window.innerHeight) { //header - tab - .group - liMarginBottom
-                    setActiveTab(index);
+                    if (bool) {
+                        setActiveTab(index);
+                    }
                 }
             });
         }
 
         // 스크롤되면 탭 scrollLeft
         function centerActiveTab() {
-            console.log('테스트1');
+            // console.log('테스트1');
             const tabs = document.getElementById('manage-tab');
             const tabsUl = tabs.querySelector('ul');
             const activeTab = tabs.querySelector('.active');
@@ -701,6 +712,38 @@
                 left: scrollLeft + 30,
                 behavior: 'smooth'
             });
+        }
+
+        // 스크롤 부드럽게
+        function scrollToContent(sectionId) {
+            const targetDiv = document.getElementById(sectionId);
+            const targetOffset = targetDiv.offsetTop;
+            const currentScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+            // Calculate the distance to scroll
+            const distance = targetOffset - currentScrollTop;
+            const duration = 500; // Animation duration in milliseconds
+            const startTime = performance.now();
+
+            function scrollStep(timestamp) {
+                const currentTime = timestamp - startTime;
+                const progress = currentTime / duration;
+
+                // Apply easing function for smooth scrolling (e.g., easeInOutQuad)
+                const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+                const easeProgress = easeInOutQuad(Math.min(progress, 1));
+
+                // Scroll to the target position
+                document.documentElement.scrollTop = (document.body.scrollTop = currentScrollTop + distance * easeProgress) - (66 + 52);
+                // console.log(document.documentElement.scrollTop, document.documentElement.scrollTop - );
+
+                if (currentTime < duration) {
+                    requestAnimationFrame(scrollStep);
+                }
+            }
+
+            // Start the animation
+            requestAnimationFrame(scrollStep);
         }
 
 

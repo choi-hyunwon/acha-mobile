@@ -638,45 +638,86 @@
     <script>
 
         // $(document).ready(function () {
-        let numTabs = $('.manage-tab ul li')
-        let scrollEnabled = true
-        let scroll = $(window).scrollTop();
-        let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
+        // let numTabs = $('.manage-tab ul li')
+        // let scrollEnabled = true
+        // let scroll = $(window).scrollTop();
+        // let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
 
-        // 탭 클릭
-        $('._expenditureTab li a').on('click', function (e) {
-            e.preventDefault();
-            scrollEnabled = false;
-            let tabNumber = $(this).parent().index()
+        // // 탭 클릭
+        // $('._expenditureTab li a').on('click', function (e) {
+        //     e.preventDefault();
+        //     scrollEnabled = false;
+        //     let tabNumber = $(this).parent().index()
 
-            if (tabNumber === 0) $('.manage-tab ul').scrollLeft(0)
-            if (tabNumber === numTabs.length - 1) $('.manage-tab ul').scrollLeft($(this).offset().left)
+        //     if (tabNumber === 0) $('.manage-tab ul').scrollLeft(0)
+        //     if (tabNumber === numTabs.length - 1) $('.manage-tab ul').scrollLeft($(this).offset().left)
 
-            numTabs.removeClass('active').eq(tabNumber).addClass('active');
+        //     numTabs.removeClass('active').eq(tabNumber).addClass('active');
 
-            let scroll = $(this.hash)
-            let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
-            $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
-                scrollEnabled = true
-            });
+        //     let scroll = $(this.hash)
+        //     let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
+        //     $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
+        //         scrollEnabled = true
+        //     });
 
-        })
+        // })
 
         // 스크롤
-        $(window).scroll(function () {
-            scroll = $(window).scrollTop();
+        // $(window).scroll(function () {
+        //     scroll = $(window).scrollTop();
 
-            if (scrollEnabled) {
-                for (var i = 1; i <= numTabs.length; i++) {
-                    let item = $('#share-item-0' + i)
-                    let itemHeight = item.offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
-                    if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
+        //     if (scrollEnabled) {
+        //         for (var i = 1; i <= numTabs.length; i++) {
+        //             let item = $('#share-item-0' + i)
+        //             let itemHeight = item.offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+        //             if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
+        //         }
+        //     }
+        //     centerActiveTab()
+        // })
+
+
+
+        // 재 작업
+
+        const tabs = document.getElementById('manage-tab');
+        const tabsUl = tabs.querySelector('ul');
+
+        liClick()
+
+        function liClick() {
+            const tabItem = tabsUl.querySelectorAll('li')
+            tabItem.forEach((tab, index) => {
+                tab.addEventListener('click', () => setActiveTab(index));
+            })
+
+            window.addEventListener('scroll', handleScroll)
+        }
+
+        function setActiveTab(index) {
+            activeTabIndex = index;
+            const tabs = tabsUl.querySelectorAll('li');
+            tabs.forEach((tab, tabIndex) => {
+                const link = tab;
+                if (tabIndex === index) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
                 }
-            }
-            centerActiveTab()
-        })
+            });
+            centerActiveTab();
+        }
 
-        // });
+        function handleScroll() {
+            const contentLi = document.querySelectorAll('.filter-setting > li');
+            contentLi.forEach((contentLi, index) => {
+                const rect = contentLi.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    setActiveTab(index);
+                }
+            });
+        }
+
         function centerActiveTab() {
             const tabs = document.getElementById('manage-tab');
             const tabsUl = tabs.querySelector('ul');
@@ -686,11 +727,10 @@
 
             const containerWidth = tabs.offsetWidth;  //ul width  375
             const activeTabWidth = activeTab.offsetWidth;  //li width  45
-            let activeTabLeft = activeTab.offsetLeft; // 좌 간격 
+            let activeTabLeft = activeTab.offsetLeft; // 좌로부터 간격 
 
             let scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
 
-            // $('.manage-tab ul').scrollLeft(scrollLeft)
             tabsUl.scrollBy({
                 left: scrollLeft,
                 behavior: 'smooth'

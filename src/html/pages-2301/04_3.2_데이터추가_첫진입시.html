@@ -511,7 +511,7 @@
         const tabs = document.getElementById('manage-tab');
         const tabsUl = tabs.querySelector('ul');
         let activeTabIndex = 0;
-        let bool = true;
+        // let bool = true;
 
         initializeTabs()
 
@@ -525,11 +525,11 @@
             setActiveTab(activeTabIndex);
         }
         function handleTabClick(index) {
-            bool = false;
+            // bool = false;
             setTimeout(() => bool = true, 100);
-            if (bool) {
-                setActiveTab(index);
-            }
+            // if (bool) {
+            setActiveTab(index);
+            // }
             scrollToContent(`share-item-0${index + 1}`);
         }
 
@@ -555,9 +555,9 @@
             contentLi.forEach((contentLi, index) => {
                 const rect = contentLi.getBoundingClientRect();
                 if (rect.top <= (66 + 52 + 60 + 20) && rect.bottom - (66 + 52 + 60 + 20) <= window.innerHeight) { //header - tab - .group - liMarginBottom
-                    if (bool) {
-                        setActiveTab(index);
-                    }
+                    // if (bool) {
+                    setActiveTab(index);
+                    // }
                 }
             });
         }

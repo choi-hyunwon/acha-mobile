@@ -1383,6 +1383,9 @@
           white-space: nowrap;
           overflow-x: scroll;
           scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+          scroll-snap-align: center;
+
 
           &::-webkit-scrollbar {
             display: none;
@@ -5657,10 +5660,20 @@
               }
 
               .tit {
-                // 1line ellipsis
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+
+                padding-right: 19px;
+                position: relative;
+                margin-right: 8px;
+
+                .icon-edit {
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
               }
 
               .price {
@@ -5739,6 +5752,15 @@
               margin-right: 6px;
               width: 30px;
               height: 30px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                overflow: hidden;
+              }
             }
 
             .icon-user-me {
@@ -5911,6 +5933,12 @@
                 margin-right: 6px;
                 width: 30px;
                 height: 30px;
+
+                img {
+                  border-radius: 100%;
+                  width: 100%;
+                  height: 100%;
+                }
               }
 
               .icon-user-me {

@@ -714,7 +714,7 @@
             const contentLi = document.querySelectorAll('.filter-setting > li');
             contentLi.forEach((contentLi, index) => {
                 const rect = contentLi.getBoundingClientRect();
-                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                if (rect.top <= (66 + 52 + 60 + 20) && rect.bottom - (66 + 52 + 60 + 20) <= window.innerHeight) { //header - tab - .group - liMarginBottom
                     setActiveTab(index);
                 }
             });

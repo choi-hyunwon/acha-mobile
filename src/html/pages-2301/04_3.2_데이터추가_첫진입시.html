@@ -658,12 +658,9 @@
         }
         function handleTabClick(index) {
             bool = false;
-            setTimeout(() => {
-                bool = true
-            }, 100);
+            setTimeout(() => bool = true, 100);
             if (bool) {
                 setActiveTab(index);
-                console.log(555);
             }
             scrollToContent(`share-item-0${index + 1}`);
         }
@@ -699,7 +696,6 @@
 
         // 스크롤되면 탭 scrollLeft
         function centerActiveTab() {
-            console.log('테스트3');
             const tabs = document.getElementById('manage-tab');
             const tabsUl = tabs.querySelector('ul');
             const activeTab = tabs.querySelector('.active');
@@ -724,29 +720,23 @@
             const targetOffset = targetDiv.offsetTop;
             const currentScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-            // Calculate the distance to scroll
             const distance = targetOffset - currentScrollTop;
-            const duration = 500; // Animation duration in milliseconds
+            const duration = 500;
             const startTime = performance.now();
 
             function scrollStep(timestamp) {
                 const currentTime = timestamp - startTime;
                 const progress = currentTime / duration;
 
-                // Apply easing function for smooth scrolling (e.g., easeInOutQuad)
                 const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
                 const easeProgress = easeInOutQuad(Math.min(progress, 1));
 
-                // Scroll to the target position
                 document.documentElement.scrollTop = (document.body.scrollTop = currentScrollTop + distance * easeProgress) - (66 + 52);
-                // console.log(document.documentElement.scrollTop, document.documentElement.scrollTop - );
 
                 if (currentTime < duration) {
                     requestAnimationFrame(scrollStep);
                 }
             }
-
-            // Start the animation
             requestAnimationFrame(scrollStep);
         }
 

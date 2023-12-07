@@ -6,193 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
         }
 
-        ul {
+        .tabs {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            z-index: 1000;
+            overflow: auto;
+        }
+
+        .tabs ul {
             list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
-            overflow-x: auto;
-            /* 가로 스크롤을 허용 */
-            white-space: nowrap;
-            /* 내용이 넘칠 경우 줄 바꿈 금지 */
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 50px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            transition: transform 0.3s ease;
-            /* 스크롤시 탭이 부드럽게 이동하도록 트랜지션 적용 */
+            overflow: auto;
+            transition: transform 0.3s ease-in-out;
         }
 
-        li {
-            margin-right: 10px;
-            cursor: pointer;
-            font-size: 12px;
-            width: 150px;
-            /* 탭의 너비 설정 */
+        .tabs li {
+            margin: 0;
         }
 
-        li {
-            text-decoration: none;
-            color: black;
-            display: block;
-            padding: 10px;
-            border: 1px solid #ddd;
+        .tabs a {
+            display: inline-block;
+            color: #333;
             text-align: center;
-            transition: font-weight 0.3s ease, font-size 0.3s ease;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            cursor: pointer;
         }
 
-        li.active {
-            font-weight: bold;
-            font-size: 20px;
+        .tabs a:hover {
+            background-color: #ddd;
+            color: black;
         }
 
         .content {
             display: flex;
             flex-direction: column;
-
-            margin-top: 40px;
-            /* ul이 fixed로 고정되어 있기 때문에 컨텐츠가 ul 아래에 나타나도록 마진 추가 */
-            padding: 10px;
+            overflow-y: auto;
+            margin-top: 50px;
         }
 
-        .content div {
-            margin-bottom: 10px;
+        .content>div {
+            padding: 20px;
             height: 500px;
-            border: 1px solid #ddd;
-            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .content>div:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        .content>div:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+
+        .content>div.active {
+            display: block;
+        }
+
+        /* Add this style for active state on li */
+        .tabs li.active {
+            background-color: #ddd;
         }
     </style>
-    <title>Fixed 탭 및 스크롤 예제</title>
 </head>
 
 <body>
 
-    <ul id="tabs">
-        <li><a href="#section1">Tab 1</a></li>
-        <li><a href="#section2">Tab 2</a></li>
-        <li><a href="#section3">Tab 3</a></li>
-        <li><a href="#section4">Tab 4</a></li>
-        <li><a href="#section5">Tab 5</a></li>
-        <li><a href="#section6">Tab 6</a></li>
-        <li><a href="#section7">Tab 7</a></li>
-        <li><a href="#section8">Tab 8</a></li>
-    </ul>
+    <div class="tabs" id="tabs">
+        <ul>
+            <li><a href="#content1">Tab 1</a></li>
+            <li><a href="#content2">Tab 2</a></li>
+            <li><a href="#content3">Tab 3</a></li>
+            <li><a href="#content4">Tab 4</a></li>
+            <li><a href="#content5">Tab 5</a></li>
+            <li><a href="#content6">Tab 6</a></li>
+            <li><a href="#content7">Tab 7</a></li>
+            <li><a href="#content8">Tab 8</a></li>
+        </ul>
+    </div>
 
-    <div class="content" id="tabContent">
-        <div id="section1">Content 1</div>
-        <div id="section2">Content 2</div>
-        <div id="section3">Content 3</div>
-        <div id="section4">Content 4</div>
-        <div id="section5">Content 5</div>
-        <div id="section6">Content 6</div>
-        <div id="section7">Content 7</div>
-        <div id="section8">Content 8</div>
+    <div class="content" id="content">
+        <div class="tab-content active" id="content1">
+            <h2>Content for Tab 1</h2>
+            <p>This is the content for Tab 1.</p>
+        </div>
+        <div class="tab-content" id="content2">
+            <h2>Content for Tab 2</h2>
+            <p>This is the content for Tab 2.</p>
+        </div>
+        <div class="tab-content" id="content3">
+            <h2>Content for Tab 3</h2>
+            <p>This is the content for Tab 3.</p>
+        </div>
+        <div class="tab-content" id="content4">
+            <h2>Content for Tab 4</h2>
+            <p>This is the content for Tab 4.</p>
+        </div>
+        <div class="tab-content" id="content5">
+            <h2>Content for Tab 5</h2>
+            <p>This is the content for Tab 5.</p>
+        </div>
+        <div class="tab-content" id="content6">
+            <h2>Content for Tab 6</h2>
+            <p>This is the content for Tab 6.</p>
+        </div>
+        <div class="tab-content" id="content7">
+            <h2>Content for Tab 7</h2>
+            <p>This is the content for Tab 7.</p>
+        </div>
+        <div class="tab-content" id="content8">
+            <h2>Content for Tab 8</h2>
+            <p>This is the content for Tab 8.</p>
+        </div>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const tabsContainer = document.getElementById('tabs');
-            let activeTabIndex = 0;
+        const tabs = document.getElementById('tabs');
+        const tabsList = document.querySelector('.tabs ul');
+        const content = document.getElementById('content');
 
-            initializeTabs();
-
-            function initializeTabs() {
-                const tabs = tabsContainer.querySelectorAll('li');
-                tabs.forEach((tab, index) => {
-                    tab.addEventListener('click', () => handleTabClick(index));
-                });
-
-                window.addEventListener('scroll', handleScroll);
-                setActiveTab(activeTabIndex);
-            }
-
-            function handleTabClick(index) {
-                setActiveTab(index);
-                scrollToContent(`section${index + 1}`);
-            }
-
-            function scrollToContent(sectionId) {
-                const targetDiv = document.getElementById(sectionId);
-                const targetOffset = targetDiv.offsetTop;
-                const currentScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-                // Calculate the distance to scroll
-                const distance = targetOffset - currentScrollTop;
-                const duration = 500; // Animation duration in milliseconds
-                const startTime = performance.now();
-
-                function scrollStep(timestamp) {
-                    const currentTime = timestamp - startTime;
-                    const progress = currentTime / duration;
-
-                    // Apply easing function for smooth scrolling (e.g., easeInOutQuad)
-                    const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-                    const easeProgress = easeInOutQuad(Math.min(progress, 1));
-
-                    // Scroll to the target position
-                    document.documentElement.scrollTop = document.body.scrollTop = currentScrollTop + distance * easeProgress;
-
-                    if (currentTime < duration) {
-                        requestAnimationFrame(scrollStep);
-                    }
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = Array.from(content.children).indexOf(entry.target);
+                    setActiveTab(index);
                 }
+            });
+        });
 
-                // Start the animation
-                requestAnimationFrame(scrollStep);
-            }
+        // Add observer to each content div
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            observer.observe(tab);
+        });
 
-            function setActiveTab(index) {
-                activeTabIndex = index;
-                const tabs = tabsContainer.querySelectorAll('li');
-                tabs.forEach((tab, tabIndex) => {
-                    const link = tab;
-                    if (tabIndex === index) {
-                        link.classList.add('active');
-                    } else {
-                        link.classList.remove('active');
-                    }
-                });
+        // Add click event to tabs
+        tabs.addEventListener('click', (event) => {
+            if (event.target.tagName === 'A') {
+                event.preventDefault();
+                const index = Array.from(tabs.querySelectorAll('a')).indexOf(event.target);
+                setActiveTab(index);
 
-                centerActiveTab();
-            }
-
-            function handleScroll() {
-                console.log(111111111);
-                const contentDivs = document.querySelectorAll('.content div');
-                contentDivs.forEach((contentDiv, index) => {
-                    const rect = contentDiv.getBoundingClientRect();
-                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-                        setActiveTab(index);
-                    }
-                });
-            }
-
-            function centerActiveTab() {
-                const tabs = tabsContainer;
-                const activeTab = tabs.querySelector('.active');
-
-                if (!activeTab) return;
-
-                const containerWidth = tabs.offsetWidth;
-                const activeTabWidth = activeTab.offsetWidth;
-                const activeTabLeft = activeTab.offsetLeft;
-
-                const scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
-
-                tabs.scrollTo({
-                    left: scrollLeft,
-                    behavior: 'smooth'
-                });
+                // Move to the clicked tab's href location
+                const href = event.target.getAttribute('href').substring(1); // Remove '#'
+                const targetElement = document.getElementById(href);
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
             }
         });
+
+        // Add scroll event to adjust tabs position
+        document.addEventListener('scroll', () => {
+            const activeTab = tabs.querySelector('.tabs li.active');
+            if (activeTab) {
+                const tabsRect = tabs.getBoundingClientRect();
+                const activeTabRect = activeTab.getBoundingClientRect();
+
+                // Calculate the left position to center the active tab
+                const leftPosition = activeTabRect.left - tabsRect.left - (tabsRect.width - activeTabRect.width) / 2;
+
+                // Apply the left position to the tabs list
+                tabsList.scrollTo({
+                    left: leftPosition,
+                    behavior: "smooth"
+                })
+            }
+        });
+
+        function setActiveTab(index) {
+            // Highlight the selected tab
+            document.querySelectorAll('.tabs li').forEach(tabLi => {
+                tabLi.classList.remove('active');
+            });
+            tabs.querySelector(`ul li:nth-child(${index + 1})`).classList.add('active');
+        }
     </script>
 
 </body>

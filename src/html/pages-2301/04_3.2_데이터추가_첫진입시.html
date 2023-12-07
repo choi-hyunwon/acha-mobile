@@ -637,46 +637,6 @@
     </div>
     <script>
 
-        // $(document).ready(function () {
-        // let numTabs = $('.manage-tab ul li')
-        // let scrollEnabled = true
-        // let scroll = $(window).scrollTop();
-        // let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
-
-        // // 탭 클릭
-        // $('._expenditureTab li a').on('click', function (e) {
-        //     e.preventDefault();
-        //     scrollEnabled = false;
-        //     let tabNumber = $(this).parent().index()
-
-        //     if (tabNumber === 0) $('.manage-tab ul').scrollLeft(0)
-        //     if (tabNumber === numTabs.length - 1) $('.manage-tab ul').scrollLeft($(this).offset().left)
-
-        //     numTabs.removeClass('active').eq(tabNumber).addClass('active');
-
-        //     let scroll = $(this.hash)
-        //     let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
-        //     $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
-        //         scrollEnabled = true
-        //     });
-
-        // })
-
-        // 스크롤
-        // $(window).scroll(function () {
-        //     scroll = $(window).scrollTop();
-
-        //     if (scrollEnabled) {
-        //         for (var i = 1; i <= numTabs.length; i++) {
-        //             let item = $('#share-item-0' + i)
-        //             let itemHeight = item.offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
-        //             if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
-        //         }
-        //     }
-        //     centerActiveTab()
-        // })
-
-
 
         // 재 작업
 
@@ -722,6 +682,7 @@
 
         // 스크롤되면 탭 scrollLeft
         function centerActiveTab() {
+            console.log('테스트');
             const tabs = document.getElementById('manage-tab');
             const tabsUl = tabs.querySelector('ul');
             const activeTab = tabs.querySelector('.active');
@@ -734,7 +695,7 @@
 
             let scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
 
-            tabsUl.scrollBy({
+            tabsUl.scrollTo({
                 left: scrollLeft + 30,
                 behavior: 'smooth'
             });

@@ -683,9 +683,9 @@
         const tabs = document.getElementById('manage-tab');
         const tabsUl = tabs.querySelector('ul');
 
-        liClick()
+        handleTabClick()
 
-        function liClick() {
+        function handleTabClick() {
             const tabItem = tabsUl.querySelectorAll('li')
             tabItem.forEach((tab, index) => {
                 tab.addEventListener('click', () => setActiveTab(index));
@@ -694,6 +694,7 @@
             window.addEventListener('scroll', handleScroll)
         }
 
+        // 탭 클릭
         function setActiveTab(index) {
             activeTabIndex = index;
             const tabs = tabsUl.querySelectorAll('li');
@@ -708,6 +709,7 @@
             centerActiveTab();
         }
 
+        // 스크롤 될때 탭 active
         function handleScroll() {
             const contentLi = document.querySelectorAll('.filter-setting > li');
             contentLi.forEach((contentLi, index) => {
@@ -718,6 +720,7 @@
             });
         }
 
+        // 스크롤되면 탭 scrollLeft
         function centerActiveTab() {
             const tabs = document.getElementById('manage-tab');
             const tabsUl = tabs.querySelector('ul');
@@ -732,7 +735,7 @@
             let scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
 
             tabsUl.scrollBy({
-                left: scrollLeft,
+                left: scrollLeft + 30,
                 behavior: 'smooth'
             });
         }

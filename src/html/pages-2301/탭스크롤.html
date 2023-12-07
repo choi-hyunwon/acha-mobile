@@ -165,6 +165,7 @@
             }
 
             function handleScroll() {
+                console.log(111111111);
                 const contentDivs = document.querySelectorAll('.content div');
                 contentDivs.forEach((contentDiv, index) => {
                     const rect = contentDiv.getBoundingClientRect();
@@ -186,7 +187,6 @@
 
                 const scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
 
-                console.log(scrollLeft);
                 tabs.scrollTo({
                     left: scrollLeft,
                     behavior: 'smooth'

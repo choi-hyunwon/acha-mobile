@@ -606,8 +606,7 @@
         function scrollToBot(index) {
             let scrT = $(window).scrollTop()
             const tabItem = tabsUl.querySelectorAll('li')
-            console.log(scrT, $(document).height() - $(window).height() + 80);
-            if (scrT >= $(document).height() - $(window).height() - 20) {
+            if (scrT >= $(document).height() - $(window).height()) {
                 // console.log(tabItem)
                 setActiveTab(tabItem.length - 1)
             }

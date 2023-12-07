@@ -637,9 +637,23 @@
     </div>
     <script>
 
+        // window.addEventListener('scroll', throttle(handleEvent, 100))
+
+        // 스로틀 이벤트
+        const throttle = (fn, delay) => {
+            let timer
+            return function () {
+                if (!timer) {
+                    timer = setTimeout(() => {
+                        timer = null
+                        fn.apply(this, arguments)
+                    }, delay)
+                }
+            }
+        }
+
 
         // 재 작업
-
         const tabs = document.getElementById('manage-tab');
         const tabsUl = tabs.querySelector('ul');
         let activeTabIndex = 0;
@@ -653,7 +667,7 @@
                 tab.addEventListener('click', () => handleTabClick(index));
             })
 
-            window.addEventListener('touchmove', handleScroll)
+            window.addEventListener('scroll', throttle(handleScroll, 100))
             setActiveTab(activeTabIndex);
         }
         function handleTabClick(index) {
@@ -681,7 +695,6 @@
             centerActiveTab();
         }
 
-
         // 스크롤 될때 탭 active
         function handleScroll() {
             const contentLi = document.querySelectorAll('.filter-setting > li');
@@ -694,7 +707,6 @@
                 }
             });
         }
-
 
         // 스크롤되면 탭 scrollLeft
         function centerActiveTab() {

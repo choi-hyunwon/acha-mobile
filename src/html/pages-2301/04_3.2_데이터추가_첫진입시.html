@@ -17,7 +17,8 @@
                 <p class="desc">공유 데이터의 상품명 및 공유 범위는 <br />[공동관리 >프로필]을 클릭하여 수정할 수 있어요</p>
             </div>
 
-            <div class="expenditure-tab manage-tab _expenditureTab sticky-top sticky mb-30"
+            <div id="manage-tab" class="expenditure-tab manage-tab _expenditureTab sticky-top sticky mb-30"
+
                 style="border-bottom: 1px solid #e3e4e8; overflow: hidden;">
                 <ul>
                     <li class="active"><a href="#share-item-01">카드 <span class="f-point bold">2</span></a></li>
@@ -54,7 +55,7 @@
             <div class="expenditure-box" style="padding-bottom: 100px;">
                 <ul class="usage-history-list usage-category-list filter-setting " style="padding:20px 20px;">
                     <!-- 카드 -->
-                    <li id="share-item-01">
+                    <li id="share-item-01" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>카드 <span class="f-point bold">2</span></span>
                             <label>
@@ -116,7 +117,7 @@
                         </ul>
                     </li>
                     <!-- 계좌 -->
-                    <li id="share-item-02">
+                    <li id="share-item-02" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>계좌 <span class="f-point bold">2</span></span>
                             <label>
@@ -201,7 +202,7 @@
                         </ul>
                     </li>
                     <!-- 투자 -->
-                    <li id="share-item-03">
+                    <li id="share-item-03" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>투자 <span class="f-point bold">2</span></span>
                             <label>
@@ -251,7 +252,7 @@
                         </ul>
                     </li>
                     <!-- 연금 -->
-                    <li id="share-item-04">
+                    <li id="share-item-04" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>연금 <span class="f-point bold">2</span></span>
                             <label>
@@ -299,7 +300,7 @@
                         </ul>
                     </li>
                     <!-- 대출 -->
-                    <li id="share-item-05">
+                    <li id="share-item-05" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>대출 <span class="f-point bold">2</span></span>
                             <label>
@@ -386,7 +387,7 @@
                         </ul>
                     </li>
                     <!-- 보험 -->
-                    <li id="share-item-06">
+                    <li id="share-item-06" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>보험 <span class="f-point bold">0</span></span>
                             <label>
@@ -448,7 +449,7 @@
                         </ul>
                     </li>
                     <!-- 기타 -->
-                    <li id="share-item-07">
+                    <li id="share-item-07" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>기타 <span class="f-point bold">0</span></span>
                             <label>
@@ -634,61 +635,116 @@
                 </div>
             </div>
         </div>
-
     </div>
     <script>
-        let numTabs = $('.manage-tab ul li')
-        let scrollEnabled = true
+
+
+        // 재 작업
+
+        const tabs = document.getElementById('manage-tab');
+        const tabsUl = tabs.querySelector('ul');
+        let activeTabIndex = 0;
+        let bool = true;
+
+        initializeTabs()
+
+        function initializeTabs() {
+            const tabItem = tabsUl.querySelectorAll('li')
+            tabItem.forEach((tab, index) => {
+                tab.addEventListener('click', () => handleTabClick(index));
+            })
+
+            window.addEventListener('scroll', handleScroll)
+            setActiveTab(activeTabIndex);
+        }
+        function handleTabClick(index) {
+            bool = false;
+            setTimeout(() => bool = true, 100);
+            if (bool) {
+                setActiveTab(index);
+            }
+            scrollToContent(`share-item-0${index + 1}`);
+        }
 
         // 탭 클릭
-        $('._expenditureTab li a').on('click', function (e) {
-            e.preventDefault();
-            scrollEnabled = false;
-            let tabNumber = $(this).parent().index()
-            let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
+        function setActiveTab(index) {
+            activeTabIndex = index;
+            const tabs = tabsUl.querySelectorAll('li');
 
-            if (tabNumber === 0) $('.manage-tab ul').scrollLeft(0)
-            if (tabNumber === numTabs.length - 1) $('.manage-tab ul').scrollLeft($(this).offset().left)
-            console.log($(this).offset().left);
-
-            numTabs.removeClass('active').eq(tabNumber).addClass('active');
-
-            let scroll = $(this.hash)
-            let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
-            $('html,body').stop().animate({ scrollTop: scrollTop }, 500, function () {
-                scrollEnabled = true
-            });
-
-
-        })
-
-        // 스크롤 할때 탭 활성화
-        $(window).stop().scroll(function () {
-            let scroll = $(window).scrollTop();
-            let tabLeftScroll = $('.manage-tab ul')[0].offsetWidth
-
-            if (scrollEnabled) {
-                for (var i = 1; i <= numTabs.length; i++) {
-                    let item = $('#share-item-0' + i)
-                    let itemHeight = item.offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
-                    if (scroll >= itemHeight) numTabs.removeClass('active').eq(i - 1).addClass('active');
-                }
-
-                if (scroll > ($('.expenditure-box').height() / 2)) {
-                    $('.manage-tab ul').scrollLeft(tabLeftScroll)
-                    // $('.manage-tab ul').animate({
-                    //     scrollLeft: 100,
-                    //     backgroundColor: '#000'
-                    // }, 500)
+            tabs.forEach((tab, tabIndex) => {
+                const link = tab;
+                if (tabIndex === index) {
+                    link.classList.add('active');
                 } else {
-                    $('.manage-tab ul').scrollLeft(0)
-                    // $('.manage-tab ul').animate({
-                    //     scrollLeft: 0,
-                    //     backgroundColor: '#'
-                    // }, 500)
+                    link.classList.remove('active');
+                }
+            });
+            centerActiveTab();
+        }
+
+
+        // 스크롤 될때 탭 active
+        function handleScroll() {
+            const contentLi = document.querySelectorAll('.filter-setting > li');
+            contentLi.forEach((contentLi, index) => {
+                const rect = contentLi.getBoundingClientRect();
+                if (rect.top <= (66 + 52 + 60 + 20) && rect.bottom - (66 + 52 + 60 + 20) <= window.innerHeight) { //header - tab - .group - liMarginBottom
+                    if (bool) {
+                        setActiveTab(index);
+                    }
+                }
+            });
+        }
+
+
+        // 스크롤되면 탭 scrollLeft
+        function centerActiveTab() {
+            const tabs = document.getElementById('manage-tab');
+            const tabsUl = tabs.querySelector('ul');
+            const activeTab = tabs.querySelector('.active');
+
+            if (!activeTab) return;
+
+            const containerWidth = tabs.offsetWidth;  //ul width  375
+            const activeTabWidth = activeTab.offsetWidth;  //li width  45
+            let activeTabLeft = activeTab.offsetLeft; // 좌로부터 간격 
+
+            let scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
+
+            tabsUl.scrollTo({
+                left: scrollLeft + 30,
+                behavior: 'smooth'
+            });
+        }
+
+        // 스크롤 부드럽게
+        function scrollToContent(sectionId) {
+            const targetDiv = document.getElementById(sectionId);
+            const targetOffset = targetDiv.offsetTop;
+            const currentScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+            const distance = targetOffset - currentScrollTop;
+            const duration = 500;
+            const startTime = performance.now();
+
+            function scrollStep(timestamp) {
+                const currentTime = timestamp - startTime;
+                const progress = currentTime / duration;
+
+                const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+                const easeProgress = easeInOutQuad(Math.min(progress, 1));
+
+                document.documentElement.scrollTop = (document.body.scrollTop = currentScrollTop + distance * easeProgress) - (66 + 52);
+
+                if (currentTime < duration) {
+                    requestAnimationFrame(scrollStep);
+
                 }
             }
-        })
+            requestAnimationFrame(scrollStep);
+        }
+
+
     </script>
 
 </body>

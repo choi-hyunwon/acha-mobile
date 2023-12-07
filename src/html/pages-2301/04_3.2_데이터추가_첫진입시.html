@@ -667,7 +667,7 @@
                 tab.addEventListener('click', () => handleTabClick(index));
             })
 
-            window.addEventListener('scroll', throttle(handleScroll, 50))
+            window.addEventListener('scroll', throttle(handleScroll, 100))
             setActiveTab(activeTabIndex);
         }
         function handleTabClick(index) {

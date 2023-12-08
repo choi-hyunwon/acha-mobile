@@ -458,7 +458,7 @@
             let scroll = $(this.hash)
             let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
 
-            $('html,body').animate({ scrollTop: scrollTop }, 1000, function () {
+            $('html,body').animate({ scrollTop: scrollTop }, 500, function () {
                 scrollEnabled = true
             });
             centerActiveTab()

@@ -446,26 +446,6 @@
 
         let numTabs = $('.manage-tab ul li')
         let scrollEnabled = true
-        let boolean = true
-
-        // 탭 클릭
-        $('._expenditureTab li a').stop().on('click', function (e) {
-            e.preventDefault();
-            scrollEnabled = false;
-            boolean = false
-
-            let tabNumber = $(this).parent().index()
-            setActiveTab(tabNumber + 1)
-
-            let scroll = $(this.hash)
-            let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
-
-            $('html,body').animate({ scrollTop: scrollTop }, 500, function () {
-                scrollEnabled = true
-            });
-
-            centerActiveTab()
-        })
 
         const throttle = (fn, delay) => {
             let timer
@@ -479,22 +459,35 @@
             }
         }
 
+        // 탭 클릭
+        $('._expenditureTab li a').stop().on('click', function (e) {
+            e.preventDefault();
+            scrollEnabled = false;
+
+            let tabNumber = $(this).parent().index()
+            setActiveTab(tabNumber + 1)
+
+            let scroll = $(this.hash)
+            let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
+
+            $('html,body').animate({ scrollTop: scrollTop }, 500, () => scrollEnabled = true);
+
+            centerActiveTab()
+        })
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(throttle(function () {
             let scroll = $(window).scrollTop()
             if (scrollEnabled) {
-                if (boolean) {
-                    for (var i = 1; i <= numTabs.length; i++) {
-                        let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
-                        if (scroll >= item) {
-                            setActiveTab(i);
-                        }
+                console.log(55);
+                for (var i = 1; i <= numTabs.length; i++) {
+                    let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                    if (scroll >= item) {
+                        setActiveTab(i);
                     }
                 }
                 centerActiveTab()
-                boolean = true
             }
-        }, 300)
+        }, 200)
         )
 
         function setActiveTab(tabNumber) {

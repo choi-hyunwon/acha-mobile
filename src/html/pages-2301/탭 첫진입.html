@@ -479,11 +479,6 @@
 
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(throttle(function () {
-
-            // throttle(handleScroll, 300)
-
-            // function handleScroll() {
-
             if (scrollEnabled) {
                 let scroll = $(window).scrollTop()
 
@@ -493,8 +488,7 @@
                         setActiveTab(i);
                     }
                 }
-                throttle(centerActiveTab(), 300)
-
+                centerActiveTab()
             }
         }, 300)
         )
@@ -513,8 +507,6 @@
             const containerWidth = tabs.offsetWidth;  //ul width  375
             const activeTabWidth = activeTab.offsetWidth;  //li width  45
             let activeTabLeft = activeTab.offsetLeft; // 좌로부터 간격
-
-            // console.log(containerWidth, activeTabWidth, activeTabLeft);
 
             let scrollLeft = activeTabLeft - (containerWidth - activeTabWidth) / 2;
             console.log(scrollLeft);

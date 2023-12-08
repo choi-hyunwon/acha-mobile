@@ -461,6 +461,7 @@
             $('html,body').animate({ scrollTop: scrollTop }, 500, function () {
                 scrollEnabled = true
             });
+            centerActiveTab()
         })
 
         const throttle = (fn, delay) => {
@@ -477,7 +478,7 @@
         }
 
         // 스크롤 할때 탭 활성화
-        $(window).stop().scroll(function () {
+        $(window).stop().scroll(throttle(function () {
 
             // throttle(handleScroll, 300)
 
@@ -495,9 +496,8 @@
                 throttle(centerActiveTab(), 300)
 
             }
-            // }
-
-        })
+        }, 300)
+        )
 
         function setActiveTab(tabNumber) {
             numTabs.removeClass('active').eq(tabNumber - 1).addClass('active');;

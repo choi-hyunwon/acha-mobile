@@ -463,8 +463,26 @@
             });
         })
 
+        const throttle = (fn, delay) => {
+            let timer
+            console.log(232);
+            return function () {
+                if (!timer) {
+                    timer = setTimeout(() => {
+                        timer = null
+                        fn.apply(this, arguments)
+                    }, delay)
+                }
+            }
+        }
+
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(function () {
+
+            // throttle(handleScroll, 300)
+
+            // function handleScroll() {
+
             if (scrollEnabled) {
                 let scroll = $(window).scrollTop()
 
@@ -474,8 +492,10 @@
                         setActiveTab(i);
                     }
                 }
-                centerActiveTab()
+                throttle(centerActiveTab(), 300)
+
             }
+            // }
 
         })
 

@@ -3536,6 +3536,22 @@
                       height: 100%;
                       object-fit: contain;
                     }
+
+                    &.icon-user-me {
+                      &::after {
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        border: solid 2px #fff;
+                        background-color: #6839d3;
+                        position: absolute;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                        top: 0;
+                        right: 0;
+                      }
+                    }
                   }
                 }
               }
@@ -3711,7 +3727,7 @@
               margin-top: 0;
 
               ~.card-item {
-                margin-top: 25px;
+                margin-top: 20px;
               }
 
               .card-head {
@@ -3731,7 +3747,7 @@
                     height: 16px;
                   }
 
-                  .f-point {
+                  span {
                     margin-left: 4px;
                   }
                 }
@@ -3761,7 +3777,7 @@
               }
 
               .details-history {
-                padding: 10px 0;
+                padding: 10px 0 0;
 
                 .item-list {
                   // 상세카드

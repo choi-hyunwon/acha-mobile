@@ -2775,14 +2775,23 @@
                 font-family: var(--font3);
               }
 
-              .desc {
+              .text {
                 font-size: 14px;
-                line-height: 1.86;
+                line-height: 1.56;
                 text-align: center;
                 display: inline-block;
                 font-family: var(--font1);
               }
+
+              .desc {
+                font-size: 12px;
+                line-height: 18px;
+                opacity: 0.8;
+                color: #fff;
+                margin-top: 6px;
+              }
             }
+
           }
         }
       }

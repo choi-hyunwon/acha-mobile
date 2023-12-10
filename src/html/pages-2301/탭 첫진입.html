@@ -480,6 +480,9 @@
         // 스크롤 할때 탭 활성화
         $(window).stop().scroll(throttle(scrollEvent, 150));
 
+        $('body').on("touchstart", function () {
+            scrollEnabled = true;
+        })
         $('body').on("touchmove", function () {
             scrollEnabled = true;
         })

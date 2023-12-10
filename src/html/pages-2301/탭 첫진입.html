@@ -478,12 +478,11 @@
         })
 
         // 스크롤 할때 탭 활성화
-        $(window).stop().scroll(throttle(scrollEvent, 150))
+        $(window).stop().scroll(throttle(scrollEvent, 150));
 
-        $(window).touchmove((event) => {
-            console.log(event);
-            alert('touchMove')
-        });
+        $('body').on("touchmove", function () {
+            scrollEnabled = true;
+        })
 
         function scrollEvent() {
             let scroll = $(window).scrollTop()

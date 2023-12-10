@@ -470,14 +470,12 @@
             let scrollTop = scroll[0].offsetTop - 66 - 52  // header + teb
 
             $('html,body').animate({ scrollTop: scrollTop }, 500);
-            // $('html,body').animate({ scrollTop: scrollTop }, 500, () => scrollEnabled = true);
 
             centerActiveTab()
 
             if (!scrollEvent) return
         })
 
-        // 스크롤 할때 탭 활성화
         $(window).stop().scroll(throttle(scrollEvent, 150));
 
         $('body').on("touchstart touchmove", function () {

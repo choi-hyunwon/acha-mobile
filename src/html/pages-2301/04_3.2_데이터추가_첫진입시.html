@@ -513,7 +513,10 @@
                         setActiveTab(i);
                     }
                 }
-                if (scroll = 0) setActiveTab(1);
+                if (scroll <= 66 + 52) {
+                    console.log(999);
+                    setActiveTab(1);
+                }
                 centerActiveTab()
             }
         }

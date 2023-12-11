@@ -445,6 +445,7 @@
     <script>
         let numTabs = $('.manage-tab ul li')
         let scrollEnabled = true
+        let scroll = ''
 
         const throttle = (fn, delay) => {
             let timer
@@ -476,21 +477,26 @@
             if (!scrollEvent) return
         })
 
-        $(window).stop().scroll(throttle(scrollEvent, 150));
+        $(window).stop().scroll(throttle(scrollEvent, 50));
+        $(window).scroll(() => {
+            scroll = $(window).scrollTop()
+        });
 
         $('.filter-setting').on("touchstart touchmove", function () {
             scrollEnabled = true;
         })
 
         function scrollEvent() {
-            let scroll = $(window).scrollTop()
 
             if (!scrollEnabled) return
 
             if (scrollEnabled) {
+
                 for (var i = 1; i <= numTabs.length; i++) {
                     let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                    console.log(i, scroll, item);
                     if (scroll >= item) {
+                        // console.log(i);
                         setActiveTab(i);
                     }
                 }
@@ -500,7 +506,6 @@
 
         function setActiveTab(tabNumber) {
             numTabs.removeClass('active').eq(tabNumber - 1).addClass('active');;
-
         }
 
         function centerActiveTab() {

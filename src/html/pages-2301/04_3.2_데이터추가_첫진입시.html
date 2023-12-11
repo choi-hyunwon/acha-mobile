@@ -477,29 +477,22 @@
             if (!scrollEvent) return
         })
 
-        $(window).stop().scroll(throttle(scrollEvent, 50));
-        $(window).scroll(() => {
-            scroll = $(window).scrollTop()
-        });
+        $(window).stop().scroll(throttle(scrollEvent, 150));
+        $(window).scroll(() => scroll = $(window).scrollTop());
 
         $('.filter-setting').on("touchstart touchmove", function () {
             scrollEnabled = true;
         })
 
         function scrollEvent() {
-
             if (!scrollEnabled) return
 
             if (scrollEnabled) {
-
                 for (var i = 1; i <= numTabs.length; i++) {
                     let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
-                    console.log(i, scroll, item);
-                    if (scroll >= item) {
-                        // console.log(i);
-                        setActiveTab(i);
-                    }
+                    if (scroll >= item) setActiveTab(i);
                 }
+                if (scroll = 0) setActiveTab(1);
                 centerActiveTab()
             }
         }

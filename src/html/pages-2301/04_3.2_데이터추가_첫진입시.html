@@ -54,7 +54,7 @@
             <div class="expenditure-box" style="padding-bottom: 100px;">
                 <ul class="usage-history-list usage-category-list filter-setting " style="padding:20px 20px;">
                     <!-- 카드 -->
-                    <li id="share-item-01">
+                    <li id="share-item-01" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>카드 <span class="f-point bold">2</span></span>
                             <label>
@@ -116,7 +116,7 @@
                         </ul>
                     </li>
                     <!-- 계좌 -->
-                    <li id="share-item-02">
+                    <li id="share-item-02" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>계좌 <span class="f-point bold">2</span></span>
                             <label>
@@ -201,7 +201,7 @@
                         </ul>
                     </li>
                     <!-- 투자 -->
-                    <li id="share-item-03">
+                    <li id="share-item-03" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>투자 <span class="f-point bold">2</span></span>
                             <label>
@@ -251,7 +251,7 @@
                         </ul>
                     </li>
                     <!-- 연금 -->
-                    <li id="share-item-04">
+                    <li id="share-item-04" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>연금<span class="f-point bold">2</span></span>
                             <label>
@@ -281,7 +281,7 @@
                         </ul>
                     </li>
                     <!-- 대출 -->
-                    <li id="share-item-05">
+                    <li id="share-item-05" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>대출<span class="f-point bold">2</span></span>
                             <label>
@@ -368,7 +368,7 @@
                         </ul>
                     </li>
                     <!-- 보험 -->
-                    <li id="share-item-06">
+                    <li id="share-item-06" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>보험<span class="f-point bold">0</span></span>
                             <label>
@@ -398,7 +398,7 @@
                         </ul>
                     </li>
                     <!-- 기타 -->
-                    <li id="share-item-07">
+                    <li id="share-item-07" class="share-item">
                         <div class="title-category justify-content-between">
                             <span>기타<span class="f-point bold">0</span></span>
                             <label>
@@ -477,7 +477,7 @@
             if (!scrollEvent) return
         })
 
-        $(window).scroll(throttle(scrollEvent, 70));
+        $(window).scroll(throttle(scrollEvent, 100));
         $(window).scroll(scrollEvent);
         $(window).scroll(() => scroll = $(window).scrollTop());
 
@@ -492,13 +492,26 @@
         function scrollEvent() {
             if (!scrollEnabled) return
 
-            if (scrollEnabled) {
-                for (var i = 1; i <= numTabs.length; i++) {
-                    let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
-                    if (scroll >= item) setActiveTab(i);
+            let list = $('.filter-setting')[0]
+            let item = list.querySelectorAll('.share-item')
+
+            Array.from(item).forEach((item, idx) => {
+                console.log(idx, item.getBoundingClientRect());
+                // console.log(idx, item.getBoundingClientRect().bottom + '+' + scroll);
+
+                if (scroll >= item.getBoundingClientRect().bottom + 66 + 52 + 60 + 20) {
+                    // console.log(idx);
+                    setActiveTab(idx + 1);
                 }
-                if (scroll = 0) setActiveTab(1);
-                centerActiveTab()
+            });
+
+            if (scrollEnabled) {
+                // for (var i = 1; i <= numTabs.length; i++) {
+                //     let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                //     if (scroll >= item) setActiveTab(i);
+                // }
+                // if (scroll = 0) setActiveTab(1);
+                // centerActiveTab()
             }
         }
 

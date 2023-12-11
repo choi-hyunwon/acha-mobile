@@ -477,10 +477,14 @@
             if (!scrollEvent) return
         })
 
-        $(window).stop().scroll(throttle(scrollEvent, 150));
+        $(window).scroll(throttle(scrollEvent, 150));
         $(window).scroll(() => scroll = $(window).scrollTop());
 
-        $('.filter-setting').on("touchstart touchmove", function () {
+        $('.filter-setting').on("touchstart ", function () {
+            scrollEnabled = true;
+            scrollEvent()
+        })
+        $('.filter-setting').on("touchmove ", function () {
             scrollEnabled = true;
         })
 

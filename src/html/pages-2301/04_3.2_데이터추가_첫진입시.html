@@ -493,26 +493,18 @@
 
             let list = $('.filter-setting')[0]
             let item = list.querySelectorAll('.share-item')
-
-            // Array.from(item).forEach((item, idx) => {
-            //     console.log(idx, item.getBoundingClientRect());
-            //     // console.log(idx, item.getBoundingClientRect().bottom + '+' + scroll);
-
-            //     if (scroll + 66 + 52 + 60 + 20 >= item.getBoundingClientRect().bottom) {
-            //         // console.log(idx);
-            //         setActiveTab(idx + 1);
-            //     }
-            // });
+            const headerHeight = $('.header').outerHeight();
+            const tabHeight = $('.manage-tab').outerHeight();
+            const itemHeight = $('.details-history .item-list .group').outerHeight()
 
             if (scrollEnabled) {
                 for (var i = 1; i <= numTabs.length; i++) {
-                    let item = $('#share-item-0' + i).offset().top - 66 - 52 - 60 - 20 // header - tab - .group - liMarginBottom
+                    let item = $('#share-item-0' + i).offset().top - headerHeight - tabHeight - itemHeight - 20 // header - tab - .group - liMarginBottom
                     if (scroll >= item) {
                         setActiveTab(i);
                     }
                 }
-                if (scroll <= 66 + 52) {
-                    console.log(888);
+                if (scroll <= headerHeight + tabHeight) {
                     setActiveTab(1);
                 }
                 centerActiveTab()

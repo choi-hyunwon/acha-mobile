@@ -477,7 +477,7 @@
             if (!scrollEvent) return
         })
 
-        $(window).scroll(throttle(scrollEvent, 100));
+        $(window).scroll(throttle(scrollEvent, 150));
         $(window).scroll(scrollEvent);
         $(window).scroll(() => scroll = $(window).scrollTop());
 

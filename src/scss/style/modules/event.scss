@@ -904,8 +904,44 @@ input[type=number] {
 
         .agreement-input {
           position: absolute;
-          bottom: 200px;
-          left: 45px;
+          bottom: 30%;
+          left: 12%;
+
+          @media (min-width: 500px) and (max-width: 749px) {
+            & {
+              bottom: 31%;
+            }
+
+            label {
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+
+          @media (min-width: 750px) and (max-width: 1023px) {
+            & {
+              bottom: 32%;
+            }
+
+            label {
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+
+          @media (min-width: 1024px) {
+            & {
+              bottom: 32%;
+            }
+
+            label {
+              span {
+                font-size: 32px;
+              }
+            }
+          }
 
           label {
             span {
@@ -933,27 +969,42 @@ input[type=number] {
       .btn-apply-event {
         position: absolute;
         left: 50%;
-        bottom: 97px;
+        bottom: 16%;
         transform: translateX(-50%);
-        width: 225px;
+        width: 60%;
       }
 
       .img-wrap {
         &.body {
           position: relative;
 
+
+
           .input-box {
             position: absolute;
             left: 50%;
-            top: 15%;
+            top: 0;
             transform: translateX(-50%);
             display: flex;
             flex-direction: column;
-            width: 274px;
+            width: 100%;
+            padding: 14% 50px 0;
+
+            @media (min-width: 750px) {
+              & {
+                padding-top: 14%;
+              }
+            }
 
             label {
               &~label {
-                margin-top: 68px;
+                margin-top: 24%;
+
+                @media (min-width: 750px) {
+                  & {
+                    margin-top: 24%;
+                  }
+                }
               }
 
               input {
@@ -964,6 +1015,37 @@ input[type=number] {
                 outline: none;
                 color: #4d1aa7;
                 font-family: var(--font3);
+
+                @media (min-width: 750px) and (max-width: 1240px) {
+                  & {
+                    height: 44px;
+                  }
+                }
+
+                @media (min-width: 1240px) {
+                  & {
+                    height: 74px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &.foot {
+          .btn-apply-event {
+            bottom: unset !important;
+            top: 48%;
+
+            @media (min-width: 750px) and (max-width: 1240px) {
+              & {
+                top: 43%;
+              }
+            }
+
+            @media (min-width: 1240px) {
+              & {
+                top: 41%;
               }
             }
           }

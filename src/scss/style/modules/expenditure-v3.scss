@@ -3228,12 +3228,13 @@
             font-size: 18px;
             color: var(--text-01);
             font-family: var(--font3);
-            padding: 18px 0 17px;
+            padding: 18px 18px 17px 0;
             border-color: #efefef;
             display: flex;
             align-items: center;
             line-height: 26px;
             position: relative;
+            word-break: break-all;
 
             .img {
               width: 40px;

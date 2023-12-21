@@ -2346,7 +2346,12 @@
                   }
 
                   &.category-amount-link {
-                    padding-right: 10px;
+                    flex-shrink: 0;
+                    padding-right: 14px;
+
+                    &:after {
+                      top: 0
+                    }
 
                     &:before {
                       content: '';

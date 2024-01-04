@@ -8541,7 +8541,7 @@
   border-top: 10px solid #f5f6f8;
   padding: 0 20px 60px;
   margin-top: 36px;
-  height: calc(100vh - 185px);
+  // height: calc(100vh - 185px);
   position: relative;
 
   .item {
@@ -8552,7 +8552,7 @@
     &:last-child {
       margin-bottom: 0;
       border-bottom: 0;
-      padding-bottom: 0;
+      // padding-bottom: 0;
     }
   }
 

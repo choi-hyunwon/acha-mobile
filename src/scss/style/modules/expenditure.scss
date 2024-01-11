@@ -2672,7 +2672,7 @@
 
           .category-menu {
             border: none;
-            padding: 24px 0 0;
+            padding: 10px 0 0;
             margin-bottom: 0;
 
             .total-sum {
@@ -2751,6 +2751,11 @@
                   .img {
                     flex-shrink: 0;
                     margin-right: 11px;
+
+                    .icon {
+                      width: 34px;
+                      height: 34px;
+                    }
                   }
 
                   p {
@@ -2795,7 +2800,7 @@
             }
 
             .divider {
-              margin: 29px 0 10px;
+              margin: 10px 0;
             }
           }
         }

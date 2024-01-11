@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title _btnSlideOpen"><span class="name">카카오 뱅크 계좌</span>를 삭제할까요?</div>
+                <div class="desc-box">
+                    <p style="display: flex; align-items: center;">
+                        <label>
+                            <input type="checkbox" class="filled-in" checked>
+                            <span></span>
+                        </label>
+                        <span style="margin-left: 12px;">
+                            과거의 지출/수입 내역은 <br />
+                            가계부·공동관리에 유지할래요
+                        </span>
+                    </p>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg" onclick="openPopup()">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

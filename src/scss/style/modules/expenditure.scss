@@ -1360,6 +1360,57 @@
       }
     }
 
+
+    .new-account {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      background: #fbf7ff;
+      border: 1px solid #e6dbff;
+      border-radius: 10px;
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+
+      .ico_list_arrow_small {
+        margin-left: 4px;
+      }
+
+      .badge {
+        background: #6839d3;
+        color: #fff;
+        font-family: var(--font1);
+        border-radius: 16px;
+        padding: 3px 6px;
+        font-size: 10px;
+        font-weight: normal;
+        height: 16px;
+        margin-right: 6px;
+
+        em {
+          transform: scale(0.83);
+          display: inline-block;
+        }
+      }
+
+      .btn-delete {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+        background: transparent;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
     .assets-total-box {
       position: relative;
       background: #efe8ff;
@@ -1394,14 +1445,43 @@
             font-size: 22px;
           }
         }
+      }
 
-        .tooltip-txt {
-          display: none;
-          position: absolute;
+      .tooltip-txt {
+        display: none;
+        position: absolute;
+        padding: 10px 34px 10px 12px;
+        background: rgba(55, 53, 78, 0.85);
+        color: #fff;
+        border-radius: 10px 10px 10px 0;
+        font-size: 13px;
+        line-height: 1.54;
+        top: -50px;
+        left: 80px;
 
+        &.show {
+          display: block;
 
-          &.show {
-            display: block;
+          &::before {
+            content: "";
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            border-top: 4px solid rgba(63, 54, 168, 0.85);
+            border-right: 6px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 6px solid rgba(63, 54, 168, 0.85);
+          }
+
+          .close {
+            position: absolute;
+            right: 12px;
+            top: 14px;
+            width: 14px;
+            height: 14px;
+            background: url(../../img/common/btn-tag-delete@2x.png) no-repeat center / cover;
+            opacity: 1;
           }
         }
       }
@@ -1481,7 +1561,6 @@
           line-height: 26px;
           font-weight: bold;
           margin-left: 2px;
-
         }
       }
 
@@ -1769,6 +1848,69 @@
             font-family: var(--font3);
             font-size: 14px;
           }
+        }
+      }
+    }
+
+    /*자산 연결 X*/
+    &.no-connect {
+      padding: 24px 20px 90px;
+
+      .content {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.5px;
+        font-weight: 500;
+        text-align: left;
+        color: var(--text-01);
+        font-family: var(--font2);
+        margin-bottom: 150px;
+
+        .box {
+          margin-top: 80px;
+          text-align: center;
+
+          h3 {
+            font-size: 20px;
+            height: 29px;
+            line-height: 29px;
+            font-family: var(--font3);
+            text-align: center;
+          }
+
+          p {
+            font-size: 14px;
+            height: 23px;
+            line-height: 1;
+            color: var(--text-02);
+            margin-top: 6px;
+          }
+        }
+
+        .img {
+          width: 280px;
+          height: auto;
+          margin: 60px auto;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+
+      .btn-area {
+        .btn-add {
+          border-radius: 10px;
+          height: 50px;
+          line-height: 50px;
+          border: 0;
+          background-color: var(--color-point);
+          color: #ffffff;
+          font-size: 15px;
+          letter-spacing: -.75px;
+          font-family: var(--font2);
         }
       }
     }
@@ -2188,23 +2330,6 @@
                   margin-bottom: 0;
                 }
 
-                .badge {
-                  background: #6839d3;
-                  color: #fff;
-                  font-family: var(--font1);
-                  border-radius: 16px;
-                  padding: 3px 6px;
-                  font-size: 10px;
-                  font-weight: normal;
-                  height: 16px;
-                  margin-right: 6px;
-
-                  em {
-                    transform: scale(0.83);
-                    display: inline-block;
-                  }
-                }
-
                 >div {
                   display: flex;
 
@@ -2255,7 +2380,7 @@
             border-top: none;
             transform: translate3d(0px, 0, 0px) !important;
             border-radius: 0 0 10px 10px;
-            z-index: 0;
+            z-index: 1;
             display: none;
             background: #fff;
 
@@ -2344,6 +2469,45 @@
                       font-size: 16px;
                       color: var(--text-04);
                       font-family: var(--font2);
+                    }
+
+                    .tooltip-txt-1 {
+                      display: none;
+                      position: absolute;
+                      padding: 10px 34px 10px 12px;
+                      background: rgba(55, 53, 78, 0.85);
+                      color: #fff;
+                      border-radius: 0 10px 10px 10px;
+                      font-size: 13px;
+                      line-height: 1.54;
+                      top: 59px;
+                      left: 53px;
+                      z-index: 999;
+
+                      &.show {
+                        display: block;
+                      }
+
+                      &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: -8px;
+                        border-top: 4px solid transparent;
+                        border-right: 6px solid transparent;
+                        border-bottom: 4px solid rgba(55, 53, 78, 0.85);
+                        border-left: 6px solid rgba(63, 54, 168, 0.8)
+                      }
+
+                      .close {
+                        position: absolute;
+                        right: 12px;
+                        top: 14px;
+                        width: 14px;
+                        height: 14px;
+                        background: url(../../img/common/btn-tag-delete@2x.png) no-repeat center/cover;
+                        opacity: 1;
+                      }
                     }
                   }
 
@@ -2786,70 +2950,6 @@
               }
             }
           }
-        }
-      }
-    }
-
-    /*자산 연결 X*/
-    &.no-connect {
-      padding: 24px 20px 90px;
-      min-height: 100vh;
-
-      .content {
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: -0.5px;
-        font-weight: 500;
-        text-align: left;
-        color: var(--text-01);
-        font-family: var(--font2);
-        margin-bottom: 150px;
-
-        &.edit {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-
-          .btn-edit {
-            font-size: 13px;
-            border: 1px solid #e2e3e6;
-            min-width: 50px;
-            border-radius: 15px;
-            background: transparent;
-            padding: 5px 16px;
-            line-height: unset;
-            height: 29px;
-            display: flex;
-            align-items: center;
-            color: #707070;
-          }
-        }
-      }
-
-      .img {
-        width: 280px;
-        height: auto;
-        margin: 0 auto;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      .btn-area {
-        padding: 0 20px 30px;
-
-        .btn-add {
-          border-radius: 10px;
-          height: 50px;
-          line-height: 50px;
-          border: 0;
-          background-color: var(--color-point);
-          color: #ffffff;
-          font-size: 15px;
-          letter-spacing: -.75px;
-          font-family: var(--font2);
         }
       }
     }

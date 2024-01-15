@@ -1,0 +1,893 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap">
+        <div class="contents">
+            <div class="box-ex-top box-card-top flex-column">
+                <a href="#" class="btn-sm btn-edit"><span>편집</span></a>
+
+                <div class="expenditure-tab _expenditureTab w-100">
+                    <ul>
+                        <li class="active mr-10"><a href="#">총자산</a></li>
+                        <li class="mr-10"><a href="#">리포트</a></li>
+                        <li class="mr-10"><a href="#">챌린지</a></li>
+                    </ul>
+                    <a href="#" class="calendar-box">
+                        <img src="../../img/common/ico-input-calendar@2x.png" alt="캘린더아이콘" class="calendar">
+                    </a>
+                </div>
+
+                <div class="assets-total-box">
+                    <div class="title">
+                        <p class="total">총 자산<i class="sprite ico_tooltip"></i></p>
+                        <p class="total-sum">160,250,000<span>원</span></p>
+                    </div>
+                    <a href="#" class="assets-total">999개 자산 합계 <i class="ico_list_arrow_small"></i></a>
+                    <div class="sum-area">
+                        <a href="#" class="ico-refresh-mini"></a>
+                        <p class="update">30분 전</p>
+                    </div>
+                    <div class="tooltip-txt" data-tooltip="show">
+                        총자산 금액에는 외화 및 자산금액으로 <br />
+                        환산 불가한 보험/카드 등이 제외돼요
+                        <span class="close"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="box-ex-list box-card-list box-card-improve">
+                <!-- 계좌・현금 -->
+                <div class="card-item">
+                    <div class="asset-wrap">
+                        <div class="asset">
+                            <div class="category-heading">
+                                <p class="title">계좌・현금</p>
+                                <p class="sum">11,202,000<em>원</em></p>
+                            </div>
+
+                            <div class="category-menu">
+                                <!-- 입출금 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">
+                                                입출금
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="value">11,000,000<em>원</em></span>
+                                        </div>
+
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <i class="icon icon_cate_etc"></i>
+                                                    </span>
+
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            급여 하나 통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">564,000<em>원</em></p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            KB종합통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">1,280,000<em>원</em></p>
+                                                <p class="ac-num">자산관련메모 최대한 한줄 출력 (잘리는 경우 말줄임표
+                                                    표기)</p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            신한직장인통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value out">1,280,000<em>원</em></p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            직장인우대 SUPER 주거래 통장 최대 2줄 직장인우대 SUPER 주거래 통장 최대 2줄
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value undefined">자산정보 확인불가</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr class="divider">
+                                <!-- 예적금 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">예적금
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="value">3,000,000<em>원</em></span>
+                                        </div>
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            K주택청약종합적축
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value undefined">연결기간 만료</p>
+                                            </li>
+                                            <!-- 만기 시 .ac-expire 클래스 추가 -->
+                                            <!-- 만기 시 badge 추가 .div class="expire-badge"></div> -->
+                                            <li class="ac-item ac-piece ac-expire">
+                                                <div class="expire-badge">만기</div>
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            WOW정기적금
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">5,064,000<em>원</em></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <hr class="divider">
+                                <!-- 연금 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <P class="name">연금<span class="badge badge-purple badge-payment">2개</span>
+                                            </P>
+                                            <P class="value">60,300,000<em>원</em></P>
+                                        </div>
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            K주택청약종합적축
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">52,064,000<em>원</em></span>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            WOW정기적금
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">5,064,000<em>원</em></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr class="divider">
+                                <!-- 현금 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">현금</span>
+                                            <span class="value">300,000<em>원</em></span>
+                                        </div>
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            K주택청약종합적축
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">5,064,000<em>원</em></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr class="divider">
+                                <!-- 외화 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">외화
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="planning">준비중<i class="icon ico-caution"></i></span>
+                                            <div class="tooltip-txt-1" data-tooltip="show">
+                                                왼화의 원화환산 금액은 준비중이에요
+                                                <span class="close"></span>
+                                            </div>
+                                        </div>
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            연금(해외)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">5,064,45<em>USD</em></span>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            입출금(해외)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">5,064,45<em>USD</em></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr class="divider">
+                                <!-- 마이너스통장 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">마이너스 통장
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="value">-887,700<em>원</em></span>
+                                        </div>
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            마데마이너스통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">-764,000<em>원</em></span>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            가나다라 마이너스통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">-764,000<em>원</em></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- 대출・빌린돈 -->
+                <div class="card-item">
+                    <div class="asset-wrap">
+                        <div class="asset">
+                            <div class="category-heading">
+                                <p class="title">대출・빌린돈</p>
+                                <p class="sum">-60,000,000<em>원</em></p>
+                            </div>
+
+                            <div class="category-menu">
+                                <!-- 대출 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">
+                                                대출
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="value">-20,000,000<em>원</em></span>
+                                        </div>
+
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <i class="icon icon_cate_etc"></i>
+                                                    </span>
+
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            급여 하나 통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">564,000<em>원</em></p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            KB종합통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">1,280,000<em>원</em></p>
+                                                <p class="ac-num">자산관련메모 최대한 한줄 출력 (잘리는 경우 말줄임표
+                                                    표기)</p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            신한직장인통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value out">1,280,000<em>원</em></p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            직장인우대 SUPER 주거래 통장 최대 2줄 직장인우대 SUPER 주거래 통장 최대 2줄
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value undefined">자산정보 확인불가</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr class="divider">
+                                <!-- 빌린돈 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">빌린돈</span>
+                                            <span class="value">-20,000,000<em>원</em></span>
+                                        </div>
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            K주택청약종합적축
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value undefined">연결기간 만료</p>
+                                            </li>
+                                            <!-- 만기 시 .ac-expire 클래스 추가 -->
+                                            <!-- 만기 시 badge 추가 .div class="expire-badge"></div> -->
+                                            <li class="ac-item ac-piece ac-expire">
+                                                <div class="expire-badge">만기</div>
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            WOW정기적금
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="value">5,064,000<em>원</em></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <hr class="divider">
+                                <!-- 운용리스 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">운용리스
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                        </div>
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            현대캐피탈운용리스
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- 투자 -->
+                <div class="card-item">
+                    <div class="asset-wrap">
+                        <div class="asset">
+                            <div class="category-heading">
+                                <p class="title">투자</p>
+                                <p class="sum">30,000,000<em>원</em><span class="price rise">12.23%</span></p>
+                            </div>
+
+                            <div class="category-menu">
+                                <!-- 국내 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <p class="name">
+                                                국내
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </p>
+                                            <p class="value">11,000,000<em>원</em><span class="price fall">9.54%</spand>
+                                            </p>
+                                        </div>
+
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <i class="icon icon_cate_etc"></i>
+                                                    </span>
+
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            유진투자위탁
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">4,868,000<em>원</em>
+                                                    <span class="price rise">+268,902 (5.85%)</span>
+                                                </p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            KB종합통장
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">4,868,000<em>원</em>
+                                                    <span class="price fall">-89,219 (15.39%)</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr class="divider">
+                                <!-- 해외 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">해외
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="planning">준비중<i class="icon ico-caution"></i></span>
+                                            <div class="tooltip-txt-1" data-tooltip="show">
+                                                왼화의 원화환산 금액은 준비중이에요
+                                                <span class="close"></span>
+                                            </div>
+                                        </div>
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">하나투자해외위탁</span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">3,289<em>JPY</em></p>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- 포인트・머니 -->
+                <div class="card-item">
+                    <div class="asset-wrap">
+                        <div class="asset">
+                            <div class="category-heading">
+                                <p class="title">포인트・머니</p>
+                                <p class="sum">9,000<em>원</em></p>
+                            </div>
+
+                            <div class="category-menu">
+                                <!-- 포인트・머니 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">
+                                                포인트・머니
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="value">9,000<em>원</em></span>
+                                        </div>
+
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <i class="icon icon_cate_etc"></i>
+                                                    </span>
+
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            SSG 포인트
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">294<em>원</em></p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            토스포인트
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">294<em>원</em></p>
+                                            </li>
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
+                                                    </span>
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            네이버포인트
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">294<em>원</em></p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- 부동산・자동차 -->
+                <div class="card-item">
+                    <div class="asset-wrap">
+                        <div class="asset">
+                            <div class="category-heading">
+                                <p class="title">부동산・자동차</p>
+                                <p class="sum">89<span class="million">억</span> 6,000<em>만원</em></p>
+                            </div>
+
+                            <div class="category-menu">
+                                <!-- 부동산 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">
+                                                부동산
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="value">89<span class="million">억</span> 6,000<em>만원</em></span>
+                                        </div>
+
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <i class="icon icon_cate_etc"></i>
+                                                    </span>
+
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            성수동빌라
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">8,960,000,000<em>원</em>
+                                                    <span class="price rise">+1,128,064,000 (12.59%)</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr class="divider">
+                                <!-- 자동차 -->
+                                <ul class="ac-list ac-list-img">
+                                    <li class="ac-item ac-item-top">
+                                        <div class="total-tit">
+                                            <span class="name">
+                                                자동차
+                                                <span class="badge badge-purple badge-payment">2개</span>
+                                            </span>
+                                            <span class="value">7,000<em>만원</em></span>
+                                        </div>
+
+                                        <ul class="ac-piece-list">
+                                            <li class="ac-item ac-piece">
+                                                <div class="info">
+                                                    <span class="img">
+                                                        <i class="icon icon_cate_etc"></i>
+                                                    </span>
+
+                                                    <div class="txt">
+                                                        <span class="name">
+                                                            아반떼
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="value">70,000,000<em>원</em>
+                                                    <span class="price rise">+2,947,000 (4.21%)</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <!-- etc 일경우 구조 다름 -->
+                <!-- 기타 -->
+                <div class="card-item etc">
+                    <div class="asset-wrap">
+                        <div class="asset">
+                            <div class="category-heading">
+                                <p class="title">기타<span class="badge badge-purple badge-payment">1개</span></p>
+                                <p class="sum">8,900,000<em>원</em></p>
+                            </div>
+
+                            <div class="category-menu">
+                                <ul class="ac-piece-list">
+                                    <li class="ac-item ac-piece">
+                                        <div class="info">
+                                            <span class="img">
+                                                <i class="icon icon_cate_etc"></i>
+                                            </span>
+
+                                            <div class="txt">
+                                                <span class="name">
+                                                    금액있는 기타
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="value">564,000<em>원</em></p>
+                                    </li>
+                                    <li class="ac-item ac-piece">
+                                        <div class="info">
+                                            <span class="img">
+                                                <i class="icon icon_cate_etc"></i>
+                                            </span>
+
+                                            <div class="txt">
+                                                <span class="name">
+                                                    금액없는 기타
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- 보험 -->
+                <div class="card-item etc">
+                    <div class="asset-wrap">
+                        <div class="asset">
+                            <div class="category-heading">
+                                <p class="title">보험</p>
+                                <p class="sum">2<em>건</em></p>
+                            </div>
+
+                            <div class="category-menu">
+                                <ul class="ac-piece-list">
+                                    <li class="ac-item ac-piece">
+                                        <div class="info">
+                                            <span class="img">
+                                                <i class="icon icon_cate_etc"></i>
+                                            </span>
+
+                                            <div class="txt">
+                                                <span class="name">
+                                                    자동차보험
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="value">2,564,000<em>원</em>
+                                            <span class="price">일시납</span>
+                                        </p>
+                                    </li>
+                                    <li class="ac-item ac-piece ac-expire">
+                                        <div class="expire-badge">실효</div>
+                                        <div class="info">
+                                            <span class="img">
+                                                <i class="icon icon_cate_etc"></i>
+                                            </span>
+
+                                            <div class="txt">
+                                                <span class="name">
+                                                    무배당 교보플랜 행복한 100세 인생보험
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="value">2,564,000<em>원</em>
+                                            <span class="price">일시납</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- 카드 -->
+                <div class="card-item etc">
+                    <div class="asset-wrap">
+                        <div class="asset">
+                            <div class="category-heading">
+                                <p class="title">카드</p>
+                                <p class="sum">1<em>개</em></p>
+                            </div>
+
+                            <div class="category-menu">
+                                <ul class="ac-piece-list">
+                                    <li class="ac-item ac-piece">
+                                        <div class="info">
+                                            <span class="img">
+                                                <i class="icon icon_cate_etc"></i>
+                                            </span>
+
+                                            <div class="txt">
+                                                <span class="name">
+                                                    KB국민 톡톡 Pay카드
+                                                </span>
+                                                <p class="ac-num">자산관련메모 최대한 한줄 출력 (잘리는 경우 말줄임표
+                                                    표기)</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- 추가하기 -->
+                <div class="card-item">
+                    <div class="asset-wrap">
+                        <div class="asset add-account">
+                            <div class="category-heading">
+                                <span class="title">자산 추가하기</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            toastPopupShow()
+
+            $('.category-heading').click(function () {
+                $(this).parent().toggleClass('show')
+                $(this).siblings().find('.show').toggleClass('show')
+            });
+            $('.total-tit .name').click(function () {
+                $(this).parent().siblings('.ac-piece-list').toggleClass('show')
+                $(this).parent().toggleClass('show')
+            });
+
+            // 총자산, 리포트, 챌린지
+            $('._expenditureTab li a').on('click', function () {
+                $(this).parent().addClass('active').siblings().removeClass('active')
+            })
+
+            //툴팁
+            $('.ico_tooltip').click(function () {
+                let $tooltip = $('.tooltip-txt')
+                if ($tooltip.data('tooltip') === "show") {
+                    $tooltip.addClass('show')
+                    $tooltip.data('tooltip', 'hidden')
+                } else {
+                    $tooltip.removeClass('show')
+                    $tooltip.data('tooltip', 'show')
+                }
+            })
+            $('.tooltip-txt .close').click(function () {
+                $(this).parent().removeClass('show')
+                $(this).parent().data('tooltip', 'show')
+            })
+
+            $('.total-tit .planning .ico-caution').click(function () {
+                $(this).parent().siblings('.tooltip-txt-1').toggleClass('show')
+            })
+
+            $('.tooltip-txt-1 .close').click(function () {
+                $(this).parent().toggleClass('show')
+            })
+        </script>
+</body>
+
+</html>

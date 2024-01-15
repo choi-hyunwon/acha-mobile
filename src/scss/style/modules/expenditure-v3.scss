@@ -3505,6 +3505,18 @@
         }
 
         .custom-light {
+          input[type="date"]::before {
+            content: attr(date-placeholder);
+            width: 100%;
+            color: #c2c1cc;
+            font-family: var(--font1);
+          }
+
+          input[type="date"]:focus::before,
+          input[type="date"]:valid::before {
+            display: none;
+          }
+
           &.monetary-unit {
             position: relative;
 
@@ -3526,6 +3538,14 @@
               color: var(--text-point-color);
               padding: 5px 5px 0;
               display: none;
+            }
+
+            .sub-txt {
+              margin-top: 6px;
+              height: 15px;
+              font-size: 12px;
+              color: var(--text-02);
+              line-height: 1;
             }
 
             input {
@@ -4565,9 +4585,10 @@
         }
 
         .box_my_income_add {
-          padding: 10px 20px;
+          padding: 10px 20px 100px;
 
           .custom-light {
+            position: relative;
             margin-bottom: 0;
 
             &~.custom-light {
@@ -4604,6 +4625,12 @@
               .btn-clear-input {
                 top: 0;
               }
+            }
+
+            .ico_list_arrow_small {
+              position: absolute;
+              right: 5px;
+              bottom: 13px;
             }
           }
         }

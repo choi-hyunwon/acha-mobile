@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal">
+		<div class="contents expenditure">
+			<div class="expenditure-box assets-input">
+				<div class="box_my_income_add">
+					<div class="mt-20" style="border: 1px solid #999">
+						<h3 style="padding: 12px 0; border-bottom: 1px solid #999;">선택</h3>
+						<!-- 필수값 .need 추가 -->
+						<div class="custom-light _focus need">
+							<label class="title">서브타이틀</label>
+							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								placeholder="입력해주세요" />
+							<i class="ico_list_arrow_small"></i>
+						</div>
+						<div class="custom-light _focus need">
+							<label class="title">서브타이틀</label>
+							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								placeholder="입력해주세요" value="텍스트" />
+							<i class="ico_list_arrow_small"></i>
+						</div>
+					</div>
+
+					<div class="mt-20" style="border: 1px solid #999">
+						<h3 style="padding: 12px 0; border-bottom: 1px solid #999;">입력</h3>
+						<div class="custom-light _focus need">
+							<label class="title">이름</label>
+							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								placeholder="입력해주세요" />
+							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
+									/20</span></div>
+						</div>
+						<div class="custom-light monetary-unit _focus need">
+							<label class="title">서버타이틀</label>
+							<input onkeyup="countCharDelete(this)" title="value" type="number"
+								placeholder="금액을 입력해주세요" />
+							<p class="sub-desc">안내문구 출력</p>
+						</div>
+						<div class="custom-light _focus need">
+							<label class="title">이름</label>
+							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								placeholder="입력해주세요" value="텍스트 입력 중" />
+							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
+									/20</span></div>
+						</div>
+						<div class="custom-light monetary-unit _focus need">
+							<label class="title">서버타이틀</label>
+							<input onkeyup="countCharDelete(this)" title="value" type="number" placeholder="금액을 입력해주세요"
+								value="12500" />
+							<p class="sub-desc">안내문구 출력</p>
+						</div>
+					</div>
+
+					<div class="mt-20" style="border: 1px solid #999">
+						<h3 style="font-weight: bold; padding:  12px 0; border-bottom: 1px solid #999;">메모</h3>
+						<div class="custom-light ">
+							<label class="title">메모</label>
+							<div class="textarea-label">
+								<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60" rows="1"
+									onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요"></textarea>
+								<div class="input-byte mt-0"><span class="byte _val">0</span>
+									<span class="total">/60</span>
+								</div>
+							</div>
+						</div>
+						<div class="custom-light ">
+							<label class="title">메모</label>
+							<div class="textarea-label">
+								<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60"
+									onkeyup="countCharDelete(this,'_val')"
+									placeholder="메모를 입력해주세요">메모 입력중, 최대 60자까지 입력이 가능합니다.</textarea>
+								<div class="input-byte mt-0"><span class="byte _val">0</span>
+									<span class="total">/60</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const DEFAULT_HEIGHT = 0;
+		const $textarea = document.querySelector('.textarea');
+
+		$textarea.oninput = (e) => {
+			const $target = e.target;
+			$target.style.height = 0;
+			$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
+		};
+	</script>
+</body>
+@@include('../include/countCharDelete.html')
+
+</html>

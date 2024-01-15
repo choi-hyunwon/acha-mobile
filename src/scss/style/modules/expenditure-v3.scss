@@ -4568,6 +4568,7 @@
           padding: 10px 20px 100px;
 
           .custom-light {
+            position: relative;
             margin-bottom: 0;
 
             &~.custom-light {
@@ -4604,6 +4605,12 @@
               .btn-clear-input {
                 top: 0;
               }
+            }
+
+            .ico_list_arrow_small {
+              position: absolute;
+              right: 5px;
+              bottom: 13px;
             }
           }
         }

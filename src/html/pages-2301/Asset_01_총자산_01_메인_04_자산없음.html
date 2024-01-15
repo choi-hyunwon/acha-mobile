@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap">
+        <div class="contents">
+            <div class="box-ex-top box-card-top flex-column no-connect">
+                <a href="#" class="btn-sm btn-edit"><span>편집</span></a>
+
+                <div class="expenditure-tab _expenditureTab w-100">
+                    <ul>
+                        <li class="active mr-10"><a href="#">총자산</a></li>
+                        <li class="mr-10"><a href="#">리포트</a></li>
+                        <li class="mr-10"><a href="#">챌린지</a></li>
+                    </ul>
+                    <a href="#" class="calendar-box">
+                        <img src="../../img/common/ico-input-calendar@2x.png" alt="캘린더아이콘" class="calendar">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <h3>연결된 자산이 없어요</h3>
+                        <p>숨기기한 자산은 편집에서 확인할 수 있어요🙂</p>
+                    </div>
+                    <div class="img"><img src="../../img/common/img_assets_info@2x.png" alt=""></div>
+
+                    <div class="btn-area">
+                        <a class="btn btn-lg btn-block btn_primary btn-add" href="#">자산 추가하기</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // 총자산, 리포트, 챌린지
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</body>
+
+</html>

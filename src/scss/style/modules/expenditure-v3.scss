@@ -4543,6 +4543,71 @@
           }
         }
       }
+
+      // 직접입력
+      &.assets-input {
+
+        // 필수값
+        .need {
+          .title {
+            &::after {
+              content: '';
+              position: absolute;
+              right: -6px;
+              top: 0;
+              width: 4px;
+              height: 4px;
+              background-color: #6839d3;
+              border-radius: 100%;
+            }
+          }
+
+        }
+
+        .box_my_income_add {
+          padding: 10px 20px;
+
+          .custom-light {
+            margin-bottom: 0;
+
+            &~.custom-light {
+              margin-top: 30px;
+            }
+
+            .title {
+              position: relative;
+              display: inline-block;
+              font-size: 13px;
+            }
+
+            .value {
+              font-size: 17px;
+            }
+
+            .textarea-label {
+              background: #f7f8fc;
+              border-radius: 10px;
+              border-bottom: 0;
+              padding: 15px 30px 15px 20px;
+              margin-top: 10px;
+
+              textarea {
+                display: inline-block;
+                width: 100%;
+                background-color: transparent;
+              }
+
+              .input-byte {
+                top: 0;
+              }
+
+              .btn-clear-input {
+                top: 0;
+              }
+            }
+          }
+        }
+      }
     }
 
     .btn-area {

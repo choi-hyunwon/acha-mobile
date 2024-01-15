@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal">
+		<div class="header _sticky">
+			<a href="#" class="sprite btn_back"></a>
+			<h2>자산 직접입력</h2>
+		</div>
+		<div class="contents expenditure">
+			<div class="expenditure-box assets-input">
+				<div class="box_my_income_add">
+					<form action="#">
+						<div class="custom-light _focus">
+							<label class="title">유형</label>
+							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								placeholder="입력해주세요" />
+							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
+									/20</span></div>
+						</div>
+						<!-- 필수 입력 안됐을 경우 .disabled -->
+						<div class="btn_area bottom-fixed gap">
+							<a class="btn btn-big btn-purple-bg btn-block disabled" href="#">등록하기</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function () {
+		$(".custom-control-input").on("click", function () {
+			$(this).toggleClass("off");
+			if ($(this).hasClass("off")) {
+				$("._off").addClass("active");
+				$("._on").removeClass("active");
+			} else {
+				$("._on").addClass("active");
+				$("._off").removeClass("active");
+			}
+		});
+	})
+
+</script>
+@@include('../include/countCharDelete.html')
+
+</html>

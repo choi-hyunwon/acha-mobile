@@ -464,6 +464,20 @@ a:hover {
         bottom: 0;
         background: #fff;
         height: 80px;
+
+        &.gap {
+            padding: 20px 20px 30px !important;
+            height: auto;
+
+            &.next {
+                padding: 0 !important;
+
+                a {
+                    border-radius: unset;
+                }
+            }
+        }
+
     }
 
     &.pd {

@@ -1454,28 +1454,29 @@
       .tooltip-txt {
         display: none;
         position: absolute;
+        top: -46px;
+        left: 80px;
         padding: 10px 34px 10px 12px;
+        width: 256px;
         background: rgba(55, 53, 78, 0.85);
-        color: #fff;
-        border-radius: 10px 10px 10px 0;
         font-size: 13px;
         line-height: 1.54;
-        top: -50px;
-        left: 80px;
+        color: #fff;
+        border-radius: 10px 10px 10px 0;
+
 
         &.show {
           display: block;
 
           &::before {
             content: "";
-            content: "";
             position: absolute;
             left: 0;
             bottom: -8px;
-            border-top: 4px solid rgba(63, 54, 168, 0.85);
+            border-top: 4px solid rgba(55, 53, 78, 0.85);
             border-right: 6px solid transparent;
             border-bottom: 4px solid transparent;
-            border-left: 6px solid rgba(63, 54, 168, 0.85);
+            border-left: 6px solid rgba(55, 53, 78, 0.85);
           }
 
           .close {

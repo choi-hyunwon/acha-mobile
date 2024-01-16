@@ -26,7 +26,7 @@
 						<div class="custom-light _focus need">
 							<label class="title">이름</label>
 							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="입력해주세요" />
+								placeholder="입력해주세요" value="신한카드 1.5(마일리지용)" />
 							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
 									/20</span></div>
 						</div>
@@ -34,15 +34,19 @@
 						<!-- 결제일 -->
 						<div class="custom-light _focus">
 							<label class="title">결제일</label>
-							<input title="value" type="date" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								aria-required="true" required date-placeholder="선택해주세요" />
+							<input id="currentDate" title="value" type="date" maxlength="20"
+								onkeyup="countCharDelete(this,'_val')" aria-required="true" required
+								date-placeholder="선택해주세요" />
+							<script>
+								document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+							</script>
 						</div>
 
 						<!-- 카드사 -->
 						<div class="custom-light _focus">
 							<label class="title">카드사</label>
 							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="입력해주세요" />
+								placeholder="입력해주세요" value="신한카드" />
 							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
 									/20</span></div>
 						</div>
@@ -51,7 +55,7 @@
 						<div class="custom-light _focus">
 							<label class="title">카드번호</label>
 							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="입력해주세요" />
+								placeholder="입력해주세요" value="2314345558" />
 							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
 									/20</span></div>
 						</div>
@@ -60,8 +64,9 @@
 						<div class="custom-light ">
 							<label class="title">메모</label>
 							<div class="textarea-label">
-								<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60" rows="1"
-									onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요"></textarea>
+								<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60"
+									onkeyup="countCharDelete(this,'_val')"
+									placeholder="메모를 입력해주세요">메모 입력중, 최대 60자까지 입력이 가능합니다.</textarea>
 								<div class="input-byte mt-0"><span class="byte _val">0</span>
 									<span class="total">/60</span>
 								</div>
@@ -71,7 +76,7 @@
 						<!-- 필수 입력 안됐을 경우 .disabled -->
 						<!-- input focus시 .next 추가 -->
 						<div class="btn_area bottom-fixed gap">
-							<a class="btn btn-big btn-purple-bg btn-block disabled" href="#">등록하기</a>
+							<a class="btn btn-big btn-purple-bg btn-block" href="#">등록하기</a>
 						</div>
 					</form>
 				</div>

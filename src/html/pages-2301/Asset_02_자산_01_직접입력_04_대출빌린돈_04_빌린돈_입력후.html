@@ -18,7 +18,7 @@
 						<div class="custom-light _focus need">
 							<label class="title">유형</label>
 							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="선택해주세요" value="계좌" />
+								placeholder="선택해주세요" value="대출・빌린돈" />
 							<i class="ico_list_arrow_small"></i>
 						</div>
 
@@ -26,7 +26,7 @@
 						<div class="custom-light _focus need">
 							<label class="title">상세분류</label>
 							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="선택해주세요" value="입출금" />
+								placeholder="선택해주세요" value="빌린돈" />
 							<i class="ico_list_arrow_small"></i>
 						</div>
 
@@ -34,35 +34,44 @@
 						<div class="custom-light _focus need">
 							<label class="title">이름</label>
 							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="입력해주세요" value="텍스트 입력 중" />
+								placeholder="입력해주세요" value="빌린돈" />
 							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
 									/20</span></div>
 						</div>
 
-						<!-- 금액 -->
+						<!-- 빌린돈 잔액 -->
 						<div class="custom-light monetary-unit _focus need">
-							<label class="title">금액</label>
+							<label class="title">빌린돈 잔액</label>
 							<input onkeyup="countCharDelete(this)" title="value" type="number" placeholder="입력해주세요"
-								value="12500" />
-							<p class="sub-desc">1조원 미만까지 입력 가능</p>
+								value="-12346000" />
 						</div>
 
-						<!-- 은행 -->
+						<!-- 빌린돈 원금 -->
+						<div class="custom-light monetary-unit _focus">
+							<label class="title">빌린돈 원금</label>
+							<input onkeyup="countCharDelete(this)" title="value" type="number" placeholder="입력해주세요"
+								value="12346000" />
+						</div>
+
+						<!-- 만기일 -->
 						<div class="custom-light _focus">
-							<label class="title">은행</label>
-							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="입력해주세요" />
-							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
-									/20</span></div>
+							<label class="title">만기일</label>
+							<input id="currentDate" title="value" type="date" maxlength="20"
+								onkeyup="countCharDelete(this,'_val')" aria-required="true" required
+								date-placeholder="선택해주세요" />
+							<i class="ico_list_arrow_small"></i>
+							<!-- 기본값 날짜표시  스크립트-->
+							<script>
+								document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+							</script>
 						</div>
 
 						<!-- 메모 -->
 						<div class="custom-light ">
 							<label class="title">메모</label>
 							<div class="textarea-label">
-								<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60"
-									onkeyup="countCharDelete(this,'_val')"
-									placeholder="메모를 입력해주세요">메모 입력중, 최대 60자까지 입력이 가능합니다.</textarea>
+								<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60" rows="1"
+									onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요"></textarea>
 								<div class="input-byte mt-0"><span class="byte _val">0</span>
 									<span class="total">/60</span>
 								</div>
@@ -71,8 +80,8 @@
 
 						<!-- 필수 입력 안됐을 경우 .disabled -->
 						<!-- input focus시 .next 추가 -->
-						<div class="btn_area bottom-fixed gap next">
-							<a class="btn btn-big btn-purple-bg btn-block disabled" href="#">등록하기</a>
+						<div class="btn_area bottom-fixed gap">
+							<a class="btn btn-big btn-purple-bg btn-block" href="#">등록하기</a>
 						</div>
 					</form>
 				</div>

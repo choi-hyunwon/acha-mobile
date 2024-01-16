@@ -18,7 +18,7 @@
 						<div class="custom-light _focus need">
 							<label class="title">유형</label>
 							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="입력해주세요" value="계좌" />
+								placeholder="선택해주세요" value="계좌" />
 							<i class="ico_list_arrow_small"></i>
 						</div>
 
@@ -26,7 +26,7 @@
 						<div class="custom-light _focus need">
 							<label class="title">상세분류</label>
 							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="입력해주세요" value="마이너스 통장" />
+								placeholder="선택해주세요" value="마이너스 통장" />
 							<i class="ico_list_arrow_small"></i>
 						</div>
 
@@ -42,8 +42,7 @@
 						<!-- 금액 -->
 						<div class="custom-light monetary-unit _focus need">
 							<label class="title">금액</label>
-							<input onkeyup="countCharDelete(this)" title="value" type="number"
-								placeholder="금액을 입력해주세요" />
+							<input onkeyup="countCharDelete(this)" title="value" type="number" placeholder="입력해주세요" />
 							<p class="sub-desc">1조원 미만까지 입력 가능</p>
 							<!-- 마이너스 통장일 경우 노출 -->
 							<p class="sub-txt">* 마이너스 금액인 경우, 금액 앞에 “-”를 입력해 주세요</p>
@@ -52,8 +51,8 @@
 						<!-- 만기일 -->
 						<div class="custom-light _focus">
 							<label class="title">만기일</label>
-							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
-								placeholder="선택해주세요" />
+							<input title="value" type="date" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								date-placeholder="선택해주세요" required aria-required="true" />
 							<i class="ico_list_arrow_small"></i>
 						</div>
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide modal-expenditure change-amount _modalSlide">
+		<div class="modal-slide-content autoHeight">
+			<a href="#" class="btn-close _btnSlideClose"></a>
+			<div class="inner pb-0">
+				<div class="title">타이틀(마통 금액)</div>
+				<div class="custom-light monetary-unit _focus mb-0" style="padding-bottom: 30px;">
+					<input onkeyup="countCharDelete(this)" type="number" placeholder="입력해주세요" value="6000000" />
+					<p class="sub-desc">-1조 ~ 1조원 미만까지 입력 가능</p>
+					<p class="sub-txt">*마이너스 금액인 경우, 금액 앞에 “-”를 입력해 주세요</p>
+					<!-- <button class="btn-clear-input">삭제</button> -->
+				</div>
+			</div>
+			<div class="btn-wrap">
+				<a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">확인</a>
+			</div>
+		</div>
+	</div>
+	<div class="modal-slide-backdrop"></div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
+
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
+			});
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
+			});
+
+			btnSlideOpen.trigger("click");
+
+			var targetBtn = $(`.sub-desc`);
+
+			$("._focus input").on("focus", function () {
+				targetBtn.show();
+			});
+			$("._focus input").on("blur", function () {
+				targetBtn.hide();
+			});
+		});
+	</script>
+	@@include('../include/countCharDelete.html')
+</body>
+
+</html>

@@ -3211,6 +3211,17 @@
                     font-family: var(--font3);
                     color: var(--color-point);
                 }
+
+                &.limit-word {
+                    span {
+                        display: inline-block;
+                        max-width: calc(100% - 52px);
+                        vertical-align: bottom;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
             }
 
             .err-desc {
@@ -5068,6 +5079,14 @@
                         padding: 5px 5px 0;
                         text-align: left;
                         display: none;
+                    }
+
+                    .sub-txt {
+                        text-align: left;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: var(--text-02);
+                        margin-top: 4px;
                     }
 
                     input {

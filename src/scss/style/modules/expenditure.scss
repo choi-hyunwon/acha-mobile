@@ -8308,6 +8308,28 @@
       }
     }
   }
+
+  &.assets-wrap {
+    .info-wrap {
+      padding: 15px 0;
+      border-top: 1px solid #efefef;
+      border-bottom: 0;
+
+      .info-list {
+        .item {
+          padding: 15px 0;
+          margin: 0;
+
+          .tit {
+            font-size: 15px;
+            color: var(--text-02);
+            line-height: 22px;
+            font-family: var(--font1);
+          }
+        }
+      }
+    }
+  }
 }
 
 .add-income-wrap {

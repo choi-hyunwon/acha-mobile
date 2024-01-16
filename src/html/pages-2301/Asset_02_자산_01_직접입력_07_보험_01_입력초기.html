@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal">
+		<div class="header _sticky">
+			<a href="#" class="sprite btn_back"></a>
+			<h2>자산 직접입력</h2>
+		</div>
+		<div class="contents expenditure">
+			<div class="expenditure-box assets-input">
+				<div class="box_my_income_add">
+					<form action="#">
+
+						<!-- 유형 -->
+						<!-- 필수값 .need 추가 -->
+						<div class="custom-light _focus need">
+							<label class="title">유형</label>
+							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								placeholder="선택해주세요" value="보험" />
+							<i class="ico_list_arrow_small"></i>
+						</div>
+
+						<!-- 이름 -->
+						<div class="custom-light _focus need">
+							<label class="title">이름</label>
+							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								placeholder="입력해주세요" />
+							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
+									/20</span></div>
+						</div>
+
+						<!-- 납입주기 -->
+						<div class="custom-light _focus">
+							<label class="title">납입주기</label>
+							<input title="value" type="date" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								aria-required="true" required date-placeholder="선택해주세요" />
+							<i class="ico_list_arrow_small"></i>
+						</div>
+
+						<!-- 주기별 납입금액 -->
+						<div class="custom-light monetary-unit _focus">
+							<label class="title">주기별 납입금액</label>
+							<input onkeyup="countCharDelete(this)" title="value" type="number" placeholder="입력해주세요" />
+						</div>
+
+						<!-- 기관 -->
+						<div class="custom-light _focus">
+							<label class="title">기관</label>
+							<input title="value" type="text" maxlength="20" onkeyup="countCharDelete(this,'_val')"
+								placeholder="입력해주세요" />
+							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
+									/20</span></div>
+						</div>
+
+						<!-- 메모 -->
+						<div class="custom-light ">
+							<label class="title">메모</label>
+							<div class="textarea-label">
+								<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="60" rows="1"
+									onkeyup="countCharDelete(this,'_val')" placeholder="메모를 입력해주세요"></textarea>
+								<div class="input-byte mt-0"><span class="byte _val">0</span>
+									<span class="total">/60</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- 필수 입력 안됐을 경우 .disabled -->
+						<!-- input focus시 .next 추가 -->
+						<div class="btn_area bottom-fixed gap">
+							<a class="btn btn-big btn-purple-bg btn-block disabled" href="#">등록하기</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function () {
+		$(".custom-control-input").on("click", function () {
+			$(this).toggleClass("off");
+			if ($(this).hasClass("off")) {
+				$("._off").addClass("active");
+				$("._on").removeClass("active");
+			} else {
+				$("._on").addClass("active");
+				$("._off").removeClass("active");
+			}
+		});
+	})
+
+	const DEFAULT_HEIGHT = 0;
+	const $textarea = document.querySelector('.textarea');
+
+	$textarea.oninput = (e) => {
+		const $target = e.target;
+		$target.style.height = 0;
+		$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
+	};
+
+</script>
+@@include('../include/countCharDelete.html')
+
+</html>

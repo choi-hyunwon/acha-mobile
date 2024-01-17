@@ -80,6 +80,12 @@
         }
       }
 
+      .details {
+        font-size: 14px;
+        color: var(--text-point-color);
+        text-align: right;
+      }
+
 
 
       .delete {
@@ -3428,7 +3434,302 @@
             }
           }
         }
+
+        &.assets-wrap {
+          padding: 0 20px 30px;
+
+          +.divider {
+            margin-left: -20px;
+            width: calc(100% + 40px);
+          }
+
+          .assets-info {
+            margin-top: 10px;
+
+            .title {
+              display: flex;
+              align-items: flex-start;
+              flex-wrap: wrap;
+              padding: 0;
+
+              .badge-wrap {
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+                width: 100%;
+
+                .badge {
+                  border-radius: 16px;
+                  margin-right: 4px;
+                }
+              }
+
+              .img {
+                flex-shrink: 0;
+                width: 30px;
+                height: 30px;
+                margin-right: 8px;
+
+                img,
+                .icon {
+                  width: 100% !important;
+                  height: 100% !important;
+                }
+
+                img {
+                  margin: 0 !important;
+                }
+              }
+
+              .name {
+                position: relative;
+                padding-right: 10px;
+                font-size: 19px;
+                font-family: var(--font2);
+                line-height: 28px;
+
+                i {
+                  position: absolute;
+                  right: 0;
+                  top: 6px;
+                }
+              }
+            }
+
+            .info {
+              .agency-type {
+                font-size: 15px;
+                color: var(--text-02);
+                line-height: 22px;
+              }
+
+              .account {
+                font-size: 14px;
+                color: var(--text-03);
+                line-height: 16px;
+              }
+
+              .payment {
+                margin-top: 16px;
+                font-size: 15px;
+              }
+            }
+
+            .total-box {
+              margin-top: 7px;
+
+              .total {
+                display: flex;
+                align-items: baseline;
+                font-size: 28px;
+                font-family: var(--font3);
+                line-height: 33px;
+
+                span {
+                  font-family: var(--font2);
+                  font-size: 22px;
+                }
+              }
+
+              .desc {
+                margin-top: 6px;
+                font-size: 13px;
+                color: var(--text-02);
+                line-height: 19px;
+
+                .expire-badge {
+                  padding: 1px 6px;
+                  margin-right: 4px;
+                  background: #eeedf0;
+                  font-size: 11px;
+                  color: #9992a0;
+                  border-radius: 10px;
+                }
+
+                &.minus,
+                &.rise {
+                  font-size: 15px;
+                }
+
+                &.rise {
+                  span {
+                    color: #ef4b61;
+                  }
+                }
+
+                &.minus {
+                  span {
+                    color: #ef4b61;
+                  }
+                }
+              }
+
+
+              i {
+                margin-left: 4px;
+              }
+            }
+
+            .memo-box {
+              position: relative;
+              padding: 15px 25px 15px 20px;
+              background: #f7f8fc;
+              border-radius: 10px;
+              margin-top: 24px;
+
+              .memo {
+                font-size: 14px;
+                color: #c2c1cc;
+                line-height: 20px;
+
+                &.txt {
+                  color: var(--text-02);
+                }
+              }
+
+              i {
+                position: absolute;
+                right: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+          }
+
+          .info-list {
+            padding: 0;
+            margin-top: 48px;
+
+            .item {
+              padding: 0;
+
+              &~.item {
+                margin-top: 30px;
+              }
+
+              .tit {
+                font-size: 15px;
+                line-height: 22px;
+              }
+
+              .val {
+                font-size: 15px;
+                color: #c2c1cc;
+
+                input[type="date"]::before {
+                  content: attr(date-placeholder);
+                  width: 100%;
+                  color: #c2c1cc;
+                  font-family: var(--font1);
+                }
+
+                input[type="date"]:focus::before,
+                input[type="date"]:valid::before {
+                  display: none;
+                }
+
+                &.txt {
+                  color: var(--text-01);
+                }
+              }
+            }
+          }
+        }
       }
+
+      .assets-month-state {
+        padding: 24px 20px 30px;
+
+        .current-month {
+          margin: 0;
+
+          .month {
+            justify-content: flex-start;
+            margin: 0;
+            height: 27px;
+            font-size: 18px;
+            line-height: 27px;
+            font-family: var(--font2);
+            text-align: left;
+
+            i {
+              margin: 0;
+            }
+          }
+
+          .desc {
+            display: flex;
+            align-items: center;
+            margin-top: 4px;
+            font-size: 12px;
+            line-height: 18px;
+            color: var(--text-04);
+
+
+            i {
+              transform: unset;
+              margin: 0 4px 0 0;
+            }
+          }
+        }
+
+        .state-box {
+          margin-top: 24px;
+
+          .filter {
+            font-size: 15px;
+            line-height: 22px;
+            font-family: var(--font2);
+
+            i {
+              margin-left: 4px;
+              width: 14px;
+              height: 14px;
+            }
+          }
+
+          .state-list {
+            .item {
+              margin-top: 24px;
+
+              .date {
+                font-size: 12px;
+                color: var(--text-02);
+                line-height: 18px;
+                font-family: var(--font2);
+              }
+
+              .group {
+                padding: 17px 0;
+
+                .info {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  .tit,
+                  .val {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-family: var(--font2);
+                  }
+                }
+
+                .data {
+                  display: inline-block;
+                  margin-top: 7px;
+                  font-size: 12px;
+                  line-height: 14px;
+                  color: var(--text-03);
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+
 
       /*최근 거래내역*/
       .recent-transactions-wrap {
@@ -4569,7 +4870,7 @@
 
         // 필수값
         .need {
-          .title {
+          &.title {
             &::after {
               content: '';
               position: absolute;

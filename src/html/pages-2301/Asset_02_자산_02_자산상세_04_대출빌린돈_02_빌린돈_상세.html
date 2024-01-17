@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal">
+		<div class="header">
+			<a href="#" class="sprite btn_back"></a>
+			<h2>상세</h2>
+		</div>
+		<div class="contents expenditure">
+			<div class="expenditure-box assets-input">
+				<div class="account-detail-wrap assets-wrap">
+					<div class="info-wrap">
+						<div class="assets-info">
+
+							<div class="title">
+								<span class="img">
+									<i class="icon icon_direct_input"></i>
+								</span>
+								<p class="name">우리집 아파트 대출<i class="ico_list_arrow_small"></i></p>
+							</div>
+
+							<div class="total-box">
+								<p class="total">
+									-12,346,000
+									<span>원</span><i class="ico_list_arrow_small"></i>
+								</p>
+							</div>
+						</div>
+
+						<ul class="info-list">
+							<li class="item">
+								<label class="tit">만기일</label>
+								<!-- 텍스트 입력값 들어오면 .txt 추가 -->
+								<div class="val">
+									<input id="currentDate" title="value" type="date" aria-required="true" required
+										date-placeholder="선택해주세요" />
+									<i class="ico_list_arrow_small"></i>
+								</div>
+								<!-- 기본값 날짜표시  스크립트-->
+								<script>
+									document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+								</script>
+							</li>
+							<li class="item">
+								<p class="tit">빌린돈 원금</p>
+								<!-- 텍스트 입력값 들어오면 .txt 추가 -->
+								<p class="val txt">12,300,000<span>원</span><i class="ico_list_arrow_small"></i></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="account-remove-wrap assets-wrap">
+					<div class="info-wrap">
+						<ul class="info-list">
+							<li class="item">
+								<p class="tit">자산목록에서 숨기기</p>
+								<div class="custom-switch">
+									<input type="checkbox" class="custom-control-input" id="switch1">
+									<label class="custom-control-label" for="switch1"></label>
+								</div>
+							</li>
+							<li class="item">
+								<p class="tit">삭제하기</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

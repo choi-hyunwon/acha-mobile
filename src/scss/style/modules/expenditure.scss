@@ -1357,6 +1357,46 @@
           width: 24px;
           height: 24px;
         }
+
+        .tooltip-txt {
+          display: none;
+          position: absolute;
+          top: 42px;
+          right: 10px;
+          padding: 10px 34px 10px 12px;
+          width: 163px;
+          background: rgba(55, 53, 78, 0.85);
+          font-size: 13px;
+          line-height: 1.54;
+          color: #fff;
+          border-radius: 10px 0 10px 10px;
+          z-index: 5;
+
+          &.show {
+            display: block;
+
+            &::before {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: -8px;
+              border-top: 4px solid transparent;
+              border-right: 6px solid rgba(55, 53, 78, 0.85);
+              border-bottom: 4px solid rgba(55, 53, 78, 0.85);
+              border-left: 6px solid transparent;
+            }
+
+            .close {
+              position: absolute;
+              right: 12px;
+              top: 14px;
+              width: 14px;
+              height: 14px;
+              background: url(../../img/common/btn-tag-delete@2x.png) no-repeat center / cover;
+              opacity: 1;
+            }
+          }
+        }
       }
     }
 
@@ -8301,10 +8341,28 @@
             }
           }
         }
+      }
+    }
+  }
 
-        .tit {}
+  &.assets-wrap {
+    .info-wrap {
+      padding: 15px 0;
+      border-top: 1px solid #efefef;
+      border-bottom: 0;
 
-        .val {}
+      .info-list {
+        .item {
+          padding: 15px 0;
+          margin: 0;
+
+          .tit {
+            font-size: 15px;
+            color: var(--text-02);
+            line-height: 22px;
+            font-family: var(--font1);
+          }
+        }
       }
     }
   }

@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>자산 일정</h2>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-calendar assets-calendar">
+                <div class="group">
+                    <div class="ex-calendar">
+                        <div class="box-ex-calendar-header">
+                            <div class="date">2023.12</div>
+                            <div class="date-noti">
+                                <img src="../../img/common/ic_noti_schedule@2x.png" alt="아이콘">
+                                <p>자동차세/종부세 납부의 달</p>
+                            </div>
+                        </div>
+                        <div class="box_ex_calendar ex-calendar-v3">
+                            <div id='calendar-01'></div>
+                        </div>
+                    </div>
+                    <!-- 캘린더 일자 클릭 했을 경우  show 추가 -->
+                    <div class="schedule-box show">
+                        <!-- 일정이 없을경우 -->
+                        <div class="empty">
+                            <div class="img">
+                                <img src="../../img/common/ico-error-page@2x.png" alt="">
+                            </div>
+                            <p>자산일정이 없어요🙁</p>
+                        </div>
+
+                        <!-- 일정이 있을경우 -->
+                        <!-- <div class="date-detail">
+                            <div class="t-day">
+                                <p class="date">2일</p>
+                                <p class="day">(목)</p>
+                            </div>
+                            <div class="detail">
+                                <ul>
+                                    <li class="item">
+                                        <div class="badge badge-lightOrange">예금만기</div>
+                                        <div class="info-box">
+                                            <p class="text">
+                                                <span class="name">국민수퍼정기예금(CD금리연동형)국민수퍼정기예금</span>의
+                                                만기일이에요👏🏻
+                                            </p>
+                                            <div class="img">
+                                                <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="국민은행">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="badge badge-lightRed">챌린지 종료</div>
+                                        <div class="info-box">
+                                            <p class="text">
+                                                <span class="name">드림카 타고 슝슝 모으기</span> 챌린지 종료일이에요
+                                            </p>
+                                            <div class="img">
+                                                <img src="../../img/common/ic_challenge@2x.png" class="img-ci"
+                                                    alt="챌린지">
+                                            </div>
+                                        </div>
+                                        <a href="#">챌린지 상세보기 <i class="ico_list_arrow_small"></i></a>
+                                    </li>
+                                    <li class="item">
+                                        <div class="badge badge-lightBlue">대출상황</div>
+                                        <div class="info-box">
+                                            <p class="text">
+                                                <span class="name">하나은행저축은행 하나슈퍼드리론 하나은행저축은행 하나슈퍼드리론</span> 대출의 상환일이에요
+                                                💙
+                                            </p>
+                                            <div class="img">
+                                                <img src="../../img/@temp/hana.png" class="img-ci" alt="하나은행">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="ex-calendar">
+                        <div class="box-ex-calendar-header">
+                            <div class="date">2024.01</div>
+                            <div class="date-noti">
+                                <img src="../../img/common/ic_noti_schedule@2x.png" alt="아이콘">
+                                <p>자동차 연세액 납부의 달</p>
+                            </div>
+                        </div>
+                        <div class="box_ex_calendar ex-calendar-v3">
+                            <div id='calendar-02'></div>
+                        </div>
+                    </div>
+                    <div class="schedule-box">
+                        <!-- 일정이 없을경우 -->
+                        <div class="empty">
+                            <div class="img">
+                                <img src="../../img/common/ico-error-page@2x.png" alt="">
+                            </div>
+                            <p>자산일정이 없어요🙁</p>
+                        </div>
+                        <!-- 일정이 있을경우 -->
+                        <!-- <div class="date-detail">
+                            <div class="t-day">
+                                <p class="date">3일</p>
+                                <p class="day">(목)</p>
+                            </div>
+                            <div class="detail">
+                                <ul>
+                                    <li class="item">
+                                        <div class="badge badge-lightOrange">예금만기</div>
+                                        <div class="info-box">
+                                            <p class="text">
+                                                <span class="name">국민수퍼정기예금(CD금리연동형)</span>의
+                                                만기일이에요👏🏻
+                                            </p>
+                                            <div class="img">
+                                                <img src="../../img/@temp/ci_kbbank@2x.png" class="img-ci" alt="국민은행">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="badge badge-lightRed">챌린지 종료</div>
+                                        <div class="info-box">
+                                            <p class="text">
+                                                <span class="name">드림카 타고 슝슝 모으기</span> 챌린지 종료일이에요
+                                            </p>
+                                            <div class="img">
+                                                <img src="../../img/common/ic_challenge@2x.png" class="img-ci"
+                                                    alt="챌린지">
+                                            </div>
+                                        </div>
+                                        <a href="#">챌린지 상세보기 <i class="ico_list_arrow_small"></i></a>
+                                    </li>
+                                    <li class="item">
+                                        <div class="badge badge-lightBlue">대출상황</div>
+                                        <div class="info-box">
+                                            <p class="text">
+                                                <span class="name">하나은행저축은행 하나슈퍼드리론</span> 대출의 상환일이에요 💙
+                                            </p>
+                                            <div class="img">
+                                                <img src="../../img/@temp/hana.png" class="img-ci" alt="하나은행">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let groupLength = document.querySelectorAll('.group').length
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+
+            for (let idx = 0; idx < groupLength; idx++) {
+                var calendarEl = document.getElementById(`calendar-0${idx + 1}`);
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    plugins: ['interaction', 'dayGrid'],
+                    showNonCurrentDates: true,
+                    fixedWeekCount: false,
+                    header: false,
+                    height: 'auto',
+                    defaultDate: '2024-01-11',  // 날짜 입력시, 달력 show
+                    editable: false,
+                    eventLimit: false,
+                    navLinks: true,
+                    timeZone: 'Asia/Seoul',
+                    columnHeaderText: function (date) {
+                        return weekList[date.getDay()];
+                    },
+                    navLinkDayClick: function (date, jsEvent) {
+                        console.log(date.toISOString().slice(0, 10));
+                        console.log(jsEvent.target)
+                    },
+                    events: [
+                        // 일정이 있을 경우 
+                        {
+                            className: 'days-schedule',
+                            title: '',
+                            start: '2024-01-02'
+                        },
+                        {
+                            className: 'days-schedule',
+                            title: '',
+                            start: '2024-01-06'
+                        },
+                        {
+                            className: 'days-schedule',
+                            title: '',
+                            start: '2024-01-15'
+                        },
+                        {
+                            className: 'days-schedule',
+                            title: '',
+                            start: '2024-01-19'
+                        },
+                        {
+                            className: 'days-schedule',
+                            title: '',
+                            start: '2024-01-28'
+                        }
+                    ],
+
+                });
+
+                // 특정 클래스를 가진 각 td 요소의 위치 찾기
+                var targetIndexes = [];
+                var targetClassName = '.fc-event-container';
+
+                $('td' + targetClassName).each(function () {
+                    var parentRow = $(this).parents('.fc-row').index() + 1;
+                    var rowIndex = $(this).parent().index();
+                    var colIndex = $(this).index();
+
+                    targetIndexes.push({ parentRow: parentRow, rowIndex: rowIndex, colIndex: colIndex });
+                });
+
+                console.log('특정 클래스를 가진 각 td 요소의 위치:', targetIndexes);
+
+                // thead에 event-target 클래스 추가
+                for (var i = 0; i < targetIndexes.length; i++) {
+                    var targetIndex = targetIndexes[i];
+                    $('.fc-row').eq(targetIndex.parentRow).find('thead tr').eq(targetIndex.rowIndex).find('td').eq(targetIndex.colIndex).addClass('fc-day-top-target');
+                }
+
+
+
+                calendar.render();
+            }
+        });
+
+
+        // 18자 넘어가면 말줄임표로 표시
+        const names = $('.info-box span')
+        for (let i = 0; i < names.length; i++) {
+            const maxLength = names[i].innerHTML.length
+            if (maxLength >= 18) {
+                result = names[i].innerHTML.substring(0, 17) + '...'
+            } else {
+                result = names[i].innerHTML
+            }
+            names[i].innerHTML = result
+        }
+    </script>
+</body>
+
+</html>

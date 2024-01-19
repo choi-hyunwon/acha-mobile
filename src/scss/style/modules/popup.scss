@@ -2006,20 +2006,38 @@
                 }
 
                 .textarea-label {
-                    border-bottom: 1px solid #37354e;
-                    padding-bottom: 9px;
+                    padding-bottom: 0;
                     width: 100%;
                     text-align: left;
+                    border: none;
 
                     .textarea,
                     textarea[data-auto-resize] {
-                        width: calc(100% - 78px);
+                        padding-bottom: 9px;
+                        padding-right: 78px;
+                        width: 100%;
                         height: auto;
                         font-size: 15px;
-                        line-height: 22px;
+                        line-height: 21px;
                         border: 0;
+                        border-bottom: 1px solid #e2e3e6;
                         outline: none;
+
+                        &:focus {
+                            border-bottom: 1px solid #37354e;
+                        }
+
+
+                        -ms-overflow-style: none;
+                        scrollbar-width: none;
+
+
+                        &::-webkit-scrollbar {
+                            display: none;
+                            /* Chrome, Safari, Opera*/
+                        }
                     }
+
                 }
             }
 

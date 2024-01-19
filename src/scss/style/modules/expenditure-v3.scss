@@ -3461,6 +3461,7 @@
                 .badge {
                   border-radius: 16px;
                   margin-right: 4px;
+                  padding: 4px 8px;
                 }
               }
 
@@ -3484,6 +3485,7 @@
               .name {
                 position: relative;
                 padding-right: 10px;
+                // width: calc(100% - 40px);
                 font-size: 19px;
                 font-family: var(--font2);
                 line-height: 28px;

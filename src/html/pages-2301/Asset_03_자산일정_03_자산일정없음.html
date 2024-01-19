@@ -160,13 +160,13 @@
         </div>
     </div>
     <script>
-        let groupLength = document.querySelectorAll('.group').length + 1
+        let groupLength = document.querySelectorAll('.group').length
 
         document.addEventListener('DOMContentLoaded', function () {
             var weekList = ['일', '월', '화', '수', '목', '금', '토'];
 
-            for (let idx = 1; idx < groupLength; idx++) {
-                var calendarEl = document.getElementById(`calendar-0${idx}`);
+            for (let idx = 0; idx < groupLength; idx++) {
+                var calendarEl = document.getElementById(`calendar-0${idx + 1}`);
                 var calendar = new FullCalendar.Calendar(calendarEl, {
                     plugins: ['interaction', 'dayGrid'],
                     showNonCurrentDates: true,
@@ -213,15 +213,30 @@
                             start: '2024-01-28'
                         }
                     ],
-                    eventDidMount: function (info) {
-                        console.log(info);
 
-                    }
                 });
 
+                // 특정 클래스를 가진 각 td 요소의 위치 찾기
+                var targetIndexes = [];
+                var targetClassName = '.fc-event-container';
 
-                var eventList = calendar.getEvents();
-                console.log(eventList[0]._calendar);
+                $('td' + targetClassName).each(function () {
+                    var parentRow = $(this).parents('.fc-row').index() + 1;
+                    var rowIndex = $(this).parent().index();
+                    var colIndex = $(this).index();
+
+                    targetIndexes.push({ parentRow: parentRow, rowIndex: rowIndex, colIndex: colIndex });
+                });
+
+                console.log('특정 클래스를 가진 각 td 요소의 위치:', targetIndexes);
+
+                // thead에 event-target 클래스 추가
+                for (var i = 0; i < targetIndexes.length; i++) {
+                    var targetIndex = targetIndexes[i];
+                    $('.fc-row').eq(targetIndex.parentRow).find('thead tr').eq(targetIndex.rowIndex).find('td').eq(targetIndex.colIndex).addClass('fc-day-top-target');
+                }
+
+
 
                 calendar.render();
             }

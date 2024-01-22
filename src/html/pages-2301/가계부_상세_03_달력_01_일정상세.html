@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>일정</h2>
+            <div class="sum-area">
+                <a href="#" class="details">수정</a>
+            </div>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-story-wrap schedule-story-wrap">
+                <div class="title-story d-flex align-items-center justify-content-between">
+                    2023년 10월12일 (금)
+                    <div class="mood mood-complete">
+                        <ul class="">
+                            <li class="on no-padding"><i class="emoji excited"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="contents">
+                    <div class="wrap">
+                        <div class="title">
+                            <span class="color color-pink"></span>
+                            <p class="txt">
+                                등산🏔️
+                            </p>
+                        </div>
+                        <div class="explain">
+                            <div class="txt">
+                                도영이와 함께 아침 8시에 출발하여 청계산 등반을 즐기는 일정이다. 산행을 시작한 후에는 중간에 휴식을 취하고 점심은 청계산 입구 오리백숙을 즐길 예정이다.
+                                등산로에서는 친구들과 함께 즐거운 시간을 보내며 자연
+                                속에서 활력을 얻을 것같아 기대된다!
+                            </div>
+                            <div class="img-box mt-30 mb-20">
+                                <div class="swiper-container _pageSlider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="img-area">
+                                                <img src="../../img/@temp/@temp-spring.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img-area">
+                                                <img src="../../img/@temp/sample-img-stoty-full-01@2x.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sharing">
+                        <img src="../../img/common/img_share_schedule@2x.png" alt="sharing">
+                        <!-- 공유중일경우 -->
+                        <p>유똑똑님과 이 일정을 <span class="f-point">공유중</span>이에요</p>
+                        <!-- 공유중이 아닐 경우 -->
+                        <!-- <p>아직 일정을 공유할 상대방이 없어요.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper("._pageSlider2", {
+            autoHeight: true,
+            calculateHeight: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            on: {
+                activeIndexChange: function () {
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

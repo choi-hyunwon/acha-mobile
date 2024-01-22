@@ -1941,6 +1941,21 @@
         font-family: var(--font2);
       }
     }
+
+    &.agree-wrap-other {
+      .select-all-box {
+        padding: 0;
+        border: 0;
+        border-bottom: 1px solid #37354e;
+        border-radius: 0;
+
+        &.checked {
+          span {
+            color: #37354c;
+          }
+        }
+      }
+    }
   }
 
   .Precautions {

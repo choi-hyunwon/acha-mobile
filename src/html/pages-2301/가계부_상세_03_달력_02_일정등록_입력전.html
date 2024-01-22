@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>상세내역</h2>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-calendar">
+                <div class="expenditure-story-wrap schedule-story-wrap">
+
+                    <div class="custom-light _focus">
+                        <label class="title">일자</label>
+                        <input title="value" type="text" id="datepicker" value="2023년 10월 12일 금요일">
+                        <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘" class="calendar">
+                        <script>
+                            $("#datepicker").datepicker({
+                                showOn: "button",
+                                buttonImageOnly: true,
+                                changeMonth: true,
+                                changeYear: true,
+                                dateFormat: "yy-mm-dd DD",
+                                dayNames: ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"],
+                                dayNamesMin: ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"],
+                                monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월",],
+                                showOtherMonths: true,
+                            });
+                        </script>
+                    </div>
+
+                    <div class="custom-light _focus">
+                        <label class="title need">제목</label>
+                        <input title="value" type="text" maxlength="12" placeholder="일정 제목을 입력해주세요">
+                        <div class="input-byte"><span class="byte _val">0</span><span class="total"> / 12</span>
+                        </div>
+                    </div>
+
+                    <div class="textarea removal mt-n4">
+                        <label for="context">내용</label>
+                        <textarea class="custom" name="context" id="context" maxlength="200"
+                            placeholder="일정 제목을 입력해주세요"></textarea>
+                        <p class="length">
+                            <span class="txt-limit"><em class="_val">0</em> / 200</span>
+                            <button class="del disable">전체삭제</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="expenditure-story-wrap schedule-story-wrap">
+                    <div class="color-category mt-20">
+                        <label>색상 범주</label>
+                        <ul>
+                            <li class="active"><span class="color color-blue"></span></li>
+                            <li><span class="color color-green"></span></li>
+                            <li><span class="color color-purple"></span></li>
+                            <li><span class="color color-pink"></span></li>
+                            <li><span class="color color-orange"></span></li>
+                            <li><span class="color color-red"></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="mood mt-40">
+                        <label>기분</label>
+                        <ul class="clearfix mx-0 my-0">
+                            <li><i class="emoji excited"></i></li>
+                            <li><i class="emoji smile"></i></li>
+                            <li><i class="emoji nothing"></i></li>
+                            <li><i class="emoji surprise"></i></li>
+                            <li><i class="emoji cry"></i></li>
+                            <li><i class="emoji angry"></i></li>
+                            <li><i class="emoji vomit"></i></li>
+                        </ul>
+                    </div>
+
+                    <div class="gallery mt-40 mb-20">
+                        <label>사진 업로드</label>
+                        <ul class="clearfix">
+                            <li class="add"><a href="#"><i class="btn-gallery-add"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="expenditure-story-wrap schedule-story-wrap">
+                    <div class="share-check mt-20 mb-20">
+                        <div class="box-top">
+                            <p>공유여부</p>
+                            <div class="custom-switch custom-switch-relative">
+                                <input type="checkbox" class="custom-control-input" id="switch1" checked="checked">
+                                <label class="custom-control-label" for="switch1"></label>
+                            </div>
+                        </div>
+                        <p class="desc">공동과닐 상대방과 일정을 공유할 수 있어요</p>
+                    </div>
+                </div>
+
+                <div class="btn-area bg-white">
+                    <a class="btn btn-big btn-purple-bg btn-block disabled" href="#">저장하기</a>
+                </div>
+                <!-- //expenditure-box -->
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+        $('.color-category li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</body>
+
+</html>

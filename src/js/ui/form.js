@@ -17,6 +17,9 @@ front.form = (function () {
         //     clearBtn: false
         // });
     };
+
+
+
     var onFucusText = function () {
         $('input[type="text"], input[type="password"], input[type="email"]').on('focus', function () {
             var tooltip = $(this).data('tooltip');

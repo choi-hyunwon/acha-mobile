@@ -7,7 +7,7 @@ front.form = (function () {
         this.onBlurText();
     };
 
-    // var datepicker = function () {
+    var datepicker = function () {
         //https://uxsolutions.github.io/bootstrap-datepicker/?markup=input&format=&weekStart=&startDate=&endDate=&startView=0&minViewMode=0&maxViewMode=4&todayBtn=false&clearBtn=false&language=kr&orientation=auto&multidate=&multidateSeparator=&keyboardNavigation=on&forceParse=on#sandbox
         // $('._datepicker').datepicker({
         //     language: "kr",
@@ -16,34 +16,9 @@ front.form = (function () {
         //     todayBtn: false,
         //     clearBtn: false
         // });
-    // };
+    };
 
-                              $("#datepicker-day").datepicker({
-                                showOn: "button",
-                                buttonImage:
-                                    "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
-                                buttonImageOnly: true,
-                                changeMonth: true,
-                                changeYear: true,
-                                dateFormat: "yy-mm-dd DD",
-                                dayNames: ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"],
-                                dayNamesMin: ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"],
-                                monthNamesShort: [
-                                    "1월",
-                                    "2월",
-                                    "3월",
-                                    "4월",
-                                    "5월",
-                                    "6월",
-                                    "7월",
-                                    "8월",
-                                    "9월",
-                                    "10월",
-                                    "11월",
-                                    "12월",
-                                ],
-                                showOtherMonths: true,
-                            });
+
 
     var onFucusText = function () {
         $('input[type="text"], input[type="password"], input[type="email"]').on('focus', function () {

@@ -1,14 +1,14 @@
 <script>
     function countCharDelete(val, target) {
         var len = $(val).val().length;
-        var targetItem = $(target);
+        var targetItem = $('.' + target);
         var nextEle = $(val).next();
 
         if ($(val).siblings('.btn-clear-input').length === 0) {
             $(val).parent().append('<button class="btn-clear-input">삭제</button>');
         }
 
-        $('.' + target).text(len);
+        targetItem.text(len);
 
         if (len === 0) {
             targetItem.css("color", "#afaeb8");

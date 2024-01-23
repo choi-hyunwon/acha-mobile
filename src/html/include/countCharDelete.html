@@ -32,6 +32,20 @@
         });
     }
 
+    function countTextarea(val) {
+        let $this = $(val)
+        let content = $this.val()
+        const textLValue = $this.siblings().find('.val')
+
+        if (content.length === 0) {
+            textLValue.removeClass('active')
+        } else {
+            textLValue.addClass('active')
+        }
+
+        textLValue.text(content.length)
+    }
+
     $('.custom-light, .step-box, .item-form').on('click', '.btn-clear-input', function () {
         $(this).siblings('input').val('')
             .siblings('.input-byte').find('._val').text('0')

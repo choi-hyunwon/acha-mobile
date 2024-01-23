@@ -7199,7 +7199,23 @@
             font-size: 12px;
             line-height: 14px;
             color: var(--text-03);
+
+            &.active {
+              color: var(--text-01);
+            }
           }
+        }
+
+        .btn-clear-input {
+          position: absolute;
+          bottom: 32px;
+          right: 12px;
+          font-size: 0;
+          width: 18px;
+          height: 18px;
+          content: "";
+          background: url(../../img/common/ico_input_delete@2x.png) center center no-repeat;
+          background-size: contain;
         }
       }
 
@@ -7207,6 +7223,28 @@
         label {
           color: var(--text-01);
           font-family: var(--font1);
+        }
+
+        .length {
+          .txt-limit {
+            color: var(--text-03);
+
+            .val {
+              color: #9b9aa6;
+
+              &.active {
+                color: var(--text-01);
+              }
+            }
+          }
+
+          .del {
+            color: var(--text-02);
+
+            &.disabled {
+              color: #e2e3e6;
+            }
+          }
         }
       }
 

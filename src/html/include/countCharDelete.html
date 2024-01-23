@@ -4,13 +4,14 @@
         var targetItem = $('.' + target);
         var nextEle = $(val).next();
 
+
         if ($(val).siblings('.btn-clear-input').length === 0) {
             $(val).parent().append('<button class="btn-clear-input">삭제</button>');
         }
 
         targetItem.text(len);
 
-        if (len === 0) {
+        if (len == 0) {
             targetItem.css("color", "#afaeb8");
             nextEle.hide();
         } else {
@@ -32,7 +33,6 @@
     }
 
     $('.custom-light, .step-box, .item-form').on('click', '.btn-clear-input', function () {
-        console.log('clear')
         $(this).siblings('input').val('')
             .siblings('.input-byte').find('._val').text('0')
         $(this).remove()

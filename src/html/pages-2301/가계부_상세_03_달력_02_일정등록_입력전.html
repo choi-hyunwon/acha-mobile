@@ -20,7 +20,8 @@
 
                     <div class="custom-light _focus">
                         <label class="title need">제목</label>
-                        <input title="value" type="text" maxlength="12" placeholder="일정 제목을 입력해주세요">
+                        <input title="value" type="text" maxlength="12" placeholder="일정 제목을 입력해주세요"
+                            onkeyup="countCharDelete(this,'_val')"><em></em>
                         <div class="input-byte"><span class="byte _val">0</span><span class="total"> / 12</span>
                         </div>
                     </div>
@@ -30,8 +31,9 @@
                         <textarea class="custom" name="context" id="context" maxlength="200"
                             placeholder="일정내용을 입력해주세요"></textarea>
                         <p class="length">
-                            <span class="txt-limit"><em class="_val">0</em> / 200</span>
-                            <button class="del disable">전체삭제</button>
+                            <!-- textarea포커스되면 .val active -->
+                            <span class="txt-limit"><em class="val">0</em> / 200</span>
+                            <button class="del disabled">전체삭제</button>
                         </p>
                     </div>
                 </div>
@@ -102,7 +104,18 @@
         $('.color-category li').click(function () {
             $(this).addClass('active').siblings().removeClass('active')
         })
+
+        $('.textarea .custom').keyup(function () {
+            $(this).siblings().find('.val').addClass('active')
+            let content = $(this).val()
+            const textLength = $(this).siblings().find('.val')
+            textLength.text(content.length)
+        })
+
+
     </script>
 </body>
+@@include('../include/countCharDelete.html')
+
 
 </html>

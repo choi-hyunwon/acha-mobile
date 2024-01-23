@@ -3688,9 +3688,21 @@
           margin-top: 24px;
 
           .filter {
-            font-size: 15px;
-            line-height: 22px;
-            font-family: var(--font2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .selet {
+              font-size: 15px;
+              line-height: 22px;
+              font-family: var(--font2);
+            }
+
+            .total {
+              font-size: 18px;
+              line-height: 27px;
+              font-family: var(--font3);
+            }
 
             i {
               margin-left: 4px;
@@ -3718,6 +3730,14 @@
                   align-items: center;
                   justify-content: space-between;
 
+                  &.cancel {
+                    color: #c2c1cc;
+
+                    .val {
+                      text-decoration: line-through;
+                    }
+                  }
+
                   .tit,
                   .val {
                     font-size: 16px;
@@ -3727,11 +3747,58 @@
                 }
 
                 .data {
-                  display: inline-block;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
                   margin-top: 7px;
                   font-size: 12px;
                   line-height: 14px;
                   color: var(--text-03);
+
+                  >span:last-child {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                  }
+
+                  .tooltip-txt {
+                    display: none;
+                    position: absolute;
+                    padding: 10px 34px 10px 12px;
+                    background: rgba(55, 53, 78, 0.85);
+                    color: #fff;
+                    border-radius: 10px 0 10px 10px;
+                    font-size: 13px;
+                    line-height: 1.54;
+                    top: 27px;
+                    left: -214px;
+                    z-index: 999;
+
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      right: 0;
+                      top: -8px;
+                      border-top: 4px solid transparent;
+                      border-right: 6px solid rgba(55, 53, 78, 0.85);
+                      border-bottom: 4px solid rgba(55, 53, 78, 0.85);
+                      border-left: 6px solid transparent;
+                    }
+
+                    &.show {
+                      display: block;
+                    }
+
+                    .close {
+                      position: absolute;
+                      right: 12px;
+                      top: 13px;
+                      width: 14px;
+                      height: 14px;
+                      background: url(../../img/common/btn-tag-delete@2x.png) no-repeat center/cover;
+                      opacity: 1;
+                    }
+                  }
                 }
               }
             }
@@ -6519,7 +6586,7 @@
 
         .schedule-box {
           display: none;
-          padding: 30px 20px;
+          padding: 20px;
           border-top: 1px solid #efefef;
           border-bottom: 1px solid #efefef;
 
@@ -6533,12 +6600,25 @@
             .t-day {
               display: flex;
               align-items: baseline;
+              justify-content: space-between;
               font-size: 20px;
               line-height: 29px;
               font-family: var(--font3);
 
               .day {
                 font-size: 16px;
+              }
+
+              .close {
+                width: 26px;
+                height: 26px;
+                opacity: 1;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
               }
             }
 

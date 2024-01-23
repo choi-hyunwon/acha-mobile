@@ -66,18 +66,28 @@
 							<li class="item">
 								<p class="date">10일 (금)</p>
 								<div class="group">
-									<div class="info">
+									<!-- 승인 (매입) 취소 일경우 -->
+									<div class="info cancel">
 										<p class="tit">동행복권</p>
-										<p class="val">10,000 <span>원</span></p>
+										<p class="val">10,000<span>원</span></p>
 									</div>
-									<span class="data">10:00</span>
+									<p class="data">10:00</p>
 								</div>
 								<div class="group">
 									<div class="info">
 										<p class="tit">씨유(CU) 구로태평양점</p>
-										<p class="val">10,000 <span>원</span></p>
+										<p class="val f-point">+14,300<span>원</span></p>
 									</div>
-									<span class="data">10:00 | 할부 3개월</span>
+									<p class="data">
+										<span>10:00 | 할부 3개월</span>
+										<span>환불<i class="icon ico-caution mt-2"
+												onclick="tooltipToggle('toolbox-1')"></i>
+											<span class="tooltip-txt toolbox-1" data-tooltip="hidden">
+												왼화의 원화환산 금액은 준비중이에요
+												<span class="close" onclick="TooltipClose('toolbox-1')"></span>
+											</span></span>
+									</p>
+
 								</div>
 							</li>
 							<li class="item">
@@ -85,16 +95,16 @@
 								<div class="group">
 									<div class="info">
 										<p class="tit">동행복권</p>
-										<p class="val">10,000 <span>원</span></p>
+										<p class="val">10,000<span>원</span></p>
 									</div>
-									<span class="data">10:00</span>
+									<p class="data">10:00</p>
 								</div>
 								<div class="group">
 									<div class="info">
 										<p class="tit">맥도날드구로디지털점</p>
-										<p class="val">10,000 <span>원</span></p>
+										<p class="val">10,000<span>원</span></p>
 									</div>
-									<span class="data">10:00 | 할부 3개월</span>
+									<p class="data">10:00 | 할부 3개월</p>
 								</div>
 							</li>
 						</ul>
@@ -104,5 +114,24 @@
 		</div>
 	</div>
 </body>
+<script>
+	//툴팁
+	function tooltipToggle(target) {
+		const tooltipBox = $('.' + target)
+		if (tooltipBox.data('tooltip') === "hidden") {
+			tooltipBox.addClass('show')
+			tooltipBox.data('tooltip', 'show')
+		} else {
+			tooltipBox.removeClass('show')
+			tooltipBox.data('tooltip', 'hidden')
+		}
+	}
+
+	function TooltipClose(target) {
+		const tooltipBox = $('.' + target)
+		tooltipBox.removeClass('show')
+		tooltipBox.data('tooltip', 'show')
+	}
+</script>
 
 </html>

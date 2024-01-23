@@ -11,21 +11,22 @@
                 <div class="expenditure-tab _expenditureTab w-100">
                     <ul>
                         <li class="active mr-10"><a href="#">총자산</a></li>
-                        <li class="mr-10"><a href="#">리포트</a></li>
-                        <li class="mr-10"><a href="#">챌린지</a></li>
+                        <!-- <li class="mr-10"><a href="#">리포트</a></li>
+                        <li class="mr-10"><a href="#">챌린지</a></li> -->
                     </ul>
-                    <a href="#" class="calendar-box ico_tooltip">
-                        <img src="../../img/common/ico-input-calendar@2x.png" alt="캘린더아이콘" class="calendar">
-                        <div class="tooltip-txt show" data-tooltip="hidden">
-                            자산일정이 있어요😀
-                            <span class="close"></span>
-                        </div>
-                    </a>
+                    <!-- <a href="#" class="calendar-box ico_tooltip">
+                                            <img src="../../img/common/ico-input-calendar@2x.png" alt="캘린더아이콘" class="calendar"
+                                                onclick="tooltipToggle('toolbox-4')">
+                                            <div class="tooltip-txt toolbox-4" data-tooltip="hidden">
+                                                자산일정이 있어요😀
+                                                <span class="close" onclick="TooltipClose('toolbox-4')"></span>
+                                            </div>
+                                        </a> -->
                 </div>
 
                 <div class="assets-total-box">
                     <div class="title">
-                        <p class="total">총 자산<i class="sprite ico_tooltip"></i></p>
+                        <p class="total">총 자산<i class="sprite ico_tooltip" onclick="tooltipToggle('toolbox-1')"></i></p>
                         <p class="total-sum">999,999,999,999+<span>원</span></p>
                     </div>
                     <a href="#" class="assets-total">999개 자산 합계 <i class="ico_list_arrow_small"></i></a>
@@ -33,10 +34,10 @@
                         <a href="#" class="ico-refresh-mini"></a>
                         <p class="update">30분 전</p>
                     </div>
-                    <div class="tooltip-txt" data-tooltip="show">
+                    <div class="tooltip-txt toolbox-1" data-tooltip="hidden">
                         총자산 금액에는 외화 및 자산금액으로 <br />
                         환산 불가한 보험/카드 등이 제외돼요
-                        <span class="close"></span>
+                        <span class="close" onclick="TooltipClose('toolbox-1')"></span>
                     </div>
                 </div>
             </div>
@@ -238,10 +239,11 @@
                                             <span class="name">외화
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
-                                            <span class="planning">준비중<i class="icon ico-caution"></i></span>
-                                            <div class="tooltip-txt-1" data-tooltip="show">
+                                            <span class="planning">준비중<i class="icon ico-caution"
+                                                    onclick="tooltipToggle('toolbox-2')"></i></span>
+                                            <div class="tooltip-txt-1  toolbox-2" data-tooltip="hidden">
                                                 왼화의 원화환산 금액은 준비중이에요
-                                                <span class="close"></span>
+                                                <span class="close" onclick="TooltipClose('toolbox-2')"></span>
                                             </div>
                                         </div>
                                         <ul class="ac-piece-list show">
@@ -536,10 +538,11 @@
                                             <span class="name">해외
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
-                                            <span class="planning">준비중<i class="icon ico-caution"></i></span>
-                                            <div class="tooltip-txt-1" data-tooltip="show">
+                                            <span class="planning">준비중<i class="icon ico-caution"
+                                                    onclick="tooltipToggle('toolbox-3')"></i></span>
+                                            <div class="tooltip-txt-1 toolbox-3" data-tooltip="hidden">
                                                 왼화의 원화환산 금액은 준비중이에요
-                                                <span class="close"></span>
+                                                <span class="close" onclick="TooltipClose('toolbox-3')"></span>
                                             </div>
                                         </div>
                                         <ul class="ac-piece-list show">
@@ -639,7 +642,7 @@
                         <div class="asset show">
                             <div class="category-heading">
                                 <p class="title">부동산・자동차</p>
-                                <p class="sum">89<span class="million">억</span> 6,000<em>만원</em></p>
+                                <p class="sum">9,030,000,000<em>원</em></p>
                             </div>
 
                             <div class="category-menu">
@@ -651,7 +654,7 @@
                                                 부동산
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
-                                            <span class="value">89<span class="million">억</span> 6,000<em>만원</em></span>
+                                            <span class="value">8,960,000,000<em>원</em></span>
                                         </div>
 
                                         <ul class="ac-piece-list show">
@@ -683,7 +686,7 @@
                                                 자동차
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
-                                            <span class="value">7,000<em>만원</em></span>
+                                            <span class="value">70,000,000<em>원</em></span>
                                         </div>
 
                                         <ul class="ac-piece-list show">
@@ -869,28 +872,22 @@
             })
 
             //툴팁
-            $('.ico_tooltip').click(function () {
-                let $tooltip = $('.tooltip-txt')
-                if ($tooltip.data('tooltip') === "show") {
-                    $tooltip.addClass('show')
-                    $tooltip.data('tooltip', 'hidden')
+            function tooltipToggle(target) {
+                const tooltipBox = $('.' + target)
+                if (tooltipBox.data('tooltip') === "hidden") {
+                    tooltipBox.addClass('show')
+                    tooltipBox.data('tooltip', 'show')
                 } else {
-                    $tooltip.removeClass('show')
-                    $tooltip.data('tooltip', 'show')
+                    tooltipBox.removeClass('show')
+                    tooltipBox.data('tooltip', 'hidden')
                 }
-            })
-            $('.tooltip-txt .close').click(function () {
-                $(this).parent().removeClass('show')
-                $(this).parent().data('tooltip', 'show')
-            })
+            }
 
-            $('.total-tit .planning .ico-caution').click(function () {
-                $(this).parent().siblings('.tooltip-txt-1').toggleClass('show')
-            })
-
-            $('.tooltip-txt-1 .close').click(function () {
-                $(this).parent().toggleClass('show')
-            })
+            function TooltipClose(target) {
+                const tooltipBox = $('.' + target)
+                tooltipBox.removeClass('show')
+                tooltipBox.data('tooltip', 'show')
+            }
         </script>
 </body>
 

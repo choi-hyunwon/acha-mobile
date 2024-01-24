@@ -468,6 +468,10 @@ dl {
   align-items: center;
 }
 
+.skeleton-box-top .skeleton-expenditure-tab ul li ~ li {
+  margin-left: 20px;
+}
+
 .skeleton-assets-total-box {
   margin-top: 17px;
   width: 100% !important;

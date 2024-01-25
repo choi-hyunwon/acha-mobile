@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide connection-edit manage-edit _modalSlide">
+		<div class="modal-slide-content">
+			<a href="#" class="btn-close _btnSlideClose"></a>
+			<div class="inner text-center">
+				<div class="desc-box box">
+					<p class="tit">데이터 업데이트에 동의할까요?</p>
+					<p class="desc">동의하면, 공유한 내 데이터를 공동관리 상대방이 업데이트 할 수 있어요</p>
+					<p class="extra ">* 동의 여부는 언제든지 변경할 수 있어요</p>
+				</div>
+				<div class="btn-wrap clearfix">
+					<a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half"
+						onclick="openPopup()">해제</a>
+					<a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">동의</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-slide-backdrop"></div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
+
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
+			});
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
+			});
+
+			btnSlideOpen.trigger("click");
+		});
+	</script>
+</body>
+
+</html>

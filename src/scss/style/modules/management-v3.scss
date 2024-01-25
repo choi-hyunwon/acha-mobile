@@ -2685,8 +2685,72 @@
     }
 
 
-    .card-item {
+    .share-update {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      margin-top: 20px;
 
+      .agree {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 22px;
+        line-height: 22px;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+
+        span {
+          font-size: 13px;
+          color: var(--text-02);
+        }
+
+
+        .custom-switch {
+          width: 40px;
+
+          .custom-control-label {
+            &::before {
+              width: 40px;
+            }
+          }
+        }
+
+        .state {
+          padding: 2px 11px;
+          background-color: #6839d3;
+          font-size: 12px;
+          color: #fff;
+          line-height: 18px;
+          font-family: var(--font2);
+          border-radius: 11px;
+
+          &.off {
+            background: #D7D6E0;
+            color: var(--text-02);
+          }
+        }
+      }
+
+      .filter {
+        display: flex;
+        align-items: center;
+
+        span {
+          display: inline-block;
+          font-size: 13px;
+          color: var(--text-02);
+          font-family: var(--font1);
+        }
+      }
+    }
+
+
+    .card-item {
       padding: 20px;
 
       .usage-sum {
@@ -2696,18 +2760,6 @@
         margin-bottom: 14px;
         font-family: var(--font3);
         font-size: 15px;
-
-        .filter {
-          display: flex;
-          align-items: center;
-
-          span {
-            display: inline-block;
-            font-size: 13px;
-            color: var(--text-02);
-            font-family: var(--font1);
-          }
-        }
       }
 
       .usage-history-list {
@@ -2765,6 +2817,18 @@
             p {
               font-size: 12px;
               color: var(--text-03);
+            }
+
+            .hide {
+              position: relative;
+              margin-top: 4px;
+              margin-left: 14px;
+              font-size: 12px;
+              color: #f21932;
+              line-height: 18px;
+              text-indent: -14px;
+              word-break: keep-all;
+              opacity: 1;
             }
 
           }

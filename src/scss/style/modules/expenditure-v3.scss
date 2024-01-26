@@ -5984,6 +5984,22 @@
           }
         }
 
+        .rise-data {
+          .fc-content {
+            .fc-title {
+              color: #4b6ae8 !important;
+            }
+          }
+        }
+
+        .fail-data {
+          .fc-content {
+            .fc-title {
+              color: #ef5c82 !important;
+            }
+          }
+        }
+
         tr:first-child>td>.fc-day-grid-event {
           margin-top: 2px;
           top: 0px;
@@ -5996,6 +6012,87 @@
         .fc-day-grid-event .fc-content {
           display: block;
           padding-top: 0px;
+        }
+
+        .fc-more-cell {
+          .fc-more {
+            font-size: 10px;
+            color: var(--text-03);
+            line-height: 10px;
+            font-family: var(--font3);
+          }
+        }
+
+        // 일정 색상
+        .schedule {
+          height: 14px;
+          border-radius: 3px;
+          overflow: hidden;
+
+          &-green {
+            background: #68c8ba;
+
+            .fc-title {
+              background: #e5faf2;
+            }
+          }
+
+          &-pink {
+            background: #fd92a3;
+
+            .fc-title {
+              background: #feeaed;
+            }
+          }
+
+          &-blue {
+            background: #3fa9f5;
+
+            .fc-title {
+              background: #dbefff;
+            }
+          }
+
+          &-red {
+            background: #f7323f;
+
+            .fc-title {
+              background: #fee3e5;
+            }
+          }
+
+          &-orange {
+            background: #ffc201;
+
+            .fc-title {
+              background: #fffaea;
+            }
+          }
+
+          &-purple {
+            background: #bb80d1;
+
+            .fc-title {
+              background: #f9edff;
+            }
+          }
+
+          .fc-content {
+
+            border-radius: 3px;
+            overflow: hidden;
+            height: 14px;
+
+            .fc-title {
+              text-align: left;
+              padding-left: 1px;
+              border-radius: 0 2px 2px 0;
+              margin-left: 3px;
+              height: 100%;
+              width: 100%;
+              line-height: 14px;
+            }
+          }
         }
       }
     }

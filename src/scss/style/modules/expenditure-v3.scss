@@ -6028,6 +6028,9 @@
           height: 14px;
           border-radius: 3px;
           overflow: hidden;
+          width: calc(100% - 2px);
+          margin: 0 auto;
+          text-align: left;
 
           &-green {
             background: #68c8ba;
@@ -6078,19 +6081,25 @@
           }
 
           .fc-content {
-
-            border-radius: 3px;
-            overflow: hidden;
             height: 14px;
+
 
             .fc-title {
               text-align: left;
               padding-left: 1px;
-              border-radius: 0 2px 2px 0;
               margin-left: 3px;
               height: 100%;
-              width: 100%;
               line-height: 14px;
+              border-radius: 0 3px 3px 0;
+            }
+          }
+
+          &-more {
+            .fc-title {
+              font-size: 10px;
+              color: var(--text-03);
+              line-height: 10px;
+              font-family: var(--font3);
             }
           }
         }
@@ -6779,6 +6788,19 @@
         }
       }
     }
+
+    &.share-calendar {
+      .fc-body {
+        .fc-row {
+          padding-bottom: 5px;
+          border-bottom: 1px solid #efefef;
+
+          td {
+            height: auto;
+          }
+        }
+      }
+    }
   }
 
 
@@ -7461,8 +7483,6 @@
         &-red {
           background-color: #f7323f;
         }
-
-        &.active {}
       }
 
       .share-check {
@@ -7483,8 +7503,6 @@
         }
       }
     }
-
-
   }
 
 

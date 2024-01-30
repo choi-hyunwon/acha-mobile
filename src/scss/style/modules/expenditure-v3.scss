@@ -5984,6 +5984,22 @@
           }
         }
 
+        .rise-data {
+          .fc-content {
+            .fc-title {
+              color: #4b6ae8 !important;
+            }
+          }
+        }
+
+        .fail-data {
+          .fc-content {
+            .fc-title {
+              color: #ef5c82 !important;
+            }
+          }
+        }
+
         tr:first-child>td>.fc-day-grid-event {
           margin-top: 2px;
           top: 0px;
@@ -5996,6 +6012,96 @@
         .fc-day-grid-event .fc-content {
           display: block;
           padding-top: 0px;
+        }
+
+        .fc-more-cell {
+          .fc-more {
+            font-size: 10px;
+            color: var(--text-03);
+            line-height: 10px;
+            font-family: var(--font3);
+          }
+        }
+
+        // 일정 색상
+        .schedule {
+          height: 14px;
+          border-radius: 3px;
+          // overflow: hidden;
+          width: calc(100% - 2px);
+          margin: 0 auto;
+          text-align: left;
+
+          &-green {
+            background: #68c8ba;
+
+            .fc-title {
+              background: #e5faf2;
+            }
+          }
+
+          &-pink {
+            background: #fd92a3;
+
+            .fc-title {
+              background: #feeaed;
+            }
+          }
+
+          &-blue {
+            background: #3fa9f5;
+
+            .fc-title {
+              background: #dbefff;
+            }
+          }
+
+          &-red {
+            background: #f7323f;
+
+            .fc-title {
+              background: #fee3e5;
+            }
+          }
+
+          &-orange {
+            background: #ffc201;
+
+            .fc-title {
+              background: #fffaea;
+            }
+          }
+
+          &-purple {
+            background: #bb80d1;
+
+            .fc-title {
+              background: #f9edff;
+            }
+          }
+
+          .fc-content {
+            height: 14px;
+
+
+            .fc-title {
+              text-align: left;
+              padding-left: 1px;
+              margin-left: 3px;
+              height: 100%;
+              line-height: 14px;
+              border-radius: 0 2px 2px 0;
+            }
+          }
+
+          &-more {
+            .fc-title {
+              font-size: 10px;
+              color: var(--text-03);
+              line-height: 10px;
+              font-family: var(--font3);
+            }
+          }
         }
       }
     }
@@ -6049,9 +6155,12 @@
           }
 
           .badge-gray {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 20px;
-            line-height: 1;
-            font-size: 10px;
+            line-height: 20px;
+            font-size: 11px;
             background-color: #e1e1ea;
             width: 34px;
             -webkit-border-radius: 10px;
@@ -6094,6 +6203,19 @@
               color: var(--color-point);
             }
           }
+
+          .rise {
+            .price {
+              color: #4b6ae8;
+            }
+          }
+
+          .fail {
+            .price {
+              color: #ef5c82;
+            }
+          }
+
         }
       }
 
@@ -6169,12 +6291,16 @@
                 position: absolute;
                 top: 20px;
                 right: 20px;
-                width: 26px;
+                display: flex;
+                align-items: center;
+                width: fit-content;
                 height: 26px;
 
                 img {
-                  width: 100%;
-                  height: auto;
+                  margin-left: 8px;
+                  width: 26px;
+                  height: 26px;
+                  object-fit: contain;
                 }
               }
             }
@@ -6216,6 +6342,73 @@
 
                 &-active {
                   background-color: #6839d3;
+                }
+              }
+            }
+
+            &.schedule-item {
+              position: relative;
+
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 6px;
+                height: 100%;
+                border-radius: 3px 0 0 3px;
+              }
+
+              .info-head {
+                display: flex;
+                justify-content: flex-start;
+
+                .title {
+                  font-size: 15px;
+                  font-family: var(--font2);
+                  line-height: 22px;
+                }
+              }
+
+              .desc {
+                padding-top: 0;
+              }
+
+              &.bg {
+                &-green {
+                  &::after {
+                    background: #68c8ba;
+                  }
+                }
+
+                &-pink {
+                  &::after {
+                    background: #fd92a3;
+                  }
+                }
+
+                &-blue {
+                  &::after {
+                    background: #3fa9f5;
+                  }
+                }
+
+                &-red {
+                  &::after {
+                    background: #f7323f;
+                  }
+                }
+
+                &-orange {
+                  &::after {
+                    background: #ffc201;
+                  }
+                }
+
+                &-purple {
+                  &::after {
+                    background: #bb80d1;
+                  }
                 }
               }
             }
@@ -6677,6 +6870,24 @@
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+
+    &.share-calendar {
+      .fc-body {
+        .fc-row {
+          padding-bottom: 5px;
+          border-bottom: 1px solid #efefef;
+
+          td {
+            padding-top: 2px;
+            height: 14px;
+
+            .fc-title {
+              letter-spacing: -0.5px;
             }
           }
         }
@@ -7364,8 +7575,6 @@
         &-red {
           background-color: #f7323f;
         }
-
-        &.active {}
       }
 
       .share-check {
@@ -7386,8 +7595,6 @@
         }
       }
     }
-
-
   }
 
 

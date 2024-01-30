@@ -6,7 +6,8 @@
     <div class="wrap renewal bg_light_gray">
         <div class="header _sticky">
             <a href="#" class="sprite btn_back"></a>
-            <h2 class="title">기타</h2>
+            <h2 class="title">부동산・자동차</h2>
+
         </div>
         <div class="contents expenditure share-add">
             <div class="expenditure-tab manage-tab _expenditureTab">
@@ -24,50 +25,55 @@
                             <div class="total ">
                                 <div class="title">합계</div>
                                 <div class="sum">
-                                    <p>442,000<span>원</span></p>
+                                    <p>9,030,000,000<span>원</span></p>
                                 </div>
                             </div>
                             <div class="card-item details">
+                                <div class="card-head head mt-20">
+                                    <p>부동산</p>
+                                    <p class="total">8,960,000,000<span>원</span></p>
+                                </div>
                                 <ul class="details-history">
                                     <li class="item-list">
 
                                         <div class="group">
                                             <div class="box">
                                                 <div class="img">
-                                                    <i class="icon icon_direct_input"></i>
+                                                    <img src="../../img/@temp/woori.png" width="30" alt="우리"
+                                                        class="img-ci">
                                                 </div>
                                                 <div class="info">
-                                                    <p class="place">금액있는 기타</p>
-                                                    <p class="value">1,000,000<em>원</em></p>
+                                                    <p class="place">성수동 오피스텔</p>
+                                                    <p class="value">8,960,000,000<em>원</em></p>
+                                                    <!-- +경우 .rise 추가 -경우 .fall 추가 -->
+                                                    <p class="profit rise">+1,128,064,000 <span>(12.59%)</span></p>
                                                 </div>
                                             </div>
                                             <i class="icon-user icon-user-me">
                                                 <img src="../../img/common/ico_mypage_profile_img03@2x.png" alt="아이콘">
                                             </i>
                                         </div>
-
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-item details">
+                                <div class="card-head head">
+                                    <p>자동차</p>
+                                    <p class="total">70,000,000<span>원</span></p>
+                                </div>
+                                <ul class="details-history">
+                                    <li class="item-list lease">
                                         <div class="group">
                                             <div class="box">
                                                 <div class="img">
-                                                    <i class="icon icon_direct_input"></i>
+                                                    <img src="../../img/@temp/woori.png" width="30" alt="우리"
+                                                        class="img-ci">
                                                 </div>
                                                 <div class="info">
-                                                    <p class="place">금액 없는 기타</p>
-                                                </div>
-                                            </div>
-                                            <i class="icon-user">
-                                                <img src="../../img/common/ico_mypage_profile_img01@2x.png" alt="아이콘">
-                                            </i>
-                                        </div>
-
-                                        <div class="group">
-                                            <div class="box">
-                                                <div class="img">
-                                                    <i class="icon icon_direct_input"></i>
-                                                </div>
-                                                <div class="info">
-                                                    <p class="place">금액있는 기타</p>
-                                                    <p class="value">1,000,000<em>원</em></p>
+                                                    <p class="place">아반떼</p>
+                                                    <p class="value">70,000,000<em>원</em></p>
+                                                    <!-- +경우 .rise 추가 -경우 .fall 추가 -->
+                                                    <p class="profit fall">-2,947,000 <span>(4.21%)</span></p>
                                                 </div>
                                             </div>
                                             <i class="icon-user">
@@ -90,6 +96,7 @@
         $('._expenditureTab li a').on('click', function () {
             $(this).parent().addClass('active').siblings().removeClass('active')
         })
+
 
         // 공동
         $('.share-us li').on('click', function () {

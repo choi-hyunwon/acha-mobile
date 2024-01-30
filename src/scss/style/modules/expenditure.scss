@@ -1414,7 +1414,8 @@
 
 
       .link {
-        display: inline-block;
+        display: flex;
+        align-items: center;
         font-size: 14px;
         color: var(--text-01);
 

@@ -2577,6 +2577,7 @@
 
                       .ac-num {
                         margin-left: 28px;
+                        width: 100%;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -3255,7 +3256,6 @@
                     .ac-item {
                       .value {
                         font-family: var(--font1);
-                        text-align: right;
 
                         .price {
                           display: block;
@@ -3322,6 +3322,7 @@
                   position: relative;
                   display: flex;
                   justify-content: space-between;
+                  flex-wrap: wrap;
 
                   &~.ac-item {
                     margin-top: 20px;
@@ -3378,7 +3379,33 @@
                       font-size: 12px;
                       line-height: 18px;
                       color: var(--text-03);
+                      height: auto;
                     }
+
+                    &.undefined {
+                      display: flex;
+                      align-items: center;
+                      padding: 0px 8px;
+                      height: 22px;
+                      background: #eeedf0;
+                      font-size: 11px;
+                      color: #9992a0;
+                      font-family: var(--font1);
+                      border-radius: 22px;
+                    }
+                  }
+
+                  .ac-num {
+                    display: inline-block;
+                    margin-top: 4px;
+                    margin-left: 28px;
+                    width: 100%;
+                    font-size: 12px;
+                    color: #9b9aa6;
+                    line-height: 16px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                   }
 
                   &.ac-expire {

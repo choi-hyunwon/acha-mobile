@@ -1411,33 +1411,42 @@
       border-radius: 10px;
       width: 100%;
       padding: 9px 12px;
-      font-size: 14px;
 
-      .ico_list_arrow_small {
-        margin-left: 4px;
+
+      .link {
+        display: inline-block;
+        font-size: 14px;
+        color: var(--text-01);
+
+        .ico_list_arrow_small {
+          margin-left: 4px;
+        }
+
+        .badge {
+          padding: 0;
+          margin-right: 6px;
+          min-width: 30px;
+
+          &-new {
+            width: 30px;
+            height: 16px;
+          }
+
+          &-remove {
+            width: 20px;
+            height: 20px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
       }
 
-      .badge {
-        padding: 0;
-        margin-right: 6px;
-        min-width: 30px;
 
-        &-new {
-          width: 30px;
-          height: 16px;
-        }
 
-        &-remove {
-          width: 20px;
-          height: 20px;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-        }
-      }
 
       .btn-delete {
         position: absolute;

@@ -3771,8 +3771,9 @@
                     font-size: 13px;
                     line-height: 1.54;
                     top: 27px;
-                    left: -214px;
+                    right: 6px;
                     z-index: 999;
+                    width: max-content;
 
                     &::before {
                       content: "";

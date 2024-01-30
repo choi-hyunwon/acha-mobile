@@ -3764,15 +3764,17 @@
                   .tooltip-txt {
                     display: none;
                     position: absolute;
+                    top: 27px;
+                    right: 6px;
                     padding: 10px 34px 10px 12px;
                     background: rgba(55, 53, 78, 0.85);
-                    color: #fff;
-                    border-radius: 10px 0 10px 10px;
                     font-size: 13px;
+                    color: #fff;
                     line-height: 1.54;
-                    top: 27px;
-                    left: -214px;
+                    border-radius: 10px 0 10px 10px;
+
                     z-index: 999;
+                    width: max-content;
 
                     &::before {
                       content: "";

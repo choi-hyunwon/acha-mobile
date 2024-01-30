@@ -13,7 +13,7 @@
         </div>
         <div class="contents expenditure">
             <div class="expenditure-calendar share-calendar">
-                <div class="ex-calendar">
+                <div class="ex-calendar mb-0">
                     <div class="box-ex-calendar-header">
                         <div class="date"><a href="#">2022년 10월<i class="icon-arrow-bottom"> </i></a></div>
                     </div>
@@ -39,18 +39,71 @@
                                 <span class="badge badge-gray">토</span>
                             </div>
                             <div class="detail">
-                                <div class="plus">
-                                    <span class="tit">수입</span><span class="price">+15,000원</span>
+                                <div class="rise">
+                                    <span class="tit">수입</span><span class="price">+2,500,000원</span>
                                 </div>
-                                <div class="minus">
-                                    <span class="tit">지출</span><span class="price">-15,000원</span>
+                                <div class="fail">
+                                    <span class="tit">지출</span><span class="price">-2,500,000원</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="history-list-calendar">
                             <ul>
-                                <li class="pb-0">
+                                <!-- 일정일 경우 .schedule-item 추가 -->
+                                <!-- 등록할때 컬러값에 맞춰 .bg-pink추가 -->
+                                <!-- ".bg-green", ".bg-pink", ".bg-blue", ".bg-red", ".bg-orange", ".bg-puple" -->
+                                <li class="schedule-item bg-pink">
+                                    <div class="info-head">
+                                        <i class="icon-user icon-user-me">
+                                            <img src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
+                                                alt="아이콘">
+                                        </i>
+                                        <p class="title">등산</p>
+                                    </div>
+                                    <span class="detail">
+                                        <span class="emotion">
+                                            <img src="../../img/common/ic_con_pic@2x.png" width="26" alt="아이콘">
+                                            <img src="../../img/common/ico-emoji-excited@2x.png" width="26" alt="아이콘">
+                                        </span>
+                                    </span>
+                                    <div class="desc">
+                                        청계산 입구역 오전 7시까지 모여요
+                                    </div>
+                                </li>
+                                <li class="schedule-item bg-blue">
+                                    <div class="info-head">
+                                        <i class="icon-user icon-user-me">
+                                            <img src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
+                                                alt="아이콘">
+                                        </i>
+                                        <p class="title">쇼핑</p>
+                                    </div>
+                                    <span class="detail">
+                                        <span class="emotion">
+                                            <img src="../../img/common/ico-emoji-excited@2x.png" width="26" alt="아이콘">
+                                        </span>
+                                    </span>
+                                    <div class="desc">
+                                        청계산 입구역 오전 7시까지 모여요
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-head">
+                                        <i class="icon-user icon-user-me"><img
+                                                src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
+                                                alt="아이콘"></i>
+                                        <span class="time">13:50 <em>|</em> 신한계좌254</span>
+                                    </div>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                    <div class="tag">
+                                        <span>칭구들돼지파티</span>
+                                    </div>
+                                </li>
+                                <li>
                                     <div class="info-head">
                                         <i class="icon-user icon-user-me"><img
                                                 src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
@@ -98,21 +151,6 @@
                                     </script>
                                 </li>
                                 <li>
-                                    <div class="info-head">
-                                        <i class="icon-user icon-user-me"><img
-                                                src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
-                                                alt="아이콘"></i>
-                                        <span class="time">13:50 <em>|</em> 신한계좌254</span>
-                                    </div>
-                                    <span class="detail">
-                                        <span class="tit">아파트관리비</span>
-                                        <span class="price">-15,000원</span>
-                                    </span>
-                                    <div class="tag">
-                                        <span>칭구들돼지파티</span>
-                                    </div>
-                                </li>
-                                <li class="pb-0">
                                     <div class="info-head">
                                         <i class="icon-user icon-user-me"><img
                                                 src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
@@ -177,30 +215,7 @@
                                         <span>칭구들돼지파티</span>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="info-head">
-                                        <i class="icon-user icon-user-me"><img
-                                                src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
-                                                alt="아이콘"></i>
-                                        <span class="time">13:50 <em>|</em> 신한계좌254</span>
-                                    </div>
-                                    <span class="detail">
-                                        <span class="tit">아파트관리비</span>
-                                        <span class="price">-15,000원</span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <div class="info-head">
-                                        <i class="icon-user icon-user-me"><img
-                                                src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
-                                                alt="아이콘"></i>
-                                        <span class="time">13:50 <em>|</em> 신한계좌254</span>
-                                    </div>
-                                    <span class="detail">
-                                        <span class="tit">아파트관리비</span>
-                                        <span class="price">-15,000원</span>
-                                    </span>
-                                </li>
+
                             </ul>
                         </div>
 
@@ -211,7 +226,6 @@
         </div>
     </div>
     <script>
-
         var storyTag = [
             {
                 start: '2024-01-16'
@@ -252,7 +266,7 @@
                         }
                     }
                 },
-
+                // events 순차 적용시 필요
                 eventOrder: 'sortIdx',
                 events: [
                     {
@@ -777,8 +791,8 @@
                     },
                     {
                         eventOrder: 5,
-                        className: 'empty-data',
-                        title: '',
+                        className: 'fail-data',
+                        title: '-100,000',
                         start: '2024-01-30',
                     },
                 ],

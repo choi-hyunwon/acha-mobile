@@ -3816,6 +3816,25 @@
                       color: var(--text-03);
                       word-break: break-all;
                     }
+
+                    .profit {
+                      margin-top: 2px;
+                      font-size: 12px;
+                      color: var(--text-03);
+                      line-height: 14px;
+
+                      &.rise {
+                        span {
+                          color: #ef4b61;
+                        }
+                      }
+
+                      &.fall {
+                        span {
+                          color: #4393ff;
+                        }
+                      }
+                    }
                   }
                 }
 
@@ -3896,6 +3915,7 @@
                     margin-left: 1px;
                     font-size: 13px;
                     line-height: 19px;
+                    font-family: var(--font2);
                   }
                 }
 
@@ -3906,12 +3926,13 @@
 
                   .total {
                     font-size: 18px;
+                    align-items: baseline;
                   }
                 }
               }
 
               .details-history {
-                padding: 10px 0 0;
+                padding: 10px 0 20px;
 
                 .item-list {
                   // 상세카드
@@ -3957,6 +3978,22 @@
 
                     .icon-user {
                       top: 25px;
+
+                      .icon-user-me {
+                        &:after {
+                          content: "";
+                          width: 8px;
+                          height: 8px;
+                          border: solid 2px #fff;
+                          background-color: #6839d3;
+                          position: absolute;
+                          -webkit-border-radius: 50%;
+                          -moz-border-radius: 50%;
+                          border-radius: 50%;
+                          top: 0;
+                          right: 0;
+                        }
+                      }
                     }
                   }
                 }
@@ -3967,6 +4004,10 @@
 
                 &:last-child {
                   border-bottom: 0;
+
+                  .details-history {
+                    padding-bottom: 0;
+                  }
                 }
               }
             }

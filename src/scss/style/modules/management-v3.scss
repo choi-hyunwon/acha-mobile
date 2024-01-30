@@ -283,16 +283,42 @@
                     height: auto;
 
                     .box-icon {
-                      width: 75px;
+                      display: flex;
+                      align-items: center;
+                      margin-right: 8px;
+                      width: 85px;
 
                       span {
                         display: inline-block;
+
+                        &.circle {
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          width: 40px;
+                          height: 40px;
+
+                          img {
+                            width: 34px;
+                            height: 34px;
+                          }
+                        }
+
+                        &.img {
+                          width: 40px;
+                          height: 40px;
+
+                          i {
+                            width: 100%;
+                            height: 100%;
+                          }
+                        }
                       }
 
                       .icon-user {
                         position: relative;
                         display: inline-block;
-                        margin-right: 6px;
+                        margin-right: 8px;
                         width: 30px;
                         height: 30px;
 
@@ -324,7 +350,7 @@
                     }
 
                     .box-detail {
-                      width: calc(100% - 75px);
+                      width: calc(100% - 85px);
 
                       span {
                         display: block;

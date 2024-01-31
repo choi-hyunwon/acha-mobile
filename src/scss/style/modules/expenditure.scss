@@ -3379,6 +3379,10 @@
                       line-height: 18px;
                       color: var(--text-03);
                     }
+
+                    &.out {
+                      color: #afaeb8;
+                    }
                   }
 
                   &.ac-expire {

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+        </div>
+        <div class="contents share share-spend-money challenge">
+            <div class="text-descriptiton head">
+                <p class="title">챌린지 목표를 <br />
+                    입력해주세요 👍🏻</p>
+            </div>
+
+            <div class="challenge-box mt-40">
+                <div class="date-input">
+                    <div class="custom-light">
+                        <input title="value" type="text" placeholder="예) 자가 마련을 향해 GO 🏠" maxlength="15"
+                            onkeyup="countCharDelete(this,'_val')">
+                        <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 입력되지 않았을 경우 .disabled 추가 -->
+                <!-- input focus시 텍스트 필드 올라올때 .next 추가 및 disabled 제거 -->
+                <div class="btn-wrap btn-floating">
+                    <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg disabled">확인</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @@include('../include/countCharDelete.html')
+</body>
+
+</html>

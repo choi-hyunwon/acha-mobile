@@ -7611,4 +7611,379 @@
       margin-right: 0;
     }
   }
+
+
+  // 자산 챌린지 240124
+
+  .challenge {
+
+    .card-filter {
+      ul {
+        li {
+          &.active {
+            div {
+              background-color: #37354e;
+              color: #fff;
+
+              .num {
+                color: #fff;
+              }
+            }
+          }
+
+          &~li {
+            margin-left: 10px;
+          }
+
+
+          div {
+            padding: 8px 12.5px;
+            border: 1px solid #c2c1cc;
+            border-radius: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--text-02);
+
+            .num {
+              font-size: 15px;
+              color: var(--color-point);
+            }
+          }
+        }
+      }
+
+      .change-order {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: var(--text-02);
+        line-height: 20px;
+
+        i {
+          margin-left: 2px;
+        }
+      }
+    }
+
+
+    .text-descriptiton {
+      margin-bottom: 24px;
+
+      .title {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 32px;
+        font-family: var(--font3);
+      }
+
+      .txt {
+        margin-top: 10px;
+        color: var(--text-02);
+      }
+    }
+
+    .accounts-challenge {
+      padding: 0 20px;
+
+      .tit {
+        font-size: 18px;
+        line-height: 27px;
+        font-family: var(--font2);
+      }
+
+      .val {
+        font-size: 15px;
+        color: var(--text-02);
+        line-height: 22px;
+      }
+    }
+
+    .challenge-box {
+      padding: 0 20px;
+
+      .custom-light {
+        position: relative;
+        margin-bottom: 40px;
+
+        .sub-desc {
+          font-size: 12px;
+          font-family: var(--font1);
+          color: var(--text-point-color);
+          padding: 5px 5px 0;
+          display: none;
+        }
+
+        input {
+          height: 54px;
+          line-height: 54px;
+          font-size: 17px;
+
+          &::placeholder {
+            color: #c2c1cc;
+          }
+        }
+
+        .input-byte {
+          display: none;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 14px;
+          color: #c2c1cc;
+        }
+
+        .btn-clear-input {
+          position: absolute;
+          right: 50px;
+          top: 53%;
+          transform: translateY(-50%);
+          width: 18px;
+          height: 18px;
+          background: url(../../img/common/ico_input_delete@2x.png) center center no-repeat;
+          background-size: contain;
+          font-size: 0;
+        }
+
+        .ico_list_arrow_small {
+          position: absolute;
+          right: 5px;
+          top: 20px;
+        }
+
+        .won {
+          position: absolute;
+          right: 0;
+          top: 15px;
+          font-size: 17px;
+          line-height: 25px;
+          height: fit-content;
+          margin-right: 0;
+
+          &+.btn-clear-input {
+            right: 22px;
+            top: 20px;
+            transform: unset;
+          }
+        }
+
+        input[type=date]::before {
+          content: attr(date-placeholder);
+          width: 100%;
+          color: #c2c1cc;
+          font-family: var(--font1);
+        }
+
+        input[type="date"]:focus::before,
+        input[type="date"]:valid::before {
+          display: none;
+        }
+      }
+
+      .btn-wrap {
+        &.next {
+          padding-bottom: 0;
+
+          .btn {
+            width: 100%;
+            border-radius: 0;
+          }
+        }
+      }
+
+      .assets-box {
+        padding: 0 0 0;
+
+        .assets-item {
+          margin-bottom: 40px;
+
+          &~.assets-item {
+            margin-top: 0;
+          }
+
+          .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-bottom: 1px solid var(--text-01);
+
+            .title {
+              border-bottom: 0;
+            }
+          }
+
+          label {
+            span {
+              padding-left: 22px;
+            }
+          }
+        }
+      }
+
+      .assets-register-link {
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: -20px;
+          top: 0;
+          width: calc(100% + 40px);
+          height: 1px;
+          background-color: #efefef;
+        }
+
+        .link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px 0;
+          font-size: 14px;
+          line-height: 20px;
+          color: var(--text-point-color);
+          font-family: var(--font2);
+
+        }
+
+        .total-select {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #f7f7f8;
+          border-radius: 9px;
+          padding: 13px 0;
+          font-size: 14px;
+          font-family: var(--font3);
+
+          p {
+            position: relative;
+
+            &:last-child {
+              &::after {
+                content: "";
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 13px;
+                background-color: #37354e;
+                opacity: 0.2;
+              }
+            }
+          }
+        }
+      }
+
+      .box_my_income_add {
+        padding: 0;
+      }
+    }
+
+    .card-list-wrap {
+      .group {
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 16px;
+
+        &.end {
+          .badge {
+            line-height: 18px;
+          }
+        }
+
+        .bx-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .title {
+            font-size: 16px;
+            font-family: var(--font3);
+            line-height: 26px;
+          }
+
+          .badge {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 4px 8px;
+            font-family: var(--font3);
+            border-radius: 20px;
+
+            &.fail {
+              background-color: #37354e;
+              color: #fff;
+            }
+          }
+        }
+
+        .bx-bot {
+          margin-top: 22px;
+
+          .state {
+            align-items: center;
+
+            .tit {
+              font-size: 12px;
+              color: rgba(55, 53, 78, 0.6);
+              line-height: 18px;
+            }
+
+            .percent {
+              font-size: 12px;
+              line-height: 14px;
+              font-family: var(--font3);
+            }
+          }
+
+          .bar-gragh {
+            margin: 4px 0;
+            width: 100%;
+            height: 4px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 2px;
+            overflow: hidden;
+
+            .bar {
+              height: 4px;
+              border-radius: 2px;
+            }
+          }
+
+          .result {
+            font-size: 13px;
+            font-family: var(--font2);
+            line-height: 19px;
+
+            .begin {
+              color: rgba(55, 53, 78, 0.7);
+            }
+
+            .goal {}
+          }
+        }
+      }
+    }
+
+    .challenge-add {
+      .new-challenge {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 24px;
+        background: #eceaf6;
+        font-size: 15px;
+        color: var(--text-01);
+        font-family: var(--font2);
+        border-radius: 10px;
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+
 }

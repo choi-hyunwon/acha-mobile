@@ -3393,6 +3393,10 @@
                       height: auto;
                     }
 
+                    &.out {
+                      color: #afaeb8;
+                    }
+
                     &.undefined {
                       display: flex;
                       align-items: center;

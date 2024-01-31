@@ -2870,6 +2870,13 @@
                             color: var(--text-01);
                             word-break: keep-all;
                         }
+
+                        .extra {
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: var(--text-02);
+                            margin-top: 16px;
+                        }
                     }
 
 
@@ -5799,7 +5806,7 @@
                         font-size: 15px;
                         line-height: 21px;
                         color: #37354e;
-                        padding-left: 20px;
+                        padding-left: 16px;
                         text-align: left;
                         position: relative;
                         margin-bottom: 8px;

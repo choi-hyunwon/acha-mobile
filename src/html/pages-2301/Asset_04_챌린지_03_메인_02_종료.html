@@ -34,123 +34,133 @@
                                 <div>종료<span class="num">6</span></div>
                             </li>
                         </ul>
+
+                        <!-- 진행중인 챌린지 없을경우 제거 -->
                         <div class="change-order">
                             순서변경
                             <i class="ico_btn_move_small"></i>
                         </div>
                     </div>
 
-                    <ul class="card-list-wrap">
+                    <div class="card-list-box">
+                        <!-- 데이터가 없을경우 -->
+                        <!-- <div class="empty">
+                            <div class="img">
+                                <img src="../../img/common/ico-error-page@2x.png" alt="" width="42">
+                            </div>
+                            <p>진행중인 챌린지가 없어요🙁</p>
+                        </div> -->
 
-                        <!-- 종료탭에서  .opacity 추가 -->
-                        <li class="group bg-light-purple opacity end">
-                            <div class="bx-top">
-                                <p class="title">부모님 환갑 여행 보내기✈️</p>
-                                <span class="badge">성공</span>
-                            </div>
-                            <div class="bx-bot">
-                                <div class="state justify-content-between">
-                                    <p class="tit">달성률</p>
-                                    <p class="percent">50%</p>
+                        <!-- 데이터가 있을경우 -->
+                        <ul class="card-list-wrap">
+                            <!-- 종료탭에서  .opacity 추가 -->
+                            <li class="group bg-light-purple opacity end">
+                                <div class="bx-top">
+                                    <p class="title">부모님 환갑 여행 보내기✈️</p>
+                                    <span class="badge">성공</span>
                                 </div>
-                                <div class="bar-gragh">
-                                    <div class="bar bg-purple" style="width: 50%;"></div>
+                                <div class="bx-bot">
+                                    <div class="state justify-content-between">
+                                        <p class="tit">달성률</p>
+                                        <p class="percent">50%</p>
+                                    </div>
+                                    <div class="bar-gragh">
+                                        <div class="bar bg-purple" style="width: 50%;"></div>
+                                    </div>
+                                    <div class="result justify-content-between">
+                                        <p class="begin">3,750,000<span>원</span></p>
+                                        <p class="goal">7,500,000<span>원</span></p>
+                                    </div>
                                 </div>
-                                <div class="result justify-content-between">
-                                    <p class="begin">3,750,000<span>원</span></p>
-                                    <p class="goal">7,500,000<span>원</span></p>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="group bg-light-pink opacity end">
-                            <div class="bx-top">
-                                <p class="title">알콩달콩 신혼집 장만 💜</p>
-                                <span class="badge fail">실패</span>
-                            </div>
-                            <div class="bx-bot">
-                                <div class="state justify-content-between">
-                                    <p class="tit">달성률</p>
-                                    <p class="percent">0%</p>
+                            <li class="group bg-light-pink opacity end">
+                                <div class="bx-top">
+                                    <p class="title">알콩달콩 신혼집 장만 💜</p>
+                                    <span class="badge fail">실패</span>
                                 </div>
-                                <div class="bar-gragh">
-                                    <div class="bar bg-pink" style="width: 0%;"></div>
+                                <div class="bx-bot">
+                                    <div class="state justify-content-between">
+                                        <p class="tit">달성률</p>
+                                        <p class="percent">0%</p>
+                                    </div>
+                                    <div class="bar-gragh">
+                                        <div class="bar bg-pink" style="width: 0%;"></div>
+                                    </div>
+                                    <div class="result justify-content-between">
+                                        <p class="begin">0<span>원</span></p>
+                                        <p class="goal">100,000,000<span>원</span></p>
+                                    </div>
                                 </div>
-                                <div class="result justify-content-between">
-                                    <p class="begin">0<span>원</span></p>
-                                    <p class="goal">100,000,000<span>원</span></p>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="group bg-light-blue opacity end">
-                            <div class="bx-top">
-                                <p class="title">드림카 타고 슝슝 🚙</p>
-                                <span class="badge">성공</span>
-                            </div>
-                            <div class="bx-bot">
-                                <div class="state justify-content-between">
-                                    <p class="tit">달성률</p>
-                                    <p class="percent">184%</p>
+                            <li class="group bg-light-blue opacity end">
+                                <div class="bx-top">
+                                    <p class="title">드림카 타고 슝슝 🚙</p>
+                                    <span class="badge">성공</span>
                                 </div>
-                                <div class="bar-gragh">
-                                    <div class="bar bg-blue" style="width: 184%;"></div>
+                                <div class="bx-bot">
+                                    <div class="state justify-content-between">
+                                        <p class="tit">달성률</p>
+                                        <p class="percent">184%</p>
+                                    </div>
+                                    <div class="bar-gragh">
+                                        <div class="bar bg-blue" style="width: 184%;"></div>
+                                    </div>
+                                    <div class="result justify-content-between">
+                                        <p class="begin">113,750,000<span>원</span></p>
+                                        <p class="goal">7,500,000<span>원</span></p>
+                                    </div>
                                 </div>
-                                <div class="result justify-content-between">
-                                    <p class="begin">113,750,000<span>원</span></p>
-                                    <p class="goal">7,500,000<span>원</span></p>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="group bg-light-navy opacity end">
-                            <div class="bx-top">
-                                <p class="title">샌프란 여행 ✈</p>
-                                <span class="badge">성공</span>
-                            </div>
-                            <div class="bx-bot">
-                                <div class="state justify-content-between">
-                                    <p class="tit">달성률</p>
-                                    <p class="percent">46.2%</p>
+                            <li class="group bg-light-navy opacity end">
+                                <div class="bx-top">
+                                    <p class="title">샌프란 여행 ✈</p>
+                                    <span class="badge">성공</span>
                                 </div>
-                                <div class="bar-gragh">
-                                    <div class="bar bg-navy" style="width: 46.2%;"></div>
+                                <div class="bx-bot">
+                                    <div class="state justify-content-between">
+                                        <p class="tit">달성률</p>
+                                        <p class="percent">46.2%</p>
+                                    </div>
+                                    <div class="bar-gragh">
+                                        <div class="bar bg-navy" style="width: 46.2%;"></div>
+                                    </div>
+                                    <div class="result justify-content-between">
+                                        <p class="begin">2,750,000<span>원</span></p>
+                                        <p class="goal">8,500,000<span>원</span></p>
+                                    </div>
                                 </div>
-                                <div class="result justify-content-between">
-                                    <p class="begin">2,750,000<span>원</span></p>
-                                    <p class="goal">8,500,000<span>원</span></p>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="group bg-light-green opacity end">
-                            <div class="bx-top">
-                                <p class="title">맥북 프로 구매👩🏻‍💻</p>
-                                <span class="badge fail">실패</span>
-                            </div>
-                            <div class="bx-bot">
-                                <div class="state justify-content-between">
-                                    <p class="tit">달성률</p>
-                                    <p class="percent">100%</p>
+                            <li class="group bg-light-green opacity end">
+                                <div class="bx-top">
+                                    <p class="title">맥북 프로 구매👩🏻‍💻</p>
+                                    <span class="badge fail">실패</span>
                                 </div>
-                                <div class="bar-gragh">
-                                    <div class="bar bg-green" style="width: 100%;"></div>
+                                <div class="bx-bot">
+                                    <div class="state justify-content-between">
+                                        <p class="tit">달성률</p>
+                                        <p class="percent">100%</p>
+                                    </div>
+                                    <div class="bar-gragh">
+                                        <div class="bar bg-green" style="width: 100%;"></div>
+                                    </div>
+                                    <div class="result justify-content-between">
+                                        <p class="begin">3,750,000<span>원</span></p>
+                                        <p class="goal">3,500,000<span>원</span></p>
+                                    </div>
                                 </div>
-                                <div class="result justify-content-between">
-                                    <p class="begin">3,750,000<span>원</span></p>
-                                    <p class="goal">3,500,000<span>원</span></p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <!-- <div class="challenge-add">
+                            </li>
+                        </ul>
+                        <!-- <div class="challenge-add">
                         <a href="#" class="new-challenge">
-                            새로운 챌린디 도전하기
+                            새로운 챌린지 도전하기
                             <img src="../../img/common/icon-plus.png" alt="추가하기">
                         </a>
                     </div> -->
-
+                    </div>
                 </div>
 
 

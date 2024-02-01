@@ -7616,6 +7616,11 @@
   // 자산 챌린지 240124
 
   .challenge {
+    .fixed-bottom {
+      padding: 0 20px 30px;
+      background-color: #fff;
+    }
+
 
     .card-filter {
       ul {
@@ -7665,7 +7670,6 @@
       }
     }
 
-
     .text-descriptiton {
       margin-bottom: 24px;
 
@@ -7697,6 +7701,7 @@
         line-height: 22px;
       }
     }
+
 
     .challenge-box {
       padding: 0 20px;
@@ -7881,89 +7886,96 @@
       }
     }
 
-    .card-list-wrap {
-      .group {
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 16px;
+    .card-list-box {
+      .empty {
+        height: calc(100vh - 309px);
+      }
 
-        &.end {
-          .badge {
-            line-height: 18px;
-          }
-        }
+      .card-list-wrap {
+        .group {
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 16px;
 
-        .bx-top {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          .title {
-            font-size: 16px;
-            font-family: var(--font3);
-            line-height: 26px;
-          }
-
-          .badge {
-            background: rgba(255, 255, 255, 0.5);
-            padding: 4px 8px;
-            font-family: var(--font3);
-            border-radius: 20px;
-
-            &.fail {
-              background-color: #37354e;
-              color: #fff;
-            }
-          }
-        }
-
-        .bx-bot {
-          margin-top: 22px;
-
-          .state {
-            align-items: center;
-
-            .tit {
-              font-size: 12px;
-              color: rgba(55, 53, 78, 0.6);
+          &.end {
+            .badge {
               line-height: 18px;
             }
+          }
 
-            .percent {
-              font-size: 12px;
-              line-height: 14px;
+          .bx-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title {
+              font-size: 16px;
               font-family: var(--font3);
+              line-height: 26px;
+            }
+
+            .badge {
+              background: rgba(255, 255, 255, 0.5);
+              padding: 4px 8px;
+              font-family: var(--font3);
+              border-radius: 20px;
+
+              &.fail {
+                background-color: #37354e;
+                color: #fff;
+              }
             }
           }
 
-          .bar-gragh {
-            margin: 4px 0;
-            width: 100%;
-            height: 4px;
-            background-color: rgba(255, 255, 255, 0.7);
-            border-radius: 2px;
-            overflow: hidden;
+          .bx-bot {
+            margin-top: 22px;
 
-            .bar {
+            .state {
+              align-items: center;
+
+              .tit {
+                font-size: 12px;
+                color: rgba(55, 53, 78, 0.6);
+                line-height: 18px;
+              }
+
+              .percent {
+                font-size: 12px;
+                line-height: 14px;
+                font-family: var(--font3);
+              }
+            }
+
+            .bar-gragh {
+              margin: 4px 0;
+              width: 100%;
               height: 4px;
+              background-color: rgba(255, 255, 255, 0.7);
               border-radius: 2px;
-            }
-          }
+              overflow: hidden;
 
-          .result {
-            font-size: 13px;
-            font-family: var(--font2);
-            line-height: 19px;
-
-            .begin {
-              color: rgba(55, 53, 78, 0.7);
+              .bar {
+                height: 4px;
+                border-radius: 2px;
+              }
             }
 
-            .goal {}
+            .result {
+              font-size: 13px;
+              font-family: var(--font2);
+              line-height: 19px;
+
+              .begin {
+                color: rgba(55, 53, 78, 0.7);
+              }
+
+              .goal {}
+            }
           }
         }
       }
     }
+
 
     .challenge-add {
       .new-challenge {
@@ -7983,6 +7995,51 @@
         height: 18px;
       }
     }
+
+    .card-list-sort {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+
+      .group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 20px;
+        border-radius: 8px;
+
+        &.ui_sortable_placeholder {
+          height: 73px;
+        }
+
+        &~.group {
+          margin-top: 16px;
+        }
+
+        .title {
+          font-size: 15px;
+          font-family: var(--font2);
+          line-height: 25px;
+        }
+
+        .btn-edit {
+          display: flex;
+          align-items: center;
+
+          .sprite {}
+
+          .btn-delete {
+            margin-left: 24px;
+            padding-left: 0;
+            background: transparent;
+            font-size: 13px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+
   }
 
 

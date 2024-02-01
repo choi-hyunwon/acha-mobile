@@ -1411,39 +1411,50 @@
       border-radius: 10px;
       width: 100%;
       padding: 9px 12px;
-      font-size: 14px;
 
-      .ico_list_arrow_small {
-        margin-left: 4px;
+
+      .link {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: var(--text-01);
+
+        .ico_list_arrow_small {
+          margin-left: 4px;
+        }
+
+        .badge {
+          padding: 0;
+          margin-right: 6px;
+          min-width: 30px;
+
+          &-new {
+            width: 30px;
+            height: 16px;
+          }
+
+          &-remove {
+            width: 20px;
+            height: 20px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
       }
 
-      .badge {
-        padding: 0;
-        margin-right: 6px;
-        min-width: 30px;
 
-        &-new {
-          width: 30px;
-          height: 16px;
-        }
 
-        &-remove {
-          width: 20px;
-          height: 20px;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-        }
-      }
 
       .btn-delete {
         position: absolute;
         right: 12px;
         top: 50%;
         transform: translateY(-50%);
+        padding-left: 0;
         width: 22px;
         height: 22px;
         background: transparent;
@@ -2577,6 +2588,7 @@
 
                       .ac-num {
                         margin-left: 28px;
+                        width: 100%;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -3255,7 +3267,6 @@
                     .ac-item {
                       .value {
                         font-family: var(--font1);
-                        text-align: right;
 
                         .price {
                           display: block;
@@ -3322,6 +3333,7 @@
                   position: relative;
                   display: flex;
                   justify-content: space-between;
+                  flex-wrap: wrap;
 
                   &~.ac-item {
                     margin-top: 20px;
@@ -3378,11 +3390,36 @@
                       font-size: 12px;
                       line-height: 18px;
                       color: var(--text-03);
+                      height: auto;
                     }
 
                     &.out {
                       color: #afaeb8;
                     }
+                    &.undefined {
+                      display: flex;
+                      align-items: center;
+                      padding: 0px 8px;
+                      height: 22px;
+                      background: #eeedf0;
+                      font-size: 11px;
+                      color: #9992a0;
+                      font-family: var(--font1);
+                      border-radius: 22px;
+                    }
+                  }
+
+                  .ac-num {
+                    display: inline-block;
+                    margin-top: 4px;
+                    margin-left: 28px;
+                    width: 100%;
+                    font-size: 12px;
+                    color: #9b9aa6;
+                    line-height: 16px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                   }
 
                   &.ac-expire {
@@ -6973,7 +7010,6 @@
         .fc-day-grid {
           .fc-row {
             min-height: 50px;
-
           }
         }
       }

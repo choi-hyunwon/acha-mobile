@@ -7621,6 +7621,9 @@
       background-color: #fff;
     }
 
+    .inner {
+      padding: 0 20px;
+    }
 
     .card-filter {
       ul {
@@ -7702,7 +7705,6 @@
       }
     }
 
-
     .challenge-box {
       padding: 0 20px;
 
@@ -7753,13 +7755,13 @@
         .ico_list_arrow_small {
           position: absolute;
           right: 5px;
-          top: 20px;
+          bottom: 20px;
         }
 
         .won {
           position: absolute;
           right: 0;
-          top: 15px;
+          bottom: 15px;
           font-size: 17px;
           line-height: 25px;
           height: fit-content;
@@ -7974,8 +7976,129 @@
           }
         }
       }
-    }
 
+      .expires {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 0;
+
+        .tit {
+          font-size: 15px;
+          line-height: 22px;
+        }
+
+        .date {
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+
+          .end {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: var(--font2);
+
+            .badge {
+              margin-right: 8px;
+              padding: 4px 8px !important;
+              font-family: var(--font3) !important;
+              border-radius: 20px !important;
+            }
+          }
+
+          .start {
+            margin-top: 4px;
+            font-size: 12px;
+            line-height: 18px;
+            color: var(--text-02);
+          }
+        }
+      }
+
+      .account-list-wrap {
+        border-top: 1px solid #efefef;
+
+        .head {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 0;
+
+          &.show {
+            .total {
+              img {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          .tit {
+            font-size: 15px;
+            line-height: 22px;
+          }
+
+          .total {
+            display: flex;
+
+            .num {
+              margin-right: 6px;
+              font-size: 15px;
+              line-height: 22px;
+
+              span {
+                font-family: var(--font3);
+              }
+            }
+          }
+        }
+
+        .account-list {
+          display: none;
+
+          &.show {
+            display: block;
+          }
+
+          .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0;
+
+            .box {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 0;
+
+              .info {
+                margin-left: 10px;
+
+                .tit {
+                  font-size: 14px;
+                  line-height: 20px;
+                }
+
+                .value {
+                  margin-top: 4px;
+                  font-size: 15px;
+                  font-family: var(--font2);
+                  line-height: 18px;
+                }
+              }
+            }
+
+            .rate {
+              font-size: 16px;
+              color: var(--text-02);
+              line-height: 19px;
+              font-family: var(--font2);
+            }
+          }
+        }
+      }
+    }
 
     .challenge-add {
       .new-challenge {
@@ -8000,7 +8123,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0 20px;
+      padding: 0 20px 100px;
 
       .group {
         display: flex;
@@ -8040,7 +8163,127 @@
       }
     }
 
-  }
+    .details {
+      padding: 20px;
+      background: #f7f8fc;
+      font-size: 12px;
+      border: 1px solid #efefef;
+      border-radius: 16px;
 
+      .bx-top {
+        .badge-box {
+          margin-bottom: 4px;
+          text-align: center;
+
+          .badge {
+            padding: 0 8px;
+            border-radius: 22px;
+            color: #fff;
+            font-family: var(--font3);
+            line-height: 22px;
+
+            &-finish {
+              background: #9b9aa6;
+            }
+
+            &-success {
+              background: #4393ff;
+            }
+
+            &-failure {
+              background: #ef4b61;
+            }
+          }
+        }
+
+        .title {
+          padding-bottom: 17px;
+          margin-bottom: 0;
+          font-size: 20px;
+          line-height: 30px;
+          font-family: var(--font3);
+
+        }
+      }
+
+
+
+      .info {
+        padding: 24px 10px 10px;
+        width: 100%;
+        border-top: 1px solid #eaeaea;
+        text-align: center;
+
+        .tit {
+          display: inline-block;
+          padding: 4px 10px;
+          background: #eaebef;
+          font-size: 12px;
+          color: var(--text-02);
+          line-height: 18px;
+          border-radius: 30px;
+        }
+
+        .val {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: var(--font3);
+          font-size: 32px;
+          line-height: 38px;
+          margin-top: 6px;
+
+          span {
+            margin-left: 2px;
+            font-size: 20px;
+            line-height: 29px;
+          }
+
+          &.input {
+            font-size: 26px;
+          }
+        }
+
+        >.goal {
+          margin-top: 4px;
+          font-size: 16px;
+          line-height: 24px;
+          opacity: 0.6;
+        }
+
+        .graph-box {
+          .bar-graph {
+            margin: 4px 0;
+            width: 100%;
+            height: 16px;
+            background-color: #e2e5ed;
+            border-radius: 16px;
+            overflow: hidden;
+
+            .bar {
+              height: 16px;
+              border-radius: 16px;
+            }
+          }
+
+          .result {
+            line-height: 18px;
+            color: var(--text-02);
+
+            .begin {
+              font-size: 12px;
+            }
+
+            .goal {
+              font-size: 13px;
+              font-family: var(--font3);
+            }
+          }
+        }
+      }
+    }
+
+
+  }
 
 }

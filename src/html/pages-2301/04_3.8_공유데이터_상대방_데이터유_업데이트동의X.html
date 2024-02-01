@@ -12,8 +12,8 @@
         <div class="contents expenditure">
             <div class="expenditure-tab manage-tab _expenditureTab">
                 <ul class="clearfix">
-                    <li class="active"><a href="#">#김꼼꼼<em class="badge badge-purple badge-manage">0</em></a></li>
-                    <li><a href="#">#유똑똑<em class="badge badge-purple badge-manage">4</em></a></li>
+                    <li><a href="#">#김꼼꼼<em class="badge badge-purple badge-manage">0</em></a></li>
+                    <li class="active"><a href="#">#유똑똑<em class="badge badge-purple badge-manage">4</em></a></li>
                 </ul>
             </div>
             <div class="manage-box bg_light_gray pt-0">
@@ -21,23 +21,20 @@
                     <div class="agree">
                         <img src="../../img/common/ico_tooltip@2x.png" alt="tooltip">
                         <span class="ml-1 mr-2">업데이트 동의</span>
-                        <div class="custom-switch custom-switch-relative">
-                            <input type="checkbox" class="custom-control-input" id="switch1" checked="checked">
-                            <label class="custom-control-label" for="switch1"></label>
-                        </div>
+                        <!-- 상대방이 업데이트 공유 안했을때 .off 추가 -->
+                        <p class="state off">OFF</p>
                     </div>
-
                     <p class="filter">
-                        <span>업데이트 <em>2시간</em> 전</span><i class="ico-refresh-mini"></i>
+                        <span><em>8일전</em></span></i>
                     </p>
                 </div>
-
                 <!-- 카드 -->
                 <div class="card-item">
                     <div class="usage-sum">
                         <p class="count">
                             카드&nbsp;<span class="f-point">1</span>
                         </p>
+
                     </div>
                     <ul class="usage-history-list">
                         <li>
@@ -47,16 +44,18 @@
                                         <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
                                     </div>
                                     <div class="txt">
-                                        <div class="tit">신한 My플러스 정기예금</div>
-                                        <span class="desc">KB 국민 굿데이카드</span>
+                                        <div class="tit">
+                                            신한 공동관리 카드
+                                            <a href="#" class="edit">
+                                                <img src="../../img/common/expenditure/ic_my_register@2x.png" width="20"
+                                                    alt="수정">
+                                            </a>
+                                        </div>
+                                        <span class="desc">신한 Deep Dream</span>
                                     </div>
                                 </div>
                                 <div class="share-date">
                                     <p>공유 시작일 : <span>2023.08.12</span></p>
-                                </div>
-                                <div class="btn-wrap mt-20">
-                                    <a href="#" class="btn">수정</a>
-                                    <a href="#" class="btn">공유해제</a>
                                 </div>
                             </div>
                         </li>
@@ -68,9 +67,6 @@
                         <p class="count">
                             계좌&nbsp;<span class="f-point">2</span>
                         </p>
-                        <!-- <p class="filter">
-                            <span>업데이트 <em>2시간</em> 전</span><i class="ico-refresh-mini"></i>
-                        </p> -->
                     </div>
                     <ul class="usage-history-list">
                         <li>
@@ -80,52 +76,18 @@
                                         <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
                                     </div>
                                     <div class="txt">
-                                        <div class="tit">신한 My플러스 정기예금</div>
-                                        <!-- <span class="desc">KB 국민 굿데이카드</span> -->
+                                        <div class="tit">
+                                            신한 공동관리 카드
+                                            <a href="#" class="edit">
+                                                <img src="../../img/common/expenditure/ic_my_register@2x.png" width="20"
+                                                    alt="수정">
+                                            </a>
+                                        </div>
+                                        <span class="desc">KB 직장인 급여통장(재테크형)</span>
                                     </div>
                                 </div>
                                 <div class="share-date">
                                     <p>공유 시작일 : <span>2023.08.12</span></p>
-                                </div>
-                                <div class="btn-wrap mt-20">
-                                    <a href="#" class="btn">수정</a>
-                                    <a href="#" class="btn">공유해제</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- 마이데이터 연결 해제 -->
-                <div class="card-item">
-                    <ul class="usage-history-list">
-                        <li>
-                            <div class="box">
-                                <div class="info">
-                                    <div class="img">
-                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                                    </div>
-                                    <div class="txt">
-                                        <div class="tit">신한 My플러스 정기예금</div>
-                                        <!-- <span class="desc">KB 국민 굿데이카드</span> -->
-                                    </div>
-                                </div>
-                                <div class="share-date">
-                                    <p>공유 시작일 : <span>2023.08.12</span></p>
-                                </div>
-                                <div class="btn-wrap mt-20">
-                                    <a href="#" class="btn">수정</a>
-                                    <a href="#" class="btn">공유해제</a>
-                                </div>
-
-                                <!-- dim -->
-                                <div class="dim">
-                                    <div class="box">
-                                        <p>마이데이터 연결 해제</p>
-                                        <span class="text">
-                                            [더보기 > 연결관리 > 만료 및 연결 <br />해제된 기관]에서 확인해주세요
-                                        </span>
-                                        <button class="btn btn-outline-white mt-10">공유 해제하기</button>
-                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -136,18 +98,17 @@
                                         <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
                                     </div>
                                     <div class="txt">
-                                        <div class="tit">신한 My플러스 정기예금</div>
-                                        <span class="desc">KB 국민 굿데이카드</span>
+                                        <div class="tit">
+                                            신한 공동관리 카드
+                                            <a href="#" class="edit">
+                                                <img src="../../img/common/expenditure/ic_my_register@2x.png" width="20"
+                                                    alt="수정">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="share-date">
                                     <p>공유 시작일 : <span>2023.08.12</span></p>
-                                    <p class="hide">✽ 가계부에서 숨긴 데이터는 ‘공동 가계부’에서 보이지
-                                        않아요</p>
-                                </div>
-                                <div class="btn-wrap mt-20">
-                                    <a href="#" class="btn">수정</a>
-                                    <a href="#" class="btn">공유해제</a>
                                 </div>
                             </div>
                         </li>
@@ -174,17 +135,13 @@
                                 <div class="share-date">
                                     <p>공유 시작일 : <span>2023.08.12</span></p>
                                 </div>
-                                <div class="btn-wrap mt-20">
-                                    <a href="#" class="btn">수정</a>
-                                    <a href="#" class="btn">공유해제</a>
-                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="btn-wrap btn-floating">
-                <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">+ 공유 데이터 추가하기</a>
+                <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">데이터 업데이트 요청하기</a>
             </div>
         </div>
 

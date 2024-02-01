@@ -12,8 +12,8 @@
             </div>
         </div>
         <div class="contents expenditure">
-            <div class="expenditure-calendar">
-                <div class="ex-calendar">
+            <div class="expenditure-calendar share-calendar">
+                <div class="ex-calendar mb-0">
                     <div class="box-ex-calendar-header">
                         <div class="date"><a href="#">2022년 10월<i class="icon-arrow-bottom"> </i></a></div>
                     </div>
@@ -39,18 +39,71 @@
                                 <span class="badge badge-gray">토</span>
                             </div>
                             <div class="detail">
-                                <div class="plus">
-                                    <span class="tit">수입</span><span class="price">+15,000원</span>
+                                <div class="rise">
+                                    <span class="tit">수입</span><span class="price">+2,500,000원</span>
                                 </div>
-                                <div class="minus">
-                                    <span class="tit">지출</span><span class="price">-15,000원</span>
+                                <div class="fail">
+                                    <span class="tit">지출</span><span class="price">-2,500,000원</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="history-list-calendar">
                             <ul>
-                                <li class="pb-0">
+                                <!-- 일정일 경우 .schedule-item 추가 -->
+                                <!-- 등록할때 컬러값에 맞춰 .bg-pink추가 -->
+                                <!-- ".bg-green", ".bg-pink", ".bg-blue", ".bg-red", ".bg-orange", ".bg-puple" -->
+                                <li class="schedule-item bg-pink">
+                                    <div class="info-head">
+                                        <i class="icon-user icon-user-me">
+                                            <img src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
+                                                alt="아이콘">
+                                        </i>
+                                        <p class="title">등산</p>
+                                    </div>
+                                    <span class="detail">
+                                        <span class="emotion">
+                                            <img src="../../img/common/ic_con_pic@2x.png" width="26" alt="아이콘">
+                                            <img src="../../img/common/ico-emoji-excited@2x.png" width="26" alt="아이콘">
+                                        </span>
+                                    </span>
+                                    <div class="desc">
+                                        청계산 입구역 오전 7시까지 모여요
+                                    </div>
+                                </li>
+                                <li class="schedule-item bg-blue">
+                                    <div class="info-head">
+                                        <i class="icon-user icon-user-me">
+                                            <img src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
+                                                alt="아이콘">
+                                        </i>
+                                        <p class="title">쇼핑</p>
+                                    </div>
+                                    <span class="detail">
+                                        <span class="emotion">
+                                            <img src="../../img/common/ico-emoji-excited@2x.png" width="26" alt="아이콘">
+                                        </span>
+                                    </span>
+                                    <div class="desc">
+                                        청계산 입구역 오전 7시까지 모여요
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-head">
+                                        <i class="icon-user icon-user-me"><img
+                                                src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
+                                                alt="아이콘"></i>
+                                        <span class="time">13:50 <em>|</em> 신한계좌254</span>
+                                    </div>
+                                    <span class="detail">
+                                        <span class="tit">아파트관리비</span>
+                                        <span class="price">-15,000원</span>
+                                    </span>
+                                    <div class="tag">
+                                        <span>칭구들돼지파티</span>
+                                    </div>
+                                </li>
+                                <li>
                                     <div class="info-head">
                                         <i class="icon-user icon-user-me"><img
                                                 src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
@@ -98,21 +151,6 @@
                                     </script>
                                 </li>
                                 <li>
-                                    <div class="info-head">
-                                        <i class="icon-user icon-user-me"><img
-                                                src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
-                                                alt="아이콘"></i>
-                                        <span class="time">13:50 <em>|</em> 신한계좌254</span>
-                                    </div>
-                                    <span class="detail">
-                                        <span class="tit">아파트관리비</span>
-                                        <span class="price">-15,000원</span>
-                                    </span>
-                                    <div class="tag">
-                                        <span>칭구들돼지파티</span>
-                                    </div>
-                                </li>
-                                <li class="pb-0">
                                     <div class="info-head">
                                         <i class="icon-user icon-user-me"><img
                                                 src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
@@ -177,30 +215,7 @@
                                         <span>칭구들돼지파티</span>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="info-head">
-                                        <i class="icon-user icon-user-me"><img
-                                                src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
-                                                alt="아이콘"></i>
-                                        <span class="time">13:50 <em>|</em> 신한계좌254</span>
-                                    </div>
-                                    <span class="detail">
-                                        <span class="tit">아파트관리비</span>
-                                        <span class="price">-15,000원</span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <div class="info-head">
-                                        <i class="icon-user icon-user-me"><img
-                                                src="../../img/common/ico_mypage_profile_img03@2x.png" width="30"
-                                                alt="아이콘"></i>
-                                        <span class="time">13:50 <em>|</em> 신한계좌254</span>
-                                    </div>
-                                    <span class="detail">
-                                        <span class="tit">아파트관리비</span>
-                                        <span class="price">-15,000원</span>
-                                    </span>
-                                </li>
+
                             </ul>
                         </div>
 
@@ -211,16 +226,14 @@
         </div>
     </div>
     <script>
-
         var storyTag = [
             {
-                start: '2022-12-16'
+                start: '2024-01-16'
             },
             {
-                start: '2022-12-20'
+                start: '2024-01-20'
             },
         ]
-
 
         document.addEventListener('DOMContentLoaded', function () {
             var weekList = ['일', '월', '화', '수', '목', '금', '토'];
@@ -231,7 +244,7 @@
                 fixedWeekCount: false,
                 header: false,
                 height: 'auto',
-                defaultDate: '2022-12-15',  // 날짜 입력시, 달력 show
+                defaultDate: '2024-01-01',  // 날짜 입력시, 달력 show
                 editable: false,
                 eventLimit: false,
                 navLinks: true,
@@ -253,142 +266,534 @@
                         }
                     }
                 },
+                // events 순차 적용시 필요
+                eventOrder: 'sortIdx',
                 events: [
                     {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-16'
+                        eventOrder: 1,
+                        className: 'schedule schedule-green',
+                        title: ["러닝👟"],
+                        start: '2024-01-01',
                     },
                     {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-12'
+                        eventOrder: 2,
+                        className: 'schedule schedule-pink',
+                        title: "일정",
+                        start: '2024-01-01',
                     },
                     {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-01'
+                        eventOrder: 3,
+                        className: 'schedule schedule-more',
+                        title: '+1',
+                        start: '2024-01-01',
                     },
                     {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-02'
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+106,000',
+                        start: '2024-01-01',
                     },
                     {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-03'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-04'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-05'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-06'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-07'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-07'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-08'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-09'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-10'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-11'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-1'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-1'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-1'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-12'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-100,000',
-                        start: '2022-12-12'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-480,000',
-                        start: '2022-12-13'
-                    },
-                    {
-                        className: 'minus-data',
-                        title: '-1,020,000',
-                        start: '2022-12-14'
-                    },
-                    // 표시 할 데이터가 있고, 선택된 일자가 있는 금액의 첫번째에 plus-data 클래스 추가 **
-                    {
-                        className: 'plus-data',
-                        title: '+100,000',
-                        start: '2022-12-03'
-                    },
-                    {
-                        className: 'minus-data',
+                        eventOrder: 5,
+                        className: 'fail-data',
                         title: '-50,000',
-                        start: '2022-12-03'
+                        start: '2024-01-01',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-02',
                     },
                     {
-                        className: 'plus-data',
-                        title: '+50,000',
-                        start: '2022-12-10'
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-02',
                     },
                     {
-                        className: 'plus-data',
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-02',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-02',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'rise-data',
                         title: '+100,000',
-                        start: '2022-12-17'
+                        start: '2024-01-02',
+                    },
+
+
+                    {
+                        eventOrder: 1,
+                        className: 'schedule schedule-orange',
+                        title: "일정",
+                        start: '2024-01-03',
                     },
                     {
-                        className: 'plus-data',
-                        title: '+8,100,000',
-                        start: '2022-12-23'
+                        eventOrder: 2,
+                        className: 'schedule schedule-purple',
+                        title: "일정",
+                        start: '2024-01-03',
                     },
                     {
-                        className: 'plus-data',
-                        title: '+8,100,000',
-                        start: '2022-12-28'
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-03',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+3.2억',
+                        start: '2024-01-03',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-6.4천',
+                        start: '2024-01-03',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-04',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-04',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-04',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-04',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '',
+                        start: '2024-01-04',
+                    },
+
+
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-05',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-05',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-05',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+1,600,000',
+                        start: '2024-01-05',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-500,000',
+                        start: '2024-01-05',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'schedule schedule-blue',
+                        title: "일정",
+                        start: '2024-01-06',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'schedule schedule-red',
+                        title: "일정",
+                        start: '2024-01-06',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-06',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+100,000',
+                        start: '2024-01-06',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-200,000',
+                        start: '2024-01-06',
+                    },
+
+
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-07',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-07',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-07',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-07',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-200,000',
+                        start: '2024-01-07',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-09',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-09',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-09',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+35,555',
+                        start: '2024-01-09',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-200,000',
+                        start: '2024-01-09',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-11',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-11',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-11',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+35,555',
+                        start: '2024-01-11',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-200,000',
+                        start: '2024-01-11',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'schedule schedule-orange',
+                        title: "일정",
+                        start: '2024-01-12',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-12',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-12',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+1,935,555',
+                        start: '2024-01-12',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-200',
+                        start: '2024-01-12',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'schedule schedule-pink',
+                        title: "일정",
+                        start: '2024-01-14'
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-date',
+                        title: "",
+                        start: '2024-01-14'
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-date',
+                        title: "",
+                        start: '2024-01-14'
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'empty-date',
+                        title: "",
+                        start: '2024-01-14'
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'rise-data',
+                        title: '+100',
+                        start: '2024-01-14'
+                    },
+                    {
+                        eventOrder: 1,
+                        className: 'schedule schedule-green',
+                        title: ["러닝👟"],
+                        start: '2024-01-16',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: "",
+                        start: '2024-01-16',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-16',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+106,000',
+                        start: '2024-01-16',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-50,000',
+                        start: '2024-01-16',
+                    },
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-20',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-20',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-20',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+100,000',
+                        start: '2024-01-20',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-1,000,000',
+                        start: '2024-01-20',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-21',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-21',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-21',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-21',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'rise-data',
+                        title: '+100,000',
+                        start: '2024-01-21',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-24',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-24',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-24',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+100,000',
+                        start: '2024-01-24',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-1,000,000',
+                        start: '2024-01-24',
+                    },
+                    {
+                        eventOrder: 1,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-26',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-26',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-26',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'rise-data',
+                        title: '+100,000',
+                        start: '2024-01-26',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-1,000,000',
+                        start: '2024-01-26',
+                    },
+
+                    {
+                        eventOrder: 1,
+                        className: 'schedule schedule-green',
+                        title: ["러닝👟"],
+                        start: '2024-01-30',
+                    },
+                    {
+                        eventOrder: 2,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-30',
+                    },
+                    {
+                        eventOrder: 3,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-30',
+                    },
+                    {
+                        eventOrder: 4,
+                        className: 'empty-data',
+                        title: '',
+                        start: '2024-01-30',
+                    },
+                    {
+                        eventOrder: 5,
+                        className: 'fail-data',
+                        title: '-100,000',
+                        start: '2024-01-30',
                     },
                 ],
             });

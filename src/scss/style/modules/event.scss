@@ -963,6 +963,74 @@ input[type=number] {
               }
             }
           }
+
+          &.new-year {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            label {
+              position: relative;
+              display: flex;
+              align-items: center;
+
+
+              input:checked {
+                +span {
+                  &:after {
+                    background: url(../../img/common/event/Check_sel@2x.png) no-repeat center / cover;
+                  }
+                }
+              }
+
+              span {
+                font-size: 16px;
+                color: transparent;
+                padding-left: 48px;
+                font-family: var(--font3);
+
+                &::before {
+                  display: none;
+                }
+
+                &::after {
+                  position: absolute;
+                  left: 0;
+                  top: 50%;
+                  transform: translateY(-50%) !important;
+                  margin: 0;
+                  width: 3.2rem;
+                  height: 3.2rem;
+                  background: url(../../img/common/event/Check_nor@2x.png) no-repeat center / cover;
+                  border: 0;
+                }
+              }
+            }
+
+            @media (min-width: 320px) {
+              & {
+                bottom: 11.2%;
+              }
+            }
+
+            @media (min-width: 375px) {
+              & {
+                bottom: 11.3%;
+              }
+            }
+
+            @media (min-width: 426px) {
+              & {
+                bottom: 11.4%;
+              }
+            }
+
+            @media (min-width: 426px) {
+              & {
+                bottom: 11.7%;
+              }
+            }
+          }
         }
       }
 

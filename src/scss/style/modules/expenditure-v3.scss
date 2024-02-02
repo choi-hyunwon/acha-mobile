@@ -7830,6 +7830,7 @@
 
       .assets-register-link {
         position: relative;
+        padding-top: 20px;
 
         &:after {
           content: "";
@@ -7845,7 +7846,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 20px 0;
+          margin-bottom: 20px;
           font-size: 14px;
           line-height: 20px;
           color: var(--text-point-color);
@@ -7889,6 +7890,8 @@
     }
 
     .card-list-box {
+      padding-bottom: 30px;
+
       .empty {
         height: calc(100vh - 309px);
       }
@@ -8028,7 +8031,7 @@
           &.show {
             .total {
               img {
-                transform: rotate(180deg);
+                transform: rotate(0deg);
               }
             }
           }
@@ -8041,6 +8044,10 @@
           .total {
             display: flex;
 
+            img {
+              transform: rotate(180deg);
+            }
+
             .num {
               margin-right: 6px;
               font-size: 15px;
@@ -8051,6 +8058,20 @@
               }
             }
           }
+        }
+
+        .explain {
+          display: none;
+          ;
+          margin-bottom: 10px;
+          font-size: 14px;
+          line-height: 24px;
+          color: var(--text-02);
+
+          &.show {
+            display: block;
+          }
+
         }
 
         .account-list {
@@ -8094,6 +8115,24 @@
               color: var(--text-02);
               line-height: 19px;
               font-family: var(--font2);
+            }
+
+            &.disconnect {
+              .img {
+                opacity: 0.5;
+              }
+
+              .info {
+
+                .tit,
+                .value {
+                  color: #afaeb8;
+                }
+
+                .value {
+                  margin-top: 0;
+                }
+              }
             }
           }
         }

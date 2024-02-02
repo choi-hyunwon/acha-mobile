@@ -6,33 +6,31 @@
     <div class="wrap renewal">
         <div class="header _sticky">
             <a href="#" class="sprite btn_back"></a>
-            <div class="btn_area">
-                <img src="../../img/common/ico_top_option_menu_nor@2x.png" width="26" alt="메뉴">
-            </div>
+            <div class="sum-area"><a href="#" class="delete">삭제</a></div>
         </div>
 
         <div class="contents challenge">
             <div class="inner">
                 <div class="box-ex-top box-card-top detail flex-column details">
                     <div class="bx-top">
-                        <!-- <div class="badge-box">
+                        <div class="badge-box">
                             <span class="badge badge-finish">종료</span>
                             <span class="badge badge-success">성공</span>
-                            <span class="badge badge-failure">실패</span>
-                        </div> -->
-                        <h3 class="title">✈️부모님 환갑 여행 보내드리기</h3>
+                            <!-- <span class="badge badge-failure">실패</span> -->
+                        </div>
+                        <h3 class="title">드림카 타고 슝슝 🚙</h3>
                     </div>
                     <div class="bx-bot info">
-                        <p class="tit">현재까지 모은돈</p>
-                        <p class="val">3,750,000<span>원</span></p>
-                        <p class="goal">목표 금액 <span>7,500,000</span>원</p>
+                        <p class="tit">총 모은돈</p>
+                        <p class="val">119,600,000<span>원</span></p>
+                        <p class="goal">목표 금액 <span>65,000,000</span>원</p>
                         <div class="graph-box mt-30">
                             <div class="bar-graph">
-                                <div class="bar bg-purple" style="width: 50%;"></div>
+                                <div class="bar bg-blue" style="width: 184%;"></div>
                             </div>
                             <div class="result justify-content-between">
-                                <p class="begin">진행중</p>
-                                <p class="goal">50%</p>
+                                <p class="begin">완료</p>
+                                <p class="goal">184%</p>
                             </div>
                         </div>
                     </div>
@@ -45,20 +43,21 @@
                         </div>
                         <div class="date">
                             <div class="end">
-                                <p class="badge bg-light-purple font-purple">D-20</p>
-                                <p class="date">24년 1월 29일</p>
+                                <!-- <p class="badge bg-light-purple font-purple">D-20</p> -->
+                                <p class="date">23년 12월 22일</p>
                             </div>
-                            <div class="start">시작일 : 23년 1월 29일</div>
+                            <div class="start">시작일 : 23년 8월 4일</div>
                         </div>
                     </div>
                     <div class="account-list-wrap">
-                        <div class="head">
+                        <div class="head show">
                             <p class="tit">계좌별 모은돈</pd>
                             <div class="total">
                                 <p class="num"><span class="f-point">2</span>개</p>
                                 <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
                             </div>
                         </div>
+                        <div class="explain show">종료일 기준 모은 금액이에요 😊</div>
                         <ul class="account-list show">
                             <li class="item">
                                 <div class="box">
@@ -99,11 +98,13 @@
                 const $list = $('.account-list')
                 if ($list.hasClass('show')) {
                     $list.removeClass('show')
-                    $('.head').addClass('show')
+                    $('.head').removeClass('show')
+                    $('.explain').removeClass('show')
 
                 } else {
                     $list.addClass('show')
-                    $('.head').removeClass('show')
+                    $('.head').addClass('show')
+                    $('.explain').addClass('show')
                 }
             })
 

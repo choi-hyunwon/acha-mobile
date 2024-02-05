@@ -20,19 +20,19 @@
                             <span class="badge badge-success">성공</span>
                             <span class="badge badge-failure">실패</span>
                         </div> -->
-                        <h3 class="title">알콩달콩 신혼집 장만 💜</h3>
+                        <h3 class="title">✈️부모님 환갑 여행 보내드리기</h3>
                     </div>
                     <div class="bx-bot info">
                         <p class="tit">현재까지 모은돈</p>
-                        <p class="val">119,600,000<span>원</span></p>
-                        <p class="goal">목표 금액 <span>100,000,000</span>원</p>
+                        <p class="val">0<span>원</span></p>
+                        <p class="goal">목표 금액 <span>7,500,000</span>원</p>
                         <div class="graph-box mt-30">
                             <div class="bar-graph">
-                                <div class="bar bg-purple" style="width: 50%;"></div>
+                                <div class="bar bg-blue" style="width: 0%;"></div>
                             </div>
                             <div class="result justify-content-between">
                                 <p class="begin">진행중</p>
-                                <p class="goal">50%</p>
+                                <p class="goal">0%</p>
                             </div>
                         </div>
                     </div>
@@ -56,11 +56,21 @@
                         <div class="head show">
                             <p class="tit">계좌별 모은돈</pd>
                             <div class="total">
-                                <p class="num"><span class="f-point">2</span>개</p>
+                                <p class="num"><span class="f-point">0</span>개</p>
                                 <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
                             </div>
                         </div>
-                        <ul class="account-list show">
+                        <!-- <div class="explain show">종료일 기준 모은 금액이에요 😊</div> -->
+
+                        <!-- 데이터가 없을경우 -->
+                        <div class="empty">
+                            <div class="img">
+                                <img src="../../img/common/ico-error-page@2x.png" alt="" width="42">
+                            </div>
+                            <p>연결된 계좌가 없어요</p>
+                        </div>
+
+                        <!-- <ul class="account-list show">
                             <li class="item">
                                 <div class="box">
                                     <div class="img">
@@ -89,7 +99,7 @@
                                     <p class="val">30%</p>
                                 </div>
                             </li>
-                            <!-- 연결 해지 됬을경우 .disconnect 추가 -->
+                            연결 해지 됬을경우 .disconnect 추가
                             <li class="item disconnect">
                                 <div class="box">
                                     <div class="img">
@@ -104,7 +114,7 @@
                                     <p><i class="icon ico-caution mt-2"></i></p>
                                 </div>
                             </li>
-                            <!-- 연결 해지 됬을경우 .disconnect 추가 -->
+                            연결 해지 됬을경우 .disconnect 추가
                             <li class="item disconnect">
                                 <div class="box">
                                     <div class="img">
@@ -116,7 +126,18 @@
                                 </div>
                                 <p><i class="icon ico-caution mt-2"></i></p>
                             </li>
-                            <!-- 연결 해지 됬을경우 .disconnect 추가 -->
+                            <li class="item">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <p class="value">삭제된 계좌</p>
+                                    </div>
+                                </div>
+                                <p><i class="icon ico-caution mt-2"></i></p>
+                            </li>
+                            연결 해지 됬을경우 .disconnect 추가
                             <li class="item disconnect">
                                 <div class="box">
                                     <div class="img">
@@ -131,22 +152,37 @@
                                     <p><i class="icon ico-caution mt-2"></i></p>
                                 </div>
                             </li>
-                        </ul>
+                            <li class="item">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <p class="tit">우리은행 적금통장</p>
+                                        <p class="value">숨긴자산</p>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <p><i class="icon ico-caution mt-2"></i></p>
+                                </div>
+                            </li>
+                        </ul> -->
                     </div>
                 </div>
             </div>
         </div>
         <script>
-
             $('.head').click(function () {
                 const $list = $('.account-list')
                 if ($list.hasClass('show')) {
                     $list.removeClass('show')
-                    $('.head').addClass('show')
+                    $('.head').removeClass('show')
+                    $('.explain').removeClass('show')
 
                 } else {
                     $list.addClass('show')
-                    $('.head').removeClass('show')
+                    $('.head').addClass('show')
+                    $('.explain').addClass('show')
                 }
             })
 

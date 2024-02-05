@@ -8096,6 +8096,10 @@
               .info {
                 margin-left: 10px;
 
+                p:first-child:not(.tit) {
+                  margin-top: 0;
+                }
+
                 .tit {
                   font-size: 14px;
                   line-height: 20px;
@@ -8128,13 +8132,13 @@
                 .value {
                   color: #afaeb8;
                 }
-
-                .value {
-                  margin-top: 0;
-                }
               }
             }
           }
+        }
+
+        .empty {
+          height: 253px;
         }
       }
     }

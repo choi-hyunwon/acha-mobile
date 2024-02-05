@@ -42,6 +42,15 @@
         $('._expenditureTab li a').on('click', function () {
             $(this).parent().addClass('active').siblings().removeClass('active')
         })
+
+        $('.ico_tooltip img').click(function () {
+            $('.tooltip-txt').toggleClass('show')
+        })
+
+        $('.tooltip-txt .close').click(function () {
+            console.log(55555);
+            $('.tooltip-txt').toggleClass('show')
+        })
     </script>
 </body>
 

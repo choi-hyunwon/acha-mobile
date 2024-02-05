@@ -3448,6 +3448,69 @@
         }
       }
     }
+
+    &.no-connect-asset {
+      padding: 24px 20px 90px;
+      min-height: 100vh;
+
+      .content {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.5px;
+        font-weight: 500;
+        text-align: left;
+        color: var(--text-01);
+        font-family: var(--font2);
+        margin-bottom: 150px;
+
+        &.edit {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .btn-edit {
+            font-size: 13px;
+            border: 1px solid #e2e3e6;
+            min-width: 50px;
+            border-radius: 15px;
+            background: transparent;
+            padding: 5px 16px;
+            line-height: unset;
+            height: 29px;
+            display: flex;
+            align-items: center;
+            color: #707070;
+          }
+        }
+      }
+
+      .img {
+        width: 280px;
+        height: auto;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .btn-area {
+        padding: 0 20px 30px;
+
+        .btn-add {
+          border-radius: 10px;
+          height: 50px;
+          line-height: 50px;
+          border: 0;
+          background-color: var(--color-point);
+          color: #ffffff;
+          font-size: 15px;
+          letter-spacing: -.75px;
+          font-family: var(--font2);
+        }
+      }
+    }
   }
 
   &.box-investment-list {

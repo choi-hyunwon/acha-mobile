@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <div class="sum-area"><a href="#" class="delete">삭제</a></div>
+        </div>
+
+        <div class="contents challenge">
+            <div class="inner">
+                <div class="box-ex-top box-card-top detail flex-column details">
+                    <div class="bx-top">
+                        <div class="badge-box">
+                            <span class="badge badge-finish">종료</span>
+                            <!-- <span class="badge badge-success">성공</span>
+                            <span class="badge badge-failure">실패</span> -->
+                        </div>
+                        <h3 class="title">알콩달콩 신혼집 장만 💜</h3>
+                    </div>
+                    <div class="bx-bot info">
+                        <p class="tit">현재까지 모은돈</p>
+                        <p class="val input">입력하기<i class="ico_list_arrow_small ml-1"></i></p>
+                        <p class="goal">목표 금액 <span>100,000,000</span>원</p>
+                        <div class="graph-box mt-30">
+                            <div class="bar-graph">
+                                <div class="bar bg-pink" style="width: 0%;"></div>
+                            </div>
+                            <div class="result justify-content-between">
+                                <p class="begin">완료</p>
+                                <!-- <p class="goal">50%</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-list-box">
+                    <div class="expires">
+                        <div class="tit">
+                            챌린지 종료일
+                        </div>
+                        <div class="date">
+                            <div class="end">
+                                <!-- <p class="badge bg-light-pink font-pink">D-290</p> -->
+                                <p class="date">24년 1월 29일</p>
+                            </div>
+                            <div class="start">시작일 : 23년 1월 29일</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            $('.head').click(function () {
+                const $list = $('.account-list')
+                if ($list.hasClass('show')) {
+                    $list.removeClass('show')
+                    $('.head').addClass('show')
+
+                } else {
+                    $list.addClass('show')
+                    $('.head').removeClass('show')
+                }
+            })
+
+        </script>
+</body>
+
+</html>

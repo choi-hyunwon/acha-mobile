@@ -24,13 +24,13 @@
                     </a>
                 </div>
 
-                <div class="challenge-card-list w-100 pb-60">
+                <div class="challenge-card-list w-100">
                     <div class="card-filter justify-content-between mb-20">
                         <ul class="d-flex">
-                            <li class="active">
+                            <li>
                                 <div>진행 <span class="num">0</span></div>
                             </li>
-                            <li>
+                            <li class="active">
                                 <div>종료<span class="num">0</span></div>
                             </li>
                         </ul>
@@ -64,7 +64,7 @@
                                         <p class="tit">달성률</p>
                                         <p class="percent">50%</p>
                                     </div>
-                                    <div class="bar-gragh">
+                                    <div class="bar-graph">
                                         <div class="bar bg-purple" style="width: 50%;"></div>
                                     </div>
                                     <div class="result justify-content-between">
@@ -84,7 +84,7 @@
                                         <p class="tit">달성률</p>
                                         <p class="percent">0%</p>
                                     </div>
-                                    <div class="bar-gragh">
+                                    <div class="bar-graph">
                                         <div class="bar bg-pink" style="width: 0%;"></div>
                                     </div>
                                     <div class="result justify-content-between">
@@ -104,7 +104,7 @@
                                         <p class="tit">달성률</p>
                                         <p class="percent">184%</p>
                                     </div>
-                                    <div class="bar-gragh">
+                                    <div class="bar-graph">
                                         <div class="bar bg-blue" style="width: 184%;"></div>
                                     </div>
                                     <div class="result justify-content-between">
@@ -124,7 +124,7 @@
                                         <p class="tit">달성률</p>
                                         <p class="percent">46.2%</p>
                                     </div>
-                                    <div class="bar-gragh">
+                                    <div class="bar-graph">
                                         <div class="bar bg-navy" style="width: 46.2%;"></div>
                                     </div>
                                     <div class="result justify-content-between">
@@ -144,7 +144,7 @@
                                         <p class="tit">달성률</p>
                                         <p class="percent">100%</p>
                                     </div>
-                                    <div class="bar-gragh">
+                                    <div class="bar-graph">
                                         <div class="bar bg-green" style="width: 100%;"></div>
                                     </div>
                                     <div class="result justify-content-between">
@@ -183,6 +183,10 @@
             // 총자산, 리포트, 챌린지
             $('._expenditureTab li a').on('click', function () {
                 $(this).parent().addClass('active').siblings().removeClass('active')
+            })
+            // 진행, 종료
+            $('.card-filter li').on('click', function () {
+                $(this).addClass('active').siblings().removeClass('active')
             })
 
             //툴팁

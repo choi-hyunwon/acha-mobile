@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header">
+            <a href="#" class="sprite btn_back"></a>
+        </div>
+        <div class="contents expendtiture assets-set challenge">
+            <div class="text-descriptiton">
+                <p class="title">
+                    챌린지 설정을<br />
+                    변경할 수 있어요
+                </p>
+            </div>
+
+            <div class="challenge-box">
+                <div class="box_my_income_add">
+                    <form>
+                        <div>
+
+                            <div class="custom-light monetary-unit">
+                                <label class="title">챌린지 목표</label>
+                                <input class="mt-n3" title="value" type="text" value="부모님 환갑 여행 보내기 ✈️">
+                                <i class="ico_list_arrow_small"></i>
+                            </div>
+
+                            <div class="custom-light monetary-unit">
+                                <label class="title">목표금액</label>
+                                <input class="mt-n3" title="value" type="text" value="12,000,000">
+                                <span class="won">원</span>
+                            </div>
+
+                            <div class="custom-light">
+                                <label class="title">목표날짜</label>
+                                <input class="mt-n3" id="currentDate" title="value" type="date"
+                                    date-placeholder="챌린지 종료일을 선택해 주세요" required aria-required="true" />
+                                <i class="ico_list_arrow_small"></i>
+                                <!-- 기본값 날짜표시  스크립트-->
+                                <script>
+                                    document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
+                                </script>
+                            </div>
+
+                            <div class="custom-light monetary-unit">
+                                <label class="title">챌린지 계좌</label>
+                                <input class="mt-n3" title="value" type="text" value="7개 계좌 연결">
+                                <i class="ico_list_arrow_small"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- 입력되지 않았을 경우 .disabled 추가 -->
+                <!-- input focus시 텍스트 필드 올라올때 .next 추가 및 disabled 제거 -->
+                <div class="btn-wrap btn-floating next">
+                    <!-- <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">저장</a> -->
+                    <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">다음</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+@@include('../include/countCharDelete.html')
+
+
+</html>

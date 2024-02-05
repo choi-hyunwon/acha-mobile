@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap">
+        <div class="contents"></div>
+    </div>
+    <div class="modal fade modal-size-sm" id="myDatePopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body data-inspection">
+                    <div class="title">
+                        마이데이터 탈퇴로<br />
+                        계좌 정보를 확인할 수 없어요
+                    </div>
+                    <div class="desc">
+                        모든 계좌가 챌린지 연결에서 <br /><span class="f-point">자동 해제</span>돼요
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-footer single" data-dismiss="modal">확인했어요</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        $('#myDatePopup').modal('show');
+    </script>
+</body>
+
+</html>

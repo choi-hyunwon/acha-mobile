@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap">
+        <div class="contents"></div>
+    </div>
+    <div class="modal fade modal-size-sm" id="myDatePopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content challenge">
+                <div class="modal-body">
+                    <a href="#" class="btn-close _btnSlideClose" data-dismiss="modal" aria-label="Close"></a>
+                    <div class="title">
+                        아쉬워요<br />
+                        챌린지 달성에<br />
+                        실패했어요
+                    </div>
+                    <div class="desc sub-desc">
+                        새로운 챌린지 도전으로
+                        아쉬움을 극복해봐요 😀
+                    </div>
+                    <div class="img">
+                        <img src="../../img/common/img_challenge_fail@2x.png" alt="챌린지 실패">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        $('#myDatePopup').modal('show');
+    </script>
+</body>
+
+</html>

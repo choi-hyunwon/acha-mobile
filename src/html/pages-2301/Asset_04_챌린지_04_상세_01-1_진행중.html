@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <div class="btn_area">
+                <img src="../../img/common/ico_top_option_menu_nor@2x.png" width="26" alt="메뉴">
+            </div>
+        </div>
+
+        <div class="contents challenge">
+            <div class="inner">
+                <div class="box-ex-top box-card-top detail flex-column details">
+                    <div class="bx-top">
+                        <!-- <div class="badge-box">
+                            <span class="badge badge-finish">종료</span>
+                            <span class="badge badge-success">성공</span>
+                            <span class="badge badge-failure">실패</span>
+                        </div> -->
+                        <h3 class="title">✈️부모님 환갑 여행 보내드리기</h3>
+                    </div>
+                    <div class="bx-bot info">
+                        <p class="tit">현재까지 모은돈</p>
+                        <p class="val">3,750,000<span>원</span></p>
+                        <p class="goal">목표 금액 <span>7,500,000</span>원</p>
+                        <div class="graph-box mt-30">
+                            <div class="bar-graph">
+                                <div class="bar bg-purple" style="width: 50%;"></div>
+                            </div>
+                            <div class="result justify-content-between">
+                                <p class="begin">진행중</p>
+                                <p class="goal">50%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-list-box">
+                    <div class="expires">
+                        <div class="tit">
+                            챌린지 종료일
+                        </div>
+                        <div class="date">
+                            <div class="end">
+                                <p class="badge bg-light-purple font-purple">D-20</p>
+                                <p class="date">24년 1월 29일</p>
+                            </div>
+                            <div class="start">시작일 : 23년 1월 29일</div>
+                        </div>
+                    </div>
+                    <div class="account-list-wrap">
+                        <div class="head show">
+                            <p class="tit">계좌별 모은돈</pd>
+                            <div class="total">
+                                <p class="num"><span class="f-point">2</span>개</p>
+                                <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
+                            </div>
+                        </div>
+                        <ul class="account-list show">
+                            <li class="item">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/common/ico_list_card_kb@2x.png" class="img-ci" alt="국민은행">
+                                    </div>
+                                    <div class="info">
+                                        <p class="tit">KB종합통장</p>
+                                        <p class="value">1,875,000<span>원</span></p>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <p class="val">50%</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
+                                    </div>
+                                    <div class="info">
+                                        <p class="tit">직장인우대통장</p>
+                                        <p class="value">1,125,000<span>원</span></p>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <p class="val">30%</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            $('.head').click(function () {
+                const $list = $('.account-list')
+                if ($list.hasClass('show')) {
+                    $list.removeClass('show')
+                    $('.head').removeClass('show')
+                    $('.explain').removeClass('show')
+
+                } else {
+                    $list.addClass('show')
+                    $('.head').addClass('show')
+                    $('.explain').addClass('show')
+                }
+            })
+
+        </script>
+</body>
+
+</html>

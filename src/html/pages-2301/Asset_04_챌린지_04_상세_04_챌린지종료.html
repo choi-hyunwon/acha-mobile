@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap">
+        <div class="contents"></div>
+    </div>
+    <div class="modal fade modal-size-sm" id="migrationPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="migration-information">
+                        <div class="title">챌린지를 종료할까요?</div>
+                        <div class="desc">
+                            종료로 변경 시 <br />
+                            복구 및 목표 수정이 불가능해요
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-footer bg-grey" data-dismiss="modal">취소</a>
+                    <a href="#" class="btn-footer">종료하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal show
+        $('#migrationPopup').modal('show');
+    </script>
+</body>
+
+</html>

@@ -185,6 +185,11 @@
                 $(this).parent().addClass('active').siblings().removeClass('active')
             })
 
+            // 진행, 종료
+            $('.card-filter li').on('click', function () {
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+
             //툴팁
             function tooltipToggle(target) {
                 const tooltipBox = $('.' + target)

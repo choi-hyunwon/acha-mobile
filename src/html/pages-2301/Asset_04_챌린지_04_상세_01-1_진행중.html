@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="account-list-wrap">
-                        <div class="head">
+                        <div class="head show">
                             <p class="tit">계좌별 모은돈</pd>
                             <div class="total">
                                 <p class="num"><span class="f-point">2</span>개</p>
@@ -99,11 +99,13 @@
                 const $list = $('.account-list')
                 if ($list.hasClass('show')) {
                     $list.removeClass('show')
-                    $('.head').addClass('show')
+                    $('.head').removeClass('show')
+                    $('.explain').removeClass('show')
 
                 } else {
                     $list.addClass('show')
-                    $('.head').removeClass('show')
+                    $('.head').addClass('show')
+                    $('.explain').addClass('show')
                 }
             })
 

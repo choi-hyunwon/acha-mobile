@@ -10143,6 +10143,8 @@
 
               .category-menu {
                 padding: 20px;
+                border: 1px solid #efefef;
+                border-top: none;
 
                 &:after {
                   width: calc(100% - 40px);

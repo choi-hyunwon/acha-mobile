@@ -10118,3 +10118,99 @@
     }
   }
 }
+
+.assets {
+  .box-ex-top {
+    &.box-card-top {
+      padding: 24px 20px 0;
+    }
+  }
+
+  .box-ex-list {
+    &.box-card-list {
+      >.card-item {
+        .asset-wrap {
+          .asset {
+            &.show {
+              .category-heading {
+                border-radius: 10px 10px 0 0;
+                border-bottom: unset;
+              }
+
+              .category-new {
+                padding: 20px;
+              }
+
+              .category-menu {
+                padding: 20px;
+
+                &:after {
+                  width: calc(100% - 40px);
+                }
+
+                .ac-list {
+                  .ac-item {
+                    margin-bottom: 18px;
+
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
+
+                    &.total-sum {
+                      margin-bottom: 22px;
+                    }
+
+                    &.ac-expire {
+                      padding-top: 24px;
+                    }
+                  }
+                }
+              }
+            }
+
+            .category-heading {
+              .sum {
+                margin-top: 0;
+                height: 27px;
+              }
+            }
+
+            .category-new {
+              .ac-list {
+                .ac-item {
+                  .badge {
+                    background: #6839d3;
+                    color: #fff;
+                    font-family: var(--font1);
+                    border-radius: 16px;
+                    padding: 3px 6px;
+                    font-size: 10px;
+                    font-weight: normal;
+                    height: 16px;
+                    margin-right: 6px;
+
+                    em {
+                      display: inline-block;
+                      transform: scale(0.83);
+                    }
+                  }
+
+                  .btn-delete {
+                    padding-left: 0;
+                  }
+                }
+              }
+            }
+
+            &.add-account {
+              .category-heading {
+                margin: 0;
+                width: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

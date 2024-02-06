@@ -968,7 +968,7 @@ input[type=number] {
             display: flex;
             align-items: center;
             width: 100%;
-            bottom: 11%;
+            bottom: 13.5%;
 
             label {
               position: relative;
@@ -1010,7 +1010,7 @@ input[type=number] {
 
             @media (min-width: 425px) and (max-width: 749px) {
               & {
-                bottom: 11.5%;
+                bottom: 13.5%;
               }
 
               label {
@@ -1022,7 +1022,7 @@ input[type=number] {
 
             @media (min-width: 750px) and (max-width: 1023px) {
               & {
-                bottom: 12%;
+                bottom: 14.5%;
               }
 
               label {
@@ -1034,7 +1034,7 @@ input[type=number] {
 
             @media (min-width: 1024px) {
               & {
-                bottom: 12%;
+                bottom: 14.5%;
               }
 
               label {

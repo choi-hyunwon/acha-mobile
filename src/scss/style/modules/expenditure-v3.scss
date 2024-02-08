@@ -5991,6 +5991,10 @@
               color: #4b6ae8 !important;
             }
           }
+
+          &.opacity {
+            opacity: 0.4;
+          }
         }
 
         .fail-data {
@@ -5998,6 +6002,10 @@
             .fc-title {
               color: #ef5c82 !important;
             }
+          }
+
+          &.opacity {
+            opacity: 0.4;
           }
         }
 

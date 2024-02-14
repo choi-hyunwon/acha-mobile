@@ -3565,13 +3565,20 @@
                 }
 
                 &.minus,
-                &.rise {
+                &.rise,
+                &.fail {
                   font-size: 15px;
                 }
 
                 &.rise {
                   span {
                     color: #ef4b61;
+                  }
+                }
+
+                &.fail {
+                  span {
+                    color: #4b6ae8;
                   }
                 }
 

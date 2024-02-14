@@ -7900,6 +7900,84 @@
       .box_my_income_add {
         padding: 0;
       }
+
+      .ani-box {
+        position: relative;
+        padding: 40px 0 24px;
+        background-color: #f8f9fd;
+        text-align: center;
+        border-radius: 16px;
+
+        .text {
+          .tit {
+            font-size: 20px;
+            font-family: var(--font3);
+          }
+
+          .desc {
+            margin-top: 8px;
+            font-size: 18px;
+            color: var(--text-02);
+            line-height: 28px;
+          }
+        }
+
+
+        .btn-challenge {
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, -50%);
+          width: calc(100% - 60px);
+          height: 44px;
+          line-height: 44px;
+
+          &.btn-outline-purple {
+            font-size: 15px;
+            color: var(--text-point-color);
+          }
+        }
+
+        .lottie-swiper {
+          padding-bottom: 88px;
+
+          .swiper-pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 72px;
+            height: 6px;
+
+            span {
+              margin: 0 3.5px;
+              width: 6px;
+              height: 6px;
+
+              &.swiper-pagination-bullet-active {
+                background: var(--text-point-color);
+              }
+            }
+          }
+
+          .swiper-button-next {
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, -50%);
+            width: calc(100% - 60px);
+            height: 44px;
+            line-height: 44px;
+            border: 1px solid var(--text-point-color);
+            border-radius: 6px;
+            color: var(--text-point-color);
+            font-size: 16px;
+            font-family: var(--font2);
+
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
     }
 
     .card-list-box {
@@ -8338,8 +8416,6 @@
         }
       }
     }
-
-
   }
 
 }

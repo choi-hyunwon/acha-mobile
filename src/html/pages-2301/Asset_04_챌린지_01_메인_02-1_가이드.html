@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<body>
+    <div class="wrap renewal">
+        <div class="contents challenge">
+            <div class="box-ex-top box-card-top flex-column">
+                <a href="#" class="btn-sm btn-edit"><span>편집</span></a>
+
+                <div class="expenditure-tab _expenditureTab w-100">
+                    <ul>
+                        <li class="mr-10"><a href="#">총자산</a></li>
+                        <li class="mr-10"><a href="#">리포트</a></li>
+                        <li class="active mr-10"><a href="#">챌린지</a></li>
+                    </ul>
+                    <a href="#" class="calendar-box ico_tooltip">
+                        <img src="../../img/common/ico-input-calendar@2x.png" alt="캘린더아이콘" class="calendar"
+                            onclick="tooltipToggle('toolbox-4')">
+                        <div class="tooltip-txt toolbox-4" data-tooltip="hidden">
+                            자산일정이 있어요😀
+                            <span class="close" onclick="TooltipClose('toolbox-4')"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="challenge-box">
+                <div class="ani-box">
+                    <div class="swiper-container lottie-swiper mt-20">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="text">
+                                    <div class="tit"><b>나만의 자산 모으기<br />챌린지를 만들어보세요</b></div>
+                                </div>
+                                <lottie-player src="../../img/common/guid-ani01.json" style="width: 100%;" loop
+                                    autoplay></lottie-player>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="text">
+                                    <div class="tit"><b>원하는 계좌만 선택하여<br />목표 달성 금액을 설정할 수 있어요</b></div>
+                                </div>
+                                <lottie-player src="../../img/common/guid-ani02.json" style="width: 100%;"
+                                    loop></lottie-player>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="text">
+                                    <div class="tit"><b>열심히 아끼고 모아서<br />챌린지 목표를 달성해 보세요</b></div>
+                                </div>
+                                <lottie-player src="../../img/common/guid-ani03.json" style="width: 100%;"
+                                    loop></lottie-player>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-next">다음</div>
+                    </div>
+                    <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg btn-challenge"
+                        style="display: none;">챌린지 만들기</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            toastPopupShow()
+
+            $('.category-heading').click(function () {
+                $(this).parent().toggleClass('show')
+                $(this).siblings().find('.show').toggleClass('show')
+            });
+            $('.total-tit .name').click(function () {
+                $(this).parent().siblings('.ac-piece-list').toggleClass('show')
+                $(this).parent().toggleClass('show')
+            });
+
+            // 총자산, 리포트, 챌린지
+            $('._expenditureTab li a').on('click', function () {
+                $(this).parent().addClass('active').siblings().removeClass('active')
+            })
+
+            //툴팁
+            function tooltipToggle(target) {
+                const tooltipBox = $('.' + target)
+                if (tooltipBox.data('tooltip') === "hidden") {
+                    tooltipBox.addClass('show')
+                    tooltipBox.data('tooltip', 'show')
+                } else {
+                    tooltipBox.removeClass('show')
+                    tooltipBox.data('tooltip', 'hidden')
+                }
+            }
+
+            function TooltipClose(target) {
+                const tooltipBox = $('.' + target)
+                tooltipBox.removeClass('show')
+                tooltipBox.data('tooltip', 'show')
+            }
+
+
+            // 스와이퍼
+            let activeBtn = $('.btn-challenge');
+            let nextBtn = $('.swiper-button-next');
+
+            var swiper = new Swiper(".lottie-swiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                },
+                on: {
+                    slideChange: function () {
+                        let swiperSlide = $('.swiper-slide lottie-player');
+                        swiperSlide.each(function (index, player) {
+                            player.stop()
+                        });
+                    },
+                    slideChangeTransitionEnd: function () {
+                        let activeSlide = $('.swiper-slide-active lottie-player');
+
+                        activeSlide.each(function (index, player) {
+                            player.play();
+                        });
+                    },
+                    slidePrevTransitionStart: () => {
+                        activeBtn.hide()
+                        nextBtn.show()
+                    },
+                    reachEnd: function () {
+                        activeBtn.show()
+                        nextBtn.hide()
+                    }
+                },
+            });
+        </script>
+</body>
+
+</html>

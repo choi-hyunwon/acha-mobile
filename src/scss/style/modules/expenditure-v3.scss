@@ -7931,6 +7931,7 @@
           width: calc(100% - 60px);
           height: 44px;
           line-height: 44px;
+          z-index: 10;
 
           &.btn-outline-purple {
             font-size: 15px;

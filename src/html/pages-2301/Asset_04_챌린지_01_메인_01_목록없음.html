@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="contents challenge">
+            <div class="box-ex-top box-card-top flex-column">
+                <a href="#" class="btn-sm btn-edit"><span>편집</span></a>
+
+                <div class="expenditure-tab _expenditureTab w-100">
+                    <ul>
+                        <li class="mr-10"><a href="#">총자산</a></li>
+                        <li class="mr-10"><a href="#">리포트</a></li>
+                        <li class="active mr-10"><a href="#">챌린지</a></li>
+                    </ul>
+                    <a href="#" class="calendar-box ico_tooltip">
+                        <img src="../../img/common/ico-input-calendar@2x.png" alt="캘린더아이콘" class="calendar"
+                            onclick="tooltipToggle('toolbox-4')">
+                        <div class="tooltip-txt toolbox-4" data-tooltip="hidden">
+                            자산일정이 있어요😀
+                            <span class="close" onclick="TooltipClose('toolbox-4')"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="challenge-box">
+                <div class="ani-box">
+                    <div class="text mb-20">
+                        <div class="tit"><b>챌린지로 동기부여해요</b></div>
+                        <p class="desc">자산목표를 설정하고<br />절약하고 저축해보세요</p>
+                    </div>
+                    <img src="../../img/common/img_challenge_guide@2x.png" alt="이미지" width="100%"
+                        style="padding: 0 20px;">
+                    <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg btn-challenge mt-20 position-relative"
+                        style="left: unset; transform: unset;">챌린지 시작하기</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            toastPopupShow()
+
+            $('.category-heading').click(function () {
+                $(this).parent().toggleClass('show')
+                $(this).siblings().find('.show').toggleClass('show')
+            });
+            $('.total-tit .name').click(function () {
+                $(this).parent().siblings('.ac-piece-list').toggleClass('show')
+                $(this).parent().toggleClass('show')
+            });
+
+            // 총자산, 리포트, 챌린지
+            $('._expenditureTab li a').on('click', function () {
+                $(this).parent().addClass('active').siblings().removeClass('active')
+            })
+
+            //툴팁
+            function tooltipToggle(target) {
+                const tooltipBox = $('.' + target)
+                if (tooltipBox.data('tooltip') === "hidden") {
+                    tooltipBox.addClass('show')
+                    tooltipBox.data('tooltip', 'show')
+                } else {
+                    tooltipBox.removeClass('show')
+                    tooltipBox.data('tooltip', 'hidden')
+                }
+            }
+
+            function TooltipClose(target) {
+                const tooltipBox = $('.' + target)
+                tooltipBox.removeClass('show')
+                tooltipBox.data('tooltip', 'show')
+            }
+        </script>
+</body>
+
+</html>

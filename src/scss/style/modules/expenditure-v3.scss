@@ -3465,8 +3465,11 @@
             .title {
               display: flex;
               align-items: flex-start;
-              flex-wrap: wrap;
               padding: 0;
+
+              &.marker {
+                flex-wrap: wrap;
+              }
 
               .badge-wrap {
                 display: flex;
@@ -3534,7 +3537,7 @@
             }
 
             .total-box {
-              margin-top: 7px;
+              margin-top: 10px;
 
               .total {
                 display: flex;

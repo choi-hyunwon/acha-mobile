@@ -198,6 +198,9 @@ front.common = (function () {
       $(".total-sum").sortable({
         disabled: false
       });
+      $(".assets-total-box .total-sum").sortable({
+        disabled: true
+      });
 
       $('._sticky').sticky({ topSpacing: 0 }).css('background-color', '#ffffff');
 

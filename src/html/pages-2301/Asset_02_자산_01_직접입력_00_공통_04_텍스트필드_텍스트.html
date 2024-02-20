@@ -125,6 +125,7 @@
 	windowHeight(bool)
 	visualViewport.addEventListener('resize', function () {
 		b = Math.floor(window.visualViewport.height)
+		console.log(5555);
 		bool = !bool
 		windowHeight(bool)
 		$('.visualViewport').text(a, b)
@@ -135,14 +136,13 @@
 			c = a - b
 
 
+			console.log(1111);
+
 			document.documentElement.style.height = b + "px";
 
-			const document = document.documentElement;
+			const documentEl = document.documentElement;
 
-			document.style.height = b + 'px'
-
-
-			console.log(document.documentElement.style.height);
+			document.querySelector('body').style.height = a + 'px'
 		} else {
 			c = 0
 		}

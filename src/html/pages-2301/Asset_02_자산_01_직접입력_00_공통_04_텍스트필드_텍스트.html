@@ -39,9 +39,6 @@
 									/20</span></div>
 						</div>
 
-						<p class="visualViewport">높이값</p>
-						<a onClick="window.location.reload()">새로고침</a>
-
 						<!-- 금액 -->
 						<div class="custom-light monetary-unit _focus">
 							<label class="title need">금액</label>
@@ -58,8 +55,6 @@
 							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
 									/20</span></div>
 						</div>
-
-
 
 						<!-- 메모 -->
 						<div class="custom-light ">
@@ -109,43 +104,6 @@
 		$target.style.height = 0;
 		$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
 	};
-
-
-	// 접속 기종 확인
-	// let varUA = navigator.userAgent.toLocaleLowerCase();
-	// if (varUA.indexOf('varUA.indexOf("iphone")') > -1) {
-	// }
-
-
-	const a = window.innerHeight;
-	let b;
-	let bool = false;
-
-	windowHeight(bool)
-	visualViewport.addEventListener('resize', function () {
-		// 키보드 활성화로 화면에 보이는 높이 
-		b = Math.floor(window.visualViewport.height)  //고정값
-
-		bool = !bool
-		windowHeight(bool)
-	})
-
-
-	function windowHeight(bool) {
-		if (bool) {
-			document.querySelector('html').style.height = b + 'px'
-			$('.btn-purple-bg').text(b)
-		} else {
-			document.querySelector('html').style.height = a + 'px'
-		}
-		$('.visualViewport').text(a + ", " + b)
-	}
-
-	function reLoad() {
-		window.location.reload()
-	}
-
-
 
 </script>
 @@include('../include/countCharDelete.html')

@@ -119,11 +119,10 @@
 
 	const a = window.innerHeight;
 	let b;
-	let c = 0;
 	let bool = false;
 
 	windowHeight(bool)
-	$('input').focus(function () {
+	visualViewport.addEventListener('resize', function () {
 		// 키보드 활성화로 화면에 보이는 높이 
 		b = Math.floor(window.visualViewport.height)  //고정값
 
@@ -133,16 +132,13 @@
 
 
 	function windowHeight(bool) {
-		c = a - b
 		if (bool) {
 			document.querySelector('body').style.height = b + 'px'
 			$('.btn-purple-bg').text(b)
 		} else {
 			document.querySelector('body').style.height = a + 'px'
-			c = 0
 		}
-		$('.visualViewport').text(a + ", " + b + ", " + c)
-		// $('.btn_area.next').css('bottom', c)
+		$('.visualViewport').text(a + ", " + b)
 	}
 
 	function reLoad() {

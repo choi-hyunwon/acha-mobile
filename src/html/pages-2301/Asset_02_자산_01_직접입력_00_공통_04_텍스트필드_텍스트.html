@@ -124,19 +124,19 @@
 
 	windowHeight(bool)
 	visualViewport.addEventListener('resize', function () {
+		// 키보드 활성화로 화면에 보이는 높이
 		b = Math.floor(window.visualViewport.height)
-		console.log(5555);
+		console.log(b);
 		bool = !bool
 		windowHeight(bool)
 		$('.visualViewport').text(a)
 	})
-	$('.visualViewport').text(b)
-
 	function windowHeight(bool) {
 		if (bool) {
 			c = a - b
 			console.log(1111);
 			document.querySelector('body').style.height = a + 'px'
+			$('.btn-purple-bg').text(b)
 		} else {
 			c = 0
 		}

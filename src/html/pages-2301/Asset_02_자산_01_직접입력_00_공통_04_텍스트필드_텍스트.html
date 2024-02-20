@@ -38,6 +38,7 @@
 							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
 									/20</span></div>
 						</div>
+						<p class="visualViewport">높이값</p>
 
 						<!-- 금액 -->
 						<div class="custom-light monetary-unit _focus">
@@ -106,7 +107,7 @@
 	const a = $(window).height()
 	$('input').keydown(function () {
 		const b = $(window).height()
-		alert(a + '' + b)
+		$('.visualViewport').text(a + '' + b)
 	})
 
 </script>

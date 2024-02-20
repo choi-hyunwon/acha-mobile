@@ -104,7 +104,7 @@
 	};
 
 	const a = $(window).height()
-	$('input').focus(function () {
+	$('input').keydown(function () {
 		const b = $(window).height()
 		alert(a + '' + b)
 	})

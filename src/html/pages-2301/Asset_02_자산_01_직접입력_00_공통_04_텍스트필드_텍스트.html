@@ -103,6 +103,12 @@
 		$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
 	};
 
+	const a = $(window).height()
+	$('input').focus(function () {
+		const b = $(window).height()
+		alert(a + '' + b)
+	})
+
 </script>
 @@include('../include/countCharDelete.html')
 

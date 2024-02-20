@@ -135,9 +135,9 @@
 		if (bool) {
 			c = a - b
 
-			ab = a - c
-			$('body').height(ab)
+			document.documentElement.style.height = (window.innerHeight - c) + "px";
 
+			console.log(document.documentElement.style.height);
 			d = a - c;
 		} else {
 			c = 0

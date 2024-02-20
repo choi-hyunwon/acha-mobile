@@ -119,24 +119,28 @@
 
 	const a = window.innerHeight;
 	let b;
-	let c;
+	let c = 0;
 	let bool = false;
 
+	windowHeight(bool)
 	visualViewport.addEventListener('resize', function () {
 		b = Math.floor(window.visualViewport.height)
-
 		bool = !bool
 		windowHeight(bool)
+		$('.visualViewport').text(a, b)
+
 	})
 
 	function windowHeight(bool) {
-
 		if (bool) {
 			c = a - b
+			window.innerHeight = window.innerHeight - c;
+		} else {
+			c = 0
 		}
 
-		$('.visualViewport').text(a, b)
 		$('.btn_area.next').css('bottom', c)
+		// console.log(c);
 	}
 
 

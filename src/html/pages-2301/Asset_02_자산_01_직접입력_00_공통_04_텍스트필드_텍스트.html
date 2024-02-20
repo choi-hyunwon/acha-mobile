@@ -105,11 +105,16 @@
 	};
 
 	const a = window.innerHeight
-	$('input').keydown(function () {
+	visualViewport.addEventListener('resize', function () {
 		const b = window.visualViewport.height
-		// console.log(b);
 		$('.visualViewport').text(a + ' ' + b)
+		console.log(a + ' ' + b);
 	})
+	// $('input').keydown(function () {
+	// 	const b = window.visualViewport.height
+	// 	// console.log(b);
+	// 	$('.visualViewport').text(a + ' ' + b)
+	// })
 
 </script>
 @@include('../include/countCharDelete.html')

@@ -106,7 +106,7 @@
 
 	const a = $(window).height()
 	$('input').keydown(function () {
-		const b = $(window).height()
+		const b = window.visualViewport.height
 		$('.visualViewport').text(a + '' + b)
 	})
 

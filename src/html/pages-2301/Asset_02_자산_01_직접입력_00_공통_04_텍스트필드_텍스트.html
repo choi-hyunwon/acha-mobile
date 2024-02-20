@@ -108,7 +108,10 @@
 	visualViewport.addEventListener('resize', function () {
 		const b = window.visualViewport.height
 		$('.visualViewport').text(a + ' ' + b)
-		console.log(a + ' ' + b);
+		let c = a - Math.floor(b)
+		console.log(a, b, c);
+
+		$('.btn_area.next').css('bottom', c)
 	})
 	// $('input').keydown(function () {
 	// 	const b = window.visualViewport.height

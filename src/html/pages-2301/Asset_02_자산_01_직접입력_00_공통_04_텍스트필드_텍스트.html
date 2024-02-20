@@ -38,7 +38,9 @@
 							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
 									/20</span></div>
 						</div>
+
 						<p class="visualViewport">높이값</p>
+						<a onClick="window.location.reload()">새로고침</a>
 
 						<!-- 금액 -->
 						<div class="custom-light monetary-unit _focus">
@@ -56,6 +58,8 @@
 							<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">
 									/20</span></div>
 						</div>
+
+
 
 						<!-- 메모 -->
 						<div class="custom-light ">
@@ -77,6 +81,8 @@
 						</div>
 					</form>
 				</div>
+
+
 			</div>
 		</div>
 	</div>
@@ -107,17 +113,19 @@
 	const a = window.innerHeight
 	visualViewport.addEventListener('resize', function () {
 		const b = window.visualViewport.height
-		$('.visualViewport').text(a + ' ' + b)
+		$('.visualViewport').text(a + ' ' + Math.floor(b))
 		let c = a - Math.floor(b)
 		console.log(a, b, c);
 
 		$('.btn_area.next').css('bottom', c)
 	})
-	// $('input').keydown(function () {
-	// 	const b = window.visualViewport.height
-	// 	// console.log(b);
-	// 	$('.visualViewport').text(a + ' ' + b)
-	// })
+
+
+	function reLoad() {
+		window.location.reload()
+	}
+
+
 
 </script>
 @@include('../include/countCharDelete.html')

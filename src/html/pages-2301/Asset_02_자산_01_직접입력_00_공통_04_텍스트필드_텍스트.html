@@ -135,9 +135,10 @@
 	function windowHeight(bool) {
 		c = a - b
 		if (bool) {
-			document.querySelector('body').style.height = a + 'px'
+			document.querySelector('body').style.height = b + 'px'
 			$('.btn-purple-bg').text(b)
 		} else {
+			document.querySelector('body').style.height = a + 'px'
 			c = 0
 		}
 		$('.visualViewport').text(a)

@@ -110,15 +110,38 @@
 		$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
 	};
 
-	const a = window.innerHeight
-	visualViewport.addEventListener('resize', function () {
-		const b = window.visualViewport.height
-		$('.visualViewport').text(a + ' ' + Math.floor(b))
-		let c = a - Math.floor(b)
-		console.log(a, b, c);
 
-		$('.btn_area.next').css('bottom', c)
+	// 접속 기종 확인
+	// let varUA = navigator.userAgent.toLocaleLowerCase();
+	// if (varUA.indexOf('varUA.indexOf("iphone")') > -1) {
+	// }
+
+
+	const a = window.innerHeight;
+	let b;
+	let c;
+	let bool = false;
+
+	visualViewport.addEventListener('resize', function () {
+		b = Math.floor(window.visualViewport.height)
+
+		bool = !bool
+		windowHeight(bool)
 	})
+
+	function windowHeight(bool) {
+
+		if (bool) {
+			c = a - b
+		}
+
+		$('.visualViewport').text(a, b)
+		$('.btn_area.next').css('bottom', c)
+	}
+
+
+
+	c = a - b
 
 
 	function reLoad() {

@@ -1874,6 +1874,7 @@
     position: relative;
 
     .agree-item {
+      position: relative;
       justify-content: start;
     }
 
@@ -1951,6 +1952,13 @@
       font-family: var(--font3);
       color: #37354e;
       padding-bottom: 3px;
+
+      .ico_list_arrow_large {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
     &.allChk {

@@ -135,7 +135,9 @@
 		if (bool) {
 			c = a - b
 
-			window.innerHeight = a - b
+			ab = a - b
+			$('body').height(ab)
+
 			d = a - c;
 		} else {
 			c = 0

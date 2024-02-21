@@ -3361,6 +3361,11 @@
                   font-size: 15px;
                   font-family: var(--font2);
                   color: var(--text-01);
+                  background-color: transparent;
+
+                  &::-webkit-date-and-time-value {
+                    text-align: right;
+                  }
 
                   &:focus-visible {
                     outline: none;

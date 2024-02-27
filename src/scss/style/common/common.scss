@@ -2,14 +2,16 @@
 common
  */
 
-.unset-height{
-  min-height: unset!important;
+.unset-height {
+  min-height: unset !important;
 }
+
 .visually_hidden {
   overflow: hidden;
   position: absolute;
   left: -999999px;
-  clip: rect(0, 0, 0, 0); /*ie6,7*/
+  clip: rect(0, 0, 0, 0);
+  /*ie6,7*/
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
@@ -69,7 +71,7 @@ common
   text-align: center;
 }
 
-.vertical_middle > div {
+.vertical_middle>div {
   display: inline-block;
   vertical-align: middle;
   width: calc(100% - 7px);
@@ -83,27 +85,30 @@ common
 .f-point-pink {
   color: var(--color-point-secondary) !important;
 }
+
 .f-alert {
   color: #f21730 !important;
 }
+
 .f-cancel {
   color: #c2c1cc !important;
   text-decoration: line-through;
 }
+
 .f-line-through {
   text-decoration: line-through;
 }
 
 .f-color-01 {
-  color: var(--text-01);
+  color: var(--text-01) !important;
 }
 
 .f-color-02 {
-  color: var(--text-02);
+  color: var(--text-02) !important;
 }
 
 .f-color-03 {
-  color: var(--text-03);
+  color: var(--text-03) !important;
 }
 
 
@@ -170,6 +175,7 @@ caption.visually_hidden {
 .padding-default {
   padding: 30px 20px;
 }
+
 .padding-default-x {
   padding: 0 20px;
 }
@@ -309,15 +315,16 @@ caption.visually_hidden {
     font-family: var(--font2);
     font-weight: 500;
 
-    + .txt {
+    +.txt {
       margin-top: 20px;
     }
   }
 
-  .btn_area{
+  .btn_area {
     padding-top: 40px;
-    .btn_quit{
-     padding: 0 60px;
+
+    .btn_quit {
+      padding: 0 60px;
       font-size: 15px;
       color: #FFFFFF;
       background-color: var(--color-point);
@@ -345,84 +352,158 @@ caption.visually_hidden {
   width: 22px;
   height: 22px;
 
-  &.ico_list_apartment {background: url("../../img/common/category/ico_list_apartment_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_bank {background: url("../../img/common/category/ico_list_bank_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_book {background: url("../../img/common/category/ico_list_book_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_card {background: url("../../img/common/category/ico_list_card_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_children {background: url("../../img/common/category/ico_list_children_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_coin {background: url("../../img/common/category/ico_list_coin_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_dog {background: url("../../img/common/category/ico_list_dog_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_electric {background: url("../../img/common/category/ico_list_electric_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_etc {background: url("../../img/common/category/ico_list_etc_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_home_01 {background: url("../../img/common/category/ico_list_home_01_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_home_02 {background: url("../../img/common/category/ico_list_home_02_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_home_03 {background: url("../../img/common/category/ico_list_home_03_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_insurance {background: url("../../img/common/category/ico_list_insurance_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_letter {background: url("../../img/common/category/ico_list_letter_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_medical {background: url("../../img/common/category/ico_list_medical_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_people {background: url("../../img/common/category/ico_list_people_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_phone {background: url("../../img/common/category/ico_list_phone_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_rental {background: url("../../img/common/category/ico_list_rental_small_p@2x.png") no-repeat center center/ contain;}
-  &.ico_list_wallet {background: url("../../img/common/category/ico_list_wallet_small_p@2x.png") no-repeat center center/ contain;}
+  &.ico_list_apartment {
+    background: url("../../img/common/category/ico_list_apartment_small_p@2x.png") no-repeat center center/ contain;
+  }
 
-  &.disabled{
-    &.ico_list_apartment {background: url("../../img/common/category/ico_list_apartment_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_bank {background: url("../../img/common/category/ico_list_bank_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_book {background: url("../../img/common/category/ico_list_book_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_card {background: url("../../img/common/category/ico_list_card_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_children {background: url("../../img/common/category/ico_list_children_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_coin {background: url("../../img/common/category/ico_list_coin_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_dog {background: url("../../img/common/category/ico_list_dog_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_electric {background: url("../../img/common/category/ico_list_electric_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_etc {background: url("../../img/common/category/ico_list_etc_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_home_01 {background: url("../../img/common/category/ico_list_home_01_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_home_02 {background: url("../../img/common/category/ico_list_home_02_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_home_03 {background: url("../../img/common/category/ico_list_home_03_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_insurance {background: url("../../img/common/category/ico_list_insurance_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_letter {background: url("../../img/common/category/ico_list_letter_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_medical {background: url("../../img/common/category/ico_list_medical_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_people {background: url("../../img/common/category/ico_list_people_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_phone {background: url("../../img/common/category/ico_list_phone_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_rental {background: url("../../img/common/category/ico_list_rental_small_g@2x.png") no-repeat center center/ contain;}
-    &.ico_list_wallet {background: url("../../img/common/category/ico_list_wallet_small_g@2x.png") no-repeat center center/ contain;}
+  &.ico_list_bank {
+    background: url("../../img/common/category/ico_list_bank_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_book {
+    background: url("../../img/common/category/ico_list_book_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_card {
+    background: url("../../img/common/category/ico_list_card_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_children {
+    background: url("../../img/common/category/ico_list_children_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_coin {
+    background: url("../../img/common/category/ico_list_coin_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_dog {
+    background: url("../../img/common/category/ico_list_dog_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_electric {
+    background: url("../../img/common/category/ico_list_electric_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_etc {
+    background: url("../../img/common/category/ico_list_etc_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_home_01 {
+    background: url("../../img/common/category/ico_list_home_01_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_home_02 {
+    background: url("../../img/common/category/ico_list_home_02_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_home_03 {
+    background: url("../../img/common/category/ico_list_home_03_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_insurance {
+    background: url("../../img/common/category/ico_list_insurance_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_letter {
+    background: url("../../img/common/category/ico_list_letter_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_medical {
+    background: url("../../img/common/category/ico_list_medical_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_people {
+    background: url("../../img/common/category/ico_list_people_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_phone {
+    background: url("../../img/common/category/ico_list_phone_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_rental {
+    background: url("../../img/common/category/ico_list_rental_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.ico_list_wallet {
+    background: url("../../img/common/category/ico_list_wallet_small_p@2x.png") no-repeat center center/ contain;
+  }
+
+  &.disabled {
+    &.ico_list_apartment {
+      background: url("../../img/common/category/ico_list_apartment_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_bank {
+      background: url("../../img/common/category/ico_list_bank_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_book {
+      background: url("../../img/common/category/ico_list_book_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_card {
+      background: url("../../img/common/category/ico_list_card_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_children {
+      background: url("../../img/common/category/ico_list_children_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_coin {
+      background: url("../../img/common/category/ico_list_coin_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_dog {
+      background: url("../../img/common/category/ico_list_dog_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_electric {
+      background: url("../../img/common/category/ico_list_electric_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_etc {
+      background: url("../../img/common/category/ico_list_etc_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_home_01 {
+      background: url("../../img/common/category/ico_list_home_01_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_home_02 {
+      background: url("../../img/common/category/ico_list_home_02_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_home_03 {
+      background: url("../../img/common/category/ico_list_home_03_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_insurance {
+      background: url("../../img/common/category/ico_list_insurance_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_letter {
+      background: url("../../img/common/category/ico_list_letter_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_medical {
+      background: url("../../img/common/category/ico_list_medical_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_people {
+      background: url("../../img/common/category/ico_list_people_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_phone {
+      background: url("../../img/common/category/ico_list_phone_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_rental {
+      background: url("../../img/common/category/ico_list_rental_small_g@2x.png") no-repeat center center/ contain;
+    }
+
+    &.ico_list_wallet {
+      background: url("../../img/common/category/ico_list_wallet_small_g@2x.png") no-repeat center center/ contain;
+    }
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

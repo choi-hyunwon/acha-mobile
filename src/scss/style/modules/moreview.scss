@@ -2299,15 +2299,19 @@ _ .event-btn-area {
     }
 
     .list {
+      padding-left: 0;
+
       p {
         position: relative;
         margin-top: 10px;
+        font-size: 13px;
+        line-height: 19px;
         text-indent: 11px;
 
         &:after {
           content: "";
           position: absolute;
-          left: 0;
+          left: 4px;
           top: 50%;
           transform: translateY(-50%);
           width: 2px;

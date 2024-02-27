@@ -3367,6 +3367,15 @@
                     text-align: right;
                   }
 
+                  &[type=date] {
+                    width: auto;
+                    margin-left: -24px;
+                  }
+
+                  input[type="date"].after::-webkit-calendar-picker-indicator {
+                    display: none;
+                  }
+
                   &:focus-visible {
                     outline: none;
                   }

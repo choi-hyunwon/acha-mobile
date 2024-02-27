@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap">
+        <div class="header _sticky">
+            <a href="#" class="btn_close"></a>
+        </div>
+        <div class="contents">
+            <div class="withdrawal">
+                <div class="withdrawal-txt-lg">종합포털을 통한<br />
+                    <span class="f-point">공동관리</span>&nbsp;<span class="f-color-01">제3자 제공동의 철회</span>요청이 있어요.
+                </div>
+                <div class="box_withdrawal mb-0">
+                    <div class="item">
+                        <div class="title_list mb-0">
+                            <div class="title">요청일: <span>24.02.15</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="withdrawal-check-list">
+                    <p class="tit">
+                        <img src="../../img/common/ico_select_key@2x.png" alt="아이콘" width="17" height="17">
+                        꼭! 확인하세요
+                    </p>
+                    <div class="list mt-10">
+                        <p class="f-color-02">제공동의 철회 시, <span>공동관리 연결이 해제돼요</span></p>
+                        <p class="f-color-02">공동관리로 연결한 <span>정보가 즉시 삭제되고 복원이 불가능해요</span></p>
+                    </div>
+                </div>
+
+                <div class="btn-wrap btn-floating btn-half">
+                    <a href="#" class="btn btn-block btn-lg btn-gray btn-half float-left">제공동의 유지하기</a>
+                    <a href="#" class="btn btn-block btn-lg btn-half float-right">제공동의 철회하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function countChar(val, target) {
+            var len = val.value.length;
+            var targetItem = $(`.${target}`);
+
+            targetItem.text(len);
+
+            if (len === 0) {
+                targetItem.css('color', '#afaeb8')
+            } else {
+                targetItem.css('color', '#37354e')
+            }
+        }
+
+        var selectTarget = $('#category');
+
+        selectTarget.on({
+            'focus': function () {
+                $(this).addClass('focus');
+            },
+            'blur': function () {
+                $(this).addClass('focus');
+            }
+        });
+    </script>
+</body>
+
+</html>

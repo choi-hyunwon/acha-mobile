@@ -3226,10 +3226,10 @@
                       &.ac-num {
                         left: 0;
                         margin-top: 4px;
-                        color: var(--text-04);
 
                         &.undefined {
                           font-size: 12px;
+                          color: var(--text-04);
                         }
                       }
                     }

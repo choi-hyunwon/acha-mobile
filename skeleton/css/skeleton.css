@@ -531,6 +531,7 @@ dl {
   background-color: #efefef;
   border: 0;
 }
+
 .skeleton-box-ex-list .skeleton-category-menu .divider::before {
   display: none;
 }

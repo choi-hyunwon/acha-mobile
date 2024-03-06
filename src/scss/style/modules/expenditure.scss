@@ -3299,6 +3299,19 @@
                           display: block;
                           font-size: 12px;
                           line-height: 14px;
+
+                          .rise,
+                          .fail {
+                            margin-left: 4px;
+                          }
+
+                          .rise {
+                            color: #ef4b61;
+                          }
+
+                          .fail {
+                            color: #4393ff;
+                          }
                         }
 
                         em {

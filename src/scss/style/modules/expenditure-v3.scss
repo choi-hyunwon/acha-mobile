@@ -3664,7 +3664,7 @@
 
                 input[type="date"]::before {
                   content: attr(date-placeholder);
-                  // min-width: 211px;
+                  min-width: 211px;
                   width: 100%;
                   color: #c2c1cc;
                   font-family: var(--font1);

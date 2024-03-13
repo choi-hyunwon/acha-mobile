@@ -3368,9 +3368,9 @@
                     margin-right: 0;
                   }
 
-                  &[type=date] {
-                    width: auto;
-                  }
+                  // &[type=date] {
+                  //   width: auto;
+                  // }
 
                   input[type="date"].after::-webkit-calendar-picker-indicator {
                     display: none;

@@ -3334,7 +3334,7 @@
                   background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
                   display: inline-block;
                   width: 6px;
-                  height: 16px;
+                  height: 20px;
                   margin-left: 8px;
                 }
 
@@ -3353,7 +3353,7 @@
                 }
 
                 input {
-                  width: 211px;
+                  // width: 211px;
                   height: unset;
                   padding: 0;
                   text-align: right;
@@ -3363,8 +3363,9 @@
                   color: var(--text-01);
                   background-color: transparent;
                   position: relative;
-                  display: flex;
+                  // display: flex;
                   justify-content: flex-end;
+                  align-items: center;
 
                   &::-webkit-date-and-time-value {
                     text-align: right;
@@ -3391,9 +3392,9 @@
                     margin-right: -24px;
                   }
 
-                  +.ico_list_arrow_small {
-                    margin-left: 4px;
-                  }
+                  // +.ico_list_arrow_small {
+                  //   margin-left: 4px;
+                  // }
                 }
               }
 
@@ -3681,6 +3682,9 @@
                 }
 
                 &.txt {
+                  display: flex;
+                  justify-content: flex-end;
+                  align-items: center;
                   color: var(--text-01);
                 }
               }

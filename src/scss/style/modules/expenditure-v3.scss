@@ -3362,6 +3362,9 @@
                   font-family: var(--font2);
                   color: var(--text-01);
                   background-color: transparent;
+                  position: relative;
+                  display: flex;
+                  justify-content: flex-end;
 
                   &::-webkit-date-and-time-value {
                     text-align: right;
@@ -3660,9 +3663,15 @@
 
                 input[type="date"]::before {
                   content: attr(date-placeholder);
+                  min-width: 204px;
                   width: 100%;
                   color: #c2c1cc;
                   font-family: var(--font1);
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  transform-box: content-box;
+                  transform: translateY(-50%);
                 }
 
                 input[type="date"]:focus::before,

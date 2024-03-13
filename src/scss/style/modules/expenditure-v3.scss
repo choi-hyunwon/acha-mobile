@@ -3370,7 +3370,6 @@
 
                   &[type=date] {
                     width: auto;
-                    text-align: right;
                   }
 
                   input[type="date"].after::-webkit-calendar-picker-indicator {
@@ -3665,6 +3664,7 @@
                   width: 100%;
                   color: #c2c1cc;
                   font-family: var(--font1);
+                  text-align: right;
                 }
 
                 input[type="date"]:focus::before,

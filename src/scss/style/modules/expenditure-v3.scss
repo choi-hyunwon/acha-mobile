@@ -3660,6 +3660,9 @@
               }
 
               .val {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
                 font-size: 15px;
                 color: #c2c1cc;
 
@@ -3682,9 +3685,6 @@
                 }
 
                 &.txt {
-                  display: flex;
-                  justify-content: flex-end;
-                  align-items: center;
                   color: var(--text-01);
                 }
               }

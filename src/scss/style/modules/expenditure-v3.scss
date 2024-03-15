@@ -3329,6 +3329,8 @@
                 color: var(--text-01);
                 font-family: var(--font2);
                 max-width: 225px;
+                display: flex;
+                align-items: center;
 
                 .ico_list_arrow_small {
                   background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;
@@ -3363,7 +3365,7 @@
                   color: var(--text-01);
                   background-color: transparent;
                   position: relative;
-                  // display: flex;
+                  display: flex;
                   justify-content: flex-end;
                   align-items: center;
 
@@ -3389,7 +3391,7 @@
                     color: #c2c1cc;
                     font-family: var(--font1);
                     font-weight: normal;
-                    margin-right: -24px;
+                    // margin-right: -24px;
                   }
 
                   // +.ico_list_arrow_small {

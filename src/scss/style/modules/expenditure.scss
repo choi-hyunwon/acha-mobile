@@ -2764,8 +2764,15 @@
             font-size: 14px;
             line-height: 16px;
 
+            &.rise,
+            &.fail {
+              line-height: 20px;
+              font-weight: normal;
+            }
+
             &.rise {
               color: #ef4b61;
+
             }
 
             &.fail {
@@ -3384,6 +3391,7 @@
                     flex: 1;
 
                     >.img {
+                      flex-shrink: 0;
                       width: 22px;
                       height: 22px;
 

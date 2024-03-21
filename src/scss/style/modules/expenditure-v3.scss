@@ -3792,6 +3792,17 @@
                     line-height: 24px;
                     font-family: var(--font2);
                   }
+
+                  .tit {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+
+                  .val {
+                    flex-shrink: 0;
+                    margin-left: 12px;
+                  }
                 }
 
                 .data {

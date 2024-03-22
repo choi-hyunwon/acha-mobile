@@ -3968,8 +3968,10 @@
               color: var(--text-01);
               font-family: var(--font1);
               right: 5px;
-              bottom: 13px;
+              bottom: 0;
               line-height: 18px;
+              margin-bottom: 13px;
+
             }
 
             .sub-desc {
@@ -3994,7 +3996,8 @@
 
             .btn-clear-input {
               right: 20px;
-              bottom: 12.5px;
+              bottom: 0;
+              margin-bottom: 12px;
             }
           }
 

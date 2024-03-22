@@ -10092,6 +10092,10 @@
       }
 
       .disabled {
+        .img {
+          opacity: 0.5;
+        }
+
         .info {
           .tit {
             color: var(--text-04);

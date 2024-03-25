@@ -3961,15 +3961,18 @@
 
             &:after {
               content: '원';
-              clear: both;
-              display: inline-block;
+              // clear: both;
+              // display: inline-block;
               position: absolute;
               font-size: 16px;
               color: var(--text-01);
-              font-family: var(--font1);
+              // font-family: var(--font1);
               right: 5px;
-              top: 32px;
-              line-height: 18px
+              top: 35px;
+              line-height: 18px;
+              height: 18px;
+              font-family: var(--font8);
+
             }
 
             .sub-desc {
@@ -3995,7 +3998,7 @@
             .btn-clear-input {
               right: 20px;
               bottom: unset;
-              top: 33px;
+              top: 35px;
             }
           }
 

@@ -2809,8 +2809,11 @@
                             }
 
                             .tit {
+                                flex-shrink: 0;
+                                margin-right: 12px;
                                 font-size: 15px;
                                 color: var(--text-02);
+
                             }
 
                             .val {

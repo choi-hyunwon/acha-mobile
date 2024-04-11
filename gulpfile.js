@@ -66,7 +66,6 @@ function jsLib() {
     "src/js/lib/chartjs-plugin-datalabels.js",
     "src/js/lib/chartjs-plugin-annotation.min.js",
     "src/js/lib/swiper.min.js",
-    "src/js/lib/lottie.player.js",
   ];
   return gulp
     .src(sourceLib)

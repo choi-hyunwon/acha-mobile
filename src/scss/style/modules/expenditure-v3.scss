@@ -6994,6 +6994,7 @@
       }
     }
 
+    .title,
     label {
       position: relative;
       display: inline-block;
@@ -7530,6 +7531,23 @@
       }
 
       .custom-light {
+        .val-date {
+          border: 1px solid #e2e3e6;
+          border-radius: 4px;
+          padding: 11px 12px;
+          width: 100%;
+          height: 42px;
+          display: flex;
+          align-items: center;
+
+          input {
+            border: 0;
+            padding: 0;
+            display: none;
+          }
+        }
+
+        .title,
         label {
           color: var(--text-01);
 

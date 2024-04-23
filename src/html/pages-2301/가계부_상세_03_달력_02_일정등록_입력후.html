@@ -15,12 +15,13 @@
                     <div class="custom-light _focus">
                         <div class="title">일자</div>
                         <label class="val-date" for="dateInput"></label>
-                        <input class="value" title="value" type="date" id="dateInput" value="2023년 10월 12일 금요일">
+                        <input class="value" title="value" type="date" id="dateInput" value="">
                         <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘" class="calendar">
                         <script>
                             const dateInput = document.getElementById('dateInput');
                             const valDate = document.querySelector('.val-date');
 
+                            // input 클릭 시 출력
                             dateInput.addEventListener('input', function () {
                                 // 오늘 날짜를 가져옴
                                 const selectedDate = new Date(dateInput.value);
@@ -35,6 +36,7 @@
                                 valDate.textContent = inputVal
                             });
 
+                            // 화면 초기 진입값
                             function initialValue() {
                                 const defaultDate = new Date();
                                 const options = { weekday: 'long' };

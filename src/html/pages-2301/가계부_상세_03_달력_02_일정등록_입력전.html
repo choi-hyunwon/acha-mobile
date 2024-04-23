@@ -13,9 +13,39 @@
                 <div class="expenditure-story-wrap schedule-story-wrap">
 
                     <div class="custom-light _focus">
-                        <label class="title">일자</label>
-                        <input title="value" type="text" id="datepicker" value="2023년 10월 12일 금요일">
+                        <div class="title">일자</div>
+                        <label class="val-date" for="dateInput"></label>
+                        <input class="value" title="value" type="date" id="dateInput" value="">
                         <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘" class="calendar">
+                        <script>
+                            const dateInput = document.getElementById('dateInput');
+                            const valDate = document.querySelector('.val-date');
+
+                            // input 클릭 시 출력
+                            dateInput.addEventListener('input', function () {
+                                // 오늘 날짜를 가져옴
+                                const selectedDate = new Date(dateInput.value);
+
+                                // 요일을 가져오기 위해 날짜 객체를 사용하여 날짜를 형식화함
+                                const options = { weekday: 'long' };
+                                const dayOfWeek = new Intl.DateTimeFormat('ko-KR', options).format(selectedDate);
+
+                                // 오늘 날짜와 요일을 YYYY-MM-DD 형식에 추가하여 value로 설정
+                                let inputVal = selectedDate.getFullYear() + `년 ` + String(selectedDate.getMonth() + 1).padStart(2, '0') + `월 ` + String(selectedDate.getDate()).padStart(2, '0') + `일 ` + dayOfWeek;
+                                dateInput.value = inputVal
+                                valDate.textContent = inputVal
+                            });
+
+                            // 화면 초기 진입값
+                            function initialValue() {
+                                const defaultDate = new Date();
+                                const options = { weekday: 'long' };
+                                const dayOfWeek = new Intl.DateTimeFormat('ko-KR', options).format(defaultDate);
+                                valDate.textContent = defaultDate.getFullYear() + `년 ` + String(defaultDate.getMonth() + 1).padStart(2, '0') + `월 ` + String(defaultDate.getDate()).padStart(2, '0') + `일 ` + dayOfWeek;
+                                console.log(valDate.textContent);
+                            }
+                            initialValue()
+                        </script>
                     </div>
 
                     <div class="custom-light _focus">

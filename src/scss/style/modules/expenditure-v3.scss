@@ -7540,7 +7540,15 @@
           display: flex;
           align-items: center;
 
-          input {
+          position: relative;
+          z-index: 1;
+
+          +input {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin-right: 0;
+            z-index: 0;
             padding: 0;
             height: 40px;
             border: 0;

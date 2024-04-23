@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date Input with Day of Week</title>
+</head>
+
+<body>
+
+    <label for="dateInput">
+        텍스트
+        <input type="date" id="dateInput">
+    </label>
+    <div class="val" for="dateInput"></div>
+
+    <script>
+        const dateInput = document.getElementById('dateInput');
+        const val = document.querySelector('.val');
+
+        dateInput.addEventListener('input', function () {
+            // 오늘 날짜를 가져옴
+            const selectedDate = new Date(dateInput.value);
+
+            // 요일을 가져오기 위해 날짜 객체를 사용하여 날짜를 형식화함
+            const options = { weekday: 'long' };
+            const dayOfWeek = new Intl.DateTimeFormat('ko-KR', options).format(selectedDate);
+
+            // 오늘 날짜와 요일을 YYYY-MM-DD 형식에 추가하여 value로 설정
+            let inputVal = selectedDate.getFullYear() + `년 ` + String(selectedDate.getMonth() + 1).padStart(2, '0') + `월 ` + String(selectedDate.getDate()).padStart(2, '0') + `일 ` + dayOfWeek;
+            dateInput.value = inputVal
+            console.log(dateInput.value);
+            val.textContent = inputVal
+        });
+    </script>
+
+</body>
+
+</html>

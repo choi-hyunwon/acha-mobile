@@ -14,7 +14,27 @@
 
                     <div class="custom-light _focus">
                         <label class="title">일자</label>
-                        <input title="value" type="text" id="datepicker" value="2023년 10월 12일 금요일">
+                        <input title="value" type="date" id="dateInput" value="2023년 10월 12일 금요일">
+                        <div id="dayOfWeek"></div>
+                        <script>
+                            document.getElementById('dateInput').value = new Date().toISOString().substring(0, 10);;
+
+                            const dateInput = document.getElementById('dateInput');
+                            const dayOfWeekDisplay = document.getElementById('dayOfWeek');
+
+                            dateInput.addEventListener('input', function () {
+                                // 사용자가 선택한 날짜를 가져옴
+                                const selectedDate = new Date(dateInput.value);
+
+                                // 요일을 가져오기 위해 날짜 객체를 사용하여 날짜를 형식화함
+                                const options = { weekday: 'long' };
+                                const dayOfWeek = new Intl.DateTimeFormat('ko-KR', options).format(selectedDate);
+
+                                // 요일을 화면에 표시
+                                dayOfWeekDisplay.textContent = dayOfWeek;
+                                console.log(dayOfWeek);
+                            });
+                        </script>
                         <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘" class="calendar">
                     </div>
 

@@ -16,6 +16,9 @@
                         <label class="title need">일자</label>
                         <input class="value" title="value" type="date" id="dateInput" value="">
                         <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘" class="calendar">
+                        <script>
+                            document.getElementById('dateInput').value = new Date().toISOString().substring(0, 10);;
+                        </script>
                     </div>
 
                     <div class="custom-light _focus">

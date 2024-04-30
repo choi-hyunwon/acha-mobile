@@ -7129,10 +7129,12 @@
         padding: 9px 12px;
         font-family: var(--font2);
         margin-bottom: 0;
-        color: var(--text-01);
+        font-size: 15px;
+        color: #37354E;
 
         &::placeholder {
           font-family: var(--font1);
+          color: #c2c1cc;
         }
       }
     }
@@ -7578,6 +7580,10 @@
           border: 1px solid #e2e3e6;
           border-radius: 4px;
           padding: 11px 12px;
+
+          &::placeholder {
+            color: #c2c1cc;
+          }
         }
 
         .calendar {

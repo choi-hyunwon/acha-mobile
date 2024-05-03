@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <filter id="5o7z3e4sbc" x="11.661" y="18.03" width="76.668" height="86.666" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="1"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-color="#fff" flood-opacity=".29" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="l3et9sqhld">
+            <feOffset dx=".5" dy=".5"/>
+            <feGaussianBlur stdDeviation=".25" result="blur-2"/>
+            <feFlood flood-opacity=".2" result="color-2"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+            <feComposite operator="in" in="color-2"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="1nwt3plhff">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation=".5" result="blur-3"/>
+            <feFlood flood-color="#8d45cb" flood-opacity=".918" result="color-3"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+            <feComposite operator="in" in="color-3"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="zuht43aogg">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation=".5" result="blur-4"/>
+            <feFlood flood-color="#8d45cb" flood-opacity=".918" result="color-4"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+            <feComposite operator="in" in="color-4"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="uer32d982h">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation=".5" result="blur-5"/>
+            <feFlood flood-color="#8d45cb" flood-opacity=".918" result="color-5"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-5"/>
+            <feComposite operator="in" in="color-5"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="uoe7q0we9i">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur-6"/>
+            <feFlood flood-opacity=".161" result="color-6"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-6"/>
+            <feComposite operator="in" in="color-6"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <linearGradient id="xl7cibgfgb" x1=".17" x2=".876" y2=".869" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#da7ce6"/>
+            <stop offset="1" stop-color="#b73cdb"/>
+        </linearGradient>
+        <linearGradient id="7zb9590dne" x1=".146" y1=".093" x2=".287" y2=".894" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#6512ac"/>
+            <stop offset="1" stop-color="#4a1e90"/>
+        </linearGradient>
+        <clipPath id="5898fwasra">
+            <circle data-name="타원 1995" cx="50" cy="50" r="50" style="stroke:#707070;fill:#fff"/>
+        </clipPath>
+    </defs>
+    <g>
+        <circle data-name="타원 1996" cx="50" cy="50" r="50" style="fill:#fbeafd"/>
+        <g data-name="그룹 20371">
+            <g data-name="마스크 그룹 39" style="clip-path:url(#5898fwasra)">
+                <g data-name="그룹 19976">
+                    <g data-type="innerShadowGroup">
+                        <path data-name="빼기 2" d="M38.962 86.666H37.709v-.014c-14.2-.328-23.139-6.183-28.134-11.038a35.061 35.061 0 0 1-6.816-9.193 22.665 22.665 0 0 1-2.52-8.143C-.46 48.829.5 27.49 1.456 19.6A27.633 27.633 0 0 1 6.533 6.883C8.89 3.743 13.025 0 19.34 0a16.943 16.943 0 0 1 1.92.112c5.408.62 9.361 3.022 11.749 7.139a21.1 21.1 0 0 1 2.545 9.528c.122 2.3.423 7.709.9 16.088V34.793a1.885 1.885 0 1 0 3.77 0v-1.928c.263-4.67.73-12.971.9-16.088a21.1 21.1 0 0 1 2.535-9.527C46.047 3.133 50 .731 55.408.112A16.943 16.943 0 0 1 57.328 0c6.315 0 10.45 3.743 12.807 6.883A27.641 27.641 0 0 1 75.212 19.6c.953 7.893 1.916 29.235 1.216 38.675-.337 4.537-2.755 11.48-8.535 17.359a34.4 34.4 0 0 1-11.416 7.618 47.964 47.964 0 0 1-17.515 3.4v.012z" transform="translate(11.662 18.03)" style="fill:url(#xl7cibgfgb)"/>
+                        <g style="filter:url(#5o7z3e4sbc)">
+                            <path data-name="빼기 2" d="M38.962 86.666H37.709v-.014c-14.2-.328-23.139-6.183-28.134-11.038a35.061 35.061 0 0 1-6.816-9.193 22.665 22.665 0 0 1-2.52-8.143C-.46 48.829.5 27.49 1.456 19.6A27.633 27.633 0 0 1 6.533 6.883C8.89 3.743 13.025 0 19.34 0a16.943 16.943 0 0 1 1.92.112c5.408.62 9.361 3.022 11.749 7.139a21.1 21.1 0 0 1 2.545 9.528c.122 2.3.423 7.709.9 16.088V34.793a1.885 1.885 0 1 0 3.77 0v-1.928c.263-4.67.73-12.971.9-16.088a21.1 21.1 0 0 1 2.535-9.527C46.047 3.133 50 .731 55.408.112A16.943 16.943 0 0 1 57.328 0c6.315 0 10.45 3.743 12.807 6.883A27.641 27.641 0 0 1 75.212 19.6c.953 7.893 1.916 29.235 1.216 38.675-.337 4.537-2.755 11.48-8.535 17.359a34.4 34.4 0 0 1-11.416 7.618 47.964 47.964 0 0 1-17.515 3.4v.012z" transform="translate(11.662 18.03)" style="fill:#fff"/>
+                        </g>
+                    </g>
+                    <g data-type="innerShadowGroup">
+                        <g data-name="합치기 201" style="fill:#44236c">
+                            <path d="M6.239 8.229a6.284 6.284 0 0 1-5.29-2.97A6.689 6.689 0 0 1 .008 2.5 2.311 2.311 0 0 1 2.31 0h.074l8.626.279a2.308 2.308 0 0 1 2.169 2.857 6.777 6.777 0 0 1-6.592 5.1c-.116 0-.232-.003-.348-.007z" style="stroke:none" transform="translate(43.232 69.036)"/>
+                            <path d="M6.587 8.236c4.227 0 6.16-3.335 6.592-5.1a2.312 2.312 0 0 0-.403-1.945A2.312 2.312 0 0 0 11.01.279L2.383.002A2.307 2.307 0 0 0 .007 2.5c.02.235.157 1.474.942 2.76 1.11 1.814 2.988 2.87 5.29 2.969.116.004.232.007.348.007m0 .2c-.102 0-.212-.002-.356-.007C3.86 8.326 1.923 7.237.78 5.363c-.806-1.318-.95-2.602-.97-2.846A2.512 2.512 0 0 1 2.391-.198l8.625.278c.76.025 1.459.385 1.918.99.46.605.619 1.375.438 2.114C12.93 5 10.94 8.436 6.587 8.436z" style="stroke:none" transform="translate(43.232 69.036)"/>
+                        </g>
+                        <g style="filter:url(#l3et9sqhld)">
+                            <g data-name="합치기 201" style="fill:#fff" transform="translate(.002)">
+                                <path d="M6.239 8.229a6.284 6.284 0 0 1-5.29-2.97A6.689 6.689 0 0 1 .008 2.5 2.311 2.311 0 0 1 2.31 0h.074l8.626.279a2.308 2.308 0 0 1 2.169 2.857 6.777 6.777 0 0 1-6.592 5.1c-.116 0-.232-.003-.348-.007z" style="stroke:none" transform="translate(43.23 69.04)"/>
+                                <path d="M6.587 8.236c4.227 0 6.16-3.335 6.592-5.1a2.312 2.312 0 0 0-.403-1.945A2.312 2.312 0 0 0 11.01.279L2.383.002A2.307 2.307 0 0 0 .007 2.5c.02.235.157 1.474.942 2.76 1.11 1.814 2.988 2.87 5.29 2.969.116.004.232.007.348.007m0 .2c-.102 0-.212-.002-.356-.007C3.86 8.326 1.923 7.237.78 5.363c-.806-1.318-.95-2.602-.97-2.846A2.512 2.512 0 0 1 2.391-.198l8.625.278c.76.025 1.459.385 1.918.99.46.605.619 1.375.438 2.114C12.93 5 10.94 8.436 6.587 8.436z" style="stroke:none" transform="translate(43.23 69.04)"/>
+                            </g>
+                        </g>
+                        <g data-name="합치기 201" style="stroke-linecap:round;stroke-linejoin:round;fill:none">
+                            <path d="M6.239 8.229a6.284 6.284 0 0 1-5.29-2.97A6.689 6.689 0 0 1 .008 2.5 2.311 2.311 0 0 1 2.31 0h.074l8.626.279a2.308 2.308 0 0 1 2.169 2.857 6.777 6.777 0 0 1-6.592 5.1c-.116 0-.232-.003-.348-.007z" style="stroke:none" transform="translate(43.232 69.036)"/>
+                            <path d="M6.587 8.236c4.227 0 6.16-3.335 6.592-5.1a2.312 2.312 0 0 0-.403-1.945A2.312 2.312 0 0 0 11.01.279L2.383.002A2.307 2.307 0 0 0 .007 2.5c.02.235.157 1.474.942 2.76 1.11 1.814 2.988 2.87 5.29 2.969.116.004.232.007.348.007m0 .2c-.102 0-.212-.002-.356-.007C3.86 8.326 1.923 7.237.78 5.363c-.806-1.318-.95-2.602-.97-2.846A2.512 2.512 0 0 1 2.391-.198l8.625.278c.76.025 1.459.385 1.918.99.46.605.619 1.375.438 2.114C12.93 5 10.94 8.436 6.587 8.436z" style="fill:rgba(255,255,255,.16);stroke:none" transform="translate(43.232 69.036)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g data-name="그룹 20227">
+                <g data-name="그룹 20187" transform="translate(19.067 71.292)">
+                    <ellipse data-name="타원 2113" cx="8.432" cy="4.769" rx="8.432" ry="4.769" transform="rotate(-7 39.528 -370.58)" style="fill:#ea6fdb"/>
+                    <ellipse data-name="타원 2116" cx="8.397" cy="5.132" rx="8.397" ry="5.132" transform="rotate(-173 8.709 5.611)" style="fill:#ea6fdb"/>
+                </g>
+                <g data-name="그룹 20183">
+                    <g data-name="그룹 20177">
+                        <g data-type="innerShadowGroup">
+                            <path data-name="패스 25808" d="M9.825 4.112a1.581 1.581 0 0 1-.54-.1 16.1 16.1 0 0 0-3.837-.83 6.655 6.655 0 0 0-3.094.727A1.589 1.589 0 0 1 .82 1.13 9.7 9.7 0 0 1 5.627.012a19.163 19.163 0 0 1 4.738 1.015 1.59 1.59 0 0 1-.541 3.085z" transform="translate(44.605 61.92)" style="fill:url(#7zb9590dne)"/>
+                            <g style="filter:url(#1nwt3plhff)">
+                                <path data-name="패스 25808" d="M9.825 4.112a1.581 1.581 0 0 1-.54-.1 16.1 16.1 0 0 0-3.837-.83 6.655 6.655 0 0 0-3.094.727A1.589 1.589 0 0 1 .82 1.13 9.7 9.7 0 0 1 5.627.012a19.163 19.163 0 0 1 4.738 1.015 1.59 1.59 0 0 1-.541 3.085z" transform="translate(44.597 61.918)" style="fill:#fff"/>
+                            </g>
+                        </g>
+                        <g data-type="innerShadowGroup">
+                            <path data-name="타원 1997" d="M13.552 3.18a10.4 10.4 0 1 0 10.379 10.4 10.4 10.4 0 0 0-10.379-10.4m0-3.18A13.578 13.578 0 1 1 0 13.578 13.565 13.565 0 0 1 13.552 0z" transform="translate(19.067 51.318)" style="fill:url(#7zb9590dne)"/>
+                            <g style="filter:url(#zuht43aogg)">
+                                <path data-name="타원 1997" d="M13.552 3.18a10.4 10.4 0 1 0 10.379 10.4 10.4 10.4 0 0 0-10.379-10.4m0-3.18A13.578 13.578 0 1 1 0 13.578 13.565 13.565 0 0 1 13.552 0z" transform="translate(19.067 51.318)" style="fill:#fff"/>
+                            </g>
+                        </g>
+                        <g data-type="innerShadowGroup">
+                            <path data-name="타원 1998" d="M13.552 3.18a10.4 10.4 0 1 0 10.379 10.4 10.4 10.4 0 0 0-10.379-10.4m0-3.18A13.578 13.578 0 1 1 0 13.578 13.565 13.565 0 0 1 13.552 0z" transform="translate(53.883 51.318)" style="fill:url(#7zb9590dne)"/>
+                            <g style="filter:url(#uer32d982h)">
+                                <path data-name="타원 1998" d="M13.552 3.18a10.4 10.4 0 1 0 10.379 10.4 10.4 10.4 0 0 0-10.379-10.4m0-3.18A13.578 13.578 0 1 1 0 13.578 13.565 13.565 0 0 1 13.552 0z" transform="translate(53.877 51.318)" style="fill:#fff"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g data-name="그룹 20178" transform="translate(27.622 59.149)">
+                        <circle data-name="타원 1935" cx="6.837" cy="6.837" r="6.837" style="fill:#fff"/>
+                        <circle data-name="타원 1937" cx="3.988" cy="3.988" r="3.988" transform="translate(1.429 3.418)"/>
+                        <circle data-name="타원 2112" cx="1.316" cy="1.316" r="1.316" transform="translate(2.733 4.709)" style="fill:#fff"/>
+                    </g>
+                </g>
+                <g data-type="innerShadowGroup">
+                    <path data-name="패스 25856" d="M13.133 4.432A7.052 7.052 0 0 0 .091 4.3 1.121 1.121 0 0 0 .5 5.676a1.122 1.122 0 0 0 1.429-.12 6.925 6.925 0 0 1 4.678-2.174c1.268-.037 2.917.57 4.682 2.285a1.134 1.134 0 0 0 1.844-1.236" transform="rotate(3 -1144.99 1189.97)" style="fill:#242424"/>
+                    <g style="filter:url(#uoe7q0we9i)">
+                        <path data-name="패스 25856" d="M13.133 4.432A7.052 7.052 0 0 0 .091 4.3 1.121 1.121 0 0 0 .5 5.676a1.122 1.122 0 0 0 1.429-.12 6.925 6.925 0 0 1 4.678-2.174c1.268-.037 2.917.57 4.682 2.285a1.134 1.134 0 0 0 1.844-1.236" transform="rotate(3 -1145.05 1189.932)" style="fill:#fff"/>
+                    </g>
+                    <path data-name="패스 25856" d="M13.133 4.432A7.052 7.052 0 0 0 .091 4.3 1.121 1.121 0 0 0 .5 5.676a1.122 1.122 0 0 0 1.429-.12 6.925 6.925 0 0 1 4.678-2.174c1.268-.037 2.917.57 4.682 2.285a1.134 1.134 0 0 0 1.844-1.236" transform="rotate(3 -1144.99 1189.97)" style="stroke:rgba(255,255,255,.29);stroke-width:.2px;fill:none"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

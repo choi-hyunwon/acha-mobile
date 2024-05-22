@@ -6159,6 +6159,10 @@
               height: 100%;
               line-height: 14px;
               border-radius: 0 2px 2px 0;
+
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
             }
           }
 
@@ -6357,7 +6361,7 @@
 
               .emotion {
                 position: absolute;
-                top: 20px;
+                top: 24px;
                 right: 20px;
                 display: flex;
                 align-items: center;
@@ -6432,9 +6436,13 @@
                 justify-content: flex-start;
 
                 .title {
+                  width: calc(100% - 98px);
                   font-size: 15px;
                   font-family: var(--font2);
                   line-height: 22px;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
                 }
               }
 
@@ -6498,6 +6506,7 @@
             }
 
             .icon-user {
+              flex-shrink: 0;
               position: relative;
               display: inline-block;
               margin-right: 6px;

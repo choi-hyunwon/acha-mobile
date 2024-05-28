@@ -5967,9 +5967,17 @@
 
       .fc {
         .fc-day-header {
-          color: #37354e !important;
+          color: #37354e;
           font-size: 13px;
           font-family: var(--font1);
+
+          &.fc-sun {
+            color: #ef5c82;
+          }
+
+          &.fc-sat {
+            color: #4b6ae8;
+          }
         }
 
         .fc-day-number {

@@ -1,3 +1,78 @@
 .chatgpt {
-    display: block;
+    .ico {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        &.gpt-profile {
+            background-image: url('../../img/common/chat/ic_gpt_profile@2x.png')
+        }
+    }
+
+    .wrap {
+        .chat-box {
+            padding: 0 20px;
+
+            .date {
+                padding: 3px 16px;
+                margin: 0 auto;
+                width: fit-content;
+                background: #f8f7fc;
+                font-size: 11px;
+                line-height: 15px;
+                border-radius: 11px;
+            }
+
+            .chat {
+                display: flex;
+                gap: 10px;
+
+                ul {
+                    flex: 1;
+                }
+
+                &.left {
+                    .text {
+                        border-radius: 0 26px 26px;
+                    }
+                }
+
+                &.right {
+                    .text {
+                        border-radius: 26px 0 26px 26px;
+                    }
+
+                    .recommend-search {
+                        margin-top: 8px;
+                        text-align: right;
+
+                        button {
+                            padding: 17px 23px;
+                            width: calc(100% - 40px);
+                            background: #fff;
+                            font-size: 14px;
+                            line-height: 22px;
+                            border: 1px solid #e1dceb;
+                            border-radius: 10px;
+                            letter-spacing: -0.3px;
+
+                            &~button {
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .text {
+                    background: #f8f7fc;
+                    padding: 20px;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
 }

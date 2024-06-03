@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <body>
     <div class="wrap renewal">
@@ -20,44 +21,42 @@
                     <div class="time-stamp">
                         <div class="date mb-20">2024.01.05</div>
                         <!-- 채팅 위치는 left, right 구분 -->
+                        <div class="chat right">
+                            <ul>
+                                <!-- 첫번째 채팅은 .mt-20 제거 -->
+                                <li class="text">
+                                    <div class="split">
+                                        가나다라마바사마바사아자카타파하가나다라마바사아자차카타파하가나다라마바사아자차
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
                         <div class="chat left">
                             <i class="ico gpt-profile"></i>
                             <ul>
                                 <!-- 첫번째 채팅은 .mt-20 제거 -->
                                 <li class="text">
-                                    <div>
-                                        안녕하세요. <br />
-                                        저는 신용카드 검색을 도와드릴<br />
-                                        유챗이에요 :)
+                                    <div class="split">
+                                        적절한 대답을 찾지 못했어요
                                     </div>
                                 </li>
                                 <li class="text mt-20">
-                                    <div>
-                                        어떤 신용카드를 찾아드릴까요? <br />
-                                        <br />
-                                        질문 내용이 생각나지 않는다면,<br />
-                                        추천 질문을 활용해 보세요!
-                                        </d>
+                                    <div class="split">
+                                        원하는 카드사 및 카드 혜택 혹은 자주
+                                        가는 가맹점 키워드를 넣어 검색하시면
+                                        보다 정확한 답변을 드릴 수 있어요.
+                                    </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="chat right">
-                            <ul>
-                                <!-- 첫번째 채팅은 .mt-20 제거 -->
-                                <!-- 추천 리스트 -->
-                                <li class="recommend-search">
-                                    <button>모든 가맹점에 혜택이 적용되는 카드 알려줘</button>
-                                    <button>간편결제 사용시 혜택이 좋은 카드 알려줘</button>
-                                    <button>쇼핑할때 좋은 카드 알려줘</button>
-                                    <button>이벤트 카드 알려줘</button>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
                 <div class="chat-enter">
                     <form>
                         <textarea class="textarea" type="text" placeholder="ChatGPT에 질문하기"></textarea>
+                        <!-- err일경우 .disabled 추가 -->
                         <button class="send">
                             <img src="../../img/common/chat/btn_new_chatgpt_send@2x.png" alt="보내기">
                         </button>

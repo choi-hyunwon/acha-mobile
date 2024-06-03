@@ -57,7 +57,11 @@
                 </div>
                 <div class="chat-enter">
                     <form>
-                        <textarea class="textarea" type="text" placeholder="ChatGPT에 질문하기"></textarea>
+                        <textarea class="textarea" type="text" placeholder="ChatGPT에 질문하기">
+가나다라마바사마바사아자카타파하가나다라마
+바사아자차카타파하가나다라마바사아자차가나
+다라마바사마
+                        </textarea>
                         <button class="send">
                             <img src="../../img/common/chat/btn_new_chatgpt_send@2x.png" alt="보내기">
                         </button>
@@ -67,7 +71,8 @@
         </div>
     </div>
     <script>
-        const DEFAULT_HEIGHT = 0;
+        // DEFAULT_HEIGHT 기본값은 0 
+        const DEFAULT_HEIGHT = 66;
         const $textarea = document.querySelector('.textarea');
 
         $textarea.oninput = (e) => {
@@ -75,6 +80,9 @@
             $target.style.height = 0;
             $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
         };
+
+        //개발시 제거
+        $textarea.style.height = '66px';
     </script>
 </body>
 

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <body>
     <div class="wrap renewal">
@@ -51,36 +52,12 @@
                             <ul>
                                 <!-- 첫번째 채팅은 .mt-20 제거 -->
                                 <li class="text">
-                                    <div class="split">
-                                        쇼핑할때 혜택이 좋은 카드는 다음과 같아요. <br />
-                                        <b>삼성카드 taptap O</b>는 쇼핑과 생활영역에서 7% 할인 혜택을 제공하며, 멤버쉽 서비스를 통해 다양한 혜택을 누릴 수 있어요!
-                                    </div>
-                                    <a href="#" class="split link ">
-                                        <img src="../../img/common/chat/img_sample_card@2x.png" alt="삼성카드 taptap O">
-                                        <p>
-                                            <span>삼성카드</span>
-                                            삼성카드 taptap O
-                                        </p>
-                                        <i class="ico_list_arrow_large"></i>
-                                    </a>
-                                    <div class="split">
-                                        그 외 추천카드로는 다음과 같은 카드가 있어요
-                                    </div>
-                                    <div class="split">
-                                        <b class="f-point">1.</b> 현대카드 ZERO Edition2 (할인형)
-                                        <ul>
-                                            <li>- 국내외 모든 가맹점에서 할인 혜택 제공</li>
-                                            <li>- 전월 실적 조건 없이 사용 가능</li>
-                                            <li>- 연회비: 국내 전용 10,000원 / 해외 겸용 15,000원</li>
-                                        </ul>
-                                    </div>
-                                    <div class="split">
-                                        <b class="f-point">2.</b> 현대카드Z family
-                                        <ul>
-                                            <li>- 국내외 모든 가맹점에서 할인 혜택 제공</li>
-                                            <li>- 전월 실적 조건 없이 사용 가능</li>
-                                            <li>- 연회비: 국내 전용 10,000원 / 해외 겸용 15,000원</li>
-                                        </ul>
+                                    <div>
+                                        잠시만 기다려 주세요 😊
+                                        <div class="chat-loading">
+                                            <lottie-player src="../../img/common/chat/loading-chat-bubble.json"
+                                                style="width: 100%;" loop autoplay></lottie-player>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -92,7 +69,8 @@
                     <form>
                         <textarea class="textarea" type="text" placeholder="ChatGPT에 질문하기"></textarea>
                         <button class="send">
-                            <img src="../../img/common/chat/btn_new_chatgpt_send@2x.png" alt="보내기">
+                            <lottie-player src="../../img/common/chat/loading-chat-area.json" style="width: 100%;" loop
+                                autoplay></lottie-player>
                         </button>
                     </form>
                 </div>

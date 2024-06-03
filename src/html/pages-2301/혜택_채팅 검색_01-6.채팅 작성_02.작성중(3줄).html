@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>ChatGPT U</h2>
+            <div class="btn_area">
+                <a class="img" href="#">
+                    <img src="../../img/common/chat/btn_new_chatgpt@2x.png" width="26" alt="새 대화">
+                </a>
+            </div>
+        </div>
+        <div class="contents chatgpt">
+            <div class="wrap">
+                <div class="chat-box">
+                    <!-- 일 자별 영역 구분 -->
+                    <div class="time-stamp">
+                        <div class="date mb-20">2024.01.05</div>
+                        <!-- 채팅 위치는 left, right 구분 -->
+                        <div class="chat left">
+                            <i class="ico gpt-profile"></i>
+                            <ul>
+                                <!-- 첫번째 채팅은 .mt-20 제거 -->
+                                <li class="text">
+                                    <div>
+                                        안녕하세요. <br />
+                                        저는 신용카드 검색을 도와드릴<br />
+                                        유챗이에요 :)
+                                    </div>
+                                </li>
+                                <li class="text mt-20">
+                                    <div>
+                                        어떤 신용카드를 찾아드릴까요? <br />
+                                        <br />
+                                        질문 내용이 생각나지 않는다면,<br />
+                                        추천 질문을 활용해 보세요!
+                                        </d>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chat right">
+                            <ul>
+                                <!-- 첫번째 채팅은 .mt-20 제거 -->
+                                <!-- 추천 리스트 -->
+                                <li class="recommend-search">
+                                    <button>모든 가맹점에 혜택이 적용되는 카드 알려줘</button>
+                                    <button>간편결제 사용시 혜택이 좋은 카드 알려줘</button>
+                                    <button>쇼핑할때 좋은 카드 알려줘</button>
+                                    <button>이벤트 카드 알려줘</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-enter">
+                    <form>
+                        <textarea class="textarea" type="text" placeholder="ChatGPT에 질문하기">
+가나다라마바사마바사아자카타파하가나다라마
+바사아자차카타파하가나다라마바사아자차가나
+다라마바사마
+                        </textarea>
+                        <button class="send">
+                            <img src="../../img/common/chat/btn_new_chatgpt_send@2x.png" alt="보내기">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // DEFAULT_HEIGHT 기본값은 0 
+        const DEFAULT_HEIGHT = 66;
+        const $textarea = document.querySelector('.textarea');
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
+        };
+
+        //개발시 제거
+        $textarea.style.height = '66px';
+    </script>
+</body>
+
+</html>

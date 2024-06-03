@@ -353,6 +353,7 @@
                     font-size: 14px;
                     color: var(--text-02);
                     line-height: 22px;
+                    word-break: keep-all;
                 }
             }
         }
@@ -433,6 +434,7 @@
                         font-size: 16px;
                         line-height: 24px;
                         width: calc(100% - 70px);
+                        word-break: keep-all;
                         span{
                             font-family: var(--font3);
                             color: var(--text-point-color);
@@ -463,15 +465,9 @@
                                 font-size: 14px;
                                 line-height: 22px;
                                 color: var(--text-02);
-                                &::before{
-                                    content: "-";
-                                    margin-right: 4px;
-                                    vertical-align: top;
-                                }
-                            }
-                            span{
-                                display: inline-block;
-                                width: calc(100% - 10px);
+                                word-break: keep-all;
+                                text-indent: -9px;
+                                margin-left: 11px;
                             }
                             table{
                                 text-align: center;
@@ -509,6 +505,7 @@
                 color: var(--white);
                 font-family: var(--font2);
                 font-size: 15px;
+                line-height: 22px;
             }
         }
     }

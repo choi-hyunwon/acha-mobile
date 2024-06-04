@@ -235,4 +235,281 @@
             }
         }
     }
+
+    .divider {
+        &:before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 10px;
+            background-color: #f5f6f8;
+        }
+    }
+
+    .card-detail-banner{
+        background: #f5f8ff;
+        width: 100%;
+        height: 75px;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .card-logo-ico{
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: var(--white);
+            text-align: center;
+            padding: 3px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .banner-txt{
+            span{
+                font-family: var(--font1);
+                font-size: 13px;
+                color: var(--text-02);
+                line-height: 19px;
+            }
+            p{
+                font-family: var(--font2);
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .card-detail-box{
+        padding: 40px 20px 0;
+        position: relative;
+        text-align: center;
+        
+        .card-detail-title{
+            span{
+                font-family: var(--font1);
+                font-size: 14px;
+                color: var(--text-02);
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 2px;
+            }
+            p{
+                font-family: var(--font3);
+                font-size: 20px;
+                line-height: 29px;
+                text-align: center;
+                // 2줄 이상 말줄임 ... 처리
+                display: -webkit-box;
+                word-wrap: break-word;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        .card-detail-img{
+            width: 190px;
+            height: 190px;
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            &::after{
+                content: "";
+                background: #f5f5fc;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .card-detail-desc{
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 0 4px;
+            margin-bottom: 40px;
+            div{
+                flex: 1;
+                p{
+                    font-family: var(--font3);
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 8px;
+                }
+                li{
+                    font-family: var(--font1);
+                    font-size: 14px;
+                    color: var(--text-02);
+                    line-height: 22px;
+                    word-break: keep-all;
+                }
+            }
+        }
+
+        .card-detail-list{
+            text-align: left;
+
+            .card-detail-title{
+                font-family: var(--font3);
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 10px;
+            }
+
+            .group{
+                &.show{
+                    .category-heading{
+                        border-bottom: none;
+                        &::after{
+                            transform: translateY(-50%) rotate(180deg);
+                        }
+                    }
+                    .category-menu{
+                        display: block;
+                        border-bottom: 1px solid #efefef;
+                    }
+                }    
+                &:last-of-type{
+                    .category-heading, .category-menu{
+                        border-bottom: none;
+                    }
+                }
+
+                .category-heading{
+                    padding: 18px 0 19px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    border-bottom: 1px solid #efefef;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        width: 14px;
+                        height: 14px;
+                        background: url(../../img/common/btn_accordian_main_down@2x.png) no-repeat center / contain;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%) rotate(0deg);
+                    }
+    
+                    .list-ico{
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 50%;
+                        padding: 7px;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                        &.purple{
+                            background-color: #faf4ff;
+                        }
+                        &.yellow{
+                            background-color: #fff8e3;
+                        }
+                        &.red{
+                            background-color: #fff4f2;
+                        }
+                        &.blue{
+                            background-color: #f5f6ff;
+                        }
+                    }
+    
+                    p{
+                        font-family: var(--font2);
+                        font-size: 16px;
+                        line-height: 24px;
+                        width: calc(100% - 70px);
+                        word-break: keep-all;
+                        span{
+                            font-family: var(--font3);
+                            color: var(--text-point-color);
+                        }
+                    }
+                }
+    
+                .category-menu{
+                    display: none;
+                    border-bottom: none;
+    
+                    div{
+                        margin-bottom: 20px;
+                        &:last-child{
+                            margin-bottom: 18px;
+                        }
+    
+                        p{
+                            font-family: var(--font2);
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-bottom: 6px;
+                        }
+    
+                        .dash-list{
+                            li{
+                                font-family: var(--font1);
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: var(--text-02);
+                                word-break: keep-all;
+                                text-indent: -9px;
+                                margin-left: 11px;
+                            }
+                            table{
+                                text-align: center;
+                                font-family: var(--font1);
+                                font-size: 13px;
+                                line-height: 19px;
+                                color: var(--text-02);
+                                margin-top: 6px;
+                                thead{
+                                    border-top: 1px solid #e3e4e8;
+                                    background: #f7f7f8;
+                                    font-family: var(--font2);
+                                }
+                                td{
+                                    width: 111px;
+                                    border-right: 1px solid #e3e4e8;
+                                    border-bottom: 1px solid #e3e4e8;
+                                    &:nth-child(3n){
+                                        border-right: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .card-detail-btn{
+                width: 100%;
+                padding: 14px 0;
+                margin: 30px 0;
+                background: var(--blurple);
+                border-radius: 6px;
+                color: var(--white);
+                font-family: var(--font2);
+                font-size: 15px;
+                line-height: 22px;
+            }
+        }
+    }
+
 }

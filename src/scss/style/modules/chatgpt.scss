@@ -583,6 +583,7 @@
                     &.active {
                         border-color: #6839d3;
                         color: #6839d3;
+                        font-family: var(--font2);
                     }
                 }
             }
@@ -594,6 +595,7 @@
                     display: flex;
                     align-items: center;
                     flex-wrap: nowrap;
+                    margin-top: 16px;
                     gap: 12px;
                     overflow: auto;
                     scrollbar-width: none;
@@ -606,6 +608,13 @@
                         font-size: 15px;
                         line-height: 22px;
                         color: var(--text-point-color);
+                        font-family: var(--font2);
+
+                        span {
+                            display: inline-block;
+                            margin-left: 4px;
+                            font-family: var(--font3);
+                        }
 
                         .sprite {
                             margin-left: 4px;
@@ -617,6 +626,9 @@
                         &.active {
                             background: var(--text-point-color);
                             color: #fff;
+                            font-family: var(--font2);
+
+
 
                             .sprite {
                                 background-image: url("../../img/sprite/common/ico_tag_arrow_sel@2x.png");

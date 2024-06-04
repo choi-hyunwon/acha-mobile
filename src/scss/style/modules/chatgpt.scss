@@ -1,5 +1,6 @@
 .chatgpt {
     .h3 {
+        margin-bottom: 0;
         font-size: 18px;
         line-height: 27px;
         font-family: var(--font3);
@@ -663,9 +664,81 @@
                 }
             }
         }
+
+        &.card-choice {
+            .select-all-box {
+                margin-top: 16px;
+
+                input:checked {
+                    &+label {
+                        font-family: var(--font2);
+                        border: 1px solid #6839d3;
+                        color: var(--text-point-color);
+
+                        .sprite {
+                            background-image: url("../../img/sprite/common/ico_tag_check_sel@2x.png");
+                        }
+                    }
+                }
+
+                label {
+                    padding: 6px 0;
+                    width: 100%;
+                    line-height: 22px;
+                    text-align: center;
+                    border: 1px solid #e9e9f2;
+                    color: var(--text-01);
+                    border-radius: 6px;
+                    font-family: var(--font1);
+                    font-weight: normal;
+
+                    .sprite {
+                        display: inline-block;
+                        margin-right: 4px;
+                        width: 10px;
+                        height: 10px;
+                        background-image: url("../../img/sprite/common/ico_tag_check_nor@2x.png");
+                    }
+                }
+            }
+
+            .card-company {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 7px;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: calc(33.33% - 7px);
+                    min-height: 78px;
+                    border: 1px solid #e9e9f2;
+                    border-radius: 6px;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        margin-top: 5px;
+                        font-size: 13px;
+                        line-height: 19px;
+                    }
+
+                    &.active {
+                        border: 1px solid var(--color-point);
+
+                        span {
+                            font-family: var(--font2);
+                            color: var(--text-point-color);
+                        }
+                    }
+                }
+            }
+        }
     }
-
-
-
-
 }

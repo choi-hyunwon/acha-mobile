@@ -18,9 +18,34 @@
         ;
     }
 
+    // 추천리스트 박스
+    .recommend-search {
+        margin-top: 8px;
+        text-align: right;
+
+        button {
+            padding: 16px 23px;
+            width: 100%;
+            background: #fff;
+            font-size: 14px;
+            line-height: 20px;
+            border: 1px solid #e1dceb;
+            border-radius: 10px;
+            letter-spacing: -0.3px;
+
+            &~button {
+                margin-top: 8px;
+            }
+        }
+    }
+
     .wrap {
         .chat-box {
             padding: 0 20px 98px;
+
+            .time-stamp {
+                margin-top: 10px;
+            }
 
             .date {
                 padding: 3px 16px;
@@ -155,29 +180,6 @@
                         background: #a757e9;
                         color: #fff;
                         border-radius: 26px 0 26px 26px;
-                    }
-
-                    .recommend-search {
-                        margin-top: 8px;
-                        text-align: right;
-
-                        button {
-                            padding: 16px 23px;
-                            width: calc(100% - 40px);
-                            background: #fff;
-                            font-size: 14px;
-                            line-height: 20px;
-                            border: 1px solid #e1dceb;
-                            border-radius: 10px;
-                            letter-spacing: -0.3px;
-                            outline: 0;
-
-                            outline: 0;
-
-                            &~button {
-                                margin-top: 8px;
-                            }
-                        }
                     }
                 }
             }

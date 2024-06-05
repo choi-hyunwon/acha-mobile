@@ -6346,12 +6346,12 @@
     }
 
     .rs-selected {
-        background-color: var(--color-point);
+        background: linear-gradient(to left, #6839d3, #9e39d3);
         width: 0;
     }
 
     .rs-pointer {
-        background-color: var(--color-point);
+
         border-radius: 100%;
         cursor: pointer;
         height: 25px;
@@ -6359,6 +6359,11 @@
         position: absolute;
         top: -2px;
         transition: none;
+        background-color: #9838d3;
+
+        &:last-child {
+            background-color: #7039d3;
+        }
 
         &:after {
             content: "";

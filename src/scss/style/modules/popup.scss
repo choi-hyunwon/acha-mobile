@@ -6326,3 +6326,76 @@
         }
     }
 }
+
+
+.rs-container {
+    position: relative;
+    margin: 0 auto;
+    height: 45px;
+
+    .rs-bg,
+    .rs-selected {
+        background-color: #eee;
+        border: 1px solid #ededed;
+        height: 10px;
+        left: 0;
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .rs-selected {
+        background-color: var(--color-point);
+        width: 0;
+    }
+
+    .rs-pointer {
+        background-color: var(--color-point);
+        border-radius: 100%;
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: -2px;
+        transition: none;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border-radius: 100%;
+        }
+    }
+
+    .rs-scale {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        white-space: nowrap;
+
+        span {
+            float: left;
+            position: relative;
+            text-align: left;
+
+            &:last-child {
+                width: 0;
+            }
+
+            ins {
+                display: inline-block;
+                margin-top: 20px;
+                font-size: 13px;
+                color: var(--text-02);
+                line-height: 15px;
+                text-decoration: none;
+            }
+        }
+    }
+}

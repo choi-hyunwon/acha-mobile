@@ -928,13 +928,14 @@
 
                 li {
                     align-items: center;
-                    padding: 5px 13px;
+                    padding: 5px 12px;
                     margin-right: 8px;
                     font-family: var(--font1);
                     font-size: 14px;
                     border: 1px solid #e9e9f2;
                     border-radius: 17px;
                     line-height: 20px;
+                    height: 30px;
 
                     &.active {
                         font-family: var(--font2);
@@ -958,6 +959,7 @@
                     font-family: var(--font2);
                     font-size: 14px;
                     line-height: 20px;
+                    height: 20px;
                 }
             }
         }

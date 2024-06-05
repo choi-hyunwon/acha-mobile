@@ -627,6 +627,10 @@
                     overflow: auto;
                     scrollbar-width: none;
 
+                    position: relative;
+                    width: calc(100% + 20px);
+                    padding-right: 20px;
+
                     .item {
                         flex-shrink: 0;
                         border: 1px solid #6839d3;

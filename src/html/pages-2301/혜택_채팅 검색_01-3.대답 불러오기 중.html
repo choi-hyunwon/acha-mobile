@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>ChatGPT U</h2>
+            <div class="btn_area">
+                <a class="img" href="#">
+                    <img src="../../img/common/chat/btn_new_chatgpt@2x.png" width="26" alt="새 대화">
+                </a>
+            </div>
+        </div>
+        <div class="contents chatgpt">
+            <div class="wrap">
+                <div class="chat-box">
+                    <!-- 일 자별 영역 구분 -->
+                    <div class="time-stamp">
+                        <div class="date mb-20">2024.01.05</div>
+                        <!-- 채팅 위치는 left, right 구분 -->
+                        <div class="chat left">
+                            <i class="ico gpt-profile"></i>
+                            <ul>
+                                <!-- 첫번째 채팅은 .mt-20 제거 -->
+                                <li class="text">
+                                    <div>
+                                        어떤 신용카드를 찾아드릴까요? <br />
+                                        <br />
+                                        질문 내용이 생각나지 않는다면,<br />
+                                        추천 질문을 활용해 보세요!
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="chat right">
+                            <ul>
+                                <!-- 첫번째 채팅은 .mt-20 제거 -->
+                                <li class="text">
+                                    <div>
+                                        쇼핑할때 혜택이 좋은 카드 알려줘
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="chat left">
+                            <i class="ico gpt-profile"></i>
+                            <ul>
+                                <!-- 첫번째 채팅은 .mt-20 제거 -->
+                                <li class="text">
+                                    <div>
+                                        잠시만 기다려 주세요 😊
+                                        <div class="chat-loading">
+                                            <lottie-player src="../../img/common/chat/loading-chat-bubble.json"
+                                                style="width: 100%;" loop autoplay></lottie-player>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="chat-enter">
+                    <form>
+                        <textarea class="textarea" type="text" placeholder="ChatGPT에 질문하기"></textarea>
+                        <button class="send">
+                            <lottie-player src="../../img/common/chat/loading-chat-area.json" style="width: 100%;" loop
+                                autoplay></lottie-player>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector('.textarea');
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
+        };
+    </script>
+</body>
+
+</html>

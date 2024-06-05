@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <div class="sum-area">
+                <a href="#" class="research">다시 검색하기</a>
+            </div>
+        </div>
+        <div class="contents chatgpt">
+            <div class="filter-box">
+                <!-- 혜택 -->
+                <div class="category benefit">
+                    <p class="filter-title">혜택</p>
+                    <p class="filter-result"><span class="tag">자동차/하이패스</span>, <span class="tag">카페/디저트</span> 등
+                        <span class="num">10</span>개 선택
+                    </p>
+                </div>
+
+                <!-- 가맹점 -->
+                <div class="category store">
+                    <p class="filter-title">가맹점</p>
+                    <ul class="filter-list">
+                        <li>고속버스 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li>올리브영 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li>쿠팡 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li>에이블리 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li>고속버스 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li>올리브영 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li>쿠팡 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li>에이블리 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li>고속버스 <img src="../../img/common/btn-tag-delete@2x.png" alt="delete">
+                        </li>
+                        <li class="setting-btn"><a href="#"><img src="../../img/common/btn_add_mydata.svg"
+                                    alt="add_btn"></a></li>
+                    </ul>
+                </div>
+
+                <!-- 카드사 -->
+                <div class="category company">
+                    <p class="filter-title">카드사</p>
+                    <p class="filter-result">전체</p>
+                </div>
+
+                <!-- 연회비/실적 구간 -->
+                <div class="category annual">
+                    <div class="left">
+                        <p class="filter-title">연회비 구간</p>
+                        <p class="filter-result">전체</p>
+                    </div>
+                    <div class="right">
+                        <p class="filter-title">실적 구간</p>
+                        <p class="filter-result">전체</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="no-search-wrap">
+                <img src="../../img/common/ico-error@2x.png" alt="error-icon">
+                <p>조건에 해당하는<br />신용카드를 찾지 못했어요</p>
+                <button>다시 검색하기</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.tab-list li').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</body>
+
+</html>

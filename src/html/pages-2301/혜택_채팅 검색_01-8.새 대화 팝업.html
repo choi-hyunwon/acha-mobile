@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide">
+        <div class="modal-slide-content">
+            <div class="inner">
+                <div class="desc-box _btnSlideOpen" style="padding: 0 0 30px; border-top: none;">
+                    <p style="display: flex; align-items: center;">
+                        <span style="font-size: 16px; line-height: 26px;">
+                            새대화를 진행할까요?<br />
+                            이전 대화는 모두 초기화 돼요
+                        </span>
+                    </p>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half"
+                        onclick="openPopup()">돌아가기</a>
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">새 대화 하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <div class="btn_area">
+                <button class="refresh">
+                    <i class="ico-refresh-mini"></i>
+                    초기화
+                </button>
+            </div>
+        </div>
+        <div class="contents chatgpt">
+            <div class="wrap">
+                <div class="choice benefit-choice">
+                    <div class="inner">
+                        <h3 class="h3">혜택</h3>
+                        <ul class="benefit-list">
+                            <li class="item">모든 가맹점</li>
+                            <li class="item active">교통</li>
+                            <li class="item">주유</li>
+                            <li class="item">통신</li>
+                            <li class="item">마트/편의점</li>
+                            <li class="item active">쇼핑</li>
+                            <li class="item">푸드</li>
+                            <li class="item active">카페/디저트</li>
+                            <li class="item">뷰티/피트니스</li>
+                            <li class="item active">무실적</li>
+                            <li class="item">공과금렌탈</li>
+                            <li class="item">병원/약국</li>
+                            <li class="item">애완동물</li>
+                            <li class="item">교육/육아</li>
+                            <li class="item">자동차/하이패스</li>
+                            <li class="item">레저/스포츠</li>
+                            <li class="item">영화/문화</li>
+                            <li class="item active">간편결제</li>
+                            <li class="item active">항공마일리지</li>
+                            <li class="item active">공항라운지/PP</li>
+                            <li class="item">프리미엄</li>
+                            <li class="item">여행/숙박</li>
+                            <li class="item">해외</li>
+                            <li class="item">비즈니스</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-area fixed-bottom">
+                <a class="btn btn-block btn-big btn-primary btn-save" href="#">
+                    설정하기
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.benefit-list .item').click(function () {
+            $(this).toggleClass('active')
+        })
+    </script>
+</body>
+
+</html>

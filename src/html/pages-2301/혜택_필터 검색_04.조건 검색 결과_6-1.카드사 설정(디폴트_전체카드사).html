@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <div class="btn_area">
+                <button class="refresh">
+                    <i class="ico-refresh-mini"></i>
+                    초기화
+                </button>
+            </div>
+        </div>
+        <div class="contents chatgpt">
+            <div class="wrap">
+                <div class="choice card-choice">
+                    <div class="inner">
+                        <h3 class="h3">카드사</h3>
+                        <div class="select-all-box">
+                            <!-- 기본값 checked -->
+                            <input type="checkbox" id="all-cheked" class="filled-in" checked>
+                            <label for="all-cheked">
+                                <i class="sprite"></i>전체카드사
+                            </label>
+                        </div>
+                        <ul class="card-company mt-20">
+                            <li class="item">
+                                <img src="../../img/@temp/hana.png" alt="하나카드">
+                                <span>하나카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/ci_uribank@2x.png" alt="우리카드">
+                                <span>우리카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/hyundai.png" alt="현대카드">
+                                <span>현대카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/ci_kbbank@2x.png" alt="국민카드">
+                                <span>국민카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/hana.png" alt="하나카드">
+                                <span>하나카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/ci_uribank@2x.png" alt="우리카드">
+                                <span>우리카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/hyundai.png" alt="현대카드">
+                                <span>현대카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/ci_kbbank@2x.png" alt="국민카드">
+                                <span>국민카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/hana.png" alt="하나카드">
+                                <span>하나카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/ci_uribank@2x.png" alt="우리카드">
+                                <span>우리카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/hyundai.png" alt="현대카드">
+                                <span>현대카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/ci_kbbank@2x.png" alt="국민카드">
+                                <span>국민카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/hana.png" alt="하나카드">
+                                <span>하나카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/ci_uribank@2x.png" alt="우리카드">
+                                <span>우리카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/hyundai.png" alt="현대카드">
+                                <span>현대카드</span>
+                            </li>
+                            <li class="item">
+                                <img src="../../img/@temp/ci_kbbank@2x.png" alt="국민카드">
+                                <span>국민카드</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-area fixed-bottom">
+                <!-- 선택이 없는 경우 .disabled -->
+                <button class="btn btn-block btn-big btn-primary btn-save">
+                    설정하기
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 가맹점 목록 선택
+        $('.card-company .item').click(function (e) {
+            $(this).toggleClass('active')
+        })
+    </script>
+</body>
+
+</html>

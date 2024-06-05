@@ -342,6 +342,7 @@
         width: 26px;
         height: 26px;
 
+
         & img {
           width: 100%;
           height: 100%;
@@ -406,6 +407,20 @@
     & img {
       width: 100%;
       height: 100%;
+    }
+  }
+
+  .refresh {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    outline: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-02);
+
+    .ico-refresh-mini {
+      margin-right: 3px;
     }
   }
 

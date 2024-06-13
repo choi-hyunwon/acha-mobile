@@ -168,11 +168,12 @@
 
   .regist-story {
     margin: 0 20px;
-    background-color: #f4efff;
-    border-radius: 10px;
     position: relative;
+    padding-bottom: 30px;
 
     a {
+      background-color: #f4efff;
+      border-radius: 10px;
       display: block;
       padding: 17px 25px;
 
@@ -3314,6 +3315,7 @@
             padding: 15px 0;
 
             .item {
+              position: relative;
               padding: 15px 0;
               display: flex;
               justify-content: space-between;
@@ -3322,6 +3324,12 @@
                 font-size: 15px;
                 color: #737183;
                 font-family: var(--font1);
+              }
+
+              .custom-switch {
+                right: 0;
+                top: 50%;
+                transform: translateY(calc(-50% - 0.35rem));
               }
 
               .val {
@@ -5913,7 +5921,7 @@
    */
   .expenditure-calendar {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
     .ex-calendar {
       margin-bottom: 20px;

@@ -1667,6 +1667,10 @@
             }
           }
         }
+
+        +.empty {
+          height: calc(100vh - 286px) !important;
+        }
       }
 
       /*일자*/

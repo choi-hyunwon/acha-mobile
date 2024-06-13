@@ -6217,11 +6217,22 @@
     //v3_expenditure_135
     .calendar-history {
       position: relative;
-      padding: 11px 20px 30px 20px;
+      padding: 10px 20px 30px 20px;
 
       .filter-wrap {
-        text-align: right;
-        margin-bottom: 22px;
+        position: relative;
+        padding: 10px 0 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .count {
+          font-size: 15px;
+          line-height: 22px;
+
+          span {
+            font-family: var(--font2);
+          }
+        }
 
         p {
           font-size: 14px;

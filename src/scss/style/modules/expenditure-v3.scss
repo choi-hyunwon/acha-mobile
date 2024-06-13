@@ -4525,7 +4525,13 @@
           height: calc(100vh - 239px) !important;
           padding-bottom: 0;
         }
+      }
 
+      &.category-budget {
+        .empty {
+          height: calc(100vh - 391px) !important;
+          padding-bottom: 0;
+        }
       }
 
       /*지출수단 -카드*/

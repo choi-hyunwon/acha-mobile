@@ -4522,9 +4522,10 @@
       /*계좌지출*/
       &.account-spending {
         .empty {
-          height: calc(100vh - 160px);
+          height: calc(100vh - 239px) !important;
           padding-bottom: 0;
         }
+
       }
 
       /*지출수단 -카드*/

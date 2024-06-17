@@ -16,18 +16,32 @@
                     </ul>
                     <a href="#" class="calendar-box ico_tooltip">
                         <img src="../../img/common/ico-input-calendar@2x.png" alt="캘린더아이콘" class="calendar">
-                        <div class="tooltip-txt show" data-tooltip="hidden">
+                        <div class="tooltip-txt" data-tooltip="hidden">
                             자산일정이 있어요😀
                             <span class="close"></span>
                         </div>
                     </a>
                 </div>
-                <div class="content">
-                    <div class="box">
-                        <h3>연결된 자산이 없어요</h3>
-                        <p>숨기기한 자산은 편집에서 확인할 수 있어요🙂</p>
+                <div class="assets-total-box">
+                    <div class="title">
+                        <p class="total">총 자산<i class="sprite icon-caution" onclick="tooltipToggle('toolbox-1')"></i>
+                        </p>
+                        <p class="total-sum ui-sortable ui-sortable-disabled">0<span class="ui-sortable-handle">원</span>
+                        </p>
                     </div>
-                    <div class="img"><img src="../../img/common/img_assets_info@2x.png" alt=""></div>
+                    <div class="sum-area">
+                        <a href="#" class="ico-refresh-mini"></a>
+                        <p class="update">30분 전</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="img"><img src="../../img/common/img_assets_info2@2x.png" alt=""></div>
+                    <div class="box">
+                        <p>
+                            아직 등록된 자산이 없어요<br />
+                            자산을 추가하고 관리해보세요 😊
+                        </p>
+                    </div>
 
                     <div class="btn-area">
                         <a class="btn btn-lg btn-block btn_primary btn-add" href="#">자산 추가하기</a>
@@ -48,7 +62,6 @@
         })
 
         $('.tooltip-txt .close').click(function () {
-            console.log(55555);
             $('.tooltip-txt').toggleClass('show')
         })
     </script>

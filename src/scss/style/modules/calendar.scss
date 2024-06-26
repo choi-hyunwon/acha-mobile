@@ -87,7 +87,8 @@
 }
 
 .box_ex_calendar {
-  padding: 0 16px !important;
+  // padding: 0 16px !important;
+  padding: 0 16px;
 
   .fc-day-number {
     &.active {

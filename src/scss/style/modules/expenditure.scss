@@ -7135,10 +7135,29 @@
     border: 0;
 
     .fc-widget-content {
+      .fc-scroller.fc-day-grid-container{
+        overflow: visible !important;
+      }
       .fc-day-grid-container {
         .fc-day-grid {
           .fc-row {
             min-height: 50px;
+            position: relative;
+            &::before{
+              content: "";
+              position: absolute;
+              left: -12px;
+              bottom: 0;
+              display: block;
+              width: calc(100% + 24px);
+              height: 1px;
+              background: #efefef;
+            }
+            &:last-child{
+              &::before{
+                display: none;
+              }
+            }
           }
         }
       }

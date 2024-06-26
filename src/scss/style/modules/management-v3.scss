@@ -4010,6 +4010,10 @@
               &.details {
                 border-bottom: 1px solid #efefef;
 
+                .details-history {
+                  padding-bottom: 20px;
+                }
+
                 &:last-child {
                   border-bottom: 0;
 

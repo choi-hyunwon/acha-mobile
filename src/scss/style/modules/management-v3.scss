@@ -3458,7 +3458,7 @@
               .btn-collapse {
                 position: absolute;
                 right: 0;
-                top: 0;
+                top: 0.4px;
                 transform: rotate(180deg);
               }
 
@@ -3940,7 +3940,7 @@
               }
 
               .details-history {
-                padding: 10px 0 20px;
+                padding-top: 10px;
 
                 .item-list {
                   // 상세카드

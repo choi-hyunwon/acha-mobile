@@ -7034,23 +7034,50 @@
 
     &.share-calendar {
       .fc-body {
-        .fc-row {
-          padding-bottom: 5px;
-          border-bottom: 1px solid #efefef;
+        .fc-widget-content {
+          .fc-day-grid-container {
+            .fc-day-grid {
+              .fc-row {
+                position: relative;
 
-          td {
-            padding-top: 2px;
-            height: 14px;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  left: -12px;
+                  bottom: 0;
+                  display: block;
+                  width: calc(100% + 24px);
+                  height: 1px;
+                  background: #efefef;
+                }
 
-            .fc-title {
-              letter-spacing: -0.5px;
+                &:last-child {
+                  &::before {
+                    display: none;
+                  }
+                }
+              }
             }
           }
         }
       }
     }
+
+    .fc-row {
+      padding-bottom: 5px;
+
+      td {
+        padding-top: 2px;
+        height: 14px;
+
+        .fc-title {
+          letter-spacing: -0.5px;
+        }
+      }
+    }
   }
 }
+
 
 
 .expenditure-story-wrap {

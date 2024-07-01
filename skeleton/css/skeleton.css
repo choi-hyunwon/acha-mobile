@@ -726,6 +726,12 @@ dl {
   background-size: 200%;
   animation: skeleton 1s infinite reverse;
 }
+.skeleton-left-center {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
 @keyframes skeleton {
   0% {
     background-position: -100% 0;

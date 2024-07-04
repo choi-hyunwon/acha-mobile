@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap">
+        <div class="contents lifestyle">
+          <!-- 신용카드 찾기 -->
+          <div class="contenst-box">
+            <h3>신용카드 찾기</h3>
+            <div class="card-bg purple flex-align-center">
+              <div class="desc">
+                <p><span class="f-point">원하는 혜택</span>만<br/>쏙쏙 골라보세요!</p>
+                <button class="search-btn flex-align-center"><span>카드 검색</span> <img src="../../img/sprite/common/ico_list_arrow_small@2x.png" alt="arrow" /></button>
+              </div>
+              <img src="../../img/common/lifestyle/img_life_card_search@2x.png" alt="search" />
+            </div>
+          </div>
+
+          <div class="long-box">
+            <!-- 이 카드는 어때요? -->
+            <div class="contenst-box">
+              <h3><span class="user">홍길동</span>님 이 카드는 어때요?</h3>
+              <div class="card-overlay">
+                <div class="card-bg blue">
+                  <div class="icon-list">
+                    <img src="../../img/common/lifestyle/img_life_card_customization_iconset@2x.png" alt="icon" />
+                  </div>
+                </div>
+                <div class="card-bottom flex-align-center">
+                  <div>
+                    <p>소비지출이 많은 업종</p>
+                    <span>혜택 카드 찾아보기</span>
+                  </div>
+                  <button class="view-btn">보기</button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- swiper -->
+            <div class="swiper-box swiper-container flex-align-center">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide box-type skyblue">
+                  <div class="tag blue">공연</div>
+                  <p>공연 혜택 카드</p>
+                  <img src="../../img/common/lifestyle/img_life_card_category_performance@2x.png" alt="category" />
+                </a>
+                <a href="#" class="swiper-slide box-type red">
+                  <div class="tag red">쇼핑</div>
+                  <p>쇼핑 혜택 카드</p>
+                  <img src="../../img/common/lifestyle/img_life_card_category_shopping@2x.png" alt="shopping" />
+                </a>
+              </div>
+            </div>
+  
+            <!-- 다른사람은 어떤 카드를 쓸까? -->
+            <div class="contenst-box">
+              <div class="card-overlay">
+                <div class="card-bg mint">
+                  <img src="../../img/common/lifestyle/img_life_card_find@2x.png" alt="card-find" />
+                </div>
+                <div class="card-bottom flex-align-center">
+                  <div>
+                    <p>다른사람은 어떤 카드를 쓸까?</p>
+                    <span>인기카드 만나보기</span>
+                  </div>
+                  <button class="view-btn">보기</button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- 올바른 Edu 카드 -->
+            <div class="contenst-box py0">
+              <div class="card-bg banner orange">
+                <a href="#" class="card-banner flex-align-center">
+                  <div class="desc">
+                    <p class="tit flex-align-center"><span>아이 교육비 부담을 덜어주는</span> <img src="../../img/common/lifestyle/img_ad_card_ic_edu_01@2x.png" alt="edu-icon"></p>
+                    <p class="card-corp">올바른 Edu 카드</p>
+                    <span class="card-desc">학원비 5% 할인</span>
+                  </div>
+                  <div class="circle-bg">
+                    <img src="../../img/common/lifestyle/img_ad_card_edu@2x.png" alt="edu">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 카드 쓰고 혜택받기 -->
+          <div class="swiper-box swiper-container px28">
+            <div class="title flex-align-center">
+              <h3>카드 쓰고 혜택받기</h3>
+              <button class="all-btn flex-align-cente"><span>전체보기</span> <img src="../../img/sprite/common/ico_list_arrow_small@2x.png" alt="arrow" /></button>
+            </div>
+            <div class="swiper-wrapper card-wrapper">
+              <div class="card-overlay card-type swiper-slide">
+                <div class="circle-bg purple">
+                  <img src="../../img/@temp/img_sample_cardlist_04@2x.png" alt="card4" />
+                </div>
+                <p class="card-name">신한카드 Deep Dream</p>
+                <p class="benefit">스타벅스 50%, 교통·통신10%할인, G마켓·옥션, 주유비2...</p>
+                <button class="go-btn"><span>10</span>만원 받으러 가기</button>
+              </div>
+              <div class="card-overlay card-type swiper-slide">
+                <div class="circle-bg purple">
+                  <img src="../../img/@temp/img_sample_cardlist_02@2x.png" alt="card2" />
+                </div>
+                <p class="card-name">현대카드M2 Boost</p>
+                <p class="benefit">스타벅스 50%, 교통·통신10%할인, G마켓·옥션 30%</p>
+                <button class="go-btn"><span>10</span>만원 받으러 가기</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 보험 알아보기 -->
+          <div class="contenst-box empty-block">
+            <h3>보험 알아보기</h3>
+            <a href="#" class="card-bg green flex-align-center">
+              <div class="desc">
+                <p class="point">내 보험 점검하기</p>
+                <span>보장은 높게, 보험료는 낮게!</span>
+              </div>
+              <img src="../../img/common/lifestyle/img_ad_card_Insurance_01@2x.png" alt="insurance">
+            </a>
+          </div>
+        </div>
+
+        <script>
+          var swiper = new Swiper(".swiper-box", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+          });
+        </script>
+</body>
+
+</html>

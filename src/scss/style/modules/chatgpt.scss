@@ -697,6 +697,8 @@
 
                 .store-list {
                     margin-top: 16px;
+                    height: 470px;
+                    overflow-y: scroll;
 
                     .item {
                         border: 1px solid #e9e9f2;

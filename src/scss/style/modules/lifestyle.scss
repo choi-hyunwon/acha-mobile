@@ -93,7 +93,7 @@
         }
 
         &.banner{
-            padding: 27px 20px;
+            padding: 24px 20px;
 
             .tit{
                 margin-bottom: 6px;
@@ -116,13 +116,13 @@
                 line-height: 24px;
                 color: var(--text-01);
                 word-break: keep-all;
+                margin-bottom: 2px;
             }
 
             span{
                 font-size: 14px;
                 font-family: var(--font1);
                 color: var(--text-02);
-                margin-top: 2px;
                 word-break: keep-all;
             }
 
@@ -320,6 +320,7 @@
             font-family: var(--font2);
             line-height: 20px;
             text-align: center;
+            letter-spacing: -0.3px;
             color: var(--color-point);
             padding: 9px 24px;
             border-radius: 6px;

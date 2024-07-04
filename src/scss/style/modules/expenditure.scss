@@ -2186,6 +2186,9 @@
                     color: var(--text-02);
                     line-height: 1;
                     letter-spacing: -0.3px;
+                    &:focus{
+                      outline: none;
+                    }
 
                     img {
                       margin-right: 3px;

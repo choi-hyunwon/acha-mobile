@@ -8,21 +8,85 @@
             <div class="box-ex-top box-card-top flex-column">
                 <a href="#" class="btn-sm btn-edit mb-12"><span>편집</span></a>
 
-                <!-- <div class="expenditure-tab _expenditureTab w-100">
-                    <ul>
-                        <li class="active mr-10"><a href="#">총자산</a></li>
-                        <li class="mr-10"><a href="#">챌린지</a></li>
-                        <li class="mr-10"><a href="#">카드찾기</a></li>
-                    </ul>
-                    <a href="#" class="calendar-box ico_tooltip">
-                        <img src="../../img/common/ico-input-calendar@2x.png" alt="캘린더아이콘" class="calendar"
-                            onclick="tooltipToggle('toolbox-4')">
-                        <div class="tooltip-txt toolbox-4" data-tooltip="hidden">
-                            자산일정이 있어요😀
-                            <span class="close" onclick="TooltipClose('toolbox-4')"></span>
+                <!-- 광고 배너 2건 이상일 경우  -->
+                <div class="swiper-container expenditure-banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="index-display"><span id="slide-index">1</span> / <span id="total-index">1</span>
+                        <!-- .swiper-slide가 1개 일경우 비 노출 hidden 처리-->
+                        <!-- <p class="index-display" hidden><span id="slide-index">1</span> / <span id="total-index">1</span> -->
+                    </p>
+                </div>
+                <script>
+                    var swiper = new Swiper(".expenditure-banner", {
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false
+                        },
+                        loop: true,
+                        spaceBetween: 15,
+                    });
+                    function updateSlideIndex() {
+                        const indexDisplay = document.getElementById('slide-index');
+                        const indexTotal = document.getElementById('total-index');
+
+                        indexDisplay.innerHTML = swiper.realIndex + 1;
+                        // total length에서 허수 slide duplicate 2개 제외
+                        indexTotal.innerHTML = swiper.slides.length - 2
+                    }
+                    swiper.on('slideChange', function () {
+                        updateSlideIndex();
+                    });
+
+                    updateSlideIndex();
+                </script>
+
+                <!-- 신규 계좌가 있을경우 -->
+                <div class="alert-box">
+                    <a href="#" class="link">
+                        <span class="badge badge-new"><img src="../../img/common/ic_new_small@2x.png" alt="아이콘"></span>
+                        신규 계좌/상품 연결하기<i class="ico ico_list_arrow_small"></i>
                     </a>
-                </div> -->
+                    <button class="btn-delete">
+                        <img src="../../img/common/ic_delete_a@2x.png" alt="삭제하기">
+                    </button>
+                </div>
+
+                <!-- 기관 연결 해제 -->
+                <div class="alert-box mb-20">
+                    <a href="#" class="link">
+                        <span class="badge badge-remove"><img src="../../img/common/ico_caution_purple@2x.png"
+                                alt="아이콘"></span>
+                        기관 연결이 곧 해제돼요<i class="ico ico_list_arrow_small"></i>
+                    </a>
+                    <button class="btn-delete">
+                        <img src="../../img/common/ic_delete_a@2x.png" alt="삭제하기">
+                    </button>
+                </div>
 
                 <div class="assets-total-box">
                     <div class="title">

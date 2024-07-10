@@ -8,62 +8,7 @@
             <div class="box-ex-top box-card-top flex-column">
                 <a href="#" class="btn-sm btn-edit mb-12"><span>편집</span></a>
 
-                <!-- 광고 배너 2건 이상일 경우  -->
-                <div class="swiper-container expenditure-banner">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="img-area">
-                                <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
-                                        class="banner-img" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img-area">
-                                <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
-                                        class="banner-img" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img-area">
-                                <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
-                                        class="banner-img" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="index-display"><span id="slide-index">1</span> / <span id="total-index">1</span>
-                        <!-- .swiper-slide가 1개 일경우 비 노출 hidden 처리-->
-                        <!-- <p class="index-display" hidden><span id="slide-index">1</span> / <span id="total-index">1</span> -->
-                    </p>
-                </div>
-                <script>
-                    var swiper = new Swiper(".expenditure-banner", {
-                        autoplay: {
-                            delay: 3000,
-                            disableOnInteraction: false
-                        },
-                        loop: true,
-                        spaceBetween: 15,
-                    });
-                    function updateSlideIndex() {
-                        const indexDisplay = document.getElementById('slide-index');
-                        const indexTotal = document.getElementById('total-index');
 
-                        indexDisplay.innerHTML = swiper.realIndex + 1;
-                        // total length에서 허수 slide duplicate 2개 제외
-                        indexTotal.innerHTML = swiper.slides.length - 2
-                    }
-                    swiper.on('slideChange', function () {
-                        updateSlideIndex();
-                    });
-
-                    updateSlideIndex();
-                </script>
 
                 <!-- 신규 계좌가 있을경우 -->
                 <div class="alert-box">
@@ -106,6 +51,64 @@
                     </div>
                 </div>
             </div>
+            <!-- 광고 배너 2건 이상일 경우  -->
+            <div class="mission-banner-wrap pl-20 pr-20 mb-20">
+                <div class="swiper-container mission-banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="index-display"><span id="slide-index">1</span> / <span id="total-index">1</span>
+                        <!-- .swiper-slide가 1개 일경우 비 노출 hidden 처리-->
+                        <!-- <p class="index-display" hidden><span id="slide-index">1</span> / <span id="total-index">1</span> -->
+                    </p>
+                </div>
+            </div>
+            <script>
+                var swiper = new Swiper(".mission-banner", {
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    loop: true,
+                    spaceBetween: 15,
+                });
+                function updateSlideIndex() {
+                    const indexDisplay = document.getElementById('slide-index');
+                    const indexTotal = document.getElementById('total-index');
+
+                    indexDisplay.innerHTML = swiper.realIndex + 1;
+                    // total length에서 허수 slide duplicate 2개 제외
+                    indexTotal.innerHTML = swiper.slides.length - 2
+                }
+                swiper.on('slideChange', function () {
+                    updateSlideIndex();
+                });
+
+                updateSlideIndex();
+            </script>
             <div class="divider"></div>
             <div class="box-ex-list box-card-list box-card-improve">
                 <!-- 계좌・현금 -->

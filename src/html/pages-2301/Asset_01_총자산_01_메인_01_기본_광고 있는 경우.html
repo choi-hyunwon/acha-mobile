@@ -16,7 +16,6 @@
                                 <a href="#" class="banner-box">
                                     <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner" class="banner-img" />
                                 </a>
-                                <p><span class="num">1</span> / <span class="total">3</span></p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -24,7 +23,6 @@
                                 <a href="#" class="banner-box">
                                     <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner" class="banner-img" />
                                 </a>
-                                <p><span class="num">2</span> / <span class="total">3</span></p>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -32,17 +30,33 @@
                                 <a href="#" class="banner-box">
                                     <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner" class="banner-img" />
                                 </a>
-                                <p><span class="num">3</span> / <span class="total">3</span></p>
                             </div>
                         </div>
                     </div>
+                    <p class="index-display"><span id="slide-index">1</span> / <span id="total-index">1</span></p>
                 </div>
                 <script>
                     var swiper = new Swiper(".expenditure-banner", {
-                        autoplay : true,
+                        autoplay : {
+                            delay: 3000,
+                            disableOnInteraction: false 
+                        },
                         loop:true,
-                        speed: 3000
+                        spaceBetween: 15,
                     });
+                    function updateSlideIndex() {
+                        const indexDisplay = document.getElementById('slide-index');
+                        const indexTotal = document.getElementById('total-index');
+
+                        indexDisplay.innerHTML = swiper.realIndex + 1;
+                        // total length에서 허수 slide duplicate 2개 제외
+                        indexTotal.innerHTML = swiper.slides.length - 2
+                    }
+                    swiper.on('slideChange', function () {
+                        updateSlideIndex();
+                    });
+
+                    updateSlideIndex();
                 </script>
 
                 <!-- 신규 계좌가 있을경우 -->

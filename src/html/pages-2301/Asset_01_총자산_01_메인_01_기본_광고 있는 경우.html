@@ -14,34 +14,40 @@
                         <div class="swiper-slide">
                             <div class="img-area">
                                 <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner" class="banner-img" />
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="img-area">
                                 <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner" class="banner-img" />
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="img-area">
                                 <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner" class="banner-img" />
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <p class="index-display"><span id="slide-index">1</span> / <span id="total-index">1</span></p>
+                    <p class="index-display"><span id="slide-index">1</span> / <span id="total-index">1</span>
+                        <!-- .swiper-slide가 1개 일경우 비 노출 hidden 처리-->
+                        <!-- <p class="index-display" hidden><span id="slide-index">1</span> / <span id="total-index">1</span> -->
+                    </p>
                 </div>
                 <script>
                     var swiper = new Swiper(".expenditure-banner", {
-                        autoplay : {
+                        autoplay: {
                             delay: 3000,
-                            disableOnInteraction: false 
+                            disableOnInteraction: false
                         },
-                        loop:true,
+                        loop: false,
                         spaceBetween: 15,
                     });
                     function updateSlideIndex() {

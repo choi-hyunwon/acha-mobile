@@ -3,13 +3,15 @@
 @@include('../include/head.html')
 
 <body>
-    <div class="wrap">
+    <div class="wrap renewal">
         <div class="contents">
-            <div class="box-ex-top box-card-top flex-column">
-                <a href="#" class="btn-sm btn-edit mb-12"><span>편집</span></a>
+            <div class="box-ex-top box-card-top pb-12">
+                <a href="#" class="btn-sm btn-edit"><span>편집</span></a>
+            </div>
 
-                <!-- 광고 배너 2건 이상일 경우  -->
-                <div class="swiper-container expenditure-banner">
+            <!-- 광고 배너 2건 이상일 경우  -->
+            <div class="mission-banner-wrap pl-20 pr-20">
+                <div class="swiper-container mission-banner">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="img-area">
@@ -41,71 +43,72 @@
                         <!-- <p class="index-display" hidden><span id="slide-index">1</span> / <span id="total-index">1</span> -->
                     </p>
                 </div>
-                <script>
-                    var swiper = new Swiper(".expenditure-banner", {
-                        autoplay: {
-                            delay: 3000,
-                            disableOnInteraction: false
-                        },
-                        loop: true,
-                        spaceBetween: 15,
-                    });
-                    function updateSlideIndex() {
-                        const indexDisplay = document.getElementById('slide-index');
-                        const indexTotal = document.getElementById('total-index');
+            </div>
+            <script>
+                var swiper = new Swiper(".mission-banner", {
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    loop: true,
+                    spaceBetween: 15,
+                });
+                function updateSlideIndex() {
+                    const indexDisplay = document.getElementById('slide-index');
+                    const indexTotal = document.getElementById('total-index');
 
-                        indexDisplay.innerHTML = swiper.realIndex + 1;
-                        // total length에서 허수 slide duplicate 2개 제외
-                        indexTotal.innerHTML = swiper.slides.length - 2
-                    }
-                    swiper.on('slideChange', function () {
-                        updateSlideIndex();
-                    });
-
+                    indexDisplay.innerHTML = swiper.realIndex + 1;
+                    // total length에서 허수 slide duplicate 2개 제외
+                    indexTotal.innerHTML = swiper.slides.length - 2
+                }
+                swiper.on('slideChange', function () {
                     updateSlideIndex();
-                </script>
+                });
 
-                <!-- 신규 계좌가 있을경우 -->
-                <div class="alert-box">
-                    <a href="#" class="link">
-                        <span class="badge badge-new"><img src="../../img/common/ic_new_small@2x.png" alt="아이콘"></span>
-                        신규 계좌/상품 연결하기<i class="ico ico_list_arrow_small"></i>
-                    </a>
-                    <button class="btn-delete">
-                        <img src="../../img/common/ic_delete_a@2x.png" alt="삭제하기">
-                    </button>
+                updateSlideIndex();
+            </script>
+
+            <!-- 신규 계좌가 있을경우 -->
+            <div class="alert-box">
+                <a href="#" class="link">
+                    <span class="badge badge-new"><img src="../../img/common/ic_new_small@2x.png" alt="아이콘"></span>
+                    신규 계좌/상품 연결하기<i class="ico ico_list_arrow_small"></i>
+                </a>
+                <button class="btn-delete">
+                    <img src="../../img/common/ic_delete_a@2x.png" alt="삭제하기">
+                </button>
+            </div>
+
+            <!-- 기관 연결 해제 -->
+            <div class="alert-box">
+                <a href="#" class="link">
+                    <span class="badge badge-remove"><img src="../../img/common/ico_caution_purple@2x.png"
+                            alt="아이콘"></span>
+                    기관 연결이 곧 해제돼요<i class="ico ico_list_arrow_small"></i>
+                </a>
+                <button class="btn-delete">
+                    <img src="../../img/common/ic_delete_a@2x.png" alt="삭제하기">
+                </button>
+            </div>
+
+            <div class="assets-total-box">
+                <div class="title">
+                    <p class="total">총 자산<i class="sprite icon-caution" onclick="tooltipToggle('toolbox-1')"></i>
+                    </p>
+                    <p class="total-sum">999,999,999,999+<span>원</span></p>
                 </div>
-
-                <!-- 기관 연결 해제 -->
-                <div class="alert-box mb-20">
-                    <a href="#" class="link">
-                        <span class="badge badge-remove"><img src="../../img/common/ico_caution_purple@2x.png"
-                                alt="아이콘"></span>
-                        기관 연결이 곧 해제돼요<i class="ico ico_list_arrow_small"></i>
-                    </a>
-                    <button class="btn-delete">
-                        <img src="../../img/common/ic_delete_a@2x.png" alt="삭제하기">
-                    </button>
+                <a href="#" class="assets-total">999개 자산 합계 <i class="ico_list_arrow_small"></i></a>
+                <div class="sum-area">
+                    <a href="#" class="ico-refresh-mini"></a>
+                    <p class="update">30분 전</p>
                 </div>
-
-                <div class="assets-total-box">
-                    <div class="title">
-                        <p class="total">총 자산<i class="sprite icon-caution" onclick="tooltipToggle('toolbox-1')"></i>
-                        </p>
-                        <p class="total-sum">999,999,999,999+<span>원</span></p>
-                    </div>
-                    <a href="#" class="assets-total">999개 자산 합계 <i class="ico_list_arrow_small"></i></a>
-                    <div class="sum-area">
-                        <a href="#" class="ico-refresh-mini"></a>
-                        <p class="update">30분 전</p>
-                    </div>
-                    <div class="tooltip-txt toolbox-1" data-tooltip="hidden">
-                        총자산 금액에는 외화 및 자산금액으로 <br />
-                        환산 불가한 보험/카드 등이 제외돼요
-                        <span class="close" onclick="TooltipClose('toolbox-1')"></span>
-                    </div>
+                <div class="tooltip-txt toolbox-1" data-tooltip="hidden">
+                    총자산 금액에는 외화 및 자산금액으로 <br />
+                    환산 불가한 보험/카드 등이 제외돼요
+                    <span class="close" onclick="TooltipClose('toolbox-1')"></span>
                 </div>
             </div>
+
             <div class="divider"></div>
             <div class="box-ex-list box-card-list box-card-improve">
                 <!-- 계좌・현금 -->

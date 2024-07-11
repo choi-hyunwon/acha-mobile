@@ -9,7 +9,7 @@
                 <a href="#" class="btn-sm btn-edit"><span>편집</span></a>
             </div>
 
-            <!-- 광고 배너 2건 이상일 경우  -->
+            <!-- 광고 배너 1건 일 경우  -->
             <div class="mission-banner-wrap">
                 <div class="swiper-container mission-banner">
                     <div class="swiper-wrapper">
@@ -21,26 +21,9 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="img-area">
-                                <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
-                                        class="banner-img" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img-area">
-                                <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
-                                        class="banner-img" />
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                    <p class="index-display"><span id="slide-index">1</span> / <span id="total-index">1</span>
-                        <!-- .swiper-slide가 1개 일경우 비 노출 hidden 처리-->
-                        <!-- <p class="index-display" hidden><span id="slide-index">1</span> / <span id="total-index">1</span> -->
+                    <!-- .swiper-slide가 1개 일경우 비 노출 hidden 처리-->
+                    <!-- <p class="index-display" hidden><span id="slide-index">1</span> / <span id="total-index">1</span> -->
                     </p>
                 </div>
             </div>
@@ -52,7 +35,7 @@
                     },
                     // 광고 1건일 때, loop: false
                     // 광고 2건 이상 일 때, loop: true
-                    loop: true,
+                    loop: false,
                     spaceBetween: 15,
                 });
                 function updateSlideIndex() {

@@ -13,7 +13,7 @@
                 </button>
             </div>
         </div>
-        <div class="contents chatgpt">
+        <div class="contents chatgpt lifestyle">
             <div class="wrap">
                 <div class="choice benefit-choice">
                     <div class="inner">
@@ -25,11 +25,11 @@
                             <li class="item">자동차</li>
                             <li class="item">통신</li>
                             <li class="item active">보험</li>
-                            <li class="item">공과금/렌탈</li>
+                            <li class="item active">공과금/렌탈</li>
                             <li class="item">마트/편의점</li>
                             <li class="item">쇼핑</li>
-                            <li class="item">온라인쇼핑</li>
-                            <li class="item">간편결제</li>
+                            <li class="item active">온라인쇼핑</li>
+                            <li class="item active">간편결제</li>
                             <li class="item">외식</li>
                             <li class="item">카페/디저트</li>
                             <li class="item">뷰티</li>
@@ -50,6 +50,12 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 카드 검색결과가 없는 경우 토스트 팝업 띄움 -->
+            <div class="toast-popup alert-setting _toastPopup">
+                <p>검색된 카드가 없어요</p>
+            </div>
+            
             <div class="btn-area fixed-bottom">
                 <!-- 선택이 없는 경우 .disabled -->
                 <a class="btn btn-block btn-big btn-primary btn-save" href="#">
@@ -59,6 +65,8 @@
         </div>
     </div>
     <script>
+        toastPopupShow()
+
         $('.benefit-list .item').click(function () {
             $(this).toggleClass('active')
         })

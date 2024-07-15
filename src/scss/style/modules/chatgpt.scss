@@ -8,6 +8,7 @@
         span {
             font-size: 14px;
             color: var(--text-02);
+            font-family: var(--font1);
             line-height: 20px;
         }
     }
@@ -1110,6 +1111,50 @@
             padding: 14px 97px;
             background: var(--color-point);
             border-radius: 6px;
+        }
+    }
+
+    .noti{
+        margin-top: 16px;
+        li{
+            font-size: 13px;
+            line-height: 20px;
+            font-family: var(--font1);
+            color: var(--text-02);
+            word-break: keep-all;
+        }
+        li:not(.dot-list li){
+            margin-bottom: 8px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        .point{
+            font-size: 15px;
+            line-height: 22px;
+            font-family: var(--font3);
+            color: var(--text-02);
+        }
+
+        .dot-list{
+            margin-top: 6px;
+            li{
+                text-indent: -9px;
+                margin-left: 16px;
+                margin-bottom: 4px;
+                &::before{
+                    content:"";
+                    display: inline-block;
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background: var(--text-03);
+                    margin-right: 6px;
+                    margin-bottom: 3px;
+                    vertical-align: middle;
+                }
+            }
         }
     }
 }

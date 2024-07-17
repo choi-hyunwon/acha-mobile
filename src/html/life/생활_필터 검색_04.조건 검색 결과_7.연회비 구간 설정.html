@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap _btnSlideOpen"></div>
+    <div class="modal-slide modal-my-data _modalSlide">
+        <div class="modal-slide-content ">
+            <div class="inner" style="padding: 30px">
+
+                <div class="title _btnSlideOpen"><b>연회비 구간</b></div>
+                <div style="padding: 5px 12.5px 0">
+                    <div class="slider-container">
+                        <input type="text" id="slider-range" class="slider" />
+                    </div>
+                </div>
+
+                <div class="btn-area mt-30 pt-2">
+                    <a class="btn btn-purple-bg btn-block" href="#">설정하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+
+    <script>
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click', function () {
+            setTimeout(
+                function () {
+                    document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click', function () {
+            setTimeout(
+                function () {
+                    document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+
+        setTimeout(() => {
+            var slider = new rSlider({
+                target: '#slider-range',
+                values: ['0', '1만', '3만', '10만', '10만+'],
+                width: '100',
+                range: true,
+                tooltip: false,
+                onChange: function (e) {
+                    console.log(e);
+                }
+            })
+        }, 500);
+
+    </script>
+</body>
+
+</html>

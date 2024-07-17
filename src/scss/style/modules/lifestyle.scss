@@ -392,7 +392,7 @@
         }
     }
 
-    .card-benefit {
+    .card-profit {
         padding: 28px 0;
 
         .title {
@@ -1159,8 +1159,49 @@
     // toast popup
     .toast-popup{
         top: 88.5%;
+
+        &.top-mb{
+            top: 87.6%;
+        }
+
         p{
             font-family: var(--font1);
         }
+    }
+
+    // dim
+    .dim{
+        opacity: 0.2;
+    }
+}
+
+/*팝업*/
+.modal-life {
+    .modal-dialog {
+      width: 270px;
+      max-width: 270px;
+  
+      .modal-content {
+        border-radius: 0;
+        padding: 0;
+  
+        .modal-body {
+          flex: none;
+          padding: 30px;
+  
+          p {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            font-family: var(--font1);
+          }
+        }
+  
+        .modal-footer{
+          .btn-footer{
+            font-size: 13px;
+          }
+        }
+      }
     }
 }

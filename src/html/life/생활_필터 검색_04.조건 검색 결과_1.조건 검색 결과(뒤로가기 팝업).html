@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal fade modal-life" id="cardSearchStopPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+              <p>카드 검색 화면을 벗어날까요?</p>
+              <p>검색된 카드는 저장되지 않아요</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer bg-grey">취소</a>
+                <a href="#" class="btn-footer" data-dismiss="modal">확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#cardSearchStopPopup').modal('show');   // modal show
+</script>
+</body>
+</html>

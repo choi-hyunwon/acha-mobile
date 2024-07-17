@@ -479,6 +479,11 @@
         }
     }
 
+    // 기존 chatgpt 카드 상세 하단 패딩 조절
+    .card-detail{
+        padding-bottom: 64px;
+    }
+
     .tag-list{
         height: 50px;
         padding: 10px 20px;

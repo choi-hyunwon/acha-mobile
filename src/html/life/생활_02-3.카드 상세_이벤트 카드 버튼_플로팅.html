@@ -8,7 +8,7 @@
             <a href="#" class="btn-close"></a>
             <h2>카드 상세</h2>
         </div>
-        <div class="contents chatgpt lifestyle pb-0">
+        <div class="contents chatgpt lifestyle">
             <div class="card-detail">
                 <div class="card-detail-box pt-30">
                     <div class="card-detail-title">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-wrap btn-floating">
+            <div class="btn-wrap btn-floating event-btn">
                 <a class="btn btn-block btn-gradient-bg" href="#">
                     <span class="emoji"><img src="../../img/common/lifestyle/ico_card_event_benefit@2x.png" alt="icon" /></span>
                     <span>최대 13만원 이벤트</span>
@@ -232,6 +232,12 @@
                 $('.btn-floating').stop().animate({ bottom: '98px' }, 50);
             } else {
                 $('.btn-floating').stop().animate({ bottom: '20px' }, 50);
+            }
+
+            if ($('.event-btn').length) {
+                $('.lifestyle').addClass('pb-0')
+            } else {
+                $('.lifestyle').removeClass('pb-0')
             }
         })
     </script>

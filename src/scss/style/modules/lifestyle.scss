@@ -690,6 +690,12 @@
                     width: 100%;
                     height: 100%;
                 }
+                &.circle-type {
+                    margin-left: 0;
+                }
+                &.circle-type-sm{
+                    background: transparent;
+                }
             }
 
             .corp{
@@ -813,28 +819,36 @@
         }
 
         .detail{
+            flex: 1;
+
             p{
+                display: flex;
+                margin-bottom: 3px;
+            }
+            
+
+            .category{
                 font-size: 15px;
                 line-height: 22px;
                 font-family: var(--font2);
                 word-break: keep-all;
-                margin-bottom: 3px;
             }
-            span{
+
+            .account{
+                font-size: 15px;
+                line-height: 22px;
+                font-family: var(--font2);
+                word-break: keep-all;
+                margin-left: auto;
+            }
+
+            .count{
                 font-size: 13px;
                 line-height: 19px;
                 font-family: var(--font1);
                 word-break: keep-all;
                 color: var(--text-02);
             }
-        }
-
-        .account{
-            font-size: 15px;
-            line-height: 22px;
-            font-family: var(--font2);
-            word-break: keep-all;
-            margin-left: auto;
         }
 
         .find-btn{
@@ -1172,6 +1186,7 @@
     // dim
     .dim{
         opacity: 0.2;
+        pointer-events: none;
     }
 }
 

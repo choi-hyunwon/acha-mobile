@@ -697,16 +697,14 @@
     }
 
     .pager {
-      width: 30px;
-      height: 20px;
+      width: auto;
       padding: 2px 6px;
       position: absolute;
       bottom: 4px;
       right: 4px;
       left: unset;
       z-index: 1;
-      background: var(--color-text-default);
-      opacity: 55%;
+      background: rgb(55 53 78 / 55%);
       border-radius: 6px;
       font-size: 11px;
       line-height: 15px;

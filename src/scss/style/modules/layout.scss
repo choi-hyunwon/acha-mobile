@@ -670,26 +670,30 @@
 
 /* 광고 배너 신규 추가 */
 .mission-banner-wrap {
+  padding: 0 20px;
   width: 100%;
-  max-width: 335px;
-  margin: 0 auto;
 
   .mission-banner {
     width: 100%;
 
-    .banner-box {
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 335px;
+    .img-area{
+      background: #e7f8f3;
       border-radius: 12px;
       overflow: hidden;
     }
-
+    
+    .banner-box{
+      display: block;
+      width: 335px;
+      height: 90px;
+      margin: 0 auto;
+    }
+    
     img {
       width: 100%;
       height: 100%;
-
+      object-fit: contain;
+      // border-radius: 12px;
     }
 
     .pager {
@@ -709,18 +713,4 @@
       letter-spacing: -0.8px;
     }
   }
-}
-
-@media screen and (max-width: 374px) {
-  .mission-banner-wrap {
-    padding: 0 20px;
-    max-width: fit-content;
-
-    .mission-banner {
-      .pager {
-        right: 8px;
-      }
-    }
-  }
-
 }

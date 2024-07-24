@@ -1286,7 +1286,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px 20px 0;
 
     .btn-edit {
       margin-left: auto;
@@ -1737,70 +1737,69 @@
     /*자산 연결 X*/
     &.no-connect {
       padding: 24px 20px 90px;
+    }
+  }
+}
 
-      .content {
-        width: 100%;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: -0.5px;
-        font-weight: 500;
-        text-align: left;
-        color: var(--text-01);
-        font-family: var(--font2);
-        margin-bottom: 150px;
+.no-asset {
+  width: 100%;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  text-align: left;
+  color: var(--text-01);
+  font-family: var(--font2);
+  margin-bottom: 110px;
 
-        .img {
-          width: 220px;
-          height: auto;
-          margin: 80px auto 30px;
+  .img {
+    width: 220px;
+    height: auto;
+    margin: 110px auto 30px;
 
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-        .box {
-          margin-bottom: 0;
-          text-align: center;
+  .box {
+    margin-bottom: 0;
+    text-align: center;
 
-          h3 {
-            font-size: 20px;
-            height: 29px;
-            line-height: 29px;
-            font-family: var(--font3);
-            text-align: center;
-          }
+    h3 {
+      font-size: 20px;
+      height: 29px;
+      line-height: 29px;
+      font-family: var(--font3);
+      text-align: center;
+    }
 
-          p {
-            font-size: 15px;
-            line-height: 25px;
-            height: auto;
-            color: var(--text-01);
-            font-family: var(--font1);
-          }
-        }
-      }
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      height: auto;
+      color: var(--text-01);
+      font-family: var(--font1);
+    }
+  }
 
+  .btn-area {
+    margin-top: 40px;
 
-      .btn-area {
-        margin-top: 40px;
-
-        .btn-add {
-          border-radius: 6px;
-          height: 50px;
-          line-height: 50px;
-          border: 0;
-          background-color: var(--color-point);
-          color: #ffffff;
-          font-size: 15px;
-          letter-spacing: -0.75px;
-          font-family: var(--font2);
-          max-width: 280px;
-          margin: 0 auto;
-        }
-      }
+    .btn-add {
+      border-radius: 6px;
+      height: 50px;
+      line-height: 50px;
+      border: 0;
+      background-color: var(--color-point);
+      color: #ffffff;
+      font-size: 15px;
+      letter-spacing: -0.75px;
+      font-family: var(--font2);
+      max-width: 280px;
+      margin: 0 auto;
     }
   }
 }
@@ -1903,6 +1902,7 @@
       span {
         font-family: var(--font3);
         font-size: 22px;
+        margin-left: 2px;
       }
     }
   }

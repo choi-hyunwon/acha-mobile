@@ -26,16 +26,33 @@
     <script>
         var btnSlideOpen = $('._btnSlideOpen');
         var btnSlideClose = $('._btnSlideClose');
+        var sliderInitialized = false;
+        var slider;
 
         btnSlideOpen.on('click', function () {
             setTimeout(
                 function () {
                     document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    $('._modalSlide').addClass('up').removeClass('down');
+                    $('.modal-slide-backdrop').addClass('show');
+                    $('body').addClass('scrOn');
+
+                    // 슬라이더 초기화 (한 번만 실행)
+                    if (!sliderInitialized) {
+                        slider = new rSlider({
+                            target: '#slider-range',
+                            values: ['0', '1만', '3만', '10만', '10만+'],
+                            width: '100',
+                            range: true,
+                            tooltip: false,
+                            onChange: function (e) {
+                                console.log(e);
+                            }
+                        });
+                        sliderInitialized = true;
+                    }
                 }, 500
             );
-            $('._modalSlide').addClass('up').removeClass('down');
-            $('.modal-slide-backdrop').addClass('show');
-            $('body').addClass('scrOn')
         });
 
         btnSlideClose.on('click', function () {
@@ -50,20 +67,6 @@
         });
 
         btnSlideOpen.trigger('click');
-
-        setTimeout(() => {
-            var slider = new rSlider({
-                target: '#slider-range',
-                values: ['0', '1만', '3만', '10만', '10만+'],
-                width: '100',
-                range: true,
-                tooltip: false,
-                onChange: function (e) {
-                    console.log(e);
-                }
-            })
-        }, 500);
-
     </script>
 </body>
 

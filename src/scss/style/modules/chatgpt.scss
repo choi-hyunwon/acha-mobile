@@ -807,7 +807,7 @@
             position: relative;
             display: flex;
             align-items: center;
-            gap: 10px;
+            // gap: 10px;
             padding: 13px 20px;
             max-height: 47px;
             overflow: hidden;
@@ -831,12 +831,14 @@
                 line-height: 20px;
                 width: 70px;
                 flex-shrink: 0;
+                margin-right: 10px;
             }
 
             .filter-result {
                 font-family: var(--font1);
                 font-size: 14px;
                 line-height: 20px;
+                word-break: keep-all;
             }
 
             .filter-list {
@@ -898,7 +900,8 @@
         .right {
             flex: 1;
             display: flex;
-            gap: 10px;
+            align-items: center;
+            // gap: 10px;
         }
 
         .right {

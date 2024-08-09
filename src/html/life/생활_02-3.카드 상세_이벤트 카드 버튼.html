@@ -329,14 +329,14 @@
 
         $(window).scroll(() => {
             const windowHeight = $(window).scrollTop() + $(window).height()
-            if (windowHeight >= $(document).height()) {
-                $('.btn-floating').stop().animate({ bottom: '98px' }, 200);
+            if (windowHeight >= $(document).height() - 90) {
+                $('.btn-floating').stop().animate({ bottom: '98px' }, 50);
             } else {
-                $('.btn-floating').stop().animate({ bottom: '25px' }, 100);
+                $('.btn-floating').stop().animate({ bottom: '25px' }, 50);
             }
 
             if ($('.event-btn').length) {
-            $('.lifestyle').addClass('pb-0')
+                $('.lifestyle').addClass('pb-0')
             } else {
                 $('.lifestyle').removeClass('pb-0')
             }

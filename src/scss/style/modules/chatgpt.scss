@@ -549,16 +549,6 @@
                                 margin-bottom: 24px;
                             }
 
-                            .subject{
-                                font-family: var(--font3);
-                                font-size: 15px;
-                                line-height: 22px;
-                                word-break: keep-all;
-                                margin-bottom: 8px;
-                                text-indent: -13px;
-                                margin-left: 12px;
-                            }
-
                             table {
                                 text-align: center;
                                 font-family: var(--font1);
@@ -587,9 +577,14 @@
                             li, p{
                                 font-family: var(--font2);
                                 font-size: 14px;
-                                line-height: 22px;
+                                line-height: 21px;
                                 word-break: keep-all;
                                 margin-bottom: 6px;
+                            }
+
+                            .subject{
+                                text-indent: -12px;
+                                margin-left: 12px;
                             }
 
                             .dot {
@@ -609,6 +604,11 @@
                             }
 
                             .dash-list {
+                                .area-title{
+                                    font-family: var(--font3);
+                                    color: var(--text-02);
+                                }
+                                
                                 li{
                                     font-family: var(--font1);
                                     color: var(--text-02);

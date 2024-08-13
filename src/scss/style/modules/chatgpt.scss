@@ -549,6 +549,16 @@
                                 margin-bottom: 24px;
                             }
 
+                            .subject{
+                                font-family: var(--font3);
+                                font-size: 15px;
+                                line-height: 22px;
+                                word-break: keep-all;
+                                margin-bottom: 8px;
+                                text-indent: -13px;
+                                margin-left: 12px;
+                            }
+
                             table {
                                 text-align: center;
                                 font-family: var(--font1);
@@ -568,7 +578,7 @@
                                     border-right: 1px solid #e3e4e8;
                                     border-bottom: 1px solid #e3e4e8;
 
-                                    &:nth-child(3n) {
+                                    &:last-child {
                                         border-right: none;
                                     }
                                 }
@@ -587,42 +597,56 @@
                                 text-indent: 9px;
 
                                 &:before {
-                                  content: '';
-                                  position: absolute;
-                                  width: 4px;
-                                  height: 4px;
-                                  background-color: var(--text-01);
-                                  border-radius: 50%;
-                                  top: 50%;
-                                  transform: translateY(-50%);
+                                    content: '';
+                                    position: absolute;
+                                    width: 4px;
+                                    height: 4px;
+                                    background-color: var(--text-01);
+                                    border-radius: 50%;
+                                    top: 50%;
+                                    transform: translateY(-50%);
                                 }
-                              }
+                            }
 
-                            .dash {
-                                font-family: var(--font1);
-                                color: var(--text-02);
-                                text-indent: -9px;
-                                margin-left: 11px;
+                            .dash-list {
+                                li{
+                                    font-family: var(--font1);
+                                    color: var(--text-02);
+                                    text-indent: -9px;
+                                    margin-left: 11px;
+                                }
                             }
 
                             .detail-list{
                                 margin-top: 3px;
                                 li{
                                     font-family: var(--font1);
-                                    font-size: 8px;
-                                    line-height: 14px;
+                                    font-size: 11px;
+                                    line-height: 17px;
                                     word-break: keep-all;
                                     color: var(--text-02);
                                     text-indent: -9px;
-                                    margin-left: 10px;
-                                    margin-bottom: 3px;
+                                    margin-left: 20px;
+                                    margin-bottom: 4px;
                                 }
                             }
 
                             &.noti-list{
                                 p, li{
-                                    font-size: 8px;
-                                    line-height: 14px;
+                                    font-size: 11px;
+                                    line-height: 17px;
+                                }
+                                .dash-list {
+                                    li{
+                                        text-indent: -6px;
+                                        margin-left: 7px;
+                                    }
+                                }
+                                .detail-list{
+                                    li{
+                                        text-indent: -8px;
+                                        margin-left: 17px;
+                                    }
                                 }
                             }
                         }

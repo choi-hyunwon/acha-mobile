@@ -15,6 +15,11 @@
                         <span>농협카드</span>
                         <p>올바른 NEW HAVE 카드</p>
                     </div>
+                    <!-- 카드 이미지 세로일 때 class명 vertical 추가 -->
+                    <!-- <div class="card-detail-img vertical">
+                        <img src="../../img/@temp/img_sample_card@2x.png" alt="img_sample_card">
+                    </div> -->
+                    <!-- 카드 이미지 가로일 때 class명 vertical 삭제 -->
                     <div class="card-detail-img">
                         <img src="../../img/common/lifestyle/img_sample_card@2x.png" alt="img_sample_card">
                     </div>
@@ -41,7 +46,7 @@
                     <div class="card-detail-list">
                         <p class="card-detail-title">주요혜택</p>
                         <!-- 가맹점 -->
-                        <div class="group show">
+                        <div class="group">
                             <div class="category-heading">
                                 <p>국내외 이용가맹점 <span>0.7%</span> NH포인트 적립</p>
                             </div>
@@ -145,6 +150,21 @@
                                     <ul class="dash-list">
                                         <li>- 월 1회, 연 2회 제공</li>
                                         <li>- 전월실적 40만원 이상 시 제공</li>
+
+                                        <!-- <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>40만원</td>
+                                                    <td>80~100만원</td>
+                                                    <td>100만원 이상</td>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <td>3,000원</td>
+                                                <td>7,000원</td>
+                                                <td>10,000원</td>
+                                            </tr>
+                                        </table> -->
                                     </ul>
                                 </div>
                                 <div>
@@ -211,26 +231,23 @@
                                     <ul class="dash-list">
                                         <li>- 해외이용 시(해외사이트 거래 포함) 미화(USD)기준 거래미화금액에 접수일의 NH농협은행 최초고시 전신환매도율을 적용한 후, 국제브랜드사가 부과하는국제브랜드수수료 (Mastercard 1%)와 NH농협카드가 부과하는 해외서비스수수료(0.25%)를 포함하여 원화로 청구됩니다.</li>
                                         <li>- 해외 이용시 청구금액 산출방법</li>
-                                    </ul>
-                                    <ul class="detail-list">
-                                        <li>* 해외이용 시 청구금액 = (거래미화금액×전신환매도율1) + 국제브랜드수수료2 + 해외서비스수수료3</li>
-                                        <li>1. 전신환매도율 : 접수일의 NH농협은행 최초고시 전신환매도율</li>
-                                        <li>2. 국제브랜드수수료 = (거래미화금액×국제브랜드 이용수수료율 Mastercard 1%)×전신환매도율</li>
-                                        <li>3. 해외서비스수수료 = (거래미화금액×해외서비스수수료율 0.25%)×전신환매도율</li>
-                                    </ul>
-                                    <ul class="dash-list">
+                                        <ul class="detail-list">
+                                            <li>* 해외이용 시 청구금액 = (거래미화금액×전신환매도율1) + 국제브랜드수수료2 + 해외서비스수수료3</li>
+                                            <li>1. 전신환매도율 : 접수일의 NH농협은행 최초고시 전신환매도율</li>
+                                            <li>2. 국제브랜드수수료 = (거래미화금액×국제브랜드 이용수수료율 Mastercard 1%)×전신환매도율</li>
+                                            <li>3. 해외서비스수수료 = (거래미화금액×해외서비스수수료율 0.25%)×전신환매도율</li>
+                                        </ul>
                                         <li>- 제3국 통화(KRW 거래포함)는 미국 달러로 환산되어 제공됩니다.</li>
+                                        <li>- 해외에서 원화통화로 대금 결제 시, 해외가맹점이 부과하는 DCC수수료(환전수수료)가 포함되므로 현지통화 결제 시 보다 많은 금액이 청구될 수 있음을 주의바랍니다.</li>
                                         <li>- 국제브랜드사 수수료는 국제브랜드사 정책에 따라 변경될 수 있습니다.</li>
                                         <li>- 해외원화결제서비스(DCC)사전차단 서비스 이용방법</li>
-                                    </ul>
-                                    <ul class="detail-list">
-                                        <li>* 홈페이지/모바일앱 : My NH > 안심서비스 > 해외원화차단서비스/영업점 및 고객상담센터를 통하여 신청바랍니다.</li>
-                                    </ul>
-                                    <ul class="dash-list">
+                                        <ul class="detail-list">
+                                            <li>* 홈페이지/모바일앱 : My NH > 안심서비스 > 해외원화차단서비스/영업점 및 고객상담센터를 통하여 신청바랍니다.</li>
+                                        </ul>
                                         <li>- 일부 해외가맹점 거래 시 IC칩 비밀번호(PIN)를 요구하는 경우가 있으므로 출국 전 반드시 IC칩 비밀번호(PIN)등록 여부를 확인하여 주시기 바랍니다.</li>
-                                    </ul>
-                                    <ul class="detail-list">
-                                        <li>* IC카드의 IC칩 비밀번호(PIN)는 ARS나 인터넷 홈페이지를 통해 등록 및 변경이 불가능하므로 가까운 영업점에서 등록 및 변경하시기 바랍니다.</li>
+                                        <ul class="detail-list">
+                                            <li>* IC카드의 IC칩 비밀번호(PIN)는 ARS나 인터넷 홈페이지를 통해 등록 및 변경이 불가능하므로 가까운 영업점에서 등록 및 변경하시기 바랍니다.</li>
+                                        </ul>
                                     </ul>
                                 </div>
                             </div>

@@ -1132,12 +1132,11 @@
                 left: 29px;
                 z-index: -1;
             }
-        }
 
-        // last line remove
-        &:nth-child(5){
-            .step-box::before{
-                display: none;
+            &.no-line{
+                &::before{
+                    display: none;
+                }
             }
         }
 

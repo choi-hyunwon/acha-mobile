@@ -553,9 +553,10 @@
                                 text-align: center;
                                 font-family: var(--font1);
                                 font-size: 13px;
-                                line-height: 19px;
+                                line-height: 20px;
                                 color: var(--text-02);
                                 margin-bottom: 6px;
+                                letter-spacing: -0.65px;
 
                                 thead {
                                     border-top: 1px solid #e3e4e8;
@@ -572,6 +573,16 @@
                                         border-right: none;
                                     }
                                 }
+
+                                &.pattern-table{
+                                    tbody{
+                                        td{
+                                            &:first-child, :nth-child(5){
+                                                background: #f7f7f8;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                             
                             li, p{
@@ -580,6 +591,12 @@
                                 line-height: 21px;
                                 word-break: keep-all;
                                 margin-bottom: 6px;
+                            }
+
+                            .menu-title{
+                                margin-bottom: 20px;
+                                padding-bottom: 10px;
+                                border-bottom: 1px solid var(--text-01);
                             }
 
                             .subject{

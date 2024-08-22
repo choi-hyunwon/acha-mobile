@@ -553,9 +553,10 @@
                                 text-align: center;
                                 font-family: var(--font1);
                                 font-size: 13px;
-                                line-height: 19px;
+                                line-height: 20px;
                                 color: var(--text-02);
                                 margin-bottom: 6px;
+                                letter-spacing: -0.65px;
 
                                 thead {
                                     border-top: 1px solid #e3e4e8;
@@ -570,6 +571,16 @@
 
                                     &:last-child {
                                         border-right: none;
+                                    }
+                                }
+
+                                &.pattern-table{
+                                    tbody{
+                                        td{
+                                            &:first-child, :nth-child(5){
+                                                background: #f7f7f8;
+                                            }
+                                        }
                                     }
                                 }
                             }

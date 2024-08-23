@@ -577,8 +577,14 @@
                                 &.pattern-table{
                                     tbody{
                                         td{
+                                            line-height: 20px;
+                                            padding: 5px;
+                                            word-break: keep-all;
                                             &:first-child, :nth-child(5){
                                                 background: #f7f7f8;
+                                            }
+                                            span{
+                                                font-size: 11px;
                                             }
                                         }
                                     }

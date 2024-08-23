@@ -570,22 +570,23 @@
                                 text-align: center;
                                 font-family: var(--font1);
                                 font-size: 13px;
-                                line-height: 20px;
                                 color: var(--text-02);
                                 margin-bottom: 6px;
                                 letter-spacing: -0.65px;
-
+                                
                                 thead {
                                     border-top: 1px solid #e3e4e8;
                                     background: #f7f7f8;
                                     font-family: var(--font2);
                                 }
-
+                                
                                 td {
                                     width: 111px;
                                     border-right: 1px solid #e3e4e8;
                                     border-bottom: 1px solid #e3e4e8;
-
+                                    line-height: 20px;
+                                    padding: 5px;
+                                    word-break: keep-all;
                                     &:last-child {
                                         border-right: none;
                                     }
@@ -596,6 +597,9 @@
                                         td{
                                             &:first-child, :nth-child(5){
                                                 background: #f7f7f8;
+                                            }
+                                            span{
+                                                font-size: 11px;
                                             }
                                         }
                                     }

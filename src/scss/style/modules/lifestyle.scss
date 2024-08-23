@@ -65,6 +65,30 @@
         background: #fff5f5;
     }
 
+    .bg-salmon{
+        background: #fff0ed;
+    }
+
+    .bg-darkSalmon{
+        background: #f46148;
+    }
+
+    .bg-olive{
+        background: #52aa0c;
+    }
+
+    .bg-yellowGreen{
+        background: #f1ffe6;
+    }
+
+    .bg-gold{
+        background: #f8a405;
+    }
+
+    .bg-lemon{
+        background: #fff8eb;
+    }
+
     .f-orange {
         color: #eb8133;
     }
@@ -87,6 +111,18 @@
     
     .f-primary{
         color: var(--color-point);
+    }
+
+    .f-darkSalmon{
+        color: #f46148;
+    }
+
+    .f-olive{
+        color: #52aa0c;
+    }
+
+    .f-gold{
+        color: #f8a405;
     }
 
     .btn-gradient-bg{

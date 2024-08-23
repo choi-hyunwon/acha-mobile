@@ -287,10 +287,11 @@
 
 
     .card-banner {
-        background: #f5f8ff;
+        position: relative;
+        background: #fff9ef;
         width: 100%;
         height: 75px;
-        padding: 15px 20px;
+        padding: 20px;
         display: flex;
         align-items: center;
         gap: 16px;
@@ -298,14 +299,11 @@
         .card-logo-ico {
             width: 40px;
             height: 40px;
-            border-radius: 10px;
-            background: var(--white);
-            text-align: center;
-            padding: 3px;
 
             img {
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: contain;
             }
         }
 
@@ -322,6 +320,25 @@
                 font-size: 16px;
                 line-height: 26px;
             }
+        }
+
+        .banner-tag{
+            width: 21px;
+            height: 17px;
+            padding: 2px 4px;
+            opacity: 0.15;
+            border-radius: 6px;
+            background-color: var(--text-01);
+            
+            font-family: var(--font1);
+            font-size: 10px;
+            line-height: 12px;
+            color: var(--white);
+            text-align: center;
+
+            position: absolute;
+            top: 6px;
+            right: 6px;
         }
     }
 
@@ -875,11 +892,6 @@
 
                     &.active {
                         border: 1px solid var(--color-point);
-
-                        span {
-                            font-family: var(--font2);
-                            color: var(--text-point-color);
-                        }
                     }
                 }
             }
@@ -1214,20 +1226,6 @@
     }
 
     .noti{
-        li{
-            font-size: 13px;
-            line-height: 20px;
-            font-family: var(--font1);
-            color: var(--text-02);
-            word-break: keep-all;
-        }
-        li:not(.dot-list li){
-            margin-bottom: 8px;
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
-
         .point{
             font-size: 15px;
             line-height: 22px;
@@ -1235,12 +1233,21 @@
             color: var(--text-02);
         }
 
+        li,p{
+            font-size: 13px;
+            line-height: 20px;
+            font-family: var(--font1);
+            color: var(--text-02);
+            word-break: keep-all;
+            margin-bottom: 8px;
+        }
+
         .dot-list{
-            margin-top: 6px;
+            margin-bottom: 28px;
+
             li{
                 text-indent: -9px;
-                margin-left: 16px;
-                margin-bottom: 4px;
+                margin-left: 11px;
                 &::before{
                     content:"";
                     display: inline-block;
@@ -1251,6 +1258,16 @@
                     margin-right: 6px;
                     margin-bottom: 3px;
                     vertical-align: middle;
+                }
+            }
+        }
+
+        .dash-list{
+            padding-top: 6px;
+            li{
+                margin-bottom: 6px;
+                &::before{
+                    display: none;
                 }
             }
         }

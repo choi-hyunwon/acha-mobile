@@ -1371,6 +1371,8 @@
     .btn-area{
         padding: 0 20px 30px;
         width: 100%;
+        position: fixed;
+        background: var(--white);
     }
 
     // toast popup

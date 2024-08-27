@@ -44,7 +44,7 @@
                         <!-- 가맹점 -->
                         <div class="group">
                             <div class="category-heading">
-                                <p>국내외 이용가맹점 <span>0.7%</span> NH포인트 적립</p>
+                                <p>국내외 이용가맹점 <span>0.7%</span> 적립</p>
                             </div>
                             <div class="category-menu">
                                 <div>
@@ -298,7 +298,7 @@
 
                 <div class="divider"></div>
 
-                <div class="card-detail-box pb-30">
+                <div class="card-detail-box pb-110">
                     <div class="card-detail-list">
                         <div class="noti">
                             <ul class="dot-list">
@@ -342,6 +342,10 @@
                     <span>최대 13만원 이벤트</span>
                     <span class="arrow-icon"><img src="../../img/sprite/common/ico_list_arrow_small_w@2x.png" alt="arrow"></span></a>
             </div>
+
+            <div class="btn-area">
+                <a class="btn btn-big btn-purple-bg btn-block" href="#">카드사에서 상세보기</a>
+            </div>
         </div>
     </div>
     <script>
@@ -351,11 +355,18 @@
         });
 
         $(window).scroll(() => {
-            const windowHeight = $(window).scrollTop() + $(window).height()
-            if (windowHeight >= $(document).height() - 90) {
-                $('.btn-floating').stop().animate({ bottom: '20px' }, 50);
+            let top = $(window).scrollTop();
+            let height =  $(window).height();
+            const windowHeight = top + height;
+            
+            if (windowHeight > height) {
+                document.querySelector('.btn-area').style.display = "block";
+                $('.btn-area').stop().animate({ bottom: '0' }, 60);
+                $('.btn-floating').stop().animate({ bottom: '104px' }, 50);
             } else {
-                $('.btn-floating').stop().animate({ bottom: '20px' }, 50);
+                document.querySelector('.btn-area').style.display = "none";
+                $('.btn-area').stop().animate({ bottom: '0' }, 60);
+                $('.btn-floating').stop().animate({ bottom: '25px' }, 50);
             }
 
             if ($('.event-btn').length) {

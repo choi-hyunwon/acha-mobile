@@ -278,7 +278,7 @@
 
                 <div class="divider"></div>
 
-                <div class="card-detail-box pb-30">
+                <div class="card-detail-box pb-110">
                     <div class="card-detail-list">
                         <div class="noti">
                             <ul class="dot-list">
@@ -326,6 +326,20 @@
             $(this).parent().toggleClass('show')
             $(this).siblings().find('.show').toggleClass('show')
         });
+
+        $(window).scroll(() => {
+            let top = $(window).scrollTop();
+            let height =  $(window).height();
+            const windowHeight = top + height;
+            
+            if (windowHeight > height) {
+                document.querySelector('.btn-area').style.display = "block";
+                $('.btn-area').stop().animate({ bottom: '0' }, 50);
+            } else {
+                document.querySelector('.btn-area').style.display = "none";
+                $('.btn-area').stop().animate({ bottom: '0' }, 50);
+            }
+        })
     </script>
 </body>
 

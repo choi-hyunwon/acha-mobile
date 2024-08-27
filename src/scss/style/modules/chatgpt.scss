@@ -615,6 +615,14 @@
                                 margin-bottom: 6px;
                             }
 
+                            a{
+                                color: var(--text-02);
+                                outline: none;
+                                &:focus{
+                                    outline: none;
+                                }
+                            }
+
                             .menu-title{
                                 margin-bottom: 20px;
                                 padding-bottom: 10px;

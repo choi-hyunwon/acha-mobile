@@ -383,6 +383,7 @@
                     font-size: 20px;
                     line-height: 29px;
                     text-align: center;
+                    word-break: keep-all;
                     // 2줄 이상 말줄임 ... 처리
                     display: -webkit-box;
                     word-wrap: break-word;

@@ -449,16 +449,33 @@
             word-break: keep-all;
         }
 
-        span {
-            width: 121px;
-            height: 130px;
+        .double-card-img{
             position: absolute;
-            bottom: 0;
-            right: 0;
+            width: 50px;
+            height: 80px;
+
+            &:first-of-type{
+                bottom: 38px;
+                right: 38px;
+                z-index: 1;
+            }
+
+            &:nth-of-type(2){
+                bottom: 24px;
+                right: 20px;
+            }
+
+            &:last-of-type{
+                width: 84px;
+                height: 20px;
+                bottom: 12px;
+                right: 12px;
+            }
 
             img {
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: contain;
             }
         }
     }

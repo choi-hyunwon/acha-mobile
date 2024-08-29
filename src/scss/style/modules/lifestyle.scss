@@ -1,64 +1,6 @@
 .lifestyle {
     padding-bottom: 62px;
 
-    // main-banner1
-    .bg-purple {
-        background: #f9f2ff;
-    }
-
-    // main-banner2
-    .bg-blue {
-        background: #d1f1ff;
-    }
-
-    // main-banner3
-    .bg-salmon{
-        background: #fff0ed;
-    }
-    .bg-red{
-        background: #f46b54;
-    }
-    .bg-yellowGreen{
-        background: #eafadf;
-    }
-    .bg-olive{
-        background: #48aa00;
-    }
-    .bg-lemon{
-        background: #fff7ea;
-    }
-    .bg-gold{
-        background: #f8a405;
-    }
-    .bg-royalBlue{
-        background: #7165ef;
-    }
-    .bg-cyan{
-        background: #f2f4ff;
-    }
-    .bg-cornBlue{
-        background: #179fff;
-    }
-    .bg-skyBlue{
-        background: #e8f6ff;
-    }
-    .bg-babyPink{
-        background: #fff2f7;
-    }
-    .bg-magenta{
-        background: #f86196;
-    }
-
-    // main-banner4
-    .bg-mint {
-        background: #d6f7f6;
-    }
-
-    // main-banner7
-    .bg-green {
-        background: #e7f8f3;
-    }
-
     // banner-case-bg
     .bg-gray{
         background: #f7f7f7;
@@ -164,6 +106,7 @@
     .credit-card {
         padding: 24px 20px;
         border-radius: 16px;
+        background: #f9f2ff;
 
         .desc {
             p {
@@ -214,6 +157,7 @@
 
         .recommend-box {
             padding: 34px 0;
+            background: #d1f1ff;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
         }
@@ -227,6 +171,7 @@
 
     .what-card {
         padding: 12px 0;
+        background: #d6f7f6;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
 
@@ -307,6 +252,7 @@
 
         .insurance-box {
             padding: 0 14px 0 20px;
+            background: #e7f8f3;
             border-radius: 16px;
             margin-bottom: 44px;
 
@@ -411,6 +357,43 @@
         min-height: 220px;
         padding: 20px 14px 0 20px;
         position: relative;
+
+        &:first-of-type{
+            background: #fff0ed;
+            .tag{
+                background: #f46b54;
+            }
+        }
+        &:nth-of-type(2){
+            background: #eafadf;
+            .tag{
+                background: #48aa00;
+            }
+        }
+        &:nth-of-type(3){
+            background: #fff7ea;
+            .tag{
+                background: #f8a405;
+            }
+        }
+        &:nth-of-type(4){
+            background: #f2f4ff;
+            .tag{
+                background: #7165ef;
+            }
+        }
+        &:nth-of-type(5){
+            background: #e8f6ff;
+            .tag{
+                background: #179fff;
+            }
+        }
+        &:last-of-type{
+            background: #fff2f7;
+            .tag{
+                background: #f86196;
+            }
+        }
 
         .tag {
             display: inline-block;
@@ -604,18 +587,7 @@
 
     .benefit-wrap{
         padding: 0 20px;
-        
-        &:first-of-type{
-            .title{
-                margin-top: 30px;
-            }
-        }
-        &:last-child{
-            padding-bottom: 30px;
-        }
-    }
 
-    .benefit-list{
         .title{
             font-size: 16px;
             line-height: 24px;
@@ -629,7 +601,63 @@
                 border-radius: 1.5px;
             }
         }
+        
+        &:first-of-type{
+            .title{
+                margin-top: 30px;
+                color: #f46b54;
+                .line{
+                    background: #f46b54;
+                }
+            }
+        }
+        &:nth-of-type(2){
+            .title{
+                color: #48aa00;
+                .line{
+                    background: #48aa00;
+                }
+            }
+        }
+        &:nth-of-type(3){
+            .title{
+                color: #f8a405;
+                .line{
+                    background: #f8a405;
+                }
+            }
+        }
+        &:nth-of-type(4){
+            .title{
+                color: #7165ef;
+                .line{
+                    background: #7165ef;
+                }
+            }
+        }
+        &:nth-of-type(5){
+            .title{
+                color: #179fff;
+                .line{
+                    background: #179fff;
+                }
+            }
+        }
+        &:last-of-type{
+            .title{
+                color: #f86196;
+                .line{
+                    background: #f86196;
+                }
+            }
+        }
 
+        &:last-child{
+            padding-bottom: 30px;
+        }
+    }
+
+    .benefit-list{
         img{
             width: 100%;
             height: auto;

@@ -1,128 +1,101 @@
 .lifestyle {
     padding-bottom: 62px;
 
+    // main-banner1
     .bg-purple {
         background: #f9f2ff;
     }
 
+    // main-banner2
     .bg-blue {
         background: #d1f1ff;
     }
 
-    .bg-cyan {
-        background: #F2F4FF;
+    // main-banner3
+    .bg-salmon{
+        background: #fff0ed;
+    }
+    .bg-red{
+        background: #f46b54;
+    }
+    .bg-yellowGreen{
+        background: #eafadf;
+    }
+    .bg-olive{
+        background: #48aa00;
+    }
+    .bg-lemon{
+        background: #fff7ea;
+    }
+    .bg-gold{
+        background: #f8a405;
+    }
+    .bg-royalBlue{
+        background: #7165ef;
+    }
+    .bg-cyan{
+        background: #f2f4ff;
+    }
+    .bg-cornBlue{
+        background: #179fff;
+    }
+    .bg-skyBlue{
+        background: #e8f6ff;
+    }
+    .bg-babyPink{
+        background: #fff2f7;
+    }
+    .bg-magenta{
+        background: #f86196;
     }
 
+    // main-banner4
     .bg-mint {
         background: #d6f7f6;
     }
 
-    .bg-red {
-        background: #fff4eb;
-    }
-
-    .bg-darkBlue {
-        background: #7165EF;
-    }
-
-    .bg-darkRed {
-        background: #fd7a5d;
-    }
-
-    .bg-cyanGreen{
-        background: #e9f8f2;
-    }
-
-    .bg-darkGreen{
-        background: #359b70;
-    }
-
-    .bg-orange {
-        background: #fff2db;
-    }
-
+    // main-banner7
     .bg-green {
         background: #e7f8f3;
     }
 
-    .bg-skyblue {
-        background: #e2f5ff;
-    }
-
-    .bg-babyBlue {
-        background: #f2f5ff;
-    }
-    
+    // banner-case-bg
     .bg-gray{
         background: #f7f7f7;
     }
-
     .bg-yellow{
         background: #fff9ef;
     }
-
     .bg-pink{
         background: #fff5f5;
     }
 
-    .bg-salmon{
-        background: #fff0ed;
-    }
-
-    .bg-darkSalmon{
-        background: #f46148;
-    }
-
-    .bg-olive{
-        background: #52aa0c;
-    }
-
-    .bg-yellowGreen{
-        background: #f1ffe6;
-    }
-
-    .bg-gold{
-        background: #f8a405;
-    }
-
-    .bg-lemon{
-        background: #fff8eb;
-    }
-
-    .f-orange {
-        color: #eb8133;
-    }
-
     .f-blue {
         color: #339feb;
-    }
-
-    .f-darkBlue{
-        color: #7165ef;
-    }
-
-    .f-darkRed {
-        color: #fd7a5d;
-    }
-
-    .f-darkGreen{
-        color: #359b70;
     }
     
     .f-primary{
         color: var(--color-point);
     }
 
-    .f-darkSalmon{
-        color: #f46148;
+    // card-list-font
+    .f-red{
+        color: #f46b54;
     }
-
     .f-olive{
         color: #52aa0c;
     }
-
     .f-gold{
         color: #f8a405;
+    }
+    .f-royalBlue{
+        color: #7165ef;
+    }
+    .f-cornBlue{
+        color: #179fff;
+    }
+    .f-magenta{
+        color: #f86196;
     }
 
     .btn-gradient-bg{
@@ -153,13 +126,13 @@
     }
 
     .card-overlay {
-        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.07);
         overflow: hidden;
         border-radius: 16px;
     }
 
     .card-bottom {
         padding: 20px;
+        background: #F8FAFF;
 
         p {
             font-size: 15px;
@@ -272,25 +245,21 @@
     .card-banner {
         padding: 0 20px;
 
-        .edu-box {
-            padding: 24px 20px;
+        .theme-box {
+            padding: 28px 20px;
             border-radius: 16px;
+            background: #e2f5ff;
+
+            div {
+                max-width: 200px;
+            }
 
             .tit {
-                margin-bottom: 6px;
-
-                span {
-                    font-size: 15px;
-                    font-family: var(--font3);
-                    line-height: 22px;
-                    margin-right: 4px;
-                    word-break: keep-all;
-                }
-
-                img {
-                    width: 32px;
-                    height: 32px;
-                }
+                font-family: var(--font3);
+                font-size: 15px;
+                line-height: 22px;
+                word-break: keep-all;
+                margin-bottom: 4px;
             }
         }
 
@@ -299,6 +268,7 @@
             border-radius: 16px;
             margin-bottom: 20px;
             gap: 16px; 
+            background: #f5f4ff;
 
             .event-img{
                 width: 40px;
@@ -319,12 +289,18 @@
                     word-break: keep-all;
                     margin-bottom: 2px;
                 }
+
                 p{
                     font-family: var(--font2);
                     font-size: 16px;
                     line-height: 24px;
                     word-break: keep-all;
                     color: var(--text-01);
+
+                    strong{
+                        font-family: var(--font3);
+                        color: var(--color-point);
+                    }
                 }
             }
         }
@@ -362,17 +338,24 @@
         }
 
         .card-corp {
-            font-size: 16px;
             font-family: var(--font2);
+            font-size: 16px;
             line-height: 24px;
             color: var(--text-01);
             word-break: keep-all;
             margin-bottom: 2px;
+
+            display: -webkit-box;
+            word-wrap: break-word;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         .card-desc {
-            font-size: 14px;
             font-family: var(--font1);
+            font-size: 14px;
             color: var(--text-02);
             word-break: keep-all;
         }
@@ -425,8 +408,8 @@
 
     .box-type {
         max-width: 190px;
-        height: 210px;
-        padding: 20px 14px 14px 20px;
+        min-height: 220px;
+        padding: 20px 14px 0 20px;
         position: relative;
 
         .tag {
@@ -447,6 +430,12 @@
             margin-top: 8px;
             color: var(--text-01);
             word-break: keep-all;
+            display: -webkit-box;
+            word-wrap: break-word;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         .double-card-img{
@@ -455,21 +444,22 @@
             height: 80px;
 
             &:first-of-type{
-                bottom: 38px;
-                right: 38px;
-                z-index: 1;
+                bottom: 32px;
+                right: 44px;
             }
-
+            
             &:nth-of-type(2){
-                bottom: 24px;
+                bottom: 20px;
                 right: 20px;
+                z-index: -1;
             }
-
+            
             &:last-of-type{
                 width: 84px;
                 height: 20px;
-                bottom: 12px;
-                right: 12px;
+                bottom: 8px;
+                right: 15px;
+                z-index: -2;
             }
 
             img {
@@ -573,11 +563,22 @@
     }
 
     .tag-list{
-        height: 50px;
-        padding: 10px 20px;
+        display: flex;
+        align-items: center;
         gap: 10px;
+        padding: 10px 20px;
+        margin-top: 16px;
+
+        overflow: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         li{
+            flex-shrink: 0;
             padding: 6px 12px;
             background: var(--white);
             border: 1px solid #d6caf2;
@@ -623,14 +624,9 @@
 
             .line{
                 width: 3px;
-                height: 24px;
+                height: 20px;
                 margin-right: 10px;
-            }
-
-            .icon{
-                width: 24px;
-                height: 24px;
-                margin-right: 5px;
+                border-radius: 1.5px;
             }
         }
 
@@ -1043,6 +1039,7 @@
 
     .event-banner{
         padding: 30px 28px;
+        background: #f5f4ff;
 
         .subject{
             font-size: 20px;
@@ -1101,8 +1098,7 @@
         }
 
         .step-box{
-            max-width: 297px;
-            width: 100%;
+            width: calc(100% - 38px);
             background: #f7f8fc;
             border-radius: 10px;
             padding: 24px 20px;

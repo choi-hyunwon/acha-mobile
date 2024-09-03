@@ -45,6 +45,19 @@
         bottom: 0;
         padding: 0 20px 30px;
         width: 100%;
+
+        &::before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 20px;
+
+            position: fixed;
+            left: 0;
+            bottom: 80px;
+            z-index: 2;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+        }
     }
 
     // 추천리스트 박스
@@ -719,7 +732,7 @@
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                margin-top: 16px;
+                margin: 16px 0;
                 gap: 12px;
 
                 .item {
@@ -819,8 +832,8 @@
                 }
 
                 .store-list {
-                    margin-top: 16px;
-                    height: 470px;
+                    margin: 16px 0 14px;
+                    min-height: 470px;
                     overflow-y: scroll;
 
                     .item {

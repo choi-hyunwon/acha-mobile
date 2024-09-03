@@ -1,7 +1,8 @@
 {
   "name": "acha-mobile",
   "description": "Acha mobile publishing",
-  "version": "4.3.8",
+  "version": "4.3.9",
+
   "version_short": "0.1",
   "keywords": [
     "css",

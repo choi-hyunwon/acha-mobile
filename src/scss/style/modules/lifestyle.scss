@@ -1351,59 +1351,61 @@
         }
     }
     
-    // floating
-    .btn-floating{
-        bottom: 20px;
-        background: transparent;
-        margin: 0 auto;
-        padding-bottom: 0;
 
-        a{
-            max-width: 220px;
-            min-height: 46px;
-            display: flex;
-            align-items: center;
-
-            font-family: var(--font2);
-            font-size: 15px;
-            line-height: 22px;
-            text-align: center;
-            color: var(--white);
-
-            padding: 12px 32px;
-            margin: 0 auto;
-
-            border-radius: 23px;
-            border: none;
-            background: linear-gradient(to right, #7d4af2, #a767ff);
-            box-shadow: 0 5px 10px 0 rgba(104, 57, 211, 0.16);
-        }
-
-        .emoji{
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
-        }
-
-        .arrow-icon{
-            width: 6px;
-            height: 16px;
-            margin-left: auto;
-        }
-
-        img{
-            width: 100%;
-            height: auto;
-            vertical-align: initial;
-        }
-    }
-
-    // bottom btn
-    .btn-area{
-        padding: 0 20px 30px;
+    .btn-wrap{
         width: 100%;
         position: fixed;
-        background: var(--white);
+        bottom: 0;
+
+        // bottom btn
+        .btn-area{
+            padding: 0 20px 30px;
+            background: var(--white);
+        }
+        
+        // floating
+        .event-btn{
+            padding-bottom: 20px;
+
+            a{
+                max-width: 220px;
+                min-height: 46px;
+                display: flex;
+                align-items: center;
+    
+                font-family: var(--font2);
+                font-size: 15px;
+                line-height: 22px;
+                text-align: center;
+                color: var(--white);
+    
+                padding: 12px 32px;
+                margin: 0 auto;
+
+                border-radius: 23px;
+                border: none;
+                background: linear-gradient(to right, #7d4af2, #a767ff);
+                box-shadow: 0 5px 10px 0 rgba(104, 57, 211, 0.16);
+            }
+    
+            .emoji{
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+            }
+    
+            .arrow-icon{
+                width: 6px;
+                height: 16px;
+                margin-left: 4px;
+            }
+    
+            img{
+                width: 100%;
+                height: auto;
+                vertical-align: initial;
+            }
+        }
     }
 
     // toast popup

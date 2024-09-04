@@ -29,23 +29,19 @@
     .card-box {
         padding: 20px;
         width: 100%;
-
+        
+        h3{
+            padding-top: 8px;
+        }
+        
         &.no-pb{
             padding-bottom: 0;
-            h3{
-                padding-top: 8px;
-            }
         }
 
         &.only-pt{
-            padding: 20px 0 0 0;
-            h3{
-                padding: 8px 20px 0;
-            }
-        }
-
-        &.pt-plus{
-            padding-top: 28px;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
         }
     } 
     
@@ -98,89 +94,105 @@
         }
     }
 
-    .card-overlay {
-        overflow: hidden;
-        border-radius: 16px;
-    }
-
-    .recommend-box {
-        padding: 34px 0;
-        background: #d1f1ff;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .lottie-box {
-        width: 768px;
-        height: 56px;
-        margin: 0 auto;
-    }
-
-    .card-bottom {
-        padding: 20px;
-        background: #F8FAFF;
-
-        p {
-            font-size: 15px;
-            font-family: var(--font3);
-            line-height: 22px;
-            margin-bottom: 4px;
-            word-break: keep-all;
-        }
-
-        span {
-            font-size: 14px;
-            font-weight: var(--font1);
-            line-height: 20px;
-            color: var(--text-02);
-            word-break: keep-all;
-        }
-
-        .view-btn {
-            border-radius: 6px;
-            background: #f2ebff;
-            padding: 8px 12px;
-            margin-left: auto;
-            font-size: 12px;
-            font-family: var(--font2);
-            color: var(--color-point);
-        }
-    }
-
-    .what-card {
-        padding: 12px 0;
-        background: #d6f7f6;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-
-        .card-3d-img {
-            width: 200px;
-            height: 100px;
-            margin: 0 auto;
-
-            img {
-                width: 100%;
-                height: auto;
+    .recommend-wrap{     
+        padding-top: 8px;
+        
+        h3{
+            padding: 20px 20px 0;
+            margin-bottom: 0;
+            & + div{
+                padding-top: 16px;
             }
         }
-    }
 
-    .theme-box {
-        padding: 28px 20px;
-        border-radius: 16px;
-        background: #e2f5ff;
-
-        div {
-            max-width: 200px;
+        .card-overlay {
+            overflow: hidden;
         }
 
-        .tit {
-            font-family: var(--font3);
-            font-size: 15px;
-            line-height: 22px;
-            color: #339feb;
-            word-break: keep-all;
-            margin-bottom: 4px;
+        .recommend-box {
+            padding: 34px 0;
+            background: #d1f1ff;
+            border-radius: 16px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    
+        .lottie-box {
+            width: 768px;
+            height: 56px;
+            margin: 0 auto;
+        }
+    
+        .card-bottom {
+            padding: 20px;
+            background: #F8FAFF;
+            border-radius: 16px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+    
+            p {
+                font-size: 15px;
+                font-family: var(--font3);
+                line-height: 22px;
+                margin-bottom: 4px;
+                word-break: keep-all;
+            }
+    
+            span {
+                font-size: 14px;
+                font-weight: var(--font1);
+                line-height: 20px;
+                color: var(--text-02);
+                word-break: keep-all;
+            }
+    
+            .view-btn {
+                border-radius: 6px;
+                background: #f2ebff;
+                padding: 8px 12px;
+                margin-left: auto;
+                font-size: 12px;
+                font-family: var(--font2);
+                color: var(--color-point);
+            }
+        }
+    
+        .what-card {
+            padding: 12px 0;
+            background: #d6f7f6;
+            border-radius: 16px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+    
+            .card-3d-img {
+                width: 200px;
+                height: 100px;
+                margin: 0 auto;
+    
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    
+        .theme-box {
+            padding: 28px 20px;
+            border-radius: 16px;
+            background: #e2f5ff;
+    
+            div {
+                max-width: 200px;
+            }
+    
+            .tit {
+                font-family: var(--font3);
+                font-size: 15px;
+                line-height: 22px;
+                color: #339feb;
+                word-break: keep-all;
+                margin-bottom: 4px;
+            }
         }
     }
 

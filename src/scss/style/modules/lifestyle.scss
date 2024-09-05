@@ -1351,12 +1351,22 @@
         }
     }
     
+
+    // bottom btn
+    .btn-area{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 0 20px 30px;
+        background: var(--white);
+    }
+
     // floating
-    .btn-floating{
-        bottom: 20px;
-        background: transparent;
-        margin: 0 auto;
-        padding-bottom: 0;
+    .event-btn{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 20px;
 
         a{
             max-width: 220px;
@@ -1370,8 +1380,8 @@
             text-align: center;
             color: var(--white);
 
-            padding: 12px 32px;
             margin: 0 auto;
+            padding: 12px 32px;
 
             border-radius: 23px;
             border: none;
@@ -1388,7 +1398,7 @@
         .arrow-icon{
             width: 6px;
             height: 16px;
-            margin-left: auto;
+            margin-left: 4px;
         }
 
         img{
@@ -1396,14 +1406,6 @@
             height: auto;
             vertical-align: initial;
         }
-    }
-
-    // bottom btn
-    .btn-area{
-        padding: 0 20px 30px;
-        width: 100%;
-        position: fixed;
-        background: var(--white);
     }
 
     // toast popup

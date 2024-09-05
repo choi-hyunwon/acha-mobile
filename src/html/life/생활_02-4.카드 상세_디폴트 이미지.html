@@ -9,7 +9,7 @@
             <h2>카드 상세</h2>
         </div>
         <div class="contents chatgpt lifestyle pb-0">
-            <div class="card-detail pb-0">
+            <div class="card-detail">
                 <div class="card-detail-box pt-30">
                     <div class="card-detail-title">
                         <span>삼성카드</span>
@@ -278,7 +278,7 @@
 
                 <div class="divider"></div>
 
-                <div class="card-detail-box pb-110">
+                <div class="card-detail-box">
                     <div class="card-detail-list">
                         <div class="noti">
                             <ul class="dot-list">
@@ -314,10 +314,10 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="btn-area">
-                    <a class="btn btn-big btn-purple-bg btn-block" href="#">카드사에서 상세보기</a>
-                </div>
+            </div>
+            
+            <div class="btn-area">
+                <a class="btn btn-big btn-purple-bg btn-block" href="#">카드사에서 상세보기</a>
             </div>
         </div>
     </div>
@@ -326,20 +326,6 @@
             $(this).parent().toggleClass('show')
             $(this).siblings().find('.show').toggleClass('show')
         });
-
-        $(window).scroll(() => {
-            let top = $(window).scrollTop();
-            let height =  $(window).height();
-            const windowHeight = top + height;
-            
-            if (windowHeight > height) {
-                document.querySelector('.btn-area').style.display = "block";
-                $('.btn-area').stop().animate({ bottom: '0' }, 50);
-            } else {
-                document.querySelector('.btn-area').style.display = "none";
-                $('.btn-area').stop().animate({ bottom: '0' }, 50);
-            }
-        })
     </script>
 </body>
 

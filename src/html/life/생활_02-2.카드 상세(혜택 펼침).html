@@ -10,7 +10,7 @@
         </div>
         <div class="contents chatgpt lifestyle pb-0">
             <div class="card-detail">
-                <div class="card-detail-box pt-30">
+                <div class="card-detail-box">
                     <div class="card-detail-title">
                         <span>삼성카드</span>
                         <p>삼성카드 taptap O</p>
@@ -38,7 +38,7 @@
 
                 <div class="divider"></div>
 
-                <div class="card-detail-box pb-20">
+                <div class="card-detail-box">
                     <div class="card-detail-list">
                         <p class="card-detail-title">주요혜택</p>
                         <!-- 가맹점 -->
@@ -314,18 +314,6 @@
             $(this).parent().toggleClass('show')
             $(this).siblings().find('.show').toggleClass('show')
         });
-
-        // 버튼 개수에 따른 하단 패딩 간격 조절
-        if (!$('.event-btn').length) {
-            $('.card-detail-box:last').removeClass('pb-100');
-            $('.card-detail-box:last').addClass('pb-30');
-        } else if (!$('.btn-area').length) {
-            $('.card-detail-box:last').removeClass('pb-100');
-            $('.card-detail-box:last').addClass('pb-30');
-            document.querySelector('.event-btn').style.paddingBottom = "30px";
-        } else {
-            $('.card-detail-box:last').addClass('pb-100');
-        }
     </script>
 </body>
 

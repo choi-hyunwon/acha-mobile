@@ -377,6 +377,18 @@
             position: relative;
             text-align: center;
 
+            &:first-child{
+                padding-top: 30px;
+            }
+
+            &:nth-child(3){
+                padding-bottom: 20px;
+            }
+
+            &:nth-child(5){
+                padding-bottom: 30px;
+            }
+
             .inner-banner {
                 padding: 22px 20px 0;
 

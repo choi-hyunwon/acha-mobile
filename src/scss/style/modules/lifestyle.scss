@@ -24,15 +24,12 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        row-gap: 15px;
     }
 
     .card-box {
         padding: 20px;
         width: 100%;
-        
-        h3{
-            padding-top: 8px;
-        }
         
         &.no-pb{
             padding-bottom: 0;
@@ -42,6 +39,10 @@
             padding-bottom: 0;
             padding-left: 0;
             padding-right: 0;
+        }
+
+        .title{
+            padding-top: 8px;
         }
     } 
     
@@ -129,6 +130,8 @@
             border-radius: 16px;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+            column-gap: 10px;
+            row-gap: 4px;
     
             p {
                 font-size: 15px;
@@ -317,7 +320,7 @@
     }
     
     .insurance-box {
-        padding: 0 14px 0 20px;
+        padding: 22px 14px 22px 20px;
         background: #e7f8f3;
         border-radius: 16px;
         margin-bottom: 44px;
@@ -340,7 +343,7 @@
         .insurance-img {
             width: 100px;
             height: 90px;
-            margin-left: auto;
+            margin: -22px 0 -22px auto;
 
             img {
                 width: 100%;

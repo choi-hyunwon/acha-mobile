@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide chatgpt">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner life-modal">
+                <div class="title _btnSlideOpen">혜택 키워드</div>
+                <div class="choice benefit-choice">
+                  <ul class="benefit-list">
+                    <!-- .active 클래스 추가 시 활성화 -->
+                    <li class="item">모든 가맹점</li>
+                    <li class="item">교통</li>
+                    <li class="item">주유</li>
+                    <li class="item">자동차</li>
+                    <li class="item">통신</li>
+                    <li class="item">보험</li>
+                    <li class="item">공과금/렌탈</li>
+                    <li class="item">마트/편의점</li>
+                    <li class="item">쇼핑</li>
+                    <li class="item">온라인쇼핑</li>
+                    <li class="item">간편결제</li>
+                    <li class="item">외식</li>
+                    <li class="item">카페/디저트</li>
+                    <li class="item">뷰티</li>
+                    <li class="item">의료/건강</li>
+                    <li class="item">교육</li>
+                    <li class="item">육아</li>
+                    <li class="item">애완동물</li>
+                    <li class="item">문화</li>
+                    <li class="item">생활</li>
+                    <li class="item">취미/여가</li>
+                    <li class="item">여행</li>
+                    <li class="item">숙박</li>
+                    <li class="item">해외</li>
+                    <li class="item">항공/라운지</li>
+                    <li class="item">프리미엄</li>
+                    <li class="item">비즈니스</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

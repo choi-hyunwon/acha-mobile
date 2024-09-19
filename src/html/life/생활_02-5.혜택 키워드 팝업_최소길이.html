@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-my-data _modalSlide chatgpt">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner life-modal">
+                <div class="title _btnSlideOpen">혜택 키워드</div>
+                <div class="choice benefit-choice">
+                  <ul class="benefit-list">
+                    <!-- .active 클래스 추가 시 활성화 -->
+                    <li class="item">모든 가맹점</li>
+                    <li class="item">간편결제</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

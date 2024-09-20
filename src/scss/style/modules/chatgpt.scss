@@ -385,7 +385,6 @@
                 }
             }
 
-
             .card-detail-title {
                 span {
                     display: inline-block;
@@ -716,6 +715,53 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+
+            .card-detail-banner{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 12px 14px;
+                margin-bottom: 40px;
+                background: #f9f2ff;
+                border-radius: 6px;
+                gap: 6px;
+                .prefix{
+                    width: 22px;
+                    height: 26px;
+                }
+                .suffix{
+                    width: 6px;
+                    height: 16px;
+                    margin-left: auto;
+                }
+                img{
+                    width: auto;
+                    height: 100%;
+                    object-fit: contain;
+                }
+
+                p{
+                    max-width: 250px;
+                    font-size: 13px;
+                    font-family: var(--font1);
+                    line-height: 19px;
+                    letter-spacing: -0.2px;
+                    text-align: left;
+                    color: var(--text-02);                    
+                    
+                    display: -webkit-box;
+                    word-wrap: break-word;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    text-overflow: ellipsis;
+                    overflow: hidden;    
+
+                    span:first-child{
+                        font-family: var(--font3);
+                        margin-right: 5px;
                     }
                 }
             }
@@ -1303,6 +1349,21 @@
                     display: none;
                 }
             }
+        }
+    }
+
+    // 기존 팝업 수정
+    .inner.life-modal{
+        min-height: 160px;
+        padding: 25px 30px 30px 30px;
+        .title{
+            padding-bottom: 24px;
+        }
+        .benefit-list{
+            margin: 0;
+        }
+        .slider-wrap{
+            padding: 5px 12.5px 0
         }
     }
 }

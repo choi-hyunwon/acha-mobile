@@ -1365,7 +1365,9 @@
     // floating
     .event-btn{
         position: fixed;
-        bottom: 0;
+        top: 520px;
+        left: 0;
+        z-index: 1;
         width: 100%;
         padding-bottom: 20px;
 

@@ -34,6 +34,15 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- 하단 플로팅 버튼 -->
+                    <div class="event-btn">
+                        <a class="btn btn-block" href="#">
+                            <span class="emoji"><img src="../../img/common/lifestyle/ico_card_event_benefit@2x.png" alt="icon" /></span>
+                            <span>최대 13만원 이벤트</span>
+                            <span class="arrow-icon"><img src="../../img/sprite/common/ico_list_arrow_small_w@2x.png" alt="arrow"></span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="divider"></div>
@@ -346,15 +355,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 하단 플로팅 버튼 -->
-            <div class="event-btn">
-                <a class="btn btn-block" href="#">
-                    <span class="emoji"><img src="../../img/common/lifestyle/ico_card_event_benefit@2x.png" alt="icon" /></span>
-                    <span>최대 13만원 이벤트</span>
-                    <span class="arrow-icon"><img src="../../img/sprite/common/ico_list_arrow_small_w@2x.png" alt="arrow"></span>
-                </a>
-            </div>
         </div>
     </div>
     <script>
@@ -363,9 +363,28 @@
             $(this).siblings().find('.show').toggleClass('show')
         });
 
-        if (!$('.btn-area').length) {
-            document.querySelector('.event-btn').style.paddingBottom = "30px";
-        }
+        $(document).ready(function(){
+            if($('.event-btn').length){
+                $('.card-detail-box:first').addClass('pb-115')
+            }
+        })
+
+        // 이벤트 버튼 스크롤 시 플로팅 이벤트 발생
+        $(window).scroll(function () {
+            let top = $(window).scrollTop();
+            let height =  $(window).height();
+            const windowHeight = top + height;
+            
+            if (windowHeight > height) {
+                $('.event-btn').css({ top: 'unset', paddingBottom: '30px' });
+                $('.event-btn').stop().animate({ bottom: '0' }, 300);
+                $('.card-detail-box:first').removeClass('pb-115');
+            } else {
+                $('.event-btn').css({ bottom: 'unset', paddingBottom: '20px' });
+                $('.event-btn').stop().animate({ top: "520px" }, 300);   
+                $('.card-detail-box:first').addClass('pb-115')
+            }
+        })
     </script>
 </body>
 

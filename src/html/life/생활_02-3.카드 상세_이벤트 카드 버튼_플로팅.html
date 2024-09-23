@@ -34,6 +34,15 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- 하단 플로팅 버튼 -->
+                    <div class="event-btn">
+                        <a class="btn btn-block" href="#">
+                            <span class="emoji"><img src="../../img/common/lifestyle/ico_card_event_benefit@2x.png" alt="icon" /></span>
+                            <span>최대 13만원 이벤트</span>
+                            <span class="arrow-icon"><img src="../../img/sprite/common/ico_list_arrow_small_w@2x.png" alt="arrow"></span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="divider"></div>
@@ -347,15 +356,6 @@
                 </div>
             </div>
 
-            <!-- 하단 플로팅 버튼 -->
-            <div class="event-btn">
-                <a class="btn btn-block" href="#">
-                    <span class="emoji"><img src="../../img/common/lifestyle/ico_card_event_benefit@2x.png" alt="icon" /></span>
-                    <span>최대 13만원 이벤트</span>
-                    <span class="arrow-icon"><img src="../../img/sprite/common/ico_list_arrow_small_w@2x.png" alt="arrow"></span>
-                </a>
-            </div>
-
             <div class="btn-area">
                 <a class="btn btn-big btn-purple-bg btn-block" href="#">카드사에서 상세보기</a>
             </div>
@@ -366,11 +366,6 @@
             $(this).parent().toggleClass('show')
             $(this).siblings().find('.show').toggleClass('show')
         });
-        
-        if ($('.btn-area').length && $('.event-btn').length) {
-            $('.card-detail-box:last').addClass('pb-100')
-            document.querySelector('.event-btn').style.bottom = "80px"
-        }
     </script>
 </body>
 

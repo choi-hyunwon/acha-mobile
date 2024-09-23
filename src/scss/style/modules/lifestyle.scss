@@ -1364,12 +1364,8 @@
 
     // floating
     .event-btn{
-        position: fixed;
-        top: 520px;
-        left: 0;
-        z-index: 1;
         width: 100%;
-        padding-bottom: 20px;
+        margin-top: 30px;
 
         a{
             max-width: 220px;
@@ -1389,7 +1385,7 @@
             border-radius: 23px;
             border: none;
             background: linear-gradient(to right, #7d4af2, #a767ff);
-            box-shadow: 0 5px 10px 0 rgba(104, 57, 211, 0.16);
+            // box-shadow: 0 5px 10px 0 rgba(104, 57, 211, 0.16);
         }
 
         .emoji{

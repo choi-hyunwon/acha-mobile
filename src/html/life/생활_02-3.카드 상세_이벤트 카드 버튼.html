@@ -362,29 +362,6 @@
             $(this).parent().toggleClass('show')
             $(this).siblings().find('.show').toggleClass('show')
         });
-
-        $(document).ready(function(){
-            if($('.event-btn').length){
-                $('.card-detail-box:first').addClass('pb-115')
-            }
-        })
-
-        // 이벤트 버튼 스크롤 시 플로팅 이벤트 발생
-        $(window).scroll(function () {
-            let top = $(window).scrollTop();
-            let height =  $(window).height();
-            const windowHeight = top + height;
-            
-            if (windowHeight > height) {
-                $('.event-btn').css({ top: 'unset', paddingBottom: '30px' });
-                $('.event-btn').stop().animate({ bottom: '0' }, 300);
-                $('.card-detail-box:first').removeClass('pb-115');
-            } else {
-                $('.event-btn').css({ bottom: 'unset', paddingBottom: '20px' });
-                $('.event-btn').stop().animate({ top: "520px" }, 300);   
-                $('.card-detail-box:first').addClass('pb-115')
-            }
-        })
     </script>
 </body>
 

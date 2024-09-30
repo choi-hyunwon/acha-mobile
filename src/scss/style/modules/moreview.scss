@@ -23,7 +23,7 @@
             .title {
               span {
                 display: inline-block;
-                margin-left: 10px;
+                margin-left: 3px;
               }
             }
           }
@@ -39,9 +39,9 @@
 
     .secession_wrap {
       margin-top: 20px;
-      // padding-bottom: 40px;
 
       .txt {
+        font-family: var(--font1);
         font-size: 12px;
         line-height: 18px;
         letter-spacing: -0.3px;
@@ -51,6 +51,7 @@
 
       .btn-secession {
         float: right;
+        font-family: var(--font1);
         font-size: 12px;
         line-height: 1.75;
         letter-spacing: -0.3px;
@@ -1740,12 +1741,13 @@ _ .event-btn-area {
 
   .list_group_item {
     position: relative;
-    border-bottom: 1px solid #f0f0f0;
+    // border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #efefef;
     padding: 19px 0 19px 5px;
 
-    &:last-child {
-      border-bottom: 1px solid #e3e4e8;
-    }
+    // &:last-child {
+    //   border-bottom: 1px solid #e3e4e8;
+    // }
 
     .item_title {
       padding-right: 50px;
@@ -1783,11 +1785,6 @@ _ .event-btn-area {
       color: var(--text-03);
       padding-top: 2px;
       padding-right: 50px;
-
-      &.error {
-        padding-right: 70px;
-        font-family: var(--font1);
-      }
     }
 
     .btn {
@@ -2568,6 +2565,11 @@ _ .event-btn-area {
 
             >.desc {
               font-size: 13px;
+
+              &.warning {
+                font-family: var(--font1);
+                color: #ef4b61;
+              }
             }
           }
         }
@@ -3452,5 +3454,126 @@ _ .event-btn-area {
         }
       }
     }
+  }
+}
+
+/*월 시작일*/
+.monthly-start{
+  position: relative;
+  height: calc(100lvh - 66px);
+
+  &.entry{
+    .box-wrap{
+      height: calc(100% - 290px);
+    }
+    .keypad{
+      display: block;
+    }
+  }
+  
+  .d-flex-col{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box-wrap{
+    width: 100%;
+    height: 100%;
+  }
+
+  .box-item{
+    padding-right:20px;
+    padding-left:20px;
+  }
+
+  .title{
+    padding-top: 10px;
+
+    p{
+      font-family: var(--font3);
+      font-size: 18px;
+      line-height: 27px;
+      word-break: keep-all;
+      margin-bottom: 5px;
+
+      &.desc{
+        font-family: var(--font1);
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .noti{
+    font-family: var(--font1);
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--text-02);
+    word-break: keep-all;
+    padding-top: 24px;
+  }
+
+  form{
+    padding-top: 40px;
+
+    label{
+      font-family: var(--font2);
+      font-size: 14px;
+      line-height: 20px;
+      word-break: keep-all;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      max-height: 40px;
+      border-radius: 4px;
+      border: solid 1px #e2e3e6;
+      background-color: var(--white);
+      padding: 10px 0 10px 12px;
+      font-family: var(--font2);
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--text-01);
+
+      &::placeholder {
+        color: var(--text-03);
+        font-family: var(--font1);
+      }
+
+      &::-webkit-search-cancel-button {
+        display: none;
+      }
+
+      &:focus,
+      &.focus {
+        outline: none;
+        font-weight: 500;
+        border-color: var(--text-01);
+        color: var(--text-01);
+      }
+    }
+  }
+
+  .btn-area{
+    padding: 0 20px 30px;
+    margin-top: auto;
+
+    &.dim{
+      a{
+        background: #b39be9;
+      }
+    }
+  }
+
+  .keypad{
+    position: absolute;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    height: 291px;
+    background: var(--text-03);
   }
 }

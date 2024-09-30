@@ -4899,6 +4899,33 @@
                     padding-bottom: 14px;
                 }
 
+                .period{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin: 6px 0 24px;
+
+                    .badge{
+                        width: 36px;
+                        height: 23px;
+                        padding: 3px 8px;
+                        border-radius: 11.5px;
+                        background:#f7f8fc;
+
+                        font-family: var(--font2);
+                        font-size: 11px;
+                        line-height: 17px;
+                        color: var(--text-03);
+                    }
+
+                    .date{
+                        font-family: var(--font1);
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: var(--text-03);
+                    }
+                }
+
                 .day-list {
                     &.list-swap {
                         ul {

@@ -6,18 +6,23 @@
     <div class="wrap renewal">
         <div class="header _sticky">
             <a href="#" class="sprite btn_back"></a>
-            <h2>캘린더</h2>
-            <div class="sum-area">
+            <h2>공유캘린더</h2>
+            <!-- <div class="sum-area">
                 <p class="update mb-0">30분 전<i class="ico-refresh-mini"></i></p>
-            </div>
+            </div> -->
         </div>
         <div class="contents expenditure">
             <div class="expenditure-calendar share-calendar">
                 <div class="ex-calendar mb-0">
-                    <div class="box-ex-calendar-header">
-                        <div class="date"><a href="#">2022년 10월<i class="icon-arrow-bottom"> </i></a></div>
+                    <div class="box-ex-calendar-header mb-0">
+                        <div class="date"><a href="#">2024년 1월<i class="icon-arrow-bottom"> </i></a></div>
                     </div>
 
+                    <div class="period">
+                        <p>기간</p>
+                        <span class="start">1.25</span>~<span class="end">2.24</span>
+                    </div>
+        
                     <div class="expenditure-tab manage-tab _expenditureTab  mb-20">
                         <ul class="clearfix justify-content-start">
                             <li class="active"><a href="#">#공동</a></li>
@@ -41,10 +46,13 @@
                         </div>
                     </div>
 
+                    <!-- 선택 월이 아니라 선택 날짜를 기준으로 달력 노출 시켜주세요.
+                        10.02 디자인 기준 '24-01-25' 입니다. -->
                     <div class="box_ex_calendar ex-calendar-v3">
                         <div id='calendar'></div>
                     </div>
                 </div>
+
                 <!-- expenditure-box -->
                 <div class="expenditure-box bg_light_gray">
                     <div class="calendar-history">
@@ -259,7 +267,7 @@
                 fixedWeekCount: false,
                 header: false,
                 height: 'auto',
-                defaultDate: '2024-01-01',  // 날짜 입력시, 달력 show
+                defaultDate: '2024-01-25',  // 날짜 입력시, 달력 show
                 editable: false,
                 eventLimit: false,
                 navLinks: true,
@@ -268,6 +276,7 @@
                     return weekList[date.getDay()];
                 },
                 navLinkDayClick: function (date, jsEvent) {
+                    calendar.gotoDate(date);
                     console.log(date.toISOString().slice(0, 10));
                     console.log(jsEvent.target)
                 },
@@ -812,8 +821,14 @@
                         start: '2024-01-30',
                     },
                 ],
-            });
 
+                dayCellDidMount: function(info) {
+                    var dateStr = info.date.toISOString().slice(0, 10);
+                    if (dateStr === '2024-01-02' || dateStr === '2024-01-16') {
+                        info.el.classList.add('highlighted');
+                    }
+                }
+            });
             calendar.render();
         });
 

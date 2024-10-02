@@ -562,6 +562,9 @@ dl {
 .skeleton-width-70 {
   width: 70px !important;
 }
+.skeleton-width-80 {
+  width: 80px !important;
+}
 
 .skeleton-block {
   width: 100% !important;

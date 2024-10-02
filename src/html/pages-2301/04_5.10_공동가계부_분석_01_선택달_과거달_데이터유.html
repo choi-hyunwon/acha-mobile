@@ -8,15 +8,22 @@
             <a href="#" class="sprite btn_back"></a>
             <h2>공동 가계부 분석</h2>
         </div>
-        <div class="current-month current-month-manage report mb-0">
-            <a href="#">2022년 10월<i class="icon-arrow-bottom"></i></a>
-            <a href="#" class="btn btn-edit">
-                <img src="../../img/sprite/common/ico_input_calendar@2x.png" width="16" height="16" alt="캘린더아이콘">
-                캘린더
-            </a>
-        </div>
-        <div class="contents">
-            <div class="manage-content">
+
+        <div class="contents expenditure share-add">
+            <div class="current-month current-month-manage report mb-0">
+                <a href="#">2023년 10월<i class="icon-arrow-bottom"></i></a>
+                <a href="#" class="btn btn-edit">
+                    <img src="../../img/sprite/common/ico_input_calendar@2x.png" width="16" height="16" alt="캘린더아이콘">
+                    캘린더
+                </a>
+            </div>
+            
+            <div class="period">
+                <p>기간</p>
+                <span class="start">10.25</span>~<span class="end">11.24</span>
+            </div>
+    
+            <div class="manage-content mt-10">
                 <div class="month-flow">
                     <div class="title-wrap">
                         <p class="desc">월별 수입·지출 추이</p>
@@ -25,7 +32,7 @@
                             지출이 <span class="color-red">1,000,000원</span> 늘었어요!
                         </p>
                     </div>
-
+    
                     <div class="chart-box">
                         <ul class="chart-month">
                             <li class="item">
@@ -81,7 +88,7 @@
                             <div class="expense">
                                 <div class="top">
                                     <i class="obj"></i>
-                                    <p>수입</p>
+                                    <p>지출</p>
                                 </div>
                                 <div class="value">
                                     +2,500,000<span>원</span>
@@ -104,7 +111,7 @@
                                             </div>
                                             <script>
                                                 const canvas_1 = document.getElementById('canvas-income').getContext('2d');
-
+    
                                                 const config_1 = new Chart(canvas_1, {
                                                     type: 'doughnut',
                                                     plugins: [ChartDataLabels],
@@ -144,7 +151,7 @@
                                                     },
                                                 });
                                             </script>
-
+    
                                             <div class="info-box">
                                                 <div class="user">
                                                     <div class="left">
@@ -187,7 +194,7 @@
                                             </div>
                                             <script>
                                                 const canvas_2 = document.getElementById('canvas-expense_2').getContext('2d');
-
+    
                                                 const config_2 = new Chart(canvas_2, {
                                                     type: 'doughnut',
                                                     plugins: [ChartDataLabels],
@@ -261,21 +268,21 @@
                                 </div>
                             </div>
                         </div>
-
+    
                     </div>
                 </div>
-
+    
                 <div class="divider" style="margin-left: -20px; width: calc(100% + 40px);"></div>
-
+    
                 <div class="analysis">
-                    <h3 class="title">지출분석</h3>
+                    <h3 class="title">10월 지출분석</h3>
                     <!-- 카테고리별지출 -->
                     <div class="group ">
                         <div class="category head">
                             <p class="name">카테고리별 지출</p>
                             <a href="#" class="btn">상세보기 <i class="ico_list_arrow_small"></i></a>
                         </div>
-
+    
                         <div class="chart-box">
                             <!-- %값으로 width 스파일 표시 백분율  -->
                             <ul class="category-graph">
@@ -287,7 +294,7 @@
                                 <li class="category-item item5 graph-etc" style="width: 6%;"></li>
                             </ul>
                         </div>
-
+    
                         <div class="category-list">
                             <ul>
                                 <li class="item">
@@ -347,12 +354,12 @@
                             <p class="name">유형별 지출</p>
                             <a href="#" class="btn">상세보기 <i class="ico_list_arrow_small"></i></a>
                         </div>
-
+    
                         <div class="chart-box doughnut">
                             <canvas id="chart-category"></canvas>
                             <script>
                                 const canvas_3 = document.getElementById('chart-category').getContext('2d');
-
+    
                                 const config_3 = new Chart(canvas_3, {
                                     type: 'doughnut',
                                     plugins: [ChartDataLabels],
@@ -399,7 +406,7 @@
                                                 titleColor: '#37354e',
                                                 bodyColor: '#37354e',
                                                 boxWidth: 20,
-
+    
                                                 titleAlign: 'center',
                                                 bodyAlign: 'center',
                                                 borderWidth: 1,
@@ -410,7 +417,7 @@
                                                         return tooltipItem[0].label;
                                                     },
                                                     label: function (tooltipItem, data) {
-
+    
                                                         return tooltipItem.formattedValue + '%';
                                                     },
                                                 },
@@ -420,7 +427,7 @@
                                 });
                             </script>
                         </div>
-
+    
                         <div class="category-list">
                             <ul>
                                 <li class="item">
@@ -452,7 +459,7 @@
                                 </li>
                             </ul>
                         </div>
-
+    
                     </div>
                     <!-- 일별 변동지출 현황 -->
                     <div class="group ">
@@ -465,7 +472,7 @@
                             </p>
                             <p class="desc">9월 이맘때보다 <span>18,080원 더</span> 썼어요</p>
                         </div>
-
+    
                         <div class="chart-box">
                             <div class="daily-box">
                                 <div>
@@ -478,7 +485,7 @@
                                 </div>
                                 <script>
                                     const canvas_4 = document.getElementById('chart-daily').getContext('2d');
-
+    
                                     let currentDate = new Date(); // 현재 날짜 가져오기
                                     let daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth()).getMonth() + 1 // 현재 달
                                     let daysInDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate(); // 현재 달의 일 수
@@ -487,22 +494,22 @@
                                     for (let i = 1; i <= daysInDay; i++) {
                                         labels.push(daysInMonth + '.' + i.toString());
                                     }
-
+    
                                     const pointImage = new Image(17, 17);
                                     pointImage.src = '../../img/common/chart-point.png'
-
-
+    
+    
                                     const verticalLine = {
                                         id: 'verticalLine',
                                         beforeDatasetsDraw(chart, args, plugins) {
                                             const { ctx, tooltip, chartArea: { top, bottom, left, right, width, heigth }, scales: { x, y } } = chart;
-
+    
                                             const _index = chart.scales.x.ticks[0].value
                                             if (_index === today) {
-
+    
                                                 const xCoor = x.getPixelForValue(today)
                                                 const yCoor = y.getPixelForValue(chart.hight)
-
+    
                                                 ctx.save();
                                                 ctx.beginPath();
                                                 ctx.lineWidth = 2;
@@ -514,7 +521,7 @@
                                             }
                                         }
                                     }
-
+    
                                     config_4 = new Chart(canvas_4, {
                                         type: 'line',
                                         plugins: [ChartDataLabels, verticalLine],
@@ -568,7 +575,7 @@
                                                     radius: 2,
                                                 },
                                             },
-
+    
                                             plugins: {
                                                 tooltips: {
                                                     enabled: false
@@ -576,7 +583,7 @@
                                                 legend: {
                                                     display: false,
                                                     align: 'end',
-
+    
                                                     labels: {
                                                         usePointStyle: true,
                                                         pointStyle: 'line',
@@ -609,7 +616,7 @@
                                                         // 오늘 날짜만 출력
                                                         callback: (value) => {
                                                             if (value == today) {
-
+    
                                                                 return `${daysInMonth}.${today + 1}`
                                                             }
                                                         },

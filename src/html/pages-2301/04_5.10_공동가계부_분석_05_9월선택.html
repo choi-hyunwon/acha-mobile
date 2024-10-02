@@ -8,24 +8,31 @@
             <a href="#" class="sprite btn_back"></a>
             <h2>공동 가계부 분석</h2>
         </div>
-        <div class="current-month current-month-manage report mb-0">
-            <a href="#">2022년 10월<i class="icon-arrow-bottom"></i></a>
-            <a href="#" class="btn btn-edit">
-                <img src="../../img/sprite/common/ico_input_calendar@2x.png" width="16" height="16" alt="캘린더아이콘">
-                캘린더
-            </a>
-        </div>
-        <div class="contents">
-            <div class="manage-content">
+
+        <div class="contents expenditure share-add">
+            <div class="current-month current-month-manage report mb-0">
+                <a href="#">2023년 9월<i class="icon-arrow-bottom"></i></a>
+                <a href="#" class="btn btn-edit">
+                    <img src="../../img/sprite/common/ico_input_calendar@2x.png" width="16" height="16" alt="캘린더아이콘">
+                    캘린더
+                </a>
+            </div>
+            
+            <div class="period">
+                <p>기간</p>
+                <span class="start">8.25</span>~<span class="end">9.24</span>
+            </div>
+    
+            <div class="manage-content mt-10">
                 <div class="month-flow">
                     <div class="title-wrap">
                         <p class="desc">월별 수입·지출 추이</p>
                         <p class="title">
-                            지난달보다 수입이 <span class="color-blue">300,000원</span> 늘고<br />
-                            지출이 <span class="color-red">1,000,000원</span> 늘었어요!
+                            지난달보다 수입이 <span class="color-blue">0원</span> 늘고<br />
+                            지출이 <span class="color-red">1,500,000원</span> 늘었어요!
                         </p>
                     </div>
-
+    
                     <div class="chart-box">
                         <ul class="chart-month">
                             <li class="item">
@@ -75,16 +82,16 @@
                                     <p>수입</p>
                                 </div>
                                 <div class="value">
-                                    +2,500,000<span>원</span>
+                                    0<span>원</span>
                                 </div>
                             </div>
                             <div class="expense">
                                 <div class="top">
                                     <i class="obj"></i>
-                                    <p>수입</p>
+                                    <p>지출</p>
                                 </div>
                                 <div class="value">
-                                    +2,500,000<span>원</span>
+                                    - 1,500,000<span>원</span>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +99,7 @@
                             <div class="remain">
                                 <p>남은 돈 <img src="../../img/common/ico_tooltip_big@2x.png" width="16" height="16"
                                         alt="tooltip-large"></p>
-                                <div class="value">- 500,000<span>원</span></div>
+                                <div class="value">- 1,500,000<span>원</span></div>
                             </div>
                             <div class="_Slider swiper swiper-container">
                                 <div class="swiper-wrapper">
@@ -109,7 +116,7 @@
                                                 </div>
                                                 <script>
                                                     const canvas_1 = document.getElementById('canvas-income').getContext('2d');
-
+    
                                                     const config_1 = new Chart(canvas_1, {
                                                         type: 'doughnut',
                                                         plugins: [ChartDataLabels],
@@ -140,7 +147,7 @@
                                                     });
                                                 </script>
                                             </div>
-
+    
                                             <div class="info-box">
                                                 <div class="user">
                                                     <div class="left">
@@ -189,7 +196,7 @@
                                                 </div>
                                                 <script>
                                                     const canvas_2 = document.getElementById('canvas-expense_2').getContext('2d');
-
+    
                                                     const config_2 = new Chart(canvas_2, {
                                                         type: 'doughnut',
                                                         plugins: [ChartDataLabels],
@@ -257,381 +264,7 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-
-                <div class="divider" style="margin-left: -20px; width: calc(100% + 40px);"></div>
-
-                <div class="analysis">
-                    <h3 class="title">지출분석</h3>
-                    <!-- 카테고리별지출 -->
-                    <div class="group ">
-                        <div class="category head">
-                            <p class="name">카테고리별 지출</p>
-                            <a href="#" class="btn">상세보기 <i class="ico_list_arrow_small"></i></a>
-                        </div>
-
-                        <div class="chart-box">
-                            <!-- %값으로 width 스파일 표시 백분율  -->
-                            <ul class="category-graph">
-                                <li class="category-item item1 graph-01" style="width: 42%;"></li>
-                                <li class="category-item item2 graph-02" style="width: 22%;"></li>
-                                <li class="category-item item3 graph-03" style="width: 15%;"></li>
-                                <li class="category-item item4 graph-04" style="width: 9%;"></li>
-                                <li class="category-item item5 graph-05" style="width: 6%;"></li>
-                                <li class="category-item item5 graph-etc" style="width: 6%;"></li>
-                            </ul>
-                        </div>
-
-                        <div class="category-list expense">
-                            <ul>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj graph-01"></i>
-                                        <p class="name">식비·외식비 <span>42%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>1,400,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj graph-02"></i>
-                                        <p class="name">카페·간식 <span>22%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>870,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj graph-03"></i>
-                                        <p class="name">마트·편의점 <span>15%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>655,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj graph-04"></i>
-                                        <p class="name">이체 <span>9%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>230,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj graph-05"></i>
-                                        <p class="name">교육·강습 <span>6%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj graph-05"></i>
-                                        <p class="name">반려동물 <span>3%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj graph-05"></i>
-                                        <p class="name">생활용품 <span>1%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>15,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                            </ul>
-                            <button class="btn spread-btn">
-                                펼치기 <i class="ico_list_arrow_small"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- 유형별 지출 -->
-                    <div class="group ">
-                        <div class="type head">
-                            <p class="name">유형별 지출</p>
-                            <a href="#" class="btn">상세보기 <i class="ico_list_arrow_small"></i></a>
-                        </div>
-
-                        <div class="chart-box doughnut">
-                            <canvas id="chart-category"></canvas>
-                            <script>
-                                const canvas_3 = document.getElementById('chart-category').getContext('2d');
-
-                                const config_3 = new Chart(canvas_3, {
-                                    type: 'doughnut',
-                                    plugins: [ChartDataLabels],
-                                    data: {
-                                        labels: ['정기지출', '변동지출', '할부지출'],
-                                        datasets: [{
-                                            data: [35, 30, 21],
-                                            backgroundColor: ['#a883fb', '#fd7d9f', '#fdb3a8'],
-                                            borderColor: ['#a883fb', '#fd7d9f', '#fdb3a8'],
-                                            hoverOffset: 20,
-                                            borderColor: 'white',
-                                            borderWidth: 3,
-                                            hoverBorderColor: 'white',
-                                        }]
-                                    },
-                                    options: {
-                                        radius: '90%',
-                                        cutout: '60%',
-                                        plugins: {
-                                            legend: {
-                                                display: false,
-                                            },
-                                            datalabels: {
-                                                display: false,
-                                            },
-                                            tooltip: {
-                                                displayColors: false,
-                                                padding: { top: 8, bottom: 8, left: 17, right: 17, },
-                                                backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                                                titleFont: {
-                                                    size: 12,
-                                                    weight: "shin",
-                                                    lineHeight: 0.8,
-                                                },
-                                                bodyFont: {
-                                                    size: 20,
-                                                    weight: "bold",
-                                                    lineHeight: 0.8,
-                                                },
-                                                font: {
-                                                    family: 'Roboto","Noto Sans CJK KR Regular'
-                                                },
-                                                caretSize: 0,
-                                                titleColor: '#37354e',
-                                                bodyColor: '#37354e',
-                                                boxWidth: 20,
-
-                                                titleAlign: 'center',
-                                                bodyAlign: 'center',
-                                                borderWidth: 1,
-                                                borderRadius: 6,
-                                                borderColor: '#c2c1cc',
-                                                callbacks: {
-                                                    title: function (tooltipItem, data) {
-                                                        return tooltipItem[0].label;
-                                                    },
-                                                    label: function (tooltipItem, data) {
-
-                                                        return tooltipItem.formattedValue + '%';
-                                                    },
-                                                },
-                                            },
-                                        },
-                                    },
-                                });
-                            </script>
-                        </div>
-
-                        <div class="category-list">
-                            <ul>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj type-graph-01"></i>
-                                        <p class="name">식비·외식비 <span>35%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>1,400,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj type-graph-02"></i>
-                                        <p class="name">식비·외식비 <span>30%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>870,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="tit">
-                                        <i class="obj type-graph-03"></i>
-                                        <p class="name">식비·외식비 <span>21%</span></p>
-                                    </div>
-                                    <div class="value">
-                                        <p>655,000<span>원</span></p><i class="ico_list_arrow_small"></i>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <!-- 일별 변동지출 현황 -->
-                    <div class="group ">
-                        <div class="category head">
-                            <p class="name">일별 변동지출 현황</p>
-                        </div>
-                        <div class="title-wrap">
-                            <p class="title">
-                                10월에는 <span class="color-purple">217,050원</span> 썼어요
-                            </p>
-                            <!-- <p class="desc">9월 이맘때보다 <span>18,080원 더</span> 썼어요</p> -->
-                        </div>
-
-                        <div class="chart-box">
-                            <div class="mt-30 daily-box">
-                                <div>
-                                    <canvas id="chart-daily" height="200"></canvas>
-                                </div>
-                                <script>
-                                    const canvas_4 = document.getElementById('chart-daily').getContext('2d');
-
-                                    let currentDate = new Date(); // 현재 날짜 가져오기
-                                    let daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth()).getMonth() + 1 // 현재 달
-                                    let daysInDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate(); // 현재 달의 일 수
-                                    let today = new Date().getDate() - 1;  // 오늘 날짜
-                                    let labels = [];
-                                    for (let i = 1; i <= daysInDay; i++) {
-                                        labels.push(daysInMonth + '.' + i.toString());
-                                    }
-
-                                    const pointImage = new Image(17, 17);
-                                    pointImage.src = '../../img/common/chart-point.png'
-
-
-                                    const verticalLine = {
-                                        id: 'verticalLine',
-                                        beforeDatasetsDraw(chart, args, plugins) {
-                                            const { ctx, tooltip, chartArea: { top, bottom, left, right, width, heigth }, scales: { x, y } } = chart;
-
-                                            const _index = chart.scales.x.ticks[0].value
-                                            if (_index === today) {
-
-                                                const xCoor = x.getPixelForValue(today)
-                                                const yCoor = y.getPixelForValue(chart.hight)
-
-                                                ctx.save();
-                                                ctx.beginPath();
-                                                ctx.lineWidth = 2;
-                                                ctx.strokeStyle = '#d2d5db';
-                                                ctx.setLineDash([8, 5]);
-                                                ctx.moveTo(xCoor, top);
-                                                ctx.lineTo(xCoor, bottom);
-                                                ctx.stroke();
-                                            }
-                                        }
-                                    }
-
-                                    config_4 = new Chart(canvas_4, {
-                                        type: 'line',
-                                        plugins: [ChartDataLabels, verticalLine],
-                                        data: {
-                                            labels: labels,
-                                            datasets: [
-                                                {
-                                                    label: '10월',
-                                                    data: [0, 12, 13, 41, 34, 45, 67, 78, 100, 101, 110, 125, 127, 130, 138],
-                                                    backgroundColor: ['#6839d3'],
-                                                    borderColor: ['#6839d3'],
-                                                    borderWidth: 3,
-                                                    fill: false,
-                                                    // pointStyle: 'rect',
-                                                    pointBackgroundColor: '#fff',
-                                                    pointBorderColor: 'rgba(104, 57, 211, 1)',
-                                                    pointBorderWidth: 3,
-                                                    lineTension: 0,
-                                                    borderWidth: 3,
-                                                    pointHoverRadius: 'rgba(104, 57, 211, 0.21)',
-                                                    pointHoverRadius: 3,
-                                                    pointHoverBorderWidth: 3,
-                                                    pointRadius: (ctx) => {
-                                                        const pointsLength = ctx.chart.data.labels.length - 1
-                                                        const pointsArray = [];
-                                                        for (let i = 0; i < pointsLength; i++) {
-                                                            if (i === today) {
-                                                                pointsArray.push(5)
-                                                            } else {
-                                                                pointsArray.push(0)
-                                                            }
-                                                        }
-                                                        return pointsArray
-                                                    }
-                                                },
-                                                {
-                                                    label: '9월',
-                                                    data: [0, 2, 3, 4, 14, 15, 36, 58, 110, 110, 114, 117, 119, 119, 119, 119, 120, 120, 124, 125, 126, 127, 130, 134, 150, 150, 151, 152, 154, 184],
-                                                    backgroundColor: ['#d2d5db'],
-                                                    borderColor: ['#d2d5db'],
-                                                    borderWidth: 3,
-                                                    fill: false,
-                                                    pointRadius: [0],
-                                                },
-                                            ]
-                                        },
-                                        options: {
-                                            elements: {
-                                                point: {
-                                                    pointStyle: [pointImage],
-                                                    radius: 2,
-                                                },
-                                            },
-
-                                            plugins: {
-                                                tooltips: {
-                                                    enabled: false
-                                                },
-                                                legend: {
-                                                    display: false,
-                                                    align: 'end',
-
-                                                    labels: {
-                                                        usePointStyle: true,
-                                                        pointStyle: 'line',
-                                                        font: {
-                                                            size: 12,
-                                                        }
-                                                    },
-                                                },
-                                                datalabels: {
-                                                    display: false,
-                                                },
-                                            },
-                                            scales: {
-                                                y: {
-                                                    beginAtZero: true,
-                                                    grid: {
-                                                        drawBorder: false,
-                                                    },
-                                                    ticks: {
-                                                        stepSize: 50,
-                                                        max: 200,
-                                                    },
-                                                },
-                                                x: {
-                                                    grid: {
-                                                        display: false,
-                                                        drawBorder: false,
-                                                    },
-                                                    ticks: {
-                                                        // 오늘 날짜만 출력
-                                                        callback: (value) => {
-                                                            if (value == today) {
-
-                                                                return `${daysInMonth}.${today + 1}`
-                                                            }
-                                                        },
-                                                        font: 12,
-                                                        color: '#9b9aa6'
-                                                    }
-                                                },
-                                            },
-                                        },
-                                    });
-                                </script>
-                            </div>
-                        </div>
+    
                     </div>
                 </div>
             </div>

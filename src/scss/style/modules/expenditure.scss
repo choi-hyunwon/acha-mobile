@@ -3085,6 +3085,7 @@
           font-size: 15px;
           line-height: 21px;
           padding-top: 12px;
+          word-break: keep-all;
         }
       }
 
@@ -3099,6 +3100,11 @@
           font-size: 13px;
           color: var(--text-02);
           line-height: 20px;
+          margin-bottom: 4px;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
 
           &:before {
             content: '';

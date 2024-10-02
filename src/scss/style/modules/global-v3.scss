@@ -271,7 +271,7 @@
     height: 18px;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 3px;
+    // margin-bottom: 3px;
     margin-left: 2px;
   }
 
@@ -452,7 +452,7 @@
     }
 
     &.mission-area {
-      min-height: calc(100vh - 116px);
+      min-height: calc(100vh - 200px);
     }
 
     &-data {
@@ -868,11 +868,7 @@
     background-image: url(../../img/common/expenditure/icon-category/ic_cate_allowance@2x.png);
   }
 
-  &.icon_cate_allowance {
-    background-image: url(../../img/common/expenditure/icon-category/ic_cate_allowance@2x.png);
-  }
-
-  &.icon_cate_allowance {
+  &.ic_cate_transportation {
     background-image: url(../../img/common/expenditure/icon-category/ic_cate_transportation@2x.png);
   }
 

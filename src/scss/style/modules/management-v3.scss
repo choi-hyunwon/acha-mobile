@@ -1,5 +1,4 @@
 .renewal {
-
   /*미션*/
   .mission-contents {
     .manage {
@@ -57,6 +56,7 @@
             &.add-management {
               .category-heading {
                 .title {
+                  margin-bottom: 0;
                   >img {
                     width: 40px;
                     height: 40px;
@@ -77,6 +77,40 @@
                       display: inline-block;
                     }
                   }
+                }
+
+                .period{
+                  position: relative;
+                  width: 82px;
+                  height: 24px;
+                  margin: 8px 0 0 0;
+                  padding: 4px 7px;
+                  border-radius: 6px;
+                  background-color: #f4f4f4;
+            
+                  font-family: var(--font1);
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: var(--text-03);
+                  text-align: center;
+            
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: -6.5px;
+                    border-top: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-bottom: 5px solid #f4f4f4;
+                    border-left: 5px solid #f4f4f4;
+                  }
+                }
+
+                .income{
+                  margin: 20px 0 0 0;
+                }
+                .expenditure{
+                  margin-top: 14px;
                 }
               }
             }
@@ -669,6 +703,7 @@
             font-size: 15px;
             line-height: 21px;
             padding-top: 12px;
+            word-break: keep-all;
           }
         }
 
@@ -970,6 +1005,14 @@
         }
       }
     }
+
+    .mission-noti{
+      font-family: var(--font1);
+      font-size: 13px;
+      line-height: 19px;
+      color: var(--text-02);
+      padding: 20px 20px 0;
+    }
   }
 
   /*미션 승패이미지*/
@@ -1054,15 +1097,20 @@
 
     .mission-box {
       position: relative;
+      min-height: calc(100lvh - 200px);
       padding: 20px 20px 30px 20px;
 
       .item {
         height: 200px;
-        margin: 0 0 20px;
         padding: 20px;
+        margin-bottom: 20px;
         border-radius: 10px;
         background-color: #fff;
         position: relative;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
 
         .title {
           font-size: 20px;
@@ -1487,7 +1535,6 @@
   /**
     공동관리 페이지
    */
-
   .management-wrap {
     padding: 20px 20px 30px 20px;
 
@@ -2433,7 +2480,6 @@
   /**
   04_3.1_공동지출관리_1_시작
    */
-
   .share-spend-money {
     .box-key {
       height: 96px;
@@ -3115,9 +3161,38 @@
   // 공동관리 데이터 추가
   .share-add {
     .current-month-manage {
-      padding: 15px 20px;
+      padding: 15px 20px 0 20px;
       margin: 0;
       background: #fff;
+    }
+
+    /*기준일 변경 v1.0*/
+    .period{
+      display: flex;
+      align-items: center;
+      padding: 6px 20px 0 20px;
+
+      p{
+        width: 36px;
+        height: 23px;
+        padding: 3px 6px;
+        margin-right: 5px;
+        border-radius: 11.5px;
+        background-color: #f7f8fc;
+
+        font-family: var(--font2);
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        color: #9992a0;
+      }
+
+      span{
+        font-family: var(--font1);
+        font-size: 14px;
+        line-height: 19px;
+        color: var(--text-03);
+      }
     }
 
     .manage-tab {
@@ -3127,6 +3202,10 @@
         // justify-content: space-between;
         width: 100%;
       }
+    }
+
+    .expenditure-tab{
+      margin-top: 15px;
     }
 
     .agree-wrap {
@@ -3148,6 +3227,7 @@
     }
 
     .expenditure-box {
+      min-height: calc(100lvh - 206px);
       .usage-history-list {
         &.usage-category-list {
           &.filter-setting {
@@ -3378,6 +3458,8 @@
       }
 
       .asset-state {
+        padding-bottom: 30px;
+
         .usage-sum {
           .filter {
             display: flex;
@@ -3606,7 +3688,6 @@
                     align-items: center;
                     width: 100%;
                     margin-bottom: 0;
-                    ;
 
                     .img {
                       position: absolute;
@@ -3703,16 +3784,28 @@
               }
             }
           }
+
+          // 월 추가
+          .monthly{
+            padding: 30px 0 0 0;
+            p{
+              font-family: var(--font3);
+              font-size: 18px;
+              line-height: 21px;
+              text-align: left;
+            }
+
+          }
         }
 
         .usage-history-list {
-          padding-top: 14px;
           min-height: auto;
+          padding-bottom: 0;
 
           li {
             .total {
               align-items: flex-start;
-              padding-bottom: 10px;
+              padding-bottom: 20px;
 
               .title {
                 display: flex;
@@ -3761,7 +3854,7 @@
                   }
 
                   .info {
-                    width: calc(100% - 35px);
+                    width: calc(100% - 40px);
                     padding-left: 54px;
 
                     .place {
@@ -4032,7 +4125,6 @@
 
         .empty {
           padding: 0 20px;
-          padding-bottom: 30px;
 
           .txt {
             background: #fff;
@@ -4059,6 +4151,41 @@
 
 
 
+    }
+  }
+
+  .share-calendar{
+    /*기준일 변경 v1.0*/
+    .period{
+      display: flex;
+      align-items: center;
+      padding: 6px 20px 0 20px;
+
+      p{
+        width: 36px;
+        height: 23px;
+        padding: 3px 6px;
+        margin-right: 5px;
+        border-radius: 11.5px;
+        background-color: #f7f8fc;
+
+        font-family: var(--font2);
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        color: #9992a0;
+      }
+
+      span{
+        font-family: var(--font1);
+        font-size: 14px;
+        line-height: 19px;
+        color: var(--text-03);
+      }
+    }
+
+    .expenditure-tab{
+      margin-top: 15px;
     }
   }
 
@@ -4903,4 +5030,45 @@
       }
     }
   }
+
+  /* 공동가계부 시작일 설정 */
+  .common-account{
+    &.monthly-start{
+      .noti{
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      label{
+        color: var(--text-02);
+        margin-bottom: 4px;
+      }
+
+      input{
+        height: 42px;
+        max-height: unset;
+        margin-bottom: 4px;
+        padding: 10px 5px;
+
+        border-bottom: solid 1px #e2e3e6;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
+      }
+
+      .start-noti{
+        font-family: var(--font1);
+        font-size: 13px;
+        line-height: 19px;
+        word-break: keep-all;
+      }
+    }
+  }
+
+
 }

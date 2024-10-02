@@ -5,7 +5,7 @@
 <div class="wrap renewal">
     <div class="header _sticky">
         <a href="#" class="sprite btn_back"></a>
-        <h2 class="title"><a href="#">2022년 6월</a><i class="icon-arrow-bottom"></i></h2>
+        <h2 class="title"><a href="#">2023년 4월</a><i class="icon-arrow-bottom"></i></h2>
         <div class="btn_area">
             <a class="img" href="#">
                 <img src="../../img/common/ico_top_add_b_nor@2x.png" width="26" alt="더보기 버튼">
@@ -15,7 +15,7 @@
         <div class="total-amount mb-5">
             <p class="title">총 지출 <a href="#"><img src="../../img/common/ico_tooltip_big@2x.png" width="16" alt="tooltip-large"></a></p>
             <span class="amount">0</span>
-            <p class="expected">지난달 <span>2,500,000</span>원</p>
+            <p class="expected"><span class="start-date">4.1</span>~<span class="end-date">4.31</span> 지출 : <span class="total-money">4,000,000</span>원</p>
             <a href="#" class="btn btn-filter">필터 <span class="color-purple">3</span></a>
         </div>
 
@@ -45,19 +45,17 @@
 
 <script>
     let $list = $('.list-collapse');
-    $list.on('click', '.btn-collapse', function (){
-        if ($(this).parent().hasClass('list-collapse-close')){
-            $list.removeClass('list-collapse-close');
-            $list.siblings('.divider').show();
-            $list.siblings('.sub-title').show();
-            $list.siblings('.details-history').show();
-        } else {
-            $list.addClass('list-collapse-close');
-            $list.siblings('.divider').hide();
-            $list.siblings('.sub-title').hide();
-            $list.siblings('.details-history').hide();
-        }
-    })
+        $list.click(function () {
+            if ($(this).hasClass('list-collapse-close')) {
+                $list.removeClass('list-collapse-close');
+                $list.siblings('.divider').show();
+                $list.siblings('.divider').nextAll('div').show();
+            } else {
+                $list.addClass('list-collapse-close');
+                $list.siblings('.divider').hide();
+                $list.siblings('.divider').nextAll('div').hide();
+            }
+        });
 </script>
 
 </body>

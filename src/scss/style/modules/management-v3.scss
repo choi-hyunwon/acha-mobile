@@ -2477,6 +2477,132 @@
     }
   }
 
+  .management-main{
+    min-height: calc(100vh - 66px);
+    padding-bottom: 66px;
+    
+    .key-visual{
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(118deg, #f2edff, #ffefff 98%);
+      padding-top: 28px;
+
+      p{
+        font-family: var(--font1);
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        word-break: keep-all;
+
+        .f-point{
+          font-family: var(--font3);
+        }
+      }
+
+      .img{
+        width: 200px;
+        height: 110px;
+        margin: 5px auto 0;
+      }
+    }
+
+    .management-wrap{
+      position: relative;
+      width: 100%;
+      padding: 40px 30px 30px;
+    }
+
+    .management-box{
+      padding-top: 50px;
+
+      .title{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 3px;
+        margin-bottom: 20px;
+
+        p{
+          font-family: var(--font1);
+          font-size: 18px;
+          line-height: 28px;
+          word-break: keep-all;
+          
+          span{
+            font-family: var(--font3);
+          }
+        }
+
+        .icon{
+          width: 70px;
+          height: 60px;
+          margin-left: auto;
+
+          &.asset{
+            width: 80px;
+            height: 70px;
+          }
+        }
+      }
+
+      .img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;        
+
+        &.graph{
+          display: flex;
+          img{
+            width: calc((100% - 7px) / 2);
+            &:last-child{
+              margin-left: 7px;
+            }
+          }
+        }
+      }
+      
+      &:first-child{
+        padding-top: 0;
+      }
+    }
+
+    .bottom-title{
+      font-family: var(--font1);
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      word-break: keep-all;
+      padding: 60px 0;
+      
+      span{
+        font-family: var(--font3);
+      }
+    }
+
+    .btn-wrap.fixed-bottom{
+      padding-bottom: 30px;
+      background: var(--white);
+
+      &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 20px;
+        position: fixed;
+        left: 0;
+        bottom: 80px;
+        z-index: 2;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+      }
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
   /**
   04_3.1_공동지출관리_1_시작
    */

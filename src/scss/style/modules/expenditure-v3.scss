@@ -377,6 +377,11 @@
       }
     }
 
+    .badge{
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
     /**
     총수입 금액 노출 영역
      */
@@ -2020,7 +2025,7 @@
                   .badge {
                     width: 76px;
                     height: 22px;
-                    padding: 2px 18px 3px;
+                    padding: 2px 8px 3px;
                     border-radius: 6px;
 
                     font-family: var(--font2);
@@ -2914,19 +2919,7 @@
                 right: 0;
                 top: 6px;
               }
-
-              // .badge-group {
-              //   display: flex;
-              //   flex-direction: column;
-
-              //   .badge {
-              //     margin-bottom: 6px;
-
-              //     &:last-of-type {
-              //       margin-bottom: 0;
-              //     }
-              //   }
-              // }
+              
               .badge-group {
                 display: flex;
                 flex-direction: column;
@@ -2935,7 +2928,7 @@
                 .badge {
                   width: 76px;
                   height: 22px;
-                  padding: 2px 18px 3px;
+                  padding: 2px 8px 3px;
                   border-radius: 6px;
 
                   font-family: var(--font2);

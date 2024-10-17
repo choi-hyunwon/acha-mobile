@@ -4555,6 +4555,7 @@
 
       /*계좌지출*/
       &.account-spending {
+        min-height: calc(100vh - 210px);
         .empty {
           height: calc(100vh - 239px) !important;
           padding-bottom: 0;
@@ -5596,7 +5597,7 @@
           .val {
             font-size: 15px;
             color: var(--text-02);
-            font-family: var(--font1);
+            font-family: var(--font2);
 
             &.accent{
               font-family: var(--font2);

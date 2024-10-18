@@ -2262,6 +2262,9 @@
                   }
 
                   .sub-title {
+                    display: flex;
+                    align-items: center;
+                    
                     font-size: 14px;
                     color: var(--text-02);
                     font-family: var(--font2);

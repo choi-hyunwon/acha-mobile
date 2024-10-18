@@ -1306,6 +1306,8 @@
           }
 
           a {
+            display: flex;
+            align-items: center;
             font-size: 17px;
             color: var(--text-03);
             line-height: 26px;

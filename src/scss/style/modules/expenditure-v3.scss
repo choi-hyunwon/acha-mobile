@@ -5328,9 +5328,15 @@
               }
 
               .amount-global{
-                display: block;
+                display: flex;
+                align-items: center;
                 font-size: 18px;
                 font-family: var(--font5);
+
+                i{
+                  margin-top: 2.5px;
+                  margin-left: 8px;
+                }
 
                 &.cancel_line {
                   color: #c2c1cc;

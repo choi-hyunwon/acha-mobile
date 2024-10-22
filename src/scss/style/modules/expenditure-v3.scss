@@ -1833,7 +1833,10 @@
                     }
 
                     .place {
+                      display: block;
                       line-height: 1;
+                      max-width: 145px;
+
                       &.edit{
                         display: flex;
                         align-items: center;
@@ -1874,6 +1877,7 @@
                     .type {
                       display: block;
                       line-height: 1;
+                      max-width: 145px;
 
                       span {
                         overflow: hidden;

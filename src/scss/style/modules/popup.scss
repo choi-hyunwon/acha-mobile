@@ -3931,6 +3931,97 @@
                 }
             }
         }
+
+        .form-wrap{
+            position: relative;
+            padding: 30px;
+            .title {
+                font-family: var(--font1);
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: -0.45px;
+                text-align: left;
+                padding-bottom: 20px;
+                span {
+                    font-family: var(--font3);
+                }
+            }
+            .toast-popup{
+                display: none;
+                width: calc(100% - 60px);
+                min-height: 48px;
+                height: fit-content;
+                padding: 15px 0;
+                font-family: var(--font1);
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: var(--white);
+                border-radius: 6px;
+                background-color: #000;
+                opacity: 0.7;
+                position: fixed;
+                top: unset;
+                left: 50%;
+                bottom: 100px;
+                transform: translateX(-50%);
+            }
+        }
+        .form-box{
+            padding: 30px 0;
+            border-top: 2px solid #37354e;
+            form{
+                display: flex;
+                gap: 5px;
+                .wave{
+                    margin-top: auto;
+                    margin-bottom: 15px;
+                    color: #c2c1cc;
+                }
+            }
+        }
+        .input-box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            label{
+                font-family: var(--font1);
+                font-size: 15px;
+                line-height: 19px;
+                font-weight: unset;
+            }
+            input{
+                width: 140px;
+                height: 44px;       
+                padding: 13px 10px;
+                border: none;
+                box-shadow: none;
+                background-color: #f7f7f8;
+                border-radius: 6px;
+                &::placeholder{
+                    font-family: var(--font1);
+                    font-size: 15px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #c2c1cc;
+                }
+            }
+        }
+        .form-noti{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 16px;
+            img{
+                width: 12px;
+                height: 12px;
+            }
+            span{
+                font-family: var(--font1);
+                font-size: 14px;
+                color: var(--text-02);
+            }
+        }
     }
 
     /*지출*/

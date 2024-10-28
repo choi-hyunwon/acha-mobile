@@ -5594,6 +5594,35 @@
         }
       }
     }
+
+    /*기준일 변경 v1.0*/
+    .period{
+      display: flex;
+      align-items: center;
+      padding: 10px 20px 0;
+
+      p{
+        width: 36px;
+        height: 23px;
+        padding: 3px 6px;
+        margin-right: 5px;
+        border-radius: 11.5px;
+        background-color: #f7f8fc;
+
+        font-family: var(--font2);
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+        color: #9992a0;
+      }
+
+      span{
+        font-family: var(--font1);
+        font-size: 14px;
+        line-height: 19px;
+        color: var(--text-03);
+      }
+    }
   }
 
   /**
@@ -6284,35 +6313,6 @@
       line-height: 44px;
       font-family: var(--font2);
       font-size: 13px;
-    }
-
-    /*기준일 변경 v1.0*/
-    .period{
-      display: flex;
-      align-items: center;
-      margin-bottom: 6px;
-
-      p{
-        width: 36px;
-        height: 23px;
-        padding: 3px 6px;
-        margin-right: 5px;
-        border-radius: 11.5px;
-        background-color: #f7f8fc;
-
-        font-family: var(--font2);
-        font-size: 11px;
-        line-height: 17px;
-        text-align: center;
-        color: #9992a0;
-      }
-
-      span{
-        font-family: var(--font1);
-        font-size: 14px;
-        line-height: 19px;
-        color: var(--text-03);
-      }
     }
 
     .text-desc-sub{

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal-slide modal-my-data _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="form-wrap">
+            <div class="title _btnSlideOpen">
+                <span class="f-point">해당 기간 내 동의한 내역</span>을<br>확인할 수 있어요
+            </div>
+            <div class="form-box">
+                <form>
+                    <div class="input-box">
+                        <label for="start-date">시작일</label>
+                        <input type="text" id="start-date" placeholder="23.10.18">
+                    </div>
+                    <p class="wave">~</p>
+                    <div class="input-box">
+                        <label for="end-date">종료일</label>
+                        <input type="text" id="end-date" placeholder="24.10.18">
+                    </div>
+                </form>
+                <p class="form-noti">
+                    <img src="../../img/common/ico_caution@2x.png" alt="경고아이콘">
+                    <span>최대 선택 가능 기간은 1년이에요</span>
+                </p>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-purple-bg" onclick="openPopup()">다음</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

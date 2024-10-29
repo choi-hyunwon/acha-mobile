@@ -3092,6 +3092,13 @@
         }
       }
 
+      .info-text{
+        font-family: var(--font2);
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 14px;
+      }
+      
       .info-box {
         background: #f7f8fc;
         padding: 20px 16px;
@@ -3104,6 +3111,7 @@
           color: var(--text-02);
           line-height: 20px;
           margin-bottom: 4px;
+          word-break: keep-all;
 
           &:last-child{
             margin-bottom: 0;
@@ -3118,8 +3126,8 @@
             border-radius: 50%;
             position: absolute;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 0;
+            transform: translateY(9px);
             background-color: var(--text-02);
           }
         }
@@ -3130,24 +3138,32 @@
         width: 212px;
         height: auto;
         margin: 114px auto;
+      }
 
-        img {
-          width: 100%;
-          height: auto;
-        }
+      .reset-img{
+        width: 212px;
+        height: auto;
+        margin: 45px auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
       }
 
       .btn-area {
         .btn-secession {
           border-radius: 6px;
-          height: 56px;
-          line-height: 56px;
+          height: 50px;
+          line-height: 26px;
           border: 0;
           background-color: var(--color-point);
           color: #ffffff;
           font-size: 15px;
           letter-spacing: -.75px;
           font-family: var(--font2);
+          text-align: center;
+          padding: 14px 0;
         }
       }
     }
@@ -3339,7 +3355,6 @@
         background: #fff;
       }
     }
-
 
     // 자산고도화 240111
     &.box-card-improve {

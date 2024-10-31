@@ -1438,6 +1438,17 @@
             object-fit: contain;
         }   
     }
+
+    .ico-tooltip{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 3.5px;
+        }
+    }
 }
 
 /*팝업*/

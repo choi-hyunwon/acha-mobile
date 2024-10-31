@@ -6696,10 +6696,14 @@
         margin-bottom: 30px;
 
         .t-day {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 66px;
           height: 50px;
-          width: 55px;
           border-right: 1px solid #e3e4e8;
           margin-right: 15px;
+          padding-right: 14px;
 
           .day {
             font-size: 15px;
@@ -6708,7 +6712,6 @@
             margin-bottom: 5px;
             display: block;
             text-align: center;
-            padding-right: 20px;
           }
 
           .badge-gray {
@@ -6739,7 +6742,7 @@
               color: #37354e;
               font-size: 14px;
               font-family: var(--font2);
-              margin-right: 8px;
+              // margin-right: 8px;
             }
 
             .price {

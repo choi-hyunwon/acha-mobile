@@ -20,16 +20,19 @@
                     </div>
                     <div class="card-detail-desc">
                         <div class="item">
-                            <p>연회비</p>
+                            <p>연회비
+                                <a href="#" data-toggle="tooltip" class="ico-tooltip">
+                                    <img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘" />
+                                </a>
+                            </p>
                             <ul>
-                                <li>국내 10,000원</li>
-                                <li>해외 15,000원</li>
+                                <li>해외겸용 10,000원</li>
                             </ul>
                         </div>
                         <div class="item">
-                            <p>필요실적</p>
+                            <p>전월실적</p>
                             <ul>
-                                <li>40만원</li>
+                                <li>30만원 이상</li>
                             </ul>
                         </div>
                     </div>
@@ -587,6 +590,57 @@
             $(this).siblings().find('.show').toggleClass('show')
         });
     </script>
+
+     <!-- 연회비 툴팁입니다. -->
+     <div class="wrap"></div>
+     <div class="modal-slide modal-my-data _modalSlide chatgpt">
+         <div class="modal-slide-content">
+             <a href="#" class="btn-close _btnSlideClose"></a>
+             <div class="inner annual-fee">
+                 <div class="title"><span>해외겸용</span></div>
+                 <ul>
+                     <li>
+                         <p>연회비 10,000원</p>
+                         <p>- S&, UnionPay</p>
+                     </li>                
+                     <li>
+                         <p>연회비 13,000원</p>
+                         <p>- VISA</p>
+                     </li>                
+                 </ul>
+             </div>
+         </div>
+     </div>
+     <div class="modal-slide-backdrop"></div>
+     <!-- 연회비 툴팁용 스크립트 입니다. -->
+     <script>
+         $(document).ready(function () {
+             const tooltip = $('a[data-toggle="tooltip"]');
+             const modalClose = $('._btnSlideClose');
+ 
+             tooltip.click(function () {
+                 setTimeout(
+                     function () {
+                         document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                     }, 500
+                 );
+                 $('._modalSlide').addClass('up').removeClass('down');
+                 $('.modal-slide-backdrop').addClass('show');
+                 $('body').addClass('scrOn')
+             });
+ 
+             modalClose.click(function () {
+                 setTimeout(
+                     function () {
+                         document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                     }, 1000
+                 );
+                 $('._modalSlide').removeClass('up').addClass('down');
+                 $('.modal-slide-backdrop').removeClass('show');
+                 $('body').removeClass('scrOn')
+             });
+         })
+     </script>
 </body>
 
 </html>

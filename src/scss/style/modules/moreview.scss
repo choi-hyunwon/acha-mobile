@@ -3675,8 +3675,36 @@ _ .event-btn-area {
     }
     label{
       margin-left: auto;
-      [type=checkbox] + span:not(.lever){
-        padding-left: 22px;
+      [type=radio] + span:before, [type=radio] + span:after{
+        top: -1px;
+        margin: 4px;
+        width: 22px;
+        height: 22px;
+      }
+      [type=radio].filled-in:not(:checked) + span:not(.lever):before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../../img/common/check_off@2x.png) no-repeat center center / 100% auto;
+        border: none;
+        transition: none;
+        box-shadow: none;
+      }
+      [type=radio].filled-in:not(:checked) + span:not(.lever):after {
+        transition: none;
+        border: none;
+      }
+      [type=radio].filled-in + span:not(.lever):before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../../img/common/check_on@2x.png) no-repeat center center / 100% auto;
+        border: none;
+        transition: none;
+        box-shadow: none;
+      }
+      [type=radio].filled-in:checked + span:not(.lever):after {
+        display: none;
       }
     }
   }

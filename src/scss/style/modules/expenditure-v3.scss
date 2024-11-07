@@ -421,9 +421,11 @@
       }
 
       .expected {
-        font-size: 14px;
+        font-family: var(--font1);
+        font-size: 12px;
+        line-height: 18px;
         color: var(--text-03);
-        padding-top: 6px;
+        padding-top: 2px;
         min-height: 27px;
         display: block;
 
@@ -1958,6 +1960,10 @@
                       display: flex;
                       flex-wrap: wrap;
                       word-break: break-all;
+                      font-family: var(--font1);
+                      font-size: 12px;
+                      line-height: 18px;
+                      color: #9d9aa6;
 
                       span{
                         display: inline-block;

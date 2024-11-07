@@ -5606,12 +5606,13 @@
       display: flex;
       align-items: center;
       padding: 10px 20px 0;
+      gap: 4px;
 
       p{
         width: 36px;
         height: 23px;
         padding: 3px 6px;
-        margin-right: 5px;
+        // margin-right: 5px;
         border-radius: 11.5px;
         background-color: #f7f8fc;
 
@@ -8272,9 +8273,7 @@
   }
 }
 
-
 // 자산 챌린지 240124
-
 .challenge {
   .fixed-bottom {
     padding: 0 20px 30px;

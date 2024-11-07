@@ -81,7 +81,7 @@
 
                 .period{
                   position: relative;
-                  width: 82px;
+                  width: 88px;
                   height: 24px;
                   margin: 8px 0 0 0;
                   padding: 4px 7px;
@@ -3292,6 +3292,14 @@
   }
 
   // 공동관리 데이터 추가
+  .share-spend-money{
+    &.share-add{
+      .manage-tab{
+        border-bottom: 1px solid #e3e4e8;
+      }
+    }
+  }
+
   .share-add {
     .current-month-manage {
       padding: 15px 20px 0;
@@ -3303,13 +3311,13 @@
     .period-bar{
       display: flex;
       align-items: center;
+      gap: 4px;
       padding: 6px 20px 13px 20px;
 
       p{
         width: 36px;
         height: 23px;
         padding: 3px 6px;
-        margin-right: 5px;
         border-radius: 11.5px;
         background-color: #f7f8fc;
 
@@ -3331,8 +3339,6 @@
     .manage-tab {
       ul {
         display: flex;
-        // 04_5.3_공동가계부_일자_닫힘.html
-        // justify-content: space-between;
         width: 100%;
       }
     }
@@ -3356,7 +3362,7 @@
     }
 
     .expenditure-box {
-      min-height: calc(100lvh - 206px);
+      min-height: calc(100lvh - 325px);
       .usage-history-list {
         &.usage-category-list {
           &.filter-setting {
@@ -3408,13 +3414,14 @@
                     }
 
                     .box {
-                      width: calc(100% - 62px);
+                      // width: calc(100% - 62px);
 
                       .info {
                         .place {
                           display: flex;
                           align-items: center;
                           gap: 2px;
+                          max-width: unset;
 
                           span {
                             overflow: hidden;
@@ -3424,7 +3431,8 @@
                             -webkit-box-orient: vertical;
                             white-space: unset;
                             word-break: break-all;
-                            max-width: 240px;
+                            // max-width: 240px;
+                            max-width: unset;
                           }
                         }
                       }

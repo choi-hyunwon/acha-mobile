@@ -3248,10 +3248,9 @@
                 text-align: left;
                 padding-bottom: 20px;
                 padding-right: 20px;
-                font-family: var(--font3);
+                font-family: var(--font1);
 
                 .name {
-                    font-weight: bold;
                     font-family: var(--font3);
                     color: var(--color-point);
                 }
@@ -3310,7 +3309,7 @@
                 text-align: left;
 
                 p {
-                    font-size: 14px;
+                    font-size: 15px;
                     font-family: var(--font1);
                     color: var(--text-01);
                 }
@@ -6161,6 +6160,49 @@
                 }
             }
 
+        }
+    }
+
+    &.modal-account{
+        .inner {
+            padding: 30px;
+            overflow: hidden;
+
+            .title {
+                font-size: 18px;
+                line-height: 28px;
+                color: var(--text-01);
+                text-align: left;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #37354e;
+                
+                p{
+                    padding-right: 20px;
+                }
+
+                .f-point {
+                    font-family: var(--font3);
+                }
+
+                .account-name{
+                    max-width: calc(100% - 125px);
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    display: inline-block;
+                    vertical-align: bottom;
+                }
+            }
+
+            .account-desc {
+                padding: 20px 0 40px;
+                text-align: left;
+
+                p {
+                    font-size: 15px;
+                    font-family: var(--font1);
+                }
+            }
         }
     }
 

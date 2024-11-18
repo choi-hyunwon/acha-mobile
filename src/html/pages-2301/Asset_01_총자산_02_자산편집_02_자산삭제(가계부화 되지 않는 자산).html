@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal-slide modal-account _modalSlide">
+    <div class="modal-slide-content">
+        <a href="#" class="btn-close _btnSlideClose"></a>
+        <div class="inner">
+            <div class="title _btnSlideOpen">
+              <p>
+                <span class="f-point"><span class="account-name">가나다라마바사아자차카타파하</span>계좌</span>를<br/> 삭제할까요?
+              </p>
+            </div>
+            <div class="account-desc">
+                <p>공동관리에서도 함께 삭제돼요</p>
+            </div>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-block btn-lg btn-purple-bg">확인</a>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('._btnSlideClose');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

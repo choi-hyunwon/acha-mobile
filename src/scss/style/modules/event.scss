@@ -1555,3 +1555,169 @@ input[type=number] {
     }
   }
 }
+
+
+.event-header{
+  padding:10px 20px 20px;
+  .sub-title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.56;
+    letter-spacing: -0.45px;
+    color: #37354e;
+  }
+  .sub-date{
+    font-family: Roboto;
+    font-size: 13px;
+    color: #9b9aa6;
+    margin-top:10px;
+  }
+}
+
+.btn_share {
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+  right: 16px;
+  width: 26px;
+  height: 26px;
+  background-size: cover;
+  background-image: url(../../img/common/btn_title_share@2x.png);
+  vertical-align: middle;
+}
+
+.event-robolock{
+  background-color: #ebe5ff;
+  section{
+    position: relative;
+    &:not(.fluid){
+      padding:20px;
+    }
+    .title{
+      @font-face {
+        font-family: 'ONE-Mobile-Title';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      font-family:'ONE-Mobile-Title' ;
+      text-align: center;
+      margin-bottom:20px;
+    }
+    h3{
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+  .white-rbox{
+    background-color: white;
+    padding: 30px 20px 30px 20px;
+    border-radius: 6px;
+  }
+  img.fluid{
+    width: 100%;
+  }
+  .code-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0 14px;
+    padding: 24px 20px 25px;
+    border-radius: 10px;
+    background-color: #f2f2ff;
+    .code{
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 500;
+      color: #222;
+      &.disabled{
+      color: #c2c1cc;
+      }
+    }
+    button{
+      font-size: 14px;
+      font-weight: 500;
+      color: #6839d3;
+      text-decoration: underline;
+      background-color: transparent;
+    }
+  }
+  .btn-big{
+    border-width: 2px;
+    font-size: 16px;
+  }
+  .btn-instagram-absolute{
+    position: absolute;
+    top:45.5%;
+    left:28.8%;
+    width: 210px;
+    height: 56px;
+  }
+}
+.event-footer{
+  background-color: #f7f7f8;
+  padding:50px 20px;
+  font-size: 14px;
+  color:#737183;
+  li{
+    position: relative;
+    margin-top:6px;
+    padding-left: 12px;
+  }
+  ul{
+    li::before{
+      position: absolute;
+      top:0;
+      left:0;
+      content: '-';
+    }
+  }
+  ol{
+    counter-reset: number 0;
+    li::before {
+      position: absolute;
+      top:0;
+      left:0;
+      counter-increment: number 1;
+      content: counter(number);
+    }
+  }
+  .accordion{
+    border-top:none;
+    border-bottom:none;
+    .accordion-header{
+      position: relative;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      color: #737183;
+      padding:20px 0 0;
+      transition: all ease 250ms;
+      &::after{
+        position: absolute;
+        top:28px;
+        right:0;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        content: '';
+        background: url(../../img/common/ico-list-arrow-close.svg);
+
+      }
+      &.active{
+        &::after{
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .accordion-item{
+      padding-bottom:20px;
+      & + .accordion-item{
+        border-top: 1px solid #e0e0e0;
+      }
+    }
+    .collapse{
+      margin-bottom: 10px;
+    }
+  }
+}

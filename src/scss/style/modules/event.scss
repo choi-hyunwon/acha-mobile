@@ -1724,4 +1724,13 @@ input[type=number] {
       margin-bottom: 30px;
     }
   }
+  .validity-list{
+    margin-top: 20px;
+    li{
+      padding-left: 18px;
+      &::before{
+        content: '※';
+      }
+    }
+  }
 }

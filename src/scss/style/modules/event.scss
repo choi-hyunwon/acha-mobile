@@ -1590,7 +1590,7 @@ input[type=number] {
   background-color: #ebe5ff;
   section{
     position: relative;
-    &:not(.fluid){
+    &:not(.fluid, .event-footer){
       padding:20px;
     }
     .title{
@@ -1607,6 +1607,7 @@ input[type=number] {
     h3{
       font-size: 22px;
       font-weight: 700;
+      margin-bottom: 10px;
     }
   }
   .white-rbox{
@@ -1662,7 +1663,11 @@ input[type=number] {
   li{
     position: relative;
     margin-top:6px;
-    padding-left: 12px;
+    padding-left: 14px;
+    word-break: keep-all;
+    &:first-child{
+      margin-top: 0;
+    }
   }
   ul{
     li::before{
@@ -1691,7 +1696,7 @@ input[type=number] {
       font-size: 18px;
       font-weight: 500;
       color: #737183;
-      padding:20px 0 0;
+      padding:20px 0;
       transition: all ease 250ms;
       &::after{
         position: absolute;
@@ -1711,13 +1716,21 @@ input[type=number] {
       }
     }
     .accordion-item{
-      padding-bottom:20px;
       & + .accordion-item{
         border-top: 1px solid #e0e0e0;
       }
     }
     .collapse{
-      margin-bottom: 10px;
+      margin-bottom: 30px;
+    }
+  }
+  .validity-list{
+    margin-top: 20px;
+    li{
+      padding-left: 18px;
+      &::before{
+        content: '※';
+      }
     }
   }
 }

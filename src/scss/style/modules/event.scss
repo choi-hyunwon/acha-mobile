@@ -1562,13 +1562,14 @@ input[type=number] {
   .sub-title{
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.56;
+    line-height: 28px;
     letter-spacing: -0.45px;
     color: #37354e;
   }
   .sub-date{
     font-family: var(--font1);
     font-size: 13px;
+    line-height: 26px;
     color: #9b9aa6;
     margin-top:10px;
   }
@@ -1629,7 +1630,7 @@ input[type=number] {
     .code{
       font-family: var(--font2);
       font-size: 20px;
-      font-weight: 500;
+      line-height: 30px; 
       color: #222;
       &.disabled{
       color: #c2c1cc;

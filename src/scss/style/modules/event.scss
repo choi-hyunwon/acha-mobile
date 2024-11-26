@@ -1567,7 +1567,7 @@ input[type=number] {
     color: #37354e;
   }
   .sub-date{
-    font-family: Roboto;
+    font-family: var(--font1);
     font-size: 13px;
     color: #9b9aa6;
     margin-top:10px;
@@ -1627,7 +1627,7 @@ input[type=number] {
     border-radius: 10px;
     background-color: #f2f2ff;
     .code{
-      font-family: Roboto;
+      font-family: var(--font2);
       font-size: 20px;
       font-weight: 500;
       color: #222;

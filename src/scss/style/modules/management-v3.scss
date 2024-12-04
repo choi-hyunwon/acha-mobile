@@ -5176,43 +5176,64 @@
   }
 
   /* 공동가계부 시작일 설정 */
-  .common-account{
-    &.monthly-start{
-      .noti{
-        font-size: 14px;
-        line-height: 22px;
-      }
-
-      label{
-        color: var(--text-02);
-        margin-bottom: 4px;
-      }
-
-      input{
-        height: 42px;
-        max-height: unset;
-        margin-bottom: 4px;
-        padding: 10px 5px;
-
-        border-bottom: solid 1px #e2e3e6;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        border-radius: 0;
-
-        font-size: 15px;
-        line-height: 22px;
-        text-align: left;
-      }
-
-      .start-noti{
-        font-family: var(--font1);
-        font-size: 13px;
-        line-height: 19px;
-        word-break: keep-all;
+  .monthly-start{
+    .title{
+      font-family: var(--font1);
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 3px;
+      span{
+        font-family: var(--font3);
       }
     }
+    .desc{  
+      font-family: var(--font1);
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .noti{
+      font-family: var(--font1);
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--text-02);
+    }
+    
+    fieldset{
+      padding-top: 40px;
+    }
+
+    .subject{
+      font-family: var(--font2);
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 12px;
+    }
+
+    .monthly-setting{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    input, label{
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 50%;
+    }
+    label{
+      font-family: var(--font1);
+      font-size: 15px;
+      line-height: 18px;
+      color: var(--text-03);
+      text-align: center;
+      border-radius: 50%;
+    }
+    label.select{
+      font-family: var(--font3);
+      color: var(--color-point);
+      border: 1px solid var(--color-point);
+    }
   }
-
-
 }

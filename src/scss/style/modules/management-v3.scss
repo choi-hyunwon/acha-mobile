@@ -5229,11 +5229,18 @@
       color: var(--text-03);
       text-align: center;
       border-radius: 50%;
+      &.select{
+        font-family: var(--font3);
+        color: var(--color-point);
+        border: 1px solid var(--color-point);
+      }
     }
-    label.select{
-      font-family: var(--font3);
-      color: var(--color-point);
-      border: 1px solid var(--color-point);
+
+    .info{
+      font-family: var(--font1);
+      font-size: 13px;
+      line-height: 20px;
+      padding: 12px 20px 0;
     }
   }
 }

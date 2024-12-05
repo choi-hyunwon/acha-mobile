@@ -46,10 +46,292 @@
                         </div>
                     </div>
 
-                    <!-- 선택 월이 아니라 선택 날짜를 기준으로 달력 노출 시켜주세요.
-                        10.02 디자인 기준 '24-01-25' 입니다. -->
-                    <div class="box_ex_calendar ex-calendar-v3">
-                        <div id='calendar'></div>
+                    <!-- 공유캘린더 -->
+                    <div class="joint-calendar">
+                        <ul class="weekday">
+                            <li class="sun">일</li>
+                            <li>월</li>
+                            <li>화</li>
+                            <li>수</li>
+                            <li>목</li>
+                            <li>금</li>
+                            <li class="sat">토</li>
+                        </ul>
+                        <div class="week">
+                            <ul>
+                                <li class="past">
+                                    <span class="day">22</span>
+                                    <div class="household">
+                                        <span class="income">+106,500</span>
+                                        <span class="spending">-50,600</span>
+                                    </div>
+                                </li>
+                                <li class="past">
+                                    <span class="day">23</span>
+                                    <div class="household">
+                                        <span class="income">+10,300</span>
+                                        <span class="spending">-9,600</span>
+                                    </div>
+                                </li>
+                                <li class="past">
+                                    <span class="day">24</span>
+                                    <div class="household">
+                                        <span class="spending">-35,400</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- start 클래스 : 사용자가 지정한 달력 시작 날짜 -->
+                                    <span class="day start">25</span>
+                                    <div class="household">
+                                        <span class="income">+3.2억</span>
+                                        <span class="spending">-6.4천</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">26</span>
+                                    <!-- 스토리가 있는 경우 -->
+                                    <div class='story-tag'>
+                                        <img src="../../img//common/icon_tag_cal_story@2x.png" alt="스토리 아이콘">
+                                    </div>
+                                    <!-- 일정이 있는 경우, 일정은 최대 2개까지만 노출 -->
+                                    <ul class="schedule">
+                                        <li class="todo mint">
+                                            <span>러닝👟</span> 
+                                        </li>
+                                     </ul>
+                                    <div class="household">
+                                        <span class="income">+15,000</span>
+                                        <span class="spending">-1,600,000</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">27</span>
+                                    <div class="household">
+                                        <span class="spending">-9,400</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">28</span>
+                                    <div class="household">
+                                        <span class="income">+21,560</span>
+                                        <span class="spending">-33,400</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="week">
+                            <ul>
+                                <li>
+                                    <span class="day">29</span>
+                                    <div class="household">
+                                        <span class="spending">-52,500</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">30</span>
+                                    <!-- 스토리가 있는 경우 -->
+                                    <div class='story-tag'>
+                                        <img src="../../img//common/icon_tag_cal_story@2x.png" alt="스토리 아이콘">
+                                    </div>
+                                    <div class="household">
+                                        <span class="income">+2,739</span>
+                                        <span class="spending">-72,600</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">31</span>
+                                    <div class="household">
+                                        <span class="income">+35,381</span>
+                                        <span class="spending">-38,870</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">1</span>
+                                    <div class="household">
+                                        <span class="income">+15,000</span>
+                                        <span class="spending">-700,000</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- select 클래스 : 사용자가 달력에서 날짜를 선택할 때 -->
+                                    <span class="day select">2</span>
+                                     <!-- 일정이 있는 경우 -->
+                                    <ul class="schedule">
+                                        <li class="todo pink">
+                                            <span>등산🏔️</span> 
+                                        </li>
+                                     </ul>
+                                    <div class="household">
+                                        <span class="income">+1,050,373</span>
+                                        <span class="spending">-16,000</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">3</span>
+                                    <!-- 스토리가 있는 경우 -->
+                                    <div class='story-tag'>
+                                        <img src="../../img//common/icon_tag_cal_story@2x.png" alt="스토리 아이콘">
+                                    </div>
+                                    <div class="household">
+                                        <span class="income">+1,200</span>
+                                        <span class="spending">-13,500</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">4</span>
+                                    <div class="household">
+                                        <span class="income">+432</span>
+                                        <span class="spending">-74,000</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="week">
+                            <ul>
+                                <li>
+                                    <span class="day">5</span>
+                                    <div class="household">
+                                        <span class="spending">-30,000</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">6</span>
+                                    <div class="household">
+                                        <span class="income">+844</span>
+                                        <span class="spending">-23,100</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">7</span>
+                                    <div class="household">
+                                        <span class="spending">-8,400</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">8</span>
+                                    <div class="household">
+                                        <span class="spending">-38,870</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">9</span>
+                                    <div class="household">
+                                        <span class="spending">-42,940</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">10</span>
+                                    <div class="household">
+                                        <span class="income">+1,050,373</span>
+                                        <span class="spending">-30,300</span>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <span class="day">11</span>
+                                    <div class="household">
+                                        <span class="spending">-115,200</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="week">
+                            <ul>
+                                <li>
+                                    <span class="day">12</span>
+                                    <div class="household">
+                                        <span class="spending">-55,900</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">13</span>
+                                </li>
+                                <li>
+                                    <span class="day">14</span>
+                                    <!-- 일정이 있는 경우 -->
+                                    <ul class="schedule">
+                                        <li class="todo yellow">
+                                            <span>일정</span> 
+                                        </li>
+                                        <li class="todo purple">
+                                            <span>친구모임</span> 
+                                        </li>
+                                    </ul>
+                                    <!-- 일정이 2개 이상 등록 되어 있을 때 -->
+                                    <span class="schedule-over">+ 1</span>
+                                    <div class="household">
+                                        <span class="income">+844</span>
+                                        <span class="spending">-23,100</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">15</span>
+                                    <div class="household">
+                                        <span class="spending">-28,300</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- today 클래스 : 오늘 날짜 표기 -->
+                                    <span class="day today">16</span>
+                                    <!-- 스토리가 있는 경우 -->
+                                    <div class='story-tag'>
+                                        <img src="../../img//common/icon_tag_cal_story@2x.png" alt="스토리 아이콘">
+                                    </div>
+                                    <!-- 일정이 있는 경우 -->
+                                    <ul class="schedule">
+                                        <li class="todo blue">
+                                            <span>민규생일</span> 
+                                        </li>
+                                     </ul>
+                                    <div class="household">
+                                        <span class="spending">-350,000</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">17</span>
+                                </li>
+                                <li>
+                                    <span class="day">18</span>
+                                    <div class="household">
+                                        <span class="income">+21,530</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="week">
+                            <ul>
+                                <li>
+                                    <span class="day">19</span>
+                                </li>
+                                <li>
+                                    <span class="day">20</span>
+                                    <!-- 일정이 있는 경우 -->
+                                    <ul class="schedule">
+                                        <li class="todo red">
+                                            <span>동기모임</span> 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="day">21</span>
+                                    <div class="household">
+                                        <span class="income">+844</span>
+                                        <span class="spending">-23,100</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="day">22</span>
+                                </li>
+                                <li>
+                                    <span class="day">23</span>
+                                </li>
+                                <li>
+                                    <span class="day">24</span>
+                                </li>
+                                <li class="future">
+                                    <span class="day">25</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -248,597 +530,6 @@
             </div>
         </div>
     </div>
-    <script>
-        var storyTag = [
-            {
-                start: '2024-01-16'
-            },
-            {
-                start: '2024-01-20'
-            },
-        ]
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var weekList = ['일', '월', '화', '수', '목', '금', '토'];
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: ['interaction', 'dayGrid'],
-                showNonCurrentDates: true,
-                fixedWeekCount: false,
-                header: false,
-                height: 'auto',
-                defaultDate: '2024-01-25',  // 날짜 입력시, 달력 show
-                editable: false,
-                eventLimit: false,
-                navLinks: true,
-                timeZone: 'Asia/Seoul',
-                columnHeaderText: function (date) {
-                    return weekList[date.getDay()];
-                },
-                navLinkDayClick: function (date, jsEvent) {
-                    calendar.gotoDate(date);
-                    console.log(date.toISOString().slice(0, 10));
-                    console.log(jsEvent.target)
-                },
-                dayRender: function (date, cell) {
-                    //gallery 데이터와 일치하는 날짜에 이미지 추가
-                    var theDate = $(date.el).data('date');
-                    for (var i = 0; i < storyTag.length; i++) {
-                        if (theDate === storyTag[i].start) {
-                            $(date.el).addClass('has-data');
-                            $(date.el).prepend("<span class='story_tag'><img src='../../img/common/icon_tag_cal_story@2x.png' id='스토리 작성' width='8'/></span>");
-                        }
-                    }
-                },
-                // events 순차 적용시 필요
-                eventOrder: 'sortIdx',
-                events: [
-                    {
-                        eventOrder: 1,
-                        className: 'schedule schedule-green',
-                        title: ["러닝👟"],
-                        start: '2024-01-01',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'schedule schedule-pink',
-                        title: "일정",
-                        start: '2024-01-01',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'schedule schedule-more',
-                        title: '+1',
-                        start: '2024-01-01',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+106,000',
-                        start: '2024-01-01',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-50,000',
-                        start: '2024-01-01',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-02',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-02',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-02',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-02',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'rise-data',
-                        title: '+100,000',
-                        start: '2024-01-02',
-                    },
-
-
-                    {
-                        eventOrder: 1,
-                        className: 'schedule schedule-orange',
-                        title: "일정",
-                        start: '2024-01-03',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'schedule schedule-purple',
-                        title: "일정",
-                        start: '2024-01-03',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-03',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+3.2억',
-                        start: '2024-01-03',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-6.4천',
-                        start: '2024-01-03',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-04',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-04',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-04',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-04',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '',
-                        start: '2024-01-04',
-                    },
-
-
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-05',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-05',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-05',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+1,600,000',
-                        start: '2024-01-05',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-500,000',
-                        start: '2024-01-05',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'schedule schedule-blue',
-                        title: "일정",
-                        start: '2024-01-06',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'schedule schedule-red',
-                        title: "일정",
-                        start: '2024-01-06',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-06',
-                    },
-                    // 예정일경우 .opacity 추가
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data opacity',
-                        title: '+100,000',
-                        start: '2024-01-06',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data opacity',
-                        title: '-200,000',
-                        start: '2024-01-06',
-                    },
-
-
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-07',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-07',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-07',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-07',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-200,000',
-                        start: '2024-01-07',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-09',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-09',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-09',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+35,555',
-                        start: '2024-01-09',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-200,000',
-                        start: '2024-01-09',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-11',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-11',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-11',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+35,555',
-                        start: '2024-01-11',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-200,000',
-                        start: '2024-01-11',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'schedule schedule-orange',
-                        title: "일정일정일정",
-                        start: '2024-01-12',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-12',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-12',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+1,935,555',
-                        start: '2024-01-12',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-200',
-                        start: '2024-01-12',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'schedule schedule-pink',
-                        title: "일정",
-                        start: '2024-01-14'
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-date',
-                        title: "",
-                        start: '2024-01-14'
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-date',
-                        title: "",
-                        start: '2024-01-14'
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'empty-date',
-                        title: "",
-                        start: '2024-01-14'
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'rise-data',
-                        title: '+100',
-                        start: '2024-01-14'
-                    },
-                    {
-                        eventOrder: 1,
-                        className: 'schedule schedule-green',
-                        title: ["러닝👟"],
-                        start: '2024-01-16',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: "",
-                        start: '2024-01-16',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-16',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+106,000',
-                        start: '2024-01-16',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-50,000',
-                        start: '2024-01-16',
-                    },
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-20',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-20',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-20',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+100,000',
-                        start: '2024-01-20',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-1,000,000',
-                        start: '2024-01-20',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-21',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-21',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-21',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-21',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'rise-data',
-                        title: '+100,000',
-                        start: '2024-01-21',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-24',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-24',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-24',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+100,000',
-                        start: '2024-01-24',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-1,000,000',
-                        start: '2024-01-24',
-                    },
-                    {
-                        eventOrder: 1,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-26',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-26',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-26',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'rise-data',
-                        title: '+100,000',
-                        start: '2024-01-26',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-1,000,000',
-                        start: '2024-01-26',
-                    },
-
-                    {
-                        eventOrder: 1,
-                        className: 'schedule schedule-green',
-                        title: ["러닝👟"],
-                        start: '2024-01-30',
-                    },
-                    {
-                        eventOrder: 2,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-30',
-                    },
-                    {
-                        eventOrder: 3,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-30',
-                    },
-                    {
-                        eventOrder: 4,
-                        className: 'empty-data',
-                        title: '',
-                        start: '2024-01-30',
-                    },
-                    {
-                        eventOrder: 5,
-                        className: 'fail-data',
-                        title: '-100,000',
-                        start: '2024-01-30',
-                    },
-                ],
-
-                dayCellDidMount: function(info) {
-                    var dateStr = info.date.toISOString().slice(0, 10);
-                    if (dateStr === '2024-01-02' || dateStr === '2024-01-16') {
-                        info.el.classList.add('highlighted');
-                    }
-                }
-            });
-            calendar.render();
-        });
-
-
-        // 일자 카테고리 탭
-        $('._expenditureTab li a').on('click', function () {
-            $(this).parent().addClass('active').siblings().removeClass('active')
-        })
-    </script>
-
 </body>
 
 </html>

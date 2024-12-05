@@ -46,10 +46,294 @@
                         </div>
                     </div>
 
-                    <!-- 선택 월이 아니라 선택 날짜를 기준으로 달력 노출 시켜주세요.
-                        10.02 디자인 기준 '24-01-25' 입니다. -->
-                    <div class="box_ex_calendar ex-calendar-v3">
+                    <!-- <div class="box_ex_calendar ex-calendar-v3">
                         <div id='calendar'></div>
+                    </div> -->
+                    <div class="joint-calendar">
+                        <ul class="weekday">
+                            <li><p class="sun">일</p></li>
+                            <li><p>월</p></li>
+                            <li><p>화</p></li>
+                            <li><p>수</p></li>
+                            <li><p>목</p></li>
+                            <li><p>금</p></li>
+                            <li><p class="sat">토</p></li>
+                        </ul>
+                        <div class="week">
+                            <ul>
+                                <li class="past">
+                                    <p class="day">22</p>
+                                    <div class="household">
+                                        <p class="income">+106,500</p>
+                                        <p class="spending">-50,600</p>
+                                    </div>
+                                </li>
+                                <li class="past">
+                                    <p class="day">23</p>
+                                    <div class="household">
+                                        <p class="income">+10,300</p>
+                                        <p class="spending">-9,600</p>
+                                    </div>
+                                </li>
+                                <li class="past">
+                                    <p class="day">24</p>
+                                    <div class="household">
+                                        <p class="spending">-35,400</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <!-- start 클래스 : 사용자가 지정한 달력 시작 날짜 -->
+                                    <p class="day start">25</p>
+                                    <div class="household">
+                                        <p class="income">+3.2억</p>
+                                        <p class="spending">-6.4천</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">26</p>
+                                    <!-- 스토리가 있는 경우 -->
+                                    <div class='story-tag'>
+                                        <img src="../../img//common/icon_tag_cal_story@2x.png" alt="스토리 아이콘">
+                                    </div>
+                                    <!-- 일정이 있는 경우, 일정은 최대 2개까지만 노출 -->
+                                    <ul class="schedule">
+                                        <li class="todo mint">
+                                            <p>러닝👟</p> 
+                                        </li>
+                                     </ul>
+                                    <div class="household">
+                                        <p class="income">+15,000</p>
+                                        <p class="spending">-1,600,000</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">27</p>
+                                    <div class="household">
+                                        <p class="spending">-9,400</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">28</p>
+                                    <div class="household">
+                                        <p class="income">+21,560</p>
+                                        <p class="spending">-33,400</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="week">
+                            <ul>
+                                <li class="this">
+                                    <p class="day">29</p>
+                                    <div class="household">
+                                        <p class="spending">-52,500</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">30</p>
+                                    <!-- 스토리가 있는 경우 -->
+                                    <div class='story-tag'>
+                                        <img src="../../img//common/icon_tag_cal_story@2x.png" alt="스토리 아이콘">
+                                    </div>
+                                    <div class="household">
+                                        <p class="income"5+2,739</p>
+                                        <p class="spending">-72,600</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">31</p>
+                                    <div class="household">
+                                        <p class="income">+35,381</p>
+                                        <p class="spending">-38,870</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">1</p>
+                                    <div class="household">
+                                        <p class="income">+15,000</p>
+                                        <p class="spending">-700,000</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <!-- select 클래스 : 사용자가 달력에서 날짜를 선택할 때 -->
+                                    <p class="day select">2</p>
+                                     <!-- 일정이 있는 경우 -->
+                                    <ul class="schedule">
+                                        <li class="todo pink">
+                                            <p>등산🏔️</p> 
+                                        </li>
+                                     </ul>
+                                    <div class="household">
+                                        <p class="income">+1,050,373</p>
+                                        <p class="spending">-16,000</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">3</p>
+                                    <!-- 스토리가 있는 경우 -->
+                                    <div class='story-tag'>
+                                        <img src="../../img//common/icon_tag_cal_story@2x.png" alt="스토리 아이콘">
+                                    </div>
+                                    <div class="household">
+                                        <p class="income">+1,200</p>
+                                        <p class="spending">-13,500</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">4</p>
+                                    <div class="household">
+                                        <p class="income">+432</p>
+                                        <p class="spending">-74,000</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="week">
+                            <ul>
+                                <li class="this">
+                                    <p class="day">5</p>
+                                    <div class="household">
+                                        <p class="spending">-30,000</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">6</p>
+                                    <div class="household">
+                                        <p class="income">+844</p>
+                                        <p class="spending">-23,100</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">7</p>
+                                    <div class="household">
+                                        <p class="spending">-8,400</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">8</p>
+                                    <div class="household">
+                                        <p class="spending">-38,870</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">9</p>
+                                    <div class="household">
+                                        <p class="spending">-42,940</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">10</p>
+                                    <div class="household">
+                                        <p class="income">+1,050,373</p>
+                                        <p class="spending">-30,300</p>
+                                    </div>
+                                </li>
+                                <li class="this"> 
+                                    <p class="day">11</p>
+                                    <div class="household">
+                                        <p class="spending">-115,200</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="week">
+                            <ul>
+                                <li class="this">
+                                    <p class="day">12</p>
+                                    <div class="household">
+                                        <p class="spending">-55,900</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">13</p>
+                                </li>
+                                <li class="this">
+                                    <p class="day">14</p>
+                                    <!-- 일정이 있는 경우 -->
+                                    <ul class="schedule">
+                                        <li class="todo yellow">
+                                            <p>일정</p> 
+                                        </li>
+                                        <li class="todo purple">
+                                            <p>친구모임</p> 
+                                        </li>
+                                    </ul>
+                                    <!-- 일정이 2개 이상 등록 되어 있을 때 -->
+                                    <span class="schedule-over">+ 1</span>
+                                    <div class="household">
+                                        <p class="income">+844</p>
+                                        <p class="spending">-23,100</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">15</p>
+                                    <div class="household">
+                                        <p class="spending">-28,300</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <!-- today 클래스 : 오늘 날짜 표기 -->
+                                    <p class="day today">16</p>
+                                    <!-- 스토리가 있는 경우 -->
+                                    <div class='story-tag'>
+                                        <img src="../../img//common/icon_tag_cal_story@2x.png" alt="스토리 아이콘">
+                                    </div>
+                                    <!-- 일정이 있는 경우 -->
+                                    <ul class="schedule">
+                                        <li class="todo blue">
+                                            <p>민규생일</p> 
+                                        </li>
+                                     </ul>
+                                    <div class="household">
+                                        <p class="spending">-350,000</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">17</p>
+                                </li>
+                                <li class="this">
+                                    <p class="day">18</p>
+                                    <div class="household">
+                                        <p class="income">+21,530</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="week">
+                            <ul>
+                                <li class="this">
+                                    <p class="day">19</p>
+                                </li>
+                                <li class="this">
+                                    <p class="day">20</p>
+                                    <!-- 일정이 있는 경우 -->
+                                    <ul class="schedule">
+                                        <li class="todo red">
+                                            <p>동기모임</p> 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="this">
+                                    <p class="day">21</p>
+                                    <div class="household">
+                                        <p class="income">+844</p>
+                                        <p class="spending">-23,100</p>
+                                    </div>
+                                </li>
+                                <li class="this">
+                                    <p class="day">22</p>
+                                </li>
+                                <li class="this">
+                                    <p class="day">23</p>
+                                </li>
+                                <li class="this">
+                                    <p class="day">24</p>
+                                </li>
+                                <li class="future">
+                                    <p class="day">25</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

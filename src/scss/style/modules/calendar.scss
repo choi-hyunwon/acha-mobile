@@ -654,3 +654,189 @@
     }
   }
 }
+
+/*
+    제목 : 공유 캘린더 : ul 태그 퍼블리싱
+    날짜 : 2024.12.04 - 05
+*/
+.joint-calendar{
+  padding: 10px 0 20px;
+  .weekday{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 14px;
+    margin-bottom: 6px;
+    p{
+      font-family: var(--font2);
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      &.sun{
+        color: #ef5c82;
+      }
+      &.sat{
+        color: #4b6ae8;
+      }
+    }
+  } 
+  .week{
+    border-bottom: 1px solid #efefef;
+    &:last-of-type{
+      border-bottom: none;
+    }
+
+    ul{
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 6px 14px 9px;
+      li{
+        width: 48px;
+        height: 95px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        &.past, &.future{
+          opacity: 0.4;
+        }
+      }
+    }
+
+    .story-tag{
+      width: 8px;
+      height: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .day{
+      width: 24px;
+      height: 24px;
+      font-family: var(--font1);
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--text-02); 
+      text-align: center;
+      border-radius: 50%;
+      &.select{
+        font-family: var(--font2);
+        color: var(--white);
+        background: var(--text-01);
+      }
+      &.today{
+        background: #e1e1ea;
+      }
+    }
+
+    .schedule{
+      display: block;
+      width: 46px;
+      max-height: 36px;
+      padding: 0 1px;
+      overflow: hidden;
+      
+      .todo{
+        width: 100%;
+        height: 14px;
+        margin-top: 3px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        position: relative;
+        &::before{
+          content: "";
+          width: 4px;
+          height: 14px;
+          position: absolute;
+          left: -1px;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+      }
+
+      p{
+        width: 100%;
+        font-family: var(--font1);
+        font-size: 10px;
+        line-height: 13px;
+        padding: 0 4px;
+        letter-spacing: -0.2px;
+        text-align: left;
+        color: var(--text-02);
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .mint{
+        background-color: #e5faf2;
+        &::before{
+          background-color: #68c8ba;
+        }
+      }
+      .pink{
+        background-color: #feeaed;
+        &::before{
+          background-color: #fd92a3;
+        }
+      }
+      .yellow{
+        background-color: #fffaea;
+        &::before{
+          background-color: #ffc201;
+        }
+      }
+      .purple{
+        background-color: #f9edff;
+        &::before{
+          background-color: #bb80d1;
+        }
+      }
+      .red{
+        background-color: #ffe3e5;
+        &::before{
+          background-color: #f7323f ;
+        }
+      }
+      .blue{
+        background-color: #dbefff;
+        &::before{
+          background-color: #3fa9f5 ;
+        }
+      }
+    }
+
+    .schedule-over{
+      display: inline-block;
+      width: 100%;
+      font-family: var(--font2);
+      font-size: 9px;
+      letter-spacing: -0.5px;
+      text-align: left;
+      color: var(--text-03); 
+      padding-left: 6px;
+    }
+
+    .household{
+      margin-top: auto;
+      .income, .spending{
+        font-family: var(--font1);
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: -0.5px;
+        text-align: center;
+      }
+      .income{
+        color: #4b6ae8;
+      }
+      .spending{
+        color: #ef5c82;
+      }
+    }
+  }
+}

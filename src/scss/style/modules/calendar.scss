@@ -664,9 +664,9 @@
   .weekday{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    padding: 0 14px;
+    padding: 0 16px 0 14px;
     margin-bottom: 14px;
-    p{
+    li{
       font-family: var(--font1);
       font-size: 13px;
       line-height: 20px;
@@ -675,13 +675,13 @@
   } 
 
   .week{
-    padding: 2px 16px;
+    padding: 2px 15px;
     ul{
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       li{
         width: 48px;
-        max-height: 56px;
+        height: 60px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -727,11 +727,16 @@
     .household{
       margin-top: 2px;
       .income, .spending{
+        display: inline-block;
+        width: 100%;
         font-family: var(--font1);
         font-size: 10px;
         line-height: 14px;
         letter-spacing: -0.5px;
         text-align: center;
+        &.plan{
+          opacity: 0.4;
+        }
       }
       .income{
         color: #cc61ed;
@@ -744,12 +749,13 @@
 }
 .joint-calendar{
   padding: 10px 0 20px;
+  
   .weekday{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     padding: 0 14px;
     margin-bottom: 6px;
-    p{
+    li{
       font-family: var(--font2);
       font-size: 13px;
       line-height: 20px;
@@ -762,6 +768,7 @@
       }
     }
   } 
+
   .week{
     border-bottom: 1px solid #efefef;
     &:last-of-type{
@@ -771,10 +778,10 @@
     ul{
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      padding: 6px 14px 9px;
+      padding: 4px 14px 8px;
       li{
         width: 48px;
-        height: 95px;
+        height: 100px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -820,8 +827,8 @@
     .schedule{
       display: block;
       width: 46px;
-      max-height: 36px;
       padding: 0 1px;
+      margin-top: 1px;
       overflow: hidden;
       
       .todo{
@@ -842,7 +849,7 @@
         }
       }
 
-      p{
+      span{
         width: 100%;
         font-family: var(--font1);
         font-size: 10px;
@@ -908,6 +915,8 @@
     .household{
       margin-top: auto;
       .income, .spending{
+        display: inline-block;
+        width: 100%;
         font-family: var(--font1);
         font-size: 10px;
         line-height: 12px;

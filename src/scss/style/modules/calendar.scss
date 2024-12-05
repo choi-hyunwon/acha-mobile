@@ -656,9 +656,92 @@
 }
 
 /*
-    제목 : 공유 캘린더 : ul 태그 퍼블리싱
+    제목 : 일반 캘린더, 공유 캘린더 : ul 태그 퍼블리싱
     날짜 : 2024.12.04 - 05
 */
+.common-calendar{
+  padding-top: 10px;
+  .weekday{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 14px;
+    margin-bottom: 14px;
+    p{
+      font-family: var(--font1);
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+    }
+  } 
+
+  .week{
+    padding: 2px 16px;
+    ul{
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      li{
+        width: 48px;
+        max-height: 56px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        &.past, &.future{
+          opacity: 0.4;
+        }
+      }
+    }
+
+    .story-tag{
+      width: 8px;
+      height: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .day{
+      width: 26px;
+      height: 26px;
+      font-family: var(--font1);
+      font-size: 15px;
+      line-height: 25px;
+      color: var(--text-02); 
+      text-align: center;
+      border-radius: 50%;
+      &.select{
+        font-family: var(--font2);
+        color: var(--white);
+        background: var(--text-01);
+      }
+      &.today{
+        background: #e1e1ea;
+      }
+    }
+
+    .household{
+      margin-top: 2px;
+      .income, .spending{
+        font-family: var(--font1);
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: -0.5px;
+        text-align: center;
+      }
+      .income{
+        color: #cc61ed;
+      }
+      .spending{
+        color: #7c4ce8;
+      }
+    }
+  }
+}
 .joint-calendar{
   padding: 10px 0 20px;
   .weekday{

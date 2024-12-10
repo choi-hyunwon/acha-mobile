@@ -675,14 +675,17 @@
   } 
 
   .week{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     padding: 2px 15px;
-    ul{
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
+
+    .day{
+      width: 48px;
+      height: 60px;
+      position: relative;
       li{
-        width: 48px;
-        height: 60px;
-        position: relative;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -693,24 +696,12 @@
       }
     }
 
-    .story-tag{
-      width: 8px;
-      height: 10px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      img{
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .day{
-      width: 26px;
-      height: 26px;
+    .num{
+      width: 24px;
+      height: 24px;
       font-family: var(--font1);
-      font-size: 15px;
-      line-height: 25px;
+      font-size: 14px;
+      line-height: 22px;
       color: var(--text-02); 
       text-align: center;
       border-radius: 50%;
@@ -722,6 +713,15 @@
       &.today{
         background: #e1e1ea;
       }
+    }
+
+    .story-tag{
+      width: 8px;
+      height: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url('../../img/common/icon_tag_cal_story@2x.png') no-repeat center / contain;
     }
 
     .household{
@@ -754,7 +754,6 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     padding: 0 14px;
-    margin-bottom: 6px;
     li{
       font-family: var(--font2);
       font-size: 13px;
@@ -770,19 +769,28 @@
   } 
 
   .week{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     border-bottom: 1px solid #efefef;
+    padding: 6px 0 10px;
     &:last-of-type{
       border-bottom: none;
     }
 
-    ul{
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      padding: 4px 14px 8px;
+    .day{
+      width: 48px;
+      height: 100px;
+      position: relative;
+      &:first-child{
+        margin-left: 14px;
+      }
+      &:last-child{
+        margin-right: 14px;
+      }
+
       li{
-        width: 48px;
-        height: 100px;
-        position: relative;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -790,6 +798,44 @@
         &.past, &.future{
           opacity: 0.4;
         }
+      }
+
+      .num{
+        width: 24px;
+        height: 24px;
+        font-family: var(--font1);
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--text-02); 
+        text-align: center;
+        border-radius: 50%;
+        &.select{
+          font-family: var(--font2);
+          color: var(--white);
+          background: var(--text-01);
+        }
+        &.today{
+          background: #e1e1ea;
+        }
+      }
+    }
+
+    .household{
+      margin-top: auto;
+      .income, .spending{
+        display: inline-block;
+        width: 100%;
+        font-family: var(--font1);
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: -0.5px;
+        text-align: center;
+      }
+      .income{
+        color: #4b6ae8;
+      }
+      .spending{
+        color: #ef5c82;
       }
     }
 
@@ -799,29 +845,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      img{
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .day{
-      width: 24px;
-      height: 24px;
-      font-family: var(--font1);
-      font-size: 14px;
-      line-height: 22px;
-      color: var(--text-02); 
-      text-align: center;
-      border-radius: 50%;
-      &.select{
-        font-family: var(--font2);
-        color: var(--white);
-        background: var(--text-01);
-      }
-      &.today{
-        background: #e1e1ea;
-      }
+      background: url('../../img/common/icon_tag_cal_story@2x.png') no-repeat center / contain;
     }
 
     .schedule{
@@ -849,7 +873,7 @@
         }
       }
 
-      span{
+      .conts{
         width: 100%;
         font-family: var(--font1);
         font-size: 10px;
@@ -861,6 +885,19 @@
         overflow: hidden; 
         text-overflow: ellipsis;
         white-space: nowrap;
+      }
+
+      .over{
+        align-items: flex-start;
+        span{
+          display: inline-block;
+          font-family: var(--font2);
+          font-size: 9px;
+          letter-spacing: -0.5px;
+          text-align: left;
+          color: var(--text-03); 
+          padding-left: 6px;
+        }
       }
 
       .mint{
@@ -898,36 +935,6 @@
         &::before{
           background-color: #3fa9f5 ;
         }
-      }
-    }
-
-    .schedule-over{
-      display: inline-block;
-      width: 100%;
-      font-family: var(--font2);
-      font-size: 9px;
-      letter-spacing: -0.5px;
-      text-align: left;
-      color: var(--text-03); 
-      padding-left: 6px;
-    }
-
-    .household{
-      margin-top: auto;
-      .income, .spending{
-        display: inline-block;
-        width: 100%;
-        font-family: var(--font1);
-        font-size: 10px;
-        line-height: 12px;
-        letter-spacing: -0.5px;
-        text-align: center;
-      }
-      .income{
-        color: #4b6ae8;
-      }
-      .spending{
-        color: #ef5c82;
       }
     }
   }

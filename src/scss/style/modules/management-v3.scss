@@ -1015,6 +1015,19 @@
       color: var(--text-02);
       padding: 20px 20px 0;
     }
+
+    .banner-area{
+      &.sample{
+        width: calc(100% - 40px);
+        height: 60px;
+        padding: 5px 8px;
+        background: var(--white);
+      }
+      img{
+        width: 320px;
+        height: 50px;
+      }
+    }
   }
 
   /*미션 승패이미지*/

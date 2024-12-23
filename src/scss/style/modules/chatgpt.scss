@@ -1391,25 +1391,52 @@
         }
     }
 
+    .modal-slide-content.annual{
+        padding: 30px 25px 20px 30px;
+    }
     .inner.annual-fee{
-        padding-bottom: 20px;
+        padding: 0;
+        max-height: 400px;
+        overflow-y: scroll;
 
-        .title, li{
-            padding-bottom: 15px;
-            &:last-child{
-                padding-bottom: 0;
-            }
+       &::before{
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: white;
+            position: absolute;
+            top: 30px;
+            right: 25px;
+            z-index: 0;
+        }
+
+        .title{
+            font-family: var(--font3);
+            font-size: 18px;
+            padding-bottom: 7px;
+            text-align: left;
         }
 
         ul{
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        li{
+            margin-bottom: 18px;
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
         
         p{
             font-family: var(--font1);
             font-size: 15px;
             text-align: left;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }   
+        .f-gray{
+            color: var(--text-02);
+        }
     }
 }

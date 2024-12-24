@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="btn-close"></a>
+            <h2>카드 상세</h2>
+        </div>
+        <div class="contents chatgpt lifestyle pb-0">
+            <div class="card-detail">
+                <div class="card-detail-box pt-30">
+                    <div class="card-detail-title">
+                        <span>KB국민카드</span>
+                        <p>청춘대로 톡톡카드</p>
+                    </div>
+                    <div class="card-detail-img vertical">
+                        <img src="../../img/@temp/card-0081-kb@2x.png" alt="청춘대로 톡톡카드">
+                    </div>
+                    <div class="card-detail-desc">
+                        <div class="item">
+                            <p>연회비
+                                <a href="#" data-toggle="tooltip" class="ico-tooltip">
+                                    <img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘" />
+                                </a>
+                            </p>
+                            <ul>
+                                <li>해외겸용 10,000원</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <p>전월실적</p>
+                            <ul>
+                                <li>30만원 이상</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- 연회비 툴팁입니다. -->
+    <div class="modal-slide modal-my-data _modalSlide chatgpt">
+        <div class="modal-slide-content annual">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner annual-fee">
+                <div class="title"><span>해외겸용</span></div>
+                <ul>
+                    <li>
+                        <p>연회비 15,000원</p>
+                        <p class="f-gray">- AMEX</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <!-- 연회비 툴팁용 스크립트 입니다. -->
+    <script>
+        $(document).ready(function () {
+            const tooltip = $('a[data-toggle="tooltip"]');
+            const modalClose = $('._btnSlideClose');
+
+            tooltip.click(function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            modalClose.click(function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+        })
+    </script>
+</body>
+
+</html>

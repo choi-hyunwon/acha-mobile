@@ -1398,7 +1398,7 @@
         padding: 0;
         max-height: 55vh;
         overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
+        -webkit-overflow-scrolling: auto !important;
         
         &::-webkit-scrollbar-track{
             background: var(--white);
@@ -1434,7 +1434,7 @@
             position: absolute;
             top: 25px;
             right: 25px;
-            z-index: 0;
+            z-index: 2;
         }
 
         .title{

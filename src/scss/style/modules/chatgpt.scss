@@ -1398,11 +1398,8 @@
         padding: 0;
         max-height: 55vh;
         overflow-y: scroll;
-        -webkit-overflow-scrolling: auto !important;
+        -webkit-overflow-scrolling: auto;
         
-        &::-webkit-scrollbar-track{
-            background: var(--white);
-        }
         &::-webkit-scrollbar {
             width: 3px;
             height:3px;
@@ -1432,8 +1429,8 @@
             height: 24px;
             background: white;
             position: absolute;
-            top: 25px;
-            right: 25px;
+            top: 24px;
+            right: 24px;
             z-index: 2;
         }
 

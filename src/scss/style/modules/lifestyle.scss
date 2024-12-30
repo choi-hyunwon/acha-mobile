@@ -1456,7 +1456,219 @@
           height: auto;
           object-fit: contain;
         }
-      }
+    }
+
+    // 포인트 및 쿠폰몰  
+    // 팝업
+    .point-modal{
+        .inner{
+            padding: 30px;
+            .title{
+                padding-right: 30px;
+                line-height: 28px;
+            }
+            .desc-box{
+                padding: 20px 0 40px;
+                p{
+                    font-size: 14px;
+                }
+                .ico_list_arrow_small{
+                    top: unset;
+                    transform: unset;
+                }
+            }
+        }
+    }
+    .point-tooltip{
+        .inner{
+            padding: 20px 30px 30px 30px;
+            .title{
+                font-family: var(--font3);
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                padding-right: 0;
+                padding-bottom: 30px;
+            }
+            ul{
+                padding: 0 7px;
+            }
+            li{
+                font-family: var(--font1);
+                font-size: 15px;
+                line-height: 21px;
+                text-align: left;
+                text-indent: -7px;
+                & + li{
+                    margin-top: 8px;
+                }
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: var(--text-02);
+                    margin-bottom: 3px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    // 팝업 /////
+    .point-status-box{
+        width: calc(100% - 40px);
+        min-height: 100px;
+        padding: 20px;
+        margin: 0 auto 20px;
+        border-radius: 16px;
+        background-color: #f7f8fc;
+    }
+    .point-item{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 16px;
+        position: relative;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .title{
+            font-family: var(--font2);
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .ico-tooltip{
+            width: 14px;
+            height: 14px;
+            margin-top: 1px;
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background: url(../../img/common/ico-tooltip@2x.png) no-repeat center / contain;
+            }
+        }
+        .num{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            strong{
+                font-family: var(--font3);
+                font-size: 16px;
+                line-height: 22px;
+                color: var(--text-01);
+            }
+            span{
+                font-family: var(--font2);
+                font-size: 15px;
+                line-height: 22px;
+                color: var(--text-01);
+            }
+            i{
+                margin-left: 8px;
+            }
+        }
+    }
+    .point-banner{
+        width: calc(100% - 40px);
+        height: auto;
+        margin: 0 auto 30px;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    .point-history-box{
+        padding: 30px 20px;
+        position: relative;
+        min-height: 472px;
+    }
+    .history-item{
+        display: flex;
+        align-items: center;
+        .title{
+            font-family: var(--font3);
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .all{
+            font-family: var(--font1);
+            font-size: 14px;
+            line-height: 26px;
+            color: var(--text-02);
+            margin-left: auto;
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-left: 4px;
+                background: url(../../img/common/btn_accordian_main_down@2x.png) no-repeat center / contain;
+            }
+            &.up{
+                &::after{
+                    rotate: 180deg;
+                }
+            }
+        }
+    }
+    .history-list{
+        .list-item{
+            padding: 20px 0;
+            border-bottom: 1px solid  #efefef;
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+        .date, .route{
+            font-family: var(--font1);
+            font-size: 12px;
+            line-height: 20px;
+            color: var(--text-02);
+        }
+        .date{
+            color: var(--text-03);
+        }
+        .category{
+            display: flex;
+            align-items: center;
+            margin: 4px 0;
+            span, strong{
+                font-size: 16px;
+                line-height: 26px;
+            }
+            .obj{
+                font-family: var(--font2);
+            }
+            .num{
+                margin-left: auto;
+                span{
+                    font-family: var(--font1);
+                    text-align: right;
+                }
+            }
+            .plus, .minus{
+                font-family: var(--font3);
+                text-align: right;
+            }
+        }
+    }
+    .no-point{
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
 }
 
 /*팝업*/

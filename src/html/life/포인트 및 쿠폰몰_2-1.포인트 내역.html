@@ -29,18 +29,18 @@
         </div>
 
         <!-- banner -->
-        <div class="point-banner">
+        <a href="#" class="point-banner">
             <img src="../../img/common/lifestyle/img-life-pointmall-s@2x.png" alt="배너이미지">
-        </div>
+        </a>
 
         <div class="divider"></div>
 
-        <div class="point-history-box">
-            <div class="history-item">
+        <div class="point-list-box">
+            <div class="point-subject">
                 <strong class="title">포인트 내역</strong>
-                <span class="all down">전체</span>
+                <span class="sort down">전체</span>
             </div>
-            <ul class="history-list">
+            <ul class="point-list">
                 <li class="list-item">
                     <p class="date">24.11.27</p>
                     <div class="category">
@@ -102,7 +102,7 @@
 </div>
 <script>
     $(document).ready(function () {
-        $('.all').click(function () {
+        $('.sort').click(function () {
             $(this).toggleClass("up");
 	    	    if ($(this).hasClass("down")) {
                     $(this).removeClass("down");

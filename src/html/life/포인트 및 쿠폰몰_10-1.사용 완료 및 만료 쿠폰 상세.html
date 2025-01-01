@@ -10,27 +10,19 @@
         </div>
         <div class="contents lifestyle pb-0">
             <div class="coupon-detail-box">
-                <div class="coupon-img">
+                <!-- 사용완료 쿠폰 시 used 클래스 추가, 기간만료 쿠폰 시 expired 클래스 추가 -->
+                <div class="coupon-img used">
                     <img src="../../img/@temp/img-sample-couponlist-04@2x.png" alt="샘플이미지">
                 </div>
                 <span class="brand">굽네치킨</span>
                 <p class="coupon-name">굽네 고추바사삭 곱빼기+콜라1.25L</p>
-                <span class="validity f-point">2025.05.31 까지</span>
-
-                <div class="coupon-barcode">
-                    <div class="barcode"></div>
-                    <div class="code">
-                        <p class="serial-number">1234 5678 9123</p>
-                        <button class="copy-btn">복사</button>
-                    </div>
-                </div>
+                <span class="validity f-color-03">2025.05.31 까지</span>
             </div>
 
             <div class="divider"></div>
 
             <div class="point-detail-box">
-                <!-- 플로팅 버튼 없을 시, pb-10 클래스 추가 -->
-                <ul class="point-notice-list pb-10">
+                <ul class="point-notice-list">
                     <strong class="title">유의사항</strong>
                     <li>
                         <span>사용장소</span>
@@ -48,6 +40,11 @@
                         <p>행사 대상카드 1종은 신용카드 상품에 한합니다.</p>
                     </li>
                 </ul>
+            </div>
+
+            <!-- floating -->
+            <div class="btn-area floating-effect">
+                <a class="btn btn-big btn-purple-bg btn-block" href="#">삭제</a>
             </div>
         </div>
     </div>

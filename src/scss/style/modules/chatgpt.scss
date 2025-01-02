@@ -1398,8 +1398,7 @@
         padding: 0;
         max-height: 55vh;
         overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        -webkit-transform: translateZ(1);
+        -webkit-overflow-scrolling: auto;
         
         &::-webkit-scrollbar {
             width: 3px;
@@ -1407,7 +1406,7 @@
         }
         &::-webkit-scrollbar-thumb {
             background: #c4c4c4;
-        }      
+        }     
 
        &::before{
             content: "";

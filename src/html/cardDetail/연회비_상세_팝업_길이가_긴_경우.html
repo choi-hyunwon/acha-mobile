@@ -1,7 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
-
+ <!-- SimpleBar CSS -->
+ <link
+ rel="stylesheet"
+ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+/>
 <body>
     <div class="wrap renewal">
         <div class="header _sticky">
@@ -78,8 +82,17 @@
         </div>
     </div>
     <div class="modal-slide-backdrop"></div>
+
+    <!-- SimpleBar JS -->
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <!-- 연회비 툴팁용 스크립트 입니다. -->
     <script>
+        new SimpleBar(document.querySelector('.annual-fee'), {
+            autoHide: false, // 스크롤바 자동 숨김
+            forceVisible: "y", // 스크롤바 항상 보이기
+            scrollbarMinSize: 10, // 썸의 최소 크기
+        });
+        
         $(document).ready(function () {
             const tooltip = $('a[data-toggle="tooltip"]');
             const modalClose = $('._btnSlideClose');
@@ -108,5 +121,4 @@
         })
     </script>
 </body>
-
 </html>

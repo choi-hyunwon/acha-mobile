@@ -83,7 +83,6 @@
         $(document).ready(function () {
             const tooltip = $('a[data-toggle="tooltip"]');
             const modalClose = $('._btnSlideClose');
-            const modalSlide = $('._modalSlide');
     
             tooltip.click(function () {
                 setTimeout(function () {
@@ -93,9 +92,6 @@
                 modalSlide.addClass('up').removeClass('down');
                 $('.modal-slide-backdrop').addClass('show');
                 $('body').addClass('scrOn');
-    
-                // iOS에서 스크롤바 강제 표시
-                forceShowScrollbar(modalSlide);
             });
     
             modalClose.click(function () {
@@ -106,44 +102,7 @@
                 modalSlide.removeClass('up').addClass('down');
                 $('.modal-slide-backdrop').removeClass('show');
                 $('body').removeClass('scrOn');
-    
-                // 팝업 닫힐 때 스타일 초기화
-                resetScrollbar(modalSlide);
             });
-    
-            // 스크롤바 강제 표시 함수
-            function forceShowScrollbar(element) {
-                element.css({
-                    'overflow-y': 'scroll', // 스크롤 항상 표시
-                    '-webkit-overflow-scrolling': 'auto', // iOS 기본 동작 비활성화
-                    'scrollbar-width': 'thin' // Firefox 대응
-                });
-    
-                // iOS Safari 대응: 가상 스타일 삽입
-                const css = `
-                    ._modalSlide::-webkit-scrollbar {
-                        width: 6px;
-                    }
-                    ._modalSlide::-webkit-scrollbar-thumb {
-                        background-color: #c4c4c4;
-                        border-radius: 3px;
-                    }
-                `;
-                const styleTag = document.createElement('style');
-                styleTag.textContent = css;
-                document.head.appendChild(styleTag);
-    
-                // 스크롤바 크기 동기화 (필요시)
-                element.scrollTop(1); // 강제로 스크롤 이벤트 트리거
-            }
-    
-            // 스크롤바 초기화 함수
-            function resetScrollbar(element) {
-                element.css({
-                    'overflow-y': '',
-                    '-webkit-overflow-scrolling': ''
-                });
-            }
         });
     </script>    
 </body>

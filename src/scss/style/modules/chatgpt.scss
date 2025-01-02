@@ -1398,27 +1398,6 @@
         padding: 0;
         max-height: 55vh;
         overflow-y: scroll;
-        -webkit-overflow-scrolling: auto;
-        
-        // &::-webkit-scrollbar {
-        //     width: 3px;
-        //     height: 3px;
-        // }
-        // &::-webkit-scrollbar-thumb {
-        //     background: #c4c4c4;
-        // }     
-
-    //    &::before{
-    //         content: "";
-    //         display: block;
-    //         width: 24px;
-    //         height: 24px;
-    //         background: white;
-    //         position: absolute;
-    //         top: 24px;
-    //         right: 24px;
-    //         z-index: 2;
-    //     }
 
         .title{
             font-family: var(--font3);

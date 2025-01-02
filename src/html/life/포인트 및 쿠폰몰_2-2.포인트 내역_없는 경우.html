@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <div class="box-ex-top box-card-top">
+            <a href="#" class="btn-sm btn-coupon"><span>내 쿠폰</span></a>
+        </div>
+    </div>
+    <div class="contents lifestyle pb-0">
+        <div class="point-status-box">
+            <div class="point-item">
+                <span class="title">보유 포인트</span>
+                <a href="#" class="num">
+                    <strong class="f-point">60,000</strong><span class="f-point">P</span>
+                    <i class="ico_list_arrow_small"></i>
+                </a>
+            </div>
+            <div class="point-item">
+                <span class="title">소멸예정</span>
+                <a href="#" data-toggle="tooltip" class="ico-tooltip"></a>
+                <a href="#" class="num">
+                    <strong>1,000</strong><span>P</span>
+                    <i class="ico_list_arrow_small"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <a href="#" class="point-banner">
+            <img src="../../img/common/lifestyle/img-life-pointmall-s@2x.png" alt="배너이미지">
+        </a>
+
+        <div class="divider"></div>
+
+        <!-- 데이터 없을 때 -->
+        <div class="point-list-box">
+            <div class="no-point">
+                <img src="../../img/common/img_connect_nodata@2x.png" alt="데이터 없을 때 이미지">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.sort').click(function () {
+            $(this).toggleClass("up");
+	    	    if ($(this).hasClass("down")) {
+                    $(this).removeClass("down");
+	    		    $(this).addClass("up");
+	    	} else {
+                    $(this).removeClass("up");
+	    		    $(this).addClass("down");
+	    	}
+        });
+    })
+</script>
+</body>
+</html>

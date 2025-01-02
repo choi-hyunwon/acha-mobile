@@ -2575,12 +2575,63 @@ _ .event-btn-area {
         }
       }
     }
+
+    .my-coupon{
+      height: 28px;
+      padding: 3px 12px;
+      background: var(--white);
+      border: 1px solid #e2e3e6;
+      border-radius: 15px;
+      font-family: var(--font1);
+      font-size: 13px;
+      color: #707070;
+      text-align: center;
+      margin-left: auto;
+      span{
+        font-family: var(--font3);
+      }
+    }
+    .now-point{
+      padding-bottom: 10px;
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 40px);
+        padding: 20px;
+        border-radius: 16px;
+        background: var(--white);
+        margin: 0 auto;
+        color: var(--text-01)
+      }
+      p{
+        &::before{
+          content: "";
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          background: url(../../img/common/lifestyle/ico-uplanner-point-key@2x.png) no-repeat center / contain;
+          margin-right: 4px;
+          vertical-align: sub;
+        }
+      }
+      strong{
+        font-family: var(--font3);
+        font-size: 16px;
+        line-height: 22px;
+      }
+      span{
+        font-family: var(--font2);
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
   }
 
   /*더보기 - 프로필*/
   .my-page-info {
     .profile {
-      padding-top: 60px;
+      padding-top: 30px;
 
       .img {
         width: 100px;
@@ -2598,7 +2649,12 @@ _ .event-btn-area {
         color: var(--text-01);
         font-family: var(--font2);
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
+      }
+
+      .point-status-box{
+        width: 100%;
+        margin: 0 auto 40px;
       }
 
       .email-box {

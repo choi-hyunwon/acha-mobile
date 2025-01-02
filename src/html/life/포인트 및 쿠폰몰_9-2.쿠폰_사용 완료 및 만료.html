@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="ko" xmlns="">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>내 쿠폰</h2>
+        </div>
+        <!-- tab -->
+        <div class="contents expenditure lifestyle pb-0">
+            <div class="point-tab expenditure-tab _expenditureTab">
+                <ul class="clearfix">
+                    <li><a href="#">사용 가능</a></li>
+                    <li class="active"><a href="#">사용 완료/만료</a></li>
+                </ul>
+            </div>
+
+            <div class="my-coupon-box">
+                <div class="point-subject">
+                    <span class="total">총 <span class="f-point num">3</span>건</span>
+                </div>
+                <ul class="point-main-list">
+                    <li class="list-item">
+                        <!-- 사용완료 쿠폰 시 used 클래스 추가 -->
+                        <a href="#" class="used">
+                            <img src="../../img/@temp/img-sample-couponlist-04@2x.png" alt="샘플이미지">
+                            <span class="brand">굽네치킨</span>
+                            <p class="giftcon">굽네 고추바사삭 곱빼기+콜라1.25L</p>
+                            <span class="validity">2025.05.31 까지</span>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <!-- 기간만료 쿠폰 시 expired 클래스 추가 -->
+                        <a href="#" class="expired">
+                            <img src="../../img/@temp/img-sample-couponlist-01@2x.png" alt="샘플이미지">
+                            <span class="brand">스타벅스</span>
+                            <p class="giftcon">스타벅스 부드러운 디저트 세트(HOT)</p>
+                            <span class="validity">2025.05.31 까지</span>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <!-- 사용완료 쿠폰 시 used 클래스 추가 -->
+                        <a href="#" class="used">
+                            <img src="../../img/@temp/img-sample-couponlist-03@2x.png" alt="샘플이미지">
+                            <span class="brand">요기요</span>
+                            <p class="giftcon">모바일 상품권 2만원권</p>
+                            <span class="validity">2025.05.31 까지</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $("._expenditureTab li a").on("click", function () {
+          $(this).parent().addClass("active").siblings().removeClass("active");
+        });
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <div class="box-ex-top box-card-top">
+            <a href="#" class="btn-sm btn-coupon"><span>내 쿠폰</span></a>
+        </div>
+    </div>
+    <div class="contents lifestyle pb-0">
+        <div class="point-status-box">
+            <div class="point-item">
+                <span class="title">보유 포인트</span>
+                <a href="#" class="num">
+                    <strong class="f-point">60,000</strong><span class="f-point">P</span>
+                    <i class="ico_list_arrow_small"></i>
+                </a>
+            </div>
+            <div class="point-item">
+                <span class="title">소멸예정</span>
+                <a href="#" data-toggle="tooltip" class="ico-tooltip"></a>
+                <a href="#" class="num">
+                    <strong>1,000</strong><span>P</span>
+                    <i class="ico_list_arrow_small"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <a href="#" class="point-banner">
+            <img src="../../img/common/lifestyle/img-life-pointmall-s@2x.png" alt="배너이미지">
+        </a>
+
+        <div class="divider"></div>
+
+        <div class="point-list-box">
+            <div class="point-subject">
+                <strong class="title">포인트 내역</strong>
+                <span class="sort down">전체</span>
+            </div>
+            <ul class="point-list">
+                <li class="list-item">
+                    <p class="date">24.11.27</p>
+                    <div class="category">
+                        <span class="obj">적립</span>
+                        <div class="num">
+                            <strong class="f-point plus">+10</strong>
+                            <span class="f-point"> P</span>
+                        </div>
+                    </div>
+                    <p class="route">이벤트 참여</p>
+                </li>
+                <li class="list-item">
+                    <p class="date">24.11.25</p>
+                    <div class="category">
+                        <span class="obj">사용</span>
+                        <div class="num">
+                            <strong class="minus">-3,100</strong>
+                            <span> P</span>
+                        </div>
+                    </div>
+                    <p class="route">쿠폰 구매</p>
+                </li>
+                <li class="list-item">
+                    <p class="date">24.11.20</p>
+                    <div class="category">
+                        <span class="obj">소멸</span>
+                        <div class="num">
+                            <strong class="minus">-1,050</strong>
+                            <span> P</span>
+                        </div>
+                    </div>
+                    <p class="route">보유기간 만료</p>
+                </li>
+                <li class="list-item">
+                    <p class="date">23.12.27</p>
+                    <div class="category">
+                        <span class="obj">적립</span>
+                        <div class="num">
+                            <strong class="f-point plus">+1,000</strong>
+                            <span class="f-point"> P</span>
+                        </div>
+                    </div>
+                    <p class="route">친구 초대</p>
+                </li>
+                <li class="list-item">
+                    <p class="date">23.10.27</p>
+                    <div class="category">
+                        <span class="obj">적립</span>
+                        <div class="num">
+                            <strong class="f-point plus">+10</strong>
+                            <span class="f-point"> P</span>
+                        </div>
+                    </div>
+                    <p class="route">이벤트 참여</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.sort').click(function () {
+            $(this).toggleClass("up");
+	    	    if ($(this).hasClass("down")) {
+                    $(this).removeClass("down");
+	    		    $(this).addClass("up");
+	    	} else {
+                    $(this).removeClass("up");
+	    		    $(this).addClass("down");
+	    	}
+        });
+    })
+</script>
+</body>
+</html>

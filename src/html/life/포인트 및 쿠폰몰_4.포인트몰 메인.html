@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>포인트몰</h2>
+    </div>
+    <div class="contents lifestyle pb-0">
+        <div class="point-status-box">
+            <div class="point-item">
+                <span class="title">보유 포인트</span>
+                <a href="#" class="num point-badge">
+                    <strong>6,000</strong><span>P</span>
+                    <i class="ico_list_arrow_small"></i>
+                </a>
+            </div>
+            <div class="point-item">
+                <span class="title">내 쿠폰</span>
+                <a href="#" class="num">
+                    <strong>2</strong><span>장</span>
+                    <i class="ico_list_arrow_small"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="point-mall-box">
+            <div class="point-subject">
+                <span class="total">총 <span class="f-point num">99</span>건</span>
+                <span class="sort down">기본순</span>
+            </div>
+            <ul class="point-main-list">
+                <li class="list-item">
+                    <a href="#">
+                        <img src="../../img/@temp/img-sample-couponlist-01@2x.png" alt="샘플이미지">
+                        <span class="brand">스타벅스</span>
+                        <p class="giftcon">스타벅스 부드러운 디저트 세트(HOT)</p>
+                        <strong class="price">6,000P</strong>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        <img src="../../img/@temp/img-sample-couponlist-02@2x.png" alt="샘플이미지">
+                        <span class="brand">요기요</span>
+                        <p class="giftcon">모바일 상품권 2만원권</p>
+                        <strong class="price">20,000P</strong>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        <img src="../../img/@temp/img-sample-couponlist-04@2x.png" alt="샘플이미지">
+                        <span class="brand">굽네치킨</span>
+                        <p class="giftcon">굽네 고추바사삭 곱빼기+콜라1.25L</p>
+                        <strong class="price">6,000P</strong>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        <img src="../../img/@temp/img-sample-couponlist-03@2x.png" alt="샘플이미지">
+                        <span class="brand">투썸플레이스</span>
+                        <p class="giftcon">화이트 스초생</p>
+                        <strong class="price">34,200P</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.sort').click(function () {
+            $(this).toggleClass("up");
+	    	    if ($(this).hasClass("down")) {
+                    $(this).removeClass("down");
+	    		    $(this).addClass("up");
+	    	} else {
+                    $(this).removeClass("up");
+	    		    $(this).addClass("down");
+	    	}
+        });
+    })
+</script>
+</body>
+</html>

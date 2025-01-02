@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ko" xmlns="">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>내 쿠폰</h2>
+        </div>
+        <!-- tab -->
+        <div class="contents expenditure lifestyle pb-0">
+            <div class="point-tab expenditure-tab _expenditureTab">
+                <ul class="clearfix">
+                    <li><a href="#">사용 가능</a></li>
+                    <li class="active"><a href="#">사용 완료/만료</a></li>
+                </ul>
+            </div>
+
+            <div class="my-coupon-box">
+                <div class="no-coupon">
+                    <img src="../../img/common/img-nodata-character@2x.png" alt="데이터없음">
+                    <p>사용하거나 만료된 쿠폰이 없어요</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $("._expenditureTab li a").on("click", function () {
+          $(this).parent().addClass("active").siblings().removeClass("active");
+        });
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap _btnSlideOpen"></div>
+    <div class="modal-slide modal-my-data _modalSlide lifestyle">
+        <div class="modal-slide-content point-modal">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title pr-0 _btnSlideOpen">
+                    <span class="brand">투썸플레이스</span>
+                    <p class="product">투썸플레이스 스트로베리 초콜릿 생크림 케이크 2호 교환권</p>
+                </div>
+                <ul class="point-detail-list">
+                    <li>
+                        <span class="category f-color-02">가격</span>
+                        <strong class="point">6,000<span> P</span></strong>
+                    </li>
+                    <li>
+                        <span class="category f-color-02">보유 포인트</span>
+                        <span class="point normal">1,000<span> P</span></span>
+                    </li>
+                    <li>
+                        <span class="category f-color-02">잔여 포인트</span>
+                        <span class="point normal">60,000<span> P</span></span>
+                    </li>
+                </ul>
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">
+                        취소</a>
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">구매하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

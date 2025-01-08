@@ -2,7 +2,6 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<!-- 로딩 화면 -->
 <div class="wrap renewal">
     <div class="header _sticky">
         <a href="#" class="sprite btn_back"></a>
@@ -15,9 +14,32 @@
             <p class="noti">✽ 유플래너 기본 카테고리만 반영해요</p>
 
             <div class="bubble-chart-wrap">
-                <div class="bubble-chart">
-                    버블차트 들어감
-                </div>
+                <ul class="bubble-chart">
+                    <!-- li의 class는 차드의 순위입니다.
+                        순위별로 원 색상, 폰트 크기, 아이콘 크기 등이 달라집니다. 
+                        6위까지 나누고 하위 4위는 기타로 표기합니다. -->
+                    <li class="first">
+                        <span class="pet">반려동물</span>
+                    </li>
+                    <li class="second">
+                        <span class="mart">마트/편의점</span>
+                    </li>
+                    <li class="third">
+                        <span class="beauty">미용</span>
+                    </li>
+                    <li class="fourth">
+                        <span class="allowance">용돈/생활비</span>
+                    </li>
+                    <li class="fifth">
+                        <span class="cafe">카페/간식</span>
+                    </li>
+                    <li class="sixth">
+                        <span class="insurance">보험</span>
+                    </li>
+                    <li class="etc">
+                        <span class="no-icon">그 외 <br>4개</span>
+                    </li>
+                </ul>
             </div>
             <div class="chart-result-box">
                 <p>

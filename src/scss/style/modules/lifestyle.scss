@@ -2160,6 +2160,304 @@
         }
     }
     // 포인트 및 쿠폰몰 /////////
+
+    // 소비 분석 및 카드추천
+    .my-data-loading{
+        height: calc(100vh - 222px);
+        padding-bottom: 0;
+        .img{
+            margin: 0px auto 40px;
+        }
+    }
+    .spend-analysis-wrap{
+        padding: 0 20px 40px;
+        .title{
+            margin-top: 10px;
+            font-family: var(--font3);
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .loading{
+            font-size: 18px;
+        }
+        .noti{
+            margin-top: 12px;
+            font-family: var(--font1);
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--text-02);
+        }
+        // icon
+        .pet{
+            &::before{
+                background: url(../../img/common/lifestyle/a-025@2x.png) no-repeat center / contain;
+            }
+        }
+        .shopping{
+            &::before{
+                background: url(../../img/common/lifestyle/a-014@2x.png) no-repeat center / contain;
+            }
+        }
+        .food{
+            &::before{
+                background: url(../../img/common/lifestyle/a-010@2x.png) no-repeat center / contain;
+            }
+        }
+        .cafe{
+            &::before{
+                background: url(../../img/common/lifestyle/a-011@2x.png) no-repeat center / contain;
+            }
+        }
+        .insurance{
+            &::before{
+                background: url(../../img/common/lifestyle/a-003@2x.png) no-repeat center / contain;
+            }
+        }
+        .beauty{
+            &::before{
+                background: url(../../img/common/lifestyle/a-015@2x.png) no-repeat center / contain;
+            }
+        }
+        .allowance{
+            &::before{
+                background: url(../../img/common/lifestyle/a-020@2x.png) no-repeat center / contain;
+            }
+        }
+        .mart{
+            &::before{
+                background: url(../../img/common/lifestyle/a-009@2x.png) no-repeat center / contain;
+            }
+        }
+        .hobby{
+            &::before{
+                background: url(../../img/common/lifestyle/a-016@2x.png) no-repeat center / contain;
+            }
+        }
+        .house{
+            &::before{
+                background: url(../../img/common/lifestyle/a-004@2x.png) no-repeat center / contain;
+            }
+        }
+        .edu{
+            &::before{
+                background: url(../../img/common/lifestyle/a-006@2x.png) no-repeat center / contain;
+            }
+        }
+        // icon ///////// 
+    }
+    .divider + .spend-analysis-wrap{
+        padding-top: 40px;
+        &:has(.title){
+            padding-top: 30px
+        }
+    }
+    .bubble-chart-wrap{
+        margin-top: 30px;
+        padding: 0 40px 0 30px;
+    }
+    .bubble-chart{
+    }
+    .chart-result-box{
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 30px;
+        border-radius: 16px;
+        background-color: #f7f8fc;
+        p{
+            font-family: var(--font1);
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+        strong{
+            font-family: var(--font3);
+        }
+        span{
+            font-size: 14px;
+        }
+    }
+    .analysis-btn{
+        width: 100%;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .recommend-category{
+        width: 100%;
+        height: 68px;
+        margin-top: 30px;
+        padding: 14px 20px;
+        border-radius: 14px;
+        background-color: #f5f4ff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span{
+            font-family: var(--font2);
+            font-size: 16px;
+            line-height: 38px;
+        }
+        ul{
+            margin-left: auto;
+            li{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #e7e8ea;
+                background-color: var(--white);
+                border-radius: 50%;
+                padding: 6px;
+                text-align: center;
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                }
+                &:first-child, &:nth-child(2){
+                    margin-right: -7px;
+                    position: relative;
+                }
+                &:first-child{
+                    z-index: 2;
+                }
+                &:nth-child(2){
+                    z-index: 1;
+                }
+            }
+        }
+    }
+    .recommend-card-list{
+        margin-top: 20px;
+        a{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 16px 0;
+            gap: 16px;
+        }
+        .card-img, .card-info{
+            display: inline-block;
+        }
+        .card-img{
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: #f5f5fc;
+            text-align: center;
+            img{
+                width: 34px;
+                height: 52px;
+            }
+        }
+        .card-info{
+            width: 73%;
+            span{
+                font-family: var(--font1);
+                font-size: 14px;
+                color: var(--text-02);
+            }
+            p{
+                font-family: var(--font2);
+                font-size: 15px;
+                line-height: 1.5;
+                color: var(--text-01);
+            }
+            i{
+                margin-left: auto;
+            }
+        }
+    }
+    .bar-graph-wrap{
+        padding-top: 30px;
+        .title{
+            font-size: 18px;
+        }
+    }
+    .bar-graph-list{
+        li{
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 16px;
+            border: 1px solid #e7e8ea;
+            &:first-child{
+                .bar{
+                    background-color: #ffa81d;
+                }
+            }
+            &:nth-child(2){
+                .bar{
+                    background-color: #5c88ff;
+                }
+            }
+            &:nth-child(3){
+                .bar{
+                    background-color: #fa7398;
+                }
+            }
+            &:nth-child(4){
+                .bar{
+                    background-color: #826eff;
+                }
+            }
+            &:nth-child(5){
+                .bar{
+                    background-color: #ab6eff;
+                }
+            }
+            &:nth-child(6){
+                .bar{
+                    background-color: #f8705e;
+                }
+            }
+        }
+        .category{ 
+            font-family: var(--font2);
+            font-size: 15px;
+            line-height: 1.5;
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                margin-right: 8px;
+                vertical-align: bottom;
+            }
+        }
+        a{
+            font-family: var(--font1);
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--text-01);
+            float: right;
+        }
+        i{
+            margin-left: 4px;
+        }
+        .bar-graph{
+            width: 100%;
+            height: 7px;
+            border-radius: 3px;
+            background-color: #f0f1f5;
+            margin-top: 15px;
+            position: relative;
+        }
+        .bar {
+            display: block;
+            position: absolute;
+            height: 7px;
+            top: 0;
+            left: 0;
+            border-radius: 3px;
+            background-color: #a39db1;
+        }
+        p{
+            margin-top: 11px;
+            font-family: var(--font2);
+            font-size: 14px;
+        }
+    }
+    // 소비 분석 및 카드추천 ///////// 
 }
 
 /*팝업*/

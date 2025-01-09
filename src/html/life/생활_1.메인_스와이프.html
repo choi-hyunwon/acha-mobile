@@ -13,16 +13,16 @@
 
       <!-- 생활 -->
       <div class="card-box">
-        <div class="flex-align-center">
+        <div class="main-title">
           <h3 class="main">생활</h3>
-          <div class="my-point-state flex-align-center">
-            <a href="#" class="flex-align-center">
+          <div class="my-point-state">
+            <a href="#" class="my-point">
               <img src="../../img/common/ico-uplanner-point@2x.png" alt="포인트 아이콘">
-              <strong class="num">6,000</strong><span>P</span>
+              <strong class="point-num">6,000</strong><span>P</span>
             </a>
-            <a href="#" class="flex-align-center">
+            <a href="#" class="my-coupon">
               <img src="../../img/common/ico-uplanner-coupon@2x.png" alt="쿠폰 아이콘">
-              <strong class="num">1</strong><span>장</span>
+              <strong class="coupon-num">1</strong><span>장</span>
             </a>
           </div>
         </div>
@@ -30,45 +30,40 @@
           <img class="point-event" src="../../img/common/lifestyle/img-life-pointmall@2x.png" alt="포인트몰 구경하기 배너이미지">
       </a>
       </div>
-      
+
       <!-- 신용카드 찾기 -->
       <div class="card-box">
-          <h3>신용카드 찾기</h3>
-          <div class="credit-card flex-align-center">
-            <div class="desc">
-              <p><span class="f-point">원하는 혜택</span>만<br />쏙쏙 골라보세요!</p>
-              <a href="#" class="search-btn flex-align-center"><span>카드 검색</span>
-                <img src="../../img/sprite/common/ico_list_arrow_small@2x.png" alt="arrow" /></a>
-            </div>
-            <span class="search-img">
-              <img src="../../img/common/lifestyle/img_life_card_search@2x.png" alt="search" />
-            </span>
+        <h3>신용카드 찾기</h3>
+        <div class="banner-box credit">
+          <div class="desc">
+            <p>
+              <span class="f-point">원하는 혜택</span>만<br />쏙쏙 골라보세요!
+            </p>
+            <a href="#" class="go-btn">
+              <span>카드 검색</span>
+              <img src="../../img/sprite/common/ico_list_arrow_small@2x.png" alt="arrow" /></a>
           </div>
+          <img src="../../img/common/lifestyle/img_life_card_search@2x.png" alt="search" />
+        </div>
       </div>
 
       <div class="recommend-wrap">
         <!-- 이 카드는 어때요? -->
         <h3><span class="user">홍길동</span>님 이 카드는 어때요?</h3>
         
+        <!-- 소비 분석 -->
         <div class="card-box no-pb">
-          <div class="card-overlay">
-            <div class="recommend-box">
-              <div class="lottie-box">
-                <lottie-player src="../../img/common/lifestyle/lifestyle-lottie.json" loop autoplay></lottie-player>
-              </div>
+          <a href="#" class="banner-box spend">
+            <div class="desc">
+              <p>내 소비 분석하고 <br>맞춤 혜택 카드 알아보기</p>
+              <span>소비분석 보기</span>
             </div>
-            <div class="card-bottom flex-align-center">
-              <div>
-                <p>소비지출이 많은 업종</p>
-                <span>혜택 카드 찾아보기</span>
-              </div>
-              <a href="#" class="view-btn">보기</a>
-            </div>
-          </div>
+            <img src="../../img/common/lifestyle/img-life-sec-banner-01-01@2x.png" alt="배경이미지">
+          </a>
         </div>
-  
+
         <!-- swiper -->
-        <div class="card-box only-pt swiper-box swiper-container flex-align-center">
+        <div class="card-box no-pb swiper-box swiper-container">
           <div class="swiper-wrapper">
             <!-- OTT -->
             <a href="#" class="swiper-slide box-type">
@@ -141,96 +136,70 @@
   
         <!-- 다른사람은 어떤 카드를 쓸까? -->
         <div class="card-box no-pb">
-          <div class="card-overlay">
-            <div class="what-card">
-              <p class="card-3d-img">
-                <img src="../../img/common/lifestyle/img_life_card_find@2x.png" alt="card-find" />
-              </p>
+          <a href="#" class="banner-box best">
+            <div class="desc">
+              <p>다른사람은 <br>어떤 카드를 쓸까?</p>
+              <span>인기카드 만나보기</span>
             </div>
-            <div class="card-bottom flex-align-center">
-              <div>
-                <p>다른사람은 어떤 카드를 쓸까?</p>
-                <span>인기카드 만나보기</span>
-              </div>
-              <a href="#" class="view-btn">보기</a>
-            </div>
-          </div>
+            <img src="../../img/common/lifestyle/img-life-sec-banner-02-01@2x.png" alt="카드아이콘">
+          </a>
         </div>
   
         <!-- 테마 배너 -->
         <div class="card-box">
-          <div class="theme-box">
-            <a href="#" class="flex-align-center">
-              <!-- 왼쪽 : case(1/4) - 혜택 설명만 1줄일 때 -->
-              <!-- <div class="desc">
-                <p class="tit">아이 교육비 부담을 덜어주는</p>
-                <p class="card-corp">올바른 Edu 카드</p>
-                <span class="card-desc">학원비 5% 할인, G마켓·옥션 15%, 교통·통신 10%할인</span>
-              </div> -->
-  
-              <!-- 왼쪽 : case(2/4) - 혜택 설명만 2줄일 때 -->
-              <div class="desc">
-                <p class="tit">아이 교육비 부담을 덜어주는</p>
-                <p class="card-corp">올바른 Edu 카드</p>
-                <span class="card-desc">학원비 5% 할인, G마켓·옥션 15%, 교통·통신 10%할인</span>
-              </div>
-  
-              <!-- 왼쪽 : case(3/4) - 카드 이름 + 혜택 설명 2줄일 때 -->
-              <!-- <div class="desc">
-                <p class="tit">아이 교육비 부담을 덜어주는</p>
-                <p class="card-corp">올바른 Edu 카드 올바른 Edu 카드 올바른 Edu 카드</p>
-                <span class="card-desc">학원비 5% 할인, G마켓·옥션 15%, 교통·통신 10%할인</span>
-              </div> -->
-  
-              <!-- 왼쪽 : case(4/4) - 배너 제목 + 카드 이름 + 혜택 설명 2줄일 때 -->
-              <!-- <div class="desc">
-                <p class="tit">아이 교육비 부담을 덜어주는 아이 교육비 부담을 덜어주는</p>
-                <p class="card-corp">올바른 Edu 카드 올바른 Edu 카드 올바른 Edu 카드</p>
-                <span class="card-desc">학원비 5% 할인, G마켓·옥션 15%, 교통·통신 10%할인</span>
-              </div> -->
-  
-              <!-- 오른쪽 : 카드 이미지 -->
-              <div class="circle-type">
-                <img src="../../img/common/lifestyle/img_ad_card_edu@2x.png" alt="edu">
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 카드 쓰고 혜택받기 -->
-      <!-- <div class="card-box">
-        <div class="title flex-align-center">
-          <h3>카드 쓰고 혜택받기</h3>
-          <a href="#" class="all-btn flex-align-cente"><span>전체보기</span> <img
-              src="../../img/sprite/common/ico_list_arrow_small@2x.png" alt="arrow" /></a>
-        </div>
-        <div>
-          <a href="#" class="event-box flex-align-center">
-            <span class="event-img">
-              <img src="../../img/@temp/d-1-aado-0000@2x.png" alt="logo">
-            </span>
+          <a href="#" class="banner-box theme">
+            <!-- 왼쪽 : 카드 이름 + 설명 -->
             <div class="desc">
-              <span>롯데카드 쓰고</span>
-              <p>최대 <strong>13만원</strong> 받기</p>
+              <p>해외여행 계획중이라면</p>
+              <p class="card-corp">신한카드 Deep Dream</p>
+              <span>1,000원 당 1마일리지, G마켓·옥션 15%, 교통·통신 10%할인</span>
+            </div>
+            <!-- 왼쪽 : case(1/4) - 혜택 설명만 1줄일 때 -->
+            <!-- <div class="desc">
+                  <p>해외여행 계획중이라면</p>
+                  <p class="card-corp">신한카드 Deep Dream</p>
+                  <span>1,000원 당 1마일리지 기본적립</span>
+                </div> -->
+
+            <!-- 왼쪽 : case(2/4) - 혜택 설명만 2줄일 때 -->
+            <!-- <div class="desc">
+                  <p>해외여행 계획중이라면</p>
+                  <p class="card-corp">신한카드 Deep Dream</p>
+                  <span>1,000원 당 1마일리지, G마켓·옥션 15%, 교통·통신 10%할인</span>
+                </div> -->
+
+            <!-- 왼쪽 : case(3/4) - 카드 이름 + 혜택 설명 2줄일 때 -->
+            <!-- <div class="desc">
+                  <p>해외여행 계획중이라면</p>
+                  <p class="card-corp">American Express The Platinum Card®Edition2</p>
+                  <span>1,000원 당 1마일리지, G마켓·옥션 15%, 교통·통신 10%할인</span>
+                </div> -->   
+
+            <!-- 왼쪽 : case(4/4) - 배너 제목 + 카드 이름 + 혜택 설명 2줄일 때 -->
+            <!-- <div class="desc">
+                  <p>해외여행 계획중이라면 바로 이 카드!</p>
+                  <p class="card-corp">카드의정석 Dear, Traveler(디어트래블러)</p>
+                  <span>1,000원 당 1마일리지, G마켓·옥션 15%, 교통·통신 10%할인</span>
+                </div> -->
+
+            <!-- 오른쪽 : 카드 이미지 -->
+            <div class="circle-type">
+              <img src="../../img/common/lifestyle/img_ad_card_travel@2x.png" alt="travel">
             </div>
           </a>
-        </div>
-      </div> -->
-
-      <!-- 보험 알아보기 -->
-      <div class="card-box no-pb">
-        <h3>보험 알아보기</h3>
-        <a href="#" class="insurance-box flex-align-center">
-          <div class="desc">
-            <span>보험료 대비, 보장은 충분할까?</span>
-            <p class="point">내 보험 진단하기</p>
-          </div>
-          <span class="insurance-img">
-            <img src="../../img/common/lifestyle/img_ad_card_Insurance_01@2x.png" alt="insurance">
-          </span>
-        </a>
       </div>
+    </div>
+
+    <!-- 보험 알아보기 -->
+    <div class="card-box no-pb">
+      <h3>보험 알아보기</h3>
+      <a href="#" class="banner-box insurance">
+        <div class="desc">
+          <span>보험료 대비, 보장은 충분할까?</span>
+          <p>내 보험 진단하기</p>
+        </div>
+        <img src="../../img/common/lifestyle/img_ad_card_Insurance_01@2x.png" alt="insurance">
+      </a>
     </div>
 
     <script>

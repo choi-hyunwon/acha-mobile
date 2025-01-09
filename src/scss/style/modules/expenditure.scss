@@ -1663,6 +1663,7 @@
             .share-num {
               left: -20px;
               background: #6839d3;
+              padding-right: 2px;
             }
           }
 
@@ -1676,6 +1677,7 @@
             .share-num {
               right: -20px;
               background: #cc61ed;
+              padding-right: 1.5px;
             }
           }
 
@@ -2321,7 +2323,7 @@
                 background: #f4efff;
                 font-family: var(--font2);
                 font-weight: unset;
-                margin-left: 4px;
+                margin-left: 8px;
                 vertical-align: 3px;
               }
 

@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>소비 분석</h2>
+    </div>
+    <div class="contents lifestyle pb-0">
+        <div class="spend-analysis-wrap">
+            <div class="user-icons">
+                <span>
+                    <img src="../../img/common/ico-mypage-profile-img-03@2x.png" alt="user1">
+                </span>
+                <span>
+                    <img src="../../img/common/ico-mypage-profile-img-01@2x.png" alt="user2">
+                </span>
+            </div>
+            <p class="title accent">
+                <span class="name">김유비</span>님과 <span class="name">유똑똑</span>님의 최근 3개월 <br><span class="f-point">소비를 분석</span>했어요!
+            </p>
+            <p class="noti">✽ 유플래너 기본 카테고리만 반영해요</p>
+            <div class="bubble-chart-wrap">
+                <ul class="bubble-chart">
+                    <!-- li의 class는 차드의 순위입니다.
+                        순위별로 원 색상, 폰트 크기, 아이콘 크기 등이 달라집니다. 
+                        6위까지 나누고 하위 4위는 기타로 표기합니다. -->
+                    <li class="first">
+                        <i class="category_A025"></i>
+                        <span>반려동물</span>
+                    </li>
+                    <li class="second">
+                        <i class="category_A009"></i>
+                        <span>마트/편의점</span>
+                    </li>
+                    <li class="third">
+                        <i class="category_A015"></i>
+                        <span>미용</span>
+                    </li>
+                    <li class="fourth">
+                        <i class="category_A020"></i>
+                        <span>용돈/생활비</span>
+                    </li>
+                    <li class="fifth">
+                        <i class="category_A011"></i>
+                        <span>카페/간식</span>
+                    </li>
+                    <li class="sixth">
+                        <i class="category_A003"></i>
+                        <span>보험</span>
+                    </li>
+                    <li class="etc">
+                        <span>그 외 <br>4개</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bar-graph-wrap">
+                <p class="title">카테고리별 지출</p>
+                <ul class="bar-graph-list">
+                    <!-- li의 class는 그래프의 순위입니다.
+                        순위별로 그래프 색상이 달라집니다. (6위까지) -->
+                    <li class="first">
+                        <div class="subject">
+                            <span class="category_A025">반려동물</span>
+                            <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a>
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 100%"></span>
+                        </div>
+                        <p><span class="amount">19,000,000</span>원</p>
+                    </li>
+                    <li class="second">
+                        <div class="subject">
+                            <span class="category_A009">마트/편의점</span>
+                            <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a>
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 75%"></span>
+                        </div>
+                        <p><span class="amount">600,000</span>원</p>
+                    </li>
+                    <li class="third">
+                        <div class="subject">
+                            <span class="category_A015">미용</span>
+                            <!-- <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a> -->
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 60%"></span>
+                        </div>
+                        <p><span class="amount">300,000</span>원</p>
+                    </li>
+                    <li class="fourth">
+                        <div class="subject">
+                            <span class="category_A020">용돈/생활비</span>
+                            <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a>
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 35%"></span>
+                        </div>
+                        <p><span class="amount">60,000</span>원</p>
+                    </li>
+                    <li class="fifth">
+                        <div class="subject">
+                            <span class="category_A011">카페/간식</span>
+                            <!-- <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a> -->
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 20%"></span>
+                        </div>
+                        <p><span class="amount">50,000</span>원</p>
+                    </li>
+                    <li class="sixth">
+                        <div class="subject">
+                            <span class="category_A003">보험</span>
+                            <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a>
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 15%"></span>
+                        </div>
+                        <p><span class="amount">50,000</span>원</p>
+                    </li>
+                    <li class="etc">
+                        <div class="subject">
+                            <span class="category_A004">주거/통신</span>
+                            <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a>
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 10%"></span>
+                        </div>
+                        <p><span class="amount">10,000</span>원</p>
+                    </li>
+                    <li class="etc">
+                        <div class="subject">
+                            <span class="category_A016">취미/여가</span>
+                            <!-- <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a> -->
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 8%"></span>
+                        </div>
+                        <p><span class="amount">7,800</span>원</p>
+                    </li>
+                    <li class="etc">
+                        <div class="subject">
+                            <span class="category_A015">미용</span>
+                            <!-- <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a> -->
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 5%"></span>
+                        </div>
+                        <p><span class="amount">7,000</span>원</p>
+                    </li>
+                    <li class="etc">
+                        <div class="subject">
+                            <span class="category_A006">교육</span>
+                            <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a>
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 3%"></span>
+                        </div>
+                        <p><span class="amount">1,000</span>원</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // 버블차트 모바일 사이즈 줄어들 때, 비율대로 사이즈 줄어들도록 조절
+    $(document).ready(function(){
+        var windowX = $('body')[0].offsetWidth;
+        
+        if(300 > windowX){
+            $('.bubble-chart-wrap').css('height', '243px');
+            $('.bubble-chart').css({
+                'position': 'absolute',
+                'left': '50%',
+                'transform': 'scale(0.9) translateX(-50%)',
+                'transform-origin': 'top left'
+            });
+            $('.chart-result-box').css('margin-top', '20px');
+        } else {
+            $('.bubble-chart-wrap').css('height', '');
+            $('.bubble-chart').css({
+                'position': 'relative',
+                'left': '',
+                'transform': '',
+                'transform-origin': ''
+            });
+            $('.chart-result-box').css('margin-top', '30px');
+        }
+    })
+</script>
+</body>
+</html>

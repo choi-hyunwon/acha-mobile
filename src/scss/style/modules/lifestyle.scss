@@ -482,16 +482,19 @@
             height: auto;
             vertical-align: initial;
         }
-
+        .title{
+            display: flex;
+            align-items: center;
+        }
         .list-item{
+            display: flex;
+            align-items: center;
             padding: 20px 0;
             gap: 20px;
         }
-
         .card-desc{
             flex: 1;
             padding: 5px 0;
-
             p{
                 font-size: 16px;
                 line-height: 24px;
@@ -499,12 +502,13 @@
                 word-break: keep-all;
                 color: var(--text-01);
             }
-            
             ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
                 gap: 6px;
                 margin: 6px 0;
             }
-
             .category{
                 padding: 2px 6px;
                 background: #f7f7f8;
@@ -517,9 +521,7 @@
                 line-height: 18px;
                 word-break: keep-all;
             }
-
         }
-
         .dc{
             font-family: var(--font2);
             font-size: 14px;
@@ -533,7 +535,12 @@
             -webkit-line-clamp: 1;
             text-overflow: ellipsis;
             overflow: hidden;
-        }   
+        }  
+        .add-btn{
+            img{
+                margin-bottom: 3px;
+            }
+        }
     }
 
     .event-tag {
@@ -578,34 +585,31 @@
     }
 
     .best-pick{
+        display: flex;
+        align-items: center;
         margin: 20px 20px 0 20px;
         h3{
             margin-bottom: 0;
         }
-
         .f-point{
             font-size: 16px;
             line-height: 24px;
             font-family: var(--font2);
             padding-bottom: 2px;
         }
-
         .icon{
             width: 120px;
             height: 70px;
             margin-left: auto;
-
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
-
     }
     .best-list{
         padding: 0 20px 30px;
-
         .best-one{
             width: 100%;
             min-height: 120px;
@@ -613,14 +617,6 @@
             padding: 20px 0 20px 18px;
             margin-top: 20px;
             background: linear-gradient(to right, #ffedfe, #e7d8ff);
-
-            .num{
-                font-size: 22px;
-                line-height: 29px;
-                font-family: var(--font3);
-                margin-right: 20px;
-            }
-            
             .card-img{
                 width: 50px;
                 height: 80px;
@@ -636,38 +632,45 @@
                     background: transparent;
                 }
             }
-
-            .corp{
-                font-size: 12px;
-                line-height: 18px;
-                font-family: var(--font1);
-                color: var(--text-02);
-                word-break: keep-all;
-            }
-
-            .card-name{
-                font-size: 16px;
-                line-height: 24px;
-                font-family: var(--font2);
-                color: var(--text-01);
-                word-break: keep-all;
-                margin: 2px 0 6px;
-            }
         }
-
+        a{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            row-gap: 15px;
+        }
+        .num{
+            font-size: 22px;
+            line-height: 29px;
+            font-family: var(--font3);
+            margin-right: 20px;
+        }
+        .corp{
+            font-size: 12px;
+            line-height: 18px;
+            font-family: var(--font1);
+            color: var(--text-02);
+            word-break: keep-all;
+        }
+        .card-name{
+            font-size: 16px;
+            line-height: 24px;
+            font-family: var(--font2);
+            color: var(--text-01);
+            word-break: keep-all;
+            margin: 2px 0 6px;
+        }
         li:not(.best-one){
             padding: 0 20px 0 15px;
             margin-top: 40px;
             &:nth-child(2){
                 margin-top: 30px;
             }
-
             .num{
                 font-size: 16px;
                 line-height: 21px;
                 font-family: var(--font2);
                 color: var(--text-01);
-                margin-right: 20px;
             }
             // 십의 자리
             &:nth-child(n+10){
@@ -675,28 +678,29 @@
                     margin-right: 11px;
                 }
             }
-
-
             .item-desc{
-                flex: 1;
                 margin-left: 16px;
             }
-
+            .card-img{
+                margin-left: 0;
+            }
             .card-name{
                 font-size: 15px;
-                line-height: 22px;
-                font-family: var(--font2);
-                color: var(--text-01);
-                word-break: keep-all;
+            }
+            .ico{
+                margin-left: auto;
             }
         }
-
         .event-tag{
             margin-top: 4px;
         }
     }
 
     .summary-title{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
         padding: 20px 20px 0 20px;
         p{
             font-size: 18px;
@@ -723,24 +727,22 @@
     }
     .summary-box{
         padding: 30px 20px 0;
-        
         .summary-conts{
             background: #f5f4ff;
             border-radius: 14px;
             padding: 20px 20px 0;
         }
-        
         .title{
             font-size: 16px;
             line-height: 24px;
             font-family: var(--font3);
             word-break: keep-all;
         }
-
         li{
+            display: flex;
+            align-items: center;
             margin-top: 18px;
         }
-
         .circle-icon{
             width: 38px;
             height: 38px;
@@ -755,7 +757,6 @@
                 object-fit: contain;
             }
         }
-
         .detail{
             flex: 1;
 
@@ -788,9 +789,10 @@
                 color: var(--text-02);
             }
         }
-
         .find-btn{
             width: 100%;
+            display: flex;
+            align-items: center;
             font-size: 14px;
             line-height: 20px;
             font-family: var(--font2);
@@ -818,64 +820,60 @@
     .event-card-list{
         padding: 0 20px;
         margin-top: 10px;
-        
         li{
             padding: 16px 0;
         }
-
         a{
+            display: flex;
+            // flex-wrap: wrap;
+            align-items: center;
             width: 100%;
         }
-
         .logo{
             width: 40px;
             height: 40px;
-            margin-right: 16px;
-
-            img{
-                width: 100%;
-                height: 100%;
-                vertical-align: initial;
-            }
         }
-
+        img{
+            width: 100%;
+            height: auto;
+            vertical-align: initial;
+        }
         .event-desc{
-            .event-card{
-                font-size: 14px;
-                line-height: 20px;
-                font-family: var(--font1);
-                word-break: keep-all;
-                color: var(--text-02);
-            }
-            .event-benefit{
-                max-width: 242px;
-                font-size: 16px;
-                line-height: 24px;
-                font-family: var(--font2);
-                word-break: keep-all;
-                color: var(--text-01);
-                margin: 2px 0;
-                display: -webkit-box;
-                word-wrap: break-word;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
-                text-overflow: ellipsis;
-                overflow: hidden;
-            }
-            .event-date{
-                font-size: 12px;
-                line-height: 18px;
-                font-family: var(--font1);
-                word-break: keep-all;
-                color: var(--text-03);
-            }
+            margin-left: 16px;
+            width: 70%;
         }
-
+        .event-card{
+            font-size: 14px;
+            line-height: 20px;
+            font-family: var(--font1);
+            word-break: keep-all;
+            color: var(--text-02);
+        }
+        .event-benefit{
+            font-size: 16px;
+            line-height: 24px;
+            font-family: var(--font2);
+            word-break: keep-all;
+            color: var(--text-01);
+            margin: 2px 0;
+            display: -webkit-box;
+            word-wrap: break-word;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .event-date{
+            font-size: 12px;
+            line-height: 18px;
+            font-family: var(--font1);
+            word-break: keep-all;
+            color: var(--text-03);
+        }
         .ico{
             margin-left: auto;
         }
     }
-
     .ico{
         width: 6px;
         height: 16px;
@@ -885,18 +883,19 @@
             vertical-align: initial;
         }
     }
-
     .event-banner{
         padding: 30px 28px;
         background: #f5f4ff;
-
+        .event-item{
+            display: flex;
+            align-items: center;
+        }
         .subject{
             font-size: 20px;
             line-height: 30px;
             font-family: var(--font3);
             word-break: keep-all;
         }
-        
         .date{
             font-size: 13px;
             line-height: 19px;
@@ -904,174 +903,19 @@
             color: var(--text-02);
             margin-top: 10px;
         }
-
         .logo{
             width: 40px;
             height: 40px;
             margin-left: auto;
             img{
                 width: 100%;
-                height: 100%;
+                height: auto;
             }
         }
     }
     .step-list{
         position: relative;
         padding: 40px 20px 0;
-
-        .step-title{
-            display: flex;
-
-            .num{
-                width: 22px;
-                height: 22px;
-                border-radius: 50%;
-                background: var(--color-point);
-                text-align: center;
-                margin-top: 3px;
-                span{
-                    font-size: 16px;
-                    line-height: 21px;
-                    font-family: var(--font3);
-                    color: var(--white);
-                }
-            }
-    
-            .title{
-                font-size: 18px;
-                line-height: 27px;
-                font-family: var(--font3);
-                margin-left: 16px;
-            }
-        }
-
-        .step-box{
-            width: calc(100% - 38px);
-            background: #f7f8fc;
-            border-radius: 10px;
-            padding: 24px 20px;
-            margin-top: 20px;
-            margin-left: auto;
-
-            &.no-bg{
-                background: transparent;
-                padding: 10px 0 0 0;
-                margin-top: 0;
-            }
-
-            .card-img{
-                width: 34px;
-                height: 54px;
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-
-            .step-desc{
-                flex: 1;
-                margin: 0 12px 0 16px;
-
-                .card-name, .card-dc{
-                    display: -webkit-box;
-                    word-wrap: break-word;
-                    -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 2;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                }
-
-                .card-name{
-                    font-size: 15px;
-                    line-height: 22px;
-                    font-family: var(--font2);
-                    word-break: keep-all;
-                    margin-bottom: 6px;
-                }
-
-                .card-dc{
-                    font-size: 12px;
-                    line-height: 20px;
-                    font-family: var(--font1);
-                    color: var(--text-02);
-                    word-break: keep-all;
-                }
-            }
-
-            .view-btn{
-                padding: 8px 12px;
-                border-radius: 6px;
-                background: var(--color-point);
-                margin-left: auto;
-                font-size: 12px;
-                line-height: 18px;
-                font-family: var(--font2);
-                color: var(--white);
-                text-align: center;
-            }
-
-            li{
-                margin-bottom: 20px;
-
-                .condition{
-                    font-size: 13px;
-                    line-height: 19px;
-                    font-family: var(--font2);
-                    word-break: keep-all;
-                    color: var(--text-03);
-                    margin-bottom: 4px;
-                }
-    
-                .acquire{
-                    font-size: 13px;
-                    line-height: 18px;
-                    font-family: var(--font1);
-                    word-break: keep-all;
-                }
-            }
-
-            .apply-btn{
-                width: 100%;
-                display: block;
-                border-radius: 6px;
-                padding: 14px 0;
-                margin: 6px 0 12px;
-                font-size: 15px;
-                line-height: 22px;
-                font-family: var(--font2);
-                text-align: center;
-                color: var(--white);
-                background: var(--color-point);
-            }
-
-            .event-date{
-                font-family: var(--font1);
-                font-size: 13px;
-                line-height: 19px;
-                margin-bottom: 6px;
-                word-break: keep-all;
-            }
-
-            // line
-            &::before{
-                content: "";
-                display: inline-block;
-                width: 4px;
-                height: calc(100% - 45px);
-                background: #eee;
-                position: absolute;
-                top: 77px;
-                left: 29px;
-                z-index: -1;
-            }
-
-            &.no-line{
-                &::before{
-                    display: none;
-                }
-            }
-        }
-
         .result{
             font-size: 13px;
             line-height: 19px;
@@ -1081,23 +925,179 @@
             margin-top: 10px;
         }
     }
+    .step-title{
+        display: flex;
+        .num{
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--color-point);
+            text-align: center;
+            margin-top: 3px;
+            span{
+                font-size: 16px;
+                line-height: 21px;
+                font-family: var(--font3);
+                color: var(--white);
+            }
+        }
+        .title{
+            width: 80%;
+            max-width: 100%;
+            font-size: 18px;
+            line-height: 27px;
+            font-family: var(--font3);
+            margin-left: 16px;
+        }
+        & + .step-box.no-bg:has(.apply-btn){
+            margin-top: 6px;
+        }
+    }
+    .step-box{
+        width: calc(100% - 38px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background: #f7f8fc;
+        border-radius: 10px;
+        padding: 24px 20px;
+        margin-top: 20px;
+        margin-left: auto;
+        &:has(.card-img){
+            row-gap: 12px;
+        }
+        &.no-bg{
+            margin-top: 0;
+            padding: 10px 0 0 0;
+            background: transparent;
+        }
+        & + .step-box{
+            margin-top: 8px;
+        }
+        .card-img{
+            width: 34px;
+            height: 54px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .step-desc{
+            flex: 1;
+            margin: 0 12px 0 16px;
+            .card-name, .card-dc{
+                display: -webkit-box;
+                word-wrap: break-word;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .card-name{
+                font-size: 15px;
+                line-height: 22px;
+                font-family: var(--font2);
+                word-break: keep-all;
+                margin-bottom: 6px;
+            }
+            .card-dc{
+                font-size: 12px;
+                line-height: 20px;
+                font-family: var(--font1);
+                color: var(--text-02);
+                word-break: keep-all;
+            }
+        }
+        .view-btn{
+            padding: 8px 12px;
+            border-radius: 6px;
+            background: var(--color-point);
+            margin-left: auto;
+            font-size: 12px;
+            line-height: 18px;
+            font-family: var(--font2);
+            color: var(--white);
+            text-align: center;
+        }
+        li{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .condition{
+                font-size: 13px;
+                line-height: 19px;
+                font-family: var(--font2);
+                word-break: keep-all;
+                color: var(--text-03);
+                margin-bottom: 4px;
+            }
+            .acquire{
+                font-size: 13px;
+                line-height: 1.5;
+                font-family: var(--font1);
+                word-break: keep-all;
+            }
+        }
+        ul + .apply-btn{
+            margin-top: 20px;
+        }
+        .apply-btn{
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+            padding: 14px 0;
+            font-size: 15px;
+            line-height: 22px;
+            font-family: var(--font2);
+            text-align: center;
+            color: var(--white);
+            background: var(--color-point);
+            & + .event-date{
+                margin-top: 12px;
+            }
+        }
+        .event-date{
+            font-family: var(--font1);
+            font-size: 13px;
+            line-height: 19px;
+            word-break: keep-all;
+            & + .event-date{
+                margin-top: 6px;
+            }
+        }
+        // line
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: calc(100% - 45px);
+            background: #eee;
+            position: absolute;
+            top: 77px;
+            left: 29px;
+            z-index: -1;
+        }
+        &.no-line{
+            &::before{
+                display: none;
+            }
+        }
+    }
     .detail-box{
         padding: 40px 20px 0;
-
         ul{
             padding: 20px;
             margin-top: 16px;
             background: #f7f8fc;
             border-radius: 10px;
         }
-
         li{
             margin-bottom: 30px;
             &:last-child{
                 margin-bottom: 0;
             }   
         }
-
         .subject {
             font-family: var(--font3);
             font-size: 15px;
@@ -1954,6 +1954,194 @@
     // 포인트 및 쿠폰몰 /////////
 
     // 소비 분석 및 카드추천
+    // icon
+    [class^="category_"]{
+        &::before{
+            content: "";
+            display: inline-block;
+        }
+        // 대출
+        &[class$="A001"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A001.png) no-repeat center / contain;
+            }
+        }
+        // 저축/투자
+        &[class$="A002"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A002.png) no-repeat center / contain;
+            }
+        }
+        // 보험
+        &[class$="A003"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A003.png) no-repeat center / contain;
+            }
+        }
+        // 주거/통신
+        &[class$="A004"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A004.png) no-repeat center / contain;
+            }
+        }
+        // 구독
+        &[class$="A005"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A005.png) no-repeat center / contain;
+            }
+        }
+        // 교육
+        &[class$="A006"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A006.png) no-repeat center / contain;
+            }
+        }
+        // 세금
+        &[class$="A007"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A007.png) no-repeat center / contain;
+            }
+        }
+        // 기부/후원
+        &[class$="A008"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A008.png) no-repeat center / contain;
+            }
+        }
+        // 마트/편의점
+        &[class$="A009"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A009.png) no-repeat center / contain;
+            }
+        }
+        // 외식
+        &[class$="A010"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A010.png) no-repeat center / contain;
+            }
+        }
+        // 카페/간식
+        &[class$="A011"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A011.png) no-repeat center / contain;
+            }
+        }
+        // 술/유흥
+        &[class$="A012"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A012.png) no-repeat center / contain;
+            }
+        }
+        // 생활편의
+        &[class$="A013"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A013.png) no-repeat center / contain;
+            }
+        }
+        // 쇼핑
+        &[class$="A014"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A014.png) no-repeat center / contain;
+            }
+        }
+        // 미용
+        &[class$="A015"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A015.png) no-repeat center / contain;
+            }
+        }
+        // 취미/여가
+        &[class$="A016"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A016.png) no-repeat center / contain;
+            }
+        }
+        // 여행/숙박
+        &[class$="A017"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A017.png) no-repeat center / contain;
+            }
+        }
+        // 경조/선물
+        &[class$="A018"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A018.png) no-repeat center / contain;
+            }
+        }
+        // 병원/건강
+        &[class$="A019"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A019.png) no-repeat center / contain;
+            }
+        }
+        // 용돈/생활비
+        &[class$="A020"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A020.png) no-repeat center / contain;
+            }
+        }
+        // 모임
+        &[class$="A021"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A021.png) no-repeat center / contain;
+            }
+        }
+        // 교통
+        &[class$="A022"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A022.png) no-repeat center / contain;
+            }
+        }
+        // 자동차
+        &[class$="A023"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A023.png) no-repeat center / contain;
+            }
+        }
+        // 자녀
+        &[class$="A024"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A024.png) no-repeat center / contain;
+            }
+        }
+        // 반려동물
+        &[class$="A025"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A025.png) no-repeat center / contain;
+            }
+        }
+        // 해외
+        &[class$="A026"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A026.png) no-repeat center / contain;
+            }
+        }
+        // ATM
+        &[class$="A027"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A026.png) no-repeat center / contain;
+            }
+        }
+        // 이체
+        &[class$="A028"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A026.png) no-repeat center / contain;
+            }
+        }
+        // 카드대금
+        &[class$="A029"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A026.png) no-repeat center / contain;
+            }
+        }
+        // 기타
+        &[class$="A999"]{
+            &::before{
+                background: url(../../img/common/lifestyle/ico_A026.png) no-repeat center / contain;
+            }
+        }
+    }
+    // icon ///////// 
     .my-data-loading{
         height: calc(100vh - 222px);
         padding-bottom: 0;
@@ -1968,8 +2156,7 @@
             font-family: var(--font3);
             font-size: 18px;
             line-height: 1.5;
-            & + .promo-phrase,
-            & + .recommend-card-list{
+            & + .spend-analysis-box{
                 margin-top: 30px;
             }
             &.accent{
@@ -1983,66 +2170,9 @@
             line-height: 1.5;
             color: var(--text-02);
         }
-        // icon
-        .pet{
-            &::before{
-                background: url(../../img/common/lifestyle/a-025@2x.png) no-repeat center / contain;
-            }
-        }
-        .shopping{
-            &::before{
-                background: url(../../img/common/lifestyle/a-014@2x.png) no-repeat center / contain;
-            }
-        }
-        .food{
-            &::before{
-                background: url(../../img/common/lifestyle/a-010@2x.png) no-repeat center / contain;
-            }
-        }
-        .cafe{
-            &::before{
-                background: url(../../img/common/lifestyle/a-011@2x.png) no-repeat center / contain;
-            }
-        }
-        .insurance{
-            &::before{
-                background: url(../../img/common/lifestyle/a-003@2x.png) no-repeat center / contain;
-            }
-        }
-        .beauty{
-            &::before{
-                background: url(../../img/common/lifestyle/a-015@2x.png) no-repeat center / contain;
-            }
-        }
-        .allowance{
-            &::before{
-                background: url(../../img/common/lifestyle/a-020@2x.png) no-repeat center / contain;
-            }
-        }
-        .mart{
-            &::before{
-                background: url(../../img/common/lifestyle/a-009@2x.png) no-repeat center / contain;
-            }
-        }
-        .hobby{
-            &::before{
-                background: url(../../img/common/lifestyle/a-016@2x.png) no-repeat center / contain;
-            }
-        }
-        .house{
-            &::before{
-                background: url(../../img/common/lifestyle/a-004@2x.png) no-repeat center / contain;
-            }
-        }
-        .edu{
-            &::before{
-                background: url(../../img/common/lifestyle/a-006@2x.png) no-repeat center / contain;
-            }
-        }
-        // icon ///////// 
     }
     .divider + .spend-analysis-wrap{
-        padding-top: 40px;
+        padding: 40px 20px 30px;
         &:has(.title){
             padding-top: 30px
         }
@@ -2064,7 +2194,6 @@
             overflow: hidden;
             i{
                 &::before{
-                    content: "";
                     display: block;
                     margin: 0 auto 2px;
                 }
@@ -2225,8 +2354,8 @@
     }
     .analysis-btn{
         width: 100%;
-        margin-top: 20px;
         font-size: 15px;
+        margin-top: 20px;
     }
     .btn-add{
         height: 36px;
@@ -2242,19 +2371,19 @@
         }
     }
     .promo-phrase{
+        margin-bottom: 16px;
         font-family: var(--font2);
         font-size: 18px;
         line-height: 1.5;
+    }
+    .spend-analysis-box{
         margin-top: 40px;
-        & + .recommend-category{
-            margin-top: 16px;
-        }
     }
     .recommend-category{
         width: 100%;
         min-height: 68px;
-        margin-top: 40px;
         padding: 14px 20px;
+        margin-bottom: 20px;
         border-radius: 14px;
         background-color: #f5f4ff;
         display: flex;
@@ -2280,8 +2409,8 @@
                 padding: 6px;
                 text-align: center;
                 &::before{
-                    content: "";
-                    display: inline-block;
+                    // content: "";
+                    // display: inline-block;
                     width: 24px;
                     height: 24px;
                 }
@@ -2299,7 +2428,6 @@
         }
     }
     .recommend-card-list{
-        margin-top: 20px;
         a{
             display: flex;
             align-items: center;
@@ -2366,16 +2494,14 @@
                 margin-left: auto;
             }
             i{
-                margin-left: 4px;
+                margin: 0 0 1.5px 4px;
             }
         }
-        .category{ 
+        span{ 
             font-family: var(--font2);
             font-size: 15px;
             line-height: 1.5;
             &::before{
-                content: "";
-                display: inline-block;
                 width: 22px;
                 height: 22px;
                 margin-right: 8px;

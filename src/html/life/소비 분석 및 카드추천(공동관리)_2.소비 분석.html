@@ -191,6 +191,16 @@
     // 버블차트 모바일 사이즈 줄어들 때, 비율대로 사이즈 줄어들도록 조절
     $(document).ready(function(){
         var windowX = $('body')[0].offsetWidth;
+
+        // 화면 새로고침
+        const target = $('body')[0];
+        var prevWidth = $('body').width();
+        
+        const observer = new ResizeObserver(() => {
+            const curWidth = $('body').width();
+            if(prevWidth !== curWidth) location.reload();
+        });
+        observer.observe(target);
         
         if(300 > windowX){
             $('.bubble-chart-wrap').css('height', '243px');

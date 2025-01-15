@@ -21,32 +21,45 @@
             </p>
             <p class="noti">✽ 유플래너 기본 카테고리만 반영해요</p>
             <div class="bubble-chart-wrap">
-                <ul class="bubble-chart">
-                    <!-- li의 class는 차드의 순위입니다.
-                        순위별로 원 색상, 폰트 크기, 아이콘 크기 등이 달라집니다. 
-                        6위까지 나누고 하위 4위는 기타로 표기합니다. -->
-                    <li class="first">
-                        <i class="category_A025"></i>
+                <!-- TODO 
+                 1. 카테고리의 숫자대로 ul에 클래스가 붙습니다.
+                    * translate(-50%, -50%) 값 유지 필요.
+                 - has-category1 : 단일 카테고리일 경우
+                    - 1위 100% = 1 + 1 = 2 을 scale 값에 대입합니다.
+                 - has-category2 : 카테고리 2개일 경우
+                    - 1위 80% = 1 + 0.8 = 1.8 을 scale 값에 대입합니다.
+                    - 2위 20% = 1 + 0.2 = 1.2
+                 - has-category4 : 카테고리 4개일 경우
+                    - 1위 60% = 1 + 0.6 = 1.8
+                    - 2위 20% = 1 + 0.2 = 1.2
+                    - 3위 15% = 1 + 0.15 = 1.15
+                    - 4위 5% = 1 + 0.05 = 1.05
+
+                 2.각 카테고리별 구분 클래스가 li 단위로 붙습니다.
+                    category_A025 반려동물
+                    category_A009 마트/편의점
+                    category_A015 미용
+                    category_A020 용돈/생활비
+                    category_A011 카페/간식
+                    category_A003 보험
+                -->
+                <ul class="bubble-ranking has-category7">
+                    <li class="category_A025" style="transform: translate(-50%, -50%) scale(1.8);">
                         <span>반려동물</span>
                     </li>
-                    <li class="second">
-                        <i class="category_A009"></i>
+                    <li class="category_A009" style="transform: translate(-50%, -50%) scale(1.2);">
                         <span>마트/편의점</span>
                     </li>
-                    <li class="third">
-                        <i class="category_A015"></i>
+                    <li class="category_A015" style="transform: translate(-50%, -50%) scale(1.15);">
                         <span>미용</span>
                     </li>
-                    <li class="fourth">
-                        <i class="category_A020"></i>
+                    <li class="category_A020" style="transform: translate(-50%, -50%) scale(1.05);">
                         <span>용돈/생활비</span>
                     </li>
-                    <li class="fifth">
-                        <i class="category_A011"></i>
+                    <li class="category_A011" style="transform: translate(-50%, -50%) scale(1);">
                         <span>카페/간식</span>
                     </li>
-                    <li class="sixth">
-                        <i class="category_A003"></i>
+                    <li class="category_A003" style="transform: translate(-50%, -50%) scale(1);">
                         <span>보험</span>
                     </li>
                     <li class="etc">
@@ -202,22 +215,24 @@
         });
         observer.observe(target);
         
-        if(300 > windowX){
-            $('.bubble-chart-wrap').css('height', '243px');
-            $('.bubble-chart').css({
-                'position': 'absolute',
-                'left': '50%',
-                'transform': 'scale(0.9) translateX(-50%)',
-                'transform-origin': 'top left'
+        if(375 > windowX){
+            $('.bubble-ranking li').css({
+                'width': '20vmin',
+                'height': '20vmin',
+            });
+            $('.bubble-ranking li:first').css({
+                'top': '49%',
+                'left': "52.5%",
             });
             $('.chart-result-box').css('margin-top', '20px');
         } else {
-            $('.bubble-chart-wrap').css('height', '');
-            $('.bubble-chart').css({
-                'position': 'relative',
-                'left': '',
-                'transform': '',
-                'transform-origin': ''
+            $('.bubble-ranking li:not(.etc)').css({
+                'width': "86px",
+                'height': "86px",
+            });
+            $('.bubble-ranking li:first').css({
+                'top': '50%',
+                'left': "54%",
             });
             $('.chart-result-box').css('margin-top', '30px');
         }

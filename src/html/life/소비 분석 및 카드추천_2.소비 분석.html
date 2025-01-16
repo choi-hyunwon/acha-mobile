@@ -161,20 +161,16 @@
                 'width': '20vmin',
                 'height': '20vmin',
             });
-            $('.bubble-ranking li:first').css({
-                'top': '49%',
-                'left': "52.5%",
-            });
+            $('.bubble-ranking li:not(.etc) span').css('font-size', '11px');
+            $('.bubble-ranking li:first-child span').css('font-size', '9px');
             $('.chart-result-box').css('margin-top', '20px');
         } else {
             $('.bubble-ranking li:not(.etc)').css({
                 'width': "86px",
                 'height': "86px",
             });
-            $('.bubble-ranking li:first').css({
-                'top': '50%',
-                'left': "54%",
-            });
+            $('.bubble-ranking li:not(.etc) span').css('font-size', '');
+            $('.bubble-ranking li:first-child span').css('font-size', '10px');
             $('.chart-result-box').css('margin-top', '30px');
         }
     })

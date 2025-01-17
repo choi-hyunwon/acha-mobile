@@ -13,7 +13,11 @@
                 <span class="name">김유비</span>님의 최근 3개월 <br><span class="f-point">소비를 분석</span>했어요!
             </p>
             <p class="noti">✽ 유플래너 기본 카테고리만 반영해요</p>
-            <div id="highcharts" style="height: 243; width: 265;"></div>        
+
+            <div class="mt-30">
+                <canvas id="myChart" width="265" height="243"></canvas>
+            </div>
+
             <div class="bar-graph-wrap">
                 <p class="title">카테고리별 지출</p>
                 <ul class="bar-graph-list">
@@ -125,108 +129,162 @@
     </div>
 </div>
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    Highcharts.chart('highcharts', {
-        chart: {
-            type: 'packedbubble'
-        },
-        title: false,
-        tooltip: false,
-        exporting: {
-            enabled: false
-        },
-        legend: {
-            enabled: false
-        },
-        credits: {
-            enabled: false
-        },
-        plotOptions: {
-            packedbubble: {
-                minSize: '0%',
-                maxSize: '100%',
-                zMin: 0,
-                zMax: 100,
-                layoutAlgorithm: {
-                    splitSeries: false,
-                    gravitationalConstant: 0.05
+    const ctx = document.getElementById('myChart').getContext('2d');
+    new Chart(ctx, {
+    type: 'bubble',
+    data: {
+        datasets: [{
+            data: [
+                {
+                    x: 10,
+                    y: 10,
+                    r: 55,
+                    img: "../../img/common/lifestyle/ico_A025.png",
+                    txt: "반려동물"
+                }, 
+                {
+                    x: 0, 
+                    y: 18,
+                    r: 44,
+                    img: "../../img/common/lifestyle/ico_A009.png",
+                    txt: "마트/편의점"
                 },
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.name}',
-                    filter: false,
-                    style: {
-                        color: '#37354e',
-                        textOutline: 'none',
-                        fontWeight: 'medium',
-                        fontSize: '14px'
-                    },
+                {
+                    x: 18,
+                    y: 0,
+                    r: 40,
+                    img: "../../img/common/lifestyle/ico_A015.png",
+                    txt: "미용"
+                },
+                {
+                    x: 4,
+                    y: 0,
+                    r: 38,
+                    img: "../../img/common/lifestyle/ico_A020.png",
+                    txt: "용돈/생활비"
+                },
+                {
+                    x: 16,
+                    y: 20,
+                    r: 35,
+                    img: "../../img/common/lifestyle/ico_A011.png",
+                    txt: "카페/간식"
+                    
+                },
+                {
+                    x: 0,
+                    y: 8,
+                    r: 32,
+                    img: "../../img/common/lifestyle/ico_A003.png",
+                    txt: "보험"
+                },
+                {
+                    x: 20,
+                    y: 10,
+                    r: 29,
+                    txt: "그 외 4개"
+                },
+            ],
+            backgroundColor: [
+                'rgba(255, 168, 29, 0.12)',
+                'rgba(92, 136, 255, 0.12)',
+                'rgba(250, 115, 152, 0.12)',
+                'rgba(130, 110, 255, 0.12)',
+                'rgba(171, 110, 255, 0.12)',
+                'rgba(255, 0, 0, 0.12)',
+                'rgba(163, 157, 177, 0.12)',
+            ],
+            borderWidth: 0,
+        }]
+    },
+    gridLines: {
+        display: false
+    },
+    ticks: {
+        display: false
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                display: false,
+                ticks: {
+                    display: false, 
+                },
+                gridLines: {
+                    display: false, 
+                },
+                grid: {
+                    display: false,
+                }
+            },
+            y: {
+                display: false,
+                ticks: {
+                    display: false, 
+                },
+                gridLines: {
+                    display: false, 
+                },
+                grid: {
+                    display: false,
                 }
             }
         },
-        series: [{
-            name: '1위',
-            data: [{
-                name: '반려동물',
-                value: 110,
-                // img: "../../img/common/lifestyle/ico_A025.png",
-                // className: "category_A025"
-            }]
-        }, {
-            name: '2위',
-            data: [{
-                name: '마트/편의점',
-                value: 88,
-                // img: "../../img/common/lifestyle/ico_A009.png",
-                // className: "category_A009"
-            }]
-        }, {
-            name: '3위',
-            data: [{
-                name: '미용',
-                value: 80,
-                // img: "../../img/common/lifestyle/ico_A015.png",
-                // className: "category_A015"
+        plugins: {
+            legend: {
+                display: false,
             },
-            ]
-        },{
-            name: '4위',
-            data: [{
-                name: '용돈/생활비',
-                value: 76,
-                // img: "../../img/common/lifestyle/ico_A020.png",
-                // className: "category_A020"
+            title: {
+                display: false,
             },
-            ]
-        }, 
+        }
+    },
+    plugins: [
         {
-            name: '5위',
-            data: [{
-                name: '카페/간식',
-                value: 70,
-                // img: "../../img/common/lifestyle/ico_A011.png",
-                // className: "category_A011"
-            }]
-        }, {
-            name: '6위',
-            data: [{
-                name: '보험',
-                value: 64,
-                // img: "../../img/common/lifestyle/ico_A003.png",
-                // className: "category_A003"
-            }]
+            id: 'custom',
+            afterDraw(chart) {
+            const ctx = chart.ctx;
+            const datasets = chart.data.datasets;
+
+            datasets.forEach(dataset => {
+                dataset.data.forEach((point, index) => {
+                    const x = chart.scales.x.getPixelForValue(point.x);
+                    const y = chart.scales.y.getPixelForValue(point.y);
+                    const scaleFactor = 0.7;
+
+                    if (point.img) {
+                        const img = new Image();
+                        img.src = point.img;
+                        const size = point.r;
+                        const fixedSize = point.r * scaleFactor;
+                        img.onload = () => {
+                            ctx.drawImage(img, x - fixedSize / 2, y - fixedSize / 2 - point.r / 3, fixedSize, fixedSize);
+                        };
+                    }
+
+                    ctx.font = '13px NotoSansCJKKR';
+                    ctx.fillStyle = '#37354e';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+
+                    const lines = (point.txt || 'Text').split('\n');
+                    const lineHeight = 1.3;
+
+                    console.log(point.txt[0]);
+                    
+                    if(point.txt === "그 외 4개"){
+                        ctx.fillText(point.txt || 'Text', x, y);
+                    } else {
+                        ctx.fillText(point.txt || 'Text', x, y + point.r / 3);
+                    }
+                });
+            });
+        }
         },
-        {
-            name: 'etc',
-            data: [{
-                name: '그 외 4개',
-                value: 58
-            }]
-        }]
+    ]
     });
 </script>
 </body>

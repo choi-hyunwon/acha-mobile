@@ -150,10 +150,10 @@
                 minSize: '0%',
                 maxSize: '100%',
                 zMin: 0,
-                zMax: 100,
+                zMax: 80,
                 layoutAlgorithm: {
                     splitSeries: false,
-                    gravitationalConstant: 0.05
+                    gravitationalConstant: 0.02
                 },
                 dataLabels: {
                     enabled: true,
@@ -162,73 +162,73 @@
                     style: {
                         color: '#37354e',
                         textOutline: 'none',
-                        fontWeight: 'medium',
-                        fontSize: '14px'
-                    },
-                    useHtml: true,
-                }
+                        fontWeight: '500',
+                        fontSize: '14px',
+                        fontFamily: 'NotoSansCJKKR'
+                    }
+                },
+                marker: {
+                  fillOpacity: 1,
+                },
             }
         },
-        series: [{
-            name: '1위',
-            data: [{
-                name: '반려동물',
-                value: 110,
-                img: "../../img/common/lifestyle/ico_A025.png",
-                className: "category_A025"
-            }]
-        }, {
-            name: '2위',
-            data: [{
-                name: '마트/편의점',
-                value: 88,
-                // img: "../../img/common/lifestyle/ico_A009.png",
-                // className: "category_A009"
-            }]
-        }, {
-            name: '3위',
-            data: [{
-                name: '미용',
-                value: 80,
-                // img: "../../img/common/lifestyle/ico_A015.png",
-                // className: "category_A015"
+        series: [
+            {
+                name: '1위',
+                color: 'rgba(255, 168, 29, 0.12)',
+                data: [{
+                    name: '반려동물',
+                    value: 100,
+                }]
+            }, {
+                name: '2위',
+                color: 'rgba(92, 136, 255, 0.12)',
+                data: [{
+                    name: '마트/편의점',
+                    value: 80,
+                }]
+            }, {
+                name: '3위',
+                color: 'rgba(250, 115, 152, 0.12)',
+                data: [{
+                    name: '미용',
+                    value: 75,
+                },
+                ]
+            },{
+                name: '4위',
+                color: 'rgba(130, 110, 255, 0.12)',
+                data: [{
+                    name: '용돈/생활비',
+                    value: 65,
+                },
+                ]
+            }, 
+            {
+                name: '5위',
+                color: 'rgba(171, 110, 255, 0.12)',
+                data: [{
+                    name: '카페/간식',
+                    value: 55,
+                }]
+            }, {
+                name: '6위',
+                color: 'rgba(248, 112, 94, 0.12)',
+                data: [{
+                    name: '보험',
+                    value: 40,
+                }]
             },
-            ]
-        },{
-            name: '4위',
-            data: [{
-                name: '용돈/생활비',
-                value: 76,
-                // img: "../../img/common/lifestyle/ico_A020.png",
-                // className: "category_A020"
-            },
-            ]
-        }, 
-        {
-            name: '5위',
-            data: [{
-                name: '카페/간식',
-                value: 70,
-                // img: "../../img/common/lifestyle/ico_A011.png",
-                // className: "category_A011"
-            }]
-        }, {
-            name: '6위',
-            data: [{
-                name: '보험',
-                value: 64,
-                // img: "../../img/common/lifestyle/ico_A003.png",
-                // className: "category_A003"
-            }]
+            {
+                name: 'etc',
+                color: 'rgba(163, 157, 177, 0.12)',
+                data: [{
+                    name: '그 외 4개',
+                    value: 5
+                }]
+            }],
         },
-        {
-            name: 'etc',
-            data: [{
-                name: '그 외 4개',
-                value: 58
-            }]
-        }]
-    });
+    );
 </script>
 </body>
 </html>

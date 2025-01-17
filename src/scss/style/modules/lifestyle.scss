@@ -2142,9 +2142,6 @@
         }
     }
 
-    .highcharts{
-    }
-
     // icon ///////// 
     .my-data-loading{
         height: calc(100vh - 222px);
@@ -2788,5 +2785,13 @@
           }
         }
       }
+    }
+}
+
+.highcharts{
+    .highcharts-series{
+        .highcharts-point{
+            stroke: transparent !important;
+        }
     }
 }

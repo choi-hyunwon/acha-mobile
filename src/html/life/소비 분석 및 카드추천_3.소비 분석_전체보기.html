@@ -157,16 +157,18 @@
                         gravitationalConstant: 0.02
                     },
                     dataLabels: {
-                    enabled: true,
-                    format: '{point.name}',
-                    filter: false,
-                    style: {
-                        fontWeight: '600',
-                        fontFamily: 'NotoSansCJKKR',
-                        textOutline: 'none',
-                        border: 'none'
+                        enabled: true,
+                        format: '{point.name}',
+                        filter: false,
+                        style: {
+                            fontWeight: '600',
+                            textAlign: 'center',
+                            fontFamily: 'NotoSansCJKKR',
+                            textOutline: 'none',
+                            border: 'none',
+                            verticalAlign: 'middle',
+                        },
                     },
-                },
                     states: {
                         hover: {
                         enabled: true,
@@ -180,6 +182,8 @@
                     },
                     marker: {
                         fillOpacity: 1,
+                        lineWidth: 0,
+                        lineColor: 'transparent',
                     },
                 }
             },
@@ -187,14 +191,9 @@
             {
                 name: '1위',
                 color: 'rgba(255, 168, 29, 0.12)',
-                images: '../../img/common/lifestyle/ico_A009.png',
                 data: [{
                     name: '반려동물',
                     value: 120,
-                    marker: {
-                        lineWidth: 0,
-                        lineColor: 'transparent',
-                    },
                 }],
                 dataLabels: {
                     style: {
@@ -208,10 +207,6 @@
                 data: [{
                     name: '마트/편의점',
                     value: 88,
-                    marker: {
-                        lineWidth: 0,
-                        lineColor: 'transparent',
-                    },
                 }],
                 dataLabels: {
                     style: {
@@ -219,24 +214,12 @@
                         fontSize: '13px',
                     }
                 },
-                states: {
-                    hover :{
-                        halo: {
-                            opacity: 1,
-                            size: 0
-                        },
-                    }
-                }
             }, {
                 name: '3위',
                 color: 'rgba(250, 115, 152, 0.12)',
                 data: [{
                     name: '미용',
                     value: 80,
-                    marker: {
-                        lineWidth: 0,
-                        lineColor: 'transparent',
-                    },
                 }],
                 dataLabels: {
                     style: {
@@ -244,24 +227,12 @@
                         fontSize: '13px',
                     }
                 },
-                states: {
-                    hover :{
-                        halo: {
-                            opacity: 1,
-                            size: 0
-                        },
-                    }
-                }
             },{
                 name: '4위',
                 color: 'rgba(130, 110, 255, 0.12)',
                 data: [{
                     name: '용돈/생활비',
                     value: 76,
-                    marker: {
-                        lineWidth: 0,
-                        lineColor: 'transparent',
-                    },
                 }],
                 dataLabels: {
                     style: {
@@ -269,14 +240,6 @@
                         fontSize: '12px',
                     }
                 },
-                states: {
-                    hover :{
-                        halo: {
-                            opacity: 1,
-                            size: 0
-                        },
-                    }
-                }
             }, 
             {
                 name: '5위',
@@ -284,10 +247,6 @@
                 data: [{
                     name: '카페/간식',
                     value: 65,
-                    marker: {
-                        lineWidth: 0,
-                        lineColor: 'transparent',
-                    },
                 }],
                 dataLabels: {
                     style: {
@@ -295,24 +254,12 @@
                         fontSize: '12px',
                     }
                 },
-                states: {
-                    hover :{
-                        halo: {
-                            opacity: 1,
-                            size: 0
-                        },
-                    }
-                }
             }, {
                 name: '6위',
                 color: 'rgba(248, 112, 94, 0.12)',
                 data: [{
                     name: '보험',
                     value: 50,
-                    marker: {
-                        lineWidth: 0,
-                        lineColor: 'transparent',
-                    },
                 }],
                 dataLabels: {
                     style: {
@@ -320,14 +267,6 @@
                         fontSize: '12px',
                     }
                 },
-                states: {
-                    hover :{
-                        halo: {
-                            opacity: 1,
-                            size: 0
-                        },
-                    }
-                }
             },
             {
                 name: 'etc',
@@ -335,10 +274,6 @@
                 data: [{
                     name: '그 외 4개',
                     value: 35,
-                    marker: {
-                        lineWidth: 0,
-                        lineColor: 'transparent',
-                    },
                 }],
                 dataLabels: {
                     style: {
@@ -346,14 +281,6 @@
                         fontSize: '12px',
                     }
                 },
-                states: {
-                    hover :{
-                        halo: {
-                            opacity: 1,
-                            size: 0
-                        },
-                    }
-                }
             }],
             annotations: [{
                 animation: {

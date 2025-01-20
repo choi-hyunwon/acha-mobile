@@ -2473,7 +2473,7 @@
         97%, 100% {
             -webkit-transform: scale(1);
             transform: scale(1); }
-        }
+    }
     // bubble chart end //////////
 
     .chart-result-box{
@@ -2785,13 +2785,5 @@
           }
         }
       }
-    }
-}
-
-.highcharts{
-    .highcharts-series{
-        .highcharts-point{
-            stroke: transparent !important;
-        }
     }
 }

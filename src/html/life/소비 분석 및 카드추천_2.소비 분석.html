@@ -12,53 +12,9 @@
                 <span class="name">김유비</span>님의 최근 3개월 <br><span class="f-point">소비를 분석</span>했어요!
             </p>
             <p class="noti">✽ 유플래너 기본 카테고리만 반영해요</p>
-            <div class="bubble-chart-wrap">
-                <!-- TODO 
-                 1. 카테고리의 숫자대로 ul에 클래스가 붙습니다.
-                    * translate(-50%, -50%) 값 유지 필요.
-                 - has-category1 : 단일 카테고리일 경우
-                    - 1위 100% = 1 + 1 = 2 을 scale 값에 대입합니다.
-                 - has-category2 : 카테고리 2개일 경우
-                    - 1위 80% = 1 + 0.8 = 1.8 을 scale 값에 대입합니다.
-                    - 2위 20% = 1 + 0.2 = 1.2
-                 - has-category4 : 카테고리 4개일 경우
-                    - 1위 60% = 1 + 0.6 = 1.8
-                    - 2위 20% = 1 + 0.2 = 1.2
-                    - 3위 15% = 1 + 0.15 = 1.15
-                    - 4위 5% = 1 + 0.05 = 1.05
+            
+            <div id="highcharts" style="width: 300px; height: 260px; margin: 30px auto 0; background: transparent;"></div>        
 
-                 2.각 카테고리별 구분 클래스가 li 단위로 붙습니다.
-                    category_A025 반려동물
-                    category_A009 마트/편의점
-                    category_A015 미용
-                    category_A020 용돈/생활비
-                    category_A011 카페/간식
-                    category_A003 보험
-                -->
-                <ul class="bubble-ranking has-category7">
-                    <li class="category_A025" style="transform: translate(-50%, -50%) scale(1.8);">
-                        <span>반려동물</span>
-                    </li>
-                    <li class="category_A009" style="transform: translate(-50%, -50%) scale(1.2);">
-                        <span>마트/편의점</span>
-                    </li>
-                    <li class="category_A015" style="transform: translate(-50%, -50%) scale(1.15);">
-                        <span>미용</span>
-                    </li>
-                    <li class="category_A020" style="transform: translate(-50%, -50%) scale(1.05);">
-                        <span>용돈/생활비</span>
-                    </li>
-                    <li class="category_A011" style="transform: translate(-50%, -50%) scale(1);">
-                        <span>카페/간식</span>
-                    </li>
-                    <li class="category_A003" style="transform: translate(-50%, -50%) scale(1);">
-                        <span>보험</span>
-                    </li>
-                    <li class="etc">
-                        <span>그 외 <br>4개</span>
-                    </li>
-                </ul>
-            </div>
             <div class="chart-result-box">
                 <p>
                     <strong class="category f-point">반려동물</strong><span>에</span> <strong class="money">19,000,000</strong><strong class="won">원</strong><span>으로</span><br> 가장 많이 지출했어요!
@@ -141,39 +97,243 @@
         </div>
     </div>
 </div>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script>
-    // 버블차트 모바일 사이즈 줄어들 때, 비율대로 사이즈 줄어들도록 조절
-    $(document).ready(function(){
-        var windowX = $('body')[0].offsetWidth;
-
-        // 화면 새로고침
-        const target = $('body')[0];
-        var prevWidth = $('body').width();
-        
-        const observer = new ResizeObserver(() => {
-            const curWidth = $('body').width();
-            if(prevWidth !== curWidth) location.reload();
-        });
-        observer.observe(target);
-        
-        if(375 > windowX){
-            $('.bubble-ranking li').css({
-                'width': '20vmin',
-                'height': '20vmin',
-            });
-            $('.bubble-ranking li:not(.etc) span').css('font-size', '11px');
-            $('.bubble-ranking li:first-child span').css('font-size', '9px');
-            $('.chart-result-box').css('margin-top', '20px');
-        } else {
-            $('.bubble-ranking li:not(.etc)').css({
-                'width': "86px",
-                'height': "86px",
-            });
-            $('.bubble-ranking li:not(.etc) span').css('font-size', '');
-            $('.bubble-ranking li:first-child span').css('font-size', '10px');
-            $('.chart-result-box').css('margin-top', '30px');
-        }
-    })
+    document.addEventListener('DOMContentLoaded', function () {
+    const chart = Highcharts.chart('highcharts', {
+        chart: {
+            type: 'packedbubble',
+        },
+        title: false,
+        tooltip: false,
+        exporting: {
+            enabled: false
+        },
+        legend: {
+            enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            packedbubble: {
+                minSize: '0%',
+                maxSize: '130%',
+                zMin: 0,
+                zMax: 130,
+                layoutAlgorithm: {
+                    splitSeries: false,
+                    gravitationalConstant: 0.02
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}',
+                    filter: false,
+                    style: {
+                        fontWeight: '600',
+                        fontFamily: 'NotoSansCJKKR',
+                        textOutline: 'none',
+                        border: 'none'
+                    },
+                },
+                states: {
+                    hover: {
+                        enabled: true,
+                        halo: {
+                            size: 0
+                        }
+                    },
+                    inactive: {
+                        opacity: 1
+                    }
+                },
+                marker: {
+                    fillOpacity: 1,
+                },
+            }
+        },
+        series: [
+        {
+            name: '1위',
+            color: 'rgba(255, 168, 29, 0.12)',
+            images: '../../img/common/lifestyle/ico_A009.png',
+            data: [{
+                name: '반려동물',
+                value: 120,
+                marker: {
+                    lineWidth: 0,
+                    lineColor: 'transparent',
+                },
+            }],
+            dataLabels: {
+                style: {
+                    color: '#ffa81d',
+                    fontSize: '15px',
+                }
+            },
+        }, {
+            name: '2위',
+            color: 'rgba(92, 136, 255, 0.12)',
+            data: [{
+                name: '마트/편의점',
+                value: 88,
+                marker: {
+                    lineWidth: 0,
+                    lineColor: 'transparent',
+                },
+            }],
+            dataLabels: {
+                style: {
+                    color: '#5c88ff',
+                    fontSize: '13px',
+                }
+            },
+            states: {
+                hover :{
+                    halo: {
+                        opacity: 1,
+                        size: 0
+                    },
+                }
+            }
+        }, {
+            name: '3위',
+            color: 'rgba(250, 115, 152, 0.12)',
+            data: [{
+                name: '미용',
+                value: 80,
+                marker: {
+                    lineWidth: 0,
+                    lineColor: 'transparent',
+                },
+            }],
+            dataLabels: {
+                style: {
+                    color: '#fa7398',
+                    fontSize: '13px',
+                }
+            },
+            states: {
+                hover :{
+                    halo: {
+                        opacity: 1,
+                        size: 0
+                    },
+                }
+            }
+        },{
+            name: '4위',
+            color: 'rgba(130, 110, 255, 0.12)',
+            data: [{
+                name: '용돈/생활비',
+                value: 76,
+                marker: {
+                    lineWidth: 0,
+                    lineColor: 'transparent',
+                },
+            }],
+            dataLabels: {
+                style: {
+                    color: '#826eff',
+                    fontSize: '12px',
+                }
+            },
+            states: {
+                hover :{
+                    halo: {
+                        opacity: 1,
+                        size: 0
+                    },
+                }
+            }
+        }, 
+        {
+            name: '5위',
+            color: 'rgba(171, 110, 255, 0.12)',
+            data: [{
+                name: '카페/간식',
+                value: 65,
+                marker: {
+                    lineWidth: 0,
+                    lineColor: 'transparent',
+                },
+            }],
+            dataLabels: {
+                style: {
+                    color: '#ab6eff',
+                    fontSize: '12px',
+                }
+            },
+            states: {
+                hover :{
+                    halo: {
+                        opacity: 1,
+                        size: 0
+                    },
+                }
+            }
+        }, {
+            name: '6위',
+            color: 'rgba(248, 112, 94, 0.12)',
+            data: [{
+                name: '보험',
+                value: 50,
+                marker: {
+                    lineWidth: 0,
+                    lineColor: 'transparent',
+                },
+            }],
+            dataLabels: {
+                style: {
+                    color: '#f8705e',
+                    fontSize: '12px',
+                }
+            },
+            states: {
+                hover :{
+                    halo: {
+                        opacity: 1,
+                        size: 0
+                    },
+                }
+            }
+        },
+        {
+            name: 'etc',
+            color: 'rgba(163, 157, 177, 0.12)',
+            data: [{
+                name: '그 외 4개',
+                value: 35,
+                marker: {
+                    lineWidth: 0,
+                    lineColor: 'transparent',
+                },
+            }],
+            dataLabels: {
+                style: {
+                    color: '#a39db1',
+                    fontSize: '12px',
+                }
+            },
+            states: {
+                hover :{
+                    halo: {
+                        opacity: 1,
+                        size: 0
+                    },
+                }
+            }
+        }],
+        annotations: [{
+            animation: {
+                defer: 0,
+                duration: 100,
+                easing: 'ease-in-out'
+            },
+        }]
+    });
+});
 </script>
 </body>
 </html>

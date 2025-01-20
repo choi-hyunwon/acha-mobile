@@ -97,6 +97,7 @@
         </div>
     </div>
 </div>
+
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script>
@@ -127,24 +128,30 @@
                         gravitationalConstant: 0.02
                     },
                     dataLabels: {
-                    enabled: true,
-                    format: '{point.name}',
-                    filter: false,
-                    style: {
-                        fontWeight: '600',
-                        textAlign: 'center',
-                        fontFamily: 'NotoSansCJKKR',
-                        textOutline: 'none',
-                        border: 'none',
+                        enabled: true,
+                        useHTML: true,
+                        format: '{point.name}<br><strong style="font-size: 16px">{point.value}%</strong>',
+                        filter: false,
+                        style: {
+                            fontWeight: '600',
+                            textAlign: 'center',
+                            fontFamily: 'NotoSansCJKKR',
+                            textOutline: 'none',
+                            border: 'none',
+                            lineHeight: '1.5',
+                            display: 'inline-block',
+                            width: '100%',
+                        },
+                        align: 'center',
+                        verticalAlign: 'middle',
                     },
-                },
                     states: {
                         hover: {
                         enabled: true,
-                        halo: {
-                            size: 0
-                        }
-                    },
+                            halo: {
+                                size: 0
+                            }
+                        },
                         inactive: {
                             opacity: 1
                         }

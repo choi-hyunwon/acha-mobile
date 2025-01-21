@@ -13,40 +13,9 @@
                 <span class="name">김유비</span>님의 최근 3개월 <br><span class="f-point">소비를 분석</span>했어요!
             </p>
             <p class="noti">✽ 유플래너 기본 카테고리만 반영해요</p>
-            <div class="bubble-chart-wrap">
-                <ul class="bubble-chart">
-                    <!-- li의 class는 차드의 순위입니다.
-                        순위별로 원 색상, 폰트 크기, 아이콘 크기 등이 달라집니다. 
-                        6위까지 나누고 하위 4위는 기타로 표기합니다. -->
-                    <li class="first">
-                        <i class="category_A025"></i>
-                        <span>반려동물</span>
-                    </li>
-                    <li class="second">
-                        <i class="category_A009"></i>
-                        <span>마트/편의점</span>
-                    </li>
-                    <li class="third">
-                        <i class="category_A015"></i>
-                        <span>미용</span>
-                    </li>
-                    <li class="fourth">
-                        <i class="category_A020"></i>
-                        <span>용돈/생활비</span>
-                    </li>
-                    <li class="fifth">
-                        <i class="category_A011"></i>
-                        <span>카페/간식</span>
-                    </li>
-                    <li class="sixth">
-                        <i class="category_A003"></i>
-                        <span>보험</span>
-                    </li>
-                    <li class="etc">
-                        <span>그 외 <br>4개</span>
-                    </li>
-                </ul>
-            </div>
+            
+            <div id="highcharts" style="width: 300px; height: 260px; margin: 30px auto 0; background: transparent;"></div>        
+            
             <div class="bar-graph-wrap">
                 <p class="title">카테고리별 지출</p>
                 <ul class="bar-graph-list">
@@ -157,41 +126,176 @@
         </div>
     </div>
 </div>
-<script>
-    // 버블차트 모바일 사이즈 줄어들 때, 비율대로 사이즈 줄어들도록 조절
-    $(document).ready(function(){
-        var windowX = $('body')[0].offsetWidth;
 
-        // 화면 새로고침
-        const target = $('body')[0];
-        var prevWidth = $('body').width();
-        
-        const observer = new ResizeObserver(() => {
-            const curWidth = $('body').width();
-            if(prevWidth !== curWidth) location.reload();
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const chart = Highcharts.chart('highcharts', {
+            chart: {
+                type: 'packedbubble',
+            },
+            title: false,
+            tooltip: false,
+            exporting: {
+                enabled: false
+            },
+            legend: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            plotOptions: {
+                packedbubble: {
+                    minSize: '0%',
+                    maxSize: '130%',
+                    zMin: 0,
+                    zMax: 130,
+                    layoutAlgorithm: {
+                        splitSeries: false,
+                        gravitationalConstant: 0.02
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        useHTML: true,
+                        format: '{point.name}<br><strong style="font-size: 16px">{point.value}%</strong>',
+                        filter: false,
+                        style: {
+                            fontWeight: '600',
+                            textAlign: 'center',
+                            fontFamily: 'NotoSansCJKKR',
+                            textOutline: 'none',
+                            border: 'none',
+                            lineHeight: '1.5',
+                            display: 'inline-block',
+                            width: '100%',
+                        },
+                        align: 'center',
+                        verticalAlign: 'middle',
+                    },
+                    states: {
+                        hover: {
+                        enabled: true,
+                            halo: {
+                                size: 0
+                            }
+                        },
+                        inactive: {
+                            opacity: 1
+                        }
+                    },
+                    marker: {
+                        fillOpacity: 1,
+                        lineWidth: 0,
+                        lineColor: 'transparent',
+                    },
+                }
+            },
+            series: [
+            {
+                name: '1위',
+                color: 'rgba(255, 168, 29, 0.12)',
+                data: [{
+                    name: '반려동물',
+                    value: 120,
+                }],
+                dataLabels: {
+                    style: {
+                        color: '#ffa81d',
+                        fontSize: '15px',
+                    }
+                },
+            }, {
+                name: '2위',
+                color: 'rgba(92, 136, 255, 0.12)',
+                data: [{
+                    name: '마트/편의점',
+                    value: 88,
+                }],
+                dataLabels: {
+                    style: {
+                        color: '#5c88ff',
+                        fontSize: '13px',
+                    }
+                },
+            }, {
+                name: '3위',
+                color: 'rgba(250, 115, 152, 0.12)',
+                data: [{
+                    name: '미용',
+                    value: 80,
+                }],
+                dataLabels: {
+                    style: {
+                        color: '#fa7398',
+                        fontSize: '13px',
+                    }
+                },
+            },{
+                name: '4위',
+                color: 'rgba(130, 110, 255, 0.12)',
+                data: [{
+                    name: '용돈/생활비',
+                    value: 76,
+                }],
+                dataLabels: {
+                    style: {
+                        color: '#826eff',
+                        fontSize: '12px',
+                    }
+                },
+            }, 
+            {
+                name: '5위',
+                color: 'rgba(171, 110, 255, 0.12)',
+                data: [{
+                    name: '카페/간식',
+                    value: 65,
+                }],
+                dataLabels: {
+                    style: {
+                        color: '#ab6eff',
+                        fontSize: '12px',
+                    }
+                },
+            }, {
+                name: '6위',
+                color: 'rgba(248, 112, 94, 0.12)',
+                data: [{
+                    name: '보험',
+                    value: 50,
+                }],
+                dataLabels: {
+                    style: {
+                        color: '#f8705e',
+                        fontSize: '12px',
+                    }
+                },
+            },
+            {
+                name: 'etc',
+                color: 'rgba(163, 157, 177, 0.12)',
+                data: [{
+                    name: '그 외 4개',
+                    value: 35,
+                }],
+                dataLabels: {
+                    style: {
+                        color: '#a39db1',
+                        fontSize: '12px',
+                    }
+                },
+            }],
+            annotations: [{
+                animation: {
+                    defer: 0,
+                    duration: 100,
+                    easing: 'ease-in-out'
+                },
+            }]
         });
-        observer.observe(target);
-        
-        if(300 > windowX){
-            $('.bubble-chart-wrap').css('height', '243px');
-            $('.bubble-chart').css({
-                'position': 'absolute',
-                'left': '50%',
-                'transform': 'scale(0.9) translateX(-50%)',
-                'transform-origin': 'top left'
-            });
-            $('.chart-result-box').css('margin-top', '20px');
-        } else {
-            $('.bubble-chart-wrap').css('height', '');
-            $('.bubble-chart').css({
-                'position': 'relative',
-                'left': '',
-                'transform': '',
-                'transform-origin': ''
-            });
-            $('.chart-result-box').css('margin-top', '30px');
-        }
-    })
+    });
 </script>
 </body>
 </html>

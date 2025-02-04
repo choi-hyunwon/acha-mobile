@@ -3499,7 +3499,7 @@
                     .txt {
                       .name {
                         margin-left: 8px;
-                        width: 100%;
+                        // width: 100%;
                         font-family: var(--font1);
                         font-size: 14px;
                         line-height: 20px;
@@ -3582,7 +3582,7 @@
                     .expire-badge {
                       position: absolute;
                       left: 0;
-                      top: 0;
+                      top: -2px;
                       padding: 1px 6px;
                       height: 18px;
                       background: #eeedf0;
@@ -3594,6 +3594,11 @@
                   }
 
                 }
+              }
+
+              .direct-inform-box{
+                width: 100%;
+                margin: 20px auto 0;
               }
             }
           }

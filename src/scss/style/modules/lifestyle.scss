@@ -125,13 +125,13 @@
             background: var(--color-point);
             padding: 8px 12px;
             border-radius: 6px;
-            margin-top: 11px;
+            margin-top: 10px;
             span {
-                font-size: 14px;
-                line-height: 19px;
+                font-family: var(--font2);
+                font-size: 13px;
+                line-height: 20px;
                 word-break: keep-all;
                 color: var(--white);
-                letter-spacing: -0.3px;
             }
             img {
                 width: 6px;
@@ -163,7 +163,7 @@
                 font-size: 14px;
                 line-height: 20px;
             }
-            span:not(.ad){
+            span:not(.ad, .go-btn){
                 font-family: var(--font2);
                 font-size: 16px;
                 line-height: 24px;

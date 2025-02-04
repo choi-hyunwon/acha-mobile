@@ -9117,12 +9117,14 @@
     font-family: var(--font3);
     font-size: 15px;
     line-height: 24px;
+    word-break: keep-all;
     color: var(--text-01);
   }
   .desc{
     font-family: var(--font1);
     font-size: 13px;
     line-height: 20px;
+    word-break: keep-all;
     color: var(--text-02);
   }
 }

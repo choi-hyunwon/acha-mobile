@@ -9078,3 +9078,51 @@
     object-fit: contain;
   }
 }
+
+.direct-inform-box{
+  width: calc(100% - 40px);
+  padding: 18px 20px;
+  margin: 0 auto 24px;
+  border-radius: 16px;
+  border: 1px solid #efefef;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  .ad{
+    padding: 2px 4px;
+    font-family: var(--font1);
+    font-size: 8px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--white);
+    border-radius: 7px;
+    background-color: #37354e;
+    opacity: 0.2;
+  }
+  .brand{
+    margin-left: 2px;
+    font-family: var(--font1);
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--text-02);
+    vertical-align: middle;
+  }
+  .product{
+    margin: 1px 0;
+    font-family: var(--font3);
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-01);
+  }
+  .desc{
+    font-family: var(--font1);
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--text-02);
+  }
+}

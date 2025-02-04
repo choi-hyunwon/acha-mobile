@@ -41,6 +41,9 @@
             padding-bottom: 0;
             padding-left: 0;
             padding-right: 0;
+            h3{
+                padding-inline: 20px;
+            }
         }
 
         .title{
@@ -95,6 +98,133 @@
             line-height: 22px;
         }
     } 
+    
+    .wide-banner{
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .ad{
+            padding: 2px 4px;
+            font-family: var(--font1);
+            font-size: 8px;
+            text-align: center;
+            color: var(--white);
+            border-radius: 7px;
+            background-color: #37354e;
+            opacity: 0.2;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+        }
+        .go-btn{
+            display: flex;
+            align-items: center;
+            background: var(--color-point);
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-top: 11px;
+            span {
+                font-size: 14px;
+                line-height: 19px;
+                word-break: keep-all;
+                color: var(--white);
+                letter-spacing: -0.3px;
+            }
+            img {
+                width: 6px;
+                height: 16px;
+                filter: invert(1);
+                margin-left: 4px;
+            }
+        }
+        &.has-btn{
+            background: #f4f2ff;
+            p {
+                font-family: var(--font3);
+                font-size: 18px;
+                line-height: 26px;
+            }
+            img:not(.go-btn img) {
+                width: 140px;
+                height: 120px;
+                margin-left: auto;
+            }
+        }
+        &.flat{
+            margin-bottom: 0;
+            padding: 0 14px 0 20px;
+            background: #eaf0fa;
+            p {
+                margin-bottom: 2px;
+                font-family: var(--font1);
+                font-size: 14px;
+                line-height: 20px;
+            }
+            span:not(.ad){
+                font-family: var(--font2);
+                font-size: 16px;
+                line-height: 24px;
+                color: #304ab7;
+            }
+            img {
+                width: 100px;
+                height: 90px;
+                margin-left: auto;
+            }
+        }
+    }
+    .basic-banner-list{
+        margin-bottom: 20px;
+        li + li{
+            margin-top: 12px;
+        }
+    }
+    .basic-banner{
+        width: 100%;
+        padding: 0 14px 0 20px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        span{
+            font-family: var(--font1);
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--text-01);
+        }
+        p{
+            margin-top: 2px;
+            font-family: var(--font2);
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--text-01);
+        }
+        img{
+            width: 100px;
+            height: 90px;
+            margin-left: auto;
+        }
+        &.credit{
+            background-color: #eae8fa;
+            p{
+                color: #8c39d3;
+            }
+        }
+        &.fit{
+            background-color: #e2f2ed;
+            p{
+                color: #0c6441;
+            }
+        }
+        &.best{
+            background-color: #f5ece5;
+            p{
+                color: #c66a0e;
+            }
+        }
+    }
 
     .banner-box{
         width: 100%;
@@ -817,6 +947,15 @@
         }
     }
 
+    .event-card-box{
+        width: 100%;
+        border-radius: 16px;
+        border: solid 1px #efefef;
+        &:has(li:only-child){
+            padding-block: 10px;
+        }
+    }
+
     .event-card-list{
         padding: 0 20px;
         margin-top: 10px;
@@ -825,7 +964,6 @@
         }
         a{
             display: flex;
-            // flex-wrap: wrap;
             align-items: center;
             width: 100%;
         }
@@ -872,6 +1010,22 @@
         }
         .ico{
             margin-left: auto;
+        }
+        &.swiper-container{
+            padding-bottom: 15px;
+            li + li{
+                margin-top: 0 !important;
+            }
+            .swiper-pagination-bullets{
+                bottom: 0;
+            }
+            .swiper-pagination-bullet{
+                width: 7px;
+                height: 7px;
+            }
+            .swiper-pagination-bullet-active{
+                background:#37354e;
+            }
         }
     }
     .ico{
@@ -2794,6 +2948,52 @@
         }
     }
     // 소비 분석 및 카드추천 ///////// 
+
+    .direct-inform-list{
+        margin-block: 20px;
+        li + li{
+            margin-top: 12px;
+        }
+        a{
+            margin-bottom: 0;
+        }
+    }
+    
+    .no-ico-view-btn{
+        width: calc(100% - 40px);
+        padding-block: 13px;
+        margin: 20px auto;
+        border-radius: 6px;
+        border: solid 1px #e2e3e6;
+        display: block;
+        text-align: center;
+        span{
+            font-family: var(--font2);
+            font-size: 13px;
+            line-height: 20px;
+            color: var(--text-02);
+        }
+    }
+
+    .insurance-banner{
+        width: 100%;
+        .pager {
+            width: auto;
+            padding: 2px 6px;
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            left: unset;
+            z-index: 1;
+            background: rgb(55 53 78 / 55%);
+            border-radius: 6px;
+            font-size: 11px;
+            line-height: 15px;
+            font-family: var(--font1);
+            color: var(--white);
+            letter-spacing: -0.8px;
+        }
+    }
 }
 
 /*팝업*/

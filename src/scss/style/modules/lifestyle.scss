@@ -52,9 +52,15 @@
     }
 
     .main-title{
+        width: 100%;
+        padding: 20px;
         display: flex;
         align-items: center;
         gap: 15px;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        background: var(--white);
     }
     .my-point-state{
         display: flex;
@@ -1630,7 +1636,7 @@
         }
         &.main{
             width: 100%;
-            margin: 20px auto 0;
+            margin: 52px auto 0;
         }
     }
     .point-list-box{

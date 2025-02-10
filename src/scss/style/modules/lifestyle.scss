@@ -750,7 +750,7 @@
             width: 100%;
             min-height: 120px;
             border-radius: 20px;
-            padding: 20px 0 20px 18px;
+            padding: 20px 18px;
             margin-top: 20px;
             background: linear-gradient(to right, #ffedfe, #e7d8ff);
             .card-img{
@@ -768,12 +768,13 @@
                     background: transparent;
                 }
             }
+            .item-desc{
+                flex: 1;
+            }
         }
         a{
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
-            row-gap: 15px;
         }
         .num{
             font-size: 22px;
@@ -815,7 +816,8 @@
                 }
             }
             .item-desc{
-                margin-left: 16px;
+                width: 60%;
+                margin-inline: 16px;
             }
             .card-img{
                 margin-left: 0;

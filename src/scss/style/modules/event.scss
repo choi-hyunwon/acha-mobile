@@ -1845,6 +1845,9 @@ input[type=number] {
       line-height: 30px;
       font-family: var(--font2);
     }
+    &:focus{
+      outline: 0;
+    }
   }
   .invite-status{
     display: flex;

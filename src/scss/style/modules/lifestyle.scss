@@ -53,7 +53,8 @@
 
     .main-title{
         width: 100%;
-        padding: 20px;
+        height: 66px;
+        padding: 17px 20px;
         display: flex;
         align-items: center;
         gap: 15px;
@@ -105,13 +106,16 @@
         }
     } 
     
-    .wide-banner{
+    .img-banner{
+        display: block;
         width: 100%;
-        padding: 20px;
+        height: 100%;
         margin-bottom: 20px;
-        display: flex;
-        align-items: center;
         position: relative;
+        img{
+            width: 100%;
+            height: auto;
+        }
         .ad{
             padding: 2px 4px;
             font-family: var(--font1);
@@ -122,64 +126,9 @@
             background-color: #37354e;
             opacity: 0.2;
             position: absolute;
-            top: 4px;
+            // top: 4px;
             right: 4px;
-        }
-        .go-btn{
-            display: flex;
-            align-items: center;
-            background: var(--color-point);
-            padding: 8px 12px;
-            border-radius: 6px;
-            margin-top: 10px;
-            span {
-                font-family: var(--font2);
-                font-size: 13px;
-                line-height: 20px;
-                word-break: keep-all;
-                color: var(--white);
-            }
-            img {
-                width: 6px;
-                height: 16px;
-                filter: invert(1);
-                margin-left: 4px;
-            }
-        }
-        &.has-btn{
-            background: #f4f2ff;
-            p {
-                font-family: var(--font3);
-                font-size: 18px;
-                line-height: 26px;
-            }
-            img:not(.go-btn img) {
-                width: 140px;
-                height: 120px;
-                margin-left: auto;
-            }
-        }
-        &.flat{
-            margin-bottom: 0;
-            padding: 0 14px 0 20px;
-            background: #eaf0fa;
-            p {
-                margin-bottom: 2px;
-                font-family: var(--font1);
-                font-size: 14px;
-                line-height: 20px;
-            }
-            span:not(.ad, .go-btn){
-                font-family: var(--font2);
-                font-size: 16px;
-                line-height: 24px;
-                color: #304ab7;
-            }
-            img {
-                width: 100px;
-                height: 90px;
-                margin-left: auto;
-            }
+            margin-top: 4px;
         }
     }
     .basic-banner-list{
@@ -228,6 +177,70 @@
             background-color: #f5ece5;
             p{
                 color: #c66a0e;
+            }
+        }
+    }
+
+    .life-benefit-list{
+        li{
+            &  + li{
+                margin-top: 20px;
+            }
+        }
+        a{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .icon{
+                width: 60px;
+                height: 60px;
+                padding: 12px;
+                border-radius: 24px;
+                background-color: #f8f9fb;
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 36px;
+                    height: 36px;
+                    margin: 0 auto;
+                }
+                &.check::before{
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-01@2x.png) no-repeat center / cover;
+                }
+                &.friend::before{
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-02@2x.png) no-repeat center / cover;
+                }
+            }
+            strong{
+                margin-bottom: 4px;
+                display: block;
+                font-size: 16px;
+                line-height: 18px;
+                font-family: var(--font2);
+                color: var(--text-01);
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    margin-left: 4px;
+                    background: url(../../img/common/lifestyle/ico-uplanner-point-key@2x.png) no-repeat center / contain;
+                    vertical-align: bottom;
+                }
+            }
+            span{
+                font-size: 14px;
+                line-height: 21px;
+                font-family: var(--font1);
+                color: var(--text-02);
+                word-break: keep-all;
+            }
+            .arrow{
+                margin-left: auto;
+                width: 6px;
+                height: 16px;
+                background: url(../../img/common/ico_arrow_small_nor@2x.png) no-repeat center / cover;
             }
         }
     }
@@ -1364,7 +1377,6 @@
             display: block;
             width: 100%;
             height: 20px;
-    
             position: fixed;
             left: 0;
             bottom: 80px;
@@ -2989,7 +3001,7 @@
             width: auto;
             padding: 2px 6px;
             position: absolute;
-            bottom: 4px;
+            bottom: 24px;
             right: 4px;
             left: unset;
             z-index: 1;

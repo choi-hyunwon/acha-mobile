@@ -2557,9 +2557,20 @@ _ .event-btn-area {
             padding: 20px 0 20px 5px;
 
             .item_title {
+              &:has(.point-badge){
+                display: flex;
+                align-items: center;
+                gap: 4px;
+              }
               .title {
                 font-size: 15px;
                 font-family: var(--font1);
+              }
+              .point-badge{
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background: url(../../img/common/lifestyle/ico-uplanner-point-key@2x.png) no-repeat center / contain;
               }
             }
 

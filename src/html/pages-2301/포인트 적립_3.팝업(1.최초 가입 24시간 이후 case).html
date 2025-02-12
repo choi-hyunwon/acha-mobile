@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal fade modal-inspection event-modal" id="inspectionPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content pt-0">
+			<div class="modal-body py-5">
+				<div class="invite-txt">
+					이미 가입한 분이거나 <br>가입한지 24시간이 지난 분은 <br>초대코드를 입력할 수 없어요
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn-footer single">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    $('#inspectionPopup').modal('show');   // modal show
+</script>
+</body>
+</html>

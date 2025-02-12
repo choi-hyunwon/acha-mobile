@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal event-area">
+        <div class="header">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>초대 코드 입력</h2>
+        </div>
+        <div class="contents event-code">
+            <div class="event-code-wrap">
+                <p class="title">
+                    <span class="f-point">친구에게 받은 <br>초대코드</span>를 입력해주세요
+                </p>
+                <p class="noti">초대코드를 입력하면 <span class="f-point">200포인트</span> 받아요!</p>
+                <div class="code-input-box custom-light">
+                    <label>초대코드 입력</label>
+                    <input title="value" type="text" onkeyup="countCharDelete(this)" placeholder="공유받은 초대코드를 입력해주세요." value="12ABCDEFG123" />
+                </div>
+                <p class="code-noti">✽ 초대코드는 가입 후 24시간 내까지 입력할 수 있어요</p>
+            </div>
+            <!-- toast -->
+			<div class="event-toast">
+				<p>내가 초대한 친구의 코드는 입력할 수 없어요.</p>
+			</div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">포인트 받기</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        function toggleButtonState() {
+            var txt = $('input').val().trim();
+            txt.length > 0 ? $('.btn').removeClass('disabled') : $('.btn').addClass('disabled');
+        }
+
+        $('input').on('input change', function(){
+            toggleButtonState();
+        });
+
+        $('.code-input-box').on('click', '.btn-clear-input', function () {
+            $(this).siblings('input').val('')
+                .siblings('.input-byte').find('._val').text('0');
+            $(this).remove();
+
+            toggleButtonState();
+        });
+
+        toggleButtonState();
+    });
+</script>
+@@include('../include/countCharDelete.html')
+</html>

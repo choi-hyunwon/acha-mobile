@@ -1007,6 +1007,9 @@
             font-family: var(--font1);
             word-break: keep-all;
             color: var(--text-02);
+            .inc{
+                color: #1400ff;
+            }
         }
         .event-benefit{
             font-size: 16px;
@@ -1021,6 +1024,9 @@
             -webkit-line-clamp: 2;
             text-overflow: ellipsis;
             overflow: hidden;
+            .benefit{
+                color: #1400ff;
+            }
         }
         .event-date{
             font-size: 12px;

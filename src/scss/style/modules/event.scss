@@ -1933,7 +1933,7 @@ input[type=number] {
   }
 }
 .event-code{
-  height: calc(100vh - 76px);
+  height: calc(100vh - 156px);
   position: relative;
   .event-code-wrap{
     padding: 0 20px;
@@ -1990,19 +1990,17 @@ input[type=number] {
     font-family: var(--font1);
     color: var(--text-03);
   }
-  .btn-wrap{
+
+  @at-root .btn-wrap{
     width: calc(100% - 40px);
     padding-bottom: 30px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
     .btn.disabled{
       color: var(--white) !important;
     }
   }
-
 }
+
 
 .event-modal{
   .invite-txt{

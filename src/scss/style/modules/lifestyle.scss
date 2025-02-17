@@ -2792,6 +2792,7 @@
             border-radius: 50%;
             background-color: #f5f5fc;
             text-align: center;
+            flex-shrink: 0;
             img{
                 width: calc(100% - 18px);
                 height: 100%;

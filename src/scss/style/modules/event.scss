@@ -1990,14 +1990,14 @@ input[type=number] {
     font-family: var(--font1);
     color: var(--text-03);
   }
+}
 
-  @at-root .btn-wrap{
-    width: calc(100% - 40px);
-    padding-bottom: 30px;
-    margin: 0 auto;
-    .btn.disabled{
-      color: var(--white) !important;
-    }
+.btn-wrap.event-btn{
+  width: calc(100% - 40px);
+  padding-bottom: 30px;
+  margin: 0 auto;
+  .btn.disabled{
+    color: var(--white) !important;
   }
 }
 

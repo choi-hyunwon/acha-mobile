@@ -727,6 +727,60 @@
                     }
                 }
             }
+
+            .card-common-noti{
+                ul + ul{
+                    margin-top: 28px;
+                }
+                li{
+                    font-size: 13px;
+                    line-height: 20px;
+                    font-family: var(--font1);
+                    color: var(--text-02);
+                    word-break: keep-all;
+                    text-indent: -16px;
+                    margin-left: 15px;
+                    & + li{
+                        margin-top: 8px;
+                    }
+                    &:has(ul){
+                        ul{
+                            margin-top: 6px;
+                        }
+                    }
+                }
+                .dot-list{
+                    li{
+                        text-indent: -10px;
+                        margin-left: 11px;
+                        &::before{
+                            content:"";
+                            display: inline-block;
+                            width: 3px;
+                            height: 3px;
+                            border-radius: 50%;
+                            background: var(--text-03);
+                            margin-right: 6px;
+                            margin-bottom: 3px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .common-list{
+                    li{
+                        &::before{
+                            display: none;
+                        }
+                    }
+                }
+                .point{
+                    font-size: 15px;
+                    font-family: var(--font3);
+                    &.sm{
+                        font-size: 12px;
+                    }
+                }
+            }
         }
 
         .card-detail-banner{

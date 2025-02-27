@@ -2020,18 +2020,17 @@
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
                     border-radius: 50%;
-
                     overflow: hidden;
                   }
                 }
 
                 .payment-method {
-                  padding: 3px 8px 4px;
+                  padding: 4px 8px;
                   background: #eeedf0;
                   border-radius: 6px;
                   width: 76px;
                   height: 36px;
-                  display: flex;
+                  display: inline-flex;
                   align-items: center;
                   justify-content: center;
                   
@@ -3353,6 +3352,7 @@
         .info-wrap {
           margin-top: 0;
 
+          // 02.26 개선 이전
           .title {
             font-size: 18px;
             color: var(--text-01);
@@ -3389,7 +3389,6 @@
               transform: translateY(-50%);
             }
           }
-
           .statement {
             position: relative;
             display: flex;
@@ -3411,9 +3410,8 @@
               transform: translateY(-50%);
             }
           }
-
           .info-list {
-            padding: 15px 0;
+            padding: 25px 0 15px;
 
             .item {
               position: relative;
@@ -3578,6 +3576,115 @@
                 height: 16px;
               }
             }
+          }
+
+          // 02.26 개선 이후
+          .title-box{
+            padding: 10px 0;
+            font-size: 19px;
+            line-height: 26px;
+            color: var(--text-01);
+            font-family: var(--font5);
+            display: flex;
+            align-items: center;
+            word-break: keep-all;
+            border-bottom: none;
+
+            .icon {
+              width: 40px;
+              height: 40px;
+            }
+            .img {
+              width: 30px;
+              height: 30px;
+              margin-right: 8px;
+            }
+            img {
+              width: 100%;
+              height: auto;
+            }
+
+            p{
+              margin-right: 5px;
+            }
+
+            i{
+              margin-top: 1px;
+            }
+          }
+          .amount{
+            display: flex;
+            align-items: center;
+            span{
+              font-size: 16px;
+              line-height: 32px;
+              font-family: var(--font1);
+              color: var(--text-03);
+              margin-right: 5px;
+            }
+            strong{
+              line-height: 26px;
+              font-family: var(--font4);
+              margin-right: 2px;
+            }
+            .num{
+              font-size: 28px;
+            }
+            .won{
+              font-size: 22px;
+            }
+            .edit{
+              width: 20px;
+              height: 20px;
+              background: transparent;
+              outline: 0;
+              img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                transform: unset;
+              }
+            }
+          }
+          .edit-tag{
+            width: fit-content;
+            height: 25px;
+            padding: 4px 6px;
+            margin-top: 10px;
+            border-radius: 4px;
+            background-color: #f7f8fc;
+            span{
+              font-size: 11px;
+              line-height: 1.6;
+              font-family: var(--font1);
+              color: #9992a0;
+            }
+          }
+          .statement-box{
+            margin-top: 16px;
+            .statement-btn{
+              background: transparent;
+              &::after{
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 10px;
+                margin: 0 10px;
+                background-color: #e2e3e6;
+              }
+              span{
+                text-decoration: underline;
+                text-underline-offset: 2px;
+              }
+            }
+            p, span{
+              display:inline-block;
+              font-size: 14px;
+              line-height: 20px;
+              font-family: var(--font1);
+              color: var(--text-03);
+            }
+
           }
         }
 

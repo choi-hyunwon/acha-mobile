@@ -6079,6 +6079,80 @@
                 }
             }
         }
+
+        &.category{
+            &.up {
+                transition: 0.5s;
+
+                .modal-slide-content {
+                    height: 228px;
+                    &:has(.title){
+                        height: 300px;
+                    }
+                    animation: modal-sticky-bottom-animation18 0.5s;
+                }
+            }
+
+            &.down {
+                transition: 0.5s;
+
+                .modal-slide-content {
+                    animation: modal-sticky-bottom-animation-out18 0.5s;
+                    height: 0;
+                }
+            }
+
+            .inner {
+                padding: 30px 30px 0;
+                &:not(:has(.title)){
+                    padding: 50px 30px 0 30px;
+                }
+                .title{
+                    padding-bottom: 12px;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-family: var(--font1);
+                    text-align: left;
+                    span{
+                        font-family: var(--font3);
+                    }
+                }
+                .noti{
+                    padding-bottom: 20px;
+                    font-size: 13px;
+                    line-height: 18px;
+                    font-family: var(--font1);
+                    color: #f21730;
+                    text-align: left;
+                    text-indent: -17px;
+                    padding-left: 19px;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 5px;
+                        background: url('../../img/common/ico_caution_red@2x.png') no-repeat center / cover;
+                    }
+                }
+                .desc{
+                    padding: 20px 0 30px;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-family: var(--font1);
+                    border-top: 2px solid var(--text-01);
+                    color: var(--text-01);
+                }
+                .info {
+                    padding-bottom: 50px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-family: var(--font1);
+                    text-align: center;
+                }
+            }
+        }
     }
 
     /*공동관리*/

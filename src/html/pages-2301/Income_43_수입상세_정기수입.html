@@ -12,12 +12,15 @@
             <div class="expenditure-box">
                 <div class="account-detail-wrap pt-0 pb-0">
                     <div class="info-wrap">
+                        <!-- 홈_카테고리 개선 v1.4 개선 반영 사항
+                            .amount, .edit-tag 추가,
+                            .title, .statement, .info-list 수정 -->
                         <div class="title-box">
-                            <div class="img">
-                                <img src="../../img/common/icon/B003.png" alt="아이콘">
-                            </div>
-                            <p>아르바이트 급여</p>
-                            <i class="ico_list_arrow_small"></i>
+                            <img src="../../img/common/icon/B003.png" alt="아이콘">
+                            <a href="#">
+                                <p>아르바이트 급여</p>
+                                <i class="ico_list_arrow_small"></i>
+                            </a>
                         </div>
 
                         <div class="amount">
@@ -29,14 +32,12 @@
                         </div>
 
                         <div class="statement-box">
-                            <button class="statement-btn">
-                                <span>명세서</span>
-                            </button>
-                            <p>수정전 금액 <span class="val">2,500,700</span><span class="won">원</span></p>
+                            <a href="#" class="statement-btn">명세서</a>
+                            <p class="before">수정전 금액 <span class="val">2,500,700</span><span class="won">원</span></p>
                         </div>
 
                         <ul class="info-list">
-                           <li class="item">
+                            <li class="item">
                                 <span class="tit">카테고리</span>
                                 <span class="val">급여<i class="ico_list_arrow_small"></i></span>
                             </li>

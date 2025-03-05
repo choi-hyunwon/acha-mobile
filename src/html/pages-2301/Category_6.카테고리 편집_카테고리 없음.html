@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="header _sticky">
+        <a href="#" class="sprite btn_back"></a>
+        <h2>카테고리 편집</h2>
+        <a href="#" class="btn-more"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="더보기 버튼"></a>
+    </div>
+    <div class="contents expenditure">
+        <div class="category-edit-wrap">
+            <div class="toggle-btn-group">
+                <button class="active">수입</button>
+                <button>지출</button>
+            </div>
+        </div>
+        <div class="category-list-empty">
+            <img src="../../img/common/img_connect_nodata@2x.png" alt="데이터없음">
+            <div class="btn-wrap category">
+                <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">카테고리 추가하기</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            // 플로팅 버튼있을 때, 카테고리 목록 길이가 화면 길이보다 짧으면 강제로 스크롤 생기도록 함
+            const wh = window.innerHeight;
+            let contents = $('.category-edit-wrap')[0].clientHeight;
+            if(wh > contents && $('.btn-floating').length){
+                $('.expenditure').addClass('pb-60');
+            }
+            
+            $('.toggle-btn-group button').click(function (e) {
+                if($(this).siblings().hasClass('active')){
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+                }
+            })
+        })
+    </script>
+</div>
+</body>
+</html>

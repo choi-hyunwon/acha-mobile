@@ -6089,6 +6089,9 @@
                     &:has(.title){
                         height: 300px;
                     }
+                    &:not(:has(.noti)){
+                        height: 250px;
+                    }
                     animation: modal-sticky-bottom-animation18 0.5s;
                 }
             }
@@ -6106,6 +6109,11 @@
                 padding: 30px 30px 0;
                 &:not(:has(.title)){
                     padding: 50px 30px 0 30px;
+                }
+                &:not(:has(.noti)){
+                    .title{
+                        padding-bottom: 20px;
+                    }
                 }
                 .title{
                     padding-bottom: 12px;

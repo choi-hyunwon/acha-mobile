@@ -19,16 +19,14 @@
                 <span class="start">1.25</span>~<span class="end">2.24</span>
             </div>
             <div class="total-amount">
-                <p class="title">총 정기지출</p>
+                <p class="title">총 할부지출 <a href="#"><img src="../../img/common/ico_tooltip_big@2x.png" width="16"
+                            alt="tooltip-large"></a></p>
                 <span class="amount">0</span>
                 <p class="expected">지출 예정 <span>0</span><span>원</span></p>
-                <div class="util">
-                    <a href=""><img src="../../img/common/ico_top_option_menu_nor@2x.png" width="26" alt="유틸 더보기"></a>
-                </div>
             </div>
             <div class="expenditure-tab _expenditureTab">
                 <ul class="clearfix">
-                    <li><a href="#">일자</a></li>
+                    <li><a href="#">할부내역</a></li>
                     <li class="active"><a href="#">카테고리</a></li>
                 </ul>
             </div>
@@ -45,13 +43,13 @@
                         </label>
                     </p>
                 </div>
-                <div class="empty" style="height: calc(100vh - 244px)">
+                <div class="empty" style="height: calc(100vh - 247px);">
                     <div class="img"><img src="../../img/common/ico-error-page@2x.png" alt=""></div>
                     <p>지출 내역이 없습니다 🙁</p>
                 </div>
             </div>
-            <div class="btn-wrap fixed-bottom active padding-default">
-                <a class="btn btn-big btn-purple-bg btn-block" href="#">정기지출 한번에 불러오기</a>
+            <div class="btn-area fixed-bottom">
+                <a class="btn btn-big btn-purple-bg btn-block" href="#">카드할부 한번에 불러오기</a>
             </div>
         </div>
 
@@ -61,6 +59,7 @@
         $('._expenditureTab li a').on('click', function () {
             $(this).parent().addClass('active').siblings().removeClass('active')
         })
+
     </script>
 
 </body>

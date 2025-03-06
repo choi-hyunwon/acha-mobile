@@ -5978,7 +5978,7 @@
       & + .custom-light{
         margin-top: 30px;
       }
-      &:has(.ico){
+      &:has(.icon){
         display: flex;
         align-items: center;  
         input{
@@ -6013,16 +6013,11 @@
       right: 42px;
       background: url('../../img/common/ico_input_delete@2x.png') no-repeat center / contain;
     }
-    .ico{
+    .icon{
       width: 50px;
       height: 50px;
-      outline: 0;
-      background: url(../../img/common/icon/ic-cate-select@2x.png) no-repeat center / contain;
-      &.C007{
-        background: url(../../img/common/icon/C007.png) no-repeat center / contain;
-      }
-      &.C025{
-        background: url(../../img/common/icon/C025.png) no-repeat center / contain;
+      &.unselect{
+        background-image: url(../../img/common/icon/ic-cate-select@2x.png);
       }
     }
     .btn-wrap{

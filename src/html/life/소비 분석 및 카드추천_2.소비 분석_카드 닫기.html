@@ -6,10 +6,13 @@
     <div class="header _sticky">
         <a href="#" class="sprite btn_back"></a>
     </div>
-    <div class="contents lifestyle pb-0">
+    <div class="contents chatgpt lifestyle pb-0">
         <div class="spend-analysis-wrap">
             <p class="title">
                 <span class="name">김유비</span>님의 최근 3개월 <br><span class="f-point">소비를 분석</span>했어요!
+                <a href="#" data-toggle="tooltip" class="ico-tooltip">
+                    <img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘" />
+                </a>
             </p>
             <p class="noti">✽ 유플래너 기본 카테고리만 반영해요</p>
 
@@ -67,158 +70,293 @@
             </p>
             <div class="spend-analysis-box">
                 <div class="recommend-category">
-                    <p class="category-label">
-                        <span>반려동물</span>
-                        <span>쇼핑</span>
-                        <span>외식</span>
-                    </p>
+                    <div>
+                        <p class="category-label">
+                            <span>반려동물</span>
+                            <span>쇼핑</span>
+                            <span>외식</span>
+                        </p>
+                        <p class="monthly-total f-point">월 평균 <span class="amount">25,140,500</span>원 사용</p>
+                    </div>
                     <ul>
                         <li class="category_A025"></li>
                         <li class="category_A014"></li>
                         <li class="category_A010"></li>
                     </ul>
                 </div>
-                <ul class="recommend-card-list">
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img_sample_cardlist_05@2x.png" alt="카드이미지">
+                <p class="sort">전월 실적순</p>
+                <div class="filter-card-list">
+                    <ul>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_01@2x.png" alt="img_sample_cardlist_01">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>BC카드</span>
+                                        <p>BC 바로 페이백 플러스</p>
+                                    </div>
+                                    <!-- 혜택 카테고리 2개 초과인 케이스 : (혜택1) + (혜택2) + 외 N개 로 표기 -->
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>병원의료</p>
+                                        <p class="extra-num">외 3개</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-info">
-                                <span>국민카드</span>
-                                <p>KB국민 톡톡 my point</p>
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>해외겸용 20,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_02@2x.png" alt="img_sample_cardlist_02">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>현대카드</span>
+                                        <p>현대카드M2 Boost</p>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>해외</p>
+                                        <p class="extra-num">외 11개</p>
+                                    </div>
+                                    <a href="#" class="event-tag">
+                                        <span>최대 10만원 이벤트</span>
+                                    </a>
+                                </div>
                             </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img-sample-popular-card-02@2x.png" alt="카드이미지">
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_03@2x.png" alt="img_sample_cardlist_03">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>현대카드</span>
+                                        <p>네이버 현대카드</p>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>병원의료</p>
+                                    </div>
+                                    <a href="#" class="event-tag">
+                                        <span>최대 8만원 이벤트</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="card-info">
-                                <span>신한카드</span>
-                                <p>신한카드 Mr.Life</p>
-                                <p class="tag"># 최대 10만원 이벤트</p>
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>해외겸용 20,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_04@2x.png" alt="img_sample_cardlist_04">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>현대카드</span>
+                                        <p>현대카드Z work</p>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>간편결제</p>
+                                        <p>병원의료</p>
+                                        <p class="extra-num">외 2개</p>
+                                    </div>
+                                </div>
                             </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img-sample-popular-card-04@2x.png" alt="카드이미지">
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>해외겸용 20,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_01@2x.png" alt="img_sample_cardlist_01">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>BC카드</span>
+                                        <p>BC 바로 페이백 플러스</p>
+                                    </div>
+                                    <!-- 혜택 카테고리 2개 초과인 케이스 : (혜택1) + (혜택2) + 외 N개 로 표기 -->
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>병원의료</p>
+                                        <p class="extra-num">외 3개</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-info">
-                                <span>국민카드</span>
-                                <p>KB국민 My WE:SH 카드</p>
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>해외겸용 20,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_02@2x.png" alt="img_sample_cardlist_02">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>현대카드</span>
+                                        <p>현대카드M2 Boost</p>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>해외</p>
+                                        <p class="extra-num">외 11개</p>
+                                    </div>
+                                    <a href="#" class="event-tag">
+                                        <span>최대 10만원 이벤트</span>
+                                    </a>
+                                </div>
                             </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img-sample-popular-card-03@2x.png" alt="카드이미지">
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_03@2x.png" alt="img_sample_cardlist_03">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>현대카드</span>
+                                        <p>네이버 현대카드</p>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>병원의료</p>
+                                    </div>
+                                    <a href="#" class="event-tag">
+                                        <span>최대 8만원 이벤트</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="card-info">
-                                <span>삼성카드</span>
-                                <p>삼성카드 & MILEAGE Platinum Card Edition2</p>
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>해외겸용 20,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_04@2x.png" alt="img_sample_cardlist_04">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>현대카드</span>
+                                        <p>현대카드Z work</p>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>간편결제</p>
+                                        <p>병원의료</p>
+                                        <p class="extra-num">외 2개</p>
+                                    </div>
+                                </div>
                             </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img_sample_cardlist_02@2x.png" alt="카드이미지">
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>해외겸용 20,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_01@2x.png" alt="img_sample_cardlist_01">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>BC카드</span>
+                                        <p>BC 바로 페이백 플러스</p>
+                                    </div>
+                                    <!-- 혜택 카테고리 2개 초과인 케이스 : (혜택1) + (혜택2) + 외 N개 로 표기 -->
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>병원의료</p>
+                                        <p class="extra-num">외 3개</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-info">
-                                <span>현대카드</span>
-                                <p>현대카드M2 Boost</p>
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>해외겸용 20,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_02@2x.png" alt="img_sample_cardlist_02">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>현대카드</span>
+                                        <p>현대카드M2 Boost</p>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>해외</p>
+                                        <p class="extra-num">외 11개</p>
+                                    </div>
+                                </div>
                             </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img-sample-popular-card-09@2x.png" alt="카드이미지">
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="card-detail">
+                                <div class="card-detail-img">
+                                    <img src="../../img/@temp/img_sample_cardlist_03@2x.png" alt="img_sample_cardlist_03">
+                                </div>
+                                <div class="card-detail-desc">
+                                    <div class="card-title">
+                                        <span>현대카드</span>
+                                        <p>네이버 현대카드</p>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>푸드</p>
+                                        <p>병원의료</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-info">
-                                <span>현대카드</span>
-                                <p>현대카드Z work</p>
-                            </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img-sample-popular-card-10@2x.png" alt="카드이미지">
-                            </div>
-                            <div class="card-info">
-                                <span>신한카드</span>
-                                <p>신한카드 Deep Making</p>
-                            </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img-sample-popular-card-02@2x.png" alt="카드이미지">
-                            </div>
-                            <div class="card-info">
-                                <span>신한카드</span>
-                                <p>신한카드 Mr.Life</p>
-                            </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img-sample-popular-card-04@2x.png" alt="카드이미지">
-                            </div>
-                            <div class="card-info">
-                                <span>국민카드</span>
-                                <p>KB국민 My WE:SH 카드</p>
-                            </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img-sample-popular-card-03@2x.png" alt="카드이미지">
-                            </div>
-                            <div class="card-info">
-                                <span>삼성카드</span>
-                                <p>삼성카드 & MILEAGE Platinum Card Edition2</p>
-                            </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="card-img">
-                                <img src="../../img/@temp/img_sample_cardlist_02@2x.png" alt="카드이미지">
-                            </div>
-                            <div class="card-info">
-                                <span>현대카드</span>
-                                <p>현대카드M2 Boost</p>
-                            </div>
-                            <i class="sprite icon ico_arrow_small_nor"></i>
-                        </a>
-                    </li>
-                </ul>
-                <button class="card-more-btn">
-                    <span class="cur">11</span> / <span class="total">11</span>
-                    <!-- 카드 리스트 닫기기 버튼 -->
-                    <i class="ico-arrow-up"></i>
-                </button>
+                            <ul class="card-benefit">
+                                <li>연회비 국내용 10,000원</li>
+                                <li>해외겸용 20,000원</li>
+                                <li>전월실적 50만원 이상</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <button class="card-more-btn">
+                <span class="cur">11</span> / <span class="total">11</span>
+                <!-- 카드 리스트 닫기기 버튼 -->
+                <i class="ico-arrow-up"></i>
+            </button>
             <a href="#" class="btn btn-big primary-color analysis-btn">
                 맞춤 카드 더보기
             </a>

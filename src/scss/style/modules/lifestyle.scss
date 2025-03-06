@@ -2341,6 +2341,17 @@
                 margin-top: 20px;
             }
         }
+        .ico-tooltip{
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-left: 2px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
         .noti{
             margin-top: 12px;
             font-family: var(--font1);
@@ -2702,6 +2713,12 @@
     .spend-analysis-box{
         width: 100%;
         margin-top: 40px;
+        .filter-card-list{
+            padding: 0;
+        }
+        & + .analysis-btn{
+            margin-top: 10px;
+        }
     }
     .recommend-category{
         width: 100%;
@@ -2753,6 +2770,16 @@
                 }
             }
         }
+        .monthly-total{
+            margin-top: 10px;
+            font-family: var(--font2);
+            font-size: 14px;
+            line-height: 20px;
+            span{
+                font-family: var(--font7);
+                font-weight: normal;
+            }
+        }
         ul{
             min-width: 115px;
             margin-left: auto;
@@ -2783,6 +2810,22 @@
                     z-index: 1;
                 }
             }
+        }
+    }
+    .sort{
+        margin-bottom: 10px;
+        font-family: var(--font1);
+        font-size: 12px;
+        line-height: 20px;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            margin-bottom: 3px;
+            margin-right: 5px;
+            background-color: var(--text-02);
         }
     }
     .recommend-card-list{

@@ -6,77 +6,62 @@
     <div class="wrap renewal">
         <div class="header _sticky">
             <a href="#" class="sprite btn_back"></a>
-            <h2>상세내역</h2>
+            <h2>지출예정 상세</h2>
             <div class="sum-area"><a href="#" class="delete">삭제</a></div>
         </div>
         <div class="contents expenditure">
             <div class="expenditure-box">
                 <div class="account-detail-wrap pt-0 pb-0">
                     <div class="info-wrap">
-                        <div class="title">
-                            <span class="img">
-                                <img src="../../img/@temp/ci_uribank@2x.png" class="img-ci" alt="우리은행 로고">
-                            </span>
-                            생명보험
-                            <i class="ico_list_arrow_large"></i>
-                        </div>
-                        <ul class="info-list">
-                            <li class="item">
-                                <span class="tit">예정 금액</span>
-                                <span class="val">13,100<span>원</span><i class="ico_list_arrow_small"></i></span>
-                            </li>
-                            <li class="item">
-                                <span class="tit">지출 예정일</span>
-                                <span class="val error">2022년 4월 5일(지연)</span>
-                            </li>
-                            <li class="item">
-                                <span class="tit">지출 수단</span>
-                                <span class="val">우리 SUPER 주거래 통장<br>10023345555</span>
-                            </li>
-                            <li class="item">
-                                <span class="tit">지출 분류</span>
-                                <span class="val">정기지출 예정</span>
-                            </li>
-                            <li class="item">
-                                <span class="tit">카테고리</span>
-                                <span class="val">보험<i class="ico_list_arrow_small"></i></span>
-                            </li>
-                            <li class="item">
-                                <span class="tit">가계부 내역 포함</span>
-                                <span class="val">
-                                    <span class="custom-switch custom-switch-relative">
-                                        <input type="checkbox" class="custom-control-input" id="switch1"
-                                            checked="checked">
-                                        <label class="custom-control-label" for="switch1"></label>
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="item item-column">
-                                <span class="tit">메모</span>
-                                @@include('../include/varMemoPlaceholder.html')
-                            </li>
-                        </ul>
+                        <!-- 홈_카테고리 개선 v1.4 개선 반영 사항
+                            .amount, .edit-tag 추가,
+                            .title, .statement, .info-list 수정 -->
+                            <div class="title-box">
+                                <img src="../../img/common/icon/A003.png" alt="아이콘">
+                                <a href="#">
+                                    <p>생명보험</p>
+                                    <i class="ico_list_arrow_small"></i>
+                                </a>
+                            </div>
+    
+                            <div class="amount">
+                                <span>예정</span>
+                                <strong class="num">50,000</strong>
+                                <strong class="won">원</strong>
+                                <button class="edit">
+                                    <img src="../../img/common/ic-my-register-gray@2x.png" alt="편집아이콘">
+                                </button>
+                            </div>
 
+                            <ul class="info-list">
+                                <li class="item">
+                                    <span class="tit">카테고리</span>
+                                    <span class="val">쇼핑<i class="ico_list_arrow_small"></i></span>
+                                </li>
+                                <li class="item">
+                                    <span class="tit">지출 예정일</span>
+                                    <span class="val">2024년 6월 25일<span class="f-point">(지연)</span></span>
+                                </li>
+                                <li class="item">
+                                    <span class="tit">지출 수단</span>
+                                    <span class="val">삼성페이 삼성카드 taptap</span>
+                                </li>
+                                <li class="item">
+                                    <span class="tit">지출 분류</span>
+                                    <span class="val">정기지출 예정</span>
+                                </li>
+                                <li class="item btn-group">
+                                    <a href="#">최근 거래 보기</a>
+                                    <a href="#">지출스케쥴</a>
+                                </li>
+                                <li class="item item-column">
+                                    <span class="tit">메모</span>
+                                    @@include('../include/varMemoPlaceholder.html')
+                                </li>
+                            </ul>
                     </div>
                 </div>
-
-                <div class="divider"></div>
-
-                <div class="link-type">
-                    <a href="#">
-                        <span>지출 스케쥴</span>
-                        <i class="ico_list_arrow_small"></i>
-                    </a>
-                </div>
             </div>
-            <div class="regist-story">
-                <a href="#">
-                    <span class="tit">스토리 등록하기</span>
-                    <span class="desc">기억하고 싶은 일을 이야기로 등록하세요 😀</span>
-                    <span class="btn-more"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="더보기 버튼"></span>
-                </a>
-            </div>
-
         </div>
     </div>
     <script>

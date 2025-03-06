@@ -6,42 +6,50 @@
     <div class="wrap renewal">
         <div class="header _sticky">
             <a href="#" class="sprite btn_back"></a>
-            <h2>상세내역</h2>
+            <h2>지출상세</h2>
             <div class="sum-area">
-                <a href="#" class="delete">수정</a>
+                <a href="#" class="delete">삭제</a>
             </div>
         </div>
         <div class="contents expenditure">
             <div class="expenditure-box">
                 <div class="account-detail-wrap pt-0 pb-0">
                     <div class="info-wrap">
-                        <div class="title">
-                            <span class="img">
-                                <i class="icon icon_cate_cloth"></i>
-                            </span>
-                            모임 정산
-                            <a href="#" class="icon-edit"></a>
+                        <!-- 홈_카테고리 개선 v1.4 개선 반영 사항
+                        .amount, .edit-tag 추가,
+                        .title, .statement, .info-list 수정 -->
+                        <div class="title-box">
+                            <img src="../../img/common/icon/A021.png" alt="아이콘">
+                            <a href="#">
+                                <p>모임정산</p>
+                                <i class="ico_list_arrow_small"></i>
+                            </a>
+                        </div>  
+
+                        <div class="amount">
+                            <strong class="num">1,000,000</strong>
+                            <strong class="won">원</strong>
+                            <button class="edit">
+                                <img src="../../img/common/ic-my-register-gray@2x.png" alt="편집아이콘">
+                            </button>
                         </div>
+
                         <ul class="info-list">
                             <li class="item">
-                                <span class="tit">예정 금액</span>
-                                <span class="val">1,000,000<span>원</span></span>
+                                <span class="tit">카테고리</span>
+                                <span class="val">쇼핑<i class="ico_list_arrow_small"></i></span>
                             </li>
                             <li class="item">
-                                <span class="tit">지출 예정일</span>
-                                <span class="val">2022년 4월 5일 11:29</span>
+                                <span class="tit">지출 일시</span>
+                                <span class="val">2024년 6월 25일 09:10<i class="ico_list_arrow_small"></i></span>
                             </li>
                             <li class="item">
                                 <span class="tit">지출 수단</span>
                                 <span class="val">현금</span>
                             </li>
                             <li class="item">
-                                <span class="tit">거래 분류</span>
+                                <span class="tit">지출 분류</span>
                                 <span class="val">변동지출<i class="ico_list_arrow_small"></i></span>
-                            </li>
-                            <li class="item">
-                                <span class="tit">카테고리</span>
-                                <span class="val">모임<i class="ico_list_arrow_small"></i></span>
                             </li>
                             <li class="item">
                                 <span class="tit">가계부 내역 포함</span>
@@ -61,7 +69,10 @@
                     </div>
                 </div>
             </div>
-            <div class="regist-story">
+
+            <div class="divider"></div>
+
+            <div class="regist-story mt-30">
                 <a href="#">
                     <span class="tit">스토리 등록하기</span>
                     <span class="desc">기억하고 싶은 일을 이야기로 등록하세요 😀</span>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap _btnSlideOpen"></div>
+    <div class="modal-slide modal-expenditure memo-input _modalSlide autoHeight">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner pb-0">
+                <div class="title">거래명 수정</div>
+                <div class="custom-light">
+                    <div class="textarea-label">
+                        <textarea name="거래명메모" id="val-textarea" class="textarea _focus" maxlength="20"
+                            onkeyup="countCharDelete(this,'_val')" placeholder="거래명을 입력해주세요" rows="1">지에스25 대륭포스트타워8차점</textarea>
+                        <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">확인</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-slide-backdrop"></div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(function () {
+                    document.getElementsByClassName('_modalSlide')[0].style.display = 'block';
+                }, 500);
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn');
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(function () {
+                    document.getElementsByClassName('_modalSlide')[0].style.display = 'none';
+                }, 1000);
+                $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn');
+            });
+
+            btnSlideOpen.trigger('click');
+        });
+
+        if($textarea.defaultValue || $textarea.innerHTML){
+            if(window.innerWidth > 375) {
+                $textarea.setAttribute('rows', 1);
+            } else if(window.innerWidth <= 375) {
+                if($textarea.defaultValue.length >= 20 || $textarea.innerHTML.length >= 20) {
+                    $textarea.setAttribute('rows', 2);
+                } else {
+                    $textarea.setAttribute('rows', 1);
+                }
+            } else {
+                $textarea.setAttribute('rows', 2);
+            }
+        }
+
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector('.textarea');
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
+        };
+    </script>
+
+    @@include('../include/countCharDelete.html')
+</body>
+
+</html>

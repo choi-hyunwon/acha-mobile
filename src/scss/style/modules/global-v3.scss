@@ -35,20 +35,8 @@
     padding-top: 10px !important;
   }
 
-  .pt-20 {
-    padding-top: 20px !important;
-  }
-
   .pt-12{
     padding-top: 12px !important;
-  }
-
-  .pb-10 {
-    padding-bottom: 10px !important;
-  }
-
-  .pb-15 {
-    padding-bottom: 15px !important;
   }
 
   .pt-20 {
@@ -59,8 +47,16 @@
     padding-top: 66px !important;
   }
 
+  .pb-10 {
+    padding-bottom: 10px !important;
+  }
+
   .pb-12{
     padding-bottom: 12px !important;
+  }
+
+  .pb-15 {
+    padding-bottom: 15px !important;
   }
 
   .pb-20 {
@@ -77,6 +73,10 @@
 
   .pb-60 {
     padding-bottom: 60px !important;
+  }
+
+  .pb-80 {
+    padding-bottom: 80px !important;
   }
 
   .pb-100 {
@@ -930,6 +930,209 @@
 
   &.icon_direct_input {
     background-image: url(../../img/common/expenditure/icon-category/ic_direct_input_big@2x.png);
+  }
+
+  /**
+    홈_카테고리 개선 v1.4 개선
+    신규 아이콘
+  */
+  &.A001 {
+    background-image: url(../../img/common/icon/A001.png);
+  }
+  &.A002 {
+    background-image: url(../../img/common/icon/A002.png);
+  }
+  &.A003 {
+    background-image: url(../../img/common/icon/A003.png);
+  }
+  &.A004 {
+    background-image: url(../../img/common/icon/A004.png);
+  }
+  &.A005 {
+    background-image: url(../../img/common/icon/A005.png);
+  }
+  &.A006 {
+    background-image: url(../../img/common/icon/A006.png);
+  }
+  &.A007 {
+    background-image: url(../../img/common/icon/A007.png);
+  }
+  &.A008 {
+    background-image: url(../../img/common/icon/A008.png);
+  }
+  &.A009 {
+    background-image: url(../../img/common/icon/A009.png);
+  }
+  &.A010 {
+    background-image: url(../../img/common/icon/A010.png);
+  }
+  &.A011 {
+    background-image: url(../../img/common/icon/A011.png);
+  }
+  &.A012 {
+    background-image: url(../../img/common/icon/A012.png);
+  }
+  &.A013 {
+    background-image: url(../../img/common/icon/A013.png);
+  }
+  &.A014 {
+    background-image: url(../../img/common/icon/A014.png);
+  }
+  &.A015 {
+    background-image: url(../../img/common/icon/A015.png);
+  }
+  &.A016 {
+    background-image: url(../../img/common/icon/A016.png);
+  }
+  &.A017 {
+    background-image: url(../../img/common/icon/A017.png);
+  }
+  &.A018 {
+    background-image: url(../../img/common/icon/A018.png);
+  }
+  &.A019 {
+    background-image: url(../../img/common/icon/A019.png);
+  }
+  &.A020 {
+    background-image: url(../../img/common/icon/A020.png);
+  }
+  &.A021 {
+    background-image: url(../../img/common/icon/A021.png);
+  }
+  &.A022 {
+    background-image: url(../../img/common/icon/A022.png);
+  }
+  &.A023 {
+    background-image: url(../../img/common/icon/A023.png);
+  }
+  &.A024 {
+    background-image: url(../../img/common/icon/A024.png);
+  }
+  &.A025 {
+    background-image: url(../../img/common/icon/A025.png);
+  }
+  &.A026 {
+    background-image: url(../../img/common/icon/A026.png);
+  }
+  &.A027 {
+    background-image: url(../../img/common/icon/A027.png);
+  }
+  &.A028 {
+    background-image: url(../../img/common/icon/A028.png);
+  }
+  &.A029 {
+    background-image: url(../../img/common/icon/A029.png);
+  }
+  &.A999 {
+    background-image: url(../../img/common/icon/A999.png);
+  }
+  &.B001 {
+    background-image: url(../../img/common/icon/B001.png);
+  }
+  &.B002 {
+    background-image: url(../../img/common/icon/B002.png);
+  }
+  &.B003 {
+    background-image: url(../../img/common/icon/B003.png);
+  }
+  &.B004 {
+    background-image: url(../../img/common/icon/B004.png);
+  }
+  &.B005 {
+    background-image: url(../../img/common/icon/B005.png);
+  }
+  &.B006 {
+    background-image: url(../../img/common/icon/B006.png);
+  }
+  &.B007 {
+    background-image: url(../../img/common/icon/B007.png);
+  }
+  &.B008 {
+    background-image: url(../../img/common/icon/B008.png);
+  }
+  &.C001 {
+    background-image: url(../../img/common/icon/C001.png);
+  }
+  &.C002 {
+    background-image: url(../../img/common/icon/C002.png);
+  }
+  &.C003 {
+    background-image: url(../../img/common/icon/C003.png);
+  }
+  &.C004 {
+    background-image: url(../../img/common/icon/C004.png);
+  }
+  &.C005 {
+    background-image: url(../../img/common/icon/C005.png);
+  }
+  &.C006 {
+    background-image: url(../../img/common/icon/C006.png);
+  }
+  &.C007 {
+    background-image: url(../../img/common/icon/C007.png);
+  }
+  &.C008 {
+    background-image: url(../../img/common/icon/C008.png);
+  }
+  &.C009 {
+    background-image: url(../../img/common/icon/C009.png);
+  }
+  &.C010 {
+    background-image: url(../../img/common/icon/C010.png);
+  }
+  &.C011 {
+    background-image: url(../../img/common/icon/C011.png);
+  }
+  &.C012 {
+    background-image: url(../../img/common/icon/C012.png);
+  }
+  &.C013 {
+    background-image: url(../../img/common/icon/C013.png);
+  }
+  &.C014 {
+    background-image: url(../../img/common/icon/C014.png);
+  }
+  &.C015 {
+    background-image: url(../../img/common/icon/C015.png);
+  }
+  &.C016 {
+    background-image: url(../../img/common/icon/C016.png);
+  }
+  &.C017 {
+    background-image: url(../../img/common/icon/C017.png);
+  }
+  &.C018 {
+    background-image: url(../../img/common/icon/C018.png);
+  }
+  &.C019 {
+    background-image: url(../../img/common/icon/C019.png);
+  }
+  &.C020 {
+    background-image: url(../../img/common/icon/C020.png);
+  }
+  &.C021 {
+    background-image: url(../../img/common/icon/C021.png);
+  }
+  &.C022 {
+    background-image: url(../../img/common/icon/C022.png);
+  }
+  &.C023 {
+    background-image: url(../../img/common/icon/C023.png);
+  }
+  &.C024 {
+    background-image: url(../../img/common/icon/C024.png);
+  }
+  &.C025 {
+    background-image: url(../../img/common/icon/C025.png);
+  }
+  &.C026 {
+    background-image: url(../../img/common/icon/C026.png);
+  }
+  &.C027 {
+    background-image: url(../../img/common/icon/C027.png);
+  }
+  &.C028 {
+    background-image: url(../../img/common/icon/C028.png);
   }
 }
 

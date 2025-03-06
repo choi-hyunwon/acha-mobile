@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2>지출상세</h2>
+        </div>
+        <div class="contents expenditure">
+            <div class="expenditure-box">
+                <div class="account-detail-wrap pt-0 pb-0">
+                    <div class="info-wrap">
+                        <!-- 홈_카테고리 개선 v1.4 개선 반영 사항
+                            .amount, .edit-tag 추가,
+                            .title, .statement, .info-list 수정 -->
+                        <div class="title-box">
+                            <img src="../../img/common/icon/A014.png" alt="아이콘">
+                            <a href="#">
+                                <p>백화점 구로점</p>
+                                <i class="ico_list_arrow_small"></i>
+                            </a>
+                        </div>
+
+                        <div class="amount">
+                            <strong class="num">50,000</strong>
+                            <strong class="won">원</strong>
+                            <button class="edit">
+                                <img src="../../img/common/ic-my-register-gray@2x.png" alt="편집아이콘">
+                            </button>
+                        </div>
+
+                        <div class="statement-box">
+                            <a href="#" class="statement-btn">명세서</a>
+                            <p class="before">수정전 금액 <span class="val">5,700</span><span class="won">원</span></p>
+                        </div>
+
+                        <ul class="info-list">
+                            <li class="item">
+                                <span class="tit">카테고리</span>
+                                <span class="val">쇼핑<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 일시</span>
+                                <span class="val">2024년 6월 25일 11:25</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 수단</span>
+                                <span class="val">삼성페이 삼성카드 taptap</span>
+                            </li>
+                            <li class="item">
+                                <span class="tit">지출 분류</span>
+                                <span class="val">정기지출<i class="ico_list_arrow_small"></i></span>
+                            </li>
+                            <li class="item btn-group">
+                                <a href="#">최근 거래 보기</a>
+                                <a href="#">지출스케쥴</a>
+                            </li>
+                            <li class="item">
+                                <span class="tit">가계부 내역 포함</span>
+                                <span class="val">
+                                    <span class="custom-switch custom-switch-relative">
+                                        <input type="checkbox" class="custom-control-input" id="switch1"
+                                            checked="checked">
+                                        <label class="custom-control-label" for="switch1"></label>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="item item-column">
+                                <span class="tit">메모</span>
+                                @@include('../include/varMemoPlaceholder.html')
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="regist-story mt-30">
+                <a href="#">
+                    <span class="tit">스토리 등록하기</span>
+                    <span class="desc">기억하고 싶은 일을 이야기로 등록하세요 😀</span>
+                    <span class="btn-more"><img src="../../img/common/ico_top_add_b_nor@2x.png" alt="더보기 버튼"></span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- 홈_카테고리 개선 v1.4 개선 반영 사항
+            카테고리 변경 리스트 추가 -->
+        <div class="category-edit-box">
+            <div class="category-edit-header">
+                <span>카테고리 변경</span>
+                <button class="edit">편집</button>
+                <button class="close"><img src="../../img/common/btn-popup-close.svg" alt="닫기버튼"></button>
+            </div>
+            <ul class="category-edit-list">
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/A001.png" alt="대출아이콘">
+                        <span>대출</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A002.png" alt="저축/투자아이콘">
+                        <span>저축/투자</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A003.png" alt="보험아이콘">
+                        <span>보험</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A004.png" alt="주거/통신아이콘">
+                        <span>주거/통신</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/A005.png" alt="구독아이콘">
+                        <span>구독</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A006.png" alt="교육아이콘">
+                        <span>교육</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A007.png" alt="세금아이콘">
+                        <span>세금</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A008.png" alt="기부/후원아이콘">
+                        <span>기부/후원</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/A009.png" alt="마트/편의점아이콘">
+                        <span>마트/편의점</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A010.png" alt="외식아이콘">
+                        <span>외식</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A011.png" alt="카페/간식아이콘">
+                        <span>카페/간식</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A012.png" alt="술/유흥아이콘">
+                        <span>술/유흥</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/A013.png" alt="생활편의아이콘">
+                        <span>생활편의</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A014.png" alt="쇼핑아이콘">
+                        <span>쇼핑</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A015.png" alt="미용아이콘">
+                        <span>미용</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A016.png" alt="취미/여가아이콘">
+                        <span>취미/여가</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/A017.png" alt="여행/숙박아이콘">
+                        <span>여행/숙박</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A018.png" alt="경조/선물아이콘">
+                        <span>경조/선물</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A019.png" alt="병원/건강아이콘">
+                        <span>병원/건강</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A020.png" alt="용돈/생활비아이콘">
+                        <span>용돈/생활비</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/A021.png" alt="모임아이콘">
+                        <span>모임</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A022.png" alt="교통아이콘">
+                        <span>교통</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A023.png" alt="자동차아이콘">
+                        <span>자동차</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A024.png" alt="자녀아이콘">
+                        <span>자녀</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/A025.png" alt="반려동물아이콘">
+                        <span>반려동물</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A026.png" alt="해외아이콘">
+                        <span>해외</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A027.png" alt="ATM아이콘">
+                        <span>ATM</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A028.png" alt="이체아이콘">
+                        <span>이체</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/A029.png" alt="카드대금아이콘">
+                        <span>카드대금</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/A999.png" alt="기타아이콘">
+                        <span>기타</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector(".textarea");
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
+        }
+    </script>
+</body>
+
+</html>

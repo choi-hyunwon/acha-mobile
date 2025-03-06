@@ -5732,6 +5732,7 @@
       align-items: center;
       padding: 10px 20px 0;
       gap: 4px;
+      color: var(--text-03);
 
       p{
         width: 36px;
@@ -5752,7 +5753,6 @@
         font-family: var(--font1);
         font-size: 14px;
         line-height: 19px;
-        color: var(--text-03);
       }
     }
   }
@@ -5819,11 +5819,11 @@
         }
       }
       button{
-        background: transparent;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 6px;
+        background: transparent;
         img{
           width: 54px;
           height: 54px;
@@ -5925,6 +5925,19 @@
         &.on{
           background-color: #fbf7ff;
         }
+        // 카테고리 추가 완료 애니메이션
+        &.add-on{
+          background: #f8f0ff;
+          animation: bgAnimation 1.5s ease-out forwards;
+        }
+        @keyframes bgAnimation {
+          0%{
+            background: #f8f0ff;
+          }
+          100%{
+            background: var(--white);
+          }
+        }
       }
       .ico{
         width: 40px;
@@ -5987,9 +6000,20 @@
       & + .custom-light{
         margin-top: 30px;
       }
-      &:has(.icon){
+      &:has(a){
         display: flex;
+        flex-wrap: wrap;
         align-items: center;  
+        row-gap: 4px;
+        a:not(.noti-tooltip){
+          width: 50px;
+          height: 50px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
         input{
           width: calc(100% - 65px);
           margin-left: auto;
@@ -6022,12 +6046,24 @@
       right: 42px;
       background: url('../../img/common/ico_input_delete@2x.png') no-repeat center / contain;
     }
-    .icon{
-      width: 50px;
-      height: 50px;
-      &.unselect{
-        background-image: url(../../img/common/icon/ic-cate-select@2x.png);
+    .noti-tooltip{
+      display: block;
+      font-size: 14px;
+      font-family: var(--font1);
+      color: var(--text-02);
+      img{
+        width: 12px;
+        height: 12px;
+        margin-top: -3px;
+        margin-right: 4px;
       }
+      & + p{
+        margin-top: 2px;
+      }
+    }
+    .noti{
+      font-size: 13px;
+      font-family: var(--font1);
     }
     .btn-wrap{
       margin-top: 40px;

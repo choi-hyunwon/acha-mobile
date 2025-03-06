@@ -6,7 +6,7 @@
 	<div class="wrap renewal">
 		<div class="header _sticky">
 			<a href="#" class="sprite btn_back"></a>
-			<h2>지출 카테고리 추가</h2>
+			<h2>지출 카테고리 수정</h2>
 		</div>
 		<div class="contents expenditure">
 			<div class="category-add-wrap">
@@ -14,21 +14,23 @@
 					<form action="#">
 						<div class="custom-light _focus">
 							<a href="#">
-								<img src="../../img/common/icon/ic-cate-select@2x.png" alt="아이콘">
+								<img src="../../img/common/icon/A001.png" alt="아이콘">
                             </a>
 							<input title="value" type="text" maxlength="15" onkeyup="countCharDelete(this, '_val')"
-								placeholder="카테고리 이름을 입력해 주세요" />
+								placeholder="" value="대" />
 								<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">/15</span></div>
+							<a href="#" data-toggle="tooltip" class="noti-tooltip"><img src="../../img/common/ico_caution_grey@2x.png" alt="아이콘"><span>기본 카테고리 이름과 달라요</span></a>
+							<p class="noti f-point">✽ 카테고리에 속한 거래의 ‘카테고리 이름’이 함께 변경돼요</p>								
 						</div>
 	
 						<div class="custom-light _focus">
 							<input title="value" type="text" maxlength="24" onkeyup="countCharDelete(this, '_val')"
-								placeholder="(선택) 카테고리 설명을 입력해 주세요" />
+								placeholder="" value="설명설명설명" />
 								<div class="input-byte mt-0"><span class="byte _val">0</span><span class="total">/24</span></div>
 						</div>
 	
 						<div class="btn-wrap category">
-							<a class="btn btn-big btn-purple-bg btn-block" href="#">카테고리 생성</a>
+							<a href="#" class="btn btn-big btn-purple-bg btn-block disabled">수정 완료</a>
 						</div>
 					</form>
 				</div>
@@ -37,6 +39,9 @@
 	</div>
 </body>
 <script>
+	// 임시 포커스
+	$('.custom-light input')[0].focus();
+
 	const DEFAULT_HEIGHT = 0;
 	const $textarea = document.querySelector('.textarea');
 

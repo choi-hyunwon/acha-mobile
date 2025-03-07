@@ -699,7 +699,7 @@
         color: var(--white);
         font-family: var(--font2);
         font-size: 14px;
-        line-height: 20px;
+        line-height: 21px;
         margin-top: 8px;
         text-align: center;
         letter-spacing: -0.3px;
@@ -778,20 +778,24 @@
                     background: transparent;
                 }
             }
+            .annual-list{
+                margin-top: 10px;
+                justify-content: center;
+            }
         }
         .best-item{
             display: flex;
             align-items: center;
-        }
-        .item-desc{
-            display: flex;
-            flex-direction: column;
         }
         .num{
             font-size: 22px;
             line-height: 29px;
             font-family: var(--font3);
             margin-right: 20px;
+        }
+        .item-desc{
+            display: flex;
+            flex-direction: column;
         }
         .corp{
             font-size: 12px;
@@ -829,16 +833,20 @@
                 line-height: 17px;
             }
         }
-        .card-benefit {
+        .event-tag{
+            margin-top: 8px;
+        }
+        .annual-list{
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            gap: 5px;
-            margin-top: 12px;
-            padding-bottom: 20px;
+            column-gap: 4.5px;
+            row-gap: 0;
             li {
                 font-family: var(--font1);
                 font-size: 11px;
-                line-height: 22px;
+                line-height: 20px;
+                letter-spacing: -0.1px;
                 color: var(--text-02);
                 word-break: keep-all;
                 &::after {
@@ -846,9 +854,9 @@
                     display: inline-block;
                     width: 3px;
                     height: 3px;
-                    background: #d7d6e0;
-                    margin: 0 0 3px 5px;
+                    margin: 0 0 3px 4.5px;
                     border-radius: 50%;
+                    background: #d7d6e0;
                 }
                 &:last-child {
                     &::after {
@@ -857,24 +865,26 @@
                 }
             }
         }
-        li:not(.best-one){
-            padding: 0 20px 0 15px;
+        li:not(.best-one, .annual-list li){
+            padding: 0 5px;
             margin-top: 30px;
             .num{
                 font-size: 16px;
                 line-height: 21px;
                 font-family: var(--font2);
                 color: var(--text-01);
+                margin-right: 14px;
             }
             // 십의 자리
             &:nth-child(n+10){
                 .num{
-                    margin-right: 11px;
+                    margin-right: 10px;
                 }
             }
             .item-desc{
                 width: 60%;
-                margin-inline: 16px;
+                margin: 0 12px 0 14px;
+                flex: 1;
             }
             .card-img{
                 margin-left: 0;
@@ -882,12 +892,12 @@
             .card-name{
                 font-size: 15px;
             }
+            .annual-list{
+                margin-top: 8px;
+            }
             .ico{
                 margin-left: auto;
             }
-        }
-        .event-tag{
-            margin-top: 4px;
         }
     }
 

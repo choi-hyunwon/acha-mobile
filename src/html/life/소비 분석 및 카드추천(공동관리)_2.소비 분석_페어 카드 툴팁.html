@@ -2,20 +2,17 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<!-- 소비분석 툴팁 -->
-<a href="#" data-toggle="tooltip" class="ico-tooltip">
+<!-- 페어 카드 툴팁 -->
+<a href="#" data-toggle="tooltip2" class="ico-tooltip">
     <!-- <img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘" /> -->
 </a>
 <div class="modal-slide analysis-spending _modalSlide">
     <div class="modal-slide-content">
         <a href="#" class="btn-close _btnSlideClose"></a>
         <div class="inner">
-            <p class="title">소비 분석</p>
+            <p class="title">페어 카드</p>
             <ul class="dot-list">
-                <li>최근 3개월간의 지출을 분석해요</li>
-                <li>마이데이터로 연동한 카드와 계좌 내역만 반영돼요</li>
-                <li>유플래너 기본 카테고리만 반영해요</li>
-                <li>가계부에 미포함한 내역은 분석에서 제외돼요</li>
+                <li>1순위 추천 카드를 제외하고, 우리가 가장 많이 사용한 혜택이 있는 카드를 알려줄게요</li>
             </ul>
         </div>
     </div>
@@ -23,10 +20,10 @@
 <div class="modal-slide-backdrop"></div>
 <script>
     $(document).ready(function () {
-        const tooltip = $('a[data-toggle="tooltip"]');
+        const tooltip2 = $('a[data-toggle="tooltip2"]');
         const modalClose = $('._btnSlideClose');
         
-        tooltip.click(function () {
+        tooltip2.click(function () {
             setTimeout(
                 function () {
                     document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
@@ -48,7 +45,7 @@
             $('body').removeClass('scrOn')
         });
 
-        tooltip.trigger('click');
+        tooltip2.trigger('click');
     });
 </script>
 </body>

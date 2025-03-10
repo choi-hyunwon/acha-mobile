@@ -3846,11 +3846,11 @@
 
                     .img {
                       position: absolute;
-                      top: 4px;
+                      top: 3px;
                       width: 40px;
                       height: 40px;
 
-                      i {
+                      i, img {
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
@@ -3860,7 +3860,10 @@
                     .info {
                       padding-left: 54px;
                       width: 100%;
-                      max-width: calc(100% - 40px);
+                      
+                      &:not(.record){
+                        max-width: calc(100% - 30px);
+                      }
 
                       .place {
                         position: relative;
@@ -3898,7 +3901,6 @@
                       }
 
                       .record {
-                        width: calc(100% + 35px);
                         font-size: 12px;
                         color: var(--text-03);
                         word-break: break-all;

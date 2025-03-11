@@ -3640,10 +3640,11 @@
               line-height: 32px;
               font-family: var(--font1);
               color: var(--text-03);
+              padding-top: 5px;
               margin-right: 5px;
             }
             strong{
-              line-height: 26px;
+              line-height: 37px;
               font-family: var(--font4);
               margin-right: 2px;
             }
@@ -5759,7 +5760,7 @@
   /**
     홈_카테고리 개선 v1.4 개선
   */
-  .category-edit-box{
+  .category-edit-pop{
     width: 100%;
     height: 460px;
     position: fixed;
@@ -5852,6 +5853,7 @@
       height: 50px;
       padding: 14px 20px;
       border-top: 1px solid #f0f1f4;
+      background: var(--white);
       [type=checkbox] + span:not(.lever){
         height: 25px;
         line-height: 20px;

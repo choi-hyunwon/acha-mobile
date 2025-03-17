@@ -2123,6 +2123,150 @@ _ .event-btn-area {
   }
 }
 
+.open-license-wrap{
+  .need, .option{
+    display: block;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1;
+    font-family: var(--font3);
+  }
+
+  .accordion{
+    &:has(.checkbox-group){
+      .accordion-toggle{
+        padding-bottom: 10px;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .accordion-toggle{
+    display: block;
+    color: var(--text-01);
+    &.login{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      row-gap: 5px;
+      span{
+        margin-left: auto;
+      }
+      p{
+        width: calc(100% - 82px);
+        font-size: 12px;
+        font-weight: var(--font1);
+        line-height: 18px;
+        color: var(--text-02);
+        word-break: keep-all;
+      }
+      &::before{
+        display: none;
+      }
+    }
+  }
+
+  .agree-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    span{
+      padding-left: 22px;
+    }
+    .check-link{
+      padding-bottom: 1px;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: var(--font2);
+      color: var(--text-01);
+    }
+  }
+
+  .checkbox-group{
+    padding-left: 28px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 7px;
+    .agree-day{
+      margin-top: 0;
+    }
+  }
+}
+
+
+.rect-checkbox{
+  display: flex;
+  align-items: center;
+
+  label {
+    height: fit-content;
+    font-size: 13px;
+    font-weight: var(--font1);
+    &  + label {
+        margin-left: 5px;
+    }
+  }
+
+  .filled-in {
+    height: 18px;
+  }
+
+  [type="checkbox"]+span:not(.lever) {
+    padding-left: 18px;
+    line-height: 18px;
+    height: 18px;
+  }
+
+  [type="checkbox"].filled-in:not(:checked)+span:not(.lever):before {
+    height: 18px;
+    width: 18px;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #d7d6e0;
+  }
+
+  [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+    left: 1px;
+    top: 3px;
+    width: 7px;
+    height: 10px;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #d7d6e0;
+    border-bottom: 1px solid #d7d6e0;
+    transform: rotateZ(45deg);
+    transform-origin: 100% 100%;
+    background: none;
+    border-radius: 0;
+  }
+
+  [type=checkbox].filled-in + span:not(.lever):before{
+    height: 18px;
+    width: 18px;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #d7d6e0;
+  }
+
+  [type=checkbox].filled-in:checked + span:not(.lever):after{
+    left: 1px;
+    top: 3px;
+    width: 7px;
+    height: 10px;
+    border-top: 1.5px solid transparent;
+    border-left: 1.5px solid transparent;
+    border-right: 1.5px solid var(--color-point);
+    border-bottom: 1.5px solid var(--color-point);
+    transform: rotateZ(45deg);
+    transform-origin: 100% 100%;
+    background: none;
+    border-radius: 0;
+  }
+}
+
 .open-license {
   padding: 10px 20px 20px;
 }
@@ -2302,6 +2446,7 @@ _ .event-btn-area {
         position: relative;
         margin-top: 10px;
         font-size: 13px;
+        font-weight: var(--font1);
         line-height: 19px;
         text-indent: 11px;
 
@@ -2335,6 +2480,67 @@ _ .event-btn-area {
       font-family: var(--font2);
     }
   }
+
+  &.point-charge{
+    .agree-box{
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      border: solid 1px #efefef;
+      .agree-item{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      label > span{
+        padding-left: 22px;
+      }
+      .check-link{
+        width: 100%;
+        padding-bottom: 3px;
+        display: inline-flex;
+        align-items: center;
+        span{
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: var(--font2);
+          color: var(--text-01);
+        }
+        i{
+          margin-left: auto;
+        }
+      }
+    }
+    .withdrawal-check-list{
+      margin-top: 20px;
+      padding: 20px 16px;
+      background-color: #f7f8fc;
+      &::after{
+        display: none;
+      }
+      p:not(.tit){
+        line-height: 20px;
+        text-indent: 0px;
+        padding-left: 13px;
+        word-break: keep-all;
+        &::after{
+          left: 5px;
+          top: 9px;
+          transform: unset;
+          
+        }
+        & + p{
+          margin-top: 4px;
+        }
+      }
+      
+    }
+  }
+}
+
+.point-charge-img{
+  width: 100%;
+  height: auto;
 }
 
 .withdrawal-completed {
@@ -2466,6 +2672,17 @@ _ .event-btn-area {
     img {
       width: 100%;
     }
+  }
+}
+
+.agree-day{
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: var(--font1);
+  color: var(--text-02);
+  & + span{
+    margin-top: 36px;
   }
 }
 

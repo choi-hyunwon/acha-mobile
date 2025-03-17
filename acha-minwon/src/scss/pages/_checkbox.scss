@@ -282,3 +282,70 @@
   background-color: #C2AFED;
   border-color: #C2AFED;
 }
+
+/* ========================================================================== */
+/* Rect Checkbox */
+.rect-checkbox{
+  label {
+    height: 18px;
+    &  + label {
+        margin-left: 5px;
+    }
+  }
+
+  .filled-in {
+    height: 18px;
+  }
+
+  [type="checkbox"]+span:not(.lever) {
+    padding-left: 18px;
+    line-height: 18px;
+    height: 18px;
+  }
+
+  [type="checkbox"].filled-in:not(:checked)+span:not(.lever):before {
+    height: 18px;
+    width: 18px;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #d7d6e0;
+  }
+
+  [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+    left: 1px;
+    top: 3px;
+    width: 7px;
+    height: 10px;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #d7d6e0;
+    border-bottom: 1px solid #d7d6e0;
+    transform: rotateZ(45deg);
+    transform-origin: 100% 100%;
+    background: none;
+    border-radius: 0;
+  }
+
+  [type=checkbox].filled-in + span:not(.lever):before{
+    height: 18px;
+    width: 18px;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #d7d6e0;
+  }
+
+  [type=checkbox].filled-in:checked + span:not(.lever):after{
+    left: 1px;
+    top: 3px;
+    width: 7px;
+    height: 10px;
+    border-top: 1.5px solid transparent;
+    border-left: 1.5px solid transparent;
+    border-right: 1.5px solid var(--color-point);
+    border-bottom: 1.5px solid var(--color-point);
+    transform: rotateZ(45deg);
+    transform-origin: 100% 100%;
+    background: none;
+    border-radius: 0;
+  }
+}

@@ -206,10 +206,13 @@
                     margin: 0 auto;
                 }
                 &.check::before{
-                    background: url(../../img/common/lifestyle/img-life-sec-icon-01@2x.png) no-repeat center / cover;
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-attendance@2x.png) no-repeat center / cover;
+                }
+                &.point::before{
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-point@2x.png) no-repeat center / cover;
                 }
                 &.friend::before{
-                    background: url(../../img/common/lifestyle/img-life-sec-icon-02@2x.png) no-repeat center / cover;
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-invite@2x.png) no-repeat center / cover;
                 }
             }
             strong{

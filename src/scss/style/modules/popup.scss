@@ -909,9 +909,9 @@
     text-align: center;
     background-color: rgba(55, 53, 78, 0.9);
     border-radius: 6px;
-    top: 90%;
+    bottom: 30px;
     left: 50%;
-    transform: translate(-50%, -90%);
+    transform: translateX(-50%);
     z-index: 111111;
 
     p {
@@ -933,13 +933,12 @@
         width: calc(100% - 60px);
         height: auto;
         background-color: rgba(55, 53, 78, 0.9);
-        top: 94%;
         padding: 15px 0;
 
         p {
             font-size: 12px;
             line-height: 18px;
-            font-weight: normal;
+            font-weight: var(--font1);
             letter-spacing: -0.3px;
             text-align: center;
             color: #ffffff;

@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 @@include('../include/head.html')
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <body>
     <div class="wrap renewal">
@@ -28,8 +27,7 @@
                     </div>
 
                     <div class="with-us-day">
-                        상대방 데이터 업데이트 중 &nbsp;<lottie-player src="../../img/common/circleloader_16x16.json"
-                            style="width: 13px; height: 13px;" loop autoplay></lottie-player>
+                        함께 공동관리한 지 <p class="f-point"><span>9999</span>일째</p>
                     </div>
 
                     <div class="btn_area">
@@ -39,6 +37,55 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 광고 배너 2건 이상일 경우  -->
+            <div class="mission-banner-wrap">
+                <div class="swiper-container mission-banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="pager"></p>
+                </div>
+            </div>
+            <script>
+                var swiper = new Swiper(".mission-banner", {
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    // 광고 1건일 때, loop: false
+                    // 광고 2건 이상 일 때, loop: true
+                    loop: true,
+                    spaceBetween: 15,
+                    pagination: {
+                        el: '.mission-banner .pager',
+                        type: 'fraction',
+                    },
+                });
+            </script>
 
             <div class="box-ex-list box-card-list">
                  <!-- 공동가계부 -->
@@ -74,6 +121,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- sample-banner -->
+                <div class="banner-area">
+                    <img src="../../img/common/event/img-ad-banner-jointmain-01@3x.png" alt="광고 배너">
                 </div>
 
                 <!-- 카드 -->
@@ -291,7 +343,6 @@
                                     </ul>
                                 </div>
 
-
                                 <a href="#" class="btn btn-block btn-lg btn-outline-gray">더보기</a>
                             </div>
                         </div>
@@ -347,7 +398,6 @@
                                             <span class="box-detail">
                                                 <span class="name">현대캐피탈 운용리스 계좌</span>
                                                 <span class="val">0<em>원</em></span>
-
                                             </span>
                                         </li>
                                     </ul>
@@ -375,6 +425,8 @@
                                         </li>
                                     </ul>
                                 </div>
+
+
                                 <a href="#" class="btn btn-block btn-lg btn-outline-gray">더보기</a>
                             </div>
                         </div>
@@ -466,7 +518,6 @@
                                 </span>
                                 <!-- 국내 -->
                                 <div class="card-item">
-
                                     <ul class="list-card">
                                         <li class="item">
                                             <span class="box-icon">
@@ -554,7 +605,6 @@
                                             <span class="box-detail">
                                                 <span class="name">GV80 자동차</span>
                                                 <span class="val">70,000,000<em>원</em></span>
-
                                             </span>
                                         </li>
                                     </ul>
@@ -665,7 +715,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 진행중인 미션 -->
                 <div class="card-item">
                     <div class="asset-wrap">

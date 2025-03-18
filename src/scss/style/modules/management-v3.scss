@@ -81,7 +81,8 @@
 
                 .period{
                   position: relative;
-                  width: 88px;
+                  width: fit-content;
+                  max-width: 88px;
                   height: 24px;
                   margin: 8px 0 0 0;
                   padding: 4px 7px;

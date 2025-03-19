@@ -3,82 +3,10 @@
 @@include('../include/head.html')
 
 <body>
-    <div class="wrap renewal">
+    <div class="wrap">
         <div class="contents">
-            <div class="box-ex-top box-card-top">
+            <div class="box-ex-top box-card-top flex-column">
                 <a href="#" class="btn-sm btn-edit"><span>편집</span></a>
-            </div>
-
-            <!-- 광고 배너 2건 이상일 경우  -->
-            <div class="mission-banner-wrap">
-                <div class="swiper-container mission-banner">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="img-area">
-                                <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
-                                        class="banner-img" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img-area">
-                                <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
-                                        class="banner-img" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img-area">
-                                <a href="#" class="banner-box">
-                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
-                                        class="banner-img" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="pager"></p>
-                </div>
-            </div>
-            <script>
-                var swiper = new Swiper(".mission-banner", {
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false
-                    },
-                    // 광고 1건일 때, loop: false
-                    // 광고 2건 이상 일 때, loop: true
-                    loop: true,
-                    spaceBetween: 15,
-                    pagination: {
-                        el: '.mission-banner .pager',
-                        type: 'fraction',
-                    },
-                });
-            </script>
-
-            <!-- 신규 계좌가 있을경우 -->
-            <div class="alert-box">
-                <a href="#" class="link">
-                    <span class="badge badge-new"><img src="../../img/common/ic_new_small@2x.png" alt="아이콘"></span>
-                    신규 계좌/상품 연결하기<i class="ico ico_list_arrow_small"></i>
-                </a>
-                <button class="btn-delete">
-                    <img src="../../img/common/ic_delete_a@2x.png" alt="삭제하기">
-                </button>
-            </div>
-
-            <!-- 기관 연결 해제 -->
-            <div class="alert-box">
-                <a href="#" class="link">
-                    <span class="badge badge-remove"><img src="../../img/common/ico_caution_purple@2x.png"
-                            alt="아이콘"></span>
-                    기관 연결이 곧 해제돼요<i class="ico ico_list_arrow_small"></i>
-                </a>
-                <button class="btn-delete">
-                    <img src="../../img/common/ic_delete_a@2x.png" alt="삭제하기">
-                </button>
             </div>
 
             <div class="assets-total-box">
@@ -99,12 +27,13 @@
                 </div>
             </div>
 
-             <!-- ad-banner -->
-             <div class="banner-area sample">
-                <img src="../../img/common/event/safe-banner@2x.png" alt="SSP 광고 배너">
-            </div>
-
+            <!-- ad-banner -->
+            <a href="#" class="banner-area">
+                <img src="../../img/common/event/img-ad-banner-propertylist-01@3x.png" alt="광고 배너">
+            </a>
+            
             <div class="divider"></div>
+            
             <div class="box-ex-list box-card-list box-card-improve">
                 <!-- 계좌・현금 -->
                 <div class="card-item">
@@ -155,7 +84,7 @@
                                                 </div>
                                                 <p class="value">1,280,000<em>원</em></p>
                                                 <p class="ac-num">자산관련메모 최대한 한줄 출력 (잘리는 경우 말줄임표
-                                                    표기) (잘리는 경우 말줄임 표기) </p>
+                                                    표기)</p>
                                             </li>
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
@@ -169,7 +98,6 @@
                                                     </div>
                                                 </div>
                                                 <p class="value out">1,280,000<em>원</em></p>
-                                                <p class="ac-num">자산관련메모</p>
                                             </li>
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
@@ -191,13 +119,13 @@
                                 <!-- 예적금 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">예적금
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
                                             <span class="value">3,000,000<em>원</em></span>
                                         </div>
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -235,12 +163,12 @@
                                 <!-- 연금 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <P class="name">연금<span class="badge badge-purple badge-payment">2개</span>
                                             </P>
                                             <P class="value">60,300,000<em>원</em></P>
                                         </div>
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -274,11 +202,11 @@
                                 <!-- 현금 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">현금</span>
                                             <span class="value">300,000<em>원</em></span>
                                         </div>
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -299,7 +227,7 @@
                                 <!-- 외화 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">외화
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
@@ -310,7 +238,7 @@
                                                 <span class="close" onclick="TooltipClose('toolbox-2')"></span>
                                             </div>
                                         </div>
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -344,13 +272,13 @@
                                 <!-- 마이너스통장 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">마이너스 통장
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
                                             <span class="value">-887,700<em>원</em></span>
                                         </div>
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -388,7 +316,7 @@
                 <!-- 대출・빌린돈 -->
                 <div class="card-item">
                     <div class="asset-wrap">
-                        <div class="asset">
+                        <div class="asset show">
                             <div class="category-heading">
                                 <p class="title">대출・빌린돈</p>
                                 <p class="sum">-60,000,000<em>원</em></p>
@@ -398,7 +326,7 @@
                                 <!-- 대출 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">
                                                 대출
                                                 <span class="badge badge-purple badge-payment">2개</span>
@@ -406,7 +334,7 @@
                                             <span class="value">-20,000,000<em>원</em></span>
                                         </div>
 
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -469,11 +397,11 @@
                                 <!-- 빌린돈 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">빌린돈</span>
                                             <span class="value">-20,000,000<em>원</em></span>
                                         </div>
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -511,12 +439,12 @@
                                 <!-- 운용리스 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">운용리스
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
                                         </div>
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -540,7 +468,7 @@
                 <!-- 투자 -->
                 <div class="card-item">
                     <div class="asset-wrap">
-                        <div class="asset">
+                        <div class="asset show">
                             <div class="category-heading">
                                 <p class="title">투자</p>
                                 <p class="sum">30,000,000<em>원</em><span class="price rise">12.23%</span></p>
@@ -550,7 +478,7 @@
                                 <!-- 국내 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <p class="name">
                                                 국내
                                                 <span class="badge badge-purple badge-payment">2개</span>
@@ -559,7 +487,7 @@
                                             </p>
                                         </div>
 
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -588,7 +516,7 @@
                                                     </div>
                                                 </div>
                                                 <p class="value">4,868,000<em>원</em>
-                                                    <span class="price">-89,219<span class="fail">(15.39%)</span></span>
+                                                    <span class="price">+268,902<span class="rise">(5.85%)</span></span>
                                                 </p>
                                             </li>
                                         </ul>
@@ -598,7 +526,7 @@
                                 <!-- 해외 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">해외
                                                 <span class="badge badge-purple badge-payment">2개</span>
                                             </span>
@@ -609,7 +537,7 @@
                                                 <span class="close" onclick="TooltipClose('toolbox-3')"></span>
                                             </div>
                                         </div>
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -633,7 +561,7 @@
                 <!-- 포인트・머니 -->
                 <div class="card-item">
                     <div class="asset-wrap">
-                        <div class="asset">
+                        <div class="asset show">
                             <div class="category-heading">
                                 <p class="title">포인트・머니</p>
                                 <p class="sum">9,000<em>원</em></p>
@@ -643,7 +571,7 @@
                                 <!-- 포인트・머니 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">
                                                 포인트・머니
                                                 <span class="badge badge-purple badge-payment">2개</span>
@@ -651,7 +579,7 @@
                                             <span class="value">9,000<em>원</em></span>
                                         </div>
 
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -703,7 +631,7 @@
                 <!-- 부동산・자동차 -->
                 <div class="card-item">
                     <div class="asset-wrap">
-                        <div class="asset">
+                        <div class="asset show">
                             <div class="category-heading">
                                 <p class="title">부동산・자동차</p>
                                 <p class="sum">9,030,000,000<em>원</em></p>
@@ -713,7 +641,7 @@
                                 <!-- 부동산 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">
                                                 부동산
                                                 <span class="badge badge-purple badge-payment">2개</span>
@@ -721,7 +649,7 @@
                                             <span class="value">8,960,000,000<em>원</em></span>
                                         </div>
 
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -746,7 +674,7 @@
                                 <!-- 자동차 -->
                                 <ul class="ac-list ac-list-img">
                                     <li class="ac-item ac-item-top">
-                                        <div class="total-tit">
+                                        <div class="total-tit show">
                                             <span class="name">
                                                 자동차
                                                 <span class="badge badge-purple badge-payment">2개</span>
@@ -754,7 +682,7 @@
                                             <span class="value">70,000,000<em>원</em></span>
                                         </div>
 
-                                        <ul class="ac-piece-list">
+                                        <ul class="ac-piece-list show">
                                             <li class="ac-item ac-piece">
                                                 <div class="info">
                                                     <span class="img">
@@ -785,14 +713,14 @@
                 <!-- 기타 -->
                 <div class="card-item etc">
                     <div class="asset-wrap">
-                        <div class="asset">
+                        <div class="asset show">
                             <div class="category-heading">
                                 <p class="title">기타<span class="badge badge-purple badge-payment">1개</span></p>
                                 <p class="sum">8,900,000<em>원</em></p>
                             </div>
 
                             <div class="category-menu">
-                                <ul class="ac-piece-list">
+                                <ul class="ac-piece-list show">
                                     <li class="ac-item ac-piece">
                                         <div class="info">
                                             <span class="img">
@@ -806,8 +734,6 @@
                                             </div>
                                         </div>
                                         <p class="value">564,000<em>원</em></p>
-                                        <p class="ac-num">자산관련메모 최대한 한줄 출력 (잘리는 경우 말줄임표
-                                            표기) (잘리는 경우 말줄임 표기) </p>
                                     </li>
                                     <li class="ac-item ac-piece">
                                         <div class="info">
@@ -821,20 +747,6 @@
                                                 </span>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="ac-item ac-piece">
-                                        <div class="info">
-                                            <span class="img">
-                                                <i class="icon icon_cate_etc"></i>
-                                            </span>
-
-                                            <div class="txt">
-                                                <span class="name">
-                                                    금액없는 기타
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <p class="value undefined">자산정보 확인불가</p>
                                     </li>
                                 </ul>
                             </div>
@@ -845,14 +757,14 @@
                 <!-- 보험 -->
                 <div class="card-item etc">
                     <div class="asset-wrap">
-                        <div class="asset">
+                        <div class="asset show">
                             <div class="category-heading">
                                 <p class="title">보험</p>
                                 <p class="sum">2<em>건</em></p>
                             </div>
 
                             <div class="category-menu">
-                                <ul class="ac-piece-list">
+                                <ul class="ac-piece-list show">
                                     <li class="ac-item ac-piece">
                                         <div class="info">
                                             <span class="img">
@@ -868,8 +780,6 @@
                                         <p class="value">2,564,000<em>원</em>
                                             <span class="price">일시납</span>
                                         </p>
-                                        <p class="ac-num">자산관련메모 최대한 한줄 출력 (잘리는 경우 말줄임표
-                                            표기) (잘리는 경우 말줄임 표기) </p>
                                     </li>
                                     <li class="ac-item ac-piece ac-expire">
                                         <div class="expire-badge">실효</div>
@@ -884,39 +794,9 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <p class="value undefined">자산정보 확인불가</p>
-                                    </li>
-                                    <li class="ac-item ac-piece ac-expire">
-                                        <div class="expire-badge">실효</div>
-                                        <div class="info">
-                                            <span class="img">
-                                                <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
-                                            </span>
-
-                                            <div class="txt">
-                                                <span class="name">
-                                                    무배당 교보플랜 행복한 100세 인생보험
-                                                </span>
-                                            </div>
-                                        </div>
                                         <p class="value">2,564,000<em>원</em>
-                                            <span class="price">연납</span>
+                                            <span class="price">일시납</span>
                                         </p>
-                                    </li>
-                                    <li class="ac-item ac-piece ac-expire">
-                                        <div class="expire-badge">실효</div>
-                                        <div class="info">
-                                            <span class="img">
-                                                <img src="../../img/common/ico_list_card_kb@2x.png" alt="">
-                                            </span>
-
-                                            <div class="txt">
-                                                <span class="name">
-                                                    무배당무배당 교보플랜 행복한 100세 인생보험 교보플랜 행복한 100세 인생보험
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <p class="value undefined">자산정보 확인불가</p>
                                     </li>
                                 </ul>
                             </div>
@@ -927,14 +807,14 @@
                 <!-- 카드 -->
                 <div class="card-item etc">
                     <div class="asset-wrap">
-                        <div class="asset">
+                        <div class="asset show">
                             <div class="category-heading">
                                 <p class="title">카드</p>
                                 <p class="sum">1<em>개</em></p>
                             </div>
 
                             <div class="category-menu">
-                                <ul class="ac-piece-list">
+                                <ul class="ac-piece-list show">
                                     <li class="ac-item ac-piece">
                                         <div class="info">
                                             <span class="img">

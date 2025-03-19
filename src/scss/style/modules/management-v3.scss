@@ -1018,6 +1018,7 @@
     }
 
     .banner-area{
+      margin-bottom: 20px;
       &.sample{
         width: 100%;
         height: 60px;
@@ -1025,8 +1026,8 @@
         background: var(--white);
       }
       img{
-        width: 320px;
-        height: 50px;
+        width: 100%;
+        height: auto;
       }
     }
   }

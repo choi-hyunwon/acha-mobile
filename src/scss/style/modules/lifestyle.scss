@@ -423,6 +423,30 @@
     .swiper-slide {
         border-radius: 16px;
     }
+    .swiper-row{
+        padding-bottom: 15px;
+            li + li{
+                margin-top: 0 !important;
+            }
+            .swiper-pagination-bullets{
+                bottom: 0;
+            }
+            .swiper-pagination-bullet{
+                width: 7px;
+                height: 7px;
+            }
+            .swiper-pagination-bullet-active{
+                background:#37354e;
+            }
+        
+    }
+    .insurance-slide{
+        padding: 0px 20px 15px;
+        .direct-inform-box{
+            width: 100%;
+            margin: 0 auto 12px;
+        }
+    }
 
     .box-type {
         max-width: 253px;
@@ -1033,10 +1057,8 @@
             padding-block: 10px;
         }
     }
-
     .event-card-list{
-        padding: 0 20px;
-        margin-top: 10px;
+        padding: 10px 20px 20px;
         li{
             padding: 16px 0;
         }
@@ -1095,22 +1117,6 @@
         .ico{
             margin-left: auto;
         }
-        &.swiper-container{
-            padding-bottom: 15px;
-            li + li{
-                margin-top: 0 !important;
-            }
-            .swiper-pagination-bullets{
-                bottom: 0;
-            }
-            .swiper-pagination-bullet{
-                width: 7px;
-                height: 7px;
-            }
-            .swiper-pagination-bullet-active{
-                background:#37354e;
-            }
-        }
     }
     .ico{
         width: 6px;
@@ -1151,6 +1157,7 @@
             }
         }
     }
+
     .step-list{
         position: relative;
         padding: 40px 20px 0;
@@ -1373,6 +1380,7 @@
             }
         }
     }
+
     .event-noti{
         margin-top: 40px;
         padding: 40px 20px;
@@ -1424,7 +1432,6 @@
         }
     }
     
-
     // bottom btn
     .btn-area{
         position: fixed;
@@ -1488,7 +1495,6 @@
             vertical-align: initial;
         }
     }
-
     // toast popup
     .toast-popup{
         top: 88.5%;

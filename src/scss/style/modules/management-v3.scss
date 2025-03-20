@@ -3970,7 +3970,7 @@
           li {
             .total {
               align-items: flex-start;
-              padding-bottom: 20px;
+              padding-bottom: 10px;
 
               .title {
                 display: flex;
@@ -5233,15 +5233,16 @@
     }
 
     .monthly-setting{
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
       gap: 9px;
     }
 
     input, label{
       width: 40px;
       height: 40px;
-      padding: 10px;
+      padding: 11px;
       border-radius: 50%;
     }
     label{
@@ -5253,6 +5254,7 @@
       text-align: center;
       border-radius: 50%;
       &.select{
+        padding: 10px;
         font-family: var(--font3);
         color: var(--color-point);
         border: 1px solid var(--color-point);
@@ -5263,7 +5265,7 @@
       font-family: var(--font1);
       font-size: 13px;
       line-height: 20px;
-      padding: 12px 20px 0;
+      padding: 12px 20px 30px;
     }
   }
 }

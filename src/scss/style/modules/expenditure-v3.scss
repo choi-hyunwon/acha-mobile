@@ -384,12 +384,21 @@
 
     &:has(.period){
       .total-amount{
-        margin: 10px 20px 20px 20px;
+        margin: 10px 20px 0;
         &.add-logo.add-logo-amount{
           padding-top: 10px;
         }
+        & + .expenditure-tab{
+          margin-top: 14px;
+        }
+      }
+      &:not(:has(.expenditure-tab)){
+        .total-amount{
+          margin-bottom: 25px;
+        }
       }
     }
+
     /**
     총수입 금액 노출 영역
      */
@@ -1786,7 +1795,7 @@
             }
 
             .item-list {
-              padding: 15px 0;
+              padding: 12px 0;
 
               &:last-of-type {
                 margin-bottom: 0;
@@ -2157,7 +2166,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 20px;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
             border-bottom: 1px solid #efefef;
 
             .title {

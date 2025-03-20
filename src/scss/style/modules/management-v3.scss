@@ -281,7 +281,6 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
                     font-size: 16px;
 
                     span {
@@ -3327,7 +3326,7 @@
       display: flex;
       align-items: center;
       gap: 4px;
-      padding: 6px 20px 13px 20px;
+      padding: 6px 20px 10px;
 
       p{
         width: 36px;
@@ -3423,7 +3422,7 @@
                   }
 
                   .group {
-                    padding: 10px 0;
+                    padding: 12px 0;
 
                     &.disabled {
                       pointer-events: none;
@@ -3480,11 +3479,13 @@
 
             .history-plan-box {
               .details-history {
-                padding: 10px 0 0;
+                // padding: 10px 0 0;
 
                 .item-list {
                   padding: 0;
-                  margin-top: 20px;
+                  & + li{
+                    margin-top: 15px;
+                  }
 
                   &:first-child {
                     margin-top: 0;
@@ -3523,6 +3524,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    margin-bottom: 5px;
 
                     p {
                       font-size: 14px;
@@ -3643,7 +3645,7 @@
         }
 
         .usage-plan {
-          margin-top: 14px;
+          margin-top: 20px;
           padding: 0 20px;
 
           .plan-list {
@@ -3720,14 +3722,10 @@
             +.history-plan-box {
               .details-history {
                 min-height: auto;
-                padding: 10px 0 0;
 
                 .item-list {
                   .group {
-                    // position: relative;
-                    // display: flex;
-                    // justify-content: space-between;
-                    padding: 16px 0;
+                    padding: 12px 0;
 
                     .box {
                       display: flex;
@@ -3819,8 +3817,9 @@
                 height: 1px;
                 background: none;
                 border-top: 1px solid #efefef;
-                margin-top: 20px;
               }
+              margin-top: 20px;
+              margin-bottom: 10px;
             }
 
             .sub-title {
@@ -3829,7 +3828,7 @@
               line-height: 20px;
               color: var(--text-01);
               font-weight: 500;
-              margin-bottom: 0;
+              margin-bottom: 5px;
             }
 
             .details-history {
@@ -3837,13 +3836,15 @@
               padding: 0;
 
               .item-list {
-                margin-top: 20px;
+                & + li{
+                  margin-top: 15px;
+                }
 
                 .group {
                   position: relative;
                   display: flex;
                   justify-content: space-between;
-                  padding: 16px 0;
+                  padding: 12px 0;
 
                   .box {
                     display: flex;
@@ -3952,7 +3953,7 @@
 
           // 월 추가
           .monthly{
-            padding: 30px 0 0 0;
+            padding: 20px 0 0 0;
             p{
               font-family: var(--font3);
               font-size: 18px;
@@ -3970,7 +3971,7 @@
           li {
             .total {
               align-items: flex-start;
-              padding-bottom: 20px;
+              padding-bottom: 15px;
 
               .title {
                 display: flex;
@@ -4132,8 +4133,6 @@
 
           &.category-list {
             .total {
-              padding-bottom: 20px;
-
               .sum {
                 p {
                   font-size: 18px;
@@ -4157,6 +4156,7 @@
               .card-head {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 5px;
 
                 p {
                   display: flex;
@@ -4203,8 +4203,6 @@
               }
 
               .details-history {
-                padding-top: 10px;
-
                 .item-list {
                   // 상세카드
                   padding: 0;
@@ -4225,7 +4223,7 @@
 
                   .group {
                     width: 100%;
-                    padding: 16px 0;
+                    padding: 12px 0;
 
                     .box {
                       width: 100%;
@@ -4302,7 +4300,7 @@
             border-radius: 10px;
             font-size: 14px;
             color: var(--text-02);
-            margin-top: 14px;
+            margin-top: 20px;
 
             img {
               display: inline-block;
@@ -4388,7 +4386,7 @@
 
   .asset-management {
     position: relative;
-    padding: 20px 20px;
+    padding: 20px 20px 0 20px;
 
     .box {
       padding: 20px 20px;
@@ -5233,15 +5231,16 @@
     }
 
     .monthly-setting{
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
       gap: 9px;
     }
 
     input, label{
       width: 40px;
       height: 40px;
-      padding: 10px;
+      padding: 11px;
       border-radius: 50%;
     }
     label{
@@ -5253,6 +5252,7 @@
       text-align: center;
       border-radius: 50%;
       &.select{
+        padding: 10px;
         font-family: var(--font3);
         color: var(--color-point);
         border: 1px solid var(--color-point);
@@ -5263,7 +5263,7 @@
       font-family: var(--font1);
       font-size: 13px;
       line-height: 20px;
-      padding: 12px 20px 0;
+      padding: 12px 20px 30px;
     }
   }
 }

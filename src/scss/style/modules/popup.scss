@@ -1787,10 +1787,12 @@
 @keyframes modal-sticky-bottom-animation-auto {
     from {
         bottom: -100%;
+        height: 0;
     }
 
     to {
         bottom: 0;
+        height: fit-content;
     }
 }
 
@@ -6325,44 +6327,23 @@
             .category-list {
                 overflow-y: auto;
                 height: 430px;
-                padding: 16px 8px 0;
-                ul {
+                padding: 16px 18px 0 10px;
+                div {
                     display: grid;
-                    grid-template-columns: repeat(4, minmax(48px, auto));
-                    & + ul{
-                        margin-top: 24px;
-                    }
-                    &:last-of-type{
-                        padding-bottom: 40px;
-                    }
+                    justify-items: center;
+                    grid-template-columns: repeat(auto-fit, minmax(54px, 1fr));
+                    column-gap: 10px;
+                    row-gap: 24px;
+                    padding-bottom: 40px;
                 }
-                li {
-                    span {
-                        display: block;
-                        font-size: 14px;
-                        color: var(--text-01);
-                        font-family: var(--font1);
-                        padding-top: 8px;
-                    }
-                    a{
-                        display: inline-block;
-                        width: 54px;
-                        height: 54px;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                        }
-                    }
-                    .img {
-                        display: inline-block;
-                        width: 54px;
-                        margin: 0 auto;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                        }
+                a{
+                    display: inline-block;
+                    width: 54px;
+                    height: 54px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
                     }
                 }
             }
@@ -6403,6 +6384,118 @@
                 color: var(--text-03);
             }
         }
+
+        .category-edit-pop{
+            width: 100%;
+            height: 460px;
+            // position: fixed;
+            bottom: 0;
+            z-index: 10;
+            button{
+              outline: 0;
+            }
+            &:has(.category-edit-footer){
+              .category-edit-list{
+                height: 360px;
+                &::after{
+                  bottom: 50px;
+                }
+              }
+            }
+            .category-edit-header{
+              width: 100%;
+              height: 50px;
+              padding: 10px 20px;
+              background-color: #f0f1f4;
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              span{
+                font-size: 15px;
+                line-height: 22px;
+                font-family: var(--font3);
+              }
+              .edit{
+                height: 32px;
+                padding: 4px 12px;
+                border-radius: 6px;
+                border: solid 1px #e2e3e6;
+                background-color: #fff;
+                font-size: 14px;
+                line-height: 20px;
+                font-family: var(--font2);
+                color: var(--text-02);
+              }
+              .close{
+                margin-left: auto;
+                background: transparent;
+                opacity: 1;
+              }
+            }
+            .category-edit-list{
+              height: calc(100% - 50px);
+              padding: 20px 22px;
+              background: var(--white);
+              overflow: auto;
+              li{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+                row-gap: 24px;
+              }
+              button{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+                background: transparent;
+                img{
+                  width: 54px;
+                  height: 54px;
+                }
+                span{
+                  font-size: 14px;
+                  line-height: 24px;
+                  font-family: var(--font1);
+                  text-align: center;
+                }
+              }
+              &::after{
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 30px;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 3;
+              }
+            }
+            .category-edit-footer{
+              width: 100%;
+              height: 50px;
+              padding: 14px 0 14px 20px;
+              border-top: 1px solid #f0f1f4;
+              background: var(--white);
+              [type=checkbox] + span:not(.lever){
+                height: 25px;
+                line-height: 20px;
+                font-size: 14px;
+                letter-spacing: -0.5px;
+                padding-left: 30px;
+                color: var(--text-02);
+                font-family: var(--font1);
+                font-weight: normal;
+              }
+            }
+            &.full{
+              position: relative;
+              .category-edit-list{
+                height: auto;
+                min-height: 360px;
+              }
+            }
+          }
     }
 
     &.modal-account{
@@ -6492,10 +6585,6 @@
     .autoHeight {
         height: auto !important;
     }
-
-
-    // 230831
-    .modal-event {}
 
     .ico_list_arrow_small {
         background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2px center/contain;

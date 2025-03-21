@@ -3619,6 +3619,7 @@
             홈_카테고리 개선 v1.4 개선 이후
           */
           .title-box{
+            width: 100%;
             padding: 10px 0;
             display: flex;
             border-bottom: none;
@@ -3629,17 +3630,24 @@
             }
             a{
               display: flex;
+              gap: 4px;
             }
             p{
-              margin-right: 5px;
+              width: calc(100% - 10px);
               font-size: 19px;
               line-height: 26px;
               font-family: var(--font5);
               color: var(--text-01);
-              word-break: keep-all;
+              display: -webkit-box;
+              word-wrap: break-word;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              text-overflow: ellipsis;
+              overflow: hidden;
             }
             i{
               margin-top: 5px;
+              margin-left: auto;
             }
           }
           .amount{
@@ -4223,6 +4231,7 @@
         }
 
         .custom-light {
+          margin-bottom: 30px;
           input[type="date"]::before {
             content: attr(date-placeholder);
             width: 100%;
@@ -4240,12 +4249,9 @@
 
             &:after {
               content: '원';
-              // clear: both;
-              // display: inline-block;
               position: absolute;
               font-size: 16px;
               color: var(--text-01);
-              // font-family: var(--font1);
               right: 5px;
               top: 35px;
               line-height: 18px;
@@ -4276,9 +4282,9 @@
             }
 
             .btn-clear-input {
-              right: 20px;
+              right: 24px;
               bottom: unset;
-              top: 35px;
+              top: 36px;
             }
           }
 
@@ -4362,8 +4368,13 @@
             }
           }
 
+          &.income-memo{
+            .btn-clear-input {
+              right: 44px;
+            }
+          }
+
           .btn-clear-input {
-            //display: none;
             position: absolute;
             bottom: 12px; //label 25 + clearbutton height 18/2
             right: 50px;
@@ -5824,10 +5835,8 @@
       overflow: auto;
       li{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        & + li {
-          margin-top: 24px;
-        }
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        row-gap: 24px;
       }
       button{
         display: flex;
@@ -5987,7 +5996,7 @@
         margin-right: 16px;
       }
       .edit-btn{
-        margin-right: 20px;
+        margin-right: 15px;
       }
     }
   }

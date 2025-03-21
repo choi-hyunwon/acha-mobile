@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap _btnSlideOpen"></div>
+<div class="modal-slide modal-category _modalSlide autoHeight">
+    <div class="modal-slide-content">
+        <div class="category-edit-pop">
+            <div class="category-edit-header">
+                <span>카테고리 변경</span>
+                <button class="edit">편집</button>
+                <button class="close"><img src="../../img/common/btn-popup-close.svg" alt="닫기버튼"></button>
+            </div>
+            <ul class="category-edit-list">
+                <li>
+                    <button>
+                        <img src="../../img/common/icon/B001.png" alt="급여아이콘">
+                        <span>급여</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/B002.png" alt="사업수입아이콘">
+                        <span>사업수입</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/B003.png" alt="아르바이트아이콘">
+                        <span>아르바이트</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/B004.png" alt="용돈아이콘">
+                        <span>용돈</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/B005.png" alt="상여아이콘">
+                        <span>상여</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/B006.png" alt="금융수입아이콘">
+                        <span>금융수입</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/B007.png" alt="이체아이콘">
+                        <span>이체</span>
+                    </button>
+                    <button>
+                        <img src="../../img/common/icon/B008.png" alt="기타아이콘">
+                        <span>기타</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal-slide-backdrop"></div>
+<script>
+    $(document).ready(function () {
+        var btnSlideOpen = $('._btnSlideOpen');
+        var btnSlideClose = $('.close');
+
+        btnSlideOpen.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='block';
+                }, 500
+            );
+            $('._modalSlide').addClass('up').removeClass('down');
+            $('.modal-slide-backdrop').addClass('show');
+            $('body').addClass('scrOn')
+        });
+
+        btnSlideClose.on('click',function (){
+            setTimeout(
+                function(){
+                    document.getElementsByClassName("_modalSlide")[0].style.display='none';
+                }, 1000
+            );
+            $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y' , 'auto');
+            $('.modal-slide-backdrop').removeClass('show');
+            $('body').removeClass('scrOn')
+        });
+
+        btnSlideOpen.trigger('click');
+    })
+</script>
+</body>
+</html>

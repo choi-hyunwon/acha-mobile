@@ -6254,6 +6254,7 @@
                 font-family: var(--font3);
                 font-size: 16px;
                 line-height: 22px;
+                letter-spacing: -0.38px;
                 text-align: center;
                 color: var(--text-01);
                 border: none;
@@ -6279,6 +6280,49 @@
                     color: var(--text-01);
                 }
             }
+            .menu-list {
+                ul {
+                    // height: 225px;
+                    overflow-y: scroll;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                        width: 0;
+                        height: 0;
+                        background: transparent;
+                        -webkit-appearance: none;
+                    }
+
+                    li {
+                        position: relative;
+                        width: 100%;
+                        height: 56px;
+                        border-bottom: 1px solid #f5f6f8;
+                        padding: 0 4px;
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+
+                        a {
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                            align-items: center;
+                            text-align: left;
+
+                            .txt {
+                                font-size: 15px;
+                                line-height: 23px;
+                                color: var(--text-01);
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
             .subject{
                 padding-bottom: 12px;
                 font-size: 18px;
@@ -6287,6 +6331,17 @@
                 text-align: left;
                 span{
                     font-family: var(--font3);
+                }
+                .cate{
+                    max-width: 90px;
+                    display: inline-block;
+                    word-wrap: break-word;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    vertical-align: bottom;
                 }
             }
             .noti{
@@ -6375,8 +6430,19 @@
                     background: var(--text-02);
                 }
             }
-            .cate{
+            span{
                 font-family: var(--font3);
+                .cate{
+                    max-width: 75px;
+                    display: inline-block;
+                    word-wrap: break-word;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    vertical-align: bottom;
+                }
             }
             .ex{
                 font-size: 14px;
@@ -6393,6 +6459,8 @@
             z-index: 10;
             button{
               outline: 0;
+              font-size: 0;
+              background: transparent;
             }
             &:has(.category-edit-footer){
               .category-edit-list{
@@ -6414,6 +6482,7 @@
                 font-size: 15px;
                 line-height: 22px;
                 font-family: var(--font3);
+                color: var(--text-01);
               }
               .edit{
                 height: 32px;
@@ -6428,8 +6497,10 @@
               }
               .close{
                 margin-left: auto;
-                background: transparent;
                 opacity: 1;
+                img{
+                   outline: 0;
+                }
               }
             }
             .category-edit-list{
@@ -6457,6 +6528,7 @@
                   line-height: 24px;
                   font-family: var(--font1);
                   text-align: center;
+                  color: var(--text-01);
                 }
               }
               &::after{
@@ -6496,6 +6568,12 @@
               }
             }
           }
+
+        .btn-wrap{
+            .btn-lg{
+                margin: 0 auto;
+            }
+        }
     }
 
     &.modal-account{

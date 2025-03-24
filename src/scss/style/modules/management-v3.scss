@@ -2939,17 +2939,6 @@
           color: var(--text-02);
         }
 
-
-        .custom-switch {
-          width: 40px;
-
-          .custom-control-label {
-            &::before {
-              width: 40px;
-            }
-          }
-        }
-
         .state {
           padding: 2px 11px;
           background-color: #6839d3;

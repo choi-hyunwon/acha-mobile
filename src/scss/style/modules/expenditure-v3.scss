@@ -6068,7 +6068,7 @@
           color: #c2c1cc;
         }
       }
-      &:has(.noti, .noti-tooltip){
+      &:has(.noti):not(.noti-tooltip), &:has(.noti-tooltip):not(.noti){
         &:first-child{
           .input-byte{
             top: unset;

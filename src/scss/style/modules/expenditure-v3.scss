@@ -6068,26 +6068,16 @@
           color: #c2c1cc;
         }
       }
-      &:has(.noti):not(.noti-tooltip), &:has(.noti-tooltip):not(.noti){
+      &:has(.noti, .noti-tooltip){
         &:first-child{
           .input-byte{
-            top: unset;
+            top: 18px;
             transform: unset;
-            bottom: 40px;
             outline: 0;
           }
           .btn-clear-input{
-            bottom: 39px;
-          }
-        }
-      }
-      &:has(.noti):has(.noti-tooltip){
-        &:first-child{
-          .input-byte{
-            bottom: 66px;
-          }
-          .btn-clear-input{
-            bottom: 65px;
+            top: 18px;
+            bottom: unset;
           }
         }
       }

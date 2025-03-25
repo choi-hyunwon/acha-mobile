@@ -2420,7 +2420,6 @@ _ .event-btn-area {
   .withdrawal-check-list {
     position: relative;
     margin-top: 45px;
-    min-height: 350px;
 
     &::after {
       content: '';
@@ -2483,7 +2482,7 @@ _ .event-btn-area {
   }
 
   &.point-charge{
-    min-height: 402px;
+    min-height: 370px;
     .agree-box{
       margin-top: 30px;
       padding: 20px;

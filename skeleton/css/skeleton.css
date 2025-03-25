@@ -478,11 +478,6 @@ dl {
   height: 133px !important;
 }
 
-.skeleton-box-ex-list {
-}
-
-.skeleton-box-ex-list .skeleton-asset {
-}
 .skeleton-box-ex-list .skeleton-asset .skeleton-category-heading {
   padding: 20px;
 }
@@ -534,6 +529,87 @@ dl {
 
 .skeleton-box-ex-list .skeleton-category-menu .divider::before {
   display: none;
+}
+
+/* 생활 메인 */
+.skeleton-lifestyle {
+  padding-bottom: 110px;
+}
+.skeleton-lifestyle .skeleton-box-card-top {
+  padding: 20px 20px 0;
+}
+.skeleton-lifestyle .skeleton-btn-box {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  position: relative;
+}
+.skeleton-lifestyle .skeleton-btn-box div:first-child {
+  width: 76px;
+}
+.skeleton-lifestyle .skeleton-btn-box div:last-child {
+  width: 48px;
+}
+.skeleton-lifestyle .skeleton-btn-box .skeleton-vertical-line {
+  position: absolute;
+  width: 1px;
+  height: 11px;
+  background: #e7e8ea;
+  right: 58px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.skeleton-lifestyle .skeleton-ad-banner {
+  padding: 18px 20px 0;
+}
+.skeleton-lifestyle .skeleton-ad-banner div {
+  width: 100%;
+  height: 80px;
+}
+.skeleton-lifestyle .skeleton-life-section {
+  padding: 40px 20px 0;
+}
+.skeleton-lifestyle .skeleton-title div {
+  width: 33px;
+}
+.skeleton-lifestyle .skeleton-point-list {
+  padding-top: 18px;
+}
+.skeleton-lifestyle .skeleton-point-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.skeleton-lifestyle .skeleton-point-item + li {
+  margin-top: 20px;
+}
+.skeleton-lifestyle .skeleton-point-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 24px;
+}
+.skeleton-lifestyle .skeleton-point-txt div:first-child {
+  width: 114px;
+  margin-bottom: 7px;
+}
+.skeleton-lifestyle .skeleton-point-txt div:last-child {
+  height: 18px;
+  margin-bottom: 7px;
+}
+.skeleton-lifestyle .skeleton-point-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+}
+.skeleton-lifestyle .skeleton-banner {
+  margin-top: 18px;
+}
+.skeleton-lifestyle .skeleton-banner + div {
+  margin-top: 12px;
+}
+.skeleton-lifestyle .skeleton-banner div {
+  width: 100%;
+  height: 90px;
 }
 
 /* style */
@@ -591,6 +667,7 @@ dl {
 .skeleton-height-70 {
   height: 70px !important;
 }
+
 .skeleton-radius {
   border-radius: 100%;
 }

@@ -929,6 +929,14 @@
           }
         }
       }
+
+      .over{
+        align-items: flex-start;
+        text-align: left;
+        span{
+          padding-left: 4px;
+        }
+      }
     }
   }
 }

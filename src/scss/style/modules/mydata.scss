@@ -1009,7 +1009,7 @@
     padding: 10px 20px 0;
 
     >.title-area {
-      margin-bottom: 45px;
+      margin-bottom: 40px;
 
       .title {
         font-size: 18px;
@@ -1027,8 +1027,8 @@
       .desc {
         font-size: 13px;
         line-height: 20px;
-        letter-spacing: -0.33px;
         text-align: left;
+        letter-spacing: -0.2px;
         color: var(--text-02);
       }
 
@@ -1336,6 +1336,7 @@
       font-size: 15px;
       font-family: var(--font2);
       margin-bottom: 40px;
+      text-align: center;
     }
 
     .img {

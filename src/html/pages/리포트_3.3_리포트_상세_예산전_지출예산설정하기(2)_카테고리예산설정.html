@@ -22,6 +22,7 @@
                 </p>
             </div>
             <div class="amount-wrap pt-0">
+                <!-- 카테고리 설명이 없는 경우, 해당 영역 미노출 처리 -->
                 <div class="description-box">
                     <span>건강, 실비, 생명 보험 등</span>
                 </div>
@@ -95,7 +96,11 @@
 
     </div>
     @@include('../include/countCharDelete.html')
-
 </body>
-
+<script>
+    $(document).ready(function(){
+        let memo = $('.description-box span')[0];
+        memo.innerText.length < 1 ? $('.description-box').css('display', 'none') : $('.description-box').css('display', 'block');
+    });
+</script>
 </html>

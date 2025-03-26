@@ -3638,8 +3638,11 @@
               display: flex;
               gap: 4px;
             }
+            .category-text{
+              width: 100%;
+            }
             p{
-              width: calc(100% - 10px);
+              max-width: calc(100% - 10px);
               font-size: 19px;
               line-height: 26px;
               font-family: var(--font5);
@@ -3653,7 +3656,6 @@
             }
             i{
               margin-top: 5px;
-              margin-left: auto;
             }
           }
           .amount{

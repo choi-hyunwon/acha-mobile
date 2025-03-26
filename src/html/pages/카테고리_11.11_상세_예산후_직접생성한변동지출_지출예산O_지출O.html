@@ -46,6 +46,7 @@
                     </ul>
                 </div>
 
+                <!-- 카테고리 설명이 없는 경우, 해당 영역 미노출 처리 -->
                 <div class="description-box">
                     <span>여행숙박, 식비, 교통, 주유</span>
                 </div>
@@ -126,10 +127,13 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
-
 </body>
-
+<script>
+    $(document).ready(function(){
+        let memo = $('.description-box span')[0];
+        memo.innerText.length < 1 ? $('.description-box').css('display', 'none') : $('.description-box').css('display', 'block');
+    });
+</script>
 </html>

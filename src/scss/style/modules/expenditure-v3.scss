@@ -6085,7 +6085,7 @@
       }
       input{
         margin-right: 0;
-        padding-right: 0;
+        padding-right: 70px;
         &::placeholder{
           color: #c2c1cc;
         }
@@ -6100,6 +6100,7 @@
           .btn-clear-input{
             top: 18px;
             bottom: unset;
+            right: 39px;
           }
         }
       }
@@ -6117,7 +6118,7 @@
       font-size: 0;
       position: absolute;
       bottom: 11px;
-      right: 42px;
+      right: 40px;
       background: url('../../img/common/ico_input_delete@2x.png') no-repeat center / contain;
     }
     .noti-tooltip{

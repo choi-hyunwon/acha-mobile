@@ -3571,7 +3571,7 @@
                 transition: 0.5s;
 
                 .modal-slide-content {
-                    height: 244px;
+                    height: fit-content;
                     animation: modal-sticky-bottom-animation6 0.5s;
                 }
             }
@@ -3601,72 +3601,57 @@
                 }
 
                 .month-list {
-                    ul {
-                        height: 225px;
-                        overflow-y: scroll;
-                        -ms-overflow-style: none;
-                        scrollbar-width: none;
+                    li {
+                        position: relative;
+                        width: 100%;
+                        height: 56px;
+                        border-bottom: 1px solid #f5f6f8;
+                        padding: 0 4px;
 
-                        &::-webkit-scrollbar {
-                            display: none;
-                            width: 0;
-                            height: 0;
-                            background: transparent;
-                            -webkit-appearance: none;
+                        &:last-child {
+                            border-bottom: 0;
                         }
 
-                        li {
-                            position: relative;
+                        a {
+                            display: flex;
                             width: 100%;
-                            height: 56px;
-                            border-bottom: 1px solid #f5f6f8;
-                            padding: 0 4px;
+                            height: 100%;
+                            align-items: center;
+                            text-align: left;
 
-                            &:last-child {
-                                border-bottom: 0;
+                            .txt {
+                                font-size: 15px;
+                                line-height: 23px;
+                                color: var(--text-01);
+                                margin-right: 10px;
                             }
+                        }
 
+                        &.active {
                             a {
-                                display: flex;
-                                width: 100%;
-                                height: 100%;
-                                align-items: center;
-                                text-align: left;
-
                                 .txt {
-                                    font-size: 15px;
-                                    line-height: 23px;
-                                    color: var(--text-01);
-                                    margin-right: 10px;
+                                    font-family: var(--font2);
+                                    font-weight: 500;
+                                    color: var(--color-point);
+                                }
+
+                                .badge {
+                                    color: var(--color-point);
+                                    border: solid 1px var(--color-point);
                                 }
                             }
 
-                            &.active {
-                                a {
-                                    .txt {
-                                        font-family: var(--font2);
-                                        font-weight: 500;
-                                        color: var(--color-point);
-                                    }
-
-                                    .badge {
-                                        color: var(--color-point);
-                                        border: solid 1px var(--color-point);
-                                    }
-                                }
-
-                                &::after {
-                                    content: '';
-                                    position: absolute;
-                                    right: 0;
-                                    top: 50%;
-                                    transform: translateY(-50%);
-                                    display: block;
-                                    width: 17px;
-                                    height: 17px;
-                                    background-image: url(../../img/common/ico-select-key.svg);
-                                    background-size: cover;
-                                }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                display: block;
+                                width: 17px;
+                                height: 17px;
+                                background-image: url(../../img/common/ico-select-key.svg);
+                                background-size: cover;
                             }
                         }
                     }
@@ -3679,7 +3664,7 @@
                 transition: 0.5s;
 
                 .modal-slide-content {
-                    height: 193px;
+                    height: fit-content;
                     animation: modal-sticky-bottom-animation12 0.5s;
                 }
             }
@@ -3709,72 +3694,57 @@
                 }
 
                 .month-list {
-                    ul {
-                        height: 225px;
-                        overflow-y: scroll;
-                        -ms-overflow-style: none;
-                        scrollbar-width: none;
+                    li {
+                        position: relative;
+                        width: 100%;
+                        height: 56px;
+                        border-bottom: 1px solid #f5f6f8;
+                        padding: 0 4px;
 
-                        &::-webkit-scrollbar {
-                            display: none;
-                            width: 0;
-                            height: 0;
-                            background: transparent;
-                            -webkit-appearance: none;
+                        &:last-child {
+                            border-bottom: 0;
                         }
 
-                        li {
-                            position: relative;
+                        a {
+                            display: flex;
                             width: 100%;
-                            height: 56px;
-                            border-bottom: 1px solid #f5f6f8;
-                            padding: 0 4px;
+                            height: 100%;
+                            align-items: center;
+                            text-align: left;
 
-                            &:last-child {
-                                border-bottom: 0;
+                            .txt {
+                                font-size: 15px;
+                                line-height: 23px;
+                                color: var(--text-01);
+                                margin-right: 10px;
                             }
+                        }
 
+                        &.active {
                             a {
-                                display: flex;
-                                width: 100%;
-                                height: 100%;
-                                align-items: center;
-                                text-align: left;
-
                                 .txt {
-                                    font-size: 15px;
-                                    line-height: 23px;
-                                    color: var(--text-01);
-                                    margin-right: 10px;
+                                    font-family: var(--font2);
+                                    font-weight: 500;
+                                    color: var(--color-point);
+                                }
+
+                                .badge {
+                                    color: var(--color-point);
+                                    border: solid 1px var(--color-point);
                                 }
                             }
 
-                            &.active {
-                                a {
-                                    .txt {
-                                        font-family: var(--font2);
-                                        font-weight: 500;
-                                        color: var(--color-point);
-                                    }
-
-                                    .badge {
-                                        color: var(--color-point);
-                                        border: solid 1px var(--color-point);
-                                    }
-                                }
-
-                                &::after {
-                                    content: '';
-                                    position: absolute;
-                                    right: 0;
-                                    top: 50%;
-                                    transform: translateY(-50%);
-                                    display: block;
-                                    width: 17px;
-                                    height: 17px;
-                                    background-image: url(../../img/common/ico-select-key.svg);
-                                    background-size: cover;
-                                }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                display: block;
+                                width: 17px;
+                                height: 17px;
+                                background-image: url(../../img/common/ico-select-key.svg);
+                                background-size: cover;
                             }
                         }
                     }
@@ -3801,9 +3771,17 @@
                 }
             }
 
+            .inner{
+                padding: 30px;
+            }
+
             .desc-box {
                 .sub-title {
-                    margin-bottom: 8px;
+                    margin-bottom: 10px;
+                }
+                .img-box, img{
+                    width: 100%;
+                    height: auto;
                 }
             }
         }

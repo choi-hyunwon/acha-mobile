@@ -6002,16 +6002,23 @@
           }
         }
       }
-      .tit{
-        display: block;
-        font-size: 14px;
+      .tit, .desc{
+        width: inherit;
+        display: -webkit-box;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;    
         line-height: 20px;
+      }
+      .tit{
+        font-size: 14px;
         font-family: var(--font2);
         color: var(--text-01);
       }
       .desc{
         font-size: 13px;
-        line-height: 20px;
         font-family: var(--font1);
         color: var(--text-03);
       }

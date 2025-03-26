@@ -387,6 +387,7 @@
         margin: 10px 20px 0;
         &.add-logo.add-logo-amount{
           padding-top: 10px;
+          margin-bottom: 0;
         }
         & + .expenditure-tab{
           margin-top: 14px;
@@ -394,7 +395,10 @@
       }
       &:not(:has(.expenditure-tab)){
         .total-amount{
-          margin-bottom: 25px;
+          margin-bottom: 24px;
+          &:has(.expected){
+            margin-bottom: 15px;
+          }
         }
       }
     }
@@ -480,8 +484,6 @@
         height: 28px;
         line-height: 26px;
         position: absolute;
-        //top: 50%;
-        //transform: translateY(-50%);
         top: 23px;
         right: 0;
       }
@@ -499,7 +501,6 @@
         background-size: 14px;
         position: absolute;
         top: 34px;
-        //transform: translateY(-50%);
         right: 0;
 
         span {
@@ -555,7 +556,7 @@
 
         &.add-logo-amount {
           padding-top: 16px;
-          padding-bottom: 24px;
+          padding-bottom: 22px;
 
           .img {
             width: 54px;
@@ -1686,7 +1687,7 @@
        */
       .usage-sum {
         position: relative;
-        padding: 20px 20px 0 20px;
+        padding: 30px 20px 0 20px;
         display: flex;
         justify-content: space-between;
 
@@ -4143,14 +4144,14 @@
         padding: 20px 20px 30px;
         > li{
           padding: 0;
-          margin-bottom: 30px;
+          margin-bottom: 25px;
         }
         .monthly{
-          padding: 30px 0 20px;
+          padding: 25px 0 20px;
         }
         .list-day-wrap {
           &+.list-day-wrap {
-            margin-top: 40px;
+            margin-top: 30px;
           }
         }
       }
@@ -5650,6 +5651,18 @@
           .info {
             width: calc(100% - 50px);
           }
+
+          .tit{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+          }
+          
+          .badge{
+            font-size: 11px;
+            padding: 3px 6px;
+            line-height: 1;
+          }
         }
       }
 
@@ -6800,7 +6813,7 @@
       padding: 15px 20px;
       border-radius: 10px;
       background-color: #f7f8fc;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
 
       span {
         font-size: 14px;

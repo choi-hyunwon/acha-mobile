@@ -190,37 +190,43 @@
             </div>
         </div>
     </div>
-    <div class="modal-slide-backdrop"></div>
+    <!-- <div class="modal-slide-backdrop"></div> -->
     <script>
-        $(document).ready(function () {
-            var btnSlideOpen = $('._btnSlideOpen');
-            var btnSlideClose = $('._btnSlideClose');
-
-            btnSlideOpen.on('click', function () {
-                setTimeout(
-                    function () {
-                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
-                    }, 500
-                );
-                $('._modalSlide').addClass('up').removeClass('down');
-                $('.modal-slide-backdrop').addClass('show');
-                $('body').addClass('scrOn')
-            });
-
-            btnSlideClose.on('click', function () {
-                setTimeout(
-                    function () {
-                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
-                    }, 1000
-                );
-                $('._modalSlide').removeClass('up').addClass('down');
-                $('.modal-slide-backdrop').removeClass('show');
-                $('body').removeClass('scrOn')
-            });
-
-            btnSlideOpen.trigger('click');
-        })
-    </script>
+		$(document).ready(function () {
+			var btnSlideOpen = $('._btnSlideOpen');
+			var btnSlideClose = $("._btnSlideClose");
+			var modalSlide = $('._modalSlide');
+			var modalContent = $('.modal-slide-content');
+	
+			btnSlideOpen.on('click', function () {
+				setTimeout(function () {
+					modalSlide.show();
+				}, 500);
+				modalSlide.addClass('up').removeClass('down');
+				$('body').addClass('scrOn');
+			});
+	
+			function closeModal() {
+				setTimeout(function () {
+					modalSlide.hide();
+				}, 1000);
+				setTimeout(function () {
+					modalSlide.removeClass('up').addClass('down');
+				}, 500);
+				$('body').removeClass('scrOn');
+			}
+	
+			btnSlideClose.on('click', closeModal);
+	
+			modalSlide.on('click', function (event) {
+				if (!modalContent.is(event.target) && modalContent.has(event.target).length === 0) {
+					closeModal();
+				}
+			});
+	
+			btnSlideOpen.trigger('click');
+		});
+	</script>
 </body>
 
 </html>

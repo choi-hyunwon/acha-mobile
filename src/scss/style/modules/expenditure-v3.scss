@@ -401,6 +401,13 @@
           }
         }
       }
+      &:not(:has(.divider)){
+        .total-amount{
+          &:has(.expected){
+            margin-bottom: 25px;
+          }
+        }
+      }
     }
 
     /**
@@ -2209,6 +2216,7 @@
         /*카테고리*/
         &.usage-category-list {
           min-height: calc(100vh - 313px);
+          padding: 20px 20px 30px;
 
           &.budget-setting {
             padding: 20px 20px 30px;
@@ -2513,6 +2521,66 @@
                     background-color: #cc61ed;
                   }
                 }
+              }
+            }
+          }
+
+          /*카테고리 개선 */
+          &.renewal{
+            li{
+              padding: 20px;
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              column-gap: 14px;
+
+              & + li{
+                margin-top: 20px;
+              }
+
+              .icon{
+                width: 40px;
+                height: 40px;
+              }
+
+              .category{
+                max-width: calc(100% - 54px);
+                display: -webkit-box;
+                word-wrap: break-word;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-size: 15px;
+                line-height: 26px;
+                font-family: var(--font3);
+              }
+
+              a{
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: var(--text-01);
+                img{
+                  width: 6px;
+                  height: 16px;
+                  outline: 0;
+                  font-size: 0;
+                  background: transparent;
+                }
+              }
+
+              .amount{
+                font-size: 18px;
+                line-height: 26px;
+                font-family: var(--font2);
+              }
+
+              .won{
+                font-size: 13px;
+                line-height: 26px;
+                font-family: var(--font2);
               }
             }
           }

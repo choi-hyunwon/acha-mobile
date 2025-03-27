@@ -430,7 +430,9 @@
             const wh = window.innerHeight;
             let contents = $('.category-edit-wrap')[0].clientHeight;
             if(wh > contents && $('.btn-floating').length){
-                $('.expenditure').addClass('pb-60');
+                $('.expenditure').addClass('pb-70');
+            } else if(wh < contents && $('.btn-floating').length){
+                $('.expenditure').addClass('pb-70');
             }
             
             $('.toggle-btn-group button').click(function (e) {

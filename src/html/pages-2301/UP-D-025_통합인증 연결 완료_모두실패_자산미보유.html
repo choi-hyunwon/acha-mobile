@@ -2,25 +2,25 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<div class="wrap"></div>
+<div class="wrap _btnSlideOpen"></div>
 <div class="modal-slide modal-moreview _modalSlide">
     <div class="modal-slide-content">
         <a href="#" class="btn-close _btnSlideClose"></a>
         <div class="inner">
-            <div class="title _btnSlideOpen"><span class="name">현대카드 연결</span>을 해제할까요?</div>
+            <div class="title">
+                <span class="name">자산 미보유</span>
+            </div>
             <div class="desc-box">
-                <p>해지 시 신규 내역을 불러올 수 없고 기존 내역은 유지돼요 🙂</p>
-                <span class="reference">* 기존 내역은 [더보기>마이데이터 연결>데이터 관리] 에서 삭제할 수 있어요.</span>
-                <a href="#" class="text-btn">철회 고지 항목 상세보기<i class="ico_arrow_right_small"></i></a>
+                <p>선택 기관의 자산을 보유하고 있지 않거나, <br>연결을 지원하고 있지 않아요</p>
+                <span class="reference">* 선불카드/퇴직연금 자산 연결은 추후 지원 예정이에요</span>
             </div>
             <div class="btn-wrap">
-                <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">닫기</a>
-                <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">연결 해제하기</a>
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg">확인</a>
             </div>
         </div>
     </div>
 </div>
-<!-- <div class="modal-slide-backdrop"></div> -->
+<div class="modal-slide-backdrop"></div>
 <script>
     $(document).ready(function () {
         var btnSlideOpen = $('._btnSlideOpen');

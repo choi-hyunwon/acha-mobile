@@ -3,7 +3,7 @@
 @@include('../include/head.html')
 <body>
 <!-- 소비분석 툴팁 -->
-<a href="#" data-toggle="tooltip" class="ico-tooltip">
+<a href="#" data-toggle="tooltip-analysis" class="ico-tooltip">
     <!-- <img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘" /> -->
 </a>
 <div class="modal-slide analysis-spending _modalSlide">
@@ -20,13 +20,13 @@
         </div>
     </div>
 </div>
-<div class="modal-slide-backdrop"></div>
+<!-- <div class="modal-slide-backdrop"></div> -->
 <script>
     $(document).ready(function () {
-        const tooltip = $('a[data-toggle="tooltip"]');
-        const modalClose = $('._btnSlideClose');
+        const tooltipOpen = $('a[data-toggle="tooltip-analysis"]');
+        const tooltipClose = $('._btnSlideClose');
         
-        tooltip.click(function () {
+        tooltipOpen.click(function () {
             setTimeout(
                 function () {
                     document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
@@ -37,7 +37,7 @@
             $('body').addClass('scrOn')
         });
 
-        modalClose.click(function () {
+        tooltipClose.click(function () {
             setTimeout(
                 function () {
                     document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
@@ -48,7 +48,7 @@
             $('body').removeClass('scrOn')
         });
 
-        tooltip.trigger('click');
+        tooltipOpen.trigger('click');
     });
 </script>
 </body>

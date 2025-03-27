@@ -1807,21 +1807,21 @@
     }
 }
 
-.modal-slide-backdrop {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    z-index: 1040;
-    width: 100vh;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+// .modal-slide-backdrop {
+//     position: fixed;
+//     display: none;
+//     top: 0;
+//     left: 0;
+//     z-index: 1040;
+//     width: 100vh;
+//     height: 100vh;
+//     background-color: rgba(0, 0, 0, 0.7);
 
-    &.show {
-        display: block;
-        animation: modal-fade-animation 0.7s;
-    }
-}
+//     &.show {
+//         display: block;
+//         animation: modal-fade-animation 0.7s;
+//     }
+// }
 
 .modal-slide {
     position: fixed;
@@ -1833,6 +1833,11 @@
     height: 100%;
     overflow: hidden;
     outline: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    &.show {
+        display: block;
+        animation: modal-fade-animation 0.7s;
+    }
 
     .modal-slide-content {
         position: absolute;
@@ -6054,6 +6059,12 @@
 
         .inner {
             padding: 20px 30px 40px 30px;
+            &:has(.filter-list){
+                padding: 20px;
+                .title{
+                    padding-bottom: 13px;
+                }
+            }
 
             .title {
                 font-family: var(--font3);
@@ -6085,6 +6096,61 @@
                     }
                     & + li{
                         margin-top: 10px;
+                    }
+                }
+            }
+
+            .filter-list {
+                li {
+                    position: relative;
+                    width: 100%;
+                    padding: 17px 4px;
+                    
+                    & + li {
+                        border-top: 1px solid #f5f6f8;
+                    }
+
+                    a {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        align-items: center;
+                        text-align: left;
+
+                        .txt {
+                            font-size: 15px;
+                            line-height: 23px;
+                            font-family: var(--font1);
+                            color: var(--text-01);
+                            margin-right: 10px;
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            .txt {
+                                font-family: var(--font2);
+                                color: var(--color-point);
+                            }
+
+                            .badge {
+                                color: var(--color-point);
+                                border: solid 1px var(--color-point);
+                            }
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            display: block;
+                            width: 17px;
+                            height: 17px;
+                            background-image: url(../../img/common/ico-select-key.svg);
+                            background-size: cover;
+                        }
                     }
                 }
             }
@@ -6412,7 +6478,6 @@
         .category-edit-pop{
             width: 100%;
             height: 460px;
-            // position: fixed;
             bottom: 0;
             z-index: 10;
             button{
@@ -6423,7 +6488,7 @@
             &:has(.category-edit-footer){
               .category-edit-list{
                 height: 360px;
-                &::after{
+                &::before{
                   bottom: 50px;
                 }
               }
@@ -6489,7 +6554,7 @@
                   color: var(--text-01);
                 }
               }
-              &::after{
+              &::before{
                 content: "";
                 display: inline-block;
                 width: 100%;

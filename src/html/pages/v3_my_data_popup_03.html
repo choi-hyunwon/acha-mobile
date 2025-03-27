@@ -66,21 +66,6 @@
 			});
 
 			btnSlideOpen.trigger("click");
-
-			let listE = $(".day-list li.active").prevUntil().length - 1;
-			let scrollH = listE * 56;
-
-			(function () {
-				if ($(".modal-slide").show()) {
-					$(".day-list ul").scrollTop(scrollH);
-				}
-			})();
-		});
-	</script>
-	<script>
-		$(".day-list li a").on("click", function () {
-			$(this).parent().addClass("active").siblings().removeClass("active");
-		});
 	</script>
 </body>
 

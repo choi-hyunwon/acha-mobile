@@ -2,17 +2,17 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<!-- 페어 카드 툴팁 -->
-<a href="#" data-toggle="tooltip-pair" class="ico-tooltip">
+<!-- 맞춤 카드 툴팁 -->
+<a href="#" data-toggle="tooltip-custom" class="ico-tooltip">
     <!-- <img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘" /> -->
 </a>
 <div class="modal-slide analysis-spending _modalSlide">
     <div class="modal-slide-content">
         <a href="#" class="btn-close _btnSlideClose"></a>
         <div class="inner">
-            <p class="title">페어 카드</p>
+            <p class="title">맞춤 카드</p>
             <ul class="dot-list">
-                <li>1순위 추천 카드를 제외하고, 우리가 가장 많이 사용한 혜택이 있는 카드를 알려줄게요</li>
+                <li>지출이 많은 카테고리를 묶어서, 조합에 맞는 혜택을 제공하는 카드를 추천해요</li>
             </ul>
         </div>
     </div>
@@ -20,7 +20,7 @@
 <!-- <div class="modal-slide-backdrop"></div> -->
 <script>
     $(document).ready(function () {
-        const tooltipOpen = $('a[data-toggle="tooltip-pair"]');
+        const tooltipOpen = $('a[data-toggle="tooltip-custom"]');
         const tooltipClose = $('._btnSlideClose');
         
         tooltipOpen.click(function () {

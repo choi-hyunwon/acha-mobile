@@ -3638,8 +3638,11 @@
               display: flex;
               gap: 4px;
             }
+            .category-text{
+              width: 100%;
+            }
             p{
-              width: calc(100% - 10px);
+              max-width: calc(100% - 10px);
               font-size: 19px;
               line-height: 26px;
               font-family: var(--font5);
@@ -3653,7 +3656,6 @@
             }
             i{
               margin-top: 5px;
-              margin-left: auto;
             }
           }
           .amount{
@@ -6000,16 +6002,23 @@
           }
         }
       }
-      .tit{
-        display: block;
-        font-size: 14px;
+      .tit, .desc{
+        width: inherit;
+        display: -webkit-box;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;    
         line-height: 20px;
+      }
+      .tit{
+        font-size: 14px;
         font-family: var(--font2);
         color: var(--text-01);
       }
       .desc{
         font-size: 13px;
-        line-height: 20px;
         font-family: var(--font1);
         color: var(--text-03);
       }
@@ -6076,7 +6085,7 @@
       }
       input{
         margin-right: 0;
-        padding-right: 0;
+        padding-right: 70px;
         &::placeholder{
           color: #c2c1cc;
         }
@@ -6091,6 +6100,7 @@
           .btn-clear-input{
             top: 18px;
             bottom: unset;
+            right: 39px;
           }
         }
       }
@@ -6108,7 +6118,7 @@
       font-size: 0;
       position: absolute;
       bottom: 11px;
-      right: 42px;
+      right: 40px;
       background: url('../../img/common/ico_input_delete@2x.png') no-repeat center / contain;
     }
     .noti-tooltip{
@@ -6168,7 +6178,7 @@
       height: 26px;
       border-radius: 13px;
       background-color: #f1f1f4;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
 
       >.percent {
         position: absolute;

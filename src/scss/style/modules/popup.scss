@@ -2973,6 +2973,10 @@
                 padding-bottom: 20px;
                 border-bottom: 2px solid #37354e;
 
+                strong{
+                    font-family: var(--font3);
+                }
+
                 .name {
                     font-weight: bold;
                     font-family: var(--font3);
@@ -2983,11 +2987,16 @@
             .desc-box {
                 padding: 20px 0;
                 text-align: left;
+                &:has(.asset-list){
+                    padding-bottom: 30px;
+                }
 
                 p {
                     font-size: 14px;
+                    line-height: 22px;
                     font-family: var(--font1);
                     color: var(--text-01);
+                    word-break: keep-all;
                 }
 
                 .reference {
@@ -3049,6 +3058,36 @@
                         color: #f21831;
                     }
                 }
+
+                .asset-list{
+                    p{
+                        font-family: var(--font2);
+                        padding: 30px 0 10px;
+                        margin-bottom: 10px;
+                        border-bottom: 1px solid #efefef;
+                    }
+                    li{
+                        padding: 10px 0;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 8px;
+                        }
+                        .card-name{
+                            font-size: 15px;
+                            line-height: 28px;
+                            font-family: var(--font1);
+                            color: var(--text-01);
+                            word-break: keep-all;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+
+            .two-row{
+                padding: 4px 0;
+                line-height: 20px;
             }
         }
 
@@ -3532,7 +3571,7 @@
                 transition: 0.5s;
 
                 .modal-slide-content {
-                    height: 244px;
+                    height: fit-content;
                     animation: modal-sticky-bottom-animation6 0.5s;
                 }
             }
@@ -3562,72 +3601,57 @@
                 }
 
                 .month-list {
-                    ul {
-                        height: 225px;
-                        overflow-y: scroll;
-                        -ms-overflow-style: none;
-                        scrollbar-width: none;
+                    li {
+                        position: relative;
+                        width: 100%;
+                        height: 56px;
+                        border-bottom: 1px solid #f5f6f8;
+                        padding: 0 4px;
 
-                        &::-webkit-scrollbar {
-                            display: none;
-                            width: 0;
-                            height: 0;
-                            background: transparent;
-                            -webkit-appearance: none;
+                        &:last-child {
+                            border-bottom: 0;
                         }
 
-                        li {
-                            position: relative;
+                        a {
+                            display: flex;
                             width: 100%;
-                            height: 56px;
-                            border-bottom: 1px solid #f5f6f8;
-                            padding: 0 4px;
+                            height: 100%;
+                            align-items: center;
+                            text-align: left;
 
-                            &:last-child {
-                                border-bottom: 0;
+                            .txt {
+                                font-size: 15px;
+                                line-height: 23px;
+                                color: var(--text-01);
+                                margin-right: 10px;
                             }
+                        }
 
+                        &.active {
                             a {
-                                display: flex;
-                                width: 100%;
-                                height: 100%;
-                                align-items: center;
-                                text-align: left;
-
                                 .txt {
-                                    font-size: 15px;
-                                    line-height: 23px;
-                                    color: var(--text-01);
-                                    margin-right: 10px;
+                                    font-family: var(--font2);
+                                    font-weight: 500;
+                                    color: var(--color-point);
+                                }
+
+                                .badge {
+                                    color: var(--color-point);
+                                    border: solid 1px var(--color-point);
                                 }
                             }
 
-                            &.active {
-                                a {
-                                    .txt {
-                                        font-family: var(--font2);
-                                        font-weight: 500;
-                                        color: var(--color-point);
-                                    }
-
-                                    .badge {
-                                        color: var(--color-point);
-                                        border: solid 1px var(--color-point);
-                                    }
-                                }
-
-                                &::after {
-                                    content: '';
-                                    position: absolute;
-                                    right: 0;
-                                    top: 50%;
-                                    transform: translateY(-50%);
-                                    display: block;
-                                    width: 17px;
-                                    height: 17px;
-                                    background-image: url(../../img/common/ico-select-key.svg);
-                                    background-size: cover;
-                                }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                display: block;
+                                width: 17px;
+                                height: 17px;
+                                background-image: url(../../img/common/ico-select-key.svg);
+                                background-size: cover;
                             }
                         }
                     }
@@ -3640,7 +3664,7 @@
                 transition: 0.5s;
 
                 .modal-slide-content {
-                    height: 193px;
+                    height: fit-content;
                     animation: modal-sticky-bottom-animation12 0.5s;
                 }
             }
@@ -3670,72 +3694,57 @@
                 }
 
                 .month-list {
-                    ul {
-                        height: 225px;
-                        overflow-y: scroll;
-                        -ms-overflow-style: none;
-                        scrollbar-width: none;
+                    li {
+                        position: relative;
+                        width: 100%;
+                        height: 56px;
+                        border-bottom: 1px solid #f5f6f8;
+                        padding: 0 4px;
 
-                        &::-webkit-scrollbar {
-                            display: none;
-                            width: 0;
-                            height: 0;
-                            background: transparent;
-                            -webkit-appearance: none;
+                        &:last-child {
+                            border-bottom: 0;
                         }
 
-                        li {
-                            position: relative;
+                        a {
+                            display: flex;
                             width: 100%;
-                            height: 56px;
-                            border-bottom: 1px solid #f5f6f8;
-                            padding: 0 4px;
+                            height: 100%;
+                            align-items: center;
+                            text-align: left;
 
-                            &:last-child {
-                                border-bottom: 0;
+                            .txt {
+                                font-size: 15px;
+                                line-height: 23px;
+                                color: var(--text-01);
+                                margin-right: 10px;
                             }
+                        }
 
+                        &.active {
                             a {
-                                display: flex;
-                                width: 100%;
-                                height: 100%;
-                                align-items: center;
-                                text-align: left;
-
                                 .txt {
-                                    font-size: 15px;
-                                    line-height: 23px;
-                                    color: var(--text-01);
-                                    margin-right: 10px;
+                                    font-family: var(--font2);
+                                    font-weight: 500;
+                                    color: var(--color-point);
+                                }
+
+                                .badge {
+                                    color: var(--color-point);
+                                    border: solid 1px var(--color-point);
                                 }
                             }
 
-                            &.active {
-                                a {
-                                    .txt {
-                                        font-family: var(--font2);
-                                        font-weight: 500;
-                                        color: var(--color-point);
-                                    }
-
-                                    .badge {
-                                        color: var(--color-point);
-                                        border: solid 1px var(--color-point);
-                                    }
-                                }
-
-                                &::after {
-                                    content: '';
-                                    position: absolute;
-                                    right: 0;
-                                    top: 50%;
-                                    transform: translateY(-50%);
-                                    display: block;
-                                    width: 17px;
-                                    height: 17px;
-                                    background-image: url(../../img/common/ico-select-key.svg);
-                                    background-size: cover;
-                                }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                display: block;
+                                width: 17px;
+                                height: 17px;
+                                background-image: url(../../img/common/ico-select-key.svg);
+                                background-size: cover;
                             }
                         }
                     }
@@ -3762,9 +3771,17 @@
                 }
             }
 
+            .inner{
+                padding: 30px;
+            }
+
             .desc-box {
                 .sub-title {
-                    margin-bottom: 8px;
+                    margin-bottom: 10px;
+                }
+                .img-box, img{
+                    width: 100%;
+                    height: auto;
                 }
             }
         }
@@ -3816,96 +3833,22 @@
 
         .details-history {
             &.limit {
-                margin-left: -20px;
-                padding: 0 20px;
-                width: calc(100% + 40px);
-                overflow-y: scroll;
-                max-height: 240px;
-
+                height: 300px;
+                overflow-y: auto;
                 .item-list {
-                    padding-bottom: 8px;
-                    padding-top: 8px;
-
-                    .group {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        position: relative;
-
-                        .box {
-                            margin-bottom: 0;
-                            position: relative;
-                            display: flex;
-                            align-items: center;
-
-                            .img {
-                                width: 40px;
-                                height: 40px;
-                                display: inline-block;
-                                vertical-align: top;
-                                margin-right: 8px;
-                                margin-top: 4px;
-
-                                img {
-                                    width: 32px;
-                                    margin: 4px !important;
-                                    height: auto;
-                                }
-                            }
-
-                            .info {
-                                display: inline-block;
-                                position: relative;
-
-                                .place {
-                                    display: block;
-
-                                    span {
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        display: inline-block;
-                                        font-size: 15px;
-                                        max-width: 142px;
-                                        min-width: 10px;
-                                        line-height: 22px;
-                                        vertical-align: middle;
-                                    }
-                                }
-                            }
-                        }
-
-                        .check-box {
-                            display: flex;
-                            align-items: center;
-
-                            >div {
-                                margin-right: 8px;
-                            }
-
-                            label {
-                                [type='checkbox'].filled-in {
-                                    &+span:empty {
-                                        padding-left: 22px;
-                                    }
-                                }
-                            }
-                        }
-
-                        .connect {
-                            font-size: 15px;
-                            font-family: var(--font2);
-                            line-height: 22px;
-
-                            &-success {
-                                color: #3968d3;
-                            }
-
-                            &-failure {
-                                color: #f21730;
-                            }
-                        }
+                    padding: 10px 0;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 8px;
                     }
+                }
+                .corp{
+                    font-size: 15px;
+                    line-height: 26px;
+                    font-family: var(--font1);
+                    color: var(--text-01);
+                    vertical-align: middle;
                 }
             }
         }
@@ -3926,6 +3869,22 @@
                 .modal-slide-content {
                     animation: modal-sticky-bottom-animation-outauto 0.5s;
                     height: 0;
+                }
+            }
+
+            .inner {
+                padding: 20px 30px 30px;
+                .desc-box{
+                    padding: 20px 0 30px;
+                    p{
+                        padding-bottom: 10px;
+                        margin-bottom: 10px;
+                        border-bottom: 1px solid #efefef;
+                        font-size: 14px;
+                        line-height: 22px;
+                        font-family: var(--font2);
+                        color: var(--text-01);
+                    }
                 }
             }
         }

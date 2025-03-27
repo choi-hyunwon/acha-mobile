@@ -3543,7 +3543,8 @@ _ .event-btn-area {
         padding: 15px 0;
         font-size: 15px;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        gap: 15px;
 
         .tit {
           font-family: var(--font1);
@@ -3551,7 +3552,8 @@ _ .event-btn-area {
         }
 
         .val-item {
-          width: 45%;
+          width: 55%;
+          margin-left: auto;
           text-align: right;
           word-break: keep-all;
 
@@ -3683,6 +3685,7 @@ _ .event-btn-area {
       font-size: 13px;
       color: var(--text-02);
       font-family: var(--font1);
+      word-break: keep-all;
     }
   }
 }

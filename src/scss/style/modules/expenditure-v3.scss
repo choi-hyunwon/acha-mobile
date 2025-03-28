@@ -5924,7 +5924,10 @@
       overflow: auto;
       li{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(70px, 20%));
+        column-gap: 17px;
         row-gap: 24px;
       }
       button{

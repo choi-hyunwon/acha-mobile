@@ -227,12 +227,18 @@
     </div>
     <script>
         $(document).ready(function() {
-            if($('.category-edit-pop').show()){
-                $('body').addClass('scroll-hidden').on('scroll touchmove mousewheel', function(e){
-                    e.preventDefault();
-                });
+            let scrollPosition;
+            const userAgent = window.navigator.userAgent.toLowerCase();
+            const isIos = userAgent.indexOf('iphone') > -1 || userAgent.indexOf('ipad') > -1 && 'ontouchend' in document;
+
+            if(isIos && $('.category-edit-pop').show()){
+                scrollPosition = window.pageYOffset;
+                $('body').css('position', 'fixed');
+                $('body').css('top', `-${scrollPosition}px`);
+            }else if($('.category-edit-pop').show()) {
+                $('body').css('overflow-y', 'hidden');
             } else {
-                $('body').removeClass('scroll-hidden').off('scroll touchmove mousewheel');
+                $('body').css('overflow-y', 'auto');
             }
         });
     </script>

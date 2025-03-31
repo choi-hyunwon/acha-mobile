@@ -507,11 +507,3 @@ caption.visually_hidden {
 
   }
 }
-
-.scroll-hidden{
-  overflow-y: hidden; 
-  touch-action: none;
-  // pointer-events: none;
-  -webkit-overflow-scrolling: none;
-  overscroll-behavior: none;
-}

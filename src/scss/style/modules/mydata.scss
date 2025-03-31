@@ -1321,6 +1321,19 @@
         height: auto;
       }
     }
+
+    &.category{
+      .img {
+        width: 90px;
+        height: 30px;
+        margin: 0 auto 40px;
+      }
+
+      .txt{
+        line-height: 28px;
+        text-align: center;
+      }
+    }
   }
 
   /*마이데이터 - 오류페이지*/

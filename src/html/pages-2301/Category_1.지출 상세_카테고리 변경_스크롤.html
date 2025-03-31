@@ -227,7 +227,13 @@
     </div>
     <script>
         $(document).ready(function() {
-            $('.category-edit-pop').show() ? $('body').css('overflow-y', 'hidden') : $('body').css('overflow-y', 'auto');
+            if($('.category-edit-pop').show()){
+                $('body').addClass('scroll-hidden').on('scroll touchmove mousewheel', function(e){
+                    e.preventDefault();
+                });
+            } else {
+                $('body').removeClass('scroll-hidden').off('scroll touchmove mousewheel');
+            }
         });
     </script>
 </body>

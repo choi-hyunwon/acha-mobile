@@ -29,7 +29,6 @@ caption.visually_hidden {
   overflow: hidden;
 }
 
-
 /**
  이미지 리스트
  */
@@ -61,7 +60,6 @@ caption.visually_hidden {
   width: 100%;
   overflow: hidden;
 }
-
 
 /*스크롤바 커스텀*/
 
@@ -118,21 +116,21 @@ caption.visually_hidden {
 }
 
 .waiting {
-  background: #bdbdbd !important;;
-  color: #ffffff !important;;
+  background: #bdbdbd !important;
+  color: #ffffff !important;
 }
 
 .design {
-  background: #f00 !important;;
-  color: #ffffff !important;;
+  background: #f00 !important;
+  color: #ffffff !important;
 }
 
 .waiting::after {
-  content: '대기중';
+  content: "대기중";
 }
 
 .design::after {
-  content: '확인필요';
+  content: "확인필요";
 }
 
 .working {
@@ -141,21 +139,17 @@ caption.visually_hidden {
 }
 
 .working::after {
-  content: '작업중';
+  content: "작업중";
 }
 
 .complete {
   background: $bgColor-dark !important;
-  opacity: .6;
-  color: #ffffff !important;;
+  opacity: 0.6;
+  color: #ffffff !important;
 }
 
 .complete::after {
-  content: '완료';
-}
-
-.depths_2_filename {
-
+  content: "완료";
 }
 
 .tooltip {

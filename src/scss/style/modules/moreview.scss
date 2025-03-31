@@ -3722,7 +3722,6 @@ _ .event-btn-area {
           display: block;
           font-family: var(--font3);
           font-size: 15px;
-          font-weight: bold;
           line-height: 22px;
           letter-spacing: -0.75px;
           text-align: center;
@@ -3738,6 +3737,17 @@ _ .event-btn-area {
           text-align: center;
           font-size: 14px;
           color: var(--text-01);
+        }
+      }
+
+      &.category{
+        padding-top: 24px;
+        .modal-body{
+          padding-top: 18px;
+          padding-bottom: 24px;
+        }
+        .bg-gray{
+          background: var(--text-03);
         }
       }
     }

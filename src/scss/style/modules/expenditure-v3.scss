@@ -1839,18 +1839,10 @@
                   flex: 1;
 
                   .img {
-                    width: 40px;
-                    height: 40px;
                     display: inline-block;
-                    vertical-align: top;
                     margin-right: 14px;
 
-                    img {
-                      width: 100%;
-                      height: auto;
-                    }
-
-                    .icon {
+                    img, .icon {
                       width: 40px;
                       height: 40px;
                     }
@@ -1978,8 +1970,6 @@
 
                     .expected {
                       margin-top: 2px;
-                      display: flex;
-                      flex-wrap: wrap;
                       word-break: break-all;
                       font-family: var(--font1);
                       font-size: 12px;

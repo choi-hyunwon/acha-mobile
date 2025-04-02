@@ -9724,3 +9724,17 @@
     color: var(--text-02);
   }
 }
+
+.ad-banner{
+  display: block;
+  width: calc(100% - 40px);
+  margin: 0 auto 24px;
+  border-radius: 16px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

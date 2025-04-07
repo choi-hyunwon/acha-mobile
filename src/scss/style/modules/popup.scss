@@ -3833,22 +3833,102 @@
 
         .details-history {
             &.limit {
-                height: 300px;
-                overflow-y: auto;
+                margin-left: -20px;
+                padding: 0 20px;
+                width: calc(100% + 40px);
+                overflow-y: scroll;
+                max-height: 240px;
                 .item-list {
-                    padding: 10px 0;
-                    img{
-                        width: 40px;
-                        height: 40px;
-                        margin-right: 8px;
+                    padding-bottom: 8px;
+                    padding-top: 8px;
+
+                    .group {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+
+                        .box {
+                            margin-bottom: 0;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+
+                            .img {
+                                width: 40px;
+                                height: 40px;
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-right: 8px;
+                                margin-top: 4px;
+
+                                img {
+                                    width: 32px;
+                                    margin: 4px !important;
+                                    height: auto;
+                                }
+                            }
+
+                            .info {
+                                display: inline-block;
+                                position: relative;
+
+                                .place {
+                                    display: block;
+
+                                    span {
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        display: inline-block;
+                                        font-size: 15px;
+                                        max-width: 142px;
+                                        min-width: 10px;
+                                        line-height: 22px;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+
+                        .check-box {
+                            display: flex;
+                            align-items: center;
+
+                            >div {
+                                margin-right: 8px;
+                            }
+
+                            label {
+                                [type='checkbox'].filled-in {
+                                    &+span:empty {
+                                        padding-left: 22px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .connect {
+                            font-size: 15px;
+                            font-family: var(--font2);
+                            line-height: 22px;
+
+                            &-success {
+                                color: #3968d3;
+                            }
+
+                            &-failure {
+                                color: #f21730;
+                            }
+                        }
                     }
-                }
-                .corp{
-                    font-size: 15px;
-                    line-height: 26px;
-                    font-family: var(--font1);
-                    color: var(--text-01);
-                    vertical-align: middle;
+                    .corp{
+                        font-size: 15px;
+                        line-height: 26px;
+                        font-family: var(--font1);
+                        color: var(--text-01);
+                        vertical-align: middle;
+                    }
                 }
             }
         }
@@ -3875,7 +3955,8 @@
             .inner {
                 padding: 20px 30px 30px;
                 .desc-box{
-                    padding: 20px 0 30px;
+                    padding-top: 20px;
+                    padding-bottom: 0;
                     p{
                         padding-bottom: 10px;
                         margin-bottom: 10px;

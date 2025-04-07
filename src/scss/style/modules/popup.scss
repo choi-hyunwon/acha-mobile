@@ -3954,6 +3954,13 @@
 
             .inner {
                 padding: 20px 30px 30px;
+                .err-desc{
+                    padding-top: 20px;
+                    border-top: 2px solid var(--text-01);
+                    p{
+                        margin-top: 0;
+                    }
+                }
                 .desc-box{
                     padding-top: 20px;
                     padding-bottom: 0;

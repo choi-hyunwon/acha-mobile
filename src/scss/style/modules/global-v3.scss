@@ -100,7 +100,8 @@
   }
 
   .py-20{
-    padding-inline: 20px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
 
   .mt-0{
@@ -553,6 +554,20 @@
   .fixed-style {
     background-color: #fff;
     padding: 0 20px 30px 20px;
+  }
+
+  .floating-effect{
+    &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 20px;
+        position: fixed;
+        left: 0;
+        bottom: 80px;
+        z-index: 10;
+        background-image: linear-gradient(to bottom, #fff0, #fffc);
+    }
   }
 
   /**

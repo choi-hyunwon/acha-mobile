@@ -1340,8 +1340,13 @@
             color: var(--text-03);
             line-height: 26px;
 
-            img {
+            img:not(.lock-img) {
               margin-top: -5px;
+            }
+
+            .lock-img{
+              width: 20px;
+              height: 20px;
             }
           }
 

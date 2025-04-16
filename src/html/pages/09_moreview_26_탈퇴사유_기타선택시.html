@@ -50,6 +50,11 @@
                         <option value="3">3</option>
                     </select>
                 </div>
+                <div class="textarea">
+                    <!-- <label for="context">문의 내용</label>-->
+                    <span class="txt-limit"><em class="_val">0</em> / 200</span>
+                    <textarea class="custom" onkeyup="countChar(this,'_val')" name="context" title="textarea" maxlength="200" placeholder="탈퇴사유를 입력해 주세요. "></textarea>
+                </div>
             </div>
             <div class="btn-box mt-30">
                 <a href="#" class="btn btn-block btn-lg btn-gray btn-half float-left">탈퇴하기</a>

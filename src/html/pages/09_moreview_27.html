@@ -5,43 +5,21 @@
 <div class="wrap">
     <div class="contents">
         <div class="withdrawal-completed">
-            <div class="img"><img src="../../img/common/img-popup-mobile-acha-img-01@2x.png" alt="탈퇴완료"></div>
             <div class="tit-lg">탈퇴가 완료되었어요.</div>
             <div class="tit">
-                그동안 아차와 함께해주셔서 감사합니다.<br/>
-                다시 만날 그날을 기다릴게요 🙂
+                그동안 유플래너와 함께해 주셔서 감사합니다.<br/>
+                다시 만날 그날을 기다릴게요 <br> 
+                나중에 또 만나요 🙂
             </div>
-            <div class="tit-sm">3초 후 자동 종료됩니다.</div>
+            <div class="img">
+                <img src="../../img/common/uplanner_character_greeting.gif" alt="탈퇴완료">
+            </div>
+            <div class="btn_wrap">
+                <a href="#" class="btn btn-block btn-purple-bg">앱 종료하기</a>
+            </div>
         </div>
     </div>
 </div>
-<script>
-
-    function countChar(val , target) {
-        var len = val.value.length;
-        var targetItem = $(`.${target}`);
-
-        targetItem.text(len);
-
-        if(len === 0) {
-            targetItem.css('color','#afaeb8')
-        }
-        else {
-            targetItem.css('color','#37354e')
-        }
-    }
-
-    var selectTarget = $('#category');
-
-    selectTarget.on({
-        'focus': function() {
-            $(this).addClass('focus');
-        },
-        'blur': function() {
-            $(this).addClass('focus');
-        }
-    });
-</script>
 </body>
 </html>
 

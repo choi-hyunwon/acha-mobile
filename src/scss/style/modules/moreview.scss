@@ -3804,6 +3804,24 @@ _ .event-btn-area {
       }
     }
   }
+  &.disconnect{
+    .modal-content{
+      padding-top: 30px;
+      .modal-header{
+        .title{
+          letter-spacing: 0;
+        }
+      }
+      .modal-body{
+        padding: 10px 30px 30px;
+      }
+      .modal-footer{
+        .btn-footer{
+          font-size: 13px;
+        }
+      }
+    }
+  }
 }
 
 /*월 시작일*/

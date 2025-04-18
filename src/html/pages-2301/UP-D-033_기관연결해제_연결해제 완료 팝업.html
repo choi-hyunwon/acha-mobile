@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal fade modal-inspection disconnect" id="disconnectPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="title">현대카드 연결 해제 완료</div>
+            </div>
+            <div class="modal-body">
+                <p>연결 해제 시 신규 데이터를 <br>불러올 수 없어요<br> 기존 데이터는 [데이터 관리]에서<br> 삭제할 수 있어요 🙂</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer bg-grey">닫기</a>
+                <a href="#" class="btn-footer" data-dismiss="modal">삭제하러 가기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#disconnectPopup').modal('show');   // modal show
+</script>
+</body>
+</html>

@@ -3301,13 +3301,13 @@ _ .event-btn-area {
     padding-bottom: 80px;
 
     .hold-data {
-      padding: 10px 20px 30px;
+      padding: 10px 20px 0;
 
       .title {
         font-size: 18px;
         color: var(--text-01);
         font-family: var(--font3);
-        margin-bottom: 12px;
+        margin-bottom: 5px;
       }
 
       .desc {
@@ -3317,6 +3317,7 @@ _ .event-btn-area {
       }
 
       .info {
+        margin-bottom: 20px;
         li {
           padding-left: 7px;
           position: relative;

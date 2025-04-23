@@ -781,6 +781,22 @@
             }
         }
     }
+    .sorted{
+        padding: 15px 20px 0;
+        font-size: 12px;
+        line-height: 20px;
+        font-family: var(--font1);
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            margin-right: 5px;
+            margin-bottom: 3px;
+            border-radius: 50%;
+            background: var(--text-02);
+        }
+    }
     .best-list{
         padding: 0 20px 30px;
         .best-one{

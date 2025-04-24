@@ -4283,6 +4283,10 @@
       .box_my_income_add {
         padding-bottom: 30px;
 
+        .input-group-append{
+          display: none;
+        }
+        
         .input-byte {
           display: none;
           bottom: 13px;

@@ -98,6 +98,7 @@ $(document).ready(function () {
 	};
 });
 
+// date-picker
 (function($) {
   const originalBuild = $.jtsage.datebox.prototype._build.datetimeflipbox;
 
@@ -175,11 +176,28 @@ $('#db1').datebox({
 	datetimeFieldOrder: ['y', 'm', 'd', 'h', 'i', 'a'],
 	overrideTimeFormat: 12,
 	minuteStep: 1,
-}).on("change", function () {
-	let selectedDate = $(this).datebox("getTheDate");
-	let rawFormat = $(this).datebox("callFormat", "%Y년 %m월 %d일 %p %l:%M", selectedDate);
+})
+
+let lastSelectedDate = null;
+
+$('#db1').on("change", function () {
+	lastSelectedDate = $(this).datebox("getTheDate");
+	let rawFormat = $(this).datebox("callFormat", "%Y년 %m월 %d일 %p %l:%M", lastSelectedDate);
 	let formattedDate = rawFormat.replace("AM", "오전").replace("PM", "오후");
 	$(this).val(formattedDate);
+});
+
+$('#db1').on("focus", function () {
+  if (lastSelectedDate) {
+    const $this = $(this);
+    
+    const rawFormat = $this.datebox("callFormat", "%Y년 %m월 %d일 %p %l:%M", lastSelectedDate);
+    const formattedDate = rawFormat.replace("AM", "오전").replace("PM", "오후");
+    $this.val(formattedDate);
+
+    $this.datebox("setTheDate", lastSelectedDate);
+    $this.datebox("refresh");
+  }
 });
 </script>
 

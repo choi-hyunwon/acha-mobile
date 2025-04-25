@@ -47,15 +47,11 @@
                     color: #fff;
                 }
             }
-            &:nth-child(6){
-                display: none;
-            }
             .list-group-item{
                 width: 16vw; // width: 60px;
                 padding: 12px 0 !important;
                 margin-bottom: 0;
                 border: none;
-                background: #fff;
                 font-size: 15px;
                 line-height: 20px;
                 font-family: var(--font1);
@@ -67,9 +63,8 @@
         }
     }
     [class^="custom-picker-date"]{
-        position: absolute;
         width: calc(100% - 80px);
-        height: 46px;
+        position: absolute;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -77,16 +72,21 @@
         justify-content: space-around;
         span{
             width: 16vw; // width: 60px;
-            height: 100%;
-            border-top: 1px solid #b093f1;
-            border-bottom: 1px solid #b093f1;
+            height: 1px;
+            background-color: #b093f1;
         }
     }
     .custom-picker-date1{
         top: 76px;
     }
     .custom-picker-date2{
-        bottom: 125.5px;
+        top: 120px;
+    }
+    .custom-picker-date3{
+        bottom: 171px;
+    }
+    .custom-picker-date4{
+        bottom: 126px;
     }
     .dbLens{
         display: none;
@@ -119,4 +119,7 @@
             }
         }
     }
+}
+.jtsage-datebox-backdrop-div{
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }

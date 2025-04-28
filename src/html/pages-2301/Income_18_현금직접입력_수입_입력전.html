@@ -34,7 +34,7 @@
 							</div>
 							<div class="custom-light select-category">
 								<label class="title">수입 일시</label>
-								<input id="db1" name="db1" type="text" data-role="datebox" readonly="readonly" placeholder="수입 일시를 입력해주세요" value="2023년 6월 25일 오후 6:54">
+								<input id="datePicker" name="datePicker" type="text" data-role="datebox" readonly="readonly" placeholder="수입 일시를 입력해주세요" value="2023년 6월 25일 오후 6:54">
 							</div>
 
 							<div class="custom-light switch-split">
@@ -97,110 +97,8 @@ $(document).ready(function () {
 		$target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
 	};
 });
-
-// date-picker
-(function($) {
-  const originalBuild = $.jtsage.datebox.prototype._build.datetimeflipbox;
-
-  $.jtsage.datebox.prototype._build.datetimeflipbox = function () {
-    originalBuild.call(this);
-
-    const wrapper = this.d.intHTML.find(".dbRollerV");
-    let rollers = wrapper.children(".dbRollerC");
-
-	if(rollers.length > 6){
-		rollers.eq(5).remove();
-	}
-
-	rollers = wrapper.children(".dbRollerC");
-
-	const ampm = rollers.last();
-	const targetIndex = 3;
-	ampm.insertBefore(rollers.eq(targetIndex));
-
-	const order = ['y', 'm', 'd', 'a', 'h', 'i'];
-    this._dbox_vswap = order;
-	
-	this._dbox_vlist = [];
-    const newRollers = wrapper.children(".dbRollerC");
-    newRollers.each((index, elem) => {
-      this._dbox_vlist.push({
-        field: order[index],
-        row: $(elem).find("ul")
-      });
-    });
-
-	const activeEl1 = $("<div class='custom-picker-date1'><span></span><span></span><span></span></div>");
-	const activeEl2 = $("<div class='custom-picker-date2'><span></span><span></span><span></span></div>");
-	const activeEl3 = $("<div class='custom-picker-date3'><span></span><span></span><span></span></div>");
-	const activeEl4 = $("<div class='custom-picker-date4'><span></span><span></span><span></span></div>");
-    
-	if (!wrapper.find(".custom-picker-date").length) {
-		wrapper.after(activeEl4, activeEl3, activeEl2, activeEl1);
-    }
-  };
-})(jQuery);
-
-jQuery.extend(jQuery.jtsage.datebox.prototype.options.lang, {
-	'ko': {
-		setDateButtonLabel: "설정",
-		cancelButton: "취소",
-		calTodayButtonLabel: "오늘",
-		monthsOfYear: ["1","2","3","4","5","6", "7","8","9","10","11","12"],
-		monthsOfYearShort: ["1","2","3","4","5","6", "7","8","9","10","11","12"],
-		daysOfWeek: ["일","월","화","수","목","금","토"],
-		meridiem: ["오전", "오후"]
-	}
-});
-
-jQuery.extend(jQuery.jtsage.datebox.prototype.options, {
-	useLang: 'ko',
-})
-
-$(document).on("dateboxcreate", function(e) {
-	const widget = $(e.target).data('datebox');
-	if (!widget) return
-	widget.options.monthsOfYear = ["1","2","3","4","5","6", "7","8","9","10","11","12"];
-	widget.options.monthsOfYearShort = ["1","2","3","4","5","6", "7","8","9","10","11","12"];
-	widget.options.meridiem = ["오전", "오후"];
-})
-
-$('#db1').datebox({
-	mode: 'datetimeflipbox',
-	displayMode: 'modal',
-	useFocus: true,
-	useHeader: false,
-    useCancelButton: true,
-	overrideDateFormat: "%Y년 %m월 %d일",
-	overrideTimeFormat: "%p %l:%M",
-	datetimeFieldOrder: ['y', 'm', 'd', 'h', 'i', 'a'],
-	overrideTimeFormat: 12,
-	minuteStep: 1,
-})
-
-let lastSelectedDate = null;
-
-$('#db1').on("change", function () {
-	lastSelectedDate = $(this).datebox("getTheDate");
-	let rawFormat = $(this).datebox("callFormat", "%Y년 %m월 %d일 %p %l:%M", lastSelectedDate);
-	let formattedDate = rawFormat.replace("AM", "오전").replace("PM", "오후");
-	$(this).val(formattedDate);
-});
-
-$('#db1').on("focus", function () {
-  if (lastSelectedDate) {
-    const $this = $(this);
-    
-    const rawFormat = $this.datebox("callFormat", "%Y년 %m월 %d일 %p %l:%M", lastSelectedDate);
-    const formattedDate = rawFormat.replace("AM", "오전").replace("PM", "오후");
-    $this.val(formattedDate);
-
-    $this.datebox("setTheDate", lastSelectedDate);
-    $this.datebox("refresh");
-  }
-});
 </script>
-
-
-@@include('../include/countCharDelete.html')
+@@include('../include/datePicker.html');
+@@include('../include/countCharDelete.html');
+</script>
 </html>

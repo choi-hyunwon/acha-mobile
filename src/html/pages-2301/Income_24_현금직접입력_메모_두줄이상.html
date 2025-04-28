@@ -34,7 +34,7 @@
 							</div>
 							<div class="custom-light select-category">
 								<label class="title">수입 일시</label>
-								<input title="value" type="text" placeholder="지출일을 입력해주세요" value="6월 25일 오후 6:54" />
+								<input id="datePicker" name="datePicker" type="text" data-role="datebox" readonly="readonly" placeholder="수입 일시를 입력해주세요" value="2023년 6월 25일 오후 6:54">
 							</div>
 							<div class="custom-light switch-split">
 								<div class="wrap-title">
@@ -97,6 +97,6 @@
 
 
 </script>
-@@include('../include/countCharDelete.html')
-
+@@include('../include/datePicker.html');
+@@include('../include/countCharDelete.html');
 </html>

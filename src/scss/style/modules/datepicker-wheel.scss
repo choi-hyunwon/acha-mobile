@@ -95,6 +95,9 @@
     }
     .btn-group-vertical{
         flex-direction: row-reverse;
+        &:focus, &:focus-visible{
+            outline: 0;
+        }
         .btn.btn-sm.btn-outline-secondary{
             margin-top: 30px;
             font-size: 15px;
@@ -103,6 +106,13 @@
             font-family: var(--font2);
             border: none;
             position: relative;
+            &:focus, &:focus-visible{
+                outline: 0;
+                box-shadow: none;
+            }
+            &:active, &:hover{
+                background: #fff;
+            }
             &:first-child{
                 color: #6839d3;
             }

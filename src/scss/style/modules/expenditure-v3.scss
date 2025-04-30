@@ -3659,6 +3659,47 @@
               }
             }
 
+            .custom-date{
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: flex-start;
+              row-gap: 10px;
+              .input-group-append{
+                display: none;
+              }
+              .input-group{
+                width: auto;
+                display: inline-block;
+                margin-left: auto;
+                &::after{
+                  content: "";
+                  display: inline-block;
+                  width: 6px;
+                  height: 16px;
+                  margin-left: 8px;
+                  background: url(../../img/sprite/common/ico_list_arrow_small@2x.png) no-repeat top 2.7px center / contain
+                }
+                &:focus, &:focus-visible{
+                  outline: 0;
+                }
+              }
+              input{
+                width: 200px;
+                height: auto;
+                padding: 0;
+                border: none;
+                background: transparent;
+                box-shadow: none;
+                font-size: 15px;
+                font-family: var(--font2);
+                text-align: right;
+                letter-spacing: -0.2px;
+                &:focus, &:focus-visible{
+                  outline: 0;
+                }
+              }
+            }
+
             +.schedule {
               font-size: 16px;
               color: var(--text-01);

@@ -42,9 +42,10 @@
                                 <span class="tit">카테고리</span>
                                 <span class="val">쇼핑<i class="ico_list_arrow_small"></i></span>
                             </li>
-                            <li class="item">
+                            <!-- 지출상세 직접등록 페이지에 custom-date 클래스 필요 -->
+                            <li class="item custom-date">
                                 <span class="tit">지출 일시</span>
-                                <span class="val">2024년 6월 25일<i class="ico_list_arrow_small"></i></span>
+                                <input id="datePicker" name="datePicker" type="text" data-role="datebox" readonly="readonly" placeholder="수입 일시를 입력해주세요" value="2024년 6월 25일 09:10">
                             </li>
                             <li class="item">
                                 <span class="tit">지출 수단</span>
@@ -75,5 +76,5 @@
         }
     </script>
 </body>
-
+@@include('../include/datePicker.html');
 </html>

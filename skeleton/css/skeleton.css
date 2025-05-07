@@ -14,7 +14,7 @@ ol,
 ul,
 dl {
   text-decoration: none;
-  list-style: none;
+  list-style: none !important;
 }
 /* reset */
 
@@ -323,6 +323,83 @@ dl {
   .skeleton-val {
   display: flex;
   flex-direction: column;
+}
+
+.skeleton-management-bridge {
+  padding-bottom: 83px;
+}
+.skeleton-management-bridge .skeleton-key-visual {
+  width: 100%;
+  height: 200px;
+  margin: 44px 0 40px;
+}
+.skeleton-management-bridge [class^="skeleton-contents-box"] {
+  width: calc(100% - 60px);
+  margin: 0 auto 50px;
+}
+.skeleton-management-bridge [class^="skeleton-contents-box"] .skeleton-mb-5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.skeleton-management-bridge .skeleton-contents-box1 .title {
+  width: 210px;
+  height: 55px;
+}
+.skeleton-management-bridge [class^="skeleton-contents-box"] .icon {
+  width: 70px;
+  height: 60px;
+}
+.skeleton-management-bridge .skeleton-contents-box1 .img {
+  width: 100%;
+  height: 184px;
+}
+.skeleton-management-bridge .skeleton-contents-box2 .title {
+  width: 235px;
+  height: 55px;
+}
+.skeleton-management-bridge .skeleton-contents-box2 .img {
+  width: 100%;
+  height: 494px;
+}
+.skeleton-management-bridge .skeleton-contents-box3 .title {
+  width: 194px;
+  height: 83px;
+}
+.skeleton-management-bridge .skeleton-contents-box3 .icon {
+  width: 80px;
+  height: 70px;
+}
+.skeleton-management-bridge .skeleton-contents-box3 .img {
+  width: 100%;
+  height: 522px;
+}
+.skeleton-management-bridge .skeleton-contents-box4 .title {
+  width: 157px;
+  height: 55px;
+}
+.skeleton-management-bridge .skeleton-contents-box4 .img {
+  width: 100%;
+  height: 430px;
+}
+.skeleton-management-bridge .skeleton-contents-box5 .title {
+  width: 210px;
+  height: 55px;
+}
+.skeleton-management-bridge .skeleton-contents-box5 .img {
+  width: 100%;
+  height: 590px;
+}
+.skeleton-management-bridge .skeleton-btm-title {
+  width: 244px;
+  height: 60px;
+  margin: 60px auto;
+}
+.skeleton-management-bridge .skeleton-btn {
+  width: calc(100% - 40px);
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 6px;
 }
 
 .skeleton-mission-contents .skeleton-box-card-top .skeleton-title,
@@ -673,6 +750,9 @@ dl {
 }
 .skeleton-radius-10 {
   border-radius: 10px;
+}
+.skeleton-radius-12 {
+  border-radius: 12px;
 }
 .skeleton-radius-16 {
   border-radius: 16px;

@@ -1921,6 +1921,18 @@
   }
 }
 
+.contents{
+  &:has(.banner-area){
+    .assets-total-box{
+      margin-bottom: 14px;
+    }
+  }
+  &:has(.assets-total-box){
+    .banner-area{
+      margin-bottom: 14px;
+    }
+  }
+}
 .assets-total-box {
   position: relative;
   background: #efe8ff;

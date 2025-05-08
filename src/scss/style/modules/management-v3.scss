@@ -4301,9 +4301,11 @@
           }
         }
       }
-
-
-
+      &:has(.banner-area){
+        .usage-sum{
+          padding-top: 20px;
+        }
+      }
     }
   }
 

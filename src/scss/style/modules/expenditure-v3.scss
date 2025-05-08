@@ -7937,6 +7937,12 @@
       }
     }
 
+    &:has(.banner-area){
+      .expenditure-management{
+        padding-bottom: 14px;
+      }
+    }
+
 
     &.assets-calendar {
       .group {
@@ -9703,17 +9709,19 @@
 }
 
 .banner-area{
-  width: 100%;
-  height: 100%;
   display: block;
+  width: calc(100% - 40px);
+  height: 100%;
+  margin: 0 auto;
+  img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
   &.sample{
     width: 320px;
     height: 50px;
     margin: 0 auto 30px;
-  }
-  img{
-    width: 100%;
-    height: auto;
   }
 }
 

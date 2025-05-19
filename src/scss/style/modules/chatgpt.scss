@@ -620,6 +620,13 @@
                                             span{
                                                 font-size: 11px;
                                             }
+                                            em{
+                                                font-family: var(--font1);
+                                                font-size: 13px;
+                                                color: var(--text-02);
+                                                text-decoration: underline;
+                                                text-underline-offset: 1px;
+                                            }
                                         }
                                     }
                                     .bg-white{

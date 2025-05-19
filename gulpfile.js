@@ -69,6 +69,7 @@ function jsLib() {
     "src/js/lib/rSlider.min.js",
     "src/js/lib/jtsage-datebox.js",
     "src/js/lib/jtsage-datebox.i18n.ko.utf8.min.js",
+    "src/js/lib/lottie-player.js",
   ];
   return gulp
     .src(sourceLib)

@@ -446,8 +446,9 @@
 
     .shopping-banner-list{
         .ad-banner{
-            width: 100%;
-            margin-bottom: 16px;
+            // width: 100%;
+            width: 335px;
+            margin: 0 0 16px 0;
             border-radius: unset;
             border: unset;
         }
@@ -456,6 +457,7 @@
             align-items: flex-start;
             gap: 16px;
             .img-box{
+                flex-shrink: 0;
                 position: relative;
                 width: 80px;
                 height: 80px;

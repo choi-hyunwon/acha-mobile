@@ -1022,6 +1022,7 @@
         span {
           font-family: var(--font3);
           color: var(--color-point);
+
         }
       }
 
@@ -1031,6 +1032,7 @@
         text-align: left;
         letter-spacing: -0.2px;
         color: var(--text-02);
+        word-break: keep-all;
       }
 
       &.title-center {
@@ -1094,6 +1096,12 @@
             margin-bottom: 0;
           }
 
+          .btn-period-box{
+            display: flex;
+            gap: 15px;    
+            margin-bottom: 10px;        
+          }
+
           a {
             &.tit {
               text-decoration: underline;
@@ -1115,6 +1123,7 @@
             }
 
             &.btn-period {
+              flex: 0 0 calc(50% - 7.5px);
               border: 1px solid #efefef;
               border-radius: 6px;
               font-size: 14px;
@@ -1440,7 +1449,7 @@
   /*마이데이터 - 개인신용정보선택*/
   .personal-credit-list {
     padding: 30px 20px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 
     .list-wrap {
       border: 1px solid #efefef;
@@ -1472,6 +1481,7 @@
 
         i {
           margin-left: 4px;
+          margin-bottom: 1px;
           display: inline-block;
           width: 14px;
           height: 14px;
@@ -1493,6 +1503,10 @@
           justify-content: space-between;
           align-items: center;
 
+          &.info{
+            padding: 24px 0;
+          }
+
           &:last-of-type {
             border: none;
           }
@@ -1503,19 +1517,20 @@
           }
 
           .val {
-            width: calc(100% - 50px);
-
+            // width: calc(100% - 50px);
+            width: calc(100% - 45px);
             p {
               position: relative;
               font-size: 15px;
               line-height: 22px;
-              color: var(--text-01);
               font-family: var(--font2);
-              overflow: hidden;
-              text-overflow: ellipsis;
+              color: var(--text-01);
+
               display: -webkit-box;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
 
             .num {
@@ -1527,11 +1542,48 @@
             }
 
             &.status {
-              .badge {
-                width: 30px;
-                height: 18px;
-                transform: translateY(-2px);
+              .connecting{
+                font-size: 15px;
+                line-height: 22px;
                 font-family: var(--font2);
+                position: relative;
+                &.over{
+                  display: -webkit-box;
+                  -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  .badge-connect{
+                    position: absolute;
+                    right: 12px;
+                    bottom: 1px;
+                    z-index: 1;
+                  }
+                }
+              }
+              .badge-status{
+                display: inline-block;
+                height: 19px;
+                margin-right: 4px;
+                border-radius: 9.5px;
+                transform: translateY(-2px);
+                font-size: 10px;
+                font-family: var(--font2);
+                text-align: center;
+                
+              }
+              .badge-connect{
+                display: inline-block;
+                height: 19px;
+                padding: 4px 6px;
+                margin-left: 4px;
+                border-radius: 9.5px;
+                transform: translateY(-2px);
+                background:  #ece3ff;
+                font-size: 10px;
+                font-family: var(--font2);
+                text-align: center;
+                position: relative;
               }
             }
           }

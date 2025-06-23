@@ -1524,6 +1524,7 @@
         width: 100%;
         padding: 0 20px 30px;
         background: var(--white);
+        border-top: 1px solid var(--white);
     }
     // floating
     .floating-effect{
@@ -2974,6 +2975,36 @@
             font-family: var(--font1);
             color: var(--white);
             letter-spacing: -0.8px;
+        }
+    }
+
+    // push ad
+    .ad-push-wrap{
+        padding: 10px 20px 115px;
+    }
+    .ad-push-title{
+        font-size: 18px;
+        line-height: 28px;
+        font-family: var(--font3);
+        word-break: keep-all;
+    }
+    .ad-push-desc{
+        margin-top: 14px;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: var(--font1);
+        & + ul{
+            margin-top: 4px;
+        }
+    }
+    .ad-push-list{
+        font-size: 13px;
+        line-height: 22px;
+        font-family: var(--font1);
+        word-break: keep-all;
+        color: var(--text-02);
+        & + .ad-push-list{
+            margin-top: 14px;
         }
     }
 }

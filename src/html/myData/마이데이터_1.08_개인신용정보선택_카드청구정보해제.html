@@ -2,24 +2,23 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<div class="wrap _btnSlideOpen"></div>
-<div class="modal-slide modal-moreview _modalSlide">
+<div class="wrap"></div>
+<div class="modal-slide modal-my-data billing-information _modalSlide">
     <div class="modal-slide-content">
         <a href="#" class="btn-close _btnSlideClose"></a>
         <div class="inner">
-            <div class="title">
-                <span class="name">자산 미보유</span>
-            </div>
+            <div class="title _btnSlideOpen"><span class="name">카드 청구정보</span>를 추가할까요?</div>
             <div class="desc-box">
-                <p>선택 기관의 자산을 보유하고 있지 않거나, <br>연결을 지원하고 있지 않아요</p>
+                <p>카드 청구정보가 없으면 정확한 지출 관리가 어려워요. 보다 나은 서비스를 위해 카드 청구정보를 가져올까요?</p>
             </div>
             <div class="btn-wrap">
-                <a href="#" class="btn btn-block btn-lg btn-purple-bg">확인</a>
+                <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half" onclick="openPopup()">아니오</a>
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">좋아요</a>
             </div>
         </div>
     </div>
 </div>
-<div class="modal-slide-backdrop"></div>
+<!-- <div class="modal-slide-backdrop"></div> -->
 <script>
     $(document).ready(function () {
         var btnSlideOpen = $('._btnSlideOpen');

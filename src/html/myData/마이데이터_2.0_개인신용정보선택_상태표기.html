@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header">
+            <a href="#" class="sprite btn_back"></a>
+        </div>
+        <div class="contents">
+            <div class="title"><span class="font-bold color-purple">불러올 자산을 선택</span>해주세요</div>
+
+            <div class="personal-credit-list">
+                <div class="list-wrap mb-20">
+                    <div class="list-header">
+                        <div class="img">
+                            <img src="../../img/@temp/ci_kbbank@2x.png" alt="로고" />
+                        </div>
+                        <div class="info">
+                            <span class="tit">KB국민카드</span>
+                        </div>
+                    </div>
+                    <ul class="list-body">
+                        <li class="item">
+                            <!-- 자산상태표기 badge 추가시 .status 추가, -->
+                            <!-- 실효 / 휴면 : <span class="badge badge-gray badge-status"></span> 추가-->
+                            <!-- 연결중 : <span class="badge badge-purple badge-connect"></span> 추가-->
+                            <div class="val status">
+                                <!-- 연결중 : 글자 수가 2줄 초과 시 .connecting에 .over 클래스 추가 -->
+                                <p class="connecting over">
+                                    최대 두줄까지 표기 되며 두줄 이상 긴 자산의 경우 말줄임 표기 추가 설명이 있습니다.
+                                    <span class="badge badge-purple badge-connect">연결중</span>
+                                </p>
+                                <span class="num">[신용] 2349-2341-****-1234</span>
+                            </div>
+                            <label class="check-area">
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span></span>
+                            </label>
+                        </li>
+                        <li class="item">
+                            <div class="val status">
+                                <p class="connecting">
+                                    KB 00국민카드
+                                    <span class="badge badge-purple badge-connect">연결중</span>
+                                </p>
+                                <span class="num">[신용] 2349-2341-****-1234</span>
+                            </div>
+                            <label class="check-area">
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span></span>
+                            </label>
+                        </li>
+                        <li class="item">
+                            <div class="val status">
+                                <p class="connecting">
+                                    KB 0000국민카드
+                                    <span class="badge badge-purple badge-connect">연결중</span>
+                                </p>
+                                <span class="num">[신용] 2349-2341-****-1234</span>
+                            </div>
+                            <label class="check-area">
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span></span>
+                            </label>
+                        </li>
+                        <li class="item info">
+                            <div class="val">
+                                <p>포인트 정보 전송</p>
+                            </div>
+                            <label class="check-area">
+                                <input type="checkbox" class="filled-in" />
+                                <span></span>
+                            </label>
+                        </li>
+                        <li class="item info">
+                            <div class="val">
+                                <p>청구 및 결제정보 전송</p>
+                            </div>
+                            <label class="check-area">
+                                <input type="checkbox" class="filled-in" />
+                                <span></span>
+                            </label>
+                        </li>
+                        <li class="item info">
+                            <div class="val">
+                                <p>대출상품 정보 전송</p>
+                            </div>
+                            <label class="check-area">
+                                <input type="checkbox" class="filled-in" />
+                                <span></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-wrap mb-20">
+                    <div class="list-header">
+                        <div class="img">
+                            <img src="../../img/@temp/hyundai.png" alt="로고" />
+                        </div>
+                        <div class="info">
+                            <span class="tit">현대카드</span>
+                        </div>
+                        <i><img src="../../img/common/icon-expirationintend@2x.png" alt="로고" /></i>
+                    </div>
+                </div>
+                <div class="list-wrap mb-20">
+                    <div class="list-header">
+                        <div class="img">
+                            <img src="../../img/@temp/woori.png" alt="로고" />
+                        </div>
+                        <div class="info">
+                            <span class="tit">우리은행</span>
+                        </div>
+                        <i><img src="../../img/common/icon-expirationintend@2x.png" alt="로고" /></i>
+                    </div>
+                </div>
+                <div class="btn-wrap btn-floating">
+                    <a href="#" class="btn btn-block btn-lg btn-big btn-purple-bg">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function truncateText($el, maxLength) {
+        $el.each(function () {
+            const $this = $(this);
+            const $badge = $this.find('.badge');
+            const fullHtml = $this.html();
+            const badgeHtml = $badge.prop('outerHTML');
+
+            // badge를 제외한 순수 텍스트
+            const textOnly = $this.clone().children('.badge').remove().end().text().trim();
+
+            // 자를지 말지 판단
+            if (textOnly.length > maxLength) {
+                const truncated = textOnly.slice(0, maxLength - 3).trim() + ' …';
+                $this.html(`${truncated} ${badgeHtml}`);
+                $this.addClass('over');
+            } else {
+                $this.html(`${textOnly} ${badgeHtml}`);
+                $this.removeClass('over');
+            }
+        });
+    };
+
+    truncateText($('.connecting'), 40);
+</script>
+</html>

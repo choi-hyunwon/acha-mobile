@@ -3007,6 +3007,19 @@
             margin-top: 14px;
         }
     }
+    .ad-push-btn{
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+        img{
+            width: auto;
+            height: 20px;
+            filter: brightness(100);
+        }
+    }
 }
 
 /*팝업*/

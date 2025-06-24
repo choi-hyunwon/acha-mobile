@@ -2058,6 +2058,8 @@ input[type=number] {
     }
     .code{
       margin-left: auto;
+      user-select: text;
+      -webkit-user-select: text;
     }
   }
   .event-designskin-coupon{

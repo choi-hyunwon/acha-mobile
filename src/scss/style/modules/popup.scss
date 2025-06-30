@@ -6807,6 +6807,53 @@
             }
         }
     }
+
+    &.modal-life-card{
+        .modal-slide-content {
+            .inner {
+                padding: 30px;
+            }
+            .title{
+                font-size: 18px;
+                line-height: 28px;
+                font-family: var(--font3);
+                text-align: left;
+            }
+            .card-select-list{
+                a{
+                    margin-top: 20px;
+                    padding: 16px 20px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 10px;
+                    border: 1px solid #efefef;
+                    color: var(--text-01);
+                }
+                .card-img{
+                    width: 52px;
+                    height: 52px;
+                    margin-right: 14px;
+                    border-radius: 50%;
+                    background: #f5f5fc;
+                    text-align: center;
+                    img{
+                        width: 34px;
+                        height: 52px;
+                    }
+                }
+                .card-name{
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: var(--font2);
+                }
+                .icon-img{
+                    width: 6px;
+                    height: 16px;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
 }
 
 /* 270 modal */

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide _modalSlide modal-life-card">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title _btnSlideOpen">이벤트에 응모할 <br><span class="f-point">카드를 선택</span>해 주세요 🙂</div>
+                <ul class="card-select-list">
+                    <li>
+                        <a href="#">
+                            <div class="card-img">
+                                <img src="../../img/@temp/card-0189-ss@2x.png" alt="삼성카드 taptap S">
+                            </div>
+                            <span class="card-name">삼성카드 taptap S</span>
+                            <img class="icon-img" src="../../img/common/ico_arrow_small_nor@2x.png" alt="선택하기 버튼">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="card-img">
+                                <img src="../../img/@temp/card-0190-ss@2x.png" alt="taptap DIGITAL">
+                            </div>
+                            <span class="card-name">taptap DIGITAL</span>
+                            <img class="icon-img" src="../../img/common/ico_arrow_small_nor@2x.png" alt="선택하기 버튼">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="card-img">
+                                <img src="../../img/@temp/card-0192-ss@2x.png" alt="삼성iD ON 카드">
+                            </div>
+                            <span class="card-name">삼성iD ON 카드</span>
+                            <img class="icon-img" src="../../img/common/ico_arrow_small_nor@2x.png" alt="선택하기 버튼">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal-slide-backdrop"></div> -->
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

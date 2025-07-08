@@ -1299,11 +1299,15 @@
         align-items: center;
         background: #f7f8fc;
         border-radius: 10px;
-        padding: 24px 20px;
+        padding: 20px;
         margin-top: 20px;
         margin-left: auto;
         &:has(.card-img){
             row-gap: 12px;
+        }
+        &:has(.event-date){
+            flex-direction: column;
+            align-items: flex-start;
         }
         &.no-bg{
             margin-top: 0;
@@ -1311,7 +1315,7 @@
             background: transparent;
         }
         & + .step-box{
-            margin-top: 8px;
+            margin-top: 10px;
         }
         .card-img{
             width: 34px;
@@ -1337,9 +1341,9 @@
                 line-height: 22px;
                 font-family: var(--font2);
                 word-break: keep-all;
-                margin-bottom: 4px;
             }
             .card-dc{
+                margin-top: 4px;
                 font-size: 12px;
                 line-height: 20px;
                 font-family: var(--font1);

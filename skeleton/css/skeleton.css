@@ -641,16 +641,23 @@ dl {
 }
 .skeleton-lifestyle .skeleton-ad-banner div {
   width: 100%;
-  height: 80px;
+  height: 160px;
 }
 .skeleton-lifestyle .skeleton-life-section {
-  padding: 40px 20px 0;
+  padding: 30px 20px 0;
 }
 .skeleton-lifestyle .skeleton-title div {
   width: 33px;
 }
 .skeleton-lifestyle .skeleton-point-list {
-  padding-top: 18px;
+  padding-top: 12px;
+}
+.skeleton-lifestyle .skeleton-point-banner {
+  margin-bottom: 16px;
+}
+.skeleton-lifestyle .skeleton-point-banner div {
+  width: 100%;
+  height: 80px;
 }
 .skeleton-lifestyle .skeleton-point-item {
   display: flex;
@@ -658,7 +665,7 @@ dl {
   gap: 16px;
 }
 .skeleton-lifestyle .skeleton-point-item + li {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 .skeleton-lifestyle .skeleton-point-img {
   width: 60px;
@@ -679,9 +686,6 @@ dl {
   margin-left: auto;
 }
 .skeleton-lifestyle .skeleton-banner {
-  margin-top: 18px;
-}
-.skeleton-lifestyle .skeleton-banner + div {
   margin-top: 12px;
 }
 .skeleton-lifestyle .skeleton-banner div {

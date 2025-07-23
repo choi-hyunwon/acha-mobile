@@ -3747,7 +3747,7 @@
             p{
               max-width: calc(100% - 10px);
               font-size: 19px;
-              line-height: 26px;
+              line-height: 28px;
               font-family: var(--font5);
               color: var(--text-01);
               display: -webkit-box;
@@ -3795,6 +3795,10 @@
                 object-fit: cover;
                 transform: unset;
               }
+            }
+            .more{
+              margin-top: 1.5px;
+              margin-left: 2px;
             }
           }
           .edit-tag{

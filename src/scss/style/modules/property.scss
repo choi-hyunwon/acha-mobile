@@ -1,0 +1,229 @@
+// 자산
+.renewal{
+    .property{
+        // 기존 스타일 수정
+        .account-detail-wrap{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .expenditure-box{
+            .account-detail-wrap{
+                .info-wrap{
+                    .title-box{
+                        i{
+                            margin-top: 7px;
+                        }
+                    }
+                    .info-list{
+                        padding: 48px 0 0 0;
+                        &:has(.val-memo){
+                            padding: 24px 0 0 0;
+                        }
+                        .item{
+                            padding: 0;
+                            & + .item{
+                                padding-top: 30px;
+                            }
+                            &.top-bar{
+                                border-top: 1px solid #efefef;
+                                margin-top: 30px;
+                            }
+                            .switch{
+                                height: 24px;
+                                line-height: 22px;
+                            }
+                            .val{
+                                &.edit{
+                                    font-size: 15px;
+                                    font-weight: var(--font1);
+                                    color: #c2c1cc;
+                                }
+                            }
+                        }
+                        .item.item-column{
+                            .val-memo{
+                                margin-top: 0;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+        .expenditure-tab{
+            &.stock{
+                margin-top: 24px;
+            }
+            ul{
+                li{
+                    margin-right: 14px;
+                    &.active{
+                        &::after{
+                            background-color: #000;
+                        }
+                    } 
+                }  
+            } 
+        }
+        
+        .account-box{
+            margin-bottom: 16px;
+            .bank{
+                margin-bottom: 2px;
+                display: flex;
+                align-items: center;
+                gap: 17px;
+                font-size: 15px;
+                font-family: var(--font1);
+                line-height: 1.5;
+                color: var(--text-02);
+            }
+            .bank-name{
+                position: relative;
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 1px;
+                    height: 14px;
+                    background-color: #efefef;
+                    position: absolute;
+                    top: 50%;
+                    right: -9px;
+                    transform: translateY(-50%);
+                }
+            }
+            .account-num{
+                font-size: 14px;
+                font-family: var(--font1);
+                line-height: 1.5;
+                color: var(--text-03);
+            }
+        }
+        .stock-price{
+            margin-top: 2px;
+            font-size: 14px;
+            font-family: var(--font1);
+            line-height: 1.5;
+            &.rise{
+                color: #ef4b61;
+            }
+            &.fall{
+                color: #4393ff;
+            }
+        }
+        .stock-list{
+            padding: 24px 20px 30px;
+            li{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                & + li{
+                    padding-top: 30px;
+                    margin-top: 30px;
+                    border-top: 1px solid #efefef;
+                }
+            }
+            .event-box{
+                .event{
+                    margin-bottom: 1px;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    font-family: var(--font2);
+                    background-color: transparent;
+                }
+                span{
+                    font-size: 13px;
+                    font-family: var(--font1);
+                    color: var(--text-03);
+                }
+            }
+            .price-box{
+                margin-left: auto;
+                text-align: right;
+                .stock-price{
+                    margin-bottom: 3px;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    font-family: var(--font2);
+                }
+                .share-price{
+                    font-size: 13px;
+                    line-height: 1.5;
+                    font-family: var(--font1);
+                    &.rise{
+                        color: #ef4b61;
+                    }
+                    &.fall{
+                        color: #4393ff;
+                    }
+                }
+            }
+        }
+        .breakdown-list{
+            padding: 24px 20px 30px;
+            a{
+                margin-bottom: 24px;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                font-family: var(--font2);
+                line-height: 1;
+                color: var(--text-01);
+            }
+            li{
+                padding: 17px 0 18px;
+            }
+            .date{
+                margin-bottom: 17px;
+                font-size: 12px;
+                font-family: var(--font1);
+                line-height: 1.2;
+                color: var(--text-02);
+            }
+            .text-box{
+                display: flex;
+                .title{
+                    font-size: 16px;
+                    font-family: var(--font2);
+                    line-height: 1.6;
+                }
+                .time{
+                    font-size: 12px;
+                    font-family: var(--font1);
+                    line-height: 1.6;
+                    color: var(--text-03);
+
+                }
+                .price{
+                    margin-left: auto;
+                    font-size: 16px;
+                    font-family: var(--font2);
+                    line-height: 1.8;
+                    &.plus{
+                        color: #6839d3;
+                    }
+                    &.expire{
+                        color: #c2c1cc;
+                    }
+                }
+            }
+        }
+        .empty-data{
+            min-height: 35lvh;
+            max-height: 40svh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            img{
+                width: 42px;
+                height: 42px;
+            }
+            p{
+                font-size: 14px;
+                font-family: var(--font1);
+                color: var(--text-02);
+            }
+        }
+    }
+}

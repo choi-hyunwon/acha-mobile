@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <a class="btn-edit" href="#">상세</a>
+        </div>
+        <div class="contents expenditure property">
+            <div class="expenditure-box">
+                <div class="account-detail-wrap">
+                    <div class="info-wrap">
+                        <div class="title-box">
+                            <a href="#" class="category-icon">
+                                <img src="../../img/common/expenditure/icon-category/ic_direct_input_big@2x.png" alt="아이콘">
+                            </a>
+                            <a href="#" class="category-text">
+                                <p>연금상품 이름</p>
+                                <i class="ico_list_arrow_small"></i>
+                            </a>
+                        </div>
+
+                        <div class="account-box">
+                            <p class="bank"><span>연금</span></p>
+                        </div>
+
+                        <div class="amount">
+                            <strong class="num">12,346,000</strong>
+                            <strong class="won">원</strong>
+                            <i class="ico_list_arrow_small more"></i>
+                        </div>
+
+                        <ul class="info-list">
+                            <li class="item item-column">
+                                @@include('../include/varMemoPlaceholder.html')
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector(".textarea");
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <a class="btn-edit" href="#">상세</a>
+        </div>
+        <div class="contents expenditure property">
+            <div class="expenditure-box">
+                <div class="account-detail-wrap">
+                    <div class="info-wrap">
+                        <div class="title-box">
+                            <a href="#" class="category-icon">
+                                <img src="../../img/@temp/ci_uribank@2x.png" alt="아이콘">
+                            </a>
+                            <a href="#" class="category-text">
+                                <p>신탁/ISA 자산 상품</p>
+                                <i class="ico_list_arrow_small"></i>
+                            </a>
+                        </div>
+
+                        <div class="account-box">
+                            <p class="bank"><span class="bank-name">우리은행</span><span>ISA</span></p>
+                            <p class="account-num">123456-78-9012344</p>
+                        </div>
+
+                        <div class="amount">
+                            <strong class="num">12,345,000</strong>
+                            <strong class="won">원</strong>
+                        </div>
+                        <p class="stock-price rise">+2,345,000원 <span class="percent">(20.3%)</span></p>
+
+                        <ul class="info-list">
+                            <li class="item item-column">
+                                @@include('../include/varMemoPlaceholder.html')
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expenditure-tab _expenditureTab stock">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">투자중</a></li>
+                    <li><a href="#">내역</a></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <ul class="stock-list">
+                <li>
+                    <div class="event-box">
+                        <p class="event">ACE 미국배당다우존스</p>
+                        <span>50좌</span>
+                    </div>
+                    <div class="price-box">
+                        <p class="stock-price">2,153,700<span class="won">원</span></p>
+                        <p class="share-price fall">-110,000 <span class="percent">(-5.4%)</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="event-box">
+                        <p class="event">정기예금 1년</p>
+                    </div>
+                    <div class="price-box">
+                        <p class="stock-price">2,153,700<span class="won">원</span></p>
+                        <p class="share-price rise">+220,000 <span class="percent">(8.9%)</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="event-box">
+                        <p class="event">TIGER 미국S&P</p>
+                        <span>50좌</span>
+                    </div>
+                    <div class="price-box">
+                        <p class="stock-price">8,153,700<span class="won">원</span></p>
+                        <p class="share-price rise">+2,000,000 <span class="percent">(25.6%)</span></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector(".textarea");
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
+        }
+
+         // 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</body>
+
+</html>

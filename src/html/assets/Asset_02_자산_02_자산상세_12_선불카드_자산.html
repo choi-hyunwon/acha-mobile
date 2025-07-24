@@ -14,25 +14,22 @@
                     <div class="info-wrap">
                         <div class="title-box">
                             <a href="#" class="category-icon">
-                                <img src="../../img/@temp/ci_uribank@2x.png" alt="아이콘">
+                                <img src="../../img/@temp/b-2-aabt-0000@3x.png" alt="아이콘">
                             </a>
                             <a href="#" class="category-text">
-                                <p>신탁/ISA 자산 상품</p>
+                                <p>선불카드 상품명</p>
                                 <i class="ico_list_arrow_small"></i>
                             </a>
                         </div>
 
                         <div class="account-box">
-                            <p class="bank"><span class="bank-name">우리은행</span><span>ISA</span></p>
-                            <p class="account-num">123456-78-9012344</p>
+                            <p class="bank"><span>하나카드</span></p>
                         </div>
 
                         <div class="amount">
-                            <strong class="num">12,345,000</strong>
+                            <strong class="num">500,000</strong>
                             <strong class="currency">원</strong>
                         </div>
-                        <!-- + 일 때, rise 클래스 추가 / - 일 때, fall 클래스 추가 -->
-                        <p class="stock-price rise">+2,345,000<span class="currency">원</span> <span class="percent">(20.3%)</span></p>
 
                         <ul class="info-list">
                             <li class="item item-column">
@@ -43,32 +40,32 @@
                 </div>
             </div>
 
-            <div class="expenditure-tab _expenditureTab stock">
-                <ul class="clearfix">
-                    <li><a href="#">투자중</a></li>
-                    <li class="active"><a href="#">내역</a></li>
-                </ul>
-            </div>
             <div class="divider"></div>
+
+            <div class="disappear-point">
+                <p><span class="point">192,000</span><span class="currency">원</span> 소멸예정</p>
+                <a href="#" class="point-tooltip">
+                    <i class="sprite ico_tooltip"></i>
+                    <div class="tooltip-txt" data-tooltip="hidden">2개월 이내 미사용 시 소멸 돼요</div>
+                </a>
+            </div>
 
             <a href="#" class="detail-date">2025년 6월 <i class="icon-arrow-bottom"></i></a>
             <ul class="breakdown-list">
                 <li>
                     <p class="date">10일 (금)</p>
                     <div class="text-box">
-                        <p class="title">입금</p>
-                        <!-- 금액 추가 시, plus 클래스 추가 -->
-                        <p class="price plus">+1,000,000<span class="currency">원</span></p>
+                        <p class="title">쿠팡</p>
+                        <p class="price">10,000<span class="currency">원</span></p>
                     </div>
-                    <p class="memo">
-                        <span class="time">10:00</span>
-                    </p>
+                    <p class="memo"><span class="time">10:00</span></p>
                 </li>
                 <li>
                     <p class="date">9일 (목)</p>
                     <div class="text-box">
-                        <p class="title">출금</p>
-                        <p class="price">10,000<span class="currency">원</span></p>
+                        <p class="title">충전</p>
+                        <!-- 금액 추가 시 plus 클래스 추가 -->
+                        <p class="price plus">+1,000<span class="currency">원</span></p>
                     </div>
                     <p class="memo">
                         <span class="time">19:00</span>
@@ -76,30 +73,44 @@
                 </li>
                 <li>
                     <div class="text-box">
-                        <p class="title">해지예약</p>
-                        <p class="price expire">10,000<span>원</span></p>
+                        <p class="title">충전취소</p>
+                        <p class="price plus">+1,000<span class="currency">원</span></p>
                     </div>
-                    <!-- 금액 비활성 시, expire 클래스 추가 -->
+                    <p class="memo">
+                        <span class="time">19:00</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="date">8일 (수)</p>
+                    <div class="text-box">
+                        <p class="title">동행복권</p>
+                        <p class="price">10,000<span>원</span></p>
+                    </div>
                     <p class="memo">
                         <span class="time">19:00</span>
                     </p>
                 </li>
                 <li>
                     <div class="text-box">
-                        <p class="title">재투자</p>
-                        <p class="price expire">10,000<span class="currency">원</span></p>
+                        <p class="title">맥도날드구로디지털점</p>
+                        <p class="price">10,000<span>원</span></p>
+                    </div>
+                    <p class="memo">
+                        <span class="time">19:00</span>
+                        <span class="type">할부 3개월</span>
+                    </p>
+                </li>
+                <!-- 취소 내역이 있을 시 disagree 클래스 추가 -->
+                <li class="disagree">
+                    <p class="date">7일 (화)</p>
+                    <div class="text-box">
+                        <p class="title">동행복권</p>
+                        <!-- 취소 내역에 cancel 클래스 추가 -->
+                        <p class="price cancel">10,000<span>원</span></p>
                     </div>
                     <p class="memo">
                         <span class="time">20:00</span>
-                    </p>
-                </li>
-                <li>
-                    <div class="text-box">
-                        <p class="title">신규</p>
-                        <p class="price plus">+1,000,000<span class="currency">원</span></p>
-                    </div>
-                    <p class="memo">
-                        <span class="time">19:00</span>
+                        <span class="type">할부 3개월</span>
                     </p>
                 </li>
             </ul>
@@ -115,9 +126,15 @@
             $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
         }
 
-         // 카테고리 탭
-        $('._expenditureTab li a').on('click', function () {
-            $(this).parent().addClass('active').siblings().removeClass('active')
+        $('.point-tooltip').click(function () {
+            let $tooltip = $('.tooltip-txt')
+            if ($tooltip.data('tooltip') === "show") {
+                $tooltip.addClass('show')
+                $tooltip.data('tooltip', 'hidden')
+            } else {
+                $tooltip.removeClass('show')
+                $tooltip.data('tooltip', 'show')
+            }
         })
     </script>
 </body>

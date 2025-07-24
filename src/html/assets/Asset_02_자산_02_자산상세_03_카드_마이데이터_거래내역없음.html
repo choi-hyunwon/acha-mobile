@@ -12,27 +12,27 @@
             <div class="expenditure-box">
                 <div class="account-detail-wrap">
                     <div class="info-wrap">
+                        <div class="tag-box">
+                            <div class="tag point">신용</div>
+                            <div class="tag">가족</div>
+                        </div>
                         <div class="title-box">
                             <a href="#" class="category-icon">
-                                <img src="../../img/@temp/ci_uribank@2x.png" alt="아이콘">
+                                <img src="../../img/@temp/shinhan.png" alt="아이콘">
                             </a>
                             <a href="#" class="category-text">
-                                <p>신탁/ISA 자산 상품</p>
+                                <p>카드의 정석 EVERY 1</p>
                                 <i class="ico_list_arrow_small"></i>
                             </a>
                         </div>
 
                         <div class="account-box">
-                            <p class="bank"><span class="bank-name">우리은행</span><span>ISA</span></p>
-                            <p class="account-num">123456-78-9012344</p>
+                            <p class="bank"><span>신한카드 35687124*****0049</span></p>
                         </div>
 
-                        <div class="amount">
-                            <strong class="num">12,345,000</strong>
-                            <strong class="currency">원</strong>
+                        <div class="payment-date">
+                            <p>결제일 : <span class="day">1일</span> <em class="way">(신한은행 계좌출금)</em></p>
                         </div>
-                        <!-- + 일 때, rise 클래스 추가 / - 일 때, fall 클래스 추가 -->
-                        <p class="stock-price rise">+2,345,000원 <span class="percent">(20.3%)</span></p>
 
                         <ul class="info-list">
                             <li class="item item-column">
@@ -43,22 +43,38 @@
                 </div>
             </div>
 
-            <div class="expenditure-tab _expenditureTab stock">
-                <ul class="clearfix">
-                    <li><a href="#">투자중</a></li>
-                    <li class="active"><a href="#">내역</a></li>
-                </ul>
-            </div>
-            
             <div class="divider"></div>
 
-            <a href="#" class="detail-date">2025년 6월 <i class="icon-arrow-bottom"></i></a>
-            <ul class="breakdown-list">
+            <a href="#" class="detail-date">2025년 12월 <i class="icon-arrow-bottom"></i></a>
+            <div class="noti-box">
+                <i class="sprite ico_caution"></i>
+                <p>가계부 내역과 다를 수 있어요</p>
+            </div>
+
+            <div class="filter-amount">
+                <a href="#">
+                    <span>전체</span> <i class="sprite ico_list_arrow_close"></i>
+                </a>
+                <p><span>0</span><span class="currency">원</span></p>
+            </div>
+            
+            <!-- 플로팅 버튼 있을 때 pb-120 클래스 추가 -->
+            <ul class="breakdown-list pb-120">
                 <div class="empty-data">
                     <img src="/src/img/common/ico_error@2x.png" alt="거래 내역이 없어요">
                     <p>거래 내역이 없어요</p>
                 </div>
             </ul>
+
+            <div class="btn-area">
+                <!-- 경고문구 있을 시 플로팅 버튼 위로 노출 -->
+                <div class="alert-box">
+                    <img src="../../img/common/ico-caution-red@2x.png" alt="경고">
+                    <p>만기, 해지, 상환 등으로 인해 정보를 불러올 수 없어요</p>
+                </div>
+                <!-- floating btn-->
+                <a class="btn btn-big btn-purple-bg btn-block" href="#">삭제하기</a>
+            </div>
         </div>
     </div>
     <script>
@@ -70,11 +86,6 @@
             $target.style.height = 0;
             $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
         }
-
-         // 카테고리 탭
-        $('._expenditureTab li a').on('click', function () {
-            $(this).parent().addClass('active').siblings().removeClass('active')
-        })
     </script>
 </body>
 

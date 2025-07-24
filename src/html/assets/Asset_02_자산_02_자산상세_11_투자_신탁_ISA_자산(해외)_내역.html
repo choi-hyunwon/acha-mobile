@@ -17,7 +17,7 @@
                                 <img src="../../img/@temp/ci_uribank@2x.png" alt="아이콘">
                             </a>
                             <a href="#" class="category-text">
-                                <p>신탁/ISA 자산 상품</p>
+                                <p>신탁/ISA 해외 상품</p>
                                 <i class="ico_list_arrow_small"></i>
                             </a>
                         </div>
@@ -28,11 +28,11 @@
                         </div>
 
                         <div class="amount">
-                            <strong class="num">12,345,000</strong>
-                            <strong class="currency">원</strong>
+                            <strong class="num">123.45</strong>
+                            <strong class="currency">USD</strong>
                         </div>
                         <!-- + 일 때, rise 클래스 추가 / - 일 때, fall 클래스 추가 -->
-                        <p class="stock-price rise">+2,345,000<span class="currency">원</span> <span class="percent">(20.3%)</span></p>
+                        <p class="stock-price rise">+12.34<span class="currency">USD</span> <span class="percent">(10.1%)</span></p>
 
                         <ul class="info-list">
                             <li class="item item-column">
@@ -45,41 +45,54 @@
 
             <div class="expenditure-tab _expenditureTab stock">
                 <ul class="clearfix">
-                    <li class="active"><a href="#">투자중</a></li>
-                    <li><a href="#">내역</a></li>
+                    <li><a href="#">투자중</a></li>
+                    <li class="active"><a href="#">내역</a></li>
                 </ul>
             </div>
             <div class="divider"></div>
-            <ul class="stock-list">
+
+            <a href="#" class="detail-date">2025년 6월 <i class="icon-arrow-bottom"></i></a>
+            <ul class="breakdown-list">
                 <li>
-                    <div class="event-box">
-                        <p class="event">ACE 미국배당다우존스</p>
-                        <span>50좌</span>
+                    <p class="date">10일 (금)</p>
+                    <div class="text-box">
+                        <p class="title">입금</p>
+                        <!-- 금액 추가 시 plus 클래스 추가 -->
+                        <p class="price plus">+1,000,000.22<span class="currency">USD</span></p>
                     </div>
-                    <div class="price-box">
-                        <p class="stock-price">2,153,700<span class="currency">원</span></p>
-                        <!-- + 일 때, rise 클래스 추가 / - 일 때, fall 클래스 추가 -->
-                        <p class="share-price fall">-110,000<span class="currency">원</span> <span class="percent">(-5.4%)</span></p>
-                    </div>
+                    <p class="memo">
+                        <span class="time">10:00</span>
+                    </p>
                 </li>
                 <li>
-                    <div class="event-box">
-                        <p class="event">정기예금 1년</p>
+                    <p class="date">9일 (목)</p>
+                    <div class="text-box">
+                        <p class="title">출금</p>
+                        <p class="price">100.99<span class="currency">USD</span></p>
                     </div>
-                    <div class="price-box">
-                        <p class="stock-price">2,153,700<span class="currency">원</span></p>
-                        <p class="share-price rise">+220,000<span class="currency">원</span> <span class="percent">(8.9%)</span></p>
-                    </div>
+                    <p class="memo">
+                        <span class="time">19:00</span>
+                    </p>
                 </li>
                 <li>
-                    <div class="event-box">
-                        <p class="event">TIGER 미국S&P</p>
-                        <span>50좌</span>
+                    <div class="text-box">
+                        <p class="title">해지예약</p>
+                        <!-- 비활성 금액에 expire 클래스 추가 -->
+                        <p class="price expire">27.87<span>USD</span></p>
                     </div>
-                    <div class="price-box">
-                        <p class="stock-price">8,153,700<span class="currency">원</span></p>
-                        <p class="share-price rise">+2,000,000<span class="currency">원</span> <span class="percent">(25.6%)</span></p>
+                     <p class="memo">
+                        <span class="time">19:00</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="text-box">
+                        <p class="title">재투자</p>
+                        <!-- 비활성 금액에 expire 클래스 추가 -->
+                        <p class="price expire">27.87<span class="currency">USD</span></p>
                     </div>
+                    <p class="memo">
+                        <span class="time">20:00</span>
+                    </p>
                 </li>
             </ul>
         </div>

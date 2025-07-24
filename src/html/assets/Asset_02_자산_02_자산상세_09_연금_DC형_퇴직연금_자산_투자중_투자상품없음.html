@@ -14,24 +14,25 @@
                     <div class="info-wrap">
                         <div class="title-box">
                             <a href="#" class="category-icon">
-                                <img src="../../img/common/expenditure/icon-category/ic_direct_input_big@2x.png" alt="아이콘">
+                                <img src="../../img/@temp/hanwha.png" alt="아이콘">
                             </a>
                             <a href="#" class="category-text">
-                                <p>연금상품 이름</p>
+                                <p>퇴직연금(DC) 상품 이름</p>
                                 <i class="ico_list_arrow_small"></i>
                             </a>
                         </div>
 
                         <div class="account-box">
-                            <p class="bank"><span class="bank-name">우리은행</span><span>연금</span></p>
+                            <p class="bank"><span class="bank-name">한화투자증권</span><span>퇴직연금</span></p>
                             <p class="account-num">123456-78-9012344</p>
                         </div>
 
                         <div class="amount">
-                            <strong class="num">12,346,000</strong>
+                            <strong class="num">12,345,000</strong>
                             <strong class="currency">원</strong>
-                            <i class="ico_list_arrow_small more"></i>
                         </div>
+                        <!-- + 일 때, rise 클래스 추가 / - 일 때, fall 클래스 추가 -->
+                        <p class="stock-price rise">+2,345,000<span class="currency">원</span> <span class="percent">(20.3%)</span></p>
 
                         <ul class="info-list">
                             <li class="item item-column">
@@ -41,6 +42,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="expenditure-tab _expenditureTab stock">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">투자중</a></li>
+                    <li><a href="#">내역</a></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <ul class="stock-list">
+                <div class="empty-data">
+                    <img src="/src/img/common/ico_error@2x.png" alt="투자상품이 없어요">
+                    <p>투자상품이 없어요</p>
+                </div>
+            </ul>
         </div>
     </div>
     <script>
@@ -52,6 +67,11 @@
             $target.style.height = 0;
             $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
         }
+
+         // 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
     </script>
 </body>
 

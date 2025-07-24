@@ -6860,7 +6860,6 @@
         .modal-slide-content {
             .inner {
                 padding: 30px 45px 40px 30px;
-
                 .title{
                     padding-bottom: 20px;
                     text-align: left;
@@ -6884,8 +6883,9 @@
                         color: var(--text-02);
                     }
                 }
-                .list{
-                    margin-top: 30px;
+                [class$='list']{
+                    padding-left: 0;
+                    margin-top: 20px;
                     li{
                         text-align: left;
                         .desc{
@@ -6914,6 +6914,47 @@
                         &::before{
                             display: none;
                         }
+                    }
+                }
+                .auto-charge{
+                    padding-left: 0;
+                    margin-top: 20px;
+                    li{
+                        text-align: left;
+                        div{
+                            margin-bottom: 6px;
+                            display: flex;
+                            align-items: flex-start;
+                        }
+                        & + li{
+                            padding-top: 24px;
+                            margin-top: 24px;
+                            border-top: 1px solid #efefef;
+                        }
+                    }
+                    .price{
+                        font-size: 16px;
+                        font-family: var(--font3);
+                        color: var(--text-01);
+                    }
+                    .memo{
+                        font-size: 14px;
+                        line-height: 1.6;
+                        font-family: var(--font1);
+                        color: var(--text-03);
+                        display: -webkit-box;
+                        word-wrap: break-word;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    .condition{
+                        margin-left: auto;
+                        font-size: 15px;
+                        font-family: var(--font1);
+                        color: var(--text-02);
+                        text-align: right;
                     }
                 }
             }

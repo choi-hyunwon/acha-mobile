@@ -14,23 +14,21 @@
                     <div class="info-wrap">
                         <div class="title-box">
                             <a href="#" class="category-icon">
-                                <img src="../../img/common/expenditure/icon-category/ic_direct_input_big@2x.png" alt="아이콘">
+                                <img src="../../img/@temp/b-2-aabt-0000@3x.png" alt="아이콘">
                             </a>
                             <a href="#" class="category-text">
-                                <p>연금상품 이름</p>
+                                <p>선불카드 상품명</p>
                                 <i class="ico_list_arrow_small"></i>
                             </a>
                         </div>
 
                         <div class="account-box">
-                            <p class="bank"><span class="bank-name">우리은행</span><span>연금</span></p>
-                            <p class="account-num">123456-78-9012344</p>
+                            <p class="bank"><span>하나카드</span></p>
                         </div>
 
                         <div class="amount">
-                            <strong class="num">12,346,000</strong>
+                            <strong class="num">500,000</strong>
                             <strong class="currency">원</strong>
-                            <i class="ico_list_arrow_small more"></i>
                         </div>
 
                         <ul class="info-list">
@@ -41,6 +39,24 @@
                     </div>
                 </div>
             </div>
+
+            <div class="divider"></div>
+
+            <div class="disappear-point">
+                <p><span class="point">192,000</span><span class="currency">원</span> 소멸예정</p>
+                <a href="#" class="point-tooltip">
+                    <i class="sprite ico_tooltip"></i>
+                    <div class="tooltip-txt" data-tooltip="hidden">2개월 이내 미사용 시 소멸 돼요</div>
+                </a>
+            </div>
+
+            <a href="#" class="detail-date">2025년 6월 <i class="icon-arrow-bottom"></i></a>
+            <ul class="breakdown-list">
+                <div class="empty-data">
+                    <img src="/src/img/common/ico_error@2x.png" alt="거래 내역이 없어요">
+                    <p>거래 내역이 없어요</p>
+                </div>
+            </ul>
         </div>
     </div>
     <script>
@@ -52,6 +68,17 @@
             $target.style.height = 0;
             $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
         }
+
+        $('.point-tooltip').click(function () {
+            let $tooltip = $('.tooltip-txt')
+            if ($tooltip.data('tooltip') === "show") {
+                $tooltip.addClass('show')
+                $tooltip.data('tooltip', 'hidden')
+            } else {
+                $tooltip.removeClass('show')
+                $tooltip.data('tooltip', 'show')
+            }
+        })
     </script>
 </body>
 

@@ -14,25 +14,23 @@
                     <div class="info-wrap">
                         <div class="title-box">
                             <a href="#" class="category-icon">
-                                <img src="../../img/@temp/ci_uribank@2x.png" alt="아이콘">
+                                <img src="../../img/@temp/e-1-aaia-0000@2x.png" alt="아이콘">
                             </a>
                             <a href="#" class="category-text">
-                                <p>신탁/ISA 자산 상품</p>
+                                <p>카카오페이 머니_010</p>
                                 <i class="ico_list_arrow_small"></i>
                             </a>
                         </div>
 
                         <div class="account-box">
-                            <p class="bank"><span class="bank-name">우리은행</span><span>ISA</span></p>
-                            <p class="account-num">123456-78-9012344</p>
+                            <p class="bank"><span>카카오페이</span></p>
+                            <p class="account-num">010****1234</p>
                         </div>
 
                         <div class="amount">
-                            <strong class="num">12,345,000</strong>
+                            <strong class="num">14,000</strong>
                             <strong class="currency">원</strong>
                         </div>
-                        <!-- + 일 때, rise 클래스 추가 / - 일 때, fall 클래스 추가 -->
-                        <p class="stock-price rise">+2,345,000<span class="currency">원</span> <span class="percent">(20.3%)</span></p>
 
                         <ul class="info-list">
                             <li class="item item-column">
@@ -43,63 +41,47 @@
                 </div>
             </div>
 
-            <div class="expenditure-tab _expenditureTab stock">
-                <ul class="clearfix">
-                    <li><a href="#">투자중</a></li>
-                    <li class="active"><a href="#">내역</a></li>
-                </ul>
-            </div>
             <div class="divider"></div>
+
+            <div class="disappear-point">
+                <p><span class="point">2,000</span><span class="currency">원</span> 소멸예정</p>
+                <a href="#" class="point-tooltip">
+                    <i class="sprite ico_tooltip"></i>
+                    <div class="tooltip-txt" data-tooltip="hidden">2개월 이내 미사용 시 소멸 돼요</div>
+                </a>
+            </div>
 
             <a href="#" class="detail-date">2025년 6월 <i class="icon-arrow-bottom"></i></a>
             <ul class="breakdown-list">
                 <li>
                     <p class="date">10일 (금)</p>
                     <div class="text-box">
-                        <p class="title">입금</p>
+                        <p class="title">조*영</p>
                         <!-- 금액 추가 시, plus 클래스 추가 -->
-                        <p class="price plus">+1,000,000<span class="currency">원</span></p>
+                        <p class="price plus">+14,300<span class="currency">원</span></p>
                     </div>
                     <p class="memo">
-                        <span class="time">10:00</span>
+                        <span class="time">10:00</span><span class="type">충전</span>
                     </p>
                 </li>
                 <li>
                     <p class="date">9일 (목)</p>
                     <div class="text-box">
-                        <p class="title">출금</p>
-                        <p class="price">10,000<span class="currency">원</span></p>
+                        <!-- 송금일 때, em 태그 추가 -->
+                        <p class="title"><em class="before">카카오페이머니</em> <em class="symbol">→</em> <em class="after">김철수님</em></p>
+                        <p class="price">100,000<span class="currency">원</span></p>
                     </div>
                     <p class="memo">
-                        <span class="time">19:00</span>
+                        <span class="time">19:00</span><span class="type">송금</span>
                     </p>
                 </li>
                 <li>
                     <div class="text-box">
-                        <p class="title">해지예약</p>
-                        <p class="price expire">10,000<span>원</span></p>
-                    </div>
-                    <!-- 금액 비활성 시, expire 클래스 추가 -->
-                    <p class="memo">
-                        <span class="time">19:00</span>
-                    </p>
-                </li>
-                <li>
-                    <div class="text-box">
-                        <p class="title">재투자</p>
-                        <p class="price expire">10,000<span class="currency">원</span></p>
+                        <p class="title">Google</p>
+                        <p class="price">1,000<span>원</span></p>
                     </div>
                     <p class="memo">
-                        <span class="time">20:00</span>
-                    </p>
-                </li>
-                <li>
-                    <div class="text-box">
-                        <p class="title">신규</p>
-                        <p class="price plus">+1,000,000<span class="currency">원</span></p>
-                    </div>
-                    <p class="memo">
-                        <span class="time">19:00</span>
+                        <span class="time">19:00</span><span class="type">결제</span>
                     </p>
                 </li>
             </ul>
@@ -115,9 +97,15 @@
             $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
         }
 
-         // 카테고리 탭
-        $('._expenditureTab li a').on('click', function () {
-            $(this).parent().addClass('active').siblings().removeClass('active')
+        $('.point-tooltip').click(function () {
+            let $tooltip = $('.tooltip-txt')
+            if ($tooltip.data('tooltip') === "show") {
+                $tooltip.addClass('show')
+                $tooltip.data('tooltip', 'hidden')
+            } else {
+                $tooltip.removeClass('show')
+                $tooltip.data('tooltip', 'show')
+            }
         })
     </script>
 </body>

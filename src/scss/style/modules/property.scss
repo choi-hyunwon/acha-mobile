@@ -1,7 +1,8 @@
 // 자산
 .renewal{
     .property{
-        // 기존 스타일 수정
+        /* 기존 자산 스타일 수정 */
+        /* 연금 ~ 카드 */
         .account-detail-wrap{
             padding-top: 0;
             padding-bottom: 0;
@@ -83,7 +84,42 @@
                 }  
             } 
         }
+
+        /* 자산(메인) */
+        .box-ex-list.box-card-list{
+            &.box-assets{
+                .ac-list.ac-list-img{
+                    .ac-item{
+                        .img{
+                            margin-right: 8px;
+                        } 
+                        .value{
+                            margin-left: auto;
+                        }
+                        .name{
+                            max-width: 165px;
+                        } 
+                        .ac-num{
+                            margin-left: 32px !important;
+                        }
+                        &.ac-expire{
+                            padding-top: 20px;
+                            .expire-badge{
+                                top: -3px;
+                            }
+                        }
+                    }
+                }
+                .category-menu{
+                    .divider{
+                        margin: 24px 0;
+                    }
+                }
+            }
+        }
         
+        /* 신규 자산 스타일 */
+        /* 연금 ~ 카드 */
         .tag-box{
             margin-top: 10px;
             display: flex;
@@ -386,6 +422,32 @@
                 border-bottom: 4px solid rgba(55, 53, 78, 0.85);
                 border-left: 6px solid rgba(55, 53, 78, 0.85);
             }
+            &.top-right{
+                width: 256px;
+                padding: 10px 34px 10px 12px;
+                top: -46px;
+                left: 80px;
+                border-radius: 10px 10px 10px 0;
+                &::before {
+                    top: auto;
+                    left: 0;
+                    bottom: -7.6px;
+                    border-top: 4px solid rgba(55, 53, 78, 0.85);
+                    border-right: 6px solid transparent;
+                    border-bottom: 4px solid transparent;
+                    border-left: 6px solid rgba(55, 53, 78, 0.85);
+                }
+                .close {
+                    position: absolute;
+                    right: 12px;
+                    top: 13px;
+                    width: 14px;
+                    height: 14px;
+                    background: url(../../img/common/btn-tag-delete@2x.png) no-repeat center / cover;
+                    opacity: 1;
+                }
+            }
+
             &.show {
                 display: block;
             }

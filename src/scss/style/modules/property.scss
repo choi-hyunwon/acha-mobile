@@ -68,6 +68,14 @@
             & + .divider{
                 margin-top: 24px;
             }
+            &.assets-input{
+                .box_my_income_add{
+                    padding-bottom: 35px;
+                    .btn_area {
+                        padding-top: 30px;
+                    }
+                }
+            }
         }
         .expenditure-tab{
             &.stock{
@@ -86,8 +94,16 @@
         }
 
         /* 자산(메인) */
-        .box-ex-list.box-card-list{
+        .box-ex-list.box-card-list.box-card-improve{
             &.box-assets{
+                .category-heading{
+                    .sum{
+                        margin-top: 2px;
+                    }
+                    .price{
+                        margin-left: 5px;
+                    }
+                }
                 .ac-list.ac-list-img{
                     .ac-item{
                         .img{
@@ -95,18 +111,15 @@
                         } 
                         .value{
                             margin-left: auto;
+                            .price{
+                                margin-top: 1.5px;
+                            }
                         }
                         .name{
                             max-width: 165px;
                         } 
                         .ac-num{
                             margin-left: 32px !important;
-                        }
-                        &.ac-expire{
-                            padding-top: 20px;
-                            .expire-badge{
-                                top: -3px;
-                            }
                         }
                     }
                 }
@@ -115,6 +128,35 @@
                         margin: 24px 0;
                     }
                 }
+                .etc{
+                    .category-heading{
+                        .sum{
+                            font-weight: 500;
+                        }
+                    }
+                    .ac-piece-list{
+                        .ac-item{
+                            .value{
+                                margin-left: auto;
+                            }
+                            .name{
+                                max-width: 165px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .badge{
+            font-size: 11px;
+        }
+
+        /* 자산(직접입력) */
+        /* input */
+        .custom-light{
+            input{
+                font-size: 17px;
+                line-height: 1.2;
             }
         }
         

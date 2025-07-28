@@ -6859,8 +6859,15 @@
     &.modal-asset-detail{
         .modal-slide-content {
             .inner {
-                padding: 30px 45px 40px 30px;
+                padding: 30px 30px 40px;
+                &:has(.title.asset-common){
+                    padding: 30px;
+                }
+                &:has(.title.asset-category){
+                    padding: 20px;
+                }
                 .title{
+                    padding-right: 15px;
                     padding-bottom: 20px;
                     text-align: left;
                     border-bottom: 1px solid var(--text-01);
@@ -6881,6 +6888,42 @@
                         line-height: 1.7;
                         font-family: var(--font1);
                         color: var(--text-02);
+                    }
+                    &.asset-common{
+                        border-bottom: 2px solid var(--text-01);
+                        p{
+                            font-family: var(--font1);
+                        }
+                        span{
+                            font-size: 18px;
+                            line-height: 1.3;
+                            font-family: var(--font3);
+                        }
+                    }
+                    &.no-border{
+                        padding-bottom: 30px;
+                        border: none;
+                    }
+                    &.limit-word {
+                        span{
+                            font-size: 18px;
+                            line-height: 1.3;
+                            font-family: var(--font3);
+                            display: inline-block;
+                            max-width: 58%;
+                            vertical-align: bottom;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                    &.asset-category{
+                        padding-bottom: 30px;
+                        font-size: 16px;
+                        line-height: 1.4;
+                        font-family: var(--font3);
+                        text-align: center;
+                        border: none;
                     }
                 }
                 [class$='list']{
@@ -6955,6 +6998,67 @@
                         font-family: var(--font1);
                         color: var(--text-02);
                         text-align: right;
+                    }
+                }
+                .desc-box{
+                    padding: 20px 0 40px;
+                    text-align: left;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    font-family: var(--font1);
+                }
+                .check-box{
+                    padding: 20px 0;
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    .desc-label{
+                        margin-left: 10px;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        font-family: var(--font1);
+                    }
+                }
+                .manege {
+                    padding-bottom: 15px;
+                    li {
+                        & + li{
+                            border-top: 1px solid #f5f6f8;
+                            padding-top: 17px;
+                            margin-top: 17px;
+                        }
+                        a {
+                            display: flex;
+                            align-items: center;
+                            text-align: left;
+                            position: relative;                       
+                            .txt {
+                                margin-left: 4px;
+                                font-size: 15px;
+                                line-height: 1.5;
+                                color: var(--text-01);
+                            }
+                        }
+                        &.active {
+                            a {
+                                .txt {
+                                    color: var(--text-point-color);
+                                    font-family: var(--font2);
+                                }
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    display: block;
+                                    width: 17px;
+                                    height: 17px;
+                                    background-image: url(../../img/common/ico-select-key.svg);
+                                    background-size: cover;
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -8,6 +8,56 @@
             <div class="box-ex-top box-card-top flex-column">
                 <a href="#" class="btn-sm btn-edit"><span>편집</span></a>
             </div>
+
+            <!-- 광고 배너 2건 이상일 경우  -->
+            <div class="mission-banner-wrap">
+                <div class="swiper-container mission-banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img-area">
+                                <a href="#" class="banner-box">
+                                    <img src="../../img/@temp/sample_img_ad_banner@2x.png" alt="banner"
+                                        class="banner-img" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="pager"></p>
+                </div>
+            </div>
+            <script>
+                var swiper = new Swiper(".mission-banner", {
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    // 광고 1건일 때, loop: false
+                    // 광고 2건 이상 일 때, loop: true
+                    loop: true,
+                    spaceBetween: 15,
+                    pagination: {
+                        el: '.mission-banner .pager',
+                        type: 'fraction',
+                    },
+                });
+            </script>
+
             <div class="assets-total-box">
                 <div class="title">
                     <p class="total">총 자산<i class="sprite icon-caution" onclick="tooltipToggle('tooltip-txt')"></i>

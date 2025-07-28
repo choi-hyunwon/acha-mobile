@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide modal-expenditure memo-input _modalSlide autoHeight up" style="display: block;">
+		<div class="modal-slide-content">
+			<a href="#" class="btn-close _btnSlideClose"></a>
+			<div class="inner pb-0">
+				<div class="title">타이틀(번호)</div>
+				<div class="custom-light">
+					<div class="textarea-label">
+						<textarea name="지출메모" id="val-textarea" class="textarea" maxlength="20"
+							onkeyup="countCharDelete(this,'_val')" placeholder="입력해주세요" rows="1"
+							style="height: 22px;">123987123987123987</textarea>
+						<div class="input-byte mt-0" style="display: none;"><span class="byte _val">13</span><span
+								class="total"> / 20</span>
+						</div>
+						<button class="btn-clear-input" style="display: none;">삭제</button>
+					</div>
+				</div>
+			</div>
+			<div class="btn-wrap">
+				<a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">저장</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
+
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
+			});
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
+			});
+
+			btnSlideOpen.trigger("click");
+
+			var targetBtn = $(`.sub-desc`);
+
+			$("._focus input").on("focus", function () {
+				targetBtn.show();
+			});
+			$("._focus input").on("blur", function () {
+				targetBtn.hide();
+			});
+		});
+	</script>
+	@@include('../include/countCharDelete.html')
+</body>
+
+</html>

@@ -1,7 +1,8 @@
 // 자산
 .renewal{
     .property{
-        // 기존 스타일 수정
+        /* 기존 스타일 수정 */
+        /* 자산 > 연금 ~ 카드 */
         .account-detail-wrap{
             padding-top: 0;
             padding-bottom: 0;
@@ -63,9 +64,91 @@
                         }
                     }
                 }
+                &.assets-wrap{
+                    .assets-info{
+                        .title{
+                            margin-bottom: 10px;
+                        }    
+                        .name{
+                            display: -webkit-box;
+                            word-wrap: break-word;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                        .total-box{
+                            margin-top: 0;
+                        }
+                        .info-list{
+                            margin-top: 24px;
+                            .item{
+                                .val{
+                                    justify-content: flex-start;
+                                }
+                                .val-memo{
+                                    position: relative;
+                                    width: 100%;
+                                    max-width: 100%;
+                                    background-color: #f7f8fc;
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: left;
+                                    font-size: 15px;
+                                    color: var(--text-01);
+                                    font-family: var(--font2);
+                                    line-height: 20px;
+                                    letter-spacing: -0.35px;
+                                    label{
+                                        width: calc(100% - 20px);
+                                        padding: 15px 20px;
+                                        display: inline-block;
+                                        font-size: 14px;
+                                        text-align: left;
+                                    }
+                                    .ico_list_arrow_small {
+                                        position: absolute;
+                                        right: 12px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        margin: 0;
+                                        width: 6px;
+                                        height: 16px;
+                                        background-position: center;
+                                    }
+                                    textarea {
+                                        padding: 0;
+                                        padding-right: 10px;
+                                        width: 100%;
+                                        height: auto;
+                                        background: transparent;
+                                        font-size: 14px;
+                                        color: #37354e;
+                                        line-height: 20px;
+                                        outline: none;
+                                        border: none;
+                                        font-family: var(--font4);
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
             }
             & + .divider{
                 margin-top: 24px;
+            }
+            &.assets-input{
+                .box_my_income_add{
+                    padding-bottom: 35px;
+                    .btn_area {
+                        padding-top: 30px;
+                        &.gap{
+                            padding-top: 50px;
+                        }
+                    }
+                }
             }
         }
         .expenditure-tab{
@@ -84,6 +167,107 @@
             } 
         }
         
+        /* 자산 > 메인 */
+        .box-ex-list.box-card-list{
+            padding: 20px 0 50px;
+        }
+        .box-ex-list.box-card-list.box-card-improve{
+            &.box-assets{
+                .category-heading{
+                    .sum{
+                        margin-top: 2px;
+                    }
+                    .price{
+                        margin-left: 5px;
+                    }
+                }
+                .ac-list.ac-list-img{
+                    .ac-item{
+                        .img{
+                            margin-right: 8px;
+                        } 
+                        .value{
+                            margin-left: auto;
+                            .price{
+                                margin-top: 1.5px;
+                            }
+                        }
+                        .name{
+                            max-width: 165px;
+                        } 
+                        .ac-num{
+                            margin-left: 32px !important;
+                        }
+                    }
+                }
+                .category-menu{
+                    .divider{
+                        margin: 24px 0;
+                    }
+                }
+                .etc{
+                    .category-heading{
+                        .sum{
+                            font-weight: 500;
+                        }
+                    }
+                    .ac-piece-list{
+                        .ac-item{
+                            .value{
+                                margin-left: auto;
+                            }
+                            .name{
+                                max-width: 165px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .badge{
+            font-size: 11px;
+        }
+
+        /* 자산 > 자산추가(직접입력) */
+        /* input */
+        .custom-light{
+            input{
+                font-size: 17px;
+                line-height: 1.2;
+            }
+        }
+
+        /* 자산 > 지출상세 */
+        .box-ex-list.border-bottom-0{
+            padding: 36px 20px;
+            .empty{
+                height: calc(100vh - 375px);
+                p{
+                  padding-top: 0;  
+                }
+            }
+        }
+        .box-ex-detail-top{
+            .account-info{
+                .info1{
+                    margin-bottom: 15px;
+                }
+                .info2{
+                    margin-top: 15px;
+                    .ac-total{
+                        .abroad{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* 자산 >  자산상세(직접입력) */
+        
+        
+        /* 신규 스타일 */
+        /* 자산 > 연금 ~ 카드 */
         .tag-box{
             margin-top: 10px;
             display: flex;
@@ -102,6 +286,7 @@
                 }
             }
         }
+
         .account-box{
             margin-bottom: 16px;
             .bank{
@@ -135,11 +320,13 @@
                 color: var(--text-03);
             }
         }
+
         .payment-date{
             font-size: 15px;
             line-height: 1.7;
             font-family: var(--font1);
         }
+
         .stock-price{
             margin-top: 2px;
             font-size: 14px;
@@ -152,6 +339,7 @@
                 color: #4393ff;
             }
         }
+
         .stock-list{
             padding: 24px 20px 40px;
             li{
@@ -200,6 +388,7 @@
                 }
             }
         }
+
         .detail-date{
             padding: 24px 20px 0;
             display: flex;
@@ -209,6 +398,7 @@
             line-height: 1;
             color: var(--text-01);
         }
+
         .filter-amount{
             padding: 22px 20px 0;
             display: flex;
@@ -237,6 +427,7 @@
                 padding-top: 22px;
             }
         }
+
         .breakdown-list{
             padding: 24px 20px 30px;
             li{
@@ -325,6 +516,7 @@
                 }
             }
         }
+
         .empty-data{
             padding: 55px 0;
             display: flex;
@@ -342,6 +534,7 @@
                 color: var(--text-02);
             }
         }
+
         .disappear-point{
             padding: 24px 20px 0;
             display: flex;
@@ -363,6 +556,7 @@
                 margin-top: 3px;
             }
         }
+
         .tooltip-txt {
             width: max-content;
             display: none;
@@ -386,10 +580,48 @@
                 border-bottom: 4px solid rgba(55, 53, 78, 0.85);
                 border-left: 6px solid rgba(55, 53, 78, 0.85);
             }
+            &.top-right{
+                width: 256px;
+                padding: 10px 34px 10px 12px;
+                top: -46px;
+                left: 80px;
+                border-radius: 10px 10px 10px 0;
+                &::before {
+                    top: auto;
+                    left: 0;
+                    bottom: -7.6px;
+                    border-top: 4px solid rgba(55, 53, 78, 0.85);
+                    border-right: 6px solid transparent;
+                    border-bottom: 4px solid transparent;
+                    border-left: 6px solid rgba(55, 53, 78, 0.85);
+                }
+                .close {
+                    position: absolute;
+                    right: 12px;
+                    top: 13px;
+                    width: 14px;
+                    height: 14px;
+                    background: url(../../img/common/btn-tag-delete@2x.png) no-repeat center / cover;
+                    opacity: 1;
+                }
+            }
+            &.reverse{
+                left: auto;
+                &::before {
+                    left: auto;
+                    right: 0;
+                    border-top: 5px solid transparent;
+                    border-right: 8px solid #37354e;
+                    border-bottom: 5px solid #37354e;
+                    border-left: 8px solid transparent;
+                }
+            }
+
             &.show {
                 display: block;
             }
         }
+
         .pension-info{
             margin-top: 24px;
             padding: 15px 20px;
@@ -400,6 +632,7 @@
             font-family: var(--font1);
             word-break: keep-all;
         }
+
         .noti-box{
             padding: 5px 20px 0;
             display: flex;
@@ -416,6 +649,7 @@
                 height: 12px;
             }
         }
+
         .alert-box{
             width: calc(100% - 38px);
             padding: 6px 10px;
@@ -434,13 +668,94 @@
                 height: 12px;
             }
         }
+
         .btn-area{
-            position: fixed;
-            bottom: 0;
             width: 100%;
             padding: 0 20px 30px;
+            position: fixed;
+            bottom: 0;
+            z-index: 1030;
             background: var(--white);
             border-top: 1px solid var(--white);
+        }
+
+        /* 자산 > 지출상세 */
+        .bank-account-wrap{
+            padding: 10px 20px 30px;
+            .title-wrap{
+                font-size: 18px;
+                line-height: 1.5;
+                font-family: var(--font1);
+                strong{
+                    font-family: var(--font3);
+                }
+            }
+            .bank-account-box{
+                width: 100%;
+                margin-top: 30px;
+                border-radius: 10px;
+                border: 1px solid #efefef;
+                overflow: hidden;
+            }
+            .bank{
+                width: 100%;
+                padding: 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                border-bottom: 1px solid #efefef;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 1.6;
+                    font-family: var(--font2);
+                }
+            }
+            .account-detail{
+                padding: 0 20px;
+                li{
+                    padding: 18px 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    /* checkbox */
+                    label{
+                        margin-left: auto;
+                    }
+                    [type=checkbox] + span:not(.lever){
+                        padding-left: 22px;
+                    }
+                    & + li{
+                        border-top: 1px solid #efefef;
+                    }
+                }
+                .txt-box{
+                    max-width: 83.5%;
+                    p{
+                        font-size: 15px;
+                        line-height: 1.4;
+                        font-family: var(--font2);
+                        display: -webkit-box;
+                        word-wrap: break-word;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    span{
+                        margin-top: 4px;
+                        display: inline-block;
+                        font-size: 13px;
+                        line-height: 1.2;
+                        font-family: var(--font1);
+                        color: var(--text-03);
+                    }
+                }
+            }
         }
     }
 }

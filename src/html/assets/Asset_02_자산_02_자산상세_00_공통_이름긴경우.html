@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap renewal">
+		<div class="header">
+			<a href="#" class="sprite btn_back"></a>
+			<h2>상세</h2>
+		</div>
+		<div class="contents expenditure property">
+			<div class="expenditure-box assets-input">
+				<div class="account-detail-wrap assets-wrap">
+					<div class="assets-info">
+						<div class="title">
+							<span class="img">
+								<i class="icon icon_direct_input"></i>
+							</span>
+							<p class="name">직적입력 이름 최대 20자까지인 경우 2줄 처리 <i class="ico_list_arrow_small"></i></p>
+						</div>
+
+						<div class="account-box">
+                            <p class="bank"><span class="bank-name">우리은행</span><span>입출금</span></p>
+                            <p class="account-num">123456-78-9012344</p>
+                        </div>
+
+						<div class="total-box">
+							<p class="total">
+								1,000,000,000
+								<span>원</span><i class="ico_list_arrow_small"></i>
+							</p>
+						</div>
+
+						<ul class="info-list">
+                            <li class="item item-column">
+                                @@include('../include/varMemoPlaceholder.html')
+                            </li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector(".textarea");
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + "px";
+        }
+    </script>
+</body>
+
+</html>

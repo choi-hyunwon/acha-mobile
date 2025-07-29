@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap _btnSlideOpen"></div>
+    <div class="modal-slide modal-expenditure memo-input _modalSlide autoHeight">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner pb-0">
+                <div class="title">메모 입력</div>
+                <div class="custom-light">
+                    <div class="textarea-label">
+                        <textarea name="메모 입력" id="val-textarea" class="textarea" maxlength="60" rows="3"
+                            onkeyup="countCharDelete(this,'_val')" placeholder="입력해주세요">
+직적입력된 메모 최대60자까지 제한 길어질 경우 줄바꿈처리 적용 기존 가계부와 동일함 직접 입력된 메모 최대</textarea>
+                        <div class="input-byte mt-0"><span class="byte _val">0</span><span class="total"> / 60</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn btn-block btn-lg btn-purple-bg btn-flat">저장</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(function () {
+                    document.getElementsByClassName('_modalSlide')[0].style.display = 'block';
+                }, 500);
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn');
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(function () {
+                    document.getElementsByClassName('_modalSlide')[0].style.display = 'none';
+                }, 1000);
+                $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn');
+            });
+
+            btnSlideOpen.trigger('click');
+        });
+
+        const DEFAULT_HEIGHT = 0;
+        const $textarea = document.querySelector('.textarea');
+
+        $textarea.oninput = (e) => {
+            const $target = e.target;
+            $target.style.height = 0;
+            $target.style.height = DEFAULT_HEIGHT + $target.scrollHeight + 'px';
+        };
+    </script>
+
+    @@include('../include/countCharDelete.html')
+</body>
+
+</html>

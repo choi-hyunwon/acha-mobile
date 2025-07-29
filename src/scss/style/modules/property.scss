@@ -144,6 +144,9 @@
                     padding-bottom: 35px;
                     .btn_area {
                         padding-top: 30px;
+                        &.gap{
+                            padding-top: 50px;
+                        }
                     }
                 }
             }
@@ -165,6 +168,9 @@
         }
         
         /* 자산 > 메인 */
+        .box-ex-list.box-card-list{
+            padding: 20px 0 50px;
+        }
         .box-ex-list.box-card-list.box-card-improve{
             &.box-assets{
                 .category-heading{
@@ -232,8 +238,14 @@
         }
 
         /* 자산 > 지출상세 */
-        .box-ex-list{
+        .box-ex-list.border-bottom-0{
             padding: 36px 20px;
+            .empty{
+                height: calc(100vh - 375px);
+                p{
+                  padding-top: 0;  
+                }
+            }
         }
         .box-ex-detail-top{
             .account-info{

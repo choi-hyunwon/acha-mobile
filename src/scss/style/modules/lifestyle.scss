@@ -3112,6 +3112,298 @@
             filter: brightness(100);
         }
     }
+
+    // 카드관
+    .spend-monthly-card-wrap{
+        padding: 40px 0;
+        margin: 0 auto;
+        .monthly-title{
+            padding-inline: 20px;
+            display: flex;
+            align-items: center;
+            p{
+                font-size: 18px;
+                line-height: 1.5;
+                font-family: var(--font3);
+            }
+            a{
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                span{
+                    font-size: 13px;
+                    line-height: 1.7;
+                    font-family: var(--font1);
+                    color: var(--text-02);
+                }
+                i{
+                    width: 12px;
+                    height: 16px;
+                    filter: brightness(1.5);
+                }
+            }
+        }
+        .popular-card{
+            padding-left: 20px;
+            margin-top: 14px;
+            .swiper-wrapper{
+                padding-top: 4px;
+            }
+            .swiper-slide{
+                width: 154px;
+                height: 100%;
+                min-height: -webkit-fill-available;
+                padding: 20px 14px;
+                border-radius: 10px;
+                border: solid 1px #efefef;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: stretch;
+                flex: 0 0 43.5%;
+                &.first, &.second, &.third{
+                    &::before{
+                        content: '';
+                        width: 30px;
+                        height: 34px;
+                        background: url('../../img/common/lifestyle/ico-card-rank-1-st@3x.png') no-repeat center / cover;
+                        position: absolute;
+                        top: -4px;
+                        left: 6px;
+                    }
+                }
+                &.second{
+                    &::before{
+                        background: url('../../img/common/lifestyle/ico-card-rank-2-nd@3x.png') no-repeat center / cover;
+                    }
+                }
+                &.third{
+                    &::before{
+                        background: url('../../img/common/lifestyle/ico-card-rank-3-rd@3x.png') no-repeat center / cover;
+                    }
+                }
+                &:last-child{
+                    margin-right: 20px;
+                }
+            }
+            .card-img{
+                width: 66px;
+                height: 66px;
+                text-align: center;
+                position: relative;
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+                &::after{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background-color: #f5f5fc;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: -1;
+                }
+            }
+            .corp{
+                margin-top: 14px;
+                font-size: 12px;
+                line-height: 1.6;
+                font-family: var(--font1);
+                color: var(--text-02);
+                text-align: center;
+            }
+            .card-name{
+                margin-top: 4px;
+                font-size: 14px;
+                line-height: 1.4;
+                font-family: var(--font2);
+                text-align: center;
+                display: -webkit-box;
+                word-wrap: break-word;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .event-tag{
+                margin-top: 8px;
+                padding: 6px 10px;
+                border-radius: 6px;
+                background: #f5f0ff;
+                font-size: 12px;
+                line-height: 2;
+                font-family: var(--font2);
+                color: var(--color-point);
+                text-align: center;
+            }
+        }
+        .input-search-box{
+            padding-inline: 20px;
+            margin-top: 30px;
+            p{
+                margin-bottom: 20px;
+                font-size: 17px;
+                line-height: 1.65;
+                font-family: var(--font2);
+                text-align: center;
+                span{
+                    font-family: var(--font3);
+                }
+            }
+        }
+        .input-search{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            label{
+                display: inline-block;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 36px;
+                height: 36px;
+                background: url(../../img/common/btn-search-key@2x.png) no-repeat center / cover;
+                background-size: 20px 20px;
+            }
+            input{
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                border: solid 2px #c4aaff;
+                background-color: var(--white);
+                padding: 14px 54px 14px 16px;
+                font-family: var(--font1);
+                font-size: 15px;
+                line-height: 1.6;
+                color: var(--text-03);
+                outline: 0;
+                -webkit-appearance: none;
+                &::-webkit-search-decoration,
+                &::-webkit-search-cancel-button,
+                &::-webkit-search-results-button,
+                &::-webkit-search-results-decoration{
+                    display: none;
+                }
+            }
+        }
+    }
+    .spend-card-corp-wrap{
+        padding: 40px 20px;
+        .corp-title{
+            font-size: 18px;
+            line-height: 1.5;
+            font-family: var(--font3);
+        }
+        .corp-list{
+            margin-top: 14px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            li{
+                min-width: 72px;
+                height: fit-content;
+                padding: 0 10px;
+            }
+            a{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            span{
+                font-size: 14px;
+                line-height: 1.4;
+                letter-spacing: -0.2px;
+                font-family: var(--font1);
+                text-align: center;
+                color: var(--text-01);
+            }
+        }
+        .noti{
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 1.8;
+            font-family: var(--font2);
+            color: #ef4b61;
+        }
+    }
+    .spend-card-benefit-wrap{
+        padding: 40px 20px 30px;
+        .card-title{
+            font-size: 18px;
+            line-height: 1.5;
+            font-family: var(--font3);
+        }
+        .card-benefit-box{
+            margin-top: 5px;
+            padding: 16px 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            .text-box{
+                span, em{
+                    font-size: 14px;
+                    line-height: 1.5;
+                    font-family: var(--font1);
+                    color: var(--text-02);
+                }
+                p{
+                    margin-top: 2px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    font-family: var(--font2);
+                    color: var(--text-01);
+                }
+            }
+            i{
+                margin-left: auto;
+                width: 8px;
+                height: 18px;
+            }
+        }
+        .noti{
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 1.8;
+            font-family: var(--font2);
+            color: #ef4b61;
+        }
+    }
+    .no-analysis-box{
+        margin: 30px auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        img{
+            width: 160px;
+            height: 120px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: var(--font1);
+            text-align: center;
+        }
+        span{
+            font-family: var(--font3);
+        }
+    }
 }
 
 /*팝업*/

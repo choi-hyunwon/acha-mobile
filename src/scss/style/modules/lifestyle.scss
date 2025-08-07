@@ -3149,11 +3149,10 @@
             margin-top: 14px;
             .swiper-wrapper{
                 padding-top: 4px;
+                align-items: stretch;
             }
             .swiper-slide{
                 width: 154px;
-                height: 100%;
-                min-height: -webkit-fill-available;
                 padding: 20px 14px;
                 border-radius: 10px;
                 border: solid 1px #efefef;

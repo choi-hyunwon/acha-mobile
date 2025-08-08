@@ -207,50 +207,8 @@
         <!-- 카드관 -->
         <div class="divider"></div>
         <div class="spend-monthly-card-wrap">
-            <div class="monthly-title">
-                <p><span>7</span>월 인기카드</p>
-                <a href="#"><span>더보기</span> <i class="ico_list_arrow_small"></i></a>
-            </div>
-            <!-- swiper -->
-            <div class="swiper-container popular-card">
-                <div class="swiper-wrapper">
-                    <!-- 1위일 때, .first 클래스 추가 -->
-                    <div class="swiper-slide first">
-                        <div class="card-img">
-                            <img src="../../img/@temp/img-sample-popular-card-04@2x.png" alt="카드이미지">
-                        </div>
-                        <span class="corp">KB국민카드</span>
-                        <p class="card-name">KB국민 My WE:SH 카드</p>
-                        <div class="event-tag">최대 10만원 이벤트</div>
-                    </div>
-                    <!-- 2위일 때, .second 클래스 추가 -->
-                    <div class="swiper-slide second">
-                        <div class="card-img">
-                            <img src="../../img/@temp/img-sample-popular-card-03@2x.png" alt="카드이미지">
-                        </div>
-                        <span class="corp">삼성카드</span>
-                        <p class="card-name">삼성카드 & MILEAGE</p>
-                        <div class="event-tag">최대 8만원 이벤트</div>
-                    </div>
-                    <!-- 3위일 때, .third 클래스 추가 -->
-                    <div class="swiper-slide third">
-                        <div class="card-img">
-                            <img src="../../img/@temp/img-sample-popular-card-07@2x.png" alt="카드이미지">
-                        </div>
-                        <span class="corp">BC카드</span>
-                        <p class="card-name">BC 바로 페이백 플러스</p>
-                    </div>
-                </div>
-            </div>
-            <script>
-                var swiper = new Swiper(".popular-card", {
-                    spaceBetween: 12,
-                    autoHeight: true,
-                    calculateHeight:true,
-                    slidesPerView: "auto",
-                });
-            </script>
-            <div class="input-search-box">
+            <!-- 인기카드 없을 시, mt-0 클래스 추가 -->
+            <div class="input-search-box mt-0">
                 <p><span class="f-point">조건 별 카드</span>를 직접 찾고 싶다면?</p>
                 <div class="input-search">
                     <span class="text">조건으로 카드 검색</span>

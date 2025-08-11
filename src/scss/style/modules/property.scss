@@ -60,6 +60,9 @@
                         .item.item-column{
                             .val-memo{
                                 margin-top: 0;
+                                textarea{
+                                    color: var(--text-03);
+                                }
                             } 
                         }
                     }

@@ -1,0 +1,207 @@
+// 가계부, 보관함
+.renewal{
+    .household{
+        /* 기존 스타일 수정 */
+        &.expenditure{
+            .expenditure-tab ul li{
+                padding: 10px 12px !important;
+            }
+            .usage-sum{
+                padding: 20px 20px 0;
+            }
+            .usage-history-list{
+                min-height: calc(100lvh - 240px);
+                padding: 20px 20px 30px;
+            }
+            .installment-history-list{
+                > li > .total{
+
+                    .sum{
+                        font-weight: unset;
+                        font-family: var(--font3);
+                    }
+                }
+            }
+            .sub-title{
+                align-items: flex-start;
+                span{
+                    font-family: var(--font2);
+                }
+                .budget{
+                    .price{
+                        font-weight: unset;
+                        font-family: var(--font2);
+                        line-height: 1;
+                        em{
+                            font-size: 15px;
+                        }
+                    }
+                    .desc{
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+        [type=checkbox] + span:not(.lever){
+            padding-left: 22px;
+        }
+
+        /* 신규 스타일 */
+        /* 보관함 */
+        .storage-wrap{
+            padding: 10px 20px;
+            .title{
+                font-size: 18px;
+                line-height: 1.5;
+                font-family: var(--font1);
+                span{
+                    font-family: var(--font3);
+                }
+            }
+        }
+        .storage-box{
+            margin-top: 20px;
+        }
+        .storage-filter{
+            padding-bottom: 14px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--text-01);
+            a{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                span{
+                    font-size: 20px;
+                    line-height: 1.6;
+                    font-family: var(--font3);
+                    color: var(--text-01);
+                }
+                img{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            .date{
+                margin-left: auto;
+                font-size: 14px;
+                font-family: var(--font1);
+                color: var(--text-02);
+                text-align: right;
+            }
+        }
+        .storage-list{
+            li{
+                padding: 20px 0;
+                display: flex;
+                align-items: center;
+                & + li{
+                    border-top: 1px solid #efefef;
+                }
+            }
+            .label{
+                flex-shrink: 1;
+            }
+            .txt-box{
+                margin-left: 12px;
+                flex: 0 0 51.5%;
+            }
+            .period, .usage, .payment, .installment{
+                font-size: 12px;
+                line-height: 1.4;
+                font-family: var(--font1);
+                color: var(--text-02);
+            }
+            .usage{
+                margin: 2px 0;
+                font-size: 16px;
+                letter-spacing: -0.3px;
+                color: var(--text-01);
+                display: -webkit-box;
+                word-wrap: break-word;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .payment, .installment{
+                font-family: var(--font1);
+                color: var(--text-03);
+            }
+            .installment{
+                margin-left: 10px;
+                position: relative;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 1px;
+                    height: 10px;
+                    background-color:  #e2e3e6;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -5px;
+                }
+            }
+            .spending{
+                margin-left: auto;
+                flex: 0 0 38%;
+                font-size: 16px;
+                font-family: var(--font3);
+                line-height: 1.8;
+                letter-spacing: -0.5px;
+                text-align: right;
+                &.cancel{
+                    color: #c2c1cc;
+                    text-decoration: line-through;
+                }
+            }
+            &:has(.empty){
+                height: 65vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .empty{
+                img{
+                    width: 56px;
+                    height: 56px;
+                }
+                p{
+                    margin-top: 20px;
+                    font-size: 15px;
+                    font-family: var(--font2);
+                    line-height: 1.4;
+                    color: var(--text-01);
+                }
+            }
+        }
+        .storage-check-btn{
+            width: 100%;
+            padding: 0 20px 30px;
+            position: fixed;
+            bottom: 0;
+            z-index: 20;
+            background: var(--white);
+        }
+        .storage-toast-bar{
+            width: calc(100% - 60px);
+            padding: 15px 0;
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            border-radius: 6px;
+            opacity: 0.9;
+            background-color: var(--text-01);
+            p{
+                font-size: 12px;
+                line-height: 1.5;
+                font-family: var(--font1);
+                color: var(--white);
+                text-align: center;
+            }
+        }
+    }
+}

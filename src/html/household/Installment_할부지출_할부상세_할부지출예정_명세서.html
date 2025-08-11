@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide modal-household _modalSlide">
+		<div class="modal-slide-content">
+			<div class="inner">
+				<div class="title">명세서</div>
+				<div class="paystub">
+					<p class="subject">백화점 구로점</p>
+					<span class="date">2025.07.07 00:00</span>
+					<ul class="list">
+						<li>
+							<span>지출 금액</span>
+							<span class="money">13,100원</span>
+						</li>
+						<li>
+							<span>지출 수단</span>
+							<span class="payment">네이버 현대카드</span>
+						</li>
+						<li>
+							<span>지출 방법</span>
+							<span class="method">카드할부(4/6회차)</span>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-wrap">
+				    <a href="#" class="btn btn-block btn-lg btn-purple-bg">닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
+
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
+			});
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
+			});
+
+			btnSlideOpen.trigger("click");
+		});
+	</script>
+</body>
+
+</html>

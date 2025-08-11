@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+	<div class="wrap _btnSlideOpen"></div>
+	<div class="modal-slide modal-household _modalSlide">
+		<div class="modal-slide-content">
+			<a href="#" class="btn-close _btnSlideClose"></a>
+			<div class="inner">
+				<div class="title">할부지출 예정 삭제</div>
+				<div class="delete">
+					<p><span class="f-point expense">[지출명지출명]</span> 지출을 <br>삭제할까요?</p>
+					<p>전체 삭제 시 연결된 할부 지출이 <br>모두 삭제돼요</p>
+				</div>
+				<div class="btn-wrap">
+					<a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half">이번건만 삭제</a>
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half">이번건부터 삭제</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			var btnSlideOpen = $("._btnSlideOpen");
+			var btnSlideClose = $("._btnSlideClose");
+
+			btnSlideOpen.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "block";
+				}, 500);
+				$("._modalSlide").addClass("up").removeClass("down");
+				$(".modal-slide-backdrop").addClass("show");
+				$("body").addClass("scrOn");
+			});
+
+			btnSlideClose.on("click", function () {
+				setTimeout(function () {
+					document.getElementsByClassName("_modalSlide")[0].style.display = "none";
+				}, 1000);
+				$("._modalSlide").removeClass("up").addClass("down").parents("body").css("overflow-y", "auto");
+				$(".modal-slide-backdrop").removeClass("show");
+				$("body").removeClass("scrOn");
+			});
+
+			btnSlideOpen.trigger("click");
+		});
+	</script>
+</body>
+
+</html>

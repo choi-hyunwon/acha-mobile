@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title">보관함</h2>
+        </div>
+        <div class="contents household">
+            <!-- 플로팅 버튼 생기면, .pb-90 클래스 추가 -->
+            <!-- 플로팅 버튼 없으면 .pb-90 클래스 삭제 -->
+            <div class="storage-wrap pb-90">
+                <div class="title">
+                    <p><span class="f-point">복구하고 싶은 내역</span>을 선택해주세요</p>
+                    <p>단, 편집한 내용은 복구되지 않아요</p>
+                </div>
+                <div class="storage-box">
+                    <div class="storage-filter">
+                        <a href="#">
+                            <span>6월</span>
+                            <img src="../../img/common/btn-filter-down@2x.png" alt="아이콘">
+                        </a>
+                        <span class="date">6.25~7.24</span>
+                    </div>
+                    <ul class="storage-list">
+                        <li>
+                            <label class="label">
+                                <input type="checkbox" class="filled-in" checked />
+                                <span></span>
+                            </label>
+                            <div class="txt-box">
+                                <span class="period">07.20 12:48</span>
+                                <p class="usage">할리스카페</p>
+                                <!-- 할부있을 때, .installment 태그 추가 -->
+                                <p><span class="payment">KB마이핏통장 12345678901</span></p>
+                            </div>
+                            <strong class="spending"><i class="minus">-</i>10,000<em>원</em></strong>
+                        </li>
+                        <li>
+                            <label class="label">
+                                <input type="checkbox" class="filled-in" />
+                                <span></span>
+                            </label>
+                            <div class="txt-box">
+                                <span class="period">06.30 12:45</span>
+                                <p class="usage">가나다 카페 길면 최대 두줄 처리 후 말줄임 처리 가나다 카페 길면 최대 두줄 처리 후 말줄임 처리</p>
+                                <!-- 할부있을 때, .installment 태그 추가 -->
+                                <p><span class="payment">네이버 현대카드</span><span class="installment">2/3회차</span></p>
+                            </div>
+                            <strong class="spending"><i class="minus">-</i>10,000<em>원</em></strong>
+                        </li>
+                        <li>
+                            <label class="label">
+                                <input type="checkbox" class="filled-in" checked />
+                                <span></span>
+                            </label>
+                            <div class="txt-box">
+                                <span class="period">06.27 12:45</span>
+                                <p class="usage">가나다 카페</p>
+                                <p><span class="payment">네이버 현대카드</span><span class="installment">2/3회차</span></p>
+                            </div>
+                            <strong class="spending"><i class="minus">-</i>1,911,010,000<em>원</em></strong>
+                        </li>
+                        <li>
+                            <label class="label">
+                                <input type="checkbox" class="filled-in" checked />
+                                <span></span>
+                            </label>
+                            <div class="txt-box">
+                                <span class="period">06.27 11:40</span>
+                                <p class="usage">우버택시 가승인</p>
+                                <!-- 할부있을 때, .installment 태그 추가 -->
+                                <p><span class="payment">롯데카드</span><span class="installment">1/3회차</span></p>
+                            </div>
+                            <!-- 취소(?)내역 시, .cancel 클래스 추가 -->
+                            <strong class="spending cancel">9,700<em>원</em></strong>
+                        </li>
+                        <li>
+                            <label class="label">
+                                <input type="checkbox" class="filled-in" />
+                                <span></span>
+                            </label>
+                            <div class="txt-box">
+                                <span class="period">06.27 12:45</span>
+                                <p class="usage">가나다 카페</p>
+                                <p><span class="payment">KB마이핏통장 12345678901</span></p>
+                            </div>
+                            <strong class="spending"><i class="plus">+</i>910,000<em>원</em></strong>
+                        </li>
+                        <li>
+                            <label class="label">
+                                <input type="checkbox" class="filled-in" />
+                                <span></span>
+                            </label>
+                            <div class="txt-box">
+                                <span class="period">06.27 12:45</span>
+                                <p class="usage">가나다 카페</p>
+                                <!-- 할부있을 때, .installment 태그 추가 -->
+                                <p><span class="payment">신한카드</span><span class="installment">2개월</span></p>
+                            </div>
+                            <strong class="spending"><i class="minus">-</i>300,000<em>원</em></strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 체크 버튼 클릭 시, 플로팅 버튼 생성 -->
+            <div class="storage-check-btn">
+                <a class="btn btn-big btn-purple-bg btn-block" href="#"><span>3</span>건 복구하기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

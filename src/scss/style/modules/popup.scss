@@ -6702,6 +6702,7 @@
         }
     }
 
+    /*자산 리뉴얼*/
     &.modal-account{
         .inner {
             padding: 30px;
@@ -6740,6 +6741,78 @@
                 p {
                     font-size: 15px;
                     font-family: var(--font1);
+                }
+            }
+        }
+    }
+
+    /*가계부 리뉴얼*/
+    &.modal-household{
+        .inner {
+            padding: 20px 30px 30px;
+            overflow: hidden;
+
+            .title {
+                font-size: 16px;
+                line-height: 1.4;
+                font-family: var(--font3);
+                color: var(--text-01);
+                text-align: center;
+            }
+
+            .delete{
+                padding: 50px 0;
+                p{
+                    font-size: 16px;
+                    line-height: 1.5;
+                    font-family: var(--font1);
+                    text-align: center;
+                    & + p{
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .paystub{
+                padding: 20px 0;
+                text-align: left;
+                .subject{
+                    margin-bottom: 2px;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-family: var(--font3);
+                }
+                .date{
+                     font-size: 14px;
+                    line-height: 1.7;
+                    font-family: var(--font1);
+                    color: var(--text-02);
+                }
+                .list{
+                    margin-top: 17px;
+                    padding: 30px 20px;
+                    background-color: #f7f8fc;
+                }
+                li{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        flex: 0 0 30%;
+                        font-size: 15px;
+                        line-height: 1.7;
+                        font-family: var(--font1);
+                        color: var(--text-02);
+                    }
+                    .money, .payment, .method{
+                        flex: 0 0 60%;
+                        margin-left: auto;
+                        font-family: var(--font2);
+                        color: var(--text-01);
+                        text-align: right;
+                    }
+                    & + li{
+                        margin-top: 30px;
+                    }
                 }
             }
         }

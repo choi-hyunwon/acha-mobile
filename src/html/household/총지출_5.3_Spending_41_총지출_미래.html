@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">2025년 4월</a><i class="icon-arrow-bottom"></i></h2>
+            <div class="btn_area">
+                <a class="img" href="#">
+                    <img src="../../img/common/ico_top_add_b_nor@2x.png" width="26" alt="더보기 버튼">
+                </a>
+                <a class="img storage" href="#">
+                    <img src="../../img/common/ico-top-storage-box@3x.png" width="26" alt="보관함 버튼">
+                </a>
+            </div>
+        </div>
+        <div class="contents expenditure household">
+            <div class="period">
+                <p>기간</p>
+                <span class="start">1.25</span>~<span class="end">2.24</span>
+            </div>
+            <div class="total-amount mb-5">
+                <p class="title">총 지출 <a href="#"><img src="../../img/common/ico_tooltip_big@2x.png" width="16"
+                            alt="tooltip-large"></a></p>
+                <span class="amount">0</span>
+                <p class="expected">지출 예정 <span>3,610,000</span><span>원</span></p>
+                <a href="#" class="btn btn-filter">필터 <span class="color-purple">3</span></a>
+            </div>
+
+            <div class="expenditure-box account-spending bg_light_gray">
+                <!-- 총계 -->
+                <div class="usage-sum">
+                    <p class="count">
+                        총 <span class="f-point">0</span>건
+                    </p>
+                    <p class="filter">
+                        <em>가계부 내역만 보기</em>
+                        <label>
+                            <input type="checkbox" class="filled-in">
+                            <span></span>
+                        </label>
+                    </p>
+                </div>
+
+                <ul class="usage-history-list min225">
+                    <li>
+                        <div class="list-collapse">
+                            <div class="plan">
+                                <span>지출 예정</span>
+                                <div class="f-point"><span class="num">3</span>건</div>
+                            </div>
+                            <p class="lumpSum">
+                                <span class="lump">3,610,000<span>원</span></span>
+                                <a class="btn-collapse">
+                                    <img src="../../img/common/ico_sub_list_arrow_up@2x.png" width="22" alt="접기">
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="list-day-wrap">
+                            <p class="sub-title">5월 15일 예정
+                                <span class="lump">3,000,000<span>원</span></span>
+                            </p>
+                            <ul class="details-history details-history-align-top">
+                                <li class="item-list">
+                                    <div class="group">
+                                        <div class="box">
+                                            <div class="img">
+                                                <i class="icon icon_cate_house"></i>
+                                            </div>
+                                            <div class="info">
+                                                <span class="place"><span>아파트 관리비</span></span>
+                                                <span class="amount-global">3,000,000<span>원</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method badge-payment">
+                                            <span>토스뱅크계좌 966</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="list-day-wrap">
+                            <p class="sub-title">5월 25일 예정
+                                <span class="lump">610,000<span>원</span></span>
+                            </p>
+                            <ul class="details-history details-history-align-top">
+                                <li class="item-list">
+                                    <div class="group">
+                                        <div class="box">
+                                            <div class="img">
+                                                <i class="icon icon_cate_allowance"></i>
+                                            </div>
+                                            <div class="info">
+                                                <span class="place edit">
+                                                    <span>용돈</span> 
+                                                    <button>
+                                                        <img src="../../img/common/expenditure/ic_my_register@2x.png" alt="edit-icon">
+                                                    </button>
+                                                </span>
+                                                <span class="amount-global">500,000<span>원</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method badge-payment badge-tag">
+                                            <span>현금</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item-list">
+                                    <div class="group">
+                                        <div class="box">
+                                            <div class="img">
+                                                <i class="icon icon_cate_cloth"></i>
+                                            </div>
+                                            <div class="info">
+                                                <span class="place"><span>쿠팡</span></span>
+                                                <span class="amount-global">110,000<span>원</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="badge-group">
+                                            <span class="badge badge-gray">신한카드</span>
+                                            <span class="badge badge-blue"><i class="num">2</i>/<i class="total">6</i>회차</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        let $list = $('.list-collapse');
+        $list.click(function () {
+            if ($(this).hasClass('list-collapse-close')) {
+                $list.removeClass('list-collapse-close');
+                $list.siblings('.divider').show();
+                $list.siblings('.divider').nextAll('div').show();
+            } else {
+                $list.addClass('list-collapse-close');
+                $list.siblings('.divider').hide();
+                $list.siblings('.divider').nextAll('div').hide();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

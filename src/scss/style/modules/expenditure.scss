@@ -3102,6 +3102,9 @@
     /*마이데이터 서비스 탈퇴*/
     &.secession {
       padding: 10px 20px 30px;
+      display: flex;
+      flex-direction: column;
+
 
       .content {
         font-size: 18px;
@@ -3180,6 +3183,7 @@
       }
 
       .btn-area {
+        margin-top: auto;
         .btn-secession {
           border-radius: 6px;
           height: 50px;
@@ -3191,7 +3195,7 @@
           letter-spacing: -.75px;
           font-family: var(--font2);
           text-align: center;
-          padding: 14px 0;
+          padding: 12px 0;
         }
       }
     }

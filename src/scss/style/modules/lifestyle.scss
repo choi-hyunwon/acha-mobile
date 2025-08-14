@@ -194,12 +194,16 @@
                 padding: 12px;
                 border-radius: 24px;
                 background-color: #f8f9fb;
+                border: 1px solid #f8f9fb;
                 &::before{
                     content: "";
                     display: block;
                     width: 36px;
                     height: 36px;
                     margin: 0 auto;
+                }
+                &.card::before{
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-cardbenefit@2x.png) no-repeat center / cover;
                 }
                 &.check::before{
                     background: url(../../img/common/lifestyle/img-life-sec-icon-attendance@2x.png) no-repeat center / cover;
@@ -213,19 +217,32 @@
             }
             strong{
                 margin-bottom: 4px;
-                display: block;
+                display: flex;
+                align-items: center;
                 font-size: 16px;
                 line-height: 18px;
                 font-family: var(--font2);
                 color: var(--text-01);
-                &::after{
-                    content: "";
-                    display: inline-block;
-                    width: 18px;
-                    height: 18px;
-                    margin-left: 4px;
-                    background: url(../../img/common/lifestyle/ico-uplanner-point-key@2x.png) no-repeat center / contain;
-                    vertical-align: bottom;
+                position: relative;
+            }
+            .point-badge{
+                width: 18px;
+                height: 18px;
+                padding: 2px;
+                margin-left: 5px;
+                border-radius: 9px;
+                background-color: #834dff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 10px;
+                line-height: 1.6;
+                font-family: var(--font2);
+                color: var(--white);
+                text-align: center;
+                &:has(.num){
+                    width: fit-content;
+                    padding: 2.5px 4.5px;
                 }
             }
             span{

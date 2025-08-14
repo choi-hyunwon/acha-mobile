@@ -242,7 +242,8 @@
                 text-align: center;
                 &:has(.num){
                     width: fit-content;
-                    padding: 2.5px 4.5px;
+                    padding: 2.5px 5px;
+                    letter-spacing: 0.5px;
                 }
             }
             span{

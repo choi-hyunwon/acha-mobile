@@ -231,6 +231,12 @@
         .badge{
             font-size: 11px;
         }
+        .alert-box.top{
+            margin-top: 16px;
+            & + .alert-box.top{
+                margin-top: 12px;
+            }
+        }
 
         /* 자산 > 자산추가(직접입력) */
         /* input */
@@ -654,7 +660,7 @@
             }
         }
 
-        .alert-box{
+        .alert-box:not(.top){
             width: calc(100% - 38px);
             padding: 6px 10px;
             margin: 0 auto 20px;

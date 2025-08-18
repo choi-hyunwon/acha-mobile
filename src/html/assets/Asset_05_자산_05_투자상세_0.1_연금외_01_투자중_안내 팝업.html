@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-asset-detail _modalSlide">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title investment _btnSlideOpen">
+                    <p>장 시작 및 마감 시간에는 <br>증권사에서 정보 제공을 제한할 수 있어요</p>
+                </div>
+                <div class="investment-box">
+                    <p class="noti">* 장시작 <span class="start">8:30 ~ 9:30</span> | 장마감 <span class="end">15:00 ~ 16:00</span></p>
+                    <ul class="investment-info">
+                        <li>- 최초 자산 연결 시, 정보 표기가 어려울 수 있어요</li>
+                        <li>- 업데이트 시, 이전 정보가 표시될 수 있어요</li>
+                    </ul>
+                    <p class="desc">실제 오류는 아니며, 다른 시간에 업데이트를 진행하면 정보를 불러올 수 있어요 🙂</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

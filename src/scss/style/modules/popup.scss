@@ -6950,6 +6950,9 @@
                 &:has(.title.asset-category){
                     padding: 20px;
                 }
+                &:has(.title.investment){
+                    padding: 40px 30px;
+                }
                 .title{
                     padding-right: 15px;
                     padding-bottom: 20px;
@@ -7008,6 +7011,13 @@
                         font-family: var(--font3);
                         text-align: center;
                         border: none;
+                    }
+                    &.investment{
+                        padding-bottom: 10px;
+                        border-bottom: none;
+                        p{
+                            line-height: 1.63;
+                        }
                     }
                 }
                 [class$='list']{
@@ -7143,6 +7153,33 @@
                                 }
                             }
                         }
+                    }
+                }
+                .investment-box{
+                    text-align: left;
+                    .noti, .desc, li{
+                        font-size: 14px;
+                        line-height: 1.57;
+                        font-family: var(--font1);
+                        color: var(--text-02);
+                        word-break: keep-all;
+                    }
+                    .noti{
+                        color: var(--text-03);
+                    }
+                    .investment-info{
+                        margin: 20px 0;
+                        padding: 15px;
+                        border-radius: 4px;
+                        background-color: #f5f6f8;   
+                        li + li{
+                            margin-top: 5px;
+                        }
+                    }
+                    .desc{
+                        padding: 0;
+                        margin-bottom: 0;
+                        letter-spacing: 0;
                     }
                 }
             }

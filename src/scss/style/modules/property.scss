@@ -228,6 +228,18 @@
                 }
             }
         }
+        .box-ex-detail-top{
+            .account-info{
+                .btn-refresh span{
+                    margin-right: 3px;
+                }
+            }
+        }
+        .box-ex-detail-info.box-investment-info{
+            margin: 0 0 35px 0;
+            padding: 0 0 35px;
+            border-bottom: 1px solid #efefef;
+        }
         .badge{
             font-size: 11px;
         }
@@ -352,6 +364,15 @@
 
         .stock-list{
             padding: 24px 20px 40px;
+            &:has(.box-investment-info){
+                li + li{
+                    padding-top: 40px;
+                    margin-top: 40px;
+                }
+            }
+            &:has(.stock-investment-noti){
+                padding-top: 20px;
+            }
             li{
                 width: 100%;
                 display: flex;
@@ -396,6 +417,23 @@
                         color: #4393ff;
                     }
                 }
+            }
+        }
+
+        .stock-investment-noti{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            p{
+                font-size: 13px;
+                line-height: 2;
+                font-family: var(--font2);
+                color: var(--text-03);
+            }
+            img{
+                width: 16px;
+                height: 16px;
             }
         }
 

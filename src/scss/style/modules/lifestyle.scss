@@ -1285,6 +1285,7 @@
         .num{
             width: 22px;
             height: 22px;
+            flex-shrink: 1;
             border-radius: 50%;
             background: var(--color-point);
             text-align: center;
@@ -1299,6 +1300,7 @@
         .title{
             width: 80%;
             max-width: 100%;
+            flex: 1;
             font-size: 18px;
             line-height: 28px;
             font-family: var(--font3);
@@ -1552,7 +1554,7 @@
             .dot-list{
                 margin-bottom: 0;
                 & + .dot-list{
-                    margin-top: 35px;
+                    margin-top: 40px;
                 }
                 li + li{
                     margin-top: 15px;
@@ -1562,6 +1564,7 @@
 
         h3{
             margin-bottom: 16px;
+            color: var(--text-01);
         }
 
         p{
@@ -1571,6 +1574,13 @@
             font-family: var(--font1);
             word-break: keep-all;
             color: var(--text-02);
+            &.subject{
+                margin-bottom: 6px;
+                font-size: 15px;
+                font-family: var(--font3);
+                word-break: keep-all;
+                color: var(--text-01);
+            }
         }
 
         .dot-list {
@@ -1586,6 +1596,9 @@
                     }
                 }
             }
+            & + .subject{
+                margin-top: 30px;
+            }
 
             p{
                 &.emphasis{
@@ -1599,6 +1612,9 @@
                 }
                 &::before{
                     top: 8px;
+                }
+                & + p{
+                    margin-top: 2px;
                 }
             }
         }

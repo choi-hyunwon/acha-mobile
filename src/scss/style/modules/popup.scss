@@ -7223,7 +7223,7 @@
                 line-height: 1.9;
             }
             .lottery-img{
-                width: 330px;
+                width: 100%;
                 height: auto;
                 margin-top: 10px;
             }
@@ -7237,7 +7237,7 @@
                 a{
                     width: auto;
                     height: 100%;
-                    padding: 15px 0;
+                    padding: 16px 0;
                     flex: 1;
                     display: inline-block;
                     border: none;
@@ -7246,10 +7246,10 @@
                     font-family: var(--font2);
                     line-height: 1.25;
                     &.btn-point-bg{
-                        background-color: #ff6200;
+                        background-color: var(--text-01);
                     }
                     &.btn-white-bg{
-                        color: #ff6200;
+                        color: var(--text-01);
                     }
                 }
             }
@@ -7502,12 +7502,12 @@
                         line-height: 1.54;
                         letter-spacing: 0;
                         &.btn-point-bg{
-                            background-color: #ff6200;
+                            background-color: var(--text-01);
                             color: var(--white);
                         }
                         &.btn-bg{
-                            background-color: #fff4ed;
-                            color: #ff6200;
+                            background-color: #f2f2f5;
+                            color: var(--text-01);
                         }
                     }
                 }

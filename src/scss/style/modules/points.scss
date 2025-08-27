@@ -8,23 +8,23 @@
     .lottery-main-wrap{
         width: 100%;
         height: 100%;
-        padding: 20px 20px 30px;
+        padding: 30px 20px;
         background: url('../../img/points/bg@3x.png') no-repeat center / cover;
         text-align: center;
         .title-img{
-            width: calc(100% - 20px);
+            width: calc(100% - 55px);
             height: auto;
         }
         .prize-img{
-            margin-top: 5px;
-            width: calc(100% - 5px);
+            margin-top: 10px;
+            width: 100%;
             height: auto;
         }
         .lottery-prize{
             width: calc(100% - 45px);
             height: 40px;
             padding: 10px 20px;
-            margin: 0 auto;
+            margin: 30px auto 0;
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -41,11 +41,9 @@
                 font-family: var(--font2);
                 line-height: 1.43;
             }
-            .name, .prize{
-                color:  #ff6200;
-            }
             .prize{
                 font-family: var(--font3);
+                color:  #2c7dff;
             }
             .swiper-slide{
                 display: flex;
@@ -55,38 +53,30 @@
             }
         }
         .my-lottery{
-            width: 100%;
-            padding: 12px 20px;
-            margin: 0 auto;
-            border-radius: 10px;
+            width: calc(100% - 60px);
+            padding: 14px 20px;
+            margin: 15px auto 0;
+            border-radius: 28px;
+            border: solid 2px #5061ff;
             display: flex;
             align-items: center;
-            box-shadow: 0 0 15px 0 #0000000d;
             background-color: #fff;
             span{
-                font-size: 16px;
+                font-size: 15px;
                 font-family: var(--font2);
-                line-height: 1.8;
-            }
-            div{
-                margin-left: auto;
-                display: flex;
-                align-items: center;
-                gap: 2px;
-            }
-            img{
-                width: 36px;
-                height: 36px;
+                line-height: 2;
             }
             .num{
+                margin-left: auto;
                 font-size: 18px;
                 font-family: var(--font3);
                 line-height: 1.6;
-                color: #ff7017;
+                color: #5061ff;
+                text-align: right;
             }
         }
         .noti{
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 16px;
             font-family: var(--font2);
             line-height: 1.6;
@@ -98,15 +88,13 @@
         padding-bottom: 30px;
         position: fixed;
         bottom: 0;
-        background: #eeffbf;
     }
     .lottery-btn{
         width: calc(100% - 40px);
         margin: 0 auto;
         padding: 16px 0;
         border-radius: 10px;
-        border: 1px solid #eeffbf;
-        background-color: #ff6200;
+        background-color: var(--text-01);
         font-size: 16px;
         font-family: var(--font2);
         line-height: 1.25;
@@ -115,13 +103,13 @@
     .lottery-scratch-wrap{
         width: 100%;
         height: 100vh;
-        padding: 30px 20px;
+        padding: 30px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        background-image: linear-gradient(to bottom, #fff0c6, #eeffbf);
+        background: url('../../img/points/bg@3x.png') no-repeat center / cover;
         overflow: hidden;
         &.no-bg{
             background-image: none;
@@ -133,7 +121,7 @@
             line-height: 1.36;
         }
         .new-lottery-img{
-            width: calc(100% - 5px);
+            width: 100%;
             height: auto;
         }
         .point-img{
@@ -148,13 +136,14 @@
             text-align: center;
             span{
                 font-family: var(--font3);
-                color: #ff6200;
+                color: #2c66f6;
             }
         }
     }
     .scratch-btn-box{
         width: 100%;
         margin-top: auto;
+        padding-inline: 20px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -169,7 +158,7 @@
             line-height: 1.25;
         }
         .btn-point-bg{
-            background-color: #ff6200;
+            background-color: var(--text-01);
             color: var(--white);
         }
         .more-btn{
@@ -183,25 +172,26 @@
             }
         }
         .btn-close{
-            background-color: #fff4ed;
-            color: #ff6200;
+            background-color: #f2f2f5;
+            color: var(--text-01);
         }
     }
     .lottery-jackpot-wrap{
         width: 100%;
         height: 100vh;
-        padding: 40px 20px 30px;
+        padding: 30px 0 30px;
         display: flex;
         flex-direction: column;
         gap: 20px;
         position: relative;
         z-index: 1;
+        overflow: hidden;
         &::before{
             content: '';
             display: inline-block;
             width: 100%;
-            height: 400px;
-            background-image: linear-gradient(to bottom, #fff0c6, #eeffbf00);
+            height: 600px;
+            background-image: linear-gradient(to bottom, #d6f0ff, #fff);
             position: absolute;
             top: 0;
             left: 0;
@@ -211,24 +201,28 @@
             width: 100%;
             height: auto;
             position: relative;
-            z-index: 1;
+            z-index: 2;
         }
         .title{
-            margin-top: 20px;
+            margin-top: 18px;
             margin-bottom: 0;
             font-size: 30px;
             font-family: var(--font3);
             line-height: 1.27;
             text-align: center;
+            position: relative;
+            z-index: 2;
         }
         .reward-phrase{
             font-size: 26px;
             font-family: var(--font2);
             line-height: 1.4;
             text-align: center;
+            position: relative;
+            z-index: 2;
             span{
                 font-family: var(--font3);
-                color: #ff6200;
+                color: #2c66f6;
             }
         }
     }
@@ -269,9 +263,9 @@
                 background-color: var(--text-02);
             }
             &.point{
-                color: #ff6200;
+                color: #f21730;
                 &::before{
-                    background-color: #ff6200;
+                    background-color: #f21730;
                 }
             }
         }

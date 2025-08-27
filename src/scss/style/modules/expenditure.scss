@@ -1281,20 +1281,6 @@
     }
   }
 
-  .btn-coupon{
-    height: 29px;
-    padding: 4px 12px;
-    border-radius: 15px;
-    border: solid 1px #e2e3e6;
-    background-color: #fff;
-    margin-left: auto;
-    span{
-      font-family: var(--font1);
-      font-size: 13px;
-      color: #707070;
-    }
-  }
-
   &.box-card-top {
     border-bottom: none;
     display: flex;
@@ -1417,8 +1403,6 @@
         }
       }
     }
-
-
 
     >.title {
       font-size: 18px;

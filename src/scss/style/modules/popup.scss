@@ -2946,7 +2946,7 @@
     }
 
     &.up {
-        transition: 0.5s;
+        transition: 0.6s;
 
         .modal-slide-content {
             height: fit-content;
@@ -2955,7 +2955,7 @@
     }
 
     &.down {
-        transition: 0.5s;
+        transition: 0.6s;
 
         .modal-slide-content {
             animation: modal-sticky-bottom-animation-outauto 0.5s !important;
@@ -7185,12 +7185,91 @@
             }
         }
     }
+
+    // 행운복권
+    &.points-lottery{
+        align-items: center;
+        .modal-slide-content {
+            height: auto;
+            border-radius: 0;
+            background-color: transparent;   
+            position: relative;
+        }
+        .modal-close {
+            display: block;
+            width: 34px;
+            height: 34px;
+            background: url(../../img/points/btn-popup-close-white-circle@3x.png) no-repeat center / cover;
+            position: absolute;
+            right: 20px;
+            z-index: 10;
+        }
+        .modal-body{
+            padding: 20px;
+            h4, p, a{
+                text-align: center;
+                color: var(--white);
+            }
+            h4{
+                margin-bottom: 0;
+                font-size: 32px;
+                font-family: var(--font3);
+                line-height: 1.2;
+            }
+            .guess-phrase{
+                margin-top: 10px;
+                font-size: 20px;
+                font-family: var(--font1);
+                line-height: 1.9;
+            }
+            .lottery-img{
+                width: 330px;
+                height: auto;
+                margin-top: 10px;
+            }
+            .modal-btn-wrap{
+                margin-top: 10px;
+                width: 100%;
+                height: 54px;
+                display: flex;
+                align-items: stretch;
+                gap: 10px;
+                a{
+                    width: auto;
+                    height: 100%;
+                    padding: 15px 0;
+                    flex: 1;
+                    display: inline-block;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    font-family: var(--font2);
+                    line-height: 1.25;
+                    &.btn-point-bg{
+                        background-color: #ff6200;
+                    }
+                    &.btn-white-bg{
+                        color: #ff6200;
+                    }
+                }
+            }
+            .alarm-phrase{
+                margin-top: 20px;
+                font-size: 18px;
+                font-family: var(--font1);
+                line-height: 2;
+            }
+        }
+        .modal-close + .modal-body{
+            padding-top: 40px;
+        }
+    }
 }
 
 /* 270 modal */
 .modal-size-sm {
     .modal-dialog {
-        width: 275px;
+        width: 270px;
         max-width: 270px !important;
 
         .modal-content {
@@ -7379,6 +7458,60 @@
                     }
                 }
             }
+
+            // 행운복권
+            &.points-lottery{
+                padding: 30px 0 10px;
+                border-radius: 14px;
+                text-align: center;
+                .modal-body{
+                    p{
+                        font-size: 16px;
+                        font-family: var(--font3);
+                        line-height: 1.4;
+                    }
+                    .lottery-img{
+                        margin-top: 14px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    .desc{
+                        margin-top: 12px;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        font-family: var(--font1);
+                        line-height: 1.57;
+                    }
+                }
+                .modal-footer{
+                    margin-top: 20px;
+                    padding-inline: 10px;
+                    display: flex;
+                    align-items: stretch;
+                    gap: 10px;
+                    border-top: 1px solid #fff;
+                    a{
+                        width: 100%;
+                        padding: 12px 0;
+                        flex: 1;
+                        display: inline-block;
+                        border-radius: 10px;
+                        float: none;
+                        font-size: 13px;
+                        font-family: var(--font2);
+                        line-height: 1.54;
+                        letter-spacing: 0;
+                        &.btn-point-bg{
+                            background-color: #ff6200;
+                            color: var(--white);
+                        }
+                        &.btn-bg{
+                            background-color: #fff4ed;
+                            color: #ff6200;
+                        }
+                    }
+                }
+            }
         }
 
         &.manage-edit {
@@ -7388,7 +7521,6 @@
         }
     }
 }
-
 
 .rs-container {
     position: relative;

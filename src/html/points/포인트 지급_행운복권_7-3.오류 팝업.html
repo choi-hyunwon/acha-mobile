@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+    <div class="modal fade modal-size-sm" id="errorModal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content points-lottery">
+                <div class="modal-body">
+                    <p>오류가 발생했어요</p>
+                    <p class="desc">다시 한번 시도해주세요 <br>지속되면 앱내 [1:1문의]로 <br>남겨주세요</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-footer btn-point-bg single" data-dismiss="modal">닫기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#errorModal').modal('show');
+</script>
+</html>

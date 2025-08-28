@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+    <div class="modal fade modal-size-sm" id="paymentCompleteA" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content payment-complete">
+                <div class="modal-body">
+                    <img class="animation-img" src="../../img/common/expenditure/money_popup_point_reward_a.gif" alt="포인트지급완료">
+                    <span class="result">내역 확인 완료!</span>
+                    <p><span class="point">1P</span>가 적립되었어요</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-footer btn-point-bg single" data-dismiss="modal">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#paymentCompleteA').modal('show');
+</script>
+</html>

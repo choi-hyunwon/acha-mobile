@@ -203,5 +203,13 @@
                 text-align: center;
             }
         }
+
+        /* 포인트 적립 버튼 */
+        .point-earn-btn{
+            display: block;
+            position: fixed;
+            top: 81px;
+            right: 15px;
+        } 
     }
 }

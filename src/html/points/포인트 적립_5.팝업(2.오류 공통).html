@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal"></div>
+
+<div class="modal fade modal-size-sm" id="inviteError" tabindex="-1" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content get-lottery">
+			<div class="modal-body only-txt pt-30">
+				<p>일시적 오류가 발생했어요 <br/>잠시 후 다시 시도해주세요</p>
+			</div>
+			<div class="modal-footer mt-30">
+				<a href="#" class="btn-footer single">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    $('#inviteError').modal('show');   // modal show
+</script>
+</body>
+</html>

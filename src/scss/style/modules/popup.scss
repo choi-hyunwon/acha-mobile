@@ -7264,6 +7264,43 @@
             padding-top: 40px;
         }
     }
+
+    // 초대 포인트 지급
+    &.invite-points{
+        .inner{
+            padding: 20px 30px 40px;
+            .title{
+                font-size: 16px;
+                line-height: 1.38;
+                font-family: var(--font3);
+            }
+            ul{
+                margin-top: 40px;
+                text-align: left;
+                li{
+                    text-indent: -9px;
+                    padding-left: 10px;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    font-weight: var(--font1);
+                    word-break: keep-all;
+                    &::before{
+                        content: '';
+                        width: 4px;
+                        height: 4px;
+                        margin-right: 5px;
+                        margin-bottom: 3.5px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        background-color: var(--text-02);
+                    }
+                    & + li{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* 270 modal */
@@ -7509,6 +7546,47 @@
                             background-color: #f2f2f5;
                             color: var(--text-01);
                         }
+                    }
+                }
+            }
+
+            // 행운복권
+            &.get-lottery{
+                padding-top: 30px;
+                text-align: center;
+                .modal-body{
+                    .lottery-img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    .title{
+                        margin-top: 10px;
+                        font-size: 15px;
+                        font-family: var(--font3);
+                        line-height: 1.47;
+                    }
+                    .desc{
+                        margin-top: 10px;
+                        font-size: 14px;
+                        font-family: var(--font1);
+                        line-height: 1.43;
+                    }
+                    &.only-txt{
+                        p{
+                            font-size: 14px;
+                            line-height: 1.57;
+                            font-family: var(--font1);
+                        }
+                    }
+                }
+                .modal-footer{
+                    margin-top: 30px;
+                    a{
+                        width: 100%;
+                        flex: 1;
+                        float: none;
+                        font-size: 13px;
+                        letter-spacing: 0;
                     }
                 }
             }

@@ -7,50 +7,108 @@
 			<a href="#" class="sprite btn_back"></a>
 			<h2>친구 초대</h2>
 		</div>
-		<div class="contents event-invite lifestyle">
-			<div class="event-invite-wrap">
-				<span class="invite-date">25.02.27 ~ 25.12.31</span>
-				<p class="invite-title">친구 초대하고 <br>함께 포인트 받자</p>
-				<p class="invite-desc">초대받은 친구가 <span class="f-point">내 초대 코드를 입력</span>하면 <br>친구도 나도 포인트를 받아요</p>
-				<a href="#" target="_blank" rel="noopener noreferrer" class="invite-btn">
-					<span>초대 코드 입력하러 가기</span>
-					<i></i>
-				</a>
-				<img class="invite-img" src="../../img/common/event/invite/img-invitation-coupon-info@2x.png" alt="친구 초대 쿠폰 이미지">
-				<span class="invite-noti">✽ 초대코드는 <span class="f-point">가입 후 24시간</span> 내까지 입력할 수 있어요</span>
-				<div class="invite-code-box">
-					<p>내 초대코드</p>
-					<div class="my-code">
-						<button class="copy-btn">
-							<span class="code">12ABCDEFG123</span>
-							<img src="../../img/common/btn-invitation-code-copy@2x.png" alt="복사하기 버튼">
-						</button>
-					</div>
-					<div class="invite-status">
-						<p class="my-status">🙌 내 초대현황</p>
-						<p class="result"><span class="num">0</span>명</p>
+		<div class="contents points">
+			<div class="point-invite-wrap">
+				<div class="point-invite-box benefit">
+					<span class="invite-date">25.02.10 ~ 25.12.31</span>
+					<p class="invite-title">초대하면 할수록 <br>커지는 혜택</p>
+					<p class="invite-desc">초대받은 친구가 <span class="f-point">내 초대 코드를 입력</span>하면 <br>친구도 나도 포인트를 받아요</p>
+					<a href="#" target="_blank" rel="noopener noreferrer" class="invite-btn">
+						<span>초대 코드 입력하러 가기</span>
+						<i></i>
+					</a>
+				</div>
+				<div class="point-invite-box no-bg">
+					<img class="invite-img" src="../../img/points/img-invitation-coupon-info@3x.png" alt="친구 초대 쿠폰 이미지">
+					<span class="invite-noti">✽ 초대코드는 <span class="f-point">가입 후 24시간</span> 내까지 입력할 수 있어요</span>
+				</div>
+				<div class="point-invite-box friend">
+					<p class="invite-title">누적된 <span class="f-point">초대 친구 수</span>만큼 <br>내가 받는 포인트도 늘어나요!</p>
+					<div class="lottery-percent-box">
+						<div class="sub-title">
+							<img class="icon" src="../../img/points/icon-luckylottery-clover@3x.png" alt="클로버아이콘">
+							<p><span>행운 복권</span> 으로 <span>최대 50,000P</span> 기회까지!</p>
+						</div>
+						<img src="../../img/points/img-invitation-point-info@3x.png" alt="">
+						<p class="noti">✽ 6명 초대부터는 <span class="f-point">5000P</span>씩 받아요 (최대20명)</p>
 					</div>
 				</div>
+				<div class="point-invite-box code">
+					<div class="invite-code-box">
+						<p>내 초대코드</p>
+						<div class="my-code">
+							<button class="copy-btn">
+								<span class="code f-point">12ABCDEFG123</span>
+								<img src="../../img/common/btn-invitation-code-copy@2x.png" alt="복사하기 버튼">
+							</button>
+						</div>
+					</div>
+					<div class="invite-status-box">
+						<div class="invite-status">
+							<p class="my-status">내 초대현황</p>
+							<p class="result"><span class="num">3</span>명</p>
+						</div>
+						<div class="invite-condition">
+							<span>1, 3, 5명 초대하면</span>
+							<img src="../../img/points/icon-luckylottery-clover@3x.png" alt="클로버아이콘">
+							<span><em>행운 복권</em> 지급!</span>
+						</div>
+						<div class="invite-clover-group">
+							<!-- 초대 완료 시 .active 클래스 추가 -->
+							<span class="clover active"></span>
+							<span class="clover active"></span>
+							<span class="clover active"></span>
+							<span class="clover"></span>
+							<span class="clover"></span>
+						</div>
+						<p class="noti">✽ 내 초대 현황은 매월 1일 초기화돼요</p>
+						<div class="monthly-invite-point">
+							<p>이번 달 초대 포인트</p>
+							<a href="#"><img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘"></a>
+							<span class="point">1000P</span>
+						</div>
+					</div>
+				</div>
+				<!-- 플로팅버튼 있을 경우, .pb-110 클래스 추가
+				 	플로팅버튼 없을 경우, .pb-110 클래스 제거 -->
+				<div class="point-invite-box notice pb-110">
+					<strong>꼭 확인해주세요!</strong>
+					<p class="title">행사 기간</p>
+					<ul class="dash-list">
+						<li>2025.02.10 ~ 2025.12.31</li>
+					</ul>
+					<p class="title">안내 사항</p>
+					<ul class="dash-list">
+						<li>유플래너에 회원가입 이력이 없는 회원이 가입 24시간 이내 초대코드를 입력하면, 초대한 회원과 신규로 가입한 회원 모두에게 혜택을 제공합니다.</li>
+						<li>초대코드는 1인 1회에 한해 등록할 수 있으며, 변경은 불가능합니다.</li>
+						<li>비정상적인 방법으로 이벤트에 참여한 경우, 적립된 포인트는 반환되며 추후 이벤트 참여가 제한될 수 있습니다.</li>
+						<li>운영사의 사정으로 사전 안내없이 변경, 중단될 수 있습니다.</li>
+						<li>초대코드 또는 이벤트 내용을 전송하는 경우, 반드시 받는 분의 명시적인 사전 동의를 받으셔야 합니다. (사전 동의 없이 받는 분의 의사에 반하여 초대코드 또는 이벤트 내용을 전송하시는 경우 정보통신망 이용촉진 및 정보보호 등에 관한 법률 위반으로 과태료가 부과될 수 있으며, 초대에 따른 혜택이 취소될 수 있습니다.)</li>
+					</ul>
+					<p class="title">적립 포인트 정책</p>
+					<ul class="dash-list">
+						<li>초대 현황 및 누적 초대 포인트는 매월 1일 초기화됩니다.</li>	
+						<li>친구 초대 포인트는 매월 최대 20명까지 받을 수 있어요.</li>
+						<li>누적 초대 인원에 따라 적립되는 포인트 및 혜택은 다음과 같습니다.</li>
+						<ul class="dash-list">
+							<li>1명 : 1000포인트, 행운 복권 획득 기회</li>
+							<li>2명 : 2000포인트</li>
+							<li>3명 : 3000포인트, 행운 복권 획득 기회</li>
+							<li>4명 : 4000포인트</li>
+							<li>5명 : 5000포인트, 행운 복권 획득 기회</li>
+							<li>6명 이상 : 5000포인트</li>
+						</ul>
+						<li>초대코드를 입력한 신규 회원 : 1000포인트 획득</li>
+						<li>일정 친구 초대 수를 채우면 행운복권이 표시되고, 표시된 복권 아이콘을 눌러야 행운복권이 지급 완료됩니다.</li>
+						<li>사용하지 않은 행운 복권 획득 기회는 매월 1일 소멸됩니다.</li>
+						<li>획득한 복권은 획득 당일 자정에 소멸됩니다.</li>
+					</ul>
+				</div>
 			</div>
-			<div class="event-invite-notice">
-				<strong>꼭 확인해주세요!</strong>
-				<p>행사 기간</p>
-				<ul class="dash-list">
-					<li>2025.02.27 ~ 2025.12.31</li>
-				</ul>
-				<p>안내 사항</p>
-				<ul class="dash-list">
-					<li>유플래너에 회원가입 이력이 없는 회원이 가입 24시간 이내 초대코드를 입력하면, 초대한 회원과 신규로 가입한 회원 모두에게 혜택을 제공합니다.</li>
-					<li>초대코드는 1인 1회에 한해 등록할 수 있으며, 변경은 불가능합니다.</li>
-					<li>비정상적인 방법으로 이벤트에 참여한 경우, 적립된 포인트는 반환되며 추후 이벤트 참여가 제한될 수 있습니다.</li>
-					<li>운영사의 사정으로 사전 안내없이 변경, 중단될 수 있습니다.</li>
-					<li>초대코드 또는 이벤트 내용을 전송하는 경우, 반드시 받는 분의 명시적인 사전 동의를 받으셔야 합니다. (사전 동의 없이 받는 분의 의사에 반하여 초대코드 또는 이벤트 내용을 전송하시는 경우 정보통신망 이용촉진 및 정보보호 등에 관한 법률 위반으로 과태료가 부과될 수 있으며, 초대에 따른 혜택이 취소될 수 있습니다.)</li>
-				</ul>
+			<!-- 플로팅버튼 -->
+			<div class="btn-box invite-btn">
+				<a class="btn btn-purple-bg" href="#">초대하고 혜택받기</a>
 			</div>
-			<!-- floating-btn -->
-			<div class="btn-area floating-effect">
-                <a class="btn btn-big btn-purple-bg btn-block" href="#">초대 링크 공유하기</a>
-            </div>
 		</div>
 	</div>
 </body>

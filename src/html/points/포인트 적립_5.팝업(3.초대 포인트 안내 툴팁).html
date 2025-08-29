@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap _btnSlideOpen">
+    <div class="modal-slide _modalSlide invite-points">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <p class="title">이번 달 초대 포인트</p>
+                <ul>
+                    <li>초대한 친구가 많을수록 친구 한 명당 받을 수 있는 포인트가 늘어나요</li>    
+                    <li>행운 복권을 통해 받은 포인트는 포함되지 않아요</li>    
+                    <li>표시되는 포인트는 매월 1일 초기화 돼요</li>    
+                    <li>친구 초대 포인트는 매월 최대 20명까지 받을 수 있어요</li>    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

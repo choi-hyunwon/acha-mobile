@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+    <div class="wrap renewal">
+    </div>
+    <!-- modal -->
+    <div class="modal fade modal-size-sm" id="getLottery" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content get-lottery">
+                <div class="modal-body">
+                    <!-- 애니메이션으로 교체될 임시이미지 입니다. -->
+                    <img class="lottery-img" src="../../img/points/@temp-img2@3x.png" alt="임시이미지">
+                    <p class="f-point title">행운 복권 획득 완료!</p>
+                    <p class="desc">지금 바로 확인해보세요!</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-footer btn-point-bg single" data-dismiss="modal">복권 긁기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#getLottery').modal('show');
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap">
+    <div class="contents join"></div>
+</div>
+<div class="modal fade modal-size-sm" id="inviteCodeSave" tabindex="-1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content invite-code">
+            <div class="modal-body">
+                <img src="../../img/common/join/img-point-reward@3x.png" alt="포인트이미지">
+                <p>초대코드 입력 완료!</p>
+                <p class="desc"><span class="point f-point">1,000포인트</span> 적립되었어요!</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer" data-dismiss="modal">자동가계부 시작하기</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    $('#inviteCodeSave').modal('show');
+</script>
+</body>
+</html>

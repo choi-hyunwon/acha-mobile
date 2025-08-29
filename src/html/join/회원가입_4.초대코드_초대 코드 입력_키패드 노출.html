@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+    <div class="wrap renewal">
+        <div class="header">
+            <a class="btn-info-text" href="#">건너뛰기</a>
+        </div>
+        <div class="contents join">
+            <div class="invite-join-wrap">
+                <p class="title">가입 완료 🎉</p>
+                <p class="desc">유플래너에 오신 것을 환영해요! <br>초대코드 입력하고 <span class="point f-point">1,000포인트</span> 받아가세요!</p>
+                <p class="noti">초대코드는 가입 후 24시간 내까지 입력할 수 있어요</p>
+                <div class="custom-light _focus code-input-box">
+                    <label class="title">초대코드 입력</label>
+                    <input title="value" type="text" onkeyup="countCharDelete(this)" placeholder="공유받은 초대코드를 입력해주세요." value="12ABCDEFG123" />
+                </div>
+                <div class="invite-code-box">
+                    <p class="sub-title">초대코드 입력하면 🎁</p>
+                    <ul class="invite-code-list">
+                        <li>
+                            <img src="../../img/common/ico_select_key@3x.png" alt="체크아이콘">
+                            <span>신규 가입자 : <em>1,000포인트</em></span>
+                        </li>
+                        <li>
+                            <img src="../../img/common/ico_select_key@3x.png" alt="체크아이콘">
+                            <span>추천인</span>
+                        </li>
+                        <ul class="invite-people">
+                            <li>1명 초대 시 : <em>1000포인트</em></li>
+                            <li>2명 초대 시 : <em>2000포인트</em></li>
+                            <li>3명 초대 시 : <em>3000포인트</em></li>
+                            <li>4명 초대 시 : <em>4000포인트</em></li>
+                            <li>5명 초대 시 : <em>5000포인트</em></li>
+                            <li>6명 이상 초대 시 : <em>5000포인트</em></li>
+                        </ul>
+                    </ul>
+                </div>
+                <a href="#" class="btn bg-purple disabled get-btn">
+                    포인트 받기
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+@@include('../include/countCharDelete.html')
+</html>

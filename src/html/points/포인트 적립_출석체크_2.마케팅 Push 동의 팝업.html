@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap _btnSlideOpen"></div>
+    <div class="modal-slide modal-my-data _modalSlide lifestyle">
+        <div class="modal-slide-content point-modal">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title _btnSlideOpen"><span class="name">출석 체크 알림</span>을 받기 위해서 <br>[Push]에 대한 마케팅 정보 수신 동의가 필요해요</div>
+                <div class="desc-box">
+                    <a href="#">
+                        <p>마케팅 정보 수신 동의 <i class="ico_list_arrow_small"></i></p>
+                    </a>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-gray-bg float-left btn-half _btnSlideClose">닫기</a>
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg float-right btn-half" onclick="openPopup()">동의하고 알림받기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down').parents('body').css('overflow-y', 'auto');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>

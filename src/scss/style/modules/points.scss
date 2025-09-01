@@ -342,7 +342,7 @@
         left: 50%;
         bottom: 90px;
         transform: translateX(-50%);
-        z-index: 12;
+        z-index: 10;
         border-radius: 6px;
         opacity: 0.9;
         background-color: var(--text-01);
@@ -364,7 +364,7 @@
     }
     .lottery-main-wrap{
         width: 100%;
-        height: 100%;
+        min-height: calc(100vh - 66px);
         padding: 30px 20px;
         background: url('../../img/points/bg@3x.png') no-repeat center / cover;
         text-align: center;
@@ -459,6 +459,9 @@
                 background-image: linear-gradient(to bottom, #fff0, #fffc);
             }
         }
+        .disabled{
+            color: var(--white) !important;
+        }
     }
     .lottery-btn{
         width: calc(100% - 40px);
@@ -473,15 +476,18 @@
     }
     .lottery-scratch-wrap{
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         padding: 30px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 40px;
         background: url('../../img/points/bg@3x.png') no-repeat center / cover;
         overflow: hidden;
+        &:has(.expect-phrase){
+            gap: 10px;
+        }
         &.no-bg{
             background-image: none;
             background-color: var(--white);
@@ -494,13 +500,13 @@
         .new-lottery-img{
             width: 100%;
             height: auto;
+            margin: 0 auto;
         }
         .point-img{
-            width: 380px;
-            height: 380px;
+            margin-top: calc(10vh - 30px);
         }
         .reward-phrase{
-            margin-top: -80px;
+            margin-top: 6px;
             font-size: 26px;
             font-family: var(--font2);
             line-height: 1.4;
@@ -549,11 +555,11 @@
     }
     .lottery-jackpot-wrap{
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         padding: 30px 0 30px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -575,7 +581,7 @@
             z-index: 2;
         }
         .title{
-            margin-top: 18px;
+            margin-top: 30px;
             margin-bottom: 0;
             font-size: 30px;
             font-family: var(--font3);
@@ -585,6 +591,7 @@
             z-index: 2;
         }
         .reward-phrase{
+            margin-top: 20px;
             font-size: 26px;
             font-family: var(--font2);
             line-height: 1.4;
@@ -637,6 +644,304 @@
                 color: #f21730;
                 &::before{
                     background-color: #f21730;
+                }
+            }
+        }
+    }
+
+    .point-attend-check-wrap{
+        padding: 10px 0 30px;
+        .title-box{
+            padding-inline: 20px;
+            .title{
+                font-size: 20px;
+                line-height: 1.3;
+                font-family: var(--font3);
+            }
+            .desc{
+                margin-top: 10px;
+                font-size: 14px;
+                line-height: 1.43;
+                font-family: var(--font1);
+            }
+        }
+        .month-attend-count{
+            padding: 12px 20px;
+            margin: 20px 20px 0;
+            border-radius: 10px;
+            background-color: #f0e6ff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 20px;
+                height: 20px;
+                margin-right: 4px;
+            }
+            p{
+                display: flex;
+                align-items: center;
+            }
+            span{
+                font-size: 15px;
+                line-height: 2;
+                font-family: var(--font1);
+            }
+            .count, .day{
+                font-size: 18px;
+                font-family: var(--font3);
+            }
+        }
+        // 캘린더
+        .attend-check-calendar{
+            margin-top: 30px;
+            .box-ex-calendar-header{
+                flex-wrap: wrap;
+                align-items: center;
+                .date{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    flex-shrink: 0;
+                    a{
+                        font-size: 22px;
+                        line-height: 1.7;
+                        font-family: var(--font3);
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 2;
+                    font-family: var(--font1);
+                }
+                span{
+                    font-family: var(--font2);
+                }
+            }
+            .all-complete-badge{
+                width: 71px;
+                height: 27px;
+                background: url('../../img/points/icon-attendance-month-attainment-ok@3x.png') no-repeat center / cover;
+            }
+            .ex-calendar{
+                margin-bottom: 0;
+                .fc-widget-header{
+                    margin-bottom: 6px;
+                }
+                .fc-day-header, .fc-day-header.fc-sun, .fc-day-header.fc-sat{
+                    color: #c2c1cc;
+                    font-family: var(--font1);
+                    font-weight: normal;
+                }
+                .fc-row td{
+                    width: calc(100% / 7);
+                    height: 48px;
+                    line-height: 48px;
+                    padding-top: 0;
+                }
+                .fc-bg{
+                    display: none;
+                }
+                .fc-content-skeleton{
+                    height: 48px;
+                    position: relative;
+                    &:not(:has(.fc-event-container)){
+                        tbody{
+                            display: none;
+                        }
+                    }
+                }
+                .fc-day-number{
+                    width: 100%;
+                    height: auto;
+                    line-height: 48px;
+                    border-radius: 0;
+                    background: var(--white);
+                    transform: translate(0, 0);
+                }
+                .fc-other-month{
+                    opacity: 0;
+                }
+                .fc-today{
+                    position: relative;
+                    &::before{
+                        content: '오늘';
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                        line-height: 48px;
+                        font-size: 14px;
+                        font-family: var(--font2);
+                        color: #6839d3;
+                        text-align: center;
+                    }
+                    .fc-day-number{
+                        display: none;
+                    }
+                }
+                .fc tr:first-child > td > .fc-day-grid-event{
+                    margin-top: 0;
+                    top: unset;
+                }
+                .fc-event-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    z-index: 5;
+                    &:first-child{
+                        left: 0;
+                    }
+                    &:nth-child(2){
+                        left: calc(100% / 7);
+                    }
+                    &:nth-child(3){
+                        left: calc(100% / 7 * 2);
+                    }
+                    &:nth-child(4){
+                        left: calc(100% / 7 * 3);
+                    }
+                    &:nth-child(5){
+                        left: calc(100% / 7 * 4);
+                    }
+                    &:nth-child(6){
+                        left: calc(100% / 7 * 5);
+                    }
+                    &:last-child{
+                        // right: 0;
+                        left: calc(100% / 7 * 6);
+                    }
+                }
+                .fc-event{
+                    &[class*='point']{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &:not(.bonus-point){
+                        .fc-content{
+                            width: 38px;
+                            padding-block: 10px;
+                            border-radius: 50%;
+                            background-color: #7b41ff;
+                        }
+                    }
+                    .fc-title{
+                        font-size: 12px;
+                        line-height: 1.58;
+                        font-family: var(--font2);
+                        text-align: center;
+                        color: var(--white);
+                    }
+                    &.bonus-point{
+                        .fc-content{
+                            width: 100%;
+                            height: 100%;
+                            aspect-ratio: 1 / 1;
+                            background: url('../../img/points/icon-attendance-calendar-bonus-bg@3x.png') no-repeat center / contain;
+                        }
+                        .fc-title{
+                            padding: 18px 0 11px;
+                            font-weight: bold;
+                            color: #7b41ff;
+                        }
+                    }
+                }
+            }
+            .box_ex_calendar{
+                padding: 0 13px 0 14px;
+                .fc-day-grid .fc-row{
+                    min-height: auto;
+                    height: 48px !important;
+                }
+                .fc-day-number{
+                    width: 100%;
+                    line-height: 48px;
+                    margin: 0 auto;
+                }
+                .fc-day-grid-event::after{
+                    display: none;
+                }
+            }
+        }
+        .attend-check-push{
+            margin: 20px 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            border: solid 1px #efefef;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title{
+                font-size: 15px;
+                line-height: 1.33;
+                font-family: var(--font2);
+            }
+            .desc{
+                margin-top: 4px;
+                font-size: 13px;
+                line-height: 1.54;
+                font-family: var(--font1);
+                color: var(--text-02);
+            }
+            label{
+                margin-left: auto;
+            }
+        }
+        .attend-check-condition{
+            margin: 20px 20px 0;
+            padding: 15px 0;
+            border-radius: 6px;
+            background-color: #effff4;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-size: 15px;
+                line-height: 2;
+                font-family: var(--font2);
+                letter-spacing: -0.5px;
+            }
+            img{
+                width: 32px;
+                height: 32px;
+            }
+            em{
+                color: #00a533;
+            }
+        }
+        .attend-check-noti{
+            width: 100%;
+            padding-inline: 20px;
+            margin-top: 20px;
+            .dot-list{
+                padding: 16px;
+                background-color: #f7f8fc;
+            }
+            li{
+                text-indent: -7px;
+                padding-left: 8px;
+                font-size: 13px;
+                line-height: 1.54;
+                font-family: var(--font1);
+                color: var(--text-02);
+                word-break: keep-all;
+                & + li{
+                    margin-top: 6px;
+                }
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 2px;
+                    height: 2px;    
+                    margin-right: 5px;
+                    margin-bottom: 3.5px;
+                    background-color: var(--text-02);
                 }
             }
         }

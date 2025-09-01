@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+    <div class="wrap renewal"></div>
+
+    <!-- modal -->
+    <div class="modal fade modal-size-sm" id="attendPottery" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content points-lottery">
+                <div class="modal-body">
+                    <p class="title">토요일 출석체크! <br>복권을 받았어요</p>
+                    <p class="desc">복권은 당일 소멸돼요</p>
+                    <lottie-player src="../../img/points/motion_luckylottery_issuance.json" style="width: 100%; height: auto;" loop autoplay></lottie-player>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-footer btn-point-bg" data-dismiss="modal">바로 확인하기</a>
+                    <a href="#" class="btn-footer btn-bg" data-dismiss="modal">다음에</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#attendPottery').modal('show');
+</script>
+</html>

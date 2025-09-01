@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+	<div class="wrap renewal">
+		<div class="header _sticky">
+			<a href="#" class="sprite btn_back"></a>
+		</div>
+		<div class="contents points">
+			<!-- 하단 플로팅 버튼 있을 때, .pb-110 클래스 추가 
+                하단 플로팅 버튼 없을 때, .pb-110 클래스 제거 -->
+			<div class="point-attend-check-wrap pb-110">
+				<div class="title-box">
+					<p class="title">매일 출석 체크</p>
+					<p class="desc">출석하면 매일 최대 100P 🎁</p>
+				</div>
+				<div class="month-attend-count">
+					<p>
+						<img src="../../img/points/icon-attendance-calendar@3x.png" alt="아이콘">
+						<span>이번달 출석</span>
+					</p>
+					<p><span class="count">0</span><span class="day">일</span></p>
+				</div>
+				<!-- 캘린더 -->
+				<div class="expenditure-calendar attend-check-calendar">
+					<div class="ex-calendar">
+						<div class="box-ex-calendar-header">
+							<div class="date"><a href="#">8월</a></div>
+							<p>이번달 매일 출석 시 <span class="f-point">500P</span></p>
+						</div>
+						<div class="box_ex_calendar ex-calendar-v3">
+							<div id='calendar'></div>
+						</div>
+					</div>
+				</div>
+				<!-- 알림받기 -->
+				<div class="attend-check-push">
+					<div>
+						<p class="title">출석 체크 알림받기</p>
+						<p class="desc">매일 잊지 않게 알려줄게요</p>
+					</div>
+					<span class="val switch">
+                        <span class="custom-switch custom-switch-relative">
+                            <input type="checkbox" class="custom-control-input" id="switch1">
+                            <label class="custom-control-label" for="switch1"></label>
+                        </span>
+                    </span>
+				</div>
+				<div class="attend-check-condition">
+					<span>알림 받고, 매주 토요일 출석 시 </span>
+					<img src="../../img/points/icon-luckylottery-clover@3x.png" alt="아이콘">
+					<span><em>행운 복권</em> 지급!</span>
+				</div>
+				<div class="attend-check-noti">
+					<ul class="dot-list">
+						<li>‘출석체크 하기’ 버튼을 누른 경우에만 출석이 인정돼요.</li>
+						<li>출석체크 인정 여부 및 보상 지급은 회사 시스템(KST, 서버시간) 기준으로 처리돼요.</li>
+						<li>하루 시작 기준은 매일 밤 12시예요.</li>
+						<li>하루에 한 번, 출석체크하고 포인트를 받을 수 있어요.</li>
+						<li>출석 포인트는 3P ~ 100P까지 지급돼요.</li>
+						<li>한 달 모두 출석 시, 추가로 500P가 지급돼요.</li>
+						<li>출석 횟수는 매월 1일 자정에 초기화돼요.</li>
+						<li>출석체크 알림받기 설정을 동의한 경우, 매달 토요일 출석 시 행운복권을 받을 수 있어요.</li>
+						<li>출석체크 서비스는 회사의 사정에 따라 사전 고지 없이 변경되거나 종료될 수 있어요.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 플로팅버튼 -->
+			<div class="btn-box invite-btn">
+				<a class="btn btn-purple-bg" href="#">출석체크 하기</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var weekList = ['일', '월', '화', '수', '목', '금', '토'];
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: ['interaction', 'dayGrid'],
+            showNonCurrentDates: true,
+            fixedWeekCount: false,
+            header: false,
+            height: 'auto',
+            editable: false,
+            eventLimit: false,
+            navLinks: true,
+            timeZone: 'Asia/Seoul',
+			aspectRatio: 1,
+            columnHeaderText: function (date) {
+                return weekList[date.getDay()];
+            },
+            navLinkDayClick: function (date, jsEvent) {
+                console.log(date.toISOString().slice(0,10));
+				console.log(jsEvent.target)
+            },
+            events: [
+				// 출석 체크 일자 별 포인트 추가
+				// 일반 포인트 클래스 : point
+				// 보너스 포인트 클래스 : bonus-point 
+            ],
+        });
+
+        calendar.render();
+    });
+</script>
+</html>

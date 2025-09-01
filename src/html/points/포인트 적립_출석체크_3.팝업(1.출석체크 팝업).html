@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+    <div class="wrap renewal">
+    </div>
+    <!-- modal -->
+    <div class="modal fade modal-size-sm" id="attendPoint" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content attend-point">
+                <div class="modal-body">
+                    <p class="title">오늘의 출석포인트</p>
+                    <!-- 애니메이션으로 교체될 임시이미지 입니다. -->
+                    <img class="point-img" src="../../img/points/img-point-reward@3x.png" alt="임시이미지">
+                    <p class="sub-title"><span class="f-point point">7포인트</span> 적립되었어요!</p>
+                    <p class="desc">내일도 도전해요 🔥</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-footer btn-point-bg single" data-dismiss="modal">닫기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#attendPoint').modal('show');
+</script>
+</html>

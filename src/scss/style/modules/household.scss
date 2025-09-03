@@ -94,17 +94,17 @@
             li{
                 padding: 20px 0;
                 display: flex;
+                // flex-wrap: wrap;
                 align-items: center;
+                gap: 12px;
+                overflow: hidden;
+                position: relative;
                 & + li{
                     border-top: 1px solid #efefef;
                 }
             }
-            .label{
-                flex-shrink: 1;
-            }
             .txt-box{
-                margin-left: 12px;
-                flex: 0 0 51.5%;
+                flex: 1;
             }
             .period, .usage, .payment, .installment{
                 font-size: 12px;
@@ -112,17 +112,23 @@
                 font-family: var(--font1);
                 color: var(--text-02);
             }
-            .usage{
-                margin: 2px 0;
-                font-size: 16px;
-                letter-spacing: -0.3px;
-                color: var(--text-01);
+            p{
                 display: -webkit-box;
                 word-wrap: break-word;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 2;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                &:not(.usage){
+                    -webkit-line-clamp: 1;
+                }
+            }
+            .usage{
+                width: calc(60% - 10px);
+                margin: 2px 0;
+                font-size: 16px;
+                letter-spacing: -0.3px;
+                color: var(--text-01);
             }
             .payment, .installment{
                 font-family: var(--font1);
@@ -144,13 +150,16 @@
                 }
             }
             .spending{
-                margin-left: auto;
-                flex: 0 0 38%;
+                // margin-left: auto;
+                margin-top: -1.5px;
+                display: inline-block;
                 font-size: 16px;
                 font-family: var(--font3);
-                line-height: 1.8;
+                line-height: 1.4;
                 letter-spacing: -0.5px;
                 text-align: right;
+                position: absolute;
+                right: 0;
                 &.cancel{
                     color: #c2c1cc;
                     text-decoration: line-through;

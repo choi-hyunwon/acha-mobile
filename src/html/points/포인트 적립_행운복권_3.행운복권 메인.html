@@ -3,15 +3,20 @@
 @@include('../include/head.html')
 <body>
     <div class="wrap renewal">
-        <div class="header">
+        <div class="header z10">
             <a href="#" class="sprite btn_back"></a>
             <a class="btn-info-text" href="#">안내</a>
         </div>
         <div class="contents points">
-            <!-- 하단 플로팅 버튼 있을 때, .pb-110 클래스 추가 
-                하단 플로팅 버튼 없을 때, .pb-110 클래스 제거 -->
-            <div class="lottery-main-wrap pb-110">
+            <!-- 배경이미지 -->
+            <img class="lottery-main-wrap-bg" src="../../img/points/bg@3x.png" alt="배경이미지">
+            
+            <!-- 하단 플로팅 버튼 있을 때, .pb-100 클래스 추가 
+                하단 플로팅 버튼 없을 때, .pb-100 클래스 제거 -->
+            <div class="lottery-main-wrap pb-100">
+                <!-- 타이틀 -->
                 <img class="title-img" src="../../img/points/img-luckylottery-main-title@3x.png" alt="행운복권 타이틀 이미지">
+                
                 <!-- 당첨자 자동롤링 미사용 시 -->
                 <!-- <div class="lottery-prize">
                     <img src="../../img/points/icon-luckylottery-gift@3x.png" alt="선물아이콘">
@@ -58,9 +63,21 @@
 
                 <!-- 애니메이션으로 교체될 임시이미지 입니다. -->
                 <img class="prize-img" src="../../img/points/@temp-img1-1@3x.png" alt="당첨이미지">
+                
                 <div class="my-lottery">
                     <span>내 행운복권</span>
                     <span class="num">1장</span>
+                </div>
+                
+                <div class="share-lottery">
+                    <div class="share-btn-box">
+                        <p>친구한테 카톡 공유하면 <br>복권이 1장 더!</p>
+                        <a href="#"><img src="../../img/points/icon-luckylottery-clover@3x.png" alt="아이콘"><span>1장 더 받기</span></a>
+                    </div>
+                    <ul class="share-noti-list">
+                        <li>하루 최대 3개까지 받을 수 있어요 🙂</li>
+                        <li>나에게 공유, 같은 방 반복은 인정되지 않아요</li>
+                    </ul>
                 </div>
                 <p class="noti">복권은 당일 소멸돼요 😊</p>
             </div>
@@ -71,5 +88,9 @@
     </div>
 </body>
 <script>
+    $(window).on('scroll', function() {
+        let scroll = $(this).scrollTop();
+        $('.btn-box').css('background', scroll < 60 ? '#C2F2AC' : "#ABEA9B");
+    }).trigger('scroll');
 </script>
 </html>

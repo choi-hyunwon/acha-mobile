@@ -238,6 +238,9 @@
   height: 66px;
   padding: 20px 20px;
   position: relative;
+  &.z10{
+    z-index: 10;
+  }
 
   & .btn_close {
     position: absolute;

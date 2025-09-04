@@ -342,7 +342,7 @@
         left: 50%;
         bottom: 90px;
         transform: translateX(-50%);
-        z-index: 10;
+        z-index: 12;
         border-radius: 6px;
         opacity: 0.9;
         background-color: var(--text-01);
@@ -362,23 +362,33 @@
         letter-spacing: 0;
         text-align: center;
     }
+    .lottery-main-wrap-bg{
+        position: absolute;
+        top: -66px;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 66px);
+        object-fit: cover;
+    }
     .lottery-main-wrap{
         width: 100%;
         min-height: calc(100vh - 66px);
         padding: 30px 20px;
-        background: url('../../img/points/bg@3x.png') no-repeat center / cover;
+        // background: url('../../img/points/bg@3x.png') no-repeat center / cover;
         text-align: center;
+        position: relative;
+        z-index: 10;
         .title-img{
             width: calc(100% - 55px);
             height: auto;
         }
         .prize-img{
             margin-top: 10px;
-            width: 100%;
+            width: calc(100% - 5px);
             height: auto;
         }
         .lottery-prize{
-            width: calc(100% - 45px);
+            width: calc(100% - 55px);
             height: 40px;
             padding: 10px 20px;
             margin: 30px auto 0;
@@ -410,9 +420,9 @@
             }
         }
         .my-lottery{
-            width: calc(100% - 60px);
+            width: calc(100% - 55px);
             padding: 14px 20px;
-            margin: 15px auto 0;
+            margin: 10px auto 0;
             border-radius: 28px;
             border: solid 2px #5061ff;
             display: flex;
@@ -432,8 +442,62 @@
                 text-align: right;
             }
         }
-        .noti{
+        .share-lottery{
+            width: 100%;
             margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: var(--white);
+            .share-btn-box{
+                display: flex;
+                align-items: stretch;
+                p{
+                    font-size: 14px;
+                    font-family: var(--font3);
+                    line-height: 1.5;
+                    text-align: left;
+                }
+                a{
+                    margin-left: auto;
+                    padding: 0 12px 0 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    background-color: #e1ffdb;
+                    font-size: 14px;
+                    font-family: var(--font2);
+                    line-height: 2;
+                    color: var(--text-01);
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .share-noti-list{
+                margin-top: 14px;
+                li{
+                    font-size: 13px;
+                    font-family: var(--font1);
+                    line-height: 1.54;
+                    color: var(--text-02);
+                    text-align: left;
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        width: 2px;
+                        height: 2px;
+                        margin-right: 5px;
+                        margin-bottom: 4px;
+                        border-radius: 50%;
+                        background-color: var(--text-02);
+                    }
+                }
+            }
+        }
+        .noti{
+            margin-top: 20px;
             font-size: 16px;
             font-family: var(--font2);
             line-height: 1.6;
@@ -445,10 +509,11 @@
         padding-bottom: 30px;
         position: fixed;
         bottom: 0;
+        z-index: 12;
         &.invite-btn{
             padding-inline: 20px;
             background: var(--white);
-            z-index: 10;
+            z-index: 14;
             &::before{
                 content: '';
                 width: 100%;
@@ -483,7 +548,7 @@
         align-items: center;
         justify-content: center;
         gap: 40px;
-        background: url('../../img/points/bg@3x.png') no-repeat center / cover;
+        background: url('../../img/points/bg@3x.png') no-repeat top 15% center / cover;
         overflow: hidden;
         &:has(.expect-phrase){
             gap: 10px;

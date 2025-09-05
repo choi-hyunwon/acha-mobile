@@ -129,5 +129,19 @@
 	</div>
 </body>
 <script>
+	$(document).ready(function(){
+		const targetNodes = document.querySelectorAll('.clover');
+
+		targetNodes.forEach(node => {
+			const observer = new MutationObserver(mutations => {
+				mutations.forEach(mutation => {
+					if ( mutation.attributeName === 'class' && $(mutation.target).hasClass('check')) {
+						$(mutation.target).children().removeClass('active');
+					}
+				});
+			});
+			observer.observe(node, { attributes: true });
+		});
+	});
 </script>
 </html>

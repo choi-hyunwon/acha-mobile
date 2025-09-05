@@ -187,18 +187,18 @@
                 .invite-condition{
                     width: 100%;
                     margin-top: 20px;
-                    padding: 15px 0;
+                    padding: 10px 0;
                     border-radius: 6px;
                     background-color: #effff4;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     font-size: 14px;
-                    line-height: 2.1;
+                    line-height: 30px;
                     font-family: var(--font2);
                     img{
-                        width: 24px;
-                        height: 24px;
+                        width: 30px;
+                        height: 30px;
                     }
                     em{
                         font-family: var(--font3);
@@ -217,11 +217,24 @@
                     line-height: 1.57;
                     font-family: var(--font1);
                     color: var(--text-02);
+                    &:has(img){
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    img{
+                        width: 42px;
+                        height: 17px;
+                        margin: 0 2px 0 6px;
+                    }
+                    & + .noti{
+                        margin-top: 4px;
+                    }
                 }
                 .monthly-invite-point{
                     width: 100%;
                     margin-top: 20px;
-                    padding: 18px 20px;
+                    padding: 14px 20px;
                     border-radius: 16px;
                     background-color: #f7f7f8;
                     display: flex;
@@ -250,6 +263,7 @@
                     width: 50px;
                     height: 50px;
                     display: block;
+                    position: relative;
                     &:first-child{
                         background: url(../../img/points/img-invitation-stamp-1@3x.png) no-repeat center / cover;
                     }
@@ -265,21 +279,56 @@
                     &:nth-child(5){
                         background: url(../../img/points/img-invitation-stamp-5@3x.png) no-repeat center / cover;
                     }
-                    &.active{
+                    &.on{
                         &:first-child{
-                            background: url(../../img/points/img-invitation-stamp-1-check@3x.png) no-repeat center / cover;
+                            background: url(../../img/points/img-invitation-stamp-1-on@3x.png) no-repeat center / cover;
                         }
                         &:nth-child(2){
-                            background: url(../../img/points/img-invitation-stamp-2-check@3x.png) no-repeat center / cover;
+                            background: url(../../img/points/img-invitation-stamp-2-on@3x.png) no-repeat center / cover;
+                        }
+                        &:nth-child(3){
+                            background: url(../../img/points/img-invitation-stamp-3-on@3x.png) no-repeat center / cover;
+                        }
+                        &:nth-child(4){
+                            background: url(../../img/points/img-invitation-stamp-4-on@3x.png) no-repeat center / cover;
+                        }
+                        &:nth-child(5){
+                            background: url(../../img/points/img-invitation-stamp-5-on@3x.png) no-repeat center / cover;
+                        }
+                    }
+                    &.check{
+                        &:first-child{
+                            background: url(../../img/points/img-invitation-stamp-1-check@3x.png) no-repeat center / cover;
                         }
                         &:nth-child(3){
                             background: url(../../img/points/img-invitation-stamp-3-check@3x.png) no-repeat center / cover;
                         }
-                        &:nth-child(4){
-                            background: url(../../img/points/img-invitation-stamp-4-check@3x.png) no-repeat center / cover;
-                        }
                         &:nth-child(5){
                             background: url(../../img/points/img-invitation-stamp-5-check@3x.png) no-repeat center / cover;
+                        }
+                    }
+                }
+                .get{
+                    width: 62px;
+                    height: 62px;
+                    display: none;
+                    background: url(../../img/points/img-invitation-luckylottery-open@3x.png) no-repeat center / cover;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    &.active{
+                        display: inline-block;
+                        animation: lotteryMotion 1.2s ease-out infinite;
+                    }
+                    @keyframes lotteryMotion {
+                        0%{
+                            transform: translate(-50%, calc(-50% - 1.5px));
+                        }
+                        50%{
+                            transform: translate(-50%, calc(-50% - 5.2px));
+                        }
+                        100%{
+                            transform: translate(-50%, calc(-50% - 1.5px));
                         }
                     }
                 }

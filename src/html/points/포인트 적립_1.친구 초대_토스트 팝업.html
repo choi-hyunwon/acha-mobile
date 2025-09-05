@@ -54,14 +54,26 @@
 							<span><em>행운 복권</em> 지급!</span>
 						</div>
 						<div class="invite-clover-group">
-							<!-- 초대 완료 시 .active 클래스 추가 -->
-							<span class="clover active"></span>
-							<span class="clover active"></span>
-							<span class="clover active"></span>
+							<!-- 초대 전 .clover 클래스만 -->
+							<!-- 초대 후 혹은 복권받기 버튼 있을 때, .on 클래스 추가 (복권 지급 x)-->
+							<!-- 복권 지급 완료 시 .check 클래스 추가 (1, 3, 5 에만 적용) -->
+							<span class="clover check">
+								<!-- 초대 후 복권받기 버튼 생성 (1, 3, 5 에만 적용)-->
+								<a href="#" class="get"></a>
+							</span>
+							<span class="clover on"></span>
+							<span class="clover on">
+								<!-- 초대 후 복권받기 버튼 생성 및 활성화 시 .active 클래스 추가 -->
+								<a href="#" class="get active"></a>
+							</span>
 							<span class="clover"></span>
-							<span class="clover"></span>
+							<span class="clover">
+								<!-- 초대 후 복권받기 버튼 생성 (1, 3, 5 에만 적용)-->
+								<a href="#" class="get"></a>
+							</span>
 						</div>
 						<p class="noti">✽ 내 초대 현황은 매월 1일 초기화돼요</p>
+						<p class="noti">✽ 행운 복권은<img src="../../img/points/img-infotext-luckylottery-btn@3x.png" alt="복권받기">를 눌러야 지급돼요</p>
 						<div class="monthly-invite-point">
 							<p>이번 달 초대 포인트</p>
 							<a href="#"><img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘"></a>

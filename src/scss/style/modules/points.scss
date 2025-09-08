@@ -587,6 +587,10 @@
         font-family: var(--font2);
         line-height: 1.25;
         color: var(--white);
+        &.disabled{
+            background-color: #b7b7bf;
+            color: rgba(255, 255, 255, 0.4) !important;
+        }
     }
     .lottery-scratch-wrap{
         width: 100%;

@@ -491,9 +491,15 @@
                 text-align: right;
             }
         }
+        .noti{
+            margin-top: 20px;
+            font-size: 14px;
+            font-family: var(--font2);
+            line-height: 1.6;
+        }
         .share-lottery{
             width: 100%;
-            margin-top: 30px;
+            margin-top: 20px;
             padding: 20px;
             border-radius: 10px;
             background-color: var(--white);
@@ -544,12 +550,6 @@
                     }
                 }
             }
-        }
-        .noti{
-            margin-top: 20px;
-            font-size: 16px;
-            font-family: var(--font2);
-            line-height: 1.6;
         }
     }
     // 플로팅버튼

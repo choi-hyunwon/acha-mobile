@@ -767,6 +767,7 @@
                         line-height: 1.43;
                         font-family: var(--font1);
                         color: var(--text-02);
+                        word-break: keep-all;
                     }
                 }
                 & + .card-detail-item{
@@ -781,6 +782,8 @@
                 border-radius: 10px;
                 background-color: #f7f8fc;
                 p{
+                    text-indent: -8px;
+                    padding-left: 8px;
                     font-size: 13px;
                     line-height: 1.5;
                     font-family: var(--font1);
@@ -794,10 +797,10 @@
                         display: inline-block;
                         width: 3px;
                         height: 3px;
-                        border-radius: 50%;
-                        background: var(--text-02);
                         margin-right: 6px;
                         margin-bottom: 4px;
+                        border-radius: 50%;
+                        background: var(--text-02);
                     }
                 }
             }

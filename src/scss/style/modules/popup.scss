@@ -7560,6 +7560,19 @@
             &.get-lottery{
                 padding-top: 30px;
                 text-align: center;
+                position: relative;
+                &:has(.modal-close){
+                    padding-top: 48px;
+                }
+                .modal-close{
+                    width: 23px;
+                    height: 23px;
+                    background: url('../../img/common/btn-popup-close.svg') no-repeat center / cover;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    z-index: 10;
+                }
                 .modal-body{
                     .lottery-img{
                         width: 100%;

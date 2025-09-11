@@ -739,11 +739,69 @@
                 display: flex;
                 gap: 14px;
                 [class^="icon_"]{
-                    display: inline-block;
                     width: 24px;
                     height: 24px;
+                    flex-shrink: 0;
+                    display: inline-block;
+                    &[class$="001"]{
+                        background: url('../../img/common/icon/icon_001.png') no-repeat center / cover;
+                    }
+                    &[class$="002"]{
+                        background: url('../../img/common/icon/icon_002.png') no-repeat center / cover;
+                    }
+                    &[class$="003"]{
+                        background: url('../../img/common/icon/icon_003.png') no-repeat center / cover;
+                    }
+                    &[class$="004"]{
+                        background: url('../../img/common/icon/icon_004.png') no-repeat center / cover;
+                    }
                     &[class$="005"]{
                         background: url('../../img/common/icon/icon_005.png') no-repeat center / cover;
+                    }
+                    &[class$="006"]{
+                        background: url('../../img/common/icon/icon_006.png') no-repeat center / cover;
+                    }
+                    &[class$="007"]{
+                        background: url('../../img/common/icon/icon_007.png') no-repeat center / cover;
+                    }
+                    &[class$="008"]{
+                        background: url('../../img/common/icon/icon_008.png') no-repeat center / cover;
+                    }
+                    &[class$="009"]{
+                        background: url('../../img/common/icon/icon_009.png') no-repeat center / cover;
+                    }
+                    &[class$="010"]{
+                        background: url('../../img/common/icon/icon_010.png') no-repeat center / cover;
+                    }
+                    &[class$="011"]{
+                        background: url('../../img/common/icon/icon_011.png') no-repeat center / cover;
+                    }
+                    &[class$="012"]{
+                        background: url('../../img/common/icon/icon_012.png') no-repeat center / cover;
+                    }
+                    &[class$="013"]{
+                        background: url('../../img/common/icon/icon_013.png') no-repeat center / cover;
+                    }
+                    &[class$="014"]{
+                        background: url('../../img/common/icon/icon_014.png') no-repeat center / cover;
+                    }
+                    &[class$="015"]{
+                        background: url('../../img/common/icon/icon_015.png') no-repeat center / cover;
+                    }
+                    &[class$="016"]{
+                        background: url('../../img/common/icon/icon_016.png') no-repeat center / cover;
+                    }
+                    &[class$="017"]{
+                        background: url('../../img/common/icon/icon_017.png') no-repeat center / cover;
+                    }
+                    &[class$="018"]{
+                        background: url('../../img/common/icon/icon_018.png') no-repeat center / cover;
+                    }
+                    &[class$="019"]{
+                        background: url('../../img/common/icon/icon_019.png') no-repeat center / cover;
+                    }
+                    &[class$="020"]{
+                        background: url('../../img/common/icon/icon_020.png') no-repeat center / cover;
                     }
                     &[class$="021"]{
                         background: url('../../img/common/icon/icon_021.png') no-repeat center / cover;
@@ -754,13 +812,95 @@
                     &[class$="023"]{
                         background: url('../../img/common/icon/icon_023.png') no-repeat center / cover;
                     }
+                    &[class$="024"]{
+                        background: url('../../img/common/icon/icon_024.png') no-repeat center / cover;
+                    }
+                    &[class$="025"]{
+                        background: url('../../img/common/icon/icon_025.png') no-repeat center / cover;
+                    }
+                    &[class$="026"]{
+                        background: url('../../img/common/icon/icon_026.png') no-repeat center / cover;
+                    }
+                    &[class$="027"]{
+                        background: url('../../img/common/icon/icon_027.png') no-repeat center / cover;
+                    }
+                    &[class$="028"]{
+                        background: url('../../img/common/icon/icon_028.png') no-repeat center / cover;
+                    }
+                    &[class$="029"]{
+                        background: url('../../img/common/icon/icon_029.png') no-repeat center / cover;
+                    }
+                    &[class$="030"]{
+                        background: url('../../img/common/icon/icon_030.png') no-repeat center / cover;
+                    }
+                    &[class$="031"]{
+                        background: url('../../img/common/icon/icon_031.png') no-repeat center / cover;
+                    }
+                    &[class$="032"]{
+                        background: url('../../img/common/icon/icon_032.png') no-repeat center / cover;
+                    }
+                    &[class$="033"]{
+                        background: url('../../img/common/icon/icon_033.png') no-repeat center / cover;
+                    }
+                    &[class$="034"]{
+                        background: url('../../img/common/icon/icon_034.png') no-repeat center / cover;
+                    }
+                    &[class$="035"]{
+                        background: url('../../img/common/icon/icon_035.png') no-repeat center / cover;
+                    }
+                    &[class$="036"]{
+                        background: url('../../img/common/icon/icon_036.png') no-repeat center / cover;
+                    }
+                    &[class$="037"]{
+                        background: url('../../img/common/icon/icon_037.png') no-repeat center / cover;
+                    }
+                    &[class$="038"]{
+                        background: url('../../img/common/icon/icon_038.png') no-repeat center / cover;
+                    }
+                    &[class$="039"]{
+                        background: url('../../img/common/icon/icon_039.png') no-repeat center / cover;
+                    }
+                    &[class$="040"]{
+                        background: url('../../img/common/icon/icon_040.png') no-repeat center / cover;
+                    }
+                    &[class$="041"]{
+                        background: url('../../img/common/icon/icon_041.png') no-repeat center / cover;
+                    }                   
+                    &[class$="042"]{
+                        background: url('../../img/common/icon/icon_042.png') no-repeat center / cover;
+                    }                   
+                    &[class$="043"]{
+                        background: url('../../img/common/icon/icon_043.png') no-repeat center / cover;
+                    }                   
+                    &[class$="044"]{
+                        background: url('../../img/common/icon/icon_044.png') no-repeat center / cover;
+                    }                   
+                    &[class$="045"]{
+                        background: url('../../img/common/icon/icon_045.png') no-repeat center / cover;
+                    }                   
+                    &[class$="046"]{
+                        background: url('../../img/common/icon/icon_046.png') no-repeat center / cover;
+                    }                   
+                    &[class$="047"]{
+                        background: url('../../img/common/icon/icon_047.png') no-repeat center / cover;
+                    }                   
+                    &[class$="048"]{
+                        background: url('../../img/common/icon/icon_048.png') no-repeat center / cover;
+                    }                   
+                    &[class$="049"]{
+                        background: url('../../img/common/icon/icon_049.png') no-repeat center / cover;
+                    }                   
+                    &[class$="999"]{
+                        background: url('../../img/common/icon/icon_999.png') no-repeat center / cover;
+                    }                   
                 }
                 .text-box{
                     p{
+                        margin-bottom: 4px;
                         font-size: 16px;
                         line-height: 1.5;
                         font-family: var(--font2);
-                        margin-bottom: 4px;
+                        word-break: keep-all;
                     }
                     .desc{
                         font-size: 14px;

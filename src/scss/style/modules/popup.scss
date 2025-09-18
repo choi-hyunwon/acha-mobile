@@ -6762,7 +6762,7 @@
             }
 
             .delete{
-                padding: 50px 0;
+                padding: 40px 0;
                 p{
                     font-size: 16px;
                     line-height: 1.5;
@@ -6771,6 +6771,10 @@
                     & + p{
                         margin-top: 20px;
                     }
+                }
+                .noti{
+                    font-size: 14px;
+                    color: var(--text-02);
                 }
             }
 

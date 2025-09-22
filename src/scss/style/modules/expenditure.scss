@@ -10411,3 +10411,24 @@
     }
   }
 }
+
+
+.stock-investment-noti{
+  padding: 20px 20px 0 20px;  
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  & + .box-investment-info{
+    padding-top: 20px;
+  }
+  p{
+      font-size: 13px;
+      line-height: 2;
+      font-family: var(--font2);
+      color: var(--text-03);
+  }
+  img{
+      width: 16px;
+      height: 16px;
+  }
+}

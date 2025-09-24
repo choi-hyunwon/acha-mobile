@@ -2,20 +2,103 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-        <h2>맞춤 카드</h2>
-    </div>
+  <div class="wrap">
     <div class="contents lifestyle pb-0">
-        <div class="spend-analysis-wrap">
-            <p class="title">
+      <!-- 포인트/카드 탭 -->
+      <div class="point-card-tab">
+          <ul class="clearfix">
+              <li><a href="#">포인트</a></li>
+              <li class="active"><a href="#">카드</a></li>
+          </ul>
+      </div>
+
+      <!-- 스와이프 배너 -->
+      <div class="swiper-container swiper-row card-slide">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide card-search" href="#" target="_blank" rel="noopener noreferrer">
+            <span>카드 검색</span>
+            <img src="../../img/common/lifestyle/icon-benefit-cardtab-cardsearch@3x.png" alt="카드 검색">
+          </a>
+          <a class="swiper-slide card-best" href="#" target="_blank" rel="noopener noreferrer">
+            <span>인기카드</span>
+            <img src="../../img/common/lifestyle/icon-benefit-cardtab-cardpopularity@3x.png" alt="인기카드">
+          </a>
+          <a class="swiper-slide card-event" href="#" target="_blank" rel="noopener noreferrer">
+            <span>이벤트 카드</span>
+            <img src="../../img/common/lifestyle/icon-benefit-cardtab-cardevent@3x.png" alt="이벤트 카드">
+          </a>
+        </div>
+      </div>
+      <script>
+        var swiper = new Swiper(".card-slide", {
+            spaceBetween: 12,
+            slidesPerView: 2.25,
+            watchOverflow: true,
+        });
+      </script>
+
+      <!-- 소비분석 -->
+      <div class="spend-analysis-wrap mt-30">
+        <p class="title mt-0">
+          <span class="name">김유비</span>님의 최근 3개월 <br><span class="f-point">소비를 분석</span>했어요!
+          <a href="#" data-toggle="tooltip-analysis" class="ico-tooltip">
+              <img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘" />
+          </a>
+        </p>
+        <p class="noti">✽ 유플래너 기본 카테고리만 반영해요</p>
+        <div class="chart-result-box">
+                <p>
+                    <strong class="category f-point">반려동물</strong><span>에</span> <strong class="money">19,000,000</strong><strong class="won">원</strong><span>으로</span><br> 월 평균 가장 많이 지출했어요!
+                </p>
+        </div>
+        <div class="bar-graph-wrap">
+                <ul class="bar-graph-list">
+                    <li class="first">
+                        <div class="subject">
+                            <span class="category_A025">반려동물</span>
+                            <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a>
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 100%"></span>
+                        </div>
+                        <p><span class="amount">19,000,000</span>원</p>
+                    </li>
+                    <li class="second">
+                        <div class="subject">
+                            <span class="category_A009">마트/편의점</span>
+                            <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a>
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 75%"></span>
+                        </div>
+                        <p><span class="amount">600,000</span>원</p>
+                    </li>
+                    <li class="third">
+                        <div class="subject">
+                            <span class="category_A015">미용</span>
+                            <!-- <a href="#">관련 혜택 카드보기 <i class="sprite icon ico_arrow_small_nor"></i></a> -->
+                        </div>
+                        <div class="bar-graph">
+                            <span class="bar" style="width: 60%"></span>
+                        </div>
+                        <p><span class="amount">300,000</span>원</p>
+                    </li>
+                </ul>
+        </div>
+        <a href="#" class="btn btn-big primary-color analysis-btn">
+            내 소비 분석 전체보기
+        </a>
+      </div>
+
+      <!-- 소비패턴 -->
+      <div class="spend-analysis-wrap">
+        <p class="title mt-0">
                 <span class="name">김유비</span>님의 <span class="f-point">소비패턴에 <br>맞는 카드</span>를 찾았어요!
                 <a href="#" data-toggle="tooltip-custom" class="ico-tooltip">
                     <img src="../../img/common/ico-tooltip@2x.png" alt="툴팁아이콘" />
                 </a>
-            </p>
-            <div class="spend-analysis-box">
+        </p>
+        <div class="spend-analysis-box">
                 <div class="sorting-wrap">
                     <a href="#" class="sorted-box">
                         <span>전월 실적 순</span>
@@ -27,15 +110,15 @@
                     <div>
                         <p class="category-label">
                             <span>반려동물</span>
-                            <span>카페/간식</span>
-                            <span>마트/편의점</span>
+                            <span>쇼핑</span>
+                            <span>외식</span>
                         </p>
                         <p class="monthly-total f-point">월 평균 <span class="amount">25,140,500</span>원 사용</p>
                     </div>
                     <ul>
                         <li class="category_A025"></li>
-                        <li class="category_A011"></li>
-                        <li class="category_A009"></li>
+                        <li class="category_A014"></li>
+                        <li class="category_A010"></li>
                     </ul>
                 </div>
                 <div class="filter-card-list">
@@ -114,29 +197,6 @@
                                 <li>전월실적 50만원 이상</li>
                             </ul>
                         </li>
-                    </ul>
-                </div>
-                <a href="#" class="btn btn-add">
-                    더보기 <i class="sprite icon ico_arrow_small_nor"></i>
-                </a>
-            </div>
-
-            <div class="spend-analysis-box">
-                <div class="recommend-category">
-                    <div>
-                        <p class="category-label">
-                            <span>반려동물</span>
-                            <span>외식</span>
-                        </p>
-                        <p class="monthly-total f-point">월 평균 <span class="amount">97,500</span>원 사용</p>
-                    </div>
-                    <ul>
-                        <li class="category_A025"></li>
-                        <li class="category_A010"></li>
-                    </ul>
-                </div>
-                <div class="filter-card-list">
-                    <ul>
                         <li>
                             <div class="card-detail">
                                 <div class="card-detail-img">
@@ -160,60 +220,19 @@
                                 <li>전월실적 50만원 이상</li>
                             </ul>
                         </li>
-                        <li>
-                            <div class="card-detail">
-                                <div class="card-detail-img">
-                                    <img src="../../img/@temp/img_sample_cardlist_03@2x.png" alt="img_sample_cardlist_03">
-                                </div>
-                                <div class="card-detail-desc">
-                                    <div class="card-title">
-                                        <span>현대카드</span>
-                                        <p>네이버 현대카드</p>
-                                    </div>
-                                    <div class="card-tag">
-                                        <p>푸드</p>
-                                        <p>병원의료</p>
-                                    </div>
-                                    <a href="#" class="event-tag">
-                                        <span>최대 8만원 이벤트</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <ul class="card-benefit">
-                                <li>연회비 국내용 10,000원</li>
-                                <li>해외겸용 20,000원</li>
-                                <li>전월실적 50만원 이상</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="card-detail">
-                                <div class="card-detail-img">
-                                    <img src="../../img/@temp/img_sample_cardlist_01@2x.png" alt="img_sample_cardlist_01">
-                                </div>
-                                <div class="card-detail-desc">
-                                    <div class="card-title">
-                                        <span>BC카드</span>
-                                        <p>BC 바로 페이백 플러스</p>
-                                    </div>
-                                    <!-- 혜택 카테고리 2개 초과인 케이스 : (혜택1) + (혜택2) + 외 N개 로 표기 -->
-                                    <div class="card-tag">
-                                        <p>푸드</p>
-                                        <p>병원의료</p>
-                                        <p class="extra-num">외 3개</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="card-benefit">
-                                <li>연회비 국내용 10,000원</li>
-                                <li>해외겸용 20,000원</li>
-                                <li>전월실적 50만원 이상</li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
-            </div>
         </div>
+        <a href="#" class="btn btn-big primary-color analysis-btn">
+            맞춤 카드 더보기
+        </a>
+      </div>
     </div>
-</div>
+  </div>
 </body>
+<script>
+  $('.point-card-tab li a').on('click', function () {
+      $(this).parent().addClass('active').siblings().removeClass('active')
+  })
+</script>
 </html>

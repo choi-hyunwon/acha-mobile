@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap renewal">
+    <div class="contents lifestyle pb-0">
+        <!-- 포인트/카드 탭 -->
+        <div class="point-card-tab">
+            <ul class="clearfix">
+                <li><a href="#">포인트</a></li>
+                <li class="active"><a href="#">카드</a></li>
+            </ul>
+        </div>
+
+        <div class="spend-analysis-wrap mt-30">
+            <p class="title mt-0">
+                <span class="name">김유비</span>님의 최근 3개월 <br><span class="f-point">소비를 분석</span>하고 있어요
+            </p>
+            <p class="noti">지금 화면을 벗어나면 분석이 중단돼요. <br>잠시만 기다려 주세요!</p>
+            <div class="my-data-loading">
+                <div class="img">
+                    <img src="../../img/common/data_loading.gif" alt="로딩이미지">
+                </div>
+                <div class="txt">
+                    소비 분석 중
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $('.point-card-tab li a').on('click', function () {
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
+</html>

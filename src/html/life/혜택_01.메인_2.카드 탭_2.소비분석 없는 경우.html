@@ -2,21 +2,51 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-<div class="wrap renewal">
-    <div class="header _sticky">
-        <a href="#" class="sprite btn_back"></a>
-    </div>
+<div class="wrap">
     <div class="contents lifestyle pb-0">
+        <!-- 포인트/카드 탭 -->
+        <div class="point-card-tab">
+            <ul class="clearfix">
+                <li><a href="#">포인트</a></li>
+                <li class="active"><a href="#">카드</a></li>
+            </ul>
+        </div>
+
+        <!-- 스와이프 배너 -->
+        <div class="swiper-container swiper-row card-slide">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide card-search" href="#" target="_blank" rel="noopener noreferrer">
+            <span>카드 검색</span>
+            <img src="../../img/common/lifestyle/icon-benefit-cardtab-cardsearch@3x.png" alt="카드 검색">
+          </a>
+          <a class="swiper-slide card-best" href="#" target="_blank" rel="noopener noreferrer">
+            <span>인기카드</span>
+            <img src="../../img/common/lifestyle/icon-benefit-cardtab-cardpopularity@3x.png" alt="인기카드">
+          </a>
+          <a class="swiper-slide card-event" href="#" target="_blank" rel="noopener noreferrer">
+            <span>이벤트 카드</span>
+            <img src="../../img/common/lifestyle/icon-benefit-cardtab-cardevent@3x.png" alt="이벤트 카드">
+          </a>
+        </div>
+        </div>
+        <script>
+            var swiper = new Swiper(".card-slide", {
+                spaceBetween: 12,
+                slidesPerView: 2.25,
+                watchOverflow: true,
+            });
+        </script>
+
         <!-- 카드관 -->
-        <div class="spend-analysis-wrap">
-            <p class="title">
+        <div class="spend-analysis-wrap mt-30">
+            <p class="title mt-0">
                 <span class="name">김유비</span>님의 최근 3개월 <br><span class="f-point">소비</span>가 없어요!
             </p>
-
             <div class="no-analysis-box">
                 <img src="../../img/common/lifestyle/img-uplanner-character-card@3x.png" alt="카드이미지">
                 <p>지출을 분석하고 <br><span class="f-point">소비에 맞는 카드</span>를 찾아줄게요!</p>
             </div>
+            <a href="#" class="data-connect-btn">데이터 연결하기</a>
         </div>
         
         <div class="divider"></div>
@@ -124,4 +154,9 @@
     </div>
 </div>
 </body>
+<script>
+    $('.point-card-tab li a').on('click', function () {
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    })
+</script>
 </html>

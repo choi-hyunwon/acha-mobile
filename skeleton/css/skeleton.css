@@ -613,51 +613,36 @@ dl {
   padding-bottom: 110px;
 }
 .skeleton-lifestyle .skeleton-box-card-top {
-  padding: 20px 20px 0;
-}
-.skeleton-lifestyle .skeleton-btn-box {
+  padding: 12px 20px 0;
   display: flex;
-  align-items: center;
-  gap: 21px;
-  position: relative;
+  justify-content: flex-start;
+  gap: 20px;
 }
-.skeleton-lifestyle .skeleton-btn-box div:first-child {
-  width: 76px;
+.skeleton-lifestyle .skeleton-box-card-top .skeleton-width-sm {
+  width: 55px;
 }
-.skeleton-lifestyle .skeleton-btn-box div:last-child {
-  width: 48px;
+.skeleton-lifestyle .skeleton-box-card-top .skeleton-width-xsm {
+  width: 37px;
 }
-.skeleton-lifestyle .skeleton-btn-box .skeleton-vertical-line {
-  position: absolute;
-  width: 1px;
-  height: 11px;
-  background: #e7e8ea;
-  right: 58px;
-  top: 50%;
-  transform: translateY(-50%);
+
+.skeleton-lifestyle .skeleton-point-box {
+  padding: 32px 20px 0;
 }
+.skeleton-lifestyle .skeleton-point-box div {
+  width: 100%;
+  height: 135px;
+}
+
 .skeleton-lifestyle .skeleton-ad-banner {
-  padding: 18px 20px 0;
+  padding: 20px 20px 0;
 }
 .skeleton-lifestyle .skeleton-ad-banner div {
   width: 100%;
   height: 160px;
 }
+
 .skeleton-lifestyle .skeleton-life-section {
-  padding: 30px 20px 0;
-}
-.skeleton-lifestyle .skeleton-title div {
-  width: 33px;
-}
-.skeleton-lifestyle .skeleton-point-list {
-  padding-top: 12px;
-}
-.skeleton-lifestyle .skeleton-point-banner {
-  margin-bottom: 16px;
-}
-.skeleton-lifestyle .skeleton-point-banner div {
-  width: 100%;
-  height: 80px;
+  padding: 20px 20px 0;
 }
 .skeleton-lifestyle .skeleton-point-item {
   display: flex;
@@ -672,25 +657,36 @@ dl {
   height: 60px;
   border-radius: 24px;
 }
-.skeleton-lifestyle .skeleton-point-txt div:first-child {
+.skeleton-lifestyle .skeleton-point-txt .skeleton-txt1 {
+  width: 126px;
+  height: 18px;
+  margin-bottom: 6px;
+}
+.skeleton-lifestyle .skeleton-point-txt .skeleton-txt2 {
+  width: 150px;
+  height: 22px;
+}
+.skeleton-lifestyle .skeleton-point-txt .skeleton-txt3 {
   width: 114px;
-  margin-bottom: 7px;
+  height: 22px;
+  margin-bottom: 6px;
 }
-.skeleton-lifestyle .skeleton-point-txt div:last-child {
+.skeleton-lifestyle .skeleton-point-txt .skeleton-txt4 {
+  width: 155px;
   height: 18px;
-  margin-bottom: 7px;
 }
-.skeleton-lifestyle .skeleton-point-icon {
-  width: 18px;
-  height: 18px;
+.skeleton-lifestyle .skeleton-point-btn {
+  width: 80px;
+  height: 28px;
   margin-left: auto;
 }
-.skeleton-lifestyle .skeleton-banner {
-  margin-top: 12px;
+
+.skeleton-lifestyle .skeleton-ad-banner-bottom {
+  padding: 20px 20px 0;
 }
-.skeleton-lifestyle .skeleton-banner div {
+.skeleton-lifestyle .skeleton-ad-banner-bottom div {
   width: 100%;
-  height: 90px;
+  height: 100px;
 }
 
 /* style */

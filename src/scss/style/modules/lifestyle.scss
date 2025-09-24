@@ -38,6 +38,48 @@
         word-break: keep-all;
     }
 
+    .point-card-tab {
+        padding: 12px 20px 0;
+        position: relative;
+
+      ul {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        li {
+          position: relative;
+          & + li {
+            margin-left: 20px;
+          }
+          a {
+            margin-bottom: 12px;
+            display: inline-block;
+            font-size: 20px;
+            line-height: 1.3;
+            opacity: 0.4;
+            color: var(--text-01);
+          }
+          &.active {
+            a {
+                opacity: 1;
+                font-family: var(--font3);
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 4px;
+              background: #6839d3;
+            }
+          }
+        }
+      }
+    }
+
     .card-box {
         padding: 30px 20px 0 20px;
         width: 100%;
@@ -46,6 +88,9 @@
             h6{
                 padding: 0 20px;
             }
+        }
+        &:not(:has(h6)){
+            padding-top: 20px;
         }
     }
 
@@ -184,20 +229,108 @@
         }
     }
 
+    .my-point-box{
+        width: 100%;
+        padding: 20px;
+        border-radius: 16px;
+        border: solid 2px #692bf7;
+        background-color: #fff;
+        span{
+            font-size: 14px;
+            font-family: var(--font2);
+            line-height: 1.43;
+        }
+        .my-point-coupon{
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .point{
+                font-size: 24px;
+                font-family: var(--font3);
+                line-height: 0.9;
+                color: var(--text-01);
+                span{
+                    font-size: 25px;
+                    font-family: var(--font3);
+                }
+            }
+            .coupon{
+                padding: 6px 15px;
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                gap: 3px;
+                border-radius: 16px;
+                border: solid 1px #e2e3e6;
+                background-color: #fff;
+                span{
+                    font-size: 13px;
+                    font-family: var(--font1);
+                    line-height: 1.6;
+                    color: var(--text-02);
+                }
+                .num{
+                    font-family: var(--font2);
+                    color: var(--text-01);
+                }
+            }
+        }
+        .point-mall-register{
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            a{
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-family: var(--font2);
+                color: var(--text-01);
+                & + a{
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        width: 2px;
+                        height: 14px;
+                        background-color: #e2e3e6;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            .point-mall{
+                gap: 2px;
+                img{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+
     .life-benefit-list{
-        li{
+        li + li{
             margin-top: 16px;
         }
         a{
             width: 100%;
             display: flex;
+            // flex-wrap: wrap;
             align-items: center;
             gap: 16px;
         }
         .icon{
             width: 60px;
             height: 60px;
+            aspect-ratio: 1 / 1;
             padding: 12px;
+            flex-shrink: 0;
             border-radius: 24px;
             background-color: #f8f9fb;
             border: 1px solid #f8f9fb;
@@ -206,7 +339,20 @@
                 display: block;
                 width: 36px;
                 height: 36px;
+                aspect-ratio: 1 / 1;
                 margin: 0 auto;
+            }
+            &.random{
+                background-color: #fff8f0;
+                &::before{
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-moneybookpoint@3x.png) no-repeat center / cover;
+                }
+            }
+            &.benefit{
+                background-color: #f0f9ff;
+                &::before{
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-cardbenefit@3x.png) no-repeat center / cover;
+                }
             }
             &.card::before{
                 background: url(../../img/common/lifestyle/img-life-sec-icon-cardbenefit@2x.png) no-repeat center / cover;
@@ -224,59 +370,72 @@
                 background: url(../../img/common/lifestyle/img-life-sec-icon-luckylottery@2x.png) no-repeat center / cover;
             }
         }
-        strong{
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            position: relative;
-        }
-        .text{
-            font-size: 16px;
-            line-height: 1.4;
-            font-family: var(--font2);
-            color: var(--text-01);
-        }
-        [class$='-badge']{
-            height: 18px;
-            margin-top: 1px;
-            border-radius: 9px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            line-height: 1.8;
-            font-family: var(--font2);
-            font-weight: 600;
-            text-align: center;
-        }
-        .point-badge{
-            width: 18px;
-            padding: 2px;
-            background-color: #834dff;
-            color: var(--white);
-            &:has(.num){
+        .text-box{
+            strong{
+                margin-bottom: 4px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                position: relative;
+            }
+            span{
+                font-size: 14px;
+                line-height: 21px;
+                font-family: var(--font1);
+                color: var(--text-02);
+                word-break: keep-all;
+                letter-spacing: -0.5px;
+            }
+            .point-text{
+                &.orange{
+                    color: #ef6a23;
+                }
+                &.blue{
+                    color: #367ff2;
+                }
+            }
+            .text{
+                font-size: 16px;
+                line-height: 1.4;
+                font-family: var(--font2);
+                font-weight: 600;
+                letter-spacing: -0.5px;
+                color: var(--text-01);
+            }
+            [class$='-badge']{
+                height: 18px;
+                margin-top: 1px;
+                border-radius: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 10px;
+                line-height: 1.8;
+                font-family: var(--font2);
+                font-weight: 600;
+                text-align: center;
+            }
+            .point-badge{
+                width: 18px;
+                padding: 2px;
+                background-color: #834dff;
+                color: var(--white);
+                &:has(.num){
+                    width: fit-content;
+                    padding: 2.5px 5px 2.5px 5.5px;
+                    letter-spacing: 0.5px;
+                }
+                .num{
+                    font-size: 10.5px;
+                }
+            }
+            .new-badge{
                 width: fit-content;
                 padding: 2.5px 5px 2.5px 5.5px;
                 letter-spacing: 0.5px;
+                color: #ff7600;
+                background-color: #fff5bf;
             }
-            .num{
-                font-size: 10.5px;
-            }
-        }
-        .new-badge{
-            width: fit-content;
-            padding: 2.5px 5px 2.5px 5.5px;
-            letter-spacing: 0.5px;
-            color: #ff7600;
-            background-color: #fff5bf;
-        }
-        span{
-            font-size: 14px;
-            line-height: 21px;
-            font-family: var(--font1);
-            color: var(--text-02);
-            word-break: keep-all;
         }
         .arrow{
             width: 6px;
@@ -284,6 +443,21 @@
             margin-left: auto;
             margin-right: 4px;
             background: url(../../img/common/ico_arrow_small_nor@2x.png) no-repeat center / cover;
+        }
+        .point-btn{
+            padding: 5px 6px 6px;
+            margin-left: auto;
+            flex-shrink: 1;
+            border-radius: 6px;
+            background: #692bf7;
+            font-size: 11px;
+            line-height: 1.6;
+            font-family: var(--font3);
+            color: var(--white);
+            word-break: keep-all;
+            &:focus{ 
+                outline: none;
+            }
         }
     }
 
@@ -484,12 +658,41 @@
         .ad-banner{
             width: 100%;
             margin: 0 auto 12px;
+            border-radius: 10px;
+        }
+    }
+    .card-slide{
+        padding: 20px 20px 0 20px;
+        a{
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 16px;
+            color: var(--text-01);
+            span{
+                font-size: 15px;
+                font-family: var(--font2);
+                line-height: 2.13;
+            }
+            img{
+                width: 34px;
+                height: 34px;
+                margin-left: auto;
+            }
+        }
+        .card-search{
+            background-color: #eaf2ff;
+        }
+        .card-best{
+            background-color: #f5f0ff;
+        }
+        .card-event{
+            background-color: #e7f8f7;
         }
     }
 
     .shopping-banner-list{
         .ad-banner{
-            // width: 100%;
             width: 335px;
             margin: 0 0 16px 0;
             border-radius: unset;
@@ -1967,7 +2170,7 @@
         }
         &.benefit{
             width: 100%;
-            margin: 0 auto;
+            margin: 0 auto 16px;
         }
     }
     .point-list-box{
@@ -2635,7 +2838,8 @@
 
     // icon ///////// 
     .my-data-loading{
-        height: calc(100vh - 222px);
+        height: calc(100vh - 255px);
+        padding-top: 40px;
         padding-bottom: 0;
         .img{
             margin: 0px auto 40px;
@@ -2720,11 +2924,183 @@
     .spend-analysis-box{
         width: 100%;
         margin-top: 40px;
-        .filter-card-list{
-            padding: 0;
-        }
         &:not(:has(.card-more-btn)) + .analysis-btn{
             margin-top: 10px;
+        }
+    }
+    .filter-card-list {
+        padding: 0;
+        .list-title {
+            font-family: var(--font3);
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        > div {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .tab-list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            li {
+                align-items: center;
+                padding: 3px 12px;
+                margin-right: 8px;
+                font-family: var(--font1);
+                font-size: 14px;
+                border: 1px solid #e9e9f2;
+                border-radius: 17px;
+                height: 30px;
+                &.active {
+                    font-family: var(--font2);
+                    color: var(--text-point-color);
+                    border: 1px solid #6839d3;
+                }
+            }
+        }
+        .checkbox {
+            label {
+                display: flex;
+                align-items: center;
+            }
+            span {
+                padding-left: 30px;
+            }
+            p {
+                font-family: var(--font2);
+                font-size: 14px;
+                line-height: 20px;
+                height: 20px;
+            }
+        }
+        .card-detail{
+            padding: 20px 0 0 0;
+            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .card-detail-img {
+            width: 88px;
+            height: 88px;
+            flex-shrink: 0;
+            position: relative;
+            &::after {
+                content: "";
+                background: #f5f5fc;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+        .card-detail-desc {
+            width: 100%;
+            text-align: left;
+        }
+        .card-title {
+            span {
+                font-family: var(--font1);
+                font-size: 12px;
+                line-height: 18px;
+                color: var(--text-02);
+                margin-bottom: 2px;
+            }
+            p {
+                font-family: var(--font2);
+                font-size: 16px;
+                line-height: 24px;
+                display: -webkit-box;
+                word-wrap: break-word;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin-bottom: 6px;
+            }
+        }
+        .card-tag {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            p {
+                padding: 2px 6px;
+                background: #f7f7f8;
+                border-radius: 6px;
+                font-family: var(--font1);
+                font-size: 12px;
+                color: var(--text-02);
+                text-align: center;
+            }
+            .extra-num{
+                padding: 2px 0;
+                background: transparent;
+                font-size: 11px;
+                color: var(--text-03);
+                line-height: 17px;
+            }
+        }
+        .event-tag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            background: linear-gradient(to right, #7d4af2, #a767ff);
+            padding: 3px 10px;
+            border-radius: 6px;
+            width: fit-content;
+            max-width: 150px;
+            color: var(--white);
+            font-family: var(--font1);
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 8px;
+            text-align: center;
+            img{
+                width: 6px;
+                height: auto;
+            }
+        }
+        .card-benefit {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 12px;
+            padding-bottom: 20px;
+            li {
+                font-family: var(--font1);
+                font-size: 11px;
+                line-height: 22px;
+                color: var(--text-02);
+                word-break: keep-all;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 3px;
+                    height: 3px;
+                    background: #d7d6e0;
+                    margin: 0 0 3px 5px;
+                    border-radius: 50%;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
         }
     }
     .sorting-wrap{
@@ -3103,11 +3479,14 @@
     .no-ico-view-btn{
         width: calc(100% - 40px);
         padding-block: 13px;
-        margin: 20px auto;
+        margin: 16px auto 20px;
         border-radius: 6px;
         border: solid 1px #e2e3e6;
         display: block;
         text-align: center;
+        &.mb-0{
+            margin-top: 12px;
+        }
         span{
             font-family: var(--font2);
             font-size: 13px;
@@ -3212,7 +3591,7 @@
         }
         .popular-card{
             padding-left: 20px;
-            margin-top: 14px;
+            margin-top: 15px;
             .swiper-wrapper{
                 padding-top: 4px;
                 align-items: stretch;
@@ -3463,6 +3842,19 @@
         span{
             font-family: var(--font3);
         }
+    }
+    .data-connect-btn{
+        width: 100%;
+        padding: 14px 0;
+        margin-top: 30px;
+        display: block;
+        border-radius: 6px;
+        background-color: #6839d3;
+        font-size: 15px;
+        font-family: var(--font2);
+        line-height: 1.6;
+        text-align: center;
+        color: var(--white);
     }
 }
 

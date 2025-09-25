@@ -277,32 +277,23 @@
             }
         }
         .point-mall-register{
-            margin-top: 18px;
+            width: calc(100% - 45px);
+            margin: 18px auto 0;
             display: flex;
             align-items: center;
-            justify-content: center;
-            position: relative;
+            justify-content: space-between;
             a{
                 display: flex;
-                flex: 1;
                 align-items: center;
                 justify-content: center;
                 font-size: 14px;
                 font-family: var(--font2);
                 color: var(--text-01);
-                & + a{
-                    &::before{
-                        content: "";
-                        display: inline-block;
-                        width: 2px;
-                        height: 14px;
-                        background-color: #e2e3e6;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
+            }
+            .line{
+                width: 2px;
+                height: 14px;
+                background-color: #e2e3e6;
             }
             .point-mall{
                 gap: 2px;

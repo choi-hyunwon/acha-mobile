@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="wrap"></div>
+<div class="modal fade modal-inspection event-modal" id="inspectionPopup" tabindex="-1" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content pt-0">
+			<div class="modal-body py-5">
+				<div class="invite-txt">
+					<p>
+						운영사 사정으로 이번 달 <br>이벤트가 중단되었습니다.
+					</p>
+					<p style="margin-top: 15px;">
+						양해 부탁드리며, 빠른 시일 내에 <br>다시 찾아뵙겠습니다
+					</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn-footer single">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    $('#inspectionPopup').modal('show');   // modal show
+</script>
+</body>
+</html>

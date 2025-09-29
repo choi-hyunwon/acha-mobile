@@ -64,7 +64,7 @@
 }
 
 .notice-wrap {
-  padding: 10px 20px 40px;
+  padding: 10px 20px 30px;
 
   .sub-title {
     font-family: var(--font2);
@@ -159,20 +159,19 @@
     position: relative;
     width: 100%;
     min-height: 300px;
-    padding: 18px 16px;
+    padding: 20px 16px;
     background-color: #f7f8fc;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 1.5;
     letter-spacing: -0.32px;
     text-align: left;
-    color: var(--text-02);
 
     .img {
-      margin-top: 10px;
-
-      img {
-        width: 100%;
-      }
+      margin-top: 15px;
+    }
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 

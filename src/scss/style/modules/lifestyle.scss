@@ -231,16 +231,18 @@
 
     .my-point-box{
         width: 100%;
-        padding: 20px;
+        padding: 20px 0;
         border-radius: 16px;
         border: solid 2px #692bf7;
         background-color: #fff;
-        span{
+        .my-point{
+            padding: 0 20px;
             font-size: 14px;
             font-family: var(--font2);
             line-height: 1.43;
         }
         .my-point-coupon{
+            padding: 0 20px;
             margin-top: 5px;
             display: flex;
             align-items: center;
@@ -277,18 +279,31 @@
             }
         }
         .point-mall-register{
-            width: calc(100% - 45px);
             margin: 18px auto 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
+            &::after{
+                content: '';
+                display: inline-block;
+                width: 2px;
+                height: 14px;
+                background-color: #e2e3e6;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
             a{
+                flex: 1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 font-size: 14px;
                 font-family: var(--font2);
                 color: var(--text-01);
+                word-break: keep-all;
             }
             .line{
                 width: 2px;

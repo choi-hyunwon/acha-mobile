@@ -7059,8 +7059,10 @@
                     }
                 }
                 .auto-charge{
+                    max-height: 256px;
                     padding-left: 0;
                     margin-top: 20px;
+                    overflow-y: scroll;
                     li{
                         text-align: left;
                         div{

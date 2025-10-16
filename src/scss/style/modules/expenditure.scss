@@ -2177,7 +2177,7 @@
             .category-heading {
               border: 1px solid #efefef;
               position: relative;
-              padding: 20px 20px 21px;
+              padding: 20px;
 
               &-point {
                 background-color: #f1ebfd;
@@ -2216,9 +2216,10 @@
               }
 
               .title {
+                // display: inline-block;
                 font-size: 18px;
+                line-height: 1.7;
                 font-family: var(--font3);
-                display: inline-block;
               }
 
               .history-list {
@@ -2228,9 +2229,9 @@
                   display: flex;
                   justify-content: space-between;
                   align-items: center;
-                  margin-bottom: 22px;
+                  margin-bottom: 20px;
 
-                  .calendar {
+                  .calendar, .report {
                     background: white;
                     border: 1px solid #e2e3e6;
                     border-radius: 6px;
@@ -2307,6 +2308,20 @@
                       min-width: 116px;
                     }
                   }
+                }
+
+                .calendar-btn{
+                  display: inline-block;
+                  width: 100%;
+                  padding-block: 11px;
+                  margin-top: 20px;
+                  border-radius: 6px;
+                  border: solid 1px #e2e3e6;
+                  font-size: 14px;
+                  line-height: 1.65;
+                  font-family: var(--font2);
+                  color: var(--text-02);
+                  text-align: center;
                 }
               }
 

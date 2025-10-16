@@ -98,12 +98,12 @@ dl {
   right: -18px;
 }
 .skeleton-box-card-top .skeleton-title .skeleton-profile .skeleton-share {
-  position: absolute;
-  left: 50%;
-  top: 29px;
-  transform: translateX(-50%);
   width: 12px;
   height: 12px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .skeleton-box-card-top .skeleton-btn {
@@ -132,7 +132,7 @@ dl {
 }
 .skeleton-box-card-list .skeleton-asset-wrap .skeleton-category-heading {
   position: relative;
-  padding: 23.5px;
+  padding: 20px;
   width: 100%;
   background-color: white;
   border: 1px solid #efefef;
@@ -433,6 +433,26 @@ dl {
   .skeleton-height-xl {
   border-radius: 16px;
 }
+.skeleton-mission-contents .skeleton-box-card-top .skeleton-user-box {
+  position: relative;
+}
+.skeleton-mission-contents .skeleton-box-card-top .skeleton-user {
+  border: solid 2px #f7f7f8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.skeleton-mission-contents .skeleton-box-card-top .skeleton-btn {
+  width: 26px;
+  height: 26px;
+}
+.skeleton-mission-contents .skeleton-box-card-top .skeleton-name {
+  height: 16px;
+  margin-top: 6px;
+}
+
 .skeleton-mission-contents .skeleton-box-card-list .skeleton-asset-wrap {
   padding: 0;
 }
@@ -462,31 +482,58 @@ dl {
   .skeleton-title {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-bottom: 24px;
+  padding-bottom: 10px;
 }
 .skeleton-mission-contents
   .skeleton-asset-wrap
   .skeleton-category-heading
-  .skeleton-title
-  .skeleton-calendar {
-  right: 0;
-  top: -5px;
+  .skeleton-category {
+  width: 90px;
+  height: 27px;
 }
 .skeleton-mission-contents
   .skeleton-asset-wrap
   .skeleton-category-heading
   .skeleton-list-card {
-  /* padding: 13px 0; */
   border-top: 1px solid #efefef;
+}
+
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
+  li
+  + li {
+  margin-top: 14px;
+}
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
+  .skeleton-card-name {
+  height: 27px;
+}
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
+  .skeleton-acc-total {
+  width: 130px;
 }
 .skeleton-mission-contents
   .skeleton-asset-wrap
   .skeleton-category-heading
   .skeleton-list-card
   .skeleton-item {
-  justify-content: flex-start;
-  padding: 16px 0;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
+  .skeleton-list-card
+  .skeleton-item
+  + .skeleton-item {
+  margin-top: 0;
 }
 .skeleton-mission-contents
   .skeleton-asset-wrap
@@ -495,6 +542,7 @@ dl {
   .skeleton-item
   > div {
   display: flex;
+  align-items: center;
 }
 .skeleton-mission-contents
   .skeleton-asset-wrap
@@ -510,8 +558,46 @@ dl {
   .skeleton-category-heading
   .skeleton-list-card
   .skeleton-item
+  .skeleton-width-94 {
+  width: 94px;
+  height: 27px;
+}
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
+  .skeleton-list-card
+  .skeleton-item
   .box-txt {
   flex-direction: column;
+}
+.skeleton-mission-contents .skeleton-ad-box {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
+  ul
+  li:has(.skeleton-card-btn) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
+  .skeleton-card-btn {
+  width: 90px;
+  height: 27px;
+}
+.skeleton-mission-contents
+  .skeleton-asset-wrap
+  .skeleton-category-heading
+  .skeleton-acc-btn {
+  width: 110px;
+  height: 24px;
 }
 
 .skeleton-sum-area {
@@ -709,14 +795,23 @@ dl {
 .skeleton-width-lg {
   width: 136px !important;
 }
+.skeleton-width-xlg {
+  width: 170px !important;
+}
 .skeleton-width-56 {
   width: 56px !important;
+}
+.skeleton-width-60 {
+  width: 60px !important;
 }
 .skeleton-width-70 {
   width: 70px !important;
 }
 .skeleton-width-80 {
   width: 80px !important;
+}
+.skeleton-width-120 {
+  width: 120px !important;
 }
 
 .skeleton-block {
@@ -732,6 +827,9 @@ dl {
 .skeleton-height-lg {
   height: 24px !important;
 }
+.skeleton-height-xlg {
+  height: 28px !important;
+}
 .skeleton-height-xl {
   height: 30px !important;
 }
@@ -740,6 +838,9 @@ dl {
 }
 .skeleton-height-40 {
   height: 40px !important;
+}
+.skeleton-height-60 {
+  height: 60px !important;
 }
 .skeleton-height-70 {
   height: 70px !important;
@@ -753,6 +854,9 @@ dl {
 }
 .skeleton-radius-12 {
   border-radius: 12px;
+}
+.skeleton-radius-14 {
+  border-radius: 14px;
 }
 .skeleton-radius-16 {
   border-radius: 16px;

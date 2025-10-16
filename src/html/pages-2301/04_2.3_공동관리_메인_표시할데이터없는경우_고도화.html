@@ -4,6 +4,7 @@
 
 <body>
     <div class="wrap renewal">
+        <!-- mission-challenge 챌린지 속성 샘플 추가 -->
         <div class="contents mission-contents mission-challenge bg_light_gray">
             <div class="box-ex-top box-card-top manage">
                 <div class="title">
@@ -11,7 +12,7 @@
                         <div class="with-me">
                             <p class="icon icon-share">
                                 <img src="../../img/common/ico_mypage_profile_img03@2x.png" alt="캐릭터1">
-                                <span class="share-num">0</span>
+                                <span class="share-num">10</span>
                             </p>
                             <p class="name">김꼼꼼</p>
                         </div>
@@ -19,14 +20,14 @@
                         <div class="with-you">
                             <p class="icon icon-share">
                                 <img src="../../img/common/ico_mypage_profile_img01@2x.png" alt="캐릭터2">
-                                <span class="share-num">0</span>
+                                <span class="share-num">3</span>
                             </p>
                             <p class="name">유똑똑</pd>
                         </div>
                     </div>
 
                     <div class="with-us-day">
-                        함께 공동관리한 지 <p class="f-point"><span>1</span>일째</p>
+                        함께 공동관리한 지 <p class="f-point"><span>9999</span>일째</p>
                     </div>
 
                     <div class="btn_area">
@@ -37,8 +38,8 @@
                 </div>
             </div>
 
-            <div class="box-ex-list box-card-list bg_light_gray">
-                 <!-- 공동가계부 -->
+            <div class="box-ex-list box-card-list">
+                <!-- 공동가계부 -->
                 <div class="card-item">
                     <div class="asset-wrap">
                         <div class="asset add-management">
@@ -46,66 +47,105 @@
                                 <div class="history-list pt-0">
                                     <div class="title">
                                         <p>공동가계부&nbsp;<span class="f-point">10월</span></p>
-                                        <button class="calendar">
-                                            <img src="../../img/sprite/common/ico_input_calendar@2x.png" alt="캘린더아이콘">
-                                            캘린더
+                                        <button class="report">
+                                            <img src="../../img/sprite/common/ico-input-report@2x.png" alt="분석 아이콘">
+                                            분석
                                         </button>
                                     </div>
                                     <!-- 기간 추가 -->
                                     <div class="period">
-                                        <span class="date">3.1 ~ 3.31</span>
+                                        <span class="date">10.25 ~ 11.24</span>
                                     </div>
                                     <div class="income">
                                         <span class="sub-title sub-title-bold">수입
-                                            <!-- <span class="badge badge-purple badge-payment">3건</span> -->
+                                            <span class="badge badge-purple badge-payment">3건</span>
                                         </span>
-                                        <span class="number">0</span>
+                                        <span class="number">5,000,000</span>
                                     </div>
                                     <div class="expenditure">
                                         <span class="sub-title sub-title-bold">지출
-                                            <!-- <span class="badge badge-purple badge-payment">21건</span> -->
+                                            <span class="badge badge-purple badge-payment">21건</span>
                                         </span>
-                                        <span class="number">0</span>
+                                        <span class="number">1,850,000</span>
                                     </div>
+                                    <a href="#" class="calendar-btn">캘린더로 보기</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- 지출 -->
                 <div class="card-item">
                     <div class="asset-wrap">
                         <div class="asset together-view-card together-view-card-user">
-                            <div class="category-heading no-icon no-share">
-                                <ul class="list-card">
-                                    <li class="item" style="flex-direction: column;">
-                                        <p class="box-empty">
-                                            <img src="../../img/common/ico_caution_grey@2x.png" width="12">
-                                            공유된 데이터가 없어요 🙁
-                                        </p>
-                                        <div class="btn-area">
-                                            <button class="btn btn-purple-bg">데이터 공유하기</button>
-                                        </div>
-                                    </li>
-                                </ul>
+                           <div class="category-heading no-icon">
+                                <span class="title no-btm">카드지출 <em class="badge badge-purple badge-payment">0개</em>
+                                    <span class="number">0<em>원</em></span>
+                                </span>
+                                <span class="title no-btm">계좌지출 <em class="badge badge-purple badge-payment">0건</em>
+                                    <span class="number">0<em>원</em></span>
+                                </span>
+                                <span class="title no-btm">현금지출 <em class="badge badge-purple badge-payment">0건</em>
+                                    <span class="number">0<em>원</em></span>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 스토리 -->
+                 <!-- 총자산 -->
+                <div class="card-item">
+                    <div class="asset-wrap">
+                        <div class="asset together-view-card together-view-card-user">
+                            <div class="category-heading no-icon">
+                                <span class="title">총자산 <em class="badge badge-purple badge-payment">0</em>
+                                    <span class="number">0<em>원</em></span>
+                                </span>
+                                <div class="card-item">
+                                    <ul class="list-card">
+                                        <li class="item">
+                                            <div class="box-icon">
+                                                <i class="icon-user icon-user-me">
+                                                    <img src="../../img/common/ico_mypage_profile_img03@2x.png" width="30" alt="아이콘">
+                                                </i>
+                                                <span class="user-name">김꼼꼼</span>
+                                            </div>
+                                            <span class="box-detail">
+                                                <span class="val">0<em>원</em></span>
+                                            </span>
+                                        </li>
+                                        <li class="item">
+                                            <div class="box-icon">
+                                                <i class="icon-user icon-user-you">
+                                                    <img src="../../img/common/ico_mypage_profile_img01@2x.png" width="30" alt="아이콘">
+                                                </i>
+                                                <span class="user-name">유똑똑</span>
+                                            </div>
+                                            <span class="box-detail">
+                                                <span class="val">0<em>원</em></span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- 스토리 -->
                 <div class="card-item">
                     <div class="asset-wrap">
                         <div class="asset add-management">
                             <div class="category-heading no-icon">
-                                <span class="title">스토리</span>
+                                <span class="title">스토리 <em class="badge badge-purple badge-payment">4</em></span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                 <!-- 소비분석·맞춤카드 -->
-                 <div class="card-item">
+                <!-- 소비분석·맞춤카드 -->
+                <div class="card-item">
                     <div class="asset-wrap">
                         <div class="asset add-management">
                             <div class="category-heading no-icon">

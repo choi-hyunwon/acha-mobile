@@ -181,9 +181,18 @@
                 font-size: 18px;
                 line-height: 24px;
                 color: var(--text-01);
-                padding-bottom: 22px;
+                padding-bottom: 20px;
                 position: relative;
                 border-bottom: 1px solid #efefef;
+                & + .title{
+                  &:last-child{
+                    padding-bottom: 0;
+                  }
+                }
+                
+                &.no-btm{
+                  border-bottom: none;
+                }
 
                 .state {
                   position: absolute;
@@ -218,7 +227,6 @@
               }
 
               .list-card {
-
                 .item {
                   height: 70px;
                   display: flex;
@@ -226,6 +234,7 @@
                   align-items: center;
 
                   .name {
+                    margin-bottom: 2px;
                     font-size: 15px;
                     font-weight: 500;
                     color: #37354e;
@@ -248,8 +257,7 @@
                     white-space: nowrap;
                     display: flex !important;
                     align-items: center;
-                    line-height: 27px !important;
-                    margin-top: 2px;
+                    line-height: 27px;
 
                     .method {
                       display: inline-block;
@@ -295,11 +303,6 @@
                   }
                 }
 
-                // .list-card {
-                //   padding-bottom: 20px;
-                // }
-
-
                 +.btn {
                   margin-top: 5px;
                 }
@@ -316,16 +319,16 @@
 
                 .list-card {
                   .item {
+                    height: auto;
+                    padding: 20px 0;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding: 16px 0;
-                    height: auto;
+                    gap: 8px;
 
                     .box-icon {
                       display: flex;
                       align-items: center;
-                      margin-right: 8px;
 
                       span {
                         display: inline-block;
@@ -386,10 +389,19 @@
                           }
                         }
                       }
+
+                      .user-name{
+                        font-size: 16px;
+                        line-height: 1.6;
+                        font-family: var(--font2);
+                      }
                     }
 
                     .box-detail {
-                      width: calc(100% - 85px);
+                      margin-left: auto;
+                      &:has(.name){
+                        width: calc(100% - 85px);
+                      }
 
                       span {
                         display: block;
@@ -402,6 +414,10 @@
                           transform: unset;
                           margin-left: 4px;
                         }
+                      }
+
+                      .val{
+                        line-height: 1;
                       }
                     }
 
@@ -841,6 +857,18 @@
         +.btn-area {
           padding: 0 20px 30px;
           background: #fff;
+        }
+      }
+
+      .manage-ad-banner{
+        display: block;
+        width: 100%;
+        padding: 0 20px 20px;
+        img{
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          object-fit: contain;
         }
       }
     }
@@ -2667,13 +2695,11 @@
     .box-mydata {
       height: 108px;
       padding: 20px;
-      text-align: center;
+      margin: 0 20px 5px;
       border-radius: 10px;
       border: solid 1px #efefef;
       background-color: #fff;
-      margin-bottom: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
+      text-align: center;
 
       .desc {
         font-size: 13px;
@@ -2746,12 +2772,14 @@
   }
 
   .manage-tab {
-    padding-top: 6px !important;
-
     &.expenditure-tab {
       ul {
         li {
-          padding: 7px !important;
+          padding: 10px !important;
+        }
+        span{
+          display: inline-block;
+          margin-left: 4px;
         }
       }
     }
@@ -3423,7 +3451,6 @@
 
                     .box {
                       // width: calc(100% - 62px);
-
                       .info {
                         .place {
                           display: flex;
@@ -3449,6 +3476,18 @@
                     .connect {
                       font-size: 13px;
                       line-height: 19px;
+                    }
+
+                    .tooltip-icon{
+                      display: inline-block;
+                      width: 16px;
+                      height: 22px;
+                      margin-left: 2px;
+                      img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                      }
                     }
                   }
                 }

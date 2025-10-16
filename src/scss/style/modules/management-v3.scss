@@ -3399,7 +3399,70 @@
 
     .expenditure-box {
       min-height: calc(100lvh - 325px);
+      .usage-sum{
+        padding-top: 20px;
+      }
       .usage-history-list {
+        padding-bottom: 30px;
+        .list-day-wrap{
+          margin-top: 0;
+          margin-bottom: 15px;
+          > div + div{
+            margin-top: 20px;
+          }
+          & + .list-day-wrap{
+            padding-top: 15px;
+            border-top: 1px solid #efefef;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+          & + .monthly{
+            margin-top: 30px;
+          }
+        }
+        .monthly{
+          padding: 30px 0 20px;
+          border-top: 1px solid #efefef;
+        }
+        > li {
+          .details-history{
+            .item-list {
+              padding: 15px 0;
+            }
+            .amount-global{
+              margin: 2px 0;
+              line-height: 1.3;
+            }
+            .expected{
+              display: block;
+              max-width: 180px;
+              &:has(.outgoings){
+                display: flex;
+                align-items: center;
+                gap: 5px;
+              }
+            }
+            .outgoings{
+              &::after{
+                content: '';
+                display: inline-block;
+                width: 1px;
+                height: 10px;
+                margin-left: 6px;
+                background-color: #9b9aa6;
+              }
+            }
+            .memo{
+              margin-top: 10px;
+              font-size: 12px;
+              line-height: 1.67;
+              font-family: var(--font1);
+              color: var(--text-03);
+            }
+          }
+        }
+
         &.usage-category-list {
           &.filter-setting {
             min-height: auto;

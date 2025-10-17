@@ -3397,8 +3397,48 @@
       }
     }
 
+    .total-share-amount{
+      padding: 20px;
+      div{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      span{
+        font-size: 16px;
+        line-height: 1.4;
+        font-family: var(--font1);
+      }
+      .badge{
+        padding: 3px 8px;
+        border-radius: 11.5px;
+        font-size: 11px;
+      }
+      p{
+        margin-top: 4px;
+        font-size: 30px;
+        line-height: 1;
+        letter-spacing: -1.5px;
+        font-family: var(--font3);
+      }
+      em{
+        padding-left: 2px;
+        font-size: 18px;
+        line-height: 1.3;
+        font-family: var(--font3);
+      }
+    }
+
     .expenditure-box {
       min-height: calc(100lvh - 325px);
+      position: relative;
+      &:has(.empty-share-data){
+        min-height: calc(100lvh - 212px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       .usage-sum{
         padding-top: 20px;
       }
@@ -3407,15 +3447,15 @@
         .list-day-wrap{
           margin-top: 0;
           margin-bottom: 15px;
+          &:last-child{
+            margin-bottom: 0;
+          }
           > div + div{
             margin-top: 20px;
           }
           & + .list-day-wrap{
             padding-top: 15px;
             border-top: 1px solid #efefef;
-            &:last-child{
-              margin-bottom: 0;
-            }
           }
           & + .monthly{
             margin-top: 30px;
@@ -3653,6 +3693,83 @@
                     }
                   }
                 }
+              }
+            }
+          }
+        }
+
+        &.total-list{
+          .list-collapse{
+            flex-wrap: wrap;
+            row-gap: 5px;
+          }
+          .list-day-wrap{
+            margin-bottom: 20px;
+            & + .list-day-wrap{
+              padding-top: 20px;
+            }
+          }
+          .sub-title{
+            gap: 6px;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: var(--font2);
+          }
+          .lump{
+            margin-left: auto;
+            line-height: 1.5;
+            > span{
+              line-height: 0;
+            }
+            &:has(.percent){
+              display: flex;
+              align-items: center;
+              .percent{
+                margin-left: 5px;
+              }
+            }
+          }
+          .tooltip-icon{
+            display: inline-block;
+            padding-bottom: 3px;
+          }
+          .percent, .invest-amount{
+            font-size: 14px;
+            line-height: 1.5;
+            font-family: var(--font1);
+            &.rise{
+              color: #ef4b61;
+            }
+            &.fall{
+              color: #4393ff;
+            }
+          }
+          .details-history {
+            .item-list > .group{
+              .icon-user{
+                position: relative;
+                flex-shrink: 0;
+                top: 0;
+              }
+              .box{
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 10px;
+                .img{
+                  margin-right: 4px;
+                  flex-shrink: 0;
+                }
+                .info{
+                  flex: 1;
+                  .type{
+                    span{
+                          max-width: 55vw;
+                    }
+                  }
+              } 
+              .amount-global{
+                margin-bottom: 0;
+              }
               }
             }
           }
@@ -4407,6 +4524,23 @@
         .usage-sum{
           padding-top: 20px;
         }
+      }
+    }
+
+    .empty-share-data{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      img{
+        width: 42px;
+        height: 42px;
+      }
+      p{
+         font-size: 18px;
+         font-family: var(--font2);
+         line-height: 1.5;
       }
     }
   }
@@ -5357,6 +5491,43 @@
       font-size: 13px;
       line-height: 20px;
       padding: 12px 20px 30px;
+    }
+  }
+
+  .share-inquiry{
+    .expenditure-box {
+      .usage-history-list.usage-category-list.filter-setting{
+        padding-top: 12px;
+        > li {
+          .title-category{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:first-of-type{
+              margin-bottom: 10px;
+            }
+          }
+          .details-history .item-list{
+            padding-block: 10px;
+            > .group{
+              gap: 10px;
+              .icon-user{
+                position: relative;
+                top: 0;
+              }
+            }
+            .box + div{
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              gap: 14px;
+            }
+          }
+        }
+      }
+    }
+    [type=checkbox] + span:not(.lever){
+      padding-left: 22px;
     }
   }
 }

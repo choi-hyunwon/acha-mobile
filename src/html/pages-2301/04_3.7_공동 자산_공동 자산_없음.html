@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap renewal">
+        <div class="header _sticky">
+            <a href="#" class="sprite btn_back"></a>
+            <h2 class="title"><a href="#">자산</a></h2>
+        </div>
+        
+        <div class="contents expenditure share-add">
+            <div class="expenditure-tab manage-tab _expenditureTab">
+                <ul class="clearfix justify-content-start">
+                    <li class="active"><a href="#">#공동</a></li>
+                    <li><a href="#">#김꼼꼼</a></li>
+                    <li><a href="#">#유똑똑</a></li>
+                </ul>
+            </div>
+
+            <div class="total-share-amount">
+                <div>
+                    <span>총자산</span> <span class="badge badge-purple badge-payment">0개</span>
+                </div>
+                <p>100,000,000<em>원</em></p>
+            </div>
+
+            <div class="expenditure-box bg_light_gray">
+                <div class="empty-share-data">
+                    <img src="../../img/common/ico_error@3x.png" alt="에러아이콘">
+                    <p>공유된 자산이 없어요</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 일자 카테고리 탭
+        $('._expenditureTab li a').on('click', function () {
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
+
+        // 공동
+        $('.share-us li').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+
+        let $list = $('.list-collapse');
+        $list.on('click', '.btn-collapse', function () {
+            if ($list.hasClass('list-collapse-close')) {
+                $list.removeClass('list-collapse-close');
+                $list.siblings('.divider').show();
+                $list.siblings('.list-day-wrap').show();
+            } else {
+                $list.addClass('list-collapse-close');
+                $list.siblings('.divider').hide();
+                $list.siblings('.list-day-wrap').hide();
+            }
+        })
+    </script>
+
+</body>
+
+</html>

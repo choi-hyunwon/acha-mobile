@@ -40,7 +40,11 @@
 
     .point-card-tab {
         padding: 12px 20px 0;
-        position: relative;
+        width: 100%;
+        background: var(--white);
+        position: fixed;
+        left: 0;
+        z-index: 60;
 
       ul {
         height: 41px;
@@ -54,7 +58,7 @@
             margin-left: 20px;
           }
           a {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             display: inline-block;
             font-size: 20px;
             line-height: 1.3;
@@ -90,7 +94,7 @@
             }
         }
         &:not(:has(h6)){
-            padding-top: 20px;
+            padding-top: 70px;
         }
     }
 

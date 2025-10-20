@@ -399,34 +399,6 @@
       text-overflow: ellipsis;
     }
 
-    &:has(.period){
-      .total-amount{
-        margin: 10px 20px 0;
-        &.add-logo.add-logo-amount{
-          padding-top: 10px;
-          margin-bottom: 0;
-        }
-        & + .expenditure-tab{
-          margin-top: 14px;
-        }
-      }
-      &:not(:has(.expenditure-tab)){
-        .total-amount{
-          margin-bottom: 24px;
-          &:has(.expected){
-            margin-bottom: 15px;
-          }
-        }
-      }
-      &:not(:has(.divider)){
-        .total-amount{
-          &:has(.expected){
-            margin-bottom: 25px;
-          }
-        }
-      }
-    }
-
     /**
     총수입 금액 노출 영역
      */
@@ -434,7 +406,6 @@
       margin: 20px;
       position: relative;
       
-
       &-lg {
         margin: 30px 20px;
       }
@@ -654,6 +625,39 @@
           font-family: var(--font4);
           font-weight: 500;
         }
+      }
+    }
+
+    &:has(.period){
+      .total-amount{
+        margin: 10px 20px 0;
+        &.add-logo.add-logo-amount{
+          padding-top: 10px;
+          margin-bottom: 0;
+        }
+        & + .expenditure-tab{
+          margin-top: 15px;
+        }
+      }
+      &:not(:has(.expenditure-tab)){
+        .total-amount{
+          margin-bottom: 24px;
+          &:has(.expected){
+            margin-bottom: 15px;
+          }
+        }
+      }
+      &:not(:has(.divider)){
+        .total-amount{
+          &:has(.expected){
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+    &:has(.expenditure-tab){
+      .total-amount{
+        margin-bottom: 15px;
       }
     }
 
@@ -1343,7 +1347,7 @@
       ul {
         li {
           margin-right: 5px;
-          padding: 10px 5px !important;
+          padding: 12px 5px !important;
           flex-shrink: 0;
           position: relative;
           float: left;
@@ -1769,7 +1773,8 @@
       /*일자*/
       .usage-history-list {
         padding: 20px;
-        min-height: calc(100vh - 285px);
+        min-height: calc(100vh - 270px);
+        
 
         &.min175 {
           min-height: calc(100vh - 175px);

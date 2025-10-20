@@ -4178,8 +4178,9 @@
 
           li {
             .total {
+              margin-bottom: 20px;
+              padding-bottom: 20px;
               align-items: flex-start;
-              padding-bottom: 15px;
 
               .title {
                 display: flex;
@@ -4230,7 +4231,7 @@
                   .info {
                     width: calc(100% - 40px);
                     padding-left: 54px;
-
+                    
                     .place {
                       position: relative;
                       padding-right: 20px;
@@ -4363,8 +4364,9 @@
 
               .card-head {
                 display: flex;
+                align-items: flex-start;
                 justify-content: space-between;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
 
                 p {
                   display: flex;
@@ -4386,6 +4388,7 @@
 
                 .total {
                   padding-bottom: 0px;
+                  margin-bottom: 0;
                   font-size: 15px;
                   line-height: 20px;
 
@@ -4400,6 +4403,7 @@
 
                 &.head {
                   p {
+                    font-size: 15px;
                     font-family: var(--font3);
                   }
 
@@ -4431,7 +4435,7 @@
 
                   .group {
                     width: 100%;
-                    padding: 12px 0;
+                    padding: 15px 0;
 
                     .box {
                       width: 100%;

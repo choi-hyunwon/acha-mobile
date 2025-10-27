@@ -691,12 +691,12 @@ dl {
   padding-bottom: 110px;
 }
 .skeleton-lifestyle .skeleton-box-card-top {
-  padding: 12px 20px 0;
+  padding: 24px 20px 0;
   display: flex;
   justify-content: flex-start;
   gap: 20px;
 }
-.skeleton-lifestyle .skeleton-box-card-top .skeleton-width-sm {
+.skeleton-lifestyle .skeleton-box-card-top .skeleton-width-lsm {
   width: 55px;
 }
 .skeleton-lifestyle .skeleton-box-card-top .skeleton-width-xsm {
@@ -767,6 +767,55 @@ dl {
   height: 100px;
 }
 
+.skeleton-lifestyle .skeleton-loan-box {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skeleton-lifestyle .skeleton-loan-box .skeleton-sub-title {
+  width: 164px;
+}
+.skeleton-lifestyle .skeleton-loan-box .skeleton-title {
+  width: 222px;
+  height: 65px;
+  margin-top: 6px;
+}
+.skeleton-lifestyle .skeleton-loan-box .skeleton-loan-img {
+  width: 200px;
+  height: 140px;
+  margin-top: 20px;
+}
+
+.skeleton-lifestyle .skeleton-loan-list {
+  width: calc(100% - 40px);
+  margin: 30px auto 0;
+  padding: 24px 20px;
+  border: solid 1px #efefef;
+  background-color: #fff;
+  overflow: hidden;
+}
+.skeleton-lifestyle .skeleton-loan-list .skeleton-loan-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.skeleton-lifestyle
+  .skeleton-loan-list
+  .skeleton-loan-item
+  + .skeleton-loan-item {
+  margin-top: 16px;
+}
+.skeleton-lifestyle .skeleton-loan-list .skeleton-icon-img {
+  width: 46px;
+  height: 46px;
+}
+.skeleton-lifestyle .skeleton-loan-list .skeleton-icon-sm {
+  margin-left: auto;
+}
+
 /* style */
 
 /* skeleton */
@@ -778,6 +827,11 @@ dl {
   width: 40%;
   height: 20px;
 }
+.skeleton-icon-sm {
+  width: 16px !important;
+  height: 16px !important;
+}
+
 .skeleton-width-sm {
   width: 40px !important;
 }
@@ -799,8 +853,14 @@ dl {
 .skeleton-width-70 {
   width: 70px !important;
 }
+.skeleton-width-75 {
+  width: 75px !important;
+}
 .skeleton-width-80 {
   width: 80px !important;
+}
+.skeleton-width-85 {
+  width: 85px !important;
 }
 .skeleton-width-120 {
   width: 120px !important;

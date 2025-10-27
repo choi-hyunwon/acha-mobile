@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+  <div class="wrap">
+    <div class="contents lifestyle">
+      <!-- 포인트/카드 탭 -->
+      <div class="point-card-tab">
+          <ul class="clearfix">
+              <li><a href="#">포인트</a></li>
+              <li><a href="#">카드</a></li>
+              <li class="active"><a href="#">대출</a></li>
+          </ul>
+      </div>
+
+      <!-- 대출 -->
+      <div class="main-loan-wrap">
+        <div class="loan-intro-box">
+          <p class="f-point">여러 금융사 조건 한눈에!</p>
+          <p class="title">나에게 가장 잘 맞는 대출 <br>지금 비교해보세요!</p>
+          <img src="../../img/common/lifestyle/img-benefit-loan-main@3x.png" alt="대출이미지">
+        </div>
+        <ul class="loan-category-list">
+          <!-- 신용대출 -->
+          <li>
+            <a href="#">
+              <div class="icon credit">
+                <img src="../../img/common/lifestyle/icon-benefit-loan-credit@3x.png" alt="신용대출 아이콘">
+              </div>
+              <span>신용대출</span>
+              <img class="icon-arrow" src="../../img/common/ico_arrow_small_nor@2x.png" alt="바로가기 아이콘">
+            </a>
+          </li>
+          <!-- 사업자대출 -->
+          <li>
+            <a href="#">
+              <div class="icon business">
+                <img src="../../img/common/lifestyle/icon-benefit-loan-credit-business@3x.png" alt="사업자대출 아이콘">
+              </div>
+              <span>사업자대출</span>
+              <img class="icon-arrow" src="../../img/common/ico_arrow_small_nor@2x.png" alt="바로가기 아이콘">
+            </a>
+          </li>
+          <!-- 차량담보대출 -->
+          <li>
+            <a href="#">
+              <div class="icon car">
+                <img src="../../img/common/lifestyle/icon-benefit-loan-car@3x.png" alt="차량담보대출 아이콘">
+              </div>
+              <span>차량담보대출</span>
+              <img class="icon-arrow" src="../../img/common/ico_arrow_small_nor@2x.png" alt="바로가기 아이콘">
+            </a>
+          </li>
+          <!-- 주택담보대출 -->
+          <li>
+            <a href="#">
+              <div class="icon house">
+                <img src="../../img/common/lifestyle/icon-benefit-loan-home@3x.png" alt="주택담보대출 아이콘">
+              </div>
+              <span>주택담보대출</span>
+              <img class="icon-arrow" src="../../img/common/ico_arrow_small_nor@2x.png" alt="바로가기 아이콘">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $('.point-card-tab li a').on('click', function () {
+      $(this).parent().addClass('active').siblings().removeClass('active')
+  })
+</script>
+</html>

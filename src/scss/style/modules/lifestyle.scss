@@ -4033,6 +4033,86 @@
             }
         }
     }
+
+    .main-loan-wrap{
+        width: 100%;
+        height: 300px;
+        padding-top: 51px;
+        background-image: linear-gradient(to bottom, #f4f2ff, #fff);
+    }
+    .loan-intro-box{
+        width: 100%;
+        padding-top: 40px;
+        margin: 0 auto;
+        text-align: center;
+        .f-point{
+            font-size: 16px;
+            font-family: var(--font2);
+            line-height: 1.5;
+        }
+        .title{
+            margin-top: 6px;
+            font-size: 22px;
+            font-family: var(--font3);
+            line-height: 1.45;
+        }
+        img{
+            width: auto;
+            height: 140px;    
+            margin-top: 20px;
+        }
+    }
+    .loan-category-list{
+        width: calc(100% - 40px);
+        margin: 30px auto 0;
+        padding: 24px 20px;
+        border-radius: 16px;
+        border: solid 1px #efefef;
+        background-color: #fff;
+        li + li{
+            margin-top: 16px;
+        }
+        a{
+            width: 100%;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .icon{
+            width: 46px;
+            height: 46px;
+            padding: 10px;
+            border-radius: 16px;
+            &.credit{
+                background-color: #f0f7fc;
+            }
+            &.business{
+                background-color: #fdf9ef;
+            }
+            &.car{
+                background-color: #f7f4ff;
+            }
+            &.house{
+                background-color: #effdfd;
+            }
+            img{
+                width: 26px;
+                height: 26px;
+            }
+        }
+        span{
+            font-size: 16px;
+            line-height: 1.38;
+            font-family: var(--font3);
+            color: var(--text-01);
+        }
+        .icon-arrow{
+            width: 6px;
+            height: 16px;
+            margin-left: auto;
+        }
+    }
 }
 
 /*팝업*/

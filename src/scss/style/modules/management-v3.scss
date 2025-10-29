@@ -3475,8 +3475,29 @@
               line-height: 1.3;
             }
             .expected{
-              display: block;
-              max-width: 180px;
+              width: calc(100% + 35px);
+              display: flex;
+              align-items: center;
+              .date, .session{
+                flex-shrink: 0;
+              }
+              .means{
+                display: -webkit-box;
+                word-wrap: break-word;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+              }
+              i {
+                width: 1px;
+                height: 12px;
+                margin: 0 4px;
+                flex-shrink: 0;
+                display: inline-block;
+                background-color: #9b9aa6
+              }
               &:has(.outgoings){
                 display: flex;
                 align-items: center;
@@ -3978,11 +3999,34 @@
                         }
 
                         .expected {
+                          width: calc(100% + 35px);
                           margin-top: 2px;
                           font-family: var(--font1);
                           font-size: 12px;
                           line-height: 18px;
                           color: var(--text-03);
+                          display: flex;
+                          align-items: center;
+                          .date, .session{
+                            flex-shrink: 0;
+                          }
+                          .means{
+                            display: -webkit-box;
+                            word-wrap: break-word;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 1;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                          }
+                          i {
+                            width: 1px;
+                            height: 12px;
+                            margin: 0 4px;
+                            flex-shrink: 0;
+                            display: inline-block;
+                            background-color: #9b9aa6
+                          }
                         }
                       }
                     }
@@ -4109,11 +4153,34 @@
                       }
 
                       .expected {
+                        width: calc(100% + 35px);
                         margin-top: 2px;
                         font-family: var(--font1);
                         font-size: 12px;
                         line-height: 18px;
                         color: var(--text-03);
+                        display: flex;
+                        align-items: center;
+                        .date, .session{
+                          flex-shrink: 0;
+                        }
+                        .means{
+                          display: -webkit-box;
+                          word-wrap: break-word;
+                          -webkit-box-orient: vertical;
+                          -webkit-line-clamp: 1;
+                          text-overflow: ellipsis;
+                          overflow: hidden;
+                          white-space: nowrap;
+                        }
+                        i {
+                          width: 1px;
+                          height: 12px;
+                          margin: 0 4px;
+                          flex-shrink: 0;
+                          display: inline-block;
+                          background-color: #9b9aa6
+                        }
                       }
 
                       .record {
@@ -4162,6 +4229,7 @@
           // 월 추가
           .monthly{
             padding: 20px 0 0 0;
+            margin-top: 10px;
             p{
               font-family: var(--font3);
               font-size: 18px;
@@ -4443,14 +4511,26 @@
 
                       .info {
                         .expected {
+                          width: calc(100% + 35px);
                           display: flex;
                           align-items: center;
-
+                          .date, .session{
+                            flex-shrink: 0;
+                          }
+                          .means{
+                            display: -webkit-box;
+                            word-wrap: break-word;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 1;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                          }
                           i {
-                            display: inline-block;
-                            margin: 0 4px;
                             width: 1px;
                             height: 12px;
+                            margin: 0 4px;
+                            flex-shrink: 0;
+                            display: inline-block;
                             background-color: #9b9aa6
                           }
                         }

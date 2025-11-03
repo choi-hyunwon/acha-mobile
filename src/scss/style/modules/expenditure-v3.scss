@@ -399,6 +399,39 @@
       text-overflow: ellipsis;
     }
 
+    &:has(.period){
+      .total-amount{
+        margin: 10px 20px 0;
+        &.add-logo.add-logo-amount{
+          padding-top: 10px;
+          margin-bottom: 0;
+        }
+        & + .expenditure-tab{
+          margin-top: 15px;
+        }
+      }
+      &:not(:has(.expenditure-tab)){
+        .total-amount{
+          margin-bottom: 24px;
+          &:has(.expected){
+            margin-bottom: 15px;
+          }
+        }
+      }
+      &:not(:has(.divider)){
+        .total-amount{
+          &:has(.expected){
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+    &:has(.expenditure-tab){
+      .total-amount{
+        margin-bottom: 15px;
+      }
+    }
+
     /**
     총수입 금액 노출 영역
      */
@@ -625,39 +658,6 @@
           font-family: var(--font4);
           font-weight: 500;
         }
-      }
-    }
-
-    &:has(.period){
-      .total-amount{
-        margin: 10px 20px 0;
-        &.add-logo.add-logo-amount{
-          padding-top: 10px;
-          margin-bottom: 0;
-        }
-        & + .expenditure-tab{
-          margin-top: 15px;
-        }
-      }
-      &:not(:has(.expenditure-tab)){
-        .total-amount{
-          margin-bottom: 24px;
-          &:has(.expected){
-            margin-bottom: 15px;
-          }
-        }
-      }
-      &:not(:has(.divider)){
-        .total-amount{
-          &:has(.expected){
-            margin-bottom: 25px;
-          }
-        }
-      }
-    }
-    &:has(.expenditure-tab){
-      .total-amount{
-        margin-bottom: 15px;
       }
     }
 

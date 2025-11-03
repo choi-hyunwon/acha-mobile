@@ -364,6 +364,12 @@
                     background: url(../../img/common/lifestyle/img-life-sec-icon-cardbenefit@3x.png) no-repeat center / cover;
                 }
             }
+            &.insurance{
+                background-color: #f0fff3;
+                &::before{
+                    background: url(../../img/common/lifestyle/img-life-sec-icon-insurance@3x.png) no-repeat center / cover;
+                }
+            }
             &.card::before{
                 background: url(../../img/common/lifestyle/img-life-sec-icon-cardbenefit@2x.png) no-repeat center / cover;
             }
@@ -379,14 +385,29 @@
             &.lottery::before{
                 background: url(../../img/common/lifestyle/img-life-sec-icon-luckylottery@2x.png) no-repeat center / cover;
             }
+            &.click::before{
+                background: url(../../img/common/lifestyle/img-life-sec-icon-adpopcorn-click@3x.png) no-repeat center / cover;
+            }
+            &.participate::before{
+                background: url(../../img/common/lifestyle/img-life-sec-icon-adpopcorn-participate@3x.png) no-repeat center / cover;
+            }
+            &.shopping::before{
+                background: url(../../img/common/lifestyle/img-life-sec-icon-adpopcorn-shopping@3x.png) no-repeat center / cover;
+            }
+            &.mission::before{
+                background: url(../../img/common/lifestyle/img-life-sec-icon-adpopcorn-mission@3x.png) no-repeat center / cover;
+            }
         }
         .text-box{
             strong{
-                margin-bottom: 4px;
                 display: flex;
                 align-items: center;
                 gap: 5px;
                 position: relative;
+                & + span{
+                    margin-top: 4px;
+                    display: inline-block;
+                }
             }
             span{
                 font-size: 14px;
@@ -402,6 +423,9 @@
                 }
                 &.blue{
                     color: #367ff2;
+                }
+                &.green{
+                    color: #1f9628;
                 }
             }
             .text{
@@ -457,7 +481,7 @@
         .point-btn{
             padding: 5px 6px 6px;
             margin-left: auto;
-            flex-shrink: 1;
+            flex-shrink: 0;
             border-radius: 6px;
             background: #692bf7;
             font-size: 11px;

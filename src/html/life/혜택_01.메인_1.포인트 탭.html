@@ -2,7 +2,7 @@
 <html lang="ko">
 @@include('../include/head.html')
 <body>
-  <div class="wrap">
+  <div class="wrap renewal">
     <div class="contents lifestyle">
       <!-- 포인트/카드 탭 -->
       <div class="point-card-tab">
@@ -10,10 +10,11 @@
               <li class="active"><a href="#">포인트</a></li>
               <li><a href="#">카드</a></li>
               <li><a href="#">대출</a></li>
+              <li><a href="#">보험</a></li>
           </ul>
       </div>
 
-      <!-- 포인트 -->
+      <!-- 내 포인트 -->
       <div class="card-box">
         <div class="my-point-box">
           <span class="my-point">내 포인트</span>
@@ -35,11 +36,41 @@
           </div>
         </div>
       </div>
+
+      <!-- 광고 배너1 -->
       <a href="#" class="banner-area mt-20">
         <img src="../../img/common/lifestyle/img-ad-banner-life-top-02@3x.png" alt="놓친보험금 찾기" />
       </a>
 
-      <!-- 혜택 -->
+      <!-- 보험 스와이프 -->
+      <div class="swiper-container swiper-row simple-insurance-swiper">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="../../img/common/lifestyle/img-benefit-insurance-sec-car@3x.png" alt="자동차보험">
+              <p>운전 자동차보험 <br>확인하고</p>
+              <span><em class="point">15P</em> 받기</span>
+          </a>
+          <a class="swiper-slide" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="../../img/common/lifestyle/img-benefit-insurance-sec-health@3x.png" alt="건강보험">
+              <p>국민 건강보험 <br>알아보고</p>
+              <span><em class="point">15P</em> 받기</span>
+          </a>
+          <a class="swiper-slide" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="../../img/common/lifestyle/img-benefit-insurance-sec-cancer@3x.png" alt="암보험">
+              <p>암보험 <br>가입하면</p>
+              <span class="f-orange"><em class="point">1000P</em> 받기</span>
+          </a>
+        </div>
+      </div>
+      <script>
+            var swiper = new Swiper(".simple-insurance-swiper", {
+                spaceBetween: 8,
+                slidesPerView: 2.3,
+                watchOverflow: true,
+            });
+      </script>
+
+      <!-- 혜택 리스트 -->
       <div class="card-box">
         <ul class="life-benefit-list">
           <!-- 랜덤 포인트 -->
@@ -50,7 +81,6 @@
                 <span class="point-text orange">방금 쓴 돈, 확인만 해도</span>
                 <strong>
                   <span class="text">랜덤 포인트가 쏙!</span>
-                  <span class="new-badge">NEW</span>
                 </strong>
               </div>
               <button class="point-btn">최대 <span class="num">200<em>P</em></span> 받기</button>
@@ -89,7 +119,6 @@
               <div class="text-box">
                 <strong>
                   <span class="text">행운 복권</span> 
-                  <span class="new-badge">NEW</span>
                 </strong>
                 <span>꽝 없는 복권, 긁어봐요 오늘의 운</span>
               </div>
@@ -103,7 +132,6 @@
               <div class="text-box">
                 <strong>
                   <span class="text">매일 출석체크</span> 
-                  <span class="new-badge">NEW</span>
                 </strong>
                 <span>이번달 개근 보너스 500P</span>
               </div>
@@ -130,7 +158,6 @@
               <div class="text-box">
                 <strong>
                   <span class="text">친구초대</span> 
-                  <span class="new-badge">NEW</span>
                 </strong>
                 <span>함께 포인트 혜택 받기</span>
               </div>
@@ -188,7 +215,7 @@
         </ul>
       </div>
 
-      <!-- 보험 -->
+      <!-- 보험 상품 -->
       <div class="card-box only-pt">
         <!-- 보험상품 3개 이상일 경우 : 보험 광고 슬라이드 + 전체보기 버튼 o -->
         <div class="swiper-container swiper-row insurance-slide">
@@ -299,7 +326,7 @@
         </ul>
       </div>
 
-      <!-- ad-banner -->
+      <!-- 광고 배너2 -->
       <a href="#" class="banner-area full">
         <img src="../../img/common/lifestyle/img-ad-banner-life-btm-01@3x.png" alt="배너이미지" />
       </a>

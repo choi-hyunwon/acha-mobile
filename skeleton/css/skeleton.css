@@ -719,6 +719,19 @@ dl {
   height: 160px;
 }
 
+.skeleton-insurance-section {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
+}
+.skeleton-insurance-section .skeleton-swiper-card {
+  width: 140px;
+  height: 160px;
+  flex-shrink: 0;
+}
+
 .skeleton-lifestyle .skeleton-life-section {
   padding: 20px 20px 0;
 }

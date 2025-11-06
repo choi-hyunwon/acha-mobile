@@ -7833,6 +7833,50 @@
                     }
                 }
             }
+
+            // 보험 광고 안내
+            &.partnership{
+                padding-block: 40px;
+                border-radius: 14px;
+                text-align: center;
+                .modal-body{
+                    .noti{
+                        margin-bottom: 28px;
+                        font-size: 14px;
+                        font-family: var(--font2);
+                        line-height: 1.57;
+                        color: var(--text-02);
+                    }
+                    .loading-img{
+                        width: 90px;
+                        height: auto;
+                    }
+                    .title{
+                        margin-top: 28px;
+                        font-size: 15px;
+                        font-family: var(--font3);
+                        line-height: 1.47;
+                    }
+                }
+            }
+
+            &.withdrawal{
+                padding-top: 30px;
+                text-align: center;
+                p{
+                    font-size: 14px;
+                    font-family: var(--font1);
+                    line-height: 1.57;
+                }
+                .modal-footer{
+                    margin-top: 30px;
+                    a{
+                        float: none;
+                        font-size: 13px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
         }
 
         &.manage-edit {

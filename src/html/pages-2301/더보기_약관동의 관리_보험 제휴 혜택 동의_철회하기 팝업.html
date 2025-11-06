@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+    <div class="wrap renewal"></div>
+
+    <!-- modal -->
+    <div class="modal fade modal-size-sm" id="withdrawal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content withdrawal">
+                <div class="modal-body">
+                    <p>개인정보 제3제 제공 동의를 <br>철회할까요?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn-footer btn-bg bg-grey" data-dismiss="modal">취소</a>
+                    <a href="#" class="btn-footer btn-point-bg" data-dismiss="modal">철회하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#withdrawal').modal('show');
+</script>
+</html>

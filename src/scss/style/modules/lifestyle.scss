@@ -4137,6 +4137,332 @@
             margin-left: auto;
         }
     }
+
+    .simple-insurance-swiper{
+        padding: 20px 20px 0 20px;
+        a{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 1px solid #efefef;
+            text-align: center;
+            color: var(--text-01);
+            p{
+                margin-top: 4px;
+                margin-bottom: 12px;
+                font-size: 14px;
+                font-family: var(--font2);
+                line-height: 1.43;
+            }
+            span{
+                font-size: 14px;
+                font-family: var(--font3);
+                line-height: 1.3;
+                color: #6839d3;
+                &.f-orange{
+                    color: #ef6a23;
+                }
+            }
+            img{
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+
+    .main-insurance-wrap{
+        padding: 70px 20px 30px;
+        .ad-banner-top{
+            display: block;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .insurance-category-tab{
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            gap: 10px;
+            li{
+                padding: 6px 14px;
+                border-radius: 6px;
+                border: 1px solid #e9e9f2;
+                font-size: 15px;
+                line-height: 1.4;
+                font-family: var(--font1);
+                background-color: var(--white);
+                color: var(--text-01);
+                &.active{
+                    font-family: var(--font3);
+                    background-color: #37354e;
+                    color: var(--white);
+                }
+            }
+        }
+        .insurance-product-list{
+            margin-top: 30px;
+            li + li{
+                margin-top: 40px;
+            }
+            a{
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+            }
+            .logo{
+                width: 40px;
+                height: 40px;
+                flex-shrink: 0;
+                border-radius: 16px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: auto;
+                    
+                }
+                &.hanwha, &.db, &.icon{
+                    padding: 8px;
+                    text-align: center;
+                    background-color: #f7f4ff;
+                    img{
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                &.hanwha{
+                    background-color: #f37321;
+                }
+                &.db{
+                    background-color:  #c7f0d3;
+                }
+            }
+            .product{
+                width: 100%;
+            }
+            .corp{
+                font-size: 12px;
+                font-family: var(--font1);
+                line-height: 1.75;
+                color: var(--text-02);
+            }
+            .name{
+                margin-block: 2px;
+                font-size: 15px;
+                font-family: var(--font3);
+                line-height: 1.6;
+                color: var(--text-01);
+                display: -webkit-box;
+                word-wrap: break-word;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .desc{
+                font-size: 12px;
+                font-family: var(--font1);
+                line-height: 1.62;
+                color: var(--text-02);
+            }
+            .assurance{
+                margin-top: 2px;
+                font-size: 11px;
+                font-family: var(--font1);
+                line-height: 1.45;
+                letter-spacing: -0.1px;
+                color: var(--text-03);
+                word-break: break-all;
+            }
+            .badge-box{
+                margin-top: 6px;
+                .badge{
+                    padding: 2px 6px;
+                    border-radius: 6px;
+                    font-size: 12px;
+                    line-height: 1.67;
+                    font-family: var(--font2);
+                    text-align: center;
+                    &.bg-purple{
+                        color: #6839d3;
+                        background-color: #f5f0ff;
+                    }
+                    &.bg-yellow{
+                        color: #ff7600;
+                        background-color: #fff5bf;
+                    }
+                    & + .badge{
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .insurance-bridge-wrap{
+        width: 100%;
+        height: 400px;
+        background-image: linear-gradient(to bottom, #f0fff3, #fff0);
+    }
+    .bridge-intro-box{
+        padding: 20px 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .logo{
+            width: 155px;
+            height: auto;
+        }
+        .condition{
+            margin-top: 18px;
+            font-size: 16px;
+            font-family: var(--font1);
+            line-height: 1.44;
+            color: var(--text-01);
+        }
+        .title{
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: var(--font3);
+            line-height: 1.5;
+            color: var(--text-01);    
+        }
+        .gain{
+            margin-top: 10px;
+            font-size: 15px;
+            font-family: var(--font2);
+            line-height: 1.53;
+            color: #00854a;
+            .badge.bg-green{
+                margin-inline: 1px;
+                padding: 4px;
+                font-size: 15px;
+                border-radius: 4px;
+                background-color: #00854a;
+                color: var(--white);
+            }
+        }
+        .car-img{
+            width: 160px;
+            height: auto;
+            margin-top: 30px;
+        }
+    }
+    .join-profit-list{
+        padding: 40px 20px 30px;
+        li + li{
+            margin-top: 30px;
+        }
+        p + p{
+            margin-top: 5px;
+        }
+        .profit{
+            font-size: 18px;
+            font-family: var(--font3);
+            line-height: 1.33;
+            text-align: left;
+        }
+        .desc{
+            font-size: 14px;
+            font-family: var(--font1);
+            line-height: 1.5;
+            text-align: left;
+            color: var(--text-02);
+            word-break: keep-all;
+        }
+    }
+    .precaution-box, .insurance-contract-box{
+        padding: 30px 20px 0;
+        p{
+            font-size: 15px;
+            font-family: var(--font3);
+            line-height: 1.33;
+            color: var(--text-02);    
+        }
+        .dot-list{
+            li{
+                margin-top: 6px;
+                padding-left: 11px;
+                text-indent: -10px;
+                font-size: 14px;
+                font-family: var(--font1);
+                line-height: 1.5;
+                letter-spacing: -0.3px;
+                color: var(--text-02);
+                word-break: keep-all;
+                &::before{
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    margin-right: 6px;
+                    margin-bottom: 4px;
+                    display: inline-block;
+                    background-color: var(--text-02);
+                }    
+            }
+        }
+    }
+    .btn-box{
+        width: 100%;
+        padding: 0 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        background-image: linear-gradient(to top, #ffffff, transparent);
+        .bubble-bar{
+            padding: 7px 12px;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background-color: #ef6a23;
+            font-size: 13px;
+            font-family: var(--font2);
+            line-height: 1.85;
+            color: var(--white);
+            position: relative;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            &::after{
+                content: '';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 7px 6px 0px 6px;
+                border-color: #ef6a23 transparent transparent transparent;
+                position: absolute;
+                left: 50%;
+                bottom: -7px;
+                transform: translateX(-50%);
+            }
+        }
+        .point-btn{
+            width: 100%;
+            padding: 14px 0;
+            display: block;
+            border-radius: 6px;
+            background-color: #6839d3;
+            font-size: 15px;
+            font-family: var(--font2);
+            line-height: 1.6;
+            color: var(--white);
+        }
+    }
 }
 
 /*팝업*/

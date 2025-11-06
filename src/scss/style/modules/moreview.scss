@@ -2192,6 +2192,40 @@ _ .event-btn-area {
       margin-top: 0;
     }
   }
+
+  &.insurance-wrap{
+    .accordion{
+      padding: 20px 4px;
+      & + .accordion{
+        border-top: none;
+      }
+    }
+    .accordion-toggle{
+      padding: 0;
+      border-bottom: none;
+      p{
+        width: calc(100% - 24px);
+      }
+    }
+    .agree-day{
+      margin-top: 6px;
+    }
+    .withdrawal-btn{
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 13px;
+      font-family: var(--font2);
+      text-decoration: underline;
+      color: #6839d3;
+      img{
+        width: 6px;
+        height: auto;
+        margin-top: 2px;
+      }
+    }
+  }
 }
 
 

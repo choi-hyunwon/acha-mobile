@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+
+<body>
+    <div class="wrap"></div>
+    <div class="modal-slide modal-asset-detail _modalSlide">
+        <div class="modal-slide-content">
+            <a href="#" class="btn-close _btnSlideClose"></a>
+            <div class="inner">
+                <div class="title asset-common _btnSlideOpen">
+                    <p><span class="f-point">네이버페이 자산</span>을 삭제할까요?</p>
+                </div>
+                <p class="info">동일한 지불수단에 여러 계정이 연동되어 있는 경우, 모든 계정이 삭제돼요</p>
+                <div class="check-box">
+                    <label>
+                        <input type="checkbox" class="filled-in" checked>
+                        <span></span>
+                    </label>
+                    <span class="desc-label">
+                        과거의 지출/수입 내역은 <br />
+                        가계부·공동관리에 유지할래요
+                    </span>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#" class="btn btn-block btn-lg btn-purple-bg" onclick="openPopup()">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var btnSlideOpen = $('._btnSlideOpen');
+            var btnSlideClose = $('._btnSlideClose');
+
+            btnSlideOpen.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'block';
+                    }, 500
+                );
+                $('._modalSlide').addClass('up').removeClass('down');
+                $('.modal-slide-backdrop').addClass('show');
+                $('body').addClass('scrOn')
+            });
+
+            btnSlideClose.on('click', function () {
+                setTimeout(
+                    function () {
+                        document.getElementsByClassName("_modalSlide")[0].style.display = 'none';
+                    }, 1000
+                );
+                $('._modalSlide').removeClass('up').addClass('down');
+                $('.modal-slide-backdrop').removeClass('show');
+                $('body').removeClass('scrOn')
+            });
+
+            btnSlideOpen.trigger('click');
+        })
+    </script>
+</body>
+
+</html>
